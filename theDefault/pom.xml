@@ -3,11 +3,11 @@
 
     <!--Hello! You'll basically should only need to change these names and the steam path (just below)-->
     <!--The author name(s) as they appear in MTS and any other comments are in your ModTheSpire.json-->
-    <groupId>defaultmod</groupId>
-    <artifactId>DefaultMod</artifactId> <!--Keep a note of this one: this is the ID used in the "auto add cards" method-->
-    <name>Default Mod</name>
+    <groupId>mysterydungeon</groupId>
+    <artifactId>MysteryDungeon</artifactId> <!--Keep a note of this one: this is the ID used in the "auto add cards" method-->
+    <name>Mystery Dungeon</name>
     <version>0.0.1</version>
-    <description>A default base to start your own mod from.</description>
+    <description>A mod based on Pokémon Mystery Dungeon.</description>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -16,7 +16,7 @@
         <ModTheSpire.version>3.8.0</ModTheSpire.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--CHANGE THIS TO YOUR STEAM INSTALLATION-->
-        <Steam.path>E:\Games\Steam\steamapps</Steam.path>
+        <Steam.path>D:\BiblioSteam\steamapps</Steam.path>
     </properties>
 
     <dependencies>
