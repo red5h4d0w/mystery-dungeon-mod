@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PlatedArmorPower;
 
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.characters.TheDefault;
+import mysteryDungeon.characters.Pokemon;
 
 public class DefaultUncommonSkill extends AbstractDynamicCard {
 
@@ -31,7 +31,7 @@ public class DefaultUncommonSkill extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
     private static final int UPGRADE_REDUCED_COST = 0;

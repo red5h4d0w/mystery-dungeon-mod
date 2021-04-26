@@ -5,7 +5,7 @@ import basemod.eventUtil.AddEventParams;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import mysteryDungeon.cards.*;
-import mysteryDungeon.characters.TheDefault;
+import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.events.IdentityCrisisEvent;
 import mysteryDungeon.potions.PlaceholderPotion;
 import mysteryDungeon.relics.BottledPlaceholderRelic;
@@ -43,14 +43,14 @@ import java.util.Properties;
 //TODO: DON'T MASS RENAME/REFACTOR
 //TODO: DON'T MASS RENAME/REFACTOR
 //TODO: DON'T MASS RENAME/REFACTOR
-// Please don't just mass replace "theDefault" with "yourMod" everywhere.
+// Please don't just mass replace "Pokemon" with "yourMod" everywhere.
 // It'll be a bigger pain for you. You only need to replace it in 4 places.
 // I comment those places below, under the place where you set your ID.
 
 //TODO: FIRST THINGS FIRST: RENAME YOUR PACKAGE AND ID NAMES FIRST-THING!!!
 // Right click the package (Open the project pane on the left. Folder with black dot on it. The name's at the very top) -> Refactor -> Rename, and name it whatever you wanna call your mod.
-// Scroll down in this file. Change the ID from "theDefault:" to "yourModName:" or whatever your heart desires (don't use spaces). Dw, you'll see it.
-// In the JSON strings (resources>localization>eng>[all them files] make sure they all go "yourModName:" rather than "theDefault", and change to "yourmodname" rather than "thedefault".
+// Scroll down in this file. Change the ID from "Pokemon:" to "yourModName:" or whatever your heart desires (don't use spaces). Dw, you'll see it.
+// In the JSON strings (resources>localization>eng>[all them files] make sure they all go "yourModName:" rather than "Pokemon", and change to "yourmodname" rather than "Pokemon".
 // You can ctrl+R to replace in 1 file, or ctrl+shift+r to mass replace in specific files/directories, and press alt+c to make the replace case sensitive (Be careful.).
 // Start with the DefaultCommon cards - they are the most commented cards since I don't feel it's necessary to put identical comments on every card.
 // After you sorta get the hang of how to make cards, check out the card template which will make your life easier
@@ -110,31 +110,31 @@ public class MysteryDungeon implements
     // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
   
     // Card backgrounds - The actual rectangular card.
-    private static final String ATTACK_DEFAULT_GRAY = "theDefaultResources/images/512/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY = "theDefaultResources/images/512/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY = "theDefaultResources/images/512/bg_power_default_gray.png";
+    private static final String ATTACK_DEFAULT_GRAY = "PokemonResources/images/512/bg_attack_default_gray.png";
+    private static final String SKILL_DEFAULT_GRAY = "PokemonResources/images/512/bg_skill_default_gray.png";
+    private static final String POWER_DEFAULT_GRAY = "PokemonResources/images/512/bg_power_default_gray.png";
     
-    private static final String ENERGY_ORB_DEFAULT_GRAY = "theDefaultResources/images/512/card_default_gray_orb.png";
-    private static final String CARD_ENERGY_ORB = "theDefaultResources/images/512/card_small_orb.png";
+    private static final String ENERGY_ORB_DEFAULT_GRAY = "PokemonResources/images/512/card_default_gray_orb.png";
+    private static final String CARD_ENERGY_ORB = "PokemonResources/images/512/card_small_orb.png";
     
-    private static final String ATTACK_DEFAULT_GRAY_PORTRAIT = "theDefaultResources/images/1024/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY_PORTRAIT = "theDefaultResources/images/1024/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY_PORTRAIT = "theDefaultResources/images/1024/bg_power_default_gray.png";
-    private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "theDefaultResources/images/1024/card_default_gray_orb.png";
+    private static final String ATTACK_DEFAULT_GRAY_PORTRAIT = "PokemonResources/images/1024/bg_attack_default_gray.png";
+    private static final String SKILL_DEFAULT_GRAY_PORTRAIT = "PokemonResources/images/1024/bg_skill_default_gray.png";
+    private static final String POWER_DEFAULT_GRAY_PORTRAIT = "PokemonResources/images/1024/bg_power_default_gray.png";
+    private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "PokemonResources/images/1024/card_default_gray_orb.png";
     
     // Character assets
-    private static final String THE_DEFAULT_BUTTON = "theDefaultResources/images/charSelect/Bulbasaur.png";
-    private static final String THE_DEFAULT_PORTRAIT = "theDefaultResources/images/charSelect/DefaultCharacterPortraitBG.png";
-    public static final String THE_DEFAULT_SHOULDER_1 = "theDefaultResources/images/char/defaultCharacter/shoulder.png";
-    public static final String THE_DEFAULT_SHOULDER_2 = "theDefaultResources/images/char/defaultCharacter/shoulder2.png";
-    public static final String THE_DEFAULT_CORPSE = "theDefaultResources/images/char/defaultCharacter/corpse.png";
+    private static final String THE_DEFAULT_BUTTON = "PokemonResources/images/charSelect/Bulbasaur.png";
+    private static final String THE_DEFAULT_PORTRAIT = "PokemonResources/images/charSelect/DefaultCharacterPortraitBG.png";
+    public static final String THE_DEFAULT_SHOULDER_1 = "PokemonResources/images/char/defaultCharacter/shoulder.png";
+    public static final String THE_DEFAULT_SHOULDER_2 = "PokemonResources/images/char/defaultCharacter/shoulder2.png";
+    public static final String THE_DEFAULT_CORPSE = "PokemonResources/images/char/defaultCharacter/corpse.png";
     
     //Mod Badge - A small icon that appears in the mod settings menu next to your mod.
-    public static final String BADGE_IMAGE = "theDefaultResources/images/Badge.png";
+    public static final String BADGE_IMAGE = "PokemonResources/images/Badge.png";
     
     // Atlas and JSON files for the Animations
-    public static final String THE_DEFAULT_SKELETON_ATLAS = "theDefaultResources/images/char/defaultCharacter/skeleton.atlas";
-    public static final String THE_DEFAULT_SKELETON_JSON = "theDefaultResources/images/char/defaultCharacter/skeleton.json";
+    public static final String THE_DEFAULT_SKELETON_ATLAS = "PokemonResources/images/char/defaultCharacter/skeleton.atlas";
+    public static final String THE_DEFAULT_SKELETON_JSON = "PokemonResources/images/char/defaultCharacter/skeleton.json";
     
     // =============== MAKE IMAGE PATHS =================
     
@@ -188,24 +188,24 @@ public class MysteryDungeon implements
         // cool
         // TODO: NOW READ THIS!!!!!!!!!!!!!!!:
         
-        // 1. Go to your resources folder in the project panel, and refactor> rename theDefaultResources to
+        // 1. Go to your resources folder in the project panel, and refactor> rename PokemonResources to
         // yourModIDResources.
         
         // 2. Click on the localization > eng folder and press ctrl+shift+r, then select "Directory" (rather than in Project) and press alt+c (or mark the match case option)
-        // replace all instances of theDefault with yourModID, and all instances of thedefault with yourmodid (the same but all lowercase).
+        // replace all instances of Pokemon with yourModID, and all instances of Pokemon with yourmodid (the same but all lowercase).
         // Because your mod ID isn't the default. Your cards (and everything else) should have Your mod id. Not mine.
         // It's important that the mod ID prefix for keywords used in the cards descriptions is lowercase!
 
         // 3. Scroll down (or search for "ADD CARDS") till you reach the ADD CARDS section, and follow the TODO instructions
 
         // 4. FINALLY and most importantly: Scroll up a bit. You may have noticed the image locations above don't use getModID()
-        // Change their locations to reflect your actual ID rather than theDefault. They get loaded before getID is a thing.
+        // Change their locations to reflect your actual ID rather than Pokemon. They get loaded before getID is a thing.
         
         logger.info("Done subscribing");
         
-        logger.info("Creating the color " + TheDefault.Enums.COLOR_GRAY.toString());
+        logger.info("Creating the color " + Pokemon.Enums.COLOR_GRAY.toString());
         
-        BaseMod.addColor(TheDefault.Enums.COLOR_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
+        BaseMod.addColor(Pokemon.Enums.COLOR_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
                 DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
                 ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
                 ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
@@ -250,9 +250,9 @@ public class MysteryDungeon implements
         logger.info("Success! ID is " + modID); // WHY WOULD U WANT IT NOT TO LOG?? DON'T EDIT THIS.
     } // NO
     
-    public static String getModID() { // NO
-        return modID; // DOUBLE NO
-    } // NU-UH
+    public static String getModID() {
+        return modID;
+    }
     
     private static void pathCheck() { // ALSO NO
         Gson coolG = new Gson(); // NOPE DON'T EDIT THIS
@@ -265,19 +265,19 @@ public class MysteryDungeon implements
             if (!packageName.equals(getModID())) { // NOT HERE ETHER
                 throw new RuntimeException(EXCEPTION_STRINGS.PACKAGE_EXCEPTION + getModID()); // THIS IS A NO-NO
             } // WHY WOULD U EDIT THIS
-            if (!resourcePathExists.exists()) { // DON'T CHANGE THIS
+            if (!resourcePathExists.exists()) {
                 throw new RuntimeException(EXCEPTION_STRINGS.RESOURCE_FOLDER_EXCEPTION + getModID() + "Resources"); // NOT THIS
-            }// NO
-        }// NO
-    }// NO
+            }
+        }
+    }
     
     // ====== YOU CAN EDIT AGAIN ======
     
     
     public static void initialize() {
-        logger.info("========================= Initializing Default Mod. Hi. =========================");
+        logger.info("========================= Initializing Mystery Dungeon. Hi. =========================");
         MysteryDungeon MysteryDungeon = new MysteryDungeon();
-        logger.info("========================= /Default Mod Initialized. Hello World./ =========================");
+        logger.info("========================= Mystery Dungeon Initialized. Hello World./ =========================");
     }
     
     // ============== /SUBSCRIBE, CREATE THE COLOR_GRAY, INITIALIZE/ =================
@@ -287,13 +287,13 @@ public class MysteryDungeon implements
     
     @Override
     public void receiveEditCharacters() {
-        logger.info("Beginning to edit characters. " + "Add " + TheDefault.Enums.THE_DEFAULT.toString());
+        logger.info("Beginning to edit characters. " + "Add " + Pokemon.Enums.THE_DEFAULT.toString());
         
-        BaseMod.addCharacter(new TheDefault("the Default", TheDefault.Enums.THE_DEFAULT),
-                THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, TheDefault.Enums.THE_DEFAULT);
+        BaseMod.addCharacter(new Pokemon("the Default", Pokemon.Enums.THE_DEFAULT),
+                THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, Pokemon.Enums.THE_DEFAULT);
         
         receiveEditPotions();
-        logger.info("Added " + TheDefault.Enums.THE_DEFAULT.toString());
+        logger.info("Added " + Pokemon.Enums.THE_DEFAULT.toString());
     }
     
     // =============== /LOAD THE CHARACTER/ =================
@@ -322,7 +322,7 @@ public class MysteryDungeon implements
             enablePlaceholder = button.enabled; // The boolean true/false will be whether the button is enabled or not
             try {
                 // And based on that boolean, set the settings and save them
-                SpireConfig config = new SpireConfig("MysteryDungeon", "theDefaultConfig", mysteryDungeonDefaultSettings);
+                SpireConfig config = new SpireConfig("MysteryDungeon", "PokemonConfig", mysteryDungeonDefaultSettings);
                 config.setBool(ENABLE_PLACEHOLDER_SETTINGS, enablePlaceholder);
                 config.save();
             } catch (Exception e) {
@@ -351,7 +351,7 @@ public class MysteryDungeon implements
         // Since this is a builder these method calls (outside of create()) can be skipped/added as necessary
         AddEventParams eventParams = new AddEventParams.Builder(IdentityCrisisEvent.ID, IdentityCrisisEvent.class) // for this specific event
             .dungeonID(TheCity.ID) // The dungeon (act) this event will appear in
-            .playerClass(TheDefault.Enums.THE_DEFAULT) // Character specific event
+            .playerClass(Pokemon.Enums.THE_DEFAULT) // Character specific event
             .create();
 
         // Add the event
@@ -369,9 +369,9 @@ public class MysteryDungeon implements
         logger.info("Beginning to edit potions");
         
         // Class Specific Potion. If you want your potion to not be class-specific,
-        // just remove the player class at the end (in this case the "TheDefaultEnum.THE_DEFAULT".
+        // just remove the player class at the end (in this case the "PokemonEnum.THE_DEFAULT".
         // Remember, you can press ctrl+P inside parentheses like addPotions)
-        BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, TheDefault.Enums.THE_DEFAULT);
+        BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, Pokemon.Enums.THE_DEFAULT);
         
         logger.info("Done editing potions");
     }
@@ -393,9 +393,9 @@ public class MysteryDungeon implements
         // in order to automatically differentiate which pool to add the relic too.
 
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
-        BaseMod.addRelicToCustomPool(new PlaceholderRelic(), TheDefault.Enums.COLOR_GRAY);
-        BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), TheDefault.Enums.COLOR_GRAY);
-        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheDefault.Enums.COLOR_GRAY);
+        BaseMod.addRelicToCustomPool(new PlaceholderRelic(), Pokemon.Enums.COLOR_GRAY);
+        BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), Pokemon.Enums.COLOR_GRAY);
+        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), Pokemon.Enums.COLOR_GRAY);
         
         // This adds a relic to the Shared pool. Every character can find this relic.
         BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);

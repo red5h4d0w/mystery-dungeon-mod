@@ -110,7 +110,7 @@ public class IdentityCrisisEvent extends AbstractImageEvent {
                         screenNum = 1;
                         break;
                     case 3: // If you press button the fourth button (Button at index 3), in this case: TOUCH
-                        imageEventText.loadImage("theDefaultResources/images/events/IdentityCrisisEvent2.png"); // Change the shown image
+                        imageEventText.loadImage("PokemonResources/images/events/IdentityCrisisEvent2.png"); // Change the shown image
                         // Other than that, this option doesn't do anything special.
                         this.imageEventText.updateBodyText(DESCRIPTIONS[4]);
                         this.imageEventText.updateDialogOption(0, OPTIONS[5]);

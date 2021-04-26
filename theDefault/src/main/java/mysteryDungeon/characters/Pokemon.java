@@ -29,7 +29,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import static mysteryDungeon.MysteryDungeon.*;
-import static mysteryDungeon.characters.TheDefault.Enums.COLOR_GRAY;
+import static mysteryDungeon.characters.Pokemon.Enums.COLOR_GRAY;
 
 import java.util.ArrayList;
 
@@ -37,7 +37,7 @@ import java.util.ArrayList;
 //and https://github.com/daviscook477/BaseMod/wiki/Migrating-to-5.0
 //All text (starting description and loadout, anything labeled TEXT[]) can be found in MysteryDungeon-character-Strings.json in the resources
 
-public class TheDefault extends CustomPlayer {
+public class Pokemon extends CustomPlayer {
     public static final Logger logger = LogManager.getLogger(MysteryDungeon.class.getName());
 
     // =============== CHARACTER ENUMERATORS =================
@@ -84,27 +84,27 @@ public class TheDefault extends CustomPlayer {
     // =============== TEXTURES OF BIG ENERGY ORB ===============
 
     public static final String[] orbTextures = {
-            "theDefaultResources/images/char/defaultCharacter/orb/layer1.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer2.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer3.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer4.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer5.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer6.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer1d.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer2d.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer3d.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer4d.png",
-            "theDefaultResources/images/char/defaultCharacter/orb/layer5d.png",};
+            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer1.png",
+            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer2.png",
+            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer3.png",
+            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer4.png",
+            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer5.png",
+            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer6.png",
+            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer1d.png",
+            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer2d.png",
+            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer3d.png",
+            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer4d.png",
+            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer5d.png",};
 
     // =============== /TEXTURES OF BIG ENERGY ORB/ ===============
 
     // =============== CHARACTER CLASS START =================
 
-    public TheDefault(String name, PlayerClass setClass) {
+    public Pokemon(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
-                "theDefaultResources/images/char/defaultCharacter/orb/vfx.png", null,
+                "mysteryDungeonResources/images/char/defaultCharacter/orb/vfx.png", null,
                 new SpriterAnimation(
-                        "theDefaultResources/images/char/defaultCharacter/Spriter/theDefaultAnimation.scml"));
+                        "mysteryDungeonResources/images/char/defaultCharacter/Spriter/mysteryDungeonAnimation.scml"));
 
 
         // =============== TEXTURES, ENERGY, LOADOUT =================  
@@ -253,7 +253,7 @@ public class TheDefault extends CustomPlayer {
     // Should return a new instance of your character, sending name as its name parameter.
     @Override
     public AbstractPlayer newInstance() {
-        return new TheDefault(name, chosenClass);
+        return new Pokemon(name, chosenClass);
     }
 
     // Should return a Color object to be used to color the miniature card images in run history.

@@ -5,12 +5,12 @@
   },
   "mysteryDungeon:DefaultCommonSkill": {
     "NAME": "Defend",
-    "DESCRIPTION": "Gain !B! Block. NL thedefault:Multiword_Keyword."
+    "DESCRIPTION": "Gain !B! Block. NL Pokemon:Multiword_Keyword."
   },
   "mysteryDungeon:DefaultCommonPower": {
     "NAME": "Hold Place",
-    "DESCRIPTION": "Gain !M! thedefault:Keyword.",
-    "UPGRADE_DESCRIPTION": "Gain !M! thedefault:Keywords."
+    "DESCRIPTION": "Gain !M! Pokemon:Keyword.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Pokemon:Keywords."
   },
   "mysteryDungeon:DefaultUncommonAttack": {
     "NAME": "Big slap",
@@ -22,8 +22,8 @@
   },
   "mysteryDungeon:DefaultUncommonPower": {
     "NAME": "Weirdness",
-    "DESCRIPTION": "Gain X thedefault:Keywords.",
-    "UPGRADE_DESCRIPTION": "Gain X +1 thedefault:Keywords."
+    "DESCRIPTION": "Gain X Pokemon:Keywords.",
+    "UPGRADE_DESCRIPTION": "Gain X +1 Pokemon:Keywords."
   },
   "mysteryDungeon:DefaultRareAttack": {
     "NAME": "TOUCH",

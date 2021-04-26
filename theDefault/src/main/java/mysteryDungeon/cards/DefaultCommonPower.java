@@ -2,7 +2,7 @@ package mysteryDungeon.cards;
 
 import basemod.abstracts.CustomCard;
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.characters.TheDefault;
+import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.powers.CommonPower;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
@@ -39,14 +39,14 @@ public class DefaultCommonPower extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
     private static final int MAGIC = 1;
     private static final int UPGRADE_MAGIC = 1;
 
     // Hey want a second magic/damage/block/unique number??? Great!
-    // Go check out DefaultAttackWithVariable and theDefault.variable.DefaultCustomVariable
+    // Go check out DefaultAttackWithVariable and Pokemon.variable.DefaultCustomVariable
     // that's how you get your own custom variable that you can use for anything you like.
     // Feel free to explore other mods to see what variables they personally have and create your own ones.
 

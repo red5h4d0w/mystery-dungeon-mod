@@ -25,8 +25,8 @@ public class RarePower extends AbstractPower implements CloneablePowerInterface 
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
-    private static final Texture tex84 = TextureLoader.getTexture("theDefaultResources/images/powers/placeholder_power84.png");
-    private static final Texture tex32 = TextureLoader.getTexture("theDefaultResources/images/powers/placeholder_power32.png");
+    private static final Texture tex84 = TextureLoader.getTexture("PokemonResources/images/powers/placeholder_power84.png");
+    private static final Texture tex32 = TextureLoader.getTexture("PokemonResources/images/powers/placeholder_power32.png");
 
     public RarePower(final AbstractCreature owner, final AbstractCreature source, final int amount) {
         name = NAME;
