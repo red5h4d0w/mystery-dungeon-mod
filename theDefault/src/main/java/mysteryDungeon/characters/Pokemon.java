@@ -84,17 +84,17 @@ public class Pokemon extends CustomPlayer {
     // =============== TEXTURES OF BIG ENERGY ORB ===============
 
     public static final String[] orbTextures = {
-            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer1.png",
-            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer2.png",
-            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer3.png",
-            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer4.png",
-            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer5.png",
-            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer6.png",
-            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer1d.png",
-            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer2d.png",
-            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer3d.png",
-            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer4d.png",
-            "mysteryDungeonResources/images/char/defaultCharacter/orb/layer5d.png",};
+            "mysteryDungeonResources/images/char/pokemon/orb/layer1.png",
+            "mysteryDungeonResources/images/char/pokemon/orb/layer2.png",
+            "mysteryDungeonResources/images/char/pokemon/orb/layer3.png",
+            "mysteryDungeonResources/images/char/pokemon/orb/layer4.png",
+            "mysteryDungeonResources/images/char/pokemon/orb/layer5.png",
+            "mysteryDungeonResources/images/char/pokemon/orb/layer6.png",
+            "mysteryDungeonResources/images/char/pokemon/orb/layer1d.png",
+            "mysteryDungeonResources/images/char/pokemon/orb/layer2d.png",
+            "mysteryDungeonResources/images/char/pokemon/orb/layer3d.png",
+            "mysteryDungeonResources/images/char/pokemon/orb/layer4d.png",
+            "mysteryDungeonResources/images/char/pokemon/orb/layer5d.png",};
 
     // =============== /TEXTURES OF BIG ENERGY ORB/ ===============
 
@@ -102,9 +102,9 @@ public class Pokemon extends CustomPlayer {
 
     public Pokemon(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
-                "mysteryDungeonResources/images/char/defaultCharacter/orb/vfx.png", null,
+                "mysteryDungeonResources/images/char/pokemon/orb/vfx.png", null,
                 new SpriterAnimation(
-                        "mysteryDungeonResources/images/char/defaultCharacter/Spriter/mysteryDungeonAnimation.scml"));
+                        "mysteryDungeonResources/images/char/pokemon/Spriter/mysteryDungeonAnimation.scml"));
 
 
         // =============== TEXTURES, ENERGY, LOADOUT =================  
