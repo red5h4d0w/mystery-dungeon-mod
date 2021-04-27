@@ -6,5 +6,13 @@
 "mysteryDungeon:RarePower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
+},
+"mysteryDungeon:LeechSeedPower": {
+        "NAME": "Leech\u00a0Seed",
+        "DESCRIPTIONS": ["At the start of the turn, it loses #b HP, and you gain #b HP"]
+},
+"mysteryDungeon:SleepPowderPower": {
+        "NAME": "Sleep\u00a0Powder",
+        "DESCRIPTIONS": ["slep"]
 }
 }

@@ -16,5 +16,14 @@
       "multikeyword"
     ],
     "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
+  },
+  {
+    "PROPER_NAME": "Leech Seed",
+    "NAMES": [
+        "Leech\u00a0Seed",
+        "Leech Seed",
+        "Leech Seeds"
+    ],
+    "DESCRIPTIONS": ["At the start of the turn, it loses #b HP, and you gain #b HP"]
   }
 ]

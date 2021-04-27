@@ -57,5 +57,18 @@
   "mysteryDungeon:BulbasaurTackle": {
     "NAME": "Tackle",
     "DESCRIPTION": "Charges the foe with a full-body tackle. NL Deals !D! damage."
+  },
+  "mysteryDungeon:BulbasaurLeechSeed": {
+    "NAME": "Leech Seed",
+    "DESCRIPTION": "Plants a seed on the foe to steal HP on every turn. NL Apply !M! Leech Seed. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Plants a seed on the foe to steal HP on every turn. NL Apply !M! Leech Seed."
+  },
+  "mysteryDungeon:BulbasaurDefend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "mysteryDungeon:BulbasaurSleepPowder": {
+    "NAME": "Sleep Powder",
+    "DESCRIPTION": "Scatters a powder that may cause the foe to sleep. Apply !M! Sleep."
   }
 }

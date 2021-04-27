@@ -158,21 +158,23 @@ public class Pokemon extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
 
-        for(int i=0;i<5;i++)
+        for(int i=0;i<3;i++)
         {
             retVal.add(BulbasaurTackle.ID);
         }
+        for(int i=0;i<3;i++)
+        {
+            retVal.add(BulbasaurDefend.ID);
+        }
+        retVal.add(BulbasaurSleepPowder.ID);
         retVal.add(BulbasaurGrowl.ID);
-        retVal.add(DefaultUncommonAttack.ID);
+        retVal.add(BulbasaurLeechSeed.ID);
         retVal.add(DefaultRareAttack.ID);
 
         retVal.add(DefaultCommonSkill.ID);
         retVal.add(DefaultUncommonSkill.ID);
         retVal.add(DefaultRareSkill.ID);
 
-        retVal.add(DefaultCommonPower.ID);
-        retVal.add(DefaultUncommonPower.ID);
-        retVal.add(DefaultRarePower.ID);
 
         retVal.add(DefaultAttackWithVariable.ID);
         retVal.add(DefaultSecondMagicNumberSkill.ID);
