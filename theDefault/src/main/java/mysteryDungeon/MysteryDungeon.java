@@ -5,6 +5,7 @@ import basemod.eventUtil.AddEventParams;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import mysteryDungeon.cards.*;
+import mysteryDungeon.cards.Bulbasaur.*;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.events.IdentityCrisisEvent;
 import mysteryDungeon.potions.PlaceholderPotion;
@@ -110,31 +111,31 @@ public class MysteryDungeon implements
     // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
   
     // Card backgrounds - The actual rectangular card.
-    private static final String ATTACK_DEFAULT_GRAY = "PokemonResources/images/512/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY = "PokemonResources/images/512/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY = "PokemonResources/images/512/bg_power_default_gray.png";
+    private static final String ATTACK_DEFAULT_GRAY = "mysteryDungeonResources/images/512/bg_attack_default_gray.png";
+    private static final String SKILL_DEFAULT_GRAY = "mysteryDungeonResources/images/512/bg_skill_default_gray.png";
+    private static final String POWER_DEFAULT_GRAY = "mysteryDungeonResources/images/512/bg_power_default_gray.png";
     
-    private static final String ENERGY_ORB_DEFAULT_GRAY = "PokemonResources/images/512/card_default_gray_orb.png";
-    private static final String CARD_ENERGY_ORB = "PokemonResources/images/512/card_small_orb.png";
+    private static final String ENERGY_ORB_DEFAULT_GRAY = "mysteryDungeonResources/images/512/card_default_gray_orb.png";
+    private static final String CARD_ENERGY_ORB = "mysteryDungeonResources/images/512/card_small_orb.png";
     
-    private static final String ATTACK_DEFAULT_GRAY_PORTRAIT = "PokemonResources/images/1024/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY_PORTRAIT = "PokemonResources/images/1024/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY_PORTRAIT = "PokemonResources/images/1024/bg_power_default_gray.png";
-    private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "PokemonResources/images/1024/card_default_gray_orb.png";
+    private static final String ATTACK_DEFAULT_GRAY_PORTRAIT = "mysteryDungeonResources/images/1024/bg_attack_default_gray.png";
+    private static final String SKILL_DEFAULT_GRAY_PORTRAIT = "mysteryDungeonResources/images/1024/bg_skill_default_gray.png";
+    private static final String POWER_DEFAULT_GRAY_PORTRAIT = "mysteryDungeonResources/images/1024/bg_power_default_gray.png";
+    private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "mysteryDungeonResources/images/1024/card_default_gray_orb.png";
     
     // Character assets
-    private static final String THE_DEFAULT_BUTTON = "PokemonResources/images/charSelect/Bulbasaur.png";
-    private static final String THE_DEFAULT_PORTRAIT = "PokemonResources/images/charSelect/DefaultCharacterPortraitBG.png";
-    public static final String THE_DEFAULT_SHOULDER_1 = "PokemonResources/images/char/defaultCharacter/shoulder.png";
-    public static final String THE_DEFAULT_SHOULDER_2 = "PokemonResources/images/char/defaultCharacter/shoulder2.png";
-    public static final String THE_DEFAULT_CORPSE = "PokemonResources/images/char/defaultCharacter/corpse.png";
+    private static final String THE_DEFAULT_BUTTON = "mysteryDungeonResources/images/charSelect/Bulbasaur.png";
+    private static final String THE_DEFAULT_PORTRAIT = "mysteryDungeonResources/images/charSelect/mysteryDungeonCover.png";
+    public static final String THE_DEFAULT_SHOULDER_1 = "mysteryDungeonResources/images/char/pokemon/shoulder.png";
+    public static final String THE_DEFAULT_SHOULDER_2 = "mysteryDungeonResources/images/char/pokemon/shoulder2.png";
+    public static final String THE_DEFAULT_CORPSE = "mysteryDungeonResources/images/char/pokemon/corpse.png";
     
     //Mod Badge - A small icon that appears in the mod settings menu next to your mod.
-    public static final String BADGE_IMAGE = "PokemonResources/images/Badge.png";
+    public static final String BADGE_IMAGE = "mysteryDungeonResources/images/Badge.png";
     
     // Atlas and JSON files for the Animations
-    public static final String THE_DEFAULT_SKELETON_ATLAS = "PokemonResources/images/char/defaultCharacter/skeleton.atlas";
-    public static final String THE_DEFAULT_SKELETON_JSON = "PokemonResources/images/char/defaultCharacter/skeleton.json";
+    public static final String THE_DEFAULT_SKELETON_ATLAS = "mysteryDungeonResources/images/char/pokemon/skeleton.atlas";
+    public static final String THE_DEFAULT_SKELETON_JSON = "mysteryDungeonResources/images/char/pokemon/skeleton.json";
     
     // =============== MAKE IMAGE PATHS =================
     
@@ -188,7 +189,7 @@ public class MysteryDungeon implements
         // cool
         // TODO: NOW READ THIS!!!!!!!!!!!!!!!:
         
-        // 1. Go to your resources folder in the project panel, and refactor> rename PokemonResources to
+        // 1. Go to your resources folder in the project panel, and refactor> rename mysteryDungeonResources to
         // yourModIDResources.
         
         // 2. Click on the localization > eng folder and press ctrl+shift+r, then select "Directory" (rather than in Project) and press alt+c (or mark the match case option)
@@ -287,13 +288,13 @@ public class MysteryDungeon implements
     
     @Override
     public void receiveEditCharacters() {
-        logger.info("Beginning to edit characters. " + "Add " + Pokemon.Enums.THE_DEFAULT.toString());
+        logger.info("Beginning to edit characters. " + "Add " + Pokemon.Enums.THE_POKEMON.toString());
         
-        BaseMod.addCharacter(new Pokemon("the Default", Pokemon.Enums.THE_DEFAULT),
-                THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, Pokemon.Enums.THE_DEFAULT);
+        BaseMod.addCharacter(new Pokemon("the Pokémon", Pokemon.Enums.THE_POKEMON),
+                THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, Pokemon.Enums.THE_POKEMON);
         
         receiveEditPotions();
-        logger.info("Added " + Pokemon.Enums.THE_DEFAULT.toString());
+        logger.info("Added " + Pokemon.Enums.THE_POKEMON.toString());
     }
     
     // =============== /LOAD THE CHARACTER/ =================
@@ -351,7 +352,7 @@ public class MysteryDungeon implements
         // Since this is a builder these method calls (outside of create()) can be skipped/added as necessary
         AddEventParams eventParams = new AddEventParams.Builder(IdentityCrisisEvent.ID, IdentityCrisisEvent.class) // for this specific event
             .dungeonID(TheCity.ID) // The dungeon (act) this event will appear in
-            .playerClass(Pokemon.Enums.THE_DEFAULT) // Character specific event
+            .playerClass(Pokemon.Enums.THE_POKEMON) // Character specific event
             .create();
 
         // Add the event
@@ -371,7 +372,7 @@ public class MysteryDungeon implements
         // Class Specific Potion. If you want your potion to not be class-specific,
         // just remove the player class at the end (in this case the "PokemonEnum.THE_DEFAULT".
         // Remember, you can press ctrl+P inside parentheses like addPotions)
-        BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, Pokemon.Enums.THE_DEFAULT);
+        BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, Pokemon.Enums.THE_POKEMON);
         
         logger.info("Done editing potions");
     }
@@ -441,7 +442,10 @@ public class MysteryDungeon implements
             .packageFilter(AbstractDefaultCard.class) // filters to any class in the same package as AbstractDefaultCard, nested packages included
             .setDefaultSeen(true)
             .cards();
-
+        new AutoAdd("MysteryDungeon")
+            .packageFilter(BulbasaurTackle.class)
+            .setDefaultSeen(true)
+            .cards();
         // .setDefaultSeen(true) unlocks the cards
         // This is so that they are all "seen" in the library,
         // for people who like to look at the card list before playing your mod

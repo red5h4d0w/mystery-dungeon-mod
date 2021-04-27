@@ -1,12 +1,12 @@
 {
-  "mysteryDungeon:DefaultCharacter": {
+  "mysteryDungeon:Pokemon": {
     "NAMES": [
-      "The Default",
-      "the Default"
+      "The Pokémon",
+      "the Pokémon"
     ],
     "TEXT": [
-      "THE_DEFAULT exists and is valid. THE_DEFAULT wishes to T o uuuch# NL Second placeholder line of description text.",
-      "NL You TOUCH the heart.",
+      "You have been reincarnated as a Pokémon. Without any recollection of your former self, NL you decide that you'll help an adventurer in reaching the top of the dungeon.",
+      "NL You have reached the top floor of the dungeon. You can now rest at the base before taking another mission with your new Pokémon friends",
       "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~basic~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
     ]
   }

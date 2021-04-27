@@ -49,5 +49,13 @@
   "mysteryDungeon:OrbSkill": {
     "NAME": "Get Orb",
     "DESCRIPTION": "Channel 1 Default Orb."
+  },
+  "mysteryDungeon:BulbasaurGrowl": {
+    "NAME": "Growl",
+    "DESCRIPTION": "Growls cutely to reduce the foe's Attack. NL Applies !M! Weak to ALL enemies."
+  },
+  "mysteryDungeon:BulbasaurTackle": {
+    "NAME": "Tackle",
+    "DESCRIPTION": "Charges the foe with a full-body tackle. NL Deals !D! damage."
   }
 }
