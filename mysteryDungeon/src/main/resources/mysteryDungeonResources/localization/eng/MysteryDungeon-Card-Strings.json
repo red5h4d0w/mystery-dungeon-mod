@@ -1,0 +1,90 @@
+{
+  "mysteryDungeon:DefaultCommonAttack": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
+  },
+  "mysteryDungeon:DefaultCommonSkill": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block. NL Pokemon:Multiword_Keyword."
+  },
+  "mysteryDungeon:DefaultCommonPower": {
+    "NAME": "Hold Place",
+    "DESCRIPTION": "Gain !M! Pokemon:Keyword.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Pokemon:Keywords."
+  },
+  "mysteryDungeon:DefaultUncommonAttack": {
+    "NAME": "Big slap",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "mysteryDungeon:DefaultUncommonSkill": {
+    "NAME": "A Better Defend",
+    "DESCRIPTION": "Gain !B! Plated Armor. Affected by Dexterity."
+  },
+  "mysteryDungeon:DefaultUncommonPower": {
+    "NAME": "Weirdness",
+    "DESCRIPTION": "Gain X Pokemon:Keywords.",
+    "UPGRADE_DESCRIPTION": "Gain X +1 Pokemon:Keywords."
+  },
+  "mysteryDungeon:DefaultRareAttack": {
+    "NAME": "TOUCH",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "mysteryDungeon:DefaultRareSkill": {
+    "NAME": "For Each Loop x2",
+    "DESCRIPTION": "Apply !M! Vulnerable to all enemies, 2 times.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable to all enemies, 3 times."
+  },
+  "mysteryDungeon:DefaultRarePower": {
+    "NAME": "In-Progress Form",
+    "DESCRIPTION": "At the start of your turn, play a TOUCH."
+  },
+  "mysteryDungeon:DefaultAttackWithVariable": {
+    "NAME": "Special Strike",
+    "DESCRIPTION": "Deal !D! damage [E] times. NL (Deal !mysteryDungeon:ENERGY_DAMAGE! damage total.)"
+  },
+  "mysteryDungeon:DefaultSecondMagicNumberSkill": {
+    "NAME": "Cool 2 Number Card",
+    "DESCRIPTION": "Apply !M! Vulnerable and !mysteryDungeon:SecondMagic! poison to an enemy."
+  },
+  "mysteryDungeon:OrbSkill": {
+    "NAME": "Get Orb",
+    "DESCRIPTION": "Channel 1 Default Orb."
+  },
+  "mysteryDungeon:BulbasaurGrowl": {
+    "NAME": "Growl",
+    "DESCRIPTION": "Growls cutely to reduce the foe's Attack. NL Applies !M! Weak to ALL enemies."
+  },
+  "mysteryDungeon:BulbasaurTackle": {
+    "NAME": "Tackle",
+    "DESCRIPTION": "Charges the foe with a full-body tackle. NL Deals !D! damage."
+  },
+  "mysteryDungeon:BulbasaurLeechSeed": {
+    "NAME": "Leech Seed",
+    "DESCRIPTION": "Plants a seed on the foe to steal HP on every turn. NL Apply !M! Leech Seed. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Plants a seed on the foe to steal HP on every turn. NL Apply !M! Leech Seed."
+  },
+  "mysteryDungeon:BulbasaurDefend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "mysteryDungeon:BulbasaurPoisonPowder": {
+    "NAME": "Poison Powder",
+    "DESCRIPTION": "Scatters a toxic powder that may poison the foe. NL Apply !M! Poison to ALL enemies."
+  },
+  "mysteryDungeon:BulbasaurRazorLeaf": {
+    "NAME": "Razor Leaf",
+    "DESCRIPTION": "Cuts the enemy with leaves. NL Removes all block from the enemy. NL Deals !D! damage."
+  },
+  "mysteryDungeon:BulbasaurSleepPowder": {
+    "NAME": "Sleep Powder",
+    "DESCRIPTION": "Scatters a powder that may cause the foe to sleep. NL Apply !M! Sleep."
+  },
+  "mysteryDungeon:BulbasaurSweetScent": {
+    "NAME": "Sweet Scent",
+    "DESCRIPTION": "Allures the foe to reduce evasiveness. NL Apply !M! Frail. NL Apply !M! Vulnerable"
+  },
+  "mysteryDungeon:BulbasaurVineWhip": {
+    "NAME": "Vine Whip",
+    "DESCRIPTION": "Strikes the foe with slender, whiplike vines. NL Deals !D! damage."
+  }
+}
