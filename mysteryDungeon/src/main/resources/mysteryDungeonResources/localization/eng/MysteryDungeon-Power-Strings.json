@@ -11,6 +11,10 @@
         "NAME": "Leech\u00a0Seed",
         "DESCRIPTIONS": ["At the start of the turn, it loses #b HP, and you gain #b HP"]
 },
+"mysteryDungeon:RestPower": {
+        "NAME": "Rest",
+        "DESCRIPTIONS": ["You cannot play cards targeting the enemy during the next #b turn(s)."]
+},
 "mysteryDungeon:SleepPowderPower": {
         "NAME": "Sleep\u00a0Powder",
         "DESCRIPTIONS": ["slep"]

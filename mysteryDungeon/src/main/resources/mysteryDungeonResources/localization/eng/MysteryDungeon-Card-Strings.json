@@ -50,22 +50,39 @@
     "NAME": "Get Orb",
     "DESCRIPTION": "Channel 1 Default Orb."
   },
+  "mysteryDungeon:BulbasaurBulletSeed": {
+    "NAME": "Bullet Seed",
+    "DESCRIPTION": "Deal !D! damage !M! times."
+  },
+  "mysteryDungeon:BulbasaurCurlUp": {
+    "NAME": "Curl Up",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "mysteryDungeon:BulbasaurDefend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
   "mysteryDungeon:BulbasaurGrowl": {
     "NAME": "Growl",
     "DESCRIPTION": "Growls cutely to reduce the foe's Attack. NL Applies !M! Weak to ALL enemies."
   },
-  "mysteryDungeon:BulbasaurTackle": {
-    "NAME": "Tackle",
-    "DESCRIPTION": "Charges the foe with a full-body tackle. NL Deals !D! damage."
+  "mysteryDungeon:BulbasaurGrowth": {
+    "NAME": "Growth",
+    "DESCRIPTION": "Gain !M! Strength."
   },
   "mysteryDungeon:BulbasaurLeechSeed": {
     "NAME": "Leech Seed",
     "DESCRIPTION": "Plants a seed on the foe to steal HP on every turn. NL Apply !M! Leech Seed. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Plants a seed on the foe to steal HP on every turn. NL Apply !M! Leech Seed."
   },
-  "mysteryDungeon:BulbasaurDefend": {
-    "NAME": "Defend",
-    "DESCRIPTION": "Gain !B! Block."
+  "mysteryDungeon:BulbasaurParalysisPowder": {
+    "NAME": "Paralysis Powder",
+    "DESCRIPTION": "Apply !M! Slow. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! Slow. NL Exhaust."
+  },
+  "mysteryDungeon:BulbasaurPoisonJab": {
+    "NAME": "Poison Jab",
+    "DESCRIPTION": "Deal !D! damage 2 times. NL Apply !M! Poison 2 times."
   },
   "mysteryDungeon:BulbasaurPoisonPowder": {
     "NAME": "Poison Powder",
@@ -75,13 +92,33 @@
     "NAME": "Razor Leaf",
     "DESCRIPTION": "Cuts the enemy with leaves. NL Removes all block from the enemy. NL Deals !D! damage."
   },
+  "mysteryDungeon:BulbasaurRest": {
+    "NAME": "Rest",
+    "DESCRIPTION": "Heal ALL HP. Rest for !M! turns."
+  },
   "mysteryDungeon:BulbasaurSleepPowder": {
     "NAME": "Sleep Powder",
     "DESCRIPTION": "Scatters a powder that may cause the foe to sleep. NL Apply !M! Sleep."
   },
+  "mysteryDungeon:BulbasaurSludgeBomb": {
+    "NAME": "Sludge Bomb",
+    "DESCRIPTION": "Apply !M! Poison."
+  },
+  "mysteryDungeon:BulbasaurSolarBeam": {
+    "NAME": "Solar Beam",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Draw !M! less cards during your next turn."
+  },
+  "mysteryDungeon:BulbasaurSunnyDay": {
+    "NAME": "Sunny Day",
+    "DESCRIPTION": "At the start of each turn, NL Draw one more card and Reduce by 1 the cost of the card NL with the highest cost in your hand."
+  },
   "mysteryDungeon:BulbasaurSweetScent": {
     "NAME": "Sweet Scent",
     "DESCRIPTION": "Allures the foe to reduce evasiveness. NL Apply !M! Frail. NL Apply !M! Vulnerable"
+  },
+  "mysteryDungeon:BulbasaurTackle": {
+    "NAME": "Tackle",
+    "DESCRIPTION": "Charges the foe with a full-body tackle. NL Deals !D! damage."
   },
   "mysteryDungeon:BulbasaurVineWhip": {
     "NAME": "Vine Whip",

@@ -9,9 +9,8 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.FrailPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
-import com.megacrit.cardcrawl.powers.VulnerablePower;
+
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.characters.Pokemon;
@@ -66,6 +65,7 @@ public class BulbasaurGrowth extends CustomCard {
         if (!upgraded) {
             upgradeName();
             cost = 1;
+            initializeDescription();
         }
     }
 }

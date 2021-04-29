@@ -5,23 +5,24 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 import basemod.abstracts.CustomCard;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.RemoveAllBlockAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.DrawReductionPower;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.characters.Pokemon;
 
-public class BulbasaurRazorLeaf extends CustomCard {
+public class BulbasaurSolarBeam extends CustomCard {
 
     
 
-    public static final String ID = MysteryDungeon.makeID(BulbasaurRazorLeaf.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(BulbasaurSolarBeam.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("BulbasaurAttack.png");
     public static final String NAME = cardStrings.NAME;
@@ -32,32 +33,33 @@ public class BulbasaurRazorLeaf extends CustomCard {
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
-    private static final int COST = 1;
-    private static final int DAMAGE = 6;
-    private static final int UPGRADE_DAMAGE = 3;
+    private static final int COST = 3;
+    private static final int DAMAGE = 30;
+    private static final int UPGRADE_DAMAGE = 10;
 
 
     // /STAT DECLARATION/
 
-    public BulbasaurRazorLeaf() {
+    public BulbasaurSolarBeam() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
+        baseMagicNumber = 2;
+        magicNumber = baseMagicNumber;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        // Create an int which equals to your current energy.
-        AbstractDungeon.actionManager.addToBottom(
-                new RemoveAllBlockAction(m, p));
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn),
-                        AbstractGameAction.AttackEffect.SMASH));
+        for(AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters)
+        {
+            addToBot(new DamageAction(monster, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        }
+        addToBot(new ApplyPowerAction(p, p, new DrawReductionPower(p, magicNumber), magicNumber));
     }
 
     // Upgraded stats.

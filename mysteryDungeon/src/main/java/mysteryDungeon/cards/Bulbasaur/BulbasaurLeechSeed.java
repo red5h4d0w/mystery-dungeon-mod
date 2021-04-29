@@ -42,14 +42,14 @@ public class BulbasaurLeechSeed extends CustomCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
-    private static final int COST = 2;
+    private static final int COST = 1;
 
 
     // /STAT DECLARATION/
 
     public BulbasaurLeechSeed() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseMagicNumber = 3;
+        baseMagicNumber = 2;
         magicNumber = baseMagicNumber;
         exhaust = true;
     }

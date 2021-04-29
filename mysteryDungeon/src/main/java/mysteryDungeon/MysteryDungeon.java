@@ -323,7 +323,7 @@ public class MysteryDungeon implements
             enablePlaceholder = button.enabled; // The boolean true/false will be whether the button is enabled or not
             try {
                 // And based on that boolean, set the settings and save them
-                SpireConfig config = new SpireConfig("MysteryDungeon", "PokemonConfig", mysteryDungeonDefaultSettings);
+                SpireConfig config = new SpireConfig("MysteryDungeon", "MysteryDungeonConfig", mysteryDungeonDefaultSettings);
                 config.setBool(ENABLE_PLACEHOLDER_SETTINGS, enablePlaceholder);
                 config.save();
             } catch (Exception e) {

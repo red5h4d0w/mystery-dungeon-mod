@@ -23,8 +23,9 @@ public class LeechSeedAction extends AbstractGameAction {
       AbstractDungeon.effectList.add(new FlashAtkImgEffect(this.target.hb.cX, this.target.hb.cY, this.attackEffect)); 
     tickDuration();
     if (this.isDone) {
+      boolean willInflictDamage = !target.isDeadOrEscaped();
       this.target.damage(this.info);
-      if (this.target.lastDamageTaken > 0 && !target.isDeadOrEscaped()) {
+      if (this.target.lastDamageTaken > 0 && willInflictDamage) {
         addToTop((AbstractGameAction)new HealAction(this.source, this.source, this.target.lastDamageTaken));
         addToTop((AbstractGameAction)new WaitAction(0.1F));
       } 
