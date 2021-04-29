@@ -66,7 +66,7 @@ public class BulbasaurSweetScent extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            cost = 1;
+            cost = 0;
         }
     }
 }

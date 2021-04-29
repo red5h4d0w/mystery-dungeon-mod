@@ -67,7 +67,10 @@ public class SleepPowderPower extends AbstractPower implements CloneablePowerInt
     @Override
     public void onInitialApplication()
     {
-        // Dumb action to delay grabbing monster's intent until after it's actually set
+        if(owner.hasPower(ID))
+        {
+            return;
+        }
         AbstractDungeon.actionManager.addToBottom(new AbstractGameAction()
         {
             @Override

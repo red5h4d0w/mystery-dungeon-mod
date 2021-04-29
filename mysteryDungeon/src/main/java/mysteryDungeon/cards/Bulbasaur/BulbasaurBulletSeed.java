@@ -51,7 +51,8 @@ public class BulbasaurBulletSeed extends CustomCard {
     public BulbasaurBulletSeed(int i) {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        magicNumber = MAGIC_NUMBER;
+        baseMagicNumber = MAGIC_NUMBER;
+        magicNumber = baseMagicNumber;
         timesUpgraded = i;
     }
 

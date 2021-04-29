@@ -42,6 +42,7 @@ public class BulbasaurGrowth extends CustomCard {
     public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
     private static final int COST = 2;
+    private static final int UPGRADE_MAGIC_NUMBER = 2;
 
 
     // /STAT DECLARATION/
@@ -64,7 +65,7 @@ public class BulbasaurGrowth extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            cost = 1;
+            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             initializeDescription();
         }
     }

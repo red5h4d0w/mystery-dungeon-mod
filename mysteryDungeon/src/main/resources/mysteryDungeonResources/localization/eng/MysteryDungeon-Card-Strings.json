@@ -116,6 +116,10 @@
     "NAME": "Sweet Scent",
     "DESCRIPTION": "Allures the foe to reduce evasiveness. NL Apply !M! Frail. NL Apply !M! Vulnerable"
   },
+  "mysteryDungeon:BulbasaurSynthesis": {
+    "NAME": "Synthesis",
+    "DESCRIPTION": "Heal !M! HP. NL At the start of your next turn, NL Draw 2 more cards and gain 2 [E]."
+  },
   "mysteryDungeon:BulbasaurTackle": {
     "NAME": "Tackle",
     "DESCRIPTION": "Charges the foe with a full-body tackle. NL Deals !D! damage."
