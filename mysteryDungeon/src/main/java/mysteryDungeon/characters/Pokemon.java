@@ -3,11 +3,8 @@ package mysteryDungeon.characters;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.cards.*;
 import mysteryDungeon.cards.Bulbasaur.*;
 import mysteryDungeon.relics.DefaultClickableRelic;
-import mysteryDungeon.relics.PlaceholderRelic;
-import mysteryDungeon.relics.PlaceholderRelic2;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -158,7 +155,7 @@ public class Pokemon extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
 
-        for(int i=0;i<4;i++)
+        for(int i=0;i<5;i++)
         {
             retVal.add(BulbasaurTackle.ID);
         }
@@ -166,13 +163,7 @@ public class Pokemon extends CustomPlayer {
         {
             retVal.add(BulbasaurDefend.ID);
         }
-        retVal.add(BulbasaurSleepPowder.ID);
-        retVal.add(BulbasaurGrowl.ID);
         retVal.add(BulbasaurLeechSeed.ID);
-
-        retVal.add(BulbasaurVineWhip.ID);
-        retVal.add(BulbasaurPoisonPowder.ID);
-        retVal.add(BulbasaurRazorLeaf.ID);
         return retVal;
     }
 
