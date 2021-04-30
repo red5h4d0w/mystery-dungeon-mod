@@ -37,8 +37,8 @@ public class BulbasaurBulletSeed extends CustomCard {
     public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 1;
-    private static final int MAGIC_NUMBER = 1;
+    private static final int DAMAGE = 3;
+    private static final int MAGIC_NUMBER = 2;
 
 
     // /STAT DECLARATION/
@@ -69,7 +69,6 @@ public class BulbasaurBulletSeed extends CustomCard {
     // Upgraded stats.
     @Override
     public void upgrade() {
-        upgradeDamage(1);
         upgradeMagicNumber(1);
         this.timesUpgraded++;
         this.upgraded = true;

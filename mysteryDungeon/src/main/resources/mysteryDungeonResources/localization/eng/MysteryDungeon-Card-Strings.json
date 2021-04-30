@@ -94,7 +94,7 @@
   },
   "mysteryDungeon:BulbasaurRest": {
     "NAME": "Rest",
-    "DESCRIPTION": "Heal ALL HP. Rest for !M! turns."
+    "DESCRIPTION": "Heal 30 HP. Rest for !M! turns."
   },
   "mysteryDungeon:BulbasaurSleepPowder": {
     "NAME": "Sleep Powder",
@@ -124,6 +124,11 @@
   "mysteryDungeon:BulbasaurTackle": {
     "NAME": "Tackle",
     "DESCRIPTION": "Charges the foe with a full-body tackle. NL Deals !D! damage."
+  },
+  "mysteryDungeon:BulbasaurToxic": {
+    "NAME": "Toxic",
+    "DESCRIPTION": "Apply !M! Toxic to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! Toxic to ALL enemies. NL Exhaust."
   },
   "mysteryDungeon:BulbasaurVineWhip": {
     "NAME": "Vine Whip",

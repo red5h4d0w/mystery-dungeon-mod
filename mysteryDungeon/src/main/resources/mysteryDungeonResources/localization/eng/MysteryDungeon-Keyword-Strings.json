@@ -40,5 +40,12 @@
         "Sleep"
     ],
     "DESCRIPTION": "When an enemy is sleeping, it will not act until it receives damage. When it receives damage, it will go back to the move prepared before sleeping."
+  },
+  {
+    "PROPER_NAME": "Toxic",
+    "NAMES": [
+        "Toxic"
+    ],
+    "DESCRIPTION": "Poison on enemies affected by Toxic go up by the amount of stack instead of going down."
   }
 ]
