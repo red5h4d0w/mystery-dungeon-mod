@@ -49,7 +49,7 @@ public class BulbasaurSunnyDay extends CustomCard {
 
     public BulbasaurSunnyDay() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseMagicNumber = 3;
+        baseMagicNumber = 1;
         magicNumber = baseMagicNumber;
     }
 
@@ -66,8 +66,8 @@ public class BulbasaurSunnyDay extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            cost = 1;
             initializeDescription();
+            isInnate = true;
         }
     }
 }

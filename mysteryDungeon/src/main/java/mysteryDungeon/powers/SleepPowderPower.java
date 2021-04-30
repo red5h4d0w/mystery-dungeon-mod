@@ -63,14 +63,9 @@ public class SleepPowderPower extends AbstractPower implements CloneablePowerInt
     //onApplyPower is "When the owner applies a power to something else (only used by Sadistic Nature)."
     //onReceivePowerPower from StSlib is "When any (including this) power is applied to the owner."
 
-    // At the end of the turn, remove gained Dexterity.
     @Override
     public void onInitialApplication()
     {
-        if(owner.hasPower(ID))
-        {
-            return;
-        }
         AbstractDungeon.actionManager.addToBottom(new AbstractGameAction()
         {
             @Override
@@ -96,9 +91,8 @@ public class SleepPowderPower extends AbstractPower implements CloneablePowerInt
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
         AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, this));
-        owner.damage(info);
-        return 0;
-      }
+        return damageAmount;
+    }
 
     @Override
     public void atEndOfRound() {

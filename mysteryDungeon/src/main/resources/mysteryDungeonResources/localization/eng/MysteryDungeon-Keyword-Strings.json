@@ -20,10 +20,25 @@
   {
     "PROPER_NAME": "Leech Seed",
     "NAMES": [
-        "Leech\u00a0Seed",
         "Leech Seed",
+        "Leech\u00a0Seed",
         "Leech Seeds"
     ],
-    "DESCRIPTIONS": ["At the start of the turn, it loses #b HP, and you gain #b HP"]
+    "DESCRIPTION": "At the start of the turn, it loses #b HP, and you gain #b HP"
+  },
+  {
+    "PROPER_NAME": "Rest",
+    "NAMES": [
+        "Rest",
+        "rest"
+    ],
+    "DESCRIPTION": "You cannot play cards that target the enemy."
+  },
+  {
+    "PROPER_NAME": "Sleep",
+    "NAMES": [
+        "Sleep"
+    ],
+    "DESCRIPTION": "When an enemy is sleeping, it will not act until it receives damage. When it receives damage, it will go back to the move prepared before sleeping."
   }
 ]

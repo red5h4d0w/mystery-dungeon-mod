@@ -13,10 +13,10 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.DrawReductionPower;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.powers.NextTurnDrawLessPower;
 
 public class BulbasaurSolarBeam extends CustomCard {
 
@@ -59,7 +59,7 @@ public class BulbasaurSolarBeam extends CustomCard {
         {
             addToBot(new DamageAction(monster, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         }
-        addToBot(new ApplyPowerAction(p, p, new DrawReductionPower(p, magicNumber), magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new NextTurnDrawLessPower(p, magicNumber), magicNumber));
     }
 
     // Upgraded stats.

@@ -11,6 +11,14 @@
         "NAME": "Leech\u00a0Seed",
         "DESCRIPTIONS": ["At the start of the turn, it loses #b HP, and you gain #b HP"]
 },
+"mysteryDungeon:NextTurnDrawLessPower": {
+        "NAME": "Next Turn Draw Less Cards",
+        "DESCRIPTIONS": ["Next Turn, Draw #b less card", "Next Turn, Draw #b less cards"]
+},
+"mysteryDungeon:ReduceHighestCostAtStartOfTurnPower": {
+        "NAME": "Lower Cost of Highest Cost Card",
+        "DESCRIPTIONS": ["The cost of your #b highest cost cards is lowered by one."]
+},
 "mysteryDungeon:RestPower": {
         "NAME": "Rest",
         "DESCRIPTIONS": ["You cannot play cards targeting the enemy during the next #b turn(s)."]

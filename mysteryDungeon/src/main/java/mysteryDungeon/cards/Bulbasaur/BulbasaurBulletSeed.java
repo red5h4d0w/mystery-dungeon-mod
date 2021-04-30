@@ -78,6 +78,10 @@ public class BulbasaurBulletSeed extends CustomCard {
         initializeDescription();
     }
     @Override
+    public boolean canUpgrade() {
+        return true;
+    }
+    @Override
     public AbstractCard makeCopy()
     {
         return new BulbasaurBulletSeed(this.timesUpgraded);

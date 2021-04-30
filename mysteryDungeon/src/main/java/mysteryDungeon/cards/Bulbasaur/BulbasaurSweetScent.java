@@ -50,7 +50,6 @@ public class BulbasaurSweetScent extends CustomCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = 2;
         magicNumber = baseMagicNumber;
-        exhaust = true;
     }
 
     // Actions the card should do.
@@ -67,6 +66,7 @@ public class BulbasaurSweetScent extends CustomCard {
         if (!upgraded) {
             upgradeName();
             cost = 0;
+            initializeDescription();
         }
     }
 }
