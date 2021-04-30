@@ -63,7 +63,7 @@ public class NextTurnDrawLessPower extends AbstractPower implements CloneablePow
     {
         if(p instanceof NextTurnDrawLessPower && target==owner)
         {
-            ((AbstractPlayer)owner).gameHandSize = baseHandSize - p.amount;
+            ((AbstractPlayer)owner).gameHandSize = (((AbstractPlayer)owner).gameHandSize - p.amount >0)?((AbstractPlayer)owner).gameHandSize - p.amount:0;
         }
         return true;
     }
@@ -81,7 +81,7 @@ public class NextTurnDrawLessPower extends AbstractPower implements CloneablePow
     @Override
     public void onRemove()
     {
-        ((AbstractPlayer)owner).gameHandSize+=amount;
+        ((AbstractPlayer)owner).gameHandSize=baseHandSize;
     }
 
     @Override
