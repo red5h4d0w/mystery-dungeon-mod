@@ -5,25 +5,21 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 import basemod.abstracts.CustomCard;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.animations.VFXAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
-import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.actions.unique.VampireDamageAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.vfx.combat.MindblastEffect;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.NextTurnDrawLessPower;
 
-public class BulbasaurSolarBeam extends CustomCard {
+public class BulbasaurGigaDrain extends CustomCard {
 
     
 
-    public static final String ID = MysteryDungeon.makeID(BulbasaurSolarBeam.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(BulbasaurGigaDrain.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("BulbasaurAttack.png");
     public static final String NAME = cardStrings.NAME;
@@ -35,32 +31,27 @@ public class BulbasaurSolarBeam extends CustomCard {
     // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
     private static final int COST = 3;
-    private static final int DAMAGE = 30;
-    private static final int UPGRADE_DAMAGE = 10;
+    private static final int UPGRADE_COST = 2;
+    private static final int DAMAGE = 15;
 
 
     // /STAT DECLARATION/
 
-    public BulbasaurSolarBeam() {
+    public BulbasaurGigaDrain() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        baseMagicNumber = 2;
-        isMultiDamage = true;
-        magicNumber = baseMagicNumber;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SFXAction("ATTACK_HEAVY"));
-        addToBot(new VFXAction(p, new MindblastEffect(p.dialogX, p.dialogY, p.flipHorizontal), 0.1F));
-        addToBot(new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
-        addToBot(new ApplyPowerAction(p, p, new NextTurnDrawLessPower(p, magicNumber), magicNumber));
+        // Create an int which equals to your current energy.
+        addToBot(new VampireDamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
     }
 
     // Upgraded stats.
@@ -68,7 +59,7 @@ public class BulbasaurSolarBeam extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_DAMAGE);
+            upgradeBaseCost(UPGRADE_COST);
             initializeDescription();
         }
     }

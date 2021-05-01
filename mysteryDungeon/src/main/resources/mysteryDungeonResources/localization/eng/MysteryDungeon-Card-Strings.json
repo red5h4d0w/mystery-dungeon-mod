@@ -1,55 +1,4 @@
 {
-  "mysteryDungeon:DefaultCommonAttack": {
-    "NAME": "Strike",
-    "DESCRIPTION": "Deal !D! damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
-  },
-  "mysteryDungeon:DefaultCommonSkill": {
-    "NAME": "Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Pokemon:Multiword_Keyword."
-  },
-  "mysteryDungeon:DefaultCommonPower": {
-    "NAME": "Hold Place",
-    "DESCRIPTION": "Gain !M! Pokemon:Keyword.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Pokemon:Keywords."
-  },
-  "mysteryDungeon:DefaultUncommonAttack": {
-    "NAME": "Big slap",
-    "DESCRIPTION": "Deal !D! damage."
-  },
-  "mysteryDungeon:DefaultUncommonSkill": {
-    "NAME": "A Better Defend",
-    "DESCRIPTION": "Gain !B! Plated Armor. Affected by Dexterity."
-  },
-  "mysteryDungeon:DefaultUncommonPower": {
-    "NAME": "Weirdness",
-    "DESCRIPTION": "Gain X Pokemon:Keywords.",
-    "UPGRADE_DESCRIPTION": "Gain X +1 Pokemon:Keywords."
-  },
-  "mysteryDungeon:DefaultRareAttack": {
-    "NAME": "TOUCH",
-    "DESCRIPTION": "Deal !D! damage."
-  },
-  "mysteryDungeon:DefaultRareSkill": {
-    "NAME": "For Each Loop x2",
-    "DESCRIPTION": "Apply !M! Vulnerable to all enemies, 2 times.",
-    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable to all enemies, 3 times."
-  },
-  "mysteryDungeon:DefaultRarePower": {
-    "NAME": "In-Progress Form",
-    "DESCRIPTION": "At the start of your turn, play a TOUCH."
-  },
-  "mysteryDungeon:DefaultAttackWithVariable": {
-    "NAME": "Special Strike",
-    "DESCRIPTION": "Deal !D! damage [E] times. NL (Deal !mysteryDungeon:ENERGY_DAMAGE! damage total.)"
-  },
-  "mysteryDungeon:DefaultSecondMagicNumberSkill": {
-    "NAME": "Cool 2 Number Card",
-    "DESCRIPTION": "Apply !M! Vulnerable and !mysteryDungeon:SecondMagic! poison to an enemy."
-  },
-  "mysteryDungeon:OrbSkill": {
-    "NAME": "Get Orb",
-    "DESCRIPTION": "Channel 1 Default Orb."
-  },
   "mysteryDungeon:BulbasaurBulletSeed": {
     "NAME": "Bullet Seed",
     "DESCRIPTION": "Deal !D! damage !M! times."
@@ -61,6 +10,10 @@
   "mysteryDungeon:BulbasaurDefend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
+  },
+  "mysteryDungeon:BulbasaurGigaDrain": {
+    "NAME": "Giga Drain",
+    "DESCRIPTION": "Deal !D! damage. NL Heal HP equal to unblocked damage."
   },
   "mysteryDungeon:BulbasaurGrowl": {
     "NAME": "Growl",
@@ -83,6 +36,10 @@
   "mysteryDungeon:BulbasaurPoisonJab": {
     "NAME": "Poison Jab",
     "DESCRIPTION": "Deal !D! damage 2 times. NL Apply !M! Poison 2 times."
+  },
+  "mysteryDungeon:BulbasaurPoisonPoint": {
+    "NAME": "Poison Point",
+    "DESCRIPTION": "Gain !M! Poison Thorns."
   },
   "mysteryDungeon:BulbasaurPoisonPowder": {
     "NAME": "Poison Powder",
