@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import javassist.CannotCompileException;
 import javassist.expr.ExprEditor;
 import javassist.expr.MethodCall;
-import mysteryDungeon.powers.SleepPowderPower;
+import mysteryDungeon.powers.AsleepPower;
 
 public class SleepMonsterPatch {
     @SpirePatch(
@@ -21,7 +21,7 @@ public class SleepMonsterPatch {
                 public void edit(MethodCall m) throws CannotCompileException {
                     if (m.getClassName().equals("com.megacrit.cardcrawl.monsters.AbstractMonster")
                             && m.getMethodName().equals("takeTurn")) {
-                        m.replace("if (!m.hasPower(mysteryDungeon.powers.SleepPowderPower.POWER_ID)) {" +
+                        m.replace("if (!m.hasPower(mysteryDungeon.powers.AsleepPower.POWER_ID)) {" +
                                 "$_ = $proceed($$);" +
                                 "}");
                     }
@@ -36,7 +36,7 @@ public class SleepMonsterPatch {
     )
     public static class RollMove {
         public static SpireReturn<Void> Prefix(AbstractMonster __instance) {
-            if (__instance.hasPower(SleepPowderPower.POWER_ID)) {
+            if (__instance.hasPower(AsleepPower.POWER_ID)) {
                 return SpireReturn.Return(null);
             } else {
                 return SpireReturn.Continue();

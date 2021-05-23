@@ -7,6 +7,14 @@
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
 },
+"mysteryDungeon:AsleepPower": {
+        "NAME": "Asleep",
+        "DESCRIPTIONS": ["slep"]
+},
+"mysteryDungeon:EvasivenessDropPower": {
+        "NAME": "Evasiveness Drop",
+        "DESCRIPTIONS": ["Ennemy loses 25% of their Block at the end of the round."]
+},
 "mysteryDungeon:LeechSeedPower": {
         "NAME": "Leech Seed",
         "DESCRIPTIONS": ["At the start of the turn, it loses #b HP, and you gain #b HP"]
@@ -15,6 +23,10 @@
         "NAME": "Next Turn Draw Less Cards",
         "DESCRIPTIONS": ["Next Turn, Draw #b less card", "Next Turn, Draw #b less cards"]
 },
+"mysteryDungeon:PoisonThornsPower": {
+        "NAME": "Poison Thorns",
+        "DESCRIPTIONS": ["When Attacked, apply #b Poison to the attacker."]
+},
 "mysteryDungeon:ReduceHighestCostAtStartOfTurnPower": {
         "NAME": "Lower Cost of Highest Cost Card",
         "DESCRIPTIONS": ["The cost of your #b highest cost cards is lowered by one."]
@@ -22,10 +34,6 @@
 "mysteryDungeon:RestPower": {
         "NAME": "Rest",
         "DESCRIPTIONS": ["You cannot play cards targeting the enemy during the next #b turn(s)."]
-},
-"mysteryDungeon:SleepPowderPower": {
-        "NAME": "Sleep Powder",
-        "DESCRIPTIONS": ["slep"]
 },
 "mysteryDungeon:ToxicPower": {
         "NAME": "Toxic",

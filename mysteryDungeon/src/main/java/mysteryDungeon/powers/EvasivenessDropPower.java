@@ -3,13 +3,13 @@ package mysteryDungeon.powers;
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.util.TextureLoader;
-import mysteryDungeon.actions.LeechSeedAction;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -22,7 +22,7 @@ import org.apache.logging.log4j.Logger;
 
 //Gain 1 dex for the turn for each card played.
 
-public class LeechSeedPower extends AbstractPower implements CloneablePowerInterface {
+public class EvasivenessDropPower extends AbstractPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
     public static final Logger logger = LogManager.getLogger(MysteryDungeon.class.getName());
@@ -36,16 +36,15 @@ public class LeechSeedPower extends AbstractPower implements CloneablePowerInter
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
 
-    public LeechSeedPower(final AbstractCreature owner, final AbstractCreature source, final int amount) {
+    public EvasivenessDropPower(final AbstractCreature owner, final int amount) {
         name = NAME;
         ID = POWER_ID;
 
         this.owner = owner;
         this.amount = amount;
-        this.source = source;
 
         type = PowerType.DEBUFF;
-        isTurnBased = false;
+        isTurnBased = true;
 
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
@@ -56,11 +55,15 @@ public class LeechSeedPower extends AbstractPower implements CloneablePowerInter
 
     
     @Override
-    public void atStartOfTurn() {
+    public void atEndOfRound() {
         super.atStartOfTurn();
         if (!owner.isDeadOrEscaped() && !owner.isDying) {
             flash();
-            addToBot(new LeechSeedAction(owner, new DamageInfo(source, amount, DamageType.HP_LOSS), AttackEffect.POISON));
+            if(owner.currentBlock>0)
+            {
+                addToBot(new DamageAction(owner, new DamageInfo(owner, (int)Math.ceil(0.25f * owner.currentBlock), DamageType.THORNS)));
+            }
+            addToBot(new ReducePowerAction(owner, owner, this, 1));
         }
     }
 

@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.SleepPowderPower;
+import mysteryDungeon.powers.AsleepPower;
 
 public class BulbasaurSleepPowder extends CustomCard {
 
@@ -57,7 +57,7 @@ public class BulbasaurSleepPowder extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
-        addToBot(new ApplyPowerAction(m, p, new SleepPowderPower(m, this.magicNumber), this.magicNumber));
+        addToBot(new ApplyPowerAction(m, p, new AsleepPower(m, this.magicNumber), this.magicNumber));
     }
 
     // Upgraded stats.

@@ -24,10 +24,10 @@ import java.lang.reflect.Field;
 
 //Gain 1 dex for the turn for each card played.
 
-public class SleepPowderPower extends AbstractPower implements CloneablePowerInterface {
+public class AsleepPower extends AbstractPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("SleepPowderPower");
+    public static final String POWER_ID = MysteryDungeon.makeID("AsleepPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -41,7 +41,7 @@ public class SleepPowderPower extends AbstractPower implements CloneablePowerInt
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
 
-    public SleepPowderPower(final AbstractCreature owner, final int amount) {
+    public AsleepPower(final AbstractCreature owner, final int amount) {
         name = NAME;
         ID = POWER_ID;
 
@@ -120,6 +120,6 @@ public class SleepPowderPower extends AbstractPower implements CloneablePowerInt
 
     @Override
     public AbstractPower makeCopy() {
-        return new SleepPowderPower(owner, amount);
+        return new AsleepPower(owner, amount);
     }
 }

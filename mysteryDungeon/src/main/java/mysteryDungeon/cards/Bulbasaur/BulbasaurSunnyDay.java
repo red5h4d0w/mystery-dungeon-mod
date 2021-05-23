@@ -31,6 +31,7 @@ public class BulbasaurSunnyDay extends CustomCard {
     public static final String IMG = makeCardPath("BulbasaurPower.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -66,6 +67,7 @@ public class BulbasaurSunnyDay extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
             isInnate = true;
         }

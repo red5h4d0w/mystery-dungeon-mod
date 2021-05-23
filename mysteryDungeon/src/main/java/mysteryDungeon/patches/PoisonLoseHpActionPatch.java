@@ -3,12 +3,12 @@ package mysteryDungeon.patches;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.actions.unique.PoisonLoseHpAction;
-import com.megacrit.cardcrawl.actions.utility.WaitAction;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import mysteryDungeon.powers.ToxicPower;
 
 public class PoisonLoseHpActionPatch {
 
@@ -24,7 +24,7 @@ public class PoisonLoseHpActionPatch {
             localvars = {"p"}
         )
         public static void Insert(PoisonLoseHpAction __instance, AbstractPower p){
-            AbstractPower toxic = __instance.target.getPower("mysteryDungeon:ToxicPower");
+            AbstractPower toxic = __instance.target.getPower(ToxicPower.POWER_ID);
             if(toxic != null)
             {
                 logger.info(toxic.amount);

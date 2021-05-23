@@ -69,4 +69,9 @@ public class RestPower extends AbstractPower implements CloneablePowerInterface 
     public AbstractPower makeCopy() {
         return new RestPower(owner, amount);
     }
+
+    @Override
+    public void updateDescription() {
+        this.description = DESCRIPTIONS[0];
+    }
 }
