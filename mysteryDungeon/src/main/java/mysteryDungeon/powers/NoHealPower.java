@@ -49,6 +49,7 @@ public class NoHealPower extends AbstractPower implements CloneablePowerInterfac
 
     @Override
     public int onHeal(int healAmount) {
+        flash();
         return 0;
     }
 

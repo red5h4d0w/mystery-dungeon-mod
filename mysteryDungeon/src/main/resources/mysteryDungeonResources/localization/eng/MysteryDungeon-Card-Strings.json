@@ -15,6 +15,10 @@
     "NAME": "Double Edge",
     "DESCRIPTION": "Deal !D! damage. NL Deal extra damage equal to !M! times your Strength. NL Take damage equal to half your Strength."
   },
+  "mysteryDungeon:BulbasaurFrenzyPlant": {
+    "NAME": "Frenzy Plant",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Apply 4 Poison !M! times."
+  },
   "mysteryDungeon:BulbasaurGigaDrain": {
     "NAME": "Giga Drain",
     "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Heal HP equal to unblocked damage."
@@ -33,7 +37,8 @@
   },
   "mysteryDungeon:BulbasaurIngrain": {
     "NAME": "Ingrain",
-    "DESCRIPTION": "Apply two Leech Seeds to a random enemy twice. NL Lose 2 Dexterity. NL Exhaust."
+    "DESCRIPTION": "Apply two Leech Seeds to a random enemy twice. NL Lose 2 Dexterity. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply two Leech Seeds to a random enemy thrice. NL Lose 2 Dexterity. NL Exhaust."
   },
   "mysteryDungeon:BulbasaurLeechSeed": {
     "NAME": "Leech Seed",
@@ -108,7 +113,7 @@
   },
   "mysteryDungeon:BulbasaurSweetScent": {
     "NAME": "Sweet Scent",
-    "DESCRIPTION": "Allures the foe to reduce evasiveness. NL Apply !M! Frail. NL Apply !M! Vulnerable"
+    "DESCRIPTION": "Allures the foe to reduce evasiveness. NL Apply !M! Evasiveness Drop. NL Apply !M! Vulnerable"
   },
   "mysteryDungeon:BulbasaurSynthesis": {
     "NAME": "Synthesis",
@@ -133,10 +138,11 @@
   },
   "mysteryDungeon:BulbasaurWorrySeed": {
     "NAME": "Worry Seed",
-    "DESCRIPTION": "Strikes the foe with slender, whiplike vines. NL Deals !D! damage."
+    "DESCRIPTION": "Your card rewards will contain 1 more card choice."
   },
   "mysteryDungeon:BulbasaurYawn": {
-    "NAME": "Snore",
-    "DESCRIPTION": "Apply !M! Asleep to ALL enemies right before they act (after Poison, etc.). NL Exhaust."
+    "NAME": "Yawn",
+    "DESCRIPTION": "Ethereal. NL Apply !M! Asleep to ALL enemies right before they act (after Poison, etc.). NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Asleep to ALL enemies right before they act (after Poison, etc.). NL Exhaust."
   }
 }

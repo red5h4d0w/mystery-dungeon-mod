@@ -8,8 +8,6 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.AbstractCard.CardTarget;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -50,11 +48,6 @@ public class WorrySeedPower extends AbstractPower implements CloneablePowerInter
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
 
         updateDescription();
-    }
-
-    @Override
-    public boolean canPlayCard(AbstractCard card) {
-        return !((card.target == CardTarget.ALL_ENEMY) || (card.target == CardTarget.ENEMY));
     }
 
     @Override

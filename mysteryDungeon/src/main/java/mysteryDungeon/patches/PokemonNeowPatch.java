@@ -174,7 +174,8 @@ public class PokemonNeowPatch {
         for(String trait : points)
         {
             logger.info(trait);
-            if(trait == "SPECIAL")
+            logger.info(trait=="SPECIAL");
+            if(trait.equals("SPECIAL"))
             {
                 AskQuestion(__instance, followUpQuestion);
                 alienInvasion = true;
@@ -245,14 +246,24 @@ public class PokemonNeowPatch {
                     {
                         UpdatePoints(__instance, buttonPressed, followUpQuestion);
                         AskQuestion(__instance, lastQuestion);
-                    }else if(answeredQuestions==7)
+                        alienInvasion = false;
+                    }
+                    else if(answeredQuestions==7)
                     {
+                        if (alienInvasion)
+                        {
+                            AskQuestion(__instance, followUpQuestion);
+                            answeredQuestions--;
+                        }
                         UpdatePoints(__instance, buttonPressed);
                         AskQuestion(__instance, lastQuestion);
                     }
                     else if(alienInvasion)
                     {
                         UpdatePoints(__instance, buttonPressed, followUpQuestion);
+                        answeredQuestions--;
+                        AskQuestion(__instance);
+                        alienInvasion = false;
                     }
                     // Results
                     else if(answeredQuestions==8)
@@ -265,7 +276,12 @@ public class PokemonNeowPatch {
                     else
                     {
                         UpdatePoints(__instance, buttonPressed);
-                        AskQuestion(__instance);
+                        if (alienInvasion) 
+                        {
+                            AskQuestion(__instance, followUpQuestion);
+                            answeredQuestions--;
+                        }
+                        else AskQuestion(__instance);
                     }
                     answeredQuestions++;
                     return SpireReturn.Return(null);

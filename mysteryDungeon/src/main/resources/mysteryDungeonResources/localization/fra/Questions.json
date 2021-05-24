@@ -675,7 +675,8 @@
         "QUESTION": "Are you a boy or a girl?",
         "ANSWERS": [
             "Boy.",
-            "Girl."
+            "Girl.",
+            "Other."
         ]
     }
 ]

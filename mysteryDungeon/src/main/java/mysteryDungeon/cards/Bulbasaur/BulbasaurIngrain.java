@@ -25,6 +25,7 @@ public class BulbasaurIngrain extends CustomCard {
     public static final String IMG = makeCardPath("BulbasaurSkill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -37,8 +38,7 @@ public class BulbasaurIngrain extends CustomCard {
     public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
-    private static final int BASE_MAGIC_NUMBER = 3;
-    private static final int UPGRADE_MAGIC_NUMBER = 2;
+    private static final int BASE_MAGIC_NUMBER = 2;
 
 
     // /STAT DECLARATION/
@@ -56,7 +56,7 @@ public class BulbasaurIngrain extends CustomCard {
         for(int i=0; i<2; i++)
         {
             AbstractMonster randomMonster = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRng);
-            addToBot(new ApplyPowerAction(randomMonster, p, new LeechSeedPower(randomMonster, p, magicNumber), magicNumber));
+            addToBot(new ApplyPowerAction(randomMonster, p, new LeechSeedPower(randomMonster, p, 2), magicNumber));
         }
         addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, -2)));
         
@@ -67,7 +67,7 @@ public class BulbasaurIngrain extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

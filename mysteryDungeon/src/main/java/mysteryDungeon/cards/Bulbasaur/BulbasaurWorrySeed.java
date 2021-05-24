@@ -41,7 +41,7 @@ public class BulbasaurWorrySeed extends CustomCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
-    private static final int COST = 3;
+    private static final int COST = 1;
     private static final int UPGRADE_COST = 0;
 
 
