@@ -49,6 +49,8 @@ public class PokemonNeowPatch {
 
     public static String chosenPokemon;
 
+    public static boolean alienInvasion = false;
+
     public static void InitializeTraitsScore()
     {
         logger.info(traits);
@@ -128,6 +130,18 @@ public class PokemonNeowPatch {
             case 1:
                 chosenPokemon = femalePokemonChoices.get(bestCorrespondingTraits.get((new Random()).nextInt(bestCorrespondingTraits.size())));
                 return;
+            case 2:
+                int choice = (new Random()).nextInt(2);
+                if(choice==0)
+                {
+                    chosenPokemon = malePokemonChoices.get(bestCorrespondingTraits.get((new Random()).nextInt(bestCorrespondingTraits.size())));
+                    return;
+                }
+                else
+                {
+                    chosenPokemon = femalePokemonChoices.get(bestCorrespondingTraits.get((new Random()).nextInt(bestCorrespondingTraits.size())));
+                    return;
+                }
         }
     }
 
@@ -159,9 +173,11 @@ public class PokemonNeowPatch {
         String[] points = questionAnswered.POINTS[buttonPressed];
         for(String trait : points)
         {
+            logger.info(trait);
             if(trait == "SPECIAL")
             {
                 AskQuestion(__instance, followUpQuestion);
+                alienInvasion = true;
                 return;
             }
             String traitName = trait.split(":")[0];
@@ -225,10 +241,18 @@ public class PokemonNeowPatch {
                         AskQuestion(__instance);
                     }
                     // Boy or Girl Question
-                    else if(answeredQuestions==7)
+                    else if(answeredQuestions==7 && alienInvasion)
+                    {
+                        UpdatePoints(__instance, buttonPressed, followUpQuestion);
+                        AskQuestion(__instance, lastQuestion);
+                    }else if(answeredQuestions==7)
                     {
                         UpdatePoints(__instance, buttonPressed);
                         AskQuestion(__instance, lastQuestion);
+                    }
+                    else if(alienInvasion)
+                    {
+                        UpdatePoints(__instance, buttonPressed, followUpQuestion);
                     }
                     // Results
                     else if(answeredQuestions==8)

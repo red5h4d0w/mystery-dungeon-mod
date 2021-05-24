@@ -4,18 +4,17 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import basemod.abstracts.CustomCard;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.WeakPower;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.characters.Pokemon;
 
-public class BulbasaurGrowl extends CustomCard {
+public class BulbasaurHelpingHand extends CustomCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -25,7 +24,7 @@ public class BulbasaurGrowl extends CustomCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(BulbasaurGrowl.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(BulbasaurHelpingHand.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("BulbasaurSkill.png");
     public static final String NAME = cardStrings.NAME;
@@ -36,19 +35,19 @@ public class BulbasaurGrowl extends CustomCard {
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
-    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
-    private static final int COST = 0;
-    private static final int BASE_MAGIC_NUMBER = 1;
+    private static final int COST = 1;
+    private static final int BASE_MAGIC_NUMBER = 2;
     private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
 
-    public BulbasaurGrowl() {
+    public BulbasaurHelpingHand() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
@@ -57,16 +56,8 @@ public class BulbasaurGrowl extends CustomCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        // Create an int which equals to your current energy.
-        if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
-            for (AbstractMonster monster : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-                if (!monster.isDead && !monster.isDying) {
-                    AbstractDungeon.actionManager.addToBottom(
-                        new ApplyPowerAction(monster, p, new WeakPower(monster, this.magicNumber, false), this.magicNumber)
-                    );
-                } 
-            } 
-        }
+        addToBot(new DrawCardAction(magicNumber));
+        addToBot(new GainEnergyAction(1));
     }
 
     // Upgraded stats.

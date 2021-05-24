@@ -43,7 +43,7 @@ public class BulbasaurSunnyDay extends CustomCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
-    private static final int COST = 2;
+    private static final int COST = 1;
 
 
     // /STAT DECLARATION/

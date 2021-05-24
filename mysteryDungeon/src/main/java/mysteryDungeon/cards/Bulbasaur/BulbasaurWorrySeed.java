@@ -4,26 +4,30 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import basemod.abstracts.CustomCard;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.RemoveAllBlockAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.powers.WorrySeedPower;
 
-public class BulbasaurRazorLeaf extends CustomCard {
+public class BulbasaurWorrySeed extends CustomCard {
 
-    
+    /*
+     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
+     *
+     * Special Strike: Deal 7 (*) damage times the energy you currently have.
+     */
 
-    public static final String ID = MysteryDungeon.makeID(BulbasaurRazorLeaf.class.getSimpleName());
+    // TEXT DECLARATION
+
+    public static final String ID = MysteryDungeon.makeID(BulbasaurWorrySeed.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("BulbasaurAttack.png");
+    public static final String IMG = makeCardPath("BulbasaurSkill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
@@ -32,32 +36,29 @@ public class BulbasaurRazorLeaf extends CustomCard {
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
-    private static final CardType TYPE = CardType.ATTACK;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
-    private static final int COST = 1;
-    private static final int DAMAGE = 8;
-    private static final int UPGRADE_DAMAGE = 3;
+    private static final int COST = 3;
+    private static final int UPGRADE_COST = 0;
 
 
     // /STAT DECLARATION/
 
-    public BulbasaurRazorLeaf() {
+    public BulbasaurWorrySeed() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseDamage = DAMAGE;
+        baseMagicNumber = 12;
+        magicNumber = baseMagicNumber;
+        exhaust = true;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
-        AbstractDungeon.actionManager.addToBottom(
-                new RemoveAllBlockAction(m, p));
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn),
-                        AbstractGameAction.AttackEffect.SMASH));
+        addToBot(new ApplyPowerAction(p, p, new WorrySeedPower(p, 1), 1));
     }
 
     // Upgraded stats.
@@ -65,7 +66,7 @@ public class BulbasaurRazorLeaf extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_DAMAGE);
+            cost = UPGRADE_COST;
             initializeDescription();
         }
     }

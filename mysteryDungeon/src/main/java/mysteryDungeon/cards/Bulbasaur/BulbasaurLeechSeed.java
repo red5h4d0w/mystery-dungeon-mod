@@ -7,7 +7,6 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -43,13 +42,14 @@ public class BulbasaurLeechSeed extends CustomCard {
     public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
+    private static final int BASE_MAGIC_NUMBER = 2;
 
 
     // /STAT DECLARATION/
 
     public BulbasaurLeechSeed() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseMagicNumber = 2;
+        baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
         exhaust = true;
     }
@@ -58,8 +58,7 @@ public class BulbasaurLeechSeed extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
-        AbstractDungeon.actionManager.addToBottom(
-            new ApplyPowerAction(m, p, new LeechSeedPower(m, p, this.magicNumber), this.magicNumber));
+        addToBot(new ApplyPowerAction(m, p, new LeechSeedPower(m, p, this.magicNumber), this.magicNumber));
     }
 
     // Upgraded stats.

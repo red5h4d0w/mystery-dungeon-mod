@@ -42,13 +42,15 @@ public class BulbasaurSleepPowder extends CustomCard {
     public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
+    private static final int BASE_MAGIC_NUMBER = 1;
+    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
 
     public BulbasaurSleepPowder() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseMagicNumber = 1;
+        baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
         exhaust = true;
     }
@@ -65,7 +67,7 @@ public class BulbasaurSleepPowder extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(1);
+            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             initializeDescription();
         }
     }

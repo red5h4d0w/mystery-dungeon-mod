@@ -3,13 +3,17 @@
     "NAME": "Bullet Seed",
     "DESCRIPTION": "Deal !D! damage !M! times."
   },
-  "mysteryDungeon:BulbasaurCurlUp": {
-    "NAME": "Curl Up",
-    "DESCRIPTION": "Gain !B! Block."
-  },
   "mysteryDungeon:BulbasaurDefend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
+  },
+  "mysteryDungeon:BulbasaurDefenseCurl": {
+    "NAME": "Defense Curl",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "mysteryDungeon:BulbasaurDoubleEdge": {
+    "NAME": "Double Edge",
+    "DESCRIPTION": "Deal !D! damage. NL Deal extra damage equal to !M! times your Strength. NL Take damage equal to half your Strength."
   },
   "mysteryDungeon:BulbasaurGigaDrain": {
     "NAME": "Giga Drain",
@@ -23,19 +27,35 @@
     "NAME": "Growth",
     "DESCRIPTION": "Gain !M! Strength."
   },
+  "mysteryDungeon:BulbasaurHelpingHand": {
+    "NAME": "Helping Hand",
+    "DESCRIPTION": "Draw !M! cards. NL Gain [E]."
+  },
+  "mysteryDungeon:BulbasaurIngrain": {
+    "NAME": "Ingrain",
+    "DESCRIPTION": "Apply two Leech Seeds to a random enemy twice. NL Lose 2 Dexterity. NL Exhaust."
+  },
   "mysteryDungeon:BulbasaurLeechSeed": {
     "NAME": "Leech Seed",
     "DESCRIPTION": "Plants a seed on the foe to steal HP on every turn. NL Apply !M! Leech Seed. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Plants a seed on the foe to steal HP on every turn. NL Apply !M! Leech Seed."
+  },
+  "mysteryDungeon:BulbasaurMegaDrain": {
+    "NAME": "Mega Drain",
+    "DESCRIPTION": "Heal !M! HP per different Debuff on the enemy."
   },
   "mysteryDungeon:BulbasaurParalysisPowder": {
     "NAME": "Paralysis Powder",
     "DESCRIPTION": "Apply !M! Slow. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! Slow. NL Exhaust."
   },
-  "mysteryDungeon:BulbasaurProtect": {
-    "NAME": "Protect",
-    "DESCRIPTION": "Gain !B! Block. NL You cannot gain block during the next !M! turns."
+  "mysteryDungeon:BulbasaurPetalBlizzard": {
+    "NAME": "Petal Blizzard",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies."
+  },
+  "mysteryDungeon:BulbasaurPetalDance": {
+    "NAME": "Petal Dance",
+    "DESCRIPTION": "Deal 9 damage to ALL enemies at the end of your turn for the next !M! turns. NL (Strength influences damage dealt)"
   },
   "mysteryDungeon:BulbasaurPoisonJab": {
     "NAME": "Poison Jab",
@@ -49,6 +69,10 @@
     "NAME": "Poison Powder",
     "DESCRIPTION": "Scatters a toxic powder that may poison the foe. NL Apply !M! Poison to ALL enemies."
   },
+  "mysteryDungeon:BulbasaurProtect": {
+    "NAME": "Protect",
+    "DESCRIPTION": "Gain !B! Block. NL You cannot gain block during the next !M! turns."
+  },
   "mysteryDungeon:BulbasaurRazorLeaf": {
     "NAME": "Razor Leaf",
     "DESCRIPTION": "Cuts the enemy with leaves. NL Removes all block from the enemy. NL Deals !D! damage."
@@ -56,6 +80,10 @@
   "mysteryDungeon:BulbasaurRest": {
     "NAME": "Rest",
     "DESCRIPTION": "Heal 30 HP. Rest for !M! turns."
+  },
+  "mysteryDungeon:BulbasaurSeedBomb": {
+    "NAME": "Seed Bomb",
+    "DESCRIPTION": "Deal !D! damage to a random enemy twice."
   },
   "mysteryDungeon:BulbasaurSleepPowder": {
     "NAME": "Sleep Powder",
@@ -68,6 +96,10 @@
   "mysteryDungeon:BulbasaurSolarBeam": {
     "NAME": "Solar Beam",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Draw !M! less cards during your next turn."
+  },
+  "mysteryDungeon:BulbasaurStrengthSap": {
+    "NAME": "Strength Sap",
+    "DESCRIPTION": "Target loses !M! Strength. NL Gain !M! Strength if target lost Strength that way. NL Exhaust."
   },
   "mysteryDungeon:BulbasaurSunnyDay": {
     "NAME": "Sunny Day",
@@ -98,5 +130,13 @@
   "mysteryDungeon:BulbasaurVineWhip": {
     "NAME": "Vine Whip",
     "DESCRIPTION": "Strikes the foe with slender, whiplike vines. NL Deals !D! damage."
+  },
+  "mysteryDungeon:BulbasaurWorrySeed": {
+    "NAME": "Worry Seed",
+    "DESCRIPTION": "Strikes the foe with slender, whiplike vines. NL Deals !D! damage."
+  },
+  "mysteryDungeon:BulbasaurYawn": {
+    "NAME": "Snore",
+    "DESCRIPTION": "Apply !M! Asleep to ALL enemies right before they act (after Poison, etc.). NL Exhaust."
   }
 }

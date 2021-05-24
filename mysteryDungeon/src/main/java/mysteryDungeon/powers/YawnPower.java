@@ -3,15 +3,14 @@ package mysteryDungeon.powers;
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.util.TextureLoader;
+import mysteryDungeon.actions.QueueActionAction;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -22,11 +21,11 @@ import org.apache.logging.log4j.Logger;
 
 //Gain 1 dex for the turn for each card played.
 
-public class EvasivenessDropPower extends AbstractPower implements CloneablePowerInterface {
+public class YawnPower extends AbstractPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
     public static final Logger logger = LogManager.getLogger(MysteryDungeon.class.getName());
-    public static final String POWER_ID = MysteryDungeon.makeID("EvasivenessDropPower");
+    public static final String POWER_ID = MysteryDungeon.makeID("YawnPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -36,7 +35,7 @@ public class EvasivenessDropPower extends AbstractPower implements CloneablePowe
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
 
-    public EvasivenessDropPower(final AbstractCreature owner, final int amount) {
+    public YawnPower(final AbstractCreature owner, final int amount) {
         name = NAME;
         ID = POWER_ID;
 
@@ -44,7 +43,7 @@ public class EvasivenessDropPower extends AbstractPower implements CloneablePowe
         this.amount = amount;
 
         type = PowerType.DEBUFF;
-        isTurnBased = true;
+        isTurnBased = false;
 
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
@@ -55,21 +54,17 @@ public class EvasivenessDropPower extends AbstractPower implements CloneablePowe
 
     
     @Override
-    public void atEndOfRound() {
+    public void atStartOfTurn() {
         super.atStartOfTurn();
         if (!owner.isDeadOrEscaped() && !owner.isDying) {
-            flash();
-            if(owner.currentBlock>0)
-            {
-                addToBot(new DamageAction(owner, new DamageInfo(owner, (int)Math.ceil(0.25f * owner.currentBlock), DamageType.THORNS)));
-            }
-            addToBot(new ReducePowerAction(owner, owner, this, 1));
+            addToBot(new QueueActionAction(new ApplyPowerAction(owner, source, new AsleepPower(owner, amount))));
+            addToBot(new RemoveSpecificPowerAction(owner, source, this));
         }
     }
 
     @Override
     public AbstractPower makeCopy() {
-        return new LeechSeedPower(owner, source, amount);
+        return new YawnPower(owner, amount);
     }
 
     @Override
