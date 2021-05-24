@@ -58,9 +58,9 @@ public class EvasivenessDropPower extends AbstractPower implements CloneablePowe
     public void atEndOfRound() {
         super.atStartOfTurn();
         if (!owner.isDeadOrEscaped() && !owner.isDying) {
-            flash();
             if(owner.currentBlock>0)
             {
+                flash();
                 addToBot(new DamageAction(owner, new DamageInfo(owner, (int)Math.ceil(0.25f * owner.currentBlock), DamageType.THORNS)));
             }
             addToBot(new ReducePowerAction(owner, owner, this, 1));

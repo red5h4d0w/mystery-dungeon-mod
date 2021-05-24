@@ -37,12 +37,12 @@ public class BulbasaurYawn extends CustomCard {
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
-    private static final int COST = 2;
+    private static final int COST = 3;
     private static final int BASE_MAGIC_NUMBER = 1;
 
 
@@ -78,6 +78,7 @@ public class BulbasaurYawn extends CustomCard {
             upgradeName();
             isEthereal = false;
             rawDescription = UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 }

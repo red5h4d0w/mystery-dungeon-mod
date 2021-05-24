@@ -1,50 +1,58 @@
 {
-"mysteryDungeon:CommonPower": {
+    "mysteryDungeon:CommonPower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
-},
-"mysteryDungeon:AsleepPower": {
+    },
+    "mysteryDungeon:AsleepPower": {
         "NAME": "Asleep",
         "DESCRIPTIONS": ["slep"]
-},
-"mysteryDungeon:EvasivenessDropPower": {
+    },
+    "mysteryDungeon:BurnPower": {
+        "NAME": "Burn",
+        "DESCRIPTIONS": ["For every 5 stacks of Burn ennemy deals 1 less damage."]
+    },
+    "mysteryDungeon:EvasivenessDropPower": {
         "NAME": "Evasiveness Drop",
         "DESCRIPTIONS": ["Ennemy loses 25% of their Block at the end of the round."]
-},
-"mysteryDungeon:LeechSeedPower": {
+    },
+    "mysteryDungeon:LeechSeedPower": {
         "NAME": "Leech Seed",
         "DESCRIPTIONS": ["At the start of the turn, it loses #b HP, and you gain #b HP"]
-},
-"mysteryDungeon:NextTurnDrawLessPower": {
+    },
+    "mysteryDungeon:NextTurnDrawLessPower": {
         "NAME": "Next Turn Draw Less Cards",
         "DESCRIPTIONS": ["Next Turn, Draw #b less card", "Next Turn, Draw #b less cards"]
-},
-"mysteryDungeon:NoHealPower": {
+    },
+    "mysteryDungeon:NextTurnNoBlockPower": {
+        "NAME": "Next Turn: No Block",
+        "DESCRIPTIONS": ["Next #b turns, You cannot gain Block"]
+    },
+    "mysteryDungeon:NoHealPower": {
         "NAME": "No Heal",
         "DESCRIPTIONS": ["You cannot heal for the next #b turns."]
-},
-"mysteryDungeon:PoisonThornsPower": {
+    },
+    "mysteryDungeon:PoisonThornsPower": {
         "NAME": "Poison Thorns",
         "DESCRIPTIONS": ["When Attacked, apply #b Poison to the attacker."]
-},
-"mysteryDungeon:ReduceHighestCostAtStartOfTurnPower": {
+    },
+    "mysteryDungeon:ReduceHighestCostAtStartOfTurnPower": {
         "NAME": "Lower Cost of Highest Cost Card",
         "DESCRIPTIONS": ["The cost of your #b highest cost cards is lowered by one."]
-},
-"mysteryDungeon:RestPower": {
+    },
+    "mysteryDungeon:RestPower": {
         "NAME": "Rest",
         "DESCRIPTIONS": ["You cannot play cards targeting the enemy during the next #b turn(s)."]
-},
-"mysteryDungeon:ToxicPower": {
+    },
+    "mysteryDungeon:ToxicPower": {
         "NAME": "Toxic",
         "DESCRIPTIONS": ["Instead of decreasing by one every turn, the Poison on this enemy will increase by #b every turn."]
-},
-"mysteryDungeon:WorrySeedPower": {
+    },
+    "mysteryDungeon:WorrySeedPower": {
         "NAME": "Worry Seed",
         "DESCRIPTIONS": ["Your card rewards will have one more card choice."]
-},
-"mysteryDungeon:YawnPower": {
+    },
+    "mysteryDungeon:YawnPower": {
         "NAME": "Yawn",
         "DESCRIPTIONS": ["Enemy will fall #y Asleep for #b turns right before they act."]
-}
+    }
 }

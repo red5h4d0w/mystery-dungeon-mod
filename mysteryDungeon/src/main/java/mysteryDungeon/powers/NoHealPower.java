@@ -8,6 +8,7 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -54,8 +55,18 @@ public class NoHealPower extends AbstractPower implements CloneablePowerInterfac
     }
 
     @Override
+    public void atStartOfTurn()
+    {
+        amount--;
+        if(amount<=0)
+        {
+            addToBot(new RemoveSpecificPowerAction(owner, owner, this));
+        }
+    }
+
+    @Override
     public AbstractPower makeCopy() {
-        return new NextTurnDrawLessPower(owner, amount);
+        return new NoHealPower(owner, amount);
     }
 
     @Override

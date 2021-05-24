@@ -17,7 +17,7 @@
   },
   "mysteryDungeon:BulbasaurFrenzyPlant": {
     "NAME": "Frenzy Plant",
-    "DESCRIPTION": "Deal !D! damage !M! times. NL Apply 4 Poison !M! times."
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Apply 2 Poison !M! times. NL You cannot heal during for this turn and the next."
   },
   "mysteryDungeon:BulbasaurGigaDrain": {
     "NAME": "Giga Drain",
@@ -37,8 +37,7 @@
   },
   "mysteryDungeon:BulbasaurIngrain": {
     "NAME": "Ingrain",
-    "DESCRIPTION": "Apply two Leech Seeds to a random enemy twice. NL Lose 2 Dexterity. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Apply two Leech Seeds to a random enemy thrice. NL Lose 2 Dexterity. NL Exhaust."
+    "DESCRIPTION": "Apply 1 Leech Seed to a random enemy !M! times. NL Lose 2 Dexterity. NL Exhaust."
   },
   "mysteryDungeon:BulbasaurLeechSeed": {
     "NAME": "Leech Seed",
@@ -60,7 +59,7 @@
   },
   "mysteryDungeon:BulbasaurPetalDance": {
     "NAME": "Petal Dance",
-    "DESCRIPTION": "Deal 9 damage to ALL enemies at the end of your turn for the next !M! turns. NL (Strength influences damage dealt)"
+    "DESCRIPTION": "Deal 7 damage to ALL enemies at the end of your turn for the next !M! turns. NL (Strength influences damage dealt)"
   },
   "mysteryDungeon:BulbasaurPoisonJab": {
     "NAME": "Poison Jab",
@@ -144,5 +143,29 @@
     "NAME": "Yawn",
     "DESCRIPTION": "Ethereal. NL Apply !M! Asleep to ALL enemies right before they act (after Poison, etc.). NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Apply !M! Asleep to ALL enemies right before they act (after Poison, etc.). NL Exhaust."
+  },
+  "mysteryDungeon:CharmanderDefend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "mysteryDungeon:CharmanderDragonClaw": {
+    "NAME": "Dragon Claw",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies."
+  },
+  "mysteryDungeon:CharmanderEmber": {
+    "NAME": "Ember",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Burn."
+  },
+  "mysteryDungeon:CharmanderMetalClaw": {
+    "NAME": "Metal Claw",
+    "DESCRIPTION": "Deal !D! damage. NL All your #yClaw deal !M! more damage this combat."
+  },
+  "mysteryDungeon:CharmanderScratch": {
+    "NAME": "Scratch",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "mysteryDungeon:CharmanderShadowClaw": {
+    "NAME": "Shadow Claw",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL This card gets more Block instead of more damage."
   }
 }

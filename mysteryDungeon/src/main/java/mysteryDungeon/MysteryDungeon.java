@@ -5,10 +5,11 @@ import basemod.eventUtil.AddEventParams;
 import basemod.interfaces.*;
 import mysteryDungeon.cards.*;
 import mysteryDungeon.cards.Bulbasaur.*;
+import mysteryDungeon.cards.Charmander.CharmanderScratch;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.events.IdentityCrisisEvent;
 import mysteryDungeon.potions.PlaceholderPotion;
-import mysteryDungeon.relics.DefaultClickableRelic;
+import mysteryDungeon.relics.CalmExplorerRelic;
 import mysteryDungeon.util.IDCheckDontTouchPls;
 import mysteryDungeon.util.TextureLoader;
 import mysteryDungeon.variables.DefaultCustomVariable;
@@ -389,7 +390,7 @@ public class MysteryDungeon implements
         // in order to automatically differentiate which pool to add the relic too.
 
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
-        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), Pokemon.Enums.COLOR_GRAY);
+        BaseMod.addRelicToCustomPool(new CalmExplorerRelic(), Pokemon.Enums.COLOR_GRAY);
         
         // This adds a relic to the Shared pool. Every character can find this relic.
         
@@ -437,6 +438,10 @@ public class MysteryDungeon implements
             .packageFilter(BulbasaurTackle.class)
             .setDefaultSeen(true)
             .cards();
+        new AutoAdd("MysteryDungeon")
+        .packageFilter(CharmanderScratch.class)
+        .setDefaultSeen(true)
+        .cards();
         // .setDefaultSeen(true) unlocks the cards
         // This is so that they are all "seen" in the library,
         // for people who like to look at the card list before playing your mod

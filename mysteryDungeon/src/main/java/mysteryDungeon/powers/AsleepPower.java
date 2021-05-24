@@ -20,6 +20,9 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.lang.reflect.Field;
 
 //Gain 1 dex for the turn for each card played.
@@ -27,14 +30,16 @@ import java.lang.reflect.Field;
 public class AsleepPower extends AbstractPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
+    Logger logger = LogManager.getLogger(AsleepPower.class);
+
     public static final String POWER_ID = MysteryDungeon.makeID("AsleepPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
     
-    public static byte moveByte;
-    public static EnemyMoveInfo move;
-    public static AbstractMonster.Intent moveIntent;
+    public byte moveByte;
+    public EnemyMoveInfo move;
+    public AbstractMonster.Intent moveIntent;
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
     // There's a fallback "missing texture" image, so the game shouldn't crash if you accidentally put a non-existent file.
@@ -73,6 +78,8 @@ public class AsleepPower extends AbstractPower implements CloneablePowerInterfac
             {
                 if (owner instanceof AbstractMonster) {
                     moveByte = ((AbstractMonster) owner).nextMove;
+                    logger.info("moveByte is");
+                    logger.info(moveByte);
                     moveIntent = ((AbstractMonster) owner).intent;
                     try {
                         Field f = AbstractMonster.class.getDeclaredField("move");

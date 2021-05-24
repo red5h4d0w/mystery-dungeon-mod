@@ -61,8 +61,8 @@ public class BulbasaurDoubleEdge extends CustomCard {
         int recoil = 0;
         if(strength!=null)
         {
-            bonusDamage = magicNumber * strength.amount>0?strength.amount:0;
-            recoil = strength.amount>0?(int)Math.ceil(strength.amount):0;
+            bonusDamage = magicNumber * (strength.amount>0?strength.amount:0);
+            recoil = strength.amount>0?(int)Math.ceil((float)strength.amount/2.0f):0;
         }
         addToBot(new DamageAction(m, new DamageInfo(p, damage + bonusDamage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
         addToBot(new DamageAction(p, new DamageInfo(p, recoil, DamageType.THORNS), AbstractGameAction.AttackEffect.SMASH));

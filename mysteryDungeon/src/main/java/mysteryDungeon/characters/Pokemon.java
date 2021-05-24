@@ -4,7 +4,8 @@ import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.Bulbasaur.*;
-import mysteryDungeon.relics.DefaultClickableRelic;
+import mysteryDungeon.cards.Charmander.*;
+import mysteryDungeon.relics.CalmExplorerRelic;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -56,6 +57,9 @@ public class Pokemon extends CustomPlayer {
 
     // =============== CHARACTER ENUMERATORS  =================
 
+    @SpireEnum
+    public static AbstractCard.CardTags CLAW;
+
 
     // =============== BASE STATS =================
 
@@ -65,6 +69,7 @@ public class Pokemon extends CustomPlayer {
     public static final int STARTING_GOLD = 99;
     public static final int CARD_DRAW = 5;
     public static final int ORB_SLOTS = 3;
+    public static Nature nature;
 
     // =============== /BASE STATS/ =================
 
@@ -77,6 +82,23 @@ public class Pokemon extends CustomPlayer {
     private static final String[] TEXT = characterStrings.TEXT;
 
     // =============== /STRINGS/ =================
+
+    public static enum Nature
+    {
+        Brave,
+        Calm,
+        Docile,
+        Hardy,
+        Hasty,
+        Impish,
+        Jolly,
+        Lonely,
+        Naive,
+        Quirky,
+        Relaxed,
+        Sassy,
+        Timid
+    }
 
 
     // =============== TEXTURES OF BIG ENERGY ORB ===============
@@ -155,15 +177,18 @@ public class Pokemon extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
 
-        for(int i=0;i<5;i++)
+        for(int i=0;i<2;i++)
         {
             retVal.add(BulbasaurTackle.ID);
+            retVal.add(CharmanderScratch.ID);
         }
-        for(int i=0;i<4;i++)
+        for(int i=0;i<2;i++)
         {
             retVal.add(BulbasaurDefend.ID);
+            retVal.add(CharmanderDefend.ID);
         }
         retVal.add(BulbasaurLeechSeed.ID);
+        retVal.add(CharmanderEmber.ID);
         return retVal;
     }
 
@@ -171,11 +196,11 @@ public class Pokemon extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
 
-        retVal.add(DefaultClickableRelic.ID);
+        retVal.add(CalmExplorerRelic.ID);
 
         // Mark relics as seen - makes it visible in the compendium immediately
         // If you don't have this it won't be visible in the compendium until you see them in game
-        UnlockTracker.markRelicAsSeen(DefaultClickableRelic.ID);
+        UnlockTracker.markRelicAsSeen(CalmExplorerRelic.ID);
 
         return retVal;
     }
@@ -282,6 +307,11 @@ public class Pokemon extends CustomPlayer {
     @Override
     public String getVampireText() {
         return TEXT[2];
+    }
+
+    public void DefineNature(String natureAsAString)
+    {
+        nature = Nature.valueOf(natureAsAString);
     }
 
 }

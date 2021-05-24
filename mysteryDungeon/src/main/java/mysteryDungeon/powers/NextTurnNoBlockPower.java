@@ -2,35 +2,27 @@ package mysteryDungeon.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.interfaces.onCreateRewards;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
-import java.util.ArrayList;
-
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.rewards.RewardItem;
-import com.megacrit.cardcrawl.rewards.RewardItem.RewardType;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import com.megacrit.cardcrawl.powers.NoBlockPower;
 
 
 //Gain 1 dex for the turn for each card played.
 
-public class WorrySeedPower extends AbstractPower implements CloneablePowerInterface, onCreateRewards {
+public class NextTurnNoBlockPower extends AbstractPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static Logger logger = LogManager.getLogger(WorrySeedPower.class.getName());
-
-    public static final String POWER_ID = MysteryDungeon.makeID("WorrySeedPower");
+    public static final String POWER_ID = MysteryDungeon.makeID("NextTurnNoBlock");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -41,15 +33,15 @@ public class WorrySeedPower extends AbstractPower implements CloneablePowerInter
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
 
-    public WorrySeedPower(final AbstractCreature owner, final int amount) {
+    public NextTurnNoBlockPower(final AbstractCreature owner, final int amount) {
         name = NAME;
         ID = POWER_ID;
 
         this.owner = owner;
         this.amount = amount;
 
-        type = PowerType.BUFF;
-        isTurnBased = false;
+        type = PowerType.DEBUFF;
+        isTurnBased = true;
 
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
@@ -59,22 +51,15 @@ public class WorrySeedPower extends AbstractPower implements CloneablePowerInter
     }
 
     @Override
-    public void afterCreated(ArrayList<RewardItem> rewards) {
-        for (int i=0; i<amount; i++)
-        {
-            for(RewardItem reward : rewards)
-            {
-                if(reward.type == RewardType.CARD)
-                {
-                    reward.cards.add(AbstractDungeon.getRewardCards().get(0));
-                }
-            }
-        }
+    public void atEndOfRound() {
+        flash();
+        addToBot(new ApplyPowerAction(owner, owner, new NoBlockPower(owner, amount, false)));
+        addToBot(new RemoveSpecificPowerAction(owner, owner, this));
     }
 
     @Override
     public AbstractPower makeCopy() {
-        return new WorrySeedPower(owner, amount);
+        return new NextTurnDrawLessPower(owner, amount);
     }
 
     @Override

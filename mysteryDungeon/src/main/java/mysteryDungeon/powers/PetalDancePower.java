@@ -54,7 +54,7 @@ public class PetalDancePower extends AbstractPower implements CloneablePowerInte
 
     @Override
     public void atEndOfTurn(boolean isPlayer) {
-        addToBot(new DamageAllEnemiesAction((AbstractPlayer)owner, 9, DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+        addToBot(new DamageAllEnemiesAction((AbstractPlayer)owner, 7, DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         addToBot(new ReducePowerAction(owner, owner, this, 1));
     }
 

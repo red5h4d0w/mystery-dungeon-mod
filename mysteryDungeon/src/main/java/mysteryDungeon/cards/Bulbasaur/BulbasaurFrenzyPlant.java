@@ -39,8 +39,8 @@ public class BulbasaurFrenzyPlant extends CustomCard {
     public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
     private static final int COST = 2;
-    private static final int DAMAGE = 10;
-    private static final int BASE_MAGIC_NUMBER = 4;
+    private static final int DAMAGE = 4;
+    private static final int BASE_MAGIC_NUMBER = 3;
     private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
@@ -60,9 +60,9 @@ public class BulbasaurFrenzyPlant extends CustomCard {
         for(int i=0;i<magicNumber;i++)
         {
             addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-            addToBot(new ApplyPowerAction(m, p, new PoisonPower(m, p, 4), 4));
+            addToBot(new ApplyPowerAction(m, p, new PoisonPower(m, p, 2), 2));
         }
-        addToBot(new ApplyPowerAction(p, p, new NoHealPower(p, 1)));    
+        addToBot(new ApplyPowerAction(p, p, new NoHealPower(p, 2)));    
     }
 
     // Upgraded stats.

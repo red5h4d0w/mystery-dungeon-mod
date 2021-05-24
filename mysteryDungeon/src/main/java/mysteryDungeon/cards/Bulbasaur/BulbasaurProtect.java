@@ -10,10 +10,10 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.NoBlockPower;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.powers.NextTurnNoBlockPower;
 
 public class BulbasaurProtect extends CustomCard {
 
@@ -60,7 +60,7 @@ public class BulbasaurProtect extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
-        addToBot(new ApplyPowerAction(p, p, new NoBlockPower(p, magicNumber, false), magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new NextTurnNoBlockPower(p, magicNumber), magicNumber));
     }
 
     // Upgraded stats.

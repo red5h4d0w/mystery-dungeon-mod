@@ -27,7 +27,7 @@ public class BulbasaurWorrySeed extends CustomCard {
 
     public static final String ID = MysteryDungeon.makeID(BulbasaurWorrySeed.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("BulbasaurSkill.png");
+    public static final String IMG = makeCardPath("BulbasaurPower.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
@@ -38,7 +38,7 @@ public class BulbasaurWorrySeed extends CustomCard {
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.SKILL;
+    private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
@@ -66,7 +66,7 @@ public class BulbasaurWorrySeed extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            cost = UPGRADE_COST;
+            upgradeBaseCost(UPGRADE_COST);
             initializeDescription();
         }
     }

@@ -35,7 +35,7 @@ public class BulbasaurPetalBlizzard extends CustomCard {
     public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 8;
+    private static final int DAMAGE = 9;
     private static final int UPGRADE_PLUS_DMG = 3;
 
 

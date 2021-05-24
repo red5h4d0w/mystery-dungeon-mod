@@ -255,13 +255,15 @@ public class PokemonNeowPatch {
                             AskQuestion(__instance, followUpQuestion);
                             answeredQuestions--;
                         }
-                        UpdatePoints(__instance, buttonPressed);
-                        AskQuestion(__instance, lastQuestion);
+                        else
+                        {
+                            UpdatePoints(__instance, buttonPressed);
+                            AskQuestion(__instance, lastQuestion);
+                        }
                     }
                     else if(alienInvasion)
                     {
                         UpdatePoints(__instance, buttonPressed, followUpQuestion);
-                        answeredQuestions--;
                         AskQuestion(__instance);
                         alienInvasion = false;
                     }
