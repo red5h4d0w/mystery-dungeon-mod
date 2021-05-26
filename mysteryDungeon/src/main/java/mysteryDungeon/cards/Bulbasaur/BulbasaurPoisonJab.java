@@ -39,7 +39,7 @@ public class BulbasaurPoisonJab extends CustomCard {
 
     private static final int COST = 1;
     private static final int DAMAGE = 2;
-    private static final int UPGRADE_DAMAGE = 2;
+    private static final int UPGRADE_DAMAGE = 1;
     private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
@@ -55,10 +55,7 @@ public class BulbasaurPoisonJab extends CustomCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for(int i=0;i<2;i++)
-        {
-            addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        }
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         for(int i=0;i<2;i++)
         {
             addToBot(new ApplyPowerAction(m, p, new PoisonPower(m, p, magicNumber), magicNumber));

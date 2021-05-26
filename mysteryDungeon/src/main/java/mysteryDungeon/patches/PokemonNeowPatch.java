@@ -225,41 +225,18 @@ public class PokemonNeowPatch {
                 case 3:
                     ShowNextDialog(__instance);
                     return SpireReturn.Return(null);
-                case 4:
-                    ShowNextDialog(__instance);
-                    return SpireReturn.Return(null);
-                case 5:
-                    ShowNextDialog(__instance);
-                    return SpireReturn.Return(null);
-                case 6:
-                    ShowNextDialog(__instance);
-                    return SpireReturn.Return(null);
                 // Personality Quiz
-                case 7:
+                case 4:
                     // First Question
                     if(answeredQuestions==0)
                     {
                         AskQuestion(__instance);
                     }
                     // Boy or Girl Question
-                    else if(answeredQuestions==7 && alienInvasion)
-                    {
-                        UpdatePoints(__instance, buttonPressed, followUpQuestion);
-                        AskQuestion(__instance, lastQuestion);
-                        alienInvasion = false;
-                    }
                     else if(answeredQuestions==7)
                     {
-                        if (alienInvasion)
-                        {
-                            AskQuestion(__instance, followUpQuestion);
-                            answeredQuestions--;
-                        }
-                        else
-                        {
-                            UpdatePoints(__instance, buttonPressed);
-                            AskQuestion(__instance, lastQuestion);
-                        }
+                        UpdatePoints(__instance, buttonPressed);
+                        AskQuestion(__instance, lastQuestion);
                     }
                     else if(alienInvasion)
                     {
@@ -281,14 +258,17 @@ public class PokemonNeowPatch {
                         if (alienInvasion) 
                         {
                             AskQuestion(__instance, followUpQuestion);
-                            answeredQuestions--;
                         }
                         else AskQuestion(__instance);
+                    }
+                    if (alienInvasion) 
+                    {
+                        answeredQuestions--;
                     }
                     answeredQuestions++;
                     return SpireReturn.Return(null);
                 // Quit Neow
-                case 8:
+                case 5:
                     break;
                     
             }

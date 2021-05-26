@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.characters.Pokemon;
@@ -35,9 +36,10 @@ public class BulbasaurSeedBomb extends CustomCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
-    private static final int COST = 2;
+    private static final int COST = -1;
     private static final int DAMAGE = 8;
     private static final int UPGRADE_PLUS_DMG = 2;
+
 
 
     // /STAT DECLARATION/
@@ -51,9 +53,21 @@ public class BulbasaurSeedBomb extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
-        for(int i=0;i<2;i++)
+        if (this.energyOnUse < EnergyPanel.totalCount)
+        {
+            this.energyOnUse = EnergyPanel.totalCount; 
+        }
+        if (p.hasRelic("Chemical X")) {
+            this.energyOnUse += 2;
+            p.getRelic("Chemical X").flash();
+        } 
+        for (int i = 0; i < this.energyOnUse; i++) 
         {
             addToBot(new DamageRandomEnemyAction(new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        }
+        if (!this.freeToPlayOnce)
+        {
+            p.energy.use(EnergyPanel.totalCount);
         }
     }
 

@@ -7,8 +7,12 @@ import mysteryDungeon.actions.LeechSeedAction;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.HealthBarRenderPower;
+
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
@@ -22,7 +26,7 @@ import org.apache.logging.log4j.Logger;
 
 //Gain 1 dex for the turn for each card played.
 
-public class LeechSeedPower extends AbstractPower implements CloneablePowerInterface {
+public class LeechSeedPower extends AbstractPower implements CloneablePowerInterface, HealthBarRenderPower {
     public AbstractCreature source;
 
     public static final Logger logger = LogManager.getLogger(MysteryDungeon.class.getName());
@@ -54,7 +58,12 @@ public class LeechSeedPower extends AbstractPower implements CloneablePowerInter
         updateDescription();
     }
 
-    
+    public int getHealthBarAmount()
+    {
+        return amount;
+    }
+
+
     @Override
     public void atStartOfTurn() {
         super.atStartOfTurn();
@@ -62,6 +71,11 @@ public class LeechSeedPower extends AbstractPower implements CloneablePowerInter
             flash();
             addToBot(new LeechSeedAction(owner, new DamageInfo(source, amount, DamageType.HP_LOSS), AttackEffect.POISON));
         }
+    }
+
+    public Color getColor()
+    {
+        return Color.OLIVE;
     }
 
     @Override

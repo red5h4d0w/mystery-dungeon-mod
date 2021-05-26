@@ -57,8 +57,6 @@ public class Pokemon extends CustomPlayer {
 
     // =============== CHARACTER ENUMERATORS  =================
 
-    @SpireEnum
-    public static AbstractCard.CardTags CLAW;
 
 
     // =============== BASE STATS =================

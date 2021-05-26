@@ -21,7 +21,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 public class BurnPower extends AbstractPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("NoHealPower");
+    public static final String POWER_ID = MysteryDungeon.makeID("BurnPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -57,7 +57,7 @@ public class BurnPower extends AbstractPower implements CloneablePowerInterface 
       }
 
     @Override
-    public void atStartOfTurn()
+    public void atEndOfRound()
     {
         amount-=2;
         if(amount<=0)

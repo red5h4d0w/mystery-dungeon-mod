@@ -33,7 +33,7 @@ public class CalmExplorerRelic extends CustomRelic { // You must implement thing
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("default_clickable_relic.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("default_clickable_relic.png"));
 
-    private boolean used = true; // We should make sure the relic is only activateable during our turn, not the enemies'.
+    private boolean used = false; // We should make sure the relic is only activateable during our turn, not the enemies'.
 
     public CalmExplorerRelic() {
         super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.CLINK);
@@ -52,6 +52,11 @@ public class CalmExplorerRelic extends CustomRelic { // You must implement thing
             addToBot(new GainEnergyAction(1));
             used = true;
         }
+    }
+    @Override
+    public void atPreBattle()
+    {
+        used = false;
     }
 
     // Description

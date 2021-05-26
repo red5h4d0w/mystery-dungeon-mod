@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.ClawEffect;
@@ -60,13 +61,19 @@ public class CharmanderDragonClaw extends CustomCard implements ClawCardInterfac
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
-        addToBot(new VFXAction(new ClawEffect(m.hb.cX, m.hb.cY, Color.PURPLE, Color.BLACK), 0.1F)); 
+        if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+            for (AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters) {
+                if (!monster.isDead && !monster.isDying) {
+                    addToBot(new VFXAction(new ClawEffect(monster.hb.cX, monster.hb.cY, Color.PURPLE, Color.BLACK), 0.1F)); 
+                } 
+            } 
+        }
         addToBot(new DamageAllEnemiesAction(p, damage, damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
     }
 
     public void clawUpgrade(int amount)
     {
-        damage += amount;
+        baseDamage += amount;
     }
 
     // Upgraded stats.

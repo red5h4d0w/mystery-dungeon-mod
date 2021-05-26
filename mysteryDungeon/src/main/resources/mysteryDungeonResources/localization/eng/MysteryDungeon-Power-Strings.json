@@ -37,7 +37,7 @@
     },
     "mysteryDungeon:ReduceHighestCostAtStartOfTurnPower": {
         "NAME": "Lower Cost of Highest Cost Card",
-        "DESCRIPTIONS": ["The cost of your #b highest cost cards is lowered by one."]
+        "DESCRIPTIONS": ["The cost of your #b highest cost cards is lowered by one after draw."]
     },
     "mysteryDungeon:RestPower": {
         "NAME": "Rest",

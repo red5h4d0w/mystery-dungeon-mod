@@ -1,7 +1,7 @@
 {
   "mysteryDungeon:BulbasaurBulletSeed": {
     "NAME": "Bullet Seed",
-    "DESCRIPTION": "Deal !D! damage !M! times."
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Can be upgraded multiple times."
   },
   "mysteryDungeon:BulbasaurDefend": {
     "NAME": "Defend",
@@ -63,7 +63,7 @@
   },
   "mysteryDungeon:BulbasaurPoisonJab": {
     "NAME": "Poison Jab",
-    "DESCRIPTION": "Deal !D! damage 2 times. NL Apply !M! Poison 2 times."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Poison 2 times."
   },
   "mysteryDungeon:BulbasaurPoisonPoint": {
     "NAME": "Poison Point",
@@ -156,9 +156,13 @@
     "NAME": "Ember",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Burn."
   },
+  "mysteryDungeon:CharmanderFlamethrower": {
+    "NAME": "Flamethrower",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Apply !M! Burn to ALL enemies."
+  },
   "mysteryDungeon:CharmanderMetalClaw": {
     "NAME": "Metal Claw",
-    "DESCRIPTION": "Deal !D! damage. NL All your #yClaw deal !M! more damage this combat."
+    "DESCRIPTION": "Deal !D! damage. NL All your Claw deal !M! more damage this combat."
   },
   "mysteryDungeon:CharmanderScratch": {
     "NAME": "Scratch",
@@ -167,5 +171,9 @@
   "mysteryDungeon:CharmanderShadowClaw": {
     "NAME": "Shadow Claw",
     "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL This card gets more Block instead of more damage."
+  },
+  "mysteryDungeon:CharmanderSmokescreen": {
+    "NAME": "Smokescreen",
+    "DESCRIPTION": "Gain !M! Intangible."
   }
 }

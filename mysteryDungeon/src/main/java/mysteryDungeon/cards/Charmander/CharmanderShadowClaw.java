@@ -30,7 +30,7 @@ public class CharmanderShadowClaw extends CustomCard implements ClawCardInterfac
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(CharmanderMetalClaw.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CharmanderShadowClaw.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("CharmanderAttack.png");
     public static final String NAME = cardStrings.NAME;
@@ -41,13 +41,13 @@ public class CharmanderShadowClaw extends CustomCard implements ClawCardInterfac
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
 
-    private static final int COST = 0;
-    private static final int DAMAGE = 1;
+    private static final int COST = 1;
+    private static final int DAMAGE = 3;
     private static final int BASE_BLOCK = 3;
 
 
@@ -70,7 +70,7 @@ public class CharmanderShadowClaw extends CustomCard implements ClawCardInterfac
 
     public void clawUpgrade(int amount)
     {
-        block += amount;
+        baseBlock += amount;
     }
 
     // Upgraded stats.

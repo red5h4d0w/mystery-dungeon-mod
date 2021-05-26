@@ -58,7 +58,6 @@ public class CharmanderEmber extends CustomCard {
         baseDamage = DAMAGE;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
-        this.tags.add(AbstractCard.CardTags.STARTER_STRIKE);
     }
 
     // Actions the card should do.
