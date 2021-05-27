@@ -49,6 +49,8 @@ public class PokemonNeowPatch {
 
     public static String chosenPokemon;
 
+    public static String[] possiblePartners;
+
     public static boolean alienInvasion = false;
 
     public static void InitializeTraitsScore()
@@ -120,26 +122,29 @@ public class PokemonNeowPatch {
                 maxValue = trait.getValue();
             }
         }
+        String nature = bestCorrespondingTraits.get((new Random()).nextInt(bestCorrespondingTraits.size()));
+        ((Pokemon)AbstractDungeon.player).DefineNature(nature);
         switch(buttonPressed)
         {
             // Player chose Boy
             case 0:
-                chosenPokemon = malePokemonChoices.get(bestCorrespondingTraits.get((new Random()).nextInt(bestCorrespondingTraits.size())));
+                chosenPokemon = malePokemonChoices.get(nature);
                 return;
             // Player chose Boy
             case 1:
-                chosenPokemon = femalePokemonChoices.get(bestCorrespondingTraits.get((new Random()).nextInt(bestCorrespondingTraits.size())));
+                chosenPokemon = femalePokemonChoices.get(nature);
                 return;
+            // Player chose other
             case 2:
                 int choice = (new Random()).nextInt(2);
                 if(choice==0)
                 {
-                    chosenPokemon = malePokemonChoices.get(bestCorrespondingTraits.get((new Random()).nextInt(bestCorrespondingTraits.size())));
+                    chosenPokemon = malePokemonChoices.get(nature);
                     return;
                 }
                 else
                 {
-                    chosenPokemon = femalePokemonChoices.get(bestCorrespondingTraits.get((new Random()).nextInt(bestCorrespondingTraits.size())));
+                    chosenPokemon = femalePokemonChoices.get(nature);
                     return;
                 }
         }
@@ -248,7 +253,9 @@ public class PokemonNeowPatch {
                     else if(answeredQuestions==8)
                     {
                         DeterminePokemon(buttonPressed);
-                        AskQuestion(__instance, new Question(chosenPokemon, new String[]{"ok"}, null));
+                        ((Pokemon)AbstractDungeon.player).setAdventurer(chosenPokemon);
+                        possiblePartners = partnerChoices();
+                        AskQuestion(__instance, new Question(chosenPokemon, possiblePartners, null));
                         screenNum++;
                         return SpireReturn.Return(null);
                     }
@@ -269,14 +276,88 @@ public class PokemonNeowPatch {
                     return SpireReturn.Return(null);
                 // Quit Neow
                 case 5:
+                    ((Pokemon)AbstractDungeon.player).setPartner(possiblePartners[buttonPressed]);
+                    AskQuestion(__instance, new Question("I see, now brave the challenge of the tower", new String[]{"[Leave]"}, null));
+                    screenNum++;
+                    return SpireReturn.Return(null);
+                case 6:
                     break;
                     
             }
             (AbstractDungeon.getCurrRoom()).phase = AbstractRoom.RoomPhase.COMPLETE;
             AbstractDungeon.dungeonMapScreen.open(false);
             PokemonNeowPatch.screenNum = 99;
+            ((Pokemon)AbstractDungeon.player).AwardStartingRelic();
             return SpireReturn.Return(null);
         }
+    }
+
+    public static String[] partnerChoices()
+    {
+        ArrayList<String> partners = new ArrayList<String>()
+        {{
+            add("Bulbasaur");
+            add("Charmander");
+            add("Squirtle");
+            add("Pikachu");
+            add("Chikorita");
+            add("Cyndaquil");
+            add("Totodile");
+            add("Treecko");
+            add("Torchic");
+            add("Mudkip");
+        }};
+        switch(chosenPokemon)
+        {
+            case "Bulbasaur":
+            case "Chikorita":
+            case "Treecko":
+                partners.remove("Bulbasaur");
+                partners.remove("Chikorita");
+                partners.remove("Treecko");
+                break;
+            case "Charmander":
+            case "Cyndaquil":
+            case "Torchic":
+                partners.remove("Charmander");
+                partners.remove("Cyndaquil");
+                partners.remove("Torchic");
+                break;
+            case "Squirtle":
+            case "Psyduck" :
+            case "Totodile":
+            case "Mudkip":
+                partners.remove("Squirtle");
+                partners.remove("Totodile");
+                partners.remove("Mudkip");
+                break;
+            case "Pikachu":
+                partners.remove("Pikachu");
+        }
+        Collections.shuffle(partners);
+        ArrayList<String> selectablePartners = new ArrayList<String>();
+        selectablePartners.add(partners.get(0));
+        for(String partner : partners)
+        {
+            boolean toAdd = false;
+            for(String sPartner : selectablePartners)
+            {
+                if(Pokemon.adventurersColor(partner) != Pokemon.adventurersColor(sPartner))
+                {
+                    toAdd = true;
+                }
+                else
+                {
+                    toAdd = false;
+                    break;
+                }
+            }
+            if(toAdd)
+            {
+                selectablePartners.add(partner);
+            }
+        }
+        return selectablePartners.subList(0, 3).toArray(new String[3]);
     }
 
 

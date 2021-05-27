@@ -6,6 +6,8 @@ import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.Bulbasaur.*;
 import mysteryDungeon.cards.Charmander.*;
 import mysteryDungeon.relics.CalmExplorerRelic;
+import mysteryDungeon.relics.HardyExplorerRelic;
+import mysteryDungeon.relics.NatureRelatedRelic;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -18,10 +20,13 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
@@ -31,6 +36,7 @@ import static mysteryDungeon.MysteryDungeon.*;
 import static mysteryDungeon.characters.Pokemon.Enums.COLOR_GRAY;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 //Wiki-page https://github.com/daviscook477/BaseMod/wiki/Custom-Characters
 //and https://github.com/daviscook477/BaseMod/wiki/Migrating-to-5.0
@@ -67,7 +73,9 @@ public class Pokemon extends CustomPlayer {
     public static final int STARTING_GOLD = 99;
     public static final int CARD_DRAW = 5;
     public static final int ORB_SLOTS = 3;
-    public static Nature nature;
+    public Nature nature;
+    public Adventurer adventurer;
+    public Adventurer partner;
 
     // =============== /BASE STATS/ =================
 
@@ -96,6 +104,25 @@ public class Pokemon extends CustomPlayer {
         Relaxed,
         Sassy,
         Timid
+    }
+    public static enum Adventurer
+    {
+        Bulbasaur,
+        Charmander,
+        Squirtle,
+        Pikachu,
+        Meowth,
+        Psyduck,
+        Machop,
+        Cubone,
+        Eevee,
+        Chikorita,
+        Cyndaquil,
+        Totodile,
+        Treecko,
+        Torchic,
+        Mudkip,
+        Skitty
     }
 
 
@@ -194,11 +221,11 @@ public class Pokemon extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
 
-        retVal.add(CalmExplorerRelic.ID);
+        retVal.add(NatureRelatedRelic.ID);
 
         // Mark relics as seen - makes it visible in the compendium immediately
         // If you don't have this it won't be visible in the compendium until you see them in game
-        UnlockTracker.markRelicAsSeen(CalmExplorerRelic.ID);
+        UnlockTracker.markRelicAsSeen(NatureRelatedRelic.ID);
 
         return retVal;
     }
@@ -233,7 +260,7 @@ public class Pokemon extends CustomPlayer {
     // Should return a color object to be used to color the trail of moving cards
     @Override
     public Color getCardTrailColor() {
-        return mysteryDungeon.MysteryDungeon.DEFAULT_GRAY;
+        return adventurerOrPartnerColor();
     }
 
     // Should return a BitmapFont object that you can use to customize how your
@@ -311,5 +338,110 @@ public class Pokemon extends CustomPlayer {
     {
         nature = Nature.valueOf(natureAsAString);
     }
+
+    public void setAdventurer(String adventurerAsString)
+    {
+        adventurer = Adventurer.valueOf(adventurerAsString);
+    }
+
+    public void setPartner(String adventurerAsString)
+    {
+        partner = Adventurer.valueOf(adventurerAsString);
+    }
+
+    // Adventurer/Partner related switch statements
+
+    public static Color adventurersColor(Adventurer pokemon)
+    {
+        switch(pokemon)
+        {
+            case Bulbasaur:
+                return Color.GREEN;
+            case Charmander:
+                return Color.RED;
+            case Squirtle:
+                return Color.BLUE;
+            case Pikachu:
+                return Color.YELLOW;
+            case Meowth:
+                return Color.WHITE;
+            case Psyduck:
+                return Color.VIOLET;
+            case Machop:
+                return Color.BROWN;
+            case Cubone:
+                return Color.MAROON;
+            case Eevee:
+                return Color.WHITE;
+            case Chikorita:
+                return Color.GREEN;
+            case Cyndaquil:
+                return Color.RED;
+            case Totodile:
+                return Color.BLUE;
+            case Treecko:
+                return Color.GREEN;
+            case Torchic:
+                return Color.RED;
+            case Mudkip:
+                return Color.BLUE;
+            case Skitty:
+                return Color.WHITE;
+            default:
+                return mysteryDungeon.MysteryDungeon.DEFAULT_GRAY;
+        }
+    }
+
+    public static Color adventurersColor(String pokemon)
+    {
+        return adventurersColor(Adventurer.valueOf(pokemon));
+    }
+
+    public Color adventurerOrPartnerColor()
+    {
+        return (new Random().nextInt() % 2 == 0)?adventurersColor(adventurer):adventurersColor(partner);
+    }
+
+    public AbstractRelic natureRelatedRelic()
+    {
+        switch(nature)
+        {
+            case Brave:
+                return new CalmExplorerRelic();
+            case Calm:
+                return new CalmExplorerRelic();
+            case Docile:
+                return new CalmExplorerRelic();
+            case Hardy:
+                return new HardyExplorerRelic();
+            case Hasty:
+                return new CalmExplorerRelic();
+            case Impish:
+                return new CalmExplorerRelic();
+            case Jolly:
+                return new CalmExplorerRelic();
+            case Lonely:
+                return new CalmExplorerRelic();
+            case Naive:
+                return new CalmExplorerRelic();
+            case Quirky:
+                return new CalmExplorerRelic();
+            case Relaxed:
+                return new CalmExplorerRelic();
+            case Sassy:
+                return new CalmExplorerRelic();
+            case Timid:
+                return new CalmExplorerRelic();
+            default:
+                return new CalmExplorerRelic();
+        }
+    }
+
+    public void AwardStartingRelic()
+    {
+        this.loseRelic(NatureRelatedRelic.ID);
+        AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2, natureRelatedRelic());
+    }
+
 
 }

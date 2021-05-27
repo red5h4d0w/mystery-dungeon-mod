@@ -17,7 +17,7 @@
   },
   "mysteryDungeon:BulbasaurFrenzyPlant": {
     "NAME": "Frenzy Plant",
-    "DESCRIPTION": "Deal !D! damage !M! times. NL Apply 2 Poison !M! times. NL You cannot heal during for this turn and the next."
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Apply 2 Poison !M! times. NL You cannot heal during this turn and the next."
   },
   "mysteryDungeon:BulbasaurGigaDrain": {
     "NAME": "Giga Drain",
@@ -79,7 +79,7 @@
   },
   "mysteryDungeon:BulbasaurRazorLeaf": {
     "NAME": "Razor Leaf",
-    "DESCRIPTION": "Cuts the enemy with leaves. NL Removes all block from the enemy. NL Deals !D! damage."
+    "DESCRIPTION": "Deals !D! damage. NL If you have a debuff, Gain [E]"
   },
   "mysteryDungeon:BulbasaurRest": {
     "NAME": "Rest",
