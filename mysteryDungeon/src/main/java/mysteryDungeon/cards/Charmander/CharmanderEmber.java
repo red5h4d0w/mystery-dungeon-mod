@@ -41,7 +41,7 @@ public class CharmanderEmber extends CustomCard {
     private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
-    public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
     private static final int COST = 1;
     private static final int DAMAGE = 5;
@@ -63,7 +63,7 @@ public class CharmanderEmber extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
         addToBot(new ApplyPowerAction(m, p, new BurnPower(m, magicNumber)));
     }
 

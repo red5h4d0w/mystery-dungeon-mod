@@ -40,7 +40,7 @@ public class CharmanderSmokescreen extends CustomCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
     private static final int COST = 3;
     private static final int UPGRADE_COST = 2;

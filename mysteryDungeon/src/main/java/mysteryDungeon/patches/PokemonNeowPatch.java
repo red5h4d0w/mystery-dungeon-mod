@@ -279,6 +279,7 @@ public class PokemonNeowPatch {
                     ((Pokemon)AbstractDungeon.player).setPartner(possiblePartners[buttonPressed]);
                     AskQuestion(__instance, new Question("I see, now brave the challenge of the tower", new String[]{"[Leave]"}, null));
                     screenNum++;
+                    CardCrawlGame.dungeon.initializeCardPools();
                     return SpireReturn.Return(null);
                 case 6:
                     break;
@@ -357,7 +358,7 @@ public class PokemonNeowPatch {
                 selectablePartners.add(partner);
             }
         }
-        return selectablePartners.subList(0, 3).toArray(new String[3]);
+        return selectablePartners.toArray(new String[selectablePartners.size()]);
     }
 
 

@@ -124,7 +124,7 @@ public class MysteryDungeon implements
     private static final String THE_DEFAULT_BUTTON = "mysteryDungeonResources/images/charSelect/Bulbasaur.png";
     private static final String THE_DEFAULT_PORTRAIT = "mysteryDungeonResources/images/charSelect/mysteryDungeonCover.png";
     public static final String THE_DEFAULT_SHOULDER_1 = "mysteryDungeonResources/images/char/pokemon/Bulbasaur_back.png";
-    public static final String THE_DEFAULT_SHOULDER_2 = "mysteryDungeonResources/images/char/pokemon/shoulder2.png";
+    public static final String THE_DEFAULT_SHOULDER_2 = "mysteryDungeonResources/images/char/pokemon/Charmander_back.png";
     public static final String THE_DEFAULT_CORPSE = "mysteryDungeonResources/images/char/pokemon/corpse.png";
     
     //Mod Badge - A small icon that appears in the mod settings menu next to your mod.
@@ -208,6 +208,18 @@ public class MysteryDungeon implements
                 ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
                 ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
                 ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
+    
+        BaseMod.addColor(Pokemon.Enums.BULBASAUR_GREEN, Color.GREEN, Color.GREEN, Color.GREEN,
+        Color.GREEN, Color.GREEN, Color.GREEN, Color.GREEN,
+        ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
+        ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
+        ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
+
+        BaseMod.addColor(Pokemon.Enums.CHARMANDER_RED, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
+        DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
+        ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
+        ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
+        ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
         
         logger.info("Done creating the color");
         
@@ -274,7 +286,8 @@ public class MysteryDungeon implements
     
     public static void initialize() {
         logger.info("========================= Initializing Mystery Dungeon. Hi. =========================");
-        MysteryDungeon MysteryDungeon = new MysteryDungeon();
+        @SuppressWarnings("unused")
+        MysteryDungeon MysteryDungeon = new MysteryDungeon(); 
         logger.info("========================= Mystery Dungeon Initialized. Hello World./ =========================");
     }
     

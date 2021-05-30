@@ -1,4 +1,8 @@
 {
+  "mysteryDungeon:ColorlessAgility": {
+    "NAME": "Agility",
+    "DESCRIPTION": "Retain. NL Draw !M! cards. NL Exhaust."
+  },
   "mysteryDungeon:BulbasaurBulletSeed": {
     "NAME": "Bullet Seed",
     "DESCRIPTION": "Deal !D! damage !M! times. NL Can be upgraded multiple times."
@@ -59,7 +63,7 @@
   },
   "mysteryDungeon:BulbasaurPetalDance": {
     "NAME": "Petal Dance",
-    "DESCRIPTION": "Deal 7 damage to ALL enemies at the end of your turn for the next !M! turns. NL (Strength influences damage dealt)"
+    "DESCRIPTION": "Deal 7 damage to ALL enemies at the end of your turn for the next !M! turns. NL (This counts as an Attack and scales with Strength, etc.)"
   },
   "mysteryDungeon:BulbasaurPoisonJab": {
     "NAME": "Poison Jab",
@@ -144,25 +148,71 @@
     "DESCRIPTION": "Ethereal. NL Apply !M! Asleep to ALL enemies right before they act (after Poison, etc.). NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Apply !M! Asleep to ALL enemies right before they act (after Poison, etc.). NL Exhaust."
   },
+  "mysteryDungeon:CharmanderBlastBurn": {
+    "NAME": "Blast Burn",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust your draw pile."
+  },
   "mysteryDungeon:CharmanderDefend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
+  },
+  "mysteryDungeon:CharmanderDragonBreath": {
+    "NAME": "Dragon Breath",
+    "DESCRIPTION": "Gain Block equal to the number of exhausted cards this combat.",
+    "UPGRADE_DESCRIPTION": "Gain Block equal to 5 + the number of exhausted cards this combat."
   },
   "mysteryDungeon:CharmanderDragonClaw": {
     "NAME": "Dragon Claw",
     "DESCRIPTION": "Deal !D! damage to ALL enemies."
   },
+  "mysteryDungeon:CharmanderDragonRage": {
+    "NAME": "Dragon Rage",
+    "DESCRIPTION": "Deal !D! damage."
+  },
   "mysteryDungeon:CharmanderEmber": {
     "NAME": "Ember",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Burn."
+  },
+  "mysteryDungeon:CharmanderFacade": {
+    "NAME": "Facade",
+    "DESCRIPTION": "Gain 1 Dexterity for each 3 different debuffs on the enemy."
+  },
+  "mysteryDungeon:CharmanderFireBlast": {
+    "NAME": "Fire Blast",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Burn. NL Exhaust."
+  },
+  "mysteryDungeon:CharmanderFireFang": {
+    "NAME": "Fire Fang",
+    "DESCRIPTION": "Deal !D! damage. NL Apply Burn equal to the unblocked damage."
+  },
+  "mysteryDungeon:CharmanderFireSpin": {
+    "NAME": "Fire Spin",
+    "DESCRIPTION": "Apply as much Poison as the enemy has Burn NL Remove all Burn."
   },
   "mysteryDungeon:CharmanderFlamethrower": {
     "NAME": "Flamethrower",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Apply !M! Burn to ALL enemies."
   },
+  "mysteryDungeon:CharmanderFlareBlitz": {
+    "NAME": "Flare Blitz",
+    "DESCRIPTION": "Deal damage equal to !M! times the number of exhausted cards this combat."
+  },
+  "mysteryDungeon:CharmanderInferno": {
+    "NAME": "Inferno",
+    "DESCRIPTION": "Deal !D! to ALL enemies. NL Apply !M! Burn to ALL enemies."
+  },
   "mysteryDungeon:CharmanderMetalClaw": {
     "NAME": "Metal Claw",
     "DESCRIPTION": "Deal !D! damage. NL All your Claw deal !M! more damage this combat."
+  },
+  "mysteryDungeon:CharmanderOverheat": {
+    "NAME": "Overheat",
+    "DESCRIPTION": "Deal 5 damage. NL Deal additional damage equal to the number of burn stacks on the enemy. NL Remove ALL Burn of the enemy.",
+    "UPGRADE_DESCRIPTION": "Deal 5 damage. NL Deal additional damage equal to the number of burn stacks on the enemy. NL Remove half the enemies' Burn stacks."
+  },
+  "mysteryDungeon:CharmanderScaryFace": {
+    "NAME": "Scary Face",
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak."
   },
   "mysteryDungeon:CharmanderScratch": {
     "NAME": "Scratch",
@@ -171,6 +221,10 @@
   "mysteryDungeon:CharmanderShadowClaw": {
     "NAME": "Shadow Claw",
     "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL This card gets more Block instead of more damage."
+  },
+  "mysteryDungeon:CharmanderSlash": {
+    "NAME": "Slash",
+    "DESCRIPTION": "Deal !D! damage !M! times."
   },
   "mysteryDungeon:CharmanderSmokescreen": {
     "NAME": "Smokescreen",

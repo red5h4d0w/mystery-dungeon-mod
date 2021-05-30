@@ -5,9 +5,7 @@ import basemod.animations.SpriterAnimation;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.Bulbasaur.*;
 import mysteryDungeon.cards.Charmander.*;
-import mysteryDungeon.relics.CalmExplorerRelic;
-import mysteryDungeon.relics.HardyExplorerRelic;
-import mysteryDungeon.relics.NatureRelatedRelic;
+import mysteryDungeon.relics.*;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -23,7 +21,6 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
-import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
@@ -36,6 +33,7 @@ import static mysteryDungeon.MysteryDungeon.*;
 import static mysteryDungeon.characters.Pokemon.Enums.COLOR_GRAY;
 
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.Random;
 
 //Wiki-page https://github.com/daviscook477/BaseMod/wiki/Custom-Characters
@@ -59,6 +57,18 @@ public class Pokemon extends CustomPlayer {
         public static AbstractCard.CardColor COLOR_GRAY;
         @SpireEnum(name = "DEFAULT_GRAY_COLOR") @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_COLOR;
+        @SpireEnum(name = "BULBASAUR_GREEN") // These two HAVE to have the same absolutely identical name.
+        public static AbstractCard.CardColor BULBASAUR_GREEN;
+        @SpireEnum(name = "BULBASAUR_GREEN") @SuppressWarnings("unused")
+        public static CardLibrary.LibraryType LIBRARY_BULBASAUR_GREEN;
+        @SpireEnum(name = "CHARMANDER_RED") // These two HAVE to have the same absolutely identical name.
+        public static AbstractCard.CardColor CHARMANDER_RED;
+        @SpireEnum(name = "CHARMANDER_RED") @SuppressWarnings("unused")
+        public static CardLibrary.LibraryType LIBRARY_CHARMANDER_RED;
+        @SpireEnum(name = "SQUIRTLE_BLUE") // These two HAVE to have the same absolutely identical name.
+        public static AbstractCard.CardColor SQUIRTLE_BLUE;
+        @SpireEnum(name = "SQUIRTLE_BLUE") @SuppressWarnings("unused")
+        public static CardLibrary.LibraryType LIBRARY_SQUIRTLE_BLUE;
     }
 
     // =============== CHARACTER ENUMERATORS  =================
@@ -194,6 +204,24 @@ public class Pokemon extends CustomPlayer {
                 STARTING_HP, MAX_HP, ORB_SLOTS, STARTING_GOLD, CARD_DRAW, this, getStartingRelics(),
                 getStartingDeck(), false);
     }
+
+    @Override
+	public ArrayList<AbstractCard> getCardPool(ArrayList<AbstractCard> tmpPool)
+	{
+        ArrayList<AbstractCard.CardColor> colors = getUsedSubColors();
+        for(AbstractCard.CardColor color : colors)
+        {
+            for (Map.Entry<String, AbstractCard> c : CardLibrary.cards.entrySet()) {
+                AbstractCard card = c.getValue();
+                if (card.color.equals(color) && card.rarity != AbstractCard.CardRarity.BASIC &&
+                        (!UnlockTracker.isCardLocked(c.getKey()) || Settings.isDailyRun)) {
+                    tmpPool.add(card);
+                }
+            }
+        }
+		
+		return tmpPool;
+	}
 
     // Starting Deck
     @Override
@@ -402,32 +430,117 @@ public class Pokemon extends CustomPlayer {
         return (new Random().nextInt() % 2 == 0)?adventurersColor(adventurer):adventurersColor(partner);
     }
 
+    public ArrayList<AbstractCard.CardColor> getUsedSubColors()
+    {
+        ArrayList<AbstractCard.CardColor> subcolors = new ArrayList<AbstractCard.CardColor>();
+        if(adventurer == null || partner == null)
+        {
+            subcolors.add(Enums.COLOR_GRAY);
+            return subcolors;
+        }
+        switch(adventurer)
+        {
+            case Bulbasaur:
+                subcolors.add(Enums.BULBASAUR_GREEN);
+            case Charmander:
+                subcolors.add(Enums.CHARMANDER_RED);
+            case Squirtle:
+                subcolors.add(Enums.SQUIRTLE_BLUE);
+            case Pikachu:
+                break;
+            case Meowth:
+                break;
+            case Psyduck:
+                break;
+            case Machop:
+                break;
+            case Cubone:
+                break;
+            case Eevee:
+                break;
+            case Chikorita:
+                break;
+            case Cyndaquil:
+                break;
+            case Totodile:
+                break;
+            case Treecko:
+                break;
+            case Torchic:
+                break;
+            case Mudkip:
+                break;
+            case Skitty:
+                break;
+            default:
+                subcolors.add(Enums.COLOR_GRAY);
+        }
+        switch(partner)
+        {
+            case Bulbasaur:
+                subcolors.add(Enums.BULBASAUR_GREEN);
+            case Charmander:
+                subcolors.add(Enums.CHARMANDER_RED);
+            case Squirtle:
+                subcolors.add(Enums.SQUIRTLE_BLUE);
+            case Pikachu:
+                break;
+            case Meowth:
+                break;
+            case Psyduck:
+                break;
+            case Machop:
+                break;
+            case Cubone:
+                break;
+            case Eevee:
+                break;
+            case Chikorita:
+                break;
+            case Cyndaquil:
+                break;
+            case Totodile:
+                break;
+            case Treecko:
+                break;
+            case Torchic:
+                break;
+            case Mudkip:
+                break;
+            case Skitty:
+                break;
+            default:
+                subcolors.add(Enums.COLOR_GRAY);
+        }
+        return subcolors;
+    }
+
     public AbstractRelic natureRelatedRelic()
     {
         switch(nature)
         {
             case Brave:
-                return new CalmExplorerRelic();
+                return new BraveExplorerRelic();
             case Calm:
                 return new CalmExplorerRelic();
             case Docile:
-                return new CalmExplorerRelic();
+                return new DocileExplorerRelic();
             case Hardy:
                 return new HardyExplorerRelic();
             case Hasty:
                 return new CalmExplorerRelic();
             case Impish:
-                return new CalmExplorerRelic();
+                return new ImpishExplorerRelic();
             case Jolly:
-                return new CalmExplorerRelic();
+                return new JollyExplorerRelic();
             case Lonely:
                 return new CalmExplorerRelic();
             case Naive:
                 return new CalmExplorerRelic();
             case Quirky:
-                return new CalmExplorerRelic();
+                return new QuirkyExplorerRelic();
             case Relaxed:
-                return new CalmExplorerRelic();
+                return new RelaxedExplorerRelic();
             case Sassy:
                 return new CalmExplorerRelic();
             case Timid:

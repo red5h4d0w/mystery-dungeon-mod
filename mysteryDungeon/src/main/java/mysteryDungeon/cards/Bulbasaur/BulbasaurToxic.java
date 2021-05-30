@@ -40,7 +40,7 @@ public class BulbasaurToxic extends CustomCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = Pokemon.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
 
     private static final int COST = 1;
 

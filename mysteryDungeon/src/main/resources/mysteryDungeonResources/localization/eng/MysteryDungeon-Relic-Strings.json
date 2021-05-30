@@ -14,6 +14,13 @@
             "You will receive a relic that depends on your nature."
         ]
     },
+    "mysteryDungeon:BraveExplorerRelic": {
+        "NAME": "Brave Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "The first time you draw a status / would receive a debuff each combat, exhaust the status / nullify the debuff."
+        ]
+    },
     "mysteryDungeon:CalmExplorerRelic": {
         "NAME": "Calm Explorer",
         "FLAVOR": "What is this?",
@@ -21,11 +28,46 @@
             "Draw 1 card and gain [E] at the start of every fight."
         ]
     },
+    "mysteryDungeon:DocileExplorerRelic": {
+        "NAME": "Docile Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "When you receive a debuff, gain 2 Block on the following turn."
+        ]
+    },
     "mysteryDungeon:HardyExplorerRelic": {
         "NAME": "Hardy Explorer",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
             "The first time you take unblocked damage each turn, gain 3 Block."
+        ]
+    },
+    "mysteryDungeon:ImpishExplorerRelic": {
+        "NAME": "Impish Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "The first time you evoke your last orb each combat, gain a Focus."
+        ]
+    },
+    "mysteryDungeon:JollyExplorerRelic": {
+        "NAME": "Jolly Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "Start each combat with an Agility."
+        ]
+    },
+    "mysteryDungeon:QuirkyExplorerRelic": {
+        "NAME": "Quirky Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "Gain 5% more Gold in combat rewards."
+        ]
+    },
+    "mysteryDungeon:RelaxedExplorerRelic": {
+        "NAME": "Relaxed Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "The first time you play a Skill each combat, gain 10 Block."
         ]
     }
 }
