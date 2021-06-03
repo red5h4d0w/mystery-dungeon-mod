@@ -6,7 +6,7 @@
     <groupId>mysterydungeon</groupId>
     <artifactId>MysteryDungeon</artifactId> <!--Keep a note of this one: this is the ID used in the "auto add cards" method-->
     <name>Mystery Dungeon</name>
-    <version>0.0.1</version>
+    <version>0.2.5</version>
     <description>A mod based on Pokémon Mystery Dungeon.</description>
 
     <properties>

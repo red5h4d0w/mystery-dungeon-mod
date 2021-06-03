@@ -210,6 +210,7 @@ public class PokemonNeowPatch {
     @SpirePatch(clz = NeowEvent.class, method = "buttonEffect")
     public static class NeowEventFlow {
         @SpirePrefixPatch
+        @SuppressWarnings("all")
         public static SpireReturn AdvanceAccordingToChoice(NeowEvent __instance, int buttonPressed)
         {
             if(!(AbstractDungeon.player instanceof Pokemon))

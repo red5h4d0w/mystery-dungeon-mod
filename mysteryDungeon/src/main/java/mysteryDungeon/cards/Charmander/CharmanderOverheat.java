@@ -8,7 +8,6 @@ import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -41,7 +40,7 @@ public class CharmanderOverheat extends CustomCard {
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.BASIC;
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
@@ -64,14 +63,10 @@ public class CharmanderOverheat extends CustomCard {
         if(m.hasPower(BurnPower.POWER_ID))
         {
             bonusDamage += m.getPower(BurnPower.POWER_ID).amount;
-            if(upgraded)
+            if(!upgraded)
             {
                 addToBot(new ReducePowerAction(m, p, m.getPower(BurnPower.POWER_ID), MathUtils.floor(bonusDamage/2)));
-            }
-            else
-            {
-                addToBot(new RemoveSpecificPowerAction(m, p, m.getPower(BurnPower.POWER_ID)));
-            }
+            } 
         }
         addToBot(new DamageAction(m, new DamageInfo(p, damage + bonusDamage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
     }

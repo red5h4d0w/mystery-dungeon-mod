@@ -8,22 +8,22 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.PoisonPower;
 
 
 //Gain 1 dex for the turn for each card played.
 
-public class PoisonThornsPower extends AbstractPower implements CloneablePowerInterface {
+public class CounterPower extends AbstractPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("PoisonThornsPower");
+    public static final String POWER_ID = MysteryDungeon.makeID("CounterPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -34,15 +34,15 @@ public class PoisonThornsPower extends AbstractPower implements CloneablePowerIn
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
 
-    public PoisonThornsPower(final AbstractCreature owner, final AbstractCreature source, final int amount) {
+    public CounterPower(final AbstractCreature owner, final int amount) {
         name = NAME;
         ID = POWER_ID;
 
         this.owner = owner;
         this.amount = amount;
-        this.source = source;
 
         type = PowerType.BUFF;
+        isTurnBased = true;
 
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
@@ -51,17 +51,28 @@ public class PoisonThornsPower extends AbstractPower implements CloneablePowerIn
         updateDescription();
     }
 
-    public int onAttacked(DamageInfo info, int damageAmount) {
-        if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner != this.owner) {
-            flash();
-            addToTop((AbstractGameAction)new ApplyPowerAction(info.owner, owner, new PoisonPower(info.owner, owner, amount), amount));
-        } 
+    @Override
+    public int onAttacked(DamageInfo info, int damageAmount)
+    {
+        if(info.type!=DamageType.HP_LOSS && info.type!=DamageType.THORNS)
+        {
+            if(damageAmount>owner.currentBlock)
+            {
+                addToBot(new DamageAction(info.owner, new DamageInfo(owner, amount, DamageType.THORNS)));
+                addToBot(new RemoveSpecificPowerAction(owner, owner, this));
+            }
+        }
         return damageAmount;
     }
 
     @Override
+    public void atEndOfRound() {
+        addToBot(new RemoveSpecificPowerAction(owner, owner, this));
+    }
+
+    @Override
     public AbstractPower makeCopy() {
-        return new PoisonThornsPower(owner, source, amount);
+        return new CounterPower(owner, amount);
     }
 
     @Override

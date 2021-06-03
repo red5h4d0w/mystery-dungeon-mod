@@ -7,9 +7,25 @@
         "NAME": "Asleep",
         "DESCRIPTIONS": ["slep"]
     },
+    "mysteryDungeon:BellyDrumPower": {
+        "NAME": "Belly Drum",
+        "DESCRIPTIONS": ["The first #b cards you play each turn cost 0, but exhaust."]
+    },
+    "mysteryDungeon:BlazePower": {
+        "NAME": "Blaze",
+        "DESCRIPTIONS": ["The first #b time you ."]
+    },
     "mysteryDungeon:BurnPower": {
         "NAME": "Burn",
         "DESCRIPTIONS": ["For every 5 stacks of Burn ennemy deals 1 less damage."]
+    },
+    "mysteryDungeon:CounterPower": {
+        "NAME": "Counter",
+        "DESCRIPTIONS": ["When you lose all Block and receive attack damage, deal #b damage to the attacker."]
+    },
+    "mysteryDungeon:DroughtPower": {
+        "NAME": "Drought",
+        "DESCRIPTIONS": ["When you apply #yBurn apply #b more."]
     },
     "mysteryDungeon:EvasivenessDropPower": {
         "NAME": "Evasiveness Drop",
@@ -30,6 +46,10 @@
     "mysteryDungeon:NoHealPower": {
         "NAME": "No Heal",
         "DESCRIPTIONS": ["You cannot heal for the next #b turns."]
+    },
+    "mysteryDungeon:PetalDancePower": {
+        "NAME": "Petal Dance",
+        "DESCRIPTIONS": ["At the end of the next #b turns, deal 7 damage to ALL enemies (this counts as an attack)."]
     },
     "mysteryDungeon:PoisonThornsPower": {
         "NAME": "Poison Thorns",

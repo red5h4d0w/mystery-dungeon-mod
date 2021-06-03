@@ -1,30 +1,65 @@
 [
-  {
+    {
+        "PROPER_NAME": "Multiword Keyword",
+        "NAMES": [
+            "Multiword Keyword",
+            "multiword_keyword",
+            "multiword_keywords",
+            "multikey",
+            "multikeyword"
+        ],
+        "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
+    },
+    {
+        "PROPER_NAME": "Asleep",
+        "NAMES": [
+            "Asleep",
+            "asleep"
+        ],
+        "DESCRIPTION": "When an enemy is asleep, it will not act until it receives damage. When it receives damage, it will go back to the intent it had before sleeping."
+    },
+    {
+        "PROPER_NAME": "Burn",
+        "NAMES": [
+            "Burn",
+            "burn"
+        ],
+        "DESCRIPTION": "For each 5 stacks, enemy deals 1 less damage. Decreases by 2 at the end of the round."
+    },
+    {
+        "PROPER_NAME": "Claw",
+        "NAMES": [
+            "Claw",
+            "claws",
+            "claw"
+        ],
+        "DESCRIPTION": "Any card with Claw in its name counts as a claw."
+    },
+    {
+    "PROPER_NAME": "Evasiveness Drop",
     "NAMES": [
-      "keyword",
-      "keywords"
+        "Evasiveness Drop",
+        "Evasiveness_Drop",
+        "evasiveness_drop"
     ],
-    "DESCRIPTION": "Whenever you play a card, gain 1 dexterity this turn only."
-  },
-  {
-    "PROPER_NAME": "Multiword Keyword",
-    "NAMES": [
-      "Multiword Keyword",
-      "multiword_keyword",
-      "multiword_keywords",
-      "multikey",
-      "multikeyword"
-    ],
-    "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
+    "DESCRIPTION": "At the end of the round, enemy loses 25% of their Block."
   },
   {
     "PROPER_NAME": "Leech Seed",
     "NAMES": [
         "Leech Seed",
-        "Leech\u00a0Seed",
-        "Leech Seeds"
+        "leech_seed"
     ],
     "DESCRIPTION": "At the start of the turn, it loses #b HP, and you gain #b HP"
+  },
+  {
+    "PROPER_NAME": "Poison Thorns",
+    "NAMES": [
+        "Poison Thorns",
+        "Poison_Thorns",
+        "poison_thorns"
+    ],
+    "DESCRIPTION": "Every time you get attacked, attacker receives Poison"
   },
   {
     "PROPER_NAME": "Rest",
@@ -33,13 +68,6 @@
         "rest"
     ],
     "DESCRIPTION": "You cannot play cards that target the enemy."
-  },
-  {
-    "PROPER_NAME": "Sleep",
-    "NAMES": [
-        "Sleep"
-    ],
-    "DESCRIPTION": "When an enemy is sleeping, it will not act until it receives damage. When it receives damage, it will go back to the move prepared before sleeping."
   },
   {
     "PROPER_NAME": "Toxic",

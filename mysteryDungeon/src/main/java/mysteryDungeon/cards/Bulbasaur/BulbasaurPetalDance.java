@@ -4,12 +4,13 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import basemod.abstracts.CustomCard;
 
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
+import com.megacrit.cardcrawl.vfx.combat.GrandFinalEffect;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.characters.Pokemon;
@@ -57,7 +58,7 @@ public class BulbasaurPetalDance extends CustomCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        // Create an int which equals to your current energy.
+        addToBot(new VFXAction(new GrandFinalEffect())); // Petal stuff
         addToBot(new ApplyPowerAction(p, p, new PetalDancePower(p, magicNumber), magicNumber));
     }
 

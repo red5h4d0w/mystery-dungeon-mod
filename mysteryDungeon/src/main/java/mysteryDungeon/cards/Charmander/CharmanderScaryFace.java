@@ -45,6 +45,7 @@ public class CharmanderScaryFace extends CustomCard {
     private static final int BLOCK = 5;
     private static final int UPGRADE_PLUS_BLOCK = 3;
     private static final int BASE_MAGIC_NUMBER = 1;
+    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
@@ -69,6 +70,7 @@ public class CharmanderScaryFace extends CustomCard {
         if (!upgraded) {
             upgradeName();
             upgradeBlock(UPGRADE_PLUS_BLOCK);
+            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             initializeDescription();
         }
     }

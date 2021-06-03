@@ -9,6 +9,7 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
@@ -17,6 +18,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.vfx.combat.GrandFinalEffect;
 
 
 //Gain 1 dex for the turn for each card played.
@@ -54,13 +56,14 @@ public class PetalDancePower extends AbstractPower implements CloneablePowerInte
 
     @Override
     public void atEndOfTurn(boolean isPlayer) {
+        addToBot(new VFXAction(new GrandFinalEffect()));
         addToBot(new DamageAllEnemiesAction((AbstractPlayer)owner, 7, DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         addToBot(new ReducePowerAction(owner, owner, this, 1));
     }
 
     @Override
     public AbstractPower makeCopy() {
-        return new NextTurnDrawLessPower(owner, amount);
+        return new PetalDancePower(owner, amount);
     }
 
     @Override

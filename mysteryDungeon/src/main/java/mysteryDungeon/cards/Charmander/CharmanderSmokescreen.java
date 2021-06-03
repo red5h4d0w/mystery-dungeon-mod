@@ -53,6 +53,7 @@ public class CharmanderSmokescreen extends CustomCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = BASE_MAGIC_NUMBER;
+        exhaust = true;
     }
 
     // Actions the card should do.

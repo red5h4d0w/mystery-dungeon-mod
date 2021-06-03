@@ -53,13 +53,14 @@ public class CharmanderFacade extends CustomCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        exhaust = true;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         int amount = m.powers.stream().filter(power -> power.type == PowerType.DEBUFF).map(power -> power.amount).reduce(0, (subtotal, element) -> subtotal+element);
-        addToBot(new ApplyPowerAction(m, p, new DexterityPower(p, MathUtils.floor(amount / magicNumber)), MathUtils.floor(amount / magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, MathUtils.floor(amount / magicNumber)), MathUtils.floor(amount / magicNumber)));
     }
 
     // Upgraded stats.

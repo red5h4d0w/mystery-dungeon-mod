@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.NextTurnBlockPower;
+import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 
 public class DocileExplorerRelic extends CustomRelic implements OnReceivePowerRelic { // You must implement things you want to use from StSlib
     /*
@@ -45,7 +46,8 @@ public class DocileExplorerRelic extends CustomRelic implements OnReceivePowerRe
 
     public boolean onReceivePower(AbstractPower power, AbstractCreature source)
     {
-        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new NextTurnBlockPower(AbstractDungeon.player, 2)));
+        if(power.type == PowerType.DEBUFF)
+            addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new NextTurnBlockPower(AbstractDungeon.player, 2)));
         return true;
     } 
 

@@ -9,18 +9,20 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.vfx.combat.ClawEffect;
+import com.megacrit.cardcrawl.vfx.combat.BiteEffect;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.interfaces.ClawCardInterface;
 
-public class CharmanderShadowClaw extends CustomCard implements ClawCardInterface {
+public class CharmanderCrunch extends CustomCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -30,7 +32,7 @@ public class CharmanderShadowClaw extends CustomCard implements ClawCardInterfac
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(CharmanderShadowClaw.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CharmanderCrunch.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("CharmanderAttack.png");
     public static final String NAME = cardStrings.NAME;
@@ -41,37 +43,44 @@ public class CharmanderShadowClaw extends CustomCard implements ClawCardInterfac
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
     private static final int COST = 1;
     private static final int DAMAGE = 3;
-    private static final int BASE_BLOCK = 3;
+    private static final int BASE_BLOCK = 10;
+    private static final int UPGRADE_BLOCK = 4;
 
 
     // /STAT DECLARATION/
 
-    public CharmanderShadowClaw() {
+    public CharmanderCrunch() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BASE_BLOCK;
-        cardsToPreview = new CharmanderMetalClaw();
     }
+
+    public void triggerOnGlowCheck() {
+        this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
+          if (!m.isDeadOrEscaped() && m.getIntentBaseDmg() >= 0) {
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+            break;
+          } 
+        } 
+      }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        // Create an int which equals to your current energy.
-        addToBot(new VFXAction(new ClawEffect(m.hb.cX, m.hb.cY, Color.VIOLET, Color.BLACK), 0.1F)); 
+        addToBot(new VFXAction(m, new BiteEffect(m.hb.cX, m.hb.cY - 40.0f * Settings.scale, Color.BLACK), 0.3f));
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-        addToBot(new GainBlockAction(p, block));
-    }
-
-    public void clawUpgrade(int amount)
-    {
-        baseBlock += amount;
+        if(m.getIntentBaseDmg() >= 0)
+        {
+            addToBot(new GainBlockAction(p, p, baseBlock));
+        }
     }
 
     // Upgraded stats.
@@ -79,6 +88,7 @@ public class CharmanderShadowClaw extends CustomCard implements ClawCardInterfac
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            upgradeBlock(UPGRADE_BLOCK);
             initializeDescription();
         }
     }

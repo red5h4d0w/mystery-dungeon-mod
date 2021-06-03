@@ -2,27 +2,21 @@ package mysteryDungeon.relics;
 
 import basemod.abstracts.CustomRelic;
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.interfaces.GoldBonusInterface;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.powers.RetainCardPower;
 
-public class QuirkyExplorerRelic extends CustomRelic implements GoldBonusInterface{ // You must implement things you want to use from StSlib
-    /*
-     * https://github.com/daviscook477/BaseMod/wiki/Custom-Relics
-     * StSLib for Clickable Relics
-     *
-     * Usable once per turn. Right click: Evoke your rightmost orb.
-     */
-
-    // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID("QuirkyExplorerRelic");
+public class TimidExplorerRelic extends CustomRelic { 
+    public static final String ID = MysteryDungeon.makeID("TimidExplorerRelic");
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;
@@ -30,8 +24,7 @@ public class QuirkyExplorerRelic extends CustomRelic implements GoldBonusInterfa
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("default_clickable_relic.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("default_clickable_relic.png"));
 
-
-    public QuirkyExplorerRelic() {
+    public TimidExplorerRelic() {
         super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.CLINK);
 
         tips.clear();
@@ -39,9 +32,9 @@ public class QuirkyExplorerRelic extends CustomRelic implements GoldBonusInterfa
     }
 
     @Override
-    public float goldBonusPercentage()
+    public void atPreBattle()
     {
-        return 0.05f;
+        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new RetainCardPower(AbstractDungeon.player, 1)));
     }
 
     // Description

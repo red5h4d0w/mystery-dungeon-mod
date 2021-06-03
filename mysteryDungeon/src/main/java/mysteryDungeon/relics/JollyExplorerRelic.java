@@ -1,6 +1,7 @@
 package mysteryDungeon.relics;
 
 import basemod.abstracts.CustomRelic;
+import basemod.helpers.CardPowerTip;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.ColorlessAgility;
 import mysteryDungeon.util.TextureLoader;
@@ -11,7 +12,6 @@ import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
 public class JollyExplorerRelic extends CustomRelic { // You must implement things you want to use from StSlib
@@ -37,7 +37,7 @@ public class JollyExplorerRelic extends CustomRelic { // You must implement thin
         super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.CLINK);
 
         tips.clear();
-        tips.add(new PowerTip(name, description));
+        tips.add(new CardPowerTip(new ColorlessAgility(), name, description));
     }
 
     @Override

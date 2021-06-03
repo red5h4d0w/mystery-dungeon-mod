@@ -1,6 +1,7 @@
 package mysteryDungeon;
 
 import basemod.*;
+import basemod.abstracts.CustomSavable;
 import basemod.eventUtil.AddEventParams;
 import basemod.interfaces.*;
 import mysteryDungeon.cards.*;
@@ -9,7 +10,6 @@ import mysteryDungeon.cards.Charmander.CharmanderScratch;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.events.IdentityCrisisEvent;
 import mysteryDungeon.potions.PlaceholderPotion;
-import mysteryDungeon.relics.CalmExplorerRelic;
 import mysteryDungeon.relics.NatureRelatedRelic;
 import mysteryDungeon.util.IDCheckDontTouchPls;
 import mysteryDungeon.util.TextureLoader;
@@ -29,6 +29,8 @@ import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -229,7 +231,7 @@ public class MysteryDungeon implements
         // The actual mod Button is added below in receivePostInitialize()
         mysteryDungeonDefaultSettings.setProperty(ENABLE_PLACEHOLDER_SETTINGS, "FALSE"); // This is the default setting. It's actually set...
         try {
-            SpireConfig config = new SpireConfig("MysteryDungeon", "mysteryDungeonConfig", mysteryDungeonDefaultSettings); // ...right here
+            SpireConfig config = new SpireConfig("mysteryDungeon", "mysteryDungeonConfig", mysteryDungeonDefaultSettings); // ...right here
             // the "fileName" parameter is the name of the file MTS will create where it will save our setting.
             config.load(); // Load the setting and set the boolean to equal it
             enablePlaceholder = config.getBool(ENABLE_PLACEHOLDER_SETTINGS);
@@ -287,7 +289,7 @@ public class MysteryDungeon implements
     public static void initialize() {
         logger.info("========================= Initializing Mystery Dungeon. Hi. =========================");
         @SuppressWarnings("unused")
-        MysteryDungeon MysteryDungeon = new MysteryDungeon(); 
+        MysteryDungeon mysteryDungeon = new MysteryDungeon(); 
         logger.info("========================= Mystery Dungeon Initialized. Hello World./ =========================");
     }
     
@@ -333,7 +335,7 @@ public class MysteryDungeon implements
             enablePlaceholder = button.enabled; // The boolean true/false will be whether the button is enabled or not
             try {
                 // And based on that boolean, set the settings and save them
-                SpireConfig config = new SpireConfig("MysteryDungeon", "MysteryDungeonConfig", mysteryDungeonDefaultSettings);
+                SpireConfig config = new SpireConfig("mysteryDungeon", "mysteryDungeonConfig", mysteryDungeonDefaultSettings);
                 config.setBool(ENABLE_PLACEHOLDER_SETTINGS, enablePlaceholder);
                 config.save();
             } catch (Exception e) {
@@ -344,6 +346,8 @@ public class MysteryDungeon implements
         settingsPanel.addUIElement(enableNormalsButton); // Add the button to the settings panel. Button is a go.
         
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
+
+        BaseMod.addSaveField("adventurer", (CustomSavable<Pokemon.Adventurer[]>)new Pokemon("the Pokémon", Pokemon.Enums.THE_POKEMON));
 
         
         // =============== EVENTS =================
@@ -406,7 +410,8 @@ public class MysteryDungeon implements
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
         new AutoAdd("MysteryDungeon")
                 .packageFilter(NatureRelatedRelic.class)
-                .any(NatureRelatedRelic.class, (info, relic) -> {
+                .setDefaultSeen(true)
+                .any(AbstractRelic.class, (info, relic) -> {
                     BaseMod.addRelicToCustomPool(relic, Pokemon.Enums.COLOR_GRAY);
                 });
         

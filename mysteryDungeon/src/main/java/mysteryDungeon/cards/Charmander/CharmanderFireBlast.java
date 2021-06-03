@@ -46,7 +46,7 @@ public class CharmanderFireBlast extends CustomCard {
     private static final int COST = 1;
     private static final int DAMAGE = 15;
     private static final int UPGRADE_PLUS_DMG = 5;
-    private static final int BASE_MAGIC_NUMBER = 10;
+    private static final int BASE_MAGIC_NUMBER = 15;
     private static final int UPGRADE_MAGIC_NUMBER = 5;
 
 

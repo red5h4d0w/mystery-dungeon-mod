@@ -1,6 +1,7 @@
 package mysteryDungeon.characters;
 
 import basemod.abstracts.CustomPlayer;
+import basemod.abstracts.CustomSavable;
 import basemod.animations.SpriterAnimation;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.Bulbasaur.*;
@@ -12,6 +13,9 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
+
+import com.google.gson.reflect.TypeToken;
+
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -32,6 +36,7 @@ import org.apache.logging.log4j.Logger;
 import static mysteryDungeon.MysteryDungeon.*;
 import static mysteryDungeon.characters.Pokemon.Enums.COLOR_GRAY;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Random;
@@ -40,7 +45,7 @@ import java.util.Random;
 //and https://github.com/daviscook477/BaseMod/wiki/Migrating-to-5.0
 //All text (starting description and loadout, anything labeled TEXT[]) can be found in MysteryDungeon-character-Strings.json in the resources
 
-public class Pokemon extends CustomPlayer {
+public class Pokemon extends CustomPlayer implements CustomSavable<Pokemon.Adventurer[]>{
     public static final Logger logger = LogManager.getLogger(MysteryDungeon.class.getName());
 
     // =============== CHARACTER ENUMERATORS =================
@@ -83,9 +88,9 @@ public class Pokemon extends CustomPlayer {
     public static final int STARTING_GOLD = 99;
     public static final int CARD_DRAW = 5;
     public static final int ORB_SLOTS = 3;
-    public Nature nature;
-    public Adventurer adventurer;
-    public Adventurer partner;
+    public static Nature nature;
+    public static Adventurer adventurer;
+    public static Adventurer partner;
 
     // =============== /BASE STATS/ =================
 
@@ -256,6 +261,28 @@ public class Pokemon extends CustomPlayer {
         UnlockTracker.markRelicAsSeen(NatureRelatedRelic.ID);
 
         return retVal;
+    }
+
+    @Override
+    public Adventurer[] onSave()
+    {
+        return new Adventurer[]{adventurer, partner};
+    }
+
+    @Override
+    public void onLoad(Adventurer[] adventurerAndPartner)
+    {
+        if(adventurerAndPartner!=null && adventurerAndPartner instanceof Adventurer[])
+        {
+            adventurer = ((Adventurer[])adventurerAndPartner)[0];
+            partner = ((Adventurer[])adventurerAndPartner)[1];
+        } 
+    }
+
+    @Override
+    public Type savedType()
+    {
+        return new TypeToken<Adventurer[]>(){}.getType();
     }
 
     // character Select screen effect
@@ -512,6 +539,11 @@ public class Pokemon extends CustomPlayer {
             default:
                 subcolors.add(Enums.COLOR_GRAY);
         }
+        // TODO: Remove the following line to control what decks are used
+        if(!subcolors.contains(Enums.BULBASAUR_GREEN))
+            subcolors.add(Enums.BULBASAUR_GREEN);
+        if(!subcolors.contains(Enums.CHARMANDER_RED))
+        subcolors.add(Enums.CHARMANDER_RED);
         return subcolors;
     }
 

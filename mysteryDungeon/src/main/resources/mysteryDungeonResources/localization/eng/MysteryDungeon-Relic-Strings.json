@@ -53,7 +53,7 @@
         "NAME": "Jolly Explorer",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "Start each combat with an Agility."
+            "Start each combat with an #yAgility."
         ]
     },
     "mysteryDungeon:QuirkyExplorerRelic": {
@@ -68,6 +68,13 @@
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
             "The first time you play a Skill each combat, gain 10 Block."
+        ]
+    },
+    "mysteryDungeon:TimidExplorerRelic": {
+        "NAME": "Timid Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "At the end of each turn, Retain 1 card."
         ]
     }
 }
