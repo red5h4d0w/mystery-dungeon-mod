@@ -18,7 +18,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.vfx.combat.GrandFinalEffect;
+import com.megacrit.cardcrawl.vfx.PetalEffect;
 
 
 //Gain 1 dex for the turn for each card played.
@@ -56,7 +56,7 @@ public class PetalDancePower extends AbstractPower implements CloneablePowerInte
 
     @Override
     public void atEndOfTurn(boolean isPlayer) {
-        addToBot(new VFXAction(new GrandFinalEffect()));
+        addToBot(new VFXAction(new PetalEffect(), 0.7f));
         addToBot(new DamageAllEnemiesAction((AbstractPlayer)owner, 7, DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         addToBot(new ReducePowerAction(owner, owner, this, 1));
     }

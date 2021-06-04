@@ -8,12 +8,17 @@ import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.BlurPower;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 public class HardyExplorerRelic extends CustomRelic { // You must implement things you want to use from StSlib
     /*
@@ -46,12 +51,26 @@ public class HardyExplorerRelic extends CustomRelic { // You must implement thin
         used = false;
     }
     
+    @Override
+    public void wasHPLost(int damageAmount)
+    {
+        if(!used&&AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && damageAmount > 0)
+        {
+            flash();
+            addToBot(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, 5));           
+            used = true;
+        }
+    }
+
+    @Override
     public int onAttacked(DamageInfo info, int damageAmount)
     {
-        if(!used)
+        if(!used && info.type!=DamageType.HP_LOSS && info.type!=DamageType.THORNS && info.owner instanceof AbstractMonster)
         {
-            addToBot(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, 3));
-            used = true;
+            if(damageAmount>AbstractDungeon.player.currentBlock)
+            {
+                addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new BlurPower(AbstractDungeon.player, 1)));
+            }
         }
         return damageAmount;
     }

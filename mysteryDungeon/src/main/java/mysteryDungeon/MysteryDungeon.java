@@ -30,6 +30,7 @@ import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -410,9 +411,9 @@ public class MysteryDungeon implements
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
         new AutoAdd("MysteryDungeon")
                 .packageFilter(NatureRelatedRelic.class)
-                .setDefaultSeen(true)
                 .any(AbstractRelic.class, (info, relic) -> {
                     BaseMod.addRelicToCustomPool(relic, Pokemon.Enums.COLOR_GRAY);
+                    UnlockTracker.markRelicAsSeen(relic.relicId);
                 });
         
         // This adds a relic to the Shared pool. Every character can find this relic.

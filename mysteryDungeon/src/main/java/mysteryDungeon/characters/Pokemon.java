@@ -576,7 +576,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<Pokemon.Adven
             case Sassy:
                 return new CalmExplorerRelic();
             case Timid:
-                return new CalmExplorerRelic();
+                return new TimidExplorerRelic();
             default:
                 return new CalmExplorerRelic();
         }

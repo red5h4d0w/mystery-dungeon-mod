@@ -39,7 +39,7 @@
         "NAME": "Hardy Explorer",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "The first time you take unblocked damage each turn, gain 3 Block."
+            "The first time you lose HP each turn, gain 5 Block. If this HP loss was from a monster's attack, gain 1 Blur"
         ]
     },
     "mysteryDungeon:ImpishExplorerRelic": {
