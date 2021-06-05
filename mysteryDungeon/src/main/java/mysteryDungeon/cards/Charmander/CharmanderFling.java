@@ -5,29 +5,25 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 import basemod.abstracts.CustomCard;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.VulnerablePower;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.actions.FlingAction;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.BlazePower;
+import mysteryDungeon.powers.BurnPower;
 
-public class CharmanderBlaze extends CustomCard {
-
-    /*
-     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
-     *
-     * Special Strike: Deal 7 (*) damage times the energy you currently have.
-     */
+public class CharmanderFling extends CustomCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(CharmanderBlaze.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CharmanderFling.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("CharmanderPower.png");
+    public static final String IMG = makeCardPath("CharmanderAttack.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -37,30 +33,36 @@ public class CharmanderBlaze extends CustomCard {
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.POWER;
+    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
     private static final int COST = 0;
-    private static final int BASE_MAGIC_NUMBER = 1;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
+    private static final int DAMAGE = 5;
+    private static final int BASE_MAGIC_NUMBER = 2;
 
 
     // /STAT DECLARATION/
 
-    public CharmanderBlaze() {
+    public CharmanderFling() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        baseDamage = DAMAGE;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        exhaust = true;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        // Create an int which equals to your current energy.
-        addToBot(new ApplyPowerAction(p, p, new VulnerablePower(p, 2, false), 2));
-        addToBot(new ApplyPowerAction(p, p, new BlazePower(p, magicNumber), magicNumber));
+        if(upgraded)
+        {
+            addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn)));
+            addToBot(new ApplyPowerAction(m, p, new BurnPower(p, magicNumber), magicNumber));
+        }
+        addToBot(new FlingAction(m, new DamageInfo(p, damage, damageTypeForTurn), 5, 2));
+        
     }
 
     // Upgraded stats.
@@ -68,7 +70,6 @@ public class CharmanderBlaze extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

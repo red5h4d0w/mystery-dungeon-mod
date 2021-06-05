@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
+import com.megacrit.cardcrawl.powers.WeakPower;
 import com.megacrit.cardcrawl.vfx.combat.SmokeBombEffect;
 
 import mysteryDungeon.MysteryDungeon;
@@ -43,7 +44,6 @@ public class CharmanderSmokescreen extends CustomCard {
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
     private static final int COST = 3;
-    private static final int UPGRADE_COST = 2;
     private static final int BASE_MAGIC_NUMBER = 1;
 
 
@@ -61,6 +61,7 @@ public class CharmanderSmokescreen extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new VFXAction(new SmokeBombEffect(p.hb.cX, p.hb.cY)));
         addToBot(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, magicNumber), magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new WeakPower(p, upgraded?1:2, false), upgraded?1:2));
     }
 
     // Upgraded stats.
@@ -68,7 +69,6 @@ public class CharmanderSmokescreen extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(UPGRADE_COST);
             initializeDescription();
         }
     }

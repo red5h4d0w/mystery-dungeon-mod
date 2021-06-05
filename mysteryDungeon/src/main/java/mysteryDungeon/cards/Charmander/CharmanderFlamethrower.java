@@ -46,8 +46,7 @@ public class CharmanderFlamethrower extends CustomCard {
     private static final int COST = 1;
     private static final int DAMAGE = 10;
     private static final int UPGRADE_PLUS_DMG = 4;
-    private static final int BASE_MAGIC_NUMBER = 5;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
+    private static final int BASE_MAGIC_NUMBER = 3;
 
 
     // /STAT DECLARATION/
@@ -79,7 +78,6 @@ public class CharmanderFlamethrower extends CustomCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             initializeDescription();
         }
     }

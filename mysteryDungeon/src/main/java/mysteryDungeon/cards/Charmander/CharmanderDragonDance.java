@@ -4,31 +4,23 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import basemod.abstracts.CustomCard;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.DrawPower;
-
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.ReduceHighestCostAtStartOfTurnPower;
 
-public class CharmanderSunnyDay extends CustomCard {
+public class CharmanderDragonDance extends CustomCard {
 
-    /*
-     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
-     *
-     * Special Strike: Deal 7 (*) damage times the energy you currently have.
-     */
-
-    // TEXT DECLARATION
-
-    public static final String ID = MysteryDungeon.makeID(CharmanderSunnyDay.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CharmanderDragonDance.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("CharmanderPower.png");
+    public static final String IMG = makeCardPath("CharmanderSkill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -38,28 +30,44 @@ public class CharmanderSunnyDay extends CustomCard {
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.POWER;
+    private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
-    private static final int COST = 1;
+    private static final int COST = 0;
+    private static final int BASE_MAGIC_NUMBER = 3;
 
 
     // /STAT DECLARATION/
 
-    public CharmanderSunnyDay() {
+    public CharmanderDragonDance() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseMagicNumber = 1;
+        baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        // Create an int which equals to your current energy.
-        addToBot(new ApplyPowerAction(p, p, new DrawPower(p, magicNumber), magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new ReduceHighestCostAtStartOfTurnPower(p, 1), 1));
+        if(upgraded)
+        {
+            addToBot(new DrawCardAction(p, magicNumber));
+            addToBot(new ExhaustAction(p, p, magicNumber, false, false));
+        }
+        else
+        {
+            addToBot(new ExhaustAction(p, p, magicNumber, false, false));
+            addToBot(new DrawCardAction(p, magicNumber));
+        }
+    }
+
+    @Override
+    public boolean canPlay(AbstractCard card)
+    {
+        if(card == this && AbstractDungeon.player.hand.size()<5)
+            return false;
+        return true;
     }
 
     // Upgraded stats.
@@ -69,7 +77,6 @@ public class CharmanderSunnyDay extends CustomCard {
             upgradeName();
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
-            isInnate = true;
         }
     }
 }

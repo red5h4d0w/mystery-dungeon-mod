@@ -75,7 +75,11 @@
   },
   "mysteryDungeon:BulbasaurPoisonPowder": {
     "NAME": "Poison Powder",
-    "DESCRIPTION": "Scatters a toxic powder that may poison the foe. NL Apply !M! Poison to ALL enemies."
+    "DESCRIPTION": "Apply !M! Poison to ALL enemies."
+  },
+  "mysteryDungeon:BulbasaurPowerWhip": {
+    "NAME": "Power Whip",
+    "DESCRIPTION": "Retain. NL Deal !D! damage."
   },
   "mysteryDungeon:BulbasaurProtect": {
     "NAME": "Protect",
@@ -159,7 +163,7 @@
   "mysteryDungeon:CharmanderBlaze": {
     "NAME": "Blaze",
     "DESCRIPTION": "Gain 2 Vulnerable. NL The first time you spend all energy each turn, gain [E].",
-    "UPGRADE_DESRIPTION": "Gain 2 Vulnerable. NL The first 2 times you spend all energy each turn, gain [E]."
+    "UPGRADE_DESCRIPTION": "Gain 2 Vulnerable. NL The first 2 times you spend all energy each turn, gain [E]."
   },
   "mysteryDungeon:CharmanderCounter": {
     "NAME": "Counter",
@@ -182,6 +186,11 @@
     "NAME": "Dragon Claw",
     "DESCRIPTION": "Deal !D! damage to ALL enemies."
   },
+  "mysteryDungeon:CharmanderDragonDance": {
+    "NAME": "Dragon Dance",
+    "DESCRIPTION": "Exhaust !M! cards. NL Draw !M! cards. NL (You cannot play this card if you cannot exhaust !M! cards.)",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards NL Exhaust !M! cards."
+  },
   "mysteryDungeon:CharmanderDragonRage": {
     "NAME": "Dragon Rage",
     "DESCRIPTION": "Ethereal. NL Enemy loses !D! HP. Exhaust."
@@ -196,7 +205,8 @@
   },
   "mysteryDungeon:CharmanderFacade": {
     "NAME": "Facade",
-    "DESCRIPTION": "Gain 1 Dexterity for each !M! different debuffs on the enemy. NL Exhaust."
+    "DESCRIPTION": "Gain 1 Dexterity.",
+    "UPGRADE_DESCRIPTION": "Gain 1 Dexterity and 1 Artifact."
   },
   "mysteryDungeon:CharmanderFireBlast": {
     "NAME": "Fire Blast",
@@ -218,13 +228,18 @@
     "NAME": "Flare Blitz",
     "DESCRIPTION": "Deal damage equal to !M! times the number of exhausted cards this combat."
   },
+  "mysteryDungeon:CharmanderFling": {
+    "NAME": "Fling",
+    "DESCRIPTION": "Exhaust up to 5 cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! mysterydungeon:Burn NL Exhaust up to 5 cards. NL Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust."
+  },
   "mysteryDungeon:CharmanderHeatWave": {
     "NAME": "Heat Wave",
-    "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Exhaust a random card in your hand."
+    "DESCRIPTION": "Gain !B! Block NL Apply !M! mysterydungeon:Burn. NL Exhaust a random card in your hand."
   },
   "mysteryDungeon:CharmanderInferno": {
     "NAME": "Inferno",
-    "DESCRIPTION": "Deal !D! to ALL enemies. NL Apply !M! mysterydungeon:Burn to ALL enemies."
+    "DESCRIPTION": "Apply !M! mysterydungeon:Burn to ALL enemies."
   },
   "mysteryDungeon:CharmanderMetalClaw": {
     "NAME": "Metal Claw",
@@ -253,7 +268,8 @@
   },
   "mysteryDungeon:CharmanderSmokescreen": {
     "NAME": "Smokescreen",
-    "DESCRIPTION": "Gain !M! Intangible. NL Exhaust."
+    "DESCRIPTION": "Gain !M! Intangible. NL Gain 2 Weak NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Intangible. NL Gain 1 Weak NL Exhaust."
   },
   "mysteryDungeon:CharmanderSolarPower": {
     "NAME": "Solar Power",
