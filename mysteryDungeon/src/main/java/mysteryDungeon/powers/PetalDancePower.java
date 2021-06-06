@@ -23,7 +23,7 @@ import com.megacrit.cardcrawl.vfx.PetalEffect;
 
 //Gain 1 dex for the turn for each card played.
 
-public class PetalDancePower extends AbstractPower implements CloneablePowerInterface {
+public class PetalDancePower extends MysteryDungeonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("PetalDancePower");
@@ -68,6 +68,13 @@ public class PetalDancePower extends AbstractPower implements CloneablePowerInte
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        if(amount == 1)
+        {
+            description = DESCRIPTIONS[0];
+        } 
+        else
+        {
+            description = String.format(DESCRIPTIONS[1], amount);
+        }
     }
 }

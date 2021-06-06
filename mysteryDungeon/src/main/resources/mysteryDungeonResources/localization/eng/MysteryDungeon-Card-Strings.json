@@ -188,8 +188,14 @@
   },
   "mysteryDungeon:CharmanderDragonDance": {
     "NAME": "Dragon Dance",
-    "DESCRIPTION": "Exhaust !M! cards. NL Draw !M! cards. NL (You cannot play this card if you cannot exhaust !M! cards.)",
-    "UPGRADE_DESCRIPTION": "Draw !M! cards NL Exhaust !M! cards."
+    "DESCRIPTION": "Exhaust !M! cards. NL Draw !mysteryDungeon:M2! cards. NL (You cannot play this card if you cannot exhaust !M! cards.)",
+    "UPGRADE_DESCRIPTION": "Draw !mysteryDungeon:M2! cards NL Exhaust !M! cards."
+  },
+  "mysteryDungeon:CharmanderDragonPulse": {
+    "NAME": "Dragon Pulse",
+    "DESCRIPTION": "Unplayable. NL Add a random card from your exhaust pile on the top of draw pile.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL Add a random card from your exhaust pile on the top of draw pile. NL Next Turn, Draw 1 more card.",
+    "EXTENDED_DESCRIPTION": ["I can't play this card."]
   },
   "mysteryDungeon:CharmanderDragonRage": {
     "NAME": "Dragon Rage",
@@ -266,6 +272,11 @@
     "NAME": "Slash",
     "DESCRIPTION": "Deal !D! damage !M! times."
   },
+  "mysteryDungeon:CharmanderSleepTalk": {
+    "NAME": "Sleep Talk",
+    "DESCRIPTION": "The first time you exhaust a card each turn, add a random card to your hand.",
+    "UPGRADE_DESCRIPTION": "The first 2 times you exhaust a card each turn, add a random card to your hand."
+  },
   "mysteryDungeon:CharmanderSmokescreen": {
     "NAME": "Smokescreen",
     "DESCRIPTION": "Gain !M! Intangible. NL Gain 2 Weak NL Exhaust.",
@@ -276,9 +287,9 @@
     "DESCRIPTION": "At the start of each turn, gain 1 Strength if an enemy is affected by mysterydungeon:Burn.",
     "UPGRADE_DESCRIPTION": "Innate NL At the start of each turn, gain 1 Strength if an enemy is affected by mysterydungeon:Burn."
   },
-  "mysteryDungeon:CharmanderSunnyDay": {
-    "NAME": "Sunny Day",
-    "DESCRIPTION": "At the start of each turn, NL Draw one more card and Reduce by 1 the cost of the card with the highest cost in your hand.",
-    "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn, NL Draw one more card and Reduce by 1 the cost of the card with the highest cost in your hand."
+  "mysteryDungeon:CharmanderWillOWisp": {
+    "NAME": "Will-O-Wisp",
+    "DESCRIPTION": "Apply X Weak. NL Apply 3X mysterydungeon:Burn. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. Exhaust."
   }
 }

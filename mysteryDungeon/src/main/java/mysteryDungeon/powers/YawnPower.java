@@ -69,6 +69,13 @@ public class YawnPower extends AbstractPower implements CloneablePowerInterface 
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        if(amount == 1)
+        {
+            description = DESCRIPTIONS[0];
+        } 
+        else
+        {
+            description = String.format(DESCRIPTIONS[1], amount);
+        }
     }
 }

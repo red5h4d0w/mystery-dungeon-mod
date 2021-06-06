@@ -4,7 +4,6 @@ import basemod.*;
 import basemod.abstracts.CustomSavable;
 import basemod.eventUtil.AddEventParams;
 import basemod.interfaces.*;
-import mysteryDungeon.cards.*;
 import mysteryDungeon.cards.Bulbasaur.*;
 import mysteryDungeon.cards.Charmander.CharmanderScratch;
 import mysteryDungeon.characters.Pokemon;
@@ -454,10 +453,6 @@ public class MysteryDungeon implements
 
         //TODO: Rename the "MysteryDungeon" with the modid in your ModTheSpire.json file
         //TODO: The artifact mentioned in ModTheSpire.json is the artifactId in pom.xml you should've edited earlier
-        new AutoAdd("MysteryDungeon") // ${project.artifactId}
-            .packageFilter(AbstractDefaultCard.class) // filters to any class in the same package as AbstractDefaultCard, nested packages included
-            .setDefaultSeen(true)
-            .cards();
         new AutoAdd("MysteryDungeon")
             .packageFilter(BulbasaurTackle.class)
             .setDefaultSeen(true)

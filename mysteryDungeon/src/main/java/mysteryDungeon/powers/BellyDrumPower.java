@@ -20,7 +20,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class BellyDrumPower extends AbstractPower implements CloneablePowerInterface, FreeToPlayInterface {
+public class BellyDrumPower extends MysteryDungeonPower implements CloneablePowerInterface, FreeToPlayInterface {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("BellyDrumPower");
@@ -77,6 +77,13 @@ public class BellyDrumPower extends AbstractPower implements CloneablePowerInter
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        if(amount == 1)
+        {
+            description = DESCRIPTIONS[0];
+        } 
+        else
+        {
+            description = String.format(DESCRIPTIONS[1], amount);
+        }
     }
 }

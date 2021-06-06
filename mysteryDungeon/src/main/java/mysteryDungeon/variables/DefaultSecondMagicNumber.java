@@ -1,7 +1,7 @@
 package mysteryDungeon.variables;
 
 import basemod.abstracts.DynamicVariable;
-import mysteryDungeon.cards.AbstractDefaultCard;
+import mysteryDungeon.cards.PokemonCard;
 
 import static mysteryDungeon.MysteryDungeon.makeID;
 
@@ -13,7 +13,7 @@ public class DefaultSecondMagicNumber extends DynamicVariable {
 
     @Override
     public String key() {
-        return makeID("SecondMagic");
+        return makeID("M2");
         // This is what you put between "!!" in your card strings to actually display the number.
         // You can name this anything (no spaces), but please pre-phase it with your mod name as otherwise mod conflicts can occur.
         // Remember, we're using makeID so it automatically puts "Pokemon:" (or, your id) before the name.
@@ -21,22 +21,22 @@ public class DefaultSecondMagicNumber extends DynamicVariable {
 
     @Override
     public boolean isModified(AbstractCard card) {
-        return ((AbstractDefaultCard) card).isDefaultSecondMagicNumberModified;
+        return ((PokemonCard) card).isSecondMagicNumberModified;
 
     }
 
     @Override
     public int value(AbstractCard card) {
-        return ((AbstractDefaultCard) card).defaultSecondMagicNumber;
+        return ((PokemonCard) card).secondMagicNumber;
     }
 
     @Override
     public int baseValue(AbstractCard card) {
-        return ((AbstractDefaultCard) card).defaultBaseSecondMagicNumber;
+        return ((PokemonCard) card).baseSecondMagicNumber;
     }
 
     @Override
     public boolean upgraded(AbstractCard card) {
-        return ((AbstractDefaultCard) card).upgradedDefaultSecondMagicNumber;
+        return ((PokemonCard) card).upgradedSecondMagicNumber;
     }
 }

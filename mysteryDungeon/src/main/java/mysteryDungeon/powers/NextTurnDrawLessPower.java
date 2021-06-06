@@ -20,7 +20,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class NextTurnDrawLessPower extends AbstractPower implements CloneablePowerInterface, OnReceivePowerPower {
+public class NextTurnDrawLessPower extends MysteryDungeonPower implements CloneablePowerInterface, OnReceivePowerPower {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("NextTurnDrawLessPower");
@@ -86,6 +86,13 @@ public class NextTurnDrawLessPower extends AbstractPower implements CloneablePow
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        if(amount == 1)
+        {
+            description = DESCRIPTIONS[0];
+        } 
+        else
+        {
+            description = String.format(DESCRIPTIONS[1], amount);
+        }
     }
 }

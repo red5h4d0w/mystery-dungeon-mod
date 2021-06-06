@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class ToxicPower extends AbstractPower implements CloneablePowerInterface {
+public class ToxicPower extends MysteryDungeonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("ToxicPower");
@@ -54,6 +54,6 @@ public class ToxicPower extends AbstractPower implements CloneablePowerInterface
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        description = String.format(DESCRIPTIONS[0], amount);
     }
 }

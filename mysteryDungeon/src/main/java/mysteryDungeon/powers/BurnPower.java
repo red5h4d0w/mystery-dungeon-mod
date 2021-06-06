@@ -8,6 +8,7 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -18,7 +19,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class BurnPower extends AbstractPower implements CloneablePowerInterface {
+public class BurnPower extends MysteryDungeonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("BurnPower");
@@ -52,7 +53,7 @@ public class BurnPower extends AbstractPower implements CloneablePowerInterface 
     @Override
     public float atDamageGive(float damage, DamageInfo.DamageType type) {
         if (type == DamageInfo.DamageType.NORMAL)
-          return damage - (int)Math.floor((float)this.amount/5.0f); 
+          return damage - MathUtils.floor(this.amount/5.0f); 
         return damage;
       }
 
@@ -73,6 +74,6 @@ public class BurnPower extends AbstractPower implements CloneablePowerInterface 
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        description = String.format(DESCRIPTIONS[0], MathUtils.floor(this.amount/5.0f));
     }
 }

@@ -1,30 +1,31 @@
-package mysteryDungeon.cards.Bulbasaur;
+package mysteryDungeon.cards.Charmander;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import basemod.abstracts.CustomCard;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.WeakPower;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.powers.BurnPower;
 
-public class BulbasaurSeedBomb extends CustomCard {
+public class CharmanderWillOWisp extends CustomCard {
 
-    
+    // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(BulbasaurSeedBomb.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CharmanderWillOWisp.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("BulbasaurAttack.png");
+    public static final String IMG = makeCardPath("CharmanderSkill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -32,27 +33,26 @@ public class BulbasaurSeedBomb extends CustomCard {
     // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
-    private static final CardType TYPE = CardType.ATTACK;
-    public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardType TYPE = CardType.SKILL;
+    public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
     private static final int COST = -1;
-    private static final int DAMAGE = 8;
-    private static final int UPGRADE_PLUS_DMG = 2;
-
+    private static final int BASE_MAGIC_NUMBER = 3;
 
 
     // /STAT DECLARATION/
 
-    public BulbasaurSeedBomb() {
+    public CharmanderWillOWisp() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseDamage = DAMAGE;
+        baseMagicNumber = BASE_MAGIC_NUMBER;
+        magicNumber = BASE_MAGIC_NUMBER;
+        exhaust = true;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        // Create an int which equals to your current energy.
         if (energyOnUse < EnergyPanel.totalCount)
         {
             energyOnUse = EnergyPanel.totalCount; 
@@ -60,11 +60,10 @@ public class BulbasaurSeedBomb extends CustomCard {
         if (p.hasRelic("Chemical X")) {
             this.energyOnUse += 2;
             p.getRelic("Chemical X").flash();
-        } 
-        for (int i = 0; i < this.energyOnUse; i++) 
-        {
-            addToBot(new DamageRandomEnemyAction(new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         }
+        energyOnUse += upgraded?1:0;
+        addToBot(new ApplyPowerAction(m, p, new WeakPower(p, energyOnUse, false), energyOnUse));
+        addToBot(new ApplyPowerAction(m, p, new BurnPower(m, 3*energyOnUse), 3*energyOnUse));
         if (!this.freeToPlayOnce)
         {
             p.energy.use(EnergyPanel.totalCount);
@@ -76,7 +75,7 @@ public class BulbasaurSeedBomb extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_PLUS_DMG);
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

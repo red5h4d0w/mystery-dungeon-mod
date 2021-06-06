@@ -8,22 +8,22 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 
 //Gain 1 dex for the turn for each card played.
 
-public class CounterPower extends MysteryDungeonPower implements CloneablePowerInterface {
+public class SleepTalkPower extends MysteryDungeonPower implements CloneablePowerInterface {
     public AbstractCreature source;
+    public int timesActivated = 0;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("CounterPower");
+    public static final String POWER_ID = MysteryDungeon.makeID("SleepTalkPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -34,15 +34,14 @@ public class CounterPower extends MysteryDungeonPower implements CloneablePowerI
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
 
-    public CounterPower(final AbstractCreature owner, final int amount) {
+    public SleepTalkPower(final AbstractCreature owner, final int amount) {
         name = NAME;
         ID = POWER_ID;
 
         this.owner = owner;
         this.amount = amount;
 
-        type = PowerType.BUFF;
-        isTurnBased = true;
+        type = PowerType.DEBUFF;
 
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
@@ -52,38 +51,34 @@ public class CounterPower extends MysteryDungeonPower implements CloneablePowerI
     }
 
     @Override
-    public int onAttacked(DamageInfo info, int damageAmount)
+    public void onExhaust(AbstractCard card)
     {
-        if(info.type!=DamageType.HP_LOSS && info.type!=DamageType.THORNS)
+        if(timesActivated<amount)
         {
-            if(damageAmount>owner.currentBlock)
-            {
-                addToBot(new DamageAction(info.owner, new DamageInfo(owner, amount, DamageType.THORNS)));
-                addToBot(new RemoveSpecificPowerAction(owner, owner, this));
-            }
+            flash();
+            addToBot(new MakeTempCardInHandAction(AbstractDungeon.returnTrulyRandomCard()));
+            timesActivated++;
         }
-        return damageAmount;
     }
 
     @Override
-    public void atEndOfRound() {
-        addToBot(new RemoveSpecificPowerAction(owner, owner, this));
+    public void atEndOfRound()
+    {
+        timesActivated = 0;
     }
 
     @Override
     public AbstractPower makeCopy() {
-        return new CounterPower(owner, amount);
+        return new SleepTalkPower(owner, amount);
     }
 
     @Override
     public void updateDescription() {
-        if(amount == 1)
+        if(amount==1)
         {
-            description = String.format(DESCRIPTIONS[0], amount);
-        } 
-        else
-        {
-            description = String.format(DESCRIPTIONS[1], amount);
+            description = DESCRIPTIONS[0];
+            return;
         }
+        description = String.format(DESCRIPTIONS[1], amount);
     }
 }

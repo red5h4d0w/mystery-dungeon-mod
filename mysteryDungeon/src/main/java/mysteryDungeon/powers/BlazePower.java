@@ -20,7 +20,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class BlazePower extends AbstractPower implements CloneablePowerInterface {
+public class BlazePower extends MysteryDungeonPower implements CloneablePowerInterface {
     public AbstractCreature source;
     public int counter = 0;
 
@@ -73,6 +73,13 @@ public class BlazePower extends AbstractPower implements CloneablePowerInterface
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        if(amount == 1)
+        {
+            description = DESCRIPTIONS[0];
+        } 
+        else
+        {
+            description = String.format(DESCRIPTIONS[1], amount);
+        }
     }
 }

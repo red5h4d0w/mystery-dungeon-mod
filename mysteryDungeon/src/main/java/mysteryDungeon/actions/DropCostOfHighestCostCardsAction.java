@@ -24,6 +24,7 @@ public class DropCostOfHighestCostCardsAction extends AbstractGameAction {
         this.amount = amount;
     }
   
+    @SuppressWarnings("all") // Suppresses the type cast warning
     public void update() {
         if(target instanceof AbstractPlayer)
         {

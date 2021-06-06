@@ -32,6 +32,7 @@ public class CharmanderSmokescreen extends CustomCard {
     public static final String IMG = makeCardPath("CharmanderSkill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -69,6 +70,7 @@ public class CharmanderSmokescreen extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

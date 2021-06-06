@@ -19,7 +19,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class SolarPowerPower extends AbstractPower implements CloneablePowerInterface {
+public class SolarPowerPower extends MysteryDungeonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("SolarPowerPower");
@@ -41,7 +41,6 @@ public class SolarPowerPower extends AbstractPower implements CloneablePowerInte
         this.amount = amount;
 
         type = PowerType.BUFF;
-        isTurnBased = true;
 
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
@@ -66,6 +65,6 @@ public class SolarPowerPower extends AbstractPower implements CloneablePowerInte
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        description = String.format(DESCRIPTIONS[0], amount);
     }
 }

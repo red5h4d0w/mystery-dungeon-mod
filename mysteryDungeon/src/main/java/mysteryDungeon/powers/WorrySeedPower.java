@@ -25,7 +25,7 @@ import org.apache.logging.log4j.Logger;
 
 //Gain 1 dex for the turn for each card played.
 
-public class WorrySeedPower extends AbstractPower implements CloneablePowerInterface, onCreateRewards {
+public class WorrySeedPower extends MysteryDungeonPower implements CloneablePowerInterface, onCreateRewards {
     public AbstractCreature source;
 
     public static Logger logger = LogManager.getLogger(WorrySeedPower.class.getName());
@@ -79,6 +79,13 @@ public class WorrySeedPower extends AbstractPower implements CloneablePowerInter
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        if(amount == 1)
+        {
+            description = DESCRIPTIONS[0];
+        } 
+        else
+        {
+            description = String.format(DESCRIPTIONS[1], amount);
+        }
     }
 }

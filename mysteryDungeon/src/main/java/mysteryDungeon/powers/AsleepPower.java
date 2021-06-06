@@ -27,7 +27,7 @@ import java.lang.reflect.Field;
 
 //Gain 1 dex for the turn for each card played.
 
-public class AsleepPower extends AbstractPower implements CloneablePowerInterface {
+public class AsleepPower extends MysteryDungeonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
     Logger logger = LogManager.getLogger(AsleepPower.class);
@@ -128,5 +128,17 @@ public class AsleepPower extends AbstractPower implements CloneablePowerInterfac
     @Override
     public AbstractPower makeCopy() {
         return new AsleepPower(owner, amount);
+    }
+
+    @Override
+    public void updateDescription() {
+        if(amount == 1)
+        {
+            description = DESCRIPTIONS[0];
+        } 
+        else
+        {
+            description = String.format(DESCRIPTIONS[1], amount);
+        }
     }
 }

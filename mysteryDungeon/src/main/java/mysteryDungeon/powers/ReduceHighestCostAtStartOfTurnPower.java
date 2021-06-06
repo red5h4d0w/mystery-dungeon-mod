@@ -20,7 +20,7 @@ import org.apache.logging.log4j.Logger;
 
 //Gain 1 dex for the turn for each card played.
 
-public class ReduceHighestCostAtStartOfTurnPower extends AbstractPower implements CloneablePowerInterface {
+public class ReduceHighestCostAtStartOfTurnPower extends MysteryDungeonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
     public static final Logger logger = LogManager.getLogger(MysteryDungeon.class.getName());
@@ -60,5 +60,17 @@ public class ReduceHighestCostAtStartOfTurnPower extends AbstractPower implement
     @Override
     public AbstractPower makeCopy() {
         return new ReduceHighestCostAtStartOfTurnPower(owner, amount);
+    }
+
+    @Override
+    public void updateDescription() {
+        if(amount == 1)
+        {
+            description = DESCRIPTIONS[0];
+        } 
+        else
+        {
+            description = String.format(DESCRIPTIONS[1], amount);
+        }
     }
 }
