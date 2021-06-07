@@ -77,3 +77,5 @@ $RECYCLE.BIN/
 
 # Spriter files
 *.autosave.scml
+mysteryDungeon/pom.xml
+mysteryDungeon/.factorypath
