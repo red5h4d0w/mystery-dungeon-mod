@@ -321,6 +321,11 @@
     "DESCRIPTION": "Apply X Weak. NL Apply 3X mysterydungeon:Burn. Exhaust.",
     "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. Exhaust."
   },
+  "mysteryDungeon:SquirtleAquaTail": {
+    "NAME": "Aqua Tail",
+    "DESCRIPTION": "Deal !D! damage. NL Scry !M! cards. NL Draw !mysteryDungeon:M2! cards. NL Discard !mysteryDungeon:M3! cards.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Scry !M! cards. NL Draw !mysteryDungeon:M2! cards. NL Discard !mysteryDungeon:M3! card."
+  },
   "mysteryDungeon:SquirtleDefend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."

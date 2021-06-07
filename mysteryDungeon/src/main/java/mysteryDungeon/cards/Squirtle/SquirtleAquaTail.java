@@ -4,7 +4,9 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.actions.common.DiscardAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -24,6 +26,7 @@ public class SquirtleAquaTail extends PokemonCard {
     public static final String IMG = makeCardPath("SquirtleAttack.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -36,8 +39,13 @@ public class SquirtleAquaTail extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 6;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int DAMAGE = 9;
+    private static final int UPGRADE_PLUS_DMG = 4;
+    private static final int BASE_MAGIC_NUMBER = 2;
+    private static final int UPGRADE_BASE_MAGIC_NUMBER = 1;
+    private static final int SECOND_MAGIC_NUMBER = 2;
+    private static final int THIRD_MAGIC_NUMBER = 2;
+    private static final int UPGRADE_THIRD_MAGIC_NNUMBER = -1;
 
 
     // /STAT DECLARATION/
@@ -45,13 +53,21 @@ public class SquirtleAquaTail extends PokemonCard {
     public SquirtleAquaTail() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        this.tags.add(AbstractCard.CardTags.STARTER_STRIKE);
+        baseMagicNumber = BASE_MAGIC_NUMBER;
+        magicNumber = baseMagicNumber;
+        baseSecondMagicNumber = SECOND_MAGIC_NUMBER;
+        secondMagicNumber = baseSecondMagicNumber;
+        baseThirdMagicNumber = THIRD_MAGIC_NUMBER;
+        thirdMagicNumber = baseThirdMagicNumber;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
+        addToBot(new ScryAction(magicNumber));
+        addToBot(new DrawCardAction(secondMagicNumber));
+        addToBot(new DiscardAction(p, p, thirdMagicNumber, false));
     }
 
     // Upgraded stats.
@@ -60,6 +76,9 @@ public class SquirtleAquaTail extends PokemonCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeMagicNumber(UPGRADE_BASE_MAGIC_NUMBER);
+            upgradeThirdMagicNumber(UPGRADE_THIRD_MAGIC_NNUMBER);
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }
