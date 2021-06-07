@@ -7,7 +7,7 @@ import static mysteryDungeon.MysteryDungeon.makeID;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 
-public class DefaultSecondMagicNumber extends DynamicVariable {
+public class SecondMagicNumber extends DynamicVariable {
 
     //For in-depth comments, check the other variable(DefaultCustomVariable). It's nearly identical.
 

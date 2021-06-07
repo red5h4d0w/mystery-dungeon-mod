@@ -15,7 +15,8 @@ import mysteryDungeon.util.IDCheckDontTouchPls;
 import mysteryDungeon.util.LocalizationTool;
 import mysteryDungeon.util.TextureLoader;
 import mysteryDungeon.variables.DefaultCustomVariable;
-import mysteryDungeon.variables.DefaultSecondMagicNumber;
+import mysteryDungeon.variables.SecondMagicNumber;
+import mysteryDungeon.variables.ThirdMagicNumber;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
@@ -445,7 +446,8 @@ public class MysteryDungeon implements
         logger.info("Add variables");
         // Add the Custom Dynamic variables
         BaseMod.addDynamicVariable(new DefaultCustomVariable());
-        BaseMod.addDynamicVariable(new DefaultSecondMagicNumber());
+        BaseMod.addDynamicVariable(new SecondMagicNumber());
+        BaseMod.addDynamicVariable(new ThirdMagicNumber());
         
         logger.info("Adding cards");
         // Add the cards
