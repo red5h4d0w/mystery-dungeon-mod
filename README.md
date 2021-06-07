@@ -1,4 +1,6 @@
-# StS-Default Mod Base
+# Mystery Dungeon mod
+
+Created with Default base mod as a template
 
 Welcome to this extremely over-commented Slay the Spire modding base. 
 
