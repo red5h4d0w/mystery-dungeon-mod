@@ -14,8 +14,12 @@ public abstract class PokemonCard extends CustomCard {
 
     public int secondMagicNumber;        // Just like magic number, or any number for that matter, we want our regular, modifiable stat
     public int baseSecondMagicNumber;    // And our base stat - the number in it's base state. It will reset to that by default.
+    public int thirdMagicNumber;        // Just like magic number, or any number for that matter, we want our regular, modifiable stat
+    public int baseThirdMagicNumber;    // And our base stat - the number in it's base state. It will reset to that by default.
     public boolean upgradedSecondMagicNumber; // A boolean to check whether the number has been upgraded or not.
+    public boolean upgradedThirdMagicNumber; // A boolean to check whether the number has been upgraded or not.
     public boolean isSecondMagicNumberModified; // A boolean to check whether the number has been modified or not, for coloring purposes. (red/green)
+    public boolean isThirdMagicNumberModified; // A boolean to check whether the number has been modified or not, for coloring purposes. (red/green)
 
     public PokemonCard(final String id,
                                final String name,
@@ -36,6 +40,7 @@ public abstract class PokemonCard extends CustomCard {
         isBlockModified = false;
         isMagicNumberModified = false;
         isSecondMagicNumberModified = false;
+        isThirdMagicNumberModified = false;
     }
 
     public void displayUpgrades() { // Display the upgrade - when you click a card to upgrade it
@@ -44,6 +49,10 @@ public abstract class PokemonCard extends CustomCard {
             secondMagicNumber = baseSecondMagicNumber; // Show how the number changes, as out of combat, the base number of a card is shown.
             isSecondMagicNumberModified = true; // Modified = true, color it green to highlight that the number is being changed.
         }
+        if (upgradedThirdMagicNumber) { // If we set upgradedSecondMagicNumber = true in our card.
+            thirdMagicNumber = baseThirdMagicNumber; // Show how the number changes, as out of combat, the base number of a card is shown.
+            isThirdMagicNumberModified = true; // Modified = true, color it green to highlight that the number is being changed.
+        }
 
     }
 
@@ -51,5 +60,11 @@ public abstract class PokemonCard extends CustomCard {
         baseSecondMagicNumber += amount; // Upgrade the number by the amount you provide in your card.
         secondMagicNumber = baseSecondMagicNumber; // Set the number to be equal to the base value.
         upgradedSecondMagicNumber = true; // Upgraded = true - which does what the above method does.
+    }
+
+    public void upgradeThirdMagicNumber(int amount) { 
+        baseThirdMagicNumber += amount; // Upgrade the number by the amount you provide in your card.
+        thirdMagicNumber = baseThirdMagicNumber; // Set the number to be equal to the base value.
+        upgradedThirdMagicNumber = true; // Upgraded = true - which does what the above method does.
     }
 }
