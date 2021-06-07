@@ -4,6 +4,8 @@ import java.io.File;
 
 import com.megacrit.cardcrawl.core.Settings;
 
+import mysteryDungeon.MysteryDungeon;
+
 public class LocalizationTool {
     public static String LocalizationPath()
     {
@@ -90,6 +92,7 @@ public class LocalizationTool {
                 langPathDir = "localization" + File.separator + "www";
                 break;
         }
+        langPathDir = MysteryDungeon.getModID() + "Resources" + File.separator + langPathDir + File.separator;
         return langPathDir;
     }
 }

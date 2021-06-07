@@ -67,7 +67,7 @@ public class CharmanderDragonDance extends PokemonCard {
     @Override
     public boolean canPlay(AbstractCard card)
     {
-        if(card == this && !upgraded && AbstractDungeon.player.hand.size()<magicNumber+2)
+        if(card == this && !upgraded && AbstractDungeon.player.hand.size()<magicNumber+1)
             return false;
         return true;
     }

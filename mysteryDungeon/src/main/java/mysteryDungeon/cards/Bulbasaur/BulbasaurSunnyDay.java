@@ -18,12 +18,6 @@ import mysteryDungeon.powers.ReduceHighestCostAtStartOfTurnPower;
 
 public class BulbasaurSunnyDay extends CustomCard {
 
-    /*
-     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
-     *
-     * Special Strike: Deal 7 (*) damage times the energy you currently have.
-     */
-
     // TEXT DECLARATION
 
     public static final String ID = MysteryDungeon.makeID(BulbasaurSunnyDay.class.getSimpleName());

@@ -1,6 +1,5 @@
 package mysteryDungeon.patches;
 
-import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -25,7 +24,7 @@ import com.megacrit.cardcrawl.vfx.InfiniteSpeechBubble;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.cards.Bulbasaur.BulbasaurDefend;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.util.LocalizationTool;
 
@@ -53,6 +52,8 @@ public class PokemonNeowPatch {
 
     public static boolean alienInvasion = false;
 
+    public static boolean isTestRun = false;
+
     public static void InitializeTraitsScore()
     {
         logger.info(traits);
@@ -75,8 +76,7 @@ public class PokemonNeowPatch {
     public static void InitializeQuestions()
     {
         questions.clear();
-        String path = MysteryDungeon.getModID() + "Resources" + File.separator + LocalizationTool.LocalizationPath() + File.separator + "Questions.json";
-        String json = Gdx.files.internal(path).readString(String.valueOf(StandardCharsets.UTF_8));
+        String json = Gdx.files.internal(LocalizationTool.LocalizationPath() + "Questions.json").readString(String.valueOf(StandardCharsets.UTF_8));
         ArrayList<Question> fullListOfQuestions = new Gson().fromJson(json, new TypeToken<ArrayList<Question>>() {}.getType());
         lastQuestion = fullListOfQuestions.remove(fullListOfQuestions.size()-1);
         followUpQuestion = fullListOfQuestions.remove(fullListOfQuestions.size()-1);
@@ -213,6 +213,7 @@ public class PokemonNeowPatch {
         @SuppressWarnings("all")
         public static SpireReturn AdvanceAccordingToChoice(NeowEvent __instance, int buttonPressed)
         {
+            logger.info(screenNum);
             if(!(AbstractDungeon.player instanceof Pokemon))
             {
                 return SpireReturn.Continue();
@@ -226,11 +227,26 @@ public class PokemonNeowPatch {
                     ShowNextDialog(__instance);
                     return SpireReturn.Return(null);
                 case 2:
-                    ShowNextDialog(__instance);
+                    AskQuestion(__instance, new Question(TEXT[screenNum], new String[]{"Yes", "TEST RUN PLZ", "I'd like the quicker option"}));
+                    screenNum++;
                     return SpireReturn.Return(null);
                 case 3:
-                    ShowNextDialog(__instance);
-                    return SpireReturn.Return(null);
+                    switch(buttonPressed)
+                    {
+                        case 0:
+                            break;
+                        case 1:
+                            screenNum=10;
+                            isTestRun = true;
+                            break;
+                        case 2:
+                            break;
+                    }
+                    if(!isTestRun)
+                    {
+                        ShowNextDialog(__instance);
+                        return SpireReturn.Return(null);
+                    }
                 // Personality Quiz
                 case 4:
                     // First Question
@@ -275,21 +291,39 @@ public class PokemonNeowPatch {
                     }
                     answeredQuestions++;
                     return SpireReturn.Return(null);
-                // Quit Neow
+                // Neow's last word + Partner attribution
                 case 5:
-                    ((Pokemon)AbstractDungeon.player).setPartner(possiblePartners[buttonPressed]);
-                    AskQuestion(__instance, new Question("I see, now brave the challenge of the tower", new String[]{"[Leave]"}, null));
+                    if(!isTestRun)
+                        ((Pokemon)AbstractDungeon.player).setPartner(possiblePartners[buttonPressed]);
+                    if(isTestRun)
+                    {
+                        ((Pokemon)AbstractDungeon.player).setPartner(implementedPokemons[buttonPressed]);
+                    }
+                    AskQuestion(__instance, new Question("I see, now brave the challenge of the tower", new String[]{"[Leave]"}));
                     screenNum++;
                     CardCrawlGame.dungeon.initializeCardPools();
+                    AbstractDungeon.player.masterDeck.removeCard(BulbasaurDefend.ID);
+                    AbstractDungeon.player.masterDeck.removeCard(BulbasaurDefend.ID);
+                    ((Pokemon)AbstractDungeon.player).AwardStartingRelic();
                     return SpireReturn.Return(null);
                 case 6:
                     break;
+                // Test run choose option
+                case 10:
+                    AskQuestion(__instance, new Question("Choose your adventurer", implementedPokemons));
+                    screenNum++;
+                    return SpireReturn.Return(null);
+                case 11:
+                    ((Pokemon)AbstractDungeon.player).setAdventurer(implementedPokemons[buttonPressed]);
+                    ((Pokemon)AbstractDungeon.player).DefineNature(NatureOfPokemon.get(implementedPokemons[buttonPressed])[(new Random()).nextInt(2)]);
+                    AskQuestion(__instance, new Question("Choose your partner", implementedPokemons));
+                    screenNum=5;
+                    return SpireReturn.Return(null);
                     
             }
             (AbstractDungeon.getCurrRoom()).phase = AbstractRoom.RoomPhase.COMPLETE;
             AbstractDungeon.dungeonMapScreen.open(false);
             PokemonNeowPatch.screenNum = 99;
-            ((Pokemon)AbstractDungeon.player).AwardStartingRelic();
             return SpireReturn.Return(null);
         }
     }
@@ -399,6 +433,14 @@ public class PokemonNeowPatch {
         put("Hasty", "Skitty");
     }};
 
+    public static Map<String,String[]> NatureOfPokemon = new HashMap<String,String[]>()
+    {{
+        put("Bulbasaur", new String[]{"Calm", "Docile"});
+        put("Charmander", new String[]{"Hardy", "Brave"});
+        put("Squirtle", new String[]{"Jolly", "Relaxed"});
+    }};
+
+    public static String[] implementedPokemons = new String[]{"Bulbasaur", "Charmander", "Squirtle"};
 
     // Data structure to which the .json is fed
     public static class Question{
@@ -411,6 +453,12 @@ public class PokemonNeowPatch {
             this.QUESTION = QUESTION;
             this.ANSWERS = ANSWERS;
             this.POINTS = POINTS;
+        }
+        public Question(String QUESTION, String[] ANSWERS)
+        {
+            this.QUESTION = QUESTION;
+            this.ANSWERS = ANSWERS;
+            this.POINTS = null;
         }
     }
 }

@@ -42,7 +42,17 @@
         "NAME": "Evasiveness Drop",
         "DESCRIPTIONS": [
             "Ennemy loses 25% of their Block at the end of the round.",
-            "Ennemy loses 25% of their Block at the end of the round for #b%s turns."]
+            "Ennemy loses 25%% of their Block at the end of the round for #b%s turns."]
+    },
+    "mysteryDungeon:FrustrationPower": {
+        "NAME": "Frustration",
+        "DESCRIPTIONS": [
+            "At the end of your turn chose 1 card to #yretain. NL This card becomes #yethereal.",
+            "At the end of your turn chose #b%s card to #yretain. NL Those cards become #yethereal."]
+    },
+    "mysteryDungeon:HeatCrashPower": {
+        "NAME": "Heat Crash",
+        "DESCRIPTIONS": ["When this enemy dies, ALL enemies receive damage equal to #b%.1f #yBurn Stacks. NL Currently it would deal #b%s damage to ALL enemies."]
     },
     "mysteryDungeon:LeechSeedPower": {
         "NAME": "Leech Seed",
@@ -67,6 +77,12 @@
         "DESCRIPTIONS": [
             "You cannot heal this turn.",
             "You cannot heal for #b%s turns."
+        ]
+    },
+    "mysteryDungeon:OutragePower": {
+        "NAME": "Outrage",
+        "DESCRIPTIONS": [
+            "When you exhaust a card, apply #b%s #yBurn to a random enemy."
         ]
     },
     "mysteryDungeon:PetalDancePower": {
@@ -105,6 +121,12 @@
         "NAME": "Solar Power",
         "DESCRIPTIONS": [
             "At the start of your turn, if an enemy has #yBurn, gain #b%s Strength."
+        ]
+    },
+    "mysteryDungeon:TorrentPower": {
+        "NAME": "Torrent",
+        "DESCRIPTIONS": [
+            "When you shuffle your deck, gain #b%s Strength."
         ]
     },
     "mysteryDungeon:ToxicPower": {

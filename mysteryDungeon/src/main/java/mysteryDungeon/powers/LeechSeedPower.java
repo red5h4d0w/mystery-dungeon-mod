@@ -82,6 +82,6 @@ public class LeechSeedPower extends MysteryDungeonPower implements CloneablePowe
 
     @Override
     public void updateDescription() {
-        description = String.format(DESCRIPTIONS[0], amount);
+        description = String.format(DESCRIPTIONS[0], amount, amount);
     }
 }

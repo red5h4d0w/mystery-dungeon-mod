@@ -2,33 +2,27 @@ package mysteryDungeon.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.interfaces.onShufflePowerInterface;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
-import com.megacrit.cardcrawl.actions.utility.UseCardAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 
 
 //Gain 1 dex for the turn for each card played.
 
-public class BlazePower extends MysteryDungeonPower implements CloneablePowerInterface {
-    public Logger log = LogManager.getLogger(BlazePower.class);
+public class TorrentPower extends MysteryDungeonPower implements CloneablePowerInterface, onShufflePowerInterface {
     public AbstractCreature source;
-    public int counter = 0;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("BlazePower");
+    public static final String POWER_ID = MysteryDungeon.makeID("TorrentPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -39,7 +33,7 @@ public class BlazePower extends MysteryDungeonPower implements CloneablePowerInt
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
 
-    public BlazePower(final AbstractCreature owner, final int amount) {
+    public TorrentPower(final AbstractCreature owner, final int amount) {
         name = NAME;
         ID = POWER_ID;
 
@@ -54,37 +48,19 @@ public class BlazePower extends MysteryDungeonPower implements CloneablePowerInt
 
         updateDescription();
     }
-    
-    public void atStartOfTurn()
-    {
-        counter = 0;
-    }
 
     @Override
-    public void onAfterUseCard(AbstractCard card, UseCardAction action)
-    {
-        log.info(EnergyPanel.totalCount);
-        if(EnergyPanel.totalCount == 0 && counter<amount)
-        {
-            addToBot(new GainEnergyAction(1));
-            counter++;
-        }
+    public void onShufflePower() {
+        addToBot(new ApplyPowerAction(owner, owner, new StrengthPower(owner, amount), amount));
     }
 
     @Override
     public AbstractPower makeCopy() {
-        return new BlazePower(owner, amount);
+        return new TorrentPower(owner, amount);
     }
 
     @Override
     public void updateDescription() {
-        if(amount == 1)
-        {
-            description = DESCRIPTIONS[0];
-        } 
-        else
-        {
-            description = String.format(DESCRIPTIONS[1], amount);
-        }
+        description = String.format(DESCRIPTIONS[0], amount);
     }
 }

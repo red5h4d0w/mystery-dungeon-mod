@@ -1,10 +1,8 @@
 {
-    "Neow": {
-        "TEXT": [
-            "This is the portal that leads to the world of Pokémon",
-            "But before I can let you through, I have several questions for you.",
-            "I want you to answer them sincerely. NL Are you ready?",
-            "OK... NL Let the interview begin!"
-        ]
+    "mysteryDungeon:EtherealMod": {
+        "TEXT": ["Ethereal. NL "]
+    },
+    "mysteryDungeon:RetainCardsButEtherealModAction": {
+        "TEXT": ["Retain (cards will become ethereal)"]
     }
 }

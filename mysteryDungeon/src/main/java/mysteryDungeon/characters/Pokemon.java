@@ -6,6 +6,9 @@ import basemod.animations.SpriterAnimation;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.Bulbasaur.*;
 import mysteryDungeon.cards.Charmander.*;
+import mysteryDungeon.cards.Squirtle.SquirtleDefend;
+import mysteryDungeon.cards.Squirtle.SquirtleTackle;
+import mysteryDungeon.cards.Squirtle.SquirtleWaterGun;
 import mysteryDungeon.relics.*;
 
 import com.badlogic.gdx.graphics.Color;
@@ -234,20 +237,70 @@ public class Pokemon extends CustomPlayer implements CustomSavable<Pokemon.Adven
         ArrayList<String> retVal = new ArrayList<>();
 
         logger.info("Begin loading starter Deck Strings");
-
-        for(int i=0;i<2;i++)
-        {
-            retVal.add(BulbasaurTackle.ID);
-            retVal.add(CharmanderScratch.ID);
-        }
-        for(int i=0;i<2;i++)
-        {
-            retVal.add(BulbasaurDefend.ID);
-            retVal.add(CharmanderDefend.ID);
-        }
-        retVal.add(BulbasaurLeechSeed.ID);
-        retVal.add(CharmanderEmber.ID);
+        retVal.add(BulbasaurDefend.ID);
+        retVal.add(BulbasaurDefend.ID);
         return retVal;
+    }
+
+    public void awardStartingDecks(Adventurer pokemon)
+    {
+        ArrayList<AbstractCard> retVal = new ArrayList<AbstractCard>();
+        switch(pokemon)
+        {
+            case Bulbasaur:
+                retVal.add(new BulbasaurTackle());
+                retVal.add(new BulbasaurTackle());
+                retVal.add(new BulbasaurDefend());
+                retVal.add(new BulbasaurDefend());
+                retVal.add(new BulbasaurLeechSeed());
+                break;
+            case Charmander:
+                retVal.add(new CharmanderScratch());
+                retVal.add(new CharmanderScratch());
+                retVal.add(new CharmanderDefend());
+                retVal.add(new CharmanderDefend());
+                retVal.add(new CharmanderEmber());
+                break;
+            case Squirtle:
+                retVal.add(new SquirtleTackle());
+                retVal.add(new SquirtleTackle());
+                retVal.add(new SquirtleDefend());
+                retVal.add(new SquirtleDefend());
+                retVal.add(new SquirtleWaterGun());
+                break;
+            case Pikachu:
+                break;
+            case Meowth:
+                break;
+            case Psyduck:
+                break;
+            case Machop:
+                break;
+            case Cubone:
+                break;
+            case Eevee:
+                break;
+            case Chikorita:
+                break;
+            case Cyndaquil:
+                break;
+            case Totodile:
+                break;
+            case Treecko:
+                break;
+            case Torchic:
+                break;
+            case Mudkip:
+                break;
+            case Skitty:
+                break;
+            default:
+                break;
+        }
+        for(AbstractCard card: retVal)
+        {
+            masterDeck.addToTop(card);
+        }
     }
 
     // Starting Relics	
@@ -397,11 +450,13 @@ public class Pokemon extends CustomPlayer implements CustomSavable<Pokemon.Adven
     public void setAdventurer(String adventurerAsString)
     {
         adventurer = Adventurer.valueOf(adventurerAsString);
+        awardStartingDecks(adventurer);
     }
 
     public void setPartner(String adventurerAsString)
     {
         partner = Adventurer.valueOf(adventurerAsString);
+        awardStartingDecks(partner);
     }
 
     // Adventurer/Partner related switch statements
@@ -469,10 +524,13 @@ public class Pokemon extends CustomPlayer implements CustomSavable<Pokemon.Adven
         {
             case Bulbasaur:
                 subcolors.add(Enums.BULBASAUR_GREEN);
+                break;
             case Charmander:
                 subcolors.add(Enums.CHARMANDER_RED);
+                break;
             case Squirtle:
                 subcolors.add(Enums.SQUIRTLE_BLUE);
+                break;
             case Pikachu:
                 break;
             case Meowth:
@@ -506,10 +564,13 @@ public class Pokemon extends CustomPlayer implements CustomSavable<Pokemon.Adven
         {
             case Bulbasaur:
                 subcolors.add(Enums.BULBASAUR_GREEN);
+                break;
             case Charmander:
                 subcolors.add(Enums.CHARMANDER_RED);
+                break;
             case Squirtle:
                 subcolors.add(Enums.SQUIRTLE_BLUE);
+                break;
             case Pikachu:
                 break;
             case Meowth:
@@ -539,11 +600,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<Pokemon.Adven
             default:
                 subcolors.add(Enums.COLOR_GRAY);
         }
-        // TODO: Remove the following line to control what decks are used
-        if(!subcolors.contains(Enums.BULBASAUR_GREEN))
-            subcolors.add(Enums.BULBASAUR_GREEN);
-        if(!subcolors.contains(Enums.CHARMANDER_RED))
-        subcolors.add(Enums.CHARMANDER_RED);
         return subcolors;
     }
 

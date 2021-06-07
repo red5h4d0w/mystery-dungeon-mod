@@ -1,4 +1,5 @@
 package mysteryDungeon.cards;
+
 import basemod.abstracts.CustomCard;
 
 public abstract class PokemonCard extends CustomCard {

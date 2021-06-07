@@ -6,11 +6,13 @@ import basemod.eventUtil.AddEventParams;
 import basemod.interfaces.*;
 import mysteryDungeon.cards.Bulbasaur.*;
 import mysteryDungeon.cards.Charmander.CharmanderScratch;
+import mysteryDungeon.cards.Squirtle.SquirtleTackle;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.events.IdentityCrisisEvent;
 import mysteryDungeon.potions.PlaceholderPotion;
 import mysteryDungeon.relics.NatureRelatedRelic;
 import mysteryDungeon.util.IDCheckDontTouchPls;
+import mysteryDungeon.util.LocalizationTool;
 import mysteryDungeon.util.TextureLoader;
 import mysteryDungeon.variables.DefaultCustomVariable;
 import mysteryDungeon.variables.DefaultSecondMagicNumber;
@@ -217,13 +219,19 @@ public class MysteryDungeon implements
         ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
         ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
 
-        BaseMod.addColor(Pokemon.Enums.CHARMANDER_RED, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
-        DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
+        BaseMod.addColor(Pokemon.Enums.CHARMANDER_RED, Color.RED, Color.RED, Color.RED,
+        Color.RED, Color.RED, Color.RED, Color.RED,
+        ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
+        ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
+        ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
+
+        BaseMod.addColor(Pokemon.Enums.SQUIRTLE_BLUE, Color.BLUE, Color.BLUE, Color.BLUE,
+        Color.BLUE, Color.BLUE, Color.BLUE, Color.BLUE,
         ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
         ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
         ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
         
-        logger.info("Done creating the color");
+        logger.info("Done creating the colors");
         
         
         logger.info("Adding mod settings");
@@ -461,6 +469,10 @@ public class MysteryDungeon implements
             .packageFilter(CharmanderScratch.class)
             .setDefaultSeen(true)
             .cards();
+            new AutoAdd("MysteryDungeon")
+            .packageFilter(SquirtleTackle.class)
+            .setDefaultSeen(true)
+            .cards();
         // .setDefaultSeen(true) unlocks the cards
         // This is so that they are all "seen" in the library,
         // for people who like to look at the card list before playing your mod
@@ -478,34 +490,32 @@ public class MysteryDungeon implements
         logger.info("You seeing this?");
         logger.info("Beginning to edit strings for mod with ID: " + getModID());
         
+        String localizationPath = LocalizationTool.LocalizationPath();
+
         // CardStrings
-        BaseMod.loadCustomStringsFile(CardStrings.class,
-                getModID() + "Resources/localization/eng/MysteryDungeon-Card-Strings.json");
+        BaseMod.loadCustomStringsFile(CardStrings.class, localizationPath + "MysteryDungeon-Card-Strings.json");
         
         // PowerStrings
-        BaseMod.loadCustomStringsFile(PowerStrings.class,
-                getModID() + "Resources/localization/eng/MysteryDungeon-Power-Strings.json");
+        BaseMod.loadCustomStringsFile(PowerStrings.class, localizationPath + "MysteryDungeon-Power-Strings.json");
         
         // RelicStrings
-        BaseMod.loadCustomStringsFile(RelicStrings.class,
-                getModID() + "Resources/localization/eng/MysteryDungeon-Relic-Strings.json");
+        BaseMod.loadCustomStringsFile(RelicStrings.class, localizationPath + "MysteryDungeon-Relic-Strings.json");
         
         // Event Strings
-        BaseMod.loadCustomStringsFile(EventStrings.class,
-                getModID() + "Resources/localization/eng/MysteryDungeon-Event-Strings.json");
+        BaseMod.loadCustomStringsFile(EventStrings.class, localizationPath + "MysteryDungeon-Event-Strings.json");
         
         // PotionStrings
-        BaseMod.loadCustomStringsFile(PotionStrings.class,
-                getModID() + "Resources/localization/eng/MysteryDungeon-Potion-Strings.json");
+        BaseMod.loadCustomStringsFile(PotionStrings.class, localizationPath + "MysteryDungeon-Potion-Strings.json");
         
         // CharacterStrings
-        BaseMod.loadCustomStringsFile(CharacterStrings.class,
-                getModID() + "Resources/localization/eng/MysteryDungeon-Character-Strings.json");
+        BaseMod.loadCustomStringsFile(CharacterStrings.class, localizationPath + "MysteryDungeon-Character-Strings.json");
         
         // OrbStrings
-        BaseMod.loadCustomStringsFile(OrbStrings.class,
-                getModID() + "Resources/localization/eng/MysteryDungeon-Orb-Strings.json");
+        BaseMod.loadCustomStringsFile(OrbStrings.class, localizationPath + "MysteryDungeon-Orb-Strings.json");
         
+        // UIStrings
+        BaseMod.loadCustomStringsFile(UIStrings.class, localizationPath + "ui.json");
+
         logger.info("Done editing strings");
     }
     

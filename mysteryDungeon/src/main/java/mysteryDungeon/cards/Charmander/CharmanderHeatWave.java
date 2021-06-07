@@ -31,6 +31,7 @@ public class CharmanderHeatWave extends CustomCard {
     public static final String IMG = makeCardPath("CharmanderSkill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -63,7 +64,7 @@ public class CharmanderHeatWave extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(m, p, new BurnPower(m, magicNumber), magicNumber));
         addToBot(new GainBlockAction(p, p, block));
-        addToBot(new ExhaustAction(1, true, false, false));
+        addToBot(new ExhaustAction(1, !upgraded, false, false));
     }
 
     // Upgraded stats.
@@ -73,6 +74,7 @@ public class CharmanderHeatWave extends CustomCard {
             upgradeName();
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             upgradeBlock(UPGRADE_BLOCK);
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

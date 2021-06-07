@@ -70,7 +70,7 @@ public class EvasivenessDropPower extends MysteryDungeonPower implements Cloneab
         } 
         else
         {
-            description = String.format(DESCRIPTIONS[1], amount);
+            description = String.format(DESCRIPTIONS[1], 2);
         }
     }
 }

@@ -49,6 +49,7 @@ public class CharmanderShadowClaw extends CustomCard implements ClawCardInterfac
     private static final int COST = 1;
     private static final int DAMAGE = 3;
     private static final int BASE_BLOCK = 3;
+    private static final int UPGRADE_BLOCK = 3;
 
 
     // /STAT DECLARATION/
@@ -63,7 +64,6 @@ public class CharmanderShadowClaw extends CustomCard implements ClawCardInterfac
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        // Create an int which equals to your current energy.
         addToBot(new VFXAction(new ClawEffect(m.hb.cX, m.hb.cY, Color.VIOLET, Color.BLACK), 0.1F)); 
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         addToBot(new GainBlockAction(p, block));
@@ -79,6 +79,7 @@ public class CharmanderShadowClaw extends CustomCard implements ClawCardInterfac
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            upgradeBlock(UPGRADE_BLOCK);
             initializeDescription();
         }
     }

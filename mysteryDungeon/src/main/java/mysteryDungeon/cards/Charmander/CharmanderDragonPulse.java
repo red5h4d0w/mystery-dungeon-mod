@@ -59,7 +59,7 @@ public class CharmanderDragonPulse extends PokemonCard {
             card = AbstractDungeon.player.exhaustPile.getRandomCard(AbstractDungeon.cardRng);
         if(card!=null)
         {
-            AbstractCard cardToAdd = card.makeCopy();
+            AbstractCard cardToAdd = card.makeStatEquivalentCopy();
             AbstractDungeon.player.exhaustPile.removeCard(card);
             addToBot(new MakeTempCardInDrawPileAction(cardToAdd, 1, false, false, false));
         }
