@@ -334,6 +334,10 @@
     "NAME": "Tackle",
     "DESCRIPTION": "Deal !D! damage."
   },
+  "mysteryDungeon:SquirtleTailwhip": {
+    "NAME": "Aqua Tail",
+    "DESCRIPTION": "Gain !B! block. NL draw !M! card"
+  },
   "mysteryDungeon:SquirtleTorrent": {
     "NAME": "Torrent",
     "DESCRIPTION": "Each time you shuffle your deck, gain !M! Strength."

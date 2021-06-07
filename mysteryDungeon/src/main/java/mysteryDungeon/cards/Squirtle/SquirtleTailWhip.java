@@ -2,6 +2,7 @@ package mysteryDungeon.cards.Squirtle;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -34,8 +35,10 @@ public class SquirtleTailWhip extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
     private static final int COST = 1;
-    private static final int BLOCK = 5;
+    private static final int BLOCK = 6;
     private static final int UPGRADE_PLUS_BLOCK = 3;
+    private static final int BASE_MAGIC_NUMBER = 1;
+
 
 
     // /STAT DECLARATION/
@@ -43,12 +46,14 @@ public class SquirtleTailWhip extends PokemonCard {
     public SquirtleTailWhip() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseBlock = BLOCK;
+        magicNumber =BASE_MAGIC_NUMBER;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, magicNumber));
     }
 
     // Upgraded stats.
