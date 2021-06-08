@@ -4,7 +4,6 @@ import static mysteryDungeon.MysteryDungeon.makeOrbPath;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -24,7 +23,6 @@ import com.megacrit.cardcrawl.vfx.combat.OrbFlareEffect;
 
 import basemod.abstracts.CustomOrb;
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.util.TextureLoader;
 
 public class DefaultOrb extends CustomOrb {
 
