@@ -330,6 +330,10 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "mysteryDungeon:SquirtleProtect": {
+    "NAME": "Protect",
+    "DESCRIPTION": "Gain !B! Block. NL You cannot gain block during the next !M! turns."
+  },
   "mysteryDungeon:SquirtleRapidSpin": {
     "NAME": "Rapid Spin",
     "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack gain !M! artifact.",
