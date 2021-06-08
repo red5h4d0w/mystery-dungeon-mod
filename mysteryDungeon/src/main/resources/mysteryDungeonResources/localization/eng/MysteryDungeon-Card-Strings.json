@@ -91,7 +91,7 @@
   },
   "mysteryDungeon:BulbasaurRest": {
     "NAME": "Rest",
-    "DESCRIPTION": "Heal 30 HP. Rest for !M! turns."
+    "DESCRIPTION": "Heal 30 HP. mysterydungeon:Rest for !M! turns."
   },
   "mysteryDungeon:BulbasaurSecretPower": {
     "NAME": "SecretPower",
@@ -318,8 +318,8 @@
   },
   "mysteryDungeon:CharmanderWillOWisp": {
     "NAME": "Will-O-Wisp",
-    "DESCRIPTION": "Apply X Weak. NL Apply 3X mysterydungeon:Burn. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. Exhaust."
+    "DESCRIPTION": "Apply X Weak. NL Apply 3X mysterydungeon:Burn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. NL Exhaust."
   },
   "mysteryDungeon:SquirtleAquaTail": {
     "NAME": "Aqua Tail",
@@ -344,7 +344,7 @@
   },
   "mysteryDungeon:SquirtleWithdraw": {
     "NAME": "Withdraw",
-    "DESCRIPTION": "Discard your draw pile. NL Gain !M! Block per card in hand.",
-    "UPGRADE_DESCRIPTION": "Discard your draw pile. NL Gain !M! Block per card in hand. NL Draw !mysteryDungeon:M2! card."
+    "DESCRIPTION": "Shuffle your discard pile into your deck. NL Gain !M! Block per card in hand.",
+    "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !mysteryDungeon:M2! card. NL Gain !M! Block per card in hand. "
   }
 }
