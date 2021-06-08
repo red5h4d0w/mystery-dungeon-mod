@@ -42,8 +42,8 @@ public class CharmanderFireSpin extends CustomCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
-    private static final int COST = 4;
-    private static final int UPGRADE_COST = 3;
+    private static final int COST = 3;
+    private static final int UPGRADE_COST = 2;
 
 
     // /STAT DECLARATION/
