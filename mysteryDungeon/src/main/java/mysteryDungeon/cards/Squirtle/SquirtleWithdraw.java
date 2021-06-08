@@ -2,6 +2,7 @@ package mysteryDungeon.cards.Squirtle;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.ShuffleAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -36,9 +37,9 @@ public class SquirtleWithdraw extends PokemonCard {
 
     private static final int COST = 1;
     private static final int BASE_DAMAGE = 5;
-    private static final int BASE_MAGIC_NUMBER = 2;
-    private static final int BASE_SECOND_MAGIC_NUMBER = 0;
-    private static final int UPGRADE_SECOND_MAGIC_NUMBER = 1;
+    private static final int BASE_BLOCK = 2;
+    private static final int BASE_MAGIC_NUMBER = 0;
+    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
@@ -46,15 +47,24 @@ public class SquirtleWithdraw extends PokemonCard {
     public SquirtleWithdraw() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = BASE_DAMAGE;
-        baseSecondMagicNumber = BASE_SECOND_MAGIC_NUMBER;
         baseMagicNumber = BASE_MAGIC_NUMBER;
+        magicNumber = baseMagicNumber;
+        baseBlock = BASE_BLOCK;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, p, block));
         addToBot(new ShuffleAction(p.discardPile, false));
+        if(upgraded)
+        {
+            addToBot(new DrawCardAction(magicNumber));
+        }
+        for(int i=0;i<p.hand.group.size();i++)
+        {
+            addToBot(new GainBlockAction(p, p, block));
+        }
+        
     }
 
     // Upgraded stats.
@@ -62,7 +72,7 @@ public class SquirtleWithdraw extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeSecondMagicNumber(UPGRADE_SECOND_MAGIC_NUMBER);
+            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
