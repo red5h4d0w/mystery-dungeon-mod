@@ -340,7 +340,7 @@
   },
   "mysteryDungeon:SquirtleTorrent": {
     "NAME": "Torrent",
-    "DESCRIPTION": "Each time you shuffle your deck, gain !M! Strength."
+    "DESCRIPTION": "Each time you shuffle your deck, gain !M! Temporary Strength."
   },
   "mysteryDungeon:SquirtleWaterGun": {
     "NAME": "Water Gun",
@@ -352,7 +352,7 @@
   },
   "mysteryDungeon:SquirtleWithdraw": {
     "NAME": "Withdraw",
-    "DESCRIPTION": "Shuffle your discard pile into your deck. NL Gain !M! Block per card in hand.",
-    "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !mysteryDungeon:M2! card. NL Gain !M! Block per card in hand. "
+    "DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! card. NL Gain !B! Block per card in hand.",
+    "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! cards. NL Gain !B! Block per card in hand. "
   }
 }

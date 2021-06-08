@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.LoseStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
 
@@ -52,6 +53,7 @@ public class TorrentPower extends MysteryDungeonPower implements CloneablePowerI
     @Override
     public void onShufflePower() {
         addToBot(new ApplyPowerAction(owner, owner, new StrengthPower(owner, amount), amount));
+        addToBot(new ApplyPowerAction(owner, owner, new LoseStrengthPower(owner, amount), amount));
     }
 
     @Override
