@@ -334,6 +334,10 @@
     "NAME": "Tackle",
     "DESCRIPTION": "Deal !D! damage."
   },
+  "mysteryDungeon:SquirtleTailWhip": {
+    "NAME": "Tail Whip",
+    "DESCRIPTION": "Gain !B! block. NL draw !M! card"
+  },
   "mysteryDungeon:SquirtleTorrent": {
     "NAME": "Torrent",
     "DESCRIPTION": "Each time you shuffle your deck, gain !M! Strength."
@@ -341,6 +345,10 @@
   "mysteryDungeon:SquirtleWaterGun": {
     "NAME": "Water Gun",
     "DESCRIPTION": "Deal !D! damage. NL Scry !M! cards."
+  },
+  "mysteryDungeon:SquirtleWaterPulse": {
+    "NAME": "Water Pulse",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
   },
   "mysteryDungeon:SquirtleWithdraw": {
     "NAME": "Withdraw",
