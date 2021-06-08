@@ -7,13 +7,11 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.DrawPower;
-
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.ReduceHighestCostAtStartOfTurnPower;
+import mysteryDungeon.powers.TorrentPower;
 
 public class SquirtleTorrent extends PokemonCard {
 
@@ -21,7 +19,7 @@ public class SquirtleTorrent extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(SquirtleTorrent.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("BulbasaurPower.png");
+    public static final String IMG = makeCardPath("SquirtlePower.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -52,8 +50,7 @@ public class SquirtleTorrent extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new DrawPower(p, magicNumber), magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new ReduceHighestCostAtStartOfTurnPower(p, 1), 1));
+        addToBot(new ApplyPowerAction(p, p, new TorrentPower(p, magicNumber), magicNumber));
     }
 
     // Upgraded stats.
