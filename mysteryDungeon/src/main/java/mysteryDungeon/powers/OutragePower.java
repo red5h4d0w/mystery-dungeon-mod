@@ -39,7 +39,7 @@ public class OutragePower extends MysteryDungeonPower implements CloneablePowerI
         this.owner = owner;
         this.amount = amount;
 
-        type = PowerType.DEBUFF;
+        type = PowerType.BUFF;
 
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
