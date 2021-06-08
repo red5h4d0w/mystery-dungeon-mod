@@ -133,6 +133,10 @@
         "NAME": "Toxic",
         "DESCRIPTIONS": ["Instead of decreasing by one every turn, the Poison on this enemy will increase by #b%s every turn."]
     },
+    "mysteryDungeon:WorkUpPower": {
+        "NAME": "Work Up",
+        "DESCRIPTIONS": ["When you create a card this combat, gain #b%s Temporary Strength."]
+    },
     "mysteryDungeon:WorrySeedPower": {
         "NAME": "Worry Seed",
         "DESCRIPTIONS": [

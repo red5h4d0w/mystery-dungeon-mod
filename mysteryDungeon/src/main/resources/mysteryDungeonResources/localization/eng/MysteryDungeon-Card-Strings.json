@@ -359,5 +359,10 @@
     "NAME": "Withdraw",
     "DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! card. NL Gain !B! Block per card in hand.",
     "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! cards. NL Gain !B! Block per card in hand. "
+  },
+  "mysteryDungeon:SquirtleWorkUp": {
+    "NAME": "Work Up",
+    "DESCRIPTION": "When a card is created this combat, gain !M! Temporary Strength.",
+    "UPGRADE_DESCRIPTION": "Innate. NL When a card is created this combat, gain !M! Temporary Strength."
   }
 }

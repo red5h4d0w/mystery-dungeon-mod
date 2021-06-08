@@ -40,7 +40,7 @@ public class SquirtleWithdraw extends PokemonCard {
     private static final int COST = 1;
     private static final int BASE_DAMAGE = 5;
     private static final int BASE_BLOCK = 2;
-    private static final int BASE_MAGIC_NUMBER = 0;
+    private static final int BASE_MAGIC_NUMBER = 1;
     private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
@@ -65,7 +65,7 @@ public class SquirtleWithdraw extends PokemonCard {
         {
             addToBot(new DrawCardAction(magicNumber));
         }
-        for(int i=0;i<p.hand.group.size();i++)
+        for(int i=0;i<p.hand.group.size()-1;i++)
         {
             addToBot(new GainBlockAction(p, p, block));
         }
