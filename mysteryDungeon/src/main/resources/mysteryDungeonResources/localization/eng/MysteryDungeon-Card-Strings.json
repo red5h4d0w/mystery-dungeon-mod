@@ -346,6 +346,10 @@
     "NAME": "Water Gun",
     "DESCRIPTION": "Deal !D! damage. NL Scry !M! cards."
   },
+  "mysteryDungeon:SquirtleWaterPulse": {
+    "NAME": "Water Pulse",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
+  },
   "mysteryDungeon:SquirtleWithdraw": {
     "NAME": "Withdraw",
     "DESCRIPTION": "Shuffle your discard pile into your deck. NL Gain !M! Block per card in hand.",
