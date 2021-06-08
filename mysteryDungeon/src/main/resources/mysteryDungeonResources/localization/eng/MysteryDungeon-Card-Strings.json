@@ -330,6 +330,11 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "mysteryDungeon:SquirtleRapidSpin": {
+    "NAME": "Rapid Spin",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack gain !M! artifact.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack gain !M! artifacts."
+  },
   "mysteryDungeon:SquirtleTackle": {
     "NAME": "Tackle",
     "DESCRIPTION": "Deal !D! damage."
