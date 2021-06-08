@@ -46,7 +46,8 @@ public class SquirtleTailWhip extends PokemonCard {
     public SquirtleTailWhip() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseBlock = BLOCK;
-        magicNumber =BASE_MAGIC_NUMBER;
+        baseMagicNumber = BASE_MAGIC_NUMBER;
+        magicNumber = baseMagicNumber;
     }
 
     // Actions the card should do.
