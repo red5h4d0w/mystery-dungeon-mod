@@ -347,6 +347,10 @@
     "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack gain !M! artifact.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack gain !M! artifacts."
   },
+  "mysteryDungeon:SquirtleScald": {
+    "NAME": "Scald",
+    "DESCRIPTION": "Discard up to !mysterydungeon:M2! cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way."
+  },
   "mysteryDungeon:SquirtleShellSmash": {
     "NAME": "Shell Smash",
     "DESCRIPTION": "Gain !M! Strength. NL Add !mysteryDungeon:M2! random Statuses Card to your deck. NL Exhaust."
