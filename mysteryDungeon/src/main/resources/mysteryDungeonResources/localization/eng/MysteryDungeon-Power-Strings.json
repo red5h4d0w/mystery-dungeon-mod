@@ -99,6 +99,10 @@
         "NAME": "Poison Thorns",
         "DESCRIPTIONS": ["When Attacked, apply %s Poison to the attacker."]
     },
+    "mysteryDungeon:RainDishPower": {
+        "NAME": "Rain Dish",
+        "DESCRIPTIONS": ["When a card enters your discard pile and wasn't played, gain %s Block."]
+    },
     "mysteryDungeon:ReduceHighestCostAtStartOfTurnPower": {
         "NAME": "Lower Cost of Highest Cost Card",
         "DESCRIPTIONS": [

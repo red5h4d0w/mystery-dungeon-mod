@@ -357,6 +357,11 @@
     "NAME": "Protect",
     "DESCRIPTION": "Gain !B! Block. NL You cannot gain block during the next !M! turns."
   },
+  "mysteryDungeon:SquirtleRainDish": {
+    "NAME": "Rain Dish",
+    "DESCRIPTION": "Whenever a card enters your discard and wasn't played, gain !M! Block.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever a card enters your discard and wasn't played, gain !M! Block."
+  },
   "mysteryDungeon:SquirtleRapidSpin": {
     "NAME": "Rapid Spin",
     "DESCRIPTION": "Deal !D! Damage. NL If the enemy intends to attack gain !M! artifact.",
