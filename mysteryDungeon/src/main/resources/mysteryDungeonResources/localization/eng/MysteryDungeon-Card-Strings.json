@@ -323,12 +323,17 @@
   },
   "mysteryDungeon:SquirtleAquaTail": {
     "NAME": "Aqua Tail",
-    "DESCRIPTION": "Deal !D! damage. NL Scry !M! cards. NL Draw !mysteryDungeon:M2! cards. NL Discard !mysteryDungeon:M3! cards.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Scry !M! cards. NL Draw !mysteryDungeon:M2! cards. NL Discard !mysteryDungeon:M3! card."
+    "DESCRIPTION": "Deal !D! Damage. NL Scry !M! cards. NL Draw !mysteryDungeon:M2! cards. NL Discard !mysteryDungeon:M3! cards.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Scry !M! cards. NL Draw !mysteryDungeon:M2! cards. NL Discard !mysteryDungeon:M3! card."
   },
   "mysteryDungeon:SquirtleDefend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
+  },
+  "mysteryDungeon:SquirtleFakeOut": {
+    "NAME": "Fake Out",
+    "DESCRIPTION": "Innate. NL Deal !D! Damage. NL Gain !B! Block. NL Draw !M! card. NL Exahust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Deal !D! Damage. NL Gain !B! Block. NL Draw !M! cards. NL Exahust."
   },
   "mysteryDungeon:SquirtleHail": {
     "NAME": "Hail",
@@ -344,12 +349,12 @@
   },
   "mysteryDungeon:SquirtleRapidSpin": {
     "NAME": "Rapid Spin",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack gain !M! artifact.",
+    "DESCRIPTION": "Deal !D! Damage. NL If the enemy intends to attack gain !M! artifact.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack gain !M! artifacts."
   },
   "mysteryDungeon:SquirtleScald": {
     "NAME": "Scald",
-    "DESCRIPTION": "Discard up to !mysteryDungeon:M2! cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way."
+    "DESCRIPTION": "Discard up to !mysteryDungeon:M2! cards. Deal !D! Damage and apply !M! mysterydungeon:Burn per card exhausted that way."
   },
   "mysteryDungeon:SquirtleShellSmash": {
     "NAME": "Shell Smash",
