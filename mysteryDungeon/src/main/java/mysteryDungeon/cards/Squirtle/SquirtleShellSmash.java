@@ -68,7 +68,7 @@ public class SquirtleShellSmash extends PokemonCard {
         {
 
             Collections.shuffle(statuses, AbstractDungeon.cardRandomRng.random);
-            addToBot(new MakeTempCardInDrawPileAction(statuses.get(0), 1, false, false, false));
+            addToBot(new MakeTempCardInDrawPileAction(statuses.get(0), 1, true, false, false));
         }
     }
 
