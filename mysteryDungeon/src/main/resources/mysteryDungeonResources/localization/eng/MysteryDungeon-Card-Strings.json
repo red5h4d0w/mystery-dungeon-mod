@@ -339,6 +339,10 @@
     "NAME": "Hail",
     "DESCRIPTION": "Whenever you draw a card deal !M! damage to all enemies."
   },
+  "mysteryDungeon:SquirtleHydroCannon": {
+    "NAME": "Hydro Cannon",
+    "DESCRIPTION": "Deal !D! Damage to all enemies. NL Insert 3 Dazed in your draw pile."
+  },
   "mysteryDungeon:SquirtleIronDefense": {
     "NAME": "Iron Defense",
     "DESCRIPTION": "Gain !M! Dexterity."
