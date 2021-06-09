@@ -1,13 +1,13 @@
 package mysteryDungeon.powers;
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.interfaces.onDrawInterface;
 import mysteryDungeon.util.TextureLoader;
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -18,7 +18,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class HailPower extends MysteryDungeonPower implements CloneablePowerInterface {
+public class HailPower extends MysteryDungeonPower implements CloneablePowerInterface, onDrawInterface {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("HailPower");
@@ -54,7 +54,7 @@ public class HailPower extends MysteryDungeonPower implements CloneablePowerInte
     }
 
     @Override
-    public void onCardDraw(AbstractCard card)
+    public void onDraw()
     {
         addToBot(new DamageAllEnemiesAction((AbstractPlayer)owner, amount, DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
     }
