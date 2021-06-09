@@ -332,7 +332,8 @@
   },
   "mysteryDungeon:SquirtleFakeOut": {
     "NAME": "Fake Out",
-    "DESCRIPTION": "Innate. NL Deal !D! Damage. NL Gain !B! Block. NL Exahust."
+    "DESCRIPTION": "Innate. NL Deal !D! Damage. NL Gain !B! Block. NL Draw !M! card. NL Exahust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Deal !D! Damage. NL Gain !B! Block. NL Draw !M! cards. NL Exahust."
   },
   "mysteryDungeon:SquirtleHail": {
     "NAME": "Hail",
