@@ -349,7 +349,7 @@
   },
   "mysteryDungeon:SquirtleScald": {
     "NAME": "Scald",
-    "DESCRIPTION": "Discard up to !mysterydungeon:M2! cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way."
+    "DESCRIPTION": "Discard up to !mysteryDungeon:M2! cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way."
   },
   "mysteryDungeon:SquirtleShellSmash": {
     "NAME": "Shell Smash",
