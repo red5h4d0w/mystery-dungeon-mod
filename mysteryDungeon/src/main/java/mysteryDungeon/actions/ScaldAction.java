@@ -17,7 +17,7 @@ import org.apache.logging.log4j.Logger;
 import mysteryDungeon.powers.BurnPower;
 
 public class ScaldAction extends AbstractGameAction {
-    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("DiscarAction");
+    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("DiscardAction");
     public static final String[] TEXT = uiStrings.TEXT;
     private DamageInfo info;
     private AbstractPlayer p;
