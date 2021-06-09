@@ -1,35 +1,24 @@
-package mysteryDungeon.cards.Bulbasaur;
-
+package mysteryDungeon.cards.Squirtle;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
-
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.powers.HailPower;
 
-public class BulbasaurSecretPower extends PokemonCard {
-
-    /*
-     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
-     *
-     * Special Strike: Deal 7 (*) damage times the energy you currently have.
-     */
+public class SquirtleHail extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(BulbasaurSecretPower.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(SquirtleHail.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("BulbasaurSkill.png");
+    public static final String IMG = makeCardPath("SquirtlePower.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -38,27 +27,26 @@ public class BulbasaurSecretPower extends PokemonCard {
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
+    private static final CardType TYPE = CardType.POWER;
+    public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
-    private static final int COST = 0;
+    private static final int COST = 1;
+    private static final int BASE_MAGIC_NUMBER = 3;
+    private static final int UPGRADE_BASE_MAGIC_NUMBER = 2;
 
 
     // /STAT DECLARATION/
 
-    public BulbasaurSecretPower() {
+    public SquirtleHail() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        exhaust = true;
-        isInnate = true;
-
+        baseMagicNumber = BASE_MAGIC_NUMBER;
+        magicNumber = baseMagicNumber;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat(CardType.POWER).makeCopy();
-        c.upgrade();
-        addToBot(new MakeTempCardInHandAction(c, true));
+        addToBot(new ApplyPowerAction(p, p, new HailPower(p, magicNumber)));
     }
 
     // Upgraded stats.
@@ -66,7 +54,7 @@ public class BulbasaurSecretPower extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = UPGRADE_DESCRIPTION;
+            upgradeMagicNumber(UPGRADE_BASE_MAGIC_NUMBER);
             initializeDescription();
         }
     }

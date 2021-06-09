@@ -95,8 +95,8 @@
   },
   "mysteryDungeon:BulbasaurSecretPower": {
     "NAME": "SecretPower",
-    "DESCRIPTION": "Innate. NL Add random power in your hand.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Add random upgraded power in your hand."
+    "DESCRIPTION": "Innate. NL Add random power in your hand. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Innate. NL Add random upgraded power in your hand. NL Exhaust"
   },
   "mysteryDungeon:BulbasaurSeedBomb": {
     "NAME": "Seed Bomb",
@@ -329,6 +329,10 @@
   "mysteryDungeon:SquirtleDefend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
+  },
+  "mysteryDungeon:SquirtleHail": {
+    "NAME": "Hail",
+    "DESCRIPTION": "Whenever you draw cards deal !M! damage to all enemies."
   },
   "mysteryDungeon:SquirtleIronDefense": {
     "NAME": "Iron Defense",

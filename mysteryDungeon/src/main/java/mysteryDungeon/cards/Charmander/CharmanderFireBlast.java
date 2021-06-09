@@ -57,6 +57,7 @@ public class CharmanderFireBlast extends CustomCard {
         baseDamage = DAMAGE;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        exhaust = true;
     }
 
     // Actions the card should do.
