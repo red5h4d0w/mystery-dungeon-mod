@@ -57,7 +57,8 @@ public class BulbasaurSecretPower extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat(CardType.POWER).makeCopy();
-        c.upgrade();
+        if(upgraded)
+            c.upgrade();
         addToBot(new MakeTempCardInHandAction(c, true));
     }
 
