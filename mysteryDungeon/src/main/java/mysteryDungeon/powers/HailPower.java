@@ -56,7 +56,7 @@ public class HailPower extends MysteryDungeonPower implements CloneablePowerInte
     @Override
     public void onCardDraw(AbstractCard card)
     {
-        addToBot(new DamageAllEnemiesAction((AbstractPlayer)owner, 1, DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+        addToBot(new DamageAllEnemiesAction((AbstractPlayer)owner, amount, DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
     }
 
     @Override

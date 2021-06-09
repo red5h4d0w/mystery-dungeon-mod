@@ -50,6 +50,10 @@
             "At the end of your turn chose 1 card to #yretain. NL This card becomes #yethereal.",
             "At the end of your turn chose #b%s card to #yretain. NL Those cards become #yethereal."]
     },
+    "mysteryDungeon:HailPower": {
+        "NAME": "Hail",
+        "DESCRIPTIONS": ["Whenever you draw a card deal #b%s damage to all enemies"]
+    },
     "mysteryDungeon:HeatCrashPower": {
         "NAME": "Heat Crash",
         "DESCRIPTIONS": ["When this enemy dies, ALL enemies receive damage equal to #b%.1f #yBurn Stacks. NL Currently it would deal #b%s damage to ALL enemies."]

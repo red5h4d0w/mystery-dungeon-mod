@@ -332,7 +332,7 @@
   },
   "mysteryDungeon:SquirtleHail": {
     "NAME": "Hail",
-    "DESCRIPTION": "Whenever you draw cards deal !M! damage to all enemies."
+    "DESCRIPTION": "Whenever you draw a card deal !M! damage to all enemies."
   },
   "mysteryDungeon:SquirtleIronDefense": {
     "NAME": "Iron Defense",
