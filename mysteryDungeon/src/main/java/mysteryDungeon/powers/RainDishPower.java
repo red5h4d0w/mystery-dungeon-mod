@@ -15,7 +15,6 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
@@ -74,10 +73,7 @@ public class RainDishPower extends MysteryDungeonPower implements CloneablePower
     @Override
     public void onAfterUseCard (AbstractCard card, UseCardAction action)
     {
-        boolean spoonProc = false;
-        if (action.exhaustCard && AbstractDungeon.player.hasRelic("Strange Spoon") && card.type != AbstractCard.CardType.POWER)
-            spoonProc = AbstractDungeon.cardRandomRng.randomBoolean(); 
-        if(!card.purgeOnUse || !(card.type == CardType.POWER) || spoonProc || !action.exhaustCard || !action.reboundCard || !action.returnToHand || card.shuffleBackIntoDrawPile)
+        if(!card.purgeOnUse && !(card.type == CardType.POWER) && !action.exhaustCard && !action.reboundCard && !action.returnToHand && !card.shuffleBackIntoDrawPile)
             cardWasPlayed = true;
     }
 
