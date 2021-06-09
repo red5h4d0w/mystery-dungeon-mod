@@ -4,7 +4,6 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -42,22 +41,19 @@ public class SquirtleBodyPress extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
     private static final int COST = 3;
-    private static final int BLOCK = 0;
-    private static final int UPGRADE_BLOCK = 10;
+
 
 
     // /STAT DECLARATION/
 
     public SquirtleBodyPress() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseBlock = BLOCK;
+        isEthereal = true;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(upgraded) {
-            addToBot((AbstractGameAction)new GainBlockAction(p, p, block)); }
         addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new WeightyImpactEffect(m.hb.cX, m.hb.cY))); 
         baseDamage = p.currentBlock;
         if(p.hasPower(DexterityPower.POWER_ID)) {
@@ -116,7 +112,7 @@ public class SquirtleBodyPress extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBlock(UPGRADE_BLOCK);
+            isEthereal = false;
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
