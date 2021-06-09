@@ -56,11 +56,15 @@ public class SquirtleBodyPress extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new WeightyImpactEffect(m.hb.cX, m.hb.cY))); 
-        baseDamage = p.currentBlock;
+        baseDamage = AbstractDungeon.player.currentBlock;
+        if(p.hasPower(DexterityPower.POWER_ID)) {
+            if(p.getPower(DexterityPower.POWER_ID).amount>0)
+                baseDamage = AbstractDungeon.player.currentBlock*AbstractDungeon.player.getPower(DexterityPower.POWER_ID).amount;
+        }
         calculateCardDamage(m);
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         
-        rawDescription = cardStrings.DESCRIPTION;
+        rawDescription = DESCRIPTION;
         if(upgraded) {
             rawDescription = UPGRADE_DESCRIPTION;
         }

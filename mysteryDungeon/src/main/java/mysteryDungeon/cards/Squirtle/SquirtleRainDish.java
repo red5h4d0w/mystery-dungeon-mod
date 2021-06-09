@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.TorrentPower;
+import mysteryDungeon.powers.RainDishPower;
 
 public class SquirtleRainDish extends PokemonCard {
 
@@ -47,7 +47,7 @@ public class SquirtleRainDish extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new TorrentPower(p, magicNumber), magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new RainDishPower(p, magicNumber), magicNumber));
     }
 
     // Upgraded stats.

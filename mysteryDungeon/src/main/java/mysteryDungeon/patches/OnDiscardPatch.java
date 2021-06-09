@@ -1,6 +1,7 @@
 package mysteryDungeon.patches;
 
 import com.evacipated.cardcrawl.modthespire.lib.*;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
@@ -10,7 +11,7 @@ import mysteryDungeon.interfaces.onDiscardInterface;
 
 public class OnDiscardPatch
 {
-    @SpirePatch(clz = CardGroup.class, method = "moveToDiscardPile", paramtypez = {})
+    @SpirePatch(clz = CardGroup.class, method = "moveToDiscardPile", paramtypez = {AbstractCard.class})
     public static class AddedCardPatch
     {
         @SpirePostfixPatch
