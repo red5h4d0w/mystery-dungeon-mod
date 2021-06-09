@@ -12,10 +12,15 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 
 //Gain 1 dex for the turn for each card played.
@@ -23,6 +28,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 public class RainDishPower extends MysteryDungeonPower implements CloneablePowerInterface, onDiscardInterface {
     public AbstractCreature source;
 
+    public Logger logger = LogManager.getLogger(RainDishPower.class);
     public static final String POWER_ID = MysteryDungeon.makeID("RainDishPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
@@ -54,8 +60,10 @@ public class RainDishPower extends MysteryDungeonPower implements CloneablePower
 
     @Override
     public void onDiscard() {
+        logger.info(cardWasPlayed);
         if(!cardWasPlayed)
         {
+            logger.info("block!");
             addToBot(new GainBlockAction(owner, owner, amount));
         }
         else
@@ -66,7 +74,11 @@ public class RainDishPower extends MysteryDungeonPower implements CloneablePower
     @Override
     public void onAfterUseCard (AbstractCard card, UseCardAction action)
     {
-        cardWasPlayed = true;
+        boolean spoonProc = false;
+        if (action.exhaustCard && AbstractDungeon.player.hasRelic("Strange Spoon") && card.type != AbstractCard.CardType.POWER)
+            spoonProc = AbstractDungeon.cardRandomRng.randomBoolean(); 
+        if(!card.purgeOnUse || !(card.type == CardType.POWER) || spoonProc || !action.exhaustCard || !action.reboundCard || !action.returnToHand || card.shuffleBackIntoDrawPile)
+            cardWasPlayed = true;
     }
 
     @Override
