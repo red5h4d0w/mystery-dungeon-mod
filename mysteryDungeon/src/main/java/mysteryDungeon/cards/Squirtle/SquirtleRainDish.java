@@ -35,12 +35,14 @@ public class SquirtleRainDish extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
     private static final int COST = 1;
+    private static final int BASE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
 
     public SquirtleRainDish() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
     }
 
