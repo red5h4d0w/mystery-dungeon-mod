@@ -48,8 +48,7 @@ public class FlingAction extends AbstractGameAction {
                 tickDuration();
                 menuPoppedUp = true;
                 return;
-            }
-              
+            }      
         } 
         if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
             for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group)

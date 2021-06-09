@@ -5,7 +5,7 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 import basemod.abstracts.CustomCard;
 
 import com.badlogic.gdx.math.MathUtils;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -68,7 +68,7 @@ public class CharmanderOverheat extends CustomCard {
                 addToBot(new ReducePowerAction(m, p, m.getPower(BurnPower.POWER_ID), MathUtils.floor(bonusDamage/2)));
             } 
         }
-        addToBot(new DamageAction(m, new DamageInfo(p, damage + bonusDamage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+        addToBot(new DamageAction(m, new DamageInfo(p, damage + bonusDamage, damageTypeForTurn), AttackEffect.FIRE));
     }
 
     // Upgraded stats.
