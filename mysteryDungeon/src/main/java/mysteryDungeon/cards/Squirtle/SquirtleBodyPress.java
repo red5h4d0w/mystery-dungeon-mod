@@ -4,6 +4,7 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -55,8 +56,14 @@ public class SquirtleBodyPress extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if(upgraded) {
+            addToBot((AbstractGameAction)new GainBlockAction(p, p, block)); }
         addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new WeightyImpactEffect(m.hb.cX, m.hb.cY))); 
         baseDamage = p.currentBlock;
+        if(p.hasPower(DexterityPower.POWER_ID)) {
+            if(p.getPower(DexterityPower.POWER_ID).amount>0)
+                baseDamage = p.currentBlock*p.getPower(DexterityPower.POWER_ID).amount;
+        }
         calculateCardDamage(m);
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         
