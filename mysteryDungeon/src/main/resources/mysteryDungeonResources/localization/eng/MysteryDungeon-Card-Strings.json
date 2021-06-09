@@ -326,6 +326,12 @@
     "DESCRIPTION": "Deal !D! Damage. NL Scry !M! cards. NL Draw !mysteryDungeon:M2! cards. NL Discard !mysteryDungeon:M3! cards.",
     "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Scry !M! cards. NL Draw !mysteryDungeon:M2! cards. NL Discard !mysteryDungeon:M3! card."
   },
+  "mysteryDungeon:SquirtleBodyPress": {
+    "NAME": "Body Press",
+    "DESCRIPTION": "Deal Damage equal to your block multiplied by your amount of Dexterity. NL (cannot go below 1).",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Deal Damage equal to your block multiplied by your amount of Dexterity. NL (cannot go below 1).",
+    "EXTENDED_DESCRIPTION":[" NL (Deals !D! damage.)"]
+  },
   "mysteryDungeon:SquirtleDefend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
