@@ -56,7 +56,7 @@ public class OutragePower extends MysteryDungeonPower implements CloneablePowerI
     @Override
     public void onExhaust(AbstractCard card)
     {
-        addToBot(new ApplyPowerToRandomEnemyAction(owner, new BurnPower(null, amount)));
+        addToBot(new ApplyPowerToRandomEnemyAction(owner, new BurnPower(null, amount), amount));
     }
 
     @Override
