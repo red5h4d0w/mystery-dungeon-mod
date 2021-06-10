@@ -341,6 +341,12 @@
     "DESCRIPTION": "Innate. NL Deal !D! Damage. NL Gain !B! Block. NL Draw !M! card. NL Exahust.",
     "UPGRADE_DESCRIPTION": "Innate. NL Deal !D! Damage. NL Gain !B! Block. NL Draw !M! cards. NL Exahust."
   },
+  "mysteryDungeon:SquirtleFlashCannon": {
+    "NAME": "Flash Cannon",
+    "DESCRIPTION": "Deal Damage equal to the number of cards in your discard pile.",
+    "UPGRADE_DESCRIPTION": "Deal Damage equal to the number of cards in your discard pile + 3.",
+    "EXTENDED_DESCRIPTION":[" NL (Deals !D! damage.)"]
+  },
   "mysteryDungeon:SquirtleHail": {
     "NAME": "Hail",
     "DESCRIPTION": "Whenever you draw a card deal !M! damage to all enemies."

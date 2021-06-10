@@ -1,0 +1,90 @@
+package mysteryDungeon.cards.Squirtle;
+import static mysteryDungeon.MysteryDungeon.makeCardPath;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.combat.MindblastEffect;
+
+import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.cards.PokemonCard;
+import mysteryDungeon.characters.Pokemon;
+
+public class SquirtleFlashCannon extends PokemonCard {
+
+    // TEXT DECLARATION
+
+    public static final String ID = MysteryDungeon.makeID(SquirtleFlashCannon.class.getSimpleName());
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String IMG = makeCardPath("SquirtleAttack.png");
+    public static final String NAME = cardStrings.NAME;
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    public static final String EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION[0];
+
+    // /TEXT DECLARATION/
+
+
+    // STAT DECLARATION
+
+    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardType TYPE = CardType.ATTACK;
+    public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
+
+    private static final int COST = 0;
+    private static final int DAMAGE = 0;
+    private static final int UPGRADE_PLUS_DMG = 3;
+
+
+    // /STAT DECLARATION/
+
+    public SquirtleFlashCannon() {
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        baseDamage = DAMAGE;
+    }
+
+    // Actions the card should do.
+    @Override
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("ATTACK_HEAVY"));
+        addToBot(new VFXAction(p, new MindblastEffect(p.dialogX, p.dialogY, p.flipHorizontal), 0.1F));
+        addToBot((AbstractGameAction)new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+        if (!this.upgraded) {
+          this.rawDescription = cardStrings.DESCRIPTION;
+        } else {
+          this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+        } 
+        initializeDescription();
+    }
+
+    public void applyPowers() {
+        this.baseDamage = AbstractDungeon.player.discardPile.size();
+        if (this.upgraded)
+          this.baseDamage += 3; 
+        super.applyPowers();
+        if (!this.upgraded) {
+          this.rawDescription = cardStrings.DESCRIPTION;
+        } else {
+          this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+        } 
+        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0];
+        initializeDescription();
+    }
+    // Upgraded stats.
+    @Override
+    public void upgrade() {
+        if (!upgraded) {
+            upgradeName();
+            upgradeDamage(UPGRADE_PLUS_DMG);
+            rawDescription = UPGRADE_DESCRIPTION;
+            initializeDescription();
+        }
+    }
+}
