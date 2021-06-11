@@ -332,6 +332,10 @@
     "UPGRADE_DESCRIPTION": "Deal Damage equal to your block multiplied by your amount of Dexterity. NL (cannot go below 1).",
     "EXTENDED_DESCRIPTION":[" NL (Deals !D! damage.)"]
   },
+  "mysteryDungeon:SquirtleBrine": {
+    "NAME": "Brine",
+    "DESCRIPTION": "Deal !D! damage. If your draw pile has equal or more cards than your hand and discard pile combined, deal !D! damage."
+  },
   "mysteryDungeon:SquirtleDefend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
