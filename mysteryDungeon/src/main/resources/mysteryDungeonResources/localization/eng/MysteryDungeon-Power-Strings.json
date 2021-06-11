@@ -141,6 +141,11 @@
         "NAME": "Toxic",
         "DESCRIPTIONS": ["Instead of decreasing by one every turn, the Poison on this enemy will increase by #b%s every turn."]
     },
+    "mysteryDungeon:WhirlpoolPower": {
+        "NAME": "Whirlpool",
+        "DESCRIPTIONS": [
+            "For #b%s turns, Draw 2 cards  and Discard 2 cards at the start of your turn. NL exhaust"]
+    },
     "mysteryDungeon:WorkUpPower": {
         "NAME": "Work Up",
         "DESCRIPTIONS": ["When you create a card this combat, gain #b%s Temporary Strength."]
