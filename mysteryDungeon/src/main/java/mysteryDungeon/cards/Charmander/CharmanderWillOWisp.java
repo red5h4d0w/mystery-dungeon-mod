@@ -58,13 +58,13 @@ public class CharmanderWillOWisp extends CustomCard {
             energyOnUse = EnergyPanel.totalCount; 
         }
         if (p.hasRelic("Chemical X")) {
-            this.energyOnUse += 2;
+            energyOnUse += 2;
             p.getRelic("Chemical X").flash();
         }
         energyOnUse += upgraded?1:0;
         addToBot(new ApplyPowerAction(m, p, new WeakPower(p, energyOnUse, false), energyOnUse));
         addToBot(new ApplyPowerAction(m, p, new BurnPower(m, 3*energyOnUse), 3*energyOnUse));
-        if (!this.freeToPlayOnce)
+        if (!freeToPlayOnce)
         {
             p.energy.use(EnergyPanel.totalCount);
         }

@@ -1,6 +1,8 @@
 package mysteryDungeon.cards.Squirtle;
+
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
+
+import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
@@ -55,26 +57,26 @@ public class SquirtleFlashCannon extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction("ATTACK_HEAVY"));
         addToBot(new VFXAction(p, new MindblastEffect(p.dialogX, p.dialogY, p.flipHorizontal), 0.1F));
-        addToBot((AbstractGameAction)new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-        if (!this.upgraded) {
-          this.rawDescription = cardStrings.DESCRIPTION;
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.NONE));
+        if (!upgraded) {
+          rawDescription = cardStrings.DESCRIPTION;
         } else {
-          this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+          rawDescription = cardStrings.UPGRADE_DESCRIPTION;
         } 
         initializeDescription();
     }
 
     public void applyPowers() {
-        this.baseDamage = AbstractDungeon.player.discardPile.size();
-        if (this.upgraded)
-          this.baseDamage += 3; 
+        baseDamage = AbstractDungeon.player.discardPile.size();
+        if (upgraded)
+          baseDamage += 3; 
         super.applyPowers();
-        if (!this.upgraded) {
-          this.rawDescription = cardStrings.DESCRIPTION;
+        if (!upgraded) {
+          rawDescription = cardStrings.DESCRIPTION;
         } else {
-          this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+          rawDescription = cardStrings.UPGRADE_DESCRIPTION;
         } 
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0];
+        rawDescription += cardStrings.EXTENDED_DESCRIPTION[0];
         initializeDescription();
     }
     // Upgraded stats.
