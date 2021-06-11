@@ -144,7 +144,9 @@
     "mysteryDungeon:WhirlpoolPower": {
         "NAME": "Whirlpool",
         "DESCRIPTIONS": [
-            "For #b%s turns, Draw 2 cards  and Discard 2 cards at the start of your turn. NL exhaust"]
+            "At the start of your turn, Draw 2 cards and Discard 2 cards.",
+            "For #b%s turns, at the start of your turn, Draw 2 cards and Discard 2 cards."
+        ]
     },
     "mysteryDungeon:WorkUpPower": {
         "NAME": "Work Up",

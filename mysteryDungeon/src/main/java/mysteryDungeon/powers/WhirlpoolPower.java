@@ -8,9 +8,10 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DiscardAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -41,6 +42,7 @@ public class WhirlpoolPower extends MysteryDungeonPower implements CloneablePowe
         this.amount = amount;
 
         type = PowerType.BUFF;
+        isTurnBased = true;
 
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
@@ -49,22 +51,29 @@ public class WhirlpoolPower extends MysteryDungeonPower implements CloneablePowe
         updateDescription();
     }
 
+    public void atStartOfTurnPostDraw() {
+        flash();
+        addToBot(new DrawCardAction(owner, amount));
+        addToBot(new DiscardAction(owner, owner, amount, false));
+        addToBot(new ReducePowerAction(owner, owner, this, 1));
+        if(amount==0)
+        {
+            addToBot(new RemoveSpecificPowerAction(owner, source, this));
+        }
+    }
+
+    @Override
+    public void updateDescription() {
+        if(amount==1)
+        {
+            description = DESCRIPTIONS[0];
+            return;
+        }
+        description = String.format(DESCRIPTIONS[1], amount);
+    }
+
     @Override
     public AbstractPower makeCopy() {
         return new WhirlpoolPower(owner, amount);
-    }
-
-    public void updateDescription() {
-        if (this.amount == 2) {
-          this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[2];
-        } else {
-          this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[3] + this.amount + DESCRIPTIONS[4];
-        } 
-      }
-      
-      public void atStartOfTurnPostDraw() {
-        flash();
-        addToBot((AbstractGameAction)new DrawCardAction(this.owner, this.amount));
-        addToBot((AbstractGameAction)new DiscardAction(this.owner, this.owner, this.amount, false));
     }
 }

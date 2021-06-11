@@ -401,6 +401,11 @@
     "NAME": "Water Pulse",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
   },
+  "mysteryDungeon:SquirtleWhirlpool": {
+    "NAME": "Whirlpool",
+    "DESCRIPTION": "At the start of your X next turns, Draw 2 more cards and Discard 2 cards.",
+    "UPGRADE_DESCRIPTION": "At the start of your X+1 next turns, Draw 2 more cards and Discard 2 cards."
+  },
   "mysteryDungeon:SquirtleWithdraw": {
     "NAME": "Withdraw",
     "DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! card. NL Gain !B! Block per card in hand.",

@@ -2,19 +2,11 @@ package mysteryDungeon.cards.Squirtle;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.ShuffleAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 import mysteryDungeon.MysteryDungeon;
@@ -64,14 +56,13 @@ public class SquirtleWhirlpool extends PokemonCard {
             energyOnUse = EnergyPanel.totalCount; 
         }
         if (p.hasRelic("Chemical X")) {
-            this.energyOnUse += 2;
+            energyOnUse += 2;
             p.getRelic("Chemical X").flash();
-        } 
-        for (int i = 0; i < this.energyOnUse; i++) 
-        {
-            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new WhirlpoolPower((AbstractCreature)p, 1), 1));
-        if (!this.freeToPlayOnce)
-        
+        }
+        if(upgraded)
+            energyOnUse++; 
+        addToBot(new ApplyPowerAction(p, p, new WhirlpoolPower(p, energyOnUse), energyOnUse));
+        if (!freeToPlayOnce)
             p.energy.use(EnergyPanel.totalCount);
     }
 
