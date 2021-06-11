@@ -53,8 +53,8 @@ public class WhirlpoolPower extends MysteryDungeonPower implements CloneablePowe
 
     public void atStartOfTurnPostDraw() {
         flash();
-        addToBot(new DrawCardAction(owner, amount));
-        addToBot(new DiscardAction(owner, owner, amount, false));
+        addToBot(new DrawCardAction(owner, 2));
+        addToBot(new DiscardAction(owner, owner, 2, false));
         addToBot(new ReducePowerAction(owner, owner, this, 1));
         if(amount==0)
         {
