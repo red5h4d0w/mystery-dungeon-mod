@@ -363,6 +363,10 @@
     "NAME": "Iron Defense",
     "DESCRIPTION": "Gain !M! Dexterity."
   },
+  "mysteryDungeon:SquirtlePrepareSkullBash": {
+    "NAME": "Prepare Skull Bash",
+    "DESCRIPTION": "Add a Skull Bash on top of your draw pile. NL Exhaust."
+  },
   "mysteryDungeon:SquirtleProtect": {
     "NAME": "Protect",
     "DESCRIPTION": "Gain !B! Block. NL You cannot gain block during the next !M! turns."
@@ -384,6 +388,10 @@
   "mysteryDungeon:SquirtleShellSmash": {
     "NAME": "Shell Smash",
     "DESCRIPTION": "Gain !M! Strength. NL Add !mysteryDungeon:M2! random Statuses Card to your deck. NL Exhaust."
+  },
+  "mysteryDungeon:SquirtleSkullBash": {
+    "NAME": "Skull Bash!",
+    "DESCRIPTION": "Retain. NL You can only play this card if it's the last card in your hand. NL Deal !D! damage. Exhaust."
   },
   "mysteryDungeon:SquirtleTackle": {
     "NAME": "Tackle",
