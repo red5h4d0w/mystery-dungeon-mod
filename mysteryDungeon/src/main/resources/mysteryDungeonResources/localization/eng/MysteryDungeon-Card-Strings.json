@@ -323,8 +323,8 @@
   },
   "mysteryDungeon:SquirtleAquaRing": {
     "NAME": "Aqua Ring",
-    "DESCRIPTION": "This turn, each time you Scry or discard a card, deal 3 damage to ALL enemies and gain 2 block. NL If the card you discarded or scried was a Status card, deal 2 more damage and gain 2 more block.",
-    "UPGRADE_DESCRIPTION": "Retain. NL This turn, each time you Scry or discard a card, deal 3 damage to ALL enemies and gain 2 block. NL If the card you discarded or scried was a Status card, deal 2 more damage and gain 2 more block."
+    "DESCRIPTION": "This turn, for each card you scry or discard, deal 3 damage to ALL enemies and gain 2 block. NL If the card you scried or discarded was a Status, deal 2 more damage and gain 2 more block. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL This turn, for each card you scry or discard, deal 3 damage to ALL enemies and gain 2 block. NL If the card you scried or discarded was a Status, deal 2 more damage and gain 2 more block. Exhaust."
   },
   "mysteryDungeon:SquirtleAquaTail": {
     "NAME": "Aqua Tail",

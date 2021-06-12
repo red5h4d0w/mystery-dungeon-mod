@@ -9,8 +9,7 @@
     "mysteryDungeon:AquaRingPower": {
         "NAME": "Aqua Ring",
         "DESCRIPTIONS": [
-            "This turn, each time you Scry or discard a card, deal #b%s damage to ALL enemies and gain #b%s block. NL If the card you discarded or scried was a Status card, deal #b%s more damage and gain #b%s more block.",
-            "This monster won't act for #b%s turns, unless it receives damage. When it will wake up, it will go back to the intent it had before falling asleep."
+            "This turn, for each card you scry or discard, deal #b%s damage to ALL enemies and gain #b%s block. NL If the card you scried or discarded was a Status card, deal #b%s more damage and gain #b%s more block."
         ]
     },
     "mysteryDungeon:BellyDrumPower": {
