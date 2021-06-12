@@ -1,4 +1,4 @@
-package mysteryDungeon.cards;
+package mysteryDungeon.cards.tempCards;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
@@ -46,7 +46,7 @@ public class ColorlessAgility extends CustomCard {
 
     public ColorlessAgility() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        retain = true;
+        selfRetain = true;
         exhaust = true;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;

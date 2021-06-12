@@ -55,6 +55,7 @@ public class ScaldAction extends AbstractGameAction {
             for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group)
             {
                 p.hand.moveToDiscardPile(c);
+                c.triggerOnManualDiscard();
                 numberOfDiscardedCards++; 
             }
             AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;

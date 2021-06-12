@@ -321,6 +321,11 @@
     "DESCRIPTION": "Apply X Weak. NL Apply 3X mysterydungeon:Burn. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. NL Exhaust."
   },
+  "mysteryDungeon:SquirtleAquaRing": {
+    "NAME": "Aqua Ring",
+    "DESCRIPTION": "This turn, each time you Scry or discard a card, deal 3 damage to ALL enemies and gain 2 block. NL If the card you discarded or scried was a Status card, deal 2 more damage and gain 2 more block.",
+    "UPGRADE_DESCRIPTION": "Retain. NL This turn, each time you Scry or discard a card, deal 3 damage to ALL enemies and gain 2 block. NL If the card you discarded or scried was a Status card, deal 2 more damage and gain 2 more block."
+  },
   "mysteryDungeon:SquirtleAquaTail": {
     "NAME": "Aqua Tail",
     "DESCRIPTION": "Deal !D! Damage. NL Scry !M! cards. NL Draw !mysteryDungeon:M2! cards. NL Discard !mysteryDungeon:M3! cards.",
@@ -339,6 +344,10 @@
   "mysteryDungeon:SquirtleDefend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
+  },
+  "mysteryDungeon:SquirtleDoubleTeam": {
+    "NAME": "Double Team",
+    "DESCRIPTION": "Gain !M! Metallicize."
   },
   "mysteryDungeon:SquirtleFakeOut": {
     "NAME": "Fake Out",

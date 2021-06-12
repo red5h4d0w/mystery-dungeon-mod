@@ -46,7 +46,9 @@ public class SquirtleSkullBash extends PokemonCard {
 
     public SquirtleSkullBash() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        selfRetain = true;
         baseDamage = BASE_DAMAGE;
+        exhaust = true;
     }
 
     // Actions the card should do.

@@ -2,22 +2,22 @@ package mysteryDungeon.cards.Squirtle;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.MetallicizePower;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.PokemonCard;
-import mysteryDungeon.cards.tempCards.SquirtleSkullBash;
 import mysteryDungeon.characters.Pokemon;
 
-public class SquirtlePrepareSkullBash extends PokemonCard {
+public class SquirtleDoubleTeam extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(SquirtlePrepareSkullBash.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(SquirtleDoubleTeam.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("SquirtleSkill.png");
     public static final String NAME = cardStrings.NAME;
@@ -28,27 +28,28 @@ public class SquirtlePrepareSkullBash extends PokemonCard {
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
-    private static final int COST = 2;
-    private static final int UPGRADE_COST = 1;
+    private static final int COST = 0;
+    private static final int BASE_MAGIC_NUMBER = 1;
+    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
 
-    public SquirtlePrepareSkullBash() {
+    public SquirtleDoubleTeam() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        exhaust = true;
-        cardsToPreview = new SquirtleSkullBash();
+        baseMagicNumber = BASE_MAGIC_NUMBER;
+        magicNumber = baseMagicNumber;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new MakeTempCardInDrawPileAction(new SquirtleSkullBash(), 1, false, false, false));
+        addToBot(new ApplyPowerAction(p, p, new MetallicizePower(p, magicNumber), magicNumber));
     }
 
     // Upgraded stats.
@@ -56,7 +57,7 @@ public class SquirtlePrepareSkullBash extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(UPGRADE_COST);
+            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             initializeDescription();
         }
     }

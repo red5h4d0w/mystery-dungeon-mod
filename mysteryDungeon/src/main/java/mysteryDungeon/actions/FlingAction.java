@@ -54,6 +54,7 @@ public class FlingAction extends AbstractGameAction {
             for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group)
             {
                 p.hand.moveToExhaustPile(c);
+                c.triggerOnExhaust();
                 numberOfExhaustedCards++; 
             }
             AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
