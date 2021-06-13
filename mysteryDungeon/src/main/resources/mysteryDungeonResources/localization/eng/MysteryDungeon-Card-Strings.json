@@ -376,6 +376,10 @@
     "NAME": "Iron Defense",
     "DESCRIPTION": "Gain !M! Dexterity."
   },
+  "mysteryDungeon:SquirtleMirrorCoat": {
+    "NAME": "Mirror Coat",
+    "DESCRIPTION": "Gain !M! Blur and !B! Block."
+  },
   "mysteryDungeon:SquirtlePrepareSkullBash": {
     "NAME": "Prepare Skull Bash",
     "DESCRIPTION": "Add a Skull Bash on top of your draw pile. NL Exhaust."
