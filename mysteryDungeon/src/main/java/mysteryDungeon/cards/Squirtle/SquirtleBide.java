@@ -14,11 +14,11 @@ import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 
-public class SquirtleMirrorCoat extends PokemonCard {
+public class SquirtleBide extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(SquirtleMirrorCoat.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(SquirtleBide.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("SquirtleSkill.png");
     public static final String NAME = cardStrings.NAME;
@@ -35,14 +35,14 @@ public class SquirtleMirrorCoat extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
     private static final int COST = 1;
-    private static final int BLOCK = 10;
-    private static final int BASE_MAGIC_NUMBER = 2;
+    private static final int BLOCK = 12;
+    private static final int BASE_MAGIC_NUMBER = 1;
     private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
 
-    public SquirtleMirrorCoat() {
+    public SquirtleBide() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseBlock = BLOCK;
         baseMagicNumber = BASE_MAGIC_NUMBER;
