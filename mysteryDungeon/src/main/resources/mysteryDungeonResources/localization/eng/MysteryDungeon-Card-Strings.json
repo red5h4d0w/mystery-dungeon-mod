@@ -335,6 +335,11 @@
     "DESCRIPTION": "Deal !D! Damage. NL Scry !M! cards. NL Draw !mysteryDungeon:M2! cards. NL Discard !mysteryDungeon:M3! cards.",
     "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Scry !M! cards. NL Draw !mysteryDungeon:M2! cards. NL Discard !mysteryDungeon:M3! card."
   },
+  "mysteryDungeon:SquirtleBide": {
+    "NAME": "Bide",
+    "DESCRIPTION": "Gain !B! Block. NL Until next turn, when you get attacked, Gain !M! Temporary Strength.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Until next turn, when you get attacked, Gain !M! Temporary Strength."
+  },
   "mysteryDungeon:SquirtleBodyPress": {
     "NAME": "Body Press",
     "DESCRIPTION": "Ethereal. NL Deal Damage equal to your block multiplied by your amount of Dexterity. NL (cannot go below 1).",

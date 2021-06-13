@@ -19,6 +19,12 @@
             "The first %s cards you play each turn cost 0, but exhaust."
         ]
     },
+    "mysteryDungeon:BidePower": {
+        "NAME": "Bide",
+        "DESCRIPTIONS": [
+            "When you get attacked, Gain #b%s Temporary Strength."
+        ]
+    },
     "mysteryDungeon:BlazePower": {
         "NAME": "Blaze",
         "DESCRIPTIONS": [
