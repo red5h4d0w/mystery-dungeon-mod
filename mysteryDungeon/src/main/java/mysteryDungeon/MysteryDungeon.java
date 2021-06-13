@@ -7,6 +7,8 @@ import basemod.interfaces.*;
 import mysteryDungeon.cards.Bulbasaur.*;
 import mysteryDungeon.cards.Charmander.CharmanderScratch;
 import mysteryDungeon.cards.Squirtle.SquirtleTackle;
+import mysteryDungeon.cards.Status.StatusFreeze;
+import mysteryDungeon.cards.tempCards.ColorlessAgility;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.events.IdentityCrisisEvent;
 import mysteryDungeon.potions.PlaceholderPotion;
@@ -471,8 +473,16 @@ public class MysteryDungeon implements
             .packageFilter(CharmanderScratch.class)
             .setDefaultSeen(true)
             .cards();
-            new AutoAdd("MysteryDungeon")
+        new AutoAdd("MysteryDungeon")
             .packageFilter(SquirtleTackle.class)
+            .setDefaultSeen(true)
+            .cards();
+        new AutoAdd("MysteryDungeon")
+            .packageFilter(ColorlessAgility.class)
+            .setDefaultSeen(true)
+            .cards();
+        new AutoAdd("MysteryDungeon")
+            .packageFilter(StatusFreeze.class)
             .setDefaultSeen(true)
             .cards();
         // .setDefaultSeen(true) unlocks the cards

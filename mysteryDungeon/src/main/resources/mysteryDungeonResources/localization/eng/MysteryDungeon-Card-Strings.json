@@ -3,6 +3,10 @@
     "NAME": "Agility",
     "DESCRIPTION": "Retain. NL Draw !M! cards. NL Exhaust."
   },
+  "mysteryDungeon:StatusFreeze": {
+    "NAME": "Freeze",
+    "DESCRIPTION": "Retain."
+  },
   "mysteryDungeon:BulbasaurBulletSeed": {
     "NAME": "Bullet Seed",
     "DESCRIPTION": "Deal !D! damage !M! times. NL Can be upgraded multiple times."
