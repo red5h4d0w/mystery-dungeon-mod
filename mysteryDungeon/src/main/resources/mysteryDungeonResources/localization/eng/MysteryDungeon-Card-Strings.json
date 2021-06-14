@@ -415,6 +415,11 @@
     "NAME": "Skull Bash!",
     "DESCRIPTION": "Retain. NL You can only play this card if it's the last card in your hand. NL Deal !D! damage. Exhaust."
   },
+  "mysteryDungeon:SquirtleSubstitute": {
+    "NAME": "Substitute",
+    "DESCRIPTION": "Choose a card from your draw pile. NL Add it to your hand and put a Wound where the card was. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose a card from your draw pile. NL Add a copy of that card to your hand and put a Wound at the card's location. NL Exhaust."
+  },
   "mysteryDungeon:SquirtleTackle": {
     "NAME": "Tackle",
     "DESCRIPTION": "Deal !D! damage."
