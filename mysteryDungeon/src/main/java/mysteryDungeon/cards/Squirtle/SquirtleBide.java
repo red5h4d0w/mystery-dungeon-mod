@@ -8,11 +8,11 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.BlurPower;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.powers.BidePower;
 
 public class SquirtleBide extends PokemonCard {
 
@@ -52,8 +52,8 @@ public class SquirtleBide extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new BlurPower(p, magicNumber), magicNumber));
-        addToBot(new GainBlockAction(p, p, block));
+        addToBot(new GainBlockAction(p, block));
+        addToBot(new ApplyPowerAction(p, p, new BidePower(p, magicNumber), magicNumber));
     }
 
     // Upgraded stats.
