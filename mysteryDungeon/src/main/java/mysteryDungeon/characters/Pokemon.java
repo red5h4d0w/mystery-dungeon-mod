@@ -9,6 +9,8 @@ import mysteryDungeon.cards.Charmander.*;
 import mysteryDungeon.cards.Squirtle.SquirtleDefend;
 import mysteryDungeon.cards.Squirtle.SquirtleTackle;
 import mysteryDungeon.cards.Squirtle.SquirtleWaterGun;
+import mysteryDungeon.cards.fakeCards.ExplorersDeck;
+import mysteryDungeon.cards.fakeCards.PartnersDeck;
 import mysteryDungeon.relics.*;
 
 import com.badlogic.gdx.graphics.Color;
@@ -63,19 +65,23 @@ public class Pokemon extends CustomPlayer implements CustomSavable<Pokemon.Adven
         public static AbstractPlayer.PlayerClass THE_POKEMON;
         @SpireEnum(name = "DEFAULT_GRAY_COLOR") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor COLOR_GRAY;
-        @SpireEnum(name = "DEFAULT_GRAY_COLOR") @SuppressWarnings("unused")
+        @SpireEnum(name = "DEFAULT_GRAY_COLOR") 
+        @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_COLOR;
         @SpireEnum(name = "BULBASAUR_GREEN") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor BULBASAUR_GREEN;
-        @SpireEnum(name = "BULBASAUR_GREEN") @SuppressWarnings("unused")
+        @SpireEnum(name = "BULBASAUR_GREEN") 
+        @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_BULBASAUR_GREEN;
         @SpireEnum(name = "CHARMANDER_RED") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor CHARMANDER_RED;
-        @SpireEnum(name = "CHARMANDER_RED") @SuppressWarnings("unused")
+        @SpireEnum(name = "CHARMANDER_RED") 
+        @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_CHARMANDER_RED;
         @SpireEnum(name = "SQUIRTLE_BLUE") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor SQUIRTLE_BLUE;
-        @SpireEnum(name = "SQUIRTLE_BLUE") @SuppressWarnings("unused")
+        @SpireEnum(name = "SQUIRTLE_BLUE") 
+        @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_SQUIRTLE_BLUE;
     }
 
@@ -237,8 +243,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<Pokemon.Adven
         ArrayList<String> retVal = new ArrayList<>();
 
         logger.info("Begin loading starter Deck Strings");
-        retVal.add(BulbasaurDefend.ID);
-        retVal.add(BulbasaurDefend.ID);
+        retVal.add(ExplorersDeck.ID);
+        retVal.add(PartnersDeck.ID);
         return retVal;
     }
 

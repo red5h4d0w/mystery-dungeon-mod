@@ -1,4 +1,12 @@
 {
+  "mysteryDungeon:ExplorersDeck": {
+    "NAME": "Explorer's deck",
+    "DESCRIPTION": "Will become a deck of 5 cards once you choose your explorer."
+  },
+  "mysteryDungeon:PartnersDeck": {
+    "NAME": "Partner's Deck",
+    "DESCRIPTION": "Will become a deck of 5 cards once you choose your partner."
+  },
   "mysteryDungeon:ColorlessAgility": {
     "NAME": "Agility",
     "DESCRIPTION": "Retain. NL Draw !M! cards. NL Exhaust."
@@ -381,6 +389,11 @@
     "NAME": "Iron Defense",
     "DESCRIPTION": "Gain !M! Dexterity."
   },
+  "mysteryDungeon:SquirtleLifeDew": {
+    "NAME": "Life Dew",
+    "DESCRIPTION": "Draw !mysteryDungeon:M2! cards.",
+    "UPGRADE_DESCRIPTION": "Scry !M! cards. NL Draw !mysteryDungeon:M2! cards."
+  },
   "mysteryDungeon:SquirtleMirrorCoat": {
     "NAME": "Mirror Coat",
     "DESCRIPTION": "Gain !M! Blur and !B! Block."
@@ -439,6 +452,11 @@
   "mysteryDungeon:SquirtleWaterPulse": {
     "NAME": "Water Pulse",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
+  },
+  "mysteryDungeon:SquirtleWaterSpout": {
+    "NAME": "Water Spout",
+    "DESCRIPTION": "Scry !M! card. NL Apply !mysteryDungeon:M2! Weak. NL Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Scry !M! cards. NL Apply !mysteryDungeon:M2! Weak. NL Deal !D! damage."
   },
   "mysteryDungeon:SquirtleWhirlpool": {
     "NAME": "Whirlpool",

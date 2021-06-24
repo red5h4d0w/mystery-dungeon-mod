@@ -8,6 +8,7 @@ import mysteryDungeon.cards.Bulbasaur.*;
 import mysteryDungeon.cards.Charmander.CharmanderScratch;
 import mysteryDungeon.cards.Squirtle.SquirtleTackle;
 import mysteryDungeon.cards.Status.StatusFreeze;
+import mysteryDungeon.cards.fakeCards.ExplorersDeck;
 import mysteryDungeon.cards.tempCards.ColorlessAgility;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.events.IdentityCrisisEvent;
@@ -463,8 +464,6 @@ public class MysteryDungeon implements
         // The ID for this function isn't actually your modid as used for prefixes/by the getModID() method.
         // It's the mod id you give MTS in ModTheSpire.json - by default your artifact ID in your pom.xml
 
-        //TODO: Rename the "MysteryDungeon" with the modid in your ModTheSpire.json file
-        //TODO: The artifact mentioned in ModTheSpire.json is the artifactId in pom.xml you should've edited earlier
         new AutoAdd("MysteryDungeon")
             .packageFilter(BulbasaurTackle.class)
             .setDefaultSeen(true)
@@ -483,6 +482,10 @@ public class MysteryDungeon implements
             .cards();
         new AutoAdd("MysteryDungeon")
             .packageFilter(StatusFreeze.class)
+            .setDefaultSeen(true)
+            .cards();
+        new AutoAdd("MysteryDungeon")
+            .packageFilter(ExplorersDeck.class)
             .setDefaultSeen(true)
             .cards();
         // .setDefaultSeen(true) unlocks the cards

@@ -24,7 +24,8 @@ import com.megacrit.cardcrawl.vfx.InfiniteSpeechBubble;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import mysteryDungeon.cards.Bulbasaur.BulbasaurDefend;
+import mysteryDungeon.cards.fakeCards.ExplorersDeck;
+import mysteryDungeon.cards.fakeCards.PartnersDeck;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.util.LocalizationTool;
 
@@ -302,8 +303,8 @@ public class PokemonNeowPatch {
                     AskQuestion(__instance, new Question("I see, now brave the challenge of the tower", new String[]{"[Leave]"}));
                     screenNum++;
                     CardCrawlGame.dungeon.initializeCardPools();
-                    AbstractDungeon.player.masterDeck.removeCard(BulbasaurDefend.ID);
-                    AbstractDungeon.player.masterDeck.removeCard(BulbasaurDefend.ID);
+                    AbstractDungeon.player.masterDeck.removeCard(ExplorersDeck.ID);
+                    AbstractDungeon.player.masterDeck.removeCard(PartnersDeck.ID);
                     ((Pokemon)AbstractDungeon.player).AwardStartingRelic();
                     return SpireReturn.Return(null);
                 case 6:
