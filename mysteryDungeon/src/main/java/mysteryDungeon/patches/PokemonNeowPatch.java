@@ -243,16 +243,21 @@ public class PokemonNeowPatch {
                         case 2:
                             break;
                     }
+                    logger.info(isTestRun);
                     if(!isTestRun)
                     {
+                        logger.info("will show next dialog");
                         ShowNextDialog(__instance);
                         return SpireReturn.Return(null);
                     }
+                    AdvanceAccordingToChoice(__instance, buttonPressed);
+                    return SpireReturn.Return(null);
                 // Personality Quiz
                 case 4:
                     // First Question
                     if(answeredQuestions==0)
                     {
+                        logger.info("asking first question");
                         AskQuestion(__instance);
                     }
                     // Boy or Girl Question

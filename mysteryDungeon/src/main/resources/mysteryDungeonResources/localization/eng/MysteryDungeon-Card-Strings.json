@@ -377,6 +377,11 @@
     "UPGRADE_DESCRIPTION": "Deal Damage equal to the number of cards in your discard pile + 3.",
     "EXTENDED_DESCRIPTION":[" NL (Deals !D! damage.)"]
   },
+  "mysteryDungeon:SquirtleFlinch": {
+    "NAME": "Flinch",
+    "DESCRIPTION": "Deal !D! damage 2 times. NL Scry !M! card. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage 2 times. NL Scry !M! cards. NL Exhaust."
+  },
   "mysteryDungeon:SquirtleHail": {
     "NAME": "Hail",
     "DESCRIPTION": "Whenever you draw a card deal !M! damage to all enemies."
@@ -398,9 +403,13 @@
     "NAME": "Mirror Coat",
     "DESCRIPTION": "Gain !M! Blur and !B! Block."
   },
+  "mysteryDungeon:SquirtleMist": {
+    "NAME": "Mist",
+    "DESCRIPTION": "If the enemy is attacking, gain !M! Artifact. NL Gain !B! block."
+  },
   "mysteryDungeon:SquirtlePrepareSkullBash": {
     "NAME": "Prepare Skull Bash",
-    "DESCRIPTION": "Add a Skull Bash on top of your draw pile. NL Exhaust."
+    "DESCRIPTION": "Add a *Skull *Bash on top of your draw pile. NL Exhaust."
   },
   "mysteryDungeon:SquirtleProtect": {
     "NAME": "Protect",
@@ -472,5 +481,10 @@
     "NAME": "Work Up",
     "DESCRIPTION": "When a card is created this combat, gain !M! Temporary Strength.",
     "UPGRADE_DESCRIPTION": "Innate. NL When a card is created this combat, gain !M! Temporary Strength."
+  },
+  "mysteryDungeon:SquirtleZenHeadbutt": {
+    "NAME": "Zen Headbutt",
+    "DESCRIPTION": "Deal !D! damage create a *Flinch and add it to your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage create an upgraded *Flinch and add it to your hand."
   }
 }
