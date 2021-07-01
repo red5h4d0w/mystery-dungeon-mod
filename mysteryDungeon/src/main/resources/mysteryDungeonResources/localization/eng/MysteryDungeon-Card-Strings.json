@@ -393,11 +393,15 @@
   "mysteryDungeon:SquirtleHaze": {
     "NAME": "Haze",
     "DESCRIPTION": "Gain [E] [E] NL Add !M! Freeze to your discard pile.",
-    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E] NL Add !M! Freeze to your discard pile."
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E] NL Add !M! *Freeze to your discard pile."
   },
   "mysteryDungeon:SquirtleHydroCannon": {
     "NAME": "Hydro Cannon",
     "DESCRIPTION": "Deal !D! Damage to all enemies. NL Insert 3 Dazed in your draw pile."
+  },
+  "mysteryDungeon:SquirtleIceBeam": {
+    "NAME": "Ice Beam",
+    "DESCRIPTION": "Deal !D! Damage to all enemies. NL Insert 1 *Freeze in your hand."
   },
   "mysteryDungeon:SquirtleIronDefense": {
     "NAME": "Iron Defense",
