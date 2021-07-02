@@ -35,9 +35,10 @@ public class SquirtleLifeDew extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
     private static final int COST = 1;
-    private static final int BASE_MAGIC_NUMBER = 0;
+    private static final int BASE_MAGIC_NUMBER = 2;
     private static final int UPGRADE_MAGIC_NUMBER = 2;
     private static final int BASE_SECOND_MAGIC_NUMBER = 3;
+    private static final int UPGRADE_SECOND_MAGIC_NUMBER = 1;
 
 
 
@@ -53,8 +54,7 @@ public class SquirtleLifeDew extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(upgraded)
-            addToBot(new ScryAction(magicNumber));
+        addToBot(new ScryAction(magicNumber));
         addToBot(new DrawCardAction(p, secondMagicNumber));
     }
 
@@ -64,7 +64,7 @@ public class SquirtleLifeDew extends PokemonCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
-            rawDescription = UPGRADE_DESCRIPTION;
+            upgradeSecondMagicNumber(UPGRADE_SECOND_MAGIC_NUMBER);
             initializeDescription();
         }
     }

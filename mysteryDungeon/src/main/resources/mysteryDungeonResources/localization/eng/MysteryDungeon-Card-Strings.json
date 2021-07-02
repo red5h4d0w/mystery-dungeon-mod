@@ -409,8 +409,7 @@
   },
   "mysteryDungeon:SquirtleLifeDew": {
     "NAME": "Life Dew",
-    "DESCRIPTION": "Draw !mysteryDungeon:M2! cards.",
-    "UPGRADE_DESCRIPTION": "Scry !M! cards. NL Draw !mysteryDungeon:M2! cards."
+    "DESCRIPTION": "Scry !M! cards. NL Draw !mysteryDungeon:M2! cards."
   },
   "mysteryDungeon:SquirtleMirrorCoat": {
     "NAME": "Mirror Coat",
