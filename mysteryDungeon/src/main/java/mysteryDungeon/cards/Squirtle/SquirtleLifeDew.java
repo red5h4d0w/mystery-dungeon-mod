@@ -1,14 +1,12 @@
 package mysteryDungeon.cards.Squirtle;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
-
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
@@ -37,7 +35,7 @@ public class SquirtleLifeDew extends PokemonCard {
     private static final int COST = 1;
     private static final int BASE_MAGIC_NUMBER = 2;
     private static final int UPGRADE_MAGIC_NUMBER = 2;
-    private static final int BASE_SECOND_MAGIC_NUMBER = 3;
+    private static final int SECOND_MAGIC_NUMBER = 3;
     private static final int UPGRADE_SECOND_MAGIC_NUMBER = 1;
 
 
@@ -48,7 +46,8 @@ public class SquirtleLifeDew extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
-        baseSecondMagicNumber = BASE_SECOND_MAGIC_NUMBER;
+        baseSecondMagicNumber = SECOND_MAGIC_NUMBER;
+        secondMagicNumber = baseSecondMagicNumber;
     }
 
     // Actions the card should do.
