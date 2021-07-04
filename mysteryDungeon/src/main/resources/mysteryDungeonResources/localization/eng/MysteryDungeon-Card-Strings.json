@@ -417,7 +417,7 @@
   },
   "mysteryDungeon:SquirtleMist": {
     "NAME": "Mist",
-    "DESCRIPTION": "If the enemy is attacking, gain !M! Artifact. NL Gain !B! block."
+    "DESCRIPTION": "If the enemy is not attacking, gain !M! Artifact. NL Gain !B! block."
   },
   "mysteryDungeon:SquirtlePrepareSkullBash": {
     "NAME": "Prepare Skull Bash",

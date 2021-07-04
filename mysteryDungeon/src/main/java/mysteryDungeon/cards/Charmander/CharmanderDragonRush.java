@@ -1,7 +1,6 @@
 package mysteryDungeon.cards.Charmander;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
-
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -9,7 +8,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.actions.BetterExhumeAction;
 import mysteryDungeon.cards.PokemonCard;
@@ -22,7 +20,6 @@ public class CharmanderDragonRush extends PokemonCard {
     public static final String IMG = makeCardPath("CharmanderAttack.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -30,7 +27,7 @@ public class CharmanderDragonRush extends PokemonCard {
     // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
@@ -51,10 +48,10 @@ public class CharmanderDragonRush extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn)));
-        addToBot(new ExhaustSpecificCardAction(p.drawPile.getRandomCard(true), p.drawPile));
         addToBot(new BetterExhumeAction(false, p.discardPile));
-    }
-
+        addToBot(new ExhaustSpecificCardAction(p.drawPile.getRandomCard(true), p.drawPile));
+        
+        }
     // Upgraded stats.
     @Override
     public void upgrade() {
