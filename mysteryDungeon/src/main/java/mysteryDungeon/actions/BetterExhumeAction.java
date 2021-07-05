@@ -22,7 +22,7 @@ public class BetterExhumeAction extends AbstractGameAction {
     
     private final boolean upgrade;
     
-    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("Exhume");
+    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("ExhumeAction");
     
     public static final String[] TEXT = uiStrings.TEXT;
     
