@@ -39,10 +39,10 @@ public class BetterExhumeAction extends AbstractGameAction {
     
     public void update() {
         if (duration == Settings.ACTION_DUR_FAST) {
-        if (whereToSend == AbstractDungeon.player.hand && AbstractDungeon.player.hand.size() == 10) {
-            AbstractDungeon.player.createHandIsFullDialog();
-            isDone = true;
-            return;
+            if (whereToSend == AbstractDungeon.player.hand && AbstractDungeon.player.hand.size() == 10) {
+                AbstractDungeon.player.createHandIsFullDialog();
+                isDone = true;
+                return;
         } 
         if (p.exhaustPile.isEmpty()) {
             isDone = true;
