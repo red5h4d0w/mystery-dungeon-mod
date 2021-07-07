@@ -1,0 +1,43 @@
+package com.megacrit.cardcrawl.stances;
+
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.math.MathUtils;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.StanceStrings;
+
+
+public class PositivelyChargedStance extends AbstractStance {
+  public static final String STANCE_ID = "PositivelyCharged";
+  
+  private static final StanceStrings stanceString = CardCrawlGame.languagePack.getStanceString("PositivelyCharged");
+  
+  
+  public PositivelyChargedStance() {
+    this.ID = "PositivelyCharged";
+    this.name = stanceString.NAME;
+    updateDescription();
+  }
+  
+  public float atDamageGive(float damage, DamageInfo.DamageType type) {
+    if (type == DamageInfo.DamageType.NORMAL)
+      AbstractDungeon.player.channelOrb((AbstractOrb)new Lightning());
+  }
+
+  public void updateDescription() {
+    this.description = stanceString.DESCRIPTION[0];
+  }
+  
+  public void onEnterStance() { 
+     AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainEnergyAction(1));
+  }
+  
+  public void onExitStance() {
+    addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new DrawCardNextTurnPower((AbstractCreature)p, 1), 1));
+  }
+
+  }
+}
