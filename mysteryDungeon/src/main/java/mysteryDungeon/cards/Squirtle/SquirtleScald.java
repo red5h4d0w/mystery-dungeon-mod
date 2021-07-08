@@ -38,7 +38,7 @@ public class SquirtleScald extends PokemonCard {
 
     private static final int COST = 1;
     private static final int DAMAGE = 3;
-    private static final int BASE_MAGIC_NUMBER = 3;
+    private static final int BASE_MAGIC_NUMBER = 4;
     private static final int SECOND_MAGIC_NUMBER = 3;
     private static final int UPGRADE_SECONDMAGIC_NUMBER = 1;
 
@@ -63,7 +63,7 @@ public class SquirtleScald extends PokemonCard {
             addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn)));
             addToBot(new ApplyPowerAction(m, p, new BurnPower(p, magicNumber), magicNumber));
         }
-        addToBot(new ScaldAction(m, new DamageInfo(p, damage, damageTypeForTurn), secondMagicNumber, 3)); 
+        addToBot(new ScaldAction(m, new DamageInfo(p, damage, damageTypeForTurn), secondMagicNumber, magicNumber)); 
     }
 
     // Upgraded stats.

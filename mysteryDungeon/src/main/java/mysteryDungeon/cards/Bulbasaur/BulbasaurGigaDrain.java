@@ -37,7 +37,7 @@ public class BulbasaurGigaDrain extends CustomCard {
 
     private static final int COST = 3;
     private static final int UPGRADE_COST = 2;
-    private static final int DAMAGE = 15;
+    private static final int DAMAGE = 10;
 
 
     // /STAT DECLARATION/

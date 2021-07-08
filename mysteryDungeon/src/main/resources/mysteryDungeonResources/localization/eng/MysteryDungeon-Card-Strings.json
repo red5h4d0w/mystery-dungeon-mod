@@ -103,7 +103,7 @@
   },
   "mysteryDungeon:BulbasaurRest": {
     "NAME": "Rest",
-    "DESCRIPTION": "Heal 30 HP. mysterydungeon:Rest for !M! turns."
+    "DESCRIPTION": "Heal !mysteryDungeon:M2! HP. mysterydungeon:Rest for !M! turns."
   },
   "mysteryDungeon:BulbasaurSecretPower": {
     "NAME": "SecretPower",
@@ -116,7 +116,7 @@
   },
   "mysteryDungeon:BulbasaurSleepPowder": {
     "NAME": "Sleep Powder",
-    "DESCRIPTION": "Scatters a powder that may cause the foe to sleep. NL Apply !M! mysterydungeon:Asleep. NL Exhaust."
+    "DESCRIPTION": "Apply !M! mysterydungeon:Asleep. NL Exhaust."
   },
   "mysteryDungeon:BulbasaurSludgeBomb": {
     "NAME": "Sludge Bomb",
@@ -201,7 +201,7 @@
   },
   "mysteryDungeon:CharmanderDragonClaw": {
     "NAME": "Dragon Claw",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL (Scales when using Metal Claw.)"
   },
   "mysteryDungeon:CharmanderDragonDance": {
     "NAME": "Dragon Dance",
@@ -238,8 +238,7 @@
   },
   "mysteryDungeon:CharmanderFacade": {
     "NAME": "Facade",
-    "DESCRIPTION": "Gain 1 Dexterity.",
-    "UPGRADE_DESCRIPTION": "Gain 1 Dexterity and 1 Artifact."
+    "DESCRIPTION": "Gain !M! Dexterity and !mysteryDungeon:M2! Artifact."
   },
   "mysteryDungeon:CharmanderFireBlast": {
     "NAME": "Fire Blast",
@@ -251,7 +250,8 @@
   },
   "mysteryDungeon:CharmanderFireSpin": {
     "NAME": "Fire Spin",
-    "DESCRIPTION": "Apply as much Poison as the enemy has mysterydungeon:Burn NL Remove all mysterydungeon:Burn."
+    "DESCRIPTION": "Apply as much Poison as the enemy has mysterydungeon:Burn NL Remove all mysterydungeon:Burn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply as much Poison as the enemy has mysterydungeon:Burn NL Remove all mysterydungeon:Burn."
   },
   "mysteryDungeon:CharmanderFlamethrower": {
     "NAME": "Flamethrower",
@@ -364,7 +364,7 @@
   },
   "mysteryDungeon:SquirtleDoubleTeam": {
     "NAME": "Double Team",
-    "DESCRIPTION": "Gain !M! Metallicize."
+    "DESCRIPTION": "At the end of your turn, gain !M! Block."
   },
   "mysteryDungeon:SquirtleFakeOut": {
     "NAME": "Fake Out",
@@ -434,8 +434,7 @@
   },
   "mysteryDungeon:SquirtleRapidSpin": {
     "NAME": "Rapid Spin",
-    "DESCRIPTION": "Deal !D! Damage. NL If the enemy intends to attack gain !M! artifact.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack gain !M! artifacts."
+    "DESCRIPTION": "Deal !D! Damage. NL If the enemy intends to attack gain !M! artifact."
   },
   "mysteryDungeon:SquirtleScald": {
     "NAME": "Scald",

@@ -13,6 +13,7 @@ import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.OnReceivePowerPower
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -64,7 +65,7 @@ public class HeatCrashPower extends MysteryDungeonPower implements CloneablePowe
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead() && this.owner.currentHealth <= 0)
         {
             int burnStacks = owner.hasPower(BurnPower.POWER_ID)?owner.getPower(BurnPower.POWER_ID).amount:0;
-            addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(MathUtils.floor(amount/2.0f*burnStacks), true), DamageInfo.DamageType.THORNS, AttackEffect.FIRE)); 
+            addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(MathUtils.floor(amount*burnStacks), true), DamageType.THORNS, AttackEffect.FIRE)); 
         }
             
     }

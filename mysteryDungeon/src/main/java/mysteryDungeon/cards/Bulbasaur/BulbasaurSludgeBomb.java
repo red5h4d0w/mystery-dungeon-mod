@@ -31,7 +31,8 @@ public class BulbasaurSludgeBomb extends CustomCard {
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
-    public static final int UPGRADE_MAGIC_NUMBER = 3;
+    private static final int BASE_MAGIC_NUMBER = 12;
+    private static final int UPGRADE_MAGIC_NUMBER = 2;
 
     private static final int COST = 2;
 
@@ -39,7 +40,7 @@ public class BulbasaurSludgeBomb extends CustomCard {
 
     public BulbasaurSludgeBomb() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseMagicNumber = 10;
+        baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
     }
 

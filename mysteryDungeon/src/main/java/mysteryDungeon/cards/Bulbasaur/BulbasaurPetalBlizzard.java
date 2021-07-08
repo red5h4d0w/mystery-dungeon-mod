@@ -4,7 +4,7 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import basemod.abstracts.CustomCard;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -37,8 +37,8 @@ public class BulbasaurPetalBlizzard extends CustomCard {
     public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 9;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int DAMAGE = 10;
+    private static final int UPGRADE_PLUS_DMG = 4;
 
 
     // /STAT DECLARATION/
@@ -52,7 +52,7 @@ public class BulbasaurPetalBlizzard extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new VFXAction(new PetalEffect(),0.7f)); // Petal stuff
-        addToBot(new DamageAllEnemiesAction(p, damage, damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+        addToBot(new DamageAllEnemiesAction(p, damage, damageTypeForTurn, AttackEffect.SLASH_HORIZONTAL));
     }
 
     // Upgraded stats.

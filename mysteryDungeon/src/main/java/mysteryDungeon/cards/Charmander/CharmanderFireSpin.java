@@ -18,12 +18,6 @@ import mysteryDungeon.powers.BurnPower;
 
 public class CharmanderFireSpin extends CustomCard {
 
-    /*
-     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
-     *
-     * Special Strike: Deal 7 (*) damage times the energy you currently have.
-     */
-
     // TEXT DECLARATION
 
     public static final String ID = MysteryDungeon.makeID(CharmanderFireSpin.class.getSimpleName());
@@ -31,6 +25,7 @@ public class CharmanderFireSpin extends CustomCard {
     public static final String IMG = makeCardPath("CharmanderSkill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -42,14 +37,14 @@ public class CharmanderFireSpin extends CustomCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
-    private static final int COST = 3;
-    private static final int UPGRADE_COST = 2;
+    private static final int COST = 2;
 
 
     // /STAT DECLARATION/
 
     public CharmanderFireSpin() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        exhaust = true;
     }
 
     // Actions the card should do.
@@ -69,7 +64,8 @@ public class CharmanderFireSpin extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(UPGRADE_COST);
+            exhaust = false;
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

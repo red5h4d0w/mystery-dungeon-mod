@@ -38,7 +38,7 @@ public class CharmanderWillOWisp extends CustomCard {
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
     private static final int COST = -1;
-    private static final int BASE_MAGIC_NUMBER = 3;
+    private static final int BASE_MAGIC_NUMBER = 4;
 
 
     // /STAT DECLARATION/
@@ -63,7 +63,7 @@ public class CharmanderWillOWisp extends CustomCard {
         }
         energyOnUse += upgraded?1:0;
         addToBot(new ApplyPowerAction(m, p, new WeakPower(p, energyOnUse, false), energyOnUse));
-        addToBot(new ApplyPowerAction(m, p, new BurnPower(m, 3*energyOnUse), 3*energyOnUse));
+        addToBot(new ApplyPowerAction(m, p, new BurnPower(m, magicNumber*energyOnUse), magicNumber*energyOnUse));
         if (!freeToPlayOnce)
         {
             p.energy.use(EnergyPanel.totalCount);
