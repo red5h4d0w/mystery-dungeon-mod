@@ -64,7 +64,7 @@ public class SquirtleHaze extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_SECOND_MAGIC_NUMBER);
+            upgradeSecondMagicNumber(UPGRADE_SECOND_MAGIC_NUMBER);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

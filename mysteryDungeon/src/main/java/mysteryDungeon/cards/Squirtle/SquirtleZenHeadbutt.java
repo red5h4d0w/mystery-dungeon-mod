@@ -4,7 +4,6 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -62,7 +61,7 @@ public class SquirtleZenHeadbutt extends PokemonCard {
         {
             AbstractCard upgradedFlinch = new SquirtleFlinch();
             upgradedFlinch.upgrade();
-            addToBot(new MakeTempCardInDrawPileAction(upgradedFlinch, 1, false, false, false));
+            addToBot(new MakeTempCardInHandAction(upgradedFlinch, 1, false));
         }
             
     }

@@ -149,8 +149,8 @@
   },
   "mysteryDungeon:BulbasaurToxic": {
     "NAME": "Toxic",
-    "DESCRIPTION": "Apply !M! Toxic to ALL enemies. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! Toxic to ALL enemies. NL Exhaust."
+    "DESCRIPTION": "Apply !M! mysteryDungeon:Toxic to ALL enemies. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! mysteryDungeon:Toxic to ALL enemies. NL Exhaust."
   },
   "mysteryDungeon:BulbasaurVenoshock": {
     "NAME": "Venoshock",
@@ -158,7 +158,7 @@
   },
   "mysteryDungeon:BulbasaurVineWhip": {
     "NAME": "Vine Whip",
-    "DESCRIPTION": "Strikes the foe with slender, whiplike vines. NL Deals !D! damage."
+    "DESCRIPTION": "Deal !D! damage."
   },
   "mysteryDungeon:BulbasaurWorrySeed": {
     "NAME": "Worry Seed",
@@ -356,7 +356,7 @@
   },
   "mysteryDungeon:SquirtleBrine": {
     "NAME": "Brine",
-    "DESCRIPTION": "Deal !D! damage. If your draw pile has equal or more cards than your hand and discard pile combined, deal !D! damage."
+    "DESCRIPTION": "Deal !D! damage. If your draw pile has equal or more cards than discard pile, deal !D! damage."
   },
   "mysteryDungeon:SquirtleDefend": {
     "NAME": "Defend",
@@ -388,7 +388,7 @@
   },
   "mysteryDungeon:SquirtleHail": {
     "NAME": "Hail",
-    "DESCRIPTION": "Whenever you draw a card deal !M! damage to all enemies."
+    "DESCRIPTION": "Whenever you draw cards, deal !M! damage to all enemies."
   },
   "mysteryDungeon:SquirtleHaze": {
     "NAME": "Haze",
@@ -401,7 +401,7 @@
   },
   "mysteryDungeon:SquirtleIceBeam": {
     "NAME": "Ice Beam",
-    "DESCRIPTION": "Deal !D! Damage to all enemies. NL Insert 1 *Freeze in your hand."
+    "DESCRIPTION": "Deal !D! Damage. NL Add 1 *Freeze to your hand."
   },
   "mysteryDungeon:SquirtleIronDefense": {
     "NAME": "Iron Defense",

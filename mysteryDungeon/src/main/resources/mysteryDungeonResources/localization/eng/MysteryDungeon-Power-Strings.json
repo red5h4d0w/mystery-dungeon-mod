@@ -53,8 +53,8 @@
     "mysteryDungeon:EvasivenessDropPower": {
         "NAME": "Evasiveness Drop",
         "DESCRIPTIONS": [
-            "Ennemy loses 25% of their Block at the end of the round.",
-            "Ennemy loses 25%% of their Block at the end of the round for #b%s turns."]
+            "Ennemy loses #b25% of their Block at the end of the round.",
+            "Ennemy loses #b25%% of their Block at the end of the round for #b%s turns."]
     },
     "mysteryDungeon:FrustrationPower": {
         "NAME": "Frustration",
@@ -109,7 +109,7 @@
     },
     "mysteryDungeon:PoisonThornsPower": {
         "NAME": "Poison Thorns",
-        "DESCRIPTIONS": ["When Attacked, apply %s Poison to the attacker."]
+        "DESCRIPTIONS": ["When Attacked, apply %s #yPoison to the attacker."]
     },
     "mysteryDungeon:RainDishPower": {
         "NAME": "Rain Dish",
@@ -140,13 +140,13 @@
     "mysteryDungeon:SolarPowerPower": {
         "NAME": "Solar Power",
         "DESCRIPTIONS": [
-            "At the start of your turn, if an enemy has #yBurn, gain #b%s Strength."
+            "At the start of your turn, if an enemy has #yBurn, gain #b%s #yStrength."
         ]
     },
     "mysteryDungeon:TorrentPower": {
         "NAME": "Torrent",
         "DESCRIPTIONS": [
-            "When you shuffle your deck, gain #b%s Strength."
+            "When you shuffle your deck, gain #b%s #yStrength."
         ]
     },
     "mysteryDungeon:ToxicPower": {
@@ -162,7 +162,7 @@
     },
     "mysteryDungeon:WorkUpPower": {
         "NAME": "Work Up",
-        "DESCRIPTIONS": ["When a card is created, gain #b%s Temporary Strength."]
+        "DESCRIPTIONS": ["When a card is created, gain #b%s #yTemporary #yStrength."]
     },
     "mysteryDungeon:WorrySeedPower": {
         "NAME": "Worry Seed",

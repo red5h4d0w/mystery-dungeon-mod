@@ -50,7 +50,7 @@ public class SquirtleBrine extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SMASH));
-        if(p.drawPile.size()>=p.hand.size()+p.discardPile.size())
+        if(p.drawPile.size()>=p.discardPile.size())
             addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SMASH));
     }
 
