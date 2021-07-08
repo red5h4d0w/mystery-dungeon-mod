@@ -49,6 +49,12 @@ public class SquirtleZenHeadbutt extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         cardsToPreview = new SquirtleFlinch();
+        if(upgraded)
+        {
+            AbstractCard upgradedFlinch = new SquirtleFlinch();
+            upgradedFlinch.upgrade();
+            cardsToPreview = upgradedFlinch;
+        }
     }
 
     // Actions the card should do.
