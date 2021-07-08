@@ -162,7 +162,7 @@
     },
     "mysteryDungeon:WorkUpPower": {
         "NAME": "Work Up",
-        "DESCRIPTIONS": ["When you create a card this combat, gain #b%s Temporary Strength."]
+        "DESCRIPTIONS": ["When a card is created, gain #b%s Temporary Strength."]
     },
     "mysteryDungeon:WorrySeedPower": {
         "NAME": "Worry Seed",
