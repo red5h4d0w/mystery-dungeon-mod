@@ -4,7 +4,7 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import basemod.abstracts.CustomCard;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -63,7 +63,7 @@ public class BulbasaurSeedBomb extends CustomCard {
         } 
         for (int i = 0; i < this.energyOnUse; i++) 
         {
-            addToBot(new DamageRandomEnemyAction(new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+            addToBot(new DamageRandomEnemyAction(new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.BLUNT_HEAVY));
         }
         if (!this.freeToPlayOnce)
         {

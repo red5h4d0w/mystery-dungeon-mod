@@ -58,11 +58,8 @@ public class SquirtleWithdraw extends PokemonCard {
         if (AbstractDungeon.player.discardPile.size() > 0) {
             addToBot(new EmptyDeckShuffleAction());
             addToBot(new ShuffleAction(AbstractDungeon.player.drawPile, false));
-        } 
-        if(upgraded)
-        {
-            addToBot(new DrawCardAction(magicNumber));
         }
+        addToBot(new DrawCardAction(magicNumber));
         for(int i=0;i<p.hand.group.size()-1;i++)
         {
             addToBot(new GainBlockAction(p, p, block));

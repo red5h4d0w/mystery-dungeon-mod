@@ -4,7 +4,7 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import basemod.abstracts.CustomCard;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
@@ -71,8 +71,8 @@ public class BulbasaurDoubleEdge extends CustomCard {
         {
             recoil = strength.amount>0?(int)Math.ceil((float)strength.amount/2.0f):0;
         }
-        addToBot(new DamageAction(m, new DamageInfo(p, damage), AbstractGameAction.AttackEffect.SMASH));
-        addToBot(new DamageAction(p, new DamageInfo(p, recoil, DamageType.THORNS), AbstractGameAction.AttackEffect.SMASH));
+        addToBot(new DamageAction(m, new DamageInfo(p, damage), AttackEffect.SMASH));
+        addToBot(new DamageAction(p, new DamageInfo(p, recoil, DamageType.THORNS), AttackEffect.SMASH));
     }
 
     // Upgraded stats.
