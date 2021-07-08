@@ -85,7 +85,7 @@ public class SubstituteAction extends AbstractGameAction {
                 if (p.hand.size() == 10) {
                     if(upgraded)
                     {
-                        p.discardPile.addToTop(c.makeCopy());
+                        p.discardPile.addToTop(c.makeStatEquivalentCopy());
                     }  
                     else
                     {
@@ -96,7 +96,7 @@ public class SubstituteAction extends AbstractGameAction {
                     p.drawPile.group.add(p.drawPile.group.indexOf(c)+1,new Wound());
                     if(upgraded)
                     {
-                        p.hand.addToTop(c.makeCopy());
+                        p.hand.addToTop(c.makeStatEquivalentCopy());
                     }
                     else
                     {
