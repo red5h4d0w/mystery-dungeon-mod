@@ -1,17 +1,16 @@
 package mysteryDungeon.cards.Squirtle;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
 
 import mysteryDungeon.MysteryDungeon;
@@ -41,6 +40,11 @@ public class SquirtleBodyPress extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
     private static final int COST = 3;
+    private static final int BASE_DAMAGE = 24;
+    private static final int UPGRADE_PLUS_DMG = 8;
+    private static final int BASE_MAGIC_NUMBER = 2;
+    private static final int UPGRADE_MAGIC_NUMBER = 1;
+    private static final int BASE_BLOCK = 10;
 
 
 
@@ -48,71 +52,29 @@ public class SquirtleBodyPress extends PokemonCard {
 
     public SquirtleBodyPress() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        isEthereal = true;
+        baseDamage = BASE_DAMAGE;
+        baseMagicNumber = BASE_MAGIC_NUMBER;
+        magicNumber = baseMagicNumber;
+        baseBlock = BASE_BLOCK;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new VFXAction((AbstractGameEffect)new WeightyImpactEffect(m.hb.cX, m.hb.cY))); 
-        baseDamage = p.currentBlock;
-        if(p.hasPower(DexterityPower.POWER_ID)) {
-            if(p.getPower(DexterityPower.POWER_ID).amount>0)
-                baseDamage = p.currentBlock*p.getPower(DexterityPower.POWER_ID).amount;
+        addToBot(new VFXAction(new WeightyImpactEffect(m.hb.cX, m.hb.cY)));
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn)));
+        {
+            if (m != null)
+            addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, magicNumber)));
+            addToBot(new GainBlockAction(p, p, baseBlock));
         }
-        calculateCardDamage(m);
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.NONE));
-        
-        rawDescription = cardStrings.DESCRIPTION;
-        if(upgraded) {
-            rawDescription = UPGRADE_DESCRIPTION;
-        }
-        initializeDescription(); 
     }
-      
-    @Override
-    public void applyPowers() {
-        baseDamage = AbstractDungeon.player.currentBlock;
-        if(AbstractDungeon.player.hasPower(DexterityPower.POWER_ID)) {
-            if(AbstractDungeon.player.getPower(DexterityPower.POWER_ID).amount>0)
-                baseDamage = AbstractDungeon.player.currentBlock*AbstractDungeon.player.getPower(DexterityPower.POWER_ID).amount;
-        }
-        super.applyPowers();
-        rawDescription = cardStrings.DESCRIPTION;
-        if(upgraded) {
-            rawDescription = UPGRADE_DESCRIPTION;
-        }
-        rawDescription += EXTENDED_DESCRIPTION;
-        initializeDescription(); 
-    }
-    
-    @Override
-    public void calculateCardDamage(AbstractMonster m) { 
-       
-        super.calculateCardDamage(m);
-        rawDescription = cardStrings.DESCRIPTION;
-        if(upgraded) {
-            rawDescription = UPGRADE_DESCRIPTION;
-        }
-        rawDescription += EXTENDED_DESCRIPTION;
-        initializeDescription();
-    }
-
-    @Override
-    public void onMoveToDiscard() {
-        rawDescription = cardStrings.DESCRIPTION;
-        if(upgraded) {
-            rawDescription = UPGRADE_DESCRIPTION;
-        }
-        initializeDescription();
-      }
-
-    // Upgraded stats.
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            isEthereal = false;
+            upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
