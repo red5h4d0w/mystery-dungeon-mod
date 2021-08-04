@@ -49,8 +49,8 @@ public class CharmanderDragonRush extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn)));
         addToBot(new BetterExhumeAction(false, p.discardPile));
-        addToBot(new ExhaustSpecificCardAction(p.drawPile.getRandomCard(true), p.drawPile));
-        
+        if(p.drawPile.group.size()!=0)
+            addToBot(new ExhaustSpecificCardAction(p.drawPile.getRandomCard(true), p.drawPile));
         }
     // Upgraded stats.
     @Override
