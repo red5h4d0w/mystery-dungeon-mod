@@ -350,7 +350,7 @@
   },
   "mysteryDungeon:SquirtleBodyPress": {
     "NAME": "Body Press",
-    "DESCRIPTION": "Deal !D! Damage to an enemy if it is fatal*, Gain !M! Dexterity* and 10 block"
+    "DESCRIPTION": "Deal !D! Damage to an enemy if it is fatal*, Gain !B! Block and !M! Dexterity. Exhaust."
   },
   "mysteryDungeon:SquirtleBrine": {
     "NAME": "Brine",

@@ -3,11 +3,10 @@ package mysteryDungeon.cards.tempCards;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-
+import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -34,7 +33,7 @@ public class SquirtleSkullBashGo extends PokemonCard {
     // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.SPECIAL;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = CardColor.COLORLESS;
 
@@ -47,6 +46,7 @@ public class SquirtleSkullBashGo extends PokemonCard {
     public SquirtleSkullBashGo() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         selfRetain = true;
+        isMultiDamage = true;
         baseDamage = BASE_DAMAGE;
         exhaust = true;
     }
@@ -55,12 +55,12 @@ public class SquirtleSkullBashGo extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new VFXAction(new WeightyImpactEffect(m.hb.cX, m.hb.cY))); 
-        addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
+        addToBot((AbstractGameAction)new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AttackEffect.NONE));
 
         if(AbstractDungeon.player.hand.size()==1)
         {
             addToBot(new VFXAction(new WeightyImpactEffect(m.hb.cX, m.hb.cY))); 
-            addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE)); 
+            addToBot((AbstractGameAction)new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AttackEffect.NONE)); 
         }
 
     }
