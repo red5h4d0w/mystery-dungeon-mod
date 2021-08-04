@@ -419,9 +419,15 @@
     "NAME": "Mist",
     "DESCRIPTION": "If the enemy is not attacking, gain !M! Artifact. NL Gain !B! block."
   },
-  "mysteryDungeon:SquirtlePrepareSkullBash": {
-    "NAME": "Prepare Skull Bash",
-    "DESCRIPTION": "Add a *Skull *Bash on top of your draw pile. NL Exhaust."
+  "mysteryDungeon:SquirtleSkullBashReady": {
+    "NAME": "Skull Bash: Ready",
+    "DESCRIPTION": "Add a *Skull *Bash: *Set on top of your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Add a *Skull *Bash: *Set on top of your draw pile. NL Exhaust."
+  },
+  "mysteryDungeon:SquirtleSkullBashSet": {
+    "NAME": "Skull Bash: Set",
+    "DESCRIPTION": "Add a *Skull *Bash: *Go! at the bottom of your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add a *Skull *Bash: *Go! at the bottom of your draw pile."
   },
   "mysteryDungeon:SquirtleProtect": {
     "NAME": "Protect",
@@ -444,9 +450,10 @@
     "NAME": "Shell Smash",
     "DESCRIPTION": "Gain !M! Strength. NL Add !mysteryDungeon:M2! random Statuses Card to your deck. NL Exhaust."
   },
-  "mysteryDungeon:SquirtleSkullBash": {
-    "NAME": "Skull Bash!",
-    "DESCRIPTION": "Retain. NL You can only play this card if it's the last card in your hand. NL Deal !D! damage. Exhaust."
+  "mysteryDungeon:SquirtleSkullBashGo": {
+    "NAME": "Skull Bash Go!",
+    "DESCRIPTION": " Deal !D! damage to all enemies. NL If this is the last card in hand play it twice. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage to all enemies. NL If this is the last card in hand play it twice. Exhaust."
   },
   "mysteryDungeon:SquirtleSubstitute": {
     "NAME": "Substitute",
