@@ -111,6 +111,13 @@
         "NAME": "Poison Thorns",
         "DESCRIPTIONS": ["When Attacked, apply %s #yPoison to the attacker."]
     },
+    "mysteryDungeon:RainDancePower": {
+        "NAME": "Rain Dance ",
+        "DESCRIPTIONS": [
+            "At the start of your turn, exhaust up to 1 card and draw 1 more card.",
+            "At the start of your turn, exhaust up to %s cards and draw %s more cards."
+        ]
+    },
     "mysteryDungeon:RainDishPower": {
         "NAME": "Rain Dish",
         "DESCRIPTIONS": ["When a card enters your discard pile and wasn't played, gain %s Block."]

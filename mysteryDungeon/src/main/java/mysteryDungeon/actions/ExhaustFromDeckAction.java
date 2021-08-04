@@ -33,7 +33,7 @@ public class ExhaustFromDeckAction extends AbstractGameAction {
             abstractCard.unhover();
             abstractCard.unfadeOut();
         } 
-        AbstractDungeon.gridSelectScreen.open(this.p.drawPile, amount, TEXT[0], false);
+        AbstractDungeon.gridSelectScreen.open(this.p.drawPile, amount, true, TEXT[0]);
         tickDuration();
         return;
       } 

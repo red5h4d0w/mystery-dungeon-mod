@@ -54,8 +54,8 @@ public class RainDancePower extends MysteryDungeonPower implements CloneablePowe
     @Override
     public void atStartOfTurn() {
         flash();
-        addToBot(new DrawCardAction(owner, amount));
         addToBot(new ExhaustFromDeckAction(amount));
+        addToBot(new DrawCardAction(owner, amount));
     }
 
     @Override
@@ -71,7 +71,7 @@ public class RainDancePower extends MysteryDungeonPower implements CloneablePowe
         } 
         else
         {
-            description = String.format(DESCRIPTIONS[1], amount);
+            description = String.format(DESCRIPTIONS[1], amount, amount);
         }
     }
 }
