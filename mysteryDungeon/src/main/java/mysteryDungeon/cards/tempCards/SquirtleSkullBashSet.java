@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.PokemonCard;
-import mysteryDungeon.characters.Pokemon;
 
 public class SquirtleSkullBashSet extends PokemonCard {
 
@@ -31,7 +30,7 @@ public class SquirtleSkullBashSet extends PokemonCard {
     private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
+    public static final CardColor COLOR = CardColor.COLORLESS;
 
     private static final int COST = 2;
     
