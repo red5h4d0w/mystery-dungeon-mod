@@ -50,10 +50,15 @@
             "When you apply #yBurn apply #b%s more."
         ]
     },
+    "mysteryDungeon:EndurePower": {
+        "NAME": "Endure",
+        "DESCRIPTIONS": [
+            "When you would die, heal #b%s%% of your max HP and lose all turn-based buffs and debuffs."]
+    },
     "mysteryDungeon:EvasivenessDropPower": {
         "NAME": "Evasiveness Drop",
         "DESCRIPTIONS": [
-            "Ennemy loses #b25% of their Block at the end of the round.",
+            "Ennemy loses #b25%% of their Block at the end of the round.",
             "Ennemy loses #b25%% of their Block at the end of the round for #b%s turns."]
     },
     "mysteryDungeon:FrustrationPower": {
@@ -114,8 +119,8 @@
     "mysteryDungeon:RainDancePower": {
         "NAME": "Rain Dance ",
         "DESCRIPTIONS": [
-            "At the start of your turn, exhaust up to 1 card and draw 1 more card.",
-            "At the start of your turn, exhaust up to %s cards and draw %s more cards."
+            "At the start of your turn, exhaust up to #b1 card and draw #b1 more card.",
+            "At the start of your turn, exhaust up to #b%s cards and draw #b%s more cards."
         ]
     },
     "mysteryDungeon:RainDishPower": {

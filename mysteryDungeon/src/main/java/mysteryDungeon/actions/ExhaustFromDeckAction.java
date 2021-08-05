@@ -39,8 +39,11 @@ public class ExhaustFromDeckAction extends AbstractGameAction {
       } 
         if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
             for (AbstractCard c : AbstractDungeon.gridSelectScreen.selectedCards) {
-                p.drawPile.moveToExhaustPile(c);
+                if(p.drawPile.group.contains(c))
+                    p.drawPile.moveToExhaustPile(c);
             }
+            isDone = true;
+            return;
         } 
         tickDuration();
     }

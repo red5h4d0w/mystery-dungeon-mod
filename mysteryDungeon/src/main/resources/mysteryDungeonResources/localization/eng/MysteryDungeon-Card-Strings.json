@@ -368,6 +368,10 @@
     "NAME": "Double Team",
     "DESCRIPTION": "At the end of your turn, gain !M! Block."
   },
+  "mysteryDungeon:SquirtleEndure": {
+    "NAME": "Endure",
+    "DESCRIPTION": "When you would die, heal !M!% of your max HP."
+  },
   "mysteryDungeon:SquirtleFakeOut": {
     "NAME": "Fake Out",
     "DESCRIPTION": "Innate. NL Deal !D! Damage. NL Gain !B! Block. NL Draw !M! card. NL Exahust.",
