@@ -5,6 +5,7 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -43,6 +44,8 @@ public class SquirtleDive extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        cardsToPreview = new SquirtleHaze();
+        exhaust = true;
     }
 
     // Actions the card should do.
@@ -55,9 +58,32 @@ public class SquirtleDive extends PokemonCard {
                 p.drawPile.moveToExhaustPile(c);
             }
         }
+        for(AbstractCard c : p.discardPile.group)
+        {
+            if(c.type == CardType.STATUS)
+            {
+                p.discardPile.moveToExhaustPile(c);
+            }
+        }
+        for(AbstractCard c : p.hand.group)
+        {
+            if(c.type == CardType.STATUS)
+            {
+                p.hand.moveToExhaustPile(c);
+            }
+        }
         for(int i=0;i<magicNumber;i++)
         {
-            p.drawPile.addToRandomSpot(new SquirtleHaze());
+            switch(AbstractDungeon.cardRandomRng.random(1))
+            {
+                case(0):
+                    p.drawPile.addToRandomSpot(new SquirtleHaze());
+                    break;
+                case(1):
+                    p.discardPile.addToRandomSpot(new SquirtleHaze());
+                    break;
+            }
+            
         }
     }
 

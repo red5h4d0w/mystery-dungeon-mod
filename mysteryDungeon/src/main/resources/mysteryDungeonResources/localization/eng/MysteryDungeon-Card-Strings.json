@@ -360,6 +360,10 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "mysteryDungeon:SquirtleDive": {
+    "NAME": "Dive",
+    "DESCRIPTION": "Exhaust all your statuses. NL Add !M! Hazes* in random locations. NL Exhaust."
+  },
   "mysteryDungeon:SquirtleDoubleTeam": {
     "NAME": "Double Team",
     "DESCRIPTION": "At the end of your turn, gain !M! Block."
@@ -490,8 +494,8 @@
   },
   "mysteryDungeon:SquirtleWhirlpool": {
     "NAME": "Whirlpool",
-    "DESCRIPTION": "At the start of your X next turns, Draw 2 more cards and Discard 2 cards.",
-    "UPGRADE_DESCRIPTION": "At the start of your X+1 next turns, Draw 2 more cards and Discard 2 cards."
+    "DESCRIPTION": "At the start of your X next turns, Draw 2 more cards and Discard 2 cards. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "At the start of your X+1 next turns, Draw 2 more cards and Discard 2 cards. NL Exhaust."
   },
   "mysteryDungeon:SquirtleWithdraw": {
     "NAME": "Withdraw",
