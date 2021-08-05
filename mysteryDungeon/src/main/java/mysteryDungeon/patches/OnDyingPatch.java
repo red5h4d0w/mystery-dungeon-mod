@@ -14,7 +14,7 @@ public class OnDyingPatch
     @SpirePatch(clz = AbstractPlayer.class, method = "damage", paramtypez = {DamageInfo.class})
     public static class AddedCardPatch
     {
-        @SpireInsertPatch(rloc=1863-1725)
+        @SpireInsertPatch(rloc=1873-1725)
         @SuppressWarnings("all")
         public static SpireReturn onDying(AbstractPlayer __instance)
         {

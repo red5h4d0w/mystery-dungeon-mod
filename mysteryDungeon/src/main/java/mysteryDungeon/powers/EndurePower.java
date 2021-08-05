@@ -7,11 +7,15 @@ import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
@@ -51,8 +55,31 @@ public class EndurePower extends MysteryDungeonPower implements CloneablePowerIn
     @Override
     public void onDying()
     {
-        owner.heal(amount/100*owner.maxHealth);
+        float healAmount = amount/100f*AbstractDungeon.player.maxHealth;
+        owner.currentHealth = 0;
+        if(healAmount<1)
+        {
+            healAmount = 1;
+        }
+        owner.heal((int)healAmount, true);
         addToBot(new RemoveSpecificPowerAction(owner, owner, this));
+        ArrayList<AbstractPower> powersToRemove = new ArrayList<AbstractPower>();
+        for(AbstractPower p : owner.powers)
+        {
+            try
+            {
+                Field f = AbstractPower.class.getDeclaredField("isTurnBased");
+                f.setAccessible(true);
+                if(f.getBoolean(p))
+                    powersToRemove.add(p);
+            } catch (NoSuchFieldException e) {}
+            catch (IllegalAccessException e) {}
+            
+        }
+        for(AbstractPower p : powersToRemove)
+        {
+            addToBot(new RemoveSpecificPowerAction(owner, owner, p));
+        }
     }
 
     @Override

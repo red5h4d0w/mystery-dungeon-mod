@@ -75,7 +75,7 @@ public class SquirtleDive extends PokemonCard {
         }
         for(AbstractCard c : discardPileCardsToRemove)
         {
-            p.drawPile.moveToExhaustPile(c);
+            p.discardPile.moveToExhaustPile(c);
         }
         for(AbstractCard c : p.hand.group)
         {
