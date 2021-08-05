@@ -418,6 +418,10 @@
     "NAME": "Life Dew",
     "DESCRIPTION": "Scry !M! cards. NL Draw !mysteryDungeon:M2! cards."
   },
+  "mysteryDungeon:SquirtleLiquidation": {
+    "NAME": "Liquidation",
+    "DESCRIPTION": "Deal !D! Damage to all enemies."
+  },
   "mysteryDungeon:SquirtleMirrorCoat": {
     "NAME": "Mirror Coat",
     "DESCRIPTION": "Gain !M! Blur and !B! Block."
