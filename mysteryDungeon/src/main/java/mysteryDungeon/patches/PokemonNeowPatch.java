@@ -81,7 +81,8 @@ public class PokemonNeowPatch {
         ArrayList<Question> fullListOfQuestions = new Gson().fromJson(json, new TypeToken<ArrayList<Question>>() {}.getType());
         lastQuestion = fullListOfQuestions.remove(fullListOfQuestions.size()-1);
         followUpQuestion = fullListOfQuestions.remove(fullListOfQuestions.size()-1);
-        Collections.shuffle(fullListOfQuestions);
+        for (int i=fullListOfQuestions.size(); i>1; i--)
+            Collections.swap(fullListOfQuestions, i-1, AbstractDungeon.eventRng.random(i-1));
         questions = new ArrayList<Question>(fullListOfQuestions.subList(0, 7));
     }
 
@@ -409,7 +410,8 @@ public class PokemonNeowPatch {
             case "Pikachu":
                 partners.remove("Pikachu");
         }
-        Collections.shuffle(partners);
+        for (int i=partners.size(); i>1; i--)
+            Collections.swap(partners, i-1, AbstractDungeon.eventRng.random(i-1));
         ArrayList<String> selectablePartners = new ArrayList<String>();
         selectablePartners.add(partners.get(0));
         for(String partner : partners)
