@@ -24,7 +24,9 @@ public class OnDyingPatch
             AbstractDungeon.player.relics.stream()
                 .filter(relic -> relic instanceof onDyingInterface)
                 .forEach(relic -> ((onDyingInterface)relic).onDying());
-            return SpireReturn.Return();
+            if(AbstractDungeon.player.currentHealth>0)
+                return SpireReturn.Return();
+            return SpireReturn.Continue();
         }
     }
 }
