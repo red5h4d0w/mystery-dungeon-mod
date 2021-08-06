@@ -95,7 +95,7 @@
   },
   "mysteryDungeon:BulbasaurProtect": {
     "NAME": "Protect",
-    "DESCRIPTION": "Gain !B! Block. NL You cannot gain block during the next !M! turns."
+    "DESCRIPTION": "Gain !B! Block. NL You cannot gain Block during the next !M! turns."
   },
   "mysteryDungeon:BulbasaurRazorLeaf": {
     "NAME": "Razor Leaf",
@@ -335,13 +335,13 @@
   },
   "mysteryDungeon:SquirtleAquaRing": {
     "NAME": "Aqua Ring",
-    "DESCRIPTION": "This turn, for each card you scry or discard, deal 3 damage to ALL enemies and gain 2 block. NL If the card you scried or discarded was a Status, deal 2 more damage and gain 2 more block. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL This turn, for each card you scry or discard, deal 3 damage to ALL enemies and gain 2 block. NL If the card you scried or discarded was a Status, deal 2 more damage and gain 2 more block. Exhaust."
+    "DESCRIPTION": "This turn, for each card you scry or discard, deal 3 damage to ALL enemies and gain 2 Block. NL If the card you scried or discarded was a Status, deal 2 more damage and gain 2 more Block. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL This turn, for each card you scry or discard, deal 3 damage to ALL enemies and gain 2 Block. NL If the card you scried or discarded was a Status, deal 2 more damage and gain 2 more Block. Exhaust."
   },
   "mysteryDungeon:SquirtleAquaTail": {
     "NAME": "Aqua Tail",
-    "DESCRIPTION": "Deal !D! Damage. NL Scry !M! cards. NL Draw !mysteryDungeon:M2! cards. NL Discard !mysteryDungeon:M3! cards.",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Scry !M! cards. NL Draw !mysteryDungeon:M2! cards. NL Discard !mysteryDungeon:M3! card."
+    "DESCRIPTION": "Deal !D! damage. NL Scry !M! cards. NL Draw !mysteryDungeon:M2! cards. NL Discard !mysteryDungeon:M3! cards.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Scry !M! cards. NL Draw !mysteryDungeon:M2! cards. NL Discard !mysteryDungeon:M3! card."
   },
   "mysteryDungeon:SquirtleBide": {
     "NAME": "Bide",
@@ -350,7 +350,7 @@
   },
   "mysteryDungeon:SquirtleBodyPress": {
     "NAME": "Body Press",
-    "DESCRIPTION": "Deal !D! Damage to an enemy if it is fatal*, Gain !B! Block and !M! Dexterity. Exhaust."
+    "DESCRIPTION": "Deal !D! damage to an enemy if it is fatal*, Gain !B! Block and !M! Dexterity. Exhaust."
   },
   "mysteryDungeon:SquirtleBrine": {
     "NAME": "Brine",
@@ -370,17 +370,17 @@
   },
   "mysteryDungeon:SquirtleEndure": {
     "NAME": "Endure",
-    "DESCRIPTION": "When you would die, heal !M!% of your max HP."
+    "DESCRIPTION": "When you would die, heal !M! % of your max HP."
   },
   "mysteryDungeon:SquirtleFakeOut": {
     "NAME": "Fake Out",
-    "DESCRIPTION": "Innate. NL Deal !D! Damage. NL Gain !B! Block. NL Draw !M! card. NL Exahust.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Deal !D! Damage. NL Gain !B! Block. NL Draw !M! cards. NL Exahust."
+    "DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Draw !M! card. NL Exahust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Draw !M! cards. NL Exahust."
   },
   "mysteryDungeon:SquirtleFlashCannon": {
     "NAME": "Flash Cannon",
-    "DESCRIPTION": "Deal Damage equal to the number of cards in your discard pile.",
-    "UPGRADE_DESCRIPTION": "Deal Damage equal to the number of cards in your discard pile + 3.",
+    "DESCRIPTION": "Deal damage equal to the number of cards in your discard pile.",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to the number of cards in your discard pile + 3.",
     "EXTENDED_DESCRIPTION":[" NL (Deals !D! damage.)"]
   },
   "mysteryDungeon:SquirtleFlinch": {
@@ -390,8 +390,8 @@
   },
   "mysteryDungeon:SquirtleFlipTurn": {
     "NAME": "Flip Turn",
-    "DESCRIPTION": "Gain !B! block. NL draw !M! card. NL discard !M! card.",
-    "UPGRADE_DESCRIPTION": "Gain !B! block. NL draw !M! cards. NL discard !M! cards."
+    "DESCRIPTION": "Gain !B! Block. NL draw !M! card. NL discard !M! card.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL draw !M! cards. NL discard !M! cards."
   },
   "mysteryDungeon:SquirtleGyroBall": {
     "NAME": "Gyro Ball",
@@ -408,11 +408,11 @@
   },
   "mysteryDungeon:SquirtleHydroCannon": {
     "NAME": "Hydro Cannon",
-    "DESCRIPTION": "Deal !D! Damage to all enemies. NL Insert 3 Dazed in your draw pile."
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL Insert 3 Dazed in your draw pile."
   },
   "mysteryDungeon:SquirtleIceBeam": {
     "NAME": "Ice Beam",
-    "DESCRIPTION": "Deal !D! Damage. NL Add 1 *Freeze to your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Freeze to your hand."
   },
   "mysteryDungeon:SquirtleIronDefense": {
     "NAME": "Iron Defense",
@@ -424,7 +424,7 @@
   },
   "mysteryDungeon:SquirtleLiquidation": {
     "NAME": "Liquidation",
-    "DESCRIPTION": "Deal !D! Damage to all enemies."
+    "DESCRIPTION": "Deal !D! damage to all enemies."
   },
   "mysteryDungeon:SquirtleMirrorCoat": {
     "NAME": "Mirror Coat",
@@ -432,7 +432,7 @@
   },
   "mysteryDungeon:SquirtleMist": {
     "NAME": "Mist",
-    "DESCRIPTION": "If the enemy is not attacking, gain !M! Artifact. NL Gain !B! block."
+    "DESCRIPTION": "If the enemy is not attacking, gain !M! Artifact. NL Gain !B! Block."
   },
   "mysteryDungeon:SquirtleSkullBashReady": {
     "NAME": "Skull Bash: Ready",
@@ -446,7 +446,7 @@
   },
   "mysteryDungeon:SquirtleProtect": {
     "NAME": "Protect",
-    "DESCRIPTION": "Gain !B! Block. NL You cannot gain block during the next !M! turns."
+    "DESCRIPTION": "Gain !B! Block. NL You cannot gain Block during the next !M! turns."
   },
   "mysteryDungeon:SquirtleRainDance": {
     "NAME": "Rain Dance",
@@ -460,11 +460,11 @@
   },
   "mysteryDungeon:SquirtleRapidSpin": {
     "NAME": "Rapid Spin",
-    "DESCRIPTION": "Deal !D! Damage. NL If the enemy intends to attack gain !M! artifact."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack gain !M! artifact."
   },
   "mysteryDungeon:SquirtleScald": {
     "NAME": "Scald",
-    "DESCRIPTION": "Discard up to !mysteryDungeon:M2! cards. Deal !D! Damage and apply !M! mysterydungeon:Burn per card discarded that way."
+    "DESCRIPTION": "Discard up to !mysteryDungeon:M2! cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card discarded that way."
   },
   "mysteryDungeon:SquirtleShellSmash": {
     "NAME": "Shell Smash",
@@ -486,7 +486,7 @@
   },
   "mysteryDungeon:SquirtleTailWhip": {
     "NAME": "Tail Whip",
-    "DESCRIPTION": "Gain !B! block. NL draw !M! card"
+    "DESCRIPTION": "Gain !B! Block. NL draw !M! card"
   },
   "mysteryDungeon:SquirtleTorrent": {
     "NAME": "Torrent",
