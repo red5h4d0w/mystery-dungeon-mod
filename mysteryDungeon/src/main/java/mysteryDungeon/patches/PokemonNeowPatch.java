@@ -5,9 +5,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePrefixPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpireReturn;
@@ -123,7 +123,7 @@ public class PokemonNeowPatch {
                 maxValue = trait.getValue();
             }
         }
-        String nature = bestCorrespondingTraits.get((new Random()).nextInt(bestCorrespondingTraits.size()));
+        String nature = bestCorrespondingTraits.get(AbstractDungeon.eventRng.random(bestCorrespondingTraits.size()-1));
         ((Pokemon)AbstractDungeon.player).DefineNature(nature);
         switch(buttonPressed)
         {
@@ -137,17 +137,19 @@ public class PokemonNeowPatch {
                 return;
             // Player chose other
             case 2:
-                int choice = (new Random()).nextInt(2);
-                if(choice==0)
+            {
+                switch(AbstractDungeon.eventRng.random(1))
                 {
-                    chosenPokemon = malePokemonChoices.get(nature);
-                    return;
+                    case 0:
+                    {
+                        chosenPokemon = malePokemonChoices.get(nature);
+                        return;
+                    }
+                    case 1:
+                        chosenPokemon = femalePokemonChoices.get(nature);
+                        return;
                 }
-                else
-                {
-                    chosenPokemon = femalePokemonChoices.get(nature);
-                    return;
-                }
+            }   
         }
     }
 
@@ -276,6 +278,8 @@ public class PokemonNeowPatch {
                     else if(answeredQuestions==8)
                     {
                         DeterminePokemon(buttonPressed);
+                        //TODO: remove/change when more pokémon are implemented
+                        convertPokemonToImplementedPokemon(); 
                         ((Pokemon)AbstractDungeon.player).setAdventurer(chosenPokemon);
                         possiblePartners = partnerChoices();
                         AskQuestion(__instance, new Question(chosenPokemon, possiblePartners, null));
@@ -321,7 +325,7 @@ public class PokemonNeowPatch {
                     return SpireReturn.Return(null);
                 case 11:
                     ((Pokemon)AbstractDungeon.player).setAdventurer(implementedPokemons[buttonPressed]);
-                    ((Pokemon)AbstractDungeon.player).DefineNature(NatureOfPokemon.get(implementedPokemons[buttonPressed])[(new Random()).nextInt(2)]);
+                    ((Pokemon)AbstractDungeon.player).DefineNature(NatureOfPokemon.get(implementedPokemons[buttonPressed])[AbstractDungeon.eventRng.random(1)]);
                     AskQuestion(__instance, new Question("Choose your partner", implementedPokemons));
                     screenNum=5;
                     return SpireReturn.Return(null);
@@ -342,32 +346,61 @@ public class PokemonNeowPatch {
             add("Charmander");
             add("Squirtle");
             add("Pikachu");
-            add("Chikorita");
-            add("Cyndaquil");
-            add("Totodile");
-            add("Treecko");
-            add("Torchic");
-            add("Mudkip");
+            //TODO: uncomment next lines when those pokémons while be added
+            //add("Chikorita");
+            //add("Cyndaquil");
+            //add("Totodile");
+            //add("Treecko");
+            //add("Torchic");
+            //add("Mudkip");
         }};
         switch(chosenPokemon)
         {
             case "Bulbasaur":
+                partners.remove("Bulbasaur");
+                partners.remove("Chikorita");
+                partners.remove("Treecko");
+                break;
             case "Chikorita":
+                partners.remove("Bulbasaur");
+                partners.remove("Chikorita");
+                partners.remove("Treecko");
+                break;
             case "Treecko":
                 partners.remove("Bulbasaur");
                 partners.remove("Chikorita");
                 partners.remove("Treecko");
                 break;
             case "Charmander":
+                partners.remove("Charmander");
+                partners.remove("Cyndaquil");
+                partners.remove("Torchic");
+                break;
             case "Cyndaquil":
+                partners.remove("Charmander");
+                partners.remove("Cyndaquil");
+                partners.remove("Torchic");
+                break;
             case "Torchic":
                 partners.remove("Charmander");
                 partners.remove("Cyndaquil");
                 partners.remove("Torchic");
                 break;
             case "Squirtle":
+                partners.remove("Squirtle");
+                partners.remove("Totodile");
+                partners.remove("Mudkip");
+                break;
             case "Psyduck" :
+                partners.remove("Squirtle");
+                partners.remove("Totodile");
+                partners.remove("Mudkip");
+                break;
             case "Totodile":
+                partners.remove("Squirtle");
+                partners.remove("Totodile");
+                partners.remove("Mudkip");
+                break;
             case "Mudkip":
                 partners.remove("Squirtle");
                 partners.remove("Totodile");
@@ -402,6 +435,27 @@ public class PokemonNeowPatch {
         return selectablePartners.toArray(new String[selectablePartners.size()]);
     }
 
+
+    public static void convertPokemonToImplementedPokemon()
+    {
+        Color pokemonsType = Pokemon.adventurersColor(chosenPokemon);
+        if(pokemonsType == Pokemon.adventurersColor("Bulbasaur"))
+        {
+            chosenPokemon = "Bulbasaur";
+        }
+        else if(pokemonsType == Pokemon.adventurersColor("Charmander"))
+        {
+            chosenPokemon = "Charmander";
+        }
+        else if(pokemonsType == Pokemon.adventurersColor("Squirtle"))
+        {
+            chosenPokemon = "Squirtle";
+        }
+        else
+        {
+            chosenPokemon = "Pikachu";
+        }
+    }
 
     // Tables for pokémon choices
 
