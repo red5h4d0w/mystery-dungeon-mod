@@ -78,6 +78,6 @@ public class HeatCrashPower extends MysteryDungeonPower implements CloneablePowe
     @Override
     public void updateDescription() {
         int burnStacks = owner.hasPower(BurnPower.POWER_ID)?owner.getPower(BurnPower.POWER_ID).amount:0;
-        description = String.format(DESCRIPTIONS[0], amount/2.0f, MathUtils.floor(amount/2.0f*burnStacks));
+        description = String.format(DESCRIPTIONS[0], amount, MathUtils.floor(amount*burnStacks));
     }
 }
