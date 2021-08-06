@@ -54,7 +54,12 @@ public class SquirtleSkullBashGo extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new VFXAction(new WeightyImpactEffect(m.hb.cX, m.hb.cY))); 
+        for(AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
+            if(!mo.isDeadOrEscaped()) {
+                addToBot(new VFXAction(new WeightyImpactEffect(mo.hb.cX, mo.hb.cY)));
+            }
+
+        }
         addToBot((AbstractGameAction)new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AttackEffect.NONE));
 
         if(AbstractDungeon.player.hand.size()==1)
