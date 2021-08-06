@@ -529,7 +529,7 @@
         "QUESTION": "When the going gets tough, do you get going?",
         "ANSWERS": [
             "Yes.",
-            "TNo"
+            "No"
         ],
         "POINTS": [
             ["Hardy:2", "Brave:2"],
