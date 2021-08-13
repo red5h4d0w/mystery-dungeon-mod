@@ -53,7 +53,7 @@ public class BulbasaurIngrain extends CustomCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for(int i=0; i<2; i++)
+        for(int i=0; i<magicNumber; i++)
         {
             AbstractMonster randomMonster = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRng);
             addToBot(new ApplyPowerAction(randomMonster, p, new LeechSeedPower(randomMonster, p, 1), 1));
