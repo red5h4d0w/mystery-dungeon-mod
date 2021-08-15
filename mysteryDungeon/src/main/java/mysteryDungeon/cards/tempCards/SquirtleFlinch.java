@@ -36,7 +36,7 @@ public class SquirtleFlinch extends PokemonCard {
     public static final CardColor COLOR = CardColor.COLORLESS;
 
     private static final int COST = 1;
-    private static final int BASE_DAMAGE = 5;
+    private static final int BASE_DAMAGE = 3;
     private static final int BASE_MAGIC_NUMBER = 1;
     private static final int UPGRADE_MAGIC_NUMBER = 1;
 

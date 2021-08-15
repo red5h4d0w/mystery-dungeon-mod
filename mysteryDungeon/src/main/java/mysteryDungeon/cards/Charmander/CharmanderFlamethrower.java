@@ -44,8 +44,8 @@ public class CharmanderFlamethrower extends CustomCard {
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 10;
-    private static final int UPGRADE_PLUS_DMG = 4;
+    private static final int DAMAGE = 8;
+    private static final int UPGRADE_PLUS_DMG = 3;
     private static final int BASE_MAGIC_NUMBER = 3;
 
 

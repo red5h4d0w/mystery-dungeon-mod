@@ -39,8 +39,8 @@ public class SquirtleZenHeadbutt extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
     private static final int COST = 0;
-    private static final int DAMAGE = 5;
-    private static final int UPGRADE_PLUS_DMG = 2;
+    private static final int DAMAGE = 3;
+    private static final int UPGRADE_PLUS_DMG = 1;
 
 
     // /STAT DECLARATION/
