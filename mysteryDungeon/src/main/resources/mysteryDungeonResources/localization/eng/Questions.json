@@ -540,7 +540,7 @@
         "QUESTION": "You are offered a choice of two gifts. Which one will you take?",
         "ANSWERS": [
             "Big Box.",
-            "Small Box"
+            "Small Box."
         ],
         "POINTS": [
             ["Docile:2", "Naive:1"],
@@ -575,7 +575,7 @@
         "QUESTION": "You come across a treasure chest! What do you do?",
         "ANSWERS": [
             "Open it right away!",
-            "No...It could be a trap...",
+            "No... It could be a trap...",
             "It's going to be empty..."
         ],
         "POINTS": [
