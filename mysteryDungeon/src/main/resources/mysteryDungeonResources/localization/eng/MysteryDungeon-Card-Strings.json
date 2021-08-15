@@ -362,7 +362,7 @@
   },
   "mysteryDungeon:SquirtleDive": {
     "NAME": "Dive",
-    "DESCRIPTION": "Exhaust all your statuses. NL Add !M! Hazes* in random locations in your draw pile and discard pile. NL Exhaust."
+    "DESCRIPTION": "Exhaust all your statuses. NL Add !M! *Hazes in random locations in your draw pile and discard pile. NL Exhaust."
   },
   "mysteryDungeon:SquirtleDoubleTeam": {
     "NAME": "Double Team",
