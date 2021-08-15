@@ -1,11 +1,11 @@
 [
     {
-        "QUESTION": "A delinquent is hassling a girl on a busy street! What will you do?",
+        "QUESTION": "Un voyou embête une fille dans une rue animée du centre ville! Que faites vous?",
         "ANSWERS": [
-            "Help without hesitation.",
-            "Help, even if scared.",
-            "Call the police.",
-            "Do nothing out of fear."
+            "Je l'aide sans hésiter.",
+            "Je l'aide mais j'ai peur.",
+            "J'appelle la police.",
+            "De peur, je ne fais rien."
         ],
         "POINTS": [
             ["Brave:3"],
@@ -15,11 +15,11 @@
         ]
     },
     {
-        "QUESTION": "A foreign person has started up a conversation with you. To be honest, you don't have a clue what this fellow is saying. How do you reply?",
+        "QUESTION": "Un étranger commence une conversation avec vous. Vous ne comprenez absolument rien à ce qu'il dit. Que lui dites-vous?",
         "ANSWERS": [
-            "Haha! Yes. Very funny!",
-            "Um, could you say that again?",
-            "Right...well I gotta go."
+            "Ha, ha ! Oui, très drôle!",
+            "Hum... Vous pouvez répéter?",
+            "Bien... Hum, il faut que j'y aille."
         ],
         "POINTS": [
             ["Jolly:3"],
@@ -28,11 +28,11 @@
         ]
     },
     {
-        "QUESTION": "A friend brought over something you'd forgotten. How do you thank your friend?",
+        "QUESTION": "Un ami vous ramène quelque chose que vous aviez oublié. Comment le remerciez-vous ? Vous dites ...",
         "ANSWERS": [
-            "Say thank you regularly.",
-            "Say thanks with a joke.",
-            "Say thanks, but be cool."
+            "Merci à profusion.",
+            "Merci et une blague.",
+            "Merci, mais calmement."
         ],
         "POINTS": [
             ["Docile:2"],
@@ -41,11 +41,11 @@
         ]
     },
     {
-        "QUESTION": "A human hand extends out of a toilet! What would you do?",
+        "QUESTION": "Une main sort des toilettes! Que faites vous?",
         "ANSWERS": [
-            "Scream and run.",
-            "Close the lid without a word.",
-            "Shake hands with it."
+            "Je m'enfuis en hurlant.",
+            "Je referme le couvercle.",
+            "Je lui serre la main."
         ],
         "POINTS": [
             ["Timid:2"],
@@ -54,11 +54,11 @@
         ]
     },
     {
-        "QUESTION": "A test is coming up. How do you study for it?",
+        "QUESTION": "Un contrôle va avoir lieu bientôt. Comment le préparez vous?",
         "ANSWERS": [
-            "Study hard.",
-            "At the last second.",
-            "Ignore it and play."
+            "J'étudie beaucoup.",
+            "Au dernier instante.",
+            "Je m'amuse."
         ],
         "POINTS": [
             ["Hardy:2"],
@@ -67,10 +67,10 @@
         ]
     },
     {
-        "QUESTION": "Are there many things you would like to do?",
+        "QUESTION": "Y a-t-il beaucoup de choses que vous aimeriez faire?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Hardy:1", "Impish:2"],
@@ -78,10 +78,10 @@
         ]
     },
     {
-        "QUESTION": "Are you a cheerful personality?",
+        "QUESTION": "Avez-vous une personnalité enjouée?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Naive:1", "Jolly:2"],
@@ -89,10 +89,10 @@
         ]
     },
     {
-        "QUESTION": "Are you often late for school or meetings?",
+        "QUESTION": "Arrivez-vous souvent en retard en cours ou aux réunions?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Sassy:1", "Relaxed:2"],
@@ -100,10 +100,10 @@
         ]
     },
     {
-        "QUESTION": "Can you focus on something you like?",
+        "QUESTION": "Est-ce que vous pouvez vous concentrer sur quelque chose que vous aimez?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Hardy:2", "Docile:1"],
@@ -111,11 +111,11 @@
         ]
     },
     {
-        "QUESTION": "Can you go into a haunted house?",
+        "QUESTION": "Osez-vous entrer dans une maison hantée?",
         "ANSWERS": [
-            "No problem!",
-            "Uh... N-no...",
-            "With someone I like."
+            "Sans problèmes!",
+            "Euh... Non...",
+            "Oui, avec quelqu'un."
         ],
         "POINTS": [
             ["Brave:3"],
@@ -124,10 +124,10 @@
         ]
     },
     {
-        "QUESTION": "Can you sincerely thank someone when you are grateful?",
+        "QUESTION": "Est-ce que vous remerciez quelqu'un avec sincérité quand vous vous sentez reconnaissant(e)?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Calm:1", "Docile:2"],
@@ -135,10 +135,10 @@
         ]
     },
     {
-        "QUESTION": "Do others sometimes call you childish?",
+        "QUESTION": "Est-ce que les autres vous disent souvent que vous avez des réactions puériles?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Naive:2", "Jolly:1"],
@@ -146,10 +146,10 @@
         ]
     },
     {
-        "QUESTION": "Do others tell you to watch what you say?",
+        "QUESTION": "Est-ce qu'on vous dit de faire attention à ce que vous racontez?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Sassy:2", "Impish:1"],
@@ -157,10 +157,10 @@
         ]
     },
     {
-        "QUESTION": "Do you dream of lounging around idly without much excitement?",
+        "QUESTION": "Rêvez vous parfois de paresser sans être dérangé(e)?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Calm:2"],
@@ -168,10 +168,10 @@
         ]
     },
     {
-        "QUESTION": "Do you fall asleep without noticing?",
+        "QUESTION": "Vous arrive-t-il de vous endormir sans vous en rendre compte?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Calm:1", "Relaxed:2"],
@@ -179,10 +179,10 @@
         ]
     },
     {
-        "QUESTION": "Do you feel lonesome when you are alone?",
+        "QUESTION": "Vous sentez vous misérable quand vous êtes seul(e)?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Timid:1", "Lonely:2"],
@@ -190,10 +190,10 @@
         ]
     },
     {
-        "QUESTION": "Do you get the feeling that you've slowed down lately?",
+        "QUESTION": "Avez-vous l'impression que vous avez ralenti le rythme dernièrement?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Relaxed:2"],
@@ -201,10 +201,10 @@
         ]
     },
     {
-        "QUESTION": "Do you hate to be the last person to leave class at the end of the day?",
+        "QUESTION": "Est-ce que vous détestez être la dernière personne à quitter la salle de classe à la fin de la journée?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Timid:1", "Lonely:2"],
@@ -212,11 +212,11 @@
         ]
     },
     {
-        "QUESTION": "Do you like groan-inducing puns?",
+        "QUESTION": "Aimez-vous les blagues idiotes?",
         "ANSWERS": [
-            "Love them!",
-            "A little.",
-            "Spare me."
+            "J'adore ça!",
+            "Un peu.",
+            "Pas du tout"
         ],
         "POINTS": [
             ["Naive:3", "Impish:1"],
@@ -225,10 +225,10 @@
         ]
     },
     {
-        "QUESTION": "Do you like pranks?",
+        "QUESTION": "Est-ce que vous aimez les blagues?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Impish:2"],
@@ -236,10 +236,10 @@
         ]
     },
     {
-        "QUESTION": "Do you like to fight?",
+        "QUESTION": "Aimez-vous vous batter?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Timid:2", "Impish:1"],
@@ -247,10 +247,10 @@
         ]
     },
     {
-        "QUESTION": "Do you like to imagine things for your own amusement?",
+        "QUESTION": "Est-ce que vous aimez imaginer des trucs pour vous amuser?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Naive:2"],
@@ -258,10 +258,10 @@
         ]
     },
     {
-        "QUESTION": "Do you like to noisily enjoy yourself with others?",
+        "QUESTION": "Est-ce que vous aimez vous amusez bruyamment avec les autres?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Lonely:1", "Jolly:2"],
@@ -269,10 +269,10 @@
         ]
     },
     {
-        "QUESTION": "Do you often yawn?",
+        "QUESTION": "Bâillez-vous souvent?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Calm:2", "Relaxed:1"],
@@ -280,10 +280,10 @@
         ]
     },
     {
-        "QUESTION": "Do you occasionally consider yourself to be dull and over cautious?",
+        "QUESTION": "Est-ce que vous vous trouvez parfois soporifique et exagérément prudent(e)?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Calm:2", "Docile:1"],
@@ -291,10 +291,10 @@
         ]
     },
     {
-        "QUESTION": "Do you sometimes run out of things to do all of a sudden?",
+        "QUESTION": "Est-ce qu'il vous arrive parfois de ne plus rien avoir à faire tout d'un coup?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Quirky:2"],
@@ -302,10 +302,10 @@
         ]
     },
     {
-        "QUESTION": "Do you tend to laugh a lot?",
+        "QUESTION": "Est-ce que vous riez beaucoup?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Docile:1", "Naive:2"],
@@ -313,10 +313,10 @@
         ]
     },
     {
-        "QUESTION": "Do you think you are cool? Be honest.",
+        "QUESTION": "Est-ce que vous pensez que vous êtes cool? Soyez honnête.",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Sassy:2"],
@@ -324,13 +324,13 @@
         ]
     },
     {
-        "QUESTION": "Grab any finger on your left hand. Which digit did you grab?",
+        "QUESTION": "Attrapez n'importe quel doigt de la main gauche avec la droite.",
         "ANSWERS": [
-            "Thumb.",
-            "Index finger.",
-            "Middle finger.",
-            "Ring finger.",
-            "Little finger."
+            "Pouce.",
+            "Index.",
+            "Majeur.",
+            "Annulaire.",
+            "Auriculaire."
         ],
         "POINTS": [
             ["Timid:2"],
@@ -341,10 +341,10 @@
         ]
     },
     {
-        "QUESTION": "Have you ever made a pitfall trap?",
+        "QUESTION": "Avez-vous déjà construit un piège?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Lonely:1", "Impish:2"],
@@ -352,11 +352,11 @@
         ]
     },
     {
-        "QUESTION": "How quickly do you respond to email?",
+        "QUESTION": "Comment répondez-vous à un e-mail?",
         "ANSWERS": [
-            "Reply right away.",
-            "May reply, may not.",
-            "Too much trouble."
+            "Tout de suite.",
+            "Je répond, ou pas.",
+            "Trop fatiguant."
         ],
         "POINTS": [
             ["Hardy:1", "Hasty:1"],
@@ -365,11 +365,11 @@
         ]
     },
     {
-        "QUESTION": "It's a pleasant day at the beach. How do you feel?",
+        "QUESTION": "Vous êtes à la plage et le temps est superbe. Comment vous sentez vous?",
         "ANSWERS": [
-            "This feels great!",
-            "Snore...",
-            "I want to go home soon!"
+            "Super bien!",
+            "Bien, je me repose...",
+            "J'ai envie de rentrer!"
         ],
         "POINTS": [
             ["Jolly:2"],
@@ -378,11 +378,11 @@
         ]
     },
     {
-        "QUESTION": "It's a weekend, but no one will play with you. What do you do?",
+        "QUESTION": "C'est le week-end, mais personne ne veut jouer avec vous. Que faîtes-vous?",
         "ANSWERS": [
-            "Go on a trip.",
-            "Hang around vacantly.",
-            "Huddle in a corner."
+            "Une excursion.",
+            "Je traine sans but.",
+            "Je me recroqueville."
         ],
         "POINTS": [
             ["Lonely:1", "Jolly:1"],
@@ -391,10 +391,10 @@
         ]
     },
     {
-        "QUESTION": "It's the summer festival! Do you like carnivals?",
+        "QUESTION": "C'est la fête de l'été ! Vous aimez les festivals?",
         "ANSWERS": [
-            "Love them!",
-            "Don't care."
+            "J'adore!",
+            "Je m'en fiche."
         ],
         "POINTS": [
             ["Jolly:2"],
@@ -402,11 +402,11 @@
         ]
     },
     {
-        "QUESTION": "It's the summer holidays! NL Where would you like to go?",
+        "QUESTION": "Ce sont les vacances d'été! Où aimeriez-vous aller?",
         "ANSWERS": [
-            "The beach!",
-            "Spas.",
-            "Anywhere."
+            "À la plage!",
+            "En thalasso.",
+            "Qu'importe."
         ],
         "POINTS": [
             ["Jolly:2"],
@@ -415,10 +415,10 @@
         ]
     },
     {
-        "QUESTION": "On vacation outings, you want to...",
+        "QUESTION": "En vacances, vous préférez:",
         "ANSWERS": [
-            "Go alone.",
-            "Go with others."
+            "Être seul.",
+            "Être avec les autres."
         ],
         "POINTS": [
             ["Quirky:1", "Hasty:1"],
@@ -426,10 +426,10 @@
         ]
     },
     {
-        "QUESTION": "Somebody calls you \"weird but funny\" How does that make you feel?",
+        "QUESTION": "On vous trouve \"étrange mais drôle.\" Comment vous sentez vous?",
         "ANSWERS": [
-            "Happy!",
-            "Not happy."
+            "Content!",
+            "Pas content."
         ],
         "POINTS": [
             ["Lonely:1", "Naive:1"],
@@ -437,11 +437,11 @@
         ]
     },
     {
-        "QUESTION": "The road forks to the right and left. You are told there is treasure on the right. What do you do?",
+        "QUESTION": "La route se divise: elle part à droite et à gauche. On vous dit qu'il y a un trésor sur celle de droite. De quel coté allez-vous?",
         "ANSWERS": [
-            "Instantly go right.",
-            "It's a trap! Go left!",
-            "Choose either side."
+            "Je vais à droite!",
+            "Un piège! À gauche.",
+            "Peu importe."
         ],
         "POINTS": [
             ["Docile:2"],
@@ -450,11 +450,11 @@
         ]
     },
     {
-        "QUESTION": "There is a bucket. If you put water in it, how high will you fill it?",
+        "QUESTION": "Voici un seau. Si vous mettez de l'eau dedans, vous le remplissez...",
         "ANSWERS": [
-            "Full.",
-            "Half.",
-            "A little."
+            "À ras.",
+            "À demi.",
+            "Un peu."
         ],
         "POINTS": [
             ["Hardy:2"],
@@ -463,12 +463,12 @@
         ]
     },
     {
-        "QUESTION": "There is a person you like, but here is no opportunity to get close. What do you do?",
+        "QUESTION": "Vous aimez bien une personne... Mais aucun moyen de s'en approcher. Que faites-vous?",
         "ANSWERS": [
-            "Bravely declare my love.",
-            "Might say hello.",
-            "Pull a prank to get attention.",
-            "Look from afar."
+            "Je lui déclare ma flamme.",
+            "Je lui dis un jour, peut-être...",
+            "Je lui joue un tour.",
+            "Je l'admire de loin."
         ],
         "POINTS": [
             ["Hardy:1", "Brave:3"],
@@ -478,10 +478,10 @@
         ]
     },
     {
-        "QUESTION": "There is a scream from behind a door! How will you react?",
+        "QUESTION": "Vous entendez un cri venant de derrière la porte! Comment réagissez-vous?",
         "ANSWERS": [
-            "Yank open the door.",
-            "Scream in unison!"
+            "Je l'ouvre d'un coup.",
+            "Je crie aussi!"
         ],
         "POINTS": [
             ["Hardy:1", "Brave:3"],
@@ -489,11 +489,11 @@
         ]
     },
     {
-        "QUESTION": "There is a wallet on the side of the road. What do you do?",
+        "QUESTION": "Il y a un portefeuille sur le bord de la route. Que faites vous?",
         "ANSWERS": [
-            "Turn it in to the police.",
-            "Yay! Yay!",
-            "Is anyone watching..."
+            "Je l'amène à la police!",
+            "Oui! Génial!",
+            "Personne ne regarde?"
         ],
         "POINTS": [
             ["Docile:2"],
@@ -502,11 +502,11 @@
         ]
     },
     {
-        "QUESTION": "There is an alien invasion! What will you do?",
+        "QUESTION": "Les extraterrestres nous envahissent! Que faites-vous?",
         "ANSWERS": [
-            "Fight.",
-            "Run.",
-            "Ignore it."
+            "Je lutte.",
+            "Je fuis.",
+            "Rien."
         ],
         "POINTS": [
             ["SPECIAL"],
@@ -515,10 +515,10 @@
         ]
     },
     {
-        "QUESTION": "What do you do with you room's light when you go to bed?",
+        "QUESTION": "Quand vous allez vous coucher le soir, comment laissez-vous la lumière?",
         "ANSWERS": [
-            "Leave it on.",
-            "Turn it off."
+            "Allumée.",
+            "Éteinte."
         ],
         "POINTS": [
             ["Timid:1", "Lonely:2"],
@@ -526,10 +526,10 @@
         ]
     },
     {
-        "QUESTION": "When the going gets tough, do you get going?",
+        "QUESTION": "Dans les moments difficiles, est-ce que vous vous accrochez?",
         "ANSWERS": [
-            "Yes.",
-            "TNo"
+            "Oui.",
+            "Non"
         ],
         "POINTS": [
             ["Hardy:2", "Brave:2"],
@@ -537,10 +537,10 @@
         ]
     },
     {
-        "QUESTION": "You are offered a choice of two gifts. Which one will you take?",
+        "QUESTION": "On vous donne le choix entre deux cadeaux. Lequel allez-vous prendre?",
         "ANSWERS": [
-            "Big Box.",
-            "Small Box"
+            "Le gros.",
+            "Le petit."
         ],
         "POINTS": [
             ["Docile:2", "Naive:1"],
@@ -548,11 +548,11 @@
         ]
     },
     {
-        "QUESTION": "You are suddenly locked inside a pitch black room! What do you do?",
+        "QUESTION": "On vous enferme par erreur dans une pièce noire comme de l'encre! Que faites-vous?",
         "ANSWERS": [
-            "Kick the door.",
-            "Cry.",
-            "Clean it."
+            "J'enfonce la porte.",
+            "Je pleure.",
+            "Je nettoie."
         ],
         "POINTS": [
             ["Timid:2"],
@@ -561,10 +561,10 @@
         ]
     },
     {
-        "QUESTION": "You broke a rotten egg in your room! NL What will you do?",
+        "QUESTION": "Vous cassez un œuf pourri dans votre chambre. NL Que faites vous?",
         "ANSWERS": [
-            "Open a window right away.",
-            "Take a sniff first."
+            "J'ouvre vite la fenêtre.",
+            "Je le renifle d'abord."
         ],
         "POINTS": [
             ["Docile:2", "Hasty:1"],
@@ -572,11 +572,11 @@
         ]
     },
     {
-        "QUESTION": "You come across a treasure chest! What do you do?",
+        "QUESTION": "Vous découvrez un coffre au trésor! Que faites-vous?",
         "ANSWERS": [
-            "Open it right away!",
-            "No...It could be a trap...",
-            "It's going to be empty..."
+            "Je l'ouvre de suite!",
+            "Rien... Un piège...",
+            "Rien, il sera vide..."
         ],
         "POINTS": [
             ["Hasty:2"],
@@ -585,11 +585,11 @@
         ]
     },
     {
-        "QUESTION": "You win a lottery! NL What do you do with the money?",
+        "QUESTION": "Vous gagnez à la loterie! NL Que faites-vous de l'argent?",
         "ANSWERS": [
-            "Spend it now.",
-            "Save it.",
-            "Give it away."
+            "Je m'en sers.",
+            "J'économise.",
+            "Je le donne."
         ],
         "POINTS": [
             ["Hasty:1", "Jolly:2"],
@@ -598,11 +598,11 @@
         ]
     },
     {
-        "QUESTION": "You receive a gift! But you don't know what's in it. What do you do?",
+        "QUESTION": "Vous recevez un paquet cadeau! Mais vous ne savez pas ce qu'il y a dedans. Que faites-vous?",
         "ANSWERS": [
-            "Open it now.",
-            "Open it later.",
-            "Get someone to open it."
+            "Je l'ouvre tout de suite.",
+            "Je l'ouvre plus tard.",
+            "Quelqu'un me l'ouvre."
         ],
         "POINTS": [
             ["Hasty:2"],
@@ -611,11 +611,11 @@
         ]
     },
     {
-        "QUESTION": "Your country's leader is in front of you. NL How do you speak to him or her?",
+        "QUESTION": "Le président de la république est en face de vous. NL Comment lui parlez-vous?",
         "ANSWERS": [
-            "Speak calmly.",
-            "Speak nervously.",
-            "WHATEVER!!"
+            "Calmement.",
+            "Nerveusement.",
+            "ON S'EN FICHE!!!"
         ],
         "POINTS": [
             ["Calm:2"],
@@ -624,11 +624,11 @@
         ]
     },
     {
-        "QUESTION": "Your friend fails to show up for a meeting at the promised time. What do you do?",
+        "QUESTION": "Votre ami(e) n'arrive pas à l'heure prévue pour votre rendez vous. Que faites-vous?",
         "ANSWERS": [
-            "Become irritated.",
-            "Wait patiently.",
-            "Get angry and bail."
+            "Je m'énerve.",
+            "J'attends.",
+            "En colère, je pars."
         ],
         "POINTS": [
             ["Docile:1", "Hasty:2"],
@@ -637,11 +637,11 @@
         ]
     },
     {
-        "QUESTION": "Your friend is being bullied! What do you do?",
+        "QUESTION": "Une brute embête votre ami. Que faites vous?",
         "ANSWERS": [
-            "Face up the bully.",
-            "Caution the bully from afar.",
-            "Heckle the bully from behind."
+            "J'affronte la brute.",
+            "Je la gronde de loin.",
+            "Je l'attaque par derrière."
         ],
         "POINTS": [
             ["Brave:3"],
@@ -650,10 +650,10 @@
         ]
     },
     {
-        "QUESTION": "You're going bungee jumping for the first time. Since it's scary you decide to test the rope with a doll...The bungee cord snaps! Do you still try to make the jump?",
+        "QUESTION": "Vous faites du saut à l'élastique pour la première fois. Vu que ça fait peur, vous faites un test avec une poupée... L'élastique craque! Sautez vous quand même?",
         "ANSWERS": [
-            "Yes.",
-            "No."
+            "Oui.",
+            "Non."
         ],
         "POINTS": [
             ["Brave:3", "Impish:1"],
@@ -661,10 +661,10 @@
         ]
     },
     {
-        "QUESTION": "You valiantly fight the aliens...but you are defeated. An alien tells you, \"YOU HAVE IMPRESSED US. IT WAS A PLEASURE TO SEE. JOIN US, AND TOGETHER WE SHALL RULE THE WORLD.\" How do you reply?",
+        "QUESTION": "Vous vous êtes bien battu... mais les extraterrestent gagnent. Il y en a un qui vous dit \"TU NOUS A IMPRESSIONNÉS. C'ÉTAIT UN PLAISIR À VOIR. JOINS TOI À NOUS, ET ENSEMBLE DIRIGEONS LE MONDE\"",
         "ANSWERS": [
-            "Rule with the aliens!",
-            "Refuse."
+            "J'accepte!",
+            "Je refuse."
         ],
         "POINTS": [
             ["Sassy:1", "Relaxed:1"],
@@ -672,11 +672,11 @@
         ]
     },
     {
-        "QUESTION": "Are you a boy or a girl?",
+        "QUESTION": "Êtes-vous un garçon ou une fille?",
         "ANSWERS": [
-            "Boy.",
-            "Girl.",
-            "Other."
+            "Garçon.",
+            "Fille.",
+            "Autre."
         ]
     }
 ]
