@@ -72,7 +72,8 @@
   {
     "PROPER_NAME": "Toxic",
     "NAMES": [
-        "Toxic"
+        "Toxic",
+        "toxic"
     ],
     "DESCRIPTION": "Poison on enemies affected by Toxic go up by the amount of stack instead of going down."
   }
