@@ -29,7 +29,7 @@
   },
   "mysteryDungeon:BulbasaurDoubleEdge": {
     "NAME": "Double Edge",
-    "DESCRIPTION": "Deal !D! damage. NL Take damage equal to half your Strength. NL Strength affects this card !M! times."
+    "DESCRIPTION": "Deal !D! damage. NL Strength affects this card !M! times. NL Lose 1 Dexterity."
   },
   "mysteryDungeon:BulbasaurFrenzyPlant": {
     "NAME": "Frenzy Plant",
