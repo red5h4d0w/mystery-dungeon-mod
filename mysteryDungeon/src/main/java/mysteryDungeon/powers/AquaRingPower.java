@@ -98,6 +98,6 @@ public class AquaRingPower extends MysteryDungeonPower implements CloneablePower
 
     @Override
     public void updateDescription() {
-        description = String.format(DESCRIPTIONS[0], amount*1, amount*1, amount*1);
+        description = String.format(DESCRIPTIONS[0], amount*3, amount*3);
     }
 }
