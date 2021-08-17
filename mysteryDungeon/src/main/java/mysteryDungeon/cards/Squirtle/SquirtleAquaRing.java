@@ -44,6 +44,7 @@ public class SquirtleAquaRing extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        selfRetain = true;
         exhaust = true;
     }
 
@@ -58,7 +59,6 @@ public class SquirtleAquaRing extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            selfRetain = true;
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
