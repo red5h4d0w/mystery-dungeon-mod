@@ -8,10 +8,12 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.UIStrings;
 
+import mysteryDungeon.MysteryDungeon;
+
 public class ExhaustFromDeckAction extends AbstractGameAction {
     private AbstractPlayer p;
     
-    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("ExhumeAction");
+    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString(MysteryDungeon.makeID("ExhaustFromDeckAction"));
     
     public static final String[] TEXT = uiStrings.TEXT;
     
