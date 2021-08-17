@@ -9,7 +9,7 @@
     "mysteryDungeon:AquaRingPower": {
         "NAME": "Aqua Ring",
         "DESCRIPTIONS": [
-            "This turn, for each card you scry or discard, deal #b%s damage to ALL enemies and gain #b%s block. NL If the card you scried or discarded was a Status card, deal #b%s more damage and gain #b%s more block."
+            "This turn, for each card you scry or discard,gain #b%s block. NL If the card was a Status card, deal #b%s damage to all enemies."
         ]
     },
     "mysteryDungeon:BellyDrumPower": {
