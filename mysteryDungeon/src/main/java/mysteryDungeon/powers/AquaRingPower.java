@@ -62,12 +62,12 @@ public class AquaRingPower extends MysteryDungeonPower implements CloneablePower
     {
         if(card.type == CardType.STATUS)
         {
-            addToBot(new GainBlockAction(owner, owner, amount*3));
-            addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, amount*3, DamageType.THORNS, AttackEffect.BLUNT_LIGHT));
+            addToBot(new GainBlockAction(owner, owner, amount));
+            addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, amount, DamageType.THORNS, AttackEffect.BLUNT_LIGHT));
         }
         else
         {
-            addToBot(new GainBlockAction(owner, owner, amount*3));
+            addToBot(new GainBlockAction(owner, owner, amount));
         }
         
     }
@@ -77,12 +77,12 @@ public class AquaRingPower extends MysteryDungeonPower implements CloneablePower
     {
         if(card.type == CardType.STATUS)
         {
-            addToBot(new GainBlockAction(owner, owner, amount*3));
-            addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, amount*3, DamageType.THORNS, AttackEffect.BLUNT_LIGHT));
+            addToBot(new GainBlockAction(owner, owner, amount));
+            addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, amount, DamageType.THORNS, AttackEffect.BLUNT_LIGHT));
         }
         else
         {
-            addToBot(new GainBlockAction(owner, owner, amount*2));
+            addToBot(new GainBlockAction(owner, owner, amount));
         }
         
     }
@@ -98,6 +98,6 @@ public class AquaRingPower extends MysteryDungeonPower implements CloneablePower
 
     @Override
     public void updateDescription() {
-        description = String.format(DESCRIPTIONS[0], amount*3, amount*3);
+        description = String.format(DESCRIPTIONS[0], amount, amount);
     }
 }
