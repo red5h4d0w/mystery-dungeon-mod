@@ -61,7 +61,8 @@ public class SquirtleWhirlpool extends PokemonCard {
         }
         if(upgraded)
             energyOnUse++; 
-        addToBot(new ApplyPowerAction(p, p, new WhirlpoolPower(p, energyOnUse), energyOnUse));
+        if(energyOnUse>0)
+            addToBot(new ApplyPowerAction(p, p, new WhirlpoolPower(p, energyOnUse), energyOnUse));
         if (!freeToPlayOnce)
             p.energy.use(EnergyPanel.totalCount);
     }
