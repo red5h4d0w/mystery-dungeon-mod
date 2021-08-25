@@ -365,7 +365,7 @@
   },
   "mysteryDungeon:SquirtleDoubleTeam": {
     "NAME": "Double Team",
-    "DESCRIPTION": "Gain !B! block. NL Draw 1 card. NL Add a copy of this card in your discard pile."
+    "DESCRIPTION": "Gain !B! block. NL Draw 1 card and discard 1 card. NL Add a copy of this card in your discard pile."
   },
   "mysteryDungeon:SquirtleEndure": {
     "NAME": "Endure",
@@ -373,8 +373,8 @@
   },
   "mysteryDungeon:SquirtleFakeOut": {
     "NAME": "Fake Out",
-    "DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Draw !M! card. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Draw !M! cards. NL Exhaust."
+    "DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Scry !M! card. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Scry !M! cards. NL Exhaust."
   },
   "mysteryDungeon:SquirtleFlashCannon": {
     "NAME": "Flash Cannon",

@@ -2,8 +2,8 @@ package mysteryDungeon.cards.Squirtle;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -59,7 +59,7 @@ public class SquirtleFakeOut extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         addToBot(new GainBlockAction(p, p, block));
-        addToBot(new DrawCardAction(magicNumber));
+        addToBot(new ScryAction(magicNumber));
 
     }
 
