@@ -373,8 +373,8 @@
   },
   "mysteryDungeon:SquirtleFakeOut": {
     "NAME": "Fake Out",
-    "DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Draw !M! card. NL Exahust.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Draw !M! cards. NL Exahust."
+    "DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Draw !M! card. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Draw !M! cards. NL Exhaust."
   },
   "mysteryDungeon:SquirtleFlashCannon": {
     "NAME": "Flash Cannon",
@@ -511,8 +511,8 @@
   },
   "mysteryDungeon:SquirtleWithdraw": {
     "NAME": "Withdraw",
-    "DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! card. NL Gain !B! Block per card in hand.",
-    "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! cards. NL Gain !B! Block per card in hand. "
+    "DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! card. NL Gain 2 Block per card in hand.",
+    "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! cards. NL Gain 2 Block per card in hand. "
   },
   "mysteryDungeon:SquirtleWorkUp": {
     "NAME": "Work Up",
