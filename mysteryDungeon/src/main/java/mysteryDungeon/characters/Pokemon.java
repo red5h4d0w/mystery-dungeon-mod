@@ -4,13 +4,11 @@ import basemod.abstracts.CustomPlayer;
 import basemod.abstracts.CustomSavable;
 import basemod.animations.SpriterAnimation;
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.cards.Bulbasaur.*;
-import mysteryDungeon.cards.Charmander.*;
-import mysteryDungeon.cards.Squirtle.SquirtleDefend;
-import mysteryDungeon.cards.Squirtle.SquirtleTackle;
-import mysteryDungeon.cards.Squirtle.SquirtleWaterGun;
+import mysteryDungeon.cards.Bulbasaur.BulbasaurTackle;
 import mysteryDungeon.cards.fakeCards.ExplorersDeck;
 import mysteryDungeon.cards.fakeCards.PartnersDeck;
+import mysteryDungeon.pokemons.AbstractPokemon;
+import mysteryDungeon.pokemons.Pikachu;
 import mysteryDungeon.relics.*;
 
 import com.badlogic.gdx.graphics.Color;
@@ -50,7 +48,7 @@ import java.util.Random;
 //and https://github.com/daviscook477/BaseMod/wiki/Migrating-to-5.0
 //All text (starting description and loadout, anything labeled TEXT[]) can be found in MysteryDungeon-character-Strings.json in the resources
 
-public class Pokemon extends CustomPlayer implements CustomSavable<Pokemon.Adventurer[]>{
+public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
     public static final Logger logger = LogManager.getLogger(MysteryDungeon.class.getName());
 
     // =============== CHARACTER ENUMERATORS =================
@@ -68,16 +66,25 @@ public class Pokemon extends CustomPlayer implements CustomSavable<Pokemon.Adven
         @SpireEnum(name = "DEFAULT_GRAY_COLOR") 
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_COLOR;
+
         @SpireEnum(name = "BULBASAUR_GREEN") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor BULBASAUR_GREEN;
         @SpireEnum(name = "BULBASAUR_GREEN") 
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_BULBASAUR_GREEN;
+
         @SpireEnum(name = "CHARMANDER_RED") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor CHARMANDER_RED;
         @SpireEnum(name = "CHARMANDER_RED") 
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_CHARMANDER_RED;
+
+        @SpireEnum(name = "PIKACHU_YELLOW") // These two HAVE to have the same absolutely identical name.
+        public static AbstractCard.CardColor PIKACHU_YELLOW;
+        @SpireEnum(name = "PIKACHU_YELLOW") 
+        @SuppressWarnings("unused")
+        public static CardLibrary.LibraryType LIBRARY_PIKACHU_YELLOW;
+
         @SpireEnum(name = "SQUIRTLE_BLUE") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor SQUIRTLE_BLUE;
         @SpireEnum(name = "SQUIRTLE_BLUE") 
@@ -91,15 +98,16 @@ public class Pokemon extends CustomPlayer implements CustomSavable<Pokemon.Adven
 
     // =============== BASE STATS =================
 
+    
+    public static AbstractPokemon adventurer;
+    public static AbstractPokemon partner;
     public static final int ENERGY_PER_TURN = 3;
-    public static final int STARTING_HP = 66;
-    public static final int MAX_HP = 66;
+    public static final int STARTING_HP = 0;
+    public static final int MAX_HP = 0;
     public static final int STARTING_GOLD = 99;
     public static final int CARD_DRAW = 5;
-    public static final int ORB_SLOTS = 3;
+    public static final int ORB_SLOTS = 0;
     public static Nature nature;
-    public static Adventurer adventurer;
-    public static Adventurer partner;
 
     // =============== /BASE STATS/ =================
 
@@ -129,25 +137,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<Pokemon.Adven
         Sassy,
         Timid
     }
-    public static enum Adventurer
-    {
-        Bulbasaur,
-        Charmander,
-        Squirtle,
-        Pikachu,
-        Meowth,
-        Psyduck,
-        Machop,
-        Cubone,
-        Eevee,
-        Chikorita,
-        Cyndaquil,
-        Totodile,
-        Treecko,
-        Torchic,
-        Mudkip,
-        Skitty
-    }
+    
 
 
     // =============== TEXTURES OF BIG ENERGY ORB ===============
@@ -248,65 +238,34 @@ public class Pokemon extends CustomPlayer implements CustomSavable<Pokemon.Adven
         return retVal;
     }
 
-    public void awardStartingDecks(Adventurer pokemon)
+    public void awardMaxHp(AbstractPokemon pokemon)
     {
-        ArrayList<AbstractCard> retVal = new ArrayList<AbstractCard>();
-        switch(pokemon)
-        {
-            case Bulbasaur:
-                retVal.add(new BulbasaurTackle());
-                retVal.add(new BulbasaurTackle());
-                retVal.add(new BulbasaurDefend());
-                retVal.add(new BulbasaurDefend());
-                retVal.add(new BulbasaurLeechSeed());
-                break;
-            case Charmander:
-                retVal.add(new CharmanderScratch());
-                retVal.add(new CharmanderScratch());
-                retVal.add(new CharmanderDefend());
-                retVal.add(new CharmanderDefend());
-                retVal.add(new CharmanderEmber());
-                break;
-            case Squirtle:
-                retVal.add(new SquirtleTackle());
-                retVal.add(new SquirtleTackle());
-                retVal.add(new SquirtleDefend());
-                retVal.add(new SquirtleDefend());
-                retVal.add(new SquirtleWaterGun());
-                break;
-            case Pikachu:
-                break;
-            case Meowth:
-                break;
-            case Psyduck:
-                break;
-            case Machop:
-                break;
-            case Cubone:
-                break;
-            case Eevee:
-                break;
-            case Chikorita:
-                break;
-            case Cyndaquil:
-                break;
-            case Totodile:
-                break;
-            case Treecko:
-                break;
-            case Torchic:
-                break;
-            case Mudkip:
-                break;
-            case Skitty:
-                break;
-            default:
-                break;
-        }
-        for(AbstractCard card: retVal)
+        maxHealth+=pokemon.maxHp;
+        heal(maxHealth);
+    }
+
+    public void awardOrbSlots(AbstractPokemon pokemon)
+    {
+        masterMaxOrbs+=pokemon.orbSlots;
+    }
+
+    public void awardStartingDecks(AbstractPokemon pokemon)
+    {
+        for(AbstractCard card: pokemon.startingDeck)
         {
             masterDeck.addToTop(card);
         }
+    }
+    public void awardThingsToAward()
+    {
+        awardMaxHp(adventurer);
+        awardOrbSlots(adventurer);
+        awardStartingDecks(adventurer);
+        awardMaxHp(partner);
+        awardOrbSlots(partner);
+        awardStartingDecks(partner);
+        AwardStartingRelic();
+        startingMaxHP = maxHealth;
     }
 
     // Starting Relics	
@@ -323,25 +282,32 @@ public class Pokemon extends CustomPlayer implements CustomSavable<Pokemon.Adven
     }
 
     @Override
-    public Adventurer[] onSave()
+    public String[] onSave()
     {
-        return new Adventurer[]{adventurer, partner};
+        if(adventurer==null||partner==null)
+            return null;
+        return new String[]{adventurer.name, partner.name};
     }
 
     @Override
-    public void onLoad(Adventurer[] adventurerAndPartner)
+    public void onLoad(String[] adventurerAndPartner)
     {
-        if(adventurerAndPartner!=null && adventurerAndPartner instanceof Adventurer[])
+        if(adventurerAndPartner!=null)
         {
-            adventurer = ((Adventurer[])adventurerAndPartner)[0];
-            partner = ((Adventurer[])adventurerAndPartner)[1];
+            try {
+                adventurer = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+((String[])adventurerAndPartner)[0]).newInstance();
+                partner = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+((String[])adventurerAndPartner)[1]).newInstance();
+            } catch (InstantiationException | IllegalAccessException | ClassNotFoundException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
         } 
     }
 
     @Override
     public Type savedType()
     {
-        return new TypeToken<Adventurer[]>(){}.getType();
+        return new TypeToken<AbstractPokemon[]>(){}.getType();
     }
 
     // character Select screen effect
@@ -421,6 +387,18 @@ public class Pokemon extends CustomPlayer implements CustomSavable<Pokemon.Adven
         return mysteryDungeon.MysteryDungeon.DEFAULT_GRAY;
     }
 
+    public static boolean needsStanceInfoWindow() {
+        if(adventurer instanceof Pikachu)
+        {
+            return true;
+        }
+        if(partner instanceof Pikachu)
+        {
+            return true;
+        }
+        return false;
+    }
+
     // Should return an AttackEffect array of any size greater than 0. These effects
     // will be played in sequence as your character's finishing combo on the heart.
     // Attack effects are the same as used in DamageAction and the like.
@@ -453,69 +431,27 @@ public class Pokemon extends CustomPlayer implements CustomSavable<Pokemon.Adven
         nature = Nature.valueOf(natureAsAString);
     }
 
-    public void setAdventurer(String adventurerAsString)
-    {
-        adventurer = Adventurer.valueOf(adventurerAsString);
-        awardStartingDecks(adventurer);
-    }
-
-    public void setPartner(String adventurerAsString)
-    {
-        partner = Adventurer.valueOf(adventurerAsString);
-        awardStartingDecks(partner);
-    }
 
     // Adventurer/Partner related switch statements
 
-    public static Color adventurersColor(Adventurer pokemon)
+
+    public static Color adventurersColor()
     {
-        switch(pokemon)
-        {
-            case Bulbasaur:
-                return Color.GREEN;
-            case Charmander:
-                return Color.RED;
-            case Squirtle:
-                return Color.BLUE;
-            case Pikachu:
-                return Color.YELLOW;
-            case Meowth:
-                return Color.WHITE;
-            case Psyduck:
-                return Color.VIOLET;
-            case Machop:
-                return Color.BROWN;
-            case Cubone:
-                return Color.MAROON;
-            case Eevee:
-                return Color.WHITE;
-            case Chikorita:
-                return Color.GREEN;
-            case Cyndaquil:
-                return Color.RED;
-            case Totodile:
-                return Color.BLUE;
-            case Treecko:
-                return Color.GREEN;
-            case Torchic:
-                return Color.RED;
-            case Mudkip:
-                return Color.BLUE;
-            case Skitty:
-                return Color.WHITE;
-            default:
-                return mysteryDungeon.MysteryDungeon.DEFAULT_GRAY;
-        }
+        if(adventurer != null)
+            return adventurer.color;
+        return Color.GRAY;
     }
 
-    public static Color adventurersColor(String pokemon)
+    public static Color partnersColor()
     {
-        return adventurersColor(Adventurer.valueOf(pokemon));
+        if(partner != null)
+            return partner.color;
+        return Color.GRAY;
     }
 
     public Color adventurerOrPartnerColor()
     {
-        return (new Random().nextInt() % 2 == 0)?adventurersColor(adventurer):adventurersColor(partner);
+        return (new Random().nextInt() % 2 == 0)?partnersColor():adventurersColor();
     }
 
     public ArrayList<AbstractCard.CardColor> getUsedSubColors()
@@ -526,86 +462,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<Pokemon.Adven
             subcolors.add(Enums.COLOR_GRAY);
             return subcolors;
         }
-        switch(adventurer)
-        {
-            case Bulbasaur:
-                subcolors.add(Enums.BULBASAUR_GREEN);
-                break;
-            case Charmander:
-                subcolors.add(Enums.CHARMANDER_RED);
-                break;
-            case Squirtle:
-                subcolors.add(Enums.SQUIRTLE_BLUE);
-                break;
-            case Pikachu:
-                break;
-            case Meowth:
-                break;
-            case Psyduck:
-                break;
-            case Machop:
-                break;
-            case Cubone:
-                break;
-            case Eevee:
-                break;
-            case Chikorita:
-                break;
-            case Cyndaquil:
-                break;
-            case Totodile:
-                break;
-            case Treecko:
-                break;
-            case Torchic:
-                break;
-            case Mudkip:
-                break;
-            case Skitty:
-                break;
-            default:
-                subcolors.add(Enums.COLOR_GRAY);
-        }
-        switch(partner)
-        {
-            case Bulbasaur:
-                subcolors.add(Enums.BULBASAUR_GREEN);
-                break;
-            case Charmander:
-                subcolors.add(Enums.CHARMANDER_RED);
-                break;
-            case Squirtle:
-                subcolors.add(Enums.SQUIRTLE_BLUE);
-                break;
-            case Pikachu:
-                break;
-            case Meowth:
-                break;
-            case Psyduck:
-                break;
-            case Machop:
-                break;
-            case Cubone:
-                break;
-            case Eevee:
-                break;
-            case Chikorita:
-                break;
-            case Cyndaquil:
-                break;
-            case Totodile:
-                break;
-            case Treecko:
-                break;
-            case Torchic:
-                break;
-            case Mudkip:
-                break;
-            case Skitty:
-                break;
-            default:
-                subcolors.add(Enums.COLOR_GRAY);
-        }
+        subcolors.add(adventurer.cardColor);
+        subcolors.add(partner.cardColor);
         return subcolors;
     }
 
