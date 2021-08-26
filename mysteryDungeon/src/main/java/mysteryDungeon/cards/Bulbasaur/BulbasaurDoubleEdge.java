@@ -48,6 +48,7 @@ public class BulbasaurDoubleEdge extends mysteryDungeon.cards.PokemonCard {
 
     private static final int COST = 2;
     private static final int BASE_DAMAGE = 9;
+    private static final int UPGRADE_PLUS_DMG = 5;
     private static final int BASE_MAGIC_NUMBER = 4;
     private static final int SECOND_MAGIC_NUMBER = 1;
     
@@ -95,6 +96,7 @@ public class BulbasaurDoubleEdge extends mysteryDungeon.cards.PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            upgradeDamage(UPGRADE_PLUS_DMG);
             initializeDescription();
         }
     }
