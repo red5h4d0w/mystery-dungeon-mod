@@ -77,12 +77,17 @@ public class SquirtleDive extends PokemonCard {
         {
             p.discardPile.moveToExhaustPile(c);
         }
+        ArrayList<AbstractCard> handCardsToRemove = new ArrayList<AbstractCard>();
         for(AbstractCard c : p.hand.group)
         {
             if(c.type == CardType.STATUS)
             {
-                p.hand.moveToExhaustPile(c);
+                handCardsToRemove.add(c);
             }
+        }
+        for(AbstractCard c : handCardsToRemove)
+        {
+            p.hand.moveToExhaustPile(c);
         }
         for(int i=0;i<magicNumber;i++)
         {
