@@ -39,6 +39,7 @@ import org.apache.logging.log4j.Logger;
 import static mysteryDungeon.MysteryDungeon.*;
 import static mysteryDungeon.characters.Pokemon.Enums.COLOR_GRAY;
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Map;
@@ -295,10 +296,11 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
         if(adventurerAndPartner!=null)
         {
             try {
-                adventurer = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+((String[])adventurerAndPartner)[0]).newInstance();
-                partner = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+((String[])adventurerAndPartner)[1]).newInstance();
-            } catch (InstantiationException | IllegalAccessException | ClassNotFoundException e) {
-                // TODO Auto-generated catch block
+                adventurer = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+((String[])adventurerAndPartner)[0]).getConstructor().newInstance();
+                partner = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+((String[])adventurerAndPartner)[1]).getConstructor().newInstance();
+            } catch (InstantiationException | IllegalAccessException | IllegalArgumentException
+                    | InvocationTargetException | NoSuchMethodException | SecurityException
+                    | ClassNotFoundException e) {
                 e.printStackTrace();
             }
         } 
