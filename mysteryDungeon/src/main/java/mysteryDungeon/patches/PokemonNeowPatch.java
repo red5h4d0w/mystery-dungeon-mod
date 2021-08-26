@@ -2,9 +2,11 @@ package mysteryDungeon.patches;
 
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
@@ -27,6 +29,7 @@ import org.apache.logging.log4j.Logger;
 import mysteryDungeon.cards.fakeCards.ExplorersDeck;
 import mysteryDungeon.cards.fakeCards.PartnersDeck;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.pokemons.*;
 import mysteryDungeon.util.LocalizationTool;
 
 public class PokemonNeowPatch {
@@ -47,9 +50,9 @@ public class PokemonNeowPatch {
     
     public static Question lastQuestion;
 
-    public static String chosenPokemon;
+    public static AbstractPokemon chosenPokemon;
 
-    public static String[] possiblePartners;
+    public static ArrayList<AbstractPokemon> possiblePartners;
 
     public static boolean alienInvasion = false;
 
@@ -281,9 +284,9 @@ public class PokemonNeowPatch {
                         DeterminePokemon(buttonPressed);
                         //TODO: remove/change when more pokémon are implemented
                         convertPokemonToImplementedPokemon(); 
-                        ((Pokemon)AbstractDungeon.player).setAdventurer(chosenPokemon);
+                        ((Pokemon)AbstractDungeon.player).adventurer = chosenPokemon;
                         possiblePartners = partnerChoices();
-                        AskQuestion(__instance, new Question(chosenPokemon, possiblePartners, null));
+                        AskQuestion(__instance, new Question(chosenPokemon.name, possiblePartners.stream().map(p -> p.name).toArray(size-> new String[size]), null));
                         screenNum++;
                         return SpireReturn.Return(null);
                     }
@@ -305,121 +308,70 @@ public class PokemonNeowPatch {
                 // Neow's last word + Partner attribution
                 case 5:
                     if(!isTestRun)
-                        ((Pokemon)AbstractDungeon.player).setPartner(possiblePartners[buttonPressed]);
+                        ((Pokemon)AbstractDungeon.player).partner = possiblePartners.get(buttonPressed);
                     if(isTestRun)
                     {
-                        ((Pokemon)AbstractDungeon.player).setPartner(implementedPokemons[buttonPressed]);
+                        ((Pokemon)AbstractDungeon.player).partner = implementedPokemons.get(buttonPressed);
                     }
-                    AskQuestion(__instance, new Question("I see, now brave the challenge of the tower", new String[]{"[Leave]"}));
-                    screenNum++;
+                    //AskQuestion(__instance, new Question("I see, now brave the challenge of the tower", new String[]{"[Leave]"}));
+                    //screenNum++;
                     CardCrawlGame.dungeon.initializeCardPools();
                     AbstractDungeon.player.masterDeck.removeCard(ExplorersDeck.ID);
                     AbstractDungeon.player.masterDeck.removeCard(PartnersDeck.ID);
-                    ((Pokemon)AbstractDungeon.player).AwardStartingRelic();
-                    return SpireReturn.Return(null);
+                    ((Pokemon)AbstractDungeon.player).awardThingsToAward();
+                    screenNum = 99;
+                    return SpireReturn.Continue();
                 case 6:
                     break;
                 // Test run choose option
                 case 10:
-                    AskQuestion(__instance, new Question("Choose your adventurer", implementedPokemons));
+                    AskQuestion(__instance, new Question("Choose your adventurer", implementedPokemons.stream().map(p -> p.name).toArray(size-> new String[size])));
                     screenNum++;
                     return SpireReturn.Return(null);
                 case 11:
-                    ((Pokemon)AbstractDungeon.player).setAdventurer(implementedPokemons[buttonPressed]);
-                    ((Pokemon)AbstractDungeon.player).DefineNature(NatureOfPokemon.get(implementedPokemons[buttonPressed])[AbstractDungeon.eventRng.random(1)]);
-                    AskQuestion(__instance, new Question("Choose your partner", implementedPokemons));
+                    ((Pokemon)AbstractDungeon.player).adventurer = implementedPokemons.get(buttonPressed);
+                    ((Pokemon)AbstractDungeon.player).DefineNature(NatureOfPokemon.get(implementedPokemons.get(buttonPressed).name)[AbstractDungeon.eventRng.random(1)]);
+                    AskQuestion(__instance, new Question("Choose your partner", implementedPokemons.stream().map(p -> p.name).toArray(size-> new String[size])));
                     screenNum=5;
                     return SpireReturn.Return(null);
+                case 99:
+                    return SpireReturn.Continue();
                     
             }
-            (AbstractDungeon.getCurrRoom()).phase = AbstractRoom.RoomPhase.COMPLETE;
-            AbstractDungeon.dungeonMapScreen.open(false);
+            // (AbstractDungeon.getCurrRoom()).phase = AbstractRoom.RoomPhase.COMPLETE;
+            // AbstractDungeon.dungeonMapScreen.open(false);
             PokemonNeowPatch.screenNum = 99;
             return SpireReturn.Return(null);
         }
     }
 
-    public static String[] partnerChoices()
+    public static ArrayList<AbstractPokemon> partnerChoices()
     {
-        ArrayList<String> partners = new ArrayList<String>()
+        ArrayList<AbstractPokemon> partners = new ArrayList<AbstractPokemon>()
         {{
-            add("Bulbasaur");
-            add("Charmander");
-            add("Squirtle");
-            add("Pikachu");
+            add(new Bulbasaur());
+            add(new Charmander());
+            add(new Squirtle());
+            add(new Pikachu());
             //TODO: uncomment next lines when those pokémons while be added
-            //add("Chikorita");
-            //add("Cyndaquil");
-            //add("Totodile");
-            //add("Treecko");
-            //add("Torchic");
-            //add("Mudkip");
+            //add(new Chikorita());
+            //add(new Cyndaquil());
+            //add(new Totodile());
+            //add(new Treecko());
+            //add(new Torchic());
+            //add(new Mudkip());
         }};
-        switch(chosenPokemon)
-        {
-            case "Bulbasaur":
-                partners.remove("Bulbasaur");
-                partners.remove("Chikorita");
-                partners.remove("Treecko");
-                break;
-            case "Chikorita":
-                partners.remove("Bulbasaur");
-                partners.remove("Chikorita");
-                partners.remove("Treecko");
-                break;
-            case "Treecko":
-                partners.remove("Bulbasaur");
-                partners.remove("Chikorita");
-                partners.remove("Treecko");
-                break;
-            case "Charmander":
-                partners.remove("Charmander");
-                partners.remove("Cyndaquil");
-                partners.remove("Torchic");
-                break;
-            case "Cyndaquil":
-                partners.remove("Charmander");
-                partners.remove("Cyndaquil");
-                partners.remove("Torchic");
-                break;
-            case "Torchic":
-                partners.remove("Charmander");
-                partners.remove("Cyndaquil");
-                partners.remove("Torchic");
-                break;
-            case "Squirtle":
-                partners.remove("Squirtle");
-                partners.remove("Totodile");
-                partners.remove("Mudkip");
-                break;
-            case "Psyduck" :
-                partners.remove("Squirtle");
-                partners.remove("Totodile");
-                partners.remove("Mudkip");
-                break;
-            case "Totodile":
-                partners.remove("Squirtle");
-                partners.remove("Totodile");
-                partners.remove("Mudkip");
-                break;
-            case "Mudkip":
-                partners.remove("Squirtle");
-                partners.remove("Totodile");
-                partners.remove("Mudkip");
-                break;
-            case "Pikachu":
-                partners.remove("Pikachu");
-        }
-        for (int i=partners.size(); i>1; i--)
-            Collections.swap(partners, i-1, AbstractDungeon.eventRng.random(i-1));
-        ArrayList<String> selectablePartners = new ArrayList<String>();
-        selectablePartners.add(partners.get(0));
-        for(String partner : partners)
+        ArrayList<AbstractPokemon> availablePartners = partners.stream().filter(p->p.color!=chosenPokemon.color).collect(Collectors.toCollection(ArrayList::new));
+        for (int i=availablePartners.size(); i>1; i--)
+            Collections.swap(availablePartners, i-1, AbstractDungeon.eventRng.random(i-1));
+        ArrayList<AbstractPokemon> selectablePartners = new ArrayList<AbstractPokemon>();
+        selectablePartners.add(availablePartners.get(0));
+        for(AbstractPokemon partner : availablePartners)
         {
             boolean toAdd = false;
-            for(String sPartner : selectablePartners)
+            for(AbstractPokemon sPartner : selectablePartners)
             {
-                if(Pokemon.adventurersColor(partner) != Pokemon.adventurersColor(sPartner))
+                if(partner.color != sPartner.color)
                 {
                     toAdd = true;
                 }
@@ -434,65 +386,64 @@ public class PokemonNeowPatch {
                 selectablePartners.add(partner);
             }
         }
-        return selectablePartners.toArray(new String[selectablePartners.size()]);
+        return selectablePartners;
     }
 
 
     public static void convertPokemonToImplementedPokemon()
     {
-        Color pokemonsType = Pokemon.adventurersColor(chosenPokemon);
-        if(pokemonsType == Pokemon.adventurersColor("Bulbasaur"))
+        if(chosenPokemon.color == Color.GREEN)
         {
-            chosenPokemon = "Bulbasaur";
+            chosenPokemon = new Bulbasaur();
         }
-        else if(pokemonsType == Pokemon.adventurersColor("Charmander"))
+        else if(chosenPokemon.color == Color.RED)
         {
-            chosenPokemon = "Charmander";
+            chosenPokemon = new Charmander();
         }
-        else if(pokemonsType == Pokemon.adventurersColor("Squirtle"))
+        else if(chosenPokemon.color == Color.BLUE)
         {
-            chosenPokemon = "Squirtle";
+            chosenPokemon = new Squirtle();
         }
         else
         {
-            chosenPokemon = "Pikachu";
+            chosenPokemon = new Pikachu();
         }
     }
 
     // Tables for pokémon choices
 
-    public static Map<String,String> malePokemonChoices = new HashMap<String,String>()
+    public static Map<String, AbstractPokemon> malePokemonChoices = new HashMap<String, AbstractPokemon>()
     {{
-        put("Docile", "Bulbasaur");
-        put("Hardy", "Charmander");
-        put("Jolly", "Squirtle");
-        put("Impish", "Pikachu");
-        put("Quirky", "Meowth");
-        put("Relaxed", "Psyduck");
-        put("Brave", "Machop");
-        put("Lonely", "Cubone");
-        put("Timid", "Cyndaquil");
-        put("Naive", "Totodile");
-        put("Sassy", "Treecko");
-        put("Hasty", "Torchic");
-        put("Calm", "Mudkip");
+        put("Docile", new Bulbasaur());
+        put("Hardy", new Charmander());
+        put("Jolly", new Squirtle());
+        put("Impish", new Pikachu());
+        put("Quirky", new Meowth());
+        put("Relaxed", new Psyduck());
+        put("Brave", new Machop());
+        put("Lonely", new Cubone());
+        put("Timid", new Cyndaquil());
+        put("Naive", new Totodile());
+        put("Sassy", new Treecko());
+        put("Hasty", new Torchic());
+        put("Calm", new Mudkip());
     }};
 
-    public static Map<String,String> femalePokemonChoices = new HashMap<String,String>()
+    public static Map<String, AbstractPokemon> femalePokemonChoices = new HashMap<String, AbstractPokemon>()
     {{
-        put("Calm", "Bulbasaur");
-        put("Brave", "Charmander");
-        put("Relaxed", "Squirtle");
-        put("Hardy", "Pikachu");
-        put("Lonely", "Psyduck");
-        put("Impish", "Cubone");
-        put("Naive", "Eevee");
-        put("Docile", "Chikorita");
-        put("Jolly", "Totodile");
-        put("Quirky", "Treecko");
-        put("Sassy", "Torchic");
-        put("Timid", "Mudkip");
-        put("Hasty", "Skitty");
+        put("Calm", new Bulbasaur());
+        put("Brave", new Charmander());
+        put("Relaxed", new Squirtle());
+        put("Hardy", new Pikachu());
+        put("Lonely", new Psyduck());
+        put("Impish", new Cubone());
+        put("Naive", new Eevee());
+        put("Docile", new Chikorita());
+        put("Jolly", new Totodile());
+        put("Quirky", new Treecko());
+        put("Sassy", new Torchic());
+        put("Timid", new Mudkip());
+        put("Hasty", new Skitty());
     }};
 
     public static Map<String,String[]> NatureOfPokemon = new HashMap<String,String[]>()
@@ -502,7 +453,7 @@ public class PokemonNeowPatch {
         put("Squirtle", new String[]{"Jolly", "Relaxed"});
     }};
 
-    public static String[] implementedPokemons = new String[]{"Bulbasaur", "Charmander", "Squirtle"};
+    public static ArrayList<AbstractPokemon> implementedPokemons = new ArrayList<AbstractPokemon>(Arrays.asList(new Bulbasaur(), new Charmander(), new Squirtle()));
 
     // Data structure to which the .json is fed
     public static class Question{
