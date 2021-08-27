@@ -261,7 +261,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
 
     public void awardMaxHp(AbstractPokemon pokemon)
     {
-        maxHealth+=pokemon.maxHp;
+        maxHealth+=pokemon.maxHp-(AbstractDungeon.ascensionLevel>=14?7:0);
         heal(maxHealth);
     }
 
@@ -359,7 +359,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
     // Ascension 14 or higher. (ironclad loses 5, defect and silent lose 4 hp respectively)
     @Override
     public int getAscensionMaxHPLoss() {
-        return 6;
+        return 0;
     }
 
     // Should return the card color enum to be associated with your character.

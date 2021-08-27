@@ -219,7 +219,6 @@ public class PokemonNeowPatch {
         @SuppressWarnings("all")
         public static SpireReturn AdvanceAccordingToChoice(NeowEvent __instance, int buttonPressed)
         {
-            logger.info(screenNum);
             if(!(AbstractDungeon.player instanceof Pokemon))
             {
                 return SpireReturn.Continue();
