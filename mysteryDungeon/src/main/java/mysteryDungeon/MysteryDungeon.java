@@ -370,7 +370,7 @@ public class MysteryDungeon implements
         
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
 
-        BaseMod.addSaveField("adventurer", (CustomSavable<String[]>)new Pokemon("the Pokémon", Pokemon.Enums.THE_POKEMON));
+        BaseMod.addSaveField("adventurerAndPartner", (CustomSavable<String[]>)new Pokemon("the Pokémon", Pokemon.Enums.THE_POKEMON));
 
         
         // =============== EVENTS =================
