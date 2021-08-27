@@ -246,6 +246,8 @@ public class PokemonNeowPatch {
                             isTestRun = true;
                             break;
                         case 2:
+                            screenNum=10;
+                            isTestRun=true;
                             break;
                     }
                     logger.info(isTestRun);

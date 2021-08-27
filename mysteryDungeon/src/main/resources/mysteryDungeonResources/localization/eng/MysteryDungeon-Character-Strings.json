@@ -10,6 +10,26 @@
             "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~basic~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
         ]
     },
+    "Bulbasaur": {
+        "NAMES": [
+            "Bulbasaur"
+        ]
+    },
+    "Charmander": {
+        "NAMES": [
+            "Charmander"
+        ]
+    },
+    "Squirtle": {
+        "NAMES": [
+            "Squirtle"
+        ]
+    },
+    "Pikachu": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
     "Neow": {
         "TEXT": [
             "This is the portal that leads to the world of Pokémon",

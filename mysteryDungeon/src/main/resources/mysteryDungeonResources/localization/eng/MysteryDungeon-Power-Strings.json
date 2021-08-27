@@ -158,7 +158,7 @@
     "mysteryDungeon:TorrentPower": {
         "NAME": "Torrent",
         "DESCRIPTIONS": [
-            "When you shuffle your deck, gain #b%s #yStrength."
+            "When you shuffle your deck, gain #b%s #yTemporary #yStrength."
         ]
     },
     "mysteryDungeon:ToxicPower": {

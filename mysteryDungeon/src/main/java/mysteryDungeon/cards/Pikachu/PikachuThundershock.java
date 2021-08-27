@@ -2,7 +2,7 @@ package mysteryDungeon.cards.Pikachu;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -19,17 +19,11 @@ import mysteryDungeon.stances.PositivelyChargedStance;
 
 public class PikachuThundershock extends PokemonCard {
 
-    /*
-     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
-     *
-     * Special Strike: Deal 7 (*) damage times the energy you currently have.
-     */
-
     // TEXT DECLARATION
 
     public static final String ID = MysteryDungeon.makeID(PikachuThundershock.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("BulbasaurAttack.png");
+    public static final String IMG = makeCardPath("PikachuAttack.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
@@ -41,7 +35,7 @@ public class PikachuThundershock extends PokemonCard {
     private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
-    public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
+    public static final CardColor COLOR = Pokemon.Enums.PIKACHU_YELLOW;
 
     private static final int COST = 1;
     private static final int DAMAGE = 6;
@@ -61,12 +55,11 @@ public class PikachuThundershock extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SMASH));
         if(p.stance instanceof PositivelyChargedStance) {
             for(int i=0;i<magicNumber;i++) {
                 addToBot(new ChannelAction(new Lightning()));
             }
-            
         }
             
     }

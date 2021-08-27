@@ -12,6 +12,8 @@ import mysteryDungeon.pokemons.Pikachu;
 import mysteryDungeon.relics.*;
 
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Pixmap;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
@@ -202,6 +204,18 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
 
     // =============== /CHARACTER CLASS END/ =================
 
+    // Construct campfire poses
+    public Texture CampfirePose() {
+        Texture campfirePose = new Texture(1920, 1136, Pixmap.Format.RGBA4444);
+        if(hasChosenStarters())
+        {
+            campfirePose.draw(partner.backSprite, 0, 1136-500);
+            campfirePose.draw(adventurer.backSprite, partner.backSprite.getWidth(), 1136-500);
+        }
+        return campfirePose;
+    }
+
+
     // Starting description and loadout
     @Override
     public CharSelectInfo getLoadout() {
@@ -227,6 +241,12 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
 		
 		return tmpPool;
 	}
+
+    public boolean hasChosenStarters() {
+        if(partner==null||adventurer==null)
+            return false;
+        return true;
+    }
 
     // Starting Deck
     @Override
@@ -257,6 +277,13 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
             masterDeck.addToTop(card);
         }
     }
+
+    public void AwardStartingRelic()
+    {
+        this.loseRelic(NatureRelatedRelic.ID);
+        AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2, natureRelatedRelic());
+    }
+
     public void awardThingsToAward()
     {
         awardMaxHp(adventurer);
@@ -267,6 +294,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
         awardStartingDecks(partner);
         AwardStartingRelic();
         startingMaxHP = maxHealth;
+        shoulderImg = CampfirePose();
+        shoulder2Img = CampfirePose();
     }
 
     // Starting Relics	
@@ -285,7 +314,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
     @Override
     public String[] onSave()
     {
-        if(adventurer==null||partner==null)
+        if(!hasChosenStarters())
             return null;
         return new String[]{adventurer.name, partner.name};
     }
@@ -504,11 +533,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
         }
     }
 
-    public void AwardStartingRelic()
-    {
-        this.loseRelic(NatureRelatedRelic.ID);
-        AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2, natureRelatedRelic());
-    }
 
 
 }

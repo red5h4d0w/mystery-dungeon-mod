@@ -333,6 +333,18 @@
     "DESCRIPTION": "Apply X Weak. NL Apply 3X mysterydungeon:Burn. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. NL Exhaust."
   },
+  "mysteryDungeon:PikachuDefend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "mysteryDungeon:PikachuTackle": {
+    "NAME": "Tackle",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "mysteryDungeon:PikachuThundershock": {
+    "NAME": "Thundershock",
+    "DESCRIPTION": "Deal !D! damage. NL If you are in mysterydungeon:Positively_Charged_Stance, Channel !M! Lightning orbs."
+  },
   "mysteryDungeon:SquirtleAquaRing": {
     "NAME": "Aqua Ring",
     "DESCRIPTION": "Retain. NL This turn, for each card you scry or discard, gain !M! Block. NL If the card you scried or discarded was a Status, deal !M! damage. Exhaust."

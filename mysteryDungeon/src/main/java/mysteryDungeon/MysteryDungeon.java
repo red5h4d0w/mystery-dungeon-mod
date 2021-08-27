@@ -6,6 +6,7 @@ import basemod.eventUtil.AddEventParams;
 import basemod.interfaces.*;
 import mysteryDungeon.cards.Bulbasaur.*;
 import mysteryDungeon.cards.Charmander.CharmanderScratch;
+import mysteryDungeon.cards.Pikachu.PikachuTackle;
 import mysteryDungeon.cards.Squirtle.SquirtleTackle;
 import mysteryDungeon.cards.Status.StatusFreeze;
 import mysteryDungeon.cards.fakeCards.ExplorersDeck;
@@ -148,6 +149,10 @@ public class MysteryDungeon implements
         return getModID() + "Resources/images/cards/" + resourcePath;
     }
     
+    public static String makeBackSpritePath(String resourcePath) {
+        return getModID() + "Resources/images/backSprites/" + resourcePath;
+    }
+
     public static String makeRelicPath(String resourcePath) {
         return getModID() + "Resources/images/relics/" + resourcePath;
     }
@@ -209,31 +214,37 @@ public class MysteryDungeon implements
         
         logger.info("Done subscribing");
         
-        logger.info("Creating the color " + Pokemon.Enums.COLOR_GRAY.toString());
+        logger.info("Creating colors...");
         
         BaseMod.addColor(Pokemon.Enums.COLOR_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
-                DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
-                ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
-                ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
-                ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
+            DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
+            ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
+            ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
+            ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
     
         BaseMod.addColor(Pokemon.Enums.BULBASAUR_GREEN, Color.GREEN, Color.GREEN, Color.GREEN,
-        Color.GREEN, Color.GREEN, Color.GREEN, Color.GREEN,
-        ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
-        ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
-        ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
+            Color.GREEN, Color.GREEN, Color.GREEN, Color.GREEN,
+            ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
+            ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
+            ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
 
         BaseMod.addColor(Pokemon.Enums.CHARMANDER_RED, Color.RED, Color.RED, Color.RED,
-        Color.RED, Color.RED, Color.RED, Color.RED,
-        ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
-        ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
-        ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
+            Color.RED, Color.RED, Color.RED, Color.RED,
+            ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
+            ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
+            ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
 
         BaseMod.addColor(Pokemon.Enums.SQUIRTLE_BLUE, Color.BLUE, Color.BLUE, Color.BLUE,
-        Color.BLUE, Color.BLUE, Color.BLUE, Color.BLUE,
-        ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
-        ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
-        ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
+            Color.BLUE, Color.BLUE, Color.BLUE, Color.BLUE,
+            ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
+            ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
+            ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
+        
+        BaseMod.addColor(Pokemon.Enums.PIKACHU_YELLOW, Color.YELLOW, Color.YELLOW, Color.YELLOW,
+            Color.YELLOW, Color.YELLOW, Color.YELLOW, Color.YELLOW,
+            ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
+            ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
+            ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
         
         logger.info("Done creating the colors");
         
@@ -476,6 +487,10 @@ public class MysteryDungeon implements
             .packageFilter(SquirtleTackle.class)
             .setDefaultSeen(true)
             .cards();
+            new AutoAdd("MysteryDungeon")
+            .packageFilter(PikachuTackle.class)
+            .setDefaultSeen(true)
+            .cards();
         new AutoAdd("MysteryDungeon")
             .packageFilter(ColorlessAgility.class)
             .setDefaultSeen(true)
@@ -530,6 +545,9 @@ public class MysteryDungeon implements
         
         // UIStrings
         BaseMod.loadCustomStringsFile(UIStrings.class, localizationPath + "ui.json");
+
+        // StancesStrings
+        BaseMod.loadCustomStringsFile(StanceStrings.class, localizationPath + "MysteryDungeon-Stance-Strings.json");
 
         logger.info("Done editing strings");
     }
