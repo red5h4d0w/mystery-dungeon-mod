@@ -46,6 +46,7 @@ public class BulbasaurSunnyDay extends CustomCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = 1;
         magicNumber = baseMagicNumber;
+        isEthereal = true;
     }
 
     // Actions the card should do.
@@ -63,7 +64,7 @@ public class BulbasaurSunnyDay extends CustomCard {
             upgradeName();
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
-            isInnate = true;
+            isEthereal = false;
         }
     }
 }

@@ -34,7 +34,7 @@ public class SquirtleRainDance extends PokemonCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
-    private static final int COST = 1;
+    private static final int COST = 2;
     private static final int BASE_MAGIC_NUMBER = 1;
 
 
