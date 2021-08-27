@@ -73,7 +73,7 @@
     },
     "mysteryDungeon:HeatCrashPower": {
         "NAME": "Heat Crash",
-        "DESCRIPTIONS": ["When this enemy dies, ALL enemies receive damage equal to #b%.1f #yBurn Stacks. NL Currently it would deal #b%s damage to ALL enemies."]
+        "DESCRIPTIONS": ["When this enemy dies, ALL enemies receive damage equal to #b%d times its #yBurn Stacks. NL Currently it would deal #b%s damage to ALL enemies."]
     },
     "mysteryDungeon:LeechSeedPower": {
         "NAME": "Leech Seed",

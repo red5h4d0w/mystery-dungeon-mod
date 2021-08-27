@@ -64,6 +64,8 @@ public class BurnPower extends MysteryDungeonPower implements CloneablePowerInte
         if(amount<=0)
         {
             addToBot(new RemoveSpecificPowerAction(owner, owner, this));
+        } else {
+            updateDescription();
         }
     }
 
@@ -75,5 +77,12 @@ public class BurnPower extends MysteryDungeonPower implements CloneablePowerInte
     @Override
     public void updateDescription() {
         description = String.format(DESCRIPTIONS[0], MathUtils.floor(amount/5.0f));
+        if(owner!=null) 
+        {
+            if(owner.hasPower(HeatCrashPower.POWER_ID))
+            {
+                owner.getPower(HeatCrashPower.POWER_ID).updateDescription();
+            }
+        }
     }
 }
