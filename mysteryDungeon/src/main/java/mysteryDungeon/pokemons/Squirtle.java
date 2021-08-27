@@ -14,7 +14,7 @@ import mysteryDungeon.characters.Pokemon;
 
 public class Squirtle extends AbstractPokemon {
     public static String NAME = "Squirtle";
-    public static int MAX_HP = 32;
+    public static int MAX_HP = 35;
     public static int ORB_SLOTS = 0;
     public static AbstractCard[] STARTING_DECK = new AbstractCard[]{new SquirtleTackle(), new SquirtleTackle(), new SquirtleDefend(), new SquirtleDefend(), new SquirtleWaterGun()};
     public static Color COLOR = Color.BLUE;

@@ -14,7 +14,7 @@ import mysteryDungeon.characters.Pokemon;
 public class Bulbasaur extends AbstractPokemon {
 
     public static String NAME = "Bulbasaur";
-    public static int MAX_HP = 35;
+    public static int MAX_HP = 40;
     public static int ORB_SLOTS = 1;
     public static AbstractCard[] STARTING_DECK = new AbstractCard[]{new BulbasaurTackle(), new BulbasaurTackle(), new BulbasaurDefend(), new BulbasaurDefend(), new BulbasaurLeechSeed()};
     public static Color COLOR = Color.GREEN;
