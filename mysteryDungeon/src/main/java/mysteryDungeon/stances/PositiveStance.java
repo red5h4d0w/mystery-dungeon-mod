@@ -13,13 +13,13 @@ import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 import mysteryDungeon.MysteryDungeon;
 
 
-public class PositivelyChargedStance extends PokemonStance {
-    public static final String STANCE_ID = MysteryDungeon.makeID(PositivelyChargedStance.class.getSimpleName());
+public class PositiveStance extends PokemonStance {
+    public static final String STANCE_ID = MysteryDungeon.makeID(PositiveStance.class.getSimpleName());
     
     private static final StanceStrings stanceString = CardCrawlGame.languagePack.getStanceString(STANCE_ID);
   
   
-    public PositivelyChargedStance() {
+    public PositiveStance() {
         ID = STANCE_ID;
         name = stanceString.NAME;
         updateDescription();

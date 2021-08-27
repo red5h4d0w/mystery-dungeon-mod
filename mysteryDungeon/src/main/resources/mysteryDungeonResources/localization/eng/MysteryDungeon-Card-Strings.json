@@ -343,7 +343,7 @@
   },
   "mysteryDungeon:PikachuThundershock": {
     "NAME": "Thundershock",
-    "DESCRIPTION": "Deal !D! damage. NL If you are in mysterydungeon:Positively_Charged_Stance, Channel !M! Lightning orbs."
+    "DESCRIPTION": "Deal !D! damage. NL If you are in mysterydungeon:Positive_Stance, Channel !M! Lightning orbs."
   },
   "mysteryDungeon:SquirtleAquaRing": {
     "NAME": "Aqua Ring",

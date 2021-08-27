@@ -62,11 +62,11 @@
     "DESCRIPTION": "Every time you get attacked, attacker receives Poison."
   },
   {
-    "PROPER_NAME": "Positively Charged Stance",
+    "PROPER_NAME": "Positive Stance",
     "NAMES": [
-        "Positively Charged Stance",
-        "Positively_Charged_Stance",
-        "positively_charged_stance"
+        "Positive Stance",
+        "Positive_Stance",
+        "positive_stance"
     ],
     "DESCRIPTION": "When you enter this stance, gain [E]. NL When you play an attack, channel 1 lightning orb. NL Exit this stance at the end of the turn and draw 1 more card on your next turn."
   },

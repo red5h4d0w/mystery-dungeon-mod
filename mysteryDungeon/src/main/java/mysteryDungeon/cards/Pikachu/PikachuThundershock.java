@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.orbs.Lightning;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.stances.PositivelyChargedStance;
+import mysteryDungeon.stances.PositiveStance;
 
 public class PikachuThundershock extends PokemonCard {
 
@@ -56,7 +56,7 @@ public class PikachuThundershock extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SMASH));
-        if(p.stance instanceof PositivelyChargedStance) {
+        if(p.stance instanceof PositiveStance) {
             for(int i=0;i<magicNumber;i++) {
                 addToBot(new ChannelAction(new Lightning()));
             }

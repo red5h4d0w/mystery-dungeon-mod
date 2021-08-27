@@ -1,12 +1,12 @@
 {
-    "mysteryDungeon:NegativelyChargedStance": {
-        "NAME": "Positively Charged Stance",
+    "mysteryDungeon:NegativeStance": {
+        "NAME": "Negative Stance",
         "DESCRIPTION": [
             "When you enter this stance, gain [E]. NL When you play a skill, gain 1 temporary focus. NL Gain 7 Block and exit this stance at the end of the turn."
         ]
     },
-    "mysteryDungeon:PositivelyChargedStance": {
-        "NAME": "Positively Charged Stance",
+    "mysteryDungeon:PositiveStance": {
+        "NAME": "Positive Stance",
         "DESCRIPTION": [
             "When you enter this stance, gain [E]. NL When you play an attack, channel 1 lightning orb. NL Exit this stance at the end of the turn and draw 1 more card on your next turn."
         ]
