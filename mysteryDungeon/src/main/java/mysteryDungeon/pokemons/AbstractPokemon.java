@@ -16,7 +16,7 @@ public abstract class AbstractPokemon {
         this.color = color;
         this.cardColor = cardColor;
         this.pathToBackSprite = pathToBackSprite;
-        this.backSprite = new Pixmap(Gdx.files.internal(pathToBackSprite));
+        generateBackSprite();
     }
     public String name;
     public int maxHp;
@@ -26,4 +26,11 @@ public abstract class AbstractPokemon {
     public CardColor cardColor;
     public String pathToBackSprite;
     public Pixmap backSprite;
+    public boolean hasEvolved = false;
+
+    public void generateBackSprite() {
+        this.backSprite = new Pixmap(Gdx.files.internal(pathToBackSprite));
+    }
+
+    public void evolve() { }
 }

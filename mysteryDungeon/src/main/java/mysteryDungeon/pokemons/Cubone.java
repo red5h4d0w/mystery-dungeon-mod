@@ -18,7 +18,7 @@ public class Cubone extends AbstractPokemon {
     public static AbstractCard[] STARTING_DECK = new AbstractCard[]{new BulbasaurTackle(), new BulbasaurTackle(), new BulbasaurDefend(), new BulbasaurDefend(), new BulbasaurLeechSeed()};
     public static Color COLOR = Color.GREEN;
     public static CardColor CARD_COLOR = Pokemon.Enums.BULBASAUR_GREEN;
-    public static String PATH_TO_BACK_SPRITE = makeBackSpritePath(Bulbasaur.class.getSimpleName()+".png");
+    public static String PATH_TO_BACK_SPRITE = makeBackSpritePath(Cubone.class.getSimpleName()+".png");
 
     public Cubone(){
         super(NAME, MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR, PATH_TO_BACK_SPRITE);

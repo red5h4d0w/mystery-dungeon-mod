@@ -21,8 +21,15 @@ public class Pikachu extends AbstractPokemon {
     public static Color COLOR = Color.YELLOW;
     public static CardColor CARD_COLOR = Pokemon.Enums.PIKACHU_YELLOW;
     public static String PATH_TO_BACK_SPRITE = makeBackSpritePath(Pikachu.class.getSimpleName()+".png");
+    public static String PATH_TO_SECOND_BACK_SPRITE = makeBackSpritePath("Raichu.png");
     
     public Pikachu(){
         super(NAME, MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR, PATH_TO_BACK_SPRITE);
+    }
+
+    @Override
+    public void evolve() {
+        pathToBackSprite = PATH_TO_SECOND_BACK_SPRITE;
+        generateBackSprite();
     }
 }

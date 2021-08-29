@@ -298,6 +298,17 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
         shoulder2Img = CampfirePose();
     }
 
+    public void evolvePokemons() 
+    {
+        if(hasChosenStarters())
+        {
+            partner.evolve();
+            adventurer.evolve();
+            shoulderImg = CampfirePose();
+            shoulder2Img = CampfirePose();
+        }
+    }
+
     // Starting Relics	
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();

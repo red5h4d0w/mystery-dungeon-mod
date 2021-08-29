@@ -20,8 +20,22 @@ public class Charmander extends AbstractPokemon {
     public static Color COLOR = Color.RED;
     public static CardColor CARD_COLOR = Pokemon.Enums.CHARMANDER_RED;
     public static String PATH_TO_BACK_SPRITE = makeBackSpritePath(Charmander.class.getSimpleName()+".png");
+    public static String PATH_TO_SECOND_BACK_SPRITE = makeBackSpritePath("Charmeleon.png");
+    public static String PATH_TO_THIRD_BACK_SPRITE = makeBackSpritePath("Charizard.png");
 
     public Charmander(){
         super(NAME, MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR, PATH_TO_BACK_SPRITE);
+    }
+
+    @Override
+    public void evolve() {
+        if(hasEvolved) {
+            pathToBackSprite = PATH_TO_THIRD_BACK_SPRITE;
+        }
+        else {
+            pathToBackSprite = PATH_TO_SECOND_BACK_SPRITE;
+            hasEvolved = true;
+        }
+        generateBackSprite();
     }
 }

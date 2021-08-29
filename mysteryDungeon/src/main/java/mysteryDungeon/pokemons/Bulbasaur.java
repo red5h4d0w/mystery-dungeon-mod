@@ -20,8 +20,22 @@ public class Bulbasaur extends AbstractPokemon {
     public static Color COLOR = Color.GREEN;
     public static CardColor CARD_COLOR = Pokemon.Enums.BULBASAUR_GREEN;
     public static String PATH_TO_BACK_SPRITE = makeBackSpritePath(Bulbasaur.class.getSimpleName()+".png");
+    public static String PATH_TO_SECOND_BACK_SPRITE = makeBackSpritePath("Ivysaur.png");
+    public static String PATH_TO_THIRD_BACK_SPRITE = makeBackSpritePath("Venusaur.png");
 
     public Bulbasaur(){
         super(NAME, MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR, PATH_TO_BACK_SPRITE);
+    }
+
+    @Override
+    public void evolve() {
+        if(hasEvolved) {
+            pathToBackSprite = PATH_TO_THIRD_BACK_SPRITE;
+        }
+        else {
+            pathToBackSprite = PATH_TO_SECOND_BACK_SPRITE;
+            hasEvolved = true;
+        }
+        generateBackSprite();
     }
 }
