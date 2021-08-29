@@ -63,6 +63,8 @@ public class BellyDrumPower extends MysteryDungeonPower implements CloneablePowe
 
     public boolean isCardFreeToPlay(AbstractCard card)
     {
+        if(AbstractDungeon.getCurrRoom().isBattleOver)
+            return false;
         if(AbstractDungeon.actionManager.cardsPlayedThisTurn.size()<amount)
         {
             return true;
