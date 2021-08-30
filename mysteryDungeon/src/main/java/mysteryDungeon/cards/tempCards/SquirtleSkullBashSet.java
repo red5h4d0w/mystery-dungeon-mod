@@ -41,13 +41,14 @@ public class SquirtleSkullBashSet extends PokemonCard {
     public SquirtleSkullBashSet() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         exhaust = true;
+        isEthereal = true;
         cardsToPreview = new SquirtleSkullBashGo();
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new MakeTempCardInDrawPileAction(new SquirtleSkullBashGo(), 1, false, false, false));
+        addToBot(new MakeTempCardInDrawPileAction(new SquirtleSkullBashGo(), 1, true, false, false));
     }
 
     // Upgraded stats.
@@ -55,7 +56,7 @@ public class SquirtleSkullBashSet extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            exhaust = false;
+            isEthereal = false;
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

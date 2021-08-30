@@ -42,14 +42,13 @@ public class SquirtleSkullBashReady extends PokemonCard {
 
     public SquirtleSkullBashReady() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        exhaust = true;
         cardsToPreview = new SquirtleSkullBashSet();
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new MakeTempCardInDrawPileAction(new SquirtleSkullBashSet(), 1, false, false, false));
+        addToBot(new MakeTempCardInDrawPileAction(new SquirtleSkullBashSet(), 1, true, false, false));
     }
 
     // Upgraded stats.

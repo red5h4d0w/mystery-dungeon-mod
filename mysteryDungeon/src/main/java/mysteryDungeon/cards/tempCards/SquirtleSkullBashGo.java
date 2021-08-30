@@ -37,7 +37,7 @@ public class SquirtleSkullBashGo extends PokemonCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = CardColor.COLORLESS;
 
-    private static final int COST = 2;
+    private static final int COST = 3;
     private static final int BASE_DAMAGE = 50;
 
 
@@ -45,7 +45,6 @@ public class SquirtleSkullBashGo extends PokemonCard {
 
     public SquirtleSkullBashGo() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        selfRetain = true;
         isMultiDamage = true;
         baseDamage = BASE_DAMAGE;
         exhaust = true;

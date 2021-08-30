@@ -447,13 +447,13 @@
   },
   "mysteryDungeon:SquirtleSkullBashReady": {
     "NAME": "Skull Bash: Ready",
-    "DESCRIPTION": "Add a *Skull *Bash: *Set on top of your draw pile. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Add a *Skull *Bash: *Set on top of your draw pile. NL Exhaust."
+    "DESCRIPTION": "Add a *Skull *Bash: *Set in your draw pile.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Add a *Skull *Bash: *Set in draw pile."
   },
   "mysteryDungeon:SquirtleSkullBashSet": {
     "NAME": "Skull Bash: Set",
-    "DESCRIPTION": "Add a *Skull *Bash: *Go! at the bottom of your draw pile. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Add a *Skull *Bash: *Go! at the bottom of your draw pile."
+    "DESCRIPTION": "Ethereal. NL Add a *Skull *Bash: *Go! in your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add a *Skull *Bash: *Go! in your draw pile. NL Exhasut."
   },
   "mysteryDungeon:SquirtleProtect": {
     "NAME": "Protect",

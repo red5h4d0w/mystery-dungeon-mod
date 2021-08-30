@@ -38,11 +38,9 @@ public class SquirtleAquaTail extends PokemonCard {
     private static final int COST = 1;
     private static final int DAMAGE = 5;
     private static final int UPGRADE_PLUS_DMG = 3;
-    private static final int BASE_MAGIC_NUMBER = 2;
-    private static final int UPGRADE_BASE_MAGIC_NUMBER = 1;
-    private static final int SECOND_MAGIC_NUMBER = 2;
-    private static final int THIRD_MAGIC_NUMBER = 2;
-    private static final int UPGRADE_THIRD_MAGIC_NNUMBER = -1;
+    private static final int BASE_MAGIC_NUMBER = 1;
+    private static final int SECOND_MAGIC_NUMBER = 1;
+    private static final int THIRD_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
@@ -73,8 +71,6 @@ public class SquirtleAquaTail extends PokemonCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
-            upgradeMagicNumber(UPGRADE_BASE_MAGIC_NUMBER);
-            upgradeThirdMagicNumber(UPGRADE_THIRD_MAGIC_NNUMBER);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
