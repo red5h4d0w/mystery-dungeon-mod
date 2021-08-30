@@ -2,7 +2,8 @@ package mysteryDungeon.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.interfaces.onDiscardInterface;
+import mysteryDungeon.interfaces.onCardScriedInterface;
+import mysteryDungeon.interfaces.onManualDiscardInterface;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
@@ -10,9 +11,7 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -24,7 +23,7 @@ import org.apache.logging.log4j.Logger;
 
 //Gain 1 dex for the turn for each card played.
 
-public class RainDishPower extends MysteryDungeonPower implements CloneablePowerInterface, onDiscardInterface {
+public class RainDishPower extends MysteryDungeonPower implements CloneablePowerInterface, onCardScriedInterface, onManualDiscardInterface {
     public AbstractCreature source;
 
     public Logger logger = LogManager.getLogger(RainDishPower.class);
@@ -57,24 +56,17 @@ public class RainDishPower extends MysteryDungeonPower implements CloneablePower
         updateDescription();
     }
 
+
+    
+
     @Override
-    public void onDiscard() {
-        logger.info(cardWasPlayed);
-        if(!cardWasPlayed)
-        {
-            logger.info("block!");
-            addToBot(new GainBlockAction(owner, owner, amount));
-        }
-        else
-        {
-            cardWasPlayed = false;
-        }
+    public void onCardScried(AbstractCard c) {
+        addToBot(new GainBlockAction(owner, owner, amount));
     }
+
     @Override
-    public void onAfterUseCard (AbstractCard card, UseCardAction action)
-    {
-        if(!card.purgeOnUse && !(card.type == CardType.POWER) && !action.exhaustCard && !action.reboundCard && !action.returnToHand && !card.shuffleBackIntoDrawPile)
-            cardWasPlayed = true;
+    public void onManualDiscard(AbstractCard c) {
+        addToBot(new GainBlockAction(owner, owner, amount));
     }
 
     @Override

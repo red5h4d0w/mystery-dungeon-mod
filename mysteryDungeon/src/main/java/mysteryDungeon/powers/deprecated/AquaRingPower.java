@@ -1,9 +1,10 @@
-package mysteryDungeon.powers;
+package mysteryDungeon.powers.deprecated;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.interfaces.onCardScriedInterface;
 import mysteryDungeon.interfaces.onManualDiscardInterface;
+import mysteryDungeon.powers.MysteryDungeonPower;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;

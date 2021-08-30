@@ -71,7 +71,7 @@ public class CharmanderDragonPulse extends PokemonCard {
 
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        this.cantUseMessage = cardStrings.EXTENDED_DESCRIPTION[0];
+        cantUseMessage = cardStrings.EXTENDED_DESCRIPTION[0];
         return false;
     }
 
