@@ -448,7 +448,7 @@
   "mysteryDungeon:SquirtleSkullBashReady": {
     "NAME": "Skull Bash: Ready",
     "DESCRIPTION": "Add a *Skull *Bash: *Set in your draw pile.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Add a *Skull *Bash: *Set in draw pile."
+    "UPGRADE_DESCRIPTION": "Innate. NL Add a *Skull *Bash: *Set in your draw pile."
   },
   "mysteryDungeon:SquirtleSkullBashSet": {
     "NAME": "Skull Bash: Set",
