@@ -2,8 +2,9 @@ package mysteryDungeon.cards.Squirtle;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -34,8 +35,8 @@ public class SquirtleDoubleTeam extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
     private static final int COST = 0;
-    private static final int BLOCK = 6;
-    private static final int UPGRADE_PLUS_BLOCK = 2;
+    private static final int BLOCK = 5;
+    private static final int UPGRADE_PLUS_BLOCK = 3;
 
 
     // /STAT DECLARATION/
@@ -43,13 +44,16 @@ public class SquirtleDoubleTeam extends PokemonCard {
     public SquirtleDoubleTeam() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseBlock = BLOCK;
+        exhaust = true;
     }
 
     // Actions the card should do.
     @Override
+    public void triggerWhenDrawn() {
+        addToTop((AbstractGameAction)new MakeTempCardInHandAction(makeStatEquivalentCopy()));
+      }
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
-        addToBot(new MakeTempCardInDiscardAction(makeStatEquivalentCopy(), 1));
     }
 
     // Upgraded stats.

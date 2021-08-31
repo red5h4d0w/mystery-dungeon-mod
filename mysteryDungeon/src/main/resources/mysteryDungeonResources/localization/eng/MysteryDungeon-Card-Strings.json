@@ -377,7 +377,7 @@
   },
   "mysteryDungeon:SquirtleDoubleTeam": {
     "NAME": "Double Team",
-    "DESCRIPTION": "Gain !B! block. Add a copy of this card in your discard pile."
+    "DESCRIPTION": "Gain !B! block. When drawn add a copy of this card in your hand. NL Exhaust."
   },
   "mysteryDungeon:SquirtleEndure": {
     "NAME": "Endure",
