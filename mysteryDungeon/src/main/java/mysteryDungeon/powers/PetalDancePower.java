@@ -57,7 +57,7 @@ public class PetalDancePower extends MysteryDungeonPower implements CloneablePow
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         addToBot(new VFXAction(new PetalEffect(), 0.7f));
-        addToBot(new DamageAllEnemiesAction((AbstractPlayer)owner, 7, DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+        addToBot(new DamageAllEnemiesAction((AbstractPlayer)owner, 7, DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         addToBot(new ReducePowerAction(owner, owner, this, 1));
     }
 
