@@ -516,6 +516,11 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
         }
     }
 
+    @Override
+    public void applyStartOfCombatLogic() {
+        super.applyStartOfCombatLogic();
+        pikaMeter.setCounterPosition(0);
+    }
 
     public void DefineNature(String natureAsAString)
     {
