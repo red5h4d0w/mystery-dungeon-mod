@@ -292,14 +292,12 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
         }
     }
 
-    public void AwardStartingRelic()
-    {
+    public void AwardStartingRelic() {
         this.loseRelic(NatureRelatedRelic.ID);
         AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2, natureRelatedRelic());
     }
 
-    public void awardThingsToAward()
-    {
+    public void awardThingsToAward() {
         awardMaxHp(adventurer);
         awardOrbSlots(adventurer);
         awardStartingDecks(adventurer);
@@ -313,14 +311,22 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
         shoulder2Img = CampfirePose();
     }
 
-    public void evolvePokemons() 
-    {
+    public void evolvePokemons() {
         if(hasChosenStarters())
         {
             partner.evolve();
             adventurer.evolve();
             shoulderImg = CampfirePose();
             shoulder2Img = CampfirePose();
+        }
+    }
+
+    public void tryToEvolvePokemons() {
+        if(AbstractDungeon.actNum>=2 && !partner.hasEvolved && !adventurer.hasEvolved) {
+            evolvePokemons();
+        }
+        if(AbstractDungeon.actNum>=3) {
+            evolvePokemons();
         }
     }
 
@@ -353,6 +359,12 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
             try {
                 adventurer = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+((String[])adventurerAndPartner)[0]).getConstructor().newInstance();
                 partner = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+((String[])adventurerAndPartner)[1]).getConstructor().newInstance();
+                if(AbstractDungeon.actNum>=2) {
+                    evolvePokemons();
+                }
+                if(AbstractDungeon.actNum>=3) {
+                    evolvePokemons();
+                }
             } catch (InstantiationException | IllegalAccessException | IllegalArgumentException
                     | InvocationTargetException | NoSuchMethodException | SecurityException
                     | ClassNotFoundException e) {
