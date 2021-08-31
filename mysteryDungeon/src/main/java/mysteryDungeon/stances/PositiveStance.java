@@ -1,14 +1,12 @@
 package mysteryDungeon.stances;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.StanceStrings;
 import com.megacrit.cardcrawl.orbs.Lightning;
-import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 
 import mysteryDungeon.MysteryDungeon;
 
@@ -37,13 +35,8 @@ public class PositiveStance extends PokemonStance {
     }
   
     @Override
-    public void onEnterStance() { 
-        addToBot(new GainEnergyAction(1));
-    }
-  
-    @Override
     public void onExitStance() {
-        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DrawCardNextTurnPower(AbstractDungeon.player, 1), 1));
+        addToBot(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, 7));
     }
 
 }
