@@ -36,54 +36,54 @@
         "DESCRIPTION": "Any card with Claw in its name counts as a claw."
     },
     {
-    "PROPER_NAME": "Evasiveness Drop",
-    "NAMES": [
-        "Evasiveness Drop",
-        "Evasiveness_Drop",
-        "evasiveness_drop"
-    ],
-    "DESCRIPTION": "At the end of the round, enemy loses #b25% of their Block."
-  },
-  {
-    "PROPER_NAME": "Leech Seed",
-    "NAMES": [
-        "Leech Seed",
-        "leech_seed"
-    ],
-    "DESCRIPTION": "At the start of the turn for each Leech Seed, the enemy loses 1 HP, and you gain #b HP."
-  },
-  {
-    "PROPER_NAME": "Poison Thorns",
-    "NAMES": [
-        "Poison Thorns",
-        "Poison_Thorns",
-        "poison_thorns"
-    ],
-    "DESCRIPTION": "Every time you get attacked, attacker receives Poison."
-  },
-  {
-    "PROPER_NAME": "Positive Stance",
-    "NAMES": [
-        "Positive Stance",
-        "Positive_Stance",
-        "positive_stance"
-    ],
-    "DESCRIPTION": "When you enter this stance, gain [E]. NL When you play an attack, channel 1 lightning orb. NL Exit this stance at the end of the turn and draw 1 more card on your next turn."
-  },
-  {
-    "PROPER_NAME": "Rest",
-    "NAMES": [
-        "Rest",
-        "rest"
-    ],
-    "DESCRIPTION": "You cannot play cards that target the enemy."
-  },
-  {
-    "PROPER_NAME": "Toxic",
-    "NAMES": [
-        "Toxic",
-        "toxic"
-    ],
-    "DESCRIPTION": "Poison on enemies affected by Toxic go up by the amount of stack instead of going down."
-  }
+        "PROPER_NAME": "Evasiveness Drop",
+        "NAMES": [
+            "Evasiveness Drop",
+            "Evasiveness_Drop",
+            "evasiveness_drop"
+        ],
+        "DESCRIPTION": "At the end of the round, enemy loses #b25% of their Block."
+    },
+    {
+        "PROPER_NAME": "Leech Seed",
+        "NAMES": [
+            "Leech Seed",
+            "leech_seed"
+        ],
+        "DESCRIPTION": "At the start of the turn for each Leech Seed, the enemy loses 1 HP, and you gain #b HP."
+    },
+    {
+        "PROPER_NAME": "Poison Thorns",
+        "NAMES": [
+            "Poison Thorns",
+            "Poison_Thorns",
+            "poison_thorns"
+        ],
+        "DESCRIPTION": "Every time you get attacked, attacker receives Poison."
+    },
+    {
+        "PROPER_NAME": "Positive Stance",
+        "NAMES": [
+            "Positive Stance",
+            "Positive_Stance",
+            "positive_stance"
+        ],
+        "DESCRIPTION": "When you enter this stance, gain [E]. NL When you play an attack, channel 1 lightning orb. NL Exit this stance at the end of the turn and draw 1 more card on your next turn."
+    },
+    {
+        "PROPER_NAME": "Rest",
+        "NAMES": [
+            "Rest",
+            "rest"
+        ],
+        "DESCRIPTION": "You cannot play cards that target the enemy."
+    },
+    {
+        "PROPER_NAME": "Toxic",
+        "NAMES": [
+            "Toxic",
+            "toxic"
+        ],
+        "DESCRIPTION": "Poison on enemies affected by Toxic go up by the amount of stack instead of going down."
+    }
 ]
