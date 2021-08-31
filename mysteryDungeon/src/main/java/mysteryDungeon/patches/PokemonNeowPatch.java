@@ -453,7 +453,7 @@ public class PokemonNeowPatch {
         put("Squirtle", new String[]{"Jolly", "Relaxed"});
     }};
 
-    public static ArrayList<AbstractPokemon> implementedPokemons = new ArrayList<AbstractPokemon>(Arrays.asList(new Bulbasaur(), new Charmander(), new Squirtle()));
+    public static ArrayList<AbstractPokemon> implementedPokemons = new ArrayList<AbstractPokemon>(Arrays.asList(new Bulbasaur(), new Charmander(), new Squirtle(), new Pikachu()));
 
     // Data structure to which the .json is fed
     public static class Question{
