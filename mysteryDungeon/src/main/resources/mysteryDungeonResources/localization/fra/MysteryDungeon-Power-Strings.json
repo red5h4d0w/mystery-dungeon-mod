@@ -52,20 +52,22 @@
     },
     "mysteryDungeon:EndurePower": {
         "NAME": "Endure",
-        "DESCRIPTIONS": [
-            "When you would die, heal #b%s%% of your max HP and lose all turn-based buffs and debuffs."]
+        "DESCRIPTIONS": [ "When you would die, heal #b%s%% of your max HP and lose all turn-based buffs and debuffs."
+        ]
     },
     "mysteryDungeon:EvasivenessDropPower": {
         "NAME": "Evasiveness Drop",
         "DESCRIPTIONS": [
             "Ennemy loses #b25%% of their Block at the end of the round.",
-            "Ennemy loses #b25%% of their Block at the end of the round for #b%s turns."]
+            "Ennemy loses #b25%% of their Block at the end of the round for #b%s turns."
+        ]
     },
     "mysteryDungeon:FrustrationPower": {
         "NAME": "Frustration",
         "DESCRIPTIONS": [
             "At the end of your turn chose 1 card to #yretain. NL This card becomes #yethereal.",
-            "At the end of your turn chose #b%s card to #yretain. NL Those cards become #yethereal."]
+            "At the end of your turn chose #b%s card to #yretain. NL Those cards become #yethereal."
+        ]
     },
     "mysteryDungeon:HailPower": {
         "NAME": "Hail",
@@ -110,7 +112,8 @@
         "NAME": "Petal Dance",
         "DESCRIPTIONS": [
             "At the end of the turn, deal 7 damage to ALL enemies. NL (this counts as an attack).",
-            "For #b%s turns, at the end of the turn, deal 7 damage to ALL enemies. NL (this counts as an attack)."]
+            "For #b%s turns, at the end of the turn, deal 7 damage to ALL enemies. NL (this counts as an attack)."
+        ]
     },
     "mysteryDungeon:PoisonThornsPower": {
         "NAME": "Poison Thorns",
