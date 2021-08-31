@@ -10,6 +10,9 @@ import mysteryDungeon.cards.fakeCards.PartnersDeck;
 import mysteryDungeon.pokemons.AbstractPokemon;
 import mysteryDungeon.pokemons.Pikachu;
 import mysteryDungeon.relics.*;
+import mysteryDungeon.stances.NegativeStance;
+import mysteryDungeon.stances.PositiveStance;
+import mysteryDungeon.ui.PikachuMeter;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Pixmap;
@@ -22,7 +25,9 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.google.gson.reflect.TypeToken;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.watcher.ChangeStanceAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
@@ -32,8 +37,10 @@ import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
+import com.megacrit.cardcrawl.stances.NeutralStance;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -111,6 +118,9 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
     public static final int CARD_DRAW = 5;
     public static final int ORB_SLOTS = 0;
     public static Nature nature;
+    public static int pikachuChargeCounter = 0;
+
+    public static PikachuMeter pikaMeter = new PikachuMeter();
 
     // =============== /BASE STATS/ =================
 
@@ -467,6 +477,28 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
     public String getVampireText() {
         return TEXT[2];
     }
+
+    @Override
+    public void useCard(AbstractCard c, AbstractMonster m, int energyOnUse) {
+        super.useCard(c, m, energyOnUse);
+        if(needsStanceInfoWindow()) {
+            if(c.type == CardType.ATTACK)
+                pikachuChargeCounter+=(pikachuChargeCounter==2?0:1);
+            if(c.type == CardType.SKILL)
+                pikachuChargeCounter-=(pikachuChargeCounter==-2?0:1);
+            pikaMeter.setCounterPosition(pikachuChargeCounter);
+            if(pikachuChargeCounter==2) {
+                AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(PositiveStance.STANCE_ID));
+            }
+            if(pikachuChargeCounter==-2) {
+                AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(NegativeStance.STANCE_ID));
+            }
+            if(pikachuChargeCounter==0) {
+                AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(NeutralStance.STANCE_ID));
+            }
+        }
+    }
+
 
     public void DefineNature(String natureAsAString)
     {
