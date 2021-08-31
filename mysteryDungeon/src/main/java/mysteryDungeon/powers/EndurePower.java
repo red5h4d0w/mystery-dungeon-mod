@@ -7,19 +7,15 @@ import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
@@ -52,16 +48,26 @@ public class EndurePower extends MysteryDungeonPower implements CloneablePowerIn
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
+    }
 
-        public void updateDescription() {
-            this.description = powerStrings.DESCRIPTIONS[0] + this.amount + powerStrings.DESCRIPTIONS[1];
-          }
-          public void onCardDraw(AbstractCard card) {
-            if (card.type == AbstractCard.CardType.STATUS || card.type == AbstractCard.CardType.CURSE) {
-              flash();
-              addToBot((AbstractGameAction)new DamageRandomEnemyAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_DIAGONAL, true));
-            } 
-          }
-        }
+    
+    public void onCardDraw(AbstractCard card) {
+        if (card.type == AbstractCard.CardType.STATUS || card.type == AbstractCard.CardType.CURSE) {
+            flash();
+            addToBot(new DamageRandomEnemyAction(new DamageInfo(owner, amount, DamageType.THORNS), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        } 
+    }
+
+    @Override
+    public AbstractPower makeCopy() {
+        return new EndurePower(owner, amount);
+    }
+
+    @Override
+    public void updateDescription() {
+        description = String.format(DESCRIPTIONS[0], amount);
+    }
+}
+    
         
     
