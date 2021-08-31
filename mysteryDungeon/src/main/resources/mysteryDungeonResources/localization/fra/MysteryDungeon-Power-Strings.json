@@ -1,0 +1,193 @@
+{
+    "mysteryDungeon:AsleepPower": {
+        "NAME": "Asleep",
+        "DESCRIPTIONS": [
+            "This monster won't act this turn, unless it receives damage. When it will wake up, it will go back to the intent it had before falling asleep.",
+            "This monster won't act for #b%s turns, unless it receives damage. When it will wake up, it will go back to the intent it had before falling asleep."
+        ]
+    },
+    "mysteryDungeon:AquaRingPower": {
+        "NAME": "Aqua Ring",
+        "DESCRIPTIONS": [
+            "This turn, for each card you scry or discard, gain #b%s block. NL If the card was a Status card, deal #b%s damage to all enemies."
+        ]
+    },
+    "mysteryDungeon:BellyDrumPower": {
+        "NAME": "Belly Drum",
+        "DESCRIPTIONS": [
+            "The first card you play each turn cost 0, but exhaust.",
+            "The first %s cards you play each turn cost 0, but exhaust."
+        ]
+    },
+    "mysteryDungeon:BidePower": {
+        "NAME": "Bide",
+        "DESCRIPTIONS": [
+            "When you get attacked, Gain #b%s Temporary Strength."
+        ]
+    },
+    "mysteryDungeon:BlazePower": {
+        "NAME": "Blaze",
+        "DESCRIPTIONS": [
+            "The first time you have no Energy left each turn, gain [E].",
+            "The first #b%s times you have no Energy left each turn, gain [E]."
+        ]
+    },
+    "mysteryDungeon:BurnPower": {
+        "NAME": "Burn",
+        "DESCRIPTIONS": ["For every 5 stacks of Burn, this creature deals 1 less damage. NL Currently deals #b%s less damage."]
+    },
+    "mysteryDungeon:CounterPower": {
+        "NAME": "Counter",
+        "DESCRIPTIONS": [
+            "When you lose all Block and receive attack damage, deal #b%s damage to the attacker.",
+            "When you lose all Block and receive attack damage, deal #b%s damage to the attacker."
+        ]
+    },
+    "mysteryDungeon:DroughtPower": {
+        "NAME": "Drought",
+        "DESCRIPTIONS": [
+            "When you apply #yBurn apply #b%s more.",
+            "When you apply #yBurn apply #b%s more."
+        ]
+    },
+    "mysteryDungeon:EndurePower": {
+        "NAME": "Endure",
+        "DESCRIPTIONS": [
+            "When you would die, heal #b%s%% of your max HP and lose all turn-based buffs and debuffs."]
+    },
+    "mysteryDungeon:EvasivenessDropPower": {
+        "NAME": "Evasiveness Drop",
+        "DESCRIPTIONS": [
+            "Ennemy loses #b25%% of their Block at the end of the round.",
+            "Ennemy loses #b25%% of their Block at the end of the round for #b%s turns."]
+    },
+    "mysteryDungeon:FrustrationPower": {
+        "NAME": "Frustration",
+        "DESCRIPTIONS": [
+            "At the end of your turn chose 1 card to #yretain. NL This card becomes #yethereal.",
+            "At the end of your turn chose #b%s card to #yretain. NL Those cards become #yethereal."]
+    },
+    "mysteryDungeon:HailPower": {
+        "NAME": "Hail",
+        "DESCRIPTIONS": ["Whenever you draw a card deal #b%s damage to all enemies"]
+    },
+    "mysteryDungeon:HeatCrashPower": {
+        "NAME": "Heat Crash",
+        "DESCRIPTIONS": ["When this enemy dies, ALL enemies receive damage equal to #b%d times its #yBurn Stacks. NL Currently it would deal #b%s damage to ALL enemies."]
+    },
+    "mysteryDungeon:LeechSeedPower": {
+        "NAME": "Leech Seed",
+        "DESCRIPTIONS": ["At the start of the turn, this monster loses #b%s HP, and you gain #b%s HP."]
+    },
+    "mysteryDungeon:NextTurnDrawLessPower": {
+        "NAME": "Next Turn Draw Less Cards",
+        "DESCRIPTIONS": [
+            "Next Turn, Draw 1 less card.", 
+            "Next Turn, Draw #b%s less cards."
+        ]
+    },
+    "mysteryDungeon:NextTurnNoBlockPower": {
+        "NAME": "Next Turn: No Block",
+        "DESCRIPTIONS": [
+            "Next turn, you cannot gain Block",
+            "During the next #b%s turns, you cannot gain Block."
+        ]
+    },
+    "mysteryDungeon:NoHealPower": {
+        "NAME": "No Heal",
+        "DESCRIPTIONS": [
+            "You cannot heal this turn.",
+            "You cannot heal for #b%s turns."
+        ]
+    },
+    "mysteryDungeon:OutragePower": {
+        "NAME": "Outrage",
+        "DESCRIPTIONS": [
+            "When you exhaust a card, apply #b%s #yBurn to a random enemy."
+        ]
+    },
+    "mysteryDungeon:PetalDancePower": {
+        "NAME": "Petal Dance",
+        "DESCRIPTIONS": [
+            "At the end of the turn, deal 7 damage to ALL enemies. NL (this counts as an attack).",
+            "For #b%s turns, at the end of the turn, deal 7 damage to ALL enemies. NL (this counts as an attack)."]
+    },
+    "mysteryDungeon:PoisonThornsPower": {
+        "NAME": "Poison Thorns",
+        "DESCRIPTIONS": ["When Attacked, apply %s #yPoison to the attacker."]
+    },
+    "mysteryDungeon:RainDancePower": {
+        "NAME": "Rain Dance ",
+        "DESCRIPTIONS": [
+            "At the start of your turn, exhaust up to #b1 card and draw #b1 more card.",
+            "At the start of your turn, exhaust up to #b%s cards and draw #b%s more cards."
+        ]
+    },
+    "mysteryDungeon:RainDishPower": {
+        "NAME": "Rain Dish",
+        "DESCRIPTIONS": ["When a card enters your discard pile and wasn't played, gain %s Block."]
+    },
+    "mysteryDungeon:ReduceHighestCostAtStartOfTurnPower": {
+        "NAME": "Lower Cost of Highest Cost Card",
+        "DESCRIPTIONS": [
+            "The cost of your highest cost card is lowered by one after draw.",
+            "The cost of your %s highest cost cards is lowered by one after draw."
+        ]
+    },
+    "mysteryDungeon:RestPower": {
+        "NAME": "Rest",
+        "DESCRIPTIONS": [
+            "You cannot play cards targeting the enemy during this turn.",
+            "You cannot play cards targeting the enemy during this turn and the next.",
+            "You cannot play cards targeting the enemy during this turn and the next %s turns."
+        ]
+    },
+    "mysteryDungeon:SleepTalkPower": {
+        "NAME": "Sleep Talk",
+        "DESCRIPTIONS": [
+            "The first time you exhaust a card each turn, add a random card to your hand.", 
+            "The first %s times you exhaust a card each turn, add a random card to your hand."
+        ]
+    },
+    "mysteryDungeon:SolarPowerPower": {
+        "NAME": "Solar Power",
+        "DESCRIPTIONS": [
+            "At the start of your turn, if an enemy has #yBurn, gain #b%s #yStrength."
+        ]
+    },
+    "mysteryDungeon:TorrentPower": {
+        "NAME": "Torrent",
+        "DESCRIPTIONS": [
+            "When you shuffle your deck, gain #b%s #yTemporary #yStrength."
+        ]
+    },
+    "mysteryDungeon:ToxicPower": {
+        "NAME": "Toxic",
+        "DESCRIPTIONS": ["Instead of decreasing by one every turn, the Poison on this enemy will increase by #b%s every turn."]
+    },
+    "mysteryDungeon:WhirlpoolPower": {
+        "NAME": "Whirlpool",
+        "DESCRIPTIONS": [
+            "At the start of your turn, Draw 2 cards and Discard 2 cards.",
+            "For #b%s turns, at the start of your turn, Draw 2 cards and Discard 2 cards."
+        ]
+    },
+    "mysteryDungeon:WorkUpPower": {
+        "NAME": "Work Up",
+        "DESCRIPTIONS": ["When a card is created, gain #b%s #yTemporary #yStrength."]
+    },
+    "mysteryDungeon:WorrySeedPower": {
+        "NAME": "Worry Seed",
+        "DESCRIPTIONS": [
+            "At the end of this combat, your card rewards will have one more card choice.",
+            "At the end of this combat, your card rewards will have #b%s more card choices."
+        ]
+    },
+    "mysteryDungeon:YawnPower": {
+        "NAME": "Yawn",
+        "DESCRIPTIONS": [
+            "Enemy will fall #yAsleep for one turn right before they act.",
+            "Enemy will fall #yAsleep for #b%s turns right before they act."
+        ]
+    }
+}

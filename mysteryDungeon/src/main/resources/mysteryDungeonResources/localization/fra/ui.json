@@ -1,0 +1,11 @@
+{
+    "mysteryDungeon:EtherealMod": {
+        "TEXT": ["Ethereal. NL "]
+    },
+    "mysteryDungeon:ExhaustFromDeckAction": {
+        "TEXT": ["Choose a card to exhaust from your deck."]
+    },
+    "mysteryDungeon:RetainCardsButEtherealModAction": {
+        "TEXT": ["Retain (cards will become ethereal)"]
+    }
+}

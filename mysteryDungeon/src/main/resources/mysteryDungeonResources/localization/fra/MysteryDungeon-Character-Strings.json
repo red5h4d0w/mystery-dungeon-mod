@@ -1,0 +1,41 @@
+{
+    "mysteryDungeon:Pokemon": {
+        "NAMES": [
+            "The Pokémon",
+            "the Pokémon"
+        ],
+        "TEXT": [
+            "You have been reincarnated as a Pokémon. Without any recollection of your former self, NL you decide that you'll help an adventurer in reaching the top of the dungeon.",
+            "NL You have reached the top floor of the dungeon. You can now rest at the base before taking another mission with your new Pokémon friends",
+            "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~basic~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
+        ]
+    },
+    "Bulbasaur": {
+        "NAMES": [
+            "Bulbasaur"
+        ]
+    },
+    "Charmander": {
+        "NAMES": [
+            "Charmander"
+        ]
+    },
+    "Squirtle": {
+        "NAMES": [
+            "Squirtle"
+        ]
+    },
+    "Pikachu": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "Neow": {
+        "TEXT": [
+            "This is the portal that leads to the world of Pokémon",
+            "But before I can let you through, I have several questions for you.",
+            "I want you to answer them sincerely. NL Are you ready?",
+            "OK... NL Let the interview begin!"
+        ]
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "mysteryDungeon:DefaultClickableRelic": {
+        "NAME": "Right-Clicky Relic",
+        "FLAVOR": "The more you right-click it, the more orbs you've evoked in your lifetime.",
+        "DESCRIPTIONS": [
+            "[#2aecd7]Usable [#2aecd7]once [#2aecd7]per [#2aecd7]turn.[] NL #yEvoke your rightmost Orb.",
+            "YOU ARE MINE!"
+        ]
+    },
+    "mysteryDungeon:NatureRelatedRelic": {
+        "NAME": "Nature Related Relic",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "You will receive a relic that depends on your nature."
+        ]
+    },
+    "mysteryDungeon:BraveExplorerRelic": {
+        "NAME": "Brave Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "The first time you draw a status / would receive a debuff each combat, exhaust the status / nullify the debuff."
+        ]
+    },
+    "mysteryDungeon:CalmExplorerRelic": {
+        "NAME": "Calm Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "Draw 1 card and gain [E] at the start of every fight."
+        ]
+    },
+    "mysteryDungeon:DocileExplorerRelic": {
+        "NAME": "Docile Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "When you receive a debuff, gain 2 Block on the following turn."
+        ]
+    },
+    "mysteryDungeon:HardyExplorerRelic": {
+        "NAME": "Hardy Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "The first time you lose HP each turn, gain 5 Block. If this HP loss was from a monster's attack, gain 1 Blur"
+        ]
+    },
+    "mysteryDungeon:ImpishExplorerRelic": {
+        "NAME": "Impish Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "The first time you evoke your last orb each combat, gain a Focus."
+        ]
+    },
+    "mysteryDungeon:JollyExplorerRelic": {
+        "NAME": "Jolly Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "Start each combat with an #yAgility."
+        ]
+    },
+    "mysteryDungeon:QuirkyExplorerRelic": {
+        "NAME": "Quirky Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "Gain 5% more Gold in combat rewards."
+        ]
+    },
+    "mysteryDungeon:RelaxedExplorerRelic": {
+        "NAME": "Relaxed Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "The first time you play a Skill each combat, gain 10 Block."
+        ]
+    },
+    "mysteryDungeon:TimidExplorerRelic": {
+        "NAME": "Timid Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "At the end of each turn, Retain 1 card."
+        ]
+    }
+}
