@@ -25,7 +25,7 @@ with os.scandir(os.path.dirname(os.path.realpath(__file__))) as it:
                                 if not keyword["PROPER_NAME"] in map(lambda x:x["PROPER_NAME"], localizedJson):
                                     localizedJson.append(keyword)
                             with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), entry.name, "MysteryDungeon-Keyword-Strings.json"), "w") as jsonFile:
-                                json.dump(localizedJson, jsonFile, indent=4)
+                                json.dump(localizedJson, jsonFile, indent=4, ensure_ascii=False)
                         # Do not touch Questions.json
                         elif engJsonPath == "Questions.json":
                             pass
@@ -40,7 +40,7 @@ with os.scandir(os.path.dirname(os.path.realpath(__file__))) as it:
                                 if not key in localizedJson.keys():
                                     localizedJson[key] = value
                             with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), entry.name, engJsonPath), "w") as jsonFile:
-                                json.dump(localizedJson, jsonFile, indent=4)
+                                json.dump(localizedJson, jsonFile, indent=4, ensure_ascii=False)
 
                     # Copy file if file does not exist
                     else:
