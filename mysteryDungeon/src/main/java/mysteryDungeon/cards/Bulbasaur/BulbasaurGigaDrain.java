@@ -2,8 +2,6 @@ package mysteryDungeon.cards.Bulbasaur;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import basemod.abstracts.CustomCard;
-
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.unique.VampireDamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -13,9 +11,10 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 
-public class BulbasaurGigaDrain extends CustomCard {
+public class BulbasaurGigaDrain extends PokemonCard {
 
     
 

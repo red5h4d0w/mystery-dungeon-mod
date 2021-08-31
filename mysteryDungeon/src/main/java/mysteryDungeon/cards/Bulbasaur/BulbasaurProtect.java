@@ -2,8 +2,6 @@ package mysteryDungeon.cards.Bulbasaur;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import basemod.abstracts.CustomCard;
-
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -12,16 +10,11 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.powers.NextTurnNoBlockPower;
 
-public class BulbasaurProtect extends CustomCard {
-
-    /*
-     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
-     *
-     * Special Strike: Deal 7 (*) damage times the energy you currently have.
-     */
+public class BulbasaurProtect extends PokemonCard {
 
     // TEXT DECLARATION
 

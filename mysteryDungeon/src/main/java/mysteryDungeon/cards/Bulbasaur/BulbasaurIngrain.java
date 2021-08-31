@@ -2,8 +2,6 @@ package mysteryDungeon.cards.Bulbasaur;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import basemod.abstracts.CustomCard;
-
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -13,10 +11,11 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.powers.LeechSeedPower;
 
-public class BulbasaurIngrain extends CustomCard {
+public class BulbasaurIngrain extends PokemonCard {
 
     // TEXT DECLARATION
 

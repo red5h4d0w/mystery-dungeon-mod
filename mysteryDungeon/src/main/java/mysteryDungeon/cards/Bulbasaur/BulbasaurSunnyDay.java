@@ -2,8 +2,6 @@ package mysteryDungeon.cards.Bulbasaur;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import basemod.abstracts.CustomCard;
-
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -13,10 +11,11 @@ import com.megacrit.cardcrawl.powers.DrawPower;
 
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.powers.ReduceHighestCostAtStartOfTurnPower;
 
-public class BulbasaurSunnyDay extends CustomCard {
+public class BulbasaurSunnyDay extends PokemonCard {
 
     // TEXT DECLARATION
 
@@ -38,7 +37,6 @@ public class BulbasaurSunnyDay extends CustomCard {
     public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
 
     private static final int COST = 2;
-
 
     // /STAT DECLARATION/
 

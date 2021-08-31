@@ -21,10 +21,11 @@ import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.VerticalImpactEffect;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 
 
-public class BulbasaurDoubleEdge extends mysteryDungeon.cards.PokemonCard {
+public class BulbasaurDoubleEdge extends PokemonCard {
 
     
 

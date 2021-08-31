@@ -4,8 +4,6 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import java.util.ArrayList;
 
-import basemod.abstracts.CustomCard;
-
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
@@ -18,11 +16,12 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 
-public class BulbasaurRazorLeaf extends CustomCard {
+public class BulbasaurRazorLeaf extends PokemonCard {
 
-    
+    // TEXT DECLARATION
 
     public static final String ID = MysteryDungeon.makeID(BulbasaurRazorLeaf.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);

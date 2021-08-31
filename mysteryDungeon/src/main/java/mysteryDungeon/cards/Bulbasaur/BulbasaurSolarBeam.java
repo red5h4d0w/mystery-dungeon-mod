@@ -2,8 +2,6 @@ package mysteryDungeon.cards.Bulbasaur;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import basemod.abstracts.CustomCard;
-
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -16,12 +14,13 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.MindblastEffect;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.powers.NextTurnDrawLessPower;
 
-public class BulbasaurSolarBeam extends CustomCard {
+public class BulbasaurSolarBeam extends PokemonCard {
 
-    
+    // TEXT DECLARATION
 
     public static final String ID = MysteryDungeon.makeID(BulbasaurSolarBeam.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -42,7 +41,6 @@ public class BulbasaurSolarBeam extends CustomCard {
     private static final int COST = 3;
     private static final int DAMAGE = 30;
     private static final int UPGRADE_DAMAGE = 10;
-
 
     // /STAT DECLARATION/
 

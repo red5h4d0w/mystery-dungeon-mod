@@ -2,8 +2,6 @@ package mysteryDungeon.cards.Bulbasaur;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import basemod.abstracts.CustomCard;
-
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -13,10 +11,12 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 
-public class BulbasaurSludgeBomb extends CustomCard {
+public class BulbasaurSludgeBomb extends PokemonCard {
 
+    // TEXT DECLARATION
 
     public static final String ID = MysteryDungeon.makeID(BulbasaurSludgeBomb.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -25,18 +25,21 @@ public class BulbasaurSludgeBomb extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
+    // /TEXT DECLARATION/
 
+
+    // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
+    
     private static final int BASE_MAGIC_NUMBER = 12;
     private static final int UPGRADE_MAGIC_NUMBER = 2;
-
     private static final int COST = 2;
 
-
+    // /STAT DECLARATION/
 
     public BulbasaurSludgeBomb() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);

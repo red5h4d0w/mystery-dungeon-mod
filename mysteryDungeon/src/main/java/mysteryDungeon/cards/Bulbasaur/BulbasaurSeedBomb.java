@@ -18,7 +18,7 @@ import mysteryDungeon.characters.Pokemon;
 
 public class BulbasaurSeedBomb extends CustomCard {
 
-    
+    // TEXT DECLARATION
 
     public static final String ID = MysteryDungeon.makeID(BulbasaurSeedBomb.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
