@@ -12,7 +12,11 @@ import java.util.ArrayList;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -49,52 +53,15 @@ public class EndurePower extends MysteryDungeonPower implements CloneablePowerIn
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
 
-        updateDescription();
-    }
-
-    @Override
-    public void onDying()
-    {
-        float healAmount = amount/100f*AbstractDungeon.player.maxHealth;
-        owner.currentHealth = 0;
-        if(healAmount<1)
-        {
-            healAmount = 1;
+        public void updateDescription() {
+            this.description = powerStrings.DESCRIPTIONS[0] + this.amount + powerStrings.DESCRIPTIONS[1];
+          }
+          public void onCardDraw(AbstractCard card) {
+            if (card.type == AbstractCard.CardType.STATUS || card.type == AbstractCard.CardType.CURSE) {
+              flash();
+              addToBot((AbstractGameAction)new DamageRandomEnemyAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_DIAGONAL, true));
+            } 
+          }
         }
-        owner.heal((int)healAmount, true);
-        addToBot(new RemoveSpecificPowerAction(owner, owner, this));
-        ArrayList<AbstractPower> powersToRemove = new ArrayList<AbstractPower>();
-        for(AbstractPower p : owner.powers)
-        {
-            try
-            {
-                Field f = AbstractPower.class.getDeclaredField("isTurnBased");
-                f.setAccessible(true);
-                if(f.getBoolean(p))
-                    powersToRemove.add(p);
-            } catch (NoSuchFieldException e) {}
-            catch (IllegalAccessException e) {}
-            
-        }
-        for(AbstractPower p : powersToRemove)
-        {
-            addToBot(new RemoveSpecificPowerAction(owner, owner, p));
-        }
-    }
-
-    @Override
-    public AbstractPower makeCopy() {
-        return new EndurePower(owner, amount);
-    }
-
-    @Override
-    public void stackPower(int stackAmount)
-    {
-        return;
-    }
-
-    @Override
-    public void updateDescription() {
-        description = String.format(DESCRIPTIONS[0], amount);
-    }
-}
+        
+    
