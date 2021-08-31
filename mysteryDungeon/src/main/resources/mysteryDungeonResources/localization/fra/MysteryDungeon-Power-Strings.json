@@ -34,7 +34,9 @@
     },
     "mysteryDungeon:BurnPower": {
         "NAME": "Burn",
-        "DESCRIPTIONS": ["For every 5 stacks of Burn, this creature deals 1 less damage. NL Currently deals #b%s less damage."]
+        "DESCRIPTIONS": [
+            "For every 5 stacks of Burn, this creature deals 1 less damage. NL Currently deals #b%s less damage."
+        ]
     },
     "mysteryDungeon:CounterPower": {
         "NAME": "Counter",
@@ -52,7 +54,8 @@
     },
     "mysteryDungeon:EndurePower": {
         "NAME": "Endure",
-        "DESCRIPTIONS": [ "When you would die, heal #b%s%% of your max HP and lose all turn-based buffs and debuffs."
+        "DESCRIPTIONS": [
+            "When you would die, heal #b%s%% of your max HP and lose all turn-based buffs and debuffs."
         ]
     },
     "mysteryDungeon:EvasivenessDropPower": {
@@ -71,20 +74,26 @@
     },
     "mysteryDungeon:HailPower": {
         "NAME": "Hail",
-        "DESCRIPTIONS": ["Whenever you draw a card deal #b%s damage to all enemies"]
+        "DESCRIPTIONS": [
+            "Whenever you draw a card deal #b%s damage to all enemies"
+        ]
     },
     "mysteryDungeon:HeatCrashPower": {
         "NAME": "Heat Crash",
-        "DESCRIPTIONS": ["When this enemy dies, ALL enemies receive damage equal to #b%d times its #yBurn Stacks. NL Currently it would deal #b%s damage to ALL enemies."]
+        "DESCRIPTIONS": [
+            "When this enemy dies, ALL enemies receive damage equal to #b%d times its #yBurn Stacks. NL Currently it would deal #b%s damage to ALL enemies."
+        ]
     },
     "mysteryDungeon:LeechSeedPower": {
         "NAME": "Leech Seed",
-        "DESCRIPTIONS": ["At the start of the turn, this monster loses #b%s HP, and you gain #b%s HP."]
+        "DESCRIPTIONS": [
+            "At the start of the turn, this monster loses #b%s HP, and you gain #b%s HP."
+        ]
     },
     "mysteryDungeon:NextTurnDrawLessPower": {
         "NAME": "Next Turn Draw Less Cards",
         "DESCRIPTIONS": [
-            "Next Turn, Draw 1 less card.", 
+            "Next Turn, Draw 1 less card.",
             "Next Turn, Draw #b%s less cards."
         ]
     },
@@ -117,7 +126,9 @@
     },
     "mysteryDungeon:PoisonThornsPower": {
         "NAME": "Poison Thorns",
-        "DESCRIPTIONS": ["When Attacked, apply %s #yPoison to the attacker."]
+        "DESCRIPTIONS": [
+            "When Attacked, apply %s #yPoison to the attacker."
+        ]
     },
     "mysteryDungeon:RainDancePower": {
         "NAME": "Rain Dance ",
@@ -128,7 +139,9 @@
     },
     "mysteryDungeon:RainDishPower": {
         "NAME": "Rain Dish",
-        "DESCRIPTIONS": ["When a card enters your discard pile and wasn't played, gain %s Block."]
+        "DESCRIPTIONS": [
+            "When a card enters your discard pile and wasn't played, gain %s Block."
+        ]
     },
     "mysteryDungeon:ReduceHighestCostAtStartOfTurnPower": {
         "NAME": "Lower Cost of Highest Cost Card",
@@ -148,7 +161,7 @@
     "mysteryDungeon:SleepTalkPower": {
         "NAME": "Sleep Talk",
         "DESCRIPTIONS": [
-            "The first time you exhaust a card each turn, add a random card to your hand.", 
+            "The first time you exhaust a card each turn, add a random card to your hand.",
             "The first %s times you exhaust a card each turn, add a random card to your hand."
         ]
     },
@@ -166,7 +179,9 @@
     },
     "mysteryDungeon:ToxicPower": {
         "NAME": "Toxic",
-        "DESCRIPTIONS": ["Instead of decreasing by one every turn, the Poison on this enemy will increase by #b%s every turn."]
+        "DESCRIPTIONS": [
+            "Instead of decreasing by one every turn, the Poison on this enemy will increase by #b%s every turn."
+        ]
     },
     "mysteryDungeon:WhirlpoolPower": {
         "NAME": "Whirlpool",
@@ -177,7 +192,9 @@
     },
     "mysteryDungeon:WorkUpPower": {
         "NAME": "Work Up",
-        "DESCRIPTIONS": ["When a card is created, gain #b%s #yTemporary #yStrength."]
+        "DESCRIPTIONS": [
+            "When a card is created, gain #b%s #yTemporary #yStrength."
+        ]
     },
     "mysteryDungeon:WorrySeedPower": {
         "NAME": "Worry Seed",

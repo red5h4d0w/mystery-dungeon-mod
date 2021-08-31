@@ -212,7 +212,9 @@
         "NAME": "Dragon Pulse",
         "DESCRIPTION": "Unplayable. NL When drawn: NL Add a random card from your exhaust pile on the top of draw pile.",
         "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn: NL Add a random card from your exhaust pile on the top of draw pile. NL Next Turn, Draw 1 more card.",
-        "EXTENDED_DESCRIPTION": ["I can't play this card."]
+        "EXTENDED_DESCRIPTION": [
+            "I can't play this card."
+        ]
     },
     "mysteryDungeon:CharmanderDragonRage": {
         "NAME": "Dragon Rage",
@@ -226,7 +228,9 @@
         "NAME": "Dragon Tail",
         "DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Place a copy of this card on top of your draw pile.",
         "UPGRADE_DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Draw !M! card. NL Place a copy of this card on top of your draw pile.",
-        "EXTENDED_DESCRIPTION": ["I can't play this card."]
+        "EXTENDED_DESCRIPTION": [
+            "I can't play this card."
+        ]
     },
     "mysteryDungeon:CharmanderDrought": {
         "NAME": "Drought",
@@ -392,7 +396,9 @@
         "NAME": "Flash Cannon",
         "DESCRIPTION": "Deal damage equal to the number of cards in your discard pile.",
         "UPGRADE_DESCRIPTION": "Deal damage equal to the number of cards in your discard pile + 3.",
-        "EXTENDED_DESCRIPTION":[" NL (Deals !D! damage.)"]
+        "EXTENDED_DESCRIPTION": [
+            " NL (Deals !D! damage.)"
+        ]
     },
     "mysteryDungeon:SquirtleFlinch": {
         "NAME": "Flinch",

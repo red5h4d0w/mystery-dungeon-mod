@@ -21,15 +21,28 @@ with os.scandir(os.path.dirname(os.path.realpath(__file__))) as it:
                             with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), entry.name, "MysteryDungeon-Keyword-Strings.json"), "r") as f:
                                 localizedJson = json.loads(f.read())
                                 originalLocalizedJson = localizedJson
-                            print(engJson[0])
                             for keyword in engJson:
                                 if not keyword["PROPER_NAME"] in map(lambda x:x["PROPER_NAME"], localizedJson):
                                     localizedJson.append(keyword)
                             with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), entry.name, "MysteryDungeon-Keyword-Strings.json"), "w") as jsonFile:
                                 json.dump(localizedJson, jsonFile, indent=4)
-                        #TODO create actual code that evens the files
+                        # Do not touch Questions.json
+                        elif engJsonPath == "Questions.json":
+                            pass
+                        # Touch every other file
+                        else:
+                            with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "eng", engJsonPath), "r") as f:
+                                engJson = json.loads(f.read())
+                            with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), entry.name, engJsonPath), "r") as f:
+                                localizedJson = json.loads(f.read())
+                                originalLocalizedJson = localizedJson
+                            for (key, value) in engJson.items():
+                                if not key in localizedJson.keys():
+                                    localizedJson[key] = value
+                            with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), entry.name, engJsonPath), "w") as jsonFile:
+                                json.dump(localizedJson, jsonFile, indent=4)
 
-                    # Copy file if not
+                    # Copy file if file does not exist
                     else:
                         print("creating file")
                         shutil.copyfile(os.path.join(os.path.dirname(os.path.realpath(__file__)), "eng", engJsonPath), os.path.join(os.path.dirname(os.path.realpath(__file__)), entry.name, engJsonPath))
