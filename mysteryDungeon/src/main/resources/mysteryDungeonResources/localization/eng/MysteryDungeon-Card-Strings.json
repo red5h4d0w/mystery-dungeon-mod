@@ -381,7 +381,7 @@
   },
   "mysteryDungeon:SquirtleEndure": {
     "NAME": "Endure",
-    "DESCRIPTION": "When you would die, heal !M! % of your max HP."
+    "DESCRIPTION": "When you draw a status, deal !M! damage to a random enemy."
   },
   "mysteryDungeon:SquirtleFakeOut": {
     "NAME": "Fake Out",
