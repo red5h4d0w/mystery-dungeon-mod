@@ -451,6 +451,7 @@ public class PokemonNeowPatch {
         put("Bulbasaur", new String[]{"Calm", "Docile"});
         put("Charmander", new String[]{"Hardy", "Brave"});
         put("Squirtle", new String[]{"Jolly", "Relaxed"});
+        put("Pikachu", new String[]{"Impish", "Hardy"});
     }};
 
     public static ArrayList<AbstractPokemon> implementedPokemons = new ArrayList<AbstractPokemon>(Arrays.asList(new Bulbasaur(), new Charmander(), new Squirtle(), new Pikachu()));
