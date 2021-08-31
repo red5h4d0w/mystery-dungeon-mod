@@ -2,9 +2,11 @@ package mysteryDungeon.cards.Squirtle;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DiscardSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
@@ -14,6 +16,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.PokemonCard;
+import mysteryDungeon.cards.Status.StatusFreeze;
 import mysteryDungeon.characters.Pokemon;
 
 public class SquirtleGyroBall extends PokemonCard {
@@ -40,7 +43,7 @@ public class SquirtleGyroBall extends PokemonCard {
     private static final int COST = 1;
     private static final int DAMAGE = 6;
     private static final int UPGRADE_PLUS_DMG = 3;
-    private static final int BASE_MAGIC_NUMBER = 2;
+    private static final int BASE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
@@ -50,11 +53,13 @@ public class SquirtleGyroBall extends PokemonCard {
         baseDamage = DAMAGE;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        cardsToPreview = new StatusFreeze();
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new StatusFreeze(), 1, true));
         for (AbstractCard card : p.hand.group) {
             if(card.type==CardType.STATUS)
             {

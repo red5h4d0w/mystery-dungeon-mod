@@ -406,7 +406,7 @@
   },
   "mysteryDungeon:SquirtleGyroBall": {
     "NAME": "Gyro Ball",
-    "DESCRIPTION": "Deal !D! damage per status in your hand. NL Discard all statuses in your hand. NL Draw !M! cards."
+    "DESCRIPTION": "Add 1 *Freeze in hand. NL Deal !D! damage per status in your hand. NL Discard all statuses in your hand. NL Draw !M! cards."
   },
   "mysteryDungeon:SquirtleHail": {
     "NAME": "Hail",
