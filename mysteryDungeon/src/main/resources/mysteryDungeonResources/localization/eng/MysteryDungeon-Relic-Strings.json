@@ -76,5 +76,12 @@
         "DESCRIPTIONS": [
             "At the end of each turn, Retain 1 card."
         ]
+    },
+    "mysteryDungeon:LightBallRelic": {
+        "NAME": "Light Ball",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "When you play a power and you are not in a stance, gain 1 orb slot."
+        ]
     }
 }

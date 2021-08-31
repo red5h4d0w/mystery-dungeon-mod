@@ -1,14 +1,14 @@
 {
     "mysteryDungeon:NegativeStance": {
-        "NAME": "Negative Stance",
+        "NAME": "Négativité",
         "DESCRIPTION": [
-            "When you enter this stance, gain [E]. NL When you play a skill, gain 1 temporary focus. NL Gain 7 Block and exit this stance at the end of the turn."
+            "Quand vous jouez une compétence, gagnez 1 Concentration temporaire. NL Quand vous quittez cette position, activez votre prochain Orbe 2 fois."
         ]
     },
     "mysteryDungeon:PositiveStance": {
-        "NAME": "Positive Stance",
+        "NAME": "Positivité",
         "DESCRIPTION": [
-            "When you enter this stance, gain [E]. NL When you play an attack, channel 1 lightning orb. NL Exit this stance at the end of the turn and draw 1 more card on your next turn."
+            "Quand vous jouez une attaque, canalisez 1 Orbe de foudre. NL Quand vous quittez cette position, gagnez 7 d'Armure."
         ]
     }
 }

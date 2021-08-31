@@ -295,6 +295,9 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
     public void AwardStartingRelic() {
         this.loseRelic(NatureRelatedRelic.ID);
         AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2, natureRelatedRelic());
+        if(hasChosenPikachu()) {
+            AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2, new LightBallRelic());
+        }
     }
 
     public void awardThingsToAward() {
@@ -456,7 +459,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
         return mysteryDungeon.MysteryDungeon.DEFAULT_GRAY;
     }
 
-    public static boolean needsStanceInfoWindow() {
+    public static boolean hasChosenPikachu() {
         if(adventurer instanceof Pikachu)
         {
             return true;
@@ -498,7 +501,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
     @Override
     public void useCard(AbstractCard c, AbstractMonster m, int energyOnUse) {
         super.useCard(c, m, energyOnUse);
-        if(needsStanceInfoWindow()) {
+        if(hasChosenPikachu()) {
             if(c.type == CardType.ATTACK)
                 pikachuChargeCounter+=(pikachuChargeCounter==2?0:1);
             if(c.type == CardType.SKILL)

@@ -10,7 +10,7 @@ public class PikachuMeterPatch {
     @SpirePatch(clz = AbstractPlayer.class, method = "render")
     public static class RenderNoteQueue {
         public static void Postfix(AbstractPlayer __instance, SpriteBatch sb) {
-            if(Pokemon.needsStanceInfoWindow())
+            if(Pokemon.hasChosenPikachu())
                 Pokemon.pikaMeter.render(sb, __instance);
         }
     }
