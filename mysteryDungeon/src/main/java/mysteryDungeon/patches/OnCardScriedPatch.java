@@ -26,6 +26,15 @@ public class OnCardScriedPatch
                 AbstractDungeon.player.relics.stream()
                     .filter(relic -> relic instanceof onCardScriedInterface)
                     .forEach(relic -> ((onCardScriedInterface)relic).onCardScried(c));
+                AbstractDungeon.player.hand.group.stream()
+                    .filter(card -> card instanceof onCardScriedInterface)
+                    .forEach(card -> ((onCardScriedInterface)card).onCardScried(c));
+                AbstractDungeon.player.discardPile.group.stream()
+                    .filter(card -> card instanceof onCardScriedInterface)
+                    .forEach(card -> ((onCardScriedInterface)card).onCardScried(c));
+                AbstractDungeon.player.drawPile.group.stream()
+                    .filter(card -> card instanceof onCardScriedInterface)
+                    .forEach(card -> ((onCardScriedInterface)card).onCardScried(c));
             }
             
         }

@@ -5,6 +5,7 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -16,8 +17,9 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.interfaces.onCardScriedInterface;
 
-public class SquirtleAquaRing extends PokemonCard {
+public class SquirtleAquaRing extends PokemonCard implements onCardScriedInterface {
 
     // TEXT DECLARATION
 
@@ -67,8 +69,9 @@ public class SquirtleAquaRing extends PokemonCard {
     }
 
     @Override
-    public void triggerOnScry() {
-        addToBot(new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, damage, DamageType.NORMAL), AttackEffect.NONE));
+    public void onCardScried(AbstractCard c) {
+        if(c==this)
+            addToBot(new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, damage, DamageType.NORMAL), AttackEffect.NONE));
     }
 
     // Upgraded stats.
