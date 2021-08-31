@@ -271,7 +271,11 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
 
     public void awardMaxHp(AbstractPokemon pokemon)
     {
-        maxHealth+=pokemon.maxHp-(AbstractDungeon.ascensionLevel>=14?7:0);
+        maxHealth+=pokemon.maxHp-(AbstractDungeon.ascensionLevel>=14?3:0);
+    }
+
+    public void awardHp()
+    {
         heal((int)((AbstractDungeon.ascensionLevel>=6?0.9f:1)*maxHealth));
     }
 
@@ -300,6 +304,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
         awardOrbSlots(adventurer);
         awardStartingDecks(adventurer);
         awardMaxHp(partner);
+        awardHp();
         awardOrbSlots(partner);
         awardStartingDecks(partner);
         AwardStartingRelic();
