@@ -2,20 +2,15 @@ package mysteryDungeon.cards.Pikachu;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.Lightning;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.actions.SetPikaMeterAction;
 import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.stances.PositiveStance;
 
 public class PikachuThundershock extends PokemonCard {
 
@@ -33,34 +28,24 @@ public class PikachuThundershock extends PokemonCard {
     // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.BASIC;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
-    private static final CardType TYPE = CardType.ATTACK;
+    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.PIKACHU_YELLOW;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 6;
-    private static final int BASE_MAGIC_NUMBER = 1;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
+    private static final int UPGRADE_COST = 0;
 
 
     // /STAT DECLARATION/
 
     public PikachuThundershock() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseDamage = DAMAGE;
-        baseMagicNumber = BASE_MAGIC_NUMBER;
-        magicNumber = baseMagicNumber;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SMASH));
-        if(p.stance instanceof PositiveStance) {
-            for(int i=0;i<magicNumber;i++) {
-                addToBot(new ChannelAction(new Lightning()));
-            }
-        }
+       addToBot(new SetPikaMeterAction(0));
             
     }
 
@@ -69,7 +54,7 @@ public class PikachuThundershock extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            upgradeBaseCost(UPGRADE_COST);
             initializeDescription();
         }
     }

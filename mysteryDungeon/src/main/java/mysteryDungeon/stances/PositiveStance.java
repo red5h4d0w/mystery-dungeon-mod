@@ -25,8 +25,10 @@ public class PositiveStance extends PokemonStance {
   
     @Override
     public void onPlayCard(AbstractCard card) {
-        if (card.type == CardType.ATTACK)
-            AbstractDungeon.player.channelOrb(new Lightning());
+        if (AbstractDungeon.player.hasEmptyOrb()){
+            if (card.type == CardType.ATTACK)
+                AbstractDungeon.player.channelOrb(new Lightning());
+        }
     }
 
     @Override
