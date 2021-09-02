@@ -2,7 +2,7 @@
     "mysteryDungeon:NegativeStance": {
         "NAME": "Negative Stance",
         "DESCRIPTION": [
-            "The first two skill played will grant you one focus each. NL When you exit this stance, evoke your next two Orbs."
+            "The first two skill played each turn will grant you one focus each. NL When you exit this stance, evoke your next two Orbs."
         ]
     },
     "mysteryDungeon:PositiveStance": {
