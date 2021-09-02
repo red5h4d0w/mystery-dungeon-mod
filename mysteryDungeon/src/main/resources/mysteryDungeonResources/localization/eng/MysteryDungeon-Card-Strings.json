@@ -11,6 +11,14 @@
         "NAME": "Agility",
         "DESCRIPTION": "Retain. NL Draw !M! cards. NL Exhaust."
     },
+    "mysteryDungeon:ChoosePositive": {
+        "NAME": "Positive Stance",
+        "DESCRIPTION": "Enter Positive Stance"
+    },
+    "mysteryDungeon:ChooseNegative": {
+        "NAME": "Negative Stance",
+        "DESCRIPTION": "Enter Negative Stance"
+    },
     "mysteryDungeon:StatusFreeze": {
         "NAME": "Freeze",
         "DESCRIPTION": "Retain."
