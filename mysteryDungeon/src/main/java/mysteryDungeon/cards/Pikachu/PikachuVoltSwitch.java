@@ -30,6 +30,7 @@ public class PikachuVoltSwitch extends PokemonCard {
     public static final String IMG = makeCardPath("PikachuAttack.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -40,6 +41,7 @@ public class PikachuVoltSwitch extends PokemonCard {
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.PIKACHU_YELLOW;
+    
 
     private static final int COST = 1;
 
@@ -76,6 +78,7 @@ public class PikachuVoltSwitch extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

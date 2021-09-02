@@ -353,6 +353,11 @@
         "NAME": "Thundershock",
         "DESCRIPTION": "Return to 0 on the Charge-Meter."
     },
+    "mysteryDungeon:PikachuVoltSwitch": {
+        "NAME": "Volt Switch",
+        "DESCRIPTION": "Inert. NL Retain. NL Enter a Random Stance. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Inert. NL Retain. NL Choose wich stance to enter. NL Exhaust."
+    },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Aqua Ring",
         "DESCRIPTION": "Unplayable. NL When this card is discarded, gain !B! Block. NL When this card is scried, deal !D! damage to a random enemy."
