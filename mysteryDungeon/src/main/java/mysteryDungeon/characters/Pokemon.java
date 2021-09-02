@@ -263,8 +263,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
     @Override
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
-
-        logger.info("Begin loading starter Deck Strings");
         retVal.add(ExplorersDeck.ID);
         retVal.add(PartnersDeck.ID);
         return retVal;

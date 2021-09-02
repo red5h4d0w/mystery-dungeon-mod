@@ -16,7 +16,7 @@ public class NegativeStance extends PokemonStance {
     public static final String STANCE_ID = MysteryDungeon.makeID(NegativeStance.class.getSimpleName());
     
     private static final StanceStrings stanceString = CardCrawlGame.languagePack.getStanceString(STANCE_ID);
-  
+    private int timesActivatedThisTurn = 0;
   
     public NegativeStance() {
         ID = STANCE_ID;
@@ -26,8 +26,16 @@ public class NegativeStance extends PokemonStance {
   
     @Override
     public void onPlayCard(AbstractCard card) {
-        if (card.type == CardType.SKILL)
+        if (card.type == CardType.SKILL && timesActivatedThisTurn<2) {
             addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new FocusPower(AbstractDungeon.player, 1), 1));
+            timesActivatedThisTurn++;
+        }
+            
+    }
+
+    @Override
+    public void atStartOfTurn() {
+        timesActivatedThisTurn=0;
     }
 
     @Override
