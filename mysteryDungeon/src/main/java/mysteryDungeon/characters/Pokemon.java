@@ -4,6 +4,7 @@ import basemod.abstracts.CustomPlayer;
 import basemod.abstracts.CustomSavable;
 import basemod.animations.SpriterAnimation;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.cards.Bulbasaur.BulbasaurTackle;
 import mysteryDungeon.cards.fakeCards.ExplorersDeck;
 import mysteryDungeon.cards.fakeCards.PartnersDeck;
@@ -502,6 +503,11 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
     public void useCard(AbstractCard c, AbstractMonster m, int energyOnUse) {
         super.useCard(c, m, energyOnUse);
         if(hasChosenPikachu()) {
+            if(c instanceof PokemonCard) {
+                if(((PokemonCard)c).skipPikachuEffect) {
+                    return;
+                }
+            }
             if(c.type == CardType.ATTACK)
                 pikachuChargeCounter+=(pikachuChargeCounter==2?0:1);
             if(c.type == CardType.SKILL)
@@ -519,10 +525,28 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
         }
     }
 
+    public void setPikaMeter(int newState) {
+        pikachuChargeCounter = newState;
+        pikaMeter.setCounterPosition(pikachuChargeCounter);
+        if(pikachuChargeCounter==2) {
+            AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(PositiveStance.STANCE_ID));
+        }
+        if(pikachuChargeCounter==-2) {
+            AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(NegativeStance.STANCE_ID));
+        }
+        if(pikachuChargeCounter==0) {
+            AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(NeutralStance.STANCE_ID));
+        }
+    }
+
+    public void resetPikameter() {
+        setPikaMeter(0);
+    }
+
     @Override
     public void applyStartOfCombatLogic() {
         super.applyStartOfCombatLogic();
-        pikaMeter.setCounterPosition(0);
+        setPikaMeter(0);
     }
 
     public void DefineNature(String natureAsAString)
