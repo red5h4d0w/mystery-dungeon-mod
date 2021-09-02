@@ -2,13 +2,13 @@
     "mysteryDungeon:NegativeStance": {
         "NAME": "Negative Stance",
         "DESCRIPTION": [
-            "When you play a skill, gain 1 temporary focus. NL When you exit this stance, evoke your next Orb twice."
+            "When you play a skill, gain 1 temporary focus. NL When you exit this stance, evoke your next two Orbs."
         ]
     },
     "mysteryDungeon:PositiveStance": {
         "NAME": "Positive Stance",
         "DESCRIPTION": [
-            "When you play an attack, channel 1 lightning orb. NL When you exit this stance, gain 7 block."
+            "When you play an attack, channel 1 lightning orb if you have any empty slot. NL When you exit this stance, gain 7 block."
         ]
     }
 }

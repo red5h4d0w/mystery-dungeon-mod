@@ -15,8 +15,8 @@ import mysteryDungeon.characters.Pokemon;
 
 public class Pikachu extends AbstractPokemon {
     public static String NAME = "Pikachu";
-    public static int MAX_HP = 37;
-    public static int ORB_SLOTS = 3;
+    public static int MAX_HP = 25;
+    public static int ORB_SLOTS = 2;
     public static AbstractCard[] STARTING_DECK = new AbstractCard[]{new PikachuTackle(), new PikachuTackle(), new PikachuDefend(), new PikachuDefend(), new PikachuThundershock()};
     public static Color COLOR = Color.YELLOW;
     public static CardColor CARD_COLOR = Pokemon.Enums.PIKACHU_YELLOW;
