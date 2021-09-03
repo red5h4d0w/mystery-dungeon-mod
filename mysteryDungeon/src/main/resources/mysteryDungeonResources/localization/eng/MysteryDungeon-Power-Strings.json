@@ -157,6 +157,13 @@
             "At the start of your turn, if an enemy has #yBurn, gain #b%s #yStrength."
         ]
     },
+    "mysteryDungeon:StaticPower": {
+        "NAME": "Static",
+        "DESCRIPTIONS": [
+            "Evoke %s orb when you are attacked.",
+            "Evoke %s orbs when you are attacked."
+        ]
+    },
     "mysteryDungeon:TorrentPower": {
         "NAME": "Torrent",
         "DESCRIPTIONS": [

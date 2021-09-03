@@ -13,11 +13,11 @@
     },
     "mysteryDungeon:ChoosePositive": {
         "NAME": "Positive Stance",
-        "DESCRIPTION": "Enter Positive Stance"
+        "DESCRIPTION": "Enter Positive Stance."
     },
     "mysteryDungeon:ChooseNegative": {
         "NAME": "Negative Stance",
-        "DESCRIPTION": "Enter Negative Stance"
+        "DESCRIPTION": "Enter Negative Stance."
     },
     "mysteryDungeon:StatusFreeze": {
         "NAME": "Freeze",
@@ -348,6 +348,11 @@
     "mysteryDungeon:PikachuIronTail": {
         "NAME": "Iron Tail",
         "DESCRIPTION": "Deal !D! damage. NL Increase this card damage by !M! this combat."
+    },
+    "mysteryDungeon:PikachuStatic": {
+        "NAME": "Static",
+        "DESCRIPTION": "Evoke !M! orb when you are attacked.",
+        "UPGRADE_DESCRIPTION": "Evoke !M! orbs when you are attacked."
     },
     "mysteryDungeon:PikachuTackle": {
         "NAME": "Tackle",
