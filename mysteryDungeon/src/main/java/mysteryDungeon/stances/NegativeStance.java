@@ -10,13 +10,14 @@ import com.megacrit.cardcrawl.localization.StanceStrings;
 import com.megacrit.cardcrawl.powers.FocusPower;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.cards.PokemonCard;
 
 
 public class NegativeStance extends PokemonStance {
     public static final String STANCE_ID = MysteryDungeon.makeID(NegativeStance.class.getSimpleName());
     
     private static final StanceStrings stanceString = CardCrawlGame.languagePack.getStanceString(STANCE_ID);
-    private int timesActivatedThisTurn = 0;
+    private static int timesActivatedThisTurn = 0;
   
     public NegativeStance() {
         ID = STANCE_ID;
@@ -26,6 +27,11 @@ public class NegativeStance extends PokemonStance {
   
     @Override
     public void onPlayCard(AbstractCard card) {
+        if(card instanceof PokemonCard) {
+            if(((PokemonCard)card).inert) {
+                return;
+            }
+        }
         if (card.type == CardType.SKILL && timesActivatedThisTurn<2) {
             addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new FocusPower(AbstractDungeon.player, 1), 1));
             timesActivatedThisTurn++;

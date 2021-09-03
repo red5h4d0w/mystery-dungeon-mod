@@ -345,6 +345,10 @@
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! Block."
     },
+    "mysteryDungeon:PikachuIronTail": {
+        "NAME": "Iron Tail",
+        "DESCRIPTION": "Deal !D! damage. NL Increase this card damage by !M! this combat."
+    },
     "mysteryDungeon:PikachuTackle": {
         "NAME": "Tackle",
         "DESCRIPTION": "Deal !D! damage."
