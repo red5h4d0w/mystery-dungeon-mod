@@ -52,27 +52,32 @@ public class PikachuVoltSwitch extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         exhaust = true;
         selfRetain = true;
+        inert = true;
     }
 
     // Actions the card should do.
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        switch(AbstractDungeon.cardRandomRng.random(1))
+    public void use(AbstractPlayer p, AbstractMonster m){
+       
+        if (upgraded) {
+            InputHelper.moveCursorToNeutralPosition();
+            ArrayList<AbstractCard> stanceChoices = new ArrayList<>();
+            stanceChoices.add(new ChoosePositive());
+            stanceChoices.add(new ChooseNegative());
+            addToBot((AbstractGameAction)new ChooseOneAction(stanceChoices));  
+        }
+        else
         {
-       case(0):     
-       addToBot(new SetPikaMeterAction(3));
-       break;
-       case(1):
-       addToBot(new SetPikaMeterAction(-3));
-       break;
-      }
-       if (!upgraded) {
-        InputHelper.moveCursorToNeutralPosition();
-        ArrayList<AbstractCard> stanceChoices = new ArrayList<>();
-        stanceChoices.add(new ChoosePositive());
-        stanceChoices.add(new ChooseNegative());
-        addToBot((AbstractGameAction)new ChooseOneAction(stanceChoices));  
-       }
+            switch(AbstractDungeon.cardRandomRng.random(1))
+            {
+                case(0):     
+                    addToBot(new SetPikaMeterAction(3));
+                    break;
+                case(1):
+                    addToBot(new SetPikaMeterAction(-3));
+                    break;
+            }
+        }
     }
 
     // Upgraded stats.
