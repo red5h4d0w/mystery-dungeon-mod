@@ -50,6 +50,8 @@ public class PikachuVoltSwitch extends PokemonCard {
 
     public PikachuVoltSwitch() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        exhaust = true;
+        selfRetain = true;
     }
 
     // Actions the card should do.
