@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.localization.StanceStrings;
 import com.megacrit.cardcrawl.orbs.Lightning;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.cards.PokemonCard;
 
 
 public class PositiveStance extends PokemonStance {
@@ -25,6 +26,11 @@ public class PositiveStance extends PokemonStance {
   
     @Override
     public void onPlayCard(AbstractCard card) {
+        if(card instanceof PokemonCard) {
+            if(((PokemonCard)card).inert) {
+                return;
+            }
+        }
         if (AbstractDungeon.player.hasEmptyOrb()){
             if (card.type == CardType.ATTACK)
                 AbstractDungeon.player.channelOrb(new Lightning());
