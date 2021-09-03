@@ -502,7 +502,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
         super.useCard(c, m, energyOnUse);
         if(hasChosenPikachu()) {
             if(c instanceof PokemonCard) {
-                if(((PokemonCard)c).skipPikachuEffect) {
+                if(((PokemonCard)c).inert) {
                     return;
                 }
             }
