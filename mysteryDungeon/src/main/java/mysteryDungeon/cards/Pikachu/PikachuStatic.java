@@ -2,15 +2,16 @@ package mysteryDungeon.cards.Pikachu;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.actions.SetPikaMeterAction;
 import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.powers.StaticPower;
 
 public class PikachuStatic extends PokemonCard {
 
@@ -49,7 +50,7 @@ public class PikachuStatic extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-       addToBot(new SetPikaMeterAction(0));
+       addToBot(new ApplyPowerAction(p, p, new StaticPower(p, magicNumber)));
     }
 
     // Upgraded stats.
