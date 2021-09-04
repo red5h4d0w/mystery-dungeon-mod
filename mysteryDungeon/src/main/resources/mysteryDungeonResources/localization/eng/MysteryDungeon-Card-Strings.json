@@ -349,6 +349,10 @@
         "NAME": "Iron Tail",
         "DESCRIPTION": "Deal !D! damage. NL Increase this card damage by !M! this combat."
     },
+    "mysteryDungeon:PikachuQuickAttack": {
+        "NAME": "Quick Attack",
+        "DESCRIPTION": "Deal !D! damage."
+    },
     "mysteryDungeon:PikachuStatic": {
         "NAME": "Static",
         "DESCRIPTION": "Evoke !M! orb when you are attacked.",
