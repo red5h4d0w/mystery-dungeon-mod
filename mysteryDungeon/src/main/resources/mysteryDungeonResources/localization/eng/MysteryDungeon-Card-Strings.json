@@ -349,6 +349,10 @@
         "NAME": "Iron Tail",
         "DESCRIPTION": "Deal !D! damage. NL Increase this card damage by !M! this combat."
     },
+    "mysteryDungeon:PikachuPlayNice": {
+        "NAME": "Play Nice",
+        "DESCRIPTION": "Gain !B! Block. NL Draw !M! card."
+    },
     "mysteryDungeon:PikachuQuickAttack": {
         "NAME": "Quick Attack",
         "DESCRIPTION": "Deal !D! damage."
