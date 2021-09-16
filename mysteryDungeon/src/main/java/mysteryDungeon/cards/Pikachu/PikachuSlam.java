@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.stances.NegativeStance;
 
 public class PikachuSlam extends PokemonCard {
 
@@ -38,7 +39,7 @@ public class PikachuSlam extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.PIKACHU_YELLOW;
     
 
-    private static final int COST = 1;
+    private static final int COST = 2;
     private static final int DAMAGE = 12;
     private static final int UPGRADE_PLUS_DMG = 3;
 
@@ -54,7 +55,10 @@ public class PikachuSlam extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m){
         addToBot((AbstractGameAction)new DamageAction((AbstractCreature)m, new DamageInfo((AbstractCreature)p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        addToBot((AbstractGameAction)new GainEnergyAction(1));
+        
+        if(p.stance.ID == NegativeStance.STANCE_ID) { 
+            addToBot((AbstractGameAction)new GainEnergyAction(1));
+        }
         
     }
 

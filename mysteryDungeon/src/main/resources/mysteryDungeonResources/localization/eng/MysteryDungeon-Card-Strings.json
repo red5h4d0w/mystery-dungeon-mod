@@ -357,6 +357,10 @@
         "NAME": "Quick Attack",
         "DESCRIPTION": "Deal !D! damage."
     },
+    "mysteryDungeon:PikachuSlam": {
+        "NAME": "Slam",
+        "DESCRIPTION": "Deal !D! damage. NL If you are in Negative stance, gain 1 energy."
+    },
     "mysteryDungeon:PikachuStatic": {
         "NAME": "Static",
         "DESCRIPTION": "Evoke !M! orb when you are attacked.",
