@@ -512,10 +512,10 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
             if(c.type == CardType.SKILL)
                 pikachuChargeCounter-=(pikachuChargeCounter==-3?0:1);
             pikaMeter.setCounterPosition(pikachuChargeCounter);
-            if(pikachuChargeCounter==2) {
+            if(pikachuChargeCounter==3) {
                 AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(PositiveStance.STANCE_ID));
             }
-            if(pikachuChargeCounter==-2) {
+            if(pikachuChargeCounter==-3) {
                 AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(NegativeStance.STANCE_ID));
             }
             if(pikachuChargeCounter==0) {
