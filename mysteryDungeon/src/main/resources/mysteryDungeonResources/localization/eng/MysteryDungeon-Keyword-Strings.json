@@ -36,6 +36,14 @@
         "DESCRIPTION": "Any card with Claw in its name counts as a claw."
     },
     {
+        "PROPER_NAME": "Inert",
+        "NAMES": [
+            "Inert",
+            "inert"
+        ],
+        "DESCRIPTION": "This card will not affect the Charge-Meter."
+    },
+    {
         "PROPER_NAME": "Evasiveness Drop",
         "NAMES": [
             "Evasiveness Drop",
