@@ -53,7 +53,7 @@ public class PikachuChargeBeam extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m){
-        if (upgraded);
+        if (upgraded)
             addToBot(new ChannelAction(new Lightning()));
         addToBot(new ChannelAction(new Lightning()));
     
