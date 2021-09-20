@@ -22,6 +22,7 @@ public class PikachuThunderwave extends PokemonCard {
     public static final String IMG = makeCardPath("PikachuSkill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -44,7 +45,9 @@ public class PikachuThunderwave extends PokemonCard {
     public PikachuThunderwave() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseBlock = BLOCK;
-        this.magicNumber = this.baseMagicNumber = 9;
+        this.magicNumber = this.baseMagicNumber;
+        this.baseMagicNumber = 9;
+        baseMagicNumber = BLOCK_DIFFERENCE;
     }
 
     // Actions the card should do.
@@ -70,9 +73,10 @@ public class PikachuThunderwave extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBlock(1);
-            this.baseMagicNumber = this.baseBlock + 6 + this.timesUpgraded * 4;
-            this.upgradedMagicNumber = this.upgradedBlock;
+            upgradeBlock(UPGRADE_PLUS_BLOCK);
+            upgradeMagicNumber(UPGRADE_PLUS_BLOCK_DIFFERENCE);
+            inert = true;
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

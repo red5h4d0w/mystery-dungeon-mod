@@ -21,6 +21,7 @@ public class PikachuThundershock extends PokemonCard {
     public static final String IMG = makeCardPath("PikachuSkill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -32,8 +33,7 @@ public class PikachuThundershock extends PokemonCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.PIKACHU_YELLOW;
 
-    private static final int COST = 1;
-    private static final int UPGRADE_COST = 0;
+    private static final int COST = 0;
 
 
     // /STAT DECLARATION/
@@ -54,7 +54,8 @@ public class PikachuThundershock extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(UPGRADE_COST);
+            selfRetain = true;
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

@@ -372,7 +372,13 @@
     },
     "mysteryDungeon:PikachuThundershock": {
         "NAME": "Thundershock",
-        "DESCRIPTION": "Return to 0 on the Charge-Meter."
+        "DESCRIPTION": "Return to 0 on the Charge-Meter.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Return to 0 on the Charge-Meter."
+    },
+    "mysteryDungeon:PikachuThunderwave": {
+        "NAME": "Thunderwave",
+        "DESCRIPTION": "Gain !B! block. NL Gain !M! more block if in neutral stance.",
+        "UPGRADE_DESCRIPTION": "Inert. NL Gain !B! block. NL Gain !M! more block if in neutral stance."
     },
     "mysteryDungeon:PikachuVoltSwitch": {
         "NAME": "Volt Switch",
