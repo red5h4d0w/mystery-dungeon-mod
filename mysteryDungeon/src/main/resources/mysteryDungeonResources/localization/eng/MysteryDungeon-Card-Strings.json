@@ -341,6 +341,11 @@
         "DESCRIPTION": "Apply X Weak. NL Apply 3X mysterydungeon:Burn. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. NL Exhaust."
     },
+    "mysteryDungeon:PikachuChargeBeam": {
+        "NAME": "Charge Beam",
+        "DESCRIPTION": "Channel !M! orb.",
+        "UPGRADE_DESCRIPTION": "Channel !M! orbs."
+    },
     "mysteryDungeon:PikachuDefend": {
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! Block."
