@@ -2,9 +2,7 @@ package mysteryDungeon.cards.Pikachu;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -45,28 +43,26 @@ public class PikachuThunderwave extends PokemonCard {
     public PikachuThunderwave() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseBlock = BLOCK;
-        this.magicNumber = this.baseMagicNumber;
-        this.baseMagicNumber = 9;
         baseMagicNumber = BLOCK_DIFFERENCE;
+        magicNumber = baseMagicNumber;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         applyPowers();
-        addToBot((AbstractGameAction)new ThunderwaveAction((AbstractCreature)p, this.block, this.magicNumber));
-            
+        addToBot(new ThunderwaveAction(p, block, magicNumber)); 
     }
 
     public void applyPowers() {
-        this.baseBlock += 6 + this.timesUpgraded * 3;
-        this.baseMagicNumber = this.baseBlock;
+        baseBlock += 6 + timesUpgraded * 3;
+        baseMagicNumber = baseBlock;
         super.applyPowers();
-        this.magicNumber = this.block;
-        this.isMagicNumberModified = this.isBlockModified;
-        this.baseBlock -= 6 + this.timesUpgraded * 3;
+        magicNumber = block;
+        isMagicNumberModified = isBlockModified;
+        baseBlock -= 6 + timesUpgraded * 3;
         super.applyPowers();
-      }
+    }
 
     // Upgraded stats.
     @Override

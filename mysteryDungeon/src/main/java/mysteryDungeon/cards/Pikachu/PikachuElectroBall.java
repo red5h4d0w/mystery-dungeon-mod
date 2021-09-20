@@ -47,6 +47,7 @@ public class PikachuElectroBall extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        //TODO:
     }
 
     // Upgraded stats.

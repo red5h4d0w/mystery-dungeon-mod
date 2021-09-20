@@ -4,7 +4,6 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import java.util.ArrayList;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -62,9 +61,9 @@ public class PikachuVoltSwitch extends PokemonCard {
         if (upgraded) {
             InputHelper.moveCursorToNeutralPosition();
             ArrayList<AbstractCard> stanceChoices = new ArrayList<>();
-            stanceChoices.add(new ChoosePositive());
             stanceChoices.add(new ChooseNegative());
-            addToBot((AbstractGameAction)new ChooseOneAction(stanceChoices));  
+            stanceChoices.add(new ChoosePositive());
+            addToBot(new ChooseOneAction(stanceChoices));  
         }
         else
         {

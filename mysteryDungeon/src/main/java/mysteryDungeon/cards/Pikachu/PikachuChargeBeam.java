@@ -2,14 +2,11 @@ package mysteryDungeon.cards.Pikachu;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.Lightning;
 
 import mysteryDungeon.MysteryDungeon;
@@ -49,17 +46,16 @@ public class PikachuChargeBeam extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
-        this.showEvokeValue = true;
-        this.showEvokeOrbCount = 1;
-
+        showEvokeValue = true;
+        showEvokeOrbCount = 1;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m){
-        if (this.upgraded);
-            addToBot((AbstractGameAction)new ChannelAction((AbstractOrb)new Lightning()));
-        addToBot((AbstractGameAction)new ChannelAction((AbstractOrb)new Lightning()));
+        if (upgraded);
+            addToBot(new ChannelAction(new Lightning()));
+        addToBot(new ChannelAction(new Lightning()));
     
     }
 
@@ -69,7 +65,7 @@ public class PikachuChargeBeam extends PokemonCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
-            this.showEvokeOrbCount = 2;
+            showEvokeOrbCount = 2;
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

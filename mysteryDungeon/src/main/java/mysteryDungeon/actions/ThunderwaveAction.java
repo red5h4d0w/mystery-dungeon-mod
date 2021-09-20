@@ -8,20 +8,21 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.stances.NeutralStance;
 
 public class ThunderwaveAction extends AbstractGameAction {
-    int additionalAmt;
+    public int additionalAmt;
     
-    public ThunderwaveAction(AbstractCreature target, int block, int additional) {
+    public ThunderwaveAction(AbstractCreature target, int block, int additionalAmt) {
         this.target = target;
         this.amount = block;
-        this.additionalAmt = additional;
+        this.additionalAmt = additionalAmt;
     }
     
     public void update() {
         if (AbstractDungeon.player.stance.ID == NeutralStance.STANCE_ID) {
-            addToTop((AbstractGameAction)new GainBlockAction(this.target, this.amount + this.additionalAmt));
-          } else {
-            addToTop((AbstractGameAction)new GainBlockAction(this.target, this.amount));
-          } 
-          this.isDone = true;
-        }
-  }
+            addToTop(new GainBlockAction(target, amount + additionalAmt));
+        } 
+        else {
+            addToTop(new GainBlockAction(target, amount));
+        } 
+        this.isDone = true;
+    }
+}

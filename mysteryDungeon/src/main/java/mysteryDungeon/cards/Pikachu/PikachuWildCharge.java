@@ -2,7 +2,6 @@ package mysteryDungeon.cards.Pikachu;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.defect.DecreaseMaxOrbAction;
 import com.megacrit.cardcrawl.actions.defect.EvokeAllOrbsAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -52,7 +51,7 @@ public class PikachuWildCharge extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToTop(new EvokeAllOrbsAction());
-        addToBot((AbstractGameAction)new DecreaseMaxOrbAction(1));
+        addToBot(new DecreaseMaxOrbAction(1));
 
 
     }

@@ -396,8 +396,8 @@
     },
     "mysteryDungeon:PikachuThunderwave": {
         "NAME": "Thunderwave",
-        "DESCRIPTION": "Gain !B! block. NL Gain !M! more block if in neutral stance.",
-        "UPGRADE_DESCRIPTION": "Inert. NL Gain !B! block. NL Gain !M! more block if in neutral stance."
+        "DESCRIPTION": "Gain !B! Block. NL Gain !M! more Block if in neutral stance.",
+        "UPGRADE_DESCRIPTION": "Inert. NL Gain !B! Block. NL Gain !M! more Block if in neutral stance."
     },
     "mysteryDungeon:PikachuVoltSwitch": {
         "NAME": "Volt Switch",
@@ -441,7 +441,7 @@
     },
     "mysteryDungeon:SquirtleDoubleTeam": {
         "NAME": "Double Team",
-        "DESCRIPTION": "Gain !B! block. When drawn add a copy of this card in your hand. NL Exhaust."
+        "DESCRIPTION": "Gain !B! Block. When drawn add a copy of this card in your hand. NL Exhaust."
     },
     "mysteryDungeon:SquirtleEndure": {
         "NAME": "Endure",
