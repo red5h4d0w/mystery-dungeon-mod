@@ -350,6 +350,11 @@
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! Block."
     },
+    "mysteryDungeon:PikachuDischarge": {
+        "NAME": "Discharge",
+        "DESCRIPTION": "Deal !D! damage. NL Evoke !M! orb.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Evoke !M! orbs."
+    },
     "mysteryDungeon:PikachuIronTail": {
         "NAME": "Iron Tail",
         "DESCRIPTION": "Deal !D! damage. NL Increase this card damage by !M! this combat."
