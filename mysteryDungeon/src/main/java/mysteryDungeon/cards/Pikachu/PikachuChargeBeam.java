@@ -57,8 +57,9 @@ public class PikachuChargeBeam extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m){
-        for (int i = 0; i < this.magicNumber; i++);
+        if (this.upgraded);
             addToBot((AbstractGameAction)new ChannelAction((AbstractOrb)new Lightning()));
+        addToBot((AbstractGameAction)new ChannelAction((AbstractOrb)new Lightning()));
     
     }
 
