@@ -355,6 +355,10 @@
         "DESCRIPTION": "Deal !D! damage. NL Evoke !M! orb.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Evoke !M! orbs."
     },
+    "mysteryDungeon:PikachuElectroBall": {
+        "NAME": "Electro Ball",
+        "DESCRIPTION": "Evoke your next orb !M! times. NL  Increase this amount by 1 this combat."
+    },
     "mysteryDungeon:PikachuIronTail": {
         "NAME": "Iron Tail",
         "DESCRIPTION": "Deal !D! damage. NL Increase this card damage by !M! this combat."
