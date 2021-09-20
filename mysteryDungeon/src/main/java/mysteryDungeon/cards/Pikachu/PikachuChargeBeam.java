@@ -70,6 +70,7 @@ public class PikachuChargeBeam extends PokemonCard {
             upgradeName();
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             this.showEvokeOrbCount = 2;
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

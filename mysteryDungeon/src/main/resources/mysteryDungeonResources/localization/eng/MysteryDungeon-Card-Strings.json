@@ -367,6 +367,10 @@
         "NAME": "Quick Attack",
         "DESCRIPTION": "Deal !D! damage."
     },
+    "mysteryDungeon:PikachuShockWave": {
+        "NAME": "Shock Wave",
+        "DESCRIPTION": "Deal !D! damage to all enemies. NL Apply !M! Lock-On to all enemies."
+    },
     "mysteryDungeon:PikachuSlam": {
         "NAME": "Slam",
         "DESCRIPTION": "Deal !D! damage. NL If you are in Negative stance, gain 1 energy."
