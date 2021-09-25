@@ -346,6 +346,10 @@
         "DESCRIPTION": "Channel lightning !M! orb.",
         "UPGRADE_DESCRIPTION": "Channel lightning !M! orbs."
     },
+    "mysteryDungeon:PikachuCharge": {
+        "NAME": "Charge",
+        "DESCRIPTION": "Gain !M! focus. NL Remove all orbs"
+    },
     "mysteryDungeon:PikachuDefend": {
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! Block."
