@@ -367,6 +367,11 @@
         "NAME": "Iron Tail",
         "DESCRIPTION": "Deal !D! damage. NL Increase this card damage by !M! this combat."
     },
+    "mysteryDungeon:PikachuNastyPlot": {
+        "NAME": "Nasty Plot",
+        "DESCRIPTION": "Gain !M! orb slot",
+        "UPGRADE_DESCRIPTION": "Gain !M! orb slots"
+    },
     "mysteryDungeon:PikachuNuzzle": {
         "NAME": "Nuzzle",
         "DESCRIPTION": "Deal !D! damage per orb.",
