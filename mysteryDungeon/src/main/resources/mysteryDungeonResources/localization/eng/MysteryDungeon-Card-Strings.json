@@ -343,8 +343,8 @@
     },
     "mysteryDungeon:PikachuChargeBeam": {
         "NAME": "Charge Beam",
-        "DESCRIPTION": "Channel !M! orb.",
-        "UPGRADE_DESCRIPTION": "Channel !M! orbs."
+        "DESCRIPTION": "Channel lightning !M! orb.",
+        "UPGRADE_DESCRIPTION": "Channel lightning !M! orbs."
     },
     "mysteryDungeon:PikachuDefend": {
         "NAME": "Defend",

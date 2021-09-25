@@ -39,7 +39,7 @@ public class PikachuSlam extends PokemonCard {
     
 
     private static final int COST = 2;
-    private static final int DAMAGE = 12;
+    private static final int DAMAGE = 15;
     private static final int UPGRADE_PLUS_DMG = 3;
 
 
