@@ -350,6 +350,10 @@
         "NAME": "Charge",
         "DESCRIPTION": "Gain !M! focus. NL Remove all orbs"
     },
+    "mysteryDungeon:PikachuCharm": {
+        "NAME": "Charm",
+        "DESCRIPTION": "Apply !M! vulnerable. NL Apply !M! Lock-on. NL Exhaust."
+    },
     "mysteryDungeon:PikachuDefend": {
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! Block."
