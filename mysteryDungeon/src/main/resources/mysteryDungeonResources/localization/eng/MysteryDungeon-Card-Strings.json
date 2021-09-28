@@ -406,6 +406,10 @@
         "NAME": "Tackle",
         "DESCRIPTION": "Deal !D! damage."
     },
+    "mysteryDungeon:PikachuThunderPunch": {
+        "NAME": "ThunderPunch",
+        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Lightning orb."
+    },
     "mysteryDungeon:PikachuThundershock": {
         "NAME": "Thundershock",
         "DESCRIPTION": "Return to 0 on the Charge-Meter.",
@@ -420,6 +424,10 @@
         "NAME": "Volt Switch",
         "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter a Random Stance. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Choose wich stance to enter. NL Exhaust."
+    },
+    "mysteryDungeon:PikachuVoltTackle": {
+        "NAME": "VoltTackle",
+        "DESCRIPTION": "Innate. NL Deal !D! damage. NL Channel !M! Lightning orb. NL Exhaust."
     },
     "mysteryDungeon:PikachuWildCharge": {
         "NAME": "Wild Charge",
