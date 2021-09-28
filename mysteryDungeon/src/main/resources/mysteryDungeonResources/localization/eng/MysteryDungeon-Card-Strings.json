@@ -363,6 +363,11 @@
         "DESCRIPTION": "Deal !D! damage. NL Evoke !M! orb.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Evoke !M! orbs."
     },
+    "mysteryDungeon:PikachuElectricTerrain": {
+        "NAME": "Electric Terrain",
+        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Positive Stance. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Positive Stance. NL Exhaust."
+    },
     "mysteryDungeon:PikachuElectroBall": {
         "NAME": "Electro Ball",
         "DESCRIPTION": "Evoke your next orb !M! times. NL  Increase this amount by 1 this combat."
@@ -396,6 +401,11 @@
     "mysteryDungeon:PikachuSlam": {
         "NAME": "Slam",
         "DESCRIPTION": "Deal !D! damage. NL If you are in Negative stance, gain 1 energy."
+    },
+    "mysteryDungeon:PikachuSpeedSwap": {
+        "NAME": "Speed Swap",
+        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Negative Stance. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Negative Stance. NL Exhaust."
     },
     "mysteryDungeon:PikachuStatic": {
         "NAME": "Static",
