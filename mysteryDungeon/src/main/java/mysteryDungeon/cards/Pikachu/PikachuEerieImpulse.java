@@ -1,4 +1,4 @@
-package mysteryDungeon.cards.Squirtle;
+package mysteryDungeon.cards.Pikachu;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
@@ -7,22 +7,23 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.DexterityPower;
+import com.megacrit.cardcrawl.powers.FocusPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.WorkUpPower;
 
-public class SquirtleWorkUp extends PokemonCard {
+public class PikachuEerieImpulse extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(SquirtleWorkUp.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(PikachuEerieImpulse.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("SquirtlePower.png");
+    public static final String IMG = makeCardPath("PikachuPower.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -32,15 +33,16 @@ public class SquirtleWorkUp extends PokemonCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
+    public static final CardColor COLOR = Pokemon.Enums.PIKACHU_YELLOW;
 
     private static final int COST = 1;
     private static final int BASE_MAGIC_NUMBER = 1;
+    private static final int UPGRADE_MAGIC_NUMBER =1;
 
 
     // /STAT DECLARATION/
 
-    public SquirtleWorkUp() {
+    public PikachuEerieImpulse() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
@@ -49,16 +51,16 @@ public class SquirtleWorkUp extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new WorkUpPower(p, magicNumber), magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new FocusPower(p, -2)));
     }
-
     // Upgraded stats.
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = UPGRADE_DESCRIPTION;
-            isInnate = true;
+            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             initializeDescription();
         }
     }

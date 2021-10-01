@@ -343,8 +343,8 @@
     },
     "mysteryDungeon:PikachuChargeBeam": {
         "NAME": "Charge Beam",
-        "DESCRIPTION": "Channel lightning !M! orb.",
-        "UPGRADE_DESCRIPTION": "Channel lightning !M! orbs."
+        "DESCRIPTION": "Channel !M! lightning  orb.",
+        "UPGRADE_DESCRIPTION": "Channel !M! lightning  orbs."
     },
     "mysteryDungeon:PikachuCharge": {
         "NAME": "Charge",
@@ -362,6 +362,10 @@
         "NAME": "Discharge",
         "DESCRIPTION": "Deal !D! damage. NL Evoke !M! orb.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Evoke !M! orbs."
+    },
+    "mysteryDungeon:PikachuEerieImpulse": {
+        "NAME": "Eerie Impulse",
+        "DESCRIPTION": "Gain !M! Strenght. NL Gain !M! Dexterity. NL Lose 2 Focus."
     },
     "mysteryDungeon:PikachuElectricTerrain": {
         "NAME": "Electric Terrain",
@@ -412,12 +416,16 @@
         "DESCRIPTION": "Evoke !M! orb when you are attacked.",
         "UPGRADE_DESCRIPTION": "Evoke !M! orbs when you are attacked."
     },
+    "mysteryDungeon:PikachuSweetKiss": {
+        "NAME": "Sweet Kiss",
+        "DESCRIPTION": "This turn, apply !M! weak to all enemies every time you enter or exit a stance."
+    },
     "mysteryDungeon:PikachuTackle": {
         "NAME": "Tackle",
         "DESCRIPTION": "Deal !D! damage."
     },
     "mysteryDungeon:PikachuThunderPunch": {
-        "NAME": "ThunderPunch",
+        "NAME": "Thunder Punch",
         "DESCRIPTION": "Deal !D! damage. NL Channel !M! Lightning orb."
     },
     "mysteryDungeon:PikachuThundershock": {
@@ -433,10 +441,10 @@
     "mysteryDungeon:PikachuVoltSwitch": {
         "NAME": "Volt Switch",
         "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter a Random Stance. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Choose wich stance to enter. NL Exhaust."
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Choose which stance to enter. NL Exhaust."
     },
     "mysteryDungeon:PikachuVoltTackle": {
-        "NAME": "VoltTackle",
+        "NAME": "Volt Tackle",
         "DESCRIPTION": "Innate. NL Deal !D! damage. NL Channel !M! Lightning orb. NL Exhaust."
     },
     "mysteryDungeon:PikachuWildCharge": {
@@ -560,8 +568,8 @@
     },
     "mysteryDungeon:SquirtleRainDance": {
         "NAME": "Rain Dance",
-        "DESCRIPTION": "At the start of your turn, exhaust up to !M! card from your deck and draw !M! card.",
-        "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, exhaust up to !M! card from your deck and draw !M! card."
+        "DESCRIPTION": "When a card is created this combat, gain !M! Temporary Strength.",
+        "UPGRADE_DESCRIPTION": "Innate. NL When a card is created this combat, gain !M! Temporary Strength."
     },
     "mysteryDungeon:SquirtleRainDish": {
         "NAME": "Rain Dish",
@@ -624,11 +632,6 @@
         "NAME": "Withdraw",
         "DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! card. NL Gain 2 Block per card in hand.",
         "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! cards. NL Gain 2 Block per card in hand. "
-    },
-    "mysteryDungeon:SquirtleWorkUp": {
-        "NAME": "Work Up",
-        "DESCRIPTION": "When a card is created this combat, gain !M! Temporary Strength.",
-        "UPGRADE_DESCRIPTION": "Innate. NL When a card is created this combat, gain !M! Temporary Strength."
     },
     "mysteryDungeon:SquirtleZenHeadbutt": {
         "NAME": "Zen Headbutt",

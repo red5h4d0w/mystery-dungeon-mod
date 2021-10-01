@@ -119,11 +119,8 @@
         "DESCRIPTIONS": ["When Attacked, apply %s #yPoison to the attacker."]
     },
     "mysteryDungeon:RainDancePower": {
-        "NAME": "Rain Dance ",
-        "DESCRIPTIONS": [
-            "At the start of your turn, exhaust up to #b1 card and draw #b1 more card.",
-            "At the start of your turn, exhaust up to #b%s cards and draw #b%s more cards."
-        ]
+        "NAME": "Rain Dance",
+        "DESCRIPTIONS": ["When a card is created, gain #b%s #yTemporary #yStrength."]
     },
     "mysteryDungeon:RainDishPower": {
         "NAME": "Rain Dish",
@@ -164,6 +161,12 @@
             "Evoke %s orbs when you are attacked."
         ]
     },
+    "mysteryDungeon:SweetKissPower": {
+        "NAME": "Sweet Kiss",
+        "DESCRIPTIONS": [
+            "Apply #b%s weak to all enemies every time you enter or exit a stance."
+        ]
+    },
     "mysteryDungeon:TorrentPower": {
         "NAME": "Torrent",
         "DESCRIPTIONS": [
@@ -180,10 +183,6 @@
             "At the start of your turn, Draw 2 cards and Discard 2 cards.",
             "For #b%s turns, at the start of your turn, Draw 2 cards and Discard 2 cards."
         ]
-    },
-    "mysteryDungeon:WorkUpPower": {
-        "NAME": "Work Up",
-        "DESCRIPTIONS": ["When a card is created, gain #b%s #yTemporary #yStrength."]
     },
     "mysteryDungeon:WorrySeedPower": {
         "NAME": "Worry Seed",
