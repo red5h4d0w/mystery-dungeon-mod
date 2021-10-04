@@ -4,6 +4,7 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.defect.DecreaseMaxOrbAction;
 import com.megacrit.cardcrawl.actions.defect.EvokeAllOrbsAction;
+import com.megacrit.cardcrawl.actions.defect.EvokeWithoutRemovingOrbAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -50,6 +51,8 @@ public class PikachuWildCharge extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+    if (upgraded)
+        addToBot(new EvokeAllWithoutRemovingOrbAction());
         addToTop(new EvokeAllOrbsAction());
         addToBot(new DecreaseMaxOrbAction(1));
 
@@ -61,7 +64,6 @@ public class PikachuWildCharge extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            inert = false;
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
