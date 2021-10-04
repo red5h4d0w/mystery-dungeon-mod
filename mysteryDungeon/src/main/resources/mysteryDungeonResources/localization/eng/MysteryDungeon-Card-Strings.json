@@ -410,6 +410,10 @@
         "NAME": "Slam",
         "DESCRIPTION": "Deal !D! damage. NL If you are in Negative stance, gain 1 energy."
     },
+    "mysteryDungeon:PikachuSpark": {
+        "NAME": "Spark",
+        "DESCRIPTION": "Deal !D! damage. NL Return to 0 on the Charge-Meter."
+    },
     "mysteryDungeon:PikachuSpeedSwap": {
         "NAME": "Speed Swap",
         "DESCRIPTION": "mysterydungeon:Inert. NL Enter Negative Stance. NL Exhaust.",
