@@ -54,9 +54,7 @@
     },
     "mysteryDungeon:EndurePower": {
         "NAME": "Endure",
-        "DESCRIPTIONS": [
-            "When you would die, heal #b%s%% of your max HP and lose all turn-based buffs and debuffs."
-        ]
+        "DESCRIPTIONS": [ "When you play a status card deal #b%s damage to a random enemy."]
     },
     "mysteryDungeon:EvasivenessDropPower": {
         "NAME": "Evasiveness Drop",
