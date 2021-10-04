@@ -2,6 +2,9 @@ import json
 import os
 import shutil
 
+#TODO: look for change in Desc types for cards
+#TODO: look for deprrecated cards and remove them
+
 with os.scandir(os.path.join(os.path.dirname(os.path.realpath(__file__)), "eng")) as engDir:
     engJsonsPath = []
     for entry in engDir:
