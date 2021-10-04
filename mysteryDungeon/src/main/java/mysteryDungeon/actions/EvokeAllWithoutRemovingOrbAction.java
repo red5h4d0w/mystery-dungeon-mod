@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.defect.EvokeWithoutRemovingOrbAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-public class EvokeAllWitoutRemovingOrbAction extends AbstractGameAction {
+public class EvokeAllWithoutRemovingOrbAction extends AbstractGameAction {
     
     
 
