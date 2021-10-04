@@ -8,15 +8,14 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.monsters.EnemyMoveInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 
 
@@ -24,16 +23,10 @@ import org.apache.logging.log4j.Logger;
 public class LightScreenPower extends MysteryDungeonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    Logger logger = LogManager.getLogger(LightScreenPower.class);
-
     public static final String POWER_ID = MysteryDungeon.makeID("LightScreenPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    
-    public byte moveByte;
-    public EnemyMoveInfo move;
-    public AbstractMonster.Intent moveIntent;
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
     // There's a fallback "missing texture" image, so the game shouldn't crash if you accidentally put a non-existent file.
@@ -61,18 +54,25 @@ public class LightScreenPower extends MysteryDungeonPower implements CloneablePo
     //onApplyPower is "When the owner applies a power to something else (only used by Sadistic Nature)."
     //onReceivePowerPower from StSlib is "When any (including this) power is applied to the owner."
 
-    public void update() {
-
+    @Override
+    public void atEndOfTurn(boolean isPlayer) {
+        if(isPlayer){ 
+            for (AbstractOrb orb : AbstractDungeon.player.orbs) {
+                if(orb instanceof EmptyOrbSlot) {
+                    addToBot(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, amount));
+                }
+            }
+        }
     }
-                
-              
-              
+    
+    @Override
     public void updateDescription() {
         description = String.format(DESCRIPTIONS[0], amount);
-        }
-        @Override
-        public AbstractPower makeCopy() {
-            return new LightScreenPower(owner, amount);
+    }
+    
+    @Override
+    public AbstractPower makeCopy() {
+        return new LightScreenPower(owner, amount);
     } 
 
 }
