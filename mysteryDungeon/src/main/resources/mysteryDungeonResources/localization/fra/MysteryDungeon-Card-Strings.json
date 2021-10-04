@@ -118,15 +118,15 @@
         "DESCRIPTION": "Apply !M! Poison."
     },
     "mysteryDungeon:BulbasaurSolarBeam": {
-        "NAME": "Solar Beam",
+        "NAME": "Lance-Soleil",
         "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Draw !M! less cards during your next turn."
     },
     "mysteryDungeon:BulbasaurStrengthSap": {
-        "NAME": "Strength Sap",
+        "NAME": "Vole-Force",
         "DESCRIPTION": "Target loses !M! Strength. NL Gain !M! Strength if target lost Strength that way. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurStunSpore": {
-        "NAME": "Lance-Soleil",
+        "NAME": "Para-Spore",
         "DESCRIPTION": "Apply !M! Slow. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! Slow. NL Exhaust."
     },
@@ -347,7 +347,8 @@
     },
     "mysteryDungeon:PikachuThundershock": {
         "NAME": "Thundershock",
-        "DESCRIPTION": "Deal !D! damage. NL If you are in mysterydungeon:Positive_Stance, Channel !M! Lightning orbs."
+        "DESCRIPTION": "Return to 0 on the Charge-Meter.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Return to 0 on the Charge-Meter."
     },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Aqua Ring",
@@ -425,7 +426,7 @@
     },
     "mysteryDungeon:SquirtleHydroCannon": {
         "NAME": "Hydro Cannon",
-        "DESCRIPTION": "Deal !D! damage to all enemies. NL Insert 3 Dazed in your draw pile."
+        "DESCRIPTION": "Deal !D! damage to all enemies. NL Insert 3 *Gel in your draw pile."
     },
     "mysteryDungeon:SquirtleIceBeam": {
         "NAME": "Ice Beam",
@@ -467,8 +468,8 @@
     },
     "mysteryDungeon:SquirtleRainDance": {
         "NAME": "Rain Dance",
-        "DESCRIPTION": "At the start of your turn, exhaust up to !M! card from your deck and draw !M! card.",
-        "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, exhaust up to !M! card from your deck and draw !M! card."
+        "DESCRIPTION": "When a card is created this combat, gain !M! Temporary Strength.",
+        "UPGRADE_DESCRIPTION": "Innate. NL When a card is created this combat, gain !M! Temporary Strength."
     },
     "mysteryDungeon:SquirtleRainDish": {
         "NAME": "Rain Dish",
@@ -485,7 +486,7 @@
     },
     "mysteryDungeon:SquirtleShellSmash": {
         "NAME": "Shell Smash",
-        "DESCRIPTION": "Gain !M! Strength. NL Add !mysteryDungeon:M2! random Statuses Card to your deck. NL Exhaust."
+        "DESCRIPTION": "Gain !M! Strength. NL Add !mysteryDungeon:M2! *Gel to your deck. NL Exhaust."
     },
     "mysteryDungeon:SquirtleSkullBashGo": {
         "NAME": "Skull Bash Go!",
@@ -531,11 +532,6 @@
         "NAME": "Withdraw",
         "DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! card. NL Gain 2 Block per card in hand.",
         "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! cards. NL Gain 2 Block per card in hand. "
-    },
-    "mysteryDungeon:SquirtleWorkUp": {
-        "NAME": "Work Up",
-        "DESCRIPTION": "When a card is created this combat, gain !M! Temporary Strength.",
-        "UPGRADE_DESCRIPTION": "Innate. NL When a card is created this combat, gain !M! Temporary Strength."
     },
     "mysteryDungeon:SquirtleZenHeadbutt": {
         "NAME": "Zen Headbutt",
@@ -647,5 +643,9 @@
         "NAME": "Wild Charge",
         "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs. NL Lose 1 orb slot. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Evoke all orbs. NL Lose 1 orb slot. NL Exhaust."
+    },
+    "mysteryDungeon:PikachuLightScreen": {
+        "NAME": "Light Screen",
+        "DESCRIPTION": "At the end of your turn, Gain !M! Block per empty orb slot."
     }
 }

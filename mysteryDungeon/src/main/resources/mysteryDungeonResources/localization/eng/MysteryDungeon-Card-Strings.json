@@ -365,7 +365,7 @@
     },
     "mysteryDungeon:PikachuEerieImpulse": {
         "NAME": "Eerie Impulse",
-        "DESCRIPTION": "Gain !M! Strenght. NL Gain !M! Dexterity. NL Lose 2 Focus."
+        "DESCRIPTION": "Gain !M! Strength. NL Gain !M! Dexterity. NL Lose 2 Focus."
     },
     "mysteryDungeon:PikachuElectricTerrain": {
         "NAME": "Electric Terrain",
@@ -379,6 +379,10 @@
     "mysteryDungeon:PikachuIronTail": {
         "NAME": "Iron Tail",
         "DESCRIPTION": "Deal !D! damage. NL Increase this card damage by !M! this combat."
+    },
+    "mysteryDungeon:PikachuLightScreen": {
+        "NAME": "Light Screen",
+        "DESCRIPTION": "At the end of your turn, Gain !M! Block per empty orb slot."
     },
     "mysteryDungeon:PikachuNastyPlot": {
         "NAME": "Nasty Plot",
@@ -526,7 +530,7 @@
     },
     "mysteryDungeon:SquirtleHydroCannon": {
         "NAME": "Hydro Cannon",
-        "DESCRIPTION": "Deal !D! damage to all enemies. NL Insert 3 Dazed in your draw pile."
+        "DESCRIPTION": "Deal !D! damage to all enemies. NL Insert 3 *Freeze in your draw pile."
     },
     "mysteryDungeon:SquirtleIceBeam": {
         "NAME": "Ice Beam",
@@ -586,7 +590,7 @@
     },
     "mysteryDungeon:SquirtleShellSmash": {
         "NAME": "Shell Smash",
-        "DESCRIPTION": "Gain !M! Strength. NL Add !mysteryDungeon:M2! random Statuses Card to your deck. NL Exhaust."
+        "DESCRIPTION": "Gain !M! Strength. NL Add !mysteryDungeon:M2! *Freeze to your deck. NL Exhaust."
     },
     "mysteryDungeon:SquirtleSkullBashGo": {
         "NAME": "Skull Bash Go!",

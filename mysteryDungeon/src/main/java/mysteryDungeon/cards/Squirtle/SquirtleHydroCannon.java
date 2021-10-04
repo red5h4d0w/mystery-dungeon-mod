@@ -3,12 +3,12 @@ package mysteryDungeon.cards.Squirtle;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.status.Dazed;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.MindblastEffect;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.PokemonCard;
+import mysteryDungeon.cards.Status.StatusFreeze;
 import mysteryDungeon.characters.Pokemon;
 
 
@@ -55,7 +56,7 @@ public class SquirtleHydroCannon extends PokemonCard {
         isMultiDamage = true;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
-        cardsToPreview = (AbstractCard)new Dazed();
+        cardsToPreview = (AbstractCard)new StatusFreeze();
 
     }
 
@@ -65,8 +66,8 @@ public class SquirtleHydroCannon extends PokemonCard {
         {
             addToBot(new SFXAction("ATTACK_HEAVY"));
             addToBot(new VFXAction(p, new MindblastEffect(p.dialogX, p.dialogY, p.flipHorizontal), 0.1F));
-            addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
-            addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(new Dazed(), magicNumber, true, false, false)); 
+            addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)p, this.multiDamage, this.damageTypeForTurn, AttackEffect.NONE));
+            addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(new StatusFreeze(), magicNumber, true, false, false)); 
         }
     }
 

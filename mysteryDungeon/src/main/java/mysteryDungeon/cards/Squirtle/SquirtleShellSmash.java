@@ -2,23 +2,17 @@ package mysteryDungeon.cards.Squirtle;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.stream.Collectors;
-
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.PokemonCard;
+import mysteryDungeon.cards.Status.StatusFreeze;
 import mysteryDungeon.characters.Pokemon;
 
 public class SquirtleShellSmash extends PokemonCard {
@@ -57,18 +51,16 @@ public class SquirtleShellSmash extends PokemonCard {
         baseSecondMagicNumber = BASE_SECOND_MAGIC_NUMBER;
         secondMagicNumber = baseSecondMagicNumber;
         exhaust = true;
+        cardsToPreview = new StatusFreeze();
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, magicNumber), magicNumber));
-        List<AbstractCard> statuses = CardLibrary.getAllCards().stream().filter(card->card.type==CardType.STATUS).collect(Collectors.toList());
         for(int i=0;i<secondMagicNumber;i++)
         {
-
-            Collections.shuffle(statuses, AbstractDungeon.cardRandomRng.random);
-            addToBot(new MakeTempCardInDrawPileAction(statuses.get(0), 1, true, false, false));
+            addToBot(new MakeTempCardInDrawPileAction(new StatusFreeze(), 1, true, false, false));
         }
     }
 
