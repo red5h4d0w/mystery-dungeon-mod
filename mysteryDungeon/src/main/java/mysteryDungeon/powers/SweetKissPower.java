@@ -9,7 +9,7 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -71,12 +71,12 @@ public class SweetKissPower extends MysteryDungeonPower implements CloneablePowe
     public void onChangeStance(AbstractStance oldStance, AbstractStance newStance) {
         if(!oldStance.ID.equals(newStance.ID)){
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters)
-                addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)owner, (AbstractPower)new WeakPower((AbstractCreature)mo, amount, false), amount, true, AbstractGameAction.AttackEffect.NONE)); 
+                addToBot(new ApplyPowerAction(mo, owner, new WeakPower(mo, amount, false), amount, true, AttackEffect.NONE)); 
         }
     }            
               
     public void atEndOfRound() {
-        addToBot((AbstractGameAction)new RemoveSpecificPowerAction(owner, owner, "SweetKissPower"));
+        addToBot(new RemoveSpecificPowerAction(owner, owner, this));
     }
               
     public void updateDescription() {
