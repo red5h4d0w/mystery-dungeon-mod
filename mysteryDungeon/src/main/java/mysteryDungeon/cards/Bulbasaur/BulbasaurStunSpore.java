@@ -13,11 +13,11 @@ import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 
-public class BulbasaurParalysisPowder extends PokemonCard {
+public class BulbasaurStunSpore extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(BulbasaurParalysisPowder.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(BulbasaurStunSpore.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("BulbasaurSkill.png");
     public static final String NAME = cardStrings.NAME;
@@ -39,7 +39,7 @@ public class BulbasaurParalysisPowder extends PokemonCard {
 
     // /STAT DECLARATION/
 
-    public BulbasaurParalysisPowder() {
+    public BulbasaurStunSpore() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = 1;
         magicNumber = baseMagicNumber;

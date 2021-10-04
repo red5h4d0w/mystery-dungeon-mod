@@ -209,5 +209,18 @@
             "Enemy will fall #yAsleep for one turn right before they act.",
             "Enemy will fall #yAsleep for #b%s turns right before they act."
         ]
+    },
+    "mysteryDungeon:StaticPower": {
+        "NAME": "Static",
+        "DESCRIPTIONS": [
+            "Evoke %s orb when you are attacked.",
+            "Evoke %s orbs when you are attacked."
+        ]
+    },
+    "mysteryDungeon:SweetKissPower": {
+        "NAME": "Sweet Kiss",
+        "DESCRIPTIONS": [
+            "Apply #b%s weak to all enemies every time you enter or exit a stance."
+        ]
     }
 }

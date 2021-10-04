@@ -72,11 +72,6 @@
         "NAME": "Mega Drain",
         "DESCRIPTION": "Heal !M! HP per different Debuff on the enemy."
     },
-    "mysteryDungeon:BulbasaurParalysisPowder": {
-        "NAME": "Paralysis Powder",
-        "DESCRIPTION": "Apply !M! Slow. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! Slow. NL Exhaust."
-    },
     "mysteryDungeon:BulbasaurPetalBlizzard": {
         "NAME": "Petal Blizzard",
         "DESCRIPTION": "Deal !D! damage to ALL enemies."
@@ -137,6 +132,11 @@
     "mysteryDungeon:BulbasaurStrengthSap": {
         "NAME": "Strength Sap",
         "DESCRIPTION": "Target loses !M! Strength. NL Gain !M! Strength if target lost Strength that way. NL Exhaust."
+    },
+    "mysteryDungeon:BulbasaurStunSpore": {
+        "NAME": "Stun Spore",
+        "DESCRIPTION": "Apply !M! Slow. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! Slow. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurSunnyDay": {
         "NAME": "Sunny Day",

@@ -1,125 +1,120 @@
 {
     "mysteryDungeon:ExplorersDeck": {
-        "NAME": "Explorer's deck",
-        "DESCRIPTION": "Will become a deck of 5 cards once you choose your explorer."
+        "NAME": "Deck de l'aventurier",
+        "DESCRIPTION": "Lorsque vous choisirez votre avennturier, deviendra 5 cartes associées à celui-ci."
     },
     "mysteryDungeon:PartnersDeck": {
-        "NAME": "Partner's Deck",
-        "DESCRIPTION": "Will become a deck of 5 cards once you choose your partner."
+        "NAME": "Deck du coéquipier",
+        "DESCRIPTION": "Lorsque vous choisirez votre coéquipier, deviendra 5 cartes associées à celui-ci."
     },
     "mysteryDungeon:ColorlessAgility": {
-        "NAME": "Agility",
-        "DESCRIPTION": "Retain. NL Draw !M! cards. NL Exhaust."
+        "NAME": "Hâte",
+        "DESCRIPTION": "Retenue. NL Piochez !M! cartes. NL Épuisement."
     },
     "mysteryDungeon:StatusFreeze": {
-        "NAME": "Freeze",
-        "DESCRIPTION": "Retain."
+        "NAME": "Gel",
+        "DESCRIPTION": "Retenue."
     },
     "mysteryDungeon:BulbasaurBulletSeed": {
-        "NAME": "Bullet Seed",
+        "NAME": "Balle Graine",
         "DESCRIPTION": "Deal !D! damage !M! times. NL Can be upgraded multiple times."
     },
     "mysteryDungeon:BulbasaurDefend": {
-        "NAME": "Defend",
+        "NAME": "Défense",
         "DESCRIPTION": "Gain !B! Block."
     },
     "mysteryDungeon:BulbasaurDefenseCurl": {
-        "NAME": "Defense Curl",
+        "NAME": "Boul'Armure",
         "DESCRIPTION": "Gain !B! Block."
     },
     "mysteryDungeon:BulbasaurDoubleEdge": {
-        "NAME": "Double Edge",
+        "NAME": "Damoclès",
         "DESCRIPTION": "Deal !D! damage. NL Strength affects this card !M! times. NL Lose 1 Dexterity."
     },
     "mysteryDungeon:BulbasaurFrenzyPlant": {
-        "NAME": "Frenzy Plant",
+        "NAME": "Végé-Attaque",
         "DESCRIPTION": "Deal !D! damage !M! times. NL Apply 2 Poison !M! times. NL You cannot heal during this turn and the next."
     },
     "mysteryDungeon:BulbasaurGigaDrain": {
-        "NAME": "Giga Drain",
+        "NAME": "Giga-Sangsue",
         "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Heal HP equal to unblocked damage."
     },
     "mysteryDungeon:BulbasaurGrowl": {
-        "NAME": "Growl",
+        "NAME": "Rugissement",
         "DESCRIPTION": "Applies !M! Weak to ALL enemies."
     },
     "mysteryDungeon:BulbasaurGrowth": {
-        "NAME": "Growth",
+        "NAME": "Croissance",
         "DESCRIPTION": "Gain !M! Strength."
     },
     "mysteryDungeon:BulbasaurHelpingHand": {
-        "NAME": "Helping Hand",
+        "NAME": "Coup d'Main",
         "DESCRIPTION": "Draw !M! cards. NL Gain [E]."
     },
     "mysteryDungeon:BulbasaurIngrain": {
-        "NAME": "Ingrain",
+        "NAME": "Racines",
         "DESCRIPTION": "Apply 1 mysterydungeon:Leech_Seed to a random enemy !M! times. NL Lose 2 Dexterity. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurLeechSeed": {
-        "NAME": "Leech Seed",
+        "NAME": "Vampigraine",
         "DESCRIPTION": "Apply !M! mysterydungeon:Leech_Seed. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Leech_Seed."
     },
     "mysteryDungeon:BulbasaurMegaDrain": {
-        "NAME": "Mega Drain",
+        "NAME": "Méga-Sangsue",
         "DESCRIPTION": "Heal !M! HP per different Debuff on the enemy."
     },
-    "mysteryDungeon:BulbasaurParalysisPowder": {
-        "NAME": "Paralysis Powder",
-        "DESCRIPTION": "Apply !M! Slow. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! Slow. NL Exhaust."
-    },
     "mysteryDungeon:BulbasaurPetalBlizzard": {
-        "NAME": "Petal Blizzard",
+        "NAME": "Tempête Florale",
         "DESCRIPTION": "Deal !D! damage to ALL enemies."
     },
     "mysteryDungeon:BulbasaurPetalDance": {
-        "NAME": "Petal Dance",
+        "NAME": "Danse Fleurs",
         "DESCRIPTION": "Deal 7 damage to ALL enemies at the end of your turn for the next !M! turns. NL (This counts as an Attack and so scales with Strength, etc.)"
     },
     "mysteryDungeon:BulbasaurPoisonJab": {
-        "NAME": "Poison Jab",
+        "NAME": "Direct Toxik",
         "DESCRIPTION": "Deal !D! damage. NL Apply !M! Poison 2 times."
     },
     "mysteryDungeon:BulbasaurPoisonPoint": {
-        "NAME": "Poison Point",
+        "NAME": "Point Poison",
         "DESCRIPTION": "Gain !M! mysterydungeon:Poison_Thorns."
     },
     "mysteryDungeon:BulbasaurPoisonPowder": {
-        "NAME": "Poison Powder",
+        "NAME": "Poudre Toxik",
         "DESCRIPTION": "Apply !M! Poison to ALL enemies."
     },
     "mysteryDungeon:BulbasaurPowerWhip": {
-        "NAME": "Power Whip",
+        "NAME": "Mégafouet",
         "DESCRIPTION": "Retain. NL Deal !D! damage."
     },
     "mysteryDungeon:BulbasaurProtect": {
-        "NAME": "Protect",
+        "NAME": "Abri",
         "DESCRIPTION": "Gain !B! Block. NL You cannot gain Block during the next !M! turns."
     },
     "mysteryDungeon:BulbasaurRazorLeaf": {
-        "NAME": "Razor Leaf",
+        "NAME": "Tranch'Herbe",
         "DESCRIPTION": "Deals !D! damage. NL If you have a debuff, Gain [E]"
     },
     "mysteryDungeon:BulbasaurRest": {
-        "NAME": "Rest",
+        "NAME": "Repos",
         "DESCRIPTION": "Heal !mysteryDungeon:M2! HP. mysterydungeon:Rest for !M! turns."
     },
     "mysteryDungeon:BulbasaurSecretPower": {
-        "NAME": "Secret Power",
+        "NAME": "Force Cachée",
         "DESCRIPTION": "Innate. NL Add random power in your hand. NL Exhaust",
         "UPGRADE_DESCRIPTION": "Innate. NL Add random upgraded power in your hand. NL Exhaust"
     },
     "mysteryDungeon:BulbasaurSeedBomb": {
-        "NAME": "Seed Bomb",
+        "NAME": "Canon Graine",
         "DESCRIPTION": "Deal !D! damage to a random enemy X times."
     },
     "mysteryDungeon:BulbasaurSleepPowder": {
-        "NAME": "Sleep Powder",
+        "NAME": "Poudre Dodo",
         "DESCRIPTION": "Apply !M! mysterydungeon:Asleep. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurSludgeBomb": {
-        "NAME": "Sludge Bomb",
+        "NAME": "Bombe Beurk",
         "DESCRIPTION": "Apply !M! Poison."
     },
     "mysteryDungeon:BulbasaurSolarBeam": {
@@ -130,42 +125,47 @@
         "NAME": "Strength Sap",
         "DESCRIPTION": "Target loses !M! Strength. NL Gain !M! Strength if target lost Strength that way. NL Exhaust."
     },
+    "mysteryDungeon:BulbasaurStunSpore": {
+        "NAME": "Lance-Soleil",
+        "DESCRIPTION": "Apply !M! Slow. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! Slow. NL Exhaust."
+    },
     "mysteryDungeon:BulbasaurSunnyDay": {
-        "NAME": "Sunny Day",
+        "NAME": "Zénith",
         "DESCRIPTION": "Ethereal. NL At the start of each turn, NL Draw one more card and Reduce by 1 the cost of the card with the highest cost in your hand.",
         "UPGRADE_DESCRIPTION": "At the start of each turn, NL Draw one more card and Reduce by 1 the cost of the card with the highest cost in your hand."
     },
     "mysteryDungeon:BulbasaurSweetScent": {
-        "NAME": "Sweet Scent",
+        "NAME": "Doux Parfum",
         "DESCRIPTION": "Apply !M! mysterydungeon:Evasiveness_Drop. NL Apply !M! Vulnerable"
     },
     "mysteryDungeon:BulbasaurSynthesis": {
-        "NAME": "Synthesis",
+        "NAME": "Synthèse",
         "DESCRIPTION": "Heal !M! HP. NL At the start of your next turn, NL Draw 2 more cards and gain 2 [E]. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurTackle": {
-        "NAME": "Tackle",
+        "NAME": "Charge",
         "DESCRIPTION": "Deals !D! damage."
     },
     "mysteryDungeon:BulbasaurToxic": {
-        "NAME": "Toxic",
+        "NAME": "Toxik",
         "DESCRIPTION": "Apply !M! mysterydungeon:Toxic to ALL enemies. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! mysterydungeon:Toxic to ALL enemies. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurVenoshock": {
-        "NAME": "Venoshock",
+        "NAME": "Choc Venin",
         "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each stack of Poison of the target."
     },
     "mysteryDungeon:BulbasaurVineWhip": {
-        "NAME": "Vine Whip",
+        "NAME": "Fouet Lianes",
         "DESCRIPTION": "Deal !D! damage."
     },
     "mysteryDungeon:BulbasaurWorrySeed": {
-        "NAME": "Worry Seed",
+        "NAME": "Soucigraine",
         "DESCRIPTION": "Your card rewards will contain 1 more card choice."
     },
     "mysteryDungeon:BulbasaurYawn": {
-        "NAME": "Yawn",
+        "NAME": "Baîllement",
         "DESCRIPTION": "Ethereal. NL Apply !M! mysterydungeon:Asleep to ALL enemies right before they act (after Poison, etc.). NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Asleep to ALL enemies right before they act (after Poison, etc.). NL Exhaust."
     },
@@ -541,5 +541,111 @@
         "NAME": "Zen Headbutt",
         "DESCRIPTION": "Deal !D! damage create a *Flinch and add it to your hand.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage create an upgraded *Flinch and add it to your hand."
+    },
+    "mysteryDungeon:ChoosePositive": {
+        "NAME": "Positive Stance",
+        "DESCRIPTION": "Enter Positive Stance."
+    },
+    "mysteryDungeon:ChooseNegative": {
+        "NAME": "Negative Stance",
+        "DESCRIPTION": "Enter Negative Stance."
+    },
+    "mysteryDungeon:PikachuChargeBeam": {
+        "NAME": "Charge Beam",
+        "DESCRIPTION": "Channel !M! lightning  orb.",
+        "UPGRADE_DESCRIPTION": "Channel !M! lightning  orbs."
+    },
+    "mysteryDungeon:PikachuCharge": {
+        "NAME": "Charge",
+        "DESCRIPTION": "Gain !M! focus. NL Remove all orbs"
+    },
+    "mysteryDungeon:PikachuCharm": {
+        "NAME": "Charm",
+        "DESCRIPTION": "Apply !M! vulnerable. NL Apply !M! Lock-on. NL Exhaust."
+    },
+    "mysteryDungeon:PikachuDischarge": {
+        "NAME": "Discharge",
+        "DESCRIPTION": "Deal !D! damage. NL Evoke !M! orb.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Evoke !M! orbs."
+    },
+    "mysteryDungeon:PikachuEerieImpulse": {
+        "NAME": "Eerie Impulse",
+        "DESCRIPTION": "Gain !M! Strenght. NL Gain !M! Dexterity. NL Lose 2 Focus."
+    },
+    "mysteryDungeon:PikachuElectricTerrain": {
+        "NAME": "Electric Terrain",
+        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Positive Stance. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Positive Stance. NL Exhaust."
+    },
+    "mysteryDungeon:PikachuElectroBall": {
+        "NAME": "Electro Ball",
+        "DESCRIPTION": "Evoke your next orb !M! times. NL  Increase this amount by 1 this combat."
+    },
+    "mysteryDungeon:PikachuIronTail": {
+        "NAME": "Iron Tail",
+        "DESCRIPTION": "Deal !D! damage. NL Increase this card damage by !M! this combat."
+    },
+    "mysteryDungeon:PikachuNastyPlot": {
+        "NAME": "Nasty Plot",
+        "DESCRIPTION": "Gain !M! orb slot",
+        "UPGRADE_DESCRIPTION": "Gain !M! orb slots"
+    },
+    "mysteryDungeon:PikachuNuzzle": {
+        "NAME": "Nuzzle",
+        "DESCRIPTION": "Deal !D! damage per orb.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal !D! damage per orb."
+    },
+    "mysteryDungeon:PikachuPlayNice": {
+        "NAME": "Play Nice",
+        "DESCRIPTION": "Gain !B! Block. NL Draw !M! card."
+    },
+    "mysteryDungeon:PikachuQuickAttack": {
+        "NAME": "Quick Attack",
+        "DESCRIPTION": "Deal !D! damage."
+    },
+    "mysteryDungeon:PikachuShockWave": {
+        "NAME": "Shock Wave",
+        "DESCRIPTION": "Deal !D! damage to all enemies. NL Apply !M! Lock-On to all enemies."
+    },
+    "mysteryDungeon:PikachuSlam": {
+        "NAME": "Slam",
+        "DESCRIPTION": "Deal !D! damage. NL If you are in Negative stance, gain 1 energy."
+    },
+    "mysteryDungeon:PikachuSpeedSwap": {
+        "NAME": "Speed Swap",
+        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Negative Stance. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Negative Stance. NL Exhaust."
+    },
+    "mysteryDungeon:PikachuStatic": {
+        "NAME": "Static",
+        "DESCRIPTION": "Evoke !M! orb when you are attacked.",
+        "UPGRADE_DESCRIPTION": "Evoke !M! orbs when you are attacked."
+    },
+    "mysteryDungeon:PikachuSweetKiss": {
+        "NAME": "Sweet Kiss",
+        "DESCRIPTION": "This turn, apply !M! weak to all enemies every time you enter or exit a stance."
+    },
+    "mysteryDungeon:PikachuThunderPunch": {
+        "NAME": "Thunder Punch",
+        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Lightning orb."
+    },
+    "mysteryDungeon:PikachuThunderwave": {
+        "NAME": "Thunderwave",
+        "DESCRIPTION": "Gain !B! Block. NL Gain !M! more Block if in neutral stance.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Gain !B! Block. NL Gain !M! more Block if in neutral stance."
+    },
+    "mysteryDungeon:PikachuVoltSwitch": {
+        "NAME": "Volt Switch",
+        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter a Random Stance. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Choose which stance to enter. NL Exhaust."
+    },
+    "mysteryDungeon:PikachuVoltTackle": {
+        "NAME": "Volt Tackle",
+        "DESCRIPTION": "Innate. NL Deal !D! damage. NL Channel !M! Lightning orb. NL Exhaust."
+    },
+    "mysteryDungeon:PikachuWildCharge": {
+        "NAME": "Wild Charge",
+        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs. NL Lose 1 orb slot. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Evoke all orbs. NL Lose 1 orb slot. NL Exhaust."
     }
 }

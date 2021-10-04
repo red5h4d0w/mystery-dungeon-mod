@@ -85,5 +85,13 @@
             "toxic"
         ],
         "DESCRIPTION": "Poison on enemies affected by Toxic go up by the amount of stack instead of going down."
+    },
+    {
+        "PROPER_NAME": "Inert",
+        "NAMES": [
+            "Inert",
+            "inert"
+        ],
+        "DESCRIPTION": "This card will not affect the Charge-Meter."
     }
 ]
