@@ -19,6 +19,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
@@ -216,14 +217,15 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
     // =============== /CHARACTER CLASS END/ =================
 
     // Construct campfire poses
-    public Texture CampfirePose() {
+    @Override
+    public void renderShoulderImg(SpriteBatch sb) {
         Texture campfirePose = new Texture(1920, 1136, Pixmap.Format.RGBA4444);
         if(hasChosenStarters())
         {
             campfirePose.draw(partner.backSprite, 0, 1136-500);
             campfirePose.draw(adventurer.backSprite, partner.backSprite.getWidth(), 1136-500);
         }
-        return campfirePose;
+        sb.draw(campfirePose, 0.0F, 0.0F, 1920.0F * Settings.scale, 1136.0F * Settings.scale);
     }
 
 
@@ -309,8 +311,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
         awardStartingDecks(partner);
         AwardStartingRelic();
         startingMaxHP = maxHealth;
-        shoulderImg = CampfirePose();
-        shoulder2Img = CampfirePose();
     }
 
     public void evolvePokemons() {
@@ -318,8 +318,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
         {
             partner.evolve();
             adventurer.evolve();
-            shoulderImg = CampfirePose();
-            shoulder2Img = CampfirePose();
         }
     }
 
