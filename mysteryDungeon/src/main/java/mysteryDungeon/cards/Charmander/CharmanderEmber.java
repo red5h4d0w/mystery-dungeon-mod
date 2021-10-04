@@ -5,8 +5,6 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 import basemod.abstracts.CustomCard;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -14,8 +12,8 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.actions.FireFangAction;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.BurnPower;
 
 public class CharmanderEmber extends CustomCard {
 
@@ -27,7 +25,7 @@ public class CharmanderEmber extends CustomCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(CharmanderEmber.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CharmanderFireFang.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("CharmanderAttack.png");
     public static final String NAME = cardStrings.NAME;
@@ -44,10 +42,8 @@ public class CharmanderEmber extends CustomCard {
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 5;
-    private static final int UPGRADE_PLUS_DMG = 1;
-    private static final int BASE_MAGIC_NUMBER = 5;
-    private static final int UPGRADE_MAGIC_NUMBER = 2;
+    private static final int DAMAGE = 7;
+    private static final int UPGRADE_PLUS_DMG = 3;
 
 
     // /STAT DECLARATION/
@@ -55,16 +51,13 @@ public class CharmanderEmber extends CustomCard {
     public CharmanderEmber() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        baseMagicNumber = BASE_MAGIC_NUMBER;
-        magicNumber = baseMagicNumber;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
-        addToBot(new ApplyPowerAction(m, p, new BurnPower(m, magicNumber)));
+        addToBot(new FireFangAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
     }
 
     // Upgraded stats.
@@ -73,7 +66,6 @@ public class CharmanderEmber extends CustomCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             initializeDescription();
         }
     }

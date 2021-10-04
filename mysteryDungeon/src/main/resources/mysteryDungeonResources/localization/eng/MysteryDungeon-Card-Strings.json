@@ -242,7 +242,7 @@
     },
     "mysteryDungeon:CharmanderEmber": {
         "NAME": "Ember",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn."
+        "DESCRIPTION": "Deal !D! damage. NL Apply mysterydungeon:Burn equal to the unblocked damage."
     },
     "mysteryDungeon:CharmanderFacade": {
         "NAME": "Facade",
@@ -254,7 +254,7 @@
     },
     "mysteryDungeon:CharmanderFireFang": {
         "NAME": "Fire Fang",
-        "DESCRIPTION": "Deal !D! damage. NL Apply mysterydungeon:Burn equal to the unblocked damage."
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn."
     },
     "mysteryDungeon:CharmanderFireSpin": {
         "NAME": "Fire Spin",
