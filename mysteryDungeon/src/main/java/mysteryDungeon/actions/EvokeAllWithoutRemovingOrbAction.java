@@ -1,17 +1,21 @@
 package mysteryDungeon.actions;
 
 
+import java.util.stream.Collectors;
+
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.defect.EvokeWithoutRemovingOrbAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
 
 public class EvokeAllWithoutRemovingOrbAction extends AbstractGameAction {
-    
-    
+    public EvokeAllWithoutRemovingOrbAction() {
 
-public void update() {
-    for (int i = 0; i < AbstractDungeon.player.orbs.size(); i++)
-        addToTop(new EvokeWithoutRemovingOrbAction(1)); 
-        this.isDone = true;
-        }
+    }
+    
+    public void update() {
+        for (AbstractOrb orb: AbstractDungeon.player.orbs.stream().filter(orb->!(orb instanceof EmptyOrbSlot)).collect(Collectors.toList()))
+            orb.onEvoke();
+        isDone = true;
+    }
 }
