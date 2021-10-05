@@ -458,7 +458,7 @@
     "mysteryDungeon:PikachuWildCharge": {
         "NAME": "Wild Charge",
         "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs. NL Lose 1 orb slot. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Evoke all orbs. NL Lose 1 orb slot. NL Exhaust."
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs twice. NL Lose 1 orb slot. NL Exhaust."
     },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Aqua Ring",
