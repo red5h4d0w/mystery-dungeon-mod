@@ -27,5 +27,6 @@ public class GyroBallAction extends AbstractGameAction {
                 addToTop(new DiscardSpecificCardAction(card));
             }
         }
+        isDone = true;
     }
 }
