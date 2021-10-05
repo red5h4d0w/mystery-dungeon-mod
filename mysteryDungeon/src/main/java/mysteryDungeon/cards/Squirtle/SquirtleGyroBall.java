@@ -59,7 +59,7 @@ public class SquirtleGyroBall extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new StatusFreeze(), 1, true));
+        addToTop((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new StatusFreeze(), 1, true));
         for (AbstractCard card : p.hand.group) {
             if(card.type==CardType.STATUS)
             {

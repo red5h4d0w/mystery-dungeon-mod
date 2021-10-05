@@ -53,7 +53,7 @@ public class PikachuWildCharge extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
     if (upgraded)
         addToBot(new EvokeAllWithoutRemovingOrbAction());
-        addToTop(new EvokeAllOrbsAction());
+        addToBot(new EvokeAllOrbsAction());
         addToBot(new DecreaseMaxOrbAction(1));
 
 
