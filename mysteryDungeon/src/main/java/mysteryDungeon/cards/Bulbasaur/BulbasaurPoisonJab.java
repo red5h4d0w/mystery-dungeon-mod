@@ -37,7 +37,7 @@ public class BulbasaurPoisonJab extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 2;
+    private static final int DAMAGE = 5;
     private static final int UPGRADE_DAMAGE = 1;
     private static final int UPGRADE_MAGIC_NUMBER = 1;
 
