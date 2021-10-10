@@ -122,6 +122,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
     public static Nature nature;
     public static int pikachuChargeCounter = 0;
 
+    public Texture campfirePose;
+
     public static PikachuMeter pikaMeter = new PikachuMeter();
 
     // =============== /BASE STATS/ =================
@@ -219,13 +221,21 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
     // Construct campfire poses
     @Override
     public void renderShoulderImg(SpriteBatch sb) {
-        Texture campfirePose = new Texture(1920, 1136, Pixmap.Format.RGBA4444);
+        if(campfirePose!=null) {
+            sb.draw(campfirePose, 0.0F, 0.0F, 1920.0F * Settings.scale, 1136.0F * Settings.scale);
+        }
+        else {
+            setCampfirePose();
+        }
+    }
+
+    public void setCampfirePose() {
+        campfirePose = new Texture(1920, 1136, Pixmap.Format.RGBA4444);
         if(hasChosenStarters())
         {
             campfirePose.draw(partner.backSprite, 0, 1136-500);
             campfirePose.draw(adventurer.backSprite, partner.backSprite.getWidth(), 1136-500);
         }
-        sb.draw(campfirePose, 0.0F, 0.0F, 1920.0F * Settings.scale, 1136.0F * Settings.scale);
     }
 
 
