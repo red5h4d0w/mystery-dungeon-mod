@@ -387,7 +387,7 @@
     "mysteryDungeon:PikachuHiddenPower": {
         "NAME": "Hidden Power",
         "DESCRIPTION": "mysterydungeon:Inert. NL Add a random attack or skill card to your hand. NL It costs 0 this turn. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Choose between a random attack or skill to add card to your hand. NL It costs 0 this turn. NL Exhaust."
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Choose between a random attack or skill card to add to your hand. NL It costs 0 this turn. NL Exhaust."
     },
     "mysteryDungeon:PikachuIronTail": {
         "NAME": "Iron Tail",
@@ -418,6 +418,10 @@
     "mysteryDungeon:PikachuQuickAttack": {
         "NAME": "Quick Attack",
         "DESCRIPTION": "Deal !D! damage."
+    },
+    "mysteryDungeon:PikachuReflect": {
+        "NAME": "Reflect",
+        "DESCRIPTION": "Gain !B! block. NL Increase this card block by !M! this combat."
     },
     "mysteryDungeon:PikachuShockWave": {
         "NAME": "Shock Wave",
