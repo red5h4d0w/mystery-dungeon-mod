@@ -481,6 +481,10 @@
         "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs. NL Lose 1 orb slot. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs twice. NL Lose 1 orb slot. NL Exhaust."
     },
+    "mysteryDungeon:PikachuZapCannon": {
+        "NAME": "Zap Cannon",
+        "DESCRIPTION": "Enter Positive Stance. NL Deal !D! damage to all enemies."
+    },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Aqua Ring",
         "DESCRIPTION": "Unplayable. NL When this card is discarded, gain !B! Block. NL When this card is scried, deal !D! damage to a random enemy."
