@@ -16,11 +16,8 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.actions.SetPikaMeterAction;
 import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.cards.tempCards.ChooseAttack;
-import mysteryDungeon.cards.tempCards.ChooseNegative;
-import mysteryDungeon.cards.tempCards.ChoosePositive;
 import mysteryDungeon.cards.tempCards.ChooseSkill;
 import mysteryDungeon.characters.Pokemon;
 
