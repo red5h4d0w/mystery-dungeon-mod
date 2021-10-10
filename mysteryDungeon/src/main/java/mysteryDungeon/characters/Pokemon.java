@@ -328,6 +328,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
         {
             partner.evolve();
             adventurer.evolve();
+            setCampfirePose();
         }
     }
 
