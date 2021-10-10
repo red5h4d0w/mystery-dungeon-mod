@@ -376,6 +376,11 @@
         "NAME": "Electro Ball",
         "DESCRIPTION": "Evoke your next orb !M! times. NL  Increase this amount by 1 this combat."
     },
+    "mysteryDungeon:PikachuHiddenPower": {
+        "NAME": "Hidden Power",
+        "DESCRIPTION": "mysterydungeon:Inert. NL Add a random attack or skill card to your hand. NL It costs 0 this turn. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Choose between a random attack or skill to add card to your hand. NL It costs 0 this turn. NL Exhaust."
+    },
     "mysteryDungeon:PikachuIronTail": {
         "NAME": "Iron Tail",
         "DESCRIPTION": "Deal !D! damage. NL Increase this card damage by !M! this combat."
@@ -397,6 +402,10 @@
     "mysteryDungeon:PikachuPlayNice": {
         "NAME": "Play Nice",
         "DESCRIPTION": "Gain !B! Block. NL Draw !M! card."
+    },
+    "mysteryDungeon:PikachuPlayRough": {
+        "NAME": "Play Rough",
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! weak."
     },
     "mysteryDungeon:PikachuQuickAttack": {
         "NAME": "Quick Attack",
