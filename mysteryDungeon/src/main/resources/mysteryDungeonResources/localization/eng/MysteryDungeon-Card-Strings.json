@@ -11,6 +11,10 @@
         "NAME": "Agility",
         "DESCRIPTION": "Retain. NL Draw !M! cards. NL Exhaust."
     },
+    "mysteryDungeon:ChooseAttack": {
+        "NAME": "Attack",
+        "DESCRIPTION": "Add a random attack card to your hand."
+    },
     "mysteryDungeon:ChoosePositive": {
         "NAME": "Positive Stance",
         "DESCRIPTION": "Enter Positive Stance."
@@ -18,6 +22,10 @@
     "mysteryDungeon:ChooseNegative": {
         "NAME": "Negative Stance",
         "DESCRIPTION": "Enter Negative Stance."
+    },
+    "mysteryDungeon:ChooseSkill": {
+        "NAME": "Skill",
+        "DESCRIPTION": "Add a random skill card to your hand."
     },
     "mysteryDungeon:StatusFreeze": {
         "NAME": "Freeze",
