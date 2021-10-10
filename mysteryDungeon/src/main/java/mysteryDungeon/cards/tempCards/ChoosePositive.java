@@ -2,8 +2,6 @@ package mysteryDungeon.cards.tempCards;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import basemod.abstracts.CustomCard;
-
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -12,8 +10,9 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.actions.SetPikaMeterAction;
+import mysteryDungeon.cards.PokemonCard;
 
-public class ChoosePositive extends CustomCard {
+public class ChoosePositive extends PokemonCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -53,7 +52,7 @@ public class ChoosePositive extends CustomCard {
 
     public void onChoseThisOption() {
         addToBot(new SetPikaMeterAction(3));
-      }
+    }
 
     // Upgraded stats.
     @Override
@@ -61,5 +60,5 @@ public class ChoosePositive extends CustomCard {
 
     public AbstractCard makeCopy() {
         return new ChoosePositive();
-      }
+    }
 }

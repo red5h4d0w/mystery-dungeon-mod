@@ -2,9 +2,6 @@ package mysteryDungeon.cards.tempCards;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import basemod.abstracts.CustomCard;
-
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -14,8 +11,9 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.cards.PokemonCard;
 
-public class ChooseAttack extends CustomCard {
+public class ChooseAttack extends PokemonCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -54,10 +52,10 @@ public class ChooseAttack extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {}
 
     public void onChoseThisOption() {
-      AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.ATTACK).makeCopy();
-      c.setCostForTurn(0);
-      addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, true));
-      }
+        AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.ATTACK).makeCopy();
+        c.setCostForTurn(0);
+        addToBot(new MakeTempCardInHandAction(c, true));
+    }
 
     // Upgraded stats.
     @Override
@@ -65,5 +63,5 @@ public class ChooseAttack extends CustomCard {
 
     public AbstractCard makeCopy() {
         return new ChooseAttack();
-      }
+    }
 }

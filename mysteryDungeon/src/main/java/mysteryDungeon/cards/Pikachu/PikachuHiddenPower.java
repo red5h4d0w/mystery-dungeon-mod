@@ -4,14 +4,12 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import java.util.ArrayList;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.input.InputHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -68,16 +66,20 @@ public class PikachuHiddenPower extends PokemonCard {
         {
             switch(AbstractDungeon.cardRandomRng.random(1))
             {
-                case(0):     
-                AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.ATTACK).makeCopy();
-                c.setCostForTurn(0);
-                addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, true));
+                case(0): {
+                    AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.ATTACK).makeCopy();
+                    c.setCostForTurn(0);
+                    addToBot(new MakeTempCardInHandAction(c, true));
                     break;
-                case(1):
-                AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.SKILL).makeCopy();
-                c.setCostForTurn(-99);
-                addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, true));
+                }     
+                
+                case(1): {
+                    AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.SKILL).makeCopy();
+                    c.setCostForTurn(0);
+                    addToBot(new MakeTempCardInHandAction(c, true));
                     break;
+                }
+                
             }
         }
     }
