@@ -178,6 +178,12 @@
             "Apply #b%s weak to all enemies every time you enter or exit a stance."
         ]
     },
+    "mysteryDungeon:ThunderPower": {
+        "NAME": "Thunder",
+        "DESCRIPTIONS": [
+            "Whenever you evoke an Orb, deal #b%s damage to ALL enemies."
+        ]
+    },
     "mysteryDungeon:TorrentPower": {
         "NAME": "Torrent",
         "DESCRIPTIONS": [

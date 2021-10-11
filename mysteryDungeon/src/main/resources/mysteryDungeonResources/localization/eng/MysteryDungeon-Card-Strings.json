@@ -477,6 +477,10 @@
         "NAME": "Tackle",
         "DESCRIPTION": "Deal !D! damage."
     },
+    "mysteryDungeon:PikachuThunder": {
+        "NAME": "Thunder",
+        "DESCRIPTION": "Whenever you evoke an Orb, deal !M! damage to ALL enemies."
+    },
     "mysteryDungeon:PikachuThunderPunch": {
         "NAME": "Thunder Punch",
         "DESCRIPTION": "Deal !D! damage. NL Channel !M! Lightning orb."
