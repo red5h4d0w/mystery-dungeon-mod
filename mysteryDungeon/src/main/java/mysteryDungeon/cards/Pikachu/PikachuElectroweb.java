@@ -61,6 +61,7 @@ public class PikachuElectroweb extends PokemonCard {
         if (!upgraded) {
             upgradeName();
             exhaust = false;
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

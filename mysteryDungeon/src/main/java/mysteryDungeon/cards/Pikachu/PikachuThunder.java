@@ -22,7 +22,6 @@ public class PikachuThunder extends PokemonCard {
     public static final String IMG = makeCardPath("PikachuPower.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -37,7 +36,7 @@ public class PikachuThunder extends PokemonCard {
 
     private static final int COST = 2;
     private static final int BASE_MAGIC_NUMBER = 5;
-    private static final int UPGRADE_MAGIC_NUMBER = 7;
+    private static final int UPGRADE_MAGIC_NUMBER = 2;
 
 
     // /STAT DECLARATION/
