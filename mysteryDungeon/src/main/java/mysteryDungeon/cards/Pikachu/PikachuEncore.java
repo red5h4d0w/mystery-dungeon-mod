@@ -22,6 +22,7 @@ public class PikachuEncore extends PokemonCard {
     public static final String IMG = makeCardPath("PikachuSkill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -44,6 +45,7 @@ public class PikachuEncore extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        inert = true;
     }
 
     // Actions the card should do.
@@ -58,6 +60,7 @@ public class PikachuEncore extends PokemonCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

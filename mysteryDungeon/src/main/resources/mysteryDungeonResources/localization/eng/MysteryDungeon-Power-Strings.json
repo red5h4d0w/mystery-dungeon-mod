@@ -50,6 +50,10 @@
             "When you apply #yBurn apply #b%s more."
         ]
     },
+    "mysteryDungeon:EncorePower": {
+        "NAME": "Encore",
+        "DESCRIPTIONS": ["This turn your next attack or skill is played twice"]
+    },
     "mysteryDungeon:EndurePower": {
         "NAME": "Endure",
         "DESCRIPTIONS": [ "When you play a status card deal #b%s damage to a random enemy."]
