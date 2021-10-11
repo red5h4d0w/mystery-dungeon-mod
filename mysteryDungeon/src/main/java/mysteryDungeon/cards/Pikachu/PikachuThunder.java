@@ -30,7 +30,7 @@ public class PikachuThunder extends PokemonCard {
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.SKILL;
+    private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = Pokemon.Enums.PIKACHU_YELLOW;
     
 
