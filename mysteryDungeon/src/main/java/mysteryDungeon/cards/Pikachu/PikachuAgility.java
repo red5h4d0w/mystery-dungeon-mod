@@ -11,15 +11,15 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.SweetKissPower;
+import mysteryDungeon.powers.AgilityPower;
 
-public class PikachuSweetKiss extends PokemonCard {
+public class PikachuAgility extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(PikachuSweetKiss.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(PikachuAgility.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("PikachuSkill.png");
+    public static final String IMG = makeCardPath("PikachuPower.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -31,18 +31,16 @@ public class PikachuSweetKiss extends PokemonCard {
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.SKILL;
+    private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = Pokemon.Enums.PIKACHU_YELLOW;
-    
 
-    private static final int COST = 1;
+    private static final int COST = 2;
     private static final int BASE_MAGIC_NUMBER = 1;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
 
-    public PikachuSweetKiss() {
+    public PikachuAgility() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
@@ -50,8 +48,8 @@ public class PikachuSweetKiss extends PokemonCard {
 
     // Actions the card should do.
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m){
-        addToBot(new ApplyPowerAction(p, p, new SweetKissPower(p,magicNumber)));
+    public void use(AbstractPlayer p, AbstractMonster m) {
+       addToBot(new ApplyPowerAction(p, p, new AgilityPower(p, magicNumber)));
     }
 
     // Upgraded stats.
@@ -59,7 +57,8 @@ public class PikachuSweetKiss extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            isInnate = true;
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }
