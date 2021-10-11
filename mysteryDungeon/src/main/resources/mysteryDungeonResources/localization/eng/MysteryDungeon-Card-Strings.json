@@ -349,6 +349,11 @@
         "DESCRIPTION": "Apply X Weak. NL Apply 3X mysterydungeon:Burn. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. NL Exhaust."
     },
+    "mysteryDungeon:PikachuAgility": {
+        "NAME": "Agility",
+        "DESCRIPTION": "Whenever you enter or exit a stance, draw !M! card.",
+        "UPGRADE_DESCRIPTION": "Innate NL Whenever you enter or exit a stance, draw !M! card."
+    },
     "mysteryDungeon:PikachuChargeBeam": {
         "NAME": "Charge Beam",
         "DESCRIPTION": "Channel !M! lightning  orb.",

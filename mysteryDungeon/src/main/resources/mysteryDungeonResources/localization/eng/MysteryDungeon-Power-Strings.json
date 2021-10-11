@@ -6,6 +6,13 @@
             "This monster won't act for #b%s turns, unless it receives damage. When it will wake up, it will go back to the intent it had before falling asleep."
         ]
     },
+    "mysteryDungeon:AgilityPower": {
+        "NAME": "Agility",
+        "DESCRIPTIONS": [
+            "Whenever you enter or exit a stance, draw #b%s card.",
+            "Whenever you enter or exit a stance, draw #b%s cards."
+        ]
+    },
     "mysteryDungeon:AquaRingPower": {
         "NAME": "Aqua Ring",
         "DESCRIPTIONS": [
