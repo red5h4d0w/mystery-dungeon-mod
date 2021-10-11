@@ -481,6 +481,10 @@
         "NAME": "Thunder",
         "DESCRIPTION": "Whenever you evoke an Orb, deal !M! damage to ALL enemies."
     },
+    "mysteryDungeon:PikachuThunderbolt": {
+        "NAME": "Thunderbolt",
+        "DESCRIPTION": "Deal !D! damage X times. NL If the last card played was a skill gain 1 energy."
+    },
     "mysteryDungeon:PikachuThunderPunch": {
         "NAME": "Thunder Punch",
         "DESCRIPTION": "Deal !D! damage. NL Channel !M! Lightning orb."
