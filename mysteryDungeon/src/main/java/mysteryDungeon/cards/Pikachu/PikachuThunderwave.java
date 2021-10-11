@@ -39,9 +39,9 @@ public class PikachuThunderwave extends PokemonCard {
 
     private static final int COST = 1;
     private static final int BLOCK = 3;
-    private static final int UPGRADE_PLUS_BLOCK = 1;
-    private static final int BLOCK_DIFFERENCE = 6;
-    private static final int UPGRADE_PLUS_BLOCK_DIFFERENCE = 3;
+    private static final int UPGRADE_PLUS_BLOCK = 2;
+    private static final int BLOCK_DIFFERENCE = 9;
+    private static final int UPGRADE_PLUS_BLOCK_DIFFERENCE = 6;
 
     // /STAT DECLARATION/
 
