@@ -36,7 +36,7 @@ public class PikachuEncore extends PokemonCard {
 
     private static final int COST = 1;
     private static final int BASE_MAGIC_NUMBER = 1;
-    private static final int UPGRADE_MAGIC_NUMBER = 4;
+    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
