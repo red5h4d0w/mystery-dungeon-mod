@@ -49,6 +49,7 @@ public class PikachuZapCannon extends PokemonCard {
     public PikachuZapCannon() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
+        isMultiDamage = true;
     }
 
     // Actions the card should do.
