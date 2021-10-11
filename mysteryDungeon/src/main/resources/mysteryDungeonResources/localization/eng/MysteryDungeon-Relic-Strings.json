@@ -46,7 +46,7 @@
         "NAME": "Impish Explorer",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "The first time you evoke your last orb each combat, gain a Focus."
+            "The first time you evoke an orb each combat, gain a Focus."
         ]
     },
     "mysteryDungeon:JollyExplorerRelic": {

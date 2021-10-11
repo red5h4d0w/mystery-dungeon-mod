@@ -2,7 +2,6 @@ package mysteryDungeon.relics;
 
 import basemod.abstracts.CustomRelic;
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.interfaces.PostRemoveNextOrbInterface;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
@@ -15,10 +14,9 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
 import com.megacrit.cardcrawl.powers.FocusPower;
 
-public class ImpishExplorerRelic extends CustomRelic implements PostRemoveNextOrbInterface{ // You must implement things you want to use from StSlib
+public class ImpishExplorerRelic extends CustomRelic { // You must implement things you want to use from StSlib
     /*
      * https://github.com/daviscook477/BaseMod/wiki/Custom-Relics
      * StSLib for Clickable Relics
@@ -47,17 +45,7 @@ public class ImpishExplorerRelic extends CustomRelic implements PostRemoveNextOr
     @Override
     public void onEvokeOrb(AbstractOrb orb)
     {
-        if(AbstractDungeon.player.orbs.stream().filter( o -> !(o instanceof EmptyOrbSlot) ).count()==1 && !used)
-        {
-            flash();
-            addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new FocusPower(AbstractDungeon.player, 1), 1));
-            used = true;
-        }
-    }
-
-    public void postRemoveNextOrb()
-    {
-        if(AbstractDungeon.player.orbs.get(0) instanceof EmptyOrbSlot && !used)
+        if(!used)
         {
             flash();
             addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new FocusPower(AbstractDungeon.player, 1), 1));
