@@ -6,6 +6,10 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.actions.ThunderwaveAction;
 import mysteryDungeon.cards.PokemonCard;
@@ -15,6 +19,7 @@ public class PikachuThunderwave extends PokemonCard {
 
     // TEXT DECLARATION
 
+    public Logger logger = LogManager.getLogger(PikachuThunderwave.class);
     public static final String ID = MysteryDungeon.makeID(PikachuThunderwave.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("PikachuSkill.png");
@@ -50,19 +55,12 @@ public class PikachuThunderwave extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        applyPowers();
+        logger.info(baseBlock);
+        logger.info(block);
+        logger.info(magicNumber);
         addToBot(new ThunderwaveAction(p, block, magicNumber)); 
     }
 
-    public void applyPowers() {
-        baseBlock += 6 + timesUpgraded * 3;
-        baseMagicNumber = baseBlock;
-        super.applyPowers();
-        magicNumber = block;
-        isMagicNumberModified = isBlockModified;
-        baseBlock -= 6 + timesUpgraded * 3;
-        super.applyPowers();
-    }
 
     // Upgraded stats.
     @Override
