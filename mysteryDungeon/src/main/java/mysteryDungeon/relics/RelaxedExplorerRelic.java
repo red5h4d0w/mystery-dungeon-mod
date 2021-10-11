@@ -34,7 +34,6 @@ public class RelaxedExplorerRelic extends CustomRelic { // You must implement th
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("default_clickable_relic.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("default_clickable_relic.png"));
 
-    private boolean used = false; // We should make sure the relic is only activateable during our turn, not the enemies'.
 
     public RelaxedExplorerRelic() {
         super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.CLINK);
@@ -46,18 +45,12 @@ public class RelaxedExplorerRelic extends CustomRelic { // You must implement th
     @Override
     public void onPlayCard(AbstractCard card, AbstractMonster target)
     {
-        if(card.type == CardType.SKILL && !used)
+        if(card.type == CardType.SKILL)
         {
             flash();
-            addToBot(new GainBlockAction(AbstractDungeon.player, 10));
-            used = true;
+            addToBot(new GainBlockAction(AbstractDungeon.player, 1));
+            
         }
-    }
-
-    @Override
-    public void atPreBattle()
-    {
-        used = false;
     }
 
     // Description

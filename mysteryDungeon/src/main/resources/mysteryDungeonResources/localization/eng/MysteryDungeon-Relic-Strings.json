@@ -16,9 +16,9 @@
     },
     "mysteryDungeon:BraveExplorerRelic": {
         "NAME": "Brave Explorer",
-        "FLAVOR": "What is this?",
+        "FLAVOR": "A brave Explorer",
         "DESCRIPTIONS": [
-            "The first time you draw a status / would receive a debuff each combat, exhaust the status / nullify the debuff."
+            "If you don't have any block at the end of your turn gain 1 Strenght"
         ]
     },
     "mysteryDungeon:CalmExplorerRelic": {
@@ -67,7 +67,7 @@
         "NAME": "Relaxed Explorer",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "The first time you play a Skill each combat, gain 10 Block."
+            "Each time you play a skill card gain 1 block."
         ]
     },
     "mysteryDungeon:TimidExplorerRelic": {
