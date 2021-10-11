@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.SweetKissPower;
+import mysteryDungeon.powers.ThunderPower;
 
 public class PikachuThunder extends PokemonCard {
 
@@ -50,7 +50,7 @@ public class PikachuThunder extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m){
-        addToBot(new ApplyPowerAction(p, p, new SweetKissPower(p,magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new ThunderPower(p,magicNumber)));
     }
 
     // Upgraded stats.
