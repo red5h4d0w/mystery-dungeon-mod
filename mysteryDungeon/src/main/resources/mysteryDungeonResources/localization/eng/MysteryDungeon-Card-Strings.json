@@ -327,7 +327,7 @@
     },
     "mysteryDungeon:CharmanderSlash": {
         "NAME": "Slash",
-        "DESCRIPTION": "Deal !D! damage !M! times."
+        "DESCRIPTION": "Deal !D! damage !M! times to all enemies."
     },
     "mysteryDungeon:CharmanderSleepTalk": {
         "NAME": "Sleep Talk",
@@ -351,7 +351,7 @@
     },
     "mysteryDungeon:PikachuChargeBeam": {
         "NAME": "Charge Beam",
-        "DESCRIPTION": "Channel !M! lightning  orb.",
+        "DESCRIPTION": "mysterydungeon:Inert. NL Channel !M! lightning  orbs.",
         "UPGRADE_DESCRIPTION": "Channel !M! lightning  orbs."
     },
     "mysteryDungeon:PikachuCharge": {
@@ -466,7 +466,7 @@
     },
     "mysteryDungeon:PikachuSwift": {
         "NAME": "Swift",
-        "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards."
+        "DESCRIPTION": "Deal !D! damage to all enemies. NL Draw !M! cards."
     },
     "mysteryDungeon:PikachuTackle": {
         "NAME": "Tackle",
@@ -497,8 +497,8 @@
     },
     "mysteryDungeon:PikachuWildCharge": {
         "NAME": "Wild Charge",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs. NL Lose 1 orb slot. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs twice. NL Lose 1 orb slot. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs. NL End Turn. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs twice. NL End Turn. NL Exhaust."
     },
     "mysteryDungeon:PikachuZapCannon": {
         "NAME": "Zap Cannon",

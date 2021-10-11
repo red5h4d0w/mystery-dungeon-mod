@@ -4,9 +4,8 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import basemod.abstracts.CustomCard;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -61,7 +60,7 @@ public class CharmanderSlash extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         for(int i=0; i<magicNumber;i++)
         {
-            addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn),AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+            addToBot(new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AttackEffect.SLASH_DIAGONAL));
         }
     }
 

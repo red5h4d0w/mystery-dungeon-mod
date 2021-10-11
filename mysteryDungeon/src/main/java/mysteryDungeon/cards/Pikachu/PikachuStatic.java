@@ -34,7 +34,7 @@ public class PikachuStatic extends PokemonCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = Pokemon.Enums.PIKACHU_YELLOW;
 
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final int BASE_MAGIC_NUMBER = 1;
     private static final int UPGRADE_MAGIC_NUMBER =1;
 
