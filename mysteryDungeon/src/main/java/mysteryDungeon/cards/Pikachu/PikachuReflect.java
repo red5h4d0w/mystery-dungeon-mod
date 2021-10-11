@@ -36,7 +36,7 @@ public class PikachuReflect extends PokemonCard {
     
 
     private static final int COST = 1;
-    private static final int DAMAGE = 8;
+    private static final int BLOCK = 8;
     private static final int BASE_MAGIC_NUMBER = 4;
     private static final int UPGRADE_MAGIC_NUMBER = 4;
 
@@ -45,7 +45,7 @@ public class PikachuReflect extends PokemonCard {
 
     public PikachuReflect() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseDamage = DAMAGE;
+        baseBlock = BLOCK;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
     }

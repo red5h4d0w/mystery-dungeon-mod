@@ -384,6 +384,11 @@
         "NAME": "Electro Ball",
         "DESCRIPTION": "Evoke your next orb !M! times. NL  Increase this amount by 1 this combat."
     },
+    "mysteryDungeon:PikachuElectroweb": {
+        "NAME": "Elecroweb",
+        "DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cards from your discard pile into your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cards from your discard pile into your hand."
+    },
     "mysteryDungeon:PikachuEncore": {
         "NAME": "Encore",
         "DESCRIPTION": "mysterydungeon:Inert. NL This turn your next Attack or Skill will be played twice.",
@@ -428,6 +433,11 @@
         "NAME": "Reflect",
         "DESCRIPTION": "Gain !B! block. NL Increase this card block by !M! this combat."
     },
+    "mysteryDungeon:PikachuSafeguard": {
+        "NAME": "Safeguard",
+        "DESCRIPTION": "Gain !B! block. NL Retain your hand this turn.",
+        "UPGRADE_DESCRIPTION": "Gain !B! block. NL Retain your hand for !M! turns."
+    },
     "mysteryDungeon:PikachuShockWave": {
         "NAME": "Shock Wave",
         "DESCRIPTION": "Deal !D! damage to all enemies. NL Apply !M! Lock-On to all enemies."
@@ -453,6 +463,10 @@
     "mysteryDungeon:PikachuSweetKiss": {
         "NAME": "Sweet Kiss",
         "DESCRIPTION": "This turn, apply !M! weak to all enemies every time you enter or exit a stance."
+    },
+    "mysteryDungeon:PikachuSwift": {
+        "NAME": "Swift",
+        "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards."
     },
     "mysteryDungeon:PikachuTackle": {
         "NAME": "Tackle",
