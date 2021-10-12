@@ -8,10 +8,13 @@ import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.SeedHelper;
 import com.megacrit.cardcrawl.monsters.MonsterGroup;
 import com.megacrit.cardcrawl.rooms.VictoryRoom;
 import com.megacrit.cardcrawl.screens.DeathScreen;
+import com.megacrit.cardcrawl.screens.GameOverScreen;
 import com.megacrit.cardcrawl.screens.VictoryScreen;
 
 import org.apache.logging.log4j.LogManager;
@@ -46,8 +49,8 @@ public class MetricsPatch {
             runDetails.maxFloor = AbstractDungeon.floorNum;
             runDetails.win = AbstractDungeon.getCurrRoom() instanceof VictoryRoom;
             runDetails.elapsedTime = CardCrawlGame.playtime;
-            runDetails.score = 2;
-            runDetails.seed = "notImplementedYet";
+            runDetails.score = GameOverScreen.calcScore(runDetails.win);
+            runDetails.seed = SeedHelper.getString(Settings.seed);
             runDetails.pokemon1 = Pokemon.adventurer.name;
             runDetails.pokemon2 = Pokemon.partner.name;
             ArrayList<CardDetails> cardDetails = new ArrayList<>();
@@ -83,8 +86,8 @@ public class MetricsPatch {
             runDetails.maxFloor = AbstractDungeon.floorNum;
             runDetails.win = true;
             runDetails.elapsedTime = CardCrawlGame.playtime;
-            runDetails.score = 8;
-            runDetails.seed = "notImplementedYet";
+            runDetails.score = GameOverScreen.calcScore(runDetails.win);
+            runDetails.seed = SeedHelper.getString(Settings.seed);
             runDetails.pokemon1 = Pokemon.adventurer.name;
             runDetails.pokemon2 = Pokemon.partner.name;
             ArrayList<CardDetails> cardDetails = new ArrayList<>();
