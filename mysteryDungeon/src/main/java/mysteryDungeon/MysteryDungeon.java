@@ -90,8 +90,8 @@ public class MysteryDungeon implements
 
     // Mod-settings settings. This is if you want an on/off savable button
     public static Properties mysteryDungeonDefaultSettings = new Properties();
-    public static final String ENABLE_PLACEHOLDER_SETTINGS = "enablePlaceholder";
-    public static boolean enablePlaceholder = true; // The boolean we'll be setting on/off (true/false)
+    public static final String SEND_RUN_DATA = "FALSE";
+    public static boolean sendRunData = false; // The boolean we'll be setting on/off (true/false)
 
     //This is for the in-game mod settings panel.
     private static final String MODNAME = "Mystery Dungeon";
@@ -252,12 +252,12 @@ public class MysteryDungeon implements
         logger.info("Adding mod settings");
         // This loads the mod settings.
         // The actual mod Button is added below in receivePostInitialize()
-        mysteryDungeonDefaultSettings.setProperty(ENABLE_PLACEHOLDER_SETTINGS, "FALSE"); // This is the default setting. It's actually set...
+        mysteryDungeonDefaultSettings.setProperty(SEND_RUN_DATA, "FALSE"); // This is the default setting. It's actually set...
         try {
             SpireConfig config = new SpireConfig("mysteryDungeon", "mysteryDungeonConfig", mysteryDungeonDefaultSettings); // ...right here
             // the "fileName" parameter is the name of the file MTS will create where it will save our setting.
             config.load(); // Load the setting and set the boolean to equal it
-            enablePlaceholder = config.getBool(ENABLE_PLACEHOLDER_SETTINGS);
+            sendRunData = config.getBool(SEND_RUN_DATA);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -348,18 +348,18 @@ public class MysteryDungeon implements
         ModPanel settingsPanel = new ModPanel();
         
         // Create the on/off button:
-        ModLabeledToggleButton enableNormalsButton = new ModLabeledToggleButton("This is the text which goes next to the checkbox.",
+        ModLabeledToggleButton enableNormalsButton = new ModLabeledToggleButton("Check this to send data on your runs to the developpers of the mod.",
                 350.0f, 700.0f, Settings.CREAM_COLOR, FontHelper.charDescFont, // Position (trial and error it), color, font
-                enablePlaceholder, // Boolean it uses
+                sendRunData, // Boolean it uses
                 settingsPanel, // The mod panel in which this button will be in
                 (label) -> {}, // thing??????? idk
                 (button) -> { // The actual button:
             
-            enablePlaceholder = button.enabled; // The boolean true/false will be whether the button is enabled or not
+            sendRunData = button.enabled; // The boolean true/false will be whether the button is enabled or not
             try {
                 // And based on that boolean, set the settings and save them
                 SpireConfig config = new SpireConfig("mysteryDungeon", "mysteryDungeonConfig", mysteryDungeonDefaultSettings);
-                config.setBool(ENABLE_PLACEHOLDER_SETTINGS, enablePlaceholder);
+                config.setBool(SEND_RUN_DATA, sendRunData);
                 config.save();
             } catch (Exception e) {
                 e.printStackTrace();
