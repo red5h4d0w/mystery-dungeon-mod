@@ -22,7 +22,7 @@ import com.megacrit.cardcrawl.powers.NoBlockPower;
 public class NextTurnNoBlockPower extends MysteryDungeonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("NextTurnNoBlock");
+    public static final String POWER_ID = MysteryDungeon.makeID(NextTurnNoBlockPower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

@@ -20,7 +20,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 public class NoHealPower extends MysteryDungeonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("NoHealPower");
+    public static final String POWER_ID = MysteryDungeon.makeID(NoHealPower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
