@@ -42,6 +42,13 @@
             "When you receive a debuff, gain 2 Block on the following turn."
         ]
     },
+    "mysteryDungeon:FlameOrbRelic": {
+        "NAME": "Flame Orb",
+        "FLAVOR": "An orb that burn it's owner on contact.",
+        "DESCRIPTIONS": [
+            "At the start of your turn apply 9 mysterydungeon:Burn to all enemies."
+        ]
+    },
     "mysteryDungeon:HardyExplorerRelic": {
         "NAME": "Hardy Explorer",
         "FLAVOR": "What is this?",
