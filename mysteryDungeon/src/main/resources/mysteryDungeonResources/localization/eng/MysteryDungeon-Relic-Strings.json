@@ -28,6 +28,13 @@
             "Draw 1 card and gain [E] at the start of every fight."
         ]
     },
+    "mysteryDungeon:CellBatteryRelic": {
+        "NAME": "Cell Battery",
+        "FLAVOR": "A battery held to boost electrik attacks.",
+        "DESCRIPTIONS": [
+            "At the start of your turn return to 0 on the charge gauge."
+        ]
+    },
     "mysteryDungeon:DocileExplorerRelic": {
         "NAME": "Docile Explorer",
         "FLAVOR": "What is this?",
