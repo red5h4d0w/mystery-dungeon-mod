@@ -523,8 +523,8 @@
     },
     "mysteryDungeon:SquirtleAquaTail": {
         "NAME": "Aqua Tail",
-        "DESCRIPTION": "Deal !D! damage. NL Scry !M! cards. NL Draw !mysteryDungeon:M2! cards. NL Discard !mysteryDungeon:M3! cards.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Scry !M! cards. NL Draw !mysteryDungeon:M2! cards. NL Discard !mysteryDungeon:M3! card."
+        "DESCRIPTION": "Deal !D! damage. NL Scry !M! card. NL Draw !mysteryDungeon:M2! card. NL Discard !mysteryDungeon:M3! card.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Scry !M! card. NL Draw !mysteryDungeon:M2! card. NL Discard !mysteryDungeon:M3! card."
     },
     "mysteryDungeon:SquirtleBide": {
         "NAME": "Bide",

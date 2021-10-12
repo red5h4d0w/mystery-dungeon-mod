@@ -40,10 +40,10 @@ public class SquirtleAquaRing extends PokemonCard implements onCardScriedInterfa
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
     private static final int COST = -2;
-    private static final int BASE_BLOCK = 4;
+    private static final int BASE_BLOCK = 10;
     private static final int UPGRADE_PLUS_BLOCK = 3;
-    private static final int BASE_DAMAGE = 3;
-    private static final int UPGRADE_PLUS_DMG = 2;
+    private static final int BASE_DAMAGE = 10;
+    private static final int UPGRADE_PLUS_DMG = 3;
 
 
     // /STAT DECLARATION/
