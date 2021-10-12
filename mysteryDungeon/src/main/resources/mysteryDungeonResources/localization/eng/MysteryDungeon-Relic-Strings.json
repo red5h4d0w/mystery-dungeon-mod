@@ -70,6 +70,13 @@
             "Start each combat with an #yAgility."
         ]
     },
+    "mysteryDungeon:LeftoverRelic": {
+        "NAME": "Leftover",
+        "FLAVOR": "Some food left form your last meal",
+        "DESCRIPTIONS": [
+            "At the end of combat heal 3 hit points."
+        ]
+    },
     "mysteryDungeon:QuirkyExplorerRelic": {
         "NAME": "Quirky Explorer",
         "FLAVOR": "What is this?",
