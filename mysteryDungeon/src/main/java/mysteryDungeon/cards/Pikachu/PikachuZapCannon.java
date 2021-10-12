@@ -57,7 +57,7 @@ public class PikachuZapCannon extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m){
         addToBot(new SetPikaMeterAction(3));
         addToBot(new VFXAction(p, new MindblastEffect(p.dialogX, p.dialogY, p.flipHorizontal), 0.1F));
-        addToBot(new DamageAllEnemiesAction(p, damage, damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
+        addToBot(new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
 
     }
 
