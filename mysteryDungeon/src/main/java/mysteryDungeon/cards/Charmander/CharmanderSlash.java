@@ -53,6 +53,7 @@ public class CharmanderSlash extends CustomCard {
         baseDamage = DAMAGE;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        isMultiDamage = true;
     }
 
     // Actions the card should do.
