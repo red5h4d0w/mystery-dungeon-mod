@@ -32,7 +32,7 @@
         "NAME": "Cell Battery",
         "FLAVOR": "A battery held to boost electrik attacks.",
         "DESCRIPTIONS": [
-            "At the start of your turn return to 0 on the charge gauge."
+            "The charge meter will only have 2 steps between stances. NL At the start of your turn return to the center of the charge meter."
         ]
     },
     "mysteryDungeon:DocileExplorerRelic": {
