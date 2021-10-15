@@ -2,6 +2,7 @@ package mysteryDungeon.relics;
 
 import basemod.abstracts.CustomRelic;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.actions.SetPikaMeterAction;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.ui.PikachuMeter;
 import mysteryDungeon.util.TextureLoader;
@@ -45,6 +46,19 @@ public class CellBatteryRelic extends CustomRelic { // You must implement things
             ((Pokemon)AbstractDungeon.player).maxPikachuChargeCounter = 2;
             PikachuMeter.maxCounterPosition = 2;
         }
+    }
+
+    @Override
+    public void onUnequip() {
+        if(AbstractDungeon.player instanceof Pokemon) {
+            ((Pokemon)AbstractDungeon.player).maxPikachuChargeCounter = 3;
+            PikachuMeter.maxCounterPosition = 3;
+        }
+    }
+
+    @Override
+    public void onPlayerEndTurn() {
+        addToBot(new SetPikaMeterAction(0));
     }
 
     // Description
