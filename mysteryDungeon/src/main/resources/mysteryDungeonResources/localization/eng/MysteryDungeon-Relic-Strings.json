@@ -46,7 +46,7 @@
         "NAME": "Flame Orb",
         "FLAVOR": "An orb that burn it's owner on contact.",
         "DESCRIPTIONS": [
-            "At the start of your turn apply 9 mysterydungeon:Burn to all enemies."
+            "At the start of each combat, apply 9 mysterydungeon:Burn to all enemies."
         ]
     },
     "mysteryDungeon:HardyExplorerRelic": {
