@@ -360,8 +360,11 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     public ToSave onSave()
     {
         ToSave saveInfo = new ToSave();
-        saveInfo.adventurer = adventurer.name;
-        saveInfo.partner = partner.name;
+        if(adventurer!=null){
+        saveInfo.adventurer = adventurer.name;}
+        if(partner!=null){
+        saveInfo.partner = partner.name;}
+
         saveInfo.maxPikaMeter = maxPikachuChargeCounter;
         return saveInfo;
     }
