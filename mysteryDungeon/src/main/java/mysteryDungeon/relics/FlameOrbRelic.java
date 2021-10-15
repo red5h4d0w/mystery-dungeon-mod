@@ -9,16 +9,13 @@ import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class FlameOrbRelic extends CustomRelic { // You must implement things you want to use from StSlib
     /*
@@ -44,11 +41,12 @@ public class FlameOrbRelic extends CustomRelic { // You must implement things yo
         tips.add(new PowerTip(name, description));
     }
 
-    public void atTurnStart() {
+    @Override
+    public void atBattleStart() {
         flash();
         for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-            addToBot((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)mo, this));
-            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new BurnPower((AbstractCreature)mo, 9), 9, true)); 
+            addToBot(new RelicAboveCreatureAction(mo, this));
+            addToBot(new ApplyPowerAction(mo, AbstractDungeon.player, new BurnPower(mo, 9), 9, true)); 
         }
     }
 

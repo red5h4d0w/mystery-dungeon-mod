@@ -53,21 +53,21 @@ public class BraveExplorerRelic extends CustomRelic { // You must implement thin
         } 
       }
       
-      public void atTurnStart() {
+    public void atTurnStart() {
         trigger = false;
         if (AbstractDungeon.player.currentBlock == 0)
-          beginLongPulse(); 
-      }
+            beginLongPulse(); 
+    }
       
-      public int onPlayerGainedBlock(float blockAmount) {
+    public int onPlayerGainedBlock(float blockAmount) {
         if (blockAmount > 0.0F)
-          stopPulse(); 
+            stopPulse(); 
         return MathUtils.floor(blockAmount);
-      }
+    }
       
-      public void onVictory() {
+    public void onVictory() {
         stopPulse();
-      }
+    }
 
     // Description
     @Override

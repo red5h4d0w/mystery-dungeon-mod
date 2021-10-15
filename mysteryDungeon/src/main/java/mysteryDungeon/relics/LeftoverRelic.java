@@ -8,10 +8,8 @@ import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
@@ -41,9 +39,10 @@ public class LeftoverRelic extends CustomRelic { // You must implement things yo
         tips.add(new PowerTip(name, description));
     }
 
+    @Override
     public void onVictory() {
         flash();
-        addToTop((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)AbstractDungeon.player, this));
+        addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         AbstractPlayer p = AbstractDungeon.player;
         if (p.currentHealth > 0)
           p.heal(3); 
