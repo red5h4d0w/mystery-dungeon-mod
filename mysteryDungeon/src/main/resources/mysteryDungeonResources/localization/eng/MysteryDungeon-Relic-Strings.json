@@ -77,6 +77,13 @@
             "At the end of combat heal 3 hit points."
         ]
     },
+    "mysteryDungeon:LifeOrbRelic": {
+        "NAME": "Life Orb",
+        "FLAVOR": "Drains youre own life to gain more power.",
+        "DESCRIPTIONS": [
+            "Gain [E] at the start of your turn. NL At the end of your turn exhaust a random card from your hand."
+        ]
+    },
     "mysteryDungeon:QuirkyExplorerRelic": {
         "NAME": "Quirky Explorer",
         "FLAVOR": "What is this?",
