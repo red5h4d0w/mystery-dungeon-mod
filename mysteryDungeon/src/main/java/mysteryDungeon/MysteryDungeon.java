@@ -15,6 +15,7 @@ import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.events.IdentityCrisisEvent;
 import mysteryDungeon.potions.PlaceholderPotion;
 import mysteryDungeon.relics.NatureRelatedRelic;
+import mysteryDungeon.saveConstructs.ToSave;
 import mysteryDungeon.util.IDCheckDontTouchPls;
 import mysteryDungeon.util.LocalizationTool;
 import mysteryDungeon.util.TextureLoader;
@@ -370,7 +371,7 @@ public class MysteryDungeon implements
         
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
 
-        BaseMod.addSaveField("adventurerAndPartner", (CustomSavable<String[]>)new Pokemon("the Pokémon", Pokemon.Enums.THE_POKEMON));
+        BaseMod.addSaveField("adventurerAndPartner", (CustomSavable<ToSave>)new Pokemon("the Pokémon", Pokemon.Enums.THE_POKEMON));
 
         
         // =============== EVENTS =================

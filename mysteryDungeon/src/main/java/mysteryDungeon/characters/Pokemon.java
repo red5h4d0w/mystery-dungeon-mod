@@ -11,6 +11,7 @@ import mysteryDungeon.cards.fakeCards.PartnersDeck;
 import mysteryDungeon.pokemons.AbstractPokemon;
 import mysteryDungeon.pokemons.Pikachu;
 import mysteryDungeon.relics.*;
+import mysteryDungeon.saveConstructs.ToSave;
 import mysteryDungeon.stances.NegativeStance;
 import mysteryDungeon.stances.PositiveStance;
 import mysteryDungeon.ui.PikachuMeter;
@@ -60,7 +61,7 @@ import java.util.Random;
 //and https://github.com/daviscook477/BaseMod/wiki/Migrating-to-5.0
 //All text (starting description and loadout, anything labeled TEXT[]) can be found in MysteryDungeon-character-Strings.json in the resources
 
-public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
+public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     public static final Logger logger = LogManager.getLogger(MysteryDungeon.class.getName());
 
     // =============== CHARACTER ENUMERATORS =================
@@ -356,21 +357,23 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
     }
 
     @Override
-    public String[] onSave()
+    public ToSave onSave()
     {
-        if(!hasChosenStarters())
-            return null;
-        return new String[]{adventurer.name, partner.name};
+        ToSave saveInfo = new ToSave();
+        saveInfo.adventurer = adventurer.name;
+        saveInfo.partner = partner.name;
+        saveInfo.maxPikaMeter = maxPikachuChargeCounter;
+        return saveInfo;
     }
 
     @Override
-    public void onLoad(String[] adventurerAndPartner)
+    public void onLoad(ToSave saveInfo)
     {
-        if(adventurerAndPartner!=null)
+        if(saveInfo.adventurer!=null && saveInfo.partner!=null)
         {
             try {
-                adventurer = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+((String[])adventurerAndPartner)[0]).getConstructor().newInstance();
-                partner = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+((String[])adventurerAndPartner)[1]).getConstructor().newInstance();
+                adventurer = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+(saveInfo.adventurer)).getConstructor().newInstance();
+                partner = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+(saveInfo.partner)).getConstructor().newInstance();
                 if(AbstractDungeon.actNum>=2) {
                     evolvePokemons();
                 }
@@ -383,6 +386,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
                 e.printStackTrace();
             }
         } 
+        maxPikachuChargeCounter = saveInfo.maxPikaMeter;
     }
 
     @Override
