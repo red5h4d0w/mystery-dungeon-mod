@@ -34,7 +34,7 @@ public class CellBatteryRelic extends CustomRelic { // You must implement things
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("default_clickable_relic.png"));
 
     public CellBatteryRelic() {
-        super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.CLINK);
+        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
 
         tips.clear();
         tips.add(new PowerTip(name, description));
