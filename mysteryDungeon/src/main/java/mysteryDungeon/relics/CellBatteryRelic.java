@@ -2,16 +2,14 @@ package mysteryDungeon.relics;
 
 import basemod.abstracts.CustomRelic;
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.actions.SetPikaMeterAction;
+import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.ui.PikachuMeter;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
@@ -41,11 +39,13 @@ public class CellBatteryRelic extends CustomRelic { // You must implement things
         tips.add(new PowerTip(name, description));
     }
 
-    public void atTurnStart() {
-        flash();
-        addToBot((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)AbstractDungeon.player, this));
-        addToBot(new SetPikaMeterAction(0)); 
-      }
+    @Override
+    public void onEquip() {
+        if(AbstractDungeon.player instanceof Pokemon) {
+            ((Pokemon)AbstractDungeon.player).maxPikachuChargeCounter = 2;
+            PikachuMeter.maxCounterPosition = 2;
+        }
+    }
 
     // Description
     @Override

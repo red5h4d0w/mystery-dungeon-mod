@@ -121,6 +121,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
     public static final int ORB_SLOTS = 0;
     public static Nature nature;
     public static int pikachuChargeCounter = 0;
+    public int maxPikachuChargeCounter = 3;
 
     public Texture campfirePose;
 
@@ -517,14 +518,14 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
                 }
             }
             if(c.type == CardType.ATTACK)
-                pikachuChargeCounter+=(pikachuChargeCounter==3?0:1);
+                pikachuChargeCounter+=(pikachuChargeCounter==maxPikachuChargeCounter?0:1);
             if(c.type == CardType.SKILL)
-                pikachuChargeCounter-=(pikachuChargeCounter==-3?0:1);
+                pikachuChargeCounter-=(pikachuChargeCounter==-maxPikachuChargeCounter?0:1);
             pikaMeter.setCounterPosition(pikachuChargeCounter);
-            if(pikachuChargeCounter==3) {
+            if(pikachuChargeCounter==maxPikachuChargeCounter) {
                 AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(PositiveStance.STANCE_ID));
             }
-            if(pikachuChargeCounter==-3) {
+            if(pikachuChargeCounter==-maxPikachuChargeCounter) {
                 AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(NegativeStance.STANCE_ID));
             }
             if(pikachuChargeCounter==0) {
@@ -535,11 +536,15 @@ public class Pokemon extends CustomPlayer implements CustomSavable<String[]>{
 
     public void setPikaMeter(int newState) {
         pikachuChargeCounter = newState;
+        if(pikachuChargeCounter>maxPikachuChargeCounter)
+            pikachuChargeCounter=maxPikachuChargeCounter;
+        if(pikachuChargeCounter<-1*maxPikachuChargeCounter)
+            pikachuChargeCounter=-1*maxPikachuChargeCounter;
         pikaMeter.setCounterPosition(pikachuChargeCounter);
-        if(pikachuChargeCounter==3) {
+        if(pikachuChargeCounter==maxPikachuChargeCounter) {
             AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(PositiveStance.STANCE_ID));
         }
-        if(pikachuChargeCounter==-3) {
+        if(pikachuChargeCounter==-maxPikachuChargeCounter) {
             AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(NegativeStance.STANCE_ID));
         }
         if(pikachuChargeCounter==0) {

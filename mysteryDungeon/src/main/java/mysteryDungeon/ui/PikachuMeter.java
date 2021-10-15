@@ -36,6 +36,7 @@ public class PikachuMeter {
     private static final float METER_HEIGHT = 50.0f * Settings.scale;
 
     private static int counterPosition = 0;
+    public static int maxCounterPosition = 3;
 
     public PikachuMeter() { }
     
@@ -60,7 +61,7 @@ public class PikachuMeter {
             sb.draw(ImageMaster.KEYWORD_BODY, x, y - h - METER_HEIGHT - BOX_EDGE_H, BOX_W, METER_HEIGHT + h + BOX_EDGE_H);
             sb.draw(ImageMaster.KEYWORD_BOT, x, y - h - METER_HEIGHT - BOX_BODY_H, BOX_W, BOX_EDGE_H);
             sb.draw(ImageMaster.OPTION_SLIDER_BG, x + BOX_W/2 - 125f, y - h - BOX_BODY_H - METER_HEIGHT/2 + 12f, 125f, 12f, 250.0f, 24.0f, Settings.scale, Settings.scale, 0.0f, 0, 0, 250, 24, false, false);
-            sb.draw(ImageMaster.OPTION_SLIDER, x + BOX_W/2 - 22f + counterPosition*37.5f, y - h - BOX_BODY_H - METER_HEIGHT/2, 22f, 22.0F, 44.0F, 44.0F, Settings.scale, Settings.scale, 0.0F, 0, 0, 44, 44, false, false);
+            sb.draw(ImageMaster.OPTION_SLIDER, x + BOX_W/2 - 22f + counterPosition*112.5f/maxCounterPosition, y - h - BOX_BODY_H - METER_HEIGHT/2, 22f, 22.0F, 44.0F, 44.0F, Settings.scale, Settings.scale, 0.0F, 0, 0, 44, 44, false, false);
             FontHelper.renderFontLeft(sb, FontHelper.tipHeaderFont, "-", x + BOX_W/2 - 120f, y - h - BOX_BODY_H - METER_HEIGHT/2, BASE_COLOR);
             
             float plusSymbolWidth = FontHelper.getSmartWidth(FontHelper.tipHeaderFont, "+", BOX_W, TIP_DESC_LINE_SPACING);
