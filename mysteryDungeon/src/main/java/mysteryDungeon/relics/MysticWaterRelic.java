@@ -40,12 +40,12 @@ public class MysticWaterRelic extends CustomRelic { // You must implement things
     @Override
     public void onEquip() {
         AbstractDungeon.player.energy.energyMaster++;
-        AbstractDungeon.player.gameHandSize -= 2;
+        AbstractDungeon.player.gameHandSize -= 3;
       }
       
     public void onUnequip() {
         AbstractDungeon.player.energy.energyMaster--;
-        AbstractDungeon.player.gameHandSize += 2;
+        AbstractDungeon.player.gameHandSize += 3;
       }
     // Description
     @Override

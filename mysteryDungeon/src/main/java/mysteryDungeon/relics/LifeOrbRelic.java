@@ -48,7 +48,7 @@ public class LifeOrbRelic extends CustomRelic { // You must implement things you
       }
 
     public void atEndOfTurn(){
-        addToBot(new ExhaustAction(1, true, false, false));
+        new ExhaustAction(1, true, false, false);
     }
     // Description
     @Override
