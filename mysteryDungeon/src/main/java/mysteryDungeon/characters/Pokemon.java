@@ -395,7 +395,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     @Override
     public Type savedType()
     {
-        return new TypeToken<String[]>(){}.getType();
+        return new TypeToken<ToSave>(){}.getType();
     }
 
     // character Select screen effect
