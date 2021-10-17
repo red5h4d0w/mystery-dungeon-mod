@@ -49,7 +49,7 @@ public class LifeOrbRelic extends CustomRelic { // You must implement things you
 
     public void atEndOfTurn(boolean isPlayer){
         if(isPlayer)
-        new ExhaustAction(1, true, false, false);
+        addToBot(new ExhaustAction(1, true, false, false));
     }
     // Description
     @Override
