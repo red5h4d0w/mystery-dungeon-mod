@@ -1,8 +1,6 @@
 package mysteryDungeon.relics;
 
 import basemod.abstracts.CustomRelic;
-import basemod.interfaces.*;
-
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.util.TextureLoader;
 
@@ -42,7 +40,7 @@ public class MysticWaterRelic extends CustomRelic { // You must implement things
     @Override
     public void onEquip() {
         AbstractDungeon.player.energy.energyMaster++;
-        basemod.BaseMod.MAX_HAND_SIZE = 10;
+        basemod.BaseMod.MAX_HAND_SIZE = 8;
       }
       
     public void onUnequip() {
