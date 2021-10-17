@@ -47,7 +47,8 @@ public class LifeOrbRelic extends CustomRelic { // You must implement things you
         AbstractDungeon.player.energy.energyMaster--;
       }
 
-    public void atEndOfTurn(){
+    public void atEndOfTurn(boolean isPlayer){
+        if(isPlayer)
         new ExhaustAction(1, true, false, false);
     }
     // Description
