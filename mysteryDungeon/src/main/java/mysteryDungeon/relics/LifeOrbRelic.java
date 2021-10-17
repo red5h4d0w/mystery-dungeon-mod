@@ -41,15 +41,15 @@ public class LifeOrbRelic extends CustomRelic { // You must implement things you
     @Override
     public void onEquip() {
         AbstractDungeon.player.energy.energyMaster++;
-      }
+    }
       
     public void onUnequip() {
         AbstractDungeon.player.energy.energyMaster--;
-      }
+    }
 
-    public void atEndOfTurn(boolean isPlayer){
-        if(isPlayer)
-        AbstractDungeon.actionManager.addToBottom(new ExhaustAction(1, true, false, false));
+    @Override
+    public void onPlayerEndTurn() {
+        addToBot(new ExhaustAction(1, true, false, false));
     }
     // Description
     @Override
