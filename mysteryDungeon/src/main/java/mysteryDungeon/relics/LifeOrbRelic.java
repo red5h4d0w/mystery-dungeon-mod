@@ -42,15 +42,18 @@ public class LifeOrbRelic extends CustomRelic { // You must implement things you
     public void onEquip() {
         AbstractDungeon.player.energy.energyMaster++;
     }
-      
+    
+    @Override
     public void onUnequip() {
         AbstractDungeon.player.energy.energyMaster--;
     }
 
     @Override
     public void onPlayerEndTurn() {
+        flash();
         addToBot(new ExhaustAction(1, true, false, false));
     }
+
     // Description
     @Override
     public String getUpdatedDescription() {
