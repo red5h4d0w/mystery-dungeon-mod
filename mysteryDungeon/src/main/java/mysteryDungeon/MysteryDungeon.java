@@ -131,7 +131,7 @@ public class MysteryDungeon implements
     private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "mysteryDungeonResources/images/1024/card_default_gray_orb.png";
     
     // Character assets
-    private static final String THE_DEFAULT_BUTTON = "mysteryDungeonResources/images/charSelect/Bulbasaur.png";
+    private static final String THE_DEFAULT_BUTTON = "mysteryDungeonResources/images/charSelect/PokemonCharacterButton.png";
     private static final String THE_DEFAULT_PORTRAIT = "mysteryDungeonResources/images/charSelect/mysteryDungeonCover.png";
     public static final String THE_DEFAULT_SHOULDER_1 = "mysteryDungeonResources/images/char/pokemon/Bulbasaur_back.png";
     public static final String THE_DEFAULT_SHOULDER_2 = "mysteryDungeonResources/images/char/pokemon/Charmander_back.png";
