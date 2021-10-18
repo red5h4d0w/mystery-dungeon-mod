@@ -84,6 +84,13 @@
             "Gain [E] at the start of your turn. NL At the end of your turn, exhaust a random card from your hand."
         ]
     },
+    "mysteryDungeon:MiracleSeedRelic": {
+        "NAME": "Miracle Seed",
+        "FLAVOR": "Its a seed invued with life force that boosts the power of Grass-type moves.",
+        "DESCRIPTIONS": [
+            "For every 2 debuffs you apply on a set turn draw a card."
+        ]
+    },
     "mysteryDungeon:MysticWaterRelic": {
         "NAME": "Mystic Water",
         "FLAVOR": "This teardrop-shaped gem boosts the power of Water-type moves.",
