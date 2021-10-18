@@ -10,14 +10,13 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.stances.NeutralStance;
 
-import basemod.abstracts.CustomRelic;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
-public class LightBallRelic extends CustomRelic{
+public class LightBallRelic extends AbstractPokemonRelic {
     public static final String ID = MysteryDungeon.makeID(LightBallRelic.class.getSimpleName());
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);

@@ -1,6 +1,5 @@
 package mysteryDungeon.relics;
 
-import basemod.abstracts.CustomRelic;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.util.TextureLoader;
 
@@ -19,7 +18,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.NextTurnBlockPower;
 import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 
-public class DocileExplorerRelic extends CustomRelic implements OnReceivePowerRelic { // You must implement things you want to use from StSlib
+public class DocileExplorerRelic extends AbstractPokemonRelic implements OnReceivePowerRelic { // You must implement things you want to use from StSlib
     /*
      * https://github.com/daviscook477/BaseMod/wiki/Custom-Relics
      * StSLib for Clickable Relics

@@ -1,6 +1,5 @@
 package mysteryDungeon.relics;
 
-import basemod.abstracts.CustomRelic;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.util.TextureLoader;
 
@@ -15,7 +14,7 @@ import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.RetainCardPower;
 
-public class TimidExplorerRelic extends CustomRelic { 
+public class TimidExplorerRelic extends AbstractPokemonRelic { 
     public static final String ID = MysteryDungeon.makeID(TimidExplorerRelic.class.getSimpleName());
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);

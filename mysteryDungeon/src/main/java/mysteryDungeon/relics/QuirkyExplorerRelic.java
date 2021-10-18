@@ -1,6 +1,5 @@
 package mysteryDungeon.relics;
 
-import basemod.abstracts.CustomRelic;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.interfaces.GoldBonusInterface;
 import mysteryDungeon.util.TextureLoader;
@@ -13,7 +12,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
-public class QuirkyExplorerRelic extends CustomRelic implements GoldBonusInterface{ // You must implement things you want to use from StSlib
+public class QuirkyExplorerRelic extends AbstractPokemonRelic implements GoldBonusInterface{ // You must implement things you want to use from StSlib
     /*
      * https://github.com/daviscook477/BaseMod/wiki/Custom-Relics
      * StSLib for Clickable Relics
