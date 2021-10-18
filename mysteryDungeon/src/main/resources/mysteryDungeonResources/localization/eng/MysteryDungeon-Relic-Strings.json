@@ -35,6 +35,13 @@
             "The charge meter will only have 2 steps between stances. NL At the start of your turn return to the center of the charge meter."
         ]
     },
+    "mysteryDungeon:CharcoalRelic": {
+        "NAME": "Charcoal",
+        "FLAVOR": "It's a combustible fuel that boosts the power of Fire-type moves.",
+        "DESCRIPTIONS": [
+            "Every time you apply a debuff deal #b2 damage to all enemies."
+        ]
+    },
     "mysteryDungeon:DocileExplorerRelic": {
         "NAME": "Docile Explorer",
         "FLAVOR": "What is this?",
