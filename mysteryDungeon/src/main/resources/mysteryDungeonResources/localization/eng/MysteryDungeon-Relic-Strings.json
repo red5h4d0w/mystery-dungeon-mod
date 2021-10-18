@@ -18,7 +18,7 @@
         "NAME": "Brave Explorer",
         "FLAVOR": "A brave Explorer",
         "DESCRIPTIONS": [
-            "If you don't have any block at the end of your turn gain 1 Strenght"
+            "If you don't have any block at the end of your turn gain 1 Strength."
         ]
     },
     "mysteryDungeon:CalmExplorerRelic": {

@@ -38,6 +38,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -297,16 +298,28 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         masterMaxOrbs+=pokemon.orbSlots;
     }
 
-    public void awardStartingDecks(AbstractPokemon pokemon)
-    {
-        for(AbstractCard card: pokemon.startingDeck)
-        {
+    public void awardStartingDecks(AbstractPokemon pokemon) {
+        for(AbstractCard card: pokemon.startingDeck) {
             masterDeck.addToTop(card);
         }
     }
 
+    public void removeImproperRelics() {
+        if(hasChosenStarters()) {
+            for(String relicId: AbstractDungeon.commonRelicPool) {
+                AbstractRelic relic = RelicLibrary.getRelic(relicId);
+                if(relic instanceof AbstractPokemonRelic) {
+                    Color relicColor = ((AbstractPokemonRelic)relic).color;
+                    if(relicColor!=adventurer.color && relicColor!=partner.color) {
+                        AbstractDungeon.commonRelicPool.remove(relicId);
+                    }
+                }
+            }
+        }
+    }
+
     public void AwardStartingRelic() {
-        this.loseRelic(NatureRelatedRelic.ID);
+        loseRelic(NatureRelatedRelic.ID);
         AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2, natureRelatedRelic());
         if(hasChosenPikachu()) {
             AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2, new LightBallRelic());
@@ -323,6 +336,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         awardStartingDecks(partner);
         AwardStartingRelic();
         startingMaxHP = maxHealth;
+        removeImproperRelics();
     }
 
     public void evolvePokemons() {
