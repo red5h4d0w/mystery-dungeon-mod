@@ -88,7 +88,7 @@
         "NAME": "Miracle Seed",
         "FLAVOR": "Its a seed invued with life force that boosts the power of Grass-type moves.",
         "DESCRIPTIONS": [
-            "For every 2 debuffs you apply on a set turn draw a card."
+            "Every time you apply #b2 #ydebuffs in a single turn draw a card."
         ]
     },
     "mysteryDungeon:MysticWaterRelic": {

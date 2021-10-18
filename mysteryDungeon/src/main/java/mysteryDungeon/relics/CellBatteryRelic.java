@@ -3,6 +3,7 @@ package mysteryDungeon.relics;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.actions.SetPikaMeterAction;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.pokemons.Pikachu;
 import mysteryDungeon.ui.PikachuMeter;
 import mysteryDungeon.util.TextureLoader;
 
@@ -35,6 +36,7 @@ public class CellBatteryRelic extends AbstractPokemonRelic { // You must impleme
     public CellBatteryRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
 
+        color = Pikachu.COLOR;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }

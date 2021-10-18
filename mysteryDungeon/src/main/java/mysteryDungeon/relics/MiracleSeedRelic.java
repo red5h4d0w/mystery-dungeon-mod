@@ -1,7 +1,7 @@
 package mysteryDungeon.relics;
 
-import basemod.abstracts.CustomRelic;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.pokemons.Bulbasaur;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
@@ -18,7 +18,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 
-public class MiracleSeedRelic extends CustomRelic implements OnApplyPowerRelic { // You must implement things you want to use from StSlib
+public class MiracleSeedRelic extends AbstractPokemonRelic implements OnApplyPowerRelic { // You must implement things you want to use from StSlib
     /*
      * https://github.com/daviscook477/BaseMod/wiki/Custom-Relics
      * StSLib for Clickable Relics
@@ -38,6 +38,7 @@ public class MiracleSeedRelic extends CustomRelic implements OnApplyPowerRelic {
     public MiracleSeedRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
 
+        color = Bulbasaur.COLOR;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }
