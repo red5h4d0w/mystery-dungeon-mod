@@ -1,6 +1,7 @@
 package mysteryDungeon.relics;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.pokemons.Charmander;
 import mysteryDungeon.powers.BurnPower;
 import mysteryDungeon.util.TextureLoader;
 
@@ -36,6 +37,7 @@ public class FlameOrbRelic extends AbstractPokemonRelic { // You must implement 
     public FlameOrbRelic() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
 
+        color = Charmander.COLOR;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }
