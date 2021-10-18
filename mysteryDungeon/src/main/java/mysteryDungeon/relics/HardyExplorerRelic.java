@@ -1,6 +1,5 @@
 package mysteryDungeon.relics;
 
-import basemod.abstracts.CustomRelic;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.util.TextureLoader;
 
@@ -20,7 +19,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.BlurPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
-public class HardyExplorerRelic extends CustomRelic { // You must implement things you want to use from StSlib
+public class HardyExplorerRelic extends AbstractPokemonRelic { // You must implement things you want to use from StSlib
     /*
      * https://github.com/daviscook477/BaseMod/wiki/Custom-Relics
      * StSLib for Clickable Relics

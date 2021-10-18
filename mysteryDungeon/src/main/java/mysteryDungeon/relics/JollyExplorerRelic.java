@@ -1,6 +1,5 @@
 package mysteryDungeon.relics;
 
-import basemod.abstracts.CustomRelic;
 import basemod.helpers.CardPowerTip;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.cards.tempCards.ColorlessAgility;
@@ -14,7 +13,7 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
-public class JollyExplorerRelic extends CustomRelic { // You must implement things you want to use from StSlib
+public class JollyExplorerRelic extends AbstractPokemonRelic { // You must implement things you want to use from StSlib
     /*
      * https://github.com/daviscook477/BaseMod/wiki/Custom-Relics
      * StSLib for Clickable Relics
