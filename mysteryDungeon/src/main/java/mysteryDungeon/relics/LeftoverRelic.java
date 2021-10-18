@@ -24,12 +24,12 @@ public class LeftoverRelic extends CustomRelic { // You must implement things yo
      */
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID("LeftoverRelic");
+    public static final String ID = MysteryDungeon.makeID("LeftoversRelic");
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;
     public static final String[] DESCRIPTIONS = relicStrings.DESCRIPTIONS;
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("default_clickable_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("leftovers.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("default_clickable_relic.png"));
 
     public LeftoverRelic() {

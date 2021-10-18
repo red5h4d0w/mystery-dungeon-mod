@@ -30,7 +30,7 @@
     },
     "mysteryDungeon:CellBatteryRelic": {
         "NAME": "Cell Battery",
-        "FLAVOR": "A battery held to boost electrik attacks.",
+        "FLAVOR": "A consumable battery. If the holder is hit by an Electric-type move, its Attack will rise.",
         "DESCRIPTIONS": [
             "The charge meter will only have 2 steps between stances. NL At the start of your turn return to the center of the charge meter."
         ]
@@ -44,7 +44,7 @@
     },
     "mysteryDungeon:FlameOrbRelic": {
         "NAME": "Flame Orb",
-        "FLAVOR": "An orb that burn it's owner on contact.",
+        "FLAVOR": "It's a bizarre orb that will afflict the holder with a burn during battle.",
         "DESCRIPTIONS": [
             "At the start of each combat, apply 9 mysterydungeon:Burn to all enemies."
         ]
@@ -70,8 +70,8 @@
             "Start each combat with an #yAgility."
         ]
     },
-    "mysteryDungeon:LeftoverRelic": {
-        "NAME": "Leftover",
+    "mysteryDungeon:LeftoversRelic": {
+        "NAME": "Leftovers",
         "FLAVOR": "Some food left form your last meal",
         "DESCRIPTIONS": [
             "At the end of combat heal 3 hit points."
@@ -79,14 +79,14 @@
     },
     "mysteryDungeon:LifeOrbRelic": {
         "NAME": "Life Orb",
-        "FLAVOR": "Drains youre own life to gain more power.",
+        "FLAVOR": "It boosts the power of moves, but at the cost of some HP on each hit.",
         "DESCRIPTIONS": [
-            "Gain [E] at the start of your turn. NL At the end of your turn exhaust a random card from your hand."
+            "Gain [E] at the start of your turn. NL At the end of your turn, exhaust a random card from your hand."
         ]
     },
     "mysteryDungeon:MysticWaterRelic": {
         "NAME": "Mystic Water",
-        "FLAVOR": "What is this?.",
+        "FLAVOR": "This teardrop-shaped gem boosts the power of Water-type moves.",
         "DESCRIPTIONS": [
             "Gain [E] at the start of your turn. NL Reduce your maximum hand size by 2."
         ]
@@ -114,7 +114,7 @@
     },
     "mysteryDungeon:LightBallRelic": {
         "NAME": "Light Ball",
-        "FLAVOR": "What is this?",
+        "FLAVOR": "It's a puzzling orb that boosts its Attack and Sp. Atk stats.",
         "DESCRIPTIONS": [
             "When you play a power and you are not in a stance, gain 1 orb slot."
         ]
