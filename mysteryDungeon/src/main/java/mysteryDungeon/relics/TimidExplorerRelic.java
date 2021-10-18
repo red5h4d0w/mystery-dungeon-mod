@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.RetainCardPower;
 
 public class TimidExplorerRelic extends CustomRelic { 
-    public static final String ID = MysteryDungeon.makeID("TimidExplorerRelic");
+    public static final String ID = MysteryDungeon.makeID(TimidExplorerRelic.class.getSimpleName());
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

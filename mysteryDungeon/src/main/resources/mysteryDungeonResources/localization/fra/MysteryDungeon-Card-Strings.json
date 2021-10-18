@@ -647,5 +647,66 @@
     "mysteryDungeon:PikachuLightScreen": {
         "NAME": "Light Screen",
         "DESCRIPTION": "At the end of your turn, Gain !M! Block per empty orb slot."
+    },
+    "mysteryDungeon:ChooseAttack": {
+        "NAME": "Attack",
+        "DESCRIPTION": "Add a random attack card to your hand."
+    },
+    "mysteryDungeon:ChooseSkill": {
+        "NAME": "Skill",
+        "DESCRIPTION": "Add a random skill card to your hand."
+    },
+    "mysteryDungeon:PikachuAgility": {
+        "NAME": "Agility",
+        "DESCRIPTION": "Whenever you enter or exit a stance, draw !M! card.",
+        "UPGRADE_DESCRIPTION": "Innate NL Whenever you enter or exit a stance, draw !M! card."
+    },
+    "mysteryDungeon:PikachuElectroweb": {
+        "NAME": "Elecroweb",
+        "DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cards from your discard pile into your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cards from your discard pile into your hand."
+    },
+    "mysteryDungeon:PikachuEncore": {
+        "NAME": "Encore",
+        "DESCRIPTION": "mysterydungeon:Inert. NL This turn your next Attack or Skill will be played twice.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL This turn your next !M! Attacks or Skills will be played twice."
+    },
+    "mysteryDungeon:PikachuHiddenPower": {
+        "NAME": "Hidden Power",
+        "DESCRIPTION": "mysterydungeon:Inert. NL Add a random attack or skill card to your hand. NL It costs 0 this turn. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Choose between a random attack or skill card to add to your hand. NL It costs 0 this turn. NL Exhaust."
+    },
+    "mysteryDungeon:PikachuPlayRough": {
+        "NAME": "Play Rough",
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! weak."
+    },
+    "mysteryDungeon:PikachuReflect": {
+        "NAME": "Reflect",
+        "DESCRIPTION": "Gain !B! block. NL Increase this card block by !M! this combat."
+    },
+    "mysteryDungeon:PikachuSafeguard": {
+        "NAME": "Safeguard",
+        "DESCRIPTION": "Gain !B! block. NL Retain your hand this turn.",
+        "UPGRADE_DESCRIPTION": "Gain !B! block. NL Retain your hand for !M! turns."
+    },
+    "mysteryDungeon:PikachuSpark": {
+        "NAME": "Spark",
+        "DESCRIPTION": "Deal !D! damage. NL Return to 0 on the Charge-Meter."
+    },
+    "mysteryDungeon:PikachuSwift": {
+        "NAME": "Swift",
+        "DESCRIPTION": "Deal !D! damage to all enemies. NL Draw !M! cards."
+    },
+    "mysteryDungeon:PikachuThunder": {
+        "NAME": "Thunder",
+        "DESCRIPTION": "Whenever you evoke an Orb, deal !M! damage to ALL enemies."
+    },
+    "mysteryDungeon:PikachuThunderbolt": {
+        "NAME": "Thunderbolt",
+        "DESCRIPTION": "Deal !D! damage X times. NL If the last card played was a skill gain 1 energy."
+    },
+    "mysteryDungeon:PikachuZapCannon": {
+        "NAME": "Zap Cannon",
+        "DESCRIPTION": "Enter Positive Stance. NL Deal !D! damage to all enemies."
     }
 }

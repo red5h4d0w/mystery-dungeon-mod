@@ -54,7 +54,9 @@
     },
     "mysteryDungeon:EndurePower": {
         "NAME": "Endure",
-        "DESCRIPTIONS": [ "When you play a status card deal #b%s damage to a random enemy."]
+        "DESCRIPTIONS": [
+            "When you play a status card deal #b%s damage to a random enemy."
+        ]
     },
     "mysteryDungeon:EvasivenessDropPower": {
         "NAME": "Evasiveness Drop",
@@ -219,6 +221,31 @@
         "NAME": "Sweet Kiss",
         "DESCRIPTIONS": [
             "Apply #b%s weak to all enemies every time you enter or exit a stance."
+        ]
+    },
+    "mysteryDungeon:AgilityPower": {
+        "NAME": "Agility",
+        "DESCRIPTIONS": [
+            "Whenever you enter or exit a stance, draw #b%s card.",
+            "Whenever you enter or exit a stance, draw #b%s cards."
+        ]
+    },
+    "mysteryDungeon:EncorePower": {
+        "NAME": "Encore",
+        "DESCRIPTIONS": [
+            "This turn your next attack or skill is played twice"
+        ]
+    },
+    "mysteryDungeon:LightScreen": {
+        "NAME": "Light Screen",
+        "DESCRIPTIONS": [
+            "At the end of the turn, gain #b%s block per empty orb slot."
+        ]
+    },
+    "mysteryDungeon:ThunderPower": {
+        "NAME": "Thunder",
+        "DESCRIPTIONS": [
+            "Whenever you evoke an Orb, deal #b%s damage to ALL enemies."
         ]
     }
 }

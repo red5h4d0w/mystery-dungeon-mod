@@ -23,7 +23,7 @@ public class JollyExplorerRelic extends CustomRelic { // You must implement thin
      */
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID("JollyExplorerRelic");
+    public static final String ID = MysteryDungeon.makeID(JollyExplorerRelic.class.getSimpleName());
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

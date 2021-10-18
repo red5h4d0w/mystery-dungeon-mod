@@ -28,7 +28,7 @@ public class DocileExplorerRelic extends CustomRelic implements OnReceivePowerRe
      */
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID("DocileExplorerRelic");
+    public static final String ID = MysteryDungeon.makeID(DocileExplorerRelic.class.getSimpleName());
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

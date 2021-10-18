@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
-public class LeftoverRelic extends CustomRelic { // You must implement things you want to use from StSlib
+public class LeftoversRelic extends CustomRelic { // You must implement things you want to use from StSlib
     /*
      * https://github.com/daviscook477/BaseMod/wiki/Custom-Relics
      * StSLib for Clickable Relics
@@ -24,15 +24,15 @@ public class LeftoverRelic extends CustomRelic { // You must implement things yo
      */
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID("LeftoversRelic");
+    public static final String ID = MysteryDungeon.makeID(LeftoversRelic.class.getSimpleName());
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;
     public static final String[] DESCRIPTIONS = relicStrings.DESCRIPTIONS;
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("leftovers.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("default_clickable_relic.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("leftovers.png"));
 
-    public LeftoverRelic() {
+    public LeftoversRelic() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
 
         tips.clear();

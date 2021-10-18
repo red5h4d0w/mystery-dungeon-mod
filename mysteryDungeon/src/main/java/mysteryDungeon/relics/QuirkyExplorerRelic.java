@@ -22,7 +22,7 @@ public class QuirkyExplorerRelic extends CustomRelic implements GoldBonusInterfa
      */
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID("QuirkyExplorerRelic");
+    public static final String ID = MysteryDungeon.makeID(QuirkyExplorerRelic.class.getSimpleName());
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

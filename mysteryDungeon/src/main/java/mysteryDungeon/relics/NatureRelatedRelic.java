@@ -21,7 +21,7 @@ public class NatureRelatedRelic extends CustomRelic { // You must implement thin
      */
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID("NatureRelatedRelic");
+    public static final String ID = MysteryDungeon.makeID(NatureRelatedRelic.class.getSimpleName());
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

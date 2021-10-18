@@ -26,7 +26,7 @@ public class RelaxedExplorerRelic extends CustomRelic { // You must implement th
      */
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID("RelaxedExplorerRelic");
+    public static final String ID = MysteryDungeon.makeID(RelaxedExplorerRelic.class.getSimpleName());
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

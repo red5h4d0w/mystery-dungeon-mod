@@ -25,13 +25,13 @@ public class CellBatteryRelic extends CustomRelic { // You must implement things
      */
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID("CellBatteryRelic");
+    public static final String ID = MysteryDungeon.makeID(CellBatteryRelic.class.getSimpleName());
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;
     public static final String[] DESCRIPTIONS = relicStrings.DESCRIPTIONS;
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("cell-battery.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("default_clickable_relic.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("cell-battery.png"));
 
     public CellBatteryRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);

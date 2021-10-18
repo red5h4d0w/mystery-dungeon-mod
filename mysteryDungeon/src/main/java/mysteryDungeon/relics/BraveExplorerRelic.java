@@ -26,7 +26,7 @@ public class BraveExplorerRelic extends CustomRelic { // You must implement thin
      */
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID("BraveExplorerRelic");
+    public static final String ID = MysteryDungeon.makeID(BraveExplorerRelic.class.getSimpleName());
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;
