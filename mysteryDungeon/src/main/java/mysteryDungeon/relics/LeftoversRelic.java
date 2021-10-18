@@ -1,6 +1,7 @@
 package mysteryDungeon.relics;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.pokemons.Bulbasaur;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
@@ -34,6 +35,7 @@ public class LeftoversRelic extends AbstractPokemonRelic { // You must implement
     public LeftoversRelic() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
 
+        color = Bulbasaur.COLOR;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }

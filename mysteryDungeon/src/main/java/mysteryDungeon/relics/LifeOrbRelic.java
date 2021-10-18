@@ -1,6 +1,7 @@
 package mysteryDungeon.relics;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.pokemons.Charmander;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
@@ -33,6 +34,7 @@ public class LifeOrbRelic extends AbstractPokemonRelic { // You must implement t
     public LifeOrbRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
 
+        color = Charmander.COLOR;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }

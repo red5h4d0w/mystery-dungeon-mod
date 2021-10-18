@@ -1,6 +1,7 @@
 package mysteryDungeon.relics;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.pokemons.Squirtle;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
@@ -32,6 +33,7 @@ public class MysticWaterRelic extends AbstractPokemonRelic { // You must impleme
     public MysticWaterRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
 
+        color = Squirtle.COLOR;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }

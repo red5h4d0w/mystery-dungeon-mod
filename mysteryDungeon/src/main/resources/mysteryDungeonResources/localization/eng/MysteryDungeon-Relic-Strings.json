@@ -35,6 +35,13 @@
             "The charge meter will only have 2 steps between stances. NL At the start of your turn return to the center of the charge meter."
         ]
     },
+    "mysteryDungeon:CharcoalRelic": {
+        "NAME": "Charcoal",
+        "FLAVOR": "It's a combustible fuel that boosts the power of Fire-type moves.",
+        "DESCRIPTIONS": [
+            "Every time you apply a debuff deal #b2 damage to all enemies."
+        ]
+    },
     "mysteryDungeon:DocileExplorerRelic": {
         "NAME": "Docile Explorer",
         "FLAVOR": "What is this?",
@@ -88,7 +95,7 @@
         "NAME": "Miracle Seed",
         "FLAVOR": "Its a seed invued with life force that boosts the power of Grass-type moves.",
         "DESCRIPTIONS": [
-            "For every 2 debuffs you apply on a set turn draw a card."
+            "Every time you apply #b2 #ydebuffs in a single turn draw a card."
         ]
     },
     "mysteryDungeon:MysticWaterRelic": {

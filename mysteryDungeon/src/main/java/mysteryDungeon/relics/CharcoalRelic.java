@@ -2,22 +2,26 @@ package mysteryDungeon.relics;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.pokemons.Charmander;
-import mysteryDungeon.powers.BurnPower;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.evacipated.cardcrawl.mod.stslib.relics.OnApplyPowerRelic;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 
-public class FlameOrbRelic extends AbstractPokemonRelic { // You must implement things you want to use from StSlib
+public class CharcoalRelic extends AbstractPokemonRelic implements OnApplyPowerRelic { // You must implement things you want to use from StSlib
     /*
      * https://github.com/daviscook477/BaseMod/wiki/Custom-Relics
      * StSLib for Clickable Relics
@@ -26,7 +30,7 @@ public class FlameOrbRelic extends AbstractPokemonRelic { // You must implement 
      */
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID("FlameOrbRelic");
+    public static final String ID = MysteryDungeon.makeID("CharcoalRelic");
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;
@@ -34,8 +38,8 @@ public class FlameOrbRelic extends AbstractPokemonRelic { // You must implement 
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("flame-orb.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("flame-orb.png"));
 
-    public FlameOrbRelic() {
-        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
+    public CharcoalRelic() {
+        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.CLINK);
 
         color = Charmander.COLOR;
         tips.clear();
@@ -43,13 +47,15 @@ public class FlameOrbRelic extends AbstractPokemonRelic { // You must implement 
     }
 
     @Override
-    public void atBattleStart() {
-        flash();
-        for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-            addToBot(new RelicAboveCreatureAction(mo, this));
-            addToBot(new ApplyPowerAction(mo, AbstractDungeon.player, new BurnPower(mo, 9), 9, true)); 
+    public boolean onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
+        if(power.type == PowerType.DEBUFF){
+            addToBot((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)AbstractDungeon.player, this));
+            addToBot((AbstractGameAction)new DamageAllEnemiesAction(null, 
+                  
+                  DamageInfo.createDamageMatrix(2, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         }
-    }
+        return true;
+      }
 
     // Description
     @Override
