@@ -8,10 +8,10 @@ import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
-import basemod.abstracts.CustomPotion;
+import mysteryDungeon.abstracts.AbstractPokemonPotion;
 import mysteryDungeon.actions.XSpAttackAction;
 
-public class XSpAttackPotion extends CustomPotion {
+public class XSpAttackPotion extends AbstractPokemonPotion {
 
     public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("XSpAttackPotion");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
@@ -19,18 +19,19 @@ public class XSpAttackPotion extends CustomPotion {
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
 
+    public static final String IMG_STRING = "x-sp-atk.png";
+
     public XSpAttackPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java
-        super(NAME, POTION_ID, PotionRarity.RARE, PotionSize.M, PotionColor.SMOKE);
+        super(NAME, POTION_ID, PotionRarity.RARE, IMG_STRING);
         
         // Potency is the damage/magic number equivalent of potions.
         potency = getPotency();
         
-        // Initialize the Description
-        description = DESCRIPTIONS[0] + potency + DESCRIPTIONS[2] + DESCRIPTIONS[1] + potency + DESCRIPTIONS[2];
-        
        // Do you throw this potion at an enemy or do you just consume it.
         isThrown = false;
+
+        updateDescription();
         
         // Initialize the on-hover name + description
         tips.add(new PowerTip(name, description));
@@ -69,8 +70,12 @@ public class XSpAttackPotion extends CustomPotion {
 
     public void upgradePotion()
     {
-      potency += 1;
-      tips.clear();
-      tips.add(new PowerTip(name, description));
+        potency += 1;
+        tips.clear();
+        tips.add(new PowerTip(name, description));
+    }
+
+    public void updateDescription() {
+        description = String.format(DESCRIPTIONS[0], potency);
     }
 }

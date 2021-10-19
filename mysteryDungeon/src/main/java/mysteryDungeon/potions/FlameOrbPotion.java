@@ -27,11 +27,10 @@ public class FlameOrbPotion extends CustomPotion {
         // Potency is the damage/magic number equivalent of potions.
         potency = getPotency();
         
-        // Initialize the Description
-        description = DESCRIPTIONS[0] + potency + DESCRIPTIONS[2] + DESCRIPTIONS[1] + potency + DESCRIPTIONS[2];
-        
        // Do you throw this potion at an enemy or do you just consume it.
         isThrown = true;
+
+        updateDescription();
         
         // Initialize the on-hover name + description
         tips.add(new PowerTip(name, description));
@@ -54,10 +53,8 @@ public class FlameOrbPotion extends CustomPotion {
     @Override
     public void use(AbstractCreature target) {
         for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
-          if (!mo.isDeadOrEscaped())
-          addToBot(new ApplyPowerAction(mo, (AbstractCreature)AbstractDungeon.player, new BurnPower(mo, potency), potency));
-         
-        
+            if (!mo.isDeadOrEscaped())
+                addToBot(new ApplyPowerAction(mo, (AbstractCreature)AbstractDungeon.player, new BurnPower(mo, potency), potency));
         }
       }
     
@@ -74,8 +71,12 @@ public class FlameOrbPotion extends CustomPotion {
 
     public void upgradePotion()
     {
-      potency += 9;
-      tips.clear();
-      tips.add(new PowerTip(name, description));
+        potency += 9;
+        tips.clear();
+        tips.add(new PowerTip(name, description));
+    }
+
+    public void updateDescription() {
+        description = String.format(DESCRIPTIONS[0], potency);
     }
 }

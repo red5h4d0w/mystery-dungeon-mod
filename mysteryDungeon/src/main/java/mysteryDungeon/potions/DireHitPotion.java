@@ -10,9 +10,9 @@ import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.powers.PenNibPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
-import basemod.abstracts.CustomPotion;
+import mysteryDungeon.abstracts.AbstractPokemonPotion;
 
-public class DireHitPotion extends CustomPotion {
+public class DireHitPotion extends AbstractPokemonPotion {
 
     public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("DireHitPotion");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
@@ -20,18 +20,19 @@ public class DireHitPotion extends CustomPotion {
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
 
+    public static final String IMG_STRING = "dire-hit.png";
+
     public DireHitPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java
-        super(NAME, POTION_ID, PotionRarity.COMMON, PotionSize.M, PotionColor.SMOKE);
+        super(NAME, POTION_ID, PotionRarity.COMMON, IMG_STRING);
         
         // Potency is the damage/magic number equivalent of potions.
         potency = getPotency();
         
-        // Initialize the Description
-        description = DESCRIPTIONS[0] + potency + DESCRIPTIONS[2] + DESCRIPTIONS[1] + potency + DESCRIPTIONS[2];
-        
        // Do you throw this potion at an enemy or do you just consume it.
         isThrown = false;
+
+        updateDescription();
         
         // Initialize the on-hover name + description
         tips.add(new PowerTip(name, description));
@@ -56,7 +57,7 @@ public class DireHitPotion extends CustomPotion {
         target = AbstractDungeon.player;
         // If you are in combat, gain strength and the "lose strength at the end of your turn" power, equal to the potency of this potion.
         if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
-            addToBot(new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)AbstractDungeon.player, new PenNibPower((AbstractCreature)AbstractDungeon.player, potency), potency, true));
+            addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new PenNibPower(AbstractDungeon.player, potency), potency, true));
         }
     }
     
@@ -76,5 +77,9 @@ public class DireHitPotion extends CustomPotion {
       potency += 1;
       tips.clear();
       tips.add(new PowerTip(name, description));
+    }
+
+    public void updateDescription() {
+        description = String.format(DESCRIPTIONS[0], potency);
     }
 }

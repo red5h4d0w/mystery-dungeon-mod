@@ -1,6 +1,5 @@
 package mysteryDungeon.potions;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DiscardAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -9,6 +8,9 @@ import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import mysteryDungeon.abstracts.AbstractPokemonPotion;
 
@@ -22,6 +24,8 @@ public class AspearBerryPotion extends AbstractPokemonPotion {
 
     public static final String IMG_STRING = "aspear-berry.png";
 
+    public Logger logger = LogManager.getLogger(AspearBerryPotion.class);
+
     public AspearBerryPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java
         super(NAME, POTION_ID, PotionRarity.COMMON, IMG_STRING);
@@ -29,12 +33,13 @@ public class AspearBerryPotion extends AbstractPokemonPotion {
         // Potency is the damage/magic number equivalent of potions.
         potency = getPotency();
         
-        // Initialize the Description
-        description = DESCRIPTIONS[0] + potency + DESCRIPTIONS[2] + DESCRIPTIONS[1] + potency + DESCRIPTIONS[2];
-        
        // Do you throw this potion at an enemy or do you just consume it.
         isThrown = false;
         
+        
+        logger.info(NAME);
+        logger.info(POTION_ID);
+        updateDescription();
         // Initialize the on-hover name + description
         tips.add(new PowerTip(name, description));
         
@@ -56,8 +61,8 @@ public class AspearBerryPotion extends AbstractPokemonPotion {
     @Override
     public void use(AbstractCreature target) {
         if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT)
-          addToBot((AbstractGameAction)new DiscardAction(target, target, 10, false, false)); 
-      }
+            addToBot(new DiscardAction(target, target, 10, false, false)); 
+    }
     
     @Override
     public AbstractPotion makeCopy() {
@@ -75,5 +80,9 @@ public class AspearBerryPotion extends AbstractPokemonPotion {
       potency += 0;
       tips.clear();
       tips.add(new PowerTip(name, description));
+    }
+    
+    public void updateDescription() {
+        description = String.format(DESCRIPTIONS[0], potency);
     }
 }
