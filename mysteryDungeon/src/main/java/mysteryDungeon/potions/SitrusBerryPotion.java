@@ -24,11 +24,10 @@ public class SitrusBerryPotion extends CustomPotion {
         // Potency is the damage/magic number equivalent of potions.
         potency = getPotency();
         
-        // Initialize the Description
-        description = DESCRIPTIONS[0] + potency + DESCRIPTIONS[2] + DESCRIPTIONS[1] + potency + DESCRIPTIONS[2];
-        
        // Do you throw this potion at an enemy or do you just consume it.
         isThrown = false;
+
+        updateDescription();
         
         // Initialize the on-hover name + description
         tips.add(new PowerTip(name, description));
@@ -68,8 +67,12 @@ public class SitrusBerryPotion extends CustomPotion {
 
     public void upgradePotion()
     {
-      potency += 1;
-      tips.clear();
-      tips.add(new PowerTip(name, description));
+        potency += 1;
+        tips.clear();
+        tips.add(new PowerTip(name, description));
+    }
+
+    public void updateDescription() {
+        description = String.format(DESCRIPTIONS[0], potency);
     }
 }
