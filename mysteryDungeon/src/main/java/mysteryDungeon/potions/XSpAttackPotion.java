@@ -1,31 +1,27 @@
 package mysteryDungeon.potions;
 
-import java.util.ArrayList;
-
-import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
-import com.megacrit.cardcrawl.helpers.input.InputHelper;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 import basemod.abstracts.CustomPotion;
-import mysteryDungeon.cards.tempCards.ChooseNegative;
-import mysteryDungeon.cards.tempCards.ChoosePositive;
+import mysteryDungeon.actions.XSpAttackAction;
 
-public class PikachuCandyPotion extends CustomPotion {
+public class XSpAttackPotion extends CustomPotion {
 
-    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("PikachuCandyPotion");
+    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("XSpAttackPotion");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
     
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
 
-    public PikachuCandyPotion() {
+    public XSpAttackPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java
-        super(NAME, POTION_ID, PotionRarity.UNCOMMON, PotionSize.M, PotionColor.SMOKE);
+        super(NAME, POTION_ID, PotionRarity.COMMON, PotionSize.M, PotionColor.SMOKE);
         
         // Potency is the damage/magic number equivalent of potions.
         potency = getPotency();
@@ -56,27 +52,24 @@ public class PikachuCandyPotion extends CustomPotion {
 
     @Override
     public void use(AbstractCreature target) {
-        InputHelper.moveCursorToNeutralPosition();
-        ArrayList<AbstractCard> stanceChoices = new ArrayList<>();
-        stanceChoices.add(new ChooseNegative());
-        stanceChoices.add(new ChoosePositive());
-        addToBot(new ChooseOneAction(stanceChoices));  
-    }
+        if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT)
+          addToBot(new XSpAttackAction(this.potency)); 
+      }
     
     @Override
     public AbstractPotion makeCopy() {
-        return new PikachuCandyPotion();
+        return new XSpAttackPotion();
     }
 
     // This is your potency.
     @Override
     public int getPotency(final int potency) {
-        return 0;
+        return 1;
     }
 
     public void upgradePotion()
     {
-      potency += 0;
+      potency += 1;
       tips.clear();
       tips.add(new PowerTip(name, description));
     }
