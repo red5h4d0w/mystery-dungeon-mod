@@ -36,8 +36,8 @@ public class CharcoalRelic extends AbstractPokemonRelic implements OnApplyPowerR
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;
     public static final String[] DESCRIPTIONS = relicStrings.DESCRIPTIONS;
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("flame-orb.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("flame-orb.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("charcoal.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("charcoal.png"));
 
     public CharcoalRelic() {
         super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.CLINK);

@@ -93,7 +93,7 @@
     },
     "mysteryDungeon:MetronomeRelic": {
         "NAME": "Metronome",
-        "FLAVOR": "?",
+        "FLAVOR": "It follows its own rythm.",
         "DESCRIPTIONS": [
             "At the start of every turn add a random card in your hand. It costs 0 this turn."
         ]
