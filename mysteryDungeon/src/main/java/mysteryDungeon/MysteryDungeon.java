@@ -13,7 +13,6 @@ import mysteryDungeon.cards.fakeCards.ExplorersDeck;
 import mysteryDungeon.cards.tempCards.ColorlessAgility;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.events.IdentityCrisisEvent;
-import mysteryDungeon.potions.PlaceholderPotion;
 import mysteryDungeon.relics.NatureRelatedRelic;
 import mysteryDungeon.saveConstructs.ToSave;
 import mysteryDungeon.util.IDCheckDontTouchPls;

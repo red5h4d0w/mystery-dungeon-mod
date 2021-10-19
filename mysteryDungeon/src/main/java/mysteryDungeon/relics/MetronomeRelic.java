@@ -30,8 +30,8 @@ public class MetronomeRelic extends AbstractPokemonRelic { // You must implement
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;
     public static final String[] DESCRIPTIONS = relicStrings.DESCRIPTIONS;
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("mystic-water.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("mystic-water.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("metronome.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("metronome.png"));
 
     public MetronomeRelic() {
         super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.CLINK);
