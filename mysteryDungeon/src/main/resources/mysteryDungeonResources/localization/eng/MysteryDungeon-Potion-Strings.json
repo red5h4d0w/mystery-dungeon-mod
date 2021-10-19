@@ -2,9 +2,49 @@
     "mysteryDungeon:AspearBerryPotion": {
         "NAME": "Aspear Berry",
         "DESCRIPTIONS": [
-            "Gain ", 
-            " At the end of your turn, lose ", 
-            " Strength."
+            "Discard any number of cards from your hand."
+        ]
+    },
+    "mysteryDungeon:DireHitPotion": {
+        "NAME": "Dire Hit",
+        "DESCRIPTIONS": [
+            "Your next attack deals double damage."
+        ]
+    },
+    "mysteryDungeon:FlameOrbPotion": {
+        "NAME": "Flame Orb",
+        "DESCRIPTIONS": [
+            "Apply #b%s #yBurn."
+        ]
+    },
+    "mysteryDungeon:PikachuCandyPotion": {
+        "NAME": "Pikachu Candy",
+        "DESCRIPTIONS": [
+            "Enter Positive or Negative Stance."
+        ]
+    },
+    "mysteryDungeon:PoisonBarbPotion": {
+        "NAME": "PoisonBarb",
+        "DESCRIPTIONS": [
+            "Enter Positive or Negative Stance."
+        ]
+    },
+    "mysteryDungeon:SitrusBerryPotion": {
+        "NAME": "Sitrus Berry",
+        "DESCRIPTIONS": [
+            "Enter Positive or Negative Stance."
+        ]
+    },
+    "mysteryDungeon:XAttackPotion": {
+        "NAME": "X Attack",
+        "DESCRIPTIONS": [
+            "Enter Positive or Negative Stance."
+        ]
+    },
+    "mysteryDungeon:XSpAttackPotion": {
+        "NAME": "X Sp. Attack",
+        "DESCRIPTIONS": [
+            "Enter Positive or Negative Stance."
         ]
     }
 }
