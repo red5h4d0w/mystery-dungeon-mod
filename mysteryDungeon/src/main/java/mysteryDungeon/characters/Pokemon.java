@@ -11,6 +11,7 @@ import mysteryDungeon.cards.fakeCards.PartnersDeck;
 import mysteryDungeon.pokemons.AbstractPokemon;
 import mysteryDungeon.pokemons.Pikachu;
 import mysteryDungeon.relics.*;
+import mysteryDungeon.relics.abstractRelic.AbstractPokemonRelic;
 import mysteryDungeon.saveConstructs.ToSave;
 import mysteryDungeon.stances.NegativeStance;
 import mysteryDungeon.stances.PositiveStance;

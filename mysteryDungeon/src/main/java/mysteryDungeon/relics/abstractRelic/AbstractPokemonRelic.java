@@ -1,4 +1,4 @@
-package mysteryDungeon.relics;
+package mysteryDungeon.relics.abstractRelic;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
@@ -13,4 +13,3 @@ public class AbstractPokemonRelic extends CustomRelic {
     }
 
 }
-

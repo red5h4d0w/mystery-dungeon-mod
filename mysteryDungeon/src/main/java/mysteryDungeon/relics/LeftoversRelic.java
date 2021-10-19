@@ -2,6 +2,7 @@ package mysteryDungeon.relics;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.pokemons.Bulbasaur;
+import mysteryDungeon.relics.abstractRelic.AbstractPokemonRelic;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;

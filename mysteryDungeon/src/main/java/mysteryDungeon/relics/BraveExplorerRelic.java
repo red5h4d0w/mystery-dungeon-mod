@@ -1,6 +1,7 @@
 package mysteryDungeon.relics;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.relics.abstractRelic.AbstractPokemonRelic;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
@@ -30,8 +31,8 @@ public class BraveExplorerRelic extends AbstractPokemonRelic { // You must imple
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;
     public static final String[] DESCRIPTIONS = relicStrings.DESCRIPTIONS;
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("default_clickable_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("default_clickable_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("fierce-bandanna.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("fierce-bandanna.png"));
 
     public boolean trigger = false;
 

@@ -1,6 +1,7 @@
 package mysteryDungeon.relics;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.relics.abstractRelic.AbstractPokemonRelic;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;

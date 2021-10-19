@@ -1,6 +1,7 @@
 package mysteryDungeon.relics;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.relics.abstractRelic.AbstractPokemonRelic;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
@@ -29,8 +30,8 @@ public class CalmExplorerRelic extends AbstractPokemonRelic { // You must implem
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;
     public static final String[] DESCRIPTIONS = relicStrings.DESCRIPTIONS;
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("default_clickable_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("default_clickable_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("heal-ribbon.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("heal-ribbon.png"));
 
     private boolean used = false; // We should make sure the relic is only activateable during our turn, not the enemies'.
 

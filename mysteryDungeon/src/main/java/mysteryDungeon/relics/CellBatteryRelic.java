@@ -4,6 +4,7 @@ import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.actions.SetPikaMeterAction;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.pokemons.Pikachu;
+import mysteryDungeon.relics.abstractRelic.AbstractPokemonRelic;
 import mysteryDungeon.ui.PikachuMeter;
 import mysteryDungeon.util.TextureLoader;
 
