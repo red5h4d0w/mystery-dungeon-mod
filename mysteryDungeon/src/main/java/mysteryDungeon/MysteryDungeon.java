@@ -78,6 +78,7 @@ import java.util.Properties;
 
 @SpireInitializer
 public class MysteryDungeon implements
+        AddAudioSubscriber,
         EditCardsSubscriber,
         EditRelicsSubscriber,
         EditStringsSubscriber,
@@ -150,6 +151,10 @@ public class MysteryDungeon implements
         return getModID() + "Resources/images/cards/" + resourcePath;
     }
     
+    public static String makeAudioPath(String resourcePath) {
+        return getModID() + "Resources/sound/" + resourcePath;
+    }
+
     public static String makeBackSpritePath(String resourcePath) {
         return getModID() + "Resources/images/backSprites/" + resourcePath;
     }
@@ -402,6 +407,12 @@ public class MysteryDungeon implements
     
     // =============== / POST-INITIALIZE/ =================
     
+    public void receiveAddAudio() {
+        logger.info("Beginning to edit audio");
+        BaseMod.addAudio(makeID("landingSound"), makeAudioPath("landingSound.ogg"));
+    }
+
+
     // ================ ADD POTIONS ===================
     
     public void receiveEditPotions() {

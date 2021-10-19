@@ -34,7 +34,7 @@ public class MysticWaterRelic extends AbstractPokemonRelic { // You must impleme
     public MysticWaterRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
 
-        color = Squirtle.COLOR;
+        cardColor = Squirtle.CARD_COLOR;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }
@@ -43,12 +43,12 @@ public class MysticWaterRelic extends AbstractPokemonRelic { // You must impleme
     public void onEquip() {
         AbstractDungeon.player.energy.energyMaster++;
         basemod.BaseMod.MAX_HAND_SIZE = 8;
-      }
+    }
       
     public void onUnequip() {
         AbstractDungeon.player.energy.energyMaster--;
         basemod.BaseMod.MAX_HAND_SIZE = 10;
-      }
+    }
     // Description
     @Override
     public String getUpdatedDescription() {

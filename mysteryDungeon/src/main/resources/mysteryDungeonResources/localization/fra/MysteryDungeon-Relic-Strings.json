@@ -132,5 +132,19 @@
         "DESCRIPTIONS": [
             "Every time you apply #b2 #ydebuffs in a single turn draw a card."
         ]
+    },
+    "mysteryDungeon:MetronomeRelic": {
+        "NAME": "Metronome",
+        "FLAVOR": "It follows its own rythm.",
+        "DESCRIPTIONS": [
+            "At the start of every turn add a random card in your hand. It costs 0 this turn."
+        ]
+    },
+    "mysteryDungeon:WaveIncenseRelic": {
+        "NAME": "Wave Incense",
+        "FLAVOR": "Its a seed invued with life force that boosts the power of Grass-type moves.",
+        "DESCRIPTIONS": [
+            "Each battle apply the #yMaster #yReality power."
+        ]
     }
 }

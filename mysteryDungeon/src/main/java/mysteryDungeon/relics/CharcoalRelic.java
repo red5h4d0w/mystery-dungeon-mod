@@ -42,7 +42,7 @@ public class CharcoalRelic extends AbstractPokemonRelic implements OnApplyPowerR
     public CharcoalRelic() {
         super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.CLINK);
 
-        color = Charmander.COLOR;
+        cardColor = Charmander.CARD_COLOR;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }

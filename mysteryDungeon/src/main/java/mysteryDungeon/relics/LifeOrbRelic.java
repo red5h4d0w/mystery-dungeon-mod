@@ -35,7 +35,7 @@ public class LifeOrbRelic extends AbstractPokemonRelic { // You must implement t
     public LifeOrbRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
 
-        color = Charmander.COLOR;
+        cardColor = Charmander.CARD_COLOR;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }

@@ -36,7 +36,7 @@ public class LeftoversRelic extends AbstractPokemonRelic { // You must implement
     public LeftoversRelic() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
 
-        color = Bulbasaur.COLOR;
+        cardColor = Bulbasaur.CARD_COLOR;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }

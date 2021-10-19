@@ -39,7 +39,7 @@ public class MiracleSeedRelic extends AbstractPokemonRelic implements OnApplyPow
     public MiracleSeedRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
 
-        color = Bulbasaur.COLOR;
+        cardColor = Bulbasaur.CARD_COLOR;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }

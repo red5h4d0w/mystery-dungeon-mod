@@ -1,15 +1,22 @@
 package mysteryDungeon.abstracts;
 
-import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 
 import basemod.abstracts.CustomRelic;
+import mysteryDungeon.MysteryDungeon;
 
 public class AbstractPokemonRelic extends CustomRelic { 
-    public Color color;
+    public CardColor cardColor;
 
     public AbstractPokemonRelic(String ID, Texture IMG, Texture OUTLINE, RelicTier relicTier, LandingSound landingSound) {
         super(ID, IMG, OUTLINE, relicTier, landingSound);
+    }
+
+    @Override
+    public void playLandingSFX() {
+        CardCrawlGame.sound.play(MysteryDungeon.makeID("landingSound"));
     }
 
 }

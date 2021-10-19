@@ -31,6 +31,7 @@ import com.google.gson.reflect.TypeToken;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.watcher.ChangeStanceAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -307,14 +308,63 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 
     public void removeImproperRelics() {
         if(hasChosenStarters()) {
+            ArrayList<String> relicsIDToRemove = new ArrayList<String>();
             for(String relicId: AbstractDungeon.commonRelicPool) {
                 AbstractRelic relic = RelicLibrary.getRelic(relicId);
                 if(relic instanceof AbstractPokemonRelic) {
-                    Color relicColor = ((AbstractPokemonRelic)relic).color;
-                    if(relicColor!=adventurer.color && relicColor!=partner.color) {
-                        AbstractDungeon.commonRelicPool.remove(relicId);
+                    CardColor relicColor = ((AbstractPokemonRelic)relic).cardColor;
+                    if(relicColor!=null)
+                    if(relicColor!=adventurer.cardColor && relicColor!=partner.cardColor) {
+                        relicsIDToRemove.add(relicId);
                     }
                 }
+            }
+            for(String relicId: AbstractDungeon.uncommonRelicPool) {
+                AbstractRelic relic = RelicLibrary.getRelic(relicId);
+                if(relic instanceof AbstractPokemonRelic) {
+                    CardColor relicColor = ((AbstractPokemonRelic)relic).cardColor;
+                    if(relicColor!=null)
+                    if(relicColor!=adventurer.cardColor && relicColor!=partner.cardColor) {
+                        relicsIDToRemove.add(relicId);
+                    }
+                }
+            }
+            for(String relicId: AbstractDungeon.rareRelicPool) {
+                AbstractRelic relic = RelicLibrary.getRelic(relicId);
+                if(relic instanceof AbstractPokemonRelic) {
+                    CardColor relicColor = ((AbstractPokemonRelic)relic).cardColor;
+                    if(relicColor!=null)
+                    if(relicColor!=adventurer.cardColor && relicColor!=partner.cardColor) {
+                        relicsIDToRemove.add(relicId);
+                    }
+                }
+            }
+            for(String relicId: AbstractDungeon.shopRelicPool) {
+                AbstractRelic relic = RelicLibrary.getRelic(relicId);
+                if(relic instanceof AbstractPokemonRelic) {
+                    CardColor relicColor = ((AbstractPokemonRelic)relic).cardColor;
+                    if(relicColor!=null)
+                    if(relicColor!=adventurer.cardColor && relicColor!=partner.cardColor) {
+                        relicsIDToRemove.add(relicId);
+                    }
+                }
+            }
+            for(String relicId: AbstractDungeon.bossRelicPool) {
+                AbstractRelic relic = RelicLibrary.getRelic(relicId);
+                if(relic instanceof AbstractPokemonRelic) {
+                    CardColor relicColor = ((AbstractPokemonRelic)relic).cardColor;
+                    if(relicColor!=null)
+                    if(relicColor!=adventurer.cardColor && relicColor!=partner.cardColor) {
+                        relicsIDToRemove.add(relicId);
+                    }
+                }
+            }
+            for(String relicId: relicsIDToRemove) {
+                AbstractDungeon.commonRelicPool.remove(relicId);
+                AbstractDungeon.uncommonRelicPool.remove(relicId);
+                AbstractDungeon.rareRelicPool.remove(relicId);
+                AbstractDungeon.shopRelicPool.remove(relicId);
+                AbstractDungeon.bossRelicPool.remove(relicId);
             }
         }
     }

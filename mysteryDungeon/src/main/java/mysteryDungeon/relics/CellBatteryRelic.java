@@ -37,7 +37,7 @@ public class CellBatteryRelic extends AbstractPokemonRelic { // You must impleme
     public CellBatteryRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
 
-        color = Pikachu.COLOR;
+        cardColor = Pikachu.CARD_COLOR;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }

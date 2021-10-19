@@ -36,7 +36,7 @@ public class WaveIncenseRelic extends AbstractPokemonRelic { // You must impleme
     public WaveIncenseRelic() {
         super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.CLINK);
 
-        color = Squirtle.COLOR;
+        cardColor = Squirtle.CARD_COLOR;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }
