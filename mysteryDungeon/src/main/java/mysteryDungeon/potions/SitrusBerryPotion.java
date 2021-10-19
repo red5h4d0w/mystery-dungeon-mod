@@ -1,25 +1,23 @@
 package mysteryDungeon.potions;
 
+import com.megacrit.cardcrawl.actions.unique.ExhumeAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 import basemod.abstracts.CustomPotion;
-import mysteryDungeon.actions.XSpAttackAction;
 
-public class XSpAttackPotion extends CustomPotion {
+public class SitrusBerryPotion extends CustomPotion {
 
-    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("XSpAttackPotion");
+    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("SitrusBerryPotion");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
     
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
 
-    public XSpAttackPotion() {
+    public SitrusBerryPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java
         super(NAME, POTION_ID, PotionRarity.RARE, PotionSize.M, PotionColor.SMOKE);
         
@@ -52,13 +50,14 @@ public class XSpAttackPotion extends CustomPotion {
 
     @Override
     public void use(AbstractCreature target) {
-        if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT)
-          addToBot(new XSpAttackAction(this.potency)); 
+        for(int i=0; i<potency;i++){
+        addToBot(new ExhumeAction(false));
+        }
       }
     
     @Override
     public AbstractPotion makeCopy() {
-        return new XSpAttackPotion();
+        return new SitrusBerryPotion();
     }
 
     // This is your potency.
