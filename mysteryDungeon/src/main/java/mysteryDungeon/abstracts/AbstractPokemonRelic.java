@@ -1,4 +1,4 @@
-package mysteryDungeon.relics.abstractRelic;
+package mysteryDungeon.abstracts;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;

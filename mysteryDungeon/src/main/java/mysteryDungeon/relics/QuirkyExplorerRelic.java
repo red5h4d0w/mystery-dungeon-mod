@@ -1,8 +1,8 @@
 package mysteryDungeon.relics;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.AbstractPokemonRelic;
 import mysteryDungeon.interfaces.GoldBonusInterface;
-import mysteryDungeon.relics.abstractRelic.AbstractPokemonRelic;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;

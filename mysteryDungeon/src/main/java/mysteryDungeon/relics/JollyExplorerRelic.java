@@ -2,8 +2,8 @@ package mysteryDungeon.relics;
 
 import basemod.helpers.CardPowerTip;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.AbstractPokemonRelic;
 import mysteryDungeon.cards.tempCards.ColorlessAgility;
-import mysteryDungeon.relics.abstractRelic.AbstractPokemonRelic;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;

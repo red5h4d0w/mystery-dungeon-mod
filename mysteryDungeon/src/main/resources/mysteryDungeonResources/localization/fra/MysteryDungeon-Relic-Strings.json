@@ -118,5 +118,19 @@
         "DESCRIPTIONS": [
             "Gain [E] at the start of your turn. NL Reduce your maximum hand size by 2."
         ]
+    },
+    "mysteryDungeon:CharcoalRelic": {
+        "NAME": "Charcoal",
+        "FLAVOR": "It's a combustible fuel that boosts the power of Fire-type moves.",
+        "DESCRIPTIONS": [
+            "Every time you apply a debuff deal #b2 damage to all enemies."
+        ]
+    },
+    "mysteryDungeon:MiracleSeedRelic": {
+        "NAME": "Miracle Seed",
+        "FLAVOR": "Its a seed invued with life force that boosts the power of Grass-type moves.",
+        "DESCRIPTIONS": [
+            "Every time you apply #b2 #ydebuffs in a single turn draw a card."
+        ]
     }
 }
