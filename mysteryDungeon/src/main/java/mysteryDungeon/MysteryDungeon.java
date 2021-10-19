@@ -171,6 +171,14 @@ public class MysteryDungeon implements
         return getModID() + "Resources/images/orbs/" + resourcePath;
     }
     
+    public static String makePotionPath(String resourcePath) {
+        return getModID() + "Resources/images/potions/" + resourcePath;
+    }
+
+    public static String makePotionOutlinePath(String resourcePath) {
+        return getModID() + "Resources/images/potions/outline/" + resourcePath;
+    }
+
     public static String makePowerPath(String resourcePath) {
         return getModID() + "Resources/images/powers/" + resourcePath;
     }

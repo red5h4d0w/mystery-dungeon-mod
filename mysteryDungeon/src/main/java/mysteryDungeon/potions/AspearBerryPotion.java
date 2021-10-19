@@ -10,9 +10,9 @@ import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
-import basemod.abstracts.CustomPotion;
+import mysteryDungeon.abstracts.AbstractPokemonPotion;
 
-public class AspearBerryPotion extends CustomPotion {
+public class AspearBerryPotion extends AbstractPokemonPotion {
 
     public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("AspearBerryPotion");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
@@ -20,9 +20,11 @@ public class AspearBerryPotion extends CustomPotion {
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
 
+    public static final String IMG_STRING = "aspear-berry.png";
+
     public AspearBerryPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java
-        super(NAME, POTION_ID, PotionRarity.COMMON, PotionSize.M, PotionColor.SMOKE);
+        super(NAME, POTION_ID, PotionRarity.COMMON, IMG_STRING);
         
         // Potency is the damage/magic number equivalent of potions.
         potency = getPotency();
