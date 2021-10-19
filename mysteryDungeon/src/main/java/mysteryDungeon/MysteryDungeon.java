@@ -409,7 +409,7 @@ public class MysteryDungeon implements
     
     public void receiveAddAudio() {
         logger.info("Beginning to edit audio");
-        BaseMod.addAudio(makeID("landingSound"), makeAudioPath("landingSound.ogg"));
+        BaseMod.addAudio("MYSTERY_DUNGEON_RELIC_GET", makeAudioPath("landingSound.ogg"));
     }
 
 

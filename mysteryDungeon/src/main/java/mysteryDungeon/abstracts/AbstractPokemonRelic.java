@@ -5,7 +5,6 @@ import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 
 import basemod.abstracts.CustomRelic;
-import mysteryDungeon.MysteryDungeon;
 
 public class AbstractPokemonRelic extends CustomRelic { 
     public CardColor cardColor;
@@ -16,7 +15,7 @@ public class AbstractPokemonRelic extends CustomRelic {
 
     @Override
     public void playLandingSFX() {
-        CardCrawlGame.sound.play(MysteryDungeon.makeID("landingSound"));
+        CardCrawlGame.sound.play("MYSTERY_DUNGEON_RELIC_GET");
     }
 
 }
