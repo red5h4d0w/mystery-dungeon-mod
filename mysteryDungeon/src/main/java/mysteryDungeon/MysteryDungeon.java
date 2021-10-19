@@ -423,7 +423,7 @@ public class MysteryDungeon implements
         // just remove the player class at the end (in this case the "PokemonEnum.THE_DEFAULT".
         // Remember, you can press ctrl+P inside parentheses like addPotions)
         new AutoAdd("MysteryDungeon")
-            .packageFilter(PlaceholderPotion.class)
+            .packageFilter("mysteryDungeon.potions")
             .any(AbstractPotion.class, (info, potion) -> {
                 BaseMod.addPotion(potion.getClass(), potion.liquidColor, potion.hybridColor, potion.spotsColor, potion.ID, Pokemon.Enums.THE_POKEMON);
             });
