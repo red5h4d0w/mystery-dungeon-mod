@@ -14,7 +14,7 @@
     "mysteryDungeon:FlameOrbPotion": {
         "NAME": "Flame Orb",
         "DESCRIPTIONS": [
-            "Apply #b%s #yBurn."
+            "Apply #b%s #yBurn to all enemies."
         ]
     },
     "mysteryDungeon:PikachuCandyPotion": {
