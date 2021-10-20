@@ -252,6 +252,11 @@
         "NAME": "Ember",
         "DESCRIPTION": "Deal !D! damage. NL Apply mysterydungeon:Burn equal to the unblocked damage."
     },
+    "mysteryDungeon:CharmanderExplorerForm": {
+        "NAME": "Explorer Form",
+        "DESCRIPTION": "Ethereal. NL At the start of your turn Exhume !M! random card",
+        "UPGRADE_DESCRIPTION": "At the start of your turn Exhume !M! random card"
+    },
     "mysteryDungeon:CharmanderFacade": {
         "NAME": "Facade",
         "DESCRIPTION": "Gain !M! Dexterity and !mysteryDungeon:M2! Artifact."
