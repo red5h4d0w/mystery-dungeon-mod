@@ -32,7 +32,6 @@ public class FlameOrbPotion extends AbstractPokemonPotion {
        // Do you throw this potion at an enemy or do you just consume it.
         isThrown = true;
 
-
         updateDescription();
         
         // Initialize the on-hover name + description
