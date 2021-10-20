@@ -27,7 +27,7 @@ public class LightBallRelic extends AbstractPokemonRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("light-ball.png"));
 
     public LightBallRelic() {
-        super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.CLINK);
+        super(ID, IMG, OUTLINE, RelicTier.SPECIAL, LandingSound.CLINK);
     }
 
     @Override
