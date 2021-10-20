@@ -26,25 +26,26 @@
     "mysteryDungeon:PoisonBarbPotion": {
         "NAME": "PoisonBarb",
         "DESCRIPTIONS": [
-            "Enter Positive or Negative Stance."
+            "Apply #b%s #yPoison to an enemy."
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {
         "NAME": "Sitrus Berry",
         "DESCRIPTIONS": [
-            "Enter Positive or Negative Stance."
+            "Put #b%s card from your exhaust pile in your hand.",
+            "Put #b%s cards from your exhaust pile in your hand."
         ]
     },
     "mysteryDungeon:XAttackPotion": {
         "NAME": "X Attack",
         "DESCRIPTIONS": [
-            "Enter Positive or Negative Stance."
+            "Add #b%s #yFlinch to your hand."
         ]
     },
     "mysteryDungeon:XSpAttackPotion": {
         "NAME": "X Sp. Attack",
         "DESCRIPTIONS": [
-            "Enter Positive or Negative Stance."
+            "Fill all your orb slots with #yLightning #yOrbs."
         ]
     }
 }

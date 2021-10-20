@@ -49,8 +49,8 @@ public class SitrusBerryPotion extends CustomPotion {
 
     @Override
     public void use(AbstractCreature target) {
-        for(int i=0; i<potency;i++){
-        addToBot(new ExhumeAction(false));
+        for(int i=0; i<potency; i++){
+            addToBot(new ExhumeAction(false));
         }
       }
     
@@ -73,6 +73,11 @@ public class SitrusBerryPotion extends CustomPotion {
     }
 
     public void updateDescription() {
-        description = String.format(DESCRIPTIONS[0], potency);
+        if(potency==1) {
+            description = String.format(DESCRIPTIONS[0], potency);
+        }
+        else {
+            description = String.format(DESCRIPTIONS[1], potency);
+        }
     }
 }

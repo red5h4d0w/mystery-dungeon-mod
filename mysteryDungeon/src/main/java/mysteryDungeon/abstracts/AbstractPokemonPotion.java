@@ -17,4 +17,6 @@ public abstract class AbstractPokemonPotion extends CustomPotion {
         ReflectionHacks.setPrivate(this, AbstractPotion.class, "hybridColor", null);
         ReflectionHacks.setPrivate(this, AbstractPotion.class, "spotsColor", null);
     }
+
+    public abstract void updateDescription();
 }
