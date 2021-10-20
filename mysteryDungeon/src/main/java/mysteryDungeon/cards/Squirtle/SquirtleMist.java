@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.cards.PokemonCard;
+import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 
 public class SquirtleMist extends PokemonCard {

@@ -11,10 +11,10 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import mysteryDungeon.abstracts.AbstractPokemonPotion;
+import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.actions.DiscardAnyNumberAction;
 
-public class AspearBerryPotion extends AbstractPokemonPotion {
+public class AspearBerryPotion extends PokemonPotion {
 
     public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("AspearBerryPotion");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);

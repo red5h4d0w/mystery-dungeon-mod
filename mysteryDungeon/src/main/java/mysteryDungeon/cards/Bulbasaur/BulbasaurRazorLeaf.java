@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.cards.PokemonCard;
+import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 
 public class BulbasaurRazorLeaf extends PokemonCard {

@@ -1,4 +1,4 @@
-package mysteryDungeon.cards;
+package mysteryDungeon.abstracts;
 
 import basemod.abstracts.CustomCard;
 

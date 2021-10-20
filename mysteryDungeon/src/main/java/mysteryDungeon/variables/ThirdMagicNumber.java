@@ -1,7 +1,7 @@
 package mysteryDungeon.variables;
 
 import basemod.abstracts.DynamicVariable;
-import mysteryDungeon.cards.PokemonCard;
+import mysteryDungeon.abstracts.PokemonCard;
 
 import static mysteryDungeon.MysteryDungeon.makeID;
 

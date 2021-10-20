@@ -11,8 +11,8 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.actions.EvokeAllWithoutRemovingOrbAction;
-import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 
 public class PikachuWildCharge extends PokemonCard {

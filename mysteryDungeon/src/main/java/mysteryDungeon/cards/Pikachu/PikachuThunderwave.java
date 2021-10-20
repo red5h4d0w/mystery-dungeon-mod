@@ -11,8 +11,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.actions.ThunderwaveAction;
-import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 
 public class PikachuThunderwave extends PokemonCard {

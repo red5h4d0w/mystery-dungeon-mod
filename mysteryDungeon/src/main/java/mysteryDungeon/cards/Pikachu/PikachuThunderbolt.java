@@ -12,8 +12,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.actions.ThunderboltAction;
-import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 
 public class PikachuThunderbolt extends PokemonCard {

@@ -6,10 +6,10 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 
 import basemod.abstracts.CustomRelic;
 
-public abstract class AbstractPokemonRelic extends CustomRelic { 
+public abstract class PokemonRelic extends CustomRelic { 
     public CardColor cardColor;
 
-    public AbstractPokemonRelic(String ID, Texture IMG, Texture OUTLINE, RelicTier relicTier, LandingSound landingSound) {
+    public PokemonRelic(String ID, Texture IMG, Texture OUTLINE, RelicTier relicTier, LandingSound landingSound) {
         super(ID, IMG, OUTLINE, relicTier, landingSound);
     }
 

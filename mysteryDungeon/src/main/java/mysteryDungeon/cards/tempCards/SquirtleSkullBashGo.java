@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
 
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.cards.PokemonCard;
+import mysteryDungeon.abstracts.PokemonCard;
 
 public class SquirtleSkullBashGo extends PokemonCard {
 

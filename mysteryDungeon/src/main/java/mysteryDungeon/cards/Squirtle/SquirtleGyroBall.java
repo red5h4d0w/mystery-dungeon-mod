@@ -9,8 +9,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.actions.GyroBallAction;
-import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.cards.Status.StatusFreeze;
 import mysteryDungeon.characters.Pokemon;
 

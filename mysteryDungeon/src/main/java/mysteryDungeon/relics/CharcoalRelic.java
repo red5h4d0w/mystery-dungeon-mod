@@ -1,7 +1,7 @@
 package mysteryDungeon.relics;
 
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.abstracts.AbstractPokemonRelic;
+import mysteryDungeon.abstracts.PokemonRelic;
 import mysteryDungeon.pokemons.Charmander;
 import mysteryDungeon.util.TextureLoader;
 
@@ -22,7 +22,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 
-public class CharcoalRelic extends AbstractPokemonRelic implements OnApplyPowerRelic { // You must implement things you want to use from StSlib
+public class CharcoalRelic extends PokemonRelic implements OnApplyPowerRelic { // You must implement things you want to use from StSlib
     /*
      * https://github.com/daviscook477/BaseMod/wiki/Custom-Relics
      * StSLib for Clickable Relics

@@ -10,9 +10,9 @@ import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.powers.PenNibPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
-import mysteryDungeon.abstracts.AbstractPokemonPotion;
+import mysteryDungeon.abstracts.PokemonPotion;
 
-public class DireHitPotion extends AbstractPokemonPotion {
+public class DireHitPotion extends PokemonPotion {
 
     public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("DireHitPotion");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);

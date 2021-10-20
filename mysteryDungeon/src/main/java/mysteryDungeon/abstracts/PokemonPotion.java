@@ -8,8 +8,8 @@ import basemod.abstracts.CustomPotion;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.util.TextureLoader;
 
-public abstract class AbstractPokemonPotion extends CustomPotion {
-    public AbstractPokemonPotion(String name, String potionId, PotionRarity rarity, String image) {
+public abstract class PokemonPotion extends CustomPotion {
+    public PokemonPotion(String name, String potionId, PotionRarity rarity, String image) {
         super(name, potionId, rarity, PotionSize.ANVIL, PotionColor.ANCIENT);
         ReflectionHacks.setPrivate(this, AbstractPotion.class, "containerImg", TextureLoader.getTexture(MysteryDungeon.makePotionPath(image)));
         ReflectionHacks.setPrivate(this, AbstractPotion.class, "outlineImg", TextureLoader.getTexture(MysteryDungeon.makePotionOutlinePath(image)));

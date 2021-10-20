@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.powers.EnergizedPower;
 
 
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.cards.PokemonCard;
+import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 
 public class BulbasaurSynthesis extends PokemonCard {

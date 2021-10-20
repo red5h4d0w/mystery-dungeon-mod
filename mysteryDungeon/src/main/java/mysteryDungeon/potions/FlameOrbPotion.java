@@ -9,10 +9,10 @@ import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 
-import mysteryDungeon.abstracts.AbstractPokemonPotion;
+import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.powers.BurnPower;
 
-public class FlameOrbPotion extends AbstractPokemonPotion {
+public class FlameOrbPotion extends PokemonPotion {
 
     public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("FlameOrbPotion");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);

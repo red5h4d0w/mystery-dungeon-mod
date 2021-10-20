@@ -11,11 +11,11 @@ import com.megacrit.cardcrawl.helpers.input.InputHelper;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 
-import mysteryDungeon.abstracts.AbstractPokemonPotion;
+import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.cards.tempCards.ChooseNegative;
 import mysteryDungeon.cards.tempCards.ChoosePositive;
 
-public class PikachuCandyPotion extends AbstractPokemonPotion {
+public class PikachuCandyPotion extends PokemonPotion {
 
     public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("PikachuCandyPotion");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);

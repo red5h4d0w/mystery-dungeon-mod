@@ -4,8 +4,8 @@ import basemod.abstracts.CustomPlayer;
 import basemod.abstracts.CustomSavable;
 import basemod.animations.SpriterAnimation;
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.abstracts.AbstractPokemonRelic;
-import mysteryDungeon.cards.PokemonCard;
+import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.abstracts.PokemonRelic;
 import mysteryDungeon.cards.Bulbasaur.BulbasaurTackle;
 import mysteryDungeon.cards.fakeCards.ExplorersDeck;
 import mysteryDungeon.cards.fakeCards.PartnersDeck;
@@ -311,8 +311,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
             ArrayList<String> relicsIDToRemove = new ArrayList<String>();
             for(String relicId: AbstractDungeon.commonRelicPool) {
                 AbstractRelic relic = RelicLibrary.getRelic(relicId);
-                if(relic instanceof AbstractPokemonRelic) {
-                    CardColor relicColor = ((AbstractPokemonRelic)relic).cardColor;
+                if(relic instanceof PokemonRelic) {
+                    CardColor relicColor = ((PokemonRelic)relic).cardColor;
                     if(relicColor!=null)
                     if(relicColor!=adventurer.cardColor && relicColor!=partner.cardColor) {
                         relicsIDToRemove.add(relicId);
@@ -321,8 +321,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
             }
             for(String relicId: AbstractDungeon.uncommonRelicPool) {
                 AbstractRelic relic = RelicLibrary.getRelic(relicId);
-                if(relic instanceof AbstractPokemonRelic) {
-                    CardColor relicColor = ((AbstractPokemonRelic)relic).cardColor;
+                if(relic instanceof PokemonRelic) {
+                    CardColor relicColor = ((PokemonRelic)relic).cardColor;
                     if(relicColor!=null)
                     if(relicColor!=adventurer.cardColor && relicColor!=partner.cardColor) {
                         relicsIDToRemove.add(relicId);
@@ -331,8 +331,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
             }
             for(String relicId: AbstractDungeon.rareRelicPool) {
                 AbstractRelic relic = RelicLibrary.getRelic(relicId);
-                if(relic instanceof AbstractPokemonRelic) {
-                    CardColor relicColor = ((AbstractPokemonRelic)relic).cardColor;
+                if(relic instanceof PokemonRelic) {
+                    CardColor relicColor = ((PokemonRelic)relic).cardColor;
                     if(relicColor!=null)
                     if(relicColor!=adventurer.cardColor && relicColor!=partner.cardColor) {
                         relicsIDToRemove.add(relicId);
@@ -341,8 +341,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
             }
             for(String relicId: AbstractDungeon.shopRelicPool) {
                 AbstractRelic relic = RelicLibrary.getRelic(relicId);
-                if(relic instanceof AbstractPokemonRelic) {
-                    CardColor relicColor = ((AbstractPokemonRelic)relic).cardColor;
+                if(relic instanceof PokemonRelic) {
+                    CardColor relicColor = ((PokemonRelic)relic).cardColor;
                     if(relicColor!=null)
                     if(relicColor!=adventurer.cardColor && relicColor!=partner.cardColor) {
                         relicsIDToRemove.add(relicId);
@@ -351,8 +351,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
             }
             for(String relicId: AbstractDungeon.bossRelicPool) {
                 AbstractRelic relic = RelicLibrary.getRelic(relicId);
-                if(relic instanceof AbstractPokemonRelic) {
-                    CardColor relicColor = ((AbstractPokemonRelic)relic).cardColor;
+                if(relic instanceof PokemonRelic) {
+                    CardColor relicColor = ((PokemonRelic)relic).cardColor;
                     if(relicColor!=null)
                     if(relicColor!=adventurer.cardColor && relicColor!=partner.cardColor) {
                         relicsIDToRemove.add(relicId);

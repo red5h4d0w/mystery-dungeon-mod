@@ -1,7 +1,7 @@
 package mysteryDungeon.relics;
 
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.abstracts.AbstractPokemonRelic;
+import mysteryDungeon.abstracts.PokemonRelic;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
@@ -17,7 +17,7 @@ import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class RelaxedExplorerRelic extends AbstractPokemonRelic { // You must implement things you want to use from StSlib
+public class RelaxedExplorerRelic extends PokemonRelic { // You must implement things you want to use from StSlib
     /*
      * https://github.com/daviscook477/BaseMod/wiki/Custom-Relics
      * StSLib for Clickable Relics

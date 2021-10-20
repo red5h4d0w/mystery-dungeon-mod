@@ -12,8 +12,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.MindblastEffect;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.actions.SetPikaMeterAction;
-import mysteryDungeon.cards.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 
 public class PikachuZapCannon extends PokemonCard {
