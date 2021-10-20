@@ -48,12 +48,12 @@ public class SquirtleExplorerPower extends MysteryDungeonPower implements Clonea
     }
 
     public void onInitialApplication() {
-        baseMasterHandSize = AbstractDungeon.player.masterHandSize;
-        AbstractDungeon.player.masterHandSize = basemod.BaseMod.MAX_HAND_SIZE;
+        baseMasterHandSize = AbstractDungeon.player.gameHandSize;
+        AbstractDungeon.player.gameHandSize = basemod.BaseMod.MAX_HAND_SIZE;
     } 
 
     public void onVictory() {
-        AbstractDungeon.player.masterHandSize = baseMasterHandSize;
+        AbstractDungeon.player.gameHandSize = baseMasterHandSize;
     } 
     @Override
     public AbstractPower makeCopy() {
