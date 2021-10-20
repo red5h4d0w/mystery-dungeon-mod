@@ -1,7 +1,5 @@
 package mysteryDungeon.potions;
 
-import com.megacrit.cardcrawl.actions.GameActionManager;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -14,6 +12,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import mysteryDungeon.abstracts.AbstractPokemonPotion;
+import mysteryDungeon.actions.DiscardAnyNumberAction;
 
 public class AspearBerryPotion extends AbstractPokemonPotion {
 
@@ -61,13 +60,8 @@ public class AspearBerryPotion extends AbstractPokemonPotion {
 
     @Override
     public void use(AbstractCreature target) {
-        if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT){
-            AbstractDungeon.handCardSelectScreen.open(TEXT[1], 99, true, true);
-            for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
-                AbstractDungeon.player.hand.moveToDiscardPile(c);
-                GameActionManager.incrementDiscard(false);
-                c.triggerOnManualDiscard();
-              }
+        if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT){
+            addToBot(new DiscardAnyNumberAction(AbstractDungeon.player, false));
         }  
     }
     
