@@ -62,13 +62,6 @@ public class SquirtleExplorerPower extends MysteryDungeonPower implements Clonea
 
     @Override
     public void updateDescription() {
-        if(amount == 1)
-        {
             description = DESCRIPTIONS[0];
-        } 
-        else
-        {
-            description = String.format(DESCRIPTIONS[1], amount);
-        }
     }
 }
