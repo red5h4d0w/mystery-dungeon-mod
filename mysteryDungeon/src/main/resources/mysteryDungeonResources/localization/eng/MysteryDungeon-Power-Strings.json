@@ -169,8 +169,8 @@
             "At the start of your turn, if an enemy has #yBurn, gain #b%s #yStrength."
         ]
     },
-    "mysteryDungeon:SquirtleExplorerForm": {
-        "NAME": "Explorer Form: Squirtle",
+    "mysteryDungeon:SquirtleExplorerPower": {
+        "NAME": "Explorer Form",
         "DESCRIPTIONS": ["At the start of your turn draw a number a card equivalent to your maximum hand size."]
     },
     "mysteryDungeon:StaticPower": {

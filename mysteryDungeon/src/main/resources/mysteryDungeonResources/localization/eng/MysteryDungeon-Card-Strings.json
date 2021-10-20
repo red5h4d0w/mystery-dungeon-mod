@@ -556,7 +556,7 @@
         "DESCRIPTION": "When you play a status, deal !M! damage to a random enemy."
     },
     "mysteryDungeon:SquirtleExplorerForm": {
-        "NAME": "Explorer Form: Squirtle",
+        "NAME": "Explorer Form",
         "DESCRIPTION": "Ethereal. NL At the start of your turn draw a number a card equivalent to your maximum hand size.",
         "UPGRADE_DESCRIPTION": "At the start of your turn draw a number a card equivalent to your maximum hand size."
     },
