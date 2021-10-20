@@ -1,6 +1,7 @@
 package mysteryDungeon.patches;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.ModInfo;
@@ -33,34 +34,12 @@ public class MetricsPatch {
     @SpirePatch(clz=DeathScreen.class, method="<ctor>", paramtypez = {MonsterGroup.class})
     public static class DeathScreenPatch {
         @SpirePostfixPatch
+        @SuppressWarnings("all")
         public static void Postfix() {
             if(!MysteryDungeon.sendRunData)
                 return;
-            RunDetails runDetails = new RunDetails();
-            runDetails.version = "failed";
-            for(ModInfo modInfo : Loader.MODINFOS) {
-                logger.info(modInfo.ID);
-                if(modInfo.ID.toLowerCase().contains("dungeon")) {
-                    logger.info(modInfo.ModVersion.toString());
-                    runDetails.version = modInfo.ModVersion.toString();
-                }
-            }
-            runDetails.ascensionLevel = AbstractDungeon.ascensionLevel;
-            runDetails.maxFloor = AbstractDungeon.floorNum;
+            RunDetails runDetails = generateRunDetails();
             runDetails.win = AbstractDungeon.getCurrRoom() instanceof VictoryRoom;
-            runDetails.elapsedTime = CardCrawlGame.playtime;
-            runDetails.score = GameOverScreen.calcScore(runDetails.win);
-            runDetails.seed = SeedHelper.getString(Settings.seed);
-            runDetails.pokemon1 = Pokemon.adventurer.name;
-            runDetails.pokemon2 = Pokemon.partner.name;
-            ArrayList<CardDetails> cardDetails = new ArrayList<>();
-            for (AbstractCard card : AbstractDungeon.player.masterDeck.group) {
-                CardDetails cardDetail = new CardDetails();
-                cardDetail.name = card.cardID;
-                cardDetail.upgrade = card.timesUpgraded;
-                cardDetails.add(cardDetail);
-            }
-            runDetails.cardDetails = cardDetails;
             logger.info("======= Sending data =======");
             SendData.sendData(runDetails);
             logger.info("======= data sent =======");
@@ -70,37 +49,75 @@ public class MetricsPatch {
     @SpirePatch(clz=VictoryScreen.class, method="<ctor>", paramtypez = {MonsterGroup.class})
     public static class VictoryScreenPatch {
         @SpirePostfixPatch
+        @SuppressWarnings("all")
         public static void Postfix() {
             if(!MysteryDungeon.sendRunData)
                 return;
-            RunDetails runDetails = new RunDetails();
-            runDetails.version = "failed";
-            for(ModInfo modInfo : Loader.MODINFOS) {
-                logger.info(modInfo.ID);
-                if(modInfo.ID.toLowerCase().contains("dungeon")) {
-                    logger.info(modInfo.ModVersion.toString());
-                    runDetails.version = modInfo.ModVersion.toString();
-                }
-            }
-            runDetails.ascensionLevel = AbstractDungeon.ascensionLevel;
-            runDetails.maxFloor = AbstractDungeon.floorNum;
+            RunDetails runDetails = generateRunDetails();
             runDetails.win = true;
-            runDetails.elapsedTime = CardCrawlGame.playtime;
-            runDetails.score = GameOverScreen.calcScore(runDetails.win);
-            runDetails.seed = SeedHelper.getString(Settings.seed);
-            runDetails.pokemon1 = Pokemon.adventurer.name;
-            runDetails.pokemon2 = Pokemon.partner.name;
-            ArrayList<CardDetails> cardDetails = new ArrayList<>();
-            for (AbstractCard card : AbstractDungeon.player.masterDeck.group) {
-                CardDetails cardDetail = new CardDetails();
-                cardDetail.name = card.cardID;
-                cardDetail.upgrade = card.timesUpgraded;
-                cardDetails.add(cardDetail);
-            }
-            runDetails.cardDetails = cardDetails;
             logger.info("======= Sending data =======");
             SendData.sendData(runDetails);
             logger.info("======= data sent =======");
         }
+    }
+    @SuppressWarnings("all")
+    public static RunDetails generateRunDetails() {
+        RunDetails runDetails = new RunDetails();
+        runDetails.version = "failed";
+        for(ModInfo modInfo : Loader.MODINFOS) {
+            logger.info(modInfo.ID);
+            if(modInfo.ID.toLowerCase().contains("dungeon")) {
+                logger.info(modInfo.ModVersion.toString());
+                runDetails.version = modInfo.ModVersion.toString();
+            }
+        }
+        runDetails.ascensionLevel = AbstractDungeon.ascensionLevel;
+        runDetails.maxFloor = AbstractDungeon.floorNum;
+        runDetails.win = true;
+        runDetails.elapsedTime = CardCrawlGame.playtime;
+        runDetails.score = GameOverScreen.calcScore(runDetails.win);
+        runDetails.seed = SeedHelper.getString(Settings.seed);
+        runDetails.pokemon1 = Pokemon.adventurer.name;
+        runDetails.pokemon2 = Pokemon.partner.name;
+        ArrayList<CardDetails> cardDetails = new ArrayList<>();
+        for (AbstractCard card : AbstractDungeon.player.masterDeck.group) {
+            CardDetails cardDetail = new CardDetails();
+            cardDetail.name = card.cardID;
+            cardDetail.upgrade = card.timesUpgraded;
+            cardDetails.add(cardDetail);
+        }
+        for (HashMap cardChoice : CardCrawlGame.metricData.card_choices) {
+            // Handle picked card logic
+            CardDetails pickedCardInfo = new CardDetails();
+            Object pickedCard = cardChoice.get("picked");
+            String cardNameWithUpgrade = (String)pickedCard;
+            
+            String[] nameAndUpgrade = cardNameWithUpgrade.split("\\+");
+            pickedCardInfo.name = nameAndUpgrade[0];
+            if(nameAndUpgrade.length==2) {
+                pickedCardInfo.upgrade = Integer.parseInt( nameAndUpgrade[1]);
+            }
+            else {
+                pickedCardInfo.upgrade = 0;
+            }
+            runDetails.chosenCards.add(pickedCardInfo);
+            // Handle not picked card logic
+            ArrayList<String> notPickedCards = (ArrayList<String>)cardChoice.get("not_picked");
+            
+            for (String notPickedCard : notPickedCards) {
+                CardDetails notPickedCardInfo = new CardDetails();
+                String[] nameAndUpgrade2 = notPickedCard.split("\\+");
+                notPickedCardInfo.name = nameAndUpgrade2[0];
+                if(nameAndUpgrade2.length==2) {
+                    notPickedCardInfo.upgrade = Integer.parseInt( nameAndUpgrade2[1]);
+                }
+                else {
+                    notPickedCardInfo.upgrade = 0;
+                }
+                runDetails.notChosenCards.add(notPickedCardInfo);
+            }
+        }
+        runDetails.cardDetails = cardDetails;
+        return runDetails;
     }
 }

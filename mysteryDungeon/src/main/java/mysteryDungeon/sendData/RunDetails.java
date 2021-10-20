@@ -13,4 +13,6 @@ public class RunDetails {
     public String pokemon1;
     public String pokemon2;
     public ArrayList<CardDetails> cardDetails;
+    public ArrayList<CardDetails> chosenCards = new ArrayList<CardDetails>();
+    public ArrayList<CardDetails> notChosenCards = new ArrayList<CardDetails>();
 }
