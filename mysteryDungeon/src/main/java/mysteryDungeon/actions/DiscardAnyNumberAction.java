@@ -47,9 +47,10 @@ public class DiscardAnyNumberAction extends AbstractGameAction {
                     GameActionManager.incrementDiscard(false);
                     c.triggerOnManualDiscard();
                 } 
-                isDone = true;
+                
             } 
             AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
+            isDone = true;
         } 
         tickDuration();
     }
