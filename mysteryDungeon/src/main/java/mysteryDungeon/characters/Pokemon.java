@@ -262,7 +262,12 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
                 AbstractCard card = c.getValue();
                 if (card.color.equals(color) && card.rarity != AbstractCard.CardRarity.BASIC &&
                         (!UnlockTracker.isCardLocked(c.getKey()) || Settings.isDailyRun)) {
-                    tmpPool.add(card);
+                            if(card instanceof PokemonCard) {
+                                if(!((PokemonCard)card).isAdventurerOnly || card.color == adventurer.cardColor) {
+                                    tmpPool.add(card);
+                                }
+                            }
+                    
                 }
             }
         }

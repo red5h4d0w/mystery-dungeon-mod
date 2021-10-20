@@ -21,6 +21,7 @@ public abstract class PokemonCard extends CustomCard {
     public boolean isSecondMagicNumberModified; // A boolean to check whether the number has been modified or not, for coloring purposes. (red/green)
     public boolean isThirdMagicNumberModified; // A boolean to check whether the number has been modified or not, for coloring purposes. (red/green)
     public boolean inert = false; // A boolean to indicate whether the card affects the charge meter.
+    public boolean isAdventurerOnly = false;
 
     public PokemonCard(final String id,
                                final String name,
