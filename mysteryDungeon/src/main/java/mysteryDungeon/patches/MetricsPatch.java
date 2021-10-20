@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.dungeons.TheEnding;
 import com.megacrit.cardcrawl.helpers.SeedHelper;
 import com.megacrit.cardcrawl.monsters.MonsterGroup;
 import com.megacrit.cardcrawl.rooms.VictoryRoom;
@@ -39,7 +40,7 @@ public class MetricsPatch {
             if(!MysteryDungeon.sendRunData)
                 return;
             RunDetails runDetails = generateRunDetails();
-            runDetails.win = AbstractDungeon.getCurrRoom() instanceof VictoryRoom;
+            runDetails.win = AbstractDungeon.getCurrRoom() instanceof VictoryRoom || CardCrawlGame.dungeon instanceof TheEnding;
             logger.info("======= Sending data =======");
             SendData.sendData(runDetails);
             logger.info("======= data sent =======");
