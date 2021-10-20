@@ -1,29 +1,37 @@
-package mysteryDungeon.cards.Pikachu;
+package mysteryDungeon.cards.Charmander;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
+
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.Lightning;
-import com.megacrit.cardcrawl.powers.BiasPower;
+
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.powers.CharmanderExplorerPower;
 
-public class PikachuExplorerForm extends PokemonCard {
+public class CharmanderExplorerForm extends PokemonCard {
+
+    /*
+     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
+     *
+     * Special Strike: Deal 7 (*) damage times the energy you currently have.
+     */
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(PikachuExplorerForm.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CharmanderExplorerForm.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("PikachuPower.png");
+    public static final String IMG = makeCardPath("CharmanderPower.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+
 
     // /TEXT DECLARATION/
 
@@ -33,30 +41,27 @@ public class PikachuExplorerForm extends PokemonCard {
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = Pokemon.Enums.PIKACHU_YELLOW;
-    
+    public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
     private static final int COST = 3;
-    private static final int BASE_MAGIC_NUMBER = 3;
-    private static final int UPGRADE_MAGIC_NUMBER = 2;
+    private static final int BASE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
 
-    public PikachuExplorerForm() {
+    public CharmanderExplorerForm() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        isEthereal = true;
         isAdventurerOnly = true;
     }
 
     // Actions the card should do.
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m){
-        for(int i=0; i<magicNumber;i++){
-        addToBot(new ChannelAction(new Lightning()));
-        }
-        addToBot(new ApplyPowerAction(p, p, new BiasPower(p, 1), 1));
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        // Create an int which equals to your current energy.
+        addToBot(new ApplyPowerAction(p, p, new CharmanderExplorerPower(p, magicNumber), magicNumber));
     }
 
     // Upgraded stats.
@@ -64,7 +69,8 @@ public class PikachuExplorerForm extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            isEthereal = false;
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

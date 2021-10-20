@@ -47,6 +47,10 @@
         "NAME": "Double Edge",
         "DESCRIPTION": "Deal !D! damage. NL Strength affects this card !M! times. NL Lose 1 Dexterity."
     },
+    "mysteryDungeon:BulbasaurExplorerForm": {
+        "NAME": "Explorer Form",
+        "DESCRIPTION": "Gain !M! Regen. NL At the start of your turn lose 1 Dexterity."
+    },
     "mysteryDungeon:BulbasaurFrenzyPlant": {
         "NAME": "Frenzy Plant",
         "DESCRIPTION": "Deal !D! damage !M! times. NL Apply 2 Poison !M! times. NL You cannot heal during this turn and the next."
@@ -251,6 +255,11 @@
     "mysteryDungeon:CharmanderEmber": {
         "NAME": "Ember",
         "DESCRIPTION": "Deal !D! damage. NL Apply mysterydungeon:Burn equal to the unblocked damage."
+    },
+    "mysteryDungeon:CharmanderExplorerForm": {
+        "NAME": "Explorer Form",
+        "DESCRIPTION": "Ethereal. NL At the start of your turn Exhume !M! random card",
+        "UPGRADE_DESCRIPTION": "At the start of your turn Exhume !M! random card"
     },
     "mysteryDungeon:CharmanderFacade": {
         "NAME": "Facade",
