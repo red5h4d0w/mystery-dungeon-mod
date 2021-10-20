@@ -47,6 +47,10 @@
         "NAME": "Double Edge",
         "DESCRIPTION": "Deal !D! damage. NL Strength affects this card !M! times. NL Lose 1 Dexterity."
     },
+    "mysteryDungeon:BulbasaurExplorerForm": {
+        "NAME": "Explorer Form",
+        "DESCRIPTION": "Gain !M! Regen. NL At the start of your turn lose 1 Dexterity."
+    },
     "mysteryDungeon:BulbasaurFrenzyPlant": {
         "NAME": "Frenzy Plant",
         "DESCRIPTION": "Deal !D! damage !M! times. NL Apply 2 Poison !M! times. NL You cannot heal during this turn and the next."
