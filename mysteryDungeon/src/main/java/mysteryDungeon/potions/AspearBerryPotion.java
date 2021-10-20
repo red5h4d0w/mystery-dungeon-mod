@@ -61,7 +61,7 @@ public class AspearBerryPotion extends PokemonPotion {
     @Override
     public void use(AbstractCreature target) {
         if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT){
-            addToBot(new DiscardAnyNumberAction(AbstractDungeon.player, false));
+            addToBot(new DiscardAnyNumberAction(AbstractDungeon.player));
         }  
     }
     
