@@ -555,6 +555,11 @@
         "NAME": "Endure",
         "DESCRIPTION": "When you play a status, deal !M! damage to a random enemy."
     },
+    "mysteryDungeon:SquirtleExplorerForm": {
+        "NAME": "Explorer Form: Squirtle",
+        "DESCRIPTION": "Ethereal. NL At the start of your turn draw a number a card equivalent to your maximum hand size.",
+        "UPGRADE_DESCRIPTION": "At the start of your turn draw a number a card equivalent to your maximum hand size."
+    },
     "mysteryDungeon:SquirtleFakeOut": {
         "NAME": "Fake Out",
         "DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Scry !M! card. NL Exhaust.",
