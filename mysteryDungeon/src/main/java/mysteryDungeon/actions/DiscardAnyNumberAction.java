@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.localization.UIStrings;
 
 public class DiscardAnyNumberAction extends AbstractGameAction {
     
-    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("DiscardAnyNumberAction");
+    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("GamblingChipAction");
     
     public static final String[] TEXT = uiStrings.TEXT;
     
@@ -50,7 +50,6 @@ public class DiscardAnyNumberAction extends AbstractGameAction {
                 
             } 
             AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
-            isDone = true;
         } 
         tickDuration();
     }
