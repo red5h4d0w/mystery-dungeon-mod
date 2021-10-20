@@ -1,6 +1,7 @@
 package mysteryDungeon.potions;
 
-import com.megacrit.cardcrawl.actions.common.DiscardAction;
+import com.megacrit.cardcrawl.actions.GameActionManager;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -60,8 +61,14 @@ public class AspearBerryPotion extends AbstractPokemonPotion {
 
     @Override
     public void use(AbstractCreature target) {
-        if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT)
-            addToBot(new DiscardAction(target, target, 10, false, false)); 
+        if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT){
+            AbstractDungeon.handCardSelectScreen.open(TEXT[1], 99, true, true);
+            for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
+                AbstractDungeon.player.hand.moveToDiscardPile(c);
+                GameActionManager.incrementDiscard(false);
+                c.triggerOnManualDiscard();
+              }
+        }  
     }
     
     @Override
@@ -72,12 +79,12 @@ public class AspearBerryPotion extends AbstractPokemonPotion {
     // This is your potency.
     @Override
     public int getPotency(final int potency) {
-        return 0;
+        return 10;
     }
 
     public void upgradePotion()
     {
-      potency += 0;
+      potency += 1;
       tips.clear();
       tips.add(new PowerTip(name, description));
     }
