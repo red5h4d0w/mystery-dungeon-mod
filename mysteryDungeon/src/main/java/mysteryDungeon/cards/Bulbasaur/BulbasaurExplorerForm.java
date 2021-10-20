@@ -36,7 +36,7 @@ public class BulbasaurExplorerForm extends PokemonCard {
 
     private static final int COST = 3;
     private static final int BASE_MAGIC_NUMBER = 9;
-    private static final int UPGRADE_MAGIC_NUMBER = 12;
+    private static final int UPGRADE_MAGIC_NUMBER = 3;
 
     // /STAT DECLARATION/
 
@@ -51,7 +51,7 @@ public class BulbasaurExplorerForm extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
         addToBot(new ApplyPowerAction(p, p, new RegenPower(p, magicNumber), magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new WraithFormPower(p, 1), 1));
+        addToBot(new ApplyPowerAction(p, p, new WraithFormPower(p, -1), -1));
     }
 
     // Upgraded stats.
