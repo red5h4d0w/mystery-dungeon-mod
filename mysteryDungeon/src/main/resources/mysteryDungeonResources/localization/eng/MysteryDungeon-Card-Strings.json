@@ -399,6 +399,10 @@
         "DESCRIPTION": "mysterydungeon:Inert. NL This turn your next Attack or Skill will be played twice.",
         "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL This turn your next !M! Attacks or Skills will be played twice."
     },
+    "mysteryDungeon:PikachuExplorerForm": {
+        "NAME": "Explorer Form",
+        "DESCRIPTION": "Channel !M! Lightning orbs. NL Lose 1 focus per turn."
+    },
     "mysteryDungeon:PikachuHiddenPower": {
         "NAME": "Hidden Power",
         "DESCRIPTION": "mysterydungeon:Inert. NL Add a random attack or skill card to your hand. NL It costs 0 this turn. NL Exhaust.",
