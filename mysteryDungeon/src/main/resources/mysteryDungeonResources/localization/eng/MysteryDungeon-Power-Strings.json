@@ -43,6 +43,10 @@
         "NAME": "Burn",
         "DESCRIPTIONS": ["For every 5 stacks of Burn, this creature deals 1 less damage. NL Currently deals #b%s less damage."]
     },
+    "mysteryDungeon:CharmanderExplorerPower": {
+        "NAME": "Explorer Form",
+        "DESCRIPTIONS": ["At the start of your turn Exhume #b%s random card."]
+    },
     "mysteryDungeon:CounterPower": {
         "NAME": "Counter",
         "DESCRIPTIONS": [
@@ -171,7 +175,7 @@
     },
     "mysteryDungeon:SquirtleExplorerPower": {
         "NAME": "Explorer Form",
-        "DESCRIPTIONS": ["At the start of your turn draw a number a card equivalent to your maximum hand size."]
+        "DESCRIPTIONS": ["At the start of your turn draw a number a card equivalent to your maximum hand size"]
     },
     "mysteryDungeon:StaticPower": {
         "NAME": "Static",
