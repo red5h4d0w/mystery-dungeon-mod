@@ -11,11 +11,11 @@ import com.megacrit.cardcrawl.helpers.input.InputHelper;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 
-import basemod.abstracts.CustomPotion;
+import mysteryDungeon.abstracts.AbstractPokemonPotion;
 import mysteryDungeon.cards.tempCards.ChooseNegative;
 import mysteryDungeon.cards.tempCards.ChoosePositive;
 
-public class PikachuCandyPotion extends CustomPotion {
+public class PikachuCandyPotion extends AbstractPokemonPotion {
 
     public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("PikachuCandyPotion");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
@@ -23,9 +23,11 @@ public class PikachuCandyPotion extends CustomPotion {
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
 
+    public static final String IMG_STRING = "pikachu-candy.png";
+
     public PikachuCandyPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java
-        super(NAME, POTION_ID, PotionRarity.UNCOMMON, PotionSize.M, PotionColor.SMOKE);
+        super(NAME, POTION_ID, PotionRarity.UNCOMMON, IMG_STRING);
         
         // Potency is the damage/magic number equivalent of potions.
         potency = getPotency();
