@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.characters.AbstractPlayer.PlayerClass;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PotionHelper;
 
@@ -14,11 +14,11 @@ import mysteryDungeon.characters.Pokemon;
 
 public class RemoveInadequatePotionsPatch
 {
-    @SpirePatch(clz = PotionHelper.class, method = "getPotions", paramtypez = {AbstractPlayer.PlayerClass.class, boolean.class})
+    @SpirePatch(clz = PotionHelper.class, method = "getPotions")
     public static class PreRewardGeneration
     {
         @SpirePostfixPatch
-        public static ArrayList<String> removeInadequatePotions(ArrayList<String> __retval, PotionHelper __instance)
+        public static ArrayList<String> removeInadequatePotions(ArrayList<String> __retval, PlayerClass c, boolean getAll)
         {
             if(AbstractDungeon.player instanceof Pokemon) {
                 Pokemon player = ((Pokemon)AbstractDungeon.player);
