@@ -1,6 +1,7 @@
 package mysteryDungeon.abstracts;
 
 import com.badlogic.gdx.graphics.Color;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 
 import basemod.ReflectionHacks;
@@ -9,6 +10,8 @@ import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.util.TextureLoader;
 
 public abstract class PokemonPotion extends CustomPotion {
+    public CardColor cardColor;
+    
     public PokemonPotion(String name, String potionId, PotionRarity rarity, String image) {
         super(name, potionId, rarity, PotionSize.ANVIL, PotionColor.ANCIENT);
         ReflectionHacks.setPrivate(this, AbstractPotion.class, "containerImg", TextureLoader.getTexture(MysteryDungeon.makePotionPath(image)));
