@@ -14,6 +14,8 @@ import com.megacrit.cardcrawl.potions.AbstractPotion;
 import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.cards.tempCards.ChooseNegative;
 import mysteryDungeon.cards.tempCards.ChoosePositive;
+import mysteryDungeon.pokemons.Pikachu;
+
 
 public class PikachuCandyPotion extends PokemonPotion {
 
@@ -34,6 +36,9 @@ public class PikachuCandyPotion extends PokemonPotion {
         
        // Do you throw this potion at an enemy or do you just consume it.
         isThrown = false;
+
+        cardColor = Pikachu.CARD_COLOR;
+
         
         updateDescription();
 

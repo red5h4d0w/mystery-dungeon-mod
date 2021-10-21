@@ -8,6 +8,8 @@ import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 
 import mysteryDungeon.abstracts.PokemonPotion;
+import mysteryDungeon.pokemons.Charmander;
+
 
 public class SitrusBerryPotion extends PokemonPotion {
 
@@ -28,6 +30,8 @@ public class SitrusBerryPotion extends PokemonPotion {
         
        // Do you throw this potion at an enemy or do you just consume it.
         isThrown = false;
+
+        cardColor = Charmander.CARD_COLOR;
 
         updateDescription();
         
