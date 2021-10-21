@@ -20,7 +20,7 @@ public class RemoveInadequatePotionsPatch
         @SpirePostfixPatch
         public static ArrayList<String> removeInadequatePotions(ArrayList<String> __retval, PlayerClass c, boolean getAll)
         {
-            if(AbstractDungeon.player instanceof Pokemon) {
+            if(AbstractDungeon.player instanceof Pokemon && !getAll) {
                 Pokemon player = ((Pokemon)AbstractDungeon.player);
                 if(player.hasChosenStarters()) {
                     ArrayList<String> toRemove = new ArrayList<String>();
