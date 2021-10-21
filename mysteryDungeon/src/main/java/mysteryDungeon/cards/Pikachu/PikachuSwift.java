@@ -49,6 +49,7 @@ public class PikachuSwift extends PokemonCard {
         baseDamage = DAMAGE;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        isMultiDamage = true;
     }
 
     // Actions the card should do.
