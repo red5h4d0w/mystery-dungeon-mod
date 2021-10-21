@@ -13,6 +13,7 @@ import org.apache.logging.log4j.Logger;
 
 import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.actions.DiscardAnyNumberAction;
+import mysteryDungeon.pokemons.Squirtle;
 
 public class AspearBerryPotion extends PokemonPotion {
 
@@ -35,6 +36,8 @@ public class AspearBerryPotion extends PokemonPotion {
         
        // Do you throw this potion at an enemy or do you just consume it.
         isThrown = false;
+
+        cardColor = Squirtle.CARD_COLOR;
         
         
         logger.info(NAME);
