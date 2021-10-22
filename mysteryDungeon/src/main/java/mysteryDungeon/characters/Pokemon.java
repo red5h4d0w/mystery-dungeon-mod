@@ -307,7 +307,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 
     public void awardStartingDecks(AbstractPokemon pokemon) {
         for(AbstractCard card: pokemon.startingDeck) {
-            masterDeck.addToTop(card);
+            masterDeck.addToTop(card.makeStatEquivalentCopy());
         }
     }
 

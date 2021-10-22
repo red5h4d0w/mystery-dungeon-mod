@@ -27,7 +27,7 @@ public class RemoveInadequatePotionsPatch
                     for(String potionId: __retval) {
                         if(PotionHelper.getPotion(potionId) instanceof PokemonPotion) {
                             CardColor cardColor = ((PokemonPotion)PotionHelper.getPotion(potionId)).cardColor;
-                            if(cardColor!=player.adventurer.cardColor && cardColor!=player.partner.cardColor) {
+                            if(cardColor!=Pokemon.adventurer.cardColor && cardColor!=Pokemon.partner.cardColor) {
                                 toRemove.add(potionId);
                             }
                         }
