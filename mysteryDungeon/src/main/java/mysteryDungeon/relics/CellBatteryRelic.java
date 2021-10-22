@@ -45,7 +45,7 @@ public class CellBatteryRelic extends PokemonRelic { // You must implement thing
     @Override
     public void onEquip() {
         if(AbstractDungeon.player instanceof Pokemon) {
-            ((Pokemon)AbstractDungeon.player).maxPikachuChargeCounter = 2;
+            Pokemon.maxPikachuChargeCounter = 2;
             PikachuMeter.maxCounterPosition = 2;
         }
     }
@@ -53,7 +53,7 @@ public class CellBatteryRelic extends PokemonRelic { // You must implement thing
     @Override
     public void onUnequip() {
         if(AbstractDungeon.player instanceof Pokemon) {
-            ((Pokemon)AbstractDungeon.player).maxPikachuChargeCounter = 3;
+            Pokemon.maxPikachuChargeCounter = 3;
             PikachuMeter.maxCounterPosition = 3;
         }
     }
