@@ -13,19 +13,19 @@
     },
     "mysteryDungeon:ChooseAttack": {
         "NAME": "Attack",
-        "DESCRIPTION": "Add a random attack card to your hand."
-    },
-    "mysteryDungeon:ChoosePositive": {
-        "NAME": "Positive Stance",
-        "DESCRIPTION": "Enter Positive Stance."
+        "DESCRIPTION": "Add a random attack to your hand."
     },
     "mysteryDungeon:ChooseNegative": {
         "NAME": "Negative Stance",
         "DESCRIPTION": "Enter Negative Stance."
     },
+    "mysteryDungeon:ChoosePositive": {
+        "NAME": "Positive Stance",
+        "DESCRIPTION": "Enter Positive Stance."
+    },
     "mysteryDungeon:ChooseSkill": {
         "NAME": "Skill",
-        "DESCRIPTION": "Add a random skill card to your hand."
+        "DESCRIPTION": "Add a random skill to your hand."
     },
     "mysteryDungeon:StatusFreeze": {
         "NAME": "Freeze",
@@ -61,7 +61,7 @@
     },
     "mysteryDungeon:BulbasaurGrowl": {
         "NAME": "Growl",
-        "DESCRIPTION": "Applies !M! Weak to ALL enemies."
+        "DESCRIPTION": "Apply !M! Weak to ALL enemies."
     },
     "mysteryDungeon:BulbasaurGrowth": {
         "NAME": "Growth",
@@ -82,7 +82,7 @@
     },
     "mysteryDungeon:BulbasaurMegaDrain": {
         "NAME": "Mega Drain",
-        "DESCRIPTION": "Heal !M! HP per different Debuff on the enemy."
+        "DESCRIPTION": "Heal !M! HP per different debuff on the enemy."
     },
     "mysteryDungeon:BulbasaurPetalBlizzard": {
         "NAME": "Petal Blizzard",
@@ -114,7 +114,7 @@
     },
     "mysteryDungeon:BulbasaurRazorLeaf": {
         "NAME": "Razor Leaf",
-        "DESCRIPTION": "Deals !D! damage. NL If you have a debuff, Gain [E]"
+        "DESCRIPTION": "Deal !D! damage. NL If you have a debuff, Gain [E]"
     },
     "mysteryDungeon:BulbasaurRest": {
         "NAME": "Rest",
@@ -143,7 +143,7 @@
     },
     "mysteryDungeon:BulbasaurStrengthSap": {
         "NAME": "Strength Sap",
-        "DESCRIPTION": "Target loses !M! Strength. NL Gain !M! Strength if target lost Strength that way. NL Exhaust."
+        "DESCRIPTION": "Ennemy loses !M! Strength. NL Gain !M! Strength if ennemy lost Strength that way. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurStunSpore": {
         "NAME": "Stun Spore",
@@ -152,8 +152,8 @@
     },
     "mysteryDungeon:BulbasaurSunnyDay": {
         "NAME": "Sunny Day",
-        "DESCRIPTION": "Ethereal. NL At the start of each turn, NL Draw one more card and Reduce by 1 the cost of the card with the highest cost in your hand.",
-        "UPGRADE_DESCRIPTION": "At the start of each turn, NL Draw one more card and Reduce by 1 the cost of the card with the highest cost in your hand."
+        "DESCRIPTION": "Ethereal. NL At the start of each turn, NL Draw one more card and reduce by 1 the cost of the card with the highest cost in your hand.",
+        "UPGRADE_DESCRIPTION": "At the start of each turn, NL Draw one more card and reduce by 1 the cost of the card with the highest cost in your hand."
     },
     "mysteryDungeon:BulbasaurSweetScent": {
         "NAME": "Sweet Scent",
@@ -165,7 +165,7 @@
     },
     "mysteryDungeon:BulbasaurTackle": {
         "NAME": "Tackle",
-        "DESCRIPTION": "Deals !D! damage."
+        "DESCRIPTION": "Deal !D! damage."
     },
     "mysteryDungeon:BulbasaurToxic": {
         "NAME": "Toxic",
@@ -174,7 +174,7 @@
     },
     "mysteryDungeon:BulbasaurVenoshock": {
         "NAME": "Venoshock",
-        "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each stack of Poison of the target."
+        "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each stack of Poison of the ennemy."
     },
     "mysteryDungeon:BulbasaurVineWhip": {
         "NAME": "Vine Whip",

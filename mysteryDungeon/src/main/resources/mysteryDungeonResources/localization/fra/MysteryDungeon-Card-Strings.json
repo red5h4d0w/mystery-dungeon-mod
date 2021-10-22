@@ -11,540 +11,548 @@
         "NAME": "Hâte",
         "DESCRIPTION": "Retenue. NL Piochez !M! cartes. NL Épuisement."
     },
+    "mysteryDungeon:ChooseAttack": {
+        "NAME": "Attaque",
+        "DESCRIPTION": "Ajoutez une attaque aléatoire à votre main."
+    },
+    "mysteryDungeon:ChooseNegative": {
+        "NAME": "Position négative",
+        "DESCRIPTION": "Entrez en position négative."
+    },
+    "mysteryDungeon:ChoosePositive": {
+        "NAME": "Position positive",
+        "DESCRIPTION": "Entrez en position positive."
+    },
+    "mysteryDungeon:ChooseSkill": {
+        "NAME": "Compétence",
+        "DESCRIPTION": "Ajoutez une compétence aléatoire à votre main."
+    },
     "mysteryDungeon:StatusFreeze": {
         "NAME": "Gel",
         "DESCRIPTION": "Retenue."
     },
     "mysteryDungeon:BulbasaurBulletSeed": {
         "NAME": "Balle Graine",
-        "DESCRIPTION": "Deal !D! damage !M! times. NL Can be upgraded multiple times."
+        "DESCRIPTION": "Infligez !D! dégâts !M! fois. NL Peut être amélioré à l'infini."
     },
     "mysteryDungeon:BulbasaurDefend": {
         "NAME": "Défense",
-        "DESCRIPTION": "Gain !B! Block."
+        "DESCRIPTION": "Gagnez !B! d'Armure."
     },
     "mysteryDungeon:BulbasaurDefenseCurl": {
         "NAME": "Boul'Armure",
-        "DESCRIPTION": "Gain !B! Block."
+        "DESCRIPTION": "Gagnez !B! d'Armure."
     },
     "mysteryDungeon:BulbasaurDoubleEdge": {
         "NAME": "Damoclès",
-        "DESCRIPTION": "Deal !D! damage. NL Strength affects this card !M! times. NL Lose 1 Dexterity."
+        "DESCRIPTION": "Infligez !D! dégâts. NL La force ajoutée à Damoclès est multipliée par !M!. NL Perdez 1 de Dextérité."
     },
     "mysteryDungeon:BulbasaurFrenzyPlant": {
         "NAME": "Végé-Attaque",
-        "DESCRIPTION": "Deal !D! damage !M! times. NL Apply 2 Poison !M! times. NL You cannot heal during this turn and the next."
+        "DESCRIPTION": "Infligez !D! dégâts !M! fois. NL Appliquez 2 de Poison !M! fois. NL Vous ne pouvez pas vous soignez pendant ce tour et le prochain."
     },
     "mysteryDungeon:BulbasaurGigaDrain": {
         "NAME": "Giga-Sangsue",
-        "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Heal HP equal to unblocked damage."
+        "DESCRIPTION": "Éthérée. NL Infligez !D! dégâts. NL Soignez du total des dégâts non bloqués."
     },
     "mysteryDungeon:BulbasaurGrowl": {
         "NAME": "Rugissement",
-        "DESCRIPTION": "Applies !M! Weak to ALL enemies."
+        "DESCRIPTION": "Appliquez !M! Faiblesse à TOUS les ennemis."
     },
     "mysteryDungeon:BulbasaurGrowth": {
         "NAME": "Croissance",
-        "DESCRIPTION": "Gain !M! Strength."
+        "DESCRIPTION": "Gagnez !M! Force."
     },
-    "mysteryDungeon:BulbasaurHelpingHand": {
+    "mysteryDungeon:BulbasaurHelpingHet": {
         "NAME": "Coup d'Main",
-        "DESCRIPTION": "Draw !M! cards. NL Gain [E]."
+        "DESCRIPTION": "Piochez !M! cartes. NL Gagnez [E]."
     },
     "mysteryDungeon:BulbasaurIngrain": {
         "NAME": "Racines",
-        "DESCRIPTION": "Apply 1 mysterydungeon:Leech_Seed to a random enemy !M! times. NL Lose 2 Dexterity. NL Exhaust."
+        "DESCRIPTION": "Appliquez 1 de mysterydungeon:Leech_Seed à un ennemi aléatoire !M! fois. NL Perdez 2 de Dextérité. NL Épuisement."
     },
     "mysteryDungeon:BulbasaurLeechSeed": {
         "NAME": "Vampigraine",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Leech_Seed. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Leech_Seed."
+        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Leech_Seed. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Appliquez !M! de mysterydungeon:Leech_Seed."
     },
     "mysteryDungeon:BulbasaurMegaDrain": {
         "NAME": "Méga-Sangsue",
-        "DESCRIPTION": "Heal !M! HP per different Debuff on the enemy."
+        "DESCRIPTION": "Soignez !M! PV par différent débuff de l'ennemi."
     },
     "mysteryDungeon:BulbasaurPetalBlizzard": {
         "NAME": "Tempête Florale",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies."
+        "DESCRIPTION": "Infligez !D! dégâts à TOUS les ennemis."
     },
     "mysteryDungeon:BulbasaurPetalDance": {
         "NAME": "Danse Fleurs",
-        "DESCRIPTION": "Deal 7 damage to ALL enemies at the end of your turn for the next !M! turns. NL (This counts as an Attack and so scales with Strength, etc.)"
+        "DESCRIPTION": "À la fin de vos !M! tours, Infligez 7 dégâts à TOUS les ennemis. NL (Les dégâts infligés par ce pouvoir comptent comme des attaques, donc sont affectés par la Force et tout autre effet d'attaque.)"
     },
     "mysteryDungeon:BulbasaurPoisonJab": {
         "NAME": "Direct Toxik",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! Poison 2 times."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez !M! de Poison 2 fois."
     },
     "mysteryDungeon:BulbasaurPoisonPoint": {
         "NAME": "Point Poison",
-        "DESCRIPTION": "Gain !M! mysterydungeon:Poison_Thorns."
+        "DESCRIPTION": "Gagnez !M! mysterydungeon:Poison_Thorns."
     },
     "mysteryDungeon:BulbasaurPoisonPowder": {
         "NAME": "Poudre Toxik",
-        "DESCRIPTION": "Apply !M! Poison to ALL enemies."
+        "DESCRIPTION": "Appliquez !M! de Poison à TOUS les ennemis."
     },
     "mysteryDungeon:BulbasaurPowerWhip": {
         "NAME": "Mégafouet",
-        "DESCRIPTION": "Retain. NL Deal !D! damage."
+        "DESCRIPTION": "Retenue. NL Infligez !D! dégâts."
     },
     "mysteryDungeon:BulbasaurProtect": {
         "NAME": "Abri",
-        "DESCRIPTION": "Gain !B! Block. NL You cannot gain Block during the next !M! turns."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Vous ne pouvez plus gagner d'Armure avec des cartes pendant les !M! prochains tours."
     },
     "mysteryDungeon:BulbasaurRazorLeaf": {
         "NAME": "Tranch'Herbe",
-        "DESCRIPTION": "Deals !D! damage. NL If you have a debuff, Gain [E]"
+        "DESCRIPTION": "Infligez !D! dégâts. NL Si vous avez un débuff, Gagnez [E]"
     },
     "mysteryDungeon:BulbasaurRest": {
         "NAME": "Repos",
-        "DESCRIPTION": "Heal !mysteryDungeon:M2! HP. mysterydungeon:Rest for !M! turns."
+        "DESCRIPTION": "Soignez !mysteryDungeon:M2! PV. mysterydungeon:Rest pendant !M! tours."
     },
     "mysteryDungeon:BulbasaurSecretPower": {
         "NAME": "Force Cachée",
-        "DESCRIPTION": "Innate. NL Add random power in your hand. NL Exhaust",
-        "UPGRADE_DESCRIPTION": "Innate. NL Add random upgraded power in your hand. NL Exhaust"
+        "DESCRIPTION": "Inné. NL Ajoutez un pouvoir aléatoire à votre main. NL Épuisement",
+        "UPGRADE_DESCRIPTION": "Inné. NL Ajoutez un pouvoir amélioré à votre main. NL Épuisement"
     },
     "mysteryDungeon:BulbasaurSeedBomb": {
         "NAME": "Canon Graine",
-        "DESCRIPTION": "Deal !D! damage to a random enemy X times."
+        "DESCRIPTION": "Infligez !D! dégâts à un ennemi aléatoire X fois."
     },
     "mysteryDungeon:BulbasaurSleepPowder": {
         "NAME": "Poudre Dodo",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Asleep. NL Exhaust."
+        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Asleep. NL Épuisement."
     },
     "mysteryDungeon:BulbasaurSludgeBomb": {
         "NAME": "Bombe Beurk",
-        "DESCRIPTION": "Apply !M! Poison."
+        "DESCRIPTION": "Appliquez !M! de Poison."
     },
     "mysteryDungeon:BulbasaurSolarBeam": {
         "NAME": "Lance-Soleil",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Draw !M! less cards during your next turn."
+        "DESCRIPTION": "Infligez !D! dégâts à TOUS les ennemis. NL Au prochain tour, pigez !M! cartes de moins."
     },
     "mysteryDungeon:BulbasaurStrengthSap": {
         "NAME": "Vole-Force",
-        "DESCRIPTION": "Target loses !M! Strength. NL Gain !M! Strength if target lost Strength that way. NL Exhaust."
+        "DESCRIPTION": "L'ennemi perd !M! de Force. NL Gagnez !M! Force si cela a fait perdre de la Force à l'ennemi. NL Épuisement."
     },
     "mysteryDungeon:BulbasaurStunSpore": {
         "NAME": "Para-Spore",
-        "DESCRIPTION": "Apply !M! Slow. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! Slow. NL Exhaust."
+        "DESCRIPTION": "Appliquez !M! de Lenteur. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Appliquez !M! Lenteur. NL Épuisement."
     },
     "mysteryDungeon:BulbasaurSunnyDay": {
         "NAME": "Zénith",
-        "DESCRIPTION": "Ethereal. NL At the start of each turn, NL Draw one more card and Reduce by 1 the cost of the card with the highest cost in your hand.",
-        "UPGRADE_DESCRIPTION": "At the start of each turn, NL Draw one more card and Reduce by 1 the cost of the card with the highest cost in your hand."
+        "DESCRIPTION": "Éthérée. NL Au début de chaque tour, NL Piochez une carte de plus et réduisez de 1 le coût de la carte coûtant le plus cher dans votre main.",
+        "UPGRADE_DESCRIPTION": "Au début de chaque tour, NL Piochez une carte de plus et réduisez de 1 le coût de la carte coûtant le plus cher dans votre main."
     },
     "mysteryDungeon:BulbasaurSweetScent": {
         "NAME": "Doux Parfum",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Evasiveness_Drop. NL Apply !M! Vulnerable"
+        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Evasiveness_Drop. NL Appliquez !M! de Vulnérabilité"
     },
     "mysteryDungeon:BulbasaurSynthesis": {
         "NAME": "Synthèse",
-        "DESCRIPTION": "Heal !M! HP. NL At the start of your next turn, NL Draw 2 more cards and gain 2 [E]. NL Exhaust."
+        "DESCRIPTION": "Soignez !M! PV. NL Au début de votre prochain tour, NL Piochez 2 cartes de plus et Gagnez 2 [E]. NL Épuisement."
     },
     "mysteryDungeon:BulbasaurTackle": {
         "NAME": "Charge",
-        "DESCRIPTION": "Deals !D! damage."
+        "DESCRIPTION": "Infligez !D! dégâts."
     },
     "mysteryDungeon:BulbasaurToxic": {
         "NAME": "Toxik",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Toxic to ALL enemies. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! mysterydungeon:Toxic to ALL enemies. NL Exhaust."
+        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Toxic à TOUS les ennemis. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Appliquez !M! de mysterydungeon:Toxic à TOUS les ennemis. NL Épuisement."
     },
     "mysteryDungeon:BulbasaurVenoshock": {
         "NAME": "Choc Venin",
-        "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each stack of Poison of the target."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Inflige !M! dégâts supplémentaires pour chaque Poison sur l'ennemi."
     },
     "mysteryDungeon:BulbasaurVineWhip": {
         "NAME": "Fouet Lianes",
-        "DESCRIPTION": "Deal !D! damage."
+        "DESCRIPTION": "Infligez !D! dégâts."
     },
     "mysteryDungeon:BulbasaurWorrySeed": {
         "NAME": "Soucigraine",
-        "DESCRIPTION": "Your card rewards will contain 1 more card choice."
+        "DESCRIPTION": "Les récompenses de combat contiendront 1 choix de carte supplémentaire."
     },
     "mysteryDungeon:BulbasaurYawn": {
         "NAME": "Baîllement",
-        "DESCRIPTION": "Ethereal. NL Apply !M! mysterydungeon:Asleep to ALL enemies right before they act (after Poison, etc.). NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Asleep to ALL enemies right before they act (after Poison, etc.). NL Exhaust."
+        "DESCRIPTION": "Éthérée. NL Appliquez !M! de mysterydungeon:Asleep à TOUS les ennemis après qu'ils aient agi (après le Poison, etc.). NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Appliquez !M! de mysterydungeon:Asleep à TOUS les ennemis après qu'ils aient agi (après le Poison, etc.). NL Épuisement."
     },
-    "mysteryDungeon:CharmanderBellyDrum": {
+    "mysteryDungeon:CharmeterBellyDrum": {
         "NAME": "Belly Drum",
-        "DESCRIPTION": "At the start of your turn draw !M! more card. NL Also, the first card you play each turn costs 0 and exhausts."
+        "DESCRIPTION": "At the start of your turn Piochez !M! more card. NL Also, the first card you play each turn costs 0 et exhausts."
     },
-    "mysteryDungeon:CharmanderBlastBurn": {
+    "mysteryDungeon:CharmeterBlastBurn": {
         "NAME": "Blast Burn",
-        "DESCRIPTION": "Deal !D! damage. NL Exhaust your draw pile."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Épuisement your Piochez pile."
     },
-    "mysteryDungeon:CharmanderBlaze": {
+    "mysteryDungeon:CharmeterBlaze": {
         "NAME": "Blaze",
-        "DESCRIPTION": "Gain 2 Vulnerable. NL The first time you spend all energy each turn, gain [E].",
-        "UPGRADE_DESCRIPTION": "Gain 2 Vulnerable. NL The first 2 times you spend all energy each turn, gain [E]."
+        "DESCRIPTION": "Gagnez 2 Vulnérabilité. NL The first time you spend all energy each turn, Gagnez [E].",
+        "UPGRADE_DESCRIPTION": "Gagnez 2 Vulnérabilité. NL The first 2 fois you spend all energy each turn, Gagnez [E]."
     },
-    "mysteryDungeon:CharmanderCounter": {
+    "mysteryDungeon:CharmeterCounter": {
         "NAME": "Counter",
-        "DESCRIPTION": "Gain !B! Block. NL If you lose all Block and take damage from an attack, deal !M! damage to the attacker."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL If you lose all d'Armure et take dégâts from an attack, Infligez !M! dégâts to the attacker."
     },
-    "mysteryDungeon:CharmanderCrunch": {
+    "mysteryDungeon:CharmeterCrunch": {
         "NAME": "Crunch",
-        "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, gain !B! Block."
+        "DESCRIPTION": "Infligez !D! dégâts. NL If the enemy intends to attack, Gagnez !B! d'Armure."
     },
-    "mysteryDungeon:CharmanderDefend": {
+    "mysteryDungeon:CharmeterDefend": {
         "NAME": "Defend",
-        "DESCRIPTION": "Gain !B! Block."
+        "DESCRIPTION": "Gagnez !B! d'Armure."
     },
-    "mysteryDungeon:CharmanderDragonBreath": {
+    "mysteryDungeon:CharmeterDragonBreath": {
         "NAME": "Dragon Breath",
-        "DESCRIPTION": "Gain Block equal to the number of exhausted cards this combat.",
-        "UPGRADE_DESCRIPTION": "Gain Block equal to 5 + the number of exhausted cards this combat."
+        "DESCRIPTION": "Gagnez d'Armure equal to the number of exhausted cartes this combat.",
+        "UPGRADE_DESCRIPTION": "Gagnez d'Armure equal to 5 + the number of exhausted cartes this combat."
     },
-    "mysteryDungeon:CharmanderDragonClaw": {
+    "mysteryDungeon:CharmeterDragonClaw": {
         "NAME": "Dragon Claw",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL (Scales when using Metal Claw.)"
+        "DESCRIPTION": "Infligez !D! dégâts à TOUS les ennemis. NL (Scales when using Metal Claw.)"
     },
-    "mysteryDungeon:CharmanderDragonDance": {
+    "mysteryDungeon:CharmeterDragonDance": {
         "NAME": "Dragon Dance",
-        "DESCRIPTION": "Exhaust !M! cards. NL Draw !mysteryDungeon:M2! cards. NL (You cannot play this card if you cannot exhaust !M! cards.)",
-        "UPGRADE_DESCRIPTION": "Draw !mysteryDungeon:M2! cards NL Exhaust !M! cards."
+        "DESCRIPTION": "Épuisement !M! cartes. NL Piochez !mysteryDungeon:M2! cartes. NL (You cannot play this card if you cannot exhaust !M! cartes.)",
+        "UPGRADE_DESCRIPTION": "Piochez !mysteryDungeon:M2! cartes NL Épuisement !M! cartes."
     },
-    "mysteryDungeon:CharmanderDragonPulse": {
+    "mysteryDungeon:CharmeterDragonPulse": {
         "NAME": "Dragon Pulse",
-        "DESCRIPTION": "Unplayable. NL When drawn: NL Add a random card from your exhaust pile on the top of draw pile.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn: NL Add a random card from your exhaust pile on the top of draw pile. NL Next Turn, Draw 1 more card.",
+        "DESCRIPTION": "Unplayable. NL When Piochezn: NL Add a retom card from your exhaust pile on the top of Piochez pile.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL When Piochezn: NL Add a retom card from your exhaust pile on the top of Piochez pile. NL Next Turn, Piochez 1 more card.",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
         ]
     },
-    "mysteryDungeon:CharmanderDragonRage": {
+    "mysteryDungeon:CharmeterDragonRage": {
         "NAME": "Dragon Rage",
-        "DESCRIPTION": "Ethereal. NL Enemy loses !M! HP. Exhaust."
+        "DESCRIPTION": "Éthérée. NL Enemy loses !M! HP. Épuisement."
     },
-    "mysteryDungeon:CharmanderDragonRush": {
+    "mysteryDungeon:CharmeterDragonRush": {
         "NAME": "Dragon Rush",
-        "DESCRIPTION": "Deal !D! damage. NL Choose a card from your exhaust pile and add it to your discard pile. Exhaust a random card from your draw pile. Exhaust."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Choose a card from your exhaust pile et add it to your discard pile. Épuisement a retom card from your Piochez pile. Épuisement."
     },
-    "mysteryDungeon:CharmanderDragonTail": {
+    "mysteryDungeon:CharmeterDragonTail": {
         "NAME": "Dragon Tail",
-        "DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Place a copy of this card on top of your draw pile.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Draw !M! card. NL Place a copy of this card on top of your draw pile.",
+        "DESCRIPTION": "Unplayable. NL When exhausted: NL Infligez !D! dégâts à TOUS les ennemis. NL Place a copy of this card on top of your Piochez pile.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL When exhausted: NL Infligez !D! dégâts à TOUS les ennemis. NL Piochez !M! card. NL Place a copy of this card on top of your Piochez pile.",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
         ]
     },
-    "mysteryDungeon:CharmanderDrought": {
+    "mysteryDungeon:CharmeterDrought": {
         "NAME": "Drought",
-        "DESCRIPTION": "When you apply mysterydungeon:Burn, apply !M! more."
+        "DESCRIPTION": "When you Appliquez m deysterydungeon:Burn, Appliquez !M! de more."
     },
-    "mysteryDungeon:CharmanderEmber": {
+    "mysteryDungeon:CharmeterEmber": {
         "NAME": "Ember",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez !M! de mysterydungeon:Burn."
     },
-    "mysteryDungeon:CharmanderFacade": {
+    "mysteryDungeon:CharmeterFacade": {
         "NAME": "Facade",
-        "DESCRIPTION": "Gain !M! Dexterity and !mysteryDungeon:M2! Artifact."
+        "DESCRIPTION": "Gagnez !M! de Dextérité et !mysteryDungeon:M2! Artifact."
     },
-    "mysteryDungeon:CharmanderFireBlast": {
+    "mysteryDungeon:CharmeterFireBlast": {
         "NAME": "Fire Blast",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn. NL Exhaust."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez !M! de mysterydungeon:Burn. NL Épuisement."
     },
-    "mysteryDungeon:CharmanderFireFang": {
+    "mysteryDungeon:CharmeterFireFang": {
         "NAME": "Fire Fang",
-        "DESCRIPTION": "Deal !D! damage. NL Apply mysterydungeon:Burn equal to the unblocked damage."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez m deysterydungeon:Burn equal to the und'Armureed dégâts."
     },
-    "mysteryDungeon:CharmanderFireSpin": {
+    "mysteryDungeon:CharmeterFireSpin": {
         "NAME": "Fire Spin",
-        "DESCRIPTION": "Apply as much Poison as the enemy has mysterydungeon:Burn NL Remove all mysterydungeon:Burn. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply as much Poison as the enemy has mysterydungeon:Burn NL Remove all mysterydungeon:Burn."
+        "DESCRIPTION": "Appliquez a des much Poison as the enemy has mysterydungeon:Burn NL Remove all mysterydungeon:Burn. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Appliquez a des much Poison as the enemy has mysterydungeon:Burn NL Remove all mysterydungeon:Burn."
     },
-    "mysteryDungeon:CharmanderFlamethrower": {
+    "mysteryDungeon:CharmeterFlamethrower": {
         "NAME": "Flamethrower",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Apply !M! mysterydungeon:Burn to ALL enemies."
+        "DESCRIPTION": "Infligez !D! dégâts à TOUS les ennemis. NL Appliquez !M! de mysterydungeon:Burn à TOUS les ennemis."
     },
-    "mysteryDungeon:CharmanderFlareBlitz": {
+    "mysteryDungeon:CharmeterFlareBlitz": {
         "NAME": "Flare Blitz",
-        "DESCRIPTION": "Deal damage equal to !M! times the number of exhausted cards this combat."
+        "DESCRIPTION": "Infligez dégâts equal to !M! fois the number of exhausted cartes this combat."
     },
-    "mysteryDungeon:CharmanderFling": {
+    "mysteryDungeon:CharmeterFling": {
         "NAME": "Fling",
-        "DESCRIPTION": "Exhaust up to 5 cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! mysterydungeon:Burn NL Exhaust up to 5 cards. NL Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust."
+        "DESCRIPTION": "Épuisement up to 5 cartes. Infligez !D! dégâts et Appliquez !M! de mysterydungeon:Burn per card exhausted that way. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts et Appliquez !M! de mysterydungeon:Burn NL Épuisement up to 5 cartes. NL Infligez !D! dégâts et Appliquez !M! de mysterydungeon:Burn per card exhausted that way. NL Épuisement."
     },
-    "mysteryDungeon:CharmanderFrustration": {
+    "mysteryDungeon:CharmeterFrustration": {
         "NAME": "Frustration",
-        "DESCRIPTION": "At the end of each turn, retain a card. This card gains ethereal after being retained."
+        "DESCRIPTION": "At the end of each turn, retain a card. This card Gagnezs Éthérée after being retained."
     },
-    "mysteryDungeon:CharmanderHeatCrash": {
+    "mysteryDungeon:CharmeterHeatCrash": {
         "NAME": "Heat Crash",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL When this enemy dies, ALL enemies receive damage equal to its mysterydungeon:Burn stacks. Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL When this enemy dies, ALL enemies receive damage equal to its mysterydungeon:Burn stacks."
+        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Burn. NL When this enemy dies, ALL enemies receive dégâts equal to its mysterydungeon:Burn stacks. Épuisement.",
+        "UPGRADE_DESCRIPTION": "Appliquez !M! de mysterydungeon:Burn. NL When this enemy dies, ALL enemies receive dégâts equal to its mysterydungeon:Burn stacks."
     },
-    "mysteryDungeon:CharmanderHeatWave": {
+    "mysteryDungeon:CharmeterHeatWave": {
         "NAME": "Heat Wave",
-        "DESCRIPTION": "Gain !B! Block NL Apply !M! mysterydungeon:Burn. NL Exhaust a random card in your hand.",
-        "UPGRADE_DESCRIPTION": "Gain !B! Block NL Apply !M! mysterydungeon:Burn. NL Exhaust a card in your hand."
+        "DESCRIPTION": "Gagnez !B! d'Armure NL Appliquez !M! de mysterydungeon:Burn. NL Épuisement a retom card in your het.",
+        "UPGRADE_DESCRIPTION": "Gagnez !B! d'Armure NL Appliquez !M! de mysterydungeon:Burn. NL Épuisement a card in your het."
     },
-    "mysteryDungeon:CharmanderInferno": {
+    "mysteryDungeon:CharmeterInferno": {
         "NAME": "Inferno",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn to ALL enemies."
+        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Burn à TOUS les ennemis."
     },
-    "mysteryDungeon:CharmanderMetalClaw": {
+    "mysteryDungeon:CharmeterMetalClaw": {
         "NAME": "Metal Claw",
-        "DESCRIPTION": "Deal !D! damage. NL All your mysterydungeon:Claws deal !M! more damage this combat."
+        "DESCRIPTION": "Infligez !D! dégâts. NL All your mysterydungeon:Claws Infligez !M! more dégâts this combat."
     },
-    "mysteryDungeon:CharmanderOutrage": {
+    "mysteryDungeon:CharmeterOutrage": {
         "NAME": "Outrage",
-        "DESCRIPTION": "Whenever you exhaust a card, apply !M! mysterydungeon:Burn to a random enemy."
+        "DESCRIPTION": "Whenever you exhaust a card, Appliquez !M! de mysterydungeon:Burn à un ennemi aléatoire."
     },
-    "mysteryDungeon:CharmanderOverheat": {
+    "mysteryDungeon:CharmeterOverheat": {
         "NAME": "Overheat",
-        "DESCRIPTION": "Deal 5 damage. NL Deal additional damage equal to the number of mysterydungeon:Burn stacks on the enemy. NL Remove half the enemies' mysterydungeon:Burn stacks.",
-        "UPGRADE_DESCRIPTION": "Deal 5 damage. NL Deal additional damage equal to the number of mysterydungeon:Burn stacks on the enemy."
+        "DESCRIPTION": "Infligez 5 dégâts. NL Infligez dégâts supplémentaires equal to the number of mysterydungeon:Burn stacks on the enemy. NL Remove half the enemies' mysterydungeon:Burn stacks.",
+        "UPGRADE_DESCRIPTION": "Infligez 5 dégâts. NL Infligez dégâts supplémentaires equal to the number of mysterydungeon:Burn stacks on the enemy."
     },
-    "mysteryDungeon:CharmanderScaryFace": {
+    "mysteryDungeon:CharmeterScaryFace": {
         "NAME": "Scary Face",
-        "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Appliquez !M! de Faiblesse."
     },
-    "mysteryDungeon:CharmanderScratch": {
+    "mysteryDungeon:CharmeterScratch": {
         "NAME": "Scratch",
-        "DESCRIPTION": "Deal !D! damage."
+        "DESCRIPTION": "Infligez !D! dégâts."
     },
-    "mysteryDungeon:CharmanderShadowClaw": {
+    "mysteryDungeon:CharmeterShadowClaw": {
         "NAME": "Shadow Claw",
-        "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL This cards Block gets more Block instead of damage."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL This cartes d'Armure gets more d'Armure instead of dégâts."
     },
-    "mysteryDungeon:CharmanderSlash": {
+    "mysteryDungeon:CharmeterSlash": {
         "NAME": "Slash",
-        "DESCRIPTION": "Deal !D! damage !M! times."
+        "DESCRIPTION": "Infligez !D! dégâts !M! fois."
     },
-    "mysteryDungeon:CharmanderSleepTalk": {
+    "mysteryDungeon:CharmeterSleepTalk": {
         "NAME": "Sleep Talk",
-        "DESCRIPTION": "The first time you exhaust a card each turn, add a random card to your hand.",
-        "UPGRADE_DESCRIPTION": "The first 2 times you exhaust a card each turn, add a random card to your hand."
+        "DESCRIPTION": "The first time you exhaust a card each turn, add a retom card to your het.",
+        "UPGRADE_DESCRIPTION": "The first 2 fois you exhaust a card each turn, add a retom card to your het."
     },
-    "mysteryDungeon:CharmanderSmokescreen": {
+    "mysteryDungeon:CharmeterSmokescreen": {
         "NAME": "Smokescreen",
-        "DESCRIPTION": "Gain !M! Intangible. NL Gain 2 Weak NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Gain !M! Intangible. NL Gain 1 Weak NL Exhaust."
+        "DESCRIPTION": "Gagnez !M! Intangible. NL Gagnez 2 Faiblesse NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Gagnez !M! Intangible. NL Gagnez 1 Faiblesse NL Épuisement."
     },
-    "mysteryDungeon:CharmanderSolarPower": {
+    "mysteryDungeon:CharmeterSolarPower": {
         "NAME": "Solar Power",
-        "DESCRIPTION": "At the start of each turn, gain 1 Strength if an enemy is affected by mysterydungeon:Burn.",
-        "UPGRADE_DESCRIPTION": "Innate NL At the start of each turn, gain 1 Strength if an enemy is affected by mysterydungeon:Burn."
+        "DESCRIPTION": "Au début de chaque tour, Gagnez 1 Force if an enemy is affected by mysterydungeon:Burn.",
+        "UPGRADE_DESCRIPTION": "Inné NL Au début de chaque tour, Gagnez 1 Force if an enemy is affected by mysterydungeon:Burn."
     },
-    "mysteryDungeon:CharmanderWillOWisp": {
+    "mysteryDungeon:CharmeterWillOWisp": {
         "NAME": "Will-O-Wisp",
-        "DESCRIPTION": "Apply X Weak. NL Apply 3X mysterydungeon:Burn. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. NL Exhaust."
+        "DESCRIPTION": "Appliquez X de Faiblesse. NL Appliquez 3 deX mysterydungeon:Burn. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Appliquez X de+1 Faiblesse. NL Appliquez 3 de(X+1) mysterydungeon:Burn. NL Épuisement."
     },
     "mysteryDungeon:PikachuDefend": {
         "NAME": "Defend",
-        "DESCRIPTION": "Gain !B! Block."
+        "DESCRIPTION": "Gagnez !B! d'Armure."
     },
     "mysteryDungeon:PikachuTackle": {
         "NAME": "Tackle",
-        "DESCRIPTION": "Deal !D! damage."
+        "DESCRIPTION": "Infligez !D! dégâts."
     },
     "mysteryDungeon:PikachuThundershock": {
         "NAME": "Thundershock",
         "DESCRIPTION": "Return to 0 on the Charge-Meter.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Return to 0 on the Charge-Meter."
+        "UPGRADE_DESCRIPTION": "Retenue. NL Return to 0 on the Charge-Meter."
     },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Aqua Ring",
-        "DESCRIPTION": "Unplayable. NL When this card is discarded, gain !B! Block. NL When this card is scried, deal !D! damage to a random enemy."
+        "DESCRIPTION": "Unplayable. NL When this card is discarded, Gagnez !B! d'Armure. NL When this card is scried, Infligez !D! dégâts à un ennemi aléatoire."
     },
     "mysteryDungeon:SquirtleAquaTail": {
         "NAME": "Aqua Tail",
-        "DESCRIPTION": "Deal !D! damage. NL Scry !M! cards. NL Draw !mysteryDungeon:M2! cards. NL Discard !mysteryDungeon:M3! cards.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Scry !M! cards. NL Draw !mysteryDungeon:M2! cards. NL Discard !mysteryDungeon:M3! card."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Scry !M! cartes. NL Piochez !mysteryDungeon:M2! cartes. NL Discard !mysteryDungeon:M3! cartes.",
+        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Scry !M! cartes. NL Piochez !mysteryDungeon:M2! cartes. NL Discard !mysteryDungeon:M3! card."
     },
     "mysteryDungeon:SquirtleBide": {
         "NAME": "Bide",
-        "DESCRIPTION": "Gain !B! Block. NL Until next turn, when you get attacked, Gain !M! Temporary Strength.",
-        "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Until next turn, when you get attacked, Gain !M! Temporary Strength."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Until next turn, when you get attacked, Gagnez !M! Temporary Force.",
+        "UPGRADE_DESCRIPTION": "Gagnez !B! d'Armure. NL Until next turn, when you get attacked, Gagnez !M! Temporary Force."
     },
     "mysteryDungeon:SquirtleBodyPress": {
         "NAME": "Body Press",
-        "DESCRIPTION": "Deal !D! damage to an enemy if it is fatal*, Gain !B! Block and !M! Dexterity. Exhaust."
+        "DESCRIPTION": "Infligez !D! dégâts to an enemy if it is fatal*, Gagnez !B! d'Armure et !M! de Dextérité. Épuisement."
     },
     "mysteryDungeon:SquirtleBrine": {
         "NAME": "Brine",
-        "DESCRIPTION": "Deal !D! damage. If your draw pile has equal or more cards than discard pile, deal !D! damage."
+        "DESCRIPTION": "Infligez !D! dégâts. If your Piochez pile has equal or cartes de plus than discard pile, Infligez !D! dégâts."
     },
     "mysteryDungeon:SquirtleDefend": {
         "NAME": "Defend",
-        "DESCRIPTION": "Gain !B! Block."
+        "DESCRIPTION": "Gagnez !B! d'Armure."
     },
     "mysteryDungeon:SquirtleDive": {
         "NAME": "Dive",
-        "DESCRIPTION": "Exhaust all your statuses. NL Add !M! *Hazes in random locations in your draw pile and discard pile. NL Exhaust."
+        "DESCRIPTION": "Épuisement all your statuses. NL Add !M! *Hazes in retom locations in your Piochez pile et discard pile. NL Épuisement."
     },
     "mysteryDungeon:SquirtleDoubleTeam": {
         "NAME": "Double Team",
-        "DESCRIPTION": "Gain !B! block. When drawn add a copy of this card in your hand. NL Exhaust."
+        "DESCRIPTION": "Gagnez !B! d'Armure. When Piochezn add a copy of this card in your het. NL Épuisement."
     },
     "mysteryDungeon:SquirtleEndure": {
         "NAME": "Endure",
-        "DESCRIPTION": "When you play a status, deal !M! damage to a random enemy."
+        "DESCRIPTION": "When you play a status, Infligez !M! dégâts à un ennemi aléatoire."
     },
     "mysteryDungeon:SquirtleFakeOut": {
         "NAME": "Fake Out",
-        "DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Scry !M! card. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Scry !M! cards. NL Exhaust."
+        "DESCRIPTION": "Inné. NL Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL Scry !M! card. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL Scry !M! cartes. NL Épuisement."
     },
     "mysteryDungeon:SquirtleFlashCannon": {
         "NAME": "Flash Cannon",
-        "DESCRIPTION": "Deal damage equal to the number of cards in your discard pile.",
-        "UPGRADE_DESCRIPTION": "Deal damage equal to the number of cards in your discard pile + 3.",
+        "DESCRIPTION": "Infligez dégâts equal to the number of cartes in your discard pile.",
+        "UPGRADE_DESCRIPTION": "Infligez dégâts equal to the number of cartes in your discard pile + 3.",
         "EXTENDED_DESCRIPTION": [
-            " NL (Deals !D! damage.)"
+            " NL (Infligezs !D! dégâts.)"
         ]
     },
     "mysteryDungeon:SquirtleFlinch": {
         "NAME": "Flinch",
-        "DESCRIPTION": "Deal !D! damage 2 times. NL Scry !M! card. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage 2 times. NL Scry !M! cards. NL Exhaust."
+        "DESCRIPTION": "Infligez !D! dégâts 2 fois. NL Scry !M! card. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts 2 fois. NL Scry !M! cartes. NL Épuisement."
     },
     "mysteryDungeon:SquirtleFlipTurn": {
         "NAME": "Flip Turn",
-        "DESCRIPTION": "Gain !B! Block. NL draw !M! card. NL discard !M! card.",
-        "UPGRADE_DESCRIPTION": "Gain !B! Block. NL draw !M! cards. NL discard !M! cards."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Piochez !M! card. NL discard !M! card.",
+        "UPGRADE_DESCRIPTION": "Gagnez !B! d'Armure. NL Piochez !M! cartes. NL discard !M! cartes."
     },
     "mysteryDungeon:SquirtleGyroBall": {
         "NAME": "Gyro Ball",
-        "DESCRIPTION": "Add 1 *Freeze in hand. NL Deal !D! damage per status in your hand. NL Discard all statuses in your hand. NL Draw !M! cards."
+        "DESCRIPTION": "Add 1 *Freeze in het. NL Infligez !D! dégâts per status in your het. NL Discard all statuses in your het. NL Piochez !M! cartes."
     },
     "mysteryDungeon:SquirtleHail": {
         "NAME": "Hail",
-        "DESCRIPTION": "Whenever you draw cards, deal !M! damage to all enemies."
+        "DESCRIPTION": "Whenever you Piochez cartes, Infligez !M! dégâts to all enemies."
     },
     "mysteryDungeon:SquirtleHaze": {
         "NAME": "Haze",
-        "DESCRIPTION": "Gain [E] [E] NL Add !M! *Freeze to your discard pile.",
-        "UPGRADE_DESCRIPTION": "Gain [E] [E] [E] NL Add !M! *Freeze to your discard pile."
+        "DESCRIPTION": "Gagnez [E] [E] NL Add !M! *Freeze to your discard pile.",
+        "UPGRADE_DESCRIPTION": "Gagnez [E] [E] [E] NL Add !M! *Freeze to your discard pile."
     },
     "mysteryDungeon:SquirtleHydroCannon": {
         "NAME": "Hydro Cannon",
-        "DESCRIPTION": "Deal !D! damage to all enemies. NL Insert 3 *Gel in your draw pile."
+        "DESCRIPTION": "Infligez !D! dégâts to all enemies. NL Insert 3 *Gel in your Piochez pile."
     },
     "mysteryDungeon:SquirtleIceBeam": {
         "NAME": "Ice Beam",
-        "DESCRIPTION": "Deal !D! damage. NL Add 1 *Freeze to your hand."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Add 1 *Freeze to your het."
     },
     "mysteryDungeon:SquirtleIronDefense": {
         "NAME": "Iron Defense",
-        "DESCRIPTION": "Gain !M! Dexterity."
+        "DESCRIPTION": "Gagnez !M! de Dextérité."
     },
     "mysteryDungeon:SquirtleLifeDew": {
         "NAME": "Life Dew",
-        "DESCRIPTION": "Scry !M! cards. NL Draw !mysteryDungeon:M2! cards."
+        "DESCRIPTION": "Scry !M! cartes. NL Piochez !mysteryDungeon:M2! cartes."
     },
     "mysteryDungeon:SquirtleLiquidation": {
         "NAME": "Liquidation",
-        "DESCRIPTION": "Deal !D! damage to all enemies."
+        "DESCRIPTION": "Infligez !D! dégâts to all enemies."
     },
     "mysteryDungeon:SquirtleMirrorCoat": {
         "NAME": "Mirror Coat",
-        "DESCRIPTION": "Gain !M! Blur and !B! Block."
+        "DESCRIPTION": "Gagnez !M! Blur et !B! d'Armure."
     },
     "mysteryDungeon:SquirtleMist": {
         "NAME": "Mist",
-        "DESCRIPTION": "If the enemy is not attacking, gain !M! Artifact. NL Gain !B! Block."
+        "DESCRIPTION": "If the enemy is not attacking, Gagnez !M! Artifact. NL Gagnez !B! d'Armure."
     },
     "mysteryDungeon:SquirtleSkullBashReady": {
         "NAME": "Skull Bash: Ready",
-        "DESCRIPTION": "Add a *Skull *Bash: *Set in your draw pile.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Add a *Skull *Bash: *Set in your draw pile."
+        "DESCRIPTION": "Add a *Skull *Bash: *Set in your Piochez pile.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Add a *Skull *Bash: *Set in your Piochez pile."
     },
     "mysteryDungeon:SquirtleSkullBashSet": {
         "NAME": "Skull Bash: Set",
-        "DESCRIPTION": "Ethereal. NL Add a *Skull *Bash: *Go! in your draw pile. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Add a *Skull *Bash: *Go! in your draw pile. NL Exhasut."
+        "DESCRIPTION": "Éthérée. NL Add a *Skull *Bash: *Go! in your Piochez pile. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Add a *Skull *Bash: *Go! in your Piochez pile. NL Exhasut."
     },
     "mysteryDungeon:SquirtleProtect": {
         "NAME": "Protect",
-        "DESCRIPTION": "Gain !B! Block. NL You cannot gain Block during the next !M! turns."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL You cannot Gagnez d'Armure during the next !M! turns."
     },
     "mysteryDungeon:SquirtleRainDance": {
         "NAME": "Rain Dance",
-        "DESCRIPTION": "When a card is created this combat, gain !M! Temporary Strength.",
-        "UPGRADE_DESCRIPTION": "Innate. NL When a card is created this combat, gain !M! Temporary Strength."
+        "DESCRIPTION": "When a card is created this combat, Gagnez !M! Temporary Force.",
+        "UPGRADE_DESCRIPTION": "Inné. NL When a card is created this combat, Gagnez !M! Temporary Force."
     },
     "mysteryDungeon:SquirtleRainDish": {
         "NAME": "Rain Dish",
-        "DESCRIPTION": "Whenever a card is scried or discarded, gain !M! Block.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Whenever is scried or discarded, gain !M! Block."
+        "DESCRIPTION": "Whenever a card is scried or discarded, Gagnez !M! d'Armure.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Whenever is scried or discarded, Gagnez !M! d'Armure."
     },
     "mysteryDungeon:SquirtleRapidSpin": {
         "NAME": "Rapid Spin",
-        "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack gain !M! artifact."
+        "DESCRIPTION": "Infligez !D! dégâts. NL If the enemy intends to attack Gagnez !M! artifact."
     },
     "mysteryDungeon:SquirtleScald": {
         "NAME": "Scald",
-        "DESCRIPTION": "Discard up to !mysteryDungeon:M2! cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card discarded that way."
+        "DESCRIPTION": "Discard up to !mysteryDungeon:M2! cartes. Infligez !D! dégâts et Appliquez !M! de mysterydungeon:Burn per card discarded that way."
     },
     "mysteryDungeon:SquirtleShellSmash": {
         "NAME": "Shell Smash",
-        "DESCRIPTION": "Gain !M! Strength. NL Add !mysteryDungeon:M2! *Gel to your deck. NL Exhaust."
+        "DESCRIPTION": "Gagnez !M! Force. NL Add !mysteryDungeon:M2! *Gel to your deck. NL Épuisement."
     },
     "mysteryDungeon:SquirtleSkullBashGo": {
         "NAME": "Skull Bash Go!",
-        "DESCRIPTION": " Deal !D! damage to all enemies. NL If this is the last card in hand play it twice. Exhaust.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage to all enemies. NL If this is the last card in hand play it twice. Exhaust."
+        "DESCRIPTION": " Infligez !D! dégâts to all enemies. NL If this is the last card in het play it twice. Épuisement.",
+        "UPGRADE_DESCRIPTION": "Retenue. NL Infligez !D! dégâts to all enemies. NL If this is the last card in het play it twice. Épuisement."
     },
     "mysteryDungeon:SquirtleSubstitute": {
         "NAME": "Substitute",
-        "DESCRIPTION": "Choose a card from your draw pile. NL Add it to your hand and put a Wound where the card was. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Choose a card from your draw pile. NL Add a copy of that card to your hand and put a Wound at the card's location. NL Exhaust."
+        "DESCRIPTION": "Choose a card from your Piochez pile. NL Add it to your het et put a Wound where the card was. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Choose a card from your Piochez pile. NL Add a copy of that card to your het et put a Wound at the card's location. NL Épuisement."
     },
     "mysteryDungeon:SquirtleTackle": {
         "NAME": "Tackle",
-        "DESCRIPTION": "Deal !D! damage."
+        "DESCRIPTION": "Infligez !D! dégâts."
     },
     "mysteryDungeon:SquirtleTailWhip": {
         "NAME": "Tail Whip",
-        "DESCRIPTION": "Gain !B! Block. NL draw !M! card"
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Piochez !M! card"
     },
     "mysteryDungeon:SquirtleTorrent": {
         "NAME": "Torrent",
-        "DESCRIPTION": "Each time you shuffle your deck, gain !M! Temporary Strength."
+        "DESCRIPTION": "Each time you shuffle your deck, Gagnez !M! Temporary Force."
     },
     "mysteryDungeon:SquirtleWaterGun": {
         "NAME": "Water Gun",
-        "DESCRIPTION": "Deal !D! damage. NL Scry !M! cards."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Scry !M! cartes."
     },
     "mysteryDungeon:SquirtleWaterPulse": {
         "NAME": "Water Pulse",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez !M! de Vulnérabilité."
     },
     "mysteryDungeon:SquirtleWaterSpout": {
         "NAME": "Water Spout",
-        "DESCRIPTION": "Scry !M! card. NL Apply !mysteryDungeon:M2! Weak. NL Deal !D! damage.",
-        "UPGRADE_DESCRIPTION": "Scry !M! cards. NL Apply !mysteryDungeon:M2! Weak. NL Deal !D! damage."
+        "DESCRIPTION": "Scry !M! card. NL Appliquez ! demysteryDungeon:M2! Faiblesse. NL Infligez !D! dégâts.",
+        "UPGRADE_DESCRIPTION": "Scry !M! cartes. NL Appliquez ! demysteryDungeon:M2! Faiblesse. NL Infligez !D! dégâts."
     },
     "mysteryDungeon:SquirtleWhirlpool": {
         "NAME": "Whirlpool",
-        "DESCRIPTION": "At the start of your X next turns, Draw 2 more cards and Discard 2 cards. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "At the start of your X+1 next turns, Draw 2 more cards and Discard 2 cards. NL Exhaust."
+        "DESCRIPTION": "At the start of your X next turns, Piochez 2 cartes de plus et Discard 2 cartes. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "At the start of your X+1 next turns, Piochez 2 cartes de plus et Discard 2 cartes. NL Épuisement."
     },
-    "mysteryDungeon:SquirtleWithdraw": {
-        "NAME": "Withdraw",
-        "DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! card. NL Gain 2 Block per card in hand.",
-        "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! cards. NL Gain 2 Block per card in hand. "
+    "mysteryDungeon:SquirtleWithPiochez": {
+        "NAME": "WithPiochez",
+        "DESCRIPTION": "Shuffle your discard pile into your deck. NL Piochez !M! card. NL Gagnez 2 d'Armure per card in het.",
+        "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your deck. NL Piochez !M! cartes. NL Gagnez 2 d'Armure per card in het. "
     },
     "mysteryDungeon:SquirtleZenHeadbutt": {
         "NAME": "Zen Headbutt",
-        "DESCRIPTION": "Deal !D! damage create a *Flinch and add it to your hand.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage create an upgraded *Flinch and add it to your hand."
-    },
-    "mysteryDungeon:ChoosePositive": {
-        "NAME": "Positive Stance",
-        "DESCRIPTION": "Enter Positive Stance."
-    },
-    "mysteryDungeon:ChooseNegative": {
-        "NAME": "Negative Stance",
-        "DESCRIPTION": "Enter Negative Stance."
+        "DESCRIPTION": "Infligez !D! dégâts create a *Flinch et add it to your het.",
+        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts create an upgraded *Flinch et add it to your het."
     },
     "mysteryDungeon:PikachuChargeBeam": {
         "NAME": "Charge Beam",
@@ -553,64 +561,64 @@
     },
     "mysteryDungeon:PikachuCharge": {
         "NAME": "Charge",
-        "DESCRIPTION": "Gain !M! focus. NL Remove all orbs"
+        "DESCRIPTION": "Gagnez !M! focus. NL Remove all orbs"
     },
     "mysteryDungeon:PikachuCharm": {
         "NAME": "Charm",
-        "DESCRIPTION": "Apply !M! vulnerable. NL Apply !M! Lock-on. NL Exhaust."
+        "DESCRIPTION": "Appliquez !M! de vulnerable. NL Appliquez !M! de Lock-on. NL Épuisement."
     },
     "mysteryDungeon:PikachuDischarge": {
         "NAME": "Discharge",
-        "DESCRIPTION": "Deal !D! damage. NL Evoke !M! orb.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Evoke !M! orbs."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Evoke !M! orb.",
+        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Evoke !M! orbs."
     },
     "mysteryDungeon:PikachuEerieImpulse": {
         "NAME": "Eerie Impulse",
-        "DESCRIPTION": "Gain !M! Strenght. NL Gain !M! Dexterity. NL Lose 2 Focus."
+        "DESCRIPTION": "Gagnez !M! Strenght. NL Gagnez !M! de Dextérité. NL Perdez 2 Focus."
     },
     "mysteryDungeon:PikachuElectricTerrain": {
         "NAME": "Electric Terrain",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Positive Stance. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Positive Stance. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Positive Stance. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retenue. NL Enter Positive Stance. NL Épuisement."
     },
     "mysteryDungeon:PikachuElectroBall": {
         "NAME": "Electro Ball",
-        "DESCRIPTION": "Evoke your next orb !M! times. NL  Increase this amount by 1 this combat."
+        "DESCRIPTION": "Evoke your next orb !M! fois. NL  Increase this amount by 1 this combat."
     },
     "mysteryDungeon:PikachuIronTail": {
         "NAME": "Iron Tail",
-        "DESCRIPTION": "Deal !D! damage. NL Increase this card damage by !M! this combat."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Increase this card dégâts by !M! this combat."
     },
     "mysteryDungeon:PikachuNastyPlot": {
         "NAME": "Nasty Plot",
-        "DESCRIPTION": "Gain !M! orb slot",
-        "UPGRADE_DESCRIPTION": "Gain !M! orb slots"
+        "DESCRIPTION": "Gagnez !M! orb slot",
+        "UPGRADE_DESCRIPTION": "Gagnez !M! orb slots"
     },
     "mysteryDungeon:PikachuNuzzle": {
         "NAME": "Nuzzle",
-        "DESCRIPTION": "Deal !D! damage per orb.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal !D! damage per orb."
+        "DESCRIPTION": "Infligez !D! dégâts per orb.",
+        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Infligez !D! dégâts per orb."
     },
     "mysteryDungeon:PikachuPlayNice": {
         "NAME": "Play Nice",
-        "DESCRIPTION": "Gain !B! Block. NL Draw !M! card."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Piochez !M! card."
     },
     "mysteryDungeon:PikachuQuickAttack": {
         "NAME": "Quick Attack",
-        "DESCRIPTION": "Deal !D! damage."
+        "DESCRIPTION": "Infligez !D! dégâts."
     },
     "mysteryDungeon:PikachuShockWave": {
         "NAME": "Shock Wave",
-        "DESCRIPTION": "Deal !D! damage to all enemies. NL Apply !M! Lock-On to all enemies."
+        "DESCRIPTION": "Infligez !D! dégâts to all enemies. NL Appliquez !M! de Lock-On to all enemies."
     },
     "mysteryDungeon:PikachuSlam": {
         "NAME": "Slam",
-        "DESCRIPTION": "Deal !D! damage. NL If you are in Negative stance, gain 1 energy."
+        "DESCRIPTION": "Infligez !D! dégâts. NL If you are in Negative stance, Gagnez 1 energy."
     },
     "mysteryDungeon:PikachuSpeedSwap": {
         "NAME": "Speed Swap",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Negative Stance. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Negative Stance. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Negative Stance. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retenue. NL Enter Negative Stance. NL Épuisement."
     },
     "mysteryDungeon:PikachuStatic": {
         "NAME": "Static",
@@ -619,52 +627,44 @@
     },
     "mysteryDungeon:PikachuSweetKiss": {
         "NAME": "Sweet Kiss",
-        "DESCRIPTION": "This turn, apply !M! weak to all enemies every time you enter or exit a stance."
+        "DESCRIPTION": "This turn, Appliquez !M! de Faiblesse to all enemies every time you enter or exit a stance."
     },
     "mysteryDungeon:PikachuThunderPunch": {
         "NAME": "Thunder Punch",
-        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Lightning orb."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Channel !M! Lightning orb."
     },
     "mysteryDungeon:PikachuThunderwave": {
         "NAME": "Thunderwave",
-        "DESCRIPTION": "Gain !B! Block. NL Gain !M! more Block if in neutral stance.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Gain !B! Block. NL Gain !M! more Block if in neutral stance."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Gagnez !M! more d'Armure if in neutral stance.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Gagnez !B! d'Armure. NL Gagnez !M! more d'Armure if in neutral stance."
     },
     "mysteryDungeon:PikachuVoltSwitch": {
         "NAME": "Volt Switch",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter a Random Stance. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Choose which stance to enter. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Retenue. NL Enter a Retom Stance. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retenue. NL Choose which stance to enter. NL Épuisement."
     },
     "mysteryDungeon:PikachuVoltTackle": {
         "NAME": "Volt Tackle",
-        "DESCRIPTION": "Innate. NL Deal !D! damage. NL Channel !M! Lightning orb. NL Exhaust."
+        "DESCRIPTION": "Inné. NL Infligez !D! dégâts. NL Channel !M! Lightning orb. NL Épuisement."
     },
     "mysteryDungeon:PikachuWildCharge": {
         "NAME": "Wild Charge",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs. NL Lose 1 orb slot. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Evoke all orbs. NL Lose 1 orb slot. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs. NL Perdez 1 orb slot. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Evoke all orbs. NL Perdez 1 orb slot. NL Épuisement."
     },
     "mysteryDungeon:PikachuLightScreen": {
         "NAME": "Light Screen",
-        "DESCRIPTION": "At the end of your turn, Gain !M! Block per empty orb slot."
-    },
-    "mysteryDungeon:ChooseAttack": {
-        "NAME": "Attack",
-        "DESCRIPTION": "Add a random attack card to your hand."
-    },
-    "mysteryDungeon:ChooseSkill": {
-        "NAME": "Skill",
-        "DESCRIPTION": "Add a random skill card to your hand."
+        "DESCRIPTION": "At the end of your turn, Gagnez !M! d'Armure per empty orb slot."
     },
     "mysteryDungeon:PikachuAgility": {
         "NAME": "Agility",
-        "DESCRIPTION": "Whenever you enter or exit a stance, draw !M! card.",
-        "UPGRADE_DESCRIPTION": "Innate NL Whenever you enter or exit a stance, draw !M! card."
+        "DESCRIPTION": "Whenever you enter or exit a stance, Piochez !M! card.",
+        "UPGRADE_DESCRIPTION": "Inné NL Whenever you enter or exit a stance, Piochez !M! card."
     },
     "mysteryDungeon:PikachuElectroweb": {
         "NAME": "Elecroweb",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cards from your discard pile into your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cards from your discard pile into your hand."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cartes from your discard pile into your het. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cartes from your discard pile into your het."
     },
     "mysteryDungeon:PikachuEncore": {
         "NAME": "Encore",
@@ -673,40 +673,40 @@
     },
     "mysteryDungeon:PikachuHiddenPower": {
         "NAME": "Hidden Power",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Add a random attack or skill card to your hand. NL It costs 0 this turn. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Choose between a random attack or skill card to add to your hand. NL It costs 0 this turn. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Add a retom attack or skill card to your het. NL It costs 0 this turn. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Choose between a retom attack or skill card to add to your het. NL It costs 0 this turn. NL Épuisement."
     },
     "mysteryDungeon:PikachuPlayRough": {
         "NAME": "Play Rough",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! weak."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez !M! de Faiblesse."
     },
     "mysteryDungeon:PikachuReflect": {
         "NAME": "Reflect",
-        "DESCRIPTION": "Gain !B! block. NL Increase this card block by !M! this combat."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Increase this card d'Armure by !M! this combat."
     },
     "mysteryDungeon:PikachuSafeguard": {
         "NAME": "Safeguard",
-        "DESCRIPTION": "Gain !B! block. NL Retain your hand this turn.",
-        "UPGRADE_DESCRIPTION": "Gain !B! block. NL Retain your hand for !M! turns."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Retenue your het this turn.",
+        "UPGRADE_DESCRIPTION": "Gagnez !B! d'Armure. NL Retenue your het for !M! turns."
     },
     "mysteryDungeon:PikachuSpark": {
         "NAME": "Spark",
-        "DESCRIPTION": "Deal !D! damage. NL Return to 0 on the Charge-Meter."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Return to 0 on the Charge-Meter."
     },
     "mysteryDungeon:PikachuSwift": {
         "NAME": "Swift",
-        "DESCRIPTION": "Deal !D! damage to all enemies. NL Draw !M! cards."
+        "DESCRIPTION": "Infligez !D! dégâts to all enemies. NL Piochez !M! cartes."
     },
     "mysteryDungeon:PikachuThunder": {
         "NAME": "Thunder",
-        "DESCRIPTION": "Whenever you evoke an Orb, deal !M! damage to ALL enemies."
+        "DESCRIPTION": "Whenever you evoke an Orb, Infligez !M! dégâts à TOUS les ennemis."
     },
     "mysteryDungeon:PikachuThunderbolt": {
         "NAME": "Thunderbolt",
-        "DESCRIPTION": "Deal !D! damage X times. NL If the last card played was a skill gain 1 energy."
+        "DESCRIPTION": "Infligez !D! dégâts X fois. NL If the last card played was a skill Gagnez 1 energy."
     },
     "mysteryDungeon:PikachuZapCannon": {
         "NAME": "Zap Cannon",
-        "DESCRIPTION": "Enter Positive Stance. NL Deal !D! damage to all enemies."
+        "DESCRIPTION": "Enter Positive Stance. NL Infligez !D! dégâts to all enemies."
     }
 }
