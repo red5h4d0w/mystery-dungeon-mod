@@ -247,5 +247,17 @@
         "DESCRIPTIONS": [
             "Whenever you evoke an Orb, deal #b%s damage to ALL enemies."
         ]
+    },
+    "mysteryDungeon:CharmanderExplorerPower": {
+        "NAME": "Explorer Form",
+        "DESCRIPTIONS": [
+            "At the start of your turn Exhume #b%s random card."
+        ]
+    },
+    "mysteryDungeon:SquirtleExplorerPower": {
+        "NAME": "Explorer Form",
+        "DESCRIPTIONS": [
+            "At the start of your turn draw a number a card equivalent to your maximum hand size"
+        ]
     }
 }
