@@ -191,7 +191,7 @@
     },
     "mysteryDungeon:CharmanderBellyDrum": {
         "NAME": "Belly Drum",
-        "DESCRIPTION": "At the start of your turn draw !M! more card. NL Also, the first card you play each turn costs 0 and exhausts."
+        "DESCRIPTION": "At the start of your turn, Draw !M! more card. NL The first card you play each turn costs 0 and exhausts."
     },
     "mysteryDungeon:CharmanderBlastBurn": {
         "NAME": "Blast Burn",

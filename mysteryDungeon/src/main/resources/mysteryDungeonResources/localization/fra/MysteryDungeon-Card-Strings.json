@@ -187,20 +187,20 @@
     },
     "mysteryDungeon:CharmeterBellyDrum": {
         "NAME": "Belly Drum",
-        "DESCRIPTION": "At the start of your turn Piochez !M! more card. NL Also, the first card you play each turn costs 0 et exhausts."
+        "DESCRIPTION": "Au début de votre tour, Piochez !M! carte de plus. NL Chaque tour, la première carte jouée coûte 0 et s'épuise."
     },
     "mysteryDungeon:CharmeterBlastBurn": {
         "NAME": "Blast Burn",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Épuisement your Piochez pile."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Épuisez votre pioche."
     },
     "mysteryDungeon:CharmeterBlaze": {
         "NAME": "Blaze",
-        "DESCRIPTION": "Gagnez 2 Vulnérabilité. NL The first time you spend all energy each turn, Gagnez [E].",
-        "UPGRADE_DESCRIPTION": "Gagnez 2 Vulnérabilité. NL The first 2 fois you spend all energy each turn, Gagnez [E]."
+        "DESCRIPTION": "Gagnez 2 Vulnérabilité. NL La première fois que toute votre énergie est dépensée chaque tour, Gagnez [E].",
+        "UPGRADE_DESCRIPTION": "Gagnez 2 Vulnérabilité. NL Les deux premières fois que toute votre énergie est dépensée chaque tour, Gagnez [E]."
     },
     "mysteryDungeon:CharmeterCounter": {
         "NAME": "Counter",
-        "DESCRIPTION": "Gagnez !B! d'Armure. NL If you lose all d'Armure et take dégâts from an attack, Infligez !M! dégâts to the attacker."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Si vous perdez votre armure et prenez des dégâts d'attaque, Infligez !M! dégâts à l'atttaquant."
     },
     "mysteryDungeon:CharmeterCrunch": {
         "NAME": "Crunch",
@@ -227,7 +227,7 @@
     "mysteryDungeon:CharmeterDragonPulse": {
         "NAME": "Dragon Pulse",
         "DESCRIPTION": "Unplayable. NL When Piochezn: NL Add a retom card from your exhaust pile on the top of Piochez pile.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL When Piochezn: NL Add a retom card from your exhaust pile on the top of Piochez pile. NL Next Turn, Piochez 1 more card.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL When Piochezn: NL Add a retom card from your exhaust pile on the top of Piochez pile. NL Next Turn, Piochez 1 carte de plus.",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
         ]
