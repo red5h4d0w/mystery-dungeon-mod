@@ -78,8 +78,8 @@ public class MetricsPatch {
         runDetails.elapsedTime = CardCrawlGame.playtime;
         runDetails.score = GameOverScreen.calcScore(runDetails.win);
         runDetails.seed = SeedHelper.getString(Settings.seed);
-        runDetails.pokemon1 = ((Pokemon)AbstractDungeon.player).adventurer.name;
-        runDetails.pokemon2 = ((Pokemon)AbstractDungeon.player).partner.name;
+        runDetails.pokemon1 = Pokemon.adventurer.name;
+        runDetails.pokemon2 = Pokemon.partner.name;
         ArrayList<CardDetails> cardDetails = new ArrayList<>();
         for (AbstractCard card : AbstractDungeon.player.masterDeck.group) {
             CardDetails cardDetail = new CardDetails();

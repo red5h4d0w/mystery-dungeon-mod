@@ -115,8 +115,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     // =============== BASE STATS =================
 
     
-    public AbstractPokemon adventurer;
-    public AbstractPokemon partner;
+    public static AbstractPokemon adventurer;
+    public static AbstractPokemon partner;
     public static final int ENERGY_PER_TURN = 3;
     public static final int STARTING_HP = 0;
     public static final int MAX_HP = 0;
@@ -545,7 +545,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         return mysteryDungeon.MysteryDungeon.DEFAULT_GRAY;
     }
 
-    public boolean hasChosenPikachu() {
+    public static boolean hasChosenPikachu() {
         if(adventurer instanceof Pikachu)
         {
             return true;
@@ -648,14 +648,14 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     // Adventurer/Partner related switch statements
 
 
-    public Color adventurersColor()
+    public static Color adventurersColor()
     {
         if(adventurer != null)
             return adventurer.color;
         return Color.GRAY;
     }
 
-    public Color partnersColor()
+    public static Color partnersColor()
     {
         if(partner != null)
             return partner.color;
