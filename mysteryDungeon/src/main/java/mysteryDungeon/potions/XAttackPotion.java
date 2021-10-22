@@ -11,6 +11,8 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.cards.tempCards.SquirtleFlinch;
+import mysteryDungeon.pokemons.Squirtle;
+
 
 public class XAttackPotion extends PokemonPotion {
 
@@ -31,6 +33,8 @@ public class XAttackPotion extends PokemonPotion {
         
        // Do you throw this potion at an enemy or do you just consume it.
         isThrown = false;
+        cardColor = Squirtle.CARD_COLOR;
+
 
         updateDescription();
         

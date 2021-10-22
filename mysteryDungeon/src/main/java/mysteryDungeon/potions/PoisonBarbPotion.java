@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.powers.PoisonPower;
 
 import mysteryDungeon.abstracts.PokemonPotion;
+import mysteryDungeon.pokemons.Bulbasaur;
 
 public class PoisonBarbPotion extends PokemonPotion {
 
@@ -32,6 +33,9 @@ public class PoisonBarbPotion extends PokemonPotion {
         isThrown = true;
 
         targetRequired = true;
+
+        cardColor = Bulbasaur.CARD_COLOR;
+
 
         updateDescription();
         
