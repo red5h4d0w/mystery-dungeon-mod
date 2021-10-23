@@ -264,6 +264,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
                         (!UnlockTracker.isCardLocked(c.getKey()) || Settings.isDailyRun)) {
                             if(card instanceof PokemonCard) {
                                 if(!((PokemonCard)card).isAdventurerOnly || color == adventurer.cardColor) {
+                                    logger.info(card.name);
                                     tmpPool.add(card);
                                 }
                             }
