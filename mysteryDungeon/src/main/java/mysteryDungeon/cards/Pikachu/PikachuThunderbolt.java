@@ -4,9 +4,11 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
@@ -75,6 +77,16 @@ public class PikachuThunderbolt extends PokemonCard {
         }
         addToBot(new ThunderboltAction());
     }
+
+    public void triggerOnGlowCheck() {
+        if (!AbstractDungeon.actionManager.cardsPlayedThisCombat.isEmpty() && ((AbstractCard)AbstractDungeon.actionManager.cardsPlayedThisCombat
+          .get(AbstractDungeon.actionManager.cardsPlayedThisCombat
+            .size() - 1)).type == AbstractCard.CardType.SKILL) {
+          this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+        } else {
+          this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        } 
+      }
 
     // Upgraded stats.
     @Override
