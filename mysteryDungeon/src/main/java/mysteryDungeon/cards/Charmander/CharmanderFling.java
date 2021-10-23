@@ -2,8 +2,6 @@ package mysteryDungeon.cards.Charmander;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import basemod.abstracts.CustomCard;
-
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -13,11 +11,12 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.actions.FlingAction;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.powers.BurnPower;
 
-public class CharmanderFling extends CustomCard {
+public class CharmanderFling extends PokemonCard {
 
     // TEXT DECLARATION
 

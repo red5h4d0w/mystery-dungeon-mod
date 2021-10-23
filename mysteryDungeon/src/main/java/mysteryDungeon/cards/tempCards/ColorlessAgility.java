@@ -2,8 +2,6 @@ package mysteryDungeon.cards.tempCards;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import basemod.abstracts.CustomCard;
-
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -11,8 +9,9 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonCard;
 
-public class ColorlessAgility extends CustomCard {
+public class ColorlessAgility extends PokemonCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards

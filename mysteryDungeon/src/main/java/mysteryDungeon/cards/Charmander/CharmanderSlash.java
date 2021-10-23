@@ -2,8 +2,6 @@ package mysteryDungeon.cards.Charmander;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import basemod.abstracts.CustomCard;
-
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -12,9 +10,10 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 
-public class CharmanderSlash extends CustomCard {
+public class CharmanderSlash extends PokemonCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards

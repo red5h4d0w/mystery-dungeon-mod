@@ -2,8 +2,6 @@ package mysteryDungeon.cards.Charmander;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import basemod.abstracts.CustomCard;
-
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -13,10 +11,11 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.powers.BurnPower;
 
-public class CharmanderFireSpin extends CustomCard {
+public class CharmanderFireSpin extends PokemonCard {
 
     // TEXT DECLARATION
 
