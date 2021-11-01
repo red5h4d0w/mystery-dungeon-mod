@@ -40,6 +40,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.PotionHelper;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
@@ -394,6 +395,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         AwardStartingRelic();
         startingMaxHP = maxHealth;
         removeImproperRelics();
+        PotionHelper.initialize(Enums.THE_POKEMON);
     }
 
     public void evolvePokemons() {
