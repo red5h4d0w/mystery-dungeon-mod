@@ -82,7 +82,7 @@
     },
     "mysteryDungeon:BulbasaurMegaDrain": {
         "NAME": "Mega Drain",
-        "DESCRIPTION": "Heal !M! HP per different debuff on the enemy."
+        "DESCRIPTION": "Heal !M! HP per different *debuff on the enemy."
     },
     "mysteryDungeon:BulbasaurPetalBlizzard": {
         "NAME": "Petal Blizzard",
@@ -114,7 +114,7 @@
     },
     "mysteryDungeon:BulbasaurRazorLeaf": {
         "NAME": "Razor Leaf",
-        "DESCRIPTION": "Deal !D! damage. NL If you have a debuff, Gain [E]"
+        "DESCRIPTION": "Deal !D! damage. NL If you have a *debuff, Gain [E]"
     },
     "mysteryDungeon:BulbasaurRest": {
         "NAME": "Rest",
@@ -147,8 +147,8 @@
     },
     "mysteryDungeon:BulbasaurStunSpore": {
         "NAME": "Stun Spore",
-        "DESCRIPTION": "Apply !M! Slow. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! Slow. NL Exhaust."
+        "DESCRIPTION": "Apply !M! *Slow. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! *Slow. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurSunnyDay": {
         "NAME": "Sunny Day",
@@ -182,7 +182,7 @@
     },
     "mysteryDungeon:BulbasaurWorrySeed": {
         "NAME": "Worry Seed",
-        "DESCRIPTION": "Your card rewards will contain 1 more card choice."
+        "DESCRIPTION": "Your *card *rewards will contain 1 more card choice."
     },
     "mysteryDungeon:BulbasaurYawn": {
         "NAME": "Yawn",
@@ -466,7 +466,7 @@
     },
     "mysteryDungeon:PikachuSpark": {
         "NAME": "Spark",
-        "DESCRIPTION": "Deal !D! damage. NL Return to 0 on the Charge-Meter."
+        "DESCRIPTION": "Deal !D! damage. NL Return to 0 on the *Charge-Meter."
     },
     "mysteryDungeon:PikachuSpeedSwap": {
         "NAME": "Speed Swap",
@@ -504,8 +504,8 @@
     },
     "mysteryDungeon:PikachuThundershock": {
         "NAME": "Thundershock",
-        "DESCRIPTION": "Return to 0 on the Charge-Meter.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Return to 0 on the Charge-Meter."
+        "DESCRIPTION": "Return to 0 on the *Charge-Meter.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Return to 0 on the *Charge-Meter."
     },
     "mysteryDungeon:PikachuThunderwave": {
         "NAME": "Thunderwave",
@@ -532,7 +532,7 @@
     },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Aqua Ring",
-        "DESCRIPTION": "Unplayable. NL When this card is discarded, gain !B! Block. NL When this card is scried, deal !D! damage to a random enemy."
+        "DESCRIPTION": "Unplayable. NL When this card is *discarded, gain !B! Block. NL When this card is *scried, deal !D! damage to a random enemy."
     },
     "mysteryDungeon:SquirtleAquaTail": {
         "NAME": "Aqua Tail",
@@ -546,7 +546,7 @@
     },
     "mysteryDungeon:SquirtleBodyPress": {
         "NAME": "Body Press",
-        "DESCRIPTION": "Deal !D! damage to an enemy if it is fatal*, Gain !B! Block and !M! Dexterity. Exhaust."
+        "DESCRIPTION": "Deal !D! damage to an enemy if it is *fatal, Gain !B! Block and !M! Dexterity. Exhaust."
     },
     "mysteryDungeon:SquirtleBrine": {
         "NAME": "Brine",
