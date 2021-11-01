@@ -1,20 +1,31 @@
 package mysteryDungeon.ui;
 
 
+import java.util.ArrayList;
+
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.Hitbox;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
+import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.helpers.TipHelper;
+import com.megacrit.cardcrawl.localization.StanceStrings;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.stances.NegativeStance;
+import mysteryDungeon.stances.PositiveStance;
 
 public class PikachuMeter {
+    public Logger logger = LogManager.getLogger(PikachuMeter.class);
     
     private static final float TEXT_OFFSET_X = 22.0F * Settings.scale;
   
@@ -43,17 +54,15 @@ public class PikachuMeter {
 
     private static int counterPosition = 0;
 
-    public Hitbox plusHitbox = new Hitbox(0, Settings.HEIGHT-165.0f*Settings.scale, BODY_TEXT_WIDTH, FontHelper.getSmartHeight(FontHelper.tipBodyFont, DESCRIPTION, BODY_TEXT_WIDTH, TIP_DESC_LINE_SPACING) - 7.0F * Settings.scale - METER_HEIGHT - BOX_BODY_H - SHADOW_DIST_Y);
-
-    public boolean renderPlusTip = false;
+    public Hitbox plusHitbox = new Hitbox(0, Settings.HEIGHT-165.0f*Settings.scale+(FontHelper.getSmartHeight(FontHelper.tipBodyFont, DESCRIPTION, BODY_TEXT_WIDTH, TIP_DESC_LINE_SPACING) - METER_HEIGHT - BOX_BODY_H - SHADOW_DIST_Y), BODY_TEXT_WIDTH, -(FontHelper.getSmartHeight(FontHelper.tipBodyFont, DESCRIPTION, BODY_TEXT_WIDTH, TIP_DESC_LINE_SPACING) - 7.0F * Settings.scale - METER_HEIGHT - BOX_BODY_H - SHADOW_DIST_Y));
 
     public PikachuMeter() { }
     
     public void update() { 
+        plusHitbox.update(plusHitbox.x, plusHitbox.y);
         plusHitbox.update();
-        if(plusHitbox.hovered) {
-            renderPlusTip = true;
-        }
+        logger.info(plusHitbox.height);
+        logger.info(plusHitbox.y);
     }
     
     public void render(SpriteBatch sb, AbstractPlayer player) {
@@ -64,7 +73,7 @@ public class PikachuMeter {
             float y = Settings.HEIGHT-165.0f*Settings.scale;
             //TODO: Localization
             String title = "Charge Meter";
-            String description = "When you play a Skill, move to the left on this meter. NL When you play an Attack, move to the right on this meter. NL When you reach certain points on the track, enter the corresponding stances.";
+            String description = "When you play a Skill, move to the left on this meter. NL When you play an Attack, move to the right on this meter. NL When you reach certain points on the track, enter the corresponding stances. NL You can hover this to see info on the stances.";
             float h = -FontHelper.getSmartHeight(FontHelper.tipBodyFont, description, BODY_TEXT_WIDTH, TIP_DESC_LINE_SPACING) - 7.0F * Settings.scale;
             sb.setColor(Settings.TOP_PANEL_SHADOW_COLOR);
             sb.draw(ImageMaster.KEYWORD_TOP, x + SHADOW_DIST_X, y - SHADOW_DIST_Y, BOX_W, BOX_EDGE_H);
@@ -80,8 +89,15 @@ public class PikachuMeter {
             
             float plusSymbolWidth = FontHelper.getSmartWidth(FontHelper.tipHeaderFont, "+", BOX_W, TIP_DESC_LINE_SPACING);
             FontHelper.renderFontLeft(sb, FontHelper.tipHeaderFont, "+", x + BOX_W/2 + 120f - plusSymbolWidth/2, y - h - BOX_BODY_H - METER_HEIGHT/2, BASE_COLOR);
-            if(renderPlusTip) {
-                TipHelper.renderGenericTip(x, y, "header", "body");
+            if(plusHitbox.hovered) {
+                StanceStrings positiveStanceStrings = CardCrawlGame.languagePack.getStanceString(PositiveStance.STANCE_ID);
+                StanceStrings negativeStanceStrings = CardCrawlGame.languagePack.getStanceString(NegativeStance.STANCE_ID);
+                PowerTip firstStanceTip = new PowerTip(positiveStanceStrings.NAME, positiveStanceStrings.DESCRIPTION[0]);
+                PowerTip secondStanceTip = new PowerTip(negativeStanceStrings.NAME, negativeStanceStrings.DESCRIPTION[0]);
+                ArrayList<PowerTip> powerTips = new ArrayList<PowerTip>();
+                powerTips.add(firstStanceTip);
+                powerTips.add(secondStanceTip);
+                TipHelper.queuePowerTips(BOX_W, y, powerTips);
             }
             
             FontHelper.renderFontLeftTopAligned(sb, FontHelper.tipHeaderFont, title, x + TEXT_OFFSET_X, y + HEADER_OFFSET_Y, Settings.GOLD_COLOR);
