@@ -90,7 +90,7 @@
     },
     "mysteryDungeon:BulbasaurPetalDance": {
         "NAME": "Petal Dance",
-        "DESCRIPTION": "Deal 7 damage to ALL enemies at the end of your turn for the next !M! turns. NL (This counts as an Attack and so scales with Strength, etc.)"
+        "DESCRIPTION": "Deal 7 damage to ALL enemies at the end of your turn for the next !M! turns. NL (This counts as an *Attack and so scales with *Strength, etc.)"
     },
     "mysteryDungeon:BulbasaurPoisonJab": {
         "NAME": "Poison Jab",
