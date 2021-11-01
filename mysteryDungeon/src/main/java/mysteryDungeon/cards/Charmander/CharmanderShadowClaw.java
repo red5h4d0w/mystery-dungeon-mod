@@ -21,12 +21,6 @@ import mysteryDungeon.interfaces.ClawCardInterface;
 
 public class CharmanderShadowClaw extends PokemonCard implements ClawCardInterface {
 
-    /*
-     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
-     *
-     * Special Strike: Deal 7 (*) damage times the energy you currently have.
-     */
-
     // TEXT DECLARATION
 
     public static final String ID = MysteryDungeon.makeID(CharmanderShadowClaw.class.getSimpleName());

@@ -18,12 +18,6 @@ import mysteryDungeon.powers.BurnPower;
 
 public class CharmanderInferno extends PokemonCard {
 
-    /*
-     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
-     *
-     * Special Strike: Deal 7 (*) damage times the energy you currently have.
-     */
-
     // TEXT DECLARATION
 
     public static final String ID = MysteryDungeon.makeID(CharmanderInferno.class.getSimpleName());
