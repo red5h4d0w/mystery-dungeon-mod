@@ -20,13 +20,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.BlurPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
-public class HardyExplorerRelic extends PokemonRelic { // You must implement things you want to use from StSlib
-    /*
-     * https://github.com/daviscook477/BaseMod/wiki/Custom-Relics
-     * StSLib for Clickable Relics
-     *
-     * Usable once per turn. Right click: Evoke your rightmost orb.
-     */
+public class HardyExplorerRelic extends PokemonRelic { 
 
     // ID, images, text.
     public static final String ID = MysteryDungeon.makeID("HardyExplorerRelic");

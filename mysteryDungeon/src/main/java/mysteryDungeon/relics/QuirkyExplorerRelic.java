@@ -13,13 +13,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
-public class QuirkyExplorerRelic extends PokemonRelic implements GoldBonusInterface{ // You must implement things you want to use from StSlib
-    /*
-     * https://github.com/daviscook477/BaseMod/wiki/Custom-Relics
-     * StSLib for Clickable Relics
-     *
-     * Usable once per turn. Right click: Evoke your rightmost orb.
-     */
+public class QuirkyExplorerRelic extends PokemonRelic implements GoldBonusInterface{ 
 
     // ID, images, text.
     public static final String ID = MysteryDungeon.makeID(QuirkyExplorerRelic.class.getSimpleName());

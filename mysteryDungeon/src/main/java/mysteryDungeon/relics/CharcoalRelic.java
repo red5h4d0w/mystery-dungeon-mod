@@ -22,13 +22,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 
-public class CharcoalRelic extends PokemonRelic implements OnApplyPowerRelic { // You must implement things you want to use from StSlib
-    /*
-     * https://github.com/daviscook477/BaseMod/wiki/Custom-Relics
-     * StSLib for Clickable Relics
-     *
-     * Usable once per turn. Right click: Evoke your rightmost orb.
-     */
+public class CharcoalRelic extends PokemonRelic implements OnApplyPowerRelic { 
 
     // ID, images, text.
     public static final String ID = MysteryDungeon.makeID("CharcoalRelic");
