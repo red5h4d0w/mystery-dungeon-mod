@@ -4,6 +4,7 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -53,7 +54,14 @@ public class SquirtleBrine extends PokemonCard {
         if(p.drawPile.size()>=p.discardPile.size())
             addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SMASH));
     }
-
+    
+    public void triggerOnGlowCheck(AbstractPlayer p) {
+        if(p.drawPile.size()>=p.discardPile.size()) {
+          this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+        } else {
+          this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        } 
+      }
     // Upgraded stats.
     @Override
     public void upgrade() {

@@ -5,6 +5,7 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -58,7 +59,13 @@ public class PikachuSlam extends PokemonCard {
             addToBot(new GainEnergyAction(1));
         }
     }
-
+    public void triggerOnGlowCheck(AbstractPlayer p) {
+        if(p.stance.ID == NegativeStance.STANCE_ID) {
+          this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+        } else {
+          this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        } 
+      }
     // Upgraded stats.
     @Override
     public void upgrade() {
