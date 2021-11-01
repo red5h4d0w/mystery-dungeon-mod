@@ -5,7 +5,6 @@ import mysteryDungeon.abstracts.PokemonRelic;
 import mysteryDungeon.actions.SetPikaMeterAction;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.pokemons.Pikachu;
-import mysteryDungeon.ui.PikachuMeter;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
@@ -40,7 +39,6 @@ public class CellBatteryRelic extends PokemonRelic {
     public void onEquip() {
         if(AbstractDungeon.player instanceof Pokemon) {
             Pokemon.maxPikachuChargeCounter = 2;
-            PikachuMeter.maxCounterPosition = 2;
         }
     }
 
@@ -48,7 +46,6 @@ public class CellBatteryRelic extends PokemonRelic {
     public void onUnequip() {
         if(AbstractDungeon.player instanceof Pokemon) {
             Pokemon.maxPikachuChargeCounter = 3;
-            PikachuMeter.maxCounterPosition = 3;
         }
     }
 

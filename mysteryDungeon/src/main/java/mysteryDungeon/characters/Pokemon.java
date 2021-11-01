@@ -461,8 +461,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
             }
         } 
         maxPikachuChargeCounter = saveInfo.maxPikaMeter;
-        logger.info("Check ça \n \n \n \n >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-        logger.info(maxPikachuChargeCounter);
     }
 
     @Override
