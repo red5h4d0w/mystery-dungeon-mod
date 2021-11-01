@@ -25,7 +25,7 @@ public class DireHitPotion extends PokemonPotion {
 
     public DireHitPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java
-        super(NAME, POTION_ID, PotionRarity.COMMON, IMG_STRING);
+        super(NAME, POTION_ID, PotionRarity.RARE, IMG_STRING);
         
         // Potency is the damage/magic number equivalent of potions.
         potency = getPotency();
