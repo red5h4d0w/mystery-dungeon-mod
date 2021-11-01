@@ -8,12 +8,16 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer.PlayerClass;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PotionHelper;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.characters.Pokemon;
 
 
 public class RemoveInadequatePotionsPatch
 {
+    public static final Logger logger = LogManager.getLogger(RemoveInadequatePotionsPatch.class.getName());
     @SpirePatch(clz = PotionHelper.class, method = "getPotions")
     public static class PreRewardGeneration
     {
@@ -29,6 +33,8 @@ public class RemoveInadequatePotionsPatch
                             CardColor cardColor = ((PokemonPotion)PotionHelper.getPotion(potionId)).cardColor;
                             if(cardColor!=Pokemon.adventurer.cardColor && cardColor!=Pokemon.partner.cardColor) {
                                 toRemove.add(potionId);
+                                logger.info("Je veux enlever:");
+                                logger.info(potionId);
                             }
                         }
                     }
