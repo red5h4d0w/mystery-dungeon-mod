@@ -7,7 +7,9 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.Hitbox;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
+import com.megacrit.cardcrawl.helpers.TipHelper;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 public class PikachuMeter {
@@ -35,12 +37,23 @@ public class PikachuMeter {
     private static final float BOX_W = 325.0F * Settings.scale;
     private static final float METER_HEIGHT = 50.0f * Settings.scale;
 
+    public static final String DESCRIPTION = "When you play a Skill, move to the left on this meter. NL When you play an Attack, move to the right on this meter. NL When you reach certain points on the track, enter the corresponding stances.";
+
     private static int counterPosition = 0;
     public static int maxCounterPosition = 3;
 
+    public Hitbox plusHitbox = new Hitbox(0, Settings.HEIGHT-165.0f*Settings.scale, BODY_TEXT_WIDTH, FontHelper.getSmartHeight(FontHelper.tipBodyFont, DESCRIPTION, BODY_TEXT_WIDTH, TIP_DESC_LINE_SPACING) - 7.0F * Settings.scale - METER_HEIGHT - BOX_BODY_H - SHADOW_DIST_Y);
+
+    public boolean renderPlusTip = false;
+
     public PikachuMeter() { }
     
-    public void update(AbstractPlayer player) {  }
+    public void update() { 
+        plusHitbox.update();
+        if(plusHitbox.hovered) {
+            renderPlusTip = true;
+        }
+    }
     
     public void render(SpriteBatch sb, AbstractPlayer player) {
         if (AbstractDungeon.getCurrMapNode() != null && 
@@ -66,7 +79,9 @@ public class PikachuMeter {
             
             float plusSymbolWidth = FontHelper.getSmartWidth(FontHelper.tipHeaderFont, "+", BOX_W, TIP_DESC_LINE_SPACING);
             FontHelper.renderFontLeft(sb, FontHelper.tipHeaderFont, "+", x + BOX_W/2 + 120f - plusSymbolWidth/2, y - h - BOX_BODY_H - METER_HEIGHT/2, BASE_COLOR);
-            
+            if(renderPlusTip) {
+                TipHelper.renderGenericTip(x, y, "header", "body");
+            }
             
             FontHelper.renderFontLeftTopAligned(sb, FontHelper.tipHeaderFont, title, x + TEXT_OFFSET_X, y + HEADER_OFFSET_Y, Settings.GOLD_COLOR);
             FontHelper.renderSmartText(sb, FontHelper.tipBodyFont, description, x + TEXT_OFFSET_X, y + BODY_OFFSET_Y, BODY_TEXT_WIDTH, TIP_DESC_LINE_SPACING, BASE_COLOR);
