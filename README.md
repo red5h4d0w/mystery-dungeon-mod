@@ -27,3 +27,8 @@ He is quite intricate.
 ## Pikachu
 Capable of generating Lightning orbs and swapping stances, Pikachu’s main mechanic revolves around the Charge-Meter. The charge-meter is a gauge that allows the players to create powerful effects if their sequencing is optimized.
 Pikachu is the hardest out of all the characters.
+
+---
+links
+[Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2643686261)
+[Discord](https://discord.gg/Pu6kAEwJnY)
