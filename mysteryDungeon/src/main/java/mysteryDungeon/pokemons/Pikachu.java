@@ -32,11 +32,15 @@ public class Pikachu extends AbstractPokemon {
     
     public Pikachu(){
         super(NAME, MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR, PATH_TO_BACK_SPRITE);
+        skeletonUrl = SKELETON_URL;
+        atlasUrl = ATLAS_URL;
     }
 
     @Override
     public void evolve() {
         pathToBackSprite = PATH_TO_SECOND_BACK_SPRITE;
+        skeletonUrl = SECOND_SKELETON_URL;
+        atlasUrl = SECOND_ATLAS_URL;
         generateBackSprite();
     }
 }
