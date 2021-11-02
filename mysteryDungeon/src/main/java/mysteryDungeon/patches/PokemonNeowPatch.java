@@ -232,7 +232,7 @@ public class PokemonNeowPatch {
                     ShowNextDialog(__instance);
                     return SpireReturn.Return(null);
                 case 2:
-                    AskQuestion(__instance, new Question(TEXT[screenNum], new String[]{"Yes", "TEST RUN PLZ", "I'd like the quicker option"}));
+                    AskQuestion(__instance, new Question(TEXT[screenNum], new String[]{"Yes", "I'd prefer choosing my team", "I'd like the quickest option"}));
                     screenNum++;
                     return SpireReturn.Return(null);
                 case 3:
@@ -245,9 +245,17 @@ public class PokemonNeowPatch {
                             isTestRun = true;
                             break;
                         case 2:
-                            screenNum=10;
-                            isTestRun=true;
-                            break;
+                            ((Pokemon)AbstractDungeon.player).adventurer = implementedPokemons.get(AbstractDungeon.eventRng.random(implementedPokemons.size()-1));
+                            ((Pokemon)AbstractDungeon.player).DefineNature(NatureOfPokemon.get(((Pokemon)AbstractDungeon.player).adventurer.name)[AbstractDungeon.eventRng.random(1)]);
+                            ArrayList<AbstractPokemon> partnerChoices = ((ArrayList<AbstractPokemon>)implementedPokemons.clone());
+                            partnerChoices.remove(((Pokemon)AbstractDungeon.player).adventurer);
+                            ((Pokemon)AbstractDungeon.player).partner = partnerChoices.get(AbstractDungeon.eventRng.random(partnerChoices.size()-1));
+                            CardCrawlGame.dungeon.initializeCardPools();
+                            AbstractDungeon.player.masterDeck.removeCard(ExplorersDeck.ID);
+                            AbstractDungeon.player.masterDeck.removeCard(PartnersDeck.ID);
+                            ((Pokemon)AbstractDungeon.player).awardThingsToAward();
+                            screenNum = 99;
+                            return SpireReturn.Continue();
                     }
                     logger.info(isTestRun);
                     if(!isTestRun)
