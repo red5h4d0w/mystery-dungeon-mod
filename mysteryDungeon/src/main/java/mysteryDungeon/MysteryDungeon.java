@@ -142,8 +142,8 @@ public class MysteryDungeon implements
     public static final String BADGE_IMAGE = "mysteryDungeonResources/images/Badge.png";
     
     // Atlas and JSON files for the Animations
-    public static final String THE_DEFAULT_SKELETON_ATLAS = "mysteryDungeonResources/images/char/pokemon/skeleton.atlas";
-    public static final String THE_DEFAULT_SKELETON_JSON = "mysteryDungeonResources/images/char/pokemon/skeleton.json";
+    public static final String THE_DEFAULT_SKELETON_ATLAS = "mysteryDungeonResources/images/char/pokemon/Bulbasaur/skeleton.atlas";
+    public static final String THE_DEFAULT_SKELETON_JSON = "mysteryDungeonResources/images/char/pokemon/Bulbasaur/skeleton.json";
     
     // =============== MAKE IMAGE PATHS =================
     
@@ -165,6 +165,14 @@ public class MysteryDungeon implements
     
     public static String makeRelicOutlinePath(String resourcePath) {
         return getModID() + "Resources/images/relics/outline/" + resourcePath;
+    }
+
+    public static String makeSkeletonPath(String pokemonName) {
+        return getModID() + "Resources/images/char/pokemon/" + pokemonName + "/skeleton.json";
+    }
+
+    public static String makeAtlasPath(String pokemonName) {
+        return getModID() + "Resources/images/char/pokemon/" + pokemonName + "/skeleton.atlas";
     }
     
     public static String makeOrbPath(String resourcePath) {

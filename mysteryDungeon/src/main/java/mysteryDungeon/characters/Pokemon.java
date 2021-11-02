@@ -2,7 +2,6 @@ package mysteryDungeon.characters;
 
 import basemod.abstracts.CustomPlayer;
 import basemod.abstracts.CustomSavable;
-import basemod.animations.SpriterAnimation;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.abstracts.PokemonRelic;
@@ -184,9 +183,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 
     public Pokemon(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
-                "mysteryDungeonResources/images/char/pokemon/orb/vfx.png", null,
-                new SpriterAnimation(
-                        "mysteryDungeonResources/images/char/pokemon/Spriter/mysteryDungeonAnimation.scml"));
+                "mysteryDungeonResources/images/char/pokemon/orb/vfx.png", null, null, null);
 
 
         // =============== TEXTURES, ENERGY, LOADOUT =================  
@@ -203,12 +200,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 
         // =============== ANIMATIONS =================  
 
-        loadAnimation(
-                THE_DEFAULT_SKELETON_ATLAS,
-                THE_DEFAULT_SKELETON_JSON,
-                1.0f);
-        AnimationState.TrackEntry e = state.setAnimation(0, "animation", true);
-        e.setTime(e.getEndTime() * MathUtils.random());
+        reloadAnimation();
 
         // =============== /ANIMATIONS/ =================
 
@@ -281,6 +273,22 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         if(partner==null||adventurer==null)
             return false;
         return true;
+    }
+
+    public void reloadAnimation() {
+        if(hasChosenStarters()) {
+            loadAnimation(adventurer.atlasUrl, adventurer.skeletonUrl, 0.250f);
+            AnimationState.TrackEntry e = state.setAnimation(0, "Sprite", true);
+            e.setTime(e.getEndTime() * MathUtils.random());
+        } 
+        else {
+            loadAnimation(
+                THE_DEFAULT_SKELETON_ATLAS,
+                THE_DEFAULT_SKELETON_JSON,
+                0.250f);
+            AnimationState.TrackEntry e = state.setAnimation(0, "Sprite", true);
+            e.setTime(e.getEndTime() * MathUtils.random());
+        } 
     }
 
     // Starting Deck
@@ -396,6 +404,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         startingMaxHP = maxHealth;
         removeImproperRelics();
         PotionHelper.initialize(Enums.THE_POKEMON);
+        reloadAnimation();
     }
 
     public void evolvePokemons() {
@@ -404,6 +413,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
             partner.evolve();
             adventurer.evolve();
             setCampfirePose();
+            reloadAnimation();
         }
     }
 

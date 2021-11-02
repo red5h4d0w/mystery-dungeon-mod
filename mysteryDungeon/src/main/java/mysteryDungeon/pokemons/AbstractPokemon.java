@@ -27,6 +27,8 @@ public abstract class AbstractPokemon {
     public String pathToBackSprite;
     public Pixmap backSprite;
     public boolean hasEvolved = false;
+    public String skeletonUrl;
+    public String atlasUrl;
 
     public void generateBackSprite() {
         this.backSprite = new Pixmap(Gdx.files.internal(pathToBackSprite));

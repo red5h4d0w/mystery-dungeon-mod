@@ -1,6 +1,8 @@
 package mysteryDungeon.pokemons;
 
 import static mysteryDungeon.MysteryDungeon.makeBackSpritePath;
+import static mysteryDungeon.MysteryDungeon.makeSkeletonPath;
+import static mysteryDungeon.MysteryDungeon.makeAtlasPath;
 
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -22,18 +24,30 @@ public class Bulbasaur extends AbstractPokemon {
     public static String PATH_TO_BACK_SPRITE = makeBackSpritePath(Bulbasaur.class.getSimpleName()+".png");
     public static String PATH_TO_SECOND_BACK_SPRITE = makeBackSpritePath("Ivysaur.png");
     public static String PATH_TO_THIRD_BACK_SPRITE = makeBackSpritePath("Venusaur.png");
+    public static String SKELETON_URL = makeSkeletonPath(Bulbasaur.class.getSimpleName());
+    public static String ATLAS_URL = makeAtlasPath(Bulbasaur.class.getSimpleName());
+    public static String SECOND_SKELETON_URL = makeSkeletonPath("Ivysaur");
+    public static String SECOND_ATLAS_URL = makeAtlasPath("Ivysaur");
+    public static String THIRD_SKELETON_URL = makeSkeletonPath("Venusaur");
+    public static String THIRD_ATLAS_URL = makeAtlasPath("Venusaur");
 
     public Bulbasaur(){
         super(NAME, MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR, PATH_TO_BACK_SPRITE);
+        skeletonUrl = SKELETON_URL;
+        atlasUrl = ATLAS_URL;
     }
 
     @Override
     public void evolve() {
         if(hasEvolved) {
             pathToBackSprite = PATH_TO_THIRD_BACK_SPRITE;
+            skeletonUrl = THIRD_SKELETON_URL;
+            atlasUrl = THIRD_ATLAS_URL;
         }
         else {
             pathToBackSprite = PATH_TO_SECOND_BACK_SPRITE;
+            skeletonUrl = SECOND_SKELETON_URL;
+            atlasUrl = SECOND_ATLAS_URL;
             hasEvolved = true;
         }
         generateBackSprite();
