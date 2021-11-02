@@ -2,13 +2,13 @@
     "mysteryDungeon:NegativeStance": {
         "NAME": "Negative Stance",
         "DESCRIPTION": [
-            "The first two skill played each turn will grant you one focus each. NL When you exit this stance, evoke your next two Orbs."
+            "The first #b2 #ySkill played each turn will grant you #b1 #yfocus each. NL When you #yexit this #ystance, #yevoke your next 2#b #yorbs."
         ]
     },
     "mysteryDungeon:PositiveStance": {
         "NAME": "Positive Stance",
         "DESCRIPTION": [
-            "When you play an attack, channel 1 lightning orb if you have any empty slot. NL When you exit this stance, gain 7 Block."
+            "When you play an #yAttack, #yChannel #b1 #ylightning #yorb if you have any #yempty #yorb #yslot. NL When you #yexit this #ystance, gain #b7 Block."
         ]
     }
 }
