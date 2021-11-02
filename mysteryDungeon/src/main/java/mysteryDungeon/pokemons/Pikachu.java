@@ -1,6 +1,8 @@
 package mysteryDungeon.pokemons;
 
 import static mysteryDungeon.MysteryDungeon.makeBackSpritePath;
+import static mysteryDungeon.MysteryDungeon.makeSkeletonPath;
+import static mysteryDungeon.MysteryDungeon.makeAtlasPath;
 
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -22,6 +24,11 @@ public class Pikachu extends AbstractPokemon {
     public static CardColor CARD_COLOR = Pokemon.Enums.PIKACHU_YELLOW;
     public static String PATH_TO_BACK_SPRITE = makeBackSpritePath(Pikachu.class.getSimpleName()+".png");
     public static String PATH_TO_SECOND_BACK_SPRITE = makeBackSpritePath("Raichu.png");
+    public static String SKELETON_URL = makeSkeletonPath(Pikachu.class.getSimpleName());
+    public static String ATLAS_URL = makeAtlasPath(Pikachu.class.getSimpleName());
+    public static String SECOND_SKELETON_URL = makeSkeletonPath("Raichu");
+    public static String SECOND_ATLAS_URL = makeAtlasPath("Raichu");
+    
     
     public Pikachu(){
         super(NAME, MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR, PATH_TO_BACK_SPRITE);
