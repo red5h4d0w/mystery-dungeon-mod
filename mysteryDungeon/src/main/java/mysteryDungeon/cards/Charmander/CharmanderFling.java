@@ -39,7 +39,7 @@ public class CharmanderFling extends PokemonCard {
 
     private static final int COST = 0;
     private static final int DAMAGE = 5;
-    private static final int BASE_MAGIC_NUMBER = 2;
+    private static final int BASE_MAGIC_NUMBER = 3;
 
 
     // /STAT DECLARATION/
