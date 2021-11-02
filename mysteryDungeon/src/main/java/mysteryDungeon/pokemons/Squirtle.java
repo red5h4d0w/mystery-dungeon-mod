@@ -33,15 +33,21 @@ public class Squirtle extends AbstractPokemon {
     
     public Squirtle(){
         super(NAME, MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR, PATH_TO_BACK_SPRITE);
+        skeletonUrl = SKELETON_URL;
+        atlasUrl = ATLAS_URL;
     }
 
     @Override
     public void evolve() {
         if(hasEvolved) {
             pathToBackSprite = PATH_TO_THIRD_BACK_SPRITE;
+            skeletonUrl = THIRD_SKELETON_URL;
+            atlasUrl = THIRD_ATLAS_URL;
         }
         else {
             pathToBackSprite = PATH_TO_SECOND_BACK_SPRITE;
+            skeletonUrl = SECOND_SKELETON_URL;
+            atlasUrl = SECOND_ATLAS_URL;
             hasEvolved = true;
         }
         generateBackSprite();
