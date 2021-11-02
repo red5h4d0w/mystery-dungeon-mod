@@ -29,6 +29,8 @@ Capable of generating Lightning orbs and swapping stances, Pikachu’s main mech
 Pikachu is the hardest out of all the characters.
 
 ---
-links
+links:
+
 [Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2643686261)
+
 [Discord](https://discord.gg/Pu6kAEwJnY)
