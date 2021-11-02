@@ -449,12 +449,12 @@
     },
     "mysteryDungeon:PikachuReflect": {
         "NAME": "Reflect",
-        "DESCRIPTION": "Gain !B! block. NL Increase this card block by !M! this combat."
+        "DESCRIPTION": "Gain !B! Block. NL Increase this card Block by !M! this combat."
     },
     "mysteryDungeon:PikachuSafeguard": {
         "NAME": "Safeguard",
-        "DESCRIPTION": "Gain !B! block. NL Retain your hand this turn.",
-        "UPGRADE_DESCRIPTION": "Gain !B! block. NL Retain your hand for !M! turns."
+        "DESCRIPTION": "Gain !B! Block. NL Retain your hand this turn.",
+        "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Retain your hand for !M! turns."
     },
     "mysteryDungeon:PikachuShockWave": {
         "NAME": "Shock Wave",

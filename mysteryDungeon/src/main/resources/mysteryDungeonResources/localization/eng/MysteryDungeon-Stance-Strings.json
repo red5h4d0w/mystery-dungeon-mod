@@ -8,7 +8,7 @@
     "mysteryDungeon:PositiveStance": {
         "NAME": "Positive Stance",
         "DESCRIPTION": [
-            "When you play an attack, channel 1 lightning orb if you have any empty slot. NL When you exit this stance, gain 7 block."
+            "When you play an attack, channel 1 lightning orb if you have any empty slot. NL When you exit this stance, gain 7 Block."
         ]
     }
 }

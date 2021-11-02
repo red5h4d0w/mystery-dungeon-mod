@@ -97,7 +97,7 @@
     },
     "mysteryDungeon:LightScreen": {
         "NAME": "Light Screen",
-        "DESCRIPTIONS": ["At the end of the turn, gain #b%s block per empty orb slot."]
+        "DESCRIPTIONS": ["At the end of the turn, gain #b%s Block per empty orb slot."]
     },
     "mysteryDungeon:NextTurnDrawLessPower": {
         "NAME": "Next Turn Draw Less Cards",
