@@ -1,6 +1,8 @@
 package mysteryDungeon.pokemons;
 
 import static mysteryDungeon.MysteryDungeon.makeBackSpritePath;
+import static mysteryDungeon.MysteryDungeon.makeSkeletonPath;
+import static mysteryDungeon.MysteryDungeon.makeAtlasPath;
 
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -22,6 +24,12 @@ public class Squirtle extends AbstractPokemon {
     public static String PATH_TO_BACK_SPRITE = makeBackSpritePath(Squirtle.class.getSimpleName()+".png");
     public static String PATH_TO_SECOND_BACK_SPRITE = makeBackSpritePath("Wartortle.png");
     public static String PATH_TO_THIRD_BACK_SPRITE = makeBackSpritePath("Blastoise.png");
+    public static String SKELETON_URL = makeSkeletonPath(Squirtle.class.getSimpleName());
+    public static String ATLAS_URL = makeAtlasPath(Squirtle.class.getSimpleName());
+    public static String SECOND_SKELETON_URL = makeSkeletonPath("Wartortle");
+    public static String SECOND_ATLAS_URL = makeAtlasPath("Wartortle");
+    public static String THIRD_SKELETON_URL = makeSkeletonPath("Blastoise");
+    public static String THIRD_ATLAS_URL = makeAtlasPath("Blastoise");
     
     public Squirtle(){
         super(NAME, MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR, PATH_TO_BACK_SPRITE);
