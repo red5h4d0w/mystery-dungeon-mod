@@ -339,7 +339,7 @@ public class PokemonNeowPatch {
                 case 11:
                     ((Pokemon)AbstractDungeon.player).adventurer = implementedPokemons.get(buttonPressed);
                     ((Pokemon)AbstractDungeon.player).DefineNature(NatureOfPokemon.get(implementedPokemons.get(buttonPressed).name)[AbstractDungeon.eventRng.random(1)]);
-                    AskQuestion(__instance, new Question("Choose your partner", implementedPokemons.stream().map(p -> p.name).toArray(size-> new String[size])));
+                    AskQuestion(__instance, new Question("Choose your partner", implementedPokemons.stream().filter(p -> p != ((Pokemon)AbstractDungeon.player).adventurer).map(p -> p.name).toArray(size-> new String[size])));
                     screenNum=5;
                     return SpireReturn.Return(null);
                 case 99:
