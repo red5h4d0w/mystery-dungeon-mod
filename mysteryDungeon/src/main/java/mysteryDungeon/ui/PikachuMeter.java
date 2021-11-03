@@ -61,8 +61,6 @@ public class PikachuMeter {
     public void update() { 
         plusHitbox.update(plusHitbox.x, plusHitbox.y);
         plusHitbox.update();
-        logger.info(plusHitbox.height);
-        logger.info(plusHitbox.y);
     }
     
     public void render(SpriteBatch sb, AbstractPlayer player) {
