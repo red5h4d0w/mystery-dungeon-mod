@@ -71,6 +71,6 @@ public class CharmanderExplorerPower extends MysteryDungeonPower implements Clon
 
     @Override
     public void updateDescription() {
-            description = String.format(DESCRIPTIONS[0]);
+            description = String.format(DESCRIPTIONS[0], amount);
     }
 }
