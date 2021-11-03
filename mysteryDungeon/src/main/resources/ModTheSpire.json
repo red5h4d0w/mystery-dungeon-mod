@@ -4,7 +4,7 @@
   "author_list": ["Red5h4d0w","Ivellios554"],
   "credits": "Basemod, ModTheSpire, #modding",
   "description": "One last Dungeon for brave monsters from another world",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "sts_version": "${SlayTheSpire.version}",
   "mts_version": "${ModTheSpire.version}",
   "dependencies": ["basemod", "stslib"],
