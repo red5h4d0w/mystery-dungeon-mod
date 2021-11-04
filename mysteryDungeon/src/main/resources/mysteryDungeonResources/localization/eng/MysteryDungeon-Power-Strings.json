@@ -95,7 +95,7 @@
         "NAME": "Leech Seed",
         "DESCRIPTIONS": ["At the start of the turn, this monster loses #b%s HP, and you gain #b%s HP."]
     },
-    "mysteryDungeon:LightScreen": {
+    "mysteryDungeon:LightScreenPower": {
         "NAME": "Light Screen",
         "DESCRIPTIONS": ["At the end of the turn, gain #b%s Block per empty orb slot."]
     },
