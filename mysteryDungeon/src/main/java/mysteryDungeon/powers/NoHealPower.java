@@ -64,6 +64,10 @@ public class NoHealPower extends MysteryDungeonPower implements CloneablePowerIn
         }
     }
 
+    public void onVictory()
+    {
+        addToBot(new RemoveSpecificPowerAction(owner, owner, this));
+    }
     @Override
     public AbstractPower makeCopy() {
         return new NoHealPower(owner, amount);
