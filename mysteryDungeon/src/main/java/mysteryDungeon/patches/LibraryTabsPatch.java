@@ -12,10 +12,15 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.screens.mainMenu.ColorTabBar;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.ArrayList;
 
 @SpirePatch(clz = ColorTabBarFix.Render.class, method = "Insert")
 public class LibraryTabsPatch {
+    public static final Logger logger = LogManager.getLogger(LibraryTabsPatch.class.getName());
+
 
     @SpireInsertPatch(locator = Locator.class)
     public static void Insert(ColorTabBar __instance, SpriteBatch sb, float y, ColorTabBar.CurrentTab curTab, @ByRef String[] ___tabName, int ___i) {
