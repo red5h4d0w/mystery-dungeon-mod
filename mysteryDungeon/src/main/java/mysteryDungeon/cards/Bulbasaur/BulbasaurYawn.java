@@ -5,7 +5,6 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -31,7 +30,7 @@ public class BulbasaurYawn extends PokemonCard {
     // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
 
@@ -51,13 +50,7 @@ public class BulbasaurYawn extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
-            for (AbstractMonster monster : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-                if (!monster.isDead && !monster.isDying) {
-                    addToBot(new ApplyPowerAction(monster, p, new YawnPower(monster, magicNumber), this.magicNumber));
-                } 
-            } 
-        }
+        addToBot(new ApplyPowerAction(m, p, new YawnPower(m, magicNumber), this.magicNumber));
     }
 
     // Upgraded stats.

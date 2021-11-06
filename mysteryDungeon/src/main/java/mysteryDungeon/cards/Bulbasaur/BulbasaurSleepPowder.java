@@ -5,6 +5,7 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -36,7 +37,6 @@ public class BulbasaurSleepPowder extends PokemonCard {
 
     private static final int COST = 2;
     private static final int BASE_MAGIC_NUMBER = 1;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
@@ -52,7 +52,16 @@ public class BulbasaurSleepPowder extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
+        if(!upgraded){
         addToBot(new ApplyPowerAction(m, p, new AsleepPower(m, this.magicNumber), this.magicNumber));
+        }
+        if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+            for (AbstractMonster monster : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
+                if (!monster.isDead && !monster.isDying) {
+                    addToBot(new ApplyPowerAction(monster, p, new AsleepPower(monster, magicNumber), this.magicNumber));
+                } 
+            } 
+        }
     }
 
     // Upgraded stats.
@@ -60,7 +69,7 @@ public class BulbasaurSleepPowder extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

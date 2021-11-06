@@ -77,8 +77,7 @@
     },
     "mysteryDungeon:BulbasaurLeechSeed": {
         "NAME": "Leech Seed",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Leech_Seed. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Leech_Seed."
+        "DESCRIPTION": "Apply !M! mysterydungeon:Leech_Seed. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurMegaDrain": {
         "NAME": "Mega Drain",
@@ -131,7 +130,8 @@
     },
     "mysteryDungeon:BulbasaurSleepPowder": {
         "NAME": "Sleep Powder",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Asleep. NL Exhaust."
+        "DESCRIPTION": "Apply !M! mysterydungeon:Asleep. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Asleep to all enemies. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurSludgeBomb": {
         "NAME": "Sludge Bomb",
@@ -186,8 +186,8 @@
     },
     "mysteryDungeon:BulbasaurYawn": {
         "NAME": "Yawn",
-        "DESCRIPTION": "Ethereal. NL Apply !M! mysterydungeon:Asleep to ALL enemies right before they act (after Poison, etc.). NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Asleep to ALL enemies right before they act (after Poison, etc.). NL Exhaust."
+        "DESCRIPTION": "Ethereal. NL Apply !M! mysterydungeon:Asleep right before they act (after Poison, etc.). NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Asleep right before they act (after Poison, etc.). NL Exhaust."
     },
     "mysteryDungeon:CharmanderBellyDrum": {
         "NAME": "Belly Drum",
