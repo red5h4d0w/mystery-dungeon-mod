@@ -23,7 +23,6 @@ public class BulbasaurSleepPowder extends PokemonCard {
     public static final String IMG = makeCardPath("BulbasaurSkill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -37,6 +36,7 @@ public class BulbasaurSleepPowder extends PokemonCard {
 
     private static final int COST = 2;
     private static final int BASE_MAGIC_NUMBER = 1;
+    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
@@ -51,10 +51,6 @@ public class BulbasaurSleepPowder extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        // Create an int which equals to your current energy.
-        if(!upgraded){
-        addToBot(new ApplyPowerAction(m, p, new AsleepPower(m, this.magicNumber), this.magicNumber));
-        }
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             for (AbstractMonster monster : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                 if (!monster.isDead && !monster.isDying) {
@@ -69,7 +65,7 @@ public class BulbasaurSleepPowder extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = UPGRADE_DESCRIPTION;
+            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             initializeDescription();
         }
     }

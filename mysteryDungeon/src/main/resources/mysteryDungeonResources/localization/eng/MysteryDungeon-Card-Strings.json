@@ -130,8 +130,7 @@
     },
     "mysteryDungeon:BulbasaurSleepPowder": {
         "NAME": "Sleep Powder",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Asleep. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Asleep to all enemies. NL Exhaust."
+        "DESCRIPTION":"Apply !M! mysterydungeon:Asleep to all enemies. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurSludgeBomb": {
         "NAME": "Sludge Bomb",
