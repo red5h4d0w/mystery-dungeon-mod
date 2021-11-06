@@ -36,7 +36,7 @@ public class BulbasaurSeedBomb extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
 
     private static final int COST = -1;
-    private static final int DAMAGE = 8;
+    private static final int DAMAGE = 10;
     private static final int UPGRADE_PLUS_DMG = 3;
 
 
