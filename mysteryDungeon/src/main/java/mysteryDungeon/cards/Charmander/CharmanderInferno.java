@@ -38,7 +38,7 @@ public class CharmanderInferno extends PokemonCard {
 
     private static final int COST = 1;
     private static final int BASE_MAGIC_NUMBER = 10;
-    private static final int UPGRADE_MAGIC_NUMBER = 14;
+    private static final int UPGRADE_MAGIC_NUMBER = 4;
 
 
     // /STAT DECLARATION/

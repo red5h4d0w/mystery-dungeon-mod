@@ -195,7 +195,7 @@
     },
     "mysteryDungeon:CharmanderBlastBurn": {
         "NAME": "Blast Burn",
-        "DESCRIPTION": "Deal !D! damage. NL Exhaust your draw hand."
+        "DESCRIPTION": "Deal !D! damage. NL Exhaust your hand."
     },
     "mysteryDungeon:CharmanderBlaze": {
         "NAME": "Blaze",
@@ -345,8 +345,8 @@
     },
     "mysteryDungeon:CharmanderSmokescreen": {
         "NAME": "Smokescreen",
-        "DESCRIPTION": "Gain !M! Intangible. NL Gain 2 Weak NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Gain !M! Intangible. NL Gain 1 Weak NL Exhaust."
+        "DESCRIPTION": "Gain !M! Intangible. NL Gain 3 Weak NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Gain !M! Intangible. NL Gain 2 Weak NL Exhaust."
     },
     "mysteryDungeon:CharmanderSolarPower": {
         "NAME": "Solar Power",
@@ -605,7 +605,7 @@
     },
     "mysteryDungeon:SquirtleHydroCannon": {
         "NAME": "Hydro Cannon",
-        "DESCRIPTION": "Deal !D! damage to all enemies. NL Insert 3 *Freeze in your draw pile."
+        "DESCRIPTION": "Deal !D! damage to all enemies. NL Insert 2 *Freeze in your draw pile."
     },
     "mysteryDungeon:SquirtleIceBeam": {
         "NAME": "Ice Beam",
