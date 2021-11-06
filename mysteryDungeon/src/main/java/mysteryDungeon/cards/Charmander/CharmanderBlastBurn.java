@@ -37,8 +37,8 @@ public class CharmanderBlastBurn extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 30;
-    private static final int UPGRADE_PLUS_DMG = 10;
+    private static final int DAMAGE = 18;
+    private static final int UPGRADE_PLUS_DMG = 4;
 
 
     // /STAT DECLARATION/
@@ -52,7 +52,7 @@ public class CharmanderBlastBurn extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
-        AbstractDungeon.player.drawPile.group.forEach(card -> addToBot(new ExhaustSpecificCardAction(card, AbstractDungeon.player.drawPile)));
+        AbstractDungeon.player.drawPile.group.forEach(card -> addToBot(new ExhaustSpecificCardAction(card, AbstractDungeon.player.hand)));
     }
 
     // Upgraded stats.

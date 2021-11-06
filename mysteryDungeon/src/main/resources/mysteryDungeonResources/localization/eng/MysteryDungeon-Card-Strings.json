@@ -195,7 +195,7 @@
     },
     "mysteryDungeon:CharmanderBlastBurn": {
         "NAME": "Blast Burn",
-        "DESCRIPTION": "Deal !D! damage. NL Exhaust your draw pile."
+        "DESCRIPTION": "Deal !D! damage. NL Exhaust your draw hand."
     },
     "mysteryDungeon:CharmanderBlaze": {
         "NAME": "Blaze",
@@ -231,7 +231,7 @@
     "mysteryDungeon:CharmanderDragonPulse": {
         "NAME": "Dragon Pulse",
         "DESCRIPTION": "Unplayable. NL When drawn: NL Add a random card from your exhaust pile on the top of draw pile.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn: NL Add a random card from your exhaust pile on the top of draw pile. NL Next Turn, Draw 1 more card.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn: NL Add a random card from your exhaust pile on the top of draw pile. NL Draw !M! card.",
         "EXTENDED_DESCRIPTION": ["I can't play this card."]
     },
     "mysteryDungeon:CharmanderDragonRage": {
@@ -245,7 +245,7 @@
     "mysteryDungeon:CharmanderDragonTail": {
         "NAME": "Dragon Tail",
         "DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Place a copy of this card on top of your draw pile.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Draw !M! card. NL Place a copy of this card on top of your draw pile.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Place a copy of this card on top of your draw pile. NL Next Turn, Draw 1 more card.",
         "EXTENDED_DESCRIPTION": ["I can't play this card."]
     },
     "mysteryDungeon:CharmanderDrought": {
@@ -288,8 +288,8 @@
     },
     "mysteryDungeon:CharmanderFling": {
         "NAME": "Fling",
-        "DESCRIPTION": "Exhaust up to 5 cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! mysterydungeon:Burn NL Exhaust up to 5 cards. NL Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust."
+        "DESCRIPTION": "Exhaust up to 4 cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! mysterydungeon:Burn NL Exhaust up to 4 cards. NL Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust."
     },
     "mysteryDungeon:CharmanderFrustration": {
         "NAME": "Frustration",

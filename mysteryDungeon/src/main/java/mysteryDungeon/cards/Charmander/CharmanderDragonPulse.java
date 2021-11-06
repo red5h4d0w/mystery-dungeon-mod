@@ -3,6 +3,7 @@ package mysteryDungeon.cards.Charmander;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -64,8 +65,8 @@ public class CharmanderDragonPulse extends PokemonCard {
             addToBot(new MakeTempCardInDrawPileAction(cardToAdd, 1, false, false, false));
         }
         if(upgraded)
-        {
-            addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DrawCardNextTurnPower(AbstractDungeon.player, magicNumber), magicNumber));
+        { 
+            addToBot(new DrawCardAction(magicNumber));
         }
     }
 

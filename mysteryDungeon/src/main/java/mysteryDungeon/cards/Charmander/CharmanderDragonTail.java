@@ -4,6 +4,7 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
@@ -15,6 +16,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDrawPileEffect;
 
 import mysteryDungeon.MysteryDungeon;
@@ -61,7 +63,7 @@ public class CharmanderDragonTail extends PokemonCard {
         addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, damage, DamageType.NORMAL, AttackEffect.BLUNT_HEAVY));
         if(upgraded)
         {
-            addToBot(new DrawCardAction(magicNumber));
+            addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DrawCardNextTurnPower(AbstractDungeon.player, magicNumber), magicNumber));
         }
         addToBot(new VFXAction(new ShowCardAndAddToDrawPileEffect(this, false, false)));
     }
