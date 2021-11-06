@@ -41,6 +41,7 @@ public class PikachuShockWave extends PokemonCard {
     private static final int DAMAGE = 5;
     private static final int UPGRADE_PLUS_DMG = 3;
     private static final int BASE_MAGIC_NUMBER = 1;
+    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
 
@@ -70,6 +71,7 @@ public class PikachuShockWave extends PokemonCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             initializeDescription();
         }
     }

@@ -8,14 +8,12 @@ import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.input.InputHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
-import mysteryDungeon.actions.SetPikaMeterAction;
 import mysteryDungeon.cards.tempCards.ChooseNegative;
 import mysteryDungeon.cards.tempCards.ChoosePositive;
 import mysteryDungeon.characters.Pokemon;
@@ -57,26 +55,11 @@ public class PikachuVoltSwitch extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m){
-       
-        if (upgraded) {
             InputHelper.moveCursorToNeutralPosition();
             ArrayList<AbstractCard> stanceChoices = new ArrayList<>();
             stanceChoices.add(new ChooseNegative());
             stanceChoices.add(new ChoosePositive());
-            addToBot(new ChooseOneAction(stanceChoices));  
-        }
-        else
-        {
-            switch(AbstractDungeon.cardRandomRng.random(1))
-            {
-                case(0):     
-                    addToBot(new SetPikaMeterAction(3));
-                    break;
-                case(1):
-                    addToBot(new SetPikaMeterAction(-3));
-                    break;
-            }
-        }
+            addToBot(new ChooseOneAction(stanceChoices));
     }
 
     // Upgraded stats.
@@ -84,6 +67,7 @@ public class PikachuVoltSwitch extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            exhaust = false;
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

@@ -391,8 +391,7 @@
     },
     "mysteryDungeon:PikachuElectricTerrain": {
         "NAME": "Electric Terrain",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Positive Stance. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Positive Stance. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Positive Stance. NL Exhaust."
     },
     "mysteryDungeon:PikachuElectroBall": {
         "NAME": "Electro Ball",
@@ -400,8 +399,7 @@
     },
     "mysteryDungeon:PikachuElectroweb": {
         "NAME": "Elecroweb",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cards from your discard pile into your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cards from your discard pile into your hand."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cards from your discard pile into your hand. NL Exhaust."
     },
     "mysteryDungeon:PikachuEncore": {
         "NAME": "Encore",
@@ -414,8 +412,7 @@
     },
     "mysteryDungeon:PikachuHiddenPower": {
         "NAME": "Hidden Power",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Add a random attack or skill card to your hand. NL It costs 0 this turn. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Choose between a random attack or skill card to add to your hand. NL It costs 0 this turn. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Choose between a random attack or skill card to add to your hand. NL It costs 0 this turn. NL Exhaust."
     },
     "mysteryDungeon:PikachuIronTail": {
         "NAME": "Iron Tail",
@@ -470,8 +467,7 @@
     },
     "mysteryDungeon:PikachuSpeedSwap": {
         "NAME": "Speed Swap",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Negative Stance. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Negative Stance. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Negative Stance. NL Exhaust."
     },
     "mysteryDungeon:PikachuStatic": {
         "NAME": "Static",
@@ -514,8 +510,8 @@
     },
     "mysteryDungeon:PikachuVoltSwitch": {
         "NAME": "Volt Switch",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter a Random Stance. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Choose which stance to enter. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Choose which stance to enter. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Choose which stance to enter."
     },
     "mysteryDungeon:PikachuVoltTackle": {
         "NAME": "Volt Tackle",
@@ -523,8 +519,8 @@
     },
     "mysteryDungeon:PikachuWildCharge": {
         "NAME": "Wild Charge",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs. NL End Turn. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs twice. NL End Turn. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs twice. NL Exhaust."
     },
     "mysteryDungeon:PikachuZapCannon": {
         "NAME": "Zap Cannon",

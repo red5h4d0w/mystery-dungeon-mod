@@ -39,9 +39,9 @@ public class PikachuVoltTackle extends PokemonCard {
     
 
     private static final int COST = 0;
-    private static final int DAMAGE = 5;
-    private static final int UPGRADE_PLUS_DMG = 3;
-    private static final int BASE_MAGIC_NUMBER = 2;
+    private static final int DAMAGE = 8;
+    private static final int BASE_MAGIC_NUMBER = 1;
+    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
@@ -52,7 +52,7 @@ public class PikachuVoltTackle extends PokemonCard {
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
         showEvokeValue = true;
-        showEvokeOrbCount = 2;
+        showEvokeOrbCount = 1;
         isInnate = true;
         exhaust = true;
     }
@@ -62,7 +62,8 @@ public class PikachuVoltTackle extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m){
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SLASH_DIAGONAL));
         addToBot(new ChannelAction(new Lightning()));
-        addToBot(new ChannelAction(new Lightning()));
+        if(upgraded)
+            addToBot(new ChannelAction(new Lightning()));
 
     }
 
@@ -71,7 +72,8 @@ public class PikachuVoltTackle extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            this.showEvokeOrbCount = 2;
             initializeDescription();
         }
     }
