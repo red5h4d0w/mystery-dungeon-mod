@@ -566,7 +566,7 @@
     },
     "mysteryDungeon:SquirtleEndure": {
         "NAME": "Endure",
-        "DESCRIPTION": "When you play a status, deal !M! damage to a random enemy."
+        "DESCRIPTION": "When you play a status, deal !M! damage to a all enemies."
     },
     "mysteryDungeon:SquirtleExplorerForm": {
         "NAME": "Explorer Form",
@@ -713,8 +713,8 @@
     },
     "mysteryDungeon:SquirtleWithdraw": {
         "NAME": "Withdraw",
-        "DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! card. NL Gain 2 Block per card in hand.",
-        "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! cards. NL Gain 2 Block per card in hand. "
+        "DESCRIPTION": "Shuffle your discard pile into your deck. NL Gain 2 Block per card in hand.",
+        "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your deck. NL Gain 3 Block per card in hand. "
     },
     "mysteryDungeon:SquirtleZenHeadbutt": {
         "NAME": "Zen Headbutt",

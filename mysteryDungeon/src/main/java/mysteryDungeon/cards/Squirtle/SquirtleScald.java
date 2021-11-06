@@ -37,8 +37,10 @@ public class SquirtleScald extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 5;
-    private static final int BASE_MAGIC_NUMBER = 4;
+    private static final int DAMAGE = 4;
+    private static final int UPGRADE_PLUS_DMG = 2;
+    private static final int BASE_MAGIC_NUMBER = 2;
+    private static final int UPGRADE_MAGIC_NUMBER = 2;
     private static final int SECOND_MAGIC_NUMBER = 3;
     private static final int UPGRADE_SECONDMAGIC_NUMBER = 1;
 
@@ -71,6 +73,8 @@ public class SquirtleScald extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             upgradeMagicNumber(UPGRADE_SECONDMAGIC_NUMBER);
             initializeDescription();
         }

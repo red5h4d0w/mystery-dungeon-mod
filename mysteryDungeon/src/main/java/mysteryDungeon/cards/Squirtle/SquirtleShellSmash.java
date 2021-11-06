@@ -36,10 +36,10 @@ public class SquirtleShellSmash extends PokemonCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
-    private static final int COST = 3;
+    private static final int COST = 2;
     private static final int BASE_MAGIC_NUMBER = 4;
-    private static final int BASE_SECOND_MAGIC_NUMBER = 3;
-    private static final int UPGRADE_MAGIC_NUMBER = 3;
+    private static final int BASE_SECOND_MAGIC_NUMBER = 2;
+    private static final int UPGRADE_MAGIC_NUMBER = 2;
 
 
     // /STAT DECLARATION/
