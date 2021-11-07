@@ -40,6 +40,7 @@ public class PikachuVoltTackle extends PokemonCard {
 
     private static final int COST = 0;
     private static final int DAMAGE = 8;
+    private static final int UPGRADE_PLUS_DMG = 3;
     private static final int BASE_MAGIC_NUMBER = 1;
     private static final int UPGRADE_MAGIC_NUMBER = 1;
 
@@ -72,6 +73,7 @@ public class PikachuVoltTackle extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            upgradeDamage(UPGRADE_PLUS_DMG);
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             this.showEvokeOrbCount = 2;
             initializeDescription();

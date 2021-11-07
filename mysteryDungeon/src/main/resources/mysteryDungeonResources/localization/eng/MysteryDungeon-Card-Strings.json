@@ -458,7 +458,7 @@
     },
     "mysteryDungeon:PikachuSlam": {
         "NAME": "Slam",
-        "DESCRIPTION": "Deal !D! damage. NL If you are in Negative stance, gain 1 energy."
+        "DESCRIPTION": "Deal !D! damage. NL If you are in Neutral stance, gain 2 energy."
     },
     "mysteryDungeon:PikachuSpark": {
         "NAME": "Spark",
