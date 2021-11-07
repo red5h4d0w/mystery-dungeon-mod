@@ -47,6 +47,7 @@ public class CharmanderCounter extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseBlock = BASE_BLOCK;
         baseMagicNumber = BASE_MAGIC_NUMBER;
+        magicNumber = baseMagicNumber;
     }
 
     // Actions the card should do.
