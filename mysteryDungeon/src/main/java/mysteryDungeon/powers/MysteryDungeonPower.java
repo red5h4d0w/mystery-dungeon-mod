@@ -12,7 +12,7 @@ public class MysteryDungeonPower extends AbstractPower {
     @Override
     public void stackPower(int stackAmount)
     {
-        super.stackPower(stackAmount);;
+        super.stackPower(stackAmount);
         updateDescription();
     }
 
