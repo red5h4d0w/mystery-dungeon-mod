@@ -1,28 +1,28 @@
 {
     "mysteryDungeon:Pokemon": {
         "NAMES": [
-            "The Pokémon",
-            "the Pokémon"
+            "Le Pokémon",
+            "le Pokémon"
         ],
         "TEXT": [
-            "You have been reincarnated as a Pokémon. Without any recollection of your former self, NL you decide that you'll help an adventurer in reaching the top of the dungeon.",
-            "NL You have reached the top floor of the dungeon. You can now rest at the base before taking another mission with your new Pokémon friends",
+            "Vous vous êtes réincarné en Pokémon. Sans vous souvenir de votre vie passée, vous décidez d'aire un aventurier à atteindre le sommet du donjon.",
+            "NL Vous avez atteint le sommet du donjon. Vous pouvez maintenant vous reposez dans votre hutte avant de partir en mission de nouveau avec vos copains, Pokémon",
             "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~basic~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
         ]
     },
     "Bulbasaur": {
         "NAMES": [
-            "Bulbasaur"
+            "Bulbizarre"
         ]
     },
     "Charmander": {
         "NAMES": [
-            "Charmander"
+            "Salamèche"
         ]
     },
     "Squirtle": {
         "NAMES": [
-            "Squirtle"
+            "Carapuce"
         ]
     },
     "Pikachu": {

@@ -178,7 +178,7 @@
     },
     "mysteryDungeon:BulbasaurWorrySeed": {
         "NAME": "Soucigraine",
-        "DESCRIPTION": "Les récompenses de combat contiendront 1 choix de carte supplémentaire."
+        "DESCRIPTION": "Les *récompenses de *cartes contiendront 1 choix de carte supplémentaire."
     },
     "mysteryDungeon:BulbasaurYawn": {
         "NAME": "Baîllement",
