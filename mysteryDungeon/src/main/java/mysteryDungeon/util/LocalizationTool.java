@@ -1,6 +1,7 @@
 package mysteryDungeon.util;
 
 import java.io.File;
+import java.util.ArrayList;
 
 import com.megacrit.cardcrawl.core.Settings;
 
@@ -10,6 +11,11 @@ public class LocalizationTool {
     public static String LocalizationPath()
     {
         String langPathDir;
+        if(!implementedLanguages.contains(Settings.language)) {
+            langPathDir = "localization" + File.separator + "eng";
+            langPathDir = MysteryDungeon.getModID() + "Resources" + File.separator + langPathDir + File.separator;
+            return langPathDir;
+        }
         switch (Settings.language) {
             case ENG :
                 langPathDir = "localization" + File.separator + "eng";
@@ -95,4 +101,7 @@ public class LocalizationTool {
         langPathDir = MysteryDungeon.getModID() + "Resources" + File.separator + langPathDir + File.separator;
         return langPathDir;
     }
+    static ArrayList<Settings.GameLanguage> implementedLanguages = new ArrayList<Settings.GameLanguage>() {{
+        add(Settings.GameLanguage.ENG);
+    }};
 }
