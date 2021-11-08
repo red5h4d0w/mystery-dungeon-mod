@@ -21,7 +21,7 @@ public class SquirtleShellSmash extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(SquirtleShellSmash.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("SquirtleSkill.png");
+    public static final String IMG = makeCardPath("SquirtlePower.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -33,7 +33,7 @@ public class SquirtleShellSmash extends PokemonCard {
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.SKILL;
+    private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
     private static final int COST = 2;
@@ -50,7 +50,6 @@ public class SquirtleShellSmash extends PokemonCard {
         magicNumber = baseMagicNumber;
         baseSecondMagicNumber = BASE_SECOND_MAGIC_NUMBER;
         secondMagicNumber = baseSecondMagicNumber;
-        exhaust = true;
         cardsToPreview = new StatusFreeze();
     }
 

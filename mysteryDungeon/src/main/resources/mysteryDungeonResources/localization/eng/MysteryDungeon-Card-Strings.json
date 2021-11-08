@@ -664,7 +664,7 @@
     },
     "mysteryDungeon:SquirtleShellSmash": {
         "NAME": "Shell Smash",
-        "DESCRIPTION": "Gain !M! Strength. NL Add !mysteryDungeon:M2! *Freeze to your deck. NL Exhaust."
+        "DESCRIPTION": "Gain !M! Strength. NL Add !mysteryDungeon:M2! *Freeze to your deck."
     },
     "mysteryDungeon:SquirtleSkullBashGo": {
         "NAME": "Skull Bash Go!",
