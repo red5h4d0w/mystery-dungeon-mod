@@ -47,6 +47,7 @@ public class PikachuElectroweb extends PokemonCard {
         magicNumber = baseMagicNumber;
         inert = true;
         exhaust = true;
+        selfRetain = true;
     }
 
     // Actions the card should do.

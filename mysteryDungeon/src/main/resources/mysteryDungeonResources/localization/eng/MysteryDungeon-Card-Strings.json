@@ -398,7 +398,7 @@
     },
     "mysteryDungeon:PikachuElectroweb": {
         "NAME": "Elecroweb",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cards from your discard pile into your hand. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Put !M! cards from your discard pile into your hand. NL Exhaust."
     },
     "mysteryDungeon:PikachuEncore": {
         "NAME": "Encore",
