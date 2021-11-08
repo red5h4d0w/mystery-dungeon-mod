@@ -23,11 +23,8 @@ public class Pikachu extends AbstractPokemon {
     public static Color COLOR = Color.YELLOW;
     public static CardColor CARD_COLOR = Pokemon.Enums.PIKACHU_YELLOW;
     public static String PATH_TO_BACK_SPRITE = makeBackSpritePath(Pikachu.class.getSimpleName()+".png");
-    public static String PATH_TO_SECOND_BACK_SPRITE = makeBackSpritePath("Raichu.png");
     public static String SKELETON_URL = makeSkeletonPath(Pikachu.class.getSimpleName());
     public static String ATLAS_URL = makeAtlasPath(Pikachu.class.getSimpleName());
-    public static String SECOND_SKELETON_URL = makeSkeletonPath("Raichu");
-    public static String SECOND_ATLAS_URL = makeAtlasPath("Raichu");
     
     
     public Pikachu(){
@@ -37,10 +34,10 @@ public class Pikachu extends AbstractPokemon {
     }
 
     @Override
-    public void evolve() {
-        pathToBackSprite = PATH_TO_SECOND_BACK_SPRITE;
-        skeletonUrl = SECOND_SKELETON_URL;
-        atlasUrl = SECOND_ATLAS_URL;
-        generateBackSprite();
+    public AbstractPokemon evolve() {
+        AbstractPokemon evolution = new Raichu();
+        if (shiny)
+            evolution.shiny = true;
+        return evolution;
     }
 }
