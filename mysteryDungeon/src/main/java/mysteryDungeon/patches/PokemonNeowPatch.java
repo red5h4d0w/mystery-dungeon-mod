@@ -232,6 +232,7 @@ public class PokemonNeowPatch {
                     ShowNextDialog(__instance);
                     return SpireReturn.Return(null);
                 case 2:
+                    isTestRun = false;
                     AskQuestion(__instance, new Question(TEXT[screenNum], new String[]{"Yes", "I'd prefer choosing my team", "I'd like the quickest option"}));
                     screenNum++;
                     return SpireReturn.Return(null);

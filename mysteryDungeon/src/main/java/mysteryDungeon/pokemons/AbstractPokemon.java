@@ -18,6 +18,14 @@ public abstract class AbstractPokemon {
         this.pathToBackSprite = pathToBackSprite;
         generateBackSprite();
     }
+
+    public AbstractPokemon(String name, Color color, CardColor cardColor, String pathToBackSprite) {
+        this.name=name;
+        this.color = color;
+        this.cardColor = cardColor;
+        this.pathToBackSprite = pathToBackSprite;
+        generateBackSprite();
+    }
     public String name;
     public int maxHp;
     public int orbSlots;
@@ -29,10 +37,12 @@ public abstract class AbstractPokemon {
     public boolean hasEvolved = false;
     public String skeletonUrl;
     public String atlasUrl;
+    public boolean shiny = false;
+    public boolean canEvolve = true;
 
     public void generateBackSprite() {
         this.backSprite = new Pixmap(Gdx.files.internal(pathToBackSprite));
     }
 
-    public void evolve() { }
+    public abstract AbstractPokemon evolve();
 }
