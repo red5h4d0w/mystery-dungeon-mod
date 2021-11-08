@@ -37,7 +37,7 @@ public class CharmanderSmokescreen extends PokemonCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
-    private static final int COST = 3;
+    private static final int COST = 2;
     private static final int BASE_MAGIC_NUMBER = 1;
 
 
@@ -55,7 +55,7 @@ public class CharmanderSmokescreen extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new VFXAction(new SmokeBombEffect(p.hb.cX, p.hb.cY)));
         addToBot(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, magicNumber), magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new WeakPower(p, upgraded?1:2, false), upgraded?1:2));
+        addToBot(new ApplyPowerAction(p, p, new WeakPower(p, upgraded?2:3, false), upgraded?2:3));
     }
 
     // Upgraded stats.

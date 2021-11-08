@@ -4,7 +4,7 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -37,8 +37,8 @@ public class CharmanderBlastBurn extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 30;
-    private static final int UPGRADE_PLUS_DMG = 10;
+    private static final int DAMAGE = 18;
+    private static final int UPGRADE_PLUS_DMG = 4;
 
 
     // /STAT DECLARATION/
@@ -52,8 +52,17 @@ public class CharmanderBlastBurn extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
-        AbstractDungeon.player.drawPile.group.forEach(card -> addToBot(new ExhaustSpecificCardAction(card, AbstractDungeon.player.drawPile)));
-    }
+        int count = AbstractDungeon.player.hand.size();
+        int i;
+        for (i = 0; i < count; i++)
+        for (i = 0; i < count; i++) {
+            if (com.megacrit.cardcrawl.core.Settings.FAST_MODE) {
+              addToTop((AbstractGameAction)new ExhaustAction(1, true, true, false, com.megacrit.cardcrawl.core.Settings.ACTION_DUR_XFAST));
+            } else {
+              addToTop((AbstractGameAction)new ExhaustAction(1, true, true));
+            } 
+          } 
+        }
 
     // Upgraded stats.
     @Override

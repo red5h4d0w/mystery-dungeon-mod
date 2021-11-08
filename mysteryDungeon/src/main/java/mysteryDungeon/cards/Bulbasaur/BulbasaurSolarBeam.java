@@ -39,8 +39,8 @@ public class BulbasaurSolarBeam extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
 
     private static final int COST = 3;
-    private static final int DAMAGE = 30;
-    private static final int UPGRADE_DAMAGE = 10;
+    private static final int DAMAGE = 27;
+    private static final int UPGRADE_DAMAGE = 8;
 
     // /STAT DECLARATION/
 

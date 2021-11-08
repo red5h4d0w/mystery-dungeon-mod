@@ -60,7 +60,7 @@ public class CharmanderFling extends PokemonCard {
             addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn)));
             addToBot(new ApplyPowerAction(m, p, new BurnPower(p, magicNumber), magicNumber));
         }
-        addToBot(new FlingAction(m, new DamageInfo(p, damage, damageTypeForTurn), 5, magicNumber));
+        addToBot(new FlingAction(m, new DamageInfo(p, damage, damageTypeForTurn), 4, magicNumber));
         
     }
 

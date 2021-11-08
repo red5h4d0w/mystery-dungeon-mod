@@ -37,8 +37,8 @@ public class PikachuExplorerForm extends PokemonCard {
     
 
     private static final int COST = 3;
-    private static final int BASE_MAGIC_NUMBER = 3;
-    private static final int UPGRADE_MAGIC_NUMBER = 2;
+    private static final int BASE_MAGIC_NUMBER = 5;
+    private static final int UPGRADE_MAGIC_NUMBER = 3;
 
 
     // /STAT DECLARATION/

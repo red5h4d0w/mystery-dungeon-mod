@@ -36,7 +36,7 @@ public class SquirtleHaze extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
     private static final int COST = 0;
-    private static final int BASE_MAGIC_NUMBER = 2;
+    private static final int BASE_MAGIC_NUMBER = 3;
     private static final int BASE_SECOND_MAGIC_NUMBER = 2;
     private static final int UPGRADE_SECOND_MAGIC_NUMBER = 1;
 

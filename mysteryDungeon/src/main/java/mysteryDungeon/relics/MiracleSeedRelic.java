@@ -46,7 +46,7 @@ public class MiracleSeedRelic extends PokemonRelic implements OnApplyPowerRelic 
     public boolean onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source ) {
       if(power.type == PowerType.DEBUFF){
         this.counter++;
-        if (this.counter % 2 == 0) {
+        if (this.counter % 3 == 0) {
           flash();
           this.counter = 0;
           addToBot(new DrawCardAction(AbstractDungeon.player, 1));

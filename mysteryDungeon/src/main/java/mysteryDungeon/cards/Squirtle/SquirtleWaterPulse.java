@@ -38,6 +38,7 @@ public class SquirtleWaterPulse extends PokemonCard {
 
     private static final int COST = 2;
     private static final int DAMAGE = 12;
+    private static final int UPGRADE_PLUS_DMG = 3;
     private static final int BASE_MAGIC_NUMBER = 2;
     private static final int UPGRADE_BASE_MAGIC_NUMBER = 1;
 
@@ -63,6 +64,7 @@ public class SquirtleWaterPulse extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            upgradeDamage(UPGRADE_PLUS_DMG);
             upgradeMagicNumber(UPGRADE_BASE_MAGIC_NUMBER);
             initializeDescription();
         }

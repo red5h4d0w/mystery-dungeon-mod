@@ -38,7 +38,7 @@ public class SquirtleIceBeam extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 13;
+    private static final int DAMAGE = 14;
     private static final int UPGRADE_PLUS_DMG = 4;
 
 
