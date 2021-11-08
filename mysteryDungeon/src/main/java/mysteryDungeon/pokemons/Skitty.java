@@ -23,4 +23,12 @@ public class Skitty extends AbstractPokemon {
     public Skitty(){
         super(NAME, MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR, PATH_TO_BACK_SPRITE);
     }
+
+    @Override
+    public AbstractPokemon evolve() {
+        AbstractPokemon evolution = new Raichu();
+        if (shiny)
+            evolution.shiny = true;
+        return evolution;
+    }
 }

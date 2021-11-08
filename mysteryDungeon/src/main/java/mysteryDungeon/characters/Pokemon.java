@@ -2,14 +2,12 @@ package mysteryDungeon.characters;
 
 import basemod.abstracts.CustomPlayer;
 import basemod.abstracts.CustomSavable;
-import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.abstracts.PokemonRelic;
 import mysteryDungeon.cards.Bulbasaur.BulbasaurTackle;
 import mysteryDungeon.cards.fakeCards.ExplorersDeck;
 import mysteryDungeon.cards.fakeCards.PartnersDeck;
 import mysteryDungeon.pokemons.AbstractPokemon;
-import mysteryDungeon.pokemons.Pikachu;
 import mysteryDungeon.relics.*;
 import mysteryDungeon.saveConstructs.ToSave;
 import mysteryDungeon.stances.NegativeStance;
@@ -44,6 +42,7 @@ import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.neow.NeowRoom;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.stances.NeutralStance;
@@ -65,7 +64,7 @@ import java.util.Random;
 //All text (starting description and loadout, anything labeled TEXT[]) can be found in MysteryDungeon-character-Strings.json in the resources
 
 public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
-    public static final Logger logger = LogManager.getLogger(MysteryDungeon.class.getName());
+    public static final Logger logger = LogManager.getLogger(Pokemon.class.getName());
 
     // =============== CHARACTER ENUMERATORS =================
     // These are enums for your Characters color (both general color and for the card library) as well as
@@ -130,6 +129,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     public Texture campfirePose;
 
     public static PikachuMeter pikaMeter = new PikachuMeter();
+
+    public static boolean skipNextEvolution = false;
 
     // =============== /BASE STATS/ =================
 
@@ -276,7 +277,9 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public void reloadAnimation() {
+        logger.info("ANIMATION");
         if(hasChosenStarters()) {
+            logger.info(adventurer.name);
             loadAnimation(adventurer.atlasUrl, adventurer.skeletonUrl, 0.250f);
             AnimationState.TrackEntry e = state.setAnimation(0, "Sprite", true);
             e.setTime(e.getEndTime() * MathUtils.random());
@@ -408,22 +411,23 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public void evolvePokemons() {
+        if(skipNextEvolution) {
+            skipNextEvolution = false;
+            return;
+        }
         if(hasChosenStarters())
         {
-            partner.evolve();
-            adventurer.evolve();
+            if(partner.canEvolve)
+                partner = partner.evolve();
+            if(adventurer.canEvolve)
+                adventurer = adventurer.evolve();
             setCampfirePose();
             reloadAnimation();
         }
     }
 
     public void tryToEvolvePokemons() {
-        if(AbstractDungeon.actNum>=2 && !partner.hasEvolved && !adventurer.hasEvolved) {
-            evolvePokemons();
-        }
-        if(AbstractDungeon.actNum>=3) {
-            evolvePokemons();
-        }
+        evolvePokemons();
     }
 
     // Starting Relics	
@@ -442,12 +446,19 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     @Override
     public ToSave onSave()
     {
+        logger.info("SAVING!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        logger.info(AbstractDungeon.getCurrRoom() instanceof NeowRoom);
+        if(AbstractDungeon.getCurrRoom() instanceof NeowRoom)
+            return new ToSave();
         ToSave saveInfo = new ToSave();
         if(adventurer!=null){
-        saveInfo.adventurer = adventurer.name;}
+            saveInfo.adventurer = adventurer.getClass().getSimpleName();
+        }
         if(partner!=null){
-        saveInfo.partner = partner.name;}
-
+            saveInfo.partner = partner.getClass().getSimpleName();
+        }
+        logger.info(saveInfo.adventurer);
+        logger.info(saveInfo.partner);
         saveInfo.maxPikaMeter = maxPikachuChargeCounter;
         return saveInfo;
     }
@@ -455,24 +466,29 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     @Override
     public void onLoad(ToSave saveInfo)
     {
+        logger.info("LOADING MYSTERY DUNGEON CHARACTER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         if(saveInfo.adventurer!=null && saveInfo.partner!=null)
         {
             try {
                 adventurer = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+(saveInfo.adventurer)).getConstructor().newInstance();
                 partner = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+(saveInfo.partner)).getConstructor().newInstance();
-                if(AbstractDungeon.actNum>=2) {
-                    evolvePokemons();
-                }
-                if(AbstractDungeon.actNum>=3) {
-                    evolvePokemons();
-                }
             } catch (InstantiationException | IllegalAccessException | IllegalArgumentException
                     | InvocationTargetException | NoSuchMethodException | SecurityException
                     | ClassNotFoundException e) {
+                logger.info(e.getMessage());
                 e.printStackTrace();
             }
+            logger.info("Adventurer is " + adventurer.name);
+            logger.info("Partner is " + partner.name);
         } 
+        else
+        {
+            adventurer = null;
+            partner = null;
+        }
         maxPikachuChargeCounter = saveInfo.maxPikaMeter;
+        skipNextEvolution = true;
+        reloadAnimation();
     }
 
     @Override
@@ -559,11 +575,11 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public static boolean hasChosenPikachu() {
-        if(adventurer instanceof Pikachu)
+        if(adventurer.cardColor == Enums.PIKACHU_YELLOW)
         {
             return true;
         }
-        if(partner instanceof Pikachu)
+        if(partner.cardColor == Enums.PIKACHU_YELLOW)
         {
             return true;
         }

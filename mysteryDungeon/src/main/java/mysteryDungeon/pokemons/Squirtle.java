@@ -38,18 +38,10 @@ public class Squirtle extends AbstractPokemon {
     }
 
     @Override
-    public void evolve() {
-        if(hasEvolved) {
-            pathToBackSprite = PATH_TO_THIRD_BACK_SPRITE;
-            skeletonUrl = THIRD_SKELETON_URL;
-            atlasUrl = THIRD_ATLAS_URL;
-        }
-        else {
-            pathToBackSprite = PATH_TO_SECOND_BACK_SPRITE;
-            skeletonUrl = SECOND_SKELETON_URL;
-            atlasUrl = SECOND_ATLAS_URL;
-            hasEvolved = true;
-        }
-        generateBackSprite();
+    public AbstractPokemon evolve() {
+        AbstractPokemon evolution = new Wartortle();
+        if (shiny)
+            evolution.shiny = true;
+        return evolution;
     }
 }
