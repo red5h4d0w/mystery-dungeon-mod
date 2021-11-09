@@ -575,13 +575,15 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public static boolean hasChosenPikachu() {
-        if(adventurer.cardColor == Enums.PIKACHU_YELLOW)
-        {
-            return true;
-        }
-        if(partner.cardColor == Enums.PIKACHU_YELLOW)
-        {
-            return true;
+        if(((Pokemon)AbstractDungeon.player).hasChosenStarters()) {
+            if(adventurer.cardColor == Enums.PIKACHU_YELLOW)
+            {
+                return true;
+            }
+            if(partner.cardColor == Enums.PIKACHU_YELLOW)
+            {
+                return true;
+            }
         }
         return false;
     }
