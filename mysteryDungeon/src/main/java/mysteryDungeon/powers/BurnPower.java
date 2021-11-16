@@ -60,7 +60,8 @@ public class BurnPower extends MysteryDungeonPower implements CloneablePowerInte
     @Override
     public void atEndOfRound()
     {
-        amount-=2;
+        int burnDown = MathUtils.floor(amount/3.0f);
+        amount-=burnDown;
         if(amount<=0)
         {
             addToBot(new RemoveSpecificPowerAction(owner, owner, this));

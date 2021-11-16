@@ -41,7 +41,7 @@
     },
     "mysteryDungeon:BurnPower": {
         "NAME": "Burn",
-        "DESCRIPTIONS": ["For every 5 stacks of Burn, this creature deals 1 less damage. NL Currently deals #b%s less damage."]
+        "DESCRIPTIONS": ["For every 5 stacks of Burn, this creature deals 1 less damage. NL Currently deals #b%s less damage. NL The amount is reduced by a third every turn."]
     },
     "mysteryDungeon:CharmanderExplorerPower": {
         "NAME": "Explorer Form",
