@@ -37,6 +37,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.ModHelper;
 import com.megacrit.cardcrawl.helpers.PotionHelper;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
@@ -292,6 +293,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
             AnimationState.TrackEntry e = state.setAnimation(0, "Sprite", true);
             e.setTime(e.getEndTime() * MathUtils.random());
         } 
+        setCampfirePose();
     }
 
     // Starting Deck
@@ -319,6 +321,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public void awardStartingDecks(AbstractPokemon pokemon) {
+        if(ModHelper.isModEnabled("Draft") || ModHelper.isModEnabled("SealedDeck"))
+            return;
         for(AbstractCard card: pokemon.startingDeck) {
             masterDeck.addToTop(card.makeStatEquivalentCopy());
         }
@@ -421,7 +425,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
                 partner = partner.evolve();
             if(adventurer.canEvolve)
                 adventurer = adventurer.evolve();
-            setCampfirePose();
             reloadAnimation();
         }
     }
@@ -575,6 +578,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public static boolean hasChosenPikachu() {
+        if(AbstractDungeon.player instanceof Pokemon)
         if(((Pokemon)AbstractDungeon.player).hasChosenStarters()) {
             if(adventurer.cardColor == Enums.PIKACHU_YELLOW)
             {

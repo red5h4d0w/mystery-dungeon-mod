@@ -61,8 +61,10 @@ public class CharmanderWillOWisp extends PokemonCard {
             p.getRelic("Chemical X").flash();
         }
         energyOnUse += upgraded?1:0;
-        addToBot(new ApplyPowerAction(m, p, new WeakPower(p, energyOnUse, false), energyOnUse));
-        addToBot(new ApplyPowerAction(m, p, new BurnPower(m, magicNumber*energyOnUse), magicNumber*energyOnUse));
+        if(magicNumber*energyOnUse!=0) {
+            addToBot(new ApplyPowerAction(m, p, new WeakPower(p, energyOnUse, false), energyOnUse));
+            addToBot(new ApplyPowerAction(m, p, new BurnPower(m, magicNumber*energyOnUse), magicNumber*energyOnUse));
+        }
         if (!freeToPlayOnce)
         {
             p.energy.use(EnergyPanel.totalCount);
