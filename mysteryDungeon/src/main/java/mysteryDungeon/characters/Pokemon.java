@@ -293,6 +293,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
             AnimationState.TrackEntry e = state.setAnimation(0, "Sprite", true);
             e.setTime(e.getEndTime() * MathUtils.random());
         } 
+        setCampfirePose();
     }
 
     // Starting Deck
@@ -424,7 +425,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
                 partner = partner.evolve();
             if(adventurer.canEvolve)
                 adventurer = adventurer.evolve();
-            setCampfirePose();
             reloadAnimation();
         }
     }
