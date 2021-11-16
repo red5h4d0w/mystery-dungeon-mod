@@ -81,7 +81,8 @@
     },
     "mysteryDungeon:BulbasaurMegaDrain": {
         "NAME": "Mega Drain",
-        "DESCRIPTION": "Heal !M! HP per different *debuff on the enemy."
+        "DESCRIPTION": "Heal !M! HP per different *debuff on the enemy.",
+        "UPGRADE_DESCRIPTION": "Heal !M! HP per different *debuff on the enemy. NL draw 1 card."
     },
     "mysteryDungeon:BulbasaurPetalBlizzard": {
         "NAME": "Petal Blizzard",
@@ -274,7 +275,7 @@
     },
     "mysteryDungeon:CharmanderFireSpin": {
         "NAME": "Fire Spin",
-        "DESCRIPTION": "Apply as much Poison as the enemy has mysterydungeon:Burn NL Remove all mysterydungeon:Burn. NL Exhaust.",
+        "DESCRIPTION": "Ethereal. NL Apply as much Poison as the enemy has mysterydungeon:Burn NL Remove all mysterydungeon:Burn.",
         "UPGRADE_DESCRIPTION": "Apply as much Poison as the enemy has mysterydungeon:Burn NL Remove all mysterydungeon:Burn."
     },
     "mysteryDungeon:CharmanderFlamethrower": {
@@ -318,8 +319,12 @@
     },
     "mysteryDungeon:CharmanderOverheat": {
         "NAME": "Overheat",
+<<<<<<< Updated upstream
         "DESCRIPTION": "Deal !D! damage. NL Deal additional damage equal to the number of mysterydungeon:Burn stacks on the enemy. NL Remove half the enemies' mysterydungeon:Burn stacks.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal additional damage equal to the number of mysterydungeon:Burn stacks on the enemy."
+=======
+        "DESCRIPTION": "Deal 5 damage. NL Deal additional damage equal to the number of mysterydungeon:Burn stacks on the enemy."
+>>>>>>> Stashed changes
     },
     "mysteryDungeon:CharmanderScaryFace": {
         "NAME": "Scary Face",

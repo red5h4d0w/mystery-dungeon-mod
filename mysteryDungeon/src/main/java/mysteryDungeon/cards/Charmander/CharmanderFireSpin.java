@@ -43,7 +43,7 @@ public class CharmanderFireSpin extends PokemonCard {
 
     public CharmanderFireSpin() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        exhaust = true;
+        isEthereal = true;
     }
 
     // Actions the card should do.
@@ -63,7 +63,7 @@ public class CharmanderFireSpin extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            exhaust = false;
+            isEthereal = false;
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
