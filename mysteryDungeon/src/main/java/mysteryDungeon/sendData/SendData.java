@@ -12,7 +12,7 @@ public class SendData {
     public static Logger logger = LogManager.getLogger(SendData.class);
     public static void sendData(RunDetails run) {
         Gson gson = new Gson();
-        String postUrl = "http://www.scarlet-tales-studio.com:44444/graphs/data-reception";
+        String postUrl = "http://www.scarlet-tales-studio.com/graphs/data-reception";
         com.badlogic.gdx.Net.HttpRequest request2 =  new HttpRequestBuilder().newRequest()
             .url(postUrl)
             .method("POST")
