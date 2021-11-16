@@ -53,12 +53,13 @@ public class CharmanderDragonTail extends PokemonCard {
         baseDamage = BASE_DAMAGE;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        isMultiDamage = true;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, damage, DamageType.NORMAL, AttackEffect.BLUNT_HEAVY));
+        addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, multiDamage, DamageType.NORMAL, AttackEffect.BLUNT_HEAVY));
         if(upgraded)
         {
             addToBot(new DrawCardAction(magicNumber));
@@ -74,7 +75,7 @@ public class CharmanderDragonTail extends PokemonCard {
 
     public void triggerOnExhaust() {
         AbstractCard cardToAdd = this.makeStatEquivalentCopy();
-        addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(baseDamage), DamageType.NORMAL, AttackEffect.BLUNT_HEAVY));
+        addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, multiDamage, DamageType.NORMAL, AttackEffect.BLUNT_HEAVY));
         if(upgraded)
         {
             addToBot(new DrawCardAction(magicNumber));
