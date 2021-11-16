@@ -26,7 +26,7 @@ public class Wartortle extends AbstractPokemon {
 
     @Override
     public AbstractPokemon evolve() {
-        AbstractPokemon evolution = new Wartortle();
+        AbstractPokemon evolution = new Blastoise();
         if (shiny)
             evolution.shiny = true;
         return evolution;
