@@ -11,11 +11,11 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.stances.NeutralStance;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.stances.NegativeStance;
 
 public class PikachuSlam extends PokemonCard {
 
@@ -39,9 +39,9 @@ public class PikachuSlam extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.PIKACHU_YELLOW;
     
 
-    private static final int COST = 2;
-    private static final int DAMAGE = 15;
-    private static final int UPGRADE_PLUS_DMG = 5;
+    private static final int COST = 1;
+    private static final int DAMAGE = 10;
+    private static final int UPGRADE_PLUS_DMG = 3;
 
 
     // /STAT DECLARATION/
@@ -54,13 +54,13 @@ public class PikachuSlam extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m){
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SLASH_DIAGONAL));
-        if(p.stance.ID == NegativeStance.STANCE_ID) { 
-            addToBot(new GainEnergyAction(1));
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SMASH));
+        if(p.stance.ID == NeutralStance.STANCE_ID) { 
+            addToBot(new GainEnergyAction(2));
         }
     }
     public void triggerOnGlowCheck(AbstractPlayer p) {
-        if(p.stance.ID == NegativeStance.STANCE_ID) {
+        if(p.stance.ID == NeutralStance.STANCE_ID) {
           this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
         } else {
           this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();

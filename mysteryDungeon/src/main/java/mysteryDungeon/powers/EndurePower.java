@@ -9,12 +9,13 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -55,7 +56,7 @@ public class EndurePower extends MysteryDungeonPower implements CloneablePowerIn
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.type == AbstractCard.CardType.STATUS) {
             flash();
-            addToBot(new DamageRandomEnemyAction(new DamageInfo(owner, amount, DamageType.THORNS), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+            addToBot(new DamageAllEnemiesAction((AbstractPlayer)owner, DamageInfo.createDamageMatrix(amount, true), DamageType.THORNS, AttackEffect.SLASH_DIAGONAL));
         } 
     }
 

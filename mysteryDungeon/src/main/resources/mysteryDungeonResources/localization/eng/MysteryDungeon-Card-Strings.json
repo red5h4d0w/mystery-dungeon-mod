@@ -77,8 +77,7 @@
     },
     "mysteryDungeon:BulbasaurLeechSeed": {
         "NAME": "Leech Seed",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Leech_Seed. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Leech_Seed."
+        "DESCRIPTION": "Apply !M! mysterydungeon:Leech_Seed. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurMegaDrain": {
         "NAME": "Mega Drain",
@@ -131,7 +130,7 @@
     },
     "mysteryDungeon:BulbasaurSleepPowder": {
         "NAME": "Sleep Powder",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Asleep. NL Exhaust."
+        "DESCRIPTION":"Apply !M! mysterydungeon:Asleep to all enemies. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurSludgeBomb": {
         "NAME": "Sludge Bomb",
@@ -186,8 +185,8 @@
     },
     "mysteryDungeon:BulbasaurYawn": {
         "NAME": "Yawn",
-        "DESCRIPTION": "Ethereal. NL Apply !M! mysterydungeon:Asleep to ALL enemies right before they act (after Poison, etc.). NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Asleep to ALL enemies right before they act (after Poison, etc.). NL Exhaust."
+        "DESCRIPTION": "Ethereal. NL Apply !M! mysterydungeon:Asleep right before they act (after Poison, etc.). NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Asleep right before they act (after Poison, etc.). NL Exhaust."
     },
     "mysteryDungeon:CharmanderBellyDrum": {
         "NAME": "Belly Drum",
@@ -195,7 +194,7 @@
     },
     "mysteryDungeon:CharmanderBlastBurn": {
         "NAME": "Blast Burn",
-        "DESCRIPTION": "Deal !D! damage. NL Exhaust your draw pile."
+        "DESCRIPTION": "Deal !D! damage. NL Exhaust your hand."
     },
     "mysteryDungeon:CharmanderBlaze": {
         "NAME": "Blaze",
@@ -231,7 +230,7 @@
     "mysteryDungeon:CharmanderDragonPulse": {
         "NAME": "Dragon Pulse",
         "DESCRIPTION": "Unplayable. NL When drawn: NL Add a random card from your exhaust pile on the top of draw pile.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn: NL Add a random card from your exhaust pile on the top of draw pile. NL Next Turn, Draw 1 more card.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn: NL Add a random card from your exhaust pile on the top of draw pile. NL Draw !M! card.",
         "EXTENDED_DESCRIPTION": ["I can't play this card."]
     },
     "mysteryDungeon:CharmanderDragonRage": {
@@ -245,7 +244,7 @@
     "mysteryDungeon:CharmanderDragonTail": {
         "NAME": "Dragon Tail",
         "DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Place a copy of this card on top of your draw pile.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Draw !M! card. NL Place a copy of this card on top of your draw pile.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Place a copy of this card on top of your draw pile. NL Next Turn, Draw 1 more card.",
         "EXTENDED_DESCRIPTION": ["I can't play this card."]
     },
     "mysteryDungeon:CharmanderDrought": {
@@ -288,8 +287,8 @@
     },
     "mysteryDungeon:CharmanderFling": {
         "NAME": "Fling",
-        "DESCRIPTION": "Exhaust up to 5 cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! mysterydungeon:Burn NL Exhaust up to 5 cards. NL Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust."
+        "DESCRIPTION": "Exhaust up to 4 cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! mysterydungeon:Burn NL Exhaust up to 4 cards. NL Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust."
     },
     "mysteryDungeon:CharmanderFrustration": {
         "NAME": "Frustration",
@@ -345,8 +344,8 @@
     },
     "mysteryDungeon:CharmanderSmokescreen": {
         "NAME": "Smokescreen",
-        "DESCRIPTION": "Gain !M! Intangible. NL Gain 2 Weak NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Gain !M! Intangible. NL Gain 1 Weak NL Exhaust."
+        "DESCRIPTION": "Gain !M! Intangible. NL Gain 3 Weak NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Gain !M! Intangible. NL Gain 2 Weak NL Exhaust."
     },
     "mysteryDungeon:CharmanderSolarPower": {
         "NAME": "Solar Power",
@@ -391,8 +390,7 @@
     },
     "mysteryDungeon:PikachuElectricTerrain": {
         "NAME": "Electric Terrain",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Positive Stance. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Positive Stance. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Positive Stance. NL Exhaust."
     },
     "mysteryDungeon:PikachuElectroBall": {
         "NAME": "Electro Ball",
@@ -400,8 +398,7 @@
     },
     "mysteryDungeon:PikachuElectroweb": {
         "NAME": "Elecroweb",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cards from your discard pile into your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cards from your discard pile into your hand."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Put !M! cards from your discard pile into your hand. NL Exhaust."
     },
     "mysteryDungeon:PikachuEncore": {
         "NAME": "Encore",
@@ -414,8 +411,7 @@
     },
     "mysteryDungeon:PikachuHiddenPower": {
         "NAME": "Hidden Power",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Add a random attack or skill card to your hand. NL It costs 0 this turn. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Choose between a random attack or skill card to add to your hand. NL It costs 0 this turn. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Choose between a random attack or skill card to add to your hand. NL It costs 0 this turn. NL Exhaust."
     },
     "mysteryDungeon:PikachuIronTail": {
         "NAME": "Iron Tail",
@@ -462,7 +458,7 @@
     },
     "mysteryDungeon:PikachuSlam": {
         "NAME": "Slam",
-        "DESCRIPTION": "Deal !D! damage. NL If you are in Negative stance, gain 1 energy."
+        "DESCRIPTION": "Deal !D! damage. NL If you are in Neutral stance, gain 2 energy."
     },
     "mysteryDungeon:PikachuSpark": {
         "NAME": "Spark",
@@ -470,8 +466,7 @@
     },
     "mysteryDungeon:PikachuSpeedSwap": {
         "NAME": "Speed Swap",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Negative Stance. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Negative Stance. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Negative Stance. NL Exhaust."
     },
     "mysteryDungeon:PikachuStatic": {
         "NAME": "Static",
@@ -514,8 +509,8 @@
     },
     "mysteryDungeon:PikachuVoltSwitch": {
         "NAME": "Volt Switch",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter a Random Stance. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Choose which stance to enter. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Choose which stance to enter. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Choose which stance to enter."
     },
     "mysteryDungeon:PikachuVoltTackle": {
         "NAME": "Volt Tackle",
@@ -523,8 +518,8 @@
     },
     "mysteryDungeon:PikachuWildCharge": {
         "NAME": "Wild Charge",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs. NL End Turn. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs twice. NL End Turn. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs twice. NL Exhaust."
     },
     "mysteryDungeon:PikachuZapCannon": {
         "NAME": "Zap Cannon",
@@ -566,7 +561,7 @@
     },
     "mysteryDungeon:SquirtleEndure": {
         "NAME": "Endure",
-        "DESCRIPTION": "When you play a status, deal !M! damage to a random enemy."
+        "DESCRIPTION": "When you play a status, deal !M! damage to a all enemies."
     },
     "mysteryDungeon:SquirtleExplorerForm": {
         "NAME": "Explorer Form",
@@ -609,7 +604,7 @@
     },
     "mysteryDungeon:SquirtleHydroCannon": {
         "NAME": "Hydro Cannon",
-        "DESCRIPTION": "Deal !D! damage to all enemies. NL Insert 3 *Freeze in your draw pile."
+        "DESCRIPTION": "Deal !D! damage to all enemies. NL Insert 2 *Freeze in your draw pile."
     },
     "mysteryDungeon:SquirtleIceBeam": {
         "NAME": "Ice Beam",
@@ -669,7 +664,7 @@
     },
     "mysteryDungeon:SquirtleShellSmash": {
         "NAME": "Shell Smash",
-        "DESCRIPTION": "Gain !M! Strength. NL Add !mysteryDungeon:M2! *Freeze to your deck. NL Exhaust."
+        "DESCRIPTION": "Gain !M! Strength. NL Add !mysteryDungeon:M2! *Freeze to your deck."
     },
     "mysteryDungeon:SquirtleSkullBashGo": {
         "NAME": "Skull Bash Go!",
@@ -713,8 +708,8 @@
     },
     "mysteryDungeon:SquirtleWithdraw": {
         "NAME": "Withdraw",
-        "DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! card. NL Gain 2 Block per card in hand.",
-        "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! cards. NL Gain 2 Block per card in hand. "
+        "DESCRIPTION": "Shuffle your discard pile into your deck. NL Gain 2 Block per card in hand.",
+        "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your deck. NL Gain 3 Block per card in hand. "
     },
     "mysteryDungeon:SquirtleZenHeadbutt": {
         "NAME": "Zen Headbutt",

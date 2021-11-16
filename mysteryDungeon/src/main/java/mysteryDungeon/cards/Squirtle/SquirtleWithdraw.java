@@ -2,7 +2,6 @@ package mysteryDungeon.cards.Squirtle;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.ShuffleAction;
@@ -38,16 +37,12 @@ public class SquirtleWithdraw extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
     private static final int COST = 1;
-    private static final int BASE_MAGIC_NUMBER = 1;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
 
     public SquirtleWithdraw() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseMagicNumber = BASE_MAGIC_NUMBER;
-        magicNumber = baseMagicNumber;
     }
 
     // Actions the card should do.
@@ -57,10 +52,9 @@ public class SquirtleWithdraw extends PokemonCard {
             addToBot(new EmptyDeckShuffleAction());
             addToBot(new ShuffleAction(AbstractDungeon.player.drawPile, false));
         }
-        addToBot(new DrawCardAction(magicNumber));
         for(int i=0;i<p.hand.group.size()-1;i++)
         {
-            addToBot(new GainBlockAction(p, p, 2));
+            addToBot(new GainBlockAction(p, p, upgraded?2:3));
         }
         
     }
@@ -70,7 +64,6 @@ public class SquirtleWithdraw extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

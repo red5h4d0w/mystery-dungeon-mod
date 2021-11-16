@@ -5,6 +5,7 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -22,7 +23,6 @@ public class BulbasaurSleepPowder extends PokemonCard {
     public static final String IMG = makeCardPath("BulbasaurSkill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -30,7 +30,7 @@ public class BulbasaurSleepPowder extends PokemonCard {
     // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.COMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
 
@@ -51,8 +51,13 @@ public class BulbasaurSleepPowder extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        // Create an int which equals to your current energy.
-        addToBot(new ApplyPowerAction(m, p, new AsleepPower(m, this.magicNumber), this.magicNumber));
+        if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+            for (AbstractMonster monster : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
+                if (!monster.isDead && !monster.isDying) {
+                    addToBot(new ApplyPowerAction(monster, p, new AsleepPower(monster, magicNumber), this.magicNumber));
+                } 
+            } 
+        }
     }
 
     // Upgraded stats.

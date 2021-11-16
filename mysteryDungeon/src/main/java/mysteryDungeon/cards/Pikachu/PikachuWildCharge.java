@@ -2,9 +2,7 @@ package mysteryDungeon.cards.Pikachu;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.defect.EvokeAllOrbsAction;
-import com.megacrit.cardcrawl.actions.watcher.PressEndTurnButtonAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -55,9 +53,6 @@ public class PikachuWildCharge extends PokemonCard {
     if (upgraded)
         addToBot(new EvokeAllWithoutRemovingOrbAction());
         addToBot(new EvokeAllOrbsAction());
-        addToBot((AbstractGameAction)new PressEndTurnButtonAction());
-
-
     }
 
     // Upgraded stats.

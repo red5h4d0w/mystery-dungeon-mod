@@ -45,7 +45,7 @@ public class SquirtleHydroCannon extends PokemonCard {
     private static final int COST = 2;
     private static final int DAMAGE = 20;
     private static final int UPGRADE_PLUS_DMG = 7;
-    private static final int BASE_MAGIC_NUMBER = 3;
+    private static final int BASE_MAGIC_NUMBER = 2;
 
 
     // /STAT DECLARATION/

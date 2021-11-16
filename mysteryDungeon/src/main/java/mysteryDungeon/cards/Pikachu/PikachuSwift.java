@@ -38,8 +38,8 @@ public class PikachuSwift extends PokemonCard {
 
     private static final int COST = 2;
     private static final int DAMAGE = 12;
+    private static final int UPGRADE_PLUS_DMG = 3;
     private static final int BASE_MAGIC_NUMBER = 2;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
@@ -64,7 +64,7 @@ public class PikachuSwift extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            upgradeDamage(UPGRADE_PLUS_DMG);
             initializeDescription();
         }
     }

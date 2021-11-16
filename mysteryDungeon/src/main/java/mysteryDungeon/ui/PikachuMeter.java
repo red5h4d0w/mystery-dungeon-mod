@@ -50,7 +50,7 @@ public class PikachuMeter {
     private static final float BOX_W = 325.0F * Settings.scale;
     private static final float METER_HEIGHT = 50.0f * Settings.scale;
 
-    public static final String DESCRIPTION = "When you play a Skill, move to the left on this meter. NL When you play an Attack, move to the right on this meter. NL When you reach certain points on the track, enter the corresponding stances.";
+    public static final String DESCRIPTION = "When you play a Skill, move to the left by 1 notch on this meter. NL When you play an Attack, move to the right by 1 notch on this meter. NL When you reach one of the end points on the meter, enter the corresponding stances.";
 
     private static int counterPosition = 0;
 
@@ -71,7 +71,7 @@ public class PikachuMeter {
             float y = Settings.HEIGHT-165.0f*Settings.scale;
             //TODO: Localization
             String title = "Charge Meter";
-            String description = "When you play a Skill, move to the left on this meter. NL When you play an Attack, move to the right on this meter. NL When you reach certain points on the track, enter the corresponding stances. NL You can hover this to see info on the stances.";
+            String description = "When you play a Skill, move to the left by 1 notch on this meter. NL When you play an Attack, move to the right by 1 notch on this meter. NL When you reach one of the end points on the meter, enter the corresponding stances. NL You can hover this to see info on the stances.";
             float h = -FontHelper.getSmartHeight(FontHelper.tipBodyFont, description, BODY_TEXT_WIDTH, TIP_DESC_LINE_SPACING) - 7.0F * Settings.scale;
             sb.setColor(Settings.TOP_PANEL_SHADOW_COLOR);
             sb.draw(ImageMaster.KEYWORD_TOP, x + SHADOW_DIST_X, y - SHADOW_DIST_Y, BOX_W, BOX_EDGE_H);

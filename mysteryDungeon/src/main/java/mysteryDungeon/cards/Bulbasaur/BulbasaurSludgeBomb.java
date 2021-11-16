@@ -35,8 +35,8 @@ public class BulbasaurSludgeBomb extends PokemonCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
     
-    private static final int BASE_MAGIC_NUMBER = 12;
-    private static final int UPGRADE_MAGIC_NUMBER = 2;
+    private static final int BASE_MAGIC_NUMBER = 10;
+    private static final int UPGRADE_MAGIC_NUMBER = 4;
     private static final int COST = 2;
 
     // /STAT DECLARATION/
