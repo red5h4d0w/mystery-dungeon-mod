@@ -318,8 +318,8 @@
     },
     "mysteryDungeon:CharmanderOverheat": {
         "NAME": "Overheat",
-        "DESCRIPTION": "Deal 5 damage. NL Deal additional damage equal to the number of mysterydungeon:Burn stacks on the enemy. NL Remove half the enemies' mysterydungeon:Burn stacks.",
-        "UPGRADE_DESCRIPTION": "Deal 5 damage. NL Deal additional damage equal to the number of mysterydungeon:Burn stacks on the enemy."
+        "DESCRIPTION": "Deal !D! damage. NL Deal additional damage equal to the number of mysterydungeon:Burn stacks on the enemy. NL Remove half the enemies' mysterydungeon:Burn stacks.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal additional damage equal to the number of mysterydungeon:Burn stacks on the enemy."
     },
     "mysteryDungeon:CharmanderScaryFace": {
         "NAME": "Scary Face",

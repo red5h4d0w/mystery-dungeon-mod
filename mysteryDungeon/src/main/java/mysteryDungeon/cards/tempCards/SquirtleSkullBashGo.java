@@ -2,7 +2,6 @@ package mysteryDungeon.cards.tempCards;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
@@ -60,11 +59,11 @@ public class SquirtleSkullBashGo extends PokemonCard {
             }
 
         }
-        addToBot((AbstractGameAction)new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AttackEffect.NONE));
+        addToBot(new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AttackEffect.NONE));
 
         if(AbstractDungeon.player.hand.size()==1)
         { 
-            addToBot((AbstractGameAction)new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AttackEffect.NONE)); 
+            addToBot(new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AttackEffect.NONE)); 
         }
 
     }
