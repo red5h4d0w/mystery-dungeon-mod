@@ -45,7 +45,8 @@
     },
     "mysteryDungeon:BulbasaurDoubleEdge": {
         "NAME": "Double Edge",
-        "DESCRIPTION": "Deal !D! damage. NL Strength affects this card !M! times. NL Lose 1 Dexterity."
+        "DESCRIPTION": "Deal !D! damage. NL Gain Strenght equal to the unblocked damage dealt. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times. NL Gain Strenght equal to the unblocked damage dealt. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurExplorerForm": {
         "NAME": "Explorer Form",
@@ -67,9 +68,10 @@
         "NAME": "Growth",
         "DESCRIPTION": "Gain !M! Strength."
     },
-    "mysteryDungeon:BulbasaurHelpingHand": {
-        "NAME": "Helping Hand",
-        "DESCRIPTION": "Draw !M! cards. NL Gain [E]."
+    "mysteryDungeon:BulbasaurChlorophyll": {
+        "NAME": "Chlorophyll",
+        "DESCRIPTION": "Draw !M! cards. NL If the card drawn is an Attack, gain 1 Strenght.",
+        "UPGRADE_DESCRIPTION": "Draw !M! cards. NL For Each card drawn that is an Attack, gain 1 Strenght."
     },
     "mysteryDungeon:BulbasaurIngrain": {
         "NAME": "Ingrain",
@@ -114,7 +116,7 @@
     },
     "mysteryDungeon:BulbasaurRazorLeaf": {
         "NAME": "Razor Leaf",
-        "DESCRIPTION": "Deal !D! damage. NL If you have a *debuff, Gain [E]"
+        "DESCRIPTION": "Lose !M! Hp. NL Deal !D! damage."
     },
     "mysteryDungeon:BulbasaurRest": {
         "NAME": "Rest",
