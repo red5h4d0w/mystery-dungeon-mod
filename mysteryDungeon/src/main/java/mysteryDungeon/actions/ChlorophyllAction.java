@@ -5,7 +5,6 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
 public class ChlorophyllAction extends AbstractGameAction {
@@ -18,9 +17,9 @@ public class ChlorophyllAction extends AbstractGameAction {
     public void update() {
         for (AbstractCard c : DrawCardAction.drawnCards) {
             if (c.type == AbstractCard.CardType.ATTACK) {
-              AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(target, source, new StrengthPower(target, 1), 1));
+                addToTop(new ApplyPowerAction(target, source, new StrengthPower(target, 1), 1));
             } 
-          } 
-          this.isDone = true;
-        }
+        } 
+        isDone = true;
+    }
 }

@@ -70,9 +70,9 @@ public class SquirtleSkullBashGo extends PokemonCard {
 
     public void triggerOnGlowCheck(AbstractPlayer p) {
         if(AbstractDungeon.player.hand.size()==1) {
-          this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+            glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
         } else {
-          this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+            glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         } 
       }
 
