@@ -71,7 +71,7 @@ public class FlameOrbPotion extends PokemonPotion {
     // This is your potency.
     @Override
     public int getPotency(final int potency) {
-        return 9;
+        return 20;
     }
 
     public void upgradePotion()
