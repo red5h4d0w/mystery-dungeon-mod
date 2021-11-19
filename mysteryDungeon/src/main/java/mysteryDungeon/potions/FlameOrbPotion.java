@@ -76,7 +76,7 @@ public class FlameOrbPotion extends PokemonPotion {
 
     public void upgradePotion()
     {
-        potency += 9;
+        potency += 20;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }
