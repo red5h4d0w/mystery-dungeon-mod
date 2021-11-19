@@ -2,7 +2,6 @@ package mysteryDungeon;
 
 import basemod.*;
 import basemod.abstracts.CustomSavable;
-import basemod.eventUtil.AddEventParams;
 import basemod.interfaces.*;
 import mysteryDungeon.cards.Bulbasaur.*;
 import mysteryDungeon.cards.Charmander.CharmanderScratch;
@@ -12,7 +11,6 @@ import mysteryDungeon.cards.Status.StatusFreeze;
 import mysteryDungeon.cards.fakeCards.ExplorersDeck;
 import mysteryDungeon.cards.tempCards.ColorlessAgility;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.events.IdentityCrisisEvent;
 import mysteryDungeon.relics.NatureRelatedRelic;
 import mysteryDungeon.saveConstructs.ToSave;
 import mysteryDungeon.util.IDCheckDontTouchPls;
@@ -409,13 +407,9 @@ public class MysteryDungeon implements
 
         // Create a new event builder
         // Since this is a builder these method calls (outside of create()) can be skipped/added as necessary
-        AddEventParams eventParams = new AddEventParams.Builder(IdentityCrisisEvent.ID, IdentityCrisisEvent.class) // for this specific event
-            .dungeonID(TheCity.ID) // The dungeon (act) this event will appear in
-            .playerClass(Pokemon.Enums.THE_POKEMON) // Character specific event
-            .create();
-
+        
         // Add the event
-        BaseMod.addEvent(eventParams);
+       
 
         // =============== /EVENTS/ =================
         logger.info("Done loading badge Image and mod options");
