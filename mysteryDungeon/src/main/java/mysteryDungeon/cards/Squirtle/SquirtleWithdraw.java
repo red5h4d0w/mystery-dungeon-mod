@@ -54,7 +54,7 @@ public class SquirtleWithdraw extends PokemonCard {
         }
         for(int i=0;i<p.hand.group.size()-1;i++)
         {
-            addToBot(new GainBlockAction(p, p, upgraded?2:3));
+            addToBot(new GainBlockAction(p, p, upgraded?3:2));
         }
         
     }
