@@ -13,6 +13,7 @@ public class DoubleEdgeAction extends AbstractGameAction {
     private DamageInfo info;
   
     public DoubleEdgeAction(AbstractCreature target, DamageInfo info, AbstractGameAction.AttackEffect effect) {
+        this.info = info;
         setValues(target, info);
         this.actionType = AbstractGameAction.ActionType.DAMAGE;
         this.attackEffect = effect;
@@ -23,9 +24,8 @@ public class DoubleEdgeAction extends AbstractGameAction {
             AbstractDungeon.effectList.add(new FlashAtkImgEffect(target.hb.cX, target.hb.cY, attackEffect)); 
         tickDuration();
         if (isDone) {
-            boolean willInflictDamage = !target.isDeadOrEscaped();
             target.damage(info);
-            if (this.target.lastDamageTaken > 0 && willInflictDamage) {
+            if (target.lastDamageTaken > 0 && !target.isDeadOrEscaped()) {
                 addToTop(new ApplyPowerAction(source, source, new StrengthPower(source, target.lastDamageTaken), target.lastDamageTaken));
             } 
             if (AbstractDungeon.getCurrRoom().monsters.areMonstersBasicallyDead())
