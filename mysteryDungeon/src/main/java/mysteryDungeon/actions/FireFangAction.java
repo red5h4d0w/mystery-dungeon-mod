@@ -21,14 +21,13 @@ public class FireFangAction extends AbstractGameAction {
     }
   
     public void update() {
-        if (this.duration == 0.5F)
-            AbstractDungeon.effectList.add(new FlashAtkImgEffect(this.target.hb.cX, this.target.hb.cY, this.attackEffect)); 
+        if (duration == 0.5F)
+            AbstractDungeon.effectList.add(new FlashAtkImgEffect(target.hb.cX, target.hb.cY, attackEffect)); 
         tickDuration();
-        if (this.isDone) {
-            boolean willInflictDamage = !target.isDeadOrEscaped();
-            this.target.damage(this.info);
-            if (this.target.lastDamageTaken > 0 && willInflictDamage) {
-                addToTop(new ApplyPowerAction(target, source, new BurnPower(target, this.target.lastDamageTaken), this.target.lastDamageTaken));
+        if (isDone) {
+            target.damage(info);
+            if (target.lastDamageTaken > 0 && !target.isDeadOrEscaped()) {
+                addToTop(new ApplyPowerAction(target, source, new BurnPower(target, target.lastDamageTaken), target.lastDamageTaken));
                 addToTop(new WaitAction(0.1F));
             } 
             if ((AbstractDungeon.getCurrRoom()).monsters.areMonstersBasicallyDead())

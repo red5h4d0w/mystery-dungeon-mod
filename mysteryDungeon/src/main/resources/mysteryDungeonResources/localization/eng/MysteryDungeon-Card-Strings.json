@@ -547,7 +547,7 @@
     },
     "mysteryDungeon:SquirtleBrine": {
         "NAME": "Brine",
-        "DESCRIPTION": "Deal !D! damage. If your draw pile has equal or more cards than discard pile, deal !D! damage."
+        "DESCRIPTION": "Deal !D! damage. If your draw pile has equal or more cards than your discard pile, deal !D! damage."
     },
     "mysteryDungeon:SquirtleDefend": {
         "NAME": "Defend",
