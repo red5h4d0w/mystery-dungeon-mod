@@ -13,7 +13,7 @@
     },
     "mysteryDungeon:ChooseAttack": {
         "NAME": "Attack",
-        "DESCRIPTION": "Add a random attack to your hand."
+        "DESCRIPTION": "Add a random Attack to your hand."
     },
     "mysteryDungeon:ChooseNegative": {
         "NAME": "Negative Stance",
@@ -25,7 +25,7 @@
     },
     "mysteryDungeon:ChooseSkill": {
         "NAME": "Skill",
-        "DESCRIPTION": "Add a random skill to your hand."
+        "DESCRIPTION": "Add a random Skill to your hand."
     },
     "mysteryDungeon:StatusFreeze": {
         "NAME": "Freeze",
@@ -124,8 +124,8 @@
     },
     "mysteryDungeon:BulbasaurSecretPower": {
         "NAME": "Secret Power",
-        "DESCRIPTION": "Innate. NL Add random power in your hand. NL Exhaust",
-        "UPGRADE_DESCRIPTION": "Innate. NL Add random upgraded power in your hand. NL Exhaust"
+        "DESCRIPTION": "Innate. NL Add random Power in your hand. NL Exhaust",
+        "UPGRADE_DESCRIPTION": "Innate. NL Add random upgraded Power in your hand. NL Exhaust"
     },
     "mysteryDungeon:BulbasaurSeedBomb": {
         "NAME": "Seed Bomb",
@@ -375,7 +375,7 @@
     },
     "mysteryDungeon:PikachuCharm": {
         "NAME": "Charm",
-        "DESCRIPTION": "Apply !M! vulnerable. NL Apply !M! Lock-on. NL Exhaust."
+        "DESCRIPTION": "Apply !M! Vulnerable. NL Apply !M! Lock-On. NL Exhaust."
     },
     "mysteryDungeon:PikachuDefend": {
         "NAME": "Defend",
@@ -413,7 +413,7 @@
     },
     "mysteryDungeon:PikachuHiddenPower": {
         "NAME": "Hidden Power",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Choose between a random attack or skill card to add to your hand. NL It costs 0 this turn. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Choose between a random Attack or Skill to add to your hand. NL It costs 0 this turn. NL Exhaust."
     },
     "mysteryDungeon:PikachuIronTail": {
         "NAME": "Iron Tail",
@@ -439,7 +439,7 @@
     },
     "mysteryDungeon:PikachuPlayRough": {
         "NAME": "Play Rough",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! weak."
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
     },
     "mysteryDungeon:PikachuQuickAttack": {
         "NAME": "Quick Attack",
@@ -460,7 +460,7 @@
     },
     "mysteryDungeon:PikachuSlam": {
         "NAME": "Slam",
-        "DESCRIPTION": "Deal !D! damage. NL If you are in Neutral stance, gain 2 energy."
+        "DESCRIPTION": "Deal !D! damage. NL If you are not in a stance, gain [E][E]."
     },
     "mysteryDungeon:PikachuSpark": {
         "NAME": "Spark",
