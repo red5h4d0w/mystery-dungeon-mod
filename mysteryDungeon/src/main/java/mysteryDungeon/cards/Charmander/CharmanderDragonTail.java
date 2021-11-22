@@ -69,12 +69,12 @@ public class CharmanderDragonTail extends PokemonCard {
 
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        this.cantUseMessage = cardStrings.EXTENDED_DESCRIPTION[0];
+        cantUseMessage = cardStrings.EXTENDED_DESCRIPTION[0];
         return false;
     }
 
     public void triggerOnExhaust() {
-        AbstractCard cardToAdd = this.makeStatEquivalentCopy();
+        AbstractCard cardToAdd = makeStatEquivalentCopy();
         addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, multiDamage, DamageType.NORMAL, AttackEffect.BLUNT_HEAVY));
         if(upgraded)
         {
