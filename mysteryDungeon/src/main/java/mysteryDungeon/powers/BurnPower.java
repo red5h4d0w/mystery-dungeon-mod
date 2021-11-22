@@ -53,14 +53,14 @@ public class BurnPower extends MysteryDungeonPower implements CloneablePowerInte
     @Override
     public float atDamageGive(float damage, DamageInfo.DamageType type) {
         if (type == DamageInfo.DamageType.NORMAL)
-          return damage - MathUtils.floor(this.amount/5.0f); 
+          return damage - MathUtils.floor(amount/5.0f); 
         return damage;
       }
 
     @Override
     public void atEndOfRound()
     {
-        int burnDown = MathUtils.floor(amount/3.0f);
+        int burnDown = MathUtils.ceil(amount/3.0f);
         amount-=burnDown;
         if(amount<=0)
         {
