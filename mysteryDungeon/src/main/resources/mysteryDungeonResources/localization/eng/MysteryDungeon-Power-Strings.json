@@ -129,8 +129,8 @@
     "mysteryDungeon:PetalDancePower": {
         "NAME": "Petal Dance",
         "DESCRIPTIONS": [
-            "At the end of the turn, deal 7 damage to ALL enemies. NL (this counts as an attack).",
-            "For #b%s turns, at the end of the turn, deal 7 damage to ALL enemies. NL (this counts as an attack)."
+            "At the end of the turn, deal %1$s damage to ALL enemies. NL (this counts as an attack).",
+            "For #b%1$s turns, at the end of the turn, deal %2$s damage to ALL enemies. NL (this counts as an attack)."
         ]
     },
     "mysteryDungeon:PoisonThornsPower": {
