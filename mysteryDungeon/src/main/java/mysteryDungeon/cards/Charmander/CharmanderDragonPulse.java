@@ -53,6 +53,10 @@ public class CharmanderDragonPulse extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if(upgraded)
+        { 
+            addToBot(new DrawCardAction(magicNumber));
+        }
         AbstractCard card = null;
         if(AbstractDungeon.player.exhaustPile.group.size()>0)
             card = AbstractDungeon.player.exhaustPile.getRandomCard(AbstractDungeon.cardRng);
@@ -62,10 +66,7 @@ public class CharmanderDragonPulse extends PokemonCard {
             AbstractDungeon.player.exhaustPile.removeCard(card);
             addToBot(new MakeTempCardInDrawPileAction(cardToAdd, 1, false, false, false));
         }
-        if(upgraded)
-        { 
-            addToBot(new DrawCardAction(magicNumber));
-        }
+        
     }
 
     @Override
