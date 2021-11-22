@@ -56,12 +56,12 @@ public class CharmanderCrunch extends PokemonCard {
     }
 
     public void triggerOnGlowCheck() {
-        this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-          if (!m.isDeadOrEscaped() && m.getIntentBaseDmg() >= 0) {
-            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
-            break;
-          } 
+            if (!m.isDeadOrEscaped() && m.getIntentBaseDmg() >= 0) {
+                glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+                break;
+            } 
         } 
       }
 
@@ -72,7 +72,7 @@ public class CharmanderCrunch extends PokemonCard {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         if(m.getIntentBaseDmg() >= 0)
         {
-            addToBot(new GainBlockAction(p, p, baseBlock));
+            addToBot(new GainBlockAction(p, p, block));
         }
     }
 
