@@ -67,7 +67,7 @@
     },
     "mysteryDungeon:EndurePower": {
         "NAME": "Endure",
-        "DESCRIPTIONS": [ "When you play a status card deal #b%s damage to all enemies."]
+        "DESCRIPTIONS": ["When you play a status card deal #b%s damage to all enemies."]
     },
     "mysteryDungeon:EvasivenessDropPower": {
         "NAME": "Evasiveness Drop",
