@@ -71,7 +71,7 @@
     "mysteryDungeon:BulbasaurChlorophyll": {
         "NAME": "Chlorophyll",
         "DESCRIPTION": "Draw !M! card. NL If you drew an Attack, gain 1 Strength.",
-        "UPGRADE_DESCRIPTION": "Draw !M! cards. NL For each Attack you drew this way, gain 1 Strength."
+        "UPGRADE_DESCRIPTION": "Draw !M! cards. NL For each Attack drawn this way, gain 1 Strength."
     },
     "mysteryDungeon:BulbasaurIngrain": {
         "NAME": "Ingrain",
