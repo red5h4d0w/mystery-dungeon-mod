@@ -48,6 +48,7 @@ public class CharmanderDragonClaw extends PokemonCard implements ClawCardInterfa
     public CharmanderDragonClaw() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
+        isMultiDamage = true;
     }
 
     // Actions the card should do.
@@ -61,7 +62,7 @@ public class CharmanderDragonClaw extends PokemonCard implements ClawCardInterfa
                 } 
             } 
         }
-        addToBot(new DamageAllEnemiesAction(p, damage, damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
+        addToBot(new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
     }
 
     public void clawUpgrade(int amount)

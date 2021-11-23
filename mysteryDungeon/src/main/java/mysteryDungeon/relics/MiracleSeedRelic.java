@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 
 public class MiracleSeedRelic extends PokemonRelic implements OnApplyPowerRelic { 
@@ -40,19 +41,19 @@ public class MiracleSeedRelic extends PokemonRelic implements OnApplyPowerRelic 
 
     @Override
     public void atTurnStart() {
-      this.counter = 0;
+        counter = 0;
     }
 
     public boolean onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source ) {
-      if(power.type == PowerType.DEBUFF){
-        this.counter++;
-        if (this.counter % 3 == 0) {
-          flash();
-          this.counter = 0;
-          addToBot(new DrawCardAction(AbstractDungeon.player, 1));
-        } 
-      }
-      return true;
+        if(power.type == PowerType.DEBUFF && !target.hasPower(ArtifactPower.POWER_ID)){
+            counter++;
+            if (counter % 3 == 0) {
+                flash();
+                counter = 0;
+                addToBot(new DrawCardAction(AbstractDungeon.player, 1));
+            } 
+        }
+        return true;
     }
     // Description
     @Override

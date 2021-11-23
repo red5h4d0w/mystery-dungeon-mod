@@ -39,7 +39,7 @@ public class CharmanderFireFang extends PokemonCard {
     private static final int COST = 1;
     private static final int DAMAGE = 10;
     private static final int UPGRADE_PLUS_DMG = 3;
-    private static final int BASE_MAGIC_NUMBER = 5;
+    private static final int BASE_MAGIC_NUMBER = 7;
     private static final int UPGRADE_MAGIC_NUMBER = 2;
 
 

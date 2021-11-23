@@ -37,13 +37,13 @@ public class BulbasaurSynthesis extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
 
     private static final int COST = 3;
-    private static final int UPGRADE_MAGIC_NUMBER = 3;
+    private static final int UPGRADE_MAGIC_NUMBER = 2;
 
     // /STAT DECLARATION/
 
     public BulbasaurSynthesis() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseMagicNumber = 12;
+        baseMagicNumber = 10;
         magicNumber = baseMagicNumber;
         exhaust = true;
     }

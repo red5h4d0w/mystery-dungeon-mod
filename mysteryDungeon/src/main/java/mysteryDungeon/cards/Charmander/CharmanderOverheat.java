@@ -2,10 +2,8 @@ package mysteryDungeon.cards.Charmander;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -26,7 +24,6 @@ public class CharmanderOverheat extends PokemonCard {
     public static final String IMG = makeCardPath("CharmanderAttack.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -38,7 +35,8 @@ public class CharmanderOverheat extends PokemonCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
-    private static final int COST = 1;
+    private static final int COST = 2;
+    private static final int UPGRADE_COST = 1;
     private static final int DAMAGE = 5;
 
 
@@ -56,10 +54,6 @@ public class CharmanderOverheat extends PokemonCard {
         if(m.hasPower(BurnPower.POWER_ID))
         {
             bonusDamage += m.getPower(BurnPower.POWER_ID).amount;
-            if(!upgraded)
-            {
-                addToBot(new ReducePowerAction(m, p, m.getPower(BurnPower.POWER_ID), MathUtils.floor(bonusDamage/2)));
-            } 
         }
         addToBot(new DamageAction(m, new DamageInfo(p, damage + bonusDamage, damageTypeForTurn), AttackEffect.FIRE));
     }
@@ -69,7 +63,7 @@ public class CharmanderOverheat extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = UPGRADE_DESCRIPTION;
+            upgradeBaseCost(UPGRADE_COST);
             initializeDescription();
         }
     }

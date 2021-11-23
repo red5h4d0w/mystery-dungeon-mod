@@ -71,12 +71,12 @@ public class FlameOrbPotion extends PokemonPotion {
     // This is your potency.
     @Override
     public int getPotency(final int potency) {
-        return 9;
+        return 20;
     }
 
     public void upgradePotion()
     {
-        potency += 9;
+        potency += 20;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }

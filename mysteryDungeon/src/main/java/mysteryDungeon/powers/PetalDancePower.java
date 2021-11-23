@@ -8,22 +8,26 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.OnReceivePowerPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.PetalEffect;
 
 
 //Gain 1 dex for the turn for each card played.
 
-public class PetalDancePower extends MysteryDungeonPower implements CloneablePowerInterface {
+public class PetalDancePower extends MysteryDungeonPower implements CloneablePowerInterface, OnReceivePowerPower {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("PetalDancePower");
@@ -68,14 +72,39 @@ public class PetalDancePower extends MysteryDungeonPower implements CloneablePow
     }
 
     @Override
+    public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
+        updateDescription();
+        super.onApplyPower(power, target, source);
+    }
+
+    @Override
+    public boolean onReceivePower(AbstractPower power, AbstractCreature target, AbstractCreature source)
+    {
+        updateDescription();
+        return true;
+    }
+
+    @Override
     public void updateDescription() {
+        int minDamageDealt = 0;
+        for(AbstractMonster mo: AbstractDungeon.getMonsters().monsters) {
+            DamageInfo damageInfo = new DamageInfo(owner, 7);
+            damageInfo.applyPowers(owner, mo);
+            if(minDamageDealt == 0) {
+                minDamageDealt = damageInfo.output;
+            }
+            if(damageInfo.output < minDamageDealt) {
+                minDamageDealt = damageInfo.output;
+            }
+        }
+        
         if(amount == 1)
         {
-            description = DESCRIPTIONS[0];
+            description = String.format(DESCRIPTIONS[0], minDamageDealt);
         } 
         else
         {
-            description = String.format(DESCRIPTIONS[1], amount);
+            description = String.format(DESCRIPTIONS[1], amount, minDamageDealt);
         }
     }
 }

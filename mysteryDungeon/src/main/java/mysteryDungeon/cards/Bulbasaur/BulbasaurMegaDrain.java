@@ -2,6 +2,7 @@ package mysteryDungeon.cards.Bulbasaur;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -37,7 +38,6 @@ public class BulbasaurMegaDrain extends PokemonCard {
 
     private static final int COST = 1;
     private static final int BASE_MAGIC_NUMBER = 1;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
@@ -61,6 +61,8 @@ public class BulbasaurMegaDrain extends PokemonCard {
             }
         }
         addToBot(new HealAction(p, p, amountToHeal));
+        if (upgraded)
+        addToBot(new DrawCardAction(p, 1));
     }
 
     // Upgraded stats.
@@ -68,7 +70,7 @@ public class BulbasaurMegaDrain extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }
