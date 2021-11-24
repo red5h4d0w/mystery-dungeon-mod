@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.NextTurnBlockPower;
 import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 
@@ -40,7 +41,7 @@ public class DocileExplorerRelic extends PokemonRelic implements OnReceivePowerR
 
     public boolean onReceivePower(AbstractPower power, AbstractCreature source)
     {
-        if(power.type == PowerType.DEBUFF)
+        if(power.type == PowerType.DEBUFF && !AbstractDungeon.player.hasPower(ArtifactPower.POWER_ID))
             addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new NextTurnBlockPower(AbstractDungeon.player, 2)));
         return true;
     } 
