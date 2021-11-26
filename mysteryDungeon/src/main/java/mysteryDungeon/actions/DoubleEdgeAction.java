@@ -2,18 +2,17 @@ package mysteryDungeon.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
 
-import mysteryDungeon.powers.BurnPower;
 
-public class FireFangAction extends AbstractGameAction {
+public class DoubleEdgeAction extends AbstractGameAction {
     private DamageInfo info;
   
-    public FireFangAction(AbstractCreature target, DamageInfo info, AbstractGameAction.AttackEffect effect) {
+    public DoubleEdgeAction(AbstractCreature target, DamageInfo info, AbstractGameAction.AttackEffect effect) {
         this.info = info;
         setValues(target, info);
         this.actionType = AbstractGameAction.ActionType.DAMAGE;
@@ -27,10 +26,9 @@ public class FireFangAction extends AbstractGameAction {
         if (isDone) {
             target.damage(info);
             if (target.lastDamageTaken > 0 && !target.isDeadOrEscaped()) {
-                addToTop(new ApplyPowerAction(target, source, new BurnPower(target, target.lastDamageTaken), target.lastDamageTaken));
-                addToTop(new WaitAction(0.1F));
+                addToTop(new ApplyPowerAction(source, source, new StrengthPower(source, target.lastDamageTaken), target.lastDamageTaken));
             } 
-            if ((AbstractDungeon.getCurrRoom()).monsters.areMonstersBasicallyDead())
+            if (AbstractDungeon.getCurrRoom().monsters.areMonstersBasicallyDead())
                 AbstractDungeon.actionManager.clearPostCombatActions(); 
         } 
     }

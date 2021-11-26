@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -41,9 +41,9 @@ public class BulbasaurRazorLeaf extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 8;
+    private static final int DAMAGE = 13;
     private static final int UPGRADE_DAMAGE = 3;
-    private static final int BASE_MAGIC_NUMBER = 1;
+    private static final int BASE_MAGIC_NUMBER = 3;
 
 
     // /STAT DECLARATION/
@@ -60,10 +60,8 @@ public class BulbasaurRazorLeaf extends PokemonCard {
     @SuppressWarnings("all") // Removes a warning for the type cast
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
-        if(((ArrayList<AbstractPower>)p.powers.clone()).removeIf(element -> element.type==PowerType.DEBUFF))
-        {
-            addToBot(new GainEnergyAction(magicNumber));
-        }
+        addToBot((AbstractGameAction)new LoseHPAction(p, p, magicNumber));
+    
     }
     @SuppressWarnings("all")
     public void triggerOnGlowCheck(AbstractPlayer p) {

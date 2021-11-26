@@ -2,8 +2,6 @@ package mysteryDungeon.cards.Squirtle;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -13,7 +11,6 @@ import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.actions.ScaldAction;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.BurnPower;
 
 public class SquirtleScald extends PokemonCard {
 
@@ -60,11 +57,6 @@ public class SquirtleScald extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(upgraded)
-        {
-            addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn)));
-            addToBot(new ApplyPowerAction(m, p, new BurnPower(p, magicNumber), magicNumber));
-        }
         addToBot(new ScaldAction(m, new DamageInfo(p, damage, damageTypeForTurn), secondMagicNumber, magicNumber)); 
     }
 

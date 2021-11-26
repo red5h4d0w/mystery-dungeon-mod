@@ -37,12 +37,16 @@ public class SquirtleWithdraw extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
     private static final int COST = 1;
+    private static final int BASE_MAGIC_NUMBER = 2;
+    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
 
     public SquirtleWithdraw() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        baseMagicNumber = BASE_MAGIC_NUMBER;
+        magicNumber = baseMagicNumber;
     }
 
     // Actions the card should do.
@@ -54,7 +58,7 @@ public class SquirtleWithdraw extends PokemonCard {
         }
         for(int i=0;i<p.hand.group.size()-1;i++)
         {
-            addToBot(new GainBlockAction(p, p, upgraded?2:3));
+            addToBot(new GainBlockAction(p, p, magicNumber));
         }
         
     }
@@ -64,7 +68,7 @@ public class SquirtleWithdraw extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = UPGRADE_DESCRIPTION;
+            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             initializeDescription();
         }
     }

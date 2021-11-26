@@ -8,7 +8,7 @@
     "mysteryDungeon:PositiveStance": {
         "NAME": "Positive Stance",
         "DESCRIPTION": [
-            "When you play an #yAttack, #yChannel #b1 #ylightning #yorb if you have any #yempty #yorb #yslot. NL When you #yexit this #ystance, gain #b7 Block."
+            "When you play an #yAttack, #yChannel #b1 #ylightning #yorb if you have any #yempty #yorb #yslot. NL When you #yexit this #ystance, gain #b7 #yBlock."
         ]
     }
 }

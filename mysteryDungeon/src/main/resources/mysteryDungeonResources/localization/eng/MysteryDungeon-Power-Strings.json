@@ -41,7 +41,7 @@
     },
     "mysteryDungeon:BurnPower": {
         "NAME": "Burn",
-        "DESCRIPTIONS": ["For every 5 stacks of Burn, this creature deals 1 less damage. NL Currently deals #b%s less damage."]
+        "DESCRIPTIONS": ["For every 5 stacks of Burn, this creature deals 1 less damage. NL Currently deals #b%s less damage. NL The amount is reduced by a third every turn."]
     },
     "mysteryDungeon:CharmanderExplorerPower": {
         "NAME": "Explorer Form",
@@ -67,13 +67,13 @@
     },
     "mysteryDungeon:EndurePower": {
         "NAME": "Endure",
-        "DESCRIPTIONS": [ "When you play a status card deal #b%s damage to all enemies."]
+        "DESCRIPTIONS": ["When you play a status card deal #b%s damage to all enemies."]
     },
     "mysteryDungeon:EvasivenessDropPower": {
         "NAME": "Evasiveness Drop",
         "DESCRIPTIONS": [
-            "Ennemy loses #b25%% of their Block at the end of the round.",
-            "Ennemy loses #b25%% of their Block at the end of the round for #b%s turns."
+            "Enemy loses #b25% of their Block at the end of the round.",
+            "Enemy loses #b25%% of their Block at the end of the round for #b%s turns."
         ]
     },
     "mysteryDungeon:FrustrationPower": {
@@ -129,8 +129,8 @@
     "mysteryDungeon:PetalDancePower": {
         "NAME": "Petal Dance",
         "DESCRIPTIONS": [
-            "At the end of the turn, deal 7 damage to ALL enemies. NL (this counts as an attack).",
-            "For #b%s turns, at the end of the turn, deal 7 damage to ALL enemies. NL (this counts as an attack)."
+            "At the end of the turn, deal %1$s damage to ALL enemies. NL (this counts as an attack).",
+            "For #b%1$s turns, at the end of the turn, deal %2$s damage to ALL enemies. NL (this counts as an attack)."
         ]
     },
     "mysteryDungeon:PoisonThornsPower": {

@@ -55,9 +55,6 @@ public class PikachuThunderwave extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        logger.info(baseBlock);
-        logger.info(block);
-        logger.info(magicNumber);
         addToBot(new ThunderwaveAction(p, block, magicNumber)); 
     }
 

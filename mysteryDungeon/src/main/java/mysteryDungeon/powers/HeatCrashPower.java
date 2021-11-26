@@ -44,7 +44,7 @@ public class HeatCrashPower extends MysteryDungeonPower implements CloneablePowe
         this.owner = owner;
         this.amount = amount;
 
-        type = PowerType.BUFF;
+        type = PowerType.DEBUFF;
 
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);

@@ -8,7 +8,6 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -54,12 +53,13 @@ public class CharmanderDragonTail extends PokemonCard {
         baseDamage = BASE_DAMAGE;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        isMultiDamage = true;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, damage, DamageType.NORMAL, AttackEffect.BLUNT_HEAVY));
+        addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, multiDamage, DamageType.NORMAL, AttackEffect.BLUNT_HEAVY));
         if(upgraded)
         {
             addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DrawCardNextTurnPower(AbstractDungeon.player, magicNumber), magicNumber));
@@ -69,13 +69,13 @@ public class CharmanderDragonTail extends PokemonCard {
 
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        this.cantUseMessage = cardStrings.EXTENDED_DESCRIPTION[0];
+        cantUseMessage = cardStrings.EXTENDED_DESCRIPTION[0];
         return false;
     }
 
     public void triggerOnExhaust() {
-        AbstractCard cardToAdd = this.makeStatEquivalentCopy();
-        addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(baseDamage), DamageType.NORMAL, AttackEffect.BLUNT_HEAVY));
+        AbstractCard cardToAdd = makeStatEquivalentCopy();
+        addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, multiDamage, DamageType.NORMAL, AttackEffect.BLUNT_HEAVY));
         if(upgraded)
         {
             addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DrawCardNextTurnPower(AbstractDungeon.player, magicNumber), magicNumber));
