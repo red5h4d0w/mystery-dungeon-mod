@@ -35,6 +35,11 @@
         "NAME": "Bullet Seed",
         "DESCRIPTION": "Deal !D! damage !M! times. NL Can be upgraded multiple times."
     },
+    "mysteryDungeon:BulbasaurChlorophyll": {
+        "NAME": "Chlorophyll",
+        "DESCRIPTION": "Draw !M! card. NL If you drew an Attack, gain 1 Strength.",
+        "UPGRADE_DESCRIPTION": "Draw !M! cards. NL For each Attack drawn this way, gain 1 Strength."
+    },
     "mysteryDungeon:BulbasaurDefend": {
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! Block."
@@ -45,8 +50,8 @@
     },
     "mysteryDungeon:BulbasaurDoubleEdge": {
         "NAME": "Double Edge",
-        "DESCRIPTION": "Deal !D! damage. NL Gain Strenght equal to the unblocked damage dealt. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times. NL Gain Strenght equal to the unblocked damage dealt. NL Exhaust."
+        "DESCRIPTION": "Deal !D! damage. NL Gain Strength equal to the unblocked damage dealt. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times. NL Gain Strength equal to the unblocked damage dealt. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurExplorerForm": {
         "NAME": "Explorer Form",
@@ -67,11 +72,6 @@
     "mysteryDungeon:BulbasaurGrowth": {
         "NAME": "Growth",
         "DESCRIPTION": "Gain !M! Strength."
-    },
-    "mysteryDungeon:BulbasaurChlorophyll": {
-        "NAME": "Chlorophyll",
-        "DESCRIPTION": "Draw !M! card. NL If you drew an Attack, gain 1 Strength.",
-        "UPGRADE_DESCRIPTION": "Draw !M! cards. NL For each Attack drawn this way, gain 1 Strength."
     },
     "mysteryDungeon:BulbasaurIngrain": {
         "NAME": "Ingrain",
@@ -112,7 +112,7 @@
     },
     "mysteryDungeon:BulbasaurProtect": {
         "NAME": "Protect",
-        "DESCRIPTION": "Gain !B! Block. NL You cannot gain Block during the next !M! turns."
+        "DESCRIPTION": "Gain !B! Block. NL You cannot gain Block from cards during the next !M! turns."
     },
     "mysteryDungeon:BulbasaurRazorLeaf": {
         "NAME": "Razor Leaf",
