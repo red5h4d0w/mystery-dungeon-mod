@@ -35,6 +35,11 @@
         "NAME": "Balle Graine",
         "DESCRIPTION": "Infligez !D! dégâts !M! fois. NL Peut être amélioré à l'infini."
     },
+    "mysteryDungeon:BulbasaurChlorophyll": {
+        "NAME": "Chlorophyll",
+        "DESCRIPTION": "Piochez !M! card. NL Pour chaque Attaque piochée par cet effet, gagnez 1 Force.",
+        "UPGRADE_DESCRIPTION": "Piochez !M! card. NL Pour chaque Attaque piochée par cet effet, gagnez 1 Force."
+    },
     "mysteryDungeon:BulbasaurDefend": {
         "NAME": "Défense",
         "DESCRIPTION": "Gagnez !B! d'Armure."
@@ -45,7 +50,12 @@
     },
     "mysteryDungeon:BulbasaurDoubleEdge": {
         "NAME": "Damoclès",
-        "DESCRIPTION": "Infligez !D! dégâts. NL La force ajoutée à Damoclès est multipliée par !M!. NL Perdez 1 de Dextérité."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez autant de Force que de dégâts non-bloqués infligés. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Gagnez autant de Force que de le double des dégâts non-bloqués infligés. NL Épuisement."
+    },
+    "mysteryDungeon:BulbasaurExplorerForm": {
+        "NAME": "Forme de l'Explorateur",
+        "DESCRIPTION": "Gagnez !M! Regénération. NL Au début de votre tour, perdez 1 Dextérité."
     },
     "mysteryDungeon:BulbasaurFrenzyPlant": {
         "NAME": "Végé-Attaque",
@@ -63,22 +73,18 @@
         "NAME": "Croissance",
         "DESCRIPTION": "Gagnez !M! Force."
     },
-    "mysteryDungeon:BulbasaurHelpingHet": {
-        "NAME": "Coup d'Main",
-        "DESCRIPTION": "Piochez !M! cartes. NL Gagnez [E]."
-    },
     "mysteryDungeon:BulbasaurIngrain": {
         "NAME": "Racines",
         "DESCRIPTION": "Appliquez 1 de mysterydungeon:Leech_Seed à un ennemi aléatoire !M! fois. NL Perdez 2 de Dextérité. NL Épuisement."
     },
     "mysteryDungeon:BulbasaurLeechSeed": {
         "NAME": "Vampigraine",
-        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Leech_Seed. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "Appliquez !M! de mysterydungeon:Leech_Seed."
+        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Leech_Seed. NL Épuisement."
     },
     "mysteryDungeon:BulbasaurMegaDrain": {
         "NAME": "Méga-Sangsue",
-        "DESCRIPTION": "Soignez !M! PV par différent débuff de l'ennemi."
+        "DESCRIPTION": "Soignez !M! PV par différent débuff de l'ennemi.",
+        "UPGRADE_DESCRIPTION": "Soignez !M! PV par différent débuff de l'ennemi. Piochez 1 carte."
     },
     "mysteryDungeon:BulbasaurPetalBlizzard": {
         "NAME": "Tempête Florale",
@@ -86,7 +92,7 @@
     },
     "mysteryDungeon:BulbasaurPetalDance": {
         "NAME": "Danse Fleurs",
-        "DESCRIPTION": "À la fin de vos !M! tours, Infligez 7 dégâts à TOUS les ennemis. NL (Les dégâts infligés par ce pouvoir comptent comme des attaques, donc sont affectés par la Force et tout autre effet d'attaque.)"
+        "DESCRIPTION": "À la fin de vos !M! prochains tours, NL Infligez 7 dégâts à TOUS les ennemis. NL (Les dégâts infligés par ce pouvoir comptent comme des attaques, donc sont affectés par la Force et tout autre effet d'attaque.)"
     },
     "mysteryDungeon:BulbasaurPoisonJab": {
         "NAME": "Direct Toxik",
@@ -110,7 +116,7 @@
     },
     "mysteryDungeon:BulbasaurRazorLeaf": {
         "NAME": "Tranch'Herbe",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Si vous avez un débuff, Gagnez [E]"
+        "DESCRIPTION": "Perdez !M! PV. NL Infligez !D! dégâts."
     },
     "mysteryDungeon:BulbasaurRest": {
         "NAME": "Repos",
@@ -135,7 +141,7 @@
     },
     "mysteryDungeon:BulbasaurSolarBeam": {
         "NAME": "Lance-Soleil",
-        "DESCRIPTION": "Infligez !D! dégâts à TOUS les ennemis. NL Au prochain tour, pigez !M! cartes de moins."
+        "DESCRIPTION": "Infligez !D! dégâts à TOUS les ennemis. NL Au prochain tour, piochez !M! cartes de moins."
     },
     "mysteryDungeon:BulbasaurStrengthSap": {
         "NAME": "Vole-Force",
@@ -143,8 +149,8 @@
     },
     "mysteryDungeon:BulbasaurStunSpore": {
         "NAME": "Para-Spore",
-        "DESCRIPTION": "Appliquez !M! de Lenteur. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "Inné. NL Appliquez !M! Lenteur. NL Épuisement."
+        "DESCRIPTION": "Appliquez !M! de *Lenteur. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Appliquez !M! *Lenteur. NL Épuisement."
     },
     "mysteryDungeon:BulbasaurSunnyDay": {
         "NAME": "Zénith",
@@ -153,7 +159,7 @@
     },
     "mysteryDungeon:BulbasaurSweetScent": {
         "NAME": "Doux Parfum",
-        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Evasiveness_Drop. NL Appliquez !M! de Vulnérabilité"
+        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Evasiveness_Drop. NL Appliquez !M! de Vulnérabilité."
     },
     "mysteryDungeon:BulbasaurSynthesis": {
         "NAME": "Synthèse",
@@ -182,50 +188,50 @@
     },
     "mysteryDungeon:BulbasaurYawn": {
         "NAME": "Baîllement",
-        "DESCRIPTION": "Éthérée. NL Appliquez !M! de mysterydungeon:Asleep à TOUS les ennemis après qu'ils aient agi (après le Poison, etc.). NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "Appliquez !M! de mysterydungeon:Asleep à TOUS les ennemis après qu'ils aient agi (après le Poison, etc.). NL Épuisement."
+        "DESCRIPTION": "Éthérée. NL Appliquez !M! de mysterydungeon:Asleep à TOUS les ennemis juste avant qu'ils agissent (après le Poison, etc.). NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Appliquez !M! de mysterydungeon:Asleep à TOUS les ennemis juste avant qu'ils agissent (après le Poison, etc.). NL Épuisement."
     },
     "mysteryDungeon:CharmanderBellyDrum": {
-        "NAME": "Belly Drum",
+        "NAME": "Cognobidon",
         "DESCRIPTION": "At the start of your turn, Draw !M! more card. NL The first card you play each turn costs 0 and exhausts."
     },
     "mysteryDungeon:CharmanderBlastBurn": {
-        "NAME": "Blast Burn",
+        "NAME": "Rafale Feu",
         "DESCRIPTION": "Deal !D! damage. NL Exhaust your draw pile."
     },
     "mysteryDungeon:CharmanderBlaze": {
-        "NAME": "Blaze",
+        "NAME": "Brasier",
         "DESCRIPTION": "Gain 2 Vulnerable. NL The first time you spend all energy each turn, gain [E].",
         "UPGRADE_DESCRIPTION": "Gain 2 Vulnerable. NL The first 2 times you spend all energy each turn, gain [E]."
     },
     "mysteryDungeon:CharmanderCounter": {
-        "NAME": "Counter",
+        "NAME": "Riposte",
         "DESCRIPTION": "Gain !B! Block. NL If you lose all Block and take damage from an attack, deal !M! damage to the attacker."
     },
     "mysteryDungeon:CharmanderCrunch": {
-        "NAME": "Crunch",
+        "NAME": "Mâchouille",
         "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, gain !B! Block."
     },
     "mysteryDungeon:CharmanderDefend": {
-        "NAME": "Defend",
+        "NAME": "Défense",
         "DESCRIPTION": "Gain !B! Block."
     },
     "mysteryDungeon:CharmanderDragonBreath": {
-        "NAME": "Dragon Breath",
+        "NAME": "Draco-Souffle",
         "DESCRIPTION": "Gain Block equal to the number of exhausted cards this combat.",
         "UPGRADE_DESCRIPTION": "Gain Block equal to 5 + the number of exhausted cards this combat."
     },
     "mysteryDungeon:CharmanderDragonClaw": {
-        "NAME": "Dragon Claw",
+        "NAME": "Drago-Griffe",
         "DESCRIPTION": "Deal !D! damage to ALL enemies. NL (Scales when using Metal Claw.)"
     },
     "mysteryDungeon:CharmanderDragonDance": {
-        "NAME": "Dragon Dance",
+        "NAME": "Danse Draco",
         "DESCRIPTION": "Exhaust !M! cards. NL Draw !mysteryDungeon:M2! cards. NL (You cannot play this card if you cannot exhaust !M! cards.)",
         "UPGRADE_DESCRIPTION": "Draw !mysteryDungeon:M2! cards NL Exhaust !M! cards."
     },
     "mysteryDungeon:CharmanderDragonPulse": {
-        "NAME": "Dragon Pulse",
+        "NAME": "Draco-Choc",
         "DESCRIPTION": "Unplayable. NL When drawn: NL Add a random card from your exhaust pile on the top of draw pile.",
         "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn: NL Add a random card from your exhaust pile on the top of draw pile. NL Next Turn, Draw 1 more card.",
         "EXTENDED_DESCRIPTION": [
@@ -233,15 +239,15 @@
         ]
     },
     "mysteryDungeon:CharmanderDragonRage": {
-        "NAME": "Dragon Rage",
+        "NAME": "Draco-Rage",
         "DESCRIPTION": "Ethereal. NL Enemy loses !M! HP. Exhaust."
     },
     "mysteryDungeon:CharmanderDragonRush": {
-        "NAME": "Dragon Rush",
+        "NAME": "Draco-Charge",
         "DESCRIPTION": "Deal !D! damage. NL Choose a card from your exhaust pile and add it to your discard pile. Exhaust a random card from your draw pile. Exhaust."
     },
     "mysteryDungeon:CharmanderDragonTail": {
-        "NAME": "Dragon Tail",
+        "NAME": "Draco-Queue",
         "DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Place a copy of this card on top of your draw pile.",
         "UPGRADE_DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Draw !M! card. NL Place a copy of this card on top of your draw pile.",
         "EXTENDED_DESCRIPTION": [
@@ -249,45 +255,45 @@
         ]
     },
     "mysteryDungeon:CharmanderDrought": {
-        "NAME": "Drought",
+        "NAME": "Sécheresse",
         "DESCRIPTION": "When you apply mysterydungeon:Burn, apply !M! more."
     },
     "mysteryDungeon:CharmanderEmber": {
-        "NAME": "Ember",
+        "NAME": "Flammèche",
         "DESCRIPTION": "Deal !D! damage. NL Apply mysterydungeon:Burn equal to the unblocked damage."
     },
     "mysteryDungeon:CharmanderExplorerForm": {
-        "NAME": "Explorer Form",
+        "NAME": "Forme de l'Explorateur",
         "DESCRIPTION": "Ethereal. NL At the start of your turn Exhume !M! random card",
         "UPGRADE_DESCRIPTION": "At the start of your turn Exhume !M! random card"
     },
     "mysteryDungeon:CharmanderFacade": {
-        "NAME": "Facade",
+        "NAME": "Façade",
         "DESCRIPTION": "Gain !M! Dexterity and !mysteryDungeon:M2! Artifact."
     },
     "mysteryDungeon:CharmanderFireBlast": {
-        "NAME": "Fire Blast",
+        "NAME": "Déflagration",
         "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn. NL Exhaust."
     },
     "mysteryDungeon:CharmanderFireFang": {
-        "NAME": "Fire Fang",
+        "NAME": "Crocs Feu",
         "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn."
     },
     "mysteryDungeon:CharmanderFireSpin": {
-        "NAME": "Fire Spin",
+        "NAME": "Dans Flammes",
         "DESCRIPTION": "Apply as much Poison as the enemy has mysterydungeon:Burn NL Remove all mysterydungeon:Burn. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Apply as much Poison as the enemy has mysterydungeon:Burn NL Remove all mysterydungeon:Burn."
     },
     "mysteryDungeon:CharmanderFlamethrower": {
-        "NAME": "Flamethrower",
+        "NAME": "Lance-Flammes",
         "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Apply !M! mysterydungeon:Burn to ALL enemies."
     },
     "mysteryDungeon:CharmanderFlareBlitz": {
-        "NAME": "Flare Blitz",
+        "NAME": "Boutefeu",
         "DESCRIPTION": "Deal damage equal to !M! times the number of exhausted cards this combat."
     },
     "mysteryDungeon:CharmanderFling": {
-        "NAME": "Fling",
+        "NAME": "Dégommage",
         "DESCRIPTION": "Exhaust up to 5 cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! mysterydungeon:Burn NL Exhaust up to 5 cards. NL Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust."
     },
@@ -296,65 +302,65 @@
         "DESCRIPTION": "At the end of each turn, retain a card. This card gains ethereal after being retained."
     },
     "mysteryDungeon:CharmanderHeatCrash": {
-        "NAME": "Heat Crash",
+        "NAME": "Tacle Feu",
         "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL When this enemy dies, ALL enemies receive damage equal to its mysterydungeon:Burn stacks. Exhaust.",
         "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL When this enemy dies, ALL enemies receive damage equal to its mysterydungeon:Burn stacks."
     },
     "mysteryDungeon:CharmanderHeatWave": {
-        "NAME": "Heat Wave",
+        "NAME": "Canicule",
         "DESCRIPTION": "Gain !B! Block NL Apply !M! mysterydungeon:Burn. NL Exhaust a random card in your hand.",
         "UPGRADE_DESCRIPTION": "Gain !B! Block NL Apply !M! mysterydungeon:Burn. NL Exhaust a card in your hand."
     },
     "mysteryDungeon:CharmanderInferno": {
-        "NAME": "Inferno",
+        "NAME": "Feu d'Enfer",
         "DESCRIPTION": "Apply !M! mysterydungeon:Burn to ALL enemies."
     },
     "mysteryDungeon:CharmanderMetalClaw": {
-        "NAME": "Metal Claw",
+        "NAME": "Griffe Acier",
         "DESCRIPTION": "Deal !D! damage. NL All your mysterydungeon:Claws deal !M! more damage this combat."
     },
     "mysteryDungeon:CharmanderOutrage": {
-        "NAME": "Outrage",
+        "NAME": "Colère",
         "DESCRIPTION": "Whenever you exhaust a card, apply !M! mysterydungeon:Burn to a random enemy."
     },
     "mysteryDungeon:CharmanderOverheat": {
-        "NAME": "Overheat",
+        "NAME": "Surchauffe",
         "DESCRIPTION": "Deal 5 damage. NL Deal additional damage equal to the number of mysterydungeon:Burn stacks on the enemy. NL Remove half the enemies' mysterydungeon:Burn stacks.",
         "UPGRADE_DESCRIPTION": "Deal 5 damage. NL Deal additional damage equal to the number of mysterydungeon:Burn stacks on the enemy."
     },
     "mysteryDungeon:CharmanderScaryFace": {
-        "NAME": "Scary Face",
+        "NAME": "Grimace",
         "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak."
     },
     "mysteryDungeon:CharmanderScratch": {
-        "NAME": "Scratch",
+        "NAME": "Griffe",
         "DESCRIPTION": "Deal !D! damage."
     },
     "mysteryDungeon:CharmanderShadowClaw": {
-        "NAME": "Shadow Claw",
+        "NAME": "Griffe Ombre",
         "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL This cards Block gets more Block instead of damage."
     },
     "mysteryDungeon:CharmanderSlash": {
-        "NAME": "Slash",
+        "NAME": "Tranche",
         "DESCRIPTION": "Deal !D! damage !M! times to all enemies."
     },
     "mysteryDungeon:CharmanderSleepTalk": {
-        "NAME": "Sleep Talk",
+        "NAME": "Blabla Dodo",
         "DESCRIPTION": "The first time you exhaust a card each turn, add a random card to your hand.",
         "UPGRADE_DESCRIPTION": "The first 2 times you exhaust a card each turn, add a random card to your hand."
     },
     "mysteryDungeon:CharmanderSmokescreen": {
-        "NAME": "Smokescreen",
+        "NAME": "Brouillard",
         "DESCRIPTION": "Gain !M! Intangible. NL Gain 2 Weak NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Gain !M! Intangible. NL Gain 1 Weak NL Exhaust."
     },
     "mysteryDungeon:CharmanderSolarPower": {
-        "NAME": "Solar Power",
+        "NAME": "Force Soleil",
         "DESCRIPTION": "At the start of each turn, gain 1 Strength if an enemy is affected by mysterydungeon:Burn.",
         "UPGRADE_DESCRIPTION": "Innate NL At the start of each turn, gain 1 Strength if an enemy is affected by mysterydungeon:Burn."
     },
     "mysteryDungeon:CharmanderWillOWisp": {
-        "NAME": "Will-O-Wisp",
+        "NAME": "Feu Follet",
         "DESCRIPTION": "Apply X Weak. NL Apply 3X mysterydungeon:Burn. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. NL Exhaust."
     },
@@ -714,20 +720,16 @@
         "NAME": "Zap Cannon",
         "DESCRIPTION": "Enter Positive Stance. NL Infligez !D! dégâts to all enemies."
     },
-    "mysteryDungeon:BulbasaurExplorerForm": {
-        "NAME": "Explorer Form",
-        "DESCRIPTION": "Gain !M! Regen. NL At the start of your turn lose 1 Dexterity."
-    },
     "mysteryDungeon:BulbasaurHelpingHand": {
         "NAME": "Helping Hand",
         "DESCRIPTION": "Draw !M! cards. NL Gain [E]."
     },
     "mysteryDungeon:PikachuExplorerForm": {
-        "NAME": "Explorer Form",
+        "NAME": "Forme de l'Explorateur",
         "DESCRIPTION": "Channel !M! Lightning orbs. NL Lose 1 focus per turn."
     },
     "mysteryDungeon:SquirtleExplorerForm": {
-        "NAME": "Explorer Form",
+        "NAME": "Forme de l'Explorateur",
         "DESCRIPTION": "Ethereal. NL At the start of your turn draw a number a card equivalent to your maximum hand size.",
         "UPGRADE_DESCRIPTION": "At the start of your turn draw a number a card equivalent to your maximum hand size."
     },
