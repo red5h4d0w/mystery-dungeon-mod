@@ -223,7 +223,7 @@
     },
     "mysteryDungeon:CharmanderDragonClaw": {
         "NAME": "Dragon Claw",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL (Scales when using Metal Claw.)"
+        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL (Scales when using *Metal *Claw.)"
     },
     "mysteryDungeon:CharmanderDragonDance": {
         "NAME": "Dragon Dance",
@@ -246,8 +246,8 @@
     },
     "mysteryDungeon:CharmanderDragonTail": {
         "NAME": "Dragon Tail",
-        "DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Place a copy of this card on top of your draw pile.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Place a copy of this card on top of your draw pile. NL Next Turn, Draw 1 more card.",
+        "DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Add a copy of this card on top of your draw pile.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Add a copy of this card on top of your draw pile. NL Next Turn, Draw 1 more card.",
         "EXTENDED_DESCRIPTION": ["I can't play this card."]
     },
     "mysteryDungeon:CharmanderDrought": {
@@ -260,8 +260,8 @@
     },
     "mysteryDungeon:CharmanderExplorerForm": {
         "NAME": "Explorer Form",
-        "DESCRIPTION": "Ethereal. NL At the start of your turn return !M! random card from your exhaust pile.",
-        "UPGRADE_DESCRIPTION": "At the start of your turn return !M! random card from your exhaust pile."
+        "DESCRIPTION": "Ethereal. NL At the start of your turn, return !M! random card from your exhaust pile.",
+        "UPGRADE_DESCRIPTION": "At the start of your turn, return !M! random card from your exhaust pile."
     },
     "mysteryDungeon:CharmanderFacade": {
         "NAME": "Facade",
@@ -277,8 +277,8 @@
     },
     "mysteryDungeon:CharmanderFireSpin": {
         "NAME": "Fire Spin",
-        "DESCRIPTION": "Ethereal. NL Apply as much Poison as the enemy has mysterydungeon:Burn NL Remove all mysterydungeon:Burn.",
-        "UPGRADE_DESCRIPTION": "Apply as much Poison as the enemy has mysterydungeon:Burn NL Remove all mysterydungeon:Burn."
+        "DESCRIPTION": "Ethereal. NL Apply Poison equal to its mysterydungeon:Burn. NL Remove all its mysterydungeon:Burn.",
+        "UPGRADE_DESCRIPTION": "Apply Poison equal to its mysterydungeon:Burn. NL Remove all its mysterydungeon:Burn."
     },
     "mysteryDungeon:CharmanderFlamethrower": {
         "NAME": "Flamethrower",
@@ -304,8 +304,8 @@
     },
     "mysteryDungeon:CharmanderHeatWave": {
         "NAME": "Heat Wave",
-        "DESCRIPTION": "Gain !B! Block NL Apply !M! mysterydungeon:Burn. NL Exhaust a random card in your hand.",
-        "UPGRADE_DESCRIPTION": "Gain !B! Block NL Apply !M! mysterydungeon:Burn. NL Exhaust a card in your hand."
+        "DESCRIPTION": "Gain !B! Block. NL Apply !M! mysterydungeon:Burn. NL Exhaust a random card in your hand.",
+        "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Apply !M! mysterydungeon:Burn. NL Exhaust a card in your hand."
     },
     "mysteryDungeon:CharmanderInferno": {
         "NAME": "Inferno",
@@ -333,7 +333,7 @@
     },
     "mysteryDungeon:CharmanderShadowClaw": {
         "NAME": "Shadow Claw",
-        "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL This cards Block gets more Block instead of damage."
+        "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL This cards Block gets more Block instead of damage when using *Metal *Claw."
     },
     "mysteryDungeon:CharmanderSlash": {
         "NAME": "Slash",
@@ -346,8 +346,8 @@
     },
     "mysteryDungeon:CharmanderSmokescreen": {
         "NAME": "Smokescreen",
-        "DESCRIPTION": "Gain !M! Intangible. NL Gain 3 Weak NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Gain !M! Intangible. NL Gain 2 Weak NL Exhaust."
+        "DESCRIPTION": "Gain !M! Intangible. NL Gain 3 Weak. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Gain !M! Intangible. NL Gain 2 Weak. NL Exhaust."
     },
     "mysteryDungeon:CharmanderSolarPower": {
         "NAME": "Solar Power",
@@ -371,7 +371,7 @@
     },
     "mysteryDungeon:PikachuCharge": {
         "NAME": "Charge",
-        "DESCRIPTION": "Gain !M! focus. NL Remove all orbs"
+        "DESCRIPTION": "Gain !M! Focus. NL Remove all orbs"
     },
     "mysteryDungeon:PikachuCharm": {
         "NAME": "Charm",
