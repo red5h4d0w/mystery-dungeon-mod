@@ -193,179 +193,178 @@
     },
     "mysteryDungeon:CharmanderBellyDrum": {
         "NAME": "Cognobidon",
-        "DESCRIPTION": "At the start of your turn, Draw !M! more card. NL The first card you play each turn costs 0 and exhausts."
+        "DESCRIPTION": "Au début du tour, Piochez !M! carte supplémentaire. NL La première carte que vous jouez chaque tour coûte 0 et s'épuise."
     },
     "mysteryDungeon:CharmanderBlastBurn": {
         "NAME": "Rafale Feu",
-        "DESCRIPTION": "Deal !D! damage. NL Exhaust your draw pile."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Épuisez votre main."
     },
     "mysteryDungeon:CharmanderBlaze": {
         "NAME": "Brasier",
-        "DESCRIPTION": "Gain 2 Vulnerable. NL The first time you spend all energy each turn, gain [E].",
-        "UPGRADE_DESCRIPTION": "Gain 2 Vulnerable. NL The first 2 times you spend all energy each turn, gain [E]."
+        "DESCRIPTION": "Gagnez 2 Vulnérable. NL Chaque tour, la première fois que vous êtes à court d'énergie, gagnez [E].",
+        "UPGRADE_DESCRIPTION": "Gagnez 2 Vulnérable. NL Chaque tour, les 2 premières fois que vous êtes à court d'énergie, gagnez [E]."
     },
     "mysteryDungeon:CharmanderCounter": {
         "NAME": "Riposte",
-        "DESCRIPTION": "Gain !B! Block. NL If you lose all Block and take damage from an attack, deal !M! damage to the attacker."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Si vous perdez toute votre armure et prenez des dégâts d'attaque, infligez !M! dégâts à l'attaquant."
     },
     "mysteryDungeon:CharmanderCrunch": {
         "NAME": "Mâchouille",
-        "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, gain !B! Block."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Si un ennemi compte attaquer, gagnez !B! d'Armure."
     },
     "mysteryDungeon:CharmanderDefend": {
         "NAME": "Défense",
-        "DESCRIPTION": "Gain !B! Block."
+        "DESCRIPTION": "Gagnez !B! d'Armure."
     },
     "mysteryDungeon:CharmanderDragonBreath": {
         "NAME": "Draco-Souffle",
-        "DESCRIPTION": "Gain Block equal to the number of exhausted cards this combat.",
-        "UPGRADE_DESCRIPTION": "Gain Block equal to 5 + the number of exhausted cards this combat."
+        "DESCRIPTION": "Gagnez autant d'Armure que le nombre de cartes épuisées ce combat.",
+        "UPGRADE_DESCRIPTION": "Gagnez autant d'Armure que 5 + le nombre de cartes épuisées ce combat."
     },
     "mysteryDungeon:CharmanderDragonClaw": {
         "NAME": "Drago-Griffe",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL (Scales when using Metal Claw.)"
+        "DESCRIPTION": "Infligez !D! dégats à TOUS les ennemis. NL (S'améliore quet *Griffe *Acier est jouée.)"
     },
     "mysteryDungeon:CharmanderDragonDance": {
         "NAME": "Danse Draco",
-        "DESCRIPTION": "Exhaust !M! cards. NL Draw !mysteryDungeon:M2! cards. NL (You cannot play this card if you cannot exhaust !M! cards.)",
-        "UPGRADE_DESCRIPTION": "Draw !mysteryDungeon:M2! cards NL Exhaust !M! cards."
+        "DESCRIPTION": "Épuisez !M! cartes. NL Piochez !mysteryDungeon:M2! cartes. NL (Vous ne pouvez pas jouer cette carte si vous ne pouvez pas épuiser !M! cartes.)",
+        "UPGRADE_DESCRIPTION": "Piochez !mysteryDungeon:M2! cartes NL Épuisez !M! cartes."
     },
     "mysteryDungeon:CharmanderDragonPulse": {
         "NAME": "Draco-Choc",
-        "DESCRIPTION": "Unplayable. NL When drawn: NL Add a random card from your exhaust pile on the top of draw pile.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn: NL Add a random card from your exhaust pile on the top of draw pile. NL Next Turn, Draw 1 more card.",
+        "DESCRIPTION": "Injouable. NL Lorsque piochée: NL Ajoutez une carte aléatoire parmi les cartes épuisées ce combat sur le dessus de votre pioche.",
+        "UPGRADE_DESCRIPTION": "Injouable. NL Lorsque piochée: NL Piochez !M! carte. NL Ajoutez une carte aléatoire parmi les cartes épuisées ce combat sur le dessus de votre pioche.",
         "EXTENDED_DESCRIPTION": [
-            "I can't play this card."
+            "Je ne peux pas joeur cette carte."
         ]
     },
     "mysteryDungeon:CharmanderDragonRage": {
         "NAME": "Draco-Rage",
-        "DESCRIPTION": "Ethereal. NL Enemy loses !M! HP. Exhaust."
+        "DESCRIPTION": "Éthérée. NL L'ennemi perd !M! PV. Épuisement."
     },
     "mysteryDungeon:CharmanderDragonRush": {
         "NAME": "Draco-Charge",
-        "DESCRIPTION": "Deal !D! damage. NL Choose a card from your exhaust pile and add it to your discard pile. Exhaust a random card from your draw pile. Exhaust."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Choose a card from your exhaust pile et add it to your discard pile. Épuisez a random card from your draw pile. Épuisement."
     },
     "mysteryDungeon:CharmanderDragonTail": {
         "NAME": "Draco-Queue",
-        "DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Place a copy of this card on top of your draw pile.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Draw !M! card. NL Place a copy of this card on top of your draw pile.",
+        "DESCRIPTION": "Injouable. NL Lorsqu'épuisée: NL Infligez !D! dégats à TOUS les ennemis. NL Ajoutez une copie de cette carte sur le dessus de votre pioche.",
+        "UPGRADE_DESCRIPTION": "Injouable. NL Lorsqu'épuisée: NL Infligez !D! dégats à TOUS les ennemis. NL Piochez !M! card. NL Ajoutez une copie de cette carte sur le dessus de votre pioche.",
         "EXTENDED_DESCRIPTION": [
-            "I can't play this card."
+            "Je ne peux pas jouer cette carte."
         ]
     },
     "mysteryDungeon:CharmanderDrought": {
         "NAME": "Sécheresse",
-        "DESCRIPTION": "When you apply mysterydungeon:Burn, apply !M! more."
+        "DESCRIPTION": "Lorsque vous appliquez de la mysterydungeon:Brûlure, appliquez-en !M! de plus."
     },
     "mysteryDungeon:CharmanderEmber": {
         "NAME": "Flammèche",
-        "DESCRIPTION": "Deal !D! damage. NL Apply mysterydungeon:Burn equal to the unblocked damage."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez autant de mysterydungeon:Brûlure que le nombre de dégâts non-bloqués."
     },
     "mysteryDungeon:CharmanderExplorerForm": {
         "NAME": "Forme de l'Explorateur",
-        "DESCRIPTION": "Ethereal. NL At the start of your turn Exhume !M! random card",
-        "UPGRADE_DESCRIPTION": "At the start of your turn Exhume !M! random card"
+        "DESCRIPTION": "Éthérée. NL Au début du tour, choisissez une carte épuisée et ajoutez-la à votre main.",
+        "UPGRADE_DESCRIPTION": "Au début du tour, choisissez une carte épuisée et ajoutez-la à votre main."
     },
     "mysteryDungeon:CharmanderFacade": {
         "NAME": "Façade",
-        "DESCRIPTION": "Gain !M! Dexterity and !mysteryDungeon:M2! Artifact."
+        "DESCRIPTION": "Gagnez !M! Dextérité et !mysteryDungeon:M2! Artéfact."
     },
     "mysteryDungeon:CharmanderFireBlast": {
         "NAME": "Déflagration",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn. NL Exhaust."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez !M! mysterydungeon:Brûlure. NL Épuisement."
     },
     "mysteryDungeon:CharmanderFireFang": {
         "NAME": "Crocs Feu",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez !M! mysterydungeon:Brûlure."
     },
     "mysteryDungeon:CharmanderFireSpin": {
         "NAME": "Dans Flammes",
-        "DESCRIPTION": "Apply as much Poison as the enemy has mysterydungeon:Burn NL Remove all mysterydungeon:Burn. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply as much Poison as the enemy has mysterydungeon:Burn NL Remove all mysterydungeon:Burn."
+        "DESCRIPTION": "Éthérée. Appliquez autant de Poison que de mysterydungeon:Brûlure sur l'ennemi. NL Retirez TOUTES ses mysterydungeon:Brûlure.",
+        "UPGRADE_DESCRIPTION": "Appliquez autant de Poison que de mysterydungeon:Brûlure sur l'ennemi. NL Retirez TOUTES ses mysterydungeon:Brûlure."
     },
     "mysteryDungeon:CharmanderFlamethrower": {
         "NAME": "Lance-Flammes",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Apply !M! mysterydungeon:Burn to ALL enemies."
+        "DESCRIPTION": "Infligez !D! dégats à TOUS les ennemis. NL Appliquez !M! mysterydungeon:Brûlure à TOUS les ennemis."
     },
     "mysteryDungeon:CharmanderFlareBlitz": {
         "NAME": "Boutefeu",
-        "DESCRIPTION": "Deal damage equal to !M! times the number of exhausted cards this combat."
+        "DESCRIPTION": "Infligez damage equal to !M! fois the number of exhausted cartes this combat."
     },
     "mysteryDungeon:CharmanderFling": {
         "NAME": "Dégommage",
-        "DESCRIPTION": "Exhaust up to 5 cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! mysterydungeon:Burn NL Exhaust up to 5 cards. NL Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust."
+        "DESCRIPTION": "Épuisez jusqu'à 5 cartes. Infligez !D! dégats et appliquez !M! mysterydungeon:Brûlure par carte épuisée par cet effet. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Infligez !D! dégats et appliquez !M! mysterydungeon:Brûlure NL Épuisez jusqu'à 5 cartes. NL Infligez !D! dégats et appliquez !M! mysterydungeon:Brûlure par carte épuisée par cet effet. NL Épuisement."
     },
     "mysteryDungeon:CharmanderFrustration": {
         "NAME": "Frustration",
-        "DESCRIPTION": "At the end of each turn, retain a card. This card gains ethereal after being retained."
+        "DESCRIPTION": "À la fin de votre tour, Retenez 1 carte. Cette carte gagne Éthérée après avoir été retenue."
     },
     "mysteryDungeon:CharmanderHeatCrash": {
         "NAME": "Tacle Feu",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL When this enemy dies, ALL enemies receive damage equal to its mysterydungeon:Burn stacks. Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL When this enemy dies, ALL enemies receive damage equal to its mysterydungeon:Burn stacks."
+        "DESCRIPTION": "Appliquez !M! mysterydungeon:Brûlure. NL Quand cet ennemi meurt, infligez autant de dégâts que sa quantité demysterydungeon:Brûlure à TOUS les ennemis. Épuisement.",
+        "UPGRADE_DESCRIPTION": "Appliquez !M! mysterydungeon:Brûlure. NL Quand cet ennemi meurt, infligez autant de dégâts que sa quantité de mysterydungeon:Brûlure à TOUS les ennemis."
     },
     "mysteryDungeon:CharmanderHeatWave": {
         "NAME": "Canicule",
-        "DESCRIPTION": "Gain !B! Block NL Apply !M! mysterydungeon:Burn. NL Exhaust a random card in your hand.",
-        "UPGRADE_DESCRIPTION": "Gain !B! Block NL Apply !M! mysterydungeon:Burn. NL Exhaust a card in your hand."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Appliquez!M! mysterydungeon:Brûlure. NL Épuisez une carte aléatoire de votre main.",
+        "UPGRADE_DESCRIPTION": "Gagnez !B! d'Armure. NL Appliquez !M! mysterydungeon:Brûlure. NL Épuisez une carte aléatoire de votre main."
     },
     "mysteryDungeon:CharmanderInferno": {
         "NAME": "Feu d'Enfer",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn to ALL enemies."
+        "DESCRIPTION": "Appliquez !M! mysterydungeon:Brûlure à TOUS les ennemis."
     },
     "mysteryDungeon:CharmanderMetalClaw": {
         "NAME": "Griffe Acier",
-        "DESCRIPTION": "Deal !D! damage. NL All your mysterydungeon:Claws deal !M! more damage this combat."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Toutes vos mysterydungeon:Griffes infligent !M! dégâts de plus ce combat."
     },
     "mysteryDungeon:CharmanderOutrage": {
         "NAME": "Colère",
-        "DESCRIPTION": "Whenever you exhaust a card, apply !M! mysterydungeon:Burn to a random enemy."
+        "DESCRIPTION": "Lorsque vous épuisez une carte, appliquez !M! mysterydungeon:Brûlure à un ennemi aléatoire."
     },
     "mysteryDungeon:CharmanderOverheat": {
         "NAME": "Surchauffe",
-        "DESCRIPTION": "Deal 5 damage. NL Deal additional damage equal to the number of mysterydungeon:Burn stacks on the enemy. NL Remove half the enemies' mysterydungeon:Burn stacks.",
-        "UPGRADE_DESCRIPTION": "Deal 5 damage. NL Deal additional damage equal to the number of mysterydungeon:Burn stacks on the enemy."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Inflige des dégâts supplémentaires égaux à la quantité de mysterydungeon:Brûlure de l'ennemi."
     },
     "mysteryDungeon:CharmanderScaryFace": {
         "NAME": "Grimace",
-        "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Appliquez !M! Faiblesse."
     },
     "mysteryDungeon:CharmanderScratch": {
         "NAME": "Griffe",
-        "DESCRIPTION": "Deal !D! damage."
+        "DESCRIPTION": "Infligez !D! dégâts."
     },
     "mysteryDungeon:CharmanderShadowClaw": {
         "NAME": "Griffe Ombre",
-        "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL This cards Block gets more Block instead of damage."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL La quantité d'Armure de cette carte est améliorée plutôt que ses dégâts lorsque *Griffe *Acier est jouée."
     },
     "mysteryDungeon:CharmanderSlash": {
         "NAME": "Tranche",
-        "DESCRIPTION": "Deal !D! damage !M! times to all enemies."
+        "DESCRIPTION": "Infligez !D! dégats à TOUS les ennemis !M! fois."
     },
     "mysteryDungeon:CharmanderSleepTalk": {
         "NAME": "Blabla Dodo",
-        "DESCRIPTION": "The first time you exhaust a card each turn, add a random card to your hand.",
-        "UPGRADE_DESCRIPTION": "The first 2 times you exhaust a card each turn, add a random card to your hand."
+        "DESCRIPTION": "La première fois que vous épuisez une carte chaque tour, ajoutez une carte aléatoire à votre main.",
+        "UPGRADE_DESCRIPTION": "Les 2 premières fois que vous épuisez une carte chaque tour, ajoutez une carte aléatoire à votre main."
     },
     "mysteryDungeon:CharmanderSmokescreen": {
         "NAME": "Brouillard",
-        "DESCRIPTION": "Gain !M! Intangible. NL Gain 2 Weak NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Gain !M! Intangible. NL Gain 1 Weak NL Exhaust."
+        "DESCRIPTION": "Gagnez !M! Intangible. NL Gagnez 2 Faiblesse. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Gagnez !M! Intangible. NL Gagnez 1 Faiblesse. NL Épuisement."
     },
     "mysteryDungeon:CharmanderSolarPower": {
         "NAME": "Force Soleil",
-        "DESCRIPTION": "At the start of each turn, gain 1 Strength if an enemy is affected by mysterydungeon:Burn.",
-        "UPGRADE_DESCRIPTION": "Innate NL At the start of each turn, gain 1 Strength if an enemy is affected by mysterydungeon:Burn."
+        "DESCRIPTION": "Au début de votre tour, gagnez 1 Force si un ennemi est affecté par mysterydungeon:Brûlure.",
+        "UPGRADE_DESCRIPTION": "Innate NL Au début de votre tour, gagnez 1 Force si un ennemi est affecté par mysterydungeon:Brûlure."
     },
     "mysteryDungeon:CharmanderWillOWisp": {
         "NAME": "Feu Follet",
-        "DESCRIPTION": "Apply X Weak. NL Apply 3X mysterydungeon:Burn. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. NL Exhaust."
+        "DESCRIPTION": "Appliquez X Faiblesse. NL Appliquez 3X mysterydungeon:Brûlure. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Appliquez X+1 Faiblesse. NL Appliquez 3(X+1) mysterydungeon:Brûlure. NL Épuisement."
     },
     "mysteryDungeon:PikachuDefend": {
-        "NAME": "Defend",
+        "NAME": "Défense",
         "DESCRIPTION": "Gagnez !B! d'Armure."
     },
     "mysteryDungeon:PikachuTackle": {
@@ -379,7 +378,7 @@
     },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Aqua Ring",
-        "DESCRIPTION": "Unplayable. NL When this card is discarded, Gagnez !B! d'Armure. NL When this card is scried, Infligez !D! dégâts à un ennemi aléatoire."
+        "DESCRIPTION": "Injouable. NL When this card is discarded, Gagnez !B! d'Armure. NL When this card is scried, Infligez !D! dégâts à un ennemi aléatoire."
     },
     "mysteryDungeon:SquirtleAquaTail": {
         "NAME": "Aqua Tail",
@@ -400,7 +399,7 @@
         "DESCRIPTION": "Infligez !D! dégâts. If your Piochez pile has equal or cartes de plus than discard pile, Infligez !D! dégâts."
     },
     "mysteryDungeon:SquirtleDefend": {
-        "NAME": "Defend",
+        "NAME": "Défense",
         "DESCRIPTION": "Gagnez !B! d'Armure."
     },
     "mysteryDungeon:SquirtleDive": {
@@ -477,7 +476,7 @@
     },
     "mysteryDungeon:SquirtleMist": {
         "NAME": "Mist",
-        "DESCRIPTION": "If the enemy is not attacking, Gagnez !M! Artifact. NL Gagnez !B! d'Armure."
+        "DESCRIPTION": "If the enemy is not attacking, Gagnez !M! Artéfact. NL Gagnez !B! d'Armure."
     },
     "mysteryDungeon:SquirtleSkullBashReady": {
         "NAME": "Skull Bash: Ready",
@@ -509,7 +508,7 @@
     },
     "mysteryDungeon:SquirtleScald": {
         "NAME": "Scald",
-        "DESCRIPTION": "Discard up to !mysteryDungeon:M2! cartes. Infligez !D! dégâts et Appliquez !M! de mysterydungeon:Burn per card discarded that way."
+        "DESCRIPTION": "Discard jusqu'à !mysteryDungeon:M2! cartes. Infligez !D! dégâts et Appliquez !M! de mysterydungeon:Brûlure per card discarded that way."
     },
     "mysteryDungeon:SquirtleShellSmash": {
         "NAME": "Shell Smash",
@@ -572,7 +571,7 @@
     },
     "mysteryDungeon:PikachuCharge": {
         "NAME": "Charge",
-        "DESCRIPTION": "Gagnez !M! focus. NL Remove all orbs"
+        "DESCRIPTION": "Gagnez !M! focus. NL Retirez TOUTES ses orbs"
     },
     "mysteryDungeon:PikachuCharm": {
         "NAME": "Charm",
@@ -722,7 +721,7 @@
     },
     "mysteryDungeon:BulbasaurHelpingHand": {
         "NAME": "Helping Hand",
-        "DESCRIPTION": "Draw !M! cards. NL Gain [E]."
+        "DESCRIPTION": "Piochez !M! cartes. NL Gagnez [E]."
     },
     "mysteryDungeon:PikachuExplorerForm": {
         "NAME": "Forme de l'Explorateur",
@@ -730,12 +729,12 @@
     },
     "mysteryDungeon:SquirtleExplorerForm": {
         "NAME": "Forme de l'Explorateur",
-        "DESCRIPTION": "Ethereal. NL At the start of your turn draw a number a card equivalent to your maximum hand size.",
-        "UPGRADE_DESCRIPTION": "At the start of your turn draw a number a card equivalent to your maximum hand size."
+        "DESCRIPTION": "Éthérée. NL At the start of your turn draw a number a card equivalent to your maximum het size.",
+        "UPGRADE_DESCRIPTION": "At the start of your turn draw a number a card equivalent to your maximum het size."
     },
     "mysteryDungeon:SquirtleWithdraw": {
         "NAME": "Withdraw",
-        "DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! card. NL Gain 2 Block per card in hand.",
-        "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your deck. NL Draw !M! cards. NL Gain 2 Block per card in hand. "
+        "DESCRIPTION": "Shuffle your discard pile into your deck. NL Piochez !M! card. NL Gagnez 2 d'Armure per card in hand.",
+        "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your deck. NL Piochez !M! cartes. NL Gagnez 2 d'Armure per card in hand. "
     }
 }
