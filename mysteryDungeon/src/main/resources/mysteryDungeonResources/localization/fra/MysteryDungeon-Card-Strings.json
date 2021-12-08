@@ -363,18 +363,177 @@
         "DESCRIPTION": "Appliquez X Faiblesse. NL Appliquez 3X mysterydungeon:Brûlure. NL Épuisement.",
         "UPGRADE_DESCRIPTION": "Appliquez X+1 Faiblesse. NL Appliquez 3(X+1) mysterydungeon:Brûlure. NL Épuisement."
     },
+    "mysteryDungeon:PikachuAgility": {
+        "NAME": "Hâte",
+        "DESCRIPTION": "Whenever you enter or exit a stance, Piochez !M! card.",
+        "UPGRADE_DESCRIPTION": "Inné NL Whenever you enter or exit a stance, Piochez !M! card."
+    },
+    "mysteryDungeon:PikachuChargeBeam": {
+        "NAME": "Rayon Chargé",
+        "DESCRIPTION": "Channel !M! lightning  orb.",
+        "UPGRADE_DESCRIPTION": "Channel !M! lightning  orbs."
+    },
+    "mysteryDungeon:PikachuCharge": {
+        "NAME": "Chargeur",
+        "DESCRIPTION": "Gagnez !M! focus. NL Retirez TOUTES ses orbs"
+    },
+    "mysteryDungeon:PikachuCharm": {
+        "NAME": "Charme",
+        "DESCRIPTION": "Appliquez !M! de vulnerable. NL Appliquez !M! de Lock-on. NL Épuisement."
+    },
     "mysteryDungeon:PikachuDefend": {
         "NAME": "Défense",
         "DESCRIPTION": "Gagnez !B! d'Armure."
     },
-    "mysteryDungeon:PikachuTackle": {
-        "NAME": "Tackle",
+    "mysteryDungeon:PikachuDischarge": {
+        "NAME": "Coup d'Jus",
+        "DESCRIPTION": "Infligez !D! dégâts. NL Evoke !M! orb.",
+        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Evoke !M! orbs."
+    },
+    "mysteryDungeon:PikachuEerieImpulse": {
+        "NAME": "Ondes Étranges",
+        "DESCRIPTION": "Gagnez !M! Strenght. NL Gagnez !M! de Dextérité. NL Perdez 2 Focus."
+    },
+    "mysteryDungeon:PikachuElectricTerrain": {
+        "NAME": "Champ Électrifié",
+        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Positive Stance. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retenue. NL Enter Positive Stance. NL Épuisement."
+    },
+    "mysteryDungeon:PikachuElectroBall": {
+        "NAME": "Boule Élek",
+        "DESCRIPTION": "Evoke your next orb !M! fois. NL  Increase this amount by 1 this combat."
+    },
+    "mysteryDungeon:PikachuElectroweb": {
+        "NAME": "Toile Élek",
+        "DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cartes from your discard pile into your het. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cartes from your discard pile into your het."
+    },
+    "mysteryDungeon:PikachuEncore": {
+        "NAME": "Encore",
+        "DESCRIPTION": "mysterydungeon:Inert. NL This turn your next Attack or Skill will be played twice.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL This turn your next !M! Attacks or Skills will be played twice."
+    },
+    "mysteryDungeon:PikachuExplorerForm": {
+        "NAME": "Forme de l'Explorateur",
+        "DESCRIPTION": "Channel !M! Lightning orbs. NL Lose 1 focus per turn."
+    },
+    "mysteryDungeon:PikachuHiddenPower": {
+        "NAME": "Puissance Cachée",
+        "DESCRIPTION": "mysterydungeon:Inert. NL Add a retom attack or skill card to your het. NL It costs 0 this turn. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Choose between a retom attack or skill card to add to your het. NL It costs 0 this turn. NL Épuisement."
+    },
+    "mysteryDungeon:PikachuIronTail": {
+        "NAME": "Queue de Fer",
+        "DESCRIPTION": "Infligez !D! dégâts. NL Increase this card dégâts by !M! this combat."
+    },
+    "mysteryDungeon:PikachuLightScreen": {
+        "NAME": "Mur Lumière",
+        "DESCRIPTION": "At the end of your turn, Gagnez !M! d'Armure per empty orb slot."
+    },
+    "mysteryDungeon:PikachuNastyPlot": {
+        "NAME": "Machination",
+        "DESCRIPTION": "Gagnez !M! orb slot",
+        "UPGRADE_DESCRIPTION": "Gagnez !M! orb slots"
+    },
+    "mysteryDungeon:PikachuNuzzle": {
+        "NAME": "Frotte-Frimousse",
+        "DESCRIPTION": "Infligez !D! dégâts per orb.",
+        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Infligez !D! dégâts per orb."
+    },
+    "mysteryDungeon:PikachuPlayNice": {
+        "NAME": "Camaraderie",
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Piochez !M! card."
+    },
+    "mysteryDungeon:PikachuPlayRough": {
+        "NAME": "Câlinerie",
+        "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez !M! de Faiblesse."
+    },
+    "mysteryDungeon:PikachuQuickAttack": {
+        "NAME": "Vive-attaque",
         "DESCRIPTION": "Infligez !D! dégâts."
     },
+    "mysteryDungeon:PikachuReflect": {
+        "NAME": "Protection",
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Increase this card d'Armure by !M! this combat."
+    },
+    "mysteryDungeon:PikachuSafeguard": {
+        "NAME": "Rune Protect",
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Retenue your het this turn.",
+        "UPGRADE_DESCRIPTION": "Gagnez !B! d'Armure. NL Retenue your het for !M! turns."
+    },
+    "mysteryDungeon:PikachuShockWave": {
+        "NAME": "Onde de Choc",
+        "DESCRIPTION": "Infligez !D! dégâts to all enemies. NL Appliquez !M! de Lock-On to all enemies."
+    },
+    "mysteryDungeon:PikachuSlam": {
+        "NAME": "Souplesse",
+        "DESCRIPTION": "Infligez !D! dégâts. NL If you are in Negative stance, Gagnez 1 energy."
+    },
+    "mysteryDungeon:PikachuSpark": {
+        "NAME": "Étincelle",
+        "DESCRIPTION": "Infligez !D! dégâts. NL Return to 0 on the Charge-Meter."
+    },
+    "mysteryDungeon:PikachuSpeedSwap": {
+        "NAME": "Permuvitesse",
+        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Negative Stance. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retenue. NL Enter Negative Stance. NL Épuisement."
+    },
+    "mysteryDungeon:PikachuStatic": {
+        "NAME": "Statik",
+        "DESCRIPTION": "Evoke !M! orb when you are attacked.",
+        "UPGRADE_DESCRIPTION": "Evoke !M! orbs when you are attacked."
+    },
+    "mysteryDungeon:PikachuSweetKiss": {
+        "NAME": "Doux Baiser",
+        "DESCRIPTION": "This turn, Appliquez !M! de Faiblesse to all enemies every time you enter or exit a stance."
+    },
+    "mysteryDungeon:PikachuSwift": {
+        "NAME": "Météores",
+        "DESCRIPTION": "Infligez !D! dégâts to all enemies. NL Piochez !M! cartes."
+    },
+    "mysteryDungeon:PikachuTackle": {
+        "NAME": "Charge",
+        "DESCRIPTION": "Infligez !D! dégâts."
+    },
+    "mysteryDungeon:PikachuThunder": {
+        "NAME": "Fatal-Foudre",
+        "DESCRIPTION": "Whenever you evoke an Orb, Infligez !M! dégâts à TOUS les ennemis."
+    },
+    "mysteryDungeon:PikachuThunderbolt": {
+        "NAME": "Tonnerre",
+        "DESCRIPTION": "Infligez !D! dégâts X fois. NL If the last card played was a skill Gagnez 1 energy."
+    },
+    "mysteryDungeon:PikachuThunderPunch": {
+        "NAME": "Poing Éclair",
+        "DESCRIPTION": "Infligez !D! dégâts. NL Channel !M! Lightning orb."
+    },
     "mysteryDungeon:PikachuThundershock": {
-        "NAME": "Thundershock",
+        "NAME": "Éclair",
         "DESCRIPTION": "Return to 0 on the Charge-Meter.",
         "UPGRADE_DESCRIPTION": "Retenue. NL Return to 0 on the Charge-Meter."
+    },
+    "mysteryDungeon:PikachuThunderwave": {
+        "NAME": "Cage Éclair",
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Gagnez !M! more d'Armure if in neutral stance.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Gagnez !B! d'Armure. NL Gagnez !M! more d'Armure if in neutral stance."
+    },
+    "mysteryDungeon:PikachuVoltSwitch": {
+        "NAME": "Change Éclair",
+        "DESCRIPTION": "mysterydungeon:Inert. NL Retenue. NL Enter a Retom Stance. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retenue. NL Choose which stance to enter. NL Épuisement."
+    },
+    "mysteryDungeon:PikachuVoltTackle": {
+        "NAME": "Électacle",
+        "DESCRIPTION": "Inné. NL Infligez !D! dégâts. NL Channel !M! Lightning orb. NL Épuisement."
+    },
+    "mysteryDungeon:PikachuWildCharge": {
+        "NAME": "Éclair Fou",
+        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs. NL Perdez 1 orb slot. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Evoke all orbs. NL Perdez 1 orb slot. NL Épuisement."
+    },
+    "mysteryDungeon:PikachuZapCannon": {
+        "NAME": "Élecanon",
+        "DESCRIPTION": "Enter Positive Stance. NL Infligez !D! dégâts to all enemies."
     },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Aqua Ring",
@@ -563,169 +722,6 @@
         "NAME": "Zen Headbutt",
         "DESCRIPTION": "Infligez !D! dégâts create a *Flinch et add it to your het.",
         "UPGRADE_DESCRIPTION": "Infligez !D! dégâts create an upgraded *Flinch et add it to your het."
-    },
-    "mysteryDungeon:PikachuChargeBeam": {
-        "NAME": "Charge Beam",
-        "DESCRIPTION": "Channel !M! lightning  orb.",
-        "UPGRADE_DESCRIPTION": "Channel !M! lightning  orbs."
-    },
-    "mysteryDungeon:PikachuCharge": {
-        "NAME": "Charge",
-        "DESCRIPTION": "Gagnez !M! focus. NL Retirez TOUTES ses orbs"
-    },
-    "mysteryDungeon:PikachuCharm": {
-        "NAME": "Charm",
-        "DESCRIPTION": "Appliquez !M! de vulnerable. NL Appliquez !M! de Lock-on. NL Épuisement."
-    },
-    "mysteryDungeon:PikachuDischarge": {
-        "NAME": "Discharge",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Evoke !M! orb.",
-        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Evoke !M! orbs."
-    },
-    "mysteryDungeon:PikachuEerieImpulse": {
-        "NAME": "Eerie Impulse",
-        "DESCRIPTION": "Gagnez !M! Strenght. NL Gagnez !M! de Dextérité. NL Perdez 2 Focus."
-    },
-    "mysteryDungeon:PikachuElectricTerrain": {
-        "NAME": "Electric Terrain",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Positive Stance. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retenue. NL Enter Positive Stance. NL Épuisement."
-    },
-    "mysteryDungeon:PikachuElectroBall": {
-        "NAME": "Electro Ball",
-        "DESCRIPTION": "Evoke your next orb !M! fois. NL  Increase this amount by 1 this combat."
-    },
-    "mysteryDungeon:PikachuIronTail": {
-        "NAME": "Iron Tail",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Increase this card dégâts by !M! this combat."
-    },
-    "mysteryDungeon:PikachuNastyPlot": {
-        "NAME": "Nasty Plot",
-        "DESCRIPTION": "Gagnez !M! orb slot",
-        "UPGRADE_DESCRIPTION": "Gagnez !M! orb slots"
-    },
-    "mysteryDungeon:PikachuNuzzle": {
-        "NAME": "Nuzzle",
-        "DESCRIPTION": "Infligez !D! dégâts per orb.",
-        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Infligez !D! dégâts per orb."
-    },
-    "mysteryDungeon:PikachuPlayNice": {
-        "NAME": "Play Nice",
-        "DESCRIPTION": "Gagnez !B! d'Armure. NL Piochez !M! card."
-    },
-    "mysteryDungeon:PikachuQuickAttack": {
-        "NAME": "Quick Attack",
-        "DESCRIPTION": "Infligez !D! dégâts."
-    },
-    "mysteryDungeon:PikachuShockWave": {
-        "NAME": "Shock Wave",
-        "DESCRIPTION": "Infligez !D! dégâts to all enemies. NL Appliquez !M! de Lock-On to all enemies."
-    },
-    "mysteryDungeon:PikachuSlam": {
-        "NAME": "Slam",
-        "DESCRIPTION": "Infligez !D! dégâts. NL If you are in Negative stance, Gagnez 1 energy."
-    },
-    "mysteryDungeon:PikachuSpeedSwap": {
-        "NAME": "Speed Swap",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Negative Stance. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retenue. NL Enter Negative Stance. NL Épuisement."
-    },
-    "mysteryDungeon:PikachuStatic": {
-        "NAME": "Static",
-        "DESCRIPTION": "Evoke !M! orb when you are attacked.",
-        "UPGRADE_DESCRIPTION": "Evoke !M! orbs when you are attacked."
-    },
-    "mysteryDungeon:PikachuSweetKiss": {
-        "NAME": "Sweet Kiss",
-        "DESCRIPTION": "This turn, Appliquez !M! de Faiblesse to all enemies every time you enter or exit a stance."
-    },
-    "mysteryDungeon:PikachuThunderPunch": {
-        "NAME": "Thunder Punch",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Channel !M! Lightning orb."
-    },
-    "mysteryDungeon:PikachuThunderwave": {
-        "NAME": "Thunderwave",
-        "DESCRIPTION": "Gagnez !B! d'Armure. NL Gagnez !M! more d'Armure if in neutral stance.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Gagnez !B! d'Armure. NL Gagnez !M! more d'Armure if in neutral stance."
-    },
-    "mysteryDungeon:PikachuVoltSwitch": {
-        "NAME": "Volt Switch",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Retenue. NL Enter a Retom Stance. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retenue. NL Choose which stance to enter. NL Épuisement."
-    },
-    "mysteryDungeon:PikachuVoltTackle": {
-        "NAME": "Volt Tackle",
-        "DESCRIPTION": "Inné. NL Infligez !D! dégâts. NL Channel !M! Lightning orb. NL Épuisement."
-    },
-    "mysteryDungeon:PikachuWildCharge": {
-        "NAME": "Wild Charge",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs. NL Perdez 1 orb slot. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "Evoke all orbs. NL Perdez 1 orb slot. NL Épuisement."
-    },
-    "mysteryDungeon:PikachuLightScreen": {
-        "NAME": "Light Screen",
-        "DESCRIPTION": "At the end of your turn, Gagnez !M! d'Armure per empty orb slot."
-    },
-    "mysteryDungeon:PikachuAgility": {
-        "NAME": "Agility",
-        "DESCRIPTION": "Whenever you enter or exit a stance, Piochez !M! card.",
-        "UPGRADE_DESCRIPTION": "Inné NL Whenever you enter or exit a stance, Piochez !M! card."
-    },
-    "mysteryDungeon:PikachuElectroweb": {
-        "NAME": "Elecroweb",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cartes from your discard pile into your het. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cartes from your discard pile into your het."
-    },
-    "mysteryDungeon:PikachuEncore": {
-        "NAME": "Encore",
-        "DESCRIPTION": "mysterydungeon:Inert. NL This turn your next Attack or Skill will be played twice.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL This turn your next !M! Attacks or Skills will be played twice."
-    },
-    "mysteryDungeon:PikachuHiddenPower": {
-        "NAME": "Hidden Power",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Add a retom attack or skill card to your het. NL It costs 0 this turn. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Choose between a retom attack or skill card to add to your het. NL It costs 0 this turn. NL Épuisement."
-    },
-    "mysteryDungeon:PikachuPlayRough": {
-        "NAME": "Play Rough",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez !M! de Faiblesse."
-    },
-    "mysteryDungeon:PikachuReflect": {
-        "NAME": "Reflect",
-        "DESCRIPTION": "Gagnez !B! d'Armure. NL Increase this card d'Armure by !M! this combat."
-    },
-    "mysteryDungeon:PikachuSafeguard": {
-        "NAME": "Safeguard",
-        "DESCRIPTION": "Gagnez !B! d'Armure. NL Retenue your het this turn.",
-        "UPGRADE_DESCRIPTION": "Gagnez !B! d'Armure. NL Retenue your het for !M! turns."
-    },
-    "mysteryDungeon:PikachuSpark": {
-        "NAME": "Spark",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Return to 0 on the Charge-Meter."
-    },
-    "mysteryDungeon:PikachuSwift": {
-        "NAME": "Swift",
-        "DESCRIPTION": "Infligez !D! dégâts to all enemies. NL Piochez !M! cartes."
-    },
-    "mysteryDungeon:PikachuThunder": {
-        "NAME": "Thunder",
-        "DESCRIPTION": "Whenever you evoke an Orb, Infligez !M! dégâts à TOUS les ennemis."
-    },
-    "mysteryDungeon:PikachuThunderbolt": {
-        "NAME": "Thunderbolt",
-        "DESCRIPTION": "Infligez !D! dégâts X fois. NL If the last card played was a skill Gagnez 1 energy."
-    },
-    "mysteryDungeon:PikachuZapCannon": {
-        "NAME": "Zap Cannon",
-        "DESCRIPTION": "Enter Positive Stance. NL Infligez !D! dégâts to all enemies."
-    },
-    "mysteryDungeon:BulbasaurHelpingHand": {
-        "NAME": "Helping Hand",
-        "DESCRIPTION": "Piochez !M! cartes. NL Gagnez [E]."
-    },
-    "mysteryDungeon:PikachuExplorerForm": {
-        "NAME": "Forme de l'Explorateur",
-        "DESCRIPTION": "Channel !M! Lightning orbs. NL Lose 1 focus per turn."
     },
     "mysteryDungeon:SquirtleExplorerForm": {
         "NAME": "Forme de l'Explorateur",
