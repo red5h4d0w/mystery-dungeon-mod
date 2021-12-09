@@ -535,17 +535,16 @@
     },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Anneau Hydro",
-        "DESCRIPTION": "Injouable. NL When this carte is discarded, Gagnez !B! d'Armure. NL When this carte is scried, Infligez !D! dégâts à un ennemi aléatoire."
+        "DESCRIPTION": "Injouable. NL Lorsque cette carte est *défaussée, Gagnez !B! d'Armure. NL Lorsque cette carte est scrutée, Infligez !D! dégâts à un ennemi aléatoire."
     },
     "mysteryDungeon:SquirtleAquaTail": {
         "NAME": "Hydro-Queue",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Scry !M! cartes. NL Piochez !mysteryDungeon:M2! cartes. NL Discard !mysteryDungeon:M3! cartes.",
-        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Scry !M! cartes. NL Piochez !mysteryDungeon:M2! cartes. NL Discard !mysteryDungeon:M3! carte."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Scrutez !M! cartes. NL Piochez !mysteryDungeon:M2! cartes. NL Défaussez !mysteryDungeon:M3! cartes.",
+        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Scrutez !M! cartes. NL Piochez !mysteryDungeon:M2! cartes. NL Défaussez !mysteryDungeon:M3! carte."
     },
     "mysteryDungeon:SquirtleBide": {
         "NAME": "Patience",
-        "DESCRIPTION": "Gagnez !B! d'Armure. NL Until next tour, when you get attacked, Gagnez !M! Temporary Force.",
-        "UPGRADE_DESCRIPTION": "Gagnez !B! d'Armure. NL Until next tour, when you get attacked, Gagnez !M! Temporary Force."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Jusqu'au prochain tour, quand vous êtes attaqué, Gagnez !M! de Force Temporaire."
     },
     "mysteryDungeon:SquirtleBodyPress": {
         "NAME": "Body Press",
@@ -578,8 +577,8 @@
     },
     "mysteryDungeon:SquirtleFakeOut": {
         "NAME": "Bluff",
-        "DESCRIPTION": "Inné. NL Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL Scry !M! carte. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "Inné. NL Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL Scry !M! cartes. NL Épuisement."
+        "DESCRIPTION": "Inné. NL Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL Scrutez !M! carte. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL Scrutez !M! cartes. NL Épuisement."
     },
     "mysteryDungeon:SquirtleFlashCannon": {
         "NAME": "Luminocanon",
@@ -591,8 +590,8 @@
     },
     "mysteryDungeon:SquirtleFlinch": {
         "NAME": "Peur",
-        "DESCRIPTION": "Infligez !D! dégâts 2 fois. NL Scry !M! carte. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts 2 fois. NL Scry !M! cartes. NL Épuisement."
+        "DESCRIPTION": "Infligez !D! dégâts 2 fois. NL Scrutez !M! carte. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts 2 fois. NL Scrutez !M! cartes. NL Épuisement."
     },
     "mysteryDungeon:SquirtleFlipTurn": {
         "NAME": "Eau Revoir",
@@ -601,7 +600,7 @@
     },
     "mysteryDungeon:SquirtleGyroBall": {
         "NAME": "Gyroballe",
-        "DESCRIPTION": "Add 1 *Freeze in het. NL Infligez !D! dégâts par status in your het. NL Discard all statuses in your het. NL Piochez !M! cartes."
+        "DESCRIPTION": "Add 1 *Freeze in het. NL Infligez !D! dégâts par status in your het. NL Défaussez all statuses in your het. NL Piochez !M! cartes."
     },
     "mysteryDungeon:SquirtleHail": {
         "NAME": "Grêle",
@@ -626,7 +625,7 @@
     },
     "mysteryDungeon:SquirtleLifeDew": {
         "NAME": "Fontaine de Vie",
-        "DESCRIPTION": "Scry !M! cartes. NL Piochez !mysteryDungeon:M2! cartes."
+        "DESCRIPTION": "Scrutez !M! cartes. NL Piochez !mysteryDungeon:M2! cartes."
     },
     "mysteryDungeon:SquirtleLiquidation": {
         "NAME": "Aqua-Brêche",
@@ -646,8 +645,8 @@
     },
     "mysteryDungeon:SquirtleRainDance": {
         "NAME": "Danse Pluie",
-        "DESCRIPTION": "When a carte is created this combat, Gagnez !M! Temporary Force.",
-        "UPGRADE_DESCRIPTION": "Inné. NL When a carte is created this combat, Gagnez !M! Temporary Force."
+        "DESCRIPTION": "When a carte is created this combat, Gagnez !M! de Force Temporaire.",
+        "UPGRADE_DESCRIPTION": "Inné. NL When a carte is created this combat, Gagnez !M! de Force Temporaire."
     },
     "mysteryDungeon:SquirtleRainDish": {
         "NAME": "Cuvette",
@@ -660,7 +659,7 @@
     },
     "mysteryDungeon:SquirtleScald": {
         "NAME": "Ébullition",
-        "DESCRIPTION": "Discard jusqu'à !mysteryDungeon:M2! cartes. Infligez !D! dégâts et Appliquez !M! de mysterydungeon:Brûlure par carte discarded that way."
+        "DESCRIPTION": "Défaussez jusqu'à !mysteryDungeon:M2! cartes. Infligez !D! dégâts et Appliquez !M! de mysterydungeon:Brûlure par carte discarded that way."
     },
     "mysteryDungeon:SquirtleShellSmash": {
         "NAME": "Exuviation",
@@ -696,11 +695,11 @@
     },
     "mysteryDungeon:SquirtleTorrent": {
         "NAME": "Torrent",
-        "DESCRIPTION": "Each time you shuffle your deck, Gagnez !M! Temporary Force."
+        "DESCRIPTION": "Each time you shuffle your deck, Gagnez !M! de Force Temporaire."
     },
     "mysteryDungeon:SquirtleWaterGun": {
         "NAME": "Pistolet à O",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Scry !M! cartes."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Scrutez !M! cartes."
     },
     "mysteryDungeon:SquirtleWaterPulse": {
         "NAME": "Water Pulse",
@@ -708,13 +707,13 @@
     },
     "mysteryDungeon:SquirtleWaterSpout": {
         "NAME": "Water Spout",
-        "DESCRIPTION": "Scry !M! carte. NL Appliquez ! demysteryDungeon:M2! Faiblesse. NL Infligez !D! dégâts.",
-        "UPGRADE_DESCRIPTION": "Scry !M! cartes. NL Appliquez ! demysteryDungeon:M2! Faiblesse. NL Infligez !D! dégâts."
+        "DESCRIPTION": "Scrutez !M! carte. NL Appliquez ! demysteryDungeon:M2! Faiblesse. NL Infligez !D! dégâts.",
+        "UPGRADE_DESCRIPTION": "Scrutez !M! cartes. NL Appliquez ! demysteryDungeon:M2! Faiblesse. NL Infligez !D! dégâts."
     },
     "mysteryDungeon:SquirtleWhirlpool": {
         "NAME": "Giclédo",
-        "DESCRIPTION": "At the start of your X next tours, Piochez 2 cartes de plus et Discard 2 cartes. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "At the start of your X+1 next tours, Piochez 2 cartes de plus et Discard 2 cartes. NL Épuisement."
+        "DESCRIPTION": "At the start of your X next tours, Piochez 2 cartes de plus et Défaussez 2 cartes. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "At the start of your X+1 next tours, Piochez 2 cartes de plus et Défaussez 2 cartes. NL Épuisement."
     },
     "mysteryDungeon:SquirtleWithdraw": {
         "NAME": "Repli",
