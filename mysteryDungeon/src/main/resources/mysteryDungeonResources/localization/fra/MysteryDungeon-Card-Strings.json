@@ -534,16 +534,16 @@
         "DESCRIPTION": "Entrez en Positivité. NL Infligez !D! dégâts à TOUS les ennemis."
     },
     "mysteryDungeon:SquirtleAquaRing": {
-        "NAME": "Aqua Ring",
+        "NAME": "Anneau Hydro",
         "DESCRIPTION": "Injouable. NL When this carte is discarded, Gagnez !B! d'Armure. NL When this carte is scried, Infligez !D! dégâts à un ennemi aléatoire."
     },
     "mysteryDungeon:SquirtleAquaTail": {
-        "NAME": "Aqua Tail",
+        "NAME": "Hydro-Queue",
         "DESCRIPTION": "Infligez !D! dégâts. NL Scry !M! cartes. NL Piochez !mysteryDungeon:M2! cartes. NL Discard !mysteryDungeon:M3! cartes.",
         "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Scry !M! cartes. NL Piochez !mysteryDungeon:M2! cartes. NL Discard !mysteryDungeon:M3! carte."
     },
     "mysteryDungeon:SquirtleBide": {
-        "NAME": "Bide",
+        "NAME": "Patience",
         "DESCRIPTION": "Gagnez !B! d'Armure. NL Until next tour, when you get attacked, Gagnez !M! Temporary Force.",
         "UPGRADE_DESCRIPTION": "Gagnez !B! d'Armure. NL Until next tour, when you get attacked, Gagnez !M! Temporary Force."
     },
@@ -552,7 +552,7 @@
         "DESCRIPTION": "Infligez !D! dégâts to an enemy if it is fatal*, Gagnez !B! d'Armure et !M! de Dextérité. Épuisement."
     },
     "mysteryDungeon:SquirtleBrine": {
-        "NAME": "Brine",
+        "NAME": "Saumure",
         "DESCRIPTION": "Infligez !D! dégâts. If your Piochez pile has equal or cartes de plus than discard pile, Infligez !D! dégâts."
     },
     "mysteryDungeon:SquirtleDefend": {
@@ -560,24 +560,29 @@
         "DESCRIPTION": "Gagnez !B! d'Armure."
     },
     "mysteryDungeon:SquirtleDive": {
-        "NAME": "Dive",
+        "NAME": "Plongée",
         "DESCRIPTION": "Épuisement all your statuses. NL Add !M! *Hazes in retom locations in your Piochez pile et discard pile. NL Épuisement."
     },
     "mysteryDungeon:SquirtleDoubleTeam": {
-        "NAME": "Double Team",
+        "NAME": "Reflet",
         "DESCRIPTION": "Gagnez !B! d'Armure. When Piochezn add a copy of this carte in your het. NL Épuisement."
     },
     "mysteryDungeon:SquirtleEndure": {
-        "NAME": "Endure",
+        "NAME": "Ténacité",
         "DESCRIPTION": "When you play a status, Infligez !M! dégâts à un ennemi aléatoire."
     },
+    "mysteryDungeon:SquirtleExplorerForm": {
+        "NAME": "Forme de l'Explorateur",
+        "DESCRIPTION": "Éthérée. NL At the start of your tour draw a number a carte equivalent to your maximum het size.",
+        "UPGRADE_DESCRIPTION": "At the start of your tour draw a number a carte equivalent to your maximum het size."
+    },
     "mysteryDungeon:SquirtleFakeOut": {
-        "NAME": "Fake Out",
+        "NAME": "Bluff",
         "DESCRIPTION": "Inné. NL Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL Scry !M! carte. NL Épuisement.",
         "UPGRADE_DESCRIPTION": "Inné. NL Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL Scry !M! cartes. NL Épuisement."
     },
     "mysteryDungeon:SquirtleFlashCannon": {
-        "NAME": "Flash Cannon",
+        "NAME": "Luminocanon",
         "DESCRIPTION": "Infligez dégâts equal to the number of cartes in your discard pile.",
         "UPGRADE_DESCRIPTION": "Infligez dégâts equal to the number of cartes in your discard pile + 3.",
         "EXTENDED_DESCRIPTION": [
@@ -585,96 +590,96 @@
         ]
     },
     "mysteryDungeon:SquirtleFlinch": {
-        "NAME": "Flinch",
+        "NAME": "Peur",
         "DESCRIPTION": "Infligez !D! dégâts 2 fois. NL Scry !M! carte. NL Épuisement.",
         "UPGRADE_DESCRIPTION": "Infligez !D! dégâts 2 fois. NL Scry !M! cartes. NL Épuisement."
     },
     "mysteryDungeon:SquirtleFlipTurn": {
-        "NAME": "Flip Turn",
+        "NAME": "Eau Revoir",
         "DESCRIPTION": "Gagnez !B! d'Armure. NL Piochez !M! carte. NL discard !M! carte.",
         "UPGRADE_DESCRIPTION": "Gagnez !B! d'Armure. NL Piochez !M! cartes. NL discard !M! cartes."
     },
     "mysteryDungeon:SquirtleGyroBall": {
-        "NAME": "Gyro Ball",
+        "NAME": "Gyroballe",
         "DESCRIPTION": "Add 1 *Freeze in het. NL Infligez !D! dégâts par status in your het. NL Discard all statuses in your het. NL Piochez !M! cartes."
     },
     "mysteryDungeon:SquirtleHail": {
-        "NAME": "Hail",
+        "NAME": "Grêle",
         "DESCRIPTION": "Whenever you Piochez cartes, Infligez !M! dégâts à TOUS les ennemis."
     },
     "mysteryDungeon:SquirtleHaze": {
-        "NAME": "Haze",
+        "NAME": "Buée Noire",
         "DESCRIPTION": "Gagnez [E] [E] NL Add !M! *Freeze to your discard pile.",
         "UPGRADE_DESCRIPTION": "Gagnez [E] [E] [E] NL Add !M! *Freeze to your discard pile."
     },
     "mysteryDungeon:SquirtleHydroCannon": {
-        "NAME": "Hydro Cannon",
+        "NAME": "Hydroblast",
         "DESCRIPTION": "Infligez !D! dégâts à TOUS les ennemis. NL Insert 3 *Gel in your Piochez pile."
     },
     "mysteryDungeon:SquirtleIceBeam": {
-        "NAME": "Ice Beam",
+        "NAME": "Laser Glace",
         "DESCRIPTION": "Infligez !D! dégâts. NL Add 1 *Freeze to your het."
     },
     "mysteryDungeon:SquirtleIronDefense": {
-        "NAME": "Iron Defense",
+        "NAME": "Mur de Fer",
         "DESCRIPTION": "Gagnez !M! de Dextérité."
     },
     "mysteryDungeon:SquirtleLifeDew": {
-        "NAME": "Life Dew",
+        "NAME": "Fontaine de Vie",
         "DESCRIPTION": "Scry !M! cartes. NL Piochez !mysteryDungeon:M2! cartes."
     },
     "mysteryDungeon:SquirtleLiquidation": {
-        "NAME": "Liquidation",
+        "NAME": "Aqua-Brêche",
         "DESCRIPTION": "Infligez !D! dégâts à TOUS les ennemis."
     },
     "mysteryDungeon:SquirtleMirrorCoat": {
-        "NAME": "Mirror Coat",
-        "DESCRIPTION": "Gagnez !M! Blur et !B! d'Armure."
+        "NAME": "Voile Miroir",
+        "DESCRIPTION": "Gagnez !M! Flou et !B! d'Armure."
     },
     "mysteryDungeon:SquirtleMist": {
-        "NAME": "Mist",
+        "NAME": "Brume",
         "DESCRIPTION": "If the enemy is not attacking, Gagnez !M! Artéfact. NL Gagnez !B! d'Armure."
     },
-    "mysteryDungeon:SquirtleSkullBashReady": {
-        "NAME": "Skull Bash: Ready",
-        "DESCRIPTION": "Add a *Skull *Bash: *Set in your Piochez pile.",
-        "UPGRADE_DESCRIPTION": "Inné. NL Add a *Skull *Bash: *Set in your Piochez pile."
-    },
-    "mysteryDungeon:SquirtleSkullBashSet": {
-        "NAME": "Skull Bash: Set",
-        "DESCRIPTION": "Éthérée. NL Add a *Skull *Bash: *Go! in your Piochez pile. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "Add a *Skull *Bash: *Go! in your Piochez pile. NL Exhasut."
-    },
     "mysteryDungeon:SquirtleProtect": {
-        "NAME": "Protect",
+        "NAME": "Abri",
         "DESCRIPTION": "Gagnez !B! d'Armure. NL You cannot Gagnez d'Armure during the next !M! tours."
     },
     "mysteryDungeon:SquirtleRainDance": {
-        "NAME": "Rain Dance",
+        "NAME": "Danse Pluie",
         "DESCRIPTION": "When a carte is created this combat, Gagnez !M! Temporary Force.",
         "UPGRADE_DESCRIPTION": "Inné. NL When a carte is created this combat, Gagnez !M! Temporary Force."
     },
     "mysteryDungeon:SquirtleRainDish": {
-        "NAME": "Rain Dish",
+        "NAME": "Cuvette",
         "DESCRIPTION": "Whenever a carte is scried or discarded, Gagnez !M! d'Armure.",
         "UPGRADE_DESCRIPTION": "Inné. NL Whenever is scried or discarded, Gagnez !M! d'Armure."
     },
     "mysteryDungeon:SquirtleRapidSpin": {
-        "NAME": "Rapid Spin",
+        "NAME": "Tour Rapide",
         "DESCRIPTION": "Infligez !D! dégâts. NL If the enemy intends to attack Gagnez !M! artifact."
     },
     "mysteryDungeon:SquirtleScald": {
-        "NAME": "Scald",
+        "NAME": "Ébullition",
         "DESCRIPTION": "Discard jusqu'à !mysteryDungeon:M2! cartes. Infligez !D! dégâts et Appliquez !M! de mysterydungeon:Brûlure par carte discarded that way."
     },
     "mysteryDungeon:SquirtleShellSmash": {
-        "NAME": "Shell Smash",
+        "NAME": "Exuviation",
         "DESCRIPTION": "Gagnez !M! Force. NL Add !mysteryDungeon:M2! *Gel to your deck. NL Épuisement."
     },
     "mysteryDungeon:SquirtleSkullBashGo": {
-        "NAME": "Skull Bash Go!",
+        "NAME": "Coud'Krâne: Partez!",
         "DESCRIPTION": " Infligez !D! dégâts à TOUS les ennemis. NL If this is the last carte in het play it twice. Épuisement.",
         "UPGRADE_DESCRIPTION": "Retenue. NL Infligez !D! dégâts à TOUS les ennemis. NL If this is the last carte in het play it twice. Épuisement."
+    },
+    "mysteryDungeon:SquirtleSkullBashReady": {
+        "NAME": "Coud'Krâne: À Vos Marques!",
+        "DESCRIPTION": "Ajoutez un *Coud'Krâne: *Prêt à votre pioche.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Ajoutez un *Coud'Krâne: *Prêt à votre pioche."
+    },
+    "mysteryDungeon:SquirtleSkullBashSet": {
+        "NAME": "Coud'Krâne: Prêts!",
+        "DESCRIPTION": "Éthérée. NL Add a *Skull *Bash: *Go! in your Piochez pile. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Add a *Skull *Bash: *Go! in your Piochez pile. NL Exhasut."
     },
     "mysteryDungeon:SquirtleSubstitute": {
         "NAME": "Substitute",
@@ -682,11 +687,11 @@
         "UPGRADE_DESCRIPTION": "Choose a carte from your Piochez pile. NL Add a copy of that carte to your het et put a Wound at the carte's location. NL Épuisement."
     },
     "mysteryDungeon:SquirtleTackle": {
-        "NAME": "Tackle",
+        "NAME": "Charge",
         "DESCRIPTION": "Infligez !D! dégâts."
     },
     "mysteryDungeon:SquirtleTailWhip": {
-        "NAME": "Tail Whip",
+        "NAME": "Mimi-Queue",
         "DESCRIPTION": "Gagnez !B! d'Armure. NL Piochez !M! carte"
     },
     "mysteryDungeon:SquirtleTorrent": {
@@ -694,7 +699,7 @@
         "DESCRIPTION": "Each time you shuffle your deck, Gagnez !M! Temporary Force."
     },
     "mysteryDungeon:SquirtleWaterGun": {
-        "NAME": "Water Gun",
+        "NAME": "Pistolet à O",
         "DESCRIPTION": "Infligez !D! dégâts. NL Scry !M! cartes."
     },
     "mysteryDungeon:SquirtleWaterPulse": {
@@ -707,28 +712,18 @@
         "UPGRADE_DESCRIPTION": "Scry !M! cartes. NL Appliquez ! demysteryDungeon:M2! Faiblesse. NL Infligez !D! dégâts."
     },
     "mysteryDungeon:SquirtleWhirlpool": {
-        "NAME": "Whirlpool",
+        "NAME": "Giclédo",
         "DESCRIPTION": "At the start of your X next tours, Piochez 2 cartes de plus et Discard 2 cartes. NL Épuisement.",
         "UPGRADE_DESCRIPTION": "At the start of your X+1 next tours, Piochez 2 cartes de plus et Discard 2 cartes. NL Épuisement."
     },
-    "mysteryDungeon:SquirtleWithPiochez": {
-        "NAME": "WithPiochez",
+    "mysteryDungeon:SquirtleWithdraw": {
+        "NAME": "Repli",
         "DESCRIPTION": "Shuffle your discard pile into your deck. NL Piochez !M! carte. NL Gagnez 2 d'Armure par carte in het.",
         "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your deck. NL Piochez !M! cartes. NL Gagnez 2 d'Armure par carte in het. "
     },
     "mysteryDungeon:SquirtleZenHeadbutt": {
-        "NAME": "Zen Headbutt",
+        "NAME": "Psykoud'Boul",
         "DESCRIPTION": "Infligez !D! dégâts create a *Flinch et add it to your het.",
         "UPGRADE_DESCRIPTION": "Infligez !D! dégâts create an upgraded *Flinch et add it to your het."
-    },
-    "mysteryDungeon:SquirtleExplorerForm": {
-        "NAME": "Forme de l'Explorateur",
-        "DESCRIPTION": "Éthérée. NL At the start of your tour draw a number a carte equivalent to your maximum het size.",
-        "UPGRADE_DESCRIPTION": "At the start of your tour draw a number a carte equivalent to your maximum het size."
-    },
-    "mysteryDungeon:SquirtleWithdraw": {
-        "NAME": "Withdraw",
-        "DESCRIPTION": "Shuffle your discard pile into your deck. NL Piochez !M! carte. NL Gagnez 2 d'Armure par carte in hand.",
-        "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your deck. NL Piochez !M! cartes. NL Gagnez 2 d'Armure par carte in hand. "
     }
 }
