@@ -259,5 +259,11 @@
         "DESCRIPTIONS": [
             "At the start of your turn draw a number a card equivalent to your maximum hand size"
         ]
+    },
+    "mysteryDungeon:LightScreenPower": {
+        "NAME": "Light Screen",
+        "DESCRIPTIONS": [
+            "At the end of the turn, gain #b%s Block per empty orb slot."
+        ]
     }
 }
