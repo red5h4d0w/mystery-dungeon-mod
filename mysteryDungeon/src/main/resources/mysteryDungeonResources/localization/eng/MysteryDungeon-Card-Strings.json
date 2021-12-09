@@ -362,12 +362,12 @@
     "mysteryDungeon:PikachuAgility": {
         "NAME": "Agility",
         "DESCRIPTION": "Whenever you enter or exit a stance, draw !M! card.",
-        "UPGRADE_DESCRIPTION": "Innate NL Whenever you enter or exit a stance, draw !M! card."
+        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you enter or exit a stance, draw !M! card."
     },
     "mysteryDungeon:PikachuChargeBeam": {
         "NAME": "Charge Beam",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Channel !M! lightning  orbs.",
-        "UPGRADE_DESCRIPTION": "Channel !M! lightning  orbs."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Channel !M! Lightning.",
+        "UPGRADE_DESCRIPTION": "Channel !M! Lightning."
     },
     "mysteryDungeon:PikachuCharge": {
         "NAME": "Charge",
@@ -383,8 +383,8 @@
     },
     "mysteryDungeon:PikachuDischarge": {
         "NAME": "Discharge",
-        "DESCRIPTION": "Deal !D! damage. NL Evoke !M! orb.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Evoke !M! orbs."
+        "DESCRIPTION": "Deal !D! damage. NL Evoke !M! Orb.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Evoke !M! Orbs."
     },
     "mysteryDungeon:PikachuEerieImpulse": {
         "NAME": "Eerie Impulse",
@@ -396,7 +396,7 @@
     },
     "mysteryDungeon:PikachuElectroBall": {
         "NAME": "Electro Ball",
-        "DESCRIPTION": "Evoke your next orb !M! times. NL  Increase this amount by 1 this combat."
+        "DESCRIPTION": "Evoke your next orb !M! times. NL Increase this amount by 1 this combat."
     },
     "mysteryDungeon:PikachuElectroweb": {
         "NAME": "Elecroweb",
@@ -409,7 +409,7 @@
     },
     "mysteryDungeon:PikachuExplorerForm": {
         "NAME": "Explorer Form",
-        "DESCRIPTION": "Channel !M! Lightning orbs. NL Lose 1 focus per turn."
+        "DESCRIPTION": "Channel !M! Lightning. NL At the start of your turn, lose 1 Focus."
     },
     "mysteryDungeon:PikachuHiddenPower": {
         "NAME": "Hidden Power",
@@ -421,17 +421,17 @@
     },
     "mysteryDungeon:PikachuLightScreen": {
         "NAME": "Light Screen",
-        "DESCRIPTION": "At the end of your turn, Gain !M! Block per empty orb slot."
+        "DESCRIPTION": "At the end of your turn, Gain !M! Block per empty Orb slot."
     },
     "mysteryDungeon:PikachuNastyPlot": {
         "NAME": "Nasty Plot",
-        "DESCRIPTION": "Gain !M! orb slot",
-        "UPGRADE_DESCRIPTION": "Gain !M! orb slots"
+        "DESCRIPTION": "Gain !M! Orb slot.",
+        "UPGRADE_DESCRIPTION": "Gain !M! Orb slots."
     },
     "mysteryDungeon:PikachuNuzzle": {
         "NAME": "Nuzzle",
-        "DESCRIPTION": "Deal !D! damage per orb.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal !D! damage per orb."
+        "DESCRIPTION": "Deal !D! damage per channeled Orb.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal !D! damage per channeled Orb."
     },
     "mysteryDungeon:PikachuPlayNice": {
         "NAME": "Play Nice",
@@ -460,11 +460,11 @@
     },
     "mysteryDungeon:PikachuSlam": {
         "NAME": "Slam",
-        "DESCRIPTION": "Deal !D! damage. NL If you are not in a stance, gain [E][E]."
+        "DESCRIPTION": "Deal !D! damage. NL If you are not in a stance, gain [E] [E]."
     },
     "mysteryDungeon:PikachuSpark": {
         "NAME": "Spark",
-        "DESCRIPTION": "Deal !D! damage. NL Return to 0 on the *Charge-Meter."
+        "DESCRIPTION": "Deal !D! damage. NL Return to the center on the *Charge-Meter."
     },
     "mysteryDungeon:PikachuSpeedSwap": {
         "NAME": "Speed Swap",
@@ -472,8 +472,8 @@
     },
     "mysteryDungeon:PikachuStatic": {
         "NAME": "Static",
-        "DESCRIPTION": "Evoke !M! orb when you are attacked.",
-        "UPGRADE_DESCRIPTION": "Evoke !M! orbs when you are attacked."
+        "DESCRIPTION": "Evoke !M! Orb when you are attacked.",
+        "UPGRADE_DESCRIPTION": "Evoke !M! Orbs when you are attacked."
     },
     "mysteryDungeon:PikachuSweetKiss": {
         "NAME": "Sweet Kiss",
@@ -493,30 +493,30 @@
     },
     "mysteryDungeon:PikachuThunderbolt": {
         "NAME": "Thunderbolt",
-        "DESCRIPTION": "Deal !D! damage X times. NL If the last card played was a skill gain 1 energy."
+        "DESCRIPTION": "Deal !D! damage X times. NL If the last card played was a skill, gain [E]."
     },
     "mysteryDungeon:PikachuThunderPunch": {
         "NAME": "Thunder Punch",
-        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Lightning orb."
+        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Lightning."
     },
     "mysteryDungeon:PikachuThundershock": {
-        "NAME": "Thundershock",
-        "DESCRIPTION": "Return to 0 on the *Charge-Meter.",
+        "NAME": "Thunder Shock",
+        "DESCRIPTION": "Return to the center of the *Charge-Meter.",
         "UPGRADE_DESCRIPTION": "Retain. NL Return to 0 on the *Charge-Meter."
     },
     "mysteryDungeon:PikachuThunderwave": {
-        "NAME": "Thunderwave",
-        "DESCRIPTION": "Gain !B! Block. NL Gain !M! more Block if in neutral stance.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Gain !B! Block. NL Gain !M! more Block if in neutral stance."
+        "NAME": "Thunder Wave",
+        "DESCRIPTION": "Gain !B! Block. NL Gain !M! more Block if you are not in a stance.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Gain !B! Block. NL Gain !M! more Block if you are not in a stance."
     },
     "mysteryDungeon:PikachuVoltSwitch": {
         "NAME": "Volt Switch",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Choose which stance to enter. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Choose which stance to enter."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Choose between Positive Stance or Negative Stance and enter the chosen Stance. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NLChoose between Positive Stance or Negative Stance and enter the chosen Stance."
     },
     "mysteryDungeon:PikachuVoltTackle": {
         "NAME": "Volt Tackle",
-        "DESCRIPTION": "Innate. NL Deal !D! damage. NL Channel !M! Lightning orb. NL Exhaust."
+        "DESCRIPTION": "Innate. NL Deal !D! damage. NL Channel !M! Lightning. NL Exhaust."
     },
     "mysteryDungeon:PikachuWildCharge": {
         "NAME": "Wild Charge",
@@ -538,8 +538,7 @@
     },
     "mysteryDungeon:SquirtleBide": {
         "NAME": "Bide",
-        "DESCRIPTION": "Gain !B! Block. NL Until next turn, when you get attacked, Gain !M! Temporary Strength.",
-        "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Until next turn, when you get attacked, Gain !M! Temporary Strength."
+        "DESCRIPTION": "Gain !B! Block. NL Until next turn, when you get attacked, Gain !M! Temporary Strength."
     },
     "mysteryDungeon:SquirtleBodyPress": {
         "NAME": "Body Press",
@@ -632,16 +631,6 @@
         "NAME": "Mist",
         "DESCRIPTION": "If the enemy is not attacking, gain !M! Artifact. NL Gain !B! Block."
     },
-    "mysteryDungeon:SquirtleSkullBashReady": {
-        "NAME": "Skull Bash: Ready",
-        "DESCRIPTION": "Add a *Skull *Bash: *Set in your draw pile.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Add a *Skull *Bash: *Set in your draw pile."
-    },
-    "mysteryDungeon:SquirtleSkullBashSet": {
-        "NAME": "Skull Bash: Set",
-        "DESCRIPTION": "Ethereal. NL Add a *Skull *Bash: *Go! in your draw pile. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Add a *Skull *Bash: *Go! in your draw pile. NL Exhasut."
-    },
     "mysteryDungeon:SquirtleProtect": {
         "NAME": "Protect",
         "DESCRIPTION": "Gain !B! Block. NL You cannot gain Block during the next !M! turns."
@@ -672,6 +661,16 @@
         "NAME": "Skull Bash Go!",
         "DESCRIPTION": " Deal !D! damage to ALL enemies. NL If this is the last card in hand play it twice. Exhaust.",
         "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage to ALL enemies. NL If this is the last card in hand play it twice. Exhaust."
+    },
+    "mysteryDungeon:SquirtleSkullBashReady": {
+        "NAME": "Skull Bash: Ready!",
+        "DESCRIPTION": "Add a *Skull *Bash: *Set in your draw pile.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Add a *Skull *Bash: *Set in your draw pile."
+    },
+    "mysteryDungeon:SquirtleSkullBashSet": {
+        "NAME": "Skull Bash: Set!",
+        "DESCRIPTION": "Ethereal. NL Add a *Skull *Bash: *Go! in your draw pile. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Add a *Skull *Bash: *Go! in your draw pile. NL Exhasut."
     },
     "mysteryDungeon:SquirtleSubstitute": {
         "NAME": "Substitute",
