@@ -154,8 +154,8 @@
     },
     "mysteryDungeon:BulbasaurSunnyDay": {
         "NAME": "Sunny Day",
-        "DESCRIPTION": "Ethereal. NL At the start of each turn, NL Draw one more card and reduce by 1 the cost of the card with the highest cost in your hand.",
-        "UPGRADE_DESCRIPTION": "At the start of each turn, NL Draw one more card and reduce by 1 the cost of the card with the highest cost in your hand."
+        "DESCRIPTION": "Ethereal. NL At the start of each turn, NL draw one more card and reduce by 1 the cost of the card with the highest cost in your hand.",
+        "UPGRADE_DESCRIPTION": "At the start of each turn, NL draw one more card and reduce by 1 the cost of the card with the highest cost in your hand."
     },
     "mysteryDungeon:BulbasaurSweetScent": {
         "NAME": "Sweet Scent",
@@ -163,7 +163,7 @@
     },
     "mysteryDungeon:BulbasaurSynthesis": {
         "NAME": "Synthesis",
-        "DESCRIPTION": "Heal !M! HP. NL At the start of your next turn, NL Draw 2 more cards and gain 2 [E]. NL Exhaust."
+        "DESCRIPTION": "Heal !M! HP. NL At the start of your next turn, NL draw 2 more cards and gain [E] [E]. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurTackle": {
         "NAME": "Tackle",
@@ -193,7 +193,7 @@
     },
     "mysteryDungeon:CharmanderBellyDrum": {
         "NAME": "Belly Drum",
-        "DESCRIPTION": "At the start of your turn, Draw !M! more card. NL The first card you play each turn costs 0 and exhausts."
+        "DESCRIPTION": "At the start of your turn, draw !M! more card. NL The first card you play each turn costs 0 and exhausts."
     },
     "mysteryDungeon:CharmanderBlastBurn": {
         "NAME": "Blast Burn",
@@ -247,7 +247,7 @@
     "mysteryDungeon:CharmanderDragonTail": {
         "NAME": "Dragon Tail",
         "DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Add a copy of this card on top of your draw pile.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Add a copy of this card on top of your draw pile. NL Next Turn, Draw 1 more card.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Add a copy of this card on top of your draw pile. NL Next Turn, draw 1 more card.",
         "EXTENDED_DESCRIPTION": ["I can't play this card."]
     },
     "mysteryDungeon:CharmanderDrought": {
@@ -421,7 +421,7 @@
     },
     "mysteryDungeon:PikachuLightScreen": {
         "NAME": "Light Screen",
-        "DESCRIPTION": "At the end of your turn, Gain !M! Block per empty Orb slot."
+        "DESCRIPTION": "At the end of your turn, gain !M! Block per empty Orb slot."
     },
     "mysteryDungeon:PikachuNastyPlot": {
         "NAME": "Nasty Plot",
@@ -538,11 +538,11 @@
     },
     "mysteryDungeon:SquirtleBide": {
         "NAME": "Bide",
-        "DESCRIPTION": "Gain !B! Block. NL Until next turn, when you get attacked, Gain !M! Temporary Strength."
+        "DESCRIPTION": "Gain !B! Block. NL Until next turn, when you get attacked, gain !M! Temporary Strength."
     },
     "mysteryDungeon:SquirtleBodyPress": {
         "NAME": "Body Press",
-        "DESCRIPTION": "Deal !D! damage to an enemy if it is *fatal, Gain !B! Block and !M! Dexterity. Exhaust."
+        "DESCRIPTION": "Deal !D! damage. NL If it is *fatal, gain !B! Block and !M! Dexterity. Exhaust."
     },
     "mysteryDungeon:SquirtleBrine": {
         "NAME": "Brine",
@@ -558,7 +558,7 @@
     },
     "mysteryDungeon:SquirtleDoubleTeam": {
         "NAME": "Double Team",
-        "DESCRIPTION": "Gain !B! Block. When drawn add a copy of this card in your hand. NL Exhaust."
+        "DESCRIPTION": "Gain !B! Block. When drawn: add a copy of this card in your hand. NL Exhaust."
     },
     "mysteryDungeon:SquirtleEndure": {
         "NAME": "Endure",
@@ -566,8 +566,8 @@
     },
     "mysteryDungeon:SquirtleExplorerForm": {
         "NAME": "Explorer Form",
-        "DESCRIPTION": "Ethereal. NL At the start of your turn draw a number a card equivalent to your maximum hand size.",
-        "UPGRADE_DESCRIPTION": "At the start of your turn draw a number a card equivalent to your maximum hand size."
+        "DESCRIPTION": "Ethereal. NL At the start of your turn, draw a number of cards equivalent to your maximum hand size.",
+        "UPGRADE_DESCRIPTION": "At the start of your turn, draw a number of cards equivalent to your maximum hand size."
     },
     "mysteryDungeon:SquirtleFakeOut": {
         "NAME": "Fake Out",
@@ -587,12 +587,12 @@
     },
     "mysteryDungeon:SquirtleFlipTurn": {
         "NAME": "Flip Turn",
-        "DESCRIPTION": "Gain !B! Block. NL draw !M! card. NL discard !M! card.",
-        "UPGRADE_DESCRIPTION": "Gain !B! Block. NL draw !M! cards. NL discard !M! cards."
+        "DESCRIPTION": "Gain !B! Block. NL draw !M! card. NL Discard !M! card.",
+        "UPGRADE_DESCRIPTION": "Gain !B! Block. NL draw !M! cards. NL Discard !M! cards."
     },
     "mysteryDungeon:SquirtleGyroBall": {
         "NAME": "Gyro Ball",
-        "DESCRIPTION": "Add 1 *Freeze in hand. NL Deal !D! damage per status in your hand. NL Discard all statuses in your hand. NL Draw !M! cards."
+        "DESCRIPTION": "Add 1 *Freeze to your hand. NL Deal !D! damage per status in your hand. NL Discard ALL Statuses in your hand. NL Draw !M! cards."
     },
     "mysteryDungeon:SquirtleHail": {
         "NAME": "Hail",
@@ -600,12 +600,12 @@
     },
     "mysteryDungeon:SquirtleHaze": {
         "NAME": "Haze",
-        "DESCRIPTION": "Gain [E] [E] NL Add !M! *Freeze to your discard pile.",
-        "UPGRADE_DESCRIPTION": "Gain [E] [E] [E] NL Add !M! *Freeze to your discard pile."
+        "DESCRIPTION": "Gain [E] [E]. NL Add !M! *Freeze to your discard pile.",
+        "UPGRADE_DESCRIPTION": "Gain [E] [E] [E]. NL Add !M! *Freeze to your discard pile."
     },
     "mysteryDungeon:SquirtleHydroCannon": {
         "NAME": "Hydro Cannon",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Insert 2 *Freeze in your draw pile."
+        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Shuffle 2 *Freeze into your draw pile."
     },
     "mysteryDungeon:SquirtleIceBeam": {
         "NAME": "Ice Beam",
@@ -643,11 +643,11 @@
     "mysteryDungeon:SquirtleRainDish": {
         "NAME": "Rain Dish",
         "DESCRIPTION": "Whenever a card is scried or discarded, gain !M! Block.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Whenever is scried or discarded, gain !M! Block."
+        "UPGRADE_DESCRIPTION": "Innate. NL Whenever a card is scried or discarded, gain !M! Block."
     },
     "mysteryDungeon:SquirtleRapidSpin": {
         "NAME": "Rapid Spin",
-        "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack gain !M! artifact."
+        "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, gain !M! artifact."
     },
     "mysteryDungeon:SquirtleScald": {
         "NAME": "Scald",
@@ -655,7 +655,7 @@
     },
     "mysteryDungeon:SquirtleShellSmash": {
         "NAME": "Shell Smash",
-        "DESCRIPTION": "Gain !M! Strength. NL Add !mysteryDungeon:M2! *Freeze to your deck."
+        "DESCRIPTION": "Gain !M! Strength. NL Shuffle !mysteryDungeon:M2! *Freeze into your draw pile."
     },
     "mysteryDungeon:SquirtleSkullBashGo": {
         "NAME": "Skull Bash Go!",
@@ -664,18 +664,18 @@
     },
     "mysteryDungeon:SquirtleSkullBashReady": {
         "NAME": "Skull Bash: Ready!",
-        "DESCRIPTION": "Add a *Skull *Bash: *Set in your draw pile.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Add a *Skull *Bash: *Set in your draw pile."
+        "DESCRIPTION": "Shuffle a *Skull *Bash: *Set in your draw pile.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Shuffle a *Skull *Bash: *Set in your draw pile."
     },
     "mysteryDungeon:SquirtleSkullBashSet": {
         "NAME": "Skull Bash: Set!",
-        "DESCRIPTION": "Ethereal. NL Add a *Skull *Bash: *Go! in your draw pile. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Add a *Skull *Bash: *Go! in your draw pile. NL Exhasut."
+        "DESCRIPTION": "Ethereal. NL Add a *Skull *Bash: *Go! into your draw pile. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Add a *Skull *Bash: *Go! into your draw pile. NL Exhaust."
     },
     "mysteryDungeon:SquirtleSubstitute": {
         "NAME": "Substitute",
-        "DESCRIPTION": "Choose a card from your draw pile. NL Add it to your hand and put a Wound where the card was. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Choose a card from your draw pile. NL Add a copy of that card to your hand and put a Wound at the card's location. NL Exhaust."
+        "DESCRIPTION": "Choose a card from your draw pile. NL Add it to your hand and put a *Wound where the card was. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Choose a card from your draw pile. NL Add a copy of that card to your hand and put a *Wound at the card's location. NL Exhaust."
     },
     "mysteryDungeon:SquirtleTackle": {
         "NAME": "Tackle",
@@ -683,11 +683,11 @@
     },
     "mysteryDungeon:SquirtleTailWhip": {
         "NAME": "Tail Whip",
-        "DESCRIPTION": "Gain !B! Block. NL draw !M! card"
+        "DESCRIPTION": "Gain !B! Block. NL Draw !M! card."
     },
     "mysteryDungeon:SquirtleTorrent": {
         "NAME": "Torrent",
-        "DESCRIPTION": "Each time you shuffle your deck, gain !M! Temporary Strength."
+        "DESCRIPTION": "Whenever you shuffle your draw pile, gain !M! Temporary Strength."
     },
     "mysteryDungeon:SquirtleWaterGun": {
         "NAME": "Water Gun",
@@ -704,8 +704,8 @@
     },
     "mysteryDungeon:SquirtleWhirlpool": {
         "NAME": "Whirlpool",
-        "DESCRIPTION": "At the start of your X next turns, Draw 2 more cards and Discard 2 cards. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "At the start of your X+1 next turns, Draw 2 more cards and Discard 2 cards. NL Exhaust."
+        "DESCRIPTION": "At the start of your X next turns, draw 2 more cards and discard 2 cards. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "At the start of your X+1 next turns, draw 2 more cards and discard 2 cards. NL Exhaust."
     },
     "mysteryDungeon:SquirtleWithdraw": {
         "NAME": "Withdraw",
@@ -713,7 +713,7 @@
     },
     "mysteryDungeon:SquirtleZenHeadbutt": {
         "NAME": "Zen Headbutt",
-        "DESCRIPTION": "Deal !D! damage create a *Flinch and add it to your hand.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage create an upgraded *Flinch and add it to your hand."
+        "DESCRIPTION": "Deal !D! damage NL Create a *Flinch and add it to your hand.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage NL Create an upgraded *Flinch and add it to your hand."
     }
 }
