@@ -16,12 +16,12 @@
         "DESCRIPTION": "Ajoutez une attaque aléatoire à votre main."
     },
     "mysteryDungeon:ChooseNegative": {
-        "NAME": "Position négative",
-        "DESCRIPTION": "Entrez en position négative."
+        "NAME": "Négativité",
+        "DESCRIPTION": "Entrez en mysterydungeon:Négativité."
     },
     "mysteryDungeon:ChoosePositive": {
-        "NAME": "Position positive",
-        "DESCRIPTION": "Entrez en position positive."
+        "NAME": "Positivité",
+        "DESCRIPTION": "Entrez en mysterydungeon:Positivité."
     },
     "mysteryDungeon:ChooseSkill": {
         "NAME": "Compétence",
@@ -36,7 +36,7 @@
         "DESCRIPTION": "Infligez !D! dégâts !M! fois. NL Peut être amélioré à l'infini."
     },
     "mysteryDungeon:BulbasaurChlorophyll": {
-        "NAME": "Chlorophyll",
+        "NAME": "Chlorophylle",
         "DESCRIPTION": "Piochez !M! carte. NL Pour chaque Attaque piochée par cet effet, gagnez 1 Force.",
         "UPGRADE_DESCRIPTION": "Piochez !M! carte. NL Pour chaque Attaque piochée par cet effet, gagnez 1 Force."
     },
@@ -159,7 +159,7 @@
     },
     "mysteryDungeon:BulbasaurSweetScent": {
         "NAME": "Doux Parfum",
-        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Evasiveness_Drop. NL Appliquez !M! de Vulnérabilité."
+        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Baisse_d'Évasion. NL Appliquez !M! de Vulnérabilité."
     },
     "mysteryDungeon:BulbasaurSynthesis": {
         "NAME": "Synthèse",
@@ -223,7 +223,7 @@
     },
     "mysteryDungeon:CharmanderDragonClaw": {
         "NAME": "Drago-Griffe",
-        "DESCRIPTION": "Infligez !D! dégats à TOUS les ennemis. NL (S'améliore quet *Griffe *Acier est jouée.)"
+        "DESCRIPTION": "Infligez !D! dégats à TOUS les ennemis. NL (S'améliore lorsque *Griffe *Acier est jouée.)"
     },
     "mysteryDungeon:CharmanderDragonDance": {
         "NAME": "Danse Draco",
@@ -396,8 +396,8 @@
     },
     "mysteryDungeon:PikachuElectricTerrain": {
         "NAME": "Champ Électrifié",
-        "DESCRIPTION": "mysterydungeon:Inerte. NL Entrez en Positivité. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inerte. NL Retenue. NL Entrez en Positivité. NL Épuisement."
+        "DESCRIPTION": "mysterydungeon:Inerte. NL Entrez en mysterydungeon:Positivité. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inerte. NL Retenue. NL Entrez en mysterydungeon:Positivité. NL Épuisement."
     },
     "mysteryDungeon:PikachuElectroBall": {
         "NAME": "Boule Élek",
@@ -465,7 +465,7 @@
     },
     "mysteryDungeon:PikachuSlam": {
         "NAME": "Souplesse",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Si vous êtes en Négativité, gagnez [E] [E]."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Si vous êtes en mysterydungeon:Négativité, gagnez [E] [E]."
     },
     "mysteryDungeon:PikachuSpark": {
         "NAME": "Étincelle",
@@ -473,8 +473,8 @@
     },
     "mysteryDungeon:PikachuSpeedSwap": {
         "NAME": "Permuvitesse",
-        "DESCRIPTION": "mysterydungeon:Inerte. NL Entrez en Négativité. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inerte. NL Retenue. NL Entrez en Négativité. NL Épuisement."
+        "DESCRIPTION": "mysterydungeon:Inerte. NL Entrez en mysterydungeon:Négativité. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inerte. NL Retenue. NL Entrez en mysterydungeon:Négativité. NL Épuisement."
     },
     "mysteryDungeon:PikachuStatic": {
         "NAME": "Statik",
@@ -517,8 +517,8 @@
     },
     "mysteryDungeon:PikachuVoltSwitch": {
         "NAME": "Change Éclair",
-        "DESCRIPTION": "mysterydungeon:Inerte. NL Retenue. NL Choisissez entre Positivité et Négativité, puis entrez dans cette Position. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inerte. NL Retenue. NL Choisissez entre Positivité et Négativité, puis entrez dans cette Position."
+        "DESCRIPTION": "mysterydungeon:Inerte. NL Retenue. NL Choisissez entre mysterydungeon:Positivité et mysterydungeon:Négativité, puis entrez dans cette Position. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inerte. NL Retenue. NL Choisissez entre mysterydungeon:Positivité et mysterydungeon:Négativité, puis entrez dans cette Position."
     },
     "mysteryDungeon:PikachuVoltTackle": {
         "NAME": "Électacle",
@@ -531,7 +531,7 @@
     },
     "mysteryDungeon:PikachuZapCannon": {
         "NAME": "Élecanon",
-        "DESCRIPTION": "Entrez en Positivité. NL Infligez !D! dégâts à TOUS les ennemis."
+        "DESCRIPTION": "Entrez en mysterydungeon:Positivité. NL Infligez !D! dégâts à TOUS les ennemis."
     },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Anneau Hydro",
@@ -617,7 +617,7 @@
     },
     "mysteryDungeon:SquirtleIceBeam": {
         "NAME": "Laser Glace",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Ajoutez 1 *Freeze à votre main."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Ajoutez 1 *Gel à votre main."
     },
     "mysteryDungeon:SquirtleIronDefense": {
         "NAME": "Mur de Fer",
@@ -702,16 +702,16 @@
         "DESCRIPTION": "Infligez !D! dégâts. NL Scrutez !M! cartes."
     },
     "mysteryDungeon:SquirtleWaterPulse": {
-        "NAME": "Water Pulse",
+        "NAME": "Vibraqua",
         "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez !M! de Vulnérabilité."
     },
     "mysteryDungeon:SquirtleWaterSpout": {
-        "NAME": "Water Spout",
+        "NAME": "Giclédo",
         "DESCRIPTION": "Scrutez !M! carte. NL Appliquez !mysteryDungeon:M2! de Faiblesse. NL Infligez !D! dégâts.",
         "UPGRADE_DESCRIPTION": "Scrutez !M! cartes. NL Appliquez !mysteryDungeon:M2! de Faiblesse. NL Infligez !D! dégâts."
     },
     "mysteryDungeon:SquirtleWhirlpool": {
-        "NAME": "Giclédo",
+        "NAME": "Tourbillon",
         "DESCRIPTION": "Au début de vos X prochains, piochez 2 cartes de plus et défaussez 2 cartes. NL Épuisement.",
         "UPGRADE_DESCRIPTION": "Au début de vos X+1 prochains tours, piochez 2 cartes de plus et défaussez 2 cartes. NL Épuisement."
     },

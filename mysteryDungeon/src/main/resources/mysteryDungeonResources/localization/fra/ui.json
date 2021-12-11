@@ -1,17 +1,17 @@
 {
     "mysteryDungeon:EtherealMod": {
         "TEXT": [
-            "Ethereal. NL "
+            "Éthérée. NL "
         ]
     },
     "mysteryDungeon:ExhaustFromDeckAction": {
         "TEXT": [
-            "Choose a card to exhaust from your deck."
+            "Choisissez une carte à épuiser dans votre pioche."
         ]
     },
     "mysteryDungeon:RetainCardsButEtherealModAction": {
         "TEXT": [
-            "Retain (cards will become ethereal)"
+            "Retenez (ces cartes deviendront éthérées)"
         ]
     }
 }

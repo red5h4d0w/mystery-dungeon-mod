@@ -10,49 +10,50 @@
     "mysteryDungeon:AspearBerryPotion": {
         "NAME": "Aspear Berry",
         "DESCRIPTIONS": [
-            "Discard any number of cards from your hand."
+            "Défaussez autant de cartes de votre main que vous le souhaitez."
         ]
     },
     "mysteryDungeon:DireHitPotion": {
         "NAME": "Dire Hit",
         "DESCRIPTIONS": [
-            "Your next attack deals double damage."
+            "Votre prochaine attaque infligera le double des dégâts."
         ]
     },
     "mysteryDungeon:FlameOrbPotion": {
         "NAME": "Flame Orb",
         "DESCRIPTIONS": [
-            "Apply #b%s #yBurn."
+            "Appliquez #b%s de #Brûlure."
         ]
     },
     "mysteryDungeon:PikachuCandyPotion": {
         "NAME": "Pikachu Candy",
         "DESCRIPTIONS": [
-            "Enter Positive or Negative Stance."
+            "Entrez en Positivité ou en Négativité."
         ]
     },
     "mysteryDungeon:PoisonBarbPotion": {
         "NAME": "PoisonBarb",
         "DESCRIPTIONS": [
-            "Enter Positive or Negative Stance."
+            "Appliquez #b%s de Poison à un ennemi."
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {
         "NAME": "Sitrus Berry",
         "DESCRIPTIONS": [
-            "Enter Positive or Negative Stance."
+            "Ajoutez #b%s carte parmi vos cartes épuisées à votre main.",
+            "Ajoutez #b%s cartes parmi vos cartes épuisées à votre main."
         ]
     },
     "mysteryDungeon:XAttackPotion": {
         "NAME": "X Attack",
         "DESCRIPTIONS": [
-            "Enter Positive or Negative Stance."
+            "Ajoutez #b%s #yPeur à votre main."
         ]
     },
     "mysteryDungeon:XSpAttackPotion": {
         "NAME": "X Sp. Attack",
         "DESCRIPTIONS": [
-            "Enter Positive or Negative Stance."
+            "Remplissez vos emplacements d'Orbes avec des Orbes Kérauniques."
         ]
     }
 }
