@@ -45,7 +45,7 @@
     "mysteryDungeon:XSpAttackPotion": {
         "NAME": "X Sp. Attack",
         "DESCRIPTIONS": [
-            "Fill all your orb slots with #yLightning #yOrbs."
+            "Fill all your Orb slots with #yLightning."
         ]
     }
 }

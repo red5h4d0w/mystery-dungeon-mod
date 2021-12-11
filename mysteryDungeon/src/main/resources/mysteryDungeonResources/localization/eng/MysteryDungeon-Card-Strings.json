@@ -17,11 +17,11 @@
     },
     "mysteryDungeon:ChooseNegative": {
         "NAME": "Negative Stance",
-        "DESCRIPTION": "Enter Negative Stance."
+        "DESCRIPTION": "Enter mysterydungeon:Negative_Stance."
     },
     "mysteryDungeon:ChoosePositive": {
         "NAME": "Positive Stance",
-        "DESCRIPTION": "Enter Positive Stance."
+        "DESCRIPTION": "Enter mysterydungeon:Positive_Stance."
     },
     "mysteryDungeon:ChooseSkill": {
         "NAME": "Skill",
@@ -392,7 +392,7 @@
     },
     "mysteryDungeon:PikachuElectricTerrain": {
         "NAME": "Electric Terrain",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Positive Stance. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter mysterydungeon:Positive_Stance. NL Exhaust."
     },
     "mysteryDungeon:PikachuElectroBall": {
         "NAME": "Electro Ball",
@@ -468,7 +468,7 @@
     },
     "mysteryDungeon:PikachuSpeedSwap": {
         "NAME": "Speed Swap",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Negative Stance. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter mysterydungeon:Negative_Stance. NL Exhaust."
     },
     "mysteryDungeon:PikachuStatic": {
         "NAME": "Static",
@@ -511,8 +511,8 @@
     },
     "mysteryDungeon:PikachuVoltSwitch": {
         "NAME": "Volt Switch",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Choose between Positive Stance or Negative Stance and enter the chosen Stance. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NLChoose between Positive Stance or Negative Stance and enter the chosen Stance."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Choose between mysterydungeon:Positive_Stance or mysterydungeon:Negative_Stance and enter the chosen Stance. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NLChoose between mysterydungeon:Positive_Stance or mysterydungeon:Negative_Stance and enter the chosen Stance."
     },
     "mysteryDungeon:PikachuVoltTackle": {
         "NAME": "Volt Tackle",
@@ -525,7 +525,7 @@
     },
     "mysteryDungeon:PikachuZapCannon": {
         "NAME": "Zap Cannon",
-        "DESCRIPTION": "Enter Positive Stance. NL Deal !D! damage to ALL enemies."
+        "DESCRIPTION": "Enter mysterydungeon:Positive_Stance. NL Deal !D! damage to ALL enemies."
     },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Aqua Ring",
