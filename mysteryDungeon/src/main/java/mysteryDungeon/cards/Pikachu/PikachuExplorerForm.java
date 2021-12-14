@@ -21,7 +21,7 @@ public class PikachuExplorerForm extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(PikachuExplorerForm.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("PikachuPower.png");
+    public static final String IMG = makeCardPath(PikachuExplorerForm.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
