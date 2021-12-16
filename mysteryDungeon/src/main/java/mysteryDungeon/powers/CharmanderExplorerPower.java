@@ -8,6 +8,7 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -62,6 +63,7 @@ public class CharmanderExplorerPower extends MysteryDungeonPower implements Clon
             AbstractDungeon.player.exhaustPile.removeCard(card);
             addToBot(new MakeTempCardInDrawPileAction(cardToAdd, 1, false, false, false));
         }
+        addToBot(new ApplyPowerAction(owner,owner, new NextTurnDrawLessPower(owner, 1)));
     }
 
     @Override

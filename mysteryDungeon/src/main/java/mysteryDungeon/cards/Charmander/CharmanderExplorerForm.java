@@ -56,6 +56,7 @@ public class CharmanderExplorerForm extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
         addToBot(new ApplyPowerAction(p, p, new CharmanderExplorerPower(p, magicNumber), magicNumber));
+        
     }
 
     // Upgraded stats.
