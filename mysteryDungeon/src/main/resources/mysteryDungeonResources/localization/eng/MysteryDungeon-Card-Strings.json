@@ -410,7 +410,8 @@
     },
     "mysteryDungeon:PikachuExplorerForm": {
         "NAME": "Explorer Form",
-        "DESCRIPTION": "Channel !M! Lightning orbs. NL Lose 1 focus per turn."
+        "DESCRIPTION": "At the start of your turn Channel !M! Lightning orb. At the end of your turn Evoke your next orb",
+        "UPGRADE_DESCRIPTION": "At the start of your turn Channel !M! Lightning orbs. At the end of your turn Evoke your next !M! orbs"
     },
     "mysteryDungeon:PikachuHiddenPower": {
         "NAME": "Hidden Power",
