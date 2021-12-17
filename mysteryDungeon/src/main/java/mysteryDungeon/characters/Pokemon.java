@@ -125,7 +125,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     public static final int ORB_SLOTS = 0;
     public static Nature nature;
     public static int pikachuChargeCounter = 0;
-    public static int maxPikachuChargeCounter = 3;
+    public static int maxPikachuChargeCounter = 2;
 
     public Texture campfirePose;
 

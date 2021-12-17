@@ -10,6 +10,8 @@ import com.megacrit.cardcrawl.orbs.Lightning;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.actions.SetPikaMeterAction;
+import mysteryDungeon.relics.CellBatteryRelic;
 
 
 public class PositiveStance extends PokemonStance {
@@ -42,6 +44,12 @@ public class PositiveStance extends PokemonStance {
         description = stanceString.DESCRIPTION[0];
     }
   
+    @Override
+    public void onEndOfTurn() {
+        if(!AbstractDungeon.player.hasRelic(CellBatteryRelic.ID))
+            addToBot(new SetPikaMeterAction(0));
+    }
+
     @Override
     public void onExitStance() {
         addToBot(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, 7));
