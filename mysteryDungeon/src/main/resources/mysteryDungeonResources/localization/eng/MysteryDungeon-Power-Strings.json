@@ -179,7 +179,10 @@
     },
     "mysteryDungeon:SquirtleExplorerPower": {
         "NAME": "Explorer Form",
-        "DESCRIPTIONS": ["At the start of your turn draw a number a card equivalent to your maximum hand size"]
+        "DESCRIPTIONS": [
+            "At the start of your turn draw #b%s card. Increase this amount by #b%s at the end of your turn.",
+            "At the start of your turn draw #b%s cards. Increase this amount by #b%s at the end of your turn."
+        ]
     },
     "mysteryDungeon:StaticPower": {
         "NAME": "Static",

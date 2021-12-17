@@ -48,7 +48,7 @@ public class SquirtleExplorerForm extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new SquirtleExplorerPower(p)));
+        addToBot(new ApplyPowerAction(p, p, new SquirtleExplorerPower(p, 1)));
     }
 
     // Upgraded stats.
