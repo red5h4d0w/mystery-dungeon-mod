@@ -4,6 +4,7 @@ import basemod.abstracts.CustomPlayer;
 import basemod.abstracts.CustomSavable;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.abstracts.PokemonRelic;
+import mysteryDungeon.actions.SetPikaMeterAction;
 import mysteryDungeon.cards.Bulbasaur.BulbasaurTackle;
 import mysteryDungeon.cards.fakeCards.ExplorersDeck;
 import mysteryDungeon.cards.fakeCards.PartnersDeck;
@@ -464,6 +465,12 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         logger.info(saveInfo.partner);
         saveInfo.maxPikaMeter = maxPikachuChargeCounter;
         return saveInfo;
+    }
+
+    @Override
+    public void applyEndOfTurnTriggers() {
+        super.applyEndOfTurnTriggers();
+        AbstractDungeon.actionManager.addToBottom(new SetPikaMeterAction(0));
     }
 
     @Override
