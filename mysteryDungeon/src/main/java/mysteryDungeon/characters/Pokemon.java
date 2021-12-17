@@ -451,7 +451,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     {
         logger.info("SAVING!!!!!!!!!!!!!!!!!!!!!!!!!!");
         logger.info(AbstractDungeon.getCurrRoom() instanceof NeowRoom);
-        if(AbstractDungeon.getCurrRoom() instanceof NeowRoom)
+        if(!hasChosenStarters())
             return new ToSave();
         ToSave saveInfo = new ToSave();
         if(adventurer!=null){
