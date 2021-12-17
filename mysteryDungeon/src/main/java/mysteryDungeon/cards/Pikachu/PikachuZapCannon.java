@@ -58,11 +58,8 @@ public class PikachuZapCannon extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m){ 
-        int count = 0;
         for (AbstractMonster m2 : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
           if (!m2.isDeadOrEscaped()) {
-            count++;
-            for(int i=0; i<count;i++)
             addToBot(new ChannelAction(new Lightning()));
           } 
         }
