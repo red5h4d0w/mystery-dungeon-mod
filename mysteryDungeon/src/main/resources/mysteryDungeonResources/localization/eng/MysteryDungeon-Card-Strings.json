@@ -459,13 +459,13 @@
         "NAME": "Shock Wave",
         "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Apply !M! Lock-On to ALL enemies."
     },
-    "mysteryDungeon:PikachuSlam": {
-        "NAME": "Slam",
-        "DESCRIPTION": "Deal !D! damage. NL If you are not in a stance, gain [E][E]."
+    "mysteryDungeon:PikachuLightningRod": {
+        "NAME": "Lightning Rod",
+        "DESCRIPTION": "Gain 2 Focus"
     },
     "mysteryDungeon:PikachuSpark": {
         "NAME": "Spark",
-        "DESCRIPTION": "Deal !D! damage. NL Return to 0 on the *Charge-Meter."
+        "DESCRIPTION": "Deal !D! damage. NL Do not return to the center of the charge gauge at the end of your turn. NL Exhaust."
     },
     "mysteryDungeon:PikachuSpeedSwap": {
         "NAME": "Speed Swap",
@@ -526,7 +526,7 @@
     },
     "mysteryDungeon:PikachuZapCannon": {
         "NAME": "Zap Cannon",
-        "DESCRIPTION": "Enter Positive Stance. NL Deal !D! damage to ALL enemies."
+        "DESCRIPTION": "Deal !D! damage to all enemies. NL For each enemies hit channel 1 lightning orb."
     },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Aqua Ring",

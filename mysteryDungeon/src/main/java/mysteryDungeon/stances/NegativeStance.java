@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.powers.FocusPower;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.actions.SetPikaMeterAction;
+import mysteryDungeon.powers.LockDownPower;
 import mysteryDungeon.relics.CellBatteryRelic;
 
 
@@ -48,7 +49,7 @@ public class NegativeStance extends PokemonStance {
 
     @Override
     public void onEndOfTurn() {
-        if(!AbstractDungeon.player.hasRelic(CellBatteryRelic.ID))
+        if(!AbstractDungeon.player.hasRelic(CellBatteryRelic.ID) && (!AbstractDungeon.player.hasPower(LockDownPower.POWER_ID)))
             addToBot(new SetPikaMeterAction(0));
     }
 
