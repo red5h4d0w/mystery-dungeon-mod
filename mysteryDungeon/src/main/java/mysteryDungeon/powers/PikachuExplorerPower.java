@@ -59,7 +59,7 @@ public class PikachuExplorerPower extends MysteryDungeonPower implements Cloneab
     public void atEndOfTurn()
     {
         for(int i=0; i<amount;i++){
-        addToBot(new EvokeOrbAction(1));
+        addToBot(new EvokeOrbAction(amount));
         }
     }
     @Override

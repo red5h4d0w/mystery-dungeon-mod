@@ -45,8 +45,8 @@
     },
     "mysteryDungeon:BulbasaurDoubleEdge": {
         "NAME": "Double Edge",
-        "DESCRIPTION": "Deal !D! damage. NL Gain Strenght equal to the unblocked damage dealt. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times. NL Gain Strenght equal to the unblocked damage dealt. NL Exhaust."
+        "DESCRIPTION": "Deal !D! damage. NL Gain Strength equal to the unblocked damage dealt. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times. NL Gain Strength equal to the unblocked damage dealt. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurExplorerForm": {
         "NAME": "Explorer Form",
