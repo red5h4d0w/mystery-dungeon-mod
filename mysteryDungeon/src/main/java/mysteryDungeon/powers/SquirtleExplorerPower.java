@@ -53,6 +53,7 @@ public class SquirtleExplorerPower extends MysteryDungeonPower implements Clonea
         super.atEndOfTurn(isPlayer);
         addToBot(new ApplyPowerAction(owner, owner, new DrawCardNextTurnPower(owner, drawAmount), drawAmount));
         drawAmount += amount;
+        updateDescription();
     }
 
     @Override
