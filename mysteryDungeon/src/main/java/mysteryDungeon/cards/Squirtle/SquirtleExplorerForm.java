@@ -41,7 +41,7 @@ public class SquirtleExplorerForm extends PokemonCard {
 
     public SquirtleExplorerForm() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        isEthereal = true;
+        
         isAdventurerOnly = true;
     }
 
@@ -56,7 +56,7 @@ public class SquirtleExplorerForm extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            isEthereal = false;
+            isInnate = true;
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

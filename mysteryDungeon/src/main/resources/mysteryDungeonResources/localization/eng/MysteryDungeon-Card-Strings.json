@@ -569,8 +569,8 @@
     },
     "mysteryDungeon:SquirtleExplorerForm": {
         "NAME": "Explorer Form",
-        "DESCRIPTION": "Ethereal. NL At the start of your turn draw a number a card equivalent to your maximum hand size.",
-        "UPGRADE_DESCRIPTION": "At the start of your turn draw a number a card equivalent to your maximum hand size."
+        "DESCRIPTION": "At the start of your turn draw one more card and increase this gain by one.",
+        "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn draw a number a card equivalent to your maximum hand size."
     },
     "mysteryDungeon:SquirtleFakeOut": {
         "NAME": "Fake Out",
