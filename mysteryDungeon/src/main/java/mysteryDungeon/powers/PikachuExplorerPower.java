@@ -8,21 +8,21 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.defect.EvokeWithoutRemovingOrbAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import com.megacrit.cardcrawl.actions.defect.EvokeOrbAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.orbs.Lightning;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 
 //Gain 1 dex for the turn for each card played.
 
-public class StaticPower extends MysteryDungeonPower implements CloneablePowerInterface {
+public class PikachuExplorerPower extends MysteryDungeonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("StaticPower");
+    public static final String POWER_ID = MysteryDungeon.makeID("PikachuExplorerPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -33,7 +33,7 @@ public class StaticPower extends MysteryDungeonPower implements CloneablePowerIn
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
 
-    public StaticPower(final AbstractCreature owner, final int amount) {
+    public PikachuExplorerPower(final AbstractCreature owner, final int amount) {
         name = NAME;
         ID = POWER_ID;
 
@@ -41,6 +41,7 @@ public class StaticPower extends MysteryDungeonPower implements CloneablePowerIn
         this.amount = amount;
 
         type = PowerType.BUFF;
+        isTurnBased = true;
 
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
@@ -50,22 +51,24 @@ public class StaticPower extends MysteryDungeonPower implements CloneablePowerIn
     }
 
     @Override
-    public int onAttacked(DamageInfo info, int damageAmount) {
-        addToBot((AbstractGameAction)new EvokeWithoutRemovingOrbAction(1));
-        return damageAmount;
+    public void atStartOfTurn()
+    {
+        for(int i=0; i<amount;i++)
+        addToBot(new ChannelAction(new Lightning()));
     }
-
+    public void atEndOfTurn()
+    {
+        for(int i=0; i<amount;i++){
+        addToBot(new EvokeOrbAction(1));
+        }
+    }
     @Override
     public AbstractPower makeCopy() {
-        return new StaticPower(owner, amount);
+        return new PikachuExplorerPower(owner, amount);
     }
 
     @Override
     public void updateDescription() {
-        if(amount==1)
             description = String.format(DESCRIPTIONS[0], amount);
-        else
-            description = String.format(DESCRIPTIONS[1], amount);
     }
 }
-

@@ -22,7 +22,8 @@ public class PikachuSpeedSwap extends PokemonCard {
     public static final String IMG = makeCardPath(PikachuSpeedSwap.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    
     // /TEXT DECLARATION/
 
 
@@ -34,8 +35,7 @@ public class PikachuSpeedSwap extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.PIKACHU_YELLOW;
     
 
-    private static final int COST = 1;
-    private static final int UPGRADE_COST = 0;
+    private static final int COST = 0;
 
 
     // /STAT DECLARATION/
@@ -44,7 +44,6 @@ public class PikachuSpeedSwap extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         exhaust = true;
         inert = true;
-        selfRetain = true;
     }
 
     // Actions the card should do.
@@ -58,8 +57,8 @@ public class PikachuSpeedSwap extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(UPGRADE_COST);
-
+            selfRetain = true;
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

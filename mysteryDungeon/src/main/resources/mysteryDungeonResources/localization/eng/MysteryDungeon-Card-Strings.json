@@ -366,8 +366,7 @@
     },
     "mysteryDungeon:PikachuChargeBeam": {
         "NAME": "Charge Beam",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Channel !M! lightning  orbs.",
-        "UPGRADE_DESCRIPTION": "Channel !M! lightning  orbs."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Channel !M! lightning  orbs. NL Exhaust"
     },
     "mysteryDungeon:PikachuCharge": {
         "NAME": "Charge",
@@ -392,7 +391,8 @@
     },
     "mysteryDungeon:PikachuElectricTerrain": {
         "NAME": "Electric Terrain",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Positive Stance. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Positive Stance. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Positive Stance. NL Exhaust."
     },
     "mysteryDungeon:PikachuElectroBall": {
         "NAME": "Electro Ball",
@@ -400,7 +400,8 @@
     },
     "mysteryDungeon:PikachuElectroweb": {
         "NAME": "Elecroweb",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Put !M! cards from your discard pile into your hand. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cards from your discard pile into your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Put !M! cards from your discard pile into your hand. NL Exhaust."
     },
     "mysteryDungeon:PikachuEncore": {
         "NAME": "Encore",
@@ -468,12 +469,13 @@
     },
     "mysteryDungeon:PikachuSpeedSwap": {
         "NAME": "Speed Swap",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Negative Stance. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Negative Stance. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Negative Stance. NL Exhaust."
     },
     "mysteryDungeon:PikachuStatic": {
         "NAME": "Static",
-        "DESCRIPTION": "Evoke !M! orb when you are attacked.",
-        "UPGRADE_DESCRIPTION": "Evoke !M! orbs when you are attacked."
+        "DESCRIPTION": "For every hit taken, trigger the evoke effect of your next !M! times.",
+        "UPGRADE_DESCRIPTION": "Innate. NL For every hit taken, trigger the evoke effect your next orb !M! times."
     },
     "mysteryDungeon:PikachuSweetKiss": {
         "NAME": "Sweet Kiss",
@@ -501,8 +503,7 @@
     },
     "mysteryDungeon:PikachuThundershock": {
         "NAME": "Thundershock",
-        "DESCRIPTION": "Return to 0 on the *Charge-Meter.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Return to 0 on the *Charge-Meter."
+        "DESCRIPTION": "Deal !D! damage. NL If you are not in a stance, gain [E]"
     },
     "mysteryDungeon:PikachuThunderwave": {
         "NAME": "Thunderwave",
@@ -520,8 +521,8 @@
     },
     "mysteryDungeon:PikachuWildCharge": {
         "NAME": "Wild Charge",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs twice. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs.",
+        "UPGRADE_DESCRIPTION": "Evoke all orbs twice."
     },
     "mysteryDungeon:PikachuZapCannon": {
         "NAME": "Zap Cannon",

@@ -52,7 +52,7 @@ public class PositiveStance extends PokemonStance {
 
     @Override
     public void onExitStance() {
-        addToBot(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, 7));
+        addToBot(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, 4));
     }
 
 }

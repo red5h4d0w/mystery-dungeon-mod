@@ -22,6 +22,7 @@ public class PikachuElectroweb extends PokemonCard {
     public static final String IMG = makeCardPath(PikachuElectroweb.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -36,7 +37,6 @@ public class PikachuElectroweb extends PokemonCard {
 
     private static final int COST = 0;
     private static final int BASE_MAGIC_NUMBER = 1;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
@@ -47,7 +47,6 @@ public class PikachuElectroweb extends PokemonCard {
         magicNumber = baseMagicNumber;
         inert = true;
         exhaust = true;
-        selfRetain = true;
     }
 
     // Actions the card should do.
@@ -61,7 +60,8 @@ public class PikachuElectroweb extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            selfRetain = true;
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

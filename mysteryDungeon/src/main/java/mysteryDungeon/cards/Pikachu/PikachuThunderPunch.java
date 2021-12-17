@@ -40,8 +40,8 @@ public class PikachuThunderPunch extends PokemonCard {
 
     private static final int COST = 1;
     private static final int DAMAGE = 8;
+    private static final int UPGRADE_PLUS_DMG = 3;
     private static final int BASE_MAGIC_NUMBER = 1;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
@@ -60,9 +60,6 @@ public class PikachuThunderPunch extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m){
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SLASH_DIAGONAL));
         addToBot(new ChannelAction(new Lightning()));
-        if(upgraded)
-            addToBot(new ChannelAction(new Lightning()));
-
     }
 
     // Upgraded stats.
@@ -70,8 +67,7 @@ public class PikachuThunderPunch extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
-            this.showEvokeOrbCount = 2;
+            upgradeDamage(UPGRADE_PLUS_DMG);
             initializeDescription();
         }
     }

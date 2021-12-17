@@ -43,14 +43,12 @@ public class PikachuWildCharge extends PokemonCard {
     public PikachuWildCharge() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         inert = true;
-        exhaust = true;
 
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-    if (upgraded)
         addToBot(new EvokeAllWithoutRemovingOrbAction());
         addToBot(new EvokeAllOrbsAction());
     }
@@ -60,6 +58,7 @@ public class PikachuWildCharge extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            inert =false;
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

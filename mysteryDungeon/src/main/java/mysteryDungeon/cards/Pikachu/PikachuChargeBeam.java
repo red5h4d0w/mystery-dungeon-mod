@@ -36,6 +36,7 @@ public class PikachuChargeBeam extends PokemonCard {
     
 
     private static final int COST = 1;
+    private static final int UPGRADE_COST = 0;
     private static final int BASE_MAGIC_NUMBER = 2;
 
 
@@ -48,6 +49,7 @@ public class PikachuChargeBeam extends PokemonCard {
         showEvokeValue = true;
         showEvokeOrbCount = 2;
         inert = true;
+        exhaust = true;
     }
 
     // Actions the card should do.
@@ -63,8 +65,7 @@ public class PikachuChargeBeam extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = UPGRADE_DESCRIPTION;
-            inert = false;
+            upgradeBaseCost(UPGRADE_COST);
             initializeDescription();
         }
     }
