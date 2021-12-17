@@ -526,7 +526,7 @@
     },
     "mysteryDungeon:PikachuZapCannon": {
         "NAME": "Zap Cannon",
-        "DESCRIPTION": "Deal !D! damage to all enemies. NL For each enemies hit channel 1 lightning orb."
+        "DESCRIPTION": "Deal !D! damage to all enemies. NL For each enemies hit channel 1 lightning orb. NL Exhaust."
     },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Aqua Ring",

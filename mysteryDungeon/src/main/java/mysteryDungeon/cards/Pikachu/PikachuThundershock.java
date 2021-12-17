@@ -38,7 +38,7 @@ public class PikachuThundershock extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.PIKACHU_YELLOW;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 10;
+    private static final int DAMAGE = 5;
     private static final int UPGRADE_PLUS_DMG = 3;
 
 

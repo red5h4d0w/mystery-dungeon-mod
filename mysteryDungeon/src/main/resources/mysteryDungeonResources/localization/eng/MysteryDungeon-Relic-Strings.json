@@ -32,7 +32,7 @@
         "NAME": "Cell Battery",
         "FLAVOR": "A consumable battery. If the holder is hit by an Electric-type move, its Attack will rise.",
         "DESCRIPTIONS": [
-            "The charge meter will only have 2 steps between stances. NL At the start of your turn return to the center of the charge meter."
+            "The charge meter will only have 3 steps between stances. NL You no longer return to the center of the charge meter at the start of your turn."
         ]
     },
     "mysteryDungeon:CharcoalRelic": {
