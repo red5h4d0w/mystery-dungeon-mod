@@ -36,7 +36,7 @@ public class PikachuThunder extends PokemonCard {
 
     private static final int COST = 2;
     private static final int BASE_MAGIC_NUMBER = 6;
-    private static final int UPGRADE_MAGIC_NUMBER = 9;
+    private static final int UPGRADE_MAGIC_NUMBER = 3;
 
 
     // /STAT DECLARATION/

@@ -79,8 +79,8 @@
     "mysteryDungeon:FrustrationPower": {
         "NAME": "Frustration",
         "DESCRIPTIONS": [
-            "At the end of your turn chose 1 card to #yretain. NL This card becomes #yethereal.",
-            "At the end of your turn chose #b%s card to #yretain. NL Those cards become #yethereal."
+            "At the end of your turn chose up to 1 card to #yretain. NL This card becomes #yethereal.",
+            "At the end of your turn chose up to #b%s card to #yretain. NL Those cards become #yethereal."
         ]
     },
     "mysteryDungeon:HailPower": {

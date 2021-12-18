@@ -47,7 +47,7 @@ public class CharcoalRelic extends PokemonRelic implements OnApplyPowerRelic {
             addToBot((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)AbstractDungeon.player, this));
             addToBot((AbstractGameAction)new DamageAllEnemiesAction(null, 
                   
-                  DamageInfo.createDamageMatrix(2, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+                  DamageInfo.createDamageMatrix(1, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         }
         return true;
       }

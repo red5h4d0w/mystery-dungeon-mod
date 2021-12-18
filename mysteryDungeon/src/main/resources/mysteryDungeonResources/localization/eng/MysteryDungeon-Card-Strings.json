@@ -522,8 +522,7 @@
     },
     "mysteryDungeon:PikachuWildCharge": {
         "NAME": "Wild Charge",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs.",
-        "UPGRADE_DESCRIPTION": "Evoke all orbs twice."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs twice."
     },
     "mysteryDungeon:PikachuZapCannon": {
         "NAME": "Zap Cannon",
