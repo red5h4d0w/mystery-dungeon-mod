@@ -71,7 +71,7 @@ public class PikachuMeter {
             float y = Settings.HEIGHT-165.0f*Settings.scale;
             //TODO: Localization
             String title = "Charge Meter";
-            String description = "When you play a Skill, move to the left by 1 notch on this meter. NL When you play an Attack, move to the right by 1 notch on this meter. NL When you reach one of the end points on the meter, enter the corresponding stances. NL You can hover this to see info on the stances.";
+            String description = "When you play a Skill, move toward the left of the meter. NL When you play an Attack, move toward the right of the meter. NL When you reach one of the end of the meter, enter the corresponding stances. NL At the end of every turn return to the center. NL You can hover this to see info on the stances.";
             float h = -FontHelper.getSmartHeight(FontHelper.tipBodyFont, description, BODY_TEXT_WIDTH, TIP_DESC_LINE_SPACING) - 7.0F * Settings.scale;
             sb.setColor(Settings.TOP_PANEL_SHADOW_COLOR);
             sb.draw(ImageMaster.KEYWORD_TOP, x + SHADOW_DIST_X, y - SHADOW_DIST_Y, BOX_W, BOX_EDGE_H);

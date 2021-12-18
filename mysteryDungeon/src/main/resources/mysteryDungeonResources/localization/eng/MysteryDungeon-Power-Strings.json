@@ -143,7 +143,7 @@
     },
     "mysteryDungeon:PikachuExplorerPower": {
         "NAME": "Explorer Form",
-        "DESCRIPTIONS": ["At the start of your turn Channel #b%s lightning orb. At he end of your turn evoke your next #b%s orb."]
+        "DESCRIPTIONS": ["At the start of your turn Channel #b%s lightning orb. If you have at least 1 orb, at the start of your turn evoke your next #b%s orb."]
     },
     "mysteryDungeon:RainDancePower": {
         "NAME": "Rain Dance",
@@ -184,8 +184,8 @@
     "mysteryDungeon:SquirtleExplorerPower": {
         "NAME": "Explorer Form",
         "DESCRIPTIONS": [
-            "At the start of your turn draw #b%s card. Increase this amount by #b%s at the end of your turn.",
-            "At the start of your turn draw #b%s cards. Increase this amount by #b%s at the end of your turn."
+            "At the start of your next turn draw #b%s more card. Increase this amount by #b%s at the end of your turn.",
+            "At the start of your next turn draw #b%s more cards. Increase this amount by #b%s at the end of your turn."
         ]
     },
     "mysteryDungeon:StaticPower": {

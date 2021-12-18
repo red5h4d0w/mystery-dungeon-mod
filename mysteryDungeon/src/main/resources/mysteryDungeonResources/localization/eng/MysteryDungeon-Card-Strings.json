@@ -410,8 +410,8 @@
     },
     "mysteryDungeon:PikachuExplorerForm": {
         "NAME": "Explorer Form",
-        "DESCRIPTION": "At the start of your turn Channel !M! Lightning orb. At the end of your turn Evoke your next orb",
-        "UPGRADE_DESCRIPTION": "At the start of your turn Channel !M! Lightning orbs. At the end of your turn Evoke your next !M! orbs"
+        "DESCRIPTION": "At the start of your turn Channel !M! Lightning orb. If you have at least 1 orb, at the start of your turn evoke your next orb",
+        "UPGRADE_DESCRIPTION": "At the start of your turn Channel !M! Lightning orbs. If you have at least 1 orb, at the start of your turn evoke your next !M! orbs"
     },
     "mysteryDungeon:PikachuHiddenPower": {
         "NAME": "Hidden Power",

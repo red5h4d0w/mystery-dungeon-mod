@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.actions.defect.EvokeOrbAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.orbs.Lightning;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -53,15 +54,14 @@ public class PikachuExplorerPower extends MysteryDungeonPower implements Cloneab
     @Override
     public void atStartOfTurn()
     {
+        if(AbstractDungeon.player.orbs.size()>=1)
+        addToBot(new EvokeOrbAction(amount));
+
         for(int i=0; i<amount;i++)
         addToBot(new ChannelAction(new Lightning()));
     }
-    public void atEndOfTurn()
-    {
-        for(int i=0; i<amount;i++){
-        addToBot(new EvokeOrbAction(amount));
-        }
-    }
+        
+
     @Override
     public AbstractPower makeCopy() {
         return new PikachuExplorerPower(owner, amount);
@@ -69,6 +69,6 @@ public class PikachuExplorerPower extends MysteryDungeonPower implements Cloneab
 
     @Override
     public void updateDescription() {
-            description = String.format(DESCRIPTIONS[0], amount);
+            description = String.format(DESCRIPTIONS[0], amount, amount);
     }
 }

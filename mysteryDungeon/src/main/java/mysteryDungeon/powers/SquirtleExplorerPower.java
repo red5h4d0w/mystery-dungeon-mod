@@ -8,12 +8,11 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 
 
 //Gain 1 dex for the turn for each card played.
@@ -37,6 +36,7 @@ public class SquirtleExplorerPower extends MysteryDungeonPower implements Clonea
         name = NAME;
         ID = POWER_ID;
 
+        this.amount = 1;
         this.owner = owner;
 
         type = PowerType.BUFF;
@@ -49,12 +49,10 @@ public class SquirtleExplorerPower extends MysteryDungeonPower implements Clonea
     }
 
     @Override
-    public void atEndOfTurn(boolean isPlayer) {
-        super.atEndOfTurn(isPlayer);
-        addToBot(new ApplyPowerAction(owner, owner, new DrawCardNextTurnPower(owner, drawAmount), drawAmount));
-        drawAmount += amount;
-        updateDescription();
-    }
+    public void stackPower(int stackAmount) {
+    super.stackPower(stackAmount);
+    this.drawAmount++;
+  }
 
     @Override
     public AbstractPower makeCopy() {
@@ -70,4 +68,11 @@ public class SquirtleExplorerPower extends MysteryDungeonPower implements Clonea
             description = String.format(DESCRIPTIONS[1], drawAmount, amount);
         }
     }
+    public void onEnergyRecharge() {
+        flash();
+        AbstractDungeon.player.draw(this.drawAmount);
+        this.drawAmount += this.amount;
+        updateDescription();
+      }
 }
+    
