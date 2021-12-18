@@ -41,8 +41,8 @@ public class PikachuZapCannon extends PokemonCard {
     
 
     private static final int COST = 2;
-    private static final int UPGRADE_COST = 1;
     private static final int DAMAGE = 12;
+    private static final int UPGRADE_PLUS_DMG = 5;
 
 
 
@@ -72,7 +72,7 @@ public class PikachuZapCannon extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(UPGRADE_COST);
+            upgradeDamage(UPGRADE_PLUS_DMG);
             initializeDescription();
         }
     }
