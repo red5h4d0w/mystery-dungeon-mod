@@ -471,12 +471,17 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     @Override
     public void applyEndOfTurnTriggers() {
         super.applyEndOfTurnTriggers();
+<<<<<<< Updated upstream
         if(hasPower(LockDownPower.POWER_ID) || hasRelic(CellBatteryRelic.ID) || !hasChosenPikachu()) {
             return;
         }
         else {
             AbstractDungeon.actionManager.addToBottom(new SetPikaMeterAction(0));
         }
+=======
+        if(!AbstractDungeon.player.hasRelic(CellBatteryRelic.ID) && (!AbstractDungeon.player.hasPower(LockDownPower.POWER_ID)))
+        AbstractDungeon.actionManager.addToBottom(new SetPikaMeterAction(0));
+>>>>>>> Stashed changes
     }
 
     @Override
