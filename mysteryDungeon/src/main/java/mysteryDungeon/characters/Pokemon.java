@@ -9,6 +9,7 @@ import mysteryDungeon.cards.Bulbasaur.BulbasaurTackle;
 import mysteryDungeon.cards.fakeCards.ExplorersDeck;
 import mysteryDungeon.cards.fakeCards.PartnersDeck;
 import mysteryDungeon.pokemons.AbstractPokemon;
+import mysteryDungeon.powers.LockDownPower;
 import mysteryDungeon.relics.*;
 import mysteryDungeon.saveConstructs.ToSave;
 import mysteryDungeon.stances.NegativeStance;
@@ -470,7 +471,12 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     @Override
     public void applyEndOfTurnTriggers() {
         super.applyEndOfTurnTriggers();
-        AbstractDungeon.actionManager.addToBottom(new SetPikaMeterAction(0));
+        if(hasPower(LockDownPower.POWER_ID) || hasRelic(CellBatteryRelic.ID) || !hasChosenPikachu()) {
+            return;
+        }
+        else {
+            AbstractDungeon.actionManager.addToBottom(new SetPikaMeterAction(0));
+        }
     }
 
     @Override
