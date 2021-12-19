@@ -60,7 +60,7 @@ public class NegativeStance extends PokemonStance {
   
     @Override
     public void onExitStance() {
-        addToBot(new EvokeOrbAction(2));
+        addToBot(new EvokeOrbAction(1));
     }
 
 }
