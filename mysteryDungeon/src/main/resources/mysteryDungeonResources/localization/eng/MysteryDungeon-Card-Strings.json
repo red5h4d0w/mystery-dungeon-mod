@@ -466,7 +466,7 @@
     },
     "mysteryDungeon:PikachuSpark": {
         "NAME": "Spark",
-        "DESCRIPTION": "Deal !D! damage. NL Do not return to the center of the charge gauge at the end of your turn. NL Exhaust."
+        "DESCRIPTION": "Inert. NL Deal !D! damage. NL Do not return to the center of the charge gauge at the end of your turn. NL Exhaust."
     },
     "mysteryDungeon:PikachuSpeedSwap": {
         "NAME": "Speed Swap",

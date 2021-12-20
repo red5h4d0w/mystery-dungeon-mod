@@ -50,6 +50,7 @@ public class PikachuSpark extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         exhaust = true;
+        inert = true;
     }
 
     // Actions the card should do.
