@@ -462,7 +462,7 @@
     },
     "mysteryDungeon:PikachuLightningRod": {
         "NAME": "Lightning Rod",
-        "DESCRIPTION": "Gain 2 Focus"
+        "DESCRIPTION": "Gain !B! Block. NL Channel !M! Lightning orb."
     },
     "mysteryDungeon:PikachuSpark": {
         "NAME": "Spark",
