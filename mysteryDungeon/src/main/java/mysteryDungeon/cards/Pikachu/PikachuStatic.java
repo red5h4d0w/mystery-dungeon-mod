@@ -57,6 +57,7 @@ public class PikachuStatic extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            isInnate = true;
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

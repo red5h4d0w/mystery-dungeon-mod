@@ -38,8 +38,8 @@ public class PikachuThunderwave extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.PIKACHU_YELLOW;
 
     private static final int COST = 1;
-    private static final int BLOCK = 3;
-    private static final int UPGRADE_PLUS_BLOCK = 1;
+    private static final int BLOCK = 4;
+    private static final int UPGRADE_PLUS_BLOCK = 2;
     private static final int BLOCK_DIFFERENCE = 6;
     private static final int UPGRADE_PLUS_BLOCK_DIFFERENCE = 4;
 
