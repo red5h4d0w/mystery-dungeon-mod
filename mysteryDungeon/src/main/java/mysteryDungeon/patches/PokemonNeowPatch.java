@@ -206,10 +206,17 @@ public class PokemonNeowPatch {
             {
                 return;
             }
-            answeredQuestions = 0;
-            screenNum = 0;
-            InitializeTraitsScore();
-            InitializeQuestions();
+            if(!isDone) {
+                Pokemon.adventurer = null;
+                Pokemon.partner = null;
+                answeredQuestions = 0;
+                screenNum = 0;
+                InitializeTraitsScore();
+                InitializeQuestions();
+            }
+            else {
+                screenNum = 99;
+            }
         }
     }
 
@@ -217,14 +224,11 @@ public class PokemonNeowPatch {
     public static class NeowEventFlow {
         @SpirePrefixPatch
         @SuppressWarnings("all")
-        public static SpireReturn AdvanceAccordingToChoice(NeowEvent __instance, int buttonPressed)
-        {
-            if(!(AbstractDungeon.player instanceof Pokemon))
-            {
+        public static SpireReturn AdvanceAccordingToChoice(NeowEvent __instance, int buttonPressed) {
+            if(!(AbstractDungeon.player instanceof Pokemon)) {
                 return SpireReturn.Continue();
             }
-            switch(screenNum)
-            {
+            switch(screenNum) {
                 case 0:
                     ShowNextDialog(__instance);
                     return SpireReturn.Return(null);

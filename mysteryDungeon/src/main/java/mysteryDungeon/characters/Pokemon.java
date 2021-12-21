@@ -45,7 +45,6 @@ import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.neow.NeowRoom;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.stances.NeutralStance;
@@ -452,16 +451,11 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     public ToSave onSave()
     {
         logger.info("SAVING!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        logger.info(AbstractDungeon.getCurrRoom() instanceof NeowRoom);
-        if(AbstractDungeon.getCurrRoom() instanceof NeowRoom)
-            return new ToSave();
         ToSave saveInfo = new ToSave();
-        if(adventurer!=null){
-            saveInfo.adventurer = adventurer.getClass().getSimpleName();
-        }
-        if(partner!=null){
-            saveInfo.partner = partner.getClass().getSimpleName();
-        }
+        if(!hasChosenStarters())
+            return saveInfo;
+        saveInfo.adventurer = adventurer.getClass().getSimpleName();
+        saveInfo.partner = partner.getClass().getSimpleName();
         logger.info(saveInfo.adventurer);
         logger.info(saveInfo.partner);
         saveInfo.maxPikaMeter = maxPikachuChargeCounter;
