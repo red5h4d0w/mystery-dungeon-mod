@@ -260,7 +260,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
                         (!UnlockTracker.isCardLocked(c.getKey()) || Settings.isDailyRun)) {
                             if(card instanceof PokemonCard) {
                                 if(!((PokemonCard)card).isAdventurerOnly || color == adventurer.cardColor) {
-                                    logger.info(card.name);
                                     tmpPool.add(card);
                                 }
                             }
@@ -585,15 +584,16 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public static boolean hasChosenPikachu() {
-        if(AbstractDungeon.player instanceof Pokemon)
-        if(((Pokemon)AbstractDungeon.player).hasChosenStarters()) {
-            if(adventurer.cardColor == Enums.PIKACHU_YELLOW)
-            {
-                return true;
-            }
-            if(partner.cardColor == Enums.PIKACHU_YELLOW)
-            {
-                return true;
+        if(AbstractDungeon.player instanceof Pokemon) {
+            if(((Pokemon)AbstractDungeon.player).hasChosenStarters()) {
+                if(adventurer.cardColor == Enums.PIKACHU_YELLOW)
+                {
+                    return true;
+                }
+                if(partner.cardColor == Enums.PIKACHU_YELLOW)
+                {
+                    return true;
+                }
             }
         }
         return false;
@@ -678,7 +678,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     @Override
     public void applyStartOfCombatLogic() {
         super.applyStartOfCombatLogic();
-        setPikaMeter(0);
+        resetPikameter();
     }
 
     public void DefineNature(String natureAsAString)
