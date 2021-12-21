@@ -2,7 +2,7 @@
     "mysteryDungeon:NegativeStance": {
         "NAME": "Negative Stance",
         "DESCRIPTION": [
-            "The first #b2 #ySkill played each turn will grant you #b1 #yfocus each. NL When you #yexit this #ystance, #yevoke your next #b2 #yorbs."
+            "The first #b2 #ySkill played each turn will grant you #b1 #yfocus each. NL When you #yexit this #ystance, #yevoke your next #yorb."
         ]
     },
     "mysteryDungeon:PositiveStance": {

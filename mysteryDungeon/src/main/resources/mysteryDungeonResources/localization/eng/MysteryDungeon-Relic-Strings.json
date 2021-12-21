@@ -137,7 +137,7 @@
         "NAME": "Light Ball",
         "FLAVOR": "It's a puzzling orb that boosts its Attack and Sp. Atk stats.",
         "DESCRIPTIONS": [
-            "When you play a power and you are not in a stance, gain 1 orb slot."
+            "Once per turn, when you play a power and you are not in a stance, gain 1 orb slot."
         ]
     },
     "mysteryDungeon:WaveIncenseRelic": {

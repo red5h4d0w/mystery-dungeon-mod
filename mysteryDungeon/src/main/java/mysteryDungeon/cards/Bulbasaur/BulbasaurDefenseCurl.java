@@ -34,7 +34,7 @@ public class BulbasaurDefenseCurl extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
 
     private static final int COST = 1;
-    private static final int BLOCK = 10;
+    private static final int BLOCK = 9;
     private static final int UPGRADE_PLUS_BLOCK = 4;
 
 
