@@ -209,6 +209,7 @@ public class PokemonNeowPatch {
             if(!isDone) {
                 Pokemon.adventurer = null;
                 Pokemon.partner = null;
+                Pokemon.maxPikachuChargeCounter = 2;
                 answeredQuestions = 0;
                 screenNum = 0;
                 InitializeTraitsScore();
