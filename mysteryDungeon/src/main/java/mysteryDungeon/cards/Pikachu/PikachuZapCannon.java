@@ -27,7 +27,6 @@ public class PikachuZapCannon extends PokemonCard {
     public static final String IMG = makeCardPath(PikachuZapCannon.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
