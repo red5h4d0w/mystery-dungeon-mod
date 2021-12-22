@@ -16,7 +16,7 @@
             "Endormi",
             "endormi"
         ],
-        "DESCRIPTION": "Quand un ennemi est endormi, il n'agira pas tant qu'il ne recevra pas de dégât. Quand il en recevra, son intention redeviendra celle qu'il avait avant de s'endormir."
+        "DESCRIPTION": "Quand un ennemi est endormi, il n'agira pas tant qu'il ne recevra pas de dégât. S'il en reçoit, son intention redeviendra celle qu'il avait avant de s'endormir."
     },
     {
         "PROPER_NAME": "Brûlure",
@@ -56,13 +56,13 @@
         "DESCRIPTION": "Au début de son tour, pour chaque Vampigraine que l'ennemi a, il perd #b1 #yPV et vous en regagnez #b1."
     },
     {
-        "PROPER_NAME": "Épines Venimeuses",
+        "PROPER_NAME": "Épines Empoisonnées",
         "NAMES": [
-            "Épines Venimeuses",
-            "Épines_Venimeuses",
-            "épines_venimeuses"
+            "Épines Empoisonnées",
+            "Épines_Empoisonnées",
+            "épines_empoisonnées"
         ],
-        "DESCRIPTION": "Quand vous êtes attaqué, appliquez #b1 Poison par #yÉpines #yVenimeuses."
+        "DESCRIPTION": "Quand vous êtes attaqué, appliquez #b1 de Poison par #yÉpines #yEmpoisonées."
     },
     {
         "PROPER_NAME": "Négativité",

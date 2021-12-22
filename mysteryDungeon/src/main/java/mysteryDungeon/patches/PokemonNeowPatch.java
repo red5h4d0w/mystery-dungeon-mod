@@ -233,7 +233,7 @@ public class PokemonNeowPatch {
                     return SpireReturn.Return(null);
                 case 2:
                     isTestRun = false;
-                    AskQuestion(__instance, new Question(TEXT[screenNum], new String[]{"Yes", "I'd prefer choosing my team", "I'd like the quickest option"}));
+                    AskQuestion(__instance, new Question(TEXT[screenNum], new String[]{TEXT[screenNum+2], TEXT[screenNum+3], TEXT[screenNum+4]}));
                     screenNum++;
                     return SpireReturn.Return(null);
                 case 3:
@@ -334,13 +334,13 @@ public class PokemonNeowPatch {
                     break;
                 // Test run choose option
                 case 10:
-                    AskQuestion(__instance, new Question("Choose your adventurer", implementedPokemons.stream().map(p -> p.name).toArray(size-> new String[size])));
+                    AskQuestion(__instance, new Question(TEXT[7], implementedPokemons.stream().map(p -> p.name).toArray(size-> new String[size])));
                     screenNum++;
                     return SpireReturn.Return(null);
                 case 11:
                     ((Pokemon)AbstractDungeon.player).adventurer = implementedPokemons.get(buttonPressed);
                     ((Pokemon)AbstractDungeon.player).DefineNature(NatureOfPokemon.get(implementedPokemons.get(buttonPressed).name)[AbstractDungeon.eventRng.random(1)]);
-                    AskQuestion(__instance, new Question("Choose your partner", implementedPokemons.stream().filter(p -> p != ((Pokemon)AbstractDungeon.player).adventurer).map(p -> p.name).toArray(size-> new String[size])));
+                    AskQuestion(__instance, new Question(TEXT[8], implementedPokemons.stream().filter(p -> p != ((Pokemon)AbstractDungeon.player).adventurer).map(p -> p.name).toArray(size-> new String[size])));
                     screenNum=5;
                     return SpireReturn.Return(null);
                 case 99:

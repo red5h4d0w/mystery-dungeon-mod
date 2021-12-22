@@ -7,5 +7,11 @@
     },
     "mysteryDungeon:RetainCardsButEtherealModAction": {
         "TEXT": ["Retain (cards will become ethereal)"]
+    },
+    "mysteryDungeon:PikachuMeter": {
+        "TEXT": [
+            "Charge Meter",
+            "When you play a Skill, move to the left by 1 space on this meter. NL When you play an Attack, move to the right by 1 space on this meter. NL When you reach one of the end points on the meter, enter the corresponding stances."
+        ]
     }
 }

@@ -55,7 +55,7 @@
     },
     "mysteryDungeon:BulbasaurExplorerForm": {
         "NAME": "Forme de l'Explorateur",
-        "DESCRIPTION": "Gagnez !M! Regénération. NL Au début de votre tour, perdez 1 de Dextérité."
+        "DESCRIPTION": "Gagnez !M! Régénération. NL Au début de votre tour, perdez 1 de Dextérité."
     },
     "mysteryDungeon:BulbasaurFrenzyPlant": {
         "NAME": "Végé-Attaque",
@@ -75,11 +75,11 @@
     },
     "mysteryDungeon:BulbasaurIngrain": {
         "NAME": "Racines",
-        "DESCRIPTION": "Appliquez 1 de mysterydungeon:Leech_Seed à un ennemi aléatoire !M! fois. NL Perdez 2 de Dextérité. NL Épuisement."
+        "DESCRIPTION": "Appliquez 1 de mysterydungeon:Vampigraine à un ennemi aléatoire !M! fois. NL Perdez 2 de Dextérité. NL Épuisement."
     },
     "mysteryDungeon:BulbasaurLeechSeed": {
         "NAME": "Vampigraine",
-        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Leech_Seed. NL Épuisement."
+        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Vampigraine. NL Épuisement."
     },
     "mysteryDungeon:BulbasaurMegaDrain": {
         "NAME": "Méga-Sangsue",
@@ -100,7 +100,7 @@
     },
     "mysteryDungeon:BulbasaurPoisonPoint": {
         "NAME": "Point Poison",
-        "DESCRIPTION": "Gagnez !M! mysterydungeon:Poison_Thorns."
+        "DESCRIPTION": "Gagnez !M! mysterydungeon:Épines_Empoisonnées."
     },
     "mysteryDungeon:BulbasaurPoisonPowder": {
         "NAME": "Poudre Toxik",
@@ -120,7 +120,7 @@
     },
     "mysteryDungeon:BulbasaurRest": {
         "NAME": "Repos",
-        "DESCRIPTION": "Soignez !mysteryDungeon:M2! PV. mysterydungeon:Rest pendant !M! tours."
+        "DESCRIPTION": "Soignez !mysteryDungeon:M2! PV. mysterydungeon:Repos pendant !M! tours."
     },
     "mysteryDungeon:BulbasaurSecretPower": {
         "NAME": "Force Cachée",
@@ -133,7 +133,7 @@
     },
     "mysteryDungeon:BulbasaurSleepPowder": {
         "NAME": "Poudre Dodo",
-        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Asleep. NL Épuisement."
+        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Endormi. NL Épuisement."
     },
     "mysteryDungeon:BulbasaurSludgeBomb": {
         "NAME": "Bombe Beurk",
@@ -171,8 +171,8 @@
     },
     "mysteryDungeon:BulbasaurToxic": {
         "NAME": "Toxik",
-        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Toxic à TOUS les ennemis. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "Inné. NL Appliquez !M! de mysterydungeon:Toxic à TOUS les ennemis. NL Épuisement."
+        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Toxik à TOUS les ennemis. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Appliquez !M! de mysterydungeon:Toxik à TOUS les ennemis. NL Épuisement."
     },
     "mysteryDungeon:BulbasaurVenoshock": {
         "NAME": "Choc Venin",
@@ -188,8 +188,8 @@
     },
     "mysteryDungeon:BulbasaurYawn": {
         "NAME": "Baîllement",
-        "DESCRIPTION": "Éthérée. NL Appliquez !M! de mysterydungeon:Asleep à TOUS les ennemis juste avant qu'ils agissent (après le Poison, etc.). NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "Appliquez !M! de mysterydungeon:Asleep à TOUS les ennemis juste avant qu'ils agissent (après le Poison, etc.). NL Épuisement."
+        "DESCRIPTION": "Éthérée. NL Appliquez !M! de mysterydungeon:Endormi à TOUS les ennemis juste avant qu'ils agissent (après le Poison, etc.). NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Appliquez !M! de mysterydungeon:Endormi à TOUS les ennemis juste avant qu'ils agissent (après le Poison, etc.). NL Épuisement."
     },
     "mysteryDungeon:CharmanderBellyDrum": {
         "NAME": "Cognobidon",
@@ -560,7 +560,7 @@
     },
     "mysteryDungeon:SquirtleDive": {
         "NAME": "Plongée",
-        "DESCRIPTION": "Épuisez tous vos Statut. NL Ajoutez !M! *Buée *Noire à des positions aléatoires dans votre pioche ou défausse. NL Épuisement."
+        "DESCRIPTION": "Épuisez tous vos Statut. NL Ajoutez !M! *Buée *Noire à des endroits aléatoires dans votre pioche ou défausse. NL Épuisement."
     },
     "mysteryDungeon:SquirtleDoubleTeam": {
         "NAME": "Reflet",
@@ -600,7 +600,7 @@
     },
     "mysteryDungeon:SquirtleGyroBall": {
         "NAME": "Gyroballe",
-        "DESCRIPTION": "Ajoutez 1 *Freeze à votre main. NL Infligez !D! dégâts par status dans votre main. NL Défaussez TOUS les Statut en main. NL Piochez !M! cartes."
+        "DESCRIPTION": "Ajoutez 1 *gel à votre main. NL Infligez !D! dégâts par status dans votre main. NL Défaussez TOUS les Statut en main. NL Piochez !M! cartes."
     },
     "mysteryDungeon:SquirtleHail": {
         "NAME": "Grêle",
@@ -655,7 +655,7 @@
     },
     "mysteryDungeon:SquirtleRapidSpin": {
         "NAME": "Tour Rapide",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Si l'ennemi compte attaquer, gagnez !M! artifact."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Si l'ennemi compte attaquer, gagnez !M! d'Artéfact."
     },
     "mysteryDungeon:SquirtleScald": {
         "NAME": "Ébullition",

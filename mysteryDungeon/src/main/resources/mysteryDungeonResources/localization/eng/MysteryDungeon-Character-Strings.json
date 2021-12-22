@@ -35,7 +35,12 @@
             "This is the portal that leads to the world of Pokémon",
             "But before I can let you through, I have several questions for you.",
             "I want you to answer them sincerely. NL Are you ready?",
-            "OK... NL Let the interview begin!"
+            "OK... NL Let the interview begin!",
+            "Yes!", 
+            "I'd prefer choosing my team.", 
+            "I'd like to get a random team.",
+            "Choose your adventurer",
+            "Choose your partner"
         ]
     }
 }
