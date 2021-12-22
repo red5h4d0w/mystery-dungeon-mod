@@ -19,7 +19,7 @@ public class CharmanderDefend extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(CharmanderDefend.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("CharmanderSkill.png");
+    public static final String IMG = makeCardPath(CharmanderDefend.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

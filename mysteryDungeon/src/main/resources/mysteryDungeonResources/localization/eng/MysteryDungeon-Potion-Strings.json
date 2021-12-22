@@ -39,7 +39,7 @@
     "mysteryDungeon:XAttackPotion": {
         "NAME": "X Attack",
         "DESCRIPTIONS": [
-            "Add #b%s #yFlinch to your hand."
+            "Add #b%s #yFlinch to your hand. They cost 0 this turn."
         ]
     },
     "mysteryDungeon:XSpAttackPotion": {

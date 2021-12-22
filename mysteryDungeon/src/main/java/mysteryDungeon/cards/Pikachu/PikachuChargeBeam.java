@@ -19,7 +19,7 @@ public class PikachuChargeBeam extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(PikachuChargeBeam.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("PikachuSkill.png");
+    public static final String IMG = makeCardPath(PikachuChargeBeam.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -36,6 +36,7 @@ public class PikachuChargeBeam extends PokemonCard {
     
 
     private static final int COST = 1;
+    private static final int UPGRADE_COST = 0;
     private static final int BASE_MAGIC_NUMBER = 2;
 
 
@@ -48,6 +49,7 @@ public class PikachuChargeBeam extends PokemonCard {
         showEvokeValue = true;
         showEvokeOrbCount = 2;
         inert = true;
+        exhaust = true;
     }
 
     // Actions the card should do.
@@ -63,8 +65,7 @@ public class PikachuChargeBeam extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = UPGRADE_DESCRIPTION;
-            inert = false;
+            upgradeBaseCost(UPGRADE_COST);
             initializeDescription();
         }
     }

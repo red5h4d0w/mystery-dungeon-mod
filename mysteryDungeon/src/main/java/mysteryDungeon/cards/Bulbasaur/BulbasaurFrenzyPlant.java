@@ -23,7 +23,7 @@ public class BulbasaurFrenzyPlant extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(BulbasaurFrenzyPlant.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("BulbasaurAttack.png");
+    public static final String IMG = makeCardPath(BulbasaurFrenzyPlant.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
@@ -39,7 +39,7 @@ public class BulbasaurFrenzyPlant extends PokemonCard {
 
     private static final int COST = 1;
     private static final int DAMAGE = 4;
-    private static final int BASE_MAGIC_NUMBER = 2;
+    private static final int BASE_MAGIC_NUMBER = 3;
     private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 

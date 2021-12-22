@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.stances.NeutralStance;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonRelic;
@@ -26,15 +27,22 @@ public class LightBallRelic extends PokemonRelic {
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("light-ball.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("light-ball.png"));
 
+    private boolean used = false;
+
     public LightBallRelic() {
         super(ID, IMG, OUTLINE, RelicTier.SPECIAL, LandingSound.CLINK);
     }
 
     @Override
+    public void atTurnStart() {
+        used = false;
+    }
+    @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
-        if(AbstractDungeon.player.stance.ID == NeutralStance.STANCE_ID && c.type == CardType.POWER) {
+        if(!used&&AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && AbstractDungeon.player.stance.ID == NeutralStance.STANCE_ID && c.type == CardType.POWER) {
             flash();
             addToBot(new IncreaseMaxOrbAction(1));
+            used = true;
         }
     }
 

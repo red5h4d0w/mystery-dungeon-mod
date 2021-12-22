@@ -260,8 +260,8 @@
     },
     "mysteryDungeon:CharmanderExplorerForm": {
         "NAME": "Explorer Form",
-        "DESCRIPTION": "Ethereal. NL At the start of your turn, return !M! random card from your exhaust pile.",
-        "UPGRADE_DESCRIPTION": "At the start of your turn, return !M! random card from your exhaust pile."
+        "DESCRIPTION": "Ethereal. NL At the start of your turn return !M! random card from your exhaust pile. NL Draw one less card per turn.",
+        "UPGRADE_DESCRIPTION": "At the start of your turn return !M! random card from your exhaust pile. NL Draw one less card per turn."
     },
     "mysteryDungeon:CharmanderFacade": {
         "NAME": "Facade",
@@ -366,12 +366,11 @@
     },
     "mysteryDungeon:PikachuChargeBeam": {
         "NAME": "Charge Beam",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Channel !M! Lightning.",
-        "UPGRADE_DESCRIPTION": "Channel !M! Lightning."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Channel !M! lightning  orbs. NL Exhaust"
     },
     "mysteryDungeon:PikachuCharge": {
         "NAME": "Charge",
-        "DESCRIPTION": "Gain !M! Focus. NL Remove all orbs"
+        "DESCRIPTION": "Gain !M! Focus. NL Remove all orbs."
     },
     "mysteryDungeon:PikachuCharm": {
         "NAME": "Charm",
@@ -392,7 +391,8 @@
     },
     "mysteryDungeon:PikachuElectricTerrain": {
         "NAME": "Electric Terrain",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter mysterydungeon:Positive_Stance. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Positive Stance. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Positive Stance. NL Exhaust."
     },
     "mysteryDungeon:PikachuElectroBall": {
         "NAME": "Electro Ball",
@@ -400,7 +400,8 @@
     },
     "mysteryDungeon:PikachuElectroweb": {
         "NAME": "Elecroweb",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Put !M! cards from your discard pile into your hand. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cards from your discard pile into your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Put !M! cards from your discard pile into your hand. NL Exhaust."
     },
     "mysteryDungeon:PikachuEncore": {
         "NAME": "Encore",
@@ -409,7 +410,8 @@
     },
     "mysteryDungeon:PikachuExplorerForm": {
         "NAME": "Explorer Form",
-        "DESCRIPTION": "Channel !M! Lightning. NL At the start of your turn, lose 1 Focus."
+        "DESCRIPTION": "At the start of your turn, evoke your next Orb, then channel !M! Lightning.",
+        "UPGRADE_DESCRIPTION": "At the start of your turn, evoke your next Orb, then channel !M! Lightning."
     },
     "mysteryDungeon:PikachuHiddenPower": {
         "NAME": "Hidden Power",
@@ -458,22 +460,23 @@
         "NAME": "Shock Wave",
         "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Apply !M! Lock-On to ALL enemies."
     },
-    "mysteryDungeon:PikachuSlam": {
-        "NAME": "Slam",
-        "DESCRIPTION": "Deal !D! damage. NL If you are not in a stance, gain [E] [E]."
+    "mysteryDungeon:PikachuLightningRod": {
+        "NAME": "Lightning Rod",
+        "DESCRIPTION": "Gain !B! Block. NL Channel !M! Lightning Orb."
     },
     "mysteryDungeon:PikachuSpark": {
         "NAME": "Spark",
-        "DESCRIPTION": "Deal !D! damage. NL Return to the center on the *Charge-Meter."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Deal !D! damage. NL Do not return to the center of the charge gauge at the end of your turn. NL Exhaust."
     },
     "mysteryDungeon:PikachuSpeedSwap": {
         "NAME": "Speed Swap",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter mysterydungeon:Negative_Stance. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Negative Stance. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Negative Stance. NL Exhaust."
     },
     "mysteryDungeon:PikachuStatic": {
         "NAME": "Static",
-        "DESCRIPTION": "Evoke !M! Orb when you are attacked.",
-        "UPGRADE_DESCRIPTION": "Evoke !M! Orbs when you are attacked."
+        "DESCRIPTION": "For every hit taken, trigger the evoke effect of your next Orb !M! times.",
+        "UPGRADE_DESCRIPTION": "Innate. NL For every hit taken, trigger the evoke effect your next Orb !M! times."
     },
     "mysteryDungeon:PikachuSweetKiss": {
         "NAME": "Sweet Kiss",
@@ -500,9 +503,8 @@
         "DESCRIPTION": "Deal !D! damage. NL Channel !M! Lightning."
     },
     "mysteryDungeon:PikachuThundershock": {
-        "NAME": "Thunder Shock",
-        "DESCRIPTION": "Return to the center of the *Charge-Meter.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Return to 0 on the *Charge-Meter."
+        "NAME": "Thundershock",
+        "DESCRIPTION": "Deal !D! damage. NL If you are not in a stance, gain [E]"
     },
     "mysteryDungeon:PikachuThunderwave": {
         "NAME": "Thunder Wave",
@@ -520,12 +522,11 @@
     },
     "mysteryDungeon:PikachuWildCharge": {
         "NAME": "Wild Charge",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs twice. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs twice."
     },
     "mysteryDungeon:PikachuZapCannon": {
         "NAME": "Zap Cannon",
-        "DESCRIPTION": "Enter mysterydungeon:Positive_Stance. NL Deal !D! damage to ALL enemies."
+        "DESCRIPTION": "Deal !D! damage to all enemies. NL For each enemies hit channel 1 lightning orb. NL Exhaust."
     },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Aqua Ring",
@@ -566,8 +567,8 @@
     },
     "mysteryDungeon:SquirtleExplorerForm": {
         "NAME": "Explorer Form",
-        "DESCRIPTION": "Ethereal. NL At the start of your turn, draw a number of cards equivalent to your maximum hand size.",
-        "UPGRADE_DESCRIPTION": "At the start of your turn, draw a number of cards equivalent to your maximum hand size."
+        "DESCRIPTION": "At the start of your turn draw one more card and increase this gain by one.",
+        "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn draw a number a card equivalent to your maximum hand size."
     },
     "mysteryDungeon:SquirtleFakeOut": {
         "NAME": "Fake Out",

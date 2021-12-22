@@ -25,7 +25,7 @@ public class SquirtleAquaRing extends PokemonCard implements onCardScriedInterfa
 
     public static final String ID = MysteryDungeon.makeID(SquirtleAquaRing.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("SquirtleSkill.png");
+    public static final String IMG = makeCardPath(SquirtleAquaRing.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

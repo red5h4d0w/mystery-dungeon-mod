@@ -81,8 +81,8 @@
     "mysteryDungeon:FrustrationPower": {
         "NAME": "Frustration",
         "DESCRIPTIONS": [
-            "At the end of your turn choose #b1 card to #yretain. NL This card becomes #yEthereal.",
-            "At the end of your turn choose #b%s card to #yretain. NL Those cards become #yEthereal."
+            "At the end of your turn choose up to #b1 card to #yretain. NL This card becomes #yEthereal.",
+            "At the end of your turn choose up to #b%s card to #yretain. NL Those cards become #yEthereal."
         ]
     },
     "mysteryDungeon:HailPower": {
@@ -103,6 +103,10 @@
     "mysteryDungeon:LightScreenPower": {
         "NAME": "Light Screen",
         "DESCRIPTIONS": ["At the end of the turn, gain #b%s Block per empty orb slot."]
+    },
+    "mysteryDungeon:LockDownPower": {
+        "NAME": "Lock-Down",
+        "DESCRIPTIONS": ["At the end of the turn, do not return automatically to the center of the charge gauge."]
     },
     "mysteryDungeon:NextTurnDrawLessPower": {
         "NAME": "Next Turn Draw Less Cards",
@@ -142,6 +146,10 @@
         "NAME": "Poison Thorns",
         "DESCRIPTIONS": ["When Attacked, apply #b%s #yPoison to the attacker."]
     },
+    "mysteryDungeon:PikachuExplorerPower": {
+        "NAME": "Explorer Form",
+        "DESCRIPTIONS": ["At the start of your turn Channel #b%s lightning orb. If you have at least 1 orb, at the start of your turn evoke your next #b%s orb."]
+    },
     "mysteryDungeon:RainDancePower": {
         "NAME": "Rain Dance",
         "DESCRIPTIONS": ["When a card is created, gain #b%s #yTemporary #yStrength."]
@@ -180,7 +188,10 @@
     },
     "mysteryDungeon:SquirtleExplorerPower": {
         "NAME": "Explorer Form",
-        "DESCRIPTIONS": ["At the start of your turn draw a number a card equivalent to your maximum hand size"]
+        "DESCRIPTIONS": [
+            "At the start of your next turn draw #b%s more card. Increase this amount by #b%s at the end of your turn.",
+            "At the start of your next turn draw #b%s more cards. Increase this amount by #b%s at the end of your turn."
+        ]
     },
     "mysteryDungeon:StaticPower": {
         "NAME": "Static",

@@ -21,7 +21,7 @@ public class CharmanderExplorerForm extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(CharmanderExplorerForm.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("CharmanderPower.png");
+    public static final String IMG = makeCardPath(CharmanderExplorerForm.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -56,6 +56,7 @@ public class CharmanderExplorerForm extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
         addToBot(new ApplyPowerAction(p, p, new CharmanderExplorerPower(p, magicNumber), magicNumber));
+        
     }
 
     // Upgraded stats.

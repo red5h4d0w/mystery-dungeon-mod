@@ -43,7 +43,6 @@ public class ScaldAction extends AbstractGameAction {
             }
             else
             {
-                logger.info(amount);
                 AbstractDungeon.handCardSelectScreen.open(TEXT[0], amount, true, true);
                 tickDuration();
                 menuPoppedUp = true;

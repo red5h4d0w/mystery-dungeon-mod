@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.stances.AbstractStance;
+import com.megacrit.cardcrawl.stances.NeutralStance;
 
 
 //Gain 1 dex for the turn for each card played.
@@ -49,7 +50,7 @@ public class AgilityPower extends MysteryDungeonPower implements CloneablePowerI
     }
 
     public void onChangeStance(AbstractStance oldStance, AbstractStance newStance) {
-        if(!oldStance.ID.equals(newStance.ID)){
+        if(!oldStance.ID.equals(newStance.ID) && !newStance.ID.equals(NeutralStance.STANCE_ID)){
             addToBot(new DrawCardAction(amount)); 
         }
     } 

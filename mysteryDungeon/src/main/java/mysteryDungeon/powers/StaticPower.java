@@ -8,7 +8,8 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.defect.EvokeOrbAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.defect.EvokeWithoutRemovingOrbAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -50,7 +51,7 @@ public class StaticPower extends MysteryDungeonPower implements CloneablePowerIn
 
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
-        addToBot(new EvokeOrbAction(amount));
+        addToBot((AbstractGameAction)new EvokeWithoutRemovingOrbAction(1));
         return damageAmount;
     }
 

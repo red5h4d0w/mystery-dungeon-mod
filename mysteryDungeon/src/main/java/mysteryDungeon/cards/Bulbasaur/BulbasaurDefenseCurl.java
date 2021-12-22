@@ -19,7 +19,7 @@ public class BulbasaurDefenseCurl extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(BulbasaurDefenseCurl.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("BulbasaurSkill.png");
+    public static final String IMG = makeCardPath(BulbasaurDefenseCurl.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
@@ -34,7 +34,7 @@ public class BulbasaurDefenseCurl extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
 
     private static final int COST = 1;
-    private static final int BLOCK = 10;
+    private static final int BLOCK = 9;
     private static final int UPGRADE_PLUS_BLOCK = 4;
 
 

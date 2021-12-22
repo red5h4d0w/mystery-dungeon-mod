@@ -18,7 +18,7 @@ public class PikachuLightScreen extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(PikachuLightScreen.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("PikachuPower.png");
+    public static final String IMG = makeCardPath(PikachuLightScreen.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
@@ -32,9 +32,9 @@ public class PikachuLightScreen extends PokemonCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = Pokemon.Enums.PIKACHU_YELLOW;
 
-    private static final int COST = 1;
+    private static final int COST = 2;
+    private static final int UPGRADE_COST = 1;
     private static final int BASE_MAGIC_NUMBER = 2;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
@@ -56,7 +56,7 @@ public class PikachuLightScreen extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            upgradeBaseCost(UPGRADE_COST);
             initializeDescription();
         }
     }
