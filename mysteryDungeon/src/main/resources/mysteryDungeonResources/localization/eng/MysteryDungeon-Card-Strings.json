@@ -260,8 +260,8 @@
     },
     "mysteryDungeon:CharmanderExplorerForm": {
         "NAME": "Explorer Form",
-        "DESCRIPTION": "Ethereal. NL At the start of your turn return !M! random card from your exhaust pile. NL Draw one less card per turn.",
-        "UPGRADE_DESCRIPTION": "At the start of your turn return !M! random card from your exhaust pile. NL Draw one less card per turn."
+        "DESCRIPTION": "Ethereal. NL At the start of your turn, add !M! random card from your exhaust pile. NL Draw one less card per turn.",
+        "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! random card from your exhaust pile. NL Draw one less card per turn."
     },
     "mysteryDungeon:CharmanderFacade": {
         "NAME": "Facade",

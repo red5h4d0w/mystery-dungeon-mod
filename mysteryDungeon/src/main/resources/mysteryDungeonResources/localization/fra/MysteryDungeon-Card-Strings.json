@@ -264,8 +264,8 @@
     },
     "mysteryDungeon:CharmanderExplorerForm": {
         "NAME": "Forme de l'Explorateur",
-        "DESCRIPTION": "Éthérée. NL Au début du tour, choisissez une carte épuisée et ajoutez-la à votre main.",
-        "UPGRADE_DESCRIPTION": "Au début du tour, choisissez une carte épuisée et ajoutez-la à votre main."
+        "DESCRIPTION": "Éthérée. NL Au début du tour, ajoutez !M! carte aléatoire parmi les cartes épuisées à votre main. NL Piochez une carte de moins chaque tour.",
+        "UPGRADE_DESCRIPTION": "Au début du tour, ajoutez !M! carte aléatoire parmi les cartes épuisées à votre main. NL Piochez une carte de moins chaque tour."
     },
     "mysteryDungeon:CharmanderFacade": {
         "NAME": "Façade",
@@ -370,8 +370,7 @@
     },
     "mysteryDungeon:PikachuChargeBeam": {
         "NAME": "Rayon Chargé",
-        "DESCRIPTION": "Canalisez !M! Orbe Kéraunique.",
-        "UPGRADE_DESCRIPTION": "Canalisez !M! Orbes Kérauniques."
+        "DESCRIPTION": "mysterydungeon:Inerte. NL Canalisez !M! Orbe Kéraunique. Épuisement"
     },
     "mysteryDungeon:PikachuCharge": {
         "NAME": "Chargeur",
@@ -414,7 +413,8 @@
     },
     "mysteryDungeon:PikachuExplorerForm": {
         "NAME": "Forme de l'Explorateur",
-        "DESCRIPTION": "Canalisez !M! Orbes Kérauniques. NL Au début de votre tour, perdez 1 Concentration."
+        "DESCRIPTION": "Au début de votre tour, activez votre prochain Orbe, puis canalisez !M! Orbe Kéraunique.",
+        "UPGRADE_DESCRIPTION": "Au début de votre tour, activez votre prochain Orbe, puis canalisez !M! Orbes Kérauniques."
     },
     "mysteryDungeon:PikachuHiddenPower": {
         "NAME": "Puissance Cachée",
@@ -463,13 +463,13 @@
         "NAME": "Onde de Choc",
         "DESCRIPTION": "Infligez !D! dégâts à TOUS les ennemis. NL Appliquez !M! de Ciblage à TOUS les ennemis."
     },
-    "mysteryDungeon:PikachuSlam": {
-        "NAME": "Souplesse",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Si vous êtes en mysterydungeon:Négativité, gagnez [E] [E]."
+    "mysteryDungeon:PikachuLightningRod": {
+        "NAME": "Paratonnerre",
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Canalisez !M! Orbes Kérauniques."
     },
     "mysteryDungeon:PikachuSpark": {
         "NAME": "Étincelle",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Retournez au centre de la Jauge de Charge."
+        "DESCRIPTION": "mysterydungeon:Inerte. NL Infligez !D! dégâts. NL Ne retournez pas au centre de la jauge de charge à la fin du tour."
     },
     "mysteryDungeon:PikachuSpeedSwap": {
         "NAME": "Permuvitesse",
@@ -478,8 +478,8 @@
     },
     "mysteryDungeon:PikachuStatic": {
         "NAME": "Statik",
-        "DESCRIPTION": "Activez !M! Orbe quand vous êtes attaqué.",
-        "UPGRADE_DESCRIPTION": "Activez !M! Orbes quand vous êtes attaqué."
+        "DESCRIPTION": "Activez l'effet actif de votre prochain Orbe !M! fois quand vous êtes attaqué.",
+        "UPGRADE_DESCRIPTION": "Activez l'effet actif de votre prochain Orbe !M! fois quand vous êtes attaqué."
     },
     "mysteryDungeon:PikachuSweetKiss": {
         "NAME": "Doux Baiser",
@@ -507,8 +507,7 @@
     },
     "mysteryDungeon:PikachuThundershock": {
         "NAME": "Éclair",
-        "DESCRIPTION": "Retournez au centre de la Jauge de Charge.",
-        "UPGRADE_DESCRIPTION": "Retenue. NL Retournez au centre de la Jauge de Charge."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Si vous n'êtes pas dans une position, gagnez [E]"
     },
     "mysteryDungeon:PikachuThunderwave": {
         "NAME": "Cage Éclair",
@@ -531,7 +530,7 @@
     },
     "mysteryDungeon:PikachuZapCannon": {
         "NAME": "Élecanon",
-        "DESCRIPTION": "Entrez en mysterydungeon:Positivité. NL Infligez !D! dégâts à TOUS les ennemis."
+        "DESCRIPTION": "Pour chaque ennemi, canalisez 1 Orbe Kéraunique. NL Infligez !D! dégâts à TOUS les ennemis. NL Épuisement."
     },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Anneau Hydro",
@@ -572,8 +571,8 @@
     },
     "mysteryDungeon:SquirtleExplorerForm": {
         "NAME": "Forme de l'Explorateur",
-        "DESCRIPTION": "Éthérée. NL Au début de votre tour, piochez un nombre de cartes équivalent à la taille maximale de votre main.",
-        "UPGRADE_DESCRIPTION": "Au début de votre tour, piochez un nombre de cartes équivalent à la taille maximale de votre main."
+        "DESCRIPTION": "Au début de votre tour, piochez une carte et augmentez cette quantité de 1.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Au début de votre tour, piochez une carte et augmentez cette quantité de 1."
     },
     "mysteryDungeon:SquirtleFakeOut": {
         "NAME": "Bluff",
