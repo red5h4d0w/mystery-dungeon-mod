@@ -16,6 +16,7 @@ import org.apache.logging.log4j.Logger;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.actions.MoveRandomCardsAction;
 import mysteryDungeon.characters.Pokemon;
 
 public class CharmanderDragonPulse extends PokemonCard {
@@ -57,15 +58,7 @@ public class CharmanderDragonPulse extends PokemonCard {
         { 
             addToBot(new DrawCardAction(magicNumber));
         }
-        AbstractCard card = null;
-        if(AbstractDungeon.player.exhaustPile.group.size()>0)
-            card = AbstractDungeon.player.exhaustPile.getRandomCard(AbstractDungeon.cardRng);
-        if(card!=null)
-        {
-            AbstractCard cardToAdd = card.makeStatEquivalentCopy();
-            AbstractDungeon.player.exhaustPile.removeCard(card);
-            addToBot(new MakeTempCardInDrawPileAction(cardToAdd, 1, false, false, false));
-        }
+        addToBot(new MoveRandomCardsAction(p.drawPile, p.exhaustPile, 1));
         
     }
 

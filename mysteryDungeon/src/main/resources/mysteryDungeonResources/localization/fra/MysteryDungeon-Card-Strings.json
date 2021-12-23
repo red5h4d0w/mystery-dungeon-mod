@@ -25,7 +25,7 @@
     },
     "mysteryDungeon:ChooseSkill": {
         "NAME": "Compétence",
-        "DESCRIPTION": "Ajoutez une compétence aléatoire à votre main."
+        "DESCRIPTION": "Ajoutez une Compétence aléatoire à votre main."
     },
     "mysteryDungeon:StatusFreeze": {
         "NAME": "Gel",
@@ -38,7 +38,7 @@
     "mysteryDungeon:BulbasaurChlorophyll": {
         "NAME": "Chlorophylle",
         "DESCRIPTION": "Piochez !M! carte. NL Pour chaque Attaque piochée par cet effet, gagnez 1 Force.",
-        "UPGRADE_DESCRIPTION": "Piochez !M! carte. NL Pour chaque Attaque piochée par cet effet, gagnez 1 Force."
+        "UPGRADE_DESCRIPTION": "Piochez !M! cartes. NL Pour chaque Attaque piochée par cet effet, gagnez 1 Force."
     },
     "mysteryDungeon:BulbasaurDefend": {
         "NAME": "Défense",
@@ -133,7 +133,7 @@
     },
     "mysteryDungeon:BulbasaurSleepPowder": {
         "NAME": "Poudre Dodo",
-        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Endormi. NL Épuisement."
+        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Endormi à TOUS les ennemis. NL Épuisement."
     },
     "mysteryDungeon:BulbasaurSludgeBomb": {
         "NAME": "Bombe Beurk",
@@ -201,8 +201,8 @@
     },
     "mysteryDungeon:CharmanderBlaze": {
         "NAME": "Brasier",
-        "DESCRIPTION": "Gagnez 2 Vulnérable. NL Chaque tour, la première fois que vous êtes à court d'énergie, gagnez [E].",
-        "UPGRADE_DESCRIPTION": "Gagnez 2 Vulnérable. NL Chaque tour, les 2 premières fois que vous êtes à court d'énergie, gagnez [E]."
+        "DESCRIPTION": "Gagnez 2 de Vulnérabilité. NL Chaque tour, la première fois que vous êtes à court d'énergie, gagnez [E].",
+        "UPGRADE_DESCRIPTION": "Gagnez 2 de Vulnérabilité. NL Chaque tour, les 2 premières fois que vous êtes à court d'énergie, gagnez [E]."
     },
     "mysteryDungeon:CharmanderCounter": {
         "NAME": "Riposte",
@@ -290,7 +290,7 @@
     },
     "mysteryDungeon:CharmanderFlareBlitz": {
         "NAME": "Boutefeu",
-        "DESCRIPTION": "Infligez damage equal to !M! fois the number of exhausted cartes this combat."
+        "DESCRIPTION": "Infligez autant de dégâts que !M! fois le nombre de cartes épuisées ce combat."
     },
     "mysteryDungeon:CharmanderFling": {
         "NAME": "Dégommage",
@@ -299,7 +299,7 @@
     },
     "mysteryDungeon:CharmanderFrustration": {
         "NAME": "Frustration",
-        "DESCRIPTION": "À la fin de votre tour, retenez 1 carte. Cette carte gagne Éthérée après avoir été retenue."
+        "DESCRIPTION": "À la fin de votre tour, retenez 1 carte. Cette carte deviendra Éthérée après avoir été retenue."
     },
     "mysteryDungeon:CharmanderHeatCrash": {
         "NAME": "Tacle Feu",
@@ -355,8 +355,8 @@
     },
     "mysteryDungeon:CharmanderSolarPower": {
         "NAME": "Force Soleil",
-        "DESCRIPTION": "Au début de votre tour, gagnez 1 Force si un ennemi est affecté par mysterydungeon:Brûlure.",
-        "UPGRADE_DESCRIPTION": "Innate NL Au début de votre tour, gagnez 1 Force si un ennemi est affecté par mysterydungeon:Brûlure."
+        "DESCRIPTION": "Au début de votre tour, gagnez 1 de Force si un ennemi est affecté par mysterydungeon:Brûlure.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Au début de votre tour, gagnez 1 de Force si un ennemi est affecté par mysterydungeon:Brûlure."
     },
     "mysteryDungeon:CharmanderWillOWisp": {
         "NAME": "Feu Follet",
@@ -370,11 +370,11 @@
     },
     "mysteryDungeon:PikachuChargeBeam": {
         "NAME": "Rayon Chargé",
-        "DESCRIPTION": "mysterydungeon:Inerte. NL Canalisez !M! Orbe Kéraunique. Épuisement"
+        "DESCRIPTION": "mysterydungeon:Inerte. NL Canalisez !M! Orbes Kérauniques. Épuisement"
     },
     "mysteryDungeon:PikachuCharge": {
         "NAME": "Chargeur",
-        "DESCRIPTION": "Gagnez !M! Concentration. NL Retirez TOUTES vos Orbes"
+        "DESCRIPTION": "Gagnez !M! de Concentration. NL Retirez TOUTES vos Orbes"
     },
     "mysteryDungeon:PikachuCharm": {
         "NAME": "Charme",
@@ -391,7 +391,7 @@
     },
     "mysteryDungeon:PikachuEerieImpulse": {
         "NAME": "Ondes Étranges",
-        "DESCRIPTION": "Gagnez !M! Force. NL Gagnez !M! de Dextérité. NL Perdez 2 Concentration."
+        "DESCRIPTION": "Gagnez !M! de Force. NL Gagnez !M! de Dextérité. NL Perdez 2 de Concentration."
     },
     "mysteryDungeon:PikachuElectricTerrain": {
         "NAME": "Champ Électrifié",
@@ -404,7 +404,8 @@
     },
     "mysteryDungeon:PikachuElectroweb": {
         "NAME": "Toile Élek",
-        "DESCRIPTION": "mysterydungeon:Inerte. NL Ajoutez !M! cartes de votre défausse à votre main. NL Épuisement."
+        "DESCRIPTION": "mysterydungeon:Inerte. NL Ajoutez !M! cartes de votre défausse à votre main. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inerte. NL Retenue. NL Ajoutez !M! cartes de votre défausse à votre main. NL Épuisement."
     },
     "mysteryDungeon:PikachuEncore": {
         "NAME": "Encore",
@@ -423,6 +424,10 @@
     "mysteryDungeon:PikachuIronTail": {
         "NAME": "Queue de Fer",
         "DESCRIPTION": "Infligez !D! dégâts. NL Quand vous la jouez, ses dégâts sont augmentés de !M! pour ce combat."
+    },
+    "mysteryDungeon:PikachuLightningRod": {
+        "NAME": "Paratonnerre",
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Canalisez !M! Orbes Kérauniques."
     },
     "mysteryDungeon:PikachuLightScreen": {
         "NAME": "Mur Lumière",
@@ -452,7 +457,7 @@
     },
     "mysteryDungeon:PikachuReflect": {
         "NAME": "Protection",
-        "DESCRIPTION": "Gagnez !B! d'Armure. NL Quand vous la jouez, son Armure est augmenté de !M! pour ce combat."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Quand vous jouez cette carte, son Armure est augmenté de !M! pour ce combat."
     },
     "mysteryDungeon:PikachuSafeguard": {
         "NAME": "Rune Protect",
@@ -463,13 +468,9 @@
         "NAME": "Onde de Choc",
         "DESCRIPTION": "Infligez !D! dégâts à TOUS les ennemis. NL Appliquez !M! de Ciblage à TOUS les ennemis."
     },
-    "mysteryDungeon:PikachuLightningRod": {
-        "NAME": "Paratonnerre",
-        "DESCRIPTION": "Gagnez !B! d'Armure. NL Canalisez !M! Orbes Kérauniques."
-    },
     "mysteryDungeon:PikachuSpark": {
         "NAME": "Étincelle",
-        "DESCRIPTION": "mysterydungeon:Inerte. NL Infligez !D! dégâts. NL Ne retournez pas au centre de la jauge de charge à la fin du tour."
+        "DESCRIPTION": "mysterydungeon:Inerte. NL Infligez !D! dégâts. NL Ne retournez pas au centre de la *Jauge *de *Charge à la fin du tour."
     },
     "mysteryDungeon:PikachuSpeedSwap": {
         "NAME": "Permuvitesse",
@@ -525,8 +526,8 @@
     },
     "mysteryDungeon:PikachuWildCharge": {
         "NAME": "Éclair Fou",
-        "DESCRIPTION": "mysterydungeon:Inerte. NL Activez TOUS vos Orbes. NL Perdez 1 emplacement d'Orbe. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inerte. NL Activez TOUS vos Orbes. NL Perdez 1 emplacement d'Orbe. NL Épuisement."
+        "DESCRIPTION": "mysterydungeon:Inerte. NL Activez TOUS vos Orbes 2 fois.",
+        "UPGRADE_DESCRIPTION": "Activez TOUS vos Orbes 2 fois."
     },
     "mysteryDungeon:PikachuZapCannon": {
         "NAME": "Élecanon",
@@ -599,11 +600,11 @@
     },
     "mysteryDungeon:SquirtleGyroBall": {
         "NAME": "Gyroballe",
-        "DESCRIPTION": "Ajoutez 1 *gel à votre main. NL Infligez !D! dégâts par status dans votre main. NL Défaussez TOUS les Statut en main. NL Piochez !M! cartes."
+        "DESCRIPTION": "Ajoutez 1 *Gel à votre main. NL Infligez !D! dégâts par status dans votre main. NL Défaussez TOUS les Statut en main. NL Piochez !M! cartes."
     },
     "mysteryDungeon:SquirtleHail": {
         "NAME": "Grêle",
-        "DESCRIPTION": "Lorsque vous poichez des cartes, infligez !M! dégâts à TOUS les ennemis."
+        "DESCRIPTION": "Lorsque vous piochez des cartes, infligez !M! dégâts à TOUS les ennemis."
     },
     "mysteryDungeon:SquirtleHaze": {
         "NAME": "Buée Noire",
