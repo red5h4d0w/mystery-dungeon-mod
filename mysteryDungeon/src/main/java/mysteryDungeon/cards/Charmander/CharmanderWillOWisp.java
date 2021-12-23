@@ -62,7 +62,7 @@ public class CharmanderWillOWisp extends PokemonCard {
         }
         energyOnUse += upgraded?1:0;
         if(magicNumber*energyOnUse!=0) {
-            addToBot(new ApplyPowerAction(m, p, new WeakPower(p, energyOnUse, false), energyOnUse));
+            addToBot(new ApplyPowerAction(m, p, new WeakPower(m, energyOnUse, false), energyOnUse));
             addToBot(new ApplyPowerAction(m, p, new BurnPower(m, magicNumber*energyOnUse), magicNumber*energyOnUse));
         }
         if (!freeToPlayOnce)
