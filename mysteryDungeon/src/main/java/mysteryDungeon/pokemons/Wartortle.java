@@ -21,7 +21,7 @@ public class Wartortle extends AbstractPokemon {
         super(NAME, COLOR, CARD_COLOR, PATH_TO_BACK_SPRITE);
         skeletonUrl = SKELETON_URL;
         atlasUrl = ATLAS_URL;
-        canEvolve = false;
+        canEvolve = true;
     }
 
     @Override
