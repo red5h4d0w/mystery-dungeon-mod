@@ -295,7 +295,7 @@
     },
     "mysteryDungeon:CharmanderFrustration": {
         "NAME": "Frustration",
-        "DESCRIPTION": "At the end of each turn, retain a card. This card gains ethereal after being retained."
+        "DESCRIPTION": "At the end of each turn, retain a card. This card will become Ethereal after being retained."
     },
     "mysteryDungeon:CharmanderHeatCrash": {
         "NAME": "Heat Crash",
@@ -352,7 +352,7 @@
     "mysteryDungeon:CharmanderSolarPower": {
         "NAME": "Solar Power",
         "DESCRIPTION": "At the start of each turn, gain 1 Strength if an enemy is affected by mysterydungeon:Burn.",
-        "UPGRADE_DESCRIPTION": "Innate NL At the start of each turn, gain 1 Strength if an enemy is affected by mysterydungeon:Burn."
+        "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn, gain 1 Strength if an enemy is affected by mysterydungeon:Burn."
     },
     "mysteryDungeon:CharmanderWillOWisp": {
         "NAME": "Will-O-Wisp",
@@ -366,11 +366,11 @@
     },
     "mysteryDungeon:PikachuChargeBeam": {
         "NAME": "Charge Beam",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Channel !M! lightning  orbs. NL Exhaust"
+        "DESCRIPTION": "mysterydungeon:Inert. NL Channel !M! Lightning. NL Exhaust"
     },
     "mysteryDungeon:PikachuCharge": {
         "NAME": "Charge",
-        "DESCRIPTION": "Gain !M! Focus. NL Remove all orbs."
+        "DESCRIPTION": "Gain !M! Focus. NL Remove ALL Orbs."
     },
     "mysteryDungeon:PikachuCharm": {
         "NAME": "Charm",
@@ -405,8 +405,8 @@
     },
     "mysteryDungeon:PikachuEncore": {
         "NAME": "Encore",
-        "DESCRIPTION": "mysterydungeon:Inert. NL This turn your next Attack or Skill will be played twice.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL This turn your next !M! Attacks or Skills will be played twice."
+        "DESCRIPTION": "mysterydungeon:Inert. NL This turn, your next Attack or Skill will be played twice.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL This turn, your next !M! Attacks or Skills will be played twice."
     },
     "mysteryDungeon:PikachuExplorerForm": {
         "NAME": "Explorer Form",
@@ -420,6 +420,10 @@
     "mysteryDungeon:PikachuIronTail": {
         "NAME": "Iron Tail",
         "DESCRIPTION": "Deal !D! damage. NL Increase this card damage by !M! this combat."
+    },
+    "mysteryDungeon:PikachuLightningRod": {
+        "NAME": "Lightning Rod",
+        "DESCRIPTION": "Gain !B! Block. NL Channel !M! Lightning Orb."
     },
     "mysteryDungeon:PikachuLightScreen": {
         "NAME": "Light Screen",
@@ -460,13 +464,9 @@
         "NAME": "Shock Wave",
         "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Apply !M! Lock-On to ALL enemies."
     },
-    "mysteryDungeon:PikachuLightningRod": {
-        "NAME": "Lightning Rod",
-        "DESCRIPTION": "Gain !B! Block. NL Channel !M! Lightning Orb."
-    },
     "mysteryDungeon:PikachuSpark": {
         "NAME": "Spark",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Deal !D! damage. NL Do not return to the center of the charge gauge at the end of your turn. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Deal !D! damage. NL Do not return to the center of the *Charge *Meter at the end of your turn. NL Exhaust."
     },
     "mysteryDungeon:PikachuSpeedSwap": {
         "NAME": "Speed Swap",
@@ -527,7 +527,7 @@
     },
     "mysteryDungeon:PikachuZapCannon": {
         "NAME": "Zap Cannon",
-        "DESCRIPTION": "Deal !D! damage to all enemies. NL For each enemies hit channel 1 lightning orb. NL Exhaust."
+        "DESCRIPTION": "Channel 1 Lightning per enemy. NL Deal !D! damage to all enemies. NL Exhaust."
     },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Aqua Ring",
