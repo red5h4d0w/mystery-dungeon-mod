@@ -1,17 +1,17 @@
 package mysteryDungeon.cards.Squirtle;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.animations.VFXAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
-import mysteryDungeon.actions.BodyPressAction;
+import mysteryDungeon.cards.tempCards.SquirtleFlinch;
 import mysteryDungeon.characters.Pokemon;
 
 public class SquirtleBodyPress extends PokemonCard {
@@ -35,11 +35,9 @@ public class SquirtleBodyPress extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
     private static final int COST = 3;
-    private static final int BASE_DAMAGE = 24;
-    private static final int UPGRADE_PLUS_DMG = 8;
     private static final int BASE_MAGIC_NUMBER = 2;
     private static final int UPGRADE_MAGIC_NUMBER = 1;
-    private static final int BASE_BLOCK = 10;
+    private static final int BASE_BLOCK = 12;
 
 
 
@@ -47,24 +45,38 @@ public class SquirtleBodyPress extends PokemonCard {
 
     public SquirtleBodyPress() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseDamage = BASE_DAMAGE;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
         baseBlock = BASE_BLOCK;
-        exhaust = true;
+        cardsToPreview = new SquirtleFlinch();
+        if(upgraded)
+        {
+            AbstractCard upgradedFlinch = new SquirtleFlinch();
+            upgradedFlinch.upgrade();
+            cardsToPreview = upgradedFlinch;
+        }
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new VFXAction(new WeightyImpactEffect(m.hb.cX, m.hb.cY)));
-        addToBot(new BodyPressAction(m, new DamageInfo(p, damage, damageTypeForTurn), magicNumber, block));
+        addToBot(new GainBlockAction(p, p, block));
+        AbstractCard c = new SquirtleFlinch();
+        c.setCostForTurn(0);
+        if(!upgraded)
+            addToBot(new MakeTempCardInHandAction(c, magicNumber, false));
+        else
+        {
+            AbstractCard upgradedFlinch = new SquirtleFlinch();
+            upgradedFlinch.upgrade();
+            upgradedFlinch.setCostForTurn(0);
+            addToBot(new MakeTempCardInHandAction(upgradedFlinch, magicNumber, false));
+        }
     }
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_PLUS_DMG);
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             initializeDescription();
         }
