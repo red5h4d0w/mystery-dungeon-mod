@@ -34,8 +34,8 @@ public class SquirtleEndure extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
     private static final int COST = 1;
-    private static final int BASE_MAGIC_NUMBER = 8;
-    private static final int UPGRADE_MAGIC_NUMBER = 4;
+    private static final int BASE_MAGIC_NUMBER = 5;
+    private static final int UPGRADE_MAGIC_NUMBER = 3;
 
 
     // /STAT DECLARATION/

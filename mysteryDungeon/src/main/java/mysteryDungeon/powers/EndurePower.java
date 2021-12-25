@@ -58,7 +58,7 @@ public class EndurePower extends MysteryDungeonPower implements CloneablePowerIn
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.type == AbstractCard.CardType.STATUS) {
             flash();
-            addToBot(new DamageAllEnemiesAction((AbstractPlayer)owner, DamageInfo.createDamageMatrix(amount, true), DamageType.THORNS, AttackEffect.SLASH_DIAGONAL));
+            addToBot(new DamageAllEnemiesAction((AbstractPlayer)owner, DamageInfo.createDamageMatrix(amount, true), DamageType.NORMAL, AttackEffect.SLASH_DIAGONAL));
         } 
     }
 
