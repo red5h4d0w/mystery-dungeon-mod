@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.cards.tempCards.SquirtleFlinch;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.interfaces.onCardScriedInterface;
 
@@ -39,48 +40,35 @@ public class SquirtleAquaRing extends PokemonCard implements onCardScriedInterfa
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
 
-    private static final int COST = -2;
-    private static final int BASE_BLOCK = 10;
-    private static final int UPGRADE_PLUS_BLOCK = 3;
-    private static final int BASE_DAMAGE = 10;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int COST = 0;
 
 
     // /STAT DECLARATION/
 
     public SquirtleAquaRing() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseBlock = BASE_BLOCK;
-        baseDamage = BASE_DAMAGE;
+        cardsToPreview = new SquirtleFlinch();
+        if(upgraded)
+        {
+            AbstractCard upgradedFlinch = new SquirtleFlinch();
+            upgradedFlinch.upgrade();
+            cardsToPreview = upgradedFlinch;
+        }
     }
 
-    @Override
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        return false;
-    }
 
     // Actions the card should do.
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m) { }
-
-    @Override
-    public void triggerOnManualDiscard() {
-        addToBot(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, block));
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new AquaRingAction) 
     }
 
-    @Override
-    public void onCardScried(AbstractCard c) {
-        if(c==this)
-            addToBot(new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, damage, DamageType.NORMAL), AttackEffect.NONE));
-    }
 
     // Upgraded stats.
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBlock(UPGRADE_PLUS_BLOCK);
-            upgradeDamage(UPGRADE_PLUS_DMG);
             initializeDescription();
         }
     }
