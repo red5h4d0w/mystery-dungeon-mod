@@ -531,8 +531,8 @@
     },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Aqua Ring",
-        "DESCRIPTION": "Discard up to !M! cards in your hand. NL For each card discarded add a Flinch in your hand.",
-        "UPGRADE_DESCRIPTION": "Discard up to !M! cards in your hand. NL For each card discarded add an upgraded Flinch in your hand."
+        "DESCRIPTION": "Discard up to !M! cards in your hand. NL For each card discarded add a *Flinch in your hand.",
+        "UPGRADE_DESCRIPTION": "Discard up to !M! cards in your hand. NL For each card discarded add an upgraded *Flinch in your hand."
     },
     "mysteryDungeon:SquirtleAquaTail": {
         "NAME": "Aqua Tail",
@@ -545,7 +545,8 @@
     },
     "mysteryDungeon:SquirtleBodyPress": {
         "NAME": "Body Press",
-        "DESCRIPTION": "Deal !D! damage. NL If it is *fatal, gain !B! Block and !M! Dexterity. Exhaust."
+        "DESCRIPTION": "Gain !B! block. NL Add !M! *Flinch into your hand.",
+        "UPGRADE_DESCRIPTION": "Gain !B! block. NL Add !M! upgraded *Flinch into your hand."
     },
     "mysteryDungeon:SquirtleBrine": {
         "NAME": "Brine",
