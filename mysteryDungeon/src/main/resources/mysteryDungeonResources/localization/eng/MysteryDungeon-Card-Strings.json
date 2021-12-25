@@ -92,7 +92,7 @@
     },
     "mysteryDungeon:BulbasaurPetalDance": {
         "NAME": "Petal Dance",
-        "DESCRIPTION": "Deal 7 damage to ALL enemies at the end of your turn for the next !M! turns. NL This damage beahaves like Attack damage."
+        "DESCRIPTION": "Deal 7 damage to ALL enemies at the end of your turn for the next !M! turns. NL This damage behaves like Attack damage."
     },
     "mysteryDungeon:BulbasaurPoisonJab": {
         "NAME": "Poison Jab",
@@ -566,7 +566,7 @@
     },
     "mysteryDungeon:SquirtleEndure": {
         "NAME": "Endure",
-        "DESCRIPTION": "When you play a status, deal !M! damage to ALL enemies. NL This damage beahaves like Attack damage."
+        "DESCRIPTION": "When you play a status, deal !M! damage to ALL enemies. NL This damage behaves like Attack damage."
     },
     "mysteryDungeon:SquirtleExplorerForm": {
         "NAME": "Explorer Form",
