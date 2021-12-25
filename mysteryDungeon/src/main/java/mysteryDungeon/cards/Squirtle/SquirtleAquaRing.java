@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.actions.AquaRingAction;
 import mysteryDungeon.cards.tempCards.SquirtleFlinch;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.interfaces.onCardScriedInterface;
@@ -60,7 +61,7 @@ public class SquirtleAquaRing extends PokemonCard implements onCardScriedInterfa
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new AquaRingAction) 
+        addToBot(new AquaRingAction(upgraded)); 
     }
 
 
