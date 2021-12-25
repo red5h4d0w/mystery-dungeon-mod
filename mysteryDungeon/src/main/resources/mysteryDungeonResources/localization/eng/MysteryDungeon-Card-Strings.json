@@ -531,7 +531,8 @@
     },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Aqua Ring",
-        "DESCRIPTION": "Unplayable. NL When this card is *discarded, gain !B! Block. NL When this card is *scried, deal !D! damage to a random enemy."
+        "DESCRIPTION": "Discard up to !M! cards in your hand. NL For each card discarded add a Flinch in your hand.",
+        "UPGRADE_DESCRIPTION": "Discard up to !M! cards in your hand. NL For each card discarded add an upgraded Flinch in your hand."
     },
     "mysteryDungeon:SquirtleAquaTail": {
         "NAME": "Aqua Tail",
