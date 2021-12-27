@@ -531,8 +531,8 @@
     },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Aqua Ring",
-        "DESCRIPTION": "Discard up to !M! cards in your hand. NL For each card discarded add a *Flinch in your hand.",
-        "UPGRADE_DESCRIPTION": "Discard up to !M! cards in your hand. NL For each card discarded add an upgraded *Flinch in your hand."
+        "DESCRIPTION": "Discard up to !M! cards in your hand. NL For each card discarded this way, add a *Flinch in your hand.",
+        "UPGRADE_DESCRIPTION": "Discard up to !M! cards in your hand. NL For each card discarded this way, add an upgraded *Flinch in your hand."
     },
     "mysteryDungeon:SquirtleAquaTail": {
         "NAME": "Aqua Tail",
