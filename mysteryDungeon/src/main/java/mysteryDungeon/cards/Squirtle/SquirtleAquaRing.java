@@ -59,7 +59,7 @@ public class SquirtleAquaRing extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new AquaRingAction(p, magicNumber, upgraded)); 
+        addToBot(new AquaRingAction(magicNumber, upgraded)); 
     }
 
 
