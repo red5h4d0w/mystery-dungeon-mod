@@ -1,5 +1,6 @@
 package mysteryDungeon.actions;
 
+
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -8,6 +9,9 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.UIStrings;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import mysteryDungeon.cards.tempCards.SquirtleFlinch;
 
@@ -19,6 +23,7 @@ public class AquaRingAction extends AbstractGameAction {
 
     private int numberOfDiscardedCards = 0;
     private boolean menuPoppedUp = false;
+    public Logger logger = LogManager.getLogger(AquaRingAction.class);
 
     public AquaRingAction(AbstractCreature target, int amount, boolean upgraded) {
         this.p = AbstractDungeon.player;

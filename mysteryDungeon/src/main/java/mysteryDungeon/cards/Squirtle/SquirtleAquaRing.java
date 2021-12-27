@@ -70,6 +70,9 @@ public class SquirtleAquaRing extends PokemonCard {
             upgradeName();
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             rawDescription = UPGRADE_DESCRIPTION;
+            AbstractCard upgradedFlinch = new SquirtleFlinch();
+            upgradedFlinch.upgrade();
+            cardsToPreview = upgradedFlinch;
             initializeDescription();
         }
     }
