@@ -61,10 +61,10 @@ public class AquaRingAction extends AbstractGameAction {
                 if (this.upgrade){
                     AbstractCard s = (new SquirtleFlinch()).makeCopy();
                     s.upgrade();
-                    addToTop((AbstractGameAction)new MakeTempCardInHandAction(s, amount));
+                    addToTop((AbstractGameAction)new MakeTempCardInHandAction(s, 1, false));
                 } 
                 else {
-                    addToTop((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new SquirtleFlinch(), amount));
+                    addToTop((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new SquirtleFlinch(), 1, false));
                 }
             }
             isDone = true;
