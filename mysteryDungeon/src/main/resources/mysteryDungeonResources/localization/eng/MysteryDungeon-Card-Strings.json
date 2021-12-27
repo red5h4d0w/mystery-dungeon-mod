@@ -633,7 +633,7 @@
     },
     "mysteryDungeon:SquirtleMist": {
         "NAME": "Mist",
-        "DESCRIPTION": "If the enemy is not attacking, gain !M! Artifact. NL Gain !B! Block."
+        "DESCRIPTION": "Gain !B! Block. NL Gain !M! Artifact. "
     },
     "mysteryDungeon:SquirtleProtect": {
         "NAME": "Protect",

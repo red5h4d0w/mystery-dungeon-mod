@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
@@ -52,22 +51,9 @@ public class SquirtleMist extends PokemonCard {
 
     // Actions the card should do.
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        if(!(m.getIntentBaseDmg()>=0))
-            addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, magicNumber), magicNumber));
+    public void use(AbstractPlayer p, AbstractMonster m) {    
         addToBot(new GainBlockAction(p, p, block));
-    }
-
-    // Check and change the glow of the card if there's an enemy attacking
-    @Override
-    public void triggerOnGlowCheck() {
-        this.glowColor = BLUE_BORDER_GLOW_COLOR.cpy();
-        for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-            if (!m.isDeadOrEscaped() && !(m.getIntentBaseDmg() >= 0)) {
-                this.glowColor = GOLD_BORDER_GLOW_COLOR.cpy();
-                break;
-            } 
-        } 
+        addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, magicNumber), magicNumber));
     }
 
     // Upgraded stats.
