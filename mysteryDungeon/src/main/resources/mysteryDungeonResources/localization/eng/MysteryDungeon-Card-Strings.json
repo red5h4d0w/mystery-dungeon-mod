@@ -545,8 +545,8 @@
     },
     "mysteryDungeon:SquirtleBodyPress": {
         "NAME": "Body Press",
-        "DESCRIPTION": "Gain !B! block. NL Add !M! *Flinch into your hand.",
-        "UPGRADE_DESCRIPTION": "Gain !B! block. NL Add !M! upgraded *Flinch into your hand."
+        "DESCRIPTION": "Gain !B! block. NL Add !M! *Flinch into your hand. They cost 0 this turn.",
+        "UPGRADE_DESCRIPTION": "Gain !B! block. NL Add !M! upgraded *Flinch into your hand. They cost 0 this turn."
     },
     "mysteryDungeon:SquirtleBrine": {
         "NAME": "Brine",
