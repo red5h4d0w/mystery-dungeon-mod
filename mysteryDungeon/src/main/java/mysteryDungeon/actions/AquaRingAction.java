@@ -17,7 +17,7 @@ import mysteryDungeon.cards.tempCards.SquirtleFlinch;
 public class AquaRingAction extends AbstractGameAction {
     private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("DiscardAction");
     public static final String[] TEXT = uiStrings.TEXT;
-    private boolean upgrade;
+    private boolean upgraded;
     private AbstractPlayer p;
 
     private int numberOfDiscardedCards = 0;
@@ -27,7 +27,7 @@ public class AquaRingAction extends AbstractGameAction {
     public AquaRingAction(int amount, boolean upgraded) {
         this.p = AbstractDungeon.player;
         this.amount = amount;
-        this.upgrade = upgraded;
+        this.upgraded = upgraded;
     }
     
     public void update() {
@@ -44,6 +44,7 @@ public class AquaRingAction extends AbstractGameAction {
             }      
         } 
         if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
+            
             for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group)
             {
                 p.hand.moveToDiscardPile(c);
@@ -51,19 +52,19 @@ public class AquaRingAction extends AbstractGameAction {
                 numberOfDiscardedCards++; 
             }
             AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
-        }
+            }
         if(isDone || AbstractDungeon.handCardSelectScreen.wereCardsRetrieved)
         {
             for(int i=0;i<numberOfDiscardedCards;i++)
             {
-                if (this.upgrade){
-                    AbstractCard s = (new SquirtleFlinch()).makeCopy();
-                    s.upgrade();
-                    addToTop((AbstractGameAction)new MakeTempCardInHandAction(s, 1, false));
-                } 
-                else {
-                    addToTop((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new SquirtleFlinch(), 1, false));
-                }
+                if(!upgraded)
+                addToBot(new MakeTempCardInHandAction(new SquirtleFlinch(), 1, false));
+            else
+            {
+                AbstractCard upgradedFlinch = (new SquirtleFlinch()).makeCopy();
+                upgradedFlinch.upgrade();
+                addToBot(new MakeTempCardInHandAction(upgradedFlinch, 1, false));
+            }
             }
             isDone = true;
         }
