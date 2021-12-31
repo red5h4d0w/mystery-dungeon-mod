@@ -646,8 +646,8 @@
     },
     "mysteryDungeon:SquirtleRainDish": {
         "NAME": "Rain Dish",
-        "DESCRIPTION": "Whenever a card is scried or discarded, gain !M! Block.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Whenever a card is scried or discarded, gain !M! Block."
+        "DESCRIPTION": "Whenever a card is manually scried or discarded, gain !M! Block.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Whenever a card is manually scried or discarded, gain !M! Block."
     },
     "mysteryDungeon:SquirtleRapidSpin": {
         "NAME": "Rapid Spin",
