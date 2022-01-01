@@ -218,8 +218,7 @@
     },
     "mysteryDungeon:CharmanderDragonBreath": {
         "NAME": "Dragon Breath",
-        "DESCRIPTION": "Gain Block equal to the number of exhausted cards this combat.",
-        "UPGRADE_DESCRIPTION": "Gain Block equal to 5 + the number of exhausted cards this combat."
+        "DESCRIPTION": "Gain energy for every !M! cards in your exhaust pile."
     },
     "mysteryDungeon:CharmanderDragonClaw": {
         "NAME": "Dragon Claw",
