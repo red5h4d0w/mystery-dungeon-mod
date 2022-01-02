@@ -218,7 +218,8 @@
     },
     "mysteryDungeon:CharmanderDragonBreath": {
         "NAME": "Dragon Breath",
-        "DESCRIPTION": "Gain energy for every !M! cards in your exhaust pile."
+        "DESCRIPTION": "Gain energy for every !M! cards in your exhaust pile.",
+        "UPGRADE_DESCRIPTION": "Gain energy for every !M! cards in your exhaust pile. NL Gain [E]."
     },
     "mysteryDungeon:CharmanderDragonClaw": {
         "NAME": "Dragon Claw",
