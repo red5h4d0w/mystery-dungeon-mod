@@ -84,7 +84,7 @@
     "mysteryDungeon:BulbasaurMegaDrain": {
         "NAME": "Mega Drain",
         "DESCRIPTION": "Heal !M! HP per different *debuff on the enemy.",
-        "UPGRADE_DESCRIPTION": "Heal !M! HP per different *debuff on the enemy. NL draw 1 card."
+        "UPGRADE_DESCRIPTION": "Heal !M! HP per different *debuff on the enemy. NL Next turn draw 1 more card."
     },
     "mysteryDungeon:BulbasaurPetalBlizzard": {
         "NAME": "Petal Blizzard",
@@ -180,7 +180,7 @@
     },
     "mysteryDungeon:BulbasaurVineWhip": {
         "NAME": "Vine Whip",
-        "DESCRIPTION": "Deal !D! damage."
+        "DESCRIPTION": "Deal !D! damage. NL At the start of your next turn gain [E]."
     },
     "mysteryDungeon:BulbasaurWorrySeed": {
         "NAME": "Worry Seed",
