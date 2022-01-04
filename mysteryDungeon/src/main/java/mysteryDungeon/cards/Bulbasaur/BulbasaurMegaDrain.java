@@ -2,13 +2,14 @@ package mysteryDungeon.cards.Bulbasaur;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 
 import mysteryDungeon.MysteryDungeon;
@@ -62,7 +63,7 @@ public class BulbasaurMegaDrain extends PokemonCard {
         }
         addToBot(new HealAction(p, p, amountToHeal));
         if (upgraded)
-        addToBot(new DrawCardAction(p, 1));
+        addToBot(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, 1), 1));
     }
 
     // Upgraded stats.
