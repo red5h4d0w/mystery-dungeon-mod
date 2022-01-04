@@ -38,7 +38,7 @@ public class SquirtleSkullBashGo extends PokemonCard {
     public static final CardColor COLOR = CardColor.COLORLESS;
 
     private static final int COST = 3;
-    private static final int BASE_DAMAGE = 50;
+    private static final int BASE_DAMAGE = 70;
 
 
     // /STAT DECLARATION/
