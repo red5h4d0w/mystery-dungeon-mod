@@ -59,7 +59,7 @@
     },
     "mysteryDungeon:BulbasaurFrenzyPlant": {
         "NAME": "Frenzy Plant",
-        "DESCRIPTION": "Deal !D! damage !M! times. NL Apply 2 Poison !M! times. NL You cannot heal during this turn and the next."
+        "DESCRIPTION": "Deal !D! damage !M! times. NL Apply 2 Poison !M! times. NL You cannot heal during this turn."
     },
     "mysteryDungeon:BulbasaurGigaDrain": {
         "NAME": "Giga Drain",

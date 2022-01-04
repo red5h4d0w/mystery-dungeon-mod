@@ -60,7 +60,7 @@ public class BulbasaurFrenzyPlant extends PokemonCard {
             addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
             addToBot(new ApplyPowerAction(m, p, new PoisonPower(m, p, 2), 2));
         }
-        addToBot(new ApplyPowerAction(p, p, new NoHealPower(p, 2)));    
+        addToBot(new ApplyPowerAction(p, p, new NoHealPower(p, 1)));    
     }
 
     // Upgraded stats.
