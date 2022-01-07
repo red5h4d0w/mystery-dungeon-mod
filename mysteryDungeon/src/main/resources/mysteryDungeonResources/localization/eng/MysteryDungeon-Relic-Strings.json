@@ -39,7 +39,7 @@
         "NAME": "Charcoal",
         "FLAVOR": "It's a combustible fuel that boosts the power of Fire-type moves.",
         "DESCRIPTIONS": [
-            "Every time you apply a debuff deal #b2 damage to all enemies."
+            "Every time you apply a debuff deal #b1 damage to all enemies."
         ]
     },
     "mysteryDungeon:DocileExplorerRelic": {
