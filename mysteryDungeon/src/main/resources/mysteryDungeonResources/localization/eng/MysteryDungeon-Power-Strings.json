@@ -74,8 +74,8 @@
     "mysteryDungeon:EvasivenessDropPower": {
         "NAME": "Evasiveness Drop",
         "DESCRIPTIONS": [
-            "Enemy loses #b25% of their Block at the end of the round.",
-            "Enemy loses #b25%% of their Block at the end of the round for #b%s turns."
+            "Enemy loses #b25% of their Block at the end of their turn.",
+            "Enemy loses #b25%% of their Block at the end of their turn for #b%s turns."
         ]
     },
     "mysteryDungeon:FrustrationPower": {
