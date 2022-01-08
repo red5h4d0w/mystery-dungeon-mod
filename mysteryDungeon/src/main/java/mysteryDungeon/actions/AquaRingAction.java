@@ -52,7 +52,7 @@ public class AquaRingAction extends AbstractGameAction {
             {
                 p.hand.moveToDiscardPile(c);
                 c.triggerOnManualDiscard();
-                GameActionManager.incrementDiscard(false);
+                GameActionManager.incrementDiscard(true);
                 numberOfDiscardedCards++; 
             }
             AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;

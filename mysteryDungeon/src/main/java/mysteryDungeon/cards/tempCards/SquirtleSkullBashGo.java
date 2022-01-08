@@ -39,7 +39,7 @@ public class SquirtleSkullBashGo extends PokemonCard {
 
     private static final int COST = 3;
     private static final int UPGRADE_COST = 2;
-    private static final int BASE_DAMAGE = 70;
+    private static final int BASE_DAMAGE = 75;
 
 
     // /STAT DECLARATION/
