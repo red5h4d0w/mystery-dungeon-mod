@@ -308,7 +308,7 @@
     },
     "mysteryDungeon:CharmanderHeatWave": {
         "NAME": "Canicule",
-        "DESCRIPTION": "Gagnez !B! d'Armure. NL Appliquez!M! mysterydungeon:Brûlure. NL Épuisez une carte aléatoire de votre main.",
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Appliquez !M! mysterydungeon:Brûlure. NL Épuisez une carte aléatoire de votre main.",
         "UPGRADE_DESCRIPTION": "Gagnez !B! d'Armure. NL Appliquez !M! mysterydungeon:Brûlure. NL Épuisez une carte aléatoire de votre main."
     },
     "mysteryDungeon:CharmanderInferno": {
@@ -427,7 +427,7 @@
     },
     "mysteryDungeon:PikachuLightningRod": {
         "NAME": "Paratonnerre",
-        "DESCRIPTION": "Gagnez !B! d'Armure. NL Canalisez !M! Orbes Kérauniques."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Canalisez !M! Orbe Kéraunique."
     },
     "mysteryDungeon:PikachuLightScreen": {
         "NAME": "Mur Lumière",

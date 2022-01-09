@@ -47,7 +47,6 @@ public class AquaRingAction extends AbstractGameAction {
             }      
         } 
         if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
-            
             for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group)
             {
                 p.hand.moveToDiscardPile(c);
@@ -56,7 +55,7 @@ public class AquaRingAction extends AbstractGameAction {
                 numberOfDiscardedCards++; 
             }
             AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
-            }
+        }
         if(isDone || AbstractDungeon.handCardSelectScreen.wereCardsRetrieved)
         {
             AbstractCard flinch = new SquirtleFlinch();
