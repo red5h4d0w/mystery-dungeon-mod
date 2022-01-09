@@ -156,7 +156,7 @@
     },
     "mysteryDungeon:RainDishPower": {
         "NAME": "Rain Dish",
-        "DESCRIPTIONS": ["When a card enters your discard pile and wasn't played, gain #b%s #yBlock."]
+        "DESCRIPTIONS": ["When you manually scry or disacrd a card, gain #b%s #yBlock."]
     },
     "mysteryDungeon:ReduceHighestCostAtStartOfTurnPower": {
         "NAME": "Lower Cost of Highest Cost Card",
