@@ -33,7 +33,7 @@ public class DiscardAnyNumberAction extends AbstractGameAction {
             if (!AbstractDungeon.handCardSelectScreen.selectedCards.group.isEmpty()) {
                 for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
                     AbstractDungeon.player.hand.moveToDiscardPile(c);
-                    GameActionManager.incrementDiscard(true);
+                    GameActionManager.incrementDiscard(false);
                     c.triggerOnManualDiscard();
                     AbstractDungeon.player.powers.stream()
                         .filter(power -> power instanceof onManualDiscardInterface)
