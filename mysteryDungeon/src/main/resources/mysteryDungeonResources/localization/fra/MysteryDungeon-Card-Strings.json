@@ -677,8 +677,8 @@
     },
     "mysteryDungeon:SquirtleSkullBashSet": {
         "NAME": "Coud'Krâne: Prêts!",
-        "DESCRIPTION": "Éthérée. NL Ajoutez un *Skull *Bash: *Go! à votre défausse. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "Ajoutez un *Skull *Bash: *Go! à votre défausse. NL Épuisement."
+        "DESCRIPTION": "Éthérée. NL Ajoutez un *Coud'Krâne: *Partez! à votre défausse. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Ajoutez un *Coud'Krâne: *Partez! à votre défausse. NL Épuisement."
     },
     "mysteryDungeon:SquirtleSubstitute": {
         "NAME": "Substitute",
