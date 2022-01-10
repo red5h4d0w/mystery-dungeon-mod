@@ -43,16 +43,16 @@ public class PositiveStanceParticle extends AbstractGameEffect {
     }
 
     public void update() {
-        x += vX * Gdx.graphics.getDeltaTime();
-        y += vY * Gdx.graphics.getDeltaTime();
-        vY += Gdx.graphics.getDeltaTime() * this.dvy;
-        vX -= Gdx.graphics.getDeltaTime() * this.dvx;
-        if(duration > dur_div2) {
-            color.a = Interpolation.fade.apply(1.0F, 0.0F, (this.duration - this.dur_div2) / this.dur_div2);
-        } 
-        else {
-            color.a = Interpolation.fade.apply(0.0F, 1.0F, this.duration / this.dur_div2);
-        } 
+        // x += vX * Gdx.graphics.getDeltaTime();
+        // y += vY * Gdx.graphics.getDeltaTime();
+        // vY += Gdx.graphics.getDeltaTime() * this.dvy;
+        // // vX -= Gdx.graphics.getDeltaTime() * this.dvx;
+        // if(duration > dur_div2) {
+        //     color.a = Interpolation.fade.apply(1.0F, 0.0F, (this.duration - this.dur_div2) / this.dur_div2);
+        // } 
+        // else {
+        //     color.a = Interpolation.fade.apply(0.0F, 1.0F, this.duration / this.dur_div2);
+        // } 
         duration -= Gdx.graphics.getDeltaTime();
         if(duration < 0.0F) {
             isDone = true;
