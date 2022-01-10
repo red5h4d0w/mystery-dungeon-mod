@@ -1,6 +1,7 @@
 package mysteryDungeon.vfx;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Interpolation;
@@ -28,6 +29,10 @@ public class PositiveStanceParticle extends AbstractGameEffect {
 
     public Texture plusSign = TextureLoader.getTexture("mysteryDungeonResources/images/ui/plus.png");
     
+    public PositiveStanceParticle() {
+        this.color = Color.RED;
+    }
+
     public void update() {
         x += vX * Gdx.graphics.getDeltaTime();
         y += vY * Gdx.graphics.getDeltaTime();
