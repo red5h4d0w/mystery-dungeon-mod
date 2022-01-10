@@ -667,8 +667,8 @@
     },
     "mysteryDungeon:SquirtleSkullBashGo": {
         "NAME": "Coud'Krâne: Partez!",
-        "DESCRIPTION": " Infligez !D! dégâts à TOUS les ennemis. NL Si c'était votre dernière carte en main, jouez-la une seconde fois. Épuisement.",
-        "UPGRADE_DESCRIPTION": "Retenue. NL Infligez !D! dégâts à TOUS les ennemis. NL Si c'était votre dernière carte en main, jouez-la une seconde fois. Épuisement."
+        "DESCRIPTION": " Infligez !D! dégâts à TOUS les ennemis. NL Si cette carte est la plus à gauche de votre main, infligez !D! dégâts de plus à TOUS les ennemis. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Retenue. NL Infligez !D! dégâts à TOUS les ennemis. NL Si cette carte est la plus à gauche de votre main, infligez !D! dégâts de plus à TOUS les ennemis. Épuisement."
     },
     "mysteryDungeon:SquirtleSkullBashReady": {
         "NAME": "Coud'Krâne: À Vos Marques!",

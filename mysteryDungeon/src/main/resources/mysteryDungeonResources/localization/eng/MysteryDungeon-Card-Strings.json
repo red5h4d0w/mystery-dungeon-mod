@@ -663,8 +663,8 @@
     },
     "mysteryDungeon:SquirtleSkullBashGo": {
         "NAME": "Skull Bash Go!",
-        "DESCRIPTION": " Retain. NL Deal !D! damage to ALL enemies. NL If this is the last card in hand play it twice. Exhaust.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage to ALL enemies. NL If this is the last card in hand play it twice. Exhaust."
+        "DESCRIPTION": " Retain. NL Deal !D! damage to ALL enemies. NL If this is the leftmost card of your hand, deal another !D! damage to ALL enemies. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage to ALL enemies. NL If this is the leftmost card of your hand, deal another !D! damage to ALL enemies. NL Exhaust."
     },
     "mysteryDungeon:SquirtleSkullBashReady": {
         "NAME": "Skull Bash: Ready!",

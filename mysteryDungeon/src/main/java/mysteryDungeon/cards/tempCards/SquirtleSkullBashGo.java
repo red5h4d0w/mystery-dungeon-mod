@@ -39,7 +39,7 @@ public class SquirtleSkullBashGo extends PokemonCard {
 
     private static final int COST = 3;
     private static final int UPGRADE_COST = 2;
-    private static final int BASE_DAMAGE = 75;
+    private static final int BASE_DAMAGE = 60;
 
 
     // /STAT DECLARATION/
@@ -77,7 +77,7 @@ public class SquirtleSkullBashGo extends PokemonCard {
         } else {
             glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         } 
-      }
+    }
 
     // Upgraded stats.
     @Override
