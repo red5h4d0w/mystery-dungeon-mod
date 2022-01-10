@@ -13,8 +13,9 @@ import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import mysteryDungeon.util.TextureLoader;
 
 public class PositiveStanceParticle extends AbstractGameEffect {
-    private float dur_div2 = this.duration / 2.0F;
   
+    private float dur_div2;
+
     private float vX = MathUtils.random(-300.0F, -50.0F) * Settings.scale;
     
     private float vY = MathUtils.random(-200.0F, -100.0F) * Settings.scale;
@@ -27,10 +28,18 @@ public class PositiveStanceParticle extends AbstractGameEffect {
     
     private float dvy = 100.0F * Settings.scale;
 
-    public Texture plusSign = TextureLoader.getTexture("mysteryDungeonResources/images/ui/plus.png");
+    public Texture plusSign = TextureLoader.getTexture("mysteryDungeonResources/images/ui/add.png");
     
     public PositiveStanceParticle() {
-        this.color = Color.RED;
+        scale = MathUtils.random(1.0F, 1.5F);
+        startingDuration = scale + 0.8F;
+        duration = this.startingDuration;
+        scale *= Settings.scale;
+        color = Color.RED;
+        renderBehind = MathUtils.randomBoolean();
+        dur_div2 = duration / 2.0F;
+        this.x = AbstractDungeon.player.hb.cX + MathUtils.random(-AbstractDungeon.player.hb.width / 2.0F - 50.0F * Settings.scale, AbstractDungeon.player.hb.width / 2.0F + 50.0F * Settings.scale);
+        this.y = AbstractDungeon.player.hb.cY + MathUtils.random(-AbstractDungeon.player.hb.height / 2.0F + 10.0F * Settings.scale, AbstractDungeon.player.hb.height / 2.0F - 20.0F * Settings.scale);
     }
 
     public void update() {
@@ -38,7 +47,6 @@ public class PositiveStanceParticle extends AbstractGameEffect {
         y += vY * Gdx.graphics.getDeltaTime();
         vY += Gdx.graphics.getDeltaTime() * this.dvy;
         vX -= Gdx.graphics.getDeltaTime() * this.dvx;
-        rotation = -(57.295776F * MathUtils.atan2(this.vX, this.vY)) - 0.0F;
         if(duration > dur_div2) {
             color.a = Interpolation.fade.apply(1.0F, 0.0F, (this.duration - this.dur_div2) / this.dur_div2);
         } 
@@ -54,7 +62,7 @@ public class PositiveStanceParticle extends AbstractGameEffect {
     public void render(SpriteBatch sb) {
         sb.setColor(color);
         sb.setBlendFunction(770, 1);
-        sb.draw(plusSign, x, y, 32.0F, 32.0F, 25.0F, 128.0F, scale, scale + (this.dur_div2 * 0.4F - duration) * Settings.scale, rotation, 0, 0, 64, 64, false, false);
+        sb.draw(plusSign, x, y, 32.0F, 32.0F, 32.0F, 32.0F, scale, scale + (this.dur_div2 * 0.4F - duration) * Settings.scale, rotation, 0, 0, 64, 64, false, false);
         sb.setBlendFunction(770, 771);
     }
     
