@@ -63,7 +63,8 @@ public class SquirtleSkullBashGo extends PokemonCard {
         }
         addToBot(new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AttackEffect.NONE));
 
-        if(AbstractDungeon.player.hand.size()==1)
+        // If the leftmost card is this card
+        if(AbstractDungeon.player.hand.group.get(0) == this)
         { 
             addToBot(new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AttackEffect.NONE)); 
         }
