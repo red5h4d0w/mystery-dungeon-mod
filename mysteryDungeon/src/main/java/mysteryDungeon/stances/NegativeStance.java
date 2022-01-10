@@ -36,26 +36,26 @@ public class NegativeStance extends PokemonStance {
     }
 
     public void updateAnimation() {
-        if (!Settings.DISABLE_EFFECTS) {
-          this.particleTimer -= Gdx.graphics.getDeltaTime();
-          if (this.particleTimer < 0.0F) {
+    if (!Settings.DISABLE_EFFECTS) {
+        this.particleTimer -= Gdx.graphics.getDeltaTime();
+        if (this.particleTimer < 0.0F) {
             this.particleTimer = 0.04F;
             AbstractDungeon.effectsQueue.add(new CalmParticleEffect());
-          } 
         } 
-        this.particleTimer2 -= Gdx.graphics.getDeltaTime();
-        if (this.particleTimer2 < 0.0F) {
-          this.particleTimer2 = MathUtils.random(0.45F, 0.55F);
-          AbstractDungeon.effectsQueue.add(new StanceAuraEffect("Calm"));
-        } 
-      }
+    } 
+    this.particleTimer2 -= Gdx.graphics.getDeltaTime();
+    if (this.particleTimer2 < 0.0F) {
+        this.particleTimer2 = MathUtils.random(0.45F, 0.55F);
+        AbstractDungeon.effectsQueue.add(new StanceAuraEffect("Calm"));
+    } 
+    }
       
-      public void onEnterStance() {
+    public void onEnterStance() {
         if (sfxId != -1L)
-          stopIdleSfx(); 
+            stopIdleSfx(); 
         CardCrawlGame.sound.play("POWER_FOCUS", 0.05F);
         AbstractDungeon.effectsQueue.add(new BorderFlashEffect(Color.YELLOW, true));
-      }
+    }
 
     @Override
     public void onPlayCard(AbstractCard card) {

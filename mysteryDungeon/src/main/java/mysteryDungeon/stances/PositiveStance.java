@@ -14,13 +14,13 @@ import com.megacrit.cardcrawl.orbs.Lightning;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.stance.StanceAuraEffect;
 import com.megacrit.cardcrawl.vfx.stance.StanceChangeParticleGenerator;
-import com.megacrit.cardcrawl.vfx.stance.WrathParticleEffect;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.actions.SetPikaMeterAction;
 import mysteryDungeon.powers.LockDownPower;
 import mysteryDungeon.relics.CellBatteryRelic;
+import mysteryDungeon.vfx.PositiveStanceParticle;
 
 
 public class PositiveStance extends PokemonStance {
@@ -37,25 +37,25 @@ public class PositiveStance extends PokemonStance {
     }
     public void updateAnimation() {
         if (!Settings.DISABLE_EFFECTS) {
-          this.particleTimer -= Gdx.graphics.getDeltaTime();
-          if (this.particleTimer < 0.0F) {
-            this.particleTimer = 0.05F;
-            AbstractDungeon.effectsQueue.add(new WrathParticleEffect());
-          } 
+            this.particleTimer -= Gdx.graphics.getDeltaTime();
+            if (this.particleTimer < 0.0F) {
+                this.particleTimer = 0.05F;
+                AbstractDungeon.effectsQueue.add(new PositiveStanceParticle());
+            } 
         } 
         this.particleTimer2 -= Gdx.graphics.getDeltaTime();
         if (this.particleTimer2 < 0.0F) {
-          this.particleTimer2 = MathUtils.random(0.3F, 0.4F);
-          AbstractDungeon.effectsQueue.add(new StanceAuraEffect("Wrath"));
+            this.particleTimer2 = MathUtils.random(0.3F, 0.4F);
+            AbstractDungeon.effectsQueue.add(new StanceAuraEffect("Wrath"));
         } 
-      }
+    }
     public void onEnterStance() {
         if (sfxId != -1L)
-          stopIdleSfx(); 
+            stopIdleSfx(); 
         CardCrawlGame.sound.play("ORB_LIGHTNING_EVOKE");
         AbstractDungeon.effectsQueue.add(new BorderFlashEffect(Color.YELLOW, true));
         AbstractDungeon.effectsQueue.add(new StanceChangeParticleGenerator(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, "Wrath"));
-  }
+    }
 
     @Override
     public void onPlayCard(AbstractCard card) {
@@ -88,8 +88,8 @@ public class PositiveStance extends PokemonStance {
     }
     public void stopIdleSfx() {
         if (sfxId != -1L) {
-          CardCrawlGame.sound.stop("STANCE_LOOP_WRATH", sfxId);
-          sfxId = -1L;
+            CardCrawlGame.sound.stop("STANCE_LOOP_WRATH", sfxId);
+            sfxId = -1L;
         } 
-}
+    }
 }
