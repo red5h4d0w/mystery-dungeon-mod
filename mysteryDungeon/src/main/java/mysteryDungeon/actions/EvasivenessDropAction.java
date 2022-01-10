@@ -16,7 +16,7 @@ public class EvasivenessDropAction extends AbstractGameAction {
         if (!owner.isDeadOrEscaped() && !owner.isDying) {
             if(owner.currentBlock>0)
             {
-                addToTop(new DamageAction(owner, new DamageInfo(owner, (int)Math.ceil(0.25f * owner.currentBlock), DamageType.THORNS)));
+                addToTop(new DamageAction(owner, new DamageInfo(owner, (int)Math.ceil(0.5f * owner.currentBlock), DamageType.THORNS)));
             }
         }
         isDone = true;
