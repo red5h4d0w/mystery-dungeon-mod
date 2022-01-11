@@ -406,15 +406,15 @@ public class PokemonNeowPatch {
 
     public static void convertPokemonToImplementedPokemon()
     {
-        if(chosenPokemon.color == Color.GREEN)
+        if(chosenPokemon.color == Color.GREEN.cpy())
         {
             chosenPokemon = new Bulbasaur();
         }
-        else if(chosenPokemon.color == Color.RED)
+        else if(chosenPokemon.color == Color.RED.cpy())
         {
             chosenPokemon = new Charmander();
         }
-        else if(chosenPokemon.color == Color.BLUE)
+        else if(chosenPokemon.color == Color.BLUE.cpy())
         {
             chosenPokemon = new Squirtle();
         }

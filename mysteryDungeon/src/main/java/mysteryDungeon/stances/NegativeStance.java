@@ -54,7 +54,7 @@ public class NegativeStance extends PokemonStance {
         if (sfxId != -1L)
             stopIdleSfx(); 
         CardCrawlGame.sound.play("POWER_FOCUS", 0.05F);
-        AbstractDungeon.effectsQueue.add(new BorderFlashEffect(Color.YELLOW, true));
+        AbstractDungeon.effectsQueue.add(new BorderFlashEffect(Color.YELLOW.cpy(), true));
     }
 
     @Override

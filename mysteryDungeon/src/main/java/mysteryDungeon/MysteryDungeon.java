@@ -241,26 +241,26 @@ public class MysteryDungeon implements
             ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
             ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
     
-        BaseMod.addColor(Pokemon.Enums.BULBASAUR_GREEN, Color.GREEN, Color.GREEN, Color.GREEN,
-            Color.GREEN, Color.GREEN, Color.GREEN, Color.GREEN,
+        BaseMod.addColor(Pokemon.Enums.BULBASAUR_GREEN, Color.GREEN.cpy(), Color.GREEN.cpy(), Color.GREEN.cpy(),
+            Color.GREEN.cpy(), Color.GREEN.cpy(), Color.GREEN.cpy(), Color.GREEN.cpy(),
             ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
             ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
             ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
 
-        BaseMod.addColor(Pokemon.Enums.CHARMANDER_RED, Color.RED, Color.RED, Color.RED,
-            Color.RED, Color.RED, Color.RED, Color.RED,
+        BaseMod.addColor(Pokemon.Enums.CHARMANDER_RED, Color.RED.cpy(), Color.RED.cpy(), Color.RED.cpy(),
+            Color.RED.cpy(), Color.RED.cpy(), Color.RED.cpy(), Color.RED.cpy(),
             ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
             ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
             ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
 
-        BaseMod.addColor(Pokemon.Enums.SQUIRTLE_BLUE, Color.BLUE, Color.BLUE, Color.BLUE,
-            Color.BLUE, Color.BLUE, Color.BLUE, Color.BLUE,
+        BaseMod.addColor(Pokemon.Enums.SQUIRTLE_BLUE, Color.BLUE.cpy(), Color.BLUE.cpy(), Color.BLUE.cpy(),
+            Color.BLUE.cpy(), Color.BLUE.cpy(), Color.BLUE.cpy(), Color.BLUE.cpy(),
             ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
             ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
             ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
         
-        BaseMod.addColor(Pokemon.Enums.PIKACHU_YELLOW, Color.YELLOW, Color.YELLOW, Color.YELLOW,
-            Color.YELLOW, Color.YELLOW, Color.YELLOW, Color.YELLOW,
+        BaseMod.addColor(Pokemon.Enums.PIKACHU_YELLOW, Color.YELLOW.cpy(), Color.YELLOW.cpy(), Color.YELLOW.cpy(),
+            Color.YELLOW.cpy(), Color.YELLOW.cpy(), Color.YELLOW.cpy(), Color.YELLOW.cpy(),
             ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
             ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
             ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);

@@ -12,7 +12,7 @@ import mysteryDungeon.characters.Pokemon;
 public class Wartortle extends AbstractPokemon {
 
     public static String NAME = "Wartortle";
-    public static Color COLOR = Color.BLUE;
+    public static Color COLOR = Color.BLUE.cpy();
     public static CardColor CARD_COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
     public static String PATH_TO_BACK_SPRITE = makeBackSpritePath(Wartortle.class.getSimpleName()+".png");
     public static String SKELETON_URL = makeSkeletonPath(Wartortle.class.getSimpleName());

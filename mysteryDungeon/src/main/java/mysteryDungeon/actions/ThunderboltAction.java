@@ -18,9 +18,9 @@ public class ThunderboltAction extends AbstractGameAction {
             .size() - 2)).type == AbstractCard.CardType.SKILL) {
           addToTop((AbstractGameAction)new GainEnergyAction(1));
           if (Settings.FAST_MODE) {
-            addToTop((AbstractGameAction)new VFXAction((AbstractGameEffect)new MiracleEffect(Color.YELLOW, Color.YELLOW, "ATTACK_MAGIC_SLOW_1"), 0.0F));
+            addToTop((AbstractGameAction)new VFXAction((AbstractGameEffect)new MiracleEffect(Color.YELLOW.cpy(), Color.YELLOW.cpy(), "ATTACK_MAGIC_SLOW_1"), 0.0F));
           } else {
-            addToTop((AbstractGameAction)new VFXAction((AbstractGameEffect)new MiracleEffect(Color.YELLOW, Color.YELLOW, "ATTACK_MAGIC_SLOW_1"), 0.3F));
+            addToTop((AbstractGameAction)new VFXAction((AbstractGameEffect)new MiracleEffect(Color.YELLOW.cpy(), Color.YELLOW.cpy(), "ATTACK_MAGIC_SLOW_1"), 0.3F));
           } 
         } 
         this.isDone = true;

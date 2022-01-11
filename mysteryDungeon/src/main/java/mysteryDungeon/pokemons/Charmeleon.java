@@ -12,7 +12,7 @@ import mysteryDungeon.characters.Pokemon;
 public class Charmeleon extends AbstractPokemon {
 
     public static String NAME = "Charmeleon";
-    public static Color COLOR = Color.RED;
+    public static Color COLOR = Color.RED.cpy();
     public static CardColor CARD_COLOR = Pokemon.Enums.CHARMANDER_RED;
     public static String PATH_TO_BACK_SPRITE = makeBackSpritePath(Charmeleon.class.getSimpleName()+".png");
     public static String SKELETON_URL = makeSkeletonPath(Charmeleon.class.getSimpleName());

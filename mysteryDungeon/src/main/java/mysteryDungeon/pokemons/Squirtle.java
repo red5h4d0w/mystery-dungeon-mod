@@ -19,7 +19,7 @@ public class Squirtle extends AbstractPokemon {
     public static int MAX_HP = 35;
     public static int ORB_SLOTS = 0;
     public static AbstractCard[] STARTING_DECK = new AbstractCard[]{new SquirtleTackle(), new SquirtleTackle(), new SquirtleDefend(), new SquirtleDefend(), new SquirtleWaterGun()};
-    public static Color COLOR = Color.BLUE;
+    public static Color COLOR = Color.BLUE.cpy();
     public static CardColor CARD_COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
     public static String PATH_TO_BACK_SPRITE = makeBackSpritePath(Squirtle.class.getSimpleName()+".png");
     public static String PATH_TO_SECOND_BACK_SPRITE = makeBackSpritePath("Wartortle.png");

@@ -12,7 +12,7 @@ import mysteryDungeon.characters.Pokemon;
 public class Venusaur extends AbstractPokemon {
 
     public static String NAME = "Venusaur";
-    public static Color COLOR = Color.GREEN;
+    public static Color COLOR = Color.GREEN.cpy();
     public static CardColor CARD_COLOR = Pokemon.Enums.BULBASAUR_GREEN;
     public static String PATH_TO_BACK_SPRITE = makeBackSpritePath(Venusaur.class.getSimpleName()+".png");
     public static String SKELETON_URL = makeSkeletonPath(Venusaur.class.getSimpleName());

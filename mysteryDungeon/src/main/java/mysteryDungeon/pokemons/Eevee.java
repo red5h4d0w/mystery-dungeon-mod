@@ -16,7 +16,7 @@ public class Eevee extends AbstractPokemon {
     public static int MAX_HP = 35;
     public static int ORB_SLOTS = 1;
     public static AbstractCard[] STARTING_DECK = new AbstractCard[]{new BulbasaurTackle(), new BulbasaurTackle(), new BulbasaurDefend(), new BulbasaurDefend(), new BulbasaurLeechSeed()};
-    public static Color COLOR = Color.GREEN;
+    public static Color COLOR = Color.GREEN.cpy();
     public static CardColor CARD_COLOR = Pokemon.Enums.BULBASAUR_GREEN;
     public static String PATH_TO_BACK_SPRITE = makeBackSpritePath(Bulbasaur.class.getSimpleName()+".png");
 

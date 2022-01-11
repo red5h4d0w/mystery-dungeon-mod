@@ -19,7 +19,7 @@ public class Charmander extends AbstractPokemon {
     public static int MAX_HP = 30;
     public static int ORB_SLOTS = 1;
     public static AbstractCard[] STARTING_DECK = new AbstractCard[]{new CharmanderScratch(), new CharmanderScratch(), new CharmanderDefend(), new CharmanderDefend(), new CharmanderEmber()};
-    public static Color COLOR = Color.RED;
+    public static Color COLOR = Color.RED.cpy();
     public static CardColor CARD_COLOR = Pokemon.Enums.CHARMANDER_RED;
     public static String PATH_TO_BACK_SPRITE = makeBackSpritePath(Charmander.class.getSimpleName()+".png");
     public static String SKELETON_URL = makeSkeletonPath(Charmander.class.getSimpleName());

@@ -53,7 +53,7 @@ public class PositiveStance extends PokemonStance {
         if (sfxId != -1L)
             stopIdleSfx(); 
         CardCrawlGame.sound.play("ORB_LIGHTNING_EVOKE");
-        AbstractDungeon.effectsQueue.add(new BorderFlashEffect(Color.YELLOW, true));
+        AbstractDungeon.effectsQueue.add(new BorderFlashEffect(Color.YELLOW.cpy(), true));
         AbstractDungeon.effectsQueue.add(new StanceChangeParticleGenerator(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, "Wrath"));
     }
 

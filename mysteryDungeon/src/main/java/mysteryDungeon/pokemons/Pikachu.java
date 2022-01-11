@@ -20,7 +20,7 @@ public class Pikachu extends AbstractPokemon {
     public static int MAX_HP = 25;
     public static int ORB_SLOTS = 2;
     public static AbstractCard[] STARTING_DECK = new AbstractCard[]{new PikachuTackle(), new PikachuTackle(), new PikachuDefend(), new PikachuDefend(), new PikachuThundershock()};
-    public static Color COLOR = Color.YELLOW;
+    public static Color COLOR = Color.YELLOW.cpy();
     public static CardColor CARD_COLOR = Pokemon.Enums.PIKACHU_YELLOW;
     public static String PATH_TO_BACK_SPRITE = makeBackSpritePath(Pikachu.class.getSimpleName()+".png");
     public static String SKELETON_URL = makeSkeletonPath(Pikachu.class.getSimpleName());

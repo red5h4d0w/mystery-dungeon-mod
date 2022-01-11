@@ -12,7 +12,7 @@ import mysteryDungeon.characters.Pokemon;
 public class Ivysaur extends AbstractPokemon {
 
     public static String NAME = "Ivysaur";
-    public static Color COLOR = Color.GREEN;
+    public static Color COLOR = Color.GREEN.cpy();
     public static CardColor CARD_COLOR = Pokemon.Enums.BULBASAUR_GREEN;
     public static String PATH_TO_BACK_SPRITE = makeBackSpritePath(Ivysaur.class.getSimpleName()+".png");
     public static String SKELETON_URL = makeSkeletonPath(Ivysaur.class.getSimpleName());
