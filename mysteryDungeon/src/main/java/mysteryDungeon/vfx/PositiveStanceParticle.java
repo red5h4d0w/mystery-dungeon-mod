@@ -61,9 +61,9 @@ public class PositiveStanceParticle extends AbstractGameEffect {
     
     public void render(SpriteBatch sb) {
         sb.setColor(color);
-        sb.setBlendFunction(770, 1);
+        // sb.setBlendFunction(770, 1);
         sb.draw(plusSign, x, y, 32.0F, 32.0F, 32.0F, 32.0F, scale, scale + (this.dur_div2 * 0.4F - duration) * Settings.scale, rotation, 0, 0, 64, 64, false, false);
-        sb.setBlendFunction(770, 771);
+        // sb.setBlendFunction(770, 771);
     }
     
     public void dispose() {}
