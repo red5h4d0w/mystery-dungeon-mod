@@ -29,7 +29,7 @@ public class PositiveStanceParticle extends AbstractGameEffect {
         startingDuration = scale + 0.8F;
         duration = this.startingDuration;
         scale *= Settings.scale;
-        color = Color.RED;
+        color = Color.RED.cpy();
         renderBehind = MathUtils.randomBoolean();
         this.x = MathUtils.random(-AbstractDungeon.player.hb.width / 2.0F - 50.0F * Settings.scale, AbstractDungeon.player.hb.width / 2.0F + 50.0F * Settings.scale);
         this.y = MathUtils.random(-AbstractDungeon.player.hb.height / 2.0F + 10.0F * Settings.scale, AbstractDungeon.player.hb.height / 2.0F - 20.0F * Settings.scale);
