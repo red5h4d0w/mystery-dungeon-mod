@@ -9,14 +9,10 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import mysteryDungeon.util.TextureLoader;
 
 public class PositiveStanceParticle extends AbstractGameEffect {
-
-    public Logger logger = LogManager.getLogger(PositiveStanceParticle.class);
 
     private float speed = MathUtils.random(0.01F, 50.0F) * Settings.scale;
 
@@ -40,7 +36,6 @@ public class PositiveStanceParticle extends AbstractGameEffect {
         direction = MathUtils.atan2(y, x);
         this.x += AbstractDungeon.player.hb.cX;
         this.y += AbstractDungeon.player.hb.cY;
-        logger.info(direction);
     }
 
     public void update() {
