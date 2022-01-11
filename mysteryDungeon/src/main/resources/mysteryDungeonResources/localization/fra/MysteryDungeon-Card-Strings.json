@@ -180,7 +180,7 @@
     },
     "mysteryDungeon:BulbasaurVineWhip": {
         "NAME": "Fouet Lianes",
-        "DESCRIPTION": "Infligez !D! dégâts."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez [E] au prochain tour."
     },
     "mysteryDungeon:BulbasaurWorrySeed": {
         "NAME": "Soucigraine",
@@ -365,8 +365,8 @@
     },
     "mysteryDungeon:PikachuAgility": {
         "NAME": "Hâte",
-        "DESCRIPTION": "Lorsque vous etnrez ou sortez d'une position, piochez !M! carte.",
-        "UPGRADE_DESCRIPTION": "Inné. NL Lorsque vous etnrez ou sortez d'une position, piochez !M! carte."
+        "DESCRIPTION": "Lorsque vous entrez ou sortez d'une position, piochez !M! carte.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Lorsque vous entrez ou sortez d'une position, piochez !M! carte."
     },
     "mysteryDungeon:PikachuChargeBeam": {
         "NAME": "Rayon Chargé",
