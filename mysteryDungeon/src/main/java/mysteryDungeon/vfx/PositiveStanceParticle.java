@@ -9,12 +9,11 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 
-
 import mysteryDungeon.util.TextureLoader;
 
 public class PositiveStanceParticle extends AbstractGameEffect {
 
-    private float speed = MathUtils.random(0.01F, 50.0F) * Settings.scale;
+    private float speed = MathUtils.random(1.00F, 40.0F) * Settings.scale;
 
     private float direction;
 
