@@ -13,7 +13,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.StanceStrings;
 import com.megacrit.cardcrawl.powers.FocusPower;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
-import com.megacrit.cardcrawl.vfx.stance.CalmParticleEffect;
 import com.megacrit.cardcrawl.vfx.stance.StanceAuraEffect;
 
 import mysteryDungeon.MysteryDungeon;
@@ -21,6 +20,7 @@ import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.actions.SetPikaMeterAction;
 import mysteryDungeon.powers.LockDownPower;
 import mysteryDungeon.relics.CellBatteryRelic;
+import mysteryDungeon.vfx.NegativeStanceParticle;
 
 
 public class NegativeStance extends PokemonStance {
@@ -40,7 +40,7 @@ public class NegativeStance extends PokemonStance {
         this.particleTimer -= Gdx.graphics.getDeltaTime();
         if (this.particleTimer < 0.0F) {
             this.particleTimer = 0.04F;
-            AbstractDungeon.effectsQueue.add(new CalmParticleEffect());
+            AbstractDungeon.effectsQueue.add(new NegativeStanceParticle());
         } 
     } 
     this.particleTimer2 -= Gdx.graphics.getDeltaTime();
