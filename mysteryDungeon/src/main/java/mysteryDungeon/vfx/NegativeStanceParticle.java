@@ -28,14 +28,14 @@ public class NegativeStanceParticle extends AbstractGameEffect {
     // y coordinate of the particle
     private float y;
 
-    public Texture plusSign = TextureLoader.getTexture("mysteryDungeonResources/images/ui/add.png");
+    public Texture plusSign = TextureLoader.getTexture("mysteryDungeonResources/images/ui/sub.png");
     
     public NegativeStanceParticle() {
         scale = MathUtils.random(1.0F, 1.5F);
         startingDuration = scale + 0.8F;
         duration = this.startingDuration;
         scale *= Settings.scale;
-        color = Color.BLUE.cpy();
+        color = Color.ROYAL.cpy();
         renderBehind = MathUtils.randomBoolean();
         this.x = MathUtils.random(-AbstractDungeon.player.hb.width / 2.0F - 50.0F * Settings.scale, AbstractDungeon.player.hb.width / 2.0F + 50.0F * Settings.scale);
         this.y = MathUtils.random(-AbstractDungeon.player.hb.height / 2.0F + 10.0F * Settings.scale, AbstractDungeon.player.hb.height / 2.0F - 20.0F * Settings.scale);
