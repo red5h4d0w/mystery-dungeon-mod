@@ -1,31 +1,20 @@
 package mysteryDungeon.pokemons;
 
+import static mysteryDungeon.MysteryDungeon.makeBackSpritePath;
+import static mysteryDungeon.MysteryDungeon.makeSkeletonPath;
+import static mysteryDungeon.MysteryDungeon.makeAtlasPath;
+import static mysteryDungeon.MysteryDungeon.makeID;
+
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 
 public abstract class AbstractPokemon {
     
-    public AbstractPokemon(String name, int maxHp, int orbSlots, AbstractCard[] startingDeck, Color color, CardColor cardColor, String pathToBackSprite) {
-        this.name=name;
-        this.maxHp=maxHp;
-        this.orbSlots = orbSlots;
-        this.startingDeck = startingDeck;
-        this.color = color;
-        this.cardColor = cardColor;
-        this.pathToBackSprite = pathToBackSprite;
-        generateBackSprite();
-    }
-
-    public AbstractPokemon(String name, Color color, CardColor cardColor, String pathToBackSprite) {
-        this.name=name;
-        this.color = color;
-        this.cardColor = cardColor;
-        this.pathToBackSprite = pathToBackSprite;
-        generateBackSprite();
-    }
+    public String ID;
     public String name;
     public int maxHp;
     public int orbSlots;
@@ -34,14 +23,41 @@ public abstract class AbstractPokemon {
     public CardColor cardColor;
     public String pathToBackSprite;
     public Pixmap backSprite;
-    public boolean hasEvolved = false;
     public String skeletonUrl;
     public String atlasUrl;
-    public boolean shiny = false;
+    public boolean shiny;
     public boolean canEvolve = true;
 
+    public AbstractPokemon(int maxHp, int orbSlots, AbstractCard[] startingDeck, Color color, CardColor cardColor) {
+        this.ID = makeID(getClass().getSimpleName());
+        this.name = localizedName();
+        this.maxHp = maxHp;
+        this.orbSlots = orbSlots;
+        this.startingDeck = startingDeck;
+        this.color = color;
+        this.cardColor = cardColor;
+        this.shiny = false;
+        this.pathToBackSprite = makeBackSpritePath(getClass().getSimpleName(), shiny);
+        this.skeletonUrl = makeSkeletonPath(getClass().getSimpleName(), shiny);
+        this.atlasUrl = makeAtlasPath(getClass().getSimpleName(), shiny);
+        generateBackSprite();
+    }
+
+    public AbstractPokemon(Color color, CardColor cardColor) {
+        this(0, 0, new AbstractCard[]{}, color, cardColor);
+    }
+
+    public String localizedName() {
+        return CardCrawlGame.languagePack.getCharacterString(ID).NAMES[0];
+    }
+
     public void generateBackSprite() {
-        this.backSprite = new Pixmap(Gdx.files.internal(pathToBackSprite));
+        if(shiny) {
+            backSprite = new Pixmap(Gdx.files.internal(pathToBackSprite));
+        }
+        else {
+            backSprite = new Pixmap(Gdx.files.internal(pathToBackSprite));
+        }
     }
 
     public abstract AbstractPokemon evolve();

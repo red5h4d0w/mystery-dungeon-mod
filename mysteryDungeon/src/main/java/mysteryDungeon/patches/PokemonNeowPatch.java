@@ -252,7 +252,7 @@ public class PokemonNeowPatch {
                             break;
                         case 2:
                             ((Pokemon)AbstractDungeon.player).adventurer = implementedPokemons.get(AbstractDungeon.eventRng.random(implementedPokemons.size()-1));
-                            ((Pokemon)AbstractDungeon.player).DefineNature(NatureOfPokemon.get(((Pokemon)AbstractDungeon.player).adventurer.name)[AbstractDungeon.eventRng.random(1)]);
+                            ((Pokemon)AbstractDungeon.player).DefineNature(NatureOfPokemon.get(((Pokemon)AbstractDungeon.player).adventurer.getClass().getSimpleName())[AbstractDungeon.eventRng.random(1)]);
                             ArrayList<AbstractPokemon> partnerChoices = ((ArrayList<AbstractPokemon>)implementedPokemons.clone());
                             partnerChoices.remove(((Pokemon)AbstractDungeon.player).adventurer);
                             ((Pokemon)AbstractDungeon.player).partner = partnerChoices.get(AbstractDungeon.eventRng.random(partnerChoices.size()-1));
@@ -344,7 +344,7 @@ public class PokemonNeowPatch {
                     return SpireReturn.Return(null);
                 case 11:
                     ((Pokemon)AbstractDungeon.player).adventurer = implementedPokemons.get(buttonPressed);
-                    ((Pokemon)AbstractDungeon.player).DefineNature(NatureOfPokemon.get(implementedPokemons.get(buttonPressed).name)[AbstractDungeon.eventRng.random(1)]);
+                    ((Pokemon)AbstractDungeon.player).DefineNature(NatureOfPokemon.get(implementedPokemons.get(buttonPressed).getClass().getSimpleName())[AbstractDungeon.eventRng.random(1)]);
                     AskQuestion(__instance, new Question(TEXT[8], implementedPokemons.stream().filter(p -> p != ((Pokemon)AbstractDungeon.player).adventurer).map(p -> p.name).toArray(size-> new String[size])));
                     screenNum=5;
                     return SpireReturn.Return(null);

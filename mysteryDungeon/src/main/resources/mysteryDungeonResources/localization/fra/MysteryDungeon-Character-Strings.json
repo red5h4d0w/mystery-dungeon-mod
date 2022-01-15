@@ -10,22 +10,117 @@
             "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~basic~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
         ]
     },
-    "Bulbasaur": {
+    "mysteryDungeon:Bulbasaur": {
         "NAMES": [
             "Bulbizarre"
         ]
     },
-    "Charmander": {
+    "mysteryDungeon:Ivysaur": {
+        "NAMES": [
+            "Herbizarre"
+        ]
+    },
+    "mysteryDungeon:Venusaur": {
+        "NAMES": [
+            "Florizarre"
+        ]
+    },
+    "mysteryDungeon:Charmander": {
         "NAMES": [
             "Salamèche"
         ]
     },
-    "Squirtle": {
+    "mysteryDungeon:Charmeleon": {
+        "NAMES": [
+            "Reptincel"
+        ]
+    },
+    "mysteryDungeon:Charizard": {
+        "NAMES": [
+            "Dracaufeu"
+        ]
+    },
+    "mysteryDungeon:Squirtle": {
         "NAMES": [
             "Carapuce"
         ]
     },
-    "Pikachu": {
+    "mysteryDungeon:Wartortle": {
+        "NAMES": [
+            "Carabaffe"
+        ]
+    },
+    "mysteryDungeon:Blastoise": {
+        "NAMES": [
+            "Tortank"
+        ]
+    },
+    "mysteryDungeon:Pikachu": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Raichu": {
+        "NAMES": [
+            "Raichu"
+        ]
+    },
+    "mysteryDungeon:Meowth": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Psyduck": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Machop": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Cubone": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Eevee": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Chikorita": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Cyndaquil": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Totodile": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Treecko": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Torchic": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Mudkip": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Skitty": {
         "NAMES": [
             "Pikachu"
         ]

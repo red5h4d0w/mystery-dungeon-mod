@@ -153,7 +153,11 @@ public class MysteryDungeon implements
     }
 
     public static String makeBackSpritePath(String resourcePath) {
-        return getModID() + "Resources/images/backSprites/" + resourcePath;
+        return getModID() + "Resources/images/backSprites/" + resourcePath + ".png";
+    }
+
+    public static String makeBackSpritePath(String resourcePath, boolean shiny) {
+        return makeBackSpritePath(resourcePath + (shiny?"_S":""));
     }
 
     public static String makeRelicPath(String resourcePath) {
@@ -168,8 +172,16 @@ public class MysteryDungeon implements
         return getModID() + "Resources/images/char/pokemon/" + pokemonName + "/skeleton.json";
     }
 
+    public static String makeSkeletonPath(String pokemonName, boolean shiny) {
+        return makeSkeletonPath(pokemonName + (shiny?"_S":""));
+    }
+
     public static String makeAtlasPath(String pokemonName) {
         return getModID() + "Resources/images/char/pokemon/" + pokemonName + "/skeleton.atlas";
+    }
+
+    public static String makeAtlasPath(String pokemonName, boolean shiny) {
+        return makeAtlasPath(pokemonName + (shiny?"_S":""));
     }
     
     public static String makeOrbPath(String resourcePath) {
