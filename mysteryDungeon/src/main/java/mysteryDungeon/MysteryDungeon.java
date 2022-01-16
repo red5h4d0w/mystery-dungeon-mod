@@ -87,6 +87,9 @@ public class MysteryDungeon implements
     public static final Logger logger = LogManager.getLogger(MysteryDungeon.class.getName());
     private static String modID;
 
+    // Developper Settings
+    public static final boolean TOGGLE_ON_SHINY = false;
+
     // Mod-settings settings. This is if you want an on/off savable button
     public static Properties mysteryDungeonDefaultSettings = new Properties();
     public static final String SEND_RUN_DATA = "FALSE";
