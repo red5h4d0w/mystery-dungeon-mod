@@ -11,6 +11,9 @@ import com.badlogic.gdx.graphics.Pixmap;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+
+import mysteryDungeon.MysteryDungeon;
 
 public abstract class AbstractPokemon {
     
@@ -36,7 +39,12 @@ public abstract class AbstractPokemon {
         this.startingDeck = startingDeck;
         this.color = color;
         this.cardColor = cardColor;
-        this.shiny = false;
+        if(MysteryDungeon.TOGGLE_ON_SHINY) {
+            this.shiny = true;
+        }
+        else {
+            this.shiny = AbstractDungeon.miscRng.randomBoolean(1.0F/128.0F);
+        }
         this.pathToBackSprite = makeBackSpritePath(getClass().getSimpleName(), shiny);
         this.skeletonUrl = makeSkeletonPath(getClass().getSimpleName(), shiny);
         this.atlasUrl = makeAtlasPath(getClass().getSimpleName(), shiny);
