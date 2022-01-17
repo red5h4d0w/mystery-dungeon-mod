@@ -41,17 +41,17 @@ public class BraveExplorerRelic extends PokemonRelic {
 
     public void onPlayerEndTurn(AbstractMonster m) {
         if (!used && AbstractDungeon.player.currentBlock == 0 || trigger) {
-          trigger = false;
-          flash();
-          stopPulse();
-          if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
-            for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters)
-          addToTop(new ApplyPowerAction(mo, AbstractDungeon.player, new VulnerablePower(mo, 2, false)));
+            trigger = false;
+            flash();
+            stopPulse();
+            if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+                for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters)
+                    addToTop(new ApplyPowerAction(mo, AbstractDungeon.player, new VulnerablePower(mo, 2, false)));
             }
-          addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-          used = true;
+            addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+            used = true;
         }
-      }
+    }
       
     public void atTurnStart() {
         trigger = false;
