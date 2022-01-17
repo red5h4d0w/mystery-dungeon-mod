@@ -55,7 +55,7 @@ public class BraveExplorerRelic extends PokemonRelic {
       
     public void atTurnStart() {
         trigger = false;
-        if (AbstractDungeon.player.currentBlock == 0)
+        if (AbstractDungeon.player.currentBlock == 0 && !used)
             beginLongPulse(); 
     }
       
