@@ -88,7 +88,7 @@
         "NAME": "Relaxed Explorer",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "The first time you play a Skill each combat, gain 10 Block."
+            "Au début de votre tour, #yscrutez #b1 carte."
         ]
     },
     "mysteryDungeon:TimidExplorerRelic": {
