@@ -42,6 +42,7 @@ public class CharmanderDragonPulse extends PokemonCard {
     private static final int BASE_MAGIC_NUMBER = 2;
     private static final int UPGRADE_MAGIC_NUMBER = 1;
     private int timesActivatedThisCombat = 0;
+    private boolean needsCheck = true;
     private static final int  BASE_SECOND_MAGIC_NUMBER = 2;
     private static final int  UPGRADE_SECOND_MAGIC_NUMBER = 1;
     
@@ -103,6 +104,18 @@ public class CharmanderDragonPulse extends PokemonCard {
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             upgradeSecondMagicNumber(UPGRADE_SECOND_MAGIC_NUMBER);
             initializeDescription();
+        }
+    }
+
+    @Override
+    public void update() {
+        super.update();
+        if(needsCheck) {
+            if(secondMagicNumber == 0) {
+                rawDescription = cardStrings.EXTENDED_DESCRIPTION[1];
+                initializeDescription();
+            }
+            needsCheck = false;
         }
     }
 }
