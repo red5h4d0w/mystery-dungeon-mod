@@ -4,6 +4,7 @@ import basemod.ReflectionHacks;
 import basemod.patches.com.megacrit.cardcrawl.screens.mainMenu.ColorTabBar.ColorTabBarFix;
 import javassist.CannotCompileException;
 import javassist.CtBehavior;
+import mysteryDungeon.MysteryDungeon;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.evacipated.cardcrawl.modthespire.lib.*;
@@ -27,7 +28,7 @@ public class LibraryTabsPatch {
         ArrayList<ColorTabBarFix.ModColorTab> modTabs = ReflectionHacks.getPrivateStatic(ColorTabBarFix.Fields.class, "modTabs");
         String pokemonName = modTabs.get(___i).color.name().split("_")[0].substring(0, 1).toUpperCase()+modTabs.get(___i).color.name().split("_")[0].substring(1).toLowerCase();
         if(pokemonNames.contains(pokemonName))
-            ___tabName[0] = CardCrawlGame.languagePack.getCharacterString(pokemonName).NAMES[0];
+            ___tabName[0] = CardCrawlGame.languagePack.getCharacterString(MysteryDungeon.makeID(pokemonName)).NAMES[0];
     }
     public static class Locator extends SpireInsertLocator {
         public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {

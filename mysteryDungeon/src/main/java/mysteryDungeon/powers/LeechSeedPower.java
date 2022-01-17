@@ -82,13 +82,14 @@ public class LeechSeedPower extends MysteryDungeonPower implements CloneablePowe
     }
 
     public void atEndOfRound(){
-    if(wasAttacked<2){
-        if(amount<=1){
-            addToBot(new RemoveSpecificPowerAction(owner, owner, this));
-        }
-        else
-            amount-= MathUtils.ceil(amount/2.0f);
-        updateDescription();
+        if(wasAttacked<2){
+            if(amount<=1){
+                amount-= MathUtils.ceil(amount/2.0f);
+                updateDescription();
+                if(amount<=0) {
+                    addToBot(new RemoveSpecificPowerAction(owner, source, this));
+                }
+            }
         }
     }
 
