@@ -56,7 +56,7 @@ public class CharmanderDragonPulse extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         if(upgraded)
         { 
-            addToBot(new DrawCardAction(magicNumber));
+            addToTop(new DrawCardAction(magicNumber));
         }
         addToBot(new MoveRandomCardsAction(p.drawPile, p.exhaustPile, 1));
         
@@ -80,7 +80,7 @@ public class CharmanderDragonPulse extends PokemonCard {
         }
         if(upgraded)
         {
-            addToBot(new DrawCardAction(magicNumber));
+            addToTop(new DrawCardAction(magicNumber));
         }
     }
 
