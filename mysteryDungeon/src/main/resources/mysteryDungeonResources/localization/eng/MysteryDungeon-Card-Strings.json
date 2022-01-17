@@ -232,8 +232,7 @@
     },
     "mysteryDungeon:CharmanderDragonPulse": {
         "NAME": "Dragon Pulse",
-        "DESCRIPTION": "Unplayable. NL When drawn: NL Add a random card from your exhaust pile on the top of draw pile.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn: NL Draw !M! card. NL Add a random card from your exhaust pile on the top of draw pile.",
+        "DESCRIPTION": "Unplayable. NL When drawn: NL Add a random card from your exhaust pile on the top of draw pile. NL After activating this effect !M! times: Exhaust.",
         "EXTENDED_DESCRIPTION": ["I can't play this card."]
     },
     "mysteryDungeon:CharmanderDragonRage": {

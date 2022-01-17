@@ -2,8 +2,7 @@ package mysteryDungeon.cards.Charmander;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -27,7 +26,6 @@ public class CharmanderDragonPulse extends PokemonCard {
     public static final String IMG = makeCardPath(CharmanderDragonPulse.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -40,8 +38,9 @@ public class CharmanderDragonPulse extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
     private static final int COST = -2;
-    private static final int BASE_MAGIC_NUMBER = 1;
-
+    private static final int BASE_MAGIC_NUMBER = 2;
+    private static final int UPGRADE_MAGIC_NUMBER = 1;
+    private int timesActivatedThisCombat = 0;
 
     // /STAT DECLARATION/
 
@@ -54,12 +53,13 @@ public class CharmanderDragonPulse extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(upgraded)
-        { 
-            addToTop(new DrawCardAction(magicNumber));
-        }
+        if (timesActivatedThisCombat<magicNumber){
         addToBot(new MoveRandomCardsAction(p.drawPile, p.exhaustPile, 1));
-        
+        timesActivatedThisCombat++;
+        }
+        if(timesActivatedThisCombat>=magicNumber){
+            addToBot(new ExhaustSpecificCardAction(this, AbstractDungeon.player.hand, true));
+        }
     }
 
     @Override
@@ -74,13 +74,13 @@ public class CharmanderDragonPulse extends PokemonCard {
             card = AbstractDungeon.player.exhaustPile.getRandomCard(AbstractDungeon.cardRng);
         if(card!=null)
         {
-            AbstractCard cardToAdd = card.makeCopy();
-            AbstractDungeon.player.exhaustPile.removeCard(card);
-            addToBot(new MakeTempCardInDrawPileAction(cardToAdd, 1, false, false, false));
+            if (timesActivatedThisCombat<magicNumber){
+                addToBot(new MoveRandomCardsAction(AbstractDungeon.player.drawPile, AbstractDungeon.player.exhaustPile, 1));
+                timesActivatedThisCombat++;
+            }
         }
-        if(upgraded)
-        {
-            addToTop(new DrawCardAction(magicNumber));
+        if(timesActivatedThisCombat>=magicNumber){
+            addToBot(new ExhaustSpecificCardAction(this, AbstractDungeon.player.hand, true));
         }
     }
 
@@ -89,7 +89,7 @@ public class CharmanderDragonPulse extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = UPGRADE_DESCRIPTION;
+            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             initializeDescription();
         }
     }
