@@ -2,6 +2,9 @@ package mysteryDungeon.pokemons;
 
 import static mysteryDungeon.MysteryDungeon.makeBackSpritePath;
 import static mysteryDungeon.MysteryDungeon.makeSkeletonPath;
+
+import java.util.Random;
+
 import static mysteryDungeon.MysteryDungeon.makeAtlasPath;
 import static mysteryDungeon.MysteryDungeon.makeID;
 
@@ -11,7 +14,6 @@ import com.badlogic.gdx.graphics.Pixmap;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 import mysteryDungeon.MysteryDungeon;
 
@@ -43,7 +45,7 @@ public abstract class AbstractPokemon {
             setShiny(true);
         }
         else {
-            setShiny(AbstractDungeon.miscRng.randomBoolean(1.0F/100.0F));
+            setShiny((new Random()).nextInt(100)<5);
         }
     }
 
