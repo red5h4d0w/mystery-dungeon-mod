@@ -28,7 +28,7 @@ public abstract class AbstractPokemon {
     public Pixmap backSprite;
     public String skeletonUrl;
     public String atlasUrl;
-    public boolean shiny;
+    private boolean shiny;
     public boolean canEvolve = true;
 
     public AbstractPokemon(int maxHp, int orbSlots, AbstractCard[] startingDeck, Color color, CardColor cardColor) {
@@ -40,15 +40,11 @@ public abstract class AbstractPokemon {
         this.color = color;
         this.cardColor = cardColor;
         if(MysteryDungeon.TOGGLE_ON_SHINY) {
-            this.shiny = true;
+            setShiny(true);
         }
         else {
-            this.shiny = AbstractDungeon.miscRng.randomBoolean(1.0F/100.0F);
+            setShiny(AbstractDungeon.miscRng.randomBoolean(1.0F/100.0F));
         }
-        this.pathToBackSprite = makeBackSpritePath(getClass().getSimpleName(), shiny);
-        this.skeletonUrl = makeSkeletonPath(getClass().getSimpleName(), shiny);
-        this.atlasUrl = makeAtlasPath(getClass().getSimpleName(), shiny);
-        generateBackSprite();
     }
 
     public AbstractPokemon(Color color, CardColor cardColor) {
@@ -66,6 +62,18 @@ public abstract class AbstractPokemon {
         else {
             backSprite = new Pixmap(Gdx.files.internal(pathToBackSprite));
         }
+    }
+
+    public void setShiny(boolean shiny) {
+        this.shiny = shiny;
+        this.pathToBackSprite = makeBackSpritePath(getClass().getSimpleName(), shiny);
+        this.skeletonUrl = makeSkeletonPath(getClass().getSimpleName(), shiny);
+        this.atlasUrl = makeAtlasPath(getClass().getSimpleName(), shiny);
+        generateBackSprite();
+    }
+
+    public boolean getShiny() {
+        return shiny;
     }
 
     public abstract AbstractPokemon evolve();

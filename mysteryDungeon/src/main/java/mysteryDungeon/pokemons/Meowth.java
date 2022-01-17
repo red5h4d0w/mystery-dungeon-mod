@@ -26,8 +26,8 @@ public class Meowth extends AbstractPokemon {
     @Override
     public AbstractPokemon evolve() {
         AbstractPokemon evolution = new Ivysaur();
-        if (shiny)
-            evolution.shiny = true;
+        if (getShiny())
+            evolution.setShiny(true);
         return evolution;
     }
 }

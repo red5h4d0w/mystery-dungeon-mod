@@ -17,8 +17,8 @@ public class Charmeleon extends AbstractPokemon {
     @Override
     public AbstractPokemon evolve() {
         AbstractPokemon evolution = new Charizard();
-        if (shiny)
-            evolution.shiny = true;
+        if (getShiny())
+            evolution.setShiny(true);
         return evolution;
     }
 }

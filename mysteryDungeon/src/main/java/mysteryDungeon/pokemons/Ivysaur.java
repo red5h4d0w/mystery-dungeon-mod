@@ -17,8 +17,8 @@ public class Ivysaur extends AbstractPokemon {
     @Override
     public AbstractPokemon evolve() {
         AbstractPokemon evolution = new Venusaur();
-        if (shiny)
-            evolution.shiny = true;
+        if (getShiny())
+            evolution.setShiny(true);
         return evolution;
     }
 }

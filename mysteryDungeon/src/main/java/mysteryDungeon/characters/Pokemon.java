@@ -455,8 +455,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
             return saveInfo;
         saveInfo.adventurer = adventurer.getClass().getSimpleName();
         saveInfo.partner = partner.getClass().getSimpleName();
-        saveInfo.shinyPartner = partner.shiny;
-        saveInfo.shinyAdventurer = adventurer.shiny;
+        saveInfo.shinyPartner = partner.getShiny();
+        saveInfo.shinyAdventurer = adventurer.getShiny();
         logger.info(saveInfo.adventurer);
         logger.info(saveInfo.partner);
         saveInfo.maxPikaMeter = maxPikachuChargeCounter;
@@ -483,8 +483,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
             try {
                 adventurer = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+(saveInfo.adventurer)).getConstructor().newInstance();
                 partner = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+(saveInfo.partner)).getConstructor().newInstance();
-                adventurer.shiny = saveInfo.shinyAdventurer;
-                partner.shiny = saveInfo.shinyPartner;
+                adventurer.setShiny(saveInfo.shinyAdventurer);
+                partner.setShiny(saveInfo.shinyPartner);
             } catch (InstantiationException | IllegalAccessException | IllegalArgumentException
                     | InvocationTargetException | NoSuchMethodException | SecurityException
                     | ClassNotFoundException e) {

@@ -26,8 +26,8 @@ public class Charmander extends AbstractPokemon {
     @Override
     public AbstractPokemon evolve() {
         AbstractPokemon evolution = new Charmeleon();
-        if (shiny)
-            evolution.shiny = true;
+        if (getShiny())
+            evolution.setShiny(true);
         return evolution;
     }
 }

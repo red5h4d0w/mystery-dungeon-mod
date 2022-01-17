@@ -28,8 +28,8 @@ public class Pikachu extends AbstractPokemon {
     @Override
     public AbstractPokemon evolve() {
         AbstractPokemon evolution = new Raichu();
-        if (shiny)
-            evolution.shiny = true;
+        if (getShiny())
+            evolution.setShiny(true);
         return evolution;
     }
 }
