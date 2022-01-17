@@ -39,7 +39,7 @@ public class BraveExplorerRelic extends PokemonRelic {
         tips.add(new PowerTip(name, description));
     }
 
-    public void onPlayerEndTurn(AbstractMonster m) {
+    public void onPlayerEndTurn() {
         if (!used && AbstractDungeon.player.currentBlock == 0 || trigger) {
             trigger = false;
             flash();
