@@ -15,7 +15,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
-import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
 
 public class BraveExplorerRelic extends PokemonRelic { 
 
@@ -29,6 +30,7 @@ public class BraveExplorerRelic extends PokemonRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("fierce-bandanna.png"));
 
     public boolean trigger = false;
+    private boolean used = false;
 
     public BraveExplorerRelic() {
         super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.CLINK);
@@ -37,14 +39,18 @@ public class BraveExplorerRelic extends PokemonRelic {
         tips.add(new PowerTip(name, description));
     }
 
-    public void onPlayerEndTurn() {
-        if (AbstractDungeon.player.currentBlock == 0 || trigger) {
+    public void onPlayerEndTurn(AbstractMonster m) {
+        if (!used && AbstractDungeon.player.currentBlock == 0 || trigger) {
           trigger = false;
           flash();
           stopPulse();
-          addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, 1)));
+          if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+            for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters)
+          addToTop(new ApplyPowerAction(mo, AbstractDungeon.player, new VulnerablePower(mo, 2, false)));
+            }
           addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        } 
+          used = true;
+        }
       }
       
     public void atTurnStart() {
@@ -57,6 +63,12 @@ public class BraveExplorerRelic extends PokemonRelic {
         if (blockAmount > 0.0F)
             stopPulse(); 
         return MathUtils.floor(blockAmount);
+    }
+
+    @Override
+    public void atPreBattle()
+    {
+        used = false;
     }
       
     public void onVictory() {

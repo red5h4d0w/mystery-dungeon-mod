@@ -10,7 +10,7 @@
     "mysteryDungeon:AspearBerryPotion": {
         "NAME": "Aspear Berry",
         "DESCRIPTIONS": [
-            "Défaussez autant de cartes de votre main que vous le souhaitez."
+            "Défaussez autant de cartes de votre main que vous le souhaitez. Pigez #b%s 2 cartes."
         ]
     },
     "mysteryDungeon:DireHitPotion": {

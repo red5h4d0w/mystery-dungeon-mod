@@ -18,7 +18,7 @@
         "NAME": "Brave Explorer",
         "FLAVOR": "A brave Explorer",
         "DESCRIPTIONS": [
-            "If you don't have any #yBlock at the end of your turn gain #b1 #yStrength."
+            "The first time you don't have any #yBlock at the end of your turn apply 2 vulnerable to all enemies."
         ]
     },
     "mysteryDungeon:CalmExplorerRelic": {

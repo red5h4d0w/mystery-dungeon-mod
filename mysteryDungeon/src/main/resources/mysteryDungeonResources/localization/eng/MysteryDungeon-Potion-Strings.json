@@ -2,7 +2,7 @@
     "mysteryDungeon:AspearBerryPotion": {
         "NAME": "Aspear Berry",
         "DESCRIPTIONS": [
-            "Discard any number of cards from your hand."
+            "Discard any number of cards from your hand. Draw #b%s cards."
         ]
     },
     "mysteryDungeon:DireHitPotion": {
