@@ -18,42 +18,42 @@
         "NAME": "Brave Explorer",
         "FLAVOR": "A brave Explorer",
         "DESCRIPTIONS": [
-            "If you don't have any #yBlock at the end of your turn gain 1 #yStrength."
+            "If you don't have any #yBlock at the end of your turn gain #b1 #yStrength."
         ]
     },
     "mysteryDungeon:CalmExplorerRelic": {
         "NAME": "Calm Explorer",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "Draw 1 card and gain [E] at the start of every fight."
+            "Draw #b1 card and gain [E] at the start of every fight."
         ]
     },
     "mysteryDungeon:CellBatteryRelic": {
         "NAME": "Cell Battery",
         "FLAVOR": "A consumable battery. If the holder is hit by an Electric-type move, its Attack will rise.",
         "DESCRIPTIONS": [
-            "The charge meter will only have 3 steps between stances. NL You no longer return to the center of the charge meter at the start of your turn."
+            "The charge meter will now have 3 steps between stances. NL You no longer return to the center of the charge meter at the start of your turn."
         ]
     },
     "mysteryDungeon:CharcoalRelic": {
         "NAME": "Charcoal",
         "FLAVOR": "It's a combustible fuel that boosts the power of Fire-type moves.",
         "DESCRIPTIONS": [
-            "Every time you apply a debuff deal #b1 damage to all enemies."
+            "Every time you apply a #ydebuff deal #b1 damage to ALL enemies."
         ]
     },
     "mysteryDungeon:DocileExplorerRelic": {
         "NAME": "Docile Explorer",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "When you receive a debuff, gain 2 Block on the following turn."
+            "When you receive a #yDebuff, gain #b2 Block on the following turn."
         ]
     },
     "mysteryDungeon:FlameOrbRelic": {
         "NAME": "Flame Orb",
         "FLAVOR": "It's a bizarre orb that will afflict the holder with a burn during battle.",
         "DESCRIPTIONS": [
-            "At the start of each combat, apply 9 #yBurn to all enemies."
+            "At the start of each combat, apply #b9 #yBurn to ALL enemies."
         ]
     },
     "mysteryDungeon:HardyExplorerRelic": {

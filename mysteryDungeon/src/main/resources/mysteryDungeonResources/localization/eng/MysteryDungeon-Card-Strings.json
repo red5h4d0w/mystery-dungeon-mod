@@ -218,8 +218,8 @@
     },
     "mysteryDungeon:CharmanderDragonBreath": {
         "NAME": "Dragon Breath",
-        "DESCRIPTION": "Gain energy for every !M! cards in your exhaust pile.",
-        "UPGRADE_DESCRIPTION": "Gain energy for every !M! cards in your exhaust pile. NL Gain [E]."
+        "DESCRIPTION": "Gain [E] for every !M! cards in your exhaust pile.",
+        "UPGRADE_DESCRIPTION": "Gain [E] for every !M! cards in your exhaust pile. NL Gain [E]."
     },
     "mysteryDungeon:CharmanderDragonClaw": {
         "NAME": "Dragon Claw",
@@ -259,8 +259,8 @@
     },
     "mysteryDungeon:CharmanderExplorerForm": {
         "NAME": "Explorer Form",
-        "DESCRIPTION": "Ethereal. NL At the start of your turn, add !M! random card from your exhaust pile to your hands. NL Draw one less card per turn.",
-        "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! random card from your exhaust pile to your hands. NL Draw one less card per turn."
+        "DESCRIPTION": "Ethereal. NL At the start of your turn, add !M! random card from your exhaust pile to your hand. NL Draw one less card per turn.",
+        "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! random card from your exhaust pile to your hand. NL Draw one less card per turn."
     },
     "mysteryDungeon:CharmanderFacade": {
         "NAME": "Facade",
@@ -360,8 +360,8 @@
     },
     "mysteryDungeon:PikachuAgility": {
         "NAME": "Agility",
-        "DESCRIPTION": "Whenever you enter or exit a stance, draw !M! card.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you enter or exit a stance, draw !M! card."
+        "DESCRIPTION": "Whenever you enter a stance, draw !M! card.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you enter a stance, draw !M! card."
     },
     "mysteryDungeon:PikachuChargeBeam": {
         "NAME": "Charge Beam",

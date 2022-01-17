@@ -218,8 +218,8 @@
     },
     "mysteryDungeon:CharmanderDragonBreath": {
         "NAME": "Draco-Souffle",
-        "DESCRIPTION": "Gagnez autant d'Armure que le nombre de cartes épuisées ce combat.",
-        "UPGRADE_DESCRIPTION": "Gagnez autant d'Armure que 5 + le nombre de cartes épuisées ce combat."
+        "DESCRIPTION": "Gagnez [E] pour chaque !M! cartes épuisées ce combat.",
+        "UPGRADE_DESCRIPTION": "Gagnez [E] pour chaque !M! cartes épuisées ce combat. NL Gagnez [E]."
     },
     "mysteryDungeon:CharmanderDragonClaw": {
         "NAME": "Drago-Griffe",
@@ -365,8 +365,8 @@
     },
     "mysteryDungeon:PikachuAgility": {
         "NAME": "Hâte",
-        "DESCRIPTION": "Lorsque vous entrez ou sortez d'une position, piochez !M! carte.",
-        "UPGRADE_DESCRIPTION": "Inné. NL Lorsque vous entrez ou sortez d'une position, piochez !M! carte."
+        "DESCRIPTION": "Lorsque vous entrez dans une position, piochez !M! carte.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Lorsque vous entrez dans une position, piochez !M! carte."
     },
     "mysteryDungeon:PikachuChargeBeam": {
         "NAME": "Rayon Chargé",
@@ -535,8 +535,9 @@
     },
     "mysteryDungeon:SquirtleAquaRing": {
         "NAME": "Anneau Hydro",
-        "DESCRIPTION": "Injouable. NL Lorsque cette carte est *défaussée, gagnez !B! d'Armure. NL Lorsque cette carte est scrutée, infligez !D! dégâts à un ennemi aléatoire."
-    },
+        "DESCRIPTION": "Défaussez jusqu'à !M! cartes de votre main. NL Pour chaque carte ainsi défaussée, ajoutez une *Peur à votre main.",
+        "UPGRADE_DESCRIPTION": "Défaussez jusqu'à !M! cartes de votre main. NL Pour chaque carte ainsi défaussée, ajoutez une *Peur améliorée à votre main."
+      },
     "mysteryDungeon:SquirtleAquaTail": {
         "NAME": "Hydro-Queue",
         "DESCRIPTION": "Infligez !D! dégâts. NL Scrutez !M! cartes. NL Piochez !mysteryDungeon:M2! cartes. NL Défaussez !mysteryDungeon:M3! cartes.",
@@ -600,7 +601,7 @@
     },
     "mysteryDungeon:SquirtleGyroBall": {
         "NAME": "Gyroballe",
-        "DESCRIPTION": "Ajoutez 1 *Gel à votre main. NL Infligez !D! dégâts par status dans votre main. NL Défaussez TOUS les Statut en main. NL Piochez !M! cartes."
+        "DESCRIPTION": "Ajoutez 1 *Gel à votre main. NL Infligez !D! dégâts par status dans votre main. NL Défaussez TOUS les Statut en main."
     },
     "mysteryDungeon:SquirtleHail": {
         "NAME": "Grêle",

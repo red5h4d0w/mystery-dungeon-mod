@@ -16,7 +16,7 @@
     "mysteryDungeon:AquaRingPower": {
         "NAME": "Anneau Hydro",
         "DESCRIPTIONS": [
-            "Ce tour, lorsque vous scrutez ou défaussez une carte, gagnez #b%s d'#yArmure. NL Si cette carte était un Statut, infligez #b%s dégâts à TOUS les ennemis."
+            "Ce tour, lorsque vous scrutez ou défaussez une carte, gagnez #b%s #yd'Armure. NL Si cette carte était un Statut, infligez #b%s dégâts à TOUS les ennemis."
         ]
     },
     "mysteryDungeon:BellyDrumPower": {
@@ -113,7 +113,7 @@
     "mysteryDungeon:LightScreenPower": {
         "NAME": "Mur Lumière",
         "DESCRIPTIONS": [
-            "À la fin de votre tour, gagnez #b%s d'#yArmure par emplacement d'#yOrbe vide."
+            "À la fin de votre tour, gagnez #b%s #yd'Armure par emplacement #yd'Orbe vide."
         ]
     },
     "mysteryDungeon:NextTurnDrawLessPower": {
@@ -126,8 +126,8 @@
     "mysteryDungeon:NextTurnNoBlockPower": {
         "NAME": "Prochain tour: pas d'Armure",
         "DESCRIPTIONS": [
-            "Au prochain tour, vous ne pourrez pas gagner d'#yArmure à partir de cartes.",
-            "Lors des #b%s prochains tours, vous ne pourrez pas gagner d'#yArmure à partir de cartes."
+            "Au prochain tour, vous ne pourrez pas gagner #yd'Armure à partir de cartes.",
+            "Lors des #b%s prochains tours, vous ne pourrez pas gagner #yd'Armure à partir de cartes."
         ]
     },
     "mysteryDungeon:NoHealPower": {
@@ -166,7 +166,7 @@
     "mysteryDungeon:RainDishPower": {
         "NAME": "Cuvette",
         "DESCRIPTIONS": [
-            "Quand une carte entre dans votre défausse sans qu'elle ait été jouée, gagnez %s d'#yArmure."
+            "Quand une carte entre dans votre défausse sans qu'elle ait été jouée, gagnez %s #yd'Armure."
         ]
     },
     "mysteryDungeon:ReduceHighestCostAtStartOfTurnPower": {
