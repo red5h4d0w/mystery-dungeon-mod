@@ -98,7 +98,7 @@
     },
     "mysteryDungeon:LeechSeedPower": {
         "NAME": "Leech Seed",
-        "DESCRIPTIONS": ["At the start of the turn, this monster loses #b%s HP, and you gain #b%s HP."]
+        "DESCRIPTIONS": ["At the start of the turn, this monster loses #b%s HP, and you gain #b%s HP. At the end of the turn, if the leech seed's owner has not taken any damage from any other source, the amount is reduced by half."]
     },
     "mysteryDungeon:LightScreenPower": {
         "NAME": "Light Screen",
