@@ -43,7 +43,7 @@ public abstract class AbstractPokemon {
             this.shiny = true;
         }
         else {
-            this.shiny = AbstractDungeon.miscRng.randomBoolean(1.0F/128.0F);
+            this.shiny = AbstractDungeon.miscRng.randomBoolean(1.0F/100.0F);
         }
         this.pathToBackSprite = makeBackSpritePath(getClass().getSimpleName(), shiny);
         this.skeletonUrl = makeSkeletonPath(getClass().getSimpleName(), shiny);
