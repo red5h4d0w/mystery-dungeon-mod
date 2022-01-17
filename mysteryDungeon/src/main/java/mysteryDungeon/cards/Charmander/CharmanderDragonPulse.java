@@ -42,7 +42,6 @@ public class CharmanderDragonPulse extends PokemonCard {
     private static final int BASE_MAGIC_NUMBER = 2;
     private static final int UPGRADE_MAGIC_NUMBER = 1;
     private int timesActivatedThisCombat = 0;
-    private boolean needsCheck = true;
     private static final int  BASE_SECOND_MAGIC_NUMBER = 2;
     private static final int  UPGRADE_SECOND_MAGIC_NUMBER = 1;
     
@@ -108,14 +107,26 @@ public class CharmanderDragonPulse extends PokemonCard {
     }
 
     @Override
-    public void update() {
-        super.update();
-        if(needsCheck) {
-            if(secondMagicNumber == 0) {
-                rawDescription = cardStrings.EXTENDED_DESCRIPTION[1];
-                initializeDescription();
-            }
-            needsCheck = false;
-        }
+    public AbstractCard makeSameInstanceOf() {
+        // TODO Auto-generated method stub
+        AbstractCard card  = super.makeSameInstanceOf();
+        card.rawDescription = rawDescription;
+        card.initializeDescription();
+        return card;
+    }
+    @Override
+    public AbstractCard makeCopy() {
+        // TODO Auto-generated method stub
+        AbstractCard card  = super.makeCopy();
+        card.rawDescription = rawDescription;
+        card.initializeDescription();
+        return card;
+    }
+    @Override
+    public AbstractCard makeStatEquivalentCopy() {
+        AbstractCard card  = super.makeStatEquivalentCopy();
+        card.rawDescription = rawDescription;
+        card.initializeDescription();
+        return card;
     }
 }
