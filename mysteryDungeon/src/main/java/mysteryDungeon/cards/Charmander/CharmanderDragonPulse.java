@@ -15,6 +15,7 @@ import org.apache.logging.log4j.Logger;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.actions.ModifyMagicNumberAction;
 import mysteryDungeon.actions.MoveRandomCardsAction;
 import mysteryDungeon.characters.Pokemon;
 
@@ -41,24 +42,31 @@ public class CharmanderDragonPulse extends PokemonCard {
     private static final int BASE_MAGIC_NUMBER = 2;
     private static final int UPGRADE_MAGIC_NUMBER = 1;
     private int timesActivatedThisCombat = 0;
-
+    private static final int  BASE_SECOND_MAGIC_NUMBER = 2;
+    private static final int  UPGRADE_SECOND_MAGIC_NUMBER = 1;
+    
     // /STAT DECLARATION/
 
     public CharmanderDragonPulse() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        baseSecondMagicNumber = BASE_SECOND_MAGIC_NUMBER;
+        secondMagicNumber = baseSecondMagicNumber;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (timesActivatedThisCombat<magicNumber){
-        addToBot(new MoveRandomCardsAction(p.drawPile, p.exhaustPile, 1));
-        timesActivatedThisCombat++;
+        if (timesActivatedThisCombat<secondMagicNumber){
+            addToBot(new MoveRandomCardsAction(p.drawPile, p.exhaustPile, 1));
+            addToBot(new ModifyMagicNumberAction(uuid, -1));
+            timesActivatedThisCombat++;
         }
-        if(timesActivatedThisCombat>=magicNumber){
+        if(timesActivatedThisCombat>=secondMagicNumber){
             addToBot(new ExhaustSpecificCardAction(this, AbstractDungeon.player.hand, true));
+            rawDescription = cardStrings.EXTENDED_DESCRIPTION[1];
+            initializeDescription();
         }
     }
 
@@ -74,13 +82,16 @@ public class CharmanderDragonPulse extends PokemonCard {
             card = AbstractDungeon.player.exhaustPile.getRandomCard(AbstractDungeon.cardRng);
         if(card!=null)
         {
-            if (timesActivatedThisCombat<magicNumber){
+            if (timesActivatedThisCombat<secondMagicNumber){
                 addToBot(new MoveRandomCardsAction(AbstractDungeon.player.drawPile, AbstractDungeon.player.exhaustPile, 1));
+                addToBot(new ModifyMagicNumberAction(uuid, -1));
                 timesActivatedThisCombat++;
             }
         }
-        if(timesActivatedThisCombat>=magicNumber){
+        if(timesActivatedThisCombat>=secondMagicNumber){
             addToBot(new ExhaustSpecificCardAction(this, AbstractDungeon.player.hand, true));
+            rawDescription = cardStrings.EXTENDED_DESCRIPTION[1];
+            initializeDescription();
         }
     }
 
@@ -90,6 +101,7 @@ public class CharmanderDragonPulse extends PokemonCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            upgradeSecondMagicNumber(UPGRADE_SECOND_MAGIC_NUMBER);
             initializeDescription();
         }
     }

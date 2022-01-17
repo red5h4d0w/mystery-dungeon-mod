@@ -232,10 +232,10 @@
     },
     "mysteryDungeon:CharmanderDragonPulse": {
         "NAME": "Draco-Choc",
-        "DESCRIPTION": "Injouable. NL Lorsque piochée: NL Ajoutez une carte aléatoire parmi les cartes épuisées ce combat sur le dessus de votre pioche.",
-        "UPGRADE_DESCRIPTION": "Injouable. NL Lorsque piochée: NL Piochez !M! carte. NL Ajoutez une carte aléatoire parmi les cartes épuisées ce combat sur le dessus de votre pioche.",
+        "DESCRIPTION": "Injouable. NL Lorsque piochée: NL Ajoutez une carte aléatoire parmi les cartes épuisées ce combat sur le dessus de votre pioche. NL Après l'activation de cet effet !M! fois: Épuisement.",
         "EXTENDED_DESCRIPTION": [
-            "Je ne peux pas joeur cette carte."
+            "Je ne peux pas joeur cette carte.",
+            "Lorsque piochée: Épuisement."
         ]
     },
     "mysteryDungeon:CharmanderDragonRage": {

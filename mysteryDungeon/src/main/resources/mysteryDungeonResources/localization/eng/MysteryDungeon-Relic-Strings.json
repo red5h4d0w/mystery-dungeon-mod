@@ -93,9 +93,9 @@
     },
     "mysteryDungeon:MetronomeRelic": {
         "NAME": "Metronome",
-        "FLAVOR": "It follows its own rythm.",
+        "FLAVOR": "It follows its own rhythm.",
         "DESCRIPTIONS": [
-            "At the start of every turn add a random card in your hand. It costs 0 this turn."
+            "At the start of every turn add a random card from Pokémon that are not in your team to your hand. It costs 0 this turn."
         ]
     },
     "mysteryDungeon:MiracleSeedRelic": {

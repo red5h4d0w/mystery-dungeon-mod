@@ -31,7 +31,7 @@ public class MetronomeRelic extends PokemonRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("metronome.png"));
 
     public MetronomeRelic() {
-        super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.CLINK);
+        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
 
         tips.clear();
         tips.add(new PowerTip(name, description));
@@ -46,7 +46,7 @@ public class MetronomeRelic extends PokemonRelic {
                 .filter(c -> c.color != Pokemon.partner.cardColor)
                 .filter(c -> c.color != Pokemon.adventurer.cardColor)
                 .toArray();
-            AbstractCard c = possibleCards[AbstractDungeon.cardRng.random(possibleCards.length)];
+            AbstractCard c = possibleCards[(int) AbstractDungeon.cardRng.random(possibleCards.length)];
             c.setCostForTurn(0);
             addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, true));
             
