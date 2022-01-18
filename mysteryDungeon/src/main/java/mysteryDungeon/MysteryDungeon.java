@@ -21,7 +21,6 @@ import mysteryDungeon.variables.SecondMagicNumber;
 import mysteryDungeon.variables.ThirdMagicNumber;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
@@ -323,23 +322,6 @@ public class MysteryDungeon implements
         return modID;
     }
     
-    private static void pathCheck() { // ALSO NO
-        Gson coolG = new Gson(); // NOPE DON'T EDIT THIS
-        //   String IDjson = Gdx.files.internal("IDCheckStringsDONT-EDIT-AT-ALL.json").readString(String.valueOf(StandardCharsets.UTF_8)); // i still hate u btw Gdx.files
-        InputStream in = MysteryDungeon.class.getResourceAsStream("/IDCheckStringsDONT-EDIT-AT-ALL.json"); // DON'T EDIT THISSSSS
-        IDCheckDontTouchPls EXCEPTION_STRINGS = coolG.fromJson(new InputStreamReader(in, StandardCharsets.UTF_8), IDCheckDontTouchPls.class); // NAH, NO EDIT
-        String packageName = MysteryDungeon.class.getPackage().getName(); // STILL NO EDIT ZONE
-        FileHandle resourcePathExists = Gdx.files.internal(getModID() + "Resources"); // PLEASE DON'T EDIT THINGS HERE, THANKS
-        if (!modID.equals(EXCEPTION_STRINGS.DEVID)) { // LEAVE THIS EDIT-LESS
-            if (!packageName.equals(getModID())) { // NOT HERE ETHER
-                throw new RuntimeException(EXCEPTION_STRINGS.PACKAGE_EXCEPTION + getModID()); // THIS IS A NO-NO
-            } // WHY WOULD U EDIT THIS
-            if (!resourcePathExists.exists()) {
-                throw new RuntimeException(EXCEPTION_STRINGS.RESOURCE_FOLDER_EXCEPTION + getModID() + "Resources"); // NOT THIS
-            }
-        }
-    }
-    
     // ====== YOU CAN EDIT AGAIN ======
     
     
@@ -494,8 +476,6 @@ public class MysteryDungeon implements
     @Override
     public void receiveEditCards() {
         logger.info("Adding variables");
-        //Ignore this
-        pathCheck();
         // Add the Custom Dynamic Variables
         logger.info("Add variables");
         // Add the Custom Dynamic variables
