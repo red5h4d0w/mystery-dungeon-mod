@@ -96,6 +96,12 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_CHARMANDER_RED;
 
+        @SpireEnum(name = "MEOWTH_WHITE") // These two HAVE to have the same absolutely identical name.
+        public static AbstractCard.CardColor MEOWTH_WHITE;
+        @SpireEnum(name = "MEOWTH_WHITE") 
+        @SuppressWarnings("unused")
+        public static CardLibrary.LibraryType LIBRARY_MEOWTH_WHITE;
+
         @SpireEnum(name = "PIKACHU_YELLOW") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor PIKACHU_YELLOW;
         @SpireEnum(name = "PIKACHU_YELLOW") 
