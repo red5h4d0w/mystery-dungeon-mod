@@ -57,35 +57,35 @@
         ]
     },
     "mysteryDungeon:HardyExplorerRelic": {
-        "NAME": "Hardy Explorer",
+        "NAME": "Explorateur Endurci",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
             "The first time you lose HP each turn, gain 5 Block. If this HP loss was from a monster's attack, gain 1 Blur"
         ]
     },
     "mysteryDungeon:ImpishExplorerRelic": {
-        "NAME": "Impish Explorer",
+        "NAME": "Explorateur Farceur",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
             "The first time you evoke your last orb each combat, gain a Focus."
         ]
     },
     "mysteryDungeon:JollyExplorerRelic": {
-        "NAME": "Jolly Explorer",
+        "NAME": "Explorateur Joyeux",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
             "Start each combat with an #yAgility."
         ]
     },
     "mysteryDungeon:QuirkyExplorerRelic": {
-        "NAME": "Quirky Explorer",
+        "NAME": "Explorateur Spécial",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
             "Gain 5% more Gold in combat rewards."
         ]
     },
     "mysteryDungeon:RelaxedExplorerRelic": {
-        "NAME": "Relaxed Explorer",
+        "NAME": "Explorateur Relax",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
             "Au début de votre tour, #yscrutez #b1 carte."
@@ -99,52 +99,52 @@
         ]
     },
     "mysteryDungeon:LightBallRelic": {
-        "NAME": "Light Ball",
+        "NAME": "Balle Lumière",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "When you play a power and you are not in a stance, gain 1 orb slot."
+            "Une fois par tour, lorsque vous jouez un pouvoir et que vous n'êtes dans aucune position, générez un place d'orbe. "
         ]
     },
     "mysteryDungeon:LeftoversRelic": {
         "NAME": "Leftovers",
         "FLAVOR": "Some food left form your last meal",
         "DESCRIPTIONS": [
-            "At the end of combat heal 3 hit points."
+            "À la fin d'un combat soignée vous de 3 point de vie."
         ]
     },
     "mysteryDungeon:LifeOrbRelic": {
         "NAME": "Life Orb",
         "FLAVOR": "It boosts the power of moves, but at the cost of some HP on each hit.",
         "DESCRIPTIONS": [
-            "Gain [E] at the start of your turn. NL At the end of your turn, exhaust a random card from your hand."
+            "Au début de votre tour, gagnez [E]. NL À la fin de votre tour, #yépuisé une carte aléatoire depuis votre main."
         ]
     },
     "mysteryDungeon:MysticWaterRelic": {
-        "NAME": "Mystic Water",
+        "NAME": "Eau Mystic",
         "FLAVOR": "This teardrop-shaped gem boosts the power of Water-type moves.",
         "DESCRIPTIONS": [
-            "Gain [E] at the start of your turn. NL Reduce your maximum hand size by 2."
+            "Au début de votre tour, gagnez [E]. NL réduisez la taille maximum de votre main de 2 cartes."
         ]
     },
     "mysteryDungeon:MiracleSeedRelic": {
-        "NAME": "Miracle Seed",
-        "FLAVOR": "Its a seed invued with life force that boosts the power of Grass-type moves.",
+        "NAME": "Graine Miracle",
+        "FLAVOR": "une grain empli de puissance des attaques de type PLANTE.",
         "DESCRIPTIONS": [
-            "Every time you apply #b2 #ydebuffs in a single turn draw a card."
+            "Chaque fois que vous appliquer  #b3 #ydebuffs en un tour, pigez une carte."
         ]
     },
     "mysteryDungeon:MetronomeRelic": {
-        "NAME": "Metronome",
-        "FLAVOR": "It follows its own rythm.",
+        "NAME": "Métronome",
+        "FLAVOR": "Il suis son propre rythme.",
         "DESCRIPTIONS": [
-            "At the start of every turn add a random card in your hand. It costs 0 this turn."
+            "Au début de tout les cours ajouter une carte aléatoire venant des Pokémons ne faisant pas partie de votre équipe dans votre main. Elle coûte 0 se tour-ci."
         ]
     },
     "mysteryDungeon:WaveIncenseRelic": {
-        "NAME": "Wave Incense",
-        "FLAVOR": "Its a seed invued with life force that boosts the power of Grass-type moves.",
+        "NAME": "Encens Vague",
+        "FLAVOR": "",
         "DESCRIPTIONS": [
-            "Each battle apply the #yMaster #yReality power."
+            "À chaque combat applique le pouvoir Réalité-Maitresse."
         ]
     }
 }
