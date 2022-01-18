@@ -107,7 +107,7 @@
     "mysteryDungeon:LeechSeedPower": {
         "NAME": "Vampigraine",
         "DESCRIPTIONS": [
-            "Au début de son tour, cet ennemi perd #b%s PV et vous en gagnez #b%s. À la fin du tour, si son propriétaire n'a pas prit de dégâts d'une autre source, la quantité est réduite de moitié."
+            "Au début de son tour, cet ennemi perd #b%s PV et vous en gagnez #b%s. À la fin du tour, si son propriétaire n'a pas prit de dégâts d'une autre source, à la fin du tour, la quantité est réduite de moitié."
         ]
     },
     "mysteryDungeon:LightScreenPower": {

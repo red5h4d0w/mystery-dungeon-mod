@@ -58,7 +58,7 @@
             "Leech Seed",
             "leech_seed"
         ],
-        "DESCRIPTION": "At the start of their turn, for each Leech Seed the enemy has, it loses #b1 #yHP, and you gain #b1 #yHP."
+        "DESCRIPTION": "At the start of their turn, for each Leech Seed the enemy has, it loses #b1 #yHP, and you gain #b1 #yHP.  At the end of the turn, if the leech seed's owner has not taken any damage from any other source, the amount is reduced by half."
     },
     {
         "PROPER_NAME": "Negative Stance",

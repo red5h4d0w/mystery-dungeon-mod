@@ -53,7 +53,7 @@
             "Vampigarine",
             "vampigraine"
         ],
-        "DESCRIPTION": "Au début de son tour, pour chaque Vampigraine que l'ennemi a, il perd #b1 #yPV et vous en regagnez #b1."
+        "DESCRIPTION": "Au début de son tour, pour chaque Vampigraine que l'ennemi a, il perd #b1 #yPV et vous en regagnez #b1. si son propriétaire n'a pas prit de dégâts d'une autre source, à la fin du tour la quantité est réduite de moitié."
     },
     {
         "PROPER_NAME": "Épines Empoisonnées",
