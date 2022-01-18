@@ -17,7 +17,7 @@ public class PikachuNastyPlot extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(PikachuNastyPlot.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("PikachuPower.png");
+    public static final String IMG = makeCardPath(PikachuNastyPlot.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -33,7 +33,7 @@ public class PikachuNastyPlot extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.PIKACHU_YELLOW;
 
     private static final int COST = 0;
-    private static final int BASE_MAGIC_NUMBER = 2;
+    private static final int BASE_MAGIC_NUMBER = 1;
     private static final int UPGRADE_MAGIC_NUMBER =1;
 
 

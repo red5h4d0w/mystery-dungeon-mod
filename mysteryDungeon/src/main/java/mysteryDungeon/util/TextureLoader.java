@@ -29,7 +29,7 @@ public class TextureLoader {
                 loadTexture(textureString);
             } catch (GdxRuntimeException e) {
                 logger.error("Could not find texture: " + textureString);
-                return getTexture("PokemonResources/images/ui/missing_texture.png");
+                return getTexture("mysteryDungeonResources/images/ui/missing_texture.png");
             }
         }
         return textures.get(textureString);

@@ -11,87 +11,97 @@
         "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
     },
     {
-        "PROPER_NAME": "Asleep",
+        "PROPER_NAME": "Endormi",
         "NAMES": [
-            "Asleep",
-            "asleep"
+            "Endormi",
+            "endormi"
         ],
-        "DESCRIPTION": "When an enemy is asleep, it will not act until it receives damage. When it receives damage, it will go back to the intent it had before sleeping."
+        "DESCRIPTION": "Quand un ennemi est endormi, il n'agira pas tant qu'il ne recevra pas de dégât. S'il en reçoit, son intention redeviendra celle qu'il avait avant de s'endormir."
     },
     {
-        "PROPER_NAME": "Burn",
+        "PROPER_NAME": "Brûlure",
         "NAMES": [
-            "Burn",
-            "burn"
+            "Brûlure",
+            "Brûlure",
+            "brûlure",
+            "brûlures"
         ],
-        "DESCRIPTION": "For each 5 stacks, enemy deals 1 less damage. Decreases by 2 at the end of the round."
+        "DESCRIPTION": "Pour chaque 5 Brûlures, l'ennemi inflige 1 dégât de moins. Diminue du tiers (arrondi vers le haut) à la fin du round."
     },
     {
-        "PROPER_NAME": "Claw",
+        "PROPER_NAME": "Griffe",
         "NAMES": [
-            "Claw",
-            "claws",
-            "claw"
+            "Griffe",
+            "Griffes",
+            "griffe",
+            "griffes"
         ],
-        "DESCRIPTION": "Any card with Claw in its name counts as a claw."
+        "DESCRIPTION": "Toute carte avec «griffe» dans son nom compte comme une griffe."
     },
     {
-        "PROPER_NAME": "Evasiveness Drop",
+        "PROPER_NAME": "Baisse d'Évasion",
         "NAMES": [
-            "Evasiveness Drop",
-            "Evasiveness_Drop",
-            "evasiveness_drop"
+            "Baisse d'Évasion",
+            "Baisse_d'Évasion",
+            "baisse_d'évasion"
         ],
-        "DESCRIPTION": "At the end of the round, enemy loses #b25% of their Block."
+        "DESCRIPTION": "À la fin du round, cet ennemi perd #b25% de son Armure."
     },
     {
-        "PROPER_NAME": "Leech Seed",
+        "PROPER_NAME": "Vampigraine",
         "NAMES": [
-            "Leech Seed",
-            "leech_seed"
+            "Vampigarine",
+            "vampigraine"
         ],
-        "DESCRIPTION": "At the start of the turn for each Leech Seed, the enemy loses 1 HP, and you gain #b HP."
+        "DESCRIPTION": "Au début de son tour, pour chaque Vampigraine que l'ennemi a, il perd #b1 #yPV et vous en regagnez #b1. si son propriétaire n'a pas prit de dégâts d'une autre source, à la fin du tour la quantité est réduite de moitié."
     },
     {
-        "PROPER_NAME": "Poison Thorns",
+        "PROPER_NAME": "Épines Empoisonnées",
         "NAMES": [
-            "Poison Thorns",
-            "Poison_Thorns",
-            "poison_thorns"
+            "Épines Empoisonnées",
+            "Épines_Empoisonnées",
+            "épines_empoisonnées"
         ],
-        "DESCRIPTION": "Every time you get attacked, attacker receives Poison."
+        "DESCRIPTION": "Quand vous êtes attaqué, appliquez #b1 de Poison par #yÉpines #yEmpoisonées."
     },
     {
-        "PROPER_NAME": "Positive Stance",
+        "PROPER_NAME": "Négativité",
         "NAMES": [
-            "Positive Stance",
-            "Positive_Stance",
-            "positive_stance"
+            "Négativité",
+            "négativité"
         ],
-        "DESCRIPTION": "When you enter this stance, gain [E]. NL When you play an attack, channel 1 lightning orb. NL Exit this stance at the end of the turn and draw 1 more card on your next turn."
+        "DESCRIPTION": "Les #b2 premières #yCompétences jouées à chaque tour font gagner #b1 #yConcentration chacune. NL Lorsque vous sortez de cette position, #yactivez vos #b2 prochaines #yOrbes."
     },
     {
-        "PROPER_NAME": "Rest",
+        "PROPER_NAME": "Positivité",
         "NAMES": [
-            "Rest",
-            "rest"
+            "Positivité",
+            "positivité"
         ],
-        "DESCRIPTION": "You cannot play cards that target the enemy."
+        "DESCRIPTION": "Quand vous jouez une #yAttaque, canalisez #b1 #yOrbe #yKéraunique si vous avez un emplacement d'#yOrbe libre. NL Lorsque vous sortez de cette position, gagnez #b7 d'#yArmure."
     },
     {
-        "PROPER_NAME": "Toxic",
+        "PROPER_NAME": "Repos",
         "NAMES": [
-            "Toxic",
-            "toxic"
+            "Repos",
+            "repos"
         ],
-        "DESCRIPTION": "Poison on enemies affected by Toxic go up by the amount of stack instead of going down."
+        "DESCRIPTION": "Vous ne pouvez pas jouer de carte ciblant un ennemi."
     },
     {
-        "PROPER_NAME": "Inert",
+        "PROPER_NAME": "Toxik",
         "NAMES": [
-            "Inert",
-            "inert"
+            "Toxik",
+            "toxik"
         ],
-        "DESCRIPTION": "This card will not affect the Charge-Meter."
+        "DESCRIPTION": "Le #yPoison des ennemis affectés par #yToxik augmente de #b par #yToxik plutôt que de diminuer entre les tours."
+    },
+    {
+        "PROPER_NAME": "Inerte",
+        "NAMES": [
+            "Inerte",
+            "inerte"
+        ],
+        "DESCRIPTION": "Cette carte n'affecte pas la Jauge de Charge."
     }
 ]

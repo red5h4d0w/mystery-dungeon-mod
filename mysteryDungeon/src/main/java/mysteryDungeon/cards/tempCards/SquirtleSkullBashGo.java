@@ -22,7 +22,7 @@ public class SquirtleSkullBashGo extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(SquirtleSkullBashGo.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("SquirtleAttack.png");
+    public static final String IMG = makeCardPath(SquirtleSkullBashGo.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -38,7 +38,8 @@ public class SquirtleSkullBashGo extends PokemonCard {
     public static final CardColor COLOR = CardColor.COLORLESS;
 
     private static final int COST = 3;
-    private static final int BASE_DAMAGE = 50;
+    private static final int UPGRADE_COST = 2;
+    private static final int BASE_DAMAGE = 60;
 
 
     // /STAT DECLARATION/
@@ -47,6 +48,7 @@ public class SquirtleSkullBashGo extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         isMultiDamage = true;
         baseDamage = BASE_DAMAGE;
+        selfRetain = true;
         exhaust = true;
     }
 
@@ -61,7 +63,8 @@ public class SquirtleSkullBashGo extends PokemonCard {
         }
         addToBot(new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AttackEffect.NONE));
 
-        if(AbstractDungeon.player.hand.size()==1)
+        // If the leftmost card is this card
+        if(AbstractDungeon.player.hand.group.get(0) == this)
         { 
             addToBot(new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AttackEffect.NONE)); 
         }
@@ -74,14 +77,14 @@ public class SquirtleSkullBashGo extends PokemonCard {
         } else {
             glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         } 
-      }
+    }
 
     // Upgraded stats.
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            selfRetain = true;
+            upgradeBaseCost(UPGRADE_COST); 
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

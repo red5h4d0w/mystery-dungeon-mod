@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.stances.AbstractStance;
+import com.megacrit.cardcrawl.stances.NeutralStance;
 
 
 //Gain 1 dex for the turn for each card played.
@@ -29,8 +30,8 @@ public class AgilityPower extends MysteryDungeonPower implements CloneablePowerI
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
     // There's a fallback "missing texture" image, so the game shouldn't crash if you accidentally put a non-existent file.
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(AgilityPower.class.getSimpleName()+"84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(AgilityPower.class.getSimpleName()+"32.png"));
 
     public AgilityPower(final AbstractCreature owner, final int amount) {
         name = NAME;
@@ -49,7 +50,7 @@ public class AgilityPower extends MysteryDungeonPower implements CloneablePowerI
     }
 
     public void onChangeStance(AbstractStance oldStance, AbstractStance newStance) {
-        if(!oldStance.ID.equals(newStance.ID)){
+        if(!oldStance.ID.equals(newStance.ID) && !newStance.ID.equals(NeutralStance.STANCE_ID)){
             addToBot(new DrawCardAction(amount)); 
         }
     } 

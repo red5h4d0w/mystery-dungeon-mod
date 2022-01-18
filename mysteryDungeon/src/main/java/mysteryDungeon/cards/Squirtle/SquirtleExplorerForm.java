@@ -19,7 +19,7 @@ public class SquirtleExplorerForm extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(SquirtleExplorerForm.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("SquirtlePower.png");
+    public static final String IMG = makeCardPath(SquirtleExplorerForm.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -41,14 +41,14 @@ public class SquirtleExplorerForm extends PokemonCard {
 
     public SquirtleExplorerForm() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        isEthereal = true;
+        
         isAdventurerOnly = true;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new SquirtleExplorerPower(p)));
+        addToBot(new ApplyPowerAction(p, p, new SquirtleExplorerPower(p, 1)));
     }
 
     // Upgraded stats.
@@ -56,7 +56,7 @@ public class SquirtleExplorerForm extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            isEthereal = false;
+            isInnate = true;
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

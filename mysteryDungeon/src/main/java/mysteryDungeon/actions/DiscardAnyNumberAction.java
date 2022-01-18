@@ -9,6 +9,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.UIStrings;
 
+import mysteryDungeon.interfaces.onManualDiscardInterface;
+
 public class DiscardAnyNumberAction extends AbstractGameAction {
     
     private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("GamblingChipAction");
@@ -33,6 +35,9 @@ public class DiscardAnyNumberAction extends AbstractGameAction {
                     AbstractDungeon.player.hand.moveToDiscardPile(c);
                     GameActionManager.incrementDiscard(false);
                     c.triggerOnManualDiscard();
+                    AbstractDungeon.player.powers.stream()
+                        .filter(power -> power instanceof onManualDiscardInterface)
+                        .forEach(power -> ((onManualDiscardInterface)power).onManualDiscard(c));
                 } 
                 
             } 

@@ -22,7 +22,7 @@ public class PikachuThunderwave extends PokemonCard {
     public Logger logger = LogManager.getLogger(PikachuThunderwave.class);
     public static final String ID = MysteryDungeon.makeID(PikachuThunderwave.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("PikachuSkill.png");
+    public static final String IMG = makeCardPath(PikachuThunderwave.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -38,10 +38,10 @@ public class PikachuThunderwave extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.PIKACHU_YELLOW;
 
     private static final int COST = 1;
-    private static final int BLOCK = 3;
+    private static final int BLOCK = 4;
     private static final int UPGRADE_PLUS_BLOCK = 2;
-    private static final int BLOCK_DIFFERENCE = 9;
-    private static final int UPGRADE_PLUS_BLOCK_DIFFERENCE = 6;
+    private static final int BLOCK_DIFFERENCE = 6;
+    private static final int UPGRADE_PLUS_BLOCK_DIFFERENCE = 4;
 
     // /STAT DECLARATION/
 

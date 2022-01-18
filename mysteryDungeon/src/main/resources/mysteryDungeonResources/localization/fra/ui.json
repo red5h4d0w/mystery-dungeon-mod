@@ -1,17 +1,23 @@
 {
     "mysteryDungeon:EtherealMod": {
         "TEXT": [
-            "Ethereal. NL "
+            "Éthérée. NL "
         ]
     },
     "mysteryDungeon:ExhaustFromDeckAction": {
         "TEXT": [
-            "Choose a card to exhaust from your deck."
+            "Choisissez une carte à épuiser dans votre pioche."
         ]
     },
     "mysteryDungeon:RetainCardsButEtherealModAction": {
         "TEXT": [
-            "Retain (cards will become ethereal)"
+            "Retenez (ces cartes deviendront éthérées)"
+        ]
+    },
+    "mysteryDungeon:PikachuMeter": {
+        "TEXT": [
+            "Jauge de Charge",
+            "Quand vous jouez une #yCompétence, bougez le curseur d'un espace vers la gauche sur cette jauge. NL Quand vous jouez une #yAttaque, bougez le curseur d'un espace vers la droite sur cette jauge. NL Quand vous arrivez à un bout de la jauge, entrez dans la #yPosition correspondante. NL Vous pouvez survoler eci pour voir l'information sur les #Positions."
         ]
     }
 }

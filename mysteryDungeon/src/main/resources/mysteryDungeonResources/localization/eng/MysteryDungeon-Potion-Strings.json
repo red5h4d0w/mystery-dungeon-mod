@@ -2,7 +2,7 @@
     "mysteryDungeon:AspearBerryPotion": {
         "NAME": "Aspear Berry",
         "DESCRIPTIONS": [
-            "Discard any number of cards from your hand."
+            "Discard any number of cards from your hand. Draw #b%s cards."
         ]
     },
     "mysteryDungeon:DireHitPotion": {
@@ -39,13 +39,13 @@
     "mysteryDungeon:XAttackPotion": {
         "NAME": "X Attack",
         "DESCRIPTIONS": [
-            "Add #b%s #yFlinch to your hand."
+            "Add #b%s #yFlinch to your hand. They cost 0 this turn."
         ]
     },
     "mysteryDungeon:XSpAttackPotion": {
         "NAME": "X Sp. Attack",
         "DESCRIPTIONS": [
-            "Fill all your orb slots with #yLightning #yOrbs."
+            "Fill all your Orb slots with #yLightning."
         ]
     }
 }

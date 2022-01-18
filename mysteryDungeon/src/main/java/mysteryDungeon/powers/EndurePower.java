@@ -13,7 +13,6 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -35,8 +34,8 @@ public class EndurePower extends MysteryDungeonPower implements CloneablePowerIn
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
     // There's a fallback "missing texture" image, so the game shouldn't crash if you accidentally put a non-existent file.
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(EndurePower.class.getSimpleName()+"84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(EndurePower.class.getSimpleName()+"32.png"));
 
     public EndurePower(final AbstractCreature owner, final int amount) {
         name = NAME;
@@ -58,7 +57,7 @@ public class EndurePower extends MysteryDungeonPower implements CloneablePowerIn
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.type == AbstractCard.CardType.STATUS) {
             flash();
-            addToBot(new DamageAllEnemiesAction((AbstractPlayer)owner, DamageInfo.createDamageMatrix(amount, true), DamageType.THORNS, AttackEffect.SLASH_DIAGONAL));
+            addToBot(new DamageAllEnemiesAction((AbstractPlayer)owner, amount, DamageType.NORMAL, AttackEffect.SLASH_DIAGONAL));
         } 
     }
 

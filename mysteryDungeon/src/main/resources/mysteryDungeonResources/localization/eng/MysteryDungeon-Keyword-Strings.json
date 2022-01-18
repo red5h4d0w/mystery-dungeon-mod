@@ -33,7 +33,7 @@
             "claws",
             "claw"
         ],
-        "DESCRIPTION": "Any card with Claw in its name counts as a claw."
+        "DESCRIPTION": "Any card with \"Claw\" in its name counts as a claw."
     },
     {
         "PROPER_NAME": "Inert",
@@ -58,7 +58,16 @@
             "Leech Seed",
             "leech_seed"
         ],
-        "DESCRIPTION": "At the start of the turn for each Leech Seed, the enemy loses 1 HP, and you gain #b HP."
+        "DESCRIPTION": "At the start of their turn, for each Leech Seed the enemy has, it loses #b1 #yHP, and you gain #b1 #yHP.  At the end of the turn, if the leech seed's owner has not taken any damage from any other source, the amount is reduced by half."
+    },
+    {
+        "PROPER_NAME": "Negative Stance",
+        "NAMES": [
+            "Negative Stance",
+            "Negative_Stance",
+            "negative_stance"
+        ],
+        "DESCRIPTION": "The first #b2 #ySkill played each turn will grant you #b1 #yFocus each. NL When you #yexit this #yStance, #yevoke your next #b2 #yOrbs."
     },
     {
         "PROPER_NAME": "Poison Thorns",
@@ -76,7 +85,7 @@
             "Positive_Stance",
             "positive_stance"
         ],
-        "DESCRIPTION": "When you enter this stance, gain [E]. NL When you play an attack, channel 1 lightning orb. NL Exit this stance at the end of the turn and draw 1 more card on your next turn."
+        "DESCRIPTION": "When you play an #yAttack, #ychannel #b1 #yLightning if you have any empty #yOrb slot. NL When you #yexit this #ystance, gain #b7 #yBlock."
     },
     {
         "PROPER_NAME": "Rest",

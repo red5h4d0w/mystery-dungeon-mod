@@ -1,41 +1,141 @@
 {
     "mysteryDungeon:Pokemon": {
         "NAMES": [
-            "The Pokémon",
-            "the Pokémon"
+            "Le Pokémon",
+            "le Pokémon"
         ],
         "TEXT": [
-            "You have been reincarnated as a Pokémon. Without any recollection of your former self, NL you decide that you'll help an adventurer in reaching the top of the dungeon.",
-            "NL You have reached the top floor of the dungeon. You can now rest at the base before taking another mission with your new Pokémon friends",
+            "Vous vous êtes réincarné en Pokémon. Sans vous souvenir de votre vie passée, vous décidez d'aire un aventurier à atteindre le sommet du donjon.",
+            "NL Vous avez atteint le sommet du donjon. Vous pouvez maintenant vous reposez dans votre hutte avant de partir en mission de nouveau avec vos copains, Pokémon",
             "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~basic~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
         ]
     },
-    "Bulbasaur": {
+    "mysteryDungeon:Bulbasaur": {
         "NAMES": [
-            "Bulbasaur"
+            "Bulbizarre"
         ]
     },
-    "Charmander": {
+    "mysteryDungeon:Ivysaur": {
         "NAMES": [
-            "Charmander"
+            "Herbizarre"
         ]
     },
-    "Squirtle": {
+    "mysteryDungeon:Venusaur": {
         "NAMES": [
-            "Squirtle"
+            "Florizarre"
         ]
     },
-    "Pikachu": {
+    "mysteryDungeon:Charmander": {
+        "NAMES": [
+            "Salamèche"
+        ]
+    },
+    "mysteryDungeon:Charmeleon": {
+        "NAMES": [
+            "Reptincel"
+        ]
+    },
+    "mysteryDungeon:Charizard": {
+        "NAMES": [
+            "Dracaufeu"
+        ]
+    },
+    "mysteryDungeon:Squirtle": {
+        "NAMES": [
+            "Carapuce"
+        ]
+    },
+    "mysteryDungeon:Wartortle": {
+        "NAMES": [
+            "Carabaffe"
+        ]
+    },
+    "mysteryDungeon:Blastoise": {
+        "NAMES": [
+            "Tortank"
+        ]
+    },
+    "mysteryDungeon:Pikachu": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Raichu": {
+        "NAMES": [
+            "Raichu"
+        ]
+    },
+    "mysteryDungeon:Meowth": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Psyduck": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Machop": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Cubone": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Eevee": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Chikorita": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Cyndaquil": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Totodile": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Treecko": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Torchic": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Mudkip": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Skitty": {
         "NAMES": [
             "Pikachu"
         ]
     },
     "Neow": {
         "TEXT": [
-            "This is the portal that leads to the world of Pokémon",
-            "But before I can let you through, I have several questions for you.",
-            "I want you to answer them sincerely. NL Are you ready?",
-            "OK... NL Let the interview begin!"
+            "Ceci est le portail qui mène au monde des Pokémon!",
+            "Mais avant de vous laissez entrer, j'ai plusieurs questions à vous poser.",
+            "Je veux que vous y répondiez avec sincérité. NL On peut commencer?",
+            "D'accord... NL Commençons l'entretien!",
+            "Oui!", 
+            "Je préfèrerais chosir mon équipe.", 
+            "Je voudrais avoir une équipe aléatoire.",
+            "Choisissez votre aventurier.",
+            "Choisissez votre partenaire"
         ]
     }
 }

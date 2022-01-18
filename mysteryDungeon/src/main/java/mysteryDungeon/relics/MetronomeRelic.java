@@ -1,7 +1,9 @@
 package mysteryDungeon.relics;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.abstracts.PokemonRelic;
+import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
@@ -13,6 +15,7 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
@@ -28,7 +31,7 @@ public class MetronomeRelic extends PokemonRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("metronome.png"));
 
     public MetronomeRelic() {
-        super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.CLINK);
+        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
 
         tips.clear();
         tips.add(new PowerTip(name, description));
@@ -36,13 +39,18 @@ public class MetronomeRelic extends PokemonRelic {
 
     @Override
     public void atTurnStart() {
-      if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
-        flash();
-          AbstractCard c = AbstractDungeon.returnTrulyRandomCard();
-          c.setCostForTurn(0);
-          addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, true));
-          
-      } 
+        if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+            flash();
+            AbstractCard[] possibleCards = (AbstractCard[])CardLibrary.cards.values().parallelStream()
+                .filter(c -> c instanceof PokemonCard)
+                .filter(c -> c.color != Pokemon.partner.cardColor)
+                .filter(c -> c.color != Pokemon.adventurer.cardColor)
+                .toArray();
+            AbstractCard c = possibleCards[(int) AbstractDungeon.cardRng.random(possibleCards.length)];
+            c.setCostForTurn(0);
+            addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, true));
+            
+        } 
     }
     @Override
     public String getUpdatedDescription() {

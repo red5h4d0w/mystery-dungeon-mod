@@ -206,10 +206,18 @@ public class PokemonNeowPatch {
             {
                 return;
             }
-            answeredQuestions = 0;
-            screenNum = 0;
-            InitializeTraitsScore();
-            InitializeQuestions();
+            if(!isDone) {
+                Pokemon.adventurer = null;
+                Pokemon.partner = null;
+                Pokemon.maxPikachuChargeCounter = 2;
+                answeredQuestions = 0;
+                screenNum = 0;
+                InitializeTraitsScore();
+                InitializeQuestions();
+            }
+            else {
+                screenNum = 99;
+            }
         }
     }
 
@@ -217,14 +225,11 @@ public class PokemonNeowPatch {
     public static class NeowEventFlow {
         @SpirePrefixPatch
         @SuppressWarnings("all")
-        public static SpireReturn AdvanceAccordingToChoice(NeowEvent __instance, int buttonPressed)
-        {
-            if(!(AbstractDungeon.player instanceof Pokemon))
-            {
+        public static SpireReturn AdvanceAccordingToChoice(NeowEvent __instance, int buttonPressed) {
+            if(!(AbstractDungeon.player instanceof Pokemon)) {
                 return SpireReturn.Continue();
             }
-            switch(screenNum)
-            {
+            switch(screenNum) {
                 case 0:
                     ShowNextDialog(__instance);
                     return SpireReturn.Return(null);
@@ -233,7 +238,7 @@ public class PokemonNeowPatch {
                     return SpireReturn.Return(null);
                 case 2:
                     isTestRun = false;
-                    AskQuestion(__instance, new Question(TEXT[screenNum], new String[]{"Yes", "I'd prefer choosing my team", "I'd like the quickest option"}));
+                    AskQuestion(__instance, new Question(TEXT[screenNum], new String[]{TEXT[screenNum+2], TEXT[screenNum+3], TEXT[screenNum+4]}));
                     screenNum++;
                     return SpireReturn.Return(null);
                 case 3:
@@ -247,7 +252,7 @@ public class PokemonNeowPatch {
                             break;
                         case 2:
                             ((Pokemon)AbstractDungeon.player).adventurer = implementedPokemons.get(AbstractDungeon.eventRng.random(implementedPokemons.size()-1));
-                            ((Pokemon)AbstractDungeon.player).DefineNature(NatureOfPokemon.get(((Pokemon)AbstractDungeon.player).adventurer.name)[AbstractDungeon.eventRng.random(1)]);
+                            ((Pokemon)AbstractDungeon.player).DefineNature(NatureOfPokemon.get(((Pokemon)AbstractDungeon.player).adventurer.getClass().getSimpleName())[AbstractDungeon.eventRng.random(1)]);
                             ArrayList<AbstractPokemon> partnerChoices = ((ArrayList<AbstractPokemon>)implementedPokemons.clone());
                             partnerChoices.remove(((Pokemon)AbstractDungeon.player).adventurer);
                             ((Pokemon)AbstractDungeon.player).partner = partnerChoices.get(AbstractDungeon.eventRng.random(partnerChoices.size()-1));
@@ -334,13 +339,13 @@ public class PokemonNeowPatch {
                     break;
                 // Test run choose option
                 case 10:
-                    AskQuestion(__instance, new Question("Choose your adventurer", implementedPokemons.stream().map(p -> p.name).toArray(size-> new String[size])));
+                    AskQuestion(__instance, new Question(TEXT[7], implementedPokemons.stream().map(p -> p.name).toArray(size-> new String[size])));
                     screenNum++;
                     return SpireReturn.Return(null);
                 case 11:
                     ((Pokemon)AbstractDungeon.player).adventurer = implementedPokemons.get(buttonPressed);
-                    ((Pokemon)AbstractDungeon.player).DefineNature(NatureOfPokemon.get(implementedPokemons.get(buttonPressed).name)[AbstractDungeon.eventRng.random(1)]);
-                    AskQuestion(__instance, new Question("Choose your partner", implementedPokemons.stream().filter(p -> p != ((Pokemon)AbstractDungeon.player).adventurer).map(p -> p.name).toArray(size-> new String[size])));
+                    ((Pokemon)AbstractDungeon.player).DefineNature(NatureOfPokemon.get(implementedPokemons.get(buttonPressed).getClass().getSimpleName())[AbstractDungeon.eventRng.random(1)]);
+                    AskQuestion(__instance, new Question(TEXT[8], implementedPokemons.stream().filter(p -> p != ((Pokemon)AbstractDungeon.player).adventurer).map(p -> p.name).toArray(size-> new String[size])));
                     screenNum=5;
                     return SpireReturn.Return(null);
                 case 99:
@@ -401,15 +406,15 @@ public class PokemonNeowPatch {
 
     public static void convertPokemonToImplementedPokemon()
     {
-        if(chosenPokemon.color == Color.GREEN)
+        if(chosenPokemon.color == Color.GREEN.cpy())
         {
             chosenPokemon = new Bulbasaur();
         }
-        else if(chosenPokemon.color == Color.RED)
+        else if(chosenPokemon.color == Color.RED.cpy())
         {
             chosenPokemon = new Charmander();
         }
-        else if(chosenPokemon.color == Color.BLUE)
+        else if(chosenPokemon.color == Color.BLUE.cpy())
         {
             chosenPokemon = new Squirtle();
         }

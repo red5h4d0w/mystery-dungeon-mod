@@ -22,7 +22,7 @@ public class BulbasaurPetalBlizzard extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(BulbasaurPetalBlizzard.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("BulbasaurAttack.png");
+    public static final String IMG = makeCardPath(BulbasaurPetalBlizzard.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

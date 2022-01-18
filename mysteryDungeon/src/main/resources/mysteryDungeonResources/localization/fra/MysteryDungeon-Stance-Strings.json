@@ -2,13 +2,13 @@
     "mysteryDungeon:NegativeStance": {
         "NAME": "Négativité",
         "DESCRIPTION": [
-            "Quand vous jouez une compétence, gagnez 1 Concentration temporaire. NL Quand vous quittez cette position, activez votre prochain Orbe 2 fois."
+            "Quand vous jouez une #yCompétence, gagnez #b1 #yConcentration. NL Quand vous quittez cette position, activez votre prochain #yOrbes #b1 fois."
         ]
     },
     "mysteryDungeon:PositiveStance": {
         "NAME": "Positivité",
         "DESCRIPTION": [
-            "Quand vous jouez une attaque, canalisez 1 Orbe de foudre. NL Quand vous quittez cette position, gagnez 7 d'Armure."
+            "Quand vous jouez une #yAttaque, canalisez #b1 #yOrbe #yKéraunique. NL Quand vous quittez cette position, gagnez #b4 #yd'Armure."
         ]
     }
 }

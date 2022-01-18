@@ -2,7 +2,7 @@ package mysteryDungeon.cards.Charmander;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.actions.DragonBreathAction;
 import mysteryDungeon.characters.Pokemon;
 
 public class CharmanderDragonBreath extends PokemonCard {
@@ -18,7 +19,7 @@ public class CharmanderDragonBreath extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(CharmanderDragonBreath.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("CharmanderSkill.png");
+    public static final String IMG = makeCardPath(CharmanderDragonBreath.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -33,24 +34,25 @@ public class CharmanderDragonBreath extends PokemonCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
-    private static final int COST = 1;
-    private static final int BASE_BLOCK = 0;
-    private static final int UPGRADE_BLOCK = 5;
-
+    private static final int COST = 0;
+    private static final int BASE_MAGIC_NUMBER = 3;
 
     // /STAT DECLARATION/
 
     public CharmanderDragonBreath() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        block = BASE_BLOCK;
+        baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int amount = p.exhaustPile.size();
-        addToBot(new GainBlockAction(p, p, block + amount));
+        addToBot(new DragonBreathAction(magicNumber));
+        if(upgraded)
+        {
+            addToBot(new GainEnergyAction(1));
+        }
     }
 
     // Upgraded stats.
@@ -58,7 +60,6 @@ public class CharmanderDragonBreath extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBlock(UPGRADE_BLOCK);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
