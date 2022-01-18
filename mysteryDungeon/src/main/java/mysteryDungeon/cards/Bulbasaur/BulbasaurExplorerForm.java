@@ -20,7 +20,7 @@ public class BulbasaurExplorerForm extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(BulbasaurExplorerForm.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("BulbasaurPower.png");
+    public static final String IMG = makeCardPath(BulbasaurExplorerForm.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
@@ -35,8 +35,8 @@ public class BulbasaurExplorerForm extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
 
     private static final int COST = 3;
-    private static final int BASE_MAGIC_NUMBER = 7;
-    private static final int UPGRADE_MAGIC_NUMBER = 3;
+    private static final int BASE_MAGIC_NUMBER = 6;
+    private static final int UPGRADE_MAGIC_NUMBER = 2;
 
     // /STAT DECLARATION/
 
@@ -61,7 +61,6 @@ public class BulbasaurExplorerForm extends PokemonCard {
             upgradeName();
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             initializeDescription();
-            isEthereal = false;
         }
     }
 }

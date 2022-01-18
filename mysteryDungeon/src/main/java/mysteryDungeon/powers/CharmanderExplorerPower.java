@@ -8,6 +8,7 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -30,8 +31,8 @@ public class CharmanderExplorerPower extends MysteryDungeonPower implements Clon
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
     // There's a fallback "missing texture" image, so the game shouldn't crash if you accidentally put a non-existent file.
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(CharmanderExplorerPower.class.getSimpleName()+"84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(CharmanderExplorerPower.class.getSimpleName()+"32.png"));
 
     public CharmanderExplorerPower(final AbstractCreature owner, final int amount) {
         name = NAME;
@@ -62,6 +63,7 @@ public class CharmanderExplorerPower extends MysteryDungeonPower implements Clon
             AbstractDungeon.player.exhaustPile.removeCard(card);
             addToBot(new MakeTempCardInDrawPileAction(cardToAdd, 1, false, false, false));
         }
+        addToBot(new ApplyPowerAction(owner,owner, new NextTurnDrawLessPower(owner, 1)));
     }
 
     @Override

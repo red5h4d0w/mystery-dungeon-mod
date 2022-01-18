@@ -22,7 +22,7 @@ public class CharmanderBlastBurn extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(CharmanderBlastBurn.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("CharmanderAttack.png");
+    public static final String IMG = makeCardPath(CharmanderBlastBurn.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
@@ -36,7 +36,7 @@ public class CharmanderBlastBurn extends PokemonCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
-    private static final int COST = 1;
+    private static final int COST = 2;
     private static final int DAMAGE = 18;
     private static final int UPGRADE_PLUS_DMG = 4;
 

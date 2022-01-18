@@ -87,6 +87,9 @@ public class MysteryDungeon implements
     public static final Logger logger = LogManager.getLogger(MysteryDungeon.class.getName());
     private static String modID;
 
+    // Developper Settings
+    public static final boolean TOGGLE_ON_SHINY = false;
+
     // Mod-settings settings. This is if you want an on/off savable button
     public static Properties mysteryDungeonDefaultSettings = new Properties();
     public static final String SEND_RUN_DATA = "FALSE";
@@ -153,7 +156,11 @@ public class MysteryDungeon implements
     }
 
     public static String makeBackSpritePath(String resourcePath) {
-        return getModID() + "Resources/images/backSprites/" + resourcePath;
+        return getModID() + "Resources/images/backSprites/" + resourcePath + ".png";
+    }
+
+    public static String makeBackSpritePath(String resourcePath, boolean shiny) {
+        return makeBackSpritePath(resourcePath + (shiny?"_S":""));
     }
 
     public static String makeRelicPath(String resourcePath) {
@@ -168,8 +175,16 @@ public class MysteryDungeon implements
         return getModID() + "Resources/images/char/pokemon/" + pokemonName + "/skeleton.json";
     }
 
+    public static String makeSkeletonPath(String pokemonName, boolean shiny) {
+        return makeSkeletonPath(pokemonName + (shiny?"_S":""));
+    }
+
     public static String makeAtlasPath(String pokemonName) {
         return getModID() + "Resources/images/char/pokemon/" + pokemonName + "/skeleton.atlas";
+    }
+
+    public static String makeAtlasPath(String pokemonName, boolean shiny) {
+        return makeAtlasPath(pokemonName + (shiny?"_S":""));
     }
     
     public static String makeOrbPath(String resourcePath) {
@@ -241,26 +256,26 @@ public class MysteryDungeon implements
             ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
             ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
     
-        BaseMod.addColor(Pokemon.Enums.BULBASAUR_GREEN, Color.GREEN, Color.GREEN, Color.GREEN,
-            Color.GREEN, Color.GREEN, Color.GREEN, Color.GREEN,
+        BaseMod.addColor(Pokemon.Enums.BULBASAUR_GREEN, Color.GREEN.cpy(), Color.GREEN.cpy(), Color.GREEN.cpy(),
+            Color.GREEN.cpy(), Color.GREEN.cpy(), Color.GREEN.cpy(), Color.GREEN.cpy(),
             ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
             ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
             ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
 
-        BaseMod.addColor(Pokemon.Enums.CHARMANDER_RED, Color.RED, Color.RED, Color.RED,
-            Color.RED, Color.RED, Color.RED, Color.RED,
+        BaseMod.addColor(Pokemon.Enums.CHARMANDER_RED, Color.RED.cpy(), Color.RED.cpy(), Color.RED.cpy(),
+            Color.RED.cpy(), Color.RED.cpy(), Color.RED.cpy(), Color.RED.cpy(),
             ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
             ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
             ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
 
-        BaseMod.addColor(Pokemon.Enums.SQUIRTLE_BLUE, Color.BLUE, Color.BLUE, Color.BLUE,
-            Color.BLUE, Color.BLUE, Color.BLUE, Color.BLUE,
+        BaseMod.addColor(Pokemon.Enums.SQUIRTLE_BLUE, Color.BLUE.cpy(), Color.BLUE.cpy(), Color.BLUE.cpy(),
+            Color.BLUE.cpy(), Color.BLUE.cpy(), Color.BLUE.cpy(), Color.BLUE.cpy(),
             ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
             ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
             ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
         
-        BaseMod.addColor(Pokemon.Enums.PIKACHU_YELLOW, Color.YELLOW, Color.YELLOW, Color.YELLOW,
-            Color.YELLOW, Color.YELLOW, Color.YELLOW, Color.YELLOW,
+        BaseMod.addColor(Pokemon.Enums.PIKACHU_YELLOW, Color.YELLOW.cpy(), Color.YELLOW.cpy(), Color.YELLOW.cpy(),
+            Color.YELLOW.cpy(), Color.YELLOW.cpy(), Color.YELLOW.cpy(), Color.YELLOW.cpy(),
             ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
             ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
             ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
@@ -592,7 +607,7 @@ public class MysteryDungeon implements
         // In Keyword-Strings.json you would have PROPER_NAME as A Long Keyword and the first element in NAMES be a long keyword, and the second element be a_long_keyword
         
         Gson gson = new Gson();
-        String json = Gdx.files.internal(getModID() + "Resources/localization/eng/MysteryDungeon-Keyword-Strings.json").readString(String.valueOf(StandardCharsets.UTF_8));
+        String json = Gdx.files.internal(LocalizationTool.LocalizationPath() + "MysteryDungeon-Keyword-Strings.json").readString(String.valueOf(StandardCharsets.UTF_8));
         com.evacipated.cardcrawl.mod.stslib.Keyword[] keywords = gson.fromJson(json, com.evacipated.cardcrawl.mod.stslib.Keyword[].class);
         
         if (keywords != null) {

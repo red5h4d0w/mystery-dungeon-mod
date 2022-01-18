@@ -8,66 +8,87 @@
         ]
     },
     "mysteryDungeon:NatureRelatedRelic": {
-        "NAME": "Nature Related Relic",
+        "NAME": "Relique de Nature",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "You will receive a relic that depends on your nature."
+            "Vous receverez une relique dépendant de votre nature."
         ]
     },
     "mysteryDungeon:BraveExplorerRelic": {
-        "NAME": "Brave Explorer",
+        "NAME": "Explorateur Brave",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "The first time you draw a status / would receive a debuff each combat, exhaust the status / nullify the debuff."
+            "Si vous n'avez pas #yd'Armure à la fin du tour, gagnez #b1 #yForce"
         ]
     },
     "mysteryDungeon:CalmExplorerRelic": {
-        "NAME": "Calm Explorer",
+        "NAME": "Explorateur Calme",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "Draw 1 card and gain [E] at the start of every fight."
+            "Piochez #b1 carte et gagnez [E] au début de chaque combat."
+        ]
+    },
+    "mysteryDungeon:CellBatteryRelic": {
+        "NAME": "Pile",
+        "FLAVOR": "Pile jetable. Tenue, elle augmente l'Attaque lorsque le Pokémon subit une attaque de type Électrik.",
+        "DESCRIPTIONS": [
+            "La #yJauge #yde #yCharge aura maintenant trois espaces au lieu de deux. NL Vous ne retournez plus au centre de la jauge à la fin de vos tours."
+        ]
+    },
+    "mysteryDungeon:CharcoalRelic": {
+        "NAME": "Charbon",
+        "FLAVOR": "Un combustible qui augmente la puissance des capacités de type Feu.",
+        "DESCRIPTIONS": [
+            "Lorsque vous appliquez un #yDébuff, infligez #b1 dégat à TOUS le ennemis."
         ]
     },
     "mysteryDungeon:DocileExplorerRelic": {
-        "NAME": "Docile Explorer",
+        "NAME": "Explorateur Docile",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "When you receive a debuff, gain 2 Block on the following turn."
+            "Lorsque vous recevez un #yDébuff, gagnez #b2 #yd'Armure au tour suivant."
+        ]
+    },
+    "mysteryDungeon:FlameOrbRelic": {
+        "NAME": "Orbe Flamme",
+        "FLAVOR": "Un orbe bizarre qui brûle son porteur durant le combat.",
+        "DESCRIPTIONS": [
+            "Au début de chaque combat, appliquez #b9 #yBrûlures à TOUS les ennemis"
         ]
     },
     "mysteryDungeon:HardyExplorerRelic": {
-        "NAME": "Hardy Explorer",
+        "NAME": "Explorateur Endurci",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
             "The first time you lose HP each turn, gain 5 Block. If this HP loss was from a monster's attack, gain 1 Blur"
         ]
     },
     "mysteryDungeon:ImpishExplorerRelic": {
-        "NAME": "Impish Explorer",
+        "NAME": "Explorateur Farceur",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
             "The first time you evoke your last orb each combat, gain a Focus."
         ]
     },
     "mysteryDungeon:JollyExplorerRelic": {
-        "NAME": "Jolly Explorer",
+        "NAME": "Explorateur Joyeux",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
             "Start each combat with an #yAgility."
         ]
     },
     "mysteryDungeon:QuirkyExplorerRelic": {
-        "NAME": "Quirky Explorer",
+        "NAME": "Explorateur Spécial",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
             "Gain 5% more Gold in combat rewards."
         ]
     },
     "mysteryDungeon:RelaxedExplorerRelic": {
-        "NAME": "Relaxed Explorer",
+        "NAME": "Explorateur Relax",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "The first time you play a Skill each combat, gain 10 Block."
+            "Au début de votre tour, #yscrutez #b1 carte."
         ]
     },
     "mysteryDungeon:TimidExplorerRelic": {
@@ -78,73 +99,52 @@
         ]
     },
     "mysteryDungeon:LightBallRelic": {
-        "NAME": "Light Ball",
+        "NAME": "Balle Lumière",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "When you play a power and you are not in a stance, gain 1 orb slot."
-        ]
-    },
-    "mysteryDungeon:CellBatteryRelic": {
-        "NAME": "Cell Battery",
-        "FLAVOR": "A consumable battery. If the holder is hit by an Electric-type move, its Attack will rise.",
-        "DESCRIPTIONS": [
-            "The charge meter will only have 2 steps between stances. NL At the start of your turn return to the center of the charge meter."
-        ]
-    },
-    "mysteryDungeon:FlameOrbRelic": {
-        "NAME": "Flame Orb",
-        "FLAVOR": "It's a bizarre orb that will afflict the holder with a burn during battle.",
-        "DESCRIPTIONS": [
-            "At the start of each combat, apply 9 mysterydungeon:Burn to all enemies."
+            "Une fois par tour, lorsque vous jouez un pouvoir et que vous n'êtes dans aucune position, générez un place d'orbe. "
         ]
     },
     "mysteryDungeon:LeftoversRelic": {
         "NAME": "Leftovers",
         "FLAVOR": "Some food left form your last meal",
         "DESCRIPTIONS": [
-            "At the end of combat heal 3 hit points."
+            "À la fin d'un combat soignée vous de 3 point de vie."
         ]
     },
     "mysteryDungeon:LifeOrbRelic": {
         "NAME": "Life Orb",
         "FLAVOR": "It boosts the power of moves, but at the cost of some HP on each hit.",
         "DESCRIPTIONS": [
-            "Gain [E] at the start of your turn. NL At the end of your turn, exhaust a random card from your hand."
+            "Au début de votre tour, gagnez [E]. NL À la fin de votre tour, #yépuisé une carte aléatoire depuis votre main."
         ]
     },
     "mysteryDungeon:MysticWaterRelic": {
-        "NAME": "Mystic Water",
+        "NAME": "Eau Mystic",
         "FLAVOR": "This teardrop-shaped gem boosts the power of Water-type moves.",
         "DESCRIPTIONS": [
-            "Gain [E] at the start of your turn. NL Reduce your maximum hand size by 2."
-        ]
-    },
-    "mysteryDungeon:CharcoalRelic": {
-        "NAME": "Charcoal",
-        "FLAVOR": "It's a combustible fuel that boosts the power of Fire-type moves.",
-        "DESCRIPTIONS": [
-            "Every time you apply a debuff deal #b2 damage to all enemies."
+            "Au début de votre tour, gagnez [E]. NL réduisez la taille maximum de votre main de 2 cartes."
         ]
     },
     "mysteryDungeon:MiracleSeedRelic": {
-        "NAME": "Miracle Seed",
-        "FLAVOR": "Its a seed invued with life force that boosts the power of Grass-type moves.",
+        "NAME": "Graine Miracle",
+        "FLAVOR": "une grain empli de puissance des attaques de type PLANTE.",
         "DESCRIPTIONS": [
-            "Every time you apply #b2 #ydebuffs in a single turn draw a card."
+            "Chaque fois que vous appliquer  #b3 #ydebuffs en un tour, pigez une carte."
         ]
     },
     "mysteryDungeon:MetronomeRelic": {
-        "NAME": "Metronome",
-        "FLAVOR": "It follows its own rythm.",
+        "NAME": "Métronome",
+        "FLAVOR": "Il suis son propre rythme.",
         "DESCRIPTIONS": [
-            "At the start of every turn add a random card in your hand. It costs 0 this turn."
+            "Au début de tout les cours ajouter une carte aléatoire venant des Pokémons ne faisant pas partie de votre équipe dans votre main. Elle coûte 0 se tour-ci."
         ]
     },
     "mysteryDungeon:WaveIncenseRelic": {
-        "NAME": "Wave Incense",
-        "FLAVOR": "Its a seed invued with life force that boosts the power of Grass-type moves.",
+        "NAME": "Encens Vague",
+        "FLAVOR": "",
         "DESCRIPTIONS": [
-            "Each battle apply the #yMaster #yReality power."
+            "À chaque combat applique le pouvoir Réalité-Maitresse."
         ]
     }
 }

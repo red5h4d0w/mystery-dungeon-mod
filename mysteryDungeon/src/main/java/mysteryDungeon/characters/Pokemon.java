@@ -4,10 +4,12 @@ import basemod.abstracts.CustomPlayer;
 import basemod.abstracts.CustomSavable;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.abstracts.PokemonRelic;
+import mysteryDungeon.actions.SetPikaMeterAction;
 import mysteryDungeon.cards.Bulbasaur.BulbasaurTackle;
 import mysteryDungeon.cards.fakeCards.ExplorersDeck;
 import mysteryDungeon.cards.fakeCards.PartnersDeck;
 import mysteryDungeon.pokemons.AbstractPokemon;
+import mysteryDungeon.powers.LockDownPower;
 import mysteryDungeon.relics.*;
 import mysteryDungeon.saveConstructs.ToSave;
 import mysteryDungeon.stances.NegativeStance;
@@ -43,7 +45,6 @@ import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.neow.NeowRoom;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.stances.NeutralStance;
@@ -125,7 +126,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     public static final int ORB_SLOTS = 0;
     public static Nature nature;
     public static int pikachuChargeCounter = 0;
-    public static int maxPikachuChargeCounter = 3;
+    public static int maxPikachuChargeCounter = 2;
 
     public Texture campfirePose;
 
@@ -259,7 +260,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
                         (!UnlockTracker.isCardLocked(c.getKey()) || Settings.isDailyRun)) {
                             if(card instanceof PokemonCard) {
                                 if(!((PokemonCard)card).isAdventurerOnly || color == adventurer.cardColor) {
-                                    logger.info(card.name);
                                     tmpPool.add(card);
                                 }
                             }
@@ -450,20 +450,28 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     public ToSave onSave()
     {
         logger.info("SAVING!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        logger.info(AbstractDungeon.getCurrRoom() instanceof NeowRoom);
-        if(!hasChosenStarters())
-            return new ToSave();
         ToSave saveInfo = new ToSave();
-        if(adventurer!=null){
-            saveInfo.adventurer = adventurer.getClass().getSimpleName();
-        }
-        if(partner!=null){
-            saveInfo.partner = partner.getClass().getSimpleName();
-        }
+        if(!hasChosenStarters())
+            return saveInfo;
+        saveInfo.adventurer = adventurer.getClass().getSimpleName();
+        saveInfo.partner = partner.getClass().getSimpleName();
+        saveInfo.shinyPartner = partner.getShiny();
+        saveInfo.shinyAdventurer = adventurer.getShiny();
         logger.info(saveInfo.adventurer);
         logger.info(saveInfo.partner);
         saveInfo.maxPikaMeter = maxPikachuChargeCounter;
         return saveInfo;
+    }
+
+    @Override
+    public void applyEndOfTurnTriggers() {
+        super.applyEndOfTurnTriggers();
+        if(hasPower(LockDownPower.POWER_ID) || hasRelic(CellBatteryRelic.ID) || !hasChosenPikachu()) {
+            return;
+        }
+        else {
+            AbstractDungeon.actionManager.addToBottom(new SetPikaMeterAction(0));
+        }
     }
 
     @Override
@@ -475,6 +483,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
             try {
                 adventurer = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+(saveInfo.adventurer)).getConstructor().newInstance();
                 partner = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+(saveInfo.partner)).getConstructor().newInstance();
+                adventurer.setShiny(saveInfo.shinyAdventurer);
+                partner.setShiny(saveInfo.shinyPartner);
             } catch (InstantiationException | IllegalAccessException | IllegalArgumentException
                     | InvocationTargetException | NoSuchMethodException | SecurityException
                     | ClassNotFoundException e) {
@@ -578,15 +588,16 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public static boolean hasChosenPikachu() {
-        if(AbstractDungeon.player instanceof Pokemon)
-        if(((Pokemon)AbstractDungeon.player).hasChosenStarters()) {
-            if(adventurer.cardColor == Enums.PIKACHU_YELLOW)
-            {
-                return true;
-            }
-            if(partner.cardColor == Enums.PIKACHU_YELLOW)
-            {
-                return true;
+        if(AbstractDungeon.player instanceof Pokemon) {
+            if(((Pokemon)AbstractDungeon.player).hasChosenStarters()) {
+                if(adventurer.cardColor == Enums.PIKACHU_YELLOW)
+                {
+                    return true;
+                }
+                if(partner.cardColor == Enums.PIKACHU_YELLOW)
+                {
+                    return true;
+                }
             }
         }
         return false;
@@ -671,7 +682,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     @Override
     public void applyStartOfCombatLogic() {
         super.applyStartOfCombatLogic();
-        setPikaMeter(0);
+        resetPikameter();
     }
 
     public void DefineNature(String natureAsAString)

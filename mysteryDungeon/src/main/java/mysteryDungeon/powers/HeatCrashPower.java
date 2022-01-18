@@ -34,8 +34,8 @@ public class HeatCrashPower extends MysteryDungeonPower implements CloneablePowe
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
     // There's a fallback "missing texture" image, so the game shouldn't crash if you accidentally put a non-existent file.
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(HeatCrashPower.class.getSimpleName()+"84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(HeatCrashPower.class.getSimpleName()+"32.png"));
 
     public HeatCrashPower(final AbstractCreature owner, final int amount) {
         name = NAME;
@@ -78,6 +78,12 @@ public class HeatCrashPower extends MysteryDungeonPower implements CloneablePowe
     @Override
     public void updateDescription() {
         int burnStacks = owner.hasPower(BurnPower.POWER_ID)?owner.getPower(BurnPower.POWER_ID).amount:0;
-        description = String.format(DESCRIPTIONS[0], amount, MathUtils.floor(amount*burnStacks));
+        int damage = MathUtils.floor(amount*burnStacks);
+        if(damage == 1 || damage == 0) {
+            description = String.format(DESCRIPTIONS[0], amount, damage);
+        }
+        else {
+            description = String.format(DESCRIPTIONS[1], amount, damage);
+        }  
     }
 }

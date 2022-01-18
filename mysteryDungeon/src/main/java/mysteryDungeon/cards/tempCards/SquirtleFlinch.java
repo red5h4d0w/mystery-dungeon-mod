@@ -20,7 +20,7 @@ public class SquirtleFlinch extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(SquirtleFlinch.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("SquirtleAttack.png");
+    public static final String IMG = makeCardPath(SquirtleFlinch.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -37,6 +37,7 @@ public class SquirtleFlinch extends PokemonCard {
 
     private static final int COST = 1;
     private static final int BASE_DAMAGE = 3;
+    private static final int UPGRADE_PLUS_DMG = 1;
     private static final int BASE_MAGIC_NUMBER = 1;
     private static final int UPGRADE_MAGIC_NUMBER = 1;
 
@@ -66,6 +67,7 @@ public class SquirtleFlinch extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            upgradeDamage(UPGRADE_PLUS_DMG);
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();

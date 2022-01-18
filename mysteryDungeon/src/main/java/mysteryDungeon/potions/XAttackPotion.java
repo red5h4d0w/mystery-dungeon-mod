@@ -78,7 +78,7 @@ public class XAttackPotion extends PokemonPotion {
 
     public void upgradePotion()
     {
-        potency += 1;
+        potency += 3;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }

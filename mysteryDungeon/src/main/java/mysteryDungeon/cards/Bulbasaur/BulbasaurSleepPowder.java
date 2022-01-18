@@ -20,7 +20,7 @@ public class BulbasaurSleepPowder extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(BulbasaurSleepPowder.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("BulbasaurSkill.png");
+    public static final String IMG = makeCardPath(BulbasaurSleepPowder.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
@@ -29,7 +29,7 @@ public class BulbasaurSleepPowder extends PokemonCard {
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;

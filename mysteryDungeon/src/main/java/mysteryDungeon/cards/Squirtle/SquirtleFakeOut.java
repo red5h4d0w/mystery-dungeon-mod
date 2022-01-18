@@ -19,7 +19,7 @@ public class SquirtleFakeOut extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(SquirtleFakeOut.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("SquirtleAttack.png");
+    public static final String IMG = makeCardPath(SquirtleFakeOut.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -36,7 +36,9 @@ public class SquirtleFakeOut extends PokemonCard {
 
     private static final int COST = 0;
     private static final int DAMAGE = 5;
+    private static final int UPGRADE_PLUS_DMG = 1;
     private static final int BLOCK = 5;
+    private static final int UPGRADE_PLUS_BLOCK = 1;
     private static final int BASE_MAGIC_NUMBER = 1;
     private static final int UPGRADE_BASE_MAGIC_NUMBER = 1;
 
@@ -68,6 +70,8 @@ public class SquirtleFakeOut extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeBlock(UPGRADE_PLUS_BLOCK);
             upgradeMagicNumber(UPGRADE_BASE_MAGIC_NUMBER);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();

@@ -21,7 +21,7 @@ public class BulbasaurIngrain extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(BulbasaurIngrain.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("BulbasaurSkill.png");
+    public static final String IMG = makeCardPath(BulbasaurIngrain.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
@@ -37,7 +37,7 @@ public class BulbasaurIngrain extends PokemonCard {
 
     private static final int COST = 1;
     private static final int BASE_MAGIC_NUMBER = 3;
-    private static final int UPGRADE_MAGIC_NUMBER = 2;
+    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/

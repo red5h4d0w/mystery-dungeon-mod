@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
+import com.megacrit.cardcrawl.powers.DrawPower;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
@@ -20,7 +20,7 @@ public class CharmanderBellyDrum extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(CharmanderBellyDrum.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("CharmanderPower.png");
+    public static final String IMG = makeCardPath(CharmanderBellyDrum.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
@@ -52,6 +52,7 @@ public class CharmanderBellyDrum extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
         addToBot(new ApplyPowerAction(p, p, new BellyDrumPower(p, magicNumber), magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new DrawPower(p, magicNumber), magicNumber));
     }
 
     // Upgraded stats.
@@ -61,7 +62,6 @@ public class CharmanderBellyDrum extends PokemonCard {
             upgradeName();
             upgradeBaseCost(UPGRADE_COST);
             initializeDescription();
-            isInnate = true;
         }
     }
 }

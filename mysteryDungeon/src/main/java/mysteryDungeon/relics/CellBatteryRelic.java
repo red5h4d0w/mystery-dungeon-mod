@@ -2,7 +2,6 @@ package mysteryDungeon.relics;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonRelic;
-import mysteryDungeon.actions.SetPikaMeterAction;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.pokemons.Pikachu;
 import mysteryDungeon.util.TextureLoader;
@@ -38,21 +37,18 @@ public class CellBatteryRelic extends PokemonRelic {
     @Override
     public void onEquip() {
         if(AbstractDungeon.player instanceof Pokemon) {
-            Pokemon.maxPikachuChargeCounter = 2;
+            Pokemon.maxPikachuChargeCounter = 3;
         }
     }
 
     @Override
     public void onUnequip() {
         if(AbstractDungeon.player instanceof Pokemon) {
-            Pokemon.maxPikachuChargeCounter = 3;
+            Pokemon.maxPikachuChargeCounter = 2;
         }
     }
 
-    @Override
-    public void onPlayerEndTurn() {
-        addToBot(new SetPikaMeterAction(0));
-    }
+    
 
     // Description
     @Override

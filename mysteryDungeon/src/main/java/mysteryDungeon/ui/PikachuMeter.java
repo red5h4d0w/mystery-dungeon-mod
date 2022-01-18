@@ -15,11 +15,13 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.helpers.TipHelper;
 import com.megacrit.cardcrawl.localization.StanceStrings;
+import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.stances.NegativeStance;
 import mysteryDungeon.stances.PositiveStance;
@@ -50,7 +52,11 @@ public class PikachuMeter {
     private static final float BOX_W = 325.0F * Settings.scale;
     private static final float METER_HEIGHT = 50.0f * Settings.scale;
 
-    public static final String DESCRIPTION = "When you play a Skill, move to the left by 1 notch on this meter. NL When you play an Attack, move to the right by 1 notch on this meter. NL When you reach one of the end points on the meter, enter the corresponding stances.";
+    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString(MysteryDungeon.makeID(PikachuMeter.class.getSimpleName())); 
+
+    private static final String TITLE = uiStrings.TEXT[0];
+
+    private static final String DESCRIPTION = uiStrings.TEXT[1];
 
     private static int counterPosition = 0;
 
@@ -69,10 +75,7 @@ public class PikachuMeter {
             (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT && !player.isDead) {
             float x = 0f;
             float y = Settings.HEIGHT-165.0f*Settings.scale;
-            //TODO: Localization
-            String title = "Charge Meter";
-            String description = "When you play a Skill, move to the left by 1 notch on this meter. NL When you play an Attack, move to the right by 1 notch on this meter. NL When you reach one of the end points on the meter, enter the corresponding stances. NL You can hover this to see info on the stances.";
-            float h = -FontHelper.getSmartHeight(FontHelper.tipBodyFont, description, BODY_TEXT_WIDTH, TIP_DESC_LINE_SPACING) - 7.0F * Settings.scale;
+            float h = -FontHelper.getSmartHeight(FontHelper.tipBodyFont, DESCRIPTION, BODY_TEXT_WIDTH, TIP_DESC_LINE_SPACING) - 7.0F * Settings.scale;
             sb.setColor(Settings.TOP_PANEL_SHADOW_COLOR);
             sb.draw(ImageMaster.KEYWORD_TOP, x + SHADOW_DIST_X, y - SHADOW_DIST_Y, BOX_W, BOX_EDGE_H);
             sb.draw(ImageMaster.KEYWORD_BODY, x + SHADOW_DIST_X, y - h - METER_HEIGHT - BOX_EDGE_H - SHADOW_DIST_Y, BOX_W, METER_HEIGHT + h + BOX_EDGE_H);
@@ -98,8 +101,8 @@ public class PikachuMeter {
                 TipHelper.queuePowerTips(BOX_W, y, powerTips);
             }
             
-            FontHelper.renderFontLeftTopAligned(sb, FontHelper.tipHeaderFont, title, x + TEXT_OFFSET_X, y + HEADER_OFFSET_Y, Settings.GOLD_COLOR);
-            FontHelper.renderSmartText(sb, FontHelper.tipBodyFont, description, x + TEXT_OFFSET_X, y + BODY_OFFSET_Y, BODY_TEXT_WIDTH, TIP_DESC_LINE_SPACING, BASE_COLOR);
+            FontHelper.renderFontLeftTopAligned(sb, FontHelper.tipHeaderFont, TITLE, x + TEXT_OFFSET_X, y + HEADER_OFFSET_Y, Settings.GOLD_COLOR);
+            FontHelper.renderSmartText(sb, FontHelper.tipBodyFont, DESCRIPTION, x + TEXT_OFFSET_X, y + BODY_OFFSET_Y, BODY_TEXT_WIDTH, TIP_DESC_LINE_SPACING, BASE_COLOR);
         } 
     }
     public void setCounterPosition(int newCounterPosition) {
