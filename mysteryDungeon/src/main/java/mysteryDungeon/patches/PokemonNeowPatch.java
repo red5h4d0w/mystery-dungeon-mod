@@ -474,7 +474,18 @@ public class PokemonNeowPatch {
         add(new Charmander());
         add(new Squirtle());
         add(new Pikachu());
-        add(new Meowth());
+        // add(new Meowth());
+        // add(new Psyduck());
+        // add(new Machop());
+        // add(new Cubone());
+        // add(new Eevee());
+        // add(new Chikorita());
+        // add(new Cyndaquil());
+        // add(new Totodile());
+        // add(new Treecko());
+        // add(new Torchic());
+        // add(new Mudkip());
+        // add(new Skitty());
     }};
 
     // Data structure to which the .json is fed
