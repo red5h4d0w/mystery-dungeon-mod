@@ -421,9 +421,9 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         }
         if(hasChosenStarters())
         {
-            if(partner.canEvolve)
+            if(partner.evolve()!=null)
                 partner = partner.evolve();
-            if(adventurer.canEvolve)
+            if(adventurer.evolve()!=null)
                 adventurer = adventurer.evolve();
             reloadAnimation();
         }

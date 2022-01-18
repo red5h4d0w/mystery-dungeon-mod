@@ -7,18 +7,11 @@ import mysteryDungeon.characters.Pokemon;
 
 public class Ivysaur extends AbstractPokemon {
 
-    public static Color COLOR = Color.GREEN.cpy();
-    public static CardColor CARD_COLOR = Pokemon.Enums.BULBASAUR_GREEN;
+    public static final Color COLOR = Color.GREEN.cpy();
+    public static final CardColor CARD_COLOR = Pokemon.Enums.BULBASAUR_GREEN;
 
     public Ivysaur(){
         super(COLOR, CARD_COLOR);
-    }
-
-    @Override
-    public AbstractPokemon evolve() {
-        AbstractPokemon evolution = new Venusaur();
-        if (getShiny())
-            evolution.setShiny(true);
-        return evolution;
+        evolution = new Venusaur();
     }
 }

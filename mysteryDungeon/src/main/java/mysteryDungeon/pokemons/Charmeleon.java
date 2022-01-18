@@ -7,18 +7,11 @@ import mysteryDungeon.characters.Pokemon;
 
 public class Charmeleon extends AbstractPokemon {
 
-    public static Color COLOR = Color.RED.cpy();
-    public static CardColor CARD_COLOR = Pokemon.Enums.CHARMANDER_RED;
+    public static final Color COLOR = Color.RED.cpy();
+    public static final CardColor CARD_COLOR = Pokemon.Enums.CHARMANDER_RED;
 
     public Charmeleon(){
         super(COLOR, CARD_COLOR);
-    }
-
-    @Override
-    public AbstractPokemon evolve() {
-        AbstractPokemon evolution = new Charizard();
-        if (getShiny())
-            evolution.setShiny(true);
-        return evolution;
+        evolution = new Charizard();
     }
 }
