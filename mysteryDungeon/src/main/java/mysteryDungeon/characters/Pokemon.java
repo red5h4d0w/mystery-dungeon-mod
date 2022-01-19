@@ -96,6 +96,24 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_CHARMANDER_RED;
 
+        @SpireEnum(name = "CHIKORITA_GREEN") // These two HAVE to have the same absolutely identical name.
+        public static AbstractCard.CardColor CHIKORITA_GREEN;
+        @SpireEnum(name = "CHIKORITA_GREEN") 
+        @SuppressWarnings("unused")
+        public static CardLibrary.LibraryType LIBRARY_CHIKORITA_GREEN;
+
+        @SpireEnum(name = "CYNDAQUIL_RED") // These two HAVE to have the same absolutely identical name.
+        public static AbstractCard.CardColor CYNDAQUIL_RED;
+        @SpireEnum(name = "CYNDAQUIL_RED") 
+        @SuppressWarnings("unused")
+        public static CardLibrary.LibraryType LIBRARY_CYNDAQUIL_RED;
+
+        @SpireEnum(name = "MEOWTH_LIGHT_GRAY") // These two HAVE to have the same absolutely identical name.
+        public static AbstractCard.CardColor MEOWTH_LIGHT_GRAY;
+        @SpireEnum(name = "MEOWTH_LIGHT_GRAY") 
+        @SuppressWarnings("unused")
+        public static CardLibrary.LibraryType LIBRARY_MEOWTH_LIGHT_GRAY;
+
         @SpireEnum(name = "PIKACHU_YELLOW") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor PIKACHU_YELLOW;
         @SpireEnum(name = "PIKACHU_YELLOW") 
@@ -107,6 +125,12 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         @SpireEnum(name = "SQUIRTLE_BLUE") 
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_SQUIRTLE_BLUE;
+
+        @SpireEnum(name = "TOTODILE_BLUE") // These two HAVE to have the same absolutely identical name.
+        public static AbstractCard.CardColor TOTODILE_BLUE;
+        @SpireEnum(name = "TOTODILE_BLUE") 
+        @SuppressWarnings("unused")
+        public static CardLibrary.LibraryType LIBRARY_TOTODILE_BLUE;
     }
 
     // =============== CHARACTER ENUMERATORS  =================

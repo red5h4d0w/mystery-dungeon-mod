@@ -16,7 +16,7 @@ public class Meowth extends AbstractPokemon {
     public static AbstractCard[] STARTING_DECK = new AbstractCard[]{
         new BulbasaurTackle(), new BulbasaurTackle(), new BulbasaurDefend(), new BulbasaurDefend(), new BulbasaurLeechSeed()
     };
-    public static Color COLOR = Color.GREEN.cpy();
+    public static Color COLOR = Color.LIGHT_GRAY.cpy();
     public static CardColor CARD_COLOR = Pokemon.Enums.BULBASAUR_GREEN;
 
     public Meowth(){

@@ -11,13 +11,13 @@ import mysteryDungeon.characters.Pokemon;
 
 public class Cyndaquil extends AbstractPokemon {
     
-    public static int MAX_HP = 35;
-    public static int ORB_SLOTS = 1;
+    public static int MAX_HP = 30;
+    public static int ORB_SLOTS = 0;
     public static AbstractCard[] STARTING_DECK = new AbstractCard[] {
         new BulbasaurTackle(), new BulbasaurTackle(), new BulbasaurDefend(), new BulbasaurDefend(), new BulbasaurLeechSeed()
     };
-    public static Color COLOR = Color.GREEN.cpy();
-    public static CardColor CARD_COLOR = Pokemon.Enums.BULBASAUR_GREEN;
+    public static Color COLOR = Color.RED.cpy();
+    public static CardColor CARD_COLOR = Pokemon.Enums.CYNDAQUIL_RED;
 
     public Cyndaquil(){
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);

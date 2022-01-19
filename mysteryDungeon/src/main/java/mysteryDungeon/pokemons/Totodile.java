@@ -11,11 +11,11 @@ import mysteryDungeon.characters.Pokemon;
 
 public class Totodile extends AbstractPokemon {
 
-    public static int MAX_HP = 35;
-    public static int ORB_SLOTS = 1;
+    public static int MAX_HP = 45;
+    public static int ORB_SLOTS = 2;
     public static AbstractCard[] STARTING_DECK = new AbstractCard[]{new BulbasaurTackle(), new BulbasaurTackle(), new BulbasaurDefend(), new BulbasaurDefend(), new BulbasaurLeechSeed()};
-    public static Color COLOR = Color.GREEN.cpy();
-    public static CardColor CARD_COLOR = Pokemon.Enums.BULBASAUR_GREEN;
+    public static Color COLOR = Color.BLUE.cpy();
+    public static CardColor CARD_COLOR = Pokemon.Enums.TOTODILE_BLUE;
 
     public Totodile(){
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);
