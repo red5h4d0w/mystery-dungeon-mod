@@ -12,11 +12,5 @@ public class Raichu extends AbstractPokemon {
     
     public Raichu(){
         super(COLOR, CARD_COLOR);
-        canEvolve = false;
-    }
-
-    @Override
-    public AbstractPokemon evolve() {
-        return null;
     }
 }

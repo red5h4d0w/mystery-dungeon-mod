@@ -31,7 +31,7 @@ public abstract class AbstractPokemon {
     public String skeletonUrl;
     public String atlasUrl;
     private boolean shiny;
-    public boolean canEvolve = true;
+    public AbstractPokemon evolution;
 
     public AbstractPokemon(int maxHp, int orbSlots, AbstractCard[] startingDeck, Color color, CardColor cardColor) {
         this.ID = makeID(getClass().getSimpleName());
@@ -39,7 +39,7 @@ public abstract class AbstractPokemon {
         this.maxHp = maxHp;
         this.orbSlots = orbSlots;
         this.startingDeck = startingDeck;
-        this.color = color;
+        this.color = color.cpy();
         this.cardColor = cardColor;
         if(MysteryDungeon.TOGGLE_ON_SHINY) {
             setShiny(true);
@@ -78,5 +78,10 @@ public abstract class AbstractPokemon {
         return shiny;
     }
 
-    public abstract AbstractPokemon evolve();
+    public AbstractPokemon evolve() {
+        if(evolution!=null) {
+            evolution.setShiny(getShiny());
+        }
+        return evolution;
+    };
 }

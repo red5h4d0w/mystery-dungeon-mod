@@ -7,16 +7,10 @@ import mysteryDungeon.characters.Pokemon;
 
 public class Charizard extends AbstractPokemon {
 
-    public static Color COLOR = Color.RED.cpy();
-    public static CardColor CARD_COLOR = Pokemon.Enums.CHARMANDER_RED;
+    public static final Color COLOR = Color.RED.cpy();
+    public static final CardColor CARD_COLOR = Pokemon.Enums.CHARMANDER_RED;
 
     public Charizard(){
         super(COLOR, CARD_COLOR);
-        canEvolve = false;
-    }
-
-    @Override
-    public AbstractPokemon evolve() {
-        return null;
     }
 }

@@ -11,23 +11,16 @@ import mysteryDungeon.characters.Pokemon;
 
 public class Charmander extends AbstractPokemon {
     
-    public static int MAX_HP = 30;
-    public static int ORB_SLOTS = 1;
-    public static AbstractCard[] STARTING_DECK = new AbstractCard[] {
+    public static final int MAX_HP = 30;
+    public static final int ORB_SLOTS = 1;
+    public static final AbstractCard[] STARTING_DECK = new AbstractCard[] {
         new CharmanderScratch(), new CharmanderScratch(), new CharmanderDefend(), new CharmanderDefend(), new CharmanderEmber()
     };
-    public static Color COLOR = Color.RED.cpy();
-    public static CardColor CARD_COLOR = Pokemon.Enums.CHARMANDER_RED;
+    public static final Color COLOR = Color.RED.cpy();
+    public static final CardColor CARD_COLOR = Pokemon.Enums.CHARMANDER_RED;
 
     public Charmander(){
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);
-    }
-
-    @Override
-    public AbstractPokemon evolve() {
-        AbstractPokemon evolution = new Charmeleon();
-        if (getShiny())
-            evolution.setShiny(true);
-        return evolution;
+        evolution = new Charmeleon();
     }
 }

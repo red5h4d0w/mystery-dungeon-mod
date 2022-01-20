@@ -11,23 +11,17 @@ import mysteryDungeon.characters.Pokemon;
 
 public class Bulbasaur extends AbstractPokemon {
 
-    public static int MAX_HP = 40;
-    public static int ORB_SLOTS = 1;
-    public static AbstractCard[] STARTING_DECK = new AbstractCard[] {
+    public static final int MAX_HP = 40;
+    public static final int ORB_SLOTS = 1;
+    public static final AbstractCard[] STARTING_DECK = new AbstractCard[] {
         new BulbasaurTackle(), new BulbasaurTackle(), new BulbasaurDefend(), new BulbasaurDefend(), new BulbasaurLeechSeed()
     };
-    public static Color COLOR = Color.GREEN.cpy();
-    public static CardColor CARD_COLOR = Pokemon.Enums.BULBASAUR_GREEN;
+    public static final Color COLOR = Color.GREEN.cpy();
+    public static final CardColor CARD_COLOR = Pokemon.Enums.BULBASAUR_GREEN;
 
     public Bulbasaur(){
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);
+        evolution = new Ivysaur();
     }
 
-    @Override
-    public AbstractPokemon evolve() {
-        AbstractPokemon evolution = new Ivysaur();
-        if (getShiny())
-            evolution.setShiny(true);
-        return evolution;
-    }
 }

@@ -1,6 +1,13 @@
 package mysteryDungeon.abstracts;
 
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
+
+import basemod.ReflectionHacks;
 import basemod.abstracts.CustomCard;
+
+import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 public abstract class PokemonCard extends CustomCard {
 
@@ -34,7 +41,8 @@ public abstract class PokemonCard extends CustomCard {
                                final CardTarget target) {
 
         super(id, name, img, cost, rawDescription, type, color, rarity, target);
-
+        if(color!=CardColor.COLORLESS)
+            loadJokeCardImage(makeCardPath(this.getClass().getSimpleName().split("(?=\\p{Upper})")[0].toLowerCase()+".png"));
         // Set all the things to their default values.
         isCostModified = false;
         isCostModifiedForTurn = false;
@@ -68,5 +76,20 @@ public abstract class PokemonCard extends CustomCard {
         baseThirdMagicNumber += amount; // Upgrade the number by the amount you provide in your card.
         thirdMagicNumber = baseThirdMagicNumber; // Set the number to be equal to the base value.
         upgradedThirdMagicNumber = true; // Upgraded = true - which does what the above method does.
+    }
+
+    public void loadJokeCardImage(String img) {
+        Texture cardTexture;
+        if (imgMap.containsKey(img)) {
+          cardTexture = imgMap.get(img);
+        } else {
+          cardTexture = ImageMaster.loadImage(img);
+          imgMap.put(img, cardTexture);
+        } 
+        cardTexture.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
+        int tw = cardTexture.getWidth();
+        int th = cardTexture.getHeight();
+        TextureAtlas.AtlasRegion cardImg = new TextureAtlas.AtlasRegion(cardTexture, 0, 0, tw, th);
+        ReflectionHacks.setPrivateInherited(this, CustomCard.class, "jokePortrait", cardImg);
     }
 }

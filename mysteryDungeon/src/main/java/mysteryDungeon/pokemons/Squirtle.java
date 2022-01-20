@@ -12,23 +12,16 @@ import mysteryDungeon.characters.Pokemon;
 
 public class Squirtle extends AbstractPokemon {
 
-    public static int MAX_HP = 35;
-    public static int ORB_SLOTS = 0;
-    public static AbstractCard[] STARTING_DECK = new AbstractCard[] {
+    public static final int MAX_HP = 35;
+    public static final int ORB_SLOTS = 0;
+    public static final AbstractCard[] STARTING_DECK = new AbstractCard[] {
         new SquirtleTackle(), new SquirtleTackle(), new SquirtleDefend(), new SquirtleDefend(), new SquirtleWaterGun()
     };
-    public static Color COLOR = Color.BLUE.cpy();
-    public static CardColor CARD_COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
+    public static final Color COLOR = Color.BLUE.cpy();
+    public static final CardColor CARD_COLOR = Pokemon.Enums.SQUIRTLE_BLUE;
     
     public Squirtle(){
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);
-    }
-
-    @Override
-    public AbstractPokemon evolve() {
-        AbstractPokemon evolution = new Wartortle();
-        if (getShiny())
-            evolution.setShiny(true);
-        return evolution;
+        evolution = new Wartortle();
     }
 }
