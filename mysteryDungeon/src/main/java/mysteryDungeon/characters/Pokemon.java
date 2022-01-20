@@ -429,10 +429,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         }
     }
 
-    public void tryToEvolvePokemons() {
-        evolvePokemons();
-    }
-
     // Starting Relics	
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
