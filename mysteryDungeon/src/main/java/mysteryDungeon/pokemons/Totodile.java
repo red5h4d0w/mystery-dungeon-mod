@@ -20,12 +20,4 @@ public class Totodile extends AbstractPokemon {
     public Totodile(){
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);
     }
-
-    @Override
-    public AbstractPokemon evolve() {
-        AbstractPokemon evolution = new Venusaur();
-        if (getShiny())
-            evolution.setShiny(true);
-        return evolution;
-    }
 }

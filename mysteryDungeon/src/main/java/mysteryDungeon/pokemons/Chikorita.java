@@ -22,12 +22,4 @@ public class Chikorita extends AbstractPokemon {
     public Chikorita(){
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);
     }
-
-    @Override
-    public AbstractPokemon evolve() {
-        AbstractPokemon evolution = new Ivysaur();
-        if (getShiny())
-            evolution.setShiny(true);
-        return evolution;
-    }
 }

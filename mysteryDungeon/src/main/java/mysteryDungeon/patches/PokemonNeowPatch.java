@@ -2,7 +2,6 @@ package mysteryDungeon.patches;
 
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -344,7 +343,8 @@ public class PokemonNeowPatch {
                     return SpireReturn.Return(null);
                 case 11:
                     ((Pokemon)AbstractDungeon.player).adventurer = implementedPokemons.get(buttonPressed);
-                    ((Pokemon)AbstractDungeon.player).DefineNature(NatureOfPokemon.get(implementedPokemons.get(buttonPressed).getClass().getSimpleName())[AbstractDungeon.eventRng.random(1)]);
+                    String[] possibleNatures = NatureOfPokemon.get(((Pokemon)AbstractDungeon.player).adventurer.getClass().getSimpleName());
+                    ((Pokemon)AbstractDungeon.player).DefineNature(possibleNatures[AbstractDungeon.eventRng.random(possibleNatures.length)]);
                     AskQuestion(__instance, new Question(TEXT[8], implementedPokemons.stream().filter(p -> p != ((Pokemon)AbstractDungeon.player).adventurer).map(p -> p.name).toArray(size-> new String[size])));
                     screenNum=5;
                     return SpireReturn.Return(null);
@@ -466,9 +466,27 @@ public class PokemonNeowPatch {
         put("Charmander", new String[]{"Hardy", "Brave"});
         put("Squirtle", new String[]{"Jolly", "Relaxed"});
         put("Pikachu", new String[]{"Impish", "Hardy"});
+        put("Meowth", new String[]{"Quirky"});
     }};
 
-    public static ArrayList<AbstractPokemon> implementedPokemons = new ArrayList<AbstractPokemon>(Arrays.asList(new Bulbasaur(), new Charmander(), new Squirtle(), new Pikachu()));
+    public static ArrayList<AbstractPokemon> implementedPokemons = new ArrayList<AbstractPokemon>(){{
+        add(new Bulbasaur());
+        add(new Charmander());
+        add(new Squirtle());
+        add(new Pikachu());
+        // add(new Meowth());
+        // add(new Psyduck());
+        // add(new Machop());
+        // add(new Cubone());
+        // add(new Eevee());
+        // add(new Chikorita());
+        // add(new Cyndaquil());
+        // add(new Totodile());
+        // add(new Treecko());
+        // add(new Torchic());
+        // add(new Mudkip());
+        // add(new Skitty());
+    }};
 
     // Data structure to which the .json is fed
     public static class Question{

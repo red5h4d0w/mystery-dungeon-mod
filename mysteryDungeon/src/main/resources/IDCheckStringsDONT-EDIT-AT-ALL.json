@@ -1,8 +1,0 @@
-{
-  "DEFAULTID": "MysteryDungeon",
-  "DEVID": "mysteryDungeonDev",
-  "EXCEPTION": "Go to your constructor in your class with SpireInitializer and change your mod ID from \"MysteryDungeon\"",
-  "PACKAGE_EXCEPTION": "Rename your MysteryDungeon folder (package) to match your mod ID! ",
-  "RESOURCE_FOLDER_EXCEPTION": "Rename your mysteryDungeonResources folder to match your mod ID!",
-  "RESOURCES": "Resources"
-}

@@ -23,13 +23,6 @@ public class Pikachu extends AbstractPokemon {
     
     public Pikachu(){
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);
-    }
-
-    @Override
-    public AbstractPokemon evolve() {
-        AbstractPokemon evolution = new Raichu();
-        if (getShiny())
-            evolution.setShiny(true);
-        return evolution;
+        evolution = new Raichu();
     }
 }
