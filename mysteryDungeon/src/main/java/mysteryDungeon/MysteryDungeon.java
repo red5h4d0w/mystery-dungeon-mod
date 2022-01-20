@@ -215,32 +215,8 @@ public class MysteryDungeon implements
         
         BaseMod.subscribe(this);
         
-      /*
-           (   ( /(  (     ( /( (            (  `   ( /( )\ )    )\ ))\ )
-           )\  )\()) )\    )\()))\ )   (     )\))(  )\()|()/(   (()/(()/(
-         (((_)((_)((((_)( ((_)\(()/(   )\   ((_)()\((_)\ /(_))   /(_))(_))
-         )\___ _((_)\ _ )\ _((_)/(_))_((_)  (_()((_) ((_|_))_  _(_))(_))_
-        ((/ __| || (_)_\(_) \| |/ __| __| |  \/  |/ _ \|   \  |_ _||   (_)
-         | (__| __ |/ _ \ | .` | (_ | _|  | |\/| | (_) | |) |  | | | |) |
-          \___|_||_/_/ \_\|_|\_|\___|___| |_|  |_|\___/|___/  |___||___(_)
-      */
       
         setModID("mysteryDungeon");
-        // cool
-        // TODO: NOW READ THIS!!!!!!!!!!!!!!!:
-        
-        // 1. Go to your resources folder in the project panel, and refactor> rename mysteryDungeonResources to
-        // yourModIDResources.
-        
-        // 2. Click on the localization > eng folder and press ctrl+shift+r, then select "Directory" (rather than in Project) and press alt+c (or mark the match case option)
-        // replace all instances of Pokemon with yourModID, and all instances of Pokemon with yourmodid (the same but all lowercase).
-        // Because your mod ID isn't the default. Your cards (and everything else) should have Your mod id. Not mine.
-        // It's important that the mod ID prefix for keywords used in the cards descriptions is lowercase!
-
-        // 3. Scroll down (or search for "ADD CARDS") till you reach the ADD CARDS section, and follow the TODO instructions
-
-        // 4. FINALLY and most importantly: Scroll up a bit. You may have noticed the image locations above don't use getModID()
-        // Change their locations to reflect your actual ID rather than Pokemon. They get loaded before getID is a thing.
         
         logger.info("Done subscribing");
         
@@ -281,7 +257,6 @@ public class MysteryDungeon implements
         
         logger.info("Adding mod settings");
         // This loads the mod settings.
-        // The actual mod Button is added below in receivePostInitialize()
         mysteryDungeonDefaultSettings.setProperty(SEND_RUN_DATA, "FALSE"); // This is the default setting. It's actually set...
         try {
             SpireConfig config = new SpireConfig("mysteryDungeon", "mysteryDungeonConfig", mysteryDungeonDefaultSettings); // ...right here
@@ -295,14 +270,10 @@ public class MysteryDungeon implements
         
     }
     
-    // ====== NO EDIT AREA ======
-    // DON'T TOUCH THIS STUFF. IT IS HERE FOR STANDARDIZATION BETWEEN MODS AND TO ENSURE GOOD CODE PRACTICES.
-    // IF YOU MODIFY THIS I WILL HUNT YOU DOWN AND DOWNVOTE YOUR MOD ON WORKSHOP
-    
     public static void setModID(String ID) { 
         modID = ID; 
         logger.info("Success! ID is " + modID); // WHY WOULD U WANT IT NOT TO LOG?? DON'T EDIT THIS.
-    } // NO
+    }
     
     public static String getModID() {
         return modID;
@@ -399,6 +370,7 @@ public class MysteryDungeon implements
     
     // =============== / POST-INITIALIZE/ =================
     
+    @Override
     public void receiveAddAudio() {
         logger.info("Beginning to edit audio");
         BaseMod.addAudio("MYSTERY_DUNGEON_RELIC_GET", makeAudioPath("landingSound.ogg"));
@@ -410,9 +382,6 @@ public class MysteryDungeon implements
     public void receiveEditPotions() {
         logger.info("Beginning to edit potions");
         
-        // Class Specific Potion. If you want your potion to not be class-specific,
-        // just remove the player class at the end (in this case the "PokemonEnum.THE_DEFAULT".
-        // Remember, you can press ctrl+P inside parentheses like addPotions)
         new AutoAdd("MysteryDungeon")
             .packageFilter("mysteryDungeon.potions")
             .any(AbstractPotion.class, (info, potion) -> {
@@ -431,14 +400,7 @@ public class MysteryDungeon implements
     public void receiveEditRelics() {
         logger.info("Adding relics");
 
-        // Take a look at https://github.com/daviscook477/BaseMod/wiki/AutoAdd
-        // as well as
-        // https://github.com/kiooeht/Bard/blob/e023c4089cc347c60331c78c6415f489d19b6eb9/src/main/java/com/evacipated/cardcrawl/mod/bard/BardMod.java#L319
-        // for reference as to how to turn this into an "Auto-Add" rather than having to list every relic individually.
-        // Of note is that the bard mod uses it's own custom relic class (not dissimilar to our AbstractDefaultCard class for cards) that adds the 'color' field,
-        // in order to automatically differentiate which pool to add the relic too.
-
-        // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
+        // This adds every relic in NatureRelatedRelic's folder of the Pokémon's pool and mark those as seen.
         new AutoAdd("MysteryDungeon")
                 .packageFilter(NatureRelatedRelic.class)
                 .any(AbstractRelic.class, (info, relic) -> {
@@ -446,11 +408,6 @@ public class MysteryDungeon implements
                     UnlockTracker.markRelicAsSeen(relic.relicId);
                 });
         
-        // This adds a relic to the Shared pool. Every character can find this relic.
-        
-        // Mark relics as seen - makes it visible in the compendium immediately
-        // If you don't have this it won't be visible in the compendium until you see them in game
-        // (the others are all starters so they're marked as seen in the character file)
         logger.info("Done adding relics!");
     }
     
@@ -461,26 +418,18 @@ public class MysteryDungeon implements
     
     @Override
     public void receiveEditCards() {
-        logger.info("Adding variables");
-        // Add the Custom Dynamic Variables
-        logger.info("Add variables");
+        logger.info("Adding variables...");
+
         // Add the Custom Dynamic variables
         BaseMod.addDynamicVariable(new DefaultCustomVariable());
         BaseMod.addDynamicVariable(new SecondMagicNumber());
         BaseMod.addDynamicVariable(new ThirdMagicNumber());
+
+        logger.info("Done adding variables!");
         
-        logger.info("Adding cards");
-        // Add the cards
-        // Don't delete these default cards yet. You need 1 of each type and rarity (technically) for your game not to crash
-        // when generating card rewards/shop screen items.
+        logger.info("Adding cards...");
 
-        // This method automatically adds any cards so you don't have to manually load them 1 by 1
-        // For more specific info, including how to exclude cards from being added:
-        // https://github.com/daviscook477/BaseMod/wiki/AutoAdd
-
-        // The ID for this function isn't actually your modid as used for prefixes/by the getModID() method.
-        // It's the mod id you give MTS in ModTheSpire.json - by default your artifact ID in your pom.xml
-
+        // Add Cards from the folowing cards folder and mark those as seen
         new AutoAdd("MysteryDungeon")
             .packageFilter(BulbasaurTackle.class)
             .setDefaultSeen(true)
@@ -509,9 +458,6 @@ public class MysteryDungeon implements
             .packageFilter(ExplorersDeck.class)
             .setDefaultSeen(true)
             .cards();
-        // .setDefaultSeen(true) unlocks the cards
-        // This is so that they are all "seen" in the library,
-        // for people who like to look at the card list before playing your mod
 
         logger.info("Done adding cards!");
     }
@@ -523,8 +469,7 @@ public class MysteryDungeon implements
     
     @Override
     public void receiveEditStrings() {
-        logger.info("You seeing this?");
-        logger.info("Beginning to edit strings for mod with ID: " + getModID());
+        logger.info("Beginning to edit strings for mod with ID: " + getModID() + " ...");
         
         String localizationPath = LocalizationTool.LocalizationPath();
 
@@ -555,7 +500,7 @@ public class MysteryDungeon implements
         // StancesStrings
         BaseMod.loadCustomStringsFile(StanceStrings.class, localizationPath + "MysteryDungeon-Stance-Strings.json");
 
-        logger.info("Done editing strings");
+        logger.info("Done editing strings!");
     }
     
     // ================ /LOAD THE TEXT/ ===================
