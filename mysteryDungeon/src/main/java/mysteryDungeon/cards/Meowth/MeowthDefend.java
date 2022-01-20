@@ -32,7 +32,7 @@ public class MeowthDefend extends PokemonCard {
     private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = Pokemon.Enums.MEOWTH_LIGHT_GRAY;
+    public static final CardColor COLOR = Pokemon.Enums.MEOWTH_WHITE;
 
     private static final int COST = 1;
     private static final int BLOCK = 5;
