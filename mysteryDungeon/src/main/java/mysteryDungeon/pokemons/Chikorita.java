@@ -21,5 +21,6 @@ public class Chikorita extends AbstractPokemon {
 
     public Chikorita(){
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);
+        evolution = new Bayleef();
     }
 }
