@@ -13,7 +13,7 @@ public class EvolutionPatch {
     public static void EvolvePokemon() {
         if(AbstractDungeon.player!=null) {
             if(AbstractDungeon.player instanceof Pokemon)
-                ((Pokemon)AbstractDungeon.player).tryToEvolvePokemons();
+                ((Pokemon)AbstractDungeon.player).evolvePokemons();
         }
         
     }

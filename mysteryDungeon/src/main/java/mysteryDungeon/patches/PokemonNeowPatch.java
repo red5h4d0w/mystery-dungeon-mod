@@ -404,8 +404,12 @@ public class PokemonNeowPatch {
     }
 
 
-    public static void convertPokemonToImplementedPokemon()
-    {
+    public static void convertPokemonToImplementedPokemon() {
+        // If the Pokémon determined by the quiz is implemented, do nothing
+        if(implementedPokemons.stream().anyMatch(p -> p.cardColor == chosenPokemon.cardColor)) {
+            return;
+        }
+        // Else look at the Pokémon's color and choose from existing pokémons
         if(chosenPokemon.color == Color.GREEN.cpy())
         {
             chosenPokemon = new Bulbasaur();
