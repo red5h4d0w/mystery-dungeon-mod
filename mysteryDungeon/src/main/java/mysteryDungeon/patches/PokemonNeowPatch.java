@@ -467,6 +467,7 @@ public class PokemonNeowPatch {
         put("Squirtle", new String[]{"Jolly", "Relaxed"});
         put("Pikachu", new String[]{"Impish", "Hardy"});
         put("Meowth", new String[]{"Quirky"});
+        put("Chikorita", new String[]{"Docile"});
     }};
 
     public static ArrayList<AbstractPokemon> implementedPokemons = new ArrayList<AbstractPokemon>(){{
@@ -479,7 +480,7 @@ public class PokemonNeowPatch {
         // add(new Machop());
         // add(new Cubone());
         // add(new Eevee());
-        // add(new Chikorita());
+        add(new Chikorita());
         // add(new Cyndaquil());
         // add(new Totodile());
         // add(new Treecko());
