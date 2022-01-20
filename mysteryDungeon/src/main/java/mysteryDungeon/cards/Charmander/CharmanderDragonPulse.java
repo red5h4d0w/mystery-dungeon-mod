@@ -108,7 +108,6 @@ public class CharmanderDragonPulse extends PokemonCard {
 
     @Override
     public AbstractCard makeSameInstanceOf() {
-        // TODO Auto-generated method stub
         AbstractCard card  = super.makeSameInstanceOf();
         card.rawDescription = rawDescription;
         card.initializeDescription();
@@ -116,7 +115,6 @@ public class CharmanderDragonPulse extends PokemonCard {
     }
     @Override
     public AbstractCard makeCopy() {
-        // TODO Auto-generated method stub
         AbstractCard card  = super.makeCopy();
         card.rawDescription = rawDescription;
         card.initializeDescription();

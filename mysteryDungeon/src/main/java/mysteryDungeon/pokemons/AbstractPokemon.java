@@ -58,12 +58,7 @@ public abstract class AbstractPokemon {
     }
 
     public void generateBackSprite() {
-        if(shiny) {
-            backSprite = new Pixmap(Gdx.files.internal(pathToBackSprite));
-        }
-        else {
-            backSprite = new Pixmap(Gdx.files.internal(pathToBackSprite));
-        }
+        backSprite = new Pixmap(Gdx.files.internal(pathToBackSprite));
     }
 
     public void setShiny(boolean shiny) {
