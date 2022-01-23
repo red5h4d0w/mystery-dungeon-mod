@@ -92,7 +92,17 @@
     },
     "mysteryDungeon:Chikorita": {
         "NAMES": [
-            "Pikachu"
+            "Germignon"
+        ]
+    },
+    "mysteryDungeon:Bayleef": {
+        "NAMES": [
+            "Macronium"
+        ]
+    },
+    "mysteryDungeon:Meganium": {
+        "NAMES": [
+            "Méganium"
         ]
     },
     "mysteryDungeon:Cyndaquil": {
