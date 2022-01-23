@@ -344,7 +344,7 @@ public class PokemonNeowPatch {
                 case 11:
                     ((Pokemon)AbstractDungeon.player).adventurer = implementedPokemons.get(buttonPressed);
                     String[] possibleNatures = NatureOfPokemon.get(((Pokemon)AbstractDungeon.player).adventurer.getClass().getSimpleName());
-                    ((Pokemon)AbstractDungeon.player).DefineNature(possibleNatures[AbstractDungeon.eventRng.random(possibleNatures.length)]);
+                    ((Pokemon)AbstractDungeon.player).DefineNature(possibleNatures[AbstractDungeon.eventRng.random(possibleNatures.length-1)]);
                     AskQuestion(__instance, new Question(TEXT[8], implementedPokemons.stream().filter(p -> p != ((Pokemon)AbstractDungeon.player).adventurer).map(p -> p.name).toArray(size-> new String[size])));
                     screenNum=5;
                     return SpireReturn.Return(null);
