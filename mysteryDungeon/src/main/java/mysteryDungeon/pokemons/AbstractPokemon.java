@@ -54,7 +54,12 @@ public abstract class AbstractPokemon {
     }
 
     public String localizedName() {
-        return CardCrawlGame.languagePack.getCharacterString(ID).NAMES[0];
+        if(CardCrawlGame.languagePack.getCharacterString(ID)!=null) {
+            return CardCrawlGame.languagePack.getCharacterString(ID).NAMES[0];
+        }
+        else {
+            return "ERROR: POKÉMON NAME NOT FOUND";
+        }
     }
 
     public void generateBackSprite() {
