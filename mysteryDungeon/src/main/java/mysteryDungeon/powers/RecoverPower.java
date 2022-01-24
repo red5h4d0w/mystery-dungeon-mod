@@ -44,7 +44,7 @@ public class RecoverPower extends PokemonTwoAmountPower implements CloneablePowe
         this.amount = amount;
         this.amount2 = 0;
 
-        type = PowerType.DEBUFF;
+        type = PowerType.BUFF;
         isTurnBased = false;
 
         // We load those txtures here.

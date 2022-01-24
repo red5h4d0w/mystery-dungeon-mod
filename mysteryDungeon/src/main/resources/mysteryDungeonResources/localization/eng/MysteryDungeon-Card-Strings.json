@@ -359,10 +359,64 @@
         "DESCRIPTION": "Apply X Weak. NL Apply 3X mysterydungeon:Burn. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. NL Exhaust."
     },
+    "mysteryDungeon:ChikoritaDefend": {
+        "NAME": "Defend",
+        "DESCRIPTION": "Gain !B! Block."
+    },
+    "mysteryDungeon:ChikoritaGrowl": {
+        "NAME": "Growl",
+        "DESCRIPTION": "Apply !M! Weak to ALL enemies."
+    },
+    "mysteryDungeon:ChikoritaPetalBlizzard": {
+        "NAME": "Petal Blizzard",
+        "DESCRIPTION": "Deal !D! damage to ALL enemies."
+    },
+    "mysteryDungeon:ChikoritaPetalDance": {
+        "NAME": "Petal Dance",
+        "DESCRIPTION": "Deal 7 damage to ALL enemies at the end of your turn for the next !M! turns. NL This damage behaves like Attack damage."
+    },
+    "mysteryDungeon:ChikoritaRazorLeaf": {
+        "NAME": "Razor Leaf",
+        "DESCRIPTION": "Lose !M! Hp. NL Deal !D! damage."
+    },
     "mysteryDungeon:ChikoritaRecover": {
         "NAME": "Recover",
         "DESCRIPTION": "When you receive damage, gain Recover stacks for each damage you received. NL When you deal damage, heal 20%% of damage dealt up to the number of Recover stacks. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. NL Exhaust."
+    },
+    "mysteryDungeon:ChikoritaSecretPower": {
+        "NAME": "Secret Power",
+        "DESCRIPTION": "Innate. NL Add random Power in your hand. NL Exhaust",
+        "UPGRADE_DESCRIPTION": "Innate. NL Add random upgraded Power in your hand. NL Exhaust"
+    },
+    "mysteryDungeon:ChikoritaSeedBomb": {
+        "NAME": "Seed Bomb",
+        "DESCRIPTION": "Deal !D! damage to a random enemy X times."
+    },
+    "mysteryDungeon:ChikoritaSolarBeam": {
+        "NAME": "Solar Beam",
+        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Draw !M! less cards during your next turn."
+    },
+    "mysteryDungeon:ChikoritaSunnyDay": {
+        "NAME": "Sunny Day",
+        "DESCRIPTION": "Ethereal. NL At the start of each turn, NL draw one more card and reduce by 1 the cost of the card with the highest cost in your hand.",
+        "UPGRADE_DESCRIPTION": "At the start of each turn, NL draw one more card and reduce by 1 the cost of the card with the highest cost in your hand."
+    },
+    "mysteryDungeon:ChikoritaSweetScent": {
+        "NAME": "Sweet Scent",
+        "DESCRIPTION": "Apply !M! mysterydungeon:Evasiveness_Drop. NL Apply !M! Vulnerable"
+    },
+    "mysteryDungeon:ChikoritaSynthesis": {
+        "NAME": "Synthesis",
+        "DESCRIPTION": "Heal !M! HP. NL At the start of your next turn, NL draw 2 more cards and gain [E] [E]. NL Exhaust."
+    },
+    "mysteryDungeon:ChikoritaTackle": {
+        "NAME": "Tackle",
+        "DESCRIPTION": "Deal !D! damage."
+    },
+    "mysteryDungeon:ChikoritaVineWhip": {
+        "NAME": "Vine Whip",
+        "DESCRIPTION": "Deal !D! damage. NL At the start of your next turn gain [E]."
     },
     "mysteryDungeon:PikachuAgility": {
         "NAME": "Agility",
