@@ -75,6 +75,13 @@ public class RecoverPower extends MysteryDungeonPower implements CloneablePowerI
         return super.onHeal(healAmount);
     }
 
+    @Override
+    public void atEndOfTurn(boolean isPlayer) {
+        super.atEndOfTurn(isPlayer);
+        amount=0;
+        updateDescription();
+    }
+
     public Color getColor()
     {
         return Color.GREEN.cpy();
