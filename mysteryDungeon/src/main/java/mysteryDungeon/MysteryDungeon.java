@@ -5,6 +5,7 @@ import basemod.abstracts.CustomSavable;
 import basemod.interfaces.*;
 import mysteryDungeon.cards.Bulbasaur.*;
 import mysteryDungeon.cards.Charmander.CharmanderScratch;
+import mysteryDungeon.cards.Chikorita.ChikoritaTackle;
 import mysteryDungeon.cards.Pikachu.PikachuTackle;
 import mysteryDungeon.cards.Squirtle.SquirtleTackle;
 import mysteryDungeon.cards.Status.StatusFreeze;
@@ -499,8 +500,12 @@ public class MysteryDungeon implements
             .packageFilter(SquirtleTackle.class)
             .setDefaultSeen(true)
             .cards();
-            new AutoAdd("MysteryDungeon")
+        new AutoAdd("MysteryDungeon")
             .packageFilter(PikachuTackle.class)
+            .setDefaultSeen(true)
+            .cards();
+        new AutoAdd("MysteryDungeon")
+            .packageFilter(ChikoritaTackle.class)
             .setDefaultSeen(true)
             .cards();
         new AutoAdd("MysteryDungeon")
