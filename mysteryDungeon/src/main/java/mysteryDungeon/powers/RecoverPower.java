@@ -71,6 +71,7 @@ public class RecoverPower extends MysteryDungeonPower implements CloneablePowerI
     @Override
     public int onHeal(int healAmount) {
         amount -= healAmount;
+        updateDescription();
         return super.onHeal(healAmount);
     }
 
