@@ -34,7 +34,7 @@ public class ChikoritaPetalBlizzard extends PokemonCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
-    public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
+    public static final CardColor COLOR = Pokemon.Enums.CHIKORITA_GREEN;
 
     private static final int COST = 1;
     private static final int DAMAGE = 10;

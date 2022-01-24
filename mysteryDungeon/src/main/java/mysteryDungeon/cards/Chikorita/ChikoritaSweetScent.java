@@ -32,7 +32,7 @@ public class ChikoritaSweetScent extends PokemonCard {
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = Pokemon.Enums.BULBASAUR_GREEN;
+    public static final CardColor COLOR = Pokemon.Enums.CHIKORITA_GREEN;
 
     private static final int COST = 1;
     private static final int UPGRADE_COST = 0;
