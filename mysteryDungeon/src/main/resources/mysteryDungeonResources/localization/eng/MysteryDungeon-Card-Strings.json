@@ -359,6 +359,11 @@
         "DESCRIPTION": "Apply X Weak. NL Apply 3X mysterydungeon:Burn. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. NL Exhaust."
     },
+    "mysteryDungeon:ChikoritaRecover": {
+        "NAME": "Recover",
+        "DESCRIPTION": "When you receive damage, gain Recover stacks for each damage you received. NL When you deal damage, heal 20%% of damage dealt up to the number of Recover stacks. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. NL Exhaust."
+    },
     "mysteryDungeon:PikachuAgility": {
         "NAME": "Agility",
         "DESCRIPTION": "Whenever you enter a stance, draw !M! card.",

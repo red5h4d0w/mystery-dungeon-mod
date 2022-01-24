@@ -254,5 +254,11 @@
             "Cet ennemi deviendra #yEndormi pour un tour avant d'agir.",
             "Cet ennemi deviendra #yEndormi pour #b%s tours avant d'agir."
         ]
+    },
+    "mysteryDungeon:Recover": {
+        "NAME": "Recover",
+        "DESCRIPTIONS": [
+            "When this creature receives damage, increase the number of stacks by as much damage you received. NL When you deal damage, heal 20%% of damage dealt up to #b%s."
+        ]
     }
 }

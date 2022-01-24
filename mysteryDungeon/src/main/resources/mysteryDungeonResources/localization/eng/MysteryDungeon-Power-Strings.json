@@ -158,6 +158,12 @@
         "NAME": "Rain Dish",
         "DESCRIPTIONS": ["When you manually scry or disacrd a card, gain #b%s #yBlock."]
     },
+    "mysteryDungeon:Recover": {
+        "NAME": "Recover",
+        "DESCRIPTIONS": [
+            "When this creature receives damage, increase the number of stacks by as much damage you received. NL When you deal damage, heal 20%% of damage dealt up to #b%s."
+        ]
+    },
     "mysteryDungeon:ReduceHighestCostAtStartOfTurnPower": {
         "NAME": "Lower Cost of Highest Cost Card",
         "DESCRIPTIONS": [
