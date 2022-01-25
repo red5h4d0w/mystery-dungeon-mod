@@ -81,7 +81,7 @@ public class RecoverPower extends PokemonTwoAmountPower implements CloneablePowe
     public void atEndOfTurn(boolean isPlayer) {
         super.atEndOfTurn(isPlayer);
         amount=amount2;
-        amount=0;
+        amount2=0;
         updateDescription();
     }
 
