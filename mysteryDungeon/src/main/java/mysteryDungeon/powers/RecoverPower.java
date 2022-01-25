@@ -26,7 +26,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 public class RecoverPower extends PokemonPower implements CloneablePowerInterface, HealthBarRenderPower {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("DelayedHealPower");
+    public static final String POWER_ID = MysteryDungeon.makeID("RecoverPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -42,6 +42,7 @@ public class RecoverPower extends PokemonPower implements CloneablePowerInterfac
 
         this.owner = owner;
         this.amount = amount;
+        this.amount2 = 0;
 
         type = PowerType.DEBUFF;
         isTurnBased = false;
@@ -65,7 +66,7 @@ public class RecoverPower extends PokemonPower implements CloneablePowerInterfac
 
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
-        amount += MathUtils.floor(damageAmount);
+        amount2 += MathUtils.floor(damageAmount);
         return super.onAttacked(info, damageAmount);
     }
 
