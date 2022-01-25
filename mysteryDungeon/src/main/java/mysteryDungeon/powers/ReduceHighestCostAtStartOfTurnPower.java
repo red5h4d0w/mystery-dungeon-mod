@@ -2,6 +2,7 @@ package mysteryDungeon.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonPower;
 import mysteryDungeon.actions.DropCostOfHighestCostCardsAction;
 import mysteryDungeon.util.TextureLoader;
 
@@ -20,7 +21,7 @@ import org.apache.logging.log4j.Logger;
 
 //Gain 1 dex for the turn for each card played.
 
-public class ReduceHighestCostAtStartOfTurnPower extends MysteryDungeonPower implements CloneablePowerInterface {
+public class ReduceHighestCostAtStartOfTurnPower extends PokemonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
     public static final Logger logger = LogManager.getLogger(MysteryDungeon.class.getName());

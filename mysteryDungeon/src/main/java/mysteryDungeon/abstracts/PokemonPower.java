@@ -1,14 +1,12 @@
-package mysteryDungeon.powers;
+package mysteryDungeon.abstracts;
 
-import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
 
 
 //Gain 1 dex for the turn for each card played.
 
-public class MysteryDungeonPower extends AbstractPower {
+public class PokemonPower extends TwoAmountPower {
     
-
-
     @Override
     public void stackPower(int stackAmount)
     {

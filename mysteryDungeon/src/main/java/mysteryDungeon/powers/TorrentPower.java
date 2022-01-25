@@ -2,6 +2,7 @@ package mysteryDungeon.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonPower;
 import mysteryDungeon.interfaces.onShufflePowerInterface;
 import mysteryDungeon.util.TextureLoader;
 
@@ -20,7 +21,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class TorrentPower extends MysteryDungeonPower implements CloneablePowerInterface, onShufflePowerInterface {
+public class TorrentPower extends PokemonPower implements CloneablePowerInterface, onShufflePowerInterface {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("TorrentPower");

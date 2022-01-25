@@ -2,6 +2,7 @@ package mysteryDungeon.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonPower;
 import mysteryDungeon.interfaces.onCardScriedInterface;
 import mysteryDungeon.interfaces.onManualDiscardInterface;
 import mysteryDungeon.util.TextureLoader;
@@ -20,7 +21,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class RainDishPower extends MysteryDungeonPower implements CloneablePowerInterface, onCardScriedInterface, onManualDiscardInterface {
+public class RainDishPower extends PokemonPower implements CloneablePowerInterface, onCardScriedInterface, onManualDiscardInterface {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("RainDishPower");

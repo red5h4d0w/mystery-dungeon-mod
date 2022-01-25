@@ -2,6 +2,7 @@ package mysteryDungeon.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonPower;
 import mysteryDungeon.actions.RetainCardsButEtherealModAction;
 import mysteryDungeon.util.TextureLoader;
 
@@ -20,7 +21,7 @@ import com.megacrit.cardcrawl.relics.RunicPyramid;
 
 //Gain 1 dex for the turn for each card played.
 
-public class FrustrationPower extends MysteryDungeonPower implements CloneablePowerInterface {
+public class FrustrationPower extends PokemonPower implements CloneablePowerInterface {
     public AbstractCreature source;
     public int counter = 0;
 

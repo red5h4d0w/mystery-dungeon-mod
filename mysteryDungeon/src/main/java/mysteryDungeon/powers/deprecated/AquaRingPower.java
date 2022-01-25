@@ -2,9 +2,9 @@ package mysteryDungeon.powers.deprecated;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonPower;
 import mysteryDungeon.interfaces.onCardScriedInterface;
 import mysteryDungeon.interfaces.onManualDiscardInterface;
-import mysteryDungeon.powers.MysteryDungeonPower;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
@@ -27,7 +27,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class AquaRingPower extends MysteryDungeonPower implements CloneablePowerInterface, onManualDiscardInterface, onCardScriedInterface {
+public class AquaRingPower extends PokemonPower implements CloneablePowerInterface, onManualDiscardInterface, onCardScriedInterface {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("AquaRingPower");

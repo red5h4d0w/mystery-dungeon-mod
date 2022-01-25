@@ -2,6 +2,7 @@ package mysteryDungeon.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonPower;
 import mysteryDungeon.interfaces.onCreateTempCardInterface;
 import mysteryDungeon.util.TextureLoader;
 
@@ -20,7 +21,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class RainDancePower extends MysteryDungeonPower implements CloneablePowerInterface, onCreateTempCardInterface {
+public class RainDancePower extends PokemonPower implements CloneablePowerInterface, onCreateTempCardInterface {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("RainDancePower");

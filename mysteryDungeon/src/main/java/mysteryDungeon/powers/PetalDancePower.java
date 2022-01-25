@@ -2,6 +2,7 @@ package mysteryDungeon.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonPower;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
@@ -27,7 +28,7 @@ import com.megacrit.cardcrawl.vfx.PetalEffect;
 
 //Gain 1 dex for the turn for each card played.
 
-public class PetalDancePower extends MysteryDungeonPower implements CloneablePowerInterface, OnReceivePowerPower {
+public class PetalDancePower extends PokemonPower implements CloneablePowerInterface, OnReceivePowerPower {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("PetalDancePower");

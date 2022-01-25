@@ -2,6 +2,7 @@ package mysteryDungeon.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonPower;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
@@ -27,7 +28,7 @@ import java.lang.reflect.Field;
 
 //Gain 1 dex for the turn for each card played.
 
-public class AsleepPower extends MysteryDungeonPower implements CloneablePowerInterface {
+public class AsleepPower extends PokemonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
     Logger logger = LogManager.getLogger(AsleepPower.class);

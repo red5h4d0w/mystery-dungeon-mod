@@ -2,6 +2,7 @@ package mysteryDungeon.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonPower;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
@@ -20,7 +21,7 @@ import com.megacrit.cardcrawl.powers.PoisonPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class PoisonThornsPower extends MysteryDungeonPower implements CloneablePowerInterface {
+public class PoisonThornsPower extends PokemonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("PoisonThornsPower");

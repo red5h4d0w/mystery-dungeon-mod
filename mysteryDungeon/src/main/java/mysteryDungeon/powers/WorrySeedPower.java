@@ -2,6 +2,7 @@ package mysteryDungeon.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonPower;
 import mysteryDungeon.interfaces.onCreateRewards;
 import mysteryDungeon.util.TextureLoader;
 
@@ -25,7 +26,7 @@ import org.apache.logging.log4j.Logger;
 
 //Gain 1 dex for the turn for each card played.
 
-public class WorrySeedPower extends MysteryDungeonPower implements CloneablePowerInterface, onCreateRewards {
+public class WorrySeedPower extends PokemonPower implements CloneablePowerInterface, onCreateRewards {
     public AbstractCreature source;
 
     public static Logger logger = LogManager.getLogger(WorrySeedPower.class.getName());

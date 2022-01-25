@@ -2,8 +2,8 @@ package mysteryDungeon.powers.deprecated;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonPower;
 import mysteryDungeon.actions.ExhaustFromDeckAction;
-import mysteryDungeon.powers.MysteryDungeonPower;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
@@ -21,7 +21,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 
-public class RainDancePower extends MysteryDungeonPower implements CloneablePowerInterface {
+public class RainDancePower extends PokemonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
     public static final Logger logger = LogManager.getLogger(MysteryDungeon.class.getName());

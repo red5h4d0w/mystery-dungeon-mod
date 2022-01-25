@@ -2,6 +2,7 @@ package mysteryDungeon.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonPower;
 import mysteryDungeon.interfaces.onDyingInterface;
 import mysteryDungeon.util.TextureLoader;
 
@@ -24,7 +25,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class EncorePower extends MysteryDungeonPower implements CloneablePowerInterface, onDyingInterface {
+public class EncorePower extends PokemonPower implements CloneablePowerInterface, onDyingInterface {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("EncorePower");
