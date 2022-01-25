@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardTags;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
@@ -47,6 +48,8 @@ public class MetronomeRelic extends PokemonRelic {
                 .filter(c -> c.color != Pokemon.partner.cardColor)
                 .filter(c -> c.color != Pokemon.adventurer.cardColor)
                 .filter(c -> c.color != CardColor.COLORLESS)
+                .filter(c -> !c.tags.contains(CardTags.STARTER_DEFEND))
+                .filter(c -> !c.tags.contains(CardTags.STARTER_STRIKE))
                 .toArray(AbstractCard[]::new);
             AbstractCard c = possibleCards[(int)AbstractDungeon.cardRng.random(possibleCards.length)];
             c.setCostForTurn(0);
