@@ -9,6 +9,10 @@ import mysteryDungeon.util.TextureLoader;
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
+import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
@@ -41,12 +45,12 @@ public class MetronomeRelic extends PokemonRelic {
     public void atTurnStart() {
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             flash();
-            AbstractCard[] possibleCards = (AbstractCard[])CardLibrary.cards.values().stream()
+            List<AbstractCard> possibleCards = CardLibrary.cards.values().stream()
                 .filter(c -> c instanceof PokemonCard)
                 .filter(c -> c.color != Pokemon.partner.cardColor)
                 .filter(c -> c.color != Pokemon.adventurer.cardColor)
-                .toArray();
-            AbstractCard c = possibleCards[(int) AbstractDungeon.cardRng.random(possibleCards.length)];
+                .collect(Collectors.toList());
+            AbstractCard c = possibleCards.get((int) AbstractDungeon.cardRng.random(possibleCards.size()));
             c.setCostForTurn(0);
             addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, true));
             
