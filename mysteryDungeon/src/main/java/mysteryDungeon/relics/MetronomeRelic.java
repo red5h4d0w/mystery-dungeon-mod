@@ -41,7 +41,7 @@ public class MetronomeRelic extends PokemonRelic {
     public void atTurnStart() {
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             flash();
-            AbstractCard[] possibleCards = (AbstractCard[])CardLibrary.cards.values().stream()
+            AbstractCard[] possibleCards = (AbstractCard[])CardLibrary.cards.values().parallelStream()
                 .filter(c -> c instanceof PokemonCard)
                 .filter(c -> c.color != Pokemon.partner.cardColor)
                 .filter(c -> c.color != Pokemon.adventurer.cardColor)
