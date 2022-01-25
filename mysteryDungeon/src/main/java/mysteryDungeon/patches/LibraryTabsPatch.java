@@ -42,5 +42,6 @@ public class LibraryTabsPatch {
         add("Charmander");
         add("Squirtle");
         add("Pikachu");
+        add("Chikorita");
     }};
 }
