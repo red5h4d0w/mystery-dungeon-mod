@@ -13,6 +13,8 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardTags;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
@@ -41,12 +43,15 @@ public class MetronomeRelic extends PokemonRelic {
     public void atTurnStart() {
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             flash();
-            AbstractCard[] possibleCards = (AbstractCard[])CardLibrary.cards.values().parallelStream()
+            AbstractCard[] possibleCards = CardLibrary.cards.values().stream()
                 .filter(c -> c instanceof PokemonCard)
                 .filter(c -> c.color != Pokemon.partner.cardColor)
                 .filter(c -> c.color != Pokemon.adventurer.cardColor)
-                .toArray();
-            AbstractCard c = possibleCards[(int) AbstractDungeon.cardRng.random(possibleCards.length)];
+                .filter(c -> c.color != CardColor.COLORLESS)
+                .filter(c -> !c.tags.contains(CardTags.STARTER_DEFEND))
+                .filter(c -> !c.tags.contains(CardTags.STARTER_STRIKE))
+                .toArray(AbstractCard[]::new);
+            AbstractCard c = possibleCards[(int)AbstractDungeon.cardRng.random(possibleCards.length)];
             c.setCostForTurn(0);
             addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, true));
             
