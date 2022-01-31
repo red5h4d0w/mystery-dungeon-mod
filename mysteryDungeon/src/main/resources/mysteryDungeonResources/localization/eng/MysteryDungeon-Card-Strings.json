@@ -386,12 +386,17 @@
     },
     "mysteryDungeon:ChikoritaSecretPower": {
         "NAME": "Secret Power",
-        "DESCRIPTION": "Innate. NL Add random Power in your hand. NL Exhaust",
-        "UPGRADE_DESCRIPTION": "Innate. NL Add random upgraded Power in your hand. NL Exhaust"
+        "DESCRIPTION": "Innate. NL Add random Power in your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Add random upgraded Power in your hand. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaSeedBomb": {
         "NAME": "Seed Bomb",
         "DESCRIPTION": "Deal !D! damage to a random enemy X times."
+    },
+    "mysteryDungeon:ChikoritaGrassWhistle": {
+        "NAME": "Grass Whistle",
+        "DESCRIPTION": "Apply Asleep to ALL enemies. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Apply Asleep to ALL enemies. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaSolarBeam": {
         "NAME": "Solar Beam",
