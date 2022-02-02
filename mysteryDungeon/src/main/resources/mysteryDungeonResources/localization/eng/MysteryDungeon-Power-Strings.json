@@ -6,6 +6,13 @@
             "Whenever you enter or exit a #yStance, draw #b%s cards."
         ]
     },
+    "mysteryDungeon:AromatherapyPower": {
+        "NAME": "Aromatherapy",
+        "DESCRIPTIONS": [
+            "Whenever you take damage, gain #b%s Strength.",
+            "Whenever you take damage, gain #b%s Strength."
+        ]
+    },
     "mysteryDungeon:AsleepPower": {
         "NAME": "Asleep",
         "DESCRIPTIONS": [

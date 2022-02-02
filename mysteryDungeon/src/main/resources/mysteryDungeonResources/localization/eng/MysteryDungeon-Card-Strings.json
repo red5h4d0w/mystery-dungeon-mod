@@ -359,6 +359,10 @@
         "DESCRIPTION": "Apply X Weak. NL Apply 3X mysterydungeon:Burn. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. NL Exhaust."
     },
+    "mysteryDungeon:ChikoritaAromatherapy": {
+        "NAME": "Aromatherapy",
+        "DESCRIPTION": "Whenever you take damage, gain !M! Strength."
+    },
     "mysteryDungeon:ChikoritaDefend": {
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! Block."
@@ -366,6 +370,10 @@
     "mysteryDungeon:ChikoritaGrowl": {
         "NAME": "Growl",
         "DESCRIPTION": "Apply !M! Weak to ALL enemies."
+    },
+    "mysteryDungeon:ChikoritaMagicCoat": {
+        "NAME": "Magic Coat",
+        "DESCRIPTION": "Gain !M! Temporary Hp. NL This turn All self damage received will also be inflicted to ALL enemies."
     },
     "mysteryDungeon:ChikoritaPetalBlizzard": {
         "NAME": "Petal Blizzard",
