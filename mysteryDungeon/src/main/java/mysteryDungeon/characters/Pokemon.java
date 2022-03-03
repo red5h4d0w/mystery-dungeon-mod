@@ -420,6 +420,9 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         if(hasChosenPikachu()) {
             AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2, new LightBallRelic());
         }
+        if(hasChosenChikorita()) {
+            AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2, new BigRootRelic());
+        }
     }
 
     public void awardThingsToAward() {
@@ -614,6 +617,22 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
                     return true;
                 }
                 if(partner.cardColor == Enums.PIKACHU_YELLOW)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public static boolean hasChosenChikorita() {
+        if(AbstractDungeon.player instanceof Pokemon) {
+            if(((Pokemon)AbstractDungeon.player).hasChosenStarters()) {
+                if(adventurer.cardColor == Enums.CHIKORITA_GREEN)
+                {
+                    return true;
+                }
+                if(partner.cardColor == Enums.CHIKORITA_GREEN)
                 {
                     return true;
                 }
