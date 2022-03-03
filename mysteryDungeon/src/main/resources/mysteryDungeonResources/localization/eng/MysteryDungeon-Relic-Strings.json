@@ -14,6 +14,13 @@
             "You will receive a relic that depends on your nature."
         ]
     },
+    "mysteryDungeon:BigRootRelic": {
+        "NAME": "Big Root",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "Whenever you are at 80% or less of your max Hp, gain Reovery."
+        ]
+    },
     "mysteryDungeon:BraveExplorerRelic": {
         "NAME": "Brave Explorer",
         "FLAVOR": "A brave Explorer",
