@@ -9,6 +9,7 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.OnLoseTempHpPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -20,7 +21,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class AromatherapyPower extends PokemonPower implements CloneablePowerInterface {
+public class AromatherapyPower extends PokemonPower implements CloneablePowerInterface, OnLoseTempHpPower  {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("AromatherapyPower");
@@ -52,12 +53,16 @@ public class AromatherapyPower extends PokemonPower implements CloneablePowerInt
 
     public void wasHPLost(DamageInfo info, int damageAmount) {
         flash();
-        addToTop((AbstractGameAction)new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount), this.amount));
+        addToBot((AbstractGameAction)new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount), this.amount));
     }
 
-    public void wasTempHPLost(DamageInfo info, int damageAmount) {
-        flash();
-        addToTop((AbstractGameAction)new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount), this.amount));
+    public int onLoseTempHp(DamageInfo info, int damageAmount) {
+        if (damageAmount > 0) {
+            flash();
+            if (this.owner == null || this.owner.isPlayer) {
+                addToBot((AbstractGameAction)new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount), this.amount));
+            }
+        }
     }
     @Override
     public AbstractPower makeCopy() {
