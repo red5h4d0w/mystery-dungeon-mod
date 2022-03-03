@@ -63,6 +63,7 @@ public class AromatherapyPower extends PokemonPower implements CloneablePowerInt
                 addToBot((AbstractGameAction)new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount), this.amount));
             }
         }
+        return damageAmount;
     }
     @Override
     public AbstractPower makeCopy() {
