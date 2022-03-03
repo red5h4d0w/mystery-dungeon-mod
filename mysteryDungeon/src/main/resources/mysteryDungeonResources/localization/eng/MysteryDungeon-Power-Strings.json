@@ -115,6 +115,12 @@
         "NAME": "Lock-Down",
         "DESCRIPTIONS": ["At the end of the turn, do not return automatically to the center of the charge gauge."]
     },
+    "mysteryDungeon:MagicCoatPower": {
+        "NAME": "Magic Coat",
+        "DESCRIPTIONS": [
+            "This turn All self damage received will also be inflicted to ALL enemies."
+        ]
+    },
     "mysteryDungeon:NextTurnDrawLessPower": {
         "NAME": "Next Turn Draw Less Cards",
         "DESCRIPTIONS": [

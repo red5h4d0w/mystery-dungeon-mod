@@ -367,9 +367,18 @@
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! Block."
     },
+    "mysteryDungeon:ChikoritaGrassWhistle": {
+        "NAME": "Grass Whistle",
+        "DESCRIPTION": "Apply Asleep to ALL enemies. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Apply Asleep to ALL enemies. NL Exhaust."
+    },
     "mysteryDungeon:ChikoritaGrowl": {
         "NAME": "Growl",
         "DESCRIPTION": "Apply !M! Weak to ALL enemies."
+    },
+    "mysteryDungeon:ChikoritaLeafStorm": {
+        "NAME": "Leaf Storm",
+        "DESCRIPTION": "Lose 1 Hp !M! times. NL Deal !D! damage !M! times."
     },
     "mysteryDungeon:ChikoritaMagicCoat": {
         "NAME": "Magic Coat",
@@ -401,10 +410,10 @@
         "NAME": "Seed Bomb",
         "DESCRIPTION": "Deal !D! damage to a random enemy X times."
     },
-    "mysteryDungeon:ChikoritaGrassWhistle": {
-        "NAME": "Grass Whistle",
-        "DESCRIPTION": "Apply Asleep to ALL enemies. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Apply Asleep to ALL enemies. NL Exhaust."
+    "mysteryDungeon:ChikoritaSnore": {
+        "NAME": "Snore",
+        "DESCRIPTION": "If the enemy intends to attack, apply 1 Asleep. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "If the enemy intends to attack, apply 1 Asleep."
     },
     "mysteryDungeon:ChikoritaSolarBeam": {
         "NAME": "Solar Beam",
