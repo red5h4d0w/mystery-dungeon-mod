@@ -3,6 +3,7 @@ package mysteryDungeon.cards.Chikorita;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -11,6 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.powers.MagicCoatPower;
 
 public class ChikoritaMagicCoat extends PokemonCard {
 
@@ -49,6 +51,7 @@ public class ChikoritaMagicCoat extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new AddTemporaryHPAction(p, p, magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new MagicCoatPower(p, 1), 1));
     }
 
     // Upgraded stats.
