@@ -376,6 +376,11 @@
         "NAME": "Growl",
         "DESCRIPTION": "Apply !M! Weak to ALL enemies."
     },
+    "mysteryDungeon:ChikoritaHealPulse": {
+        "NAME": "Heal Pulse",
+        "DESCRIPTION": "Whenever you inflict self damage or gain hp during your turn, gain !M! block.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you inflict self damage or gain hp during your turn, gain !M! block."
+    },
     "mysteryDungeon:ChikoritaLeafStorm": {
         "NAME": "Leaf Storm",
         "DESCRIPTION": "Lose 1 Hp !M! times. NL Deal !D! damage !M! times."

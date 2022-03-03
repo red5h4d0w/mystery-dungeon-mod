@@ -96,6 +96,12 @@
         "NAME": "Hail",
         "DESCRIPTIONS": ["Whenever you draw a card deal #b%s damage to all enemies"]
     },
+    "mysteryDungeon:HealPulsePower": {
+        "NAME": "HealPulse",
+        "DESCRIPTIONS": [
+            "Whenever you inflict self damage or gain hp during your turn, gain #b%s block."
+        ]
+    },
     "mysteryDungeon:HeatCrashPower": {
         "NAME": "Heat Crash",
         "DESCRIPTIONS": [
@@ -171,7 +177,7 @@
         "NAME": "Rain Dish",
         "DESCRIPTIONS": ["When you manually scry or disacrd a card, gain #b%s #yBlock."]
     },
-    "mysteryDungeon:Recover": {
+    "mysteryDungeon:RecoverPower": {
         "NAME": "Recover",
         "DESCRIPTIONS": [
             "When this creature receives damage, increase the number of stacks by as much damage you received. NL When you deal damage, heal 20%% of damage dealt up to #b%s."
