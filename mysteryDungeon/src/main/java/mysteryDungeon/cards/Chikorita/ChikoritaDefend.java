@@ -26,7 +26,6 @@ public class ChikoritaDefend extends PokemonCard {
 
     // /TEXT DECLARATION/
 
-
     // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.BASIC;
@@ -37,7 +36,6 @@ public class ChikoritaDefend extends PokemonCard {
     private static final int COST = 1;
     private static final int BLOCK = 5;
     private static final int UPGRADE_PLUS_BLOCK = 3;
-
 
     // /STAT DECLARATION/
 

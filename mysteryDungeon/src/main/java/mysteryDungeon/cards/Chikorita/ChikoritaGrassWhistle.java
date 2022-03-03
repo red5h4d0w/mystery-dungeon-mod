@@ -25,9 +25,7 @@ public class ChikoritaGrassWhistle extends PokemonCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
-
     // /TEXT DECLARATION/
-
 
     // STAT DECLARATION
 
@@ -38,7 +36,6 @@ public class ChikoritaGrassWhistle extends PokemonCard {
 
     private static final int COST = 1;
     private static final int BASE_MAGIC_NUMBER = 1;
-
 
     // /STAT DECLARATION/
 
@@ -56,8 +53,8 @@ public class ChikoritaGrassWhistle extends PokemonCard {
             for (AbstractMonster monster : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                 if (!monster.isDead && !monster.isDying) {
                     addToBot(new ApplyPowerAction(monster, p, new AsleepPower(monster, magicNumber), this.magicNumber));
-                } 
-            } 
+                }
+            }
         }
     }
 

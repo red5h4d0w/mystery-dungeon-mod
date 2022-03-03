@@ -18,7 +18,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 
-public class BraveExplorerRelic extends PokemonRelic { 
+public class BraveExplorerRelic extends PokemonRelic {
 
     // ID, images, text.
     public static final String ID = MysteryDungeon.makeID(BraveExplorerRelic.class.getSimpleName());
@@ -52,25 +52,24 @@ public class BraveExplorerRelic extends PokemonRelic {
             used = true;
         }
     }
-      
+
     public void atTurnStart() {
         trigger = false;
         if (AbstractDungeon.player.currentBlock == 0 && !used)
-            beginLongPulse(); 
+            beginLongPulse();
     }
-      
+
     public int onPlayerGainedBlock(float blockAmount) {
         if (blockAmount > 0.0F)
-            stopPulse(); 
+            stopPulse();
         return MathUtils.floor(blockAmount);
     }
 
     @Override
-    public void atPreBattle()
-    {
+    public void atPreBattle() {
         used = false;
     }
-      
+
     public void onVictory() {
         stopPulse();
     }
