@@ -1,29 +1,33 @@
 package mysteryDungeon.powers;
 
+import basemod.devcommands.hand.Hand;
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonPower;
+import mysteryDungeon.cards.Chikorita.ChikoritaFuryCutter;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.OnLoseTempHpPower;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+
 
 //Gain 1 dex for the turn for each card played.
 
-public class HealPulsePower extends PokemonPower implements CloneablePowerInterface, OnLoseTempHpPower  {
+public class FuryCutterPower extends PokemonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("HealPulsePower");
+    public static final String POWER_ID = MysteryDungeon.makeID("FuryCutterPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -31,10 +35,10 @@ public class HealPulsePower extends PokemonPower implements CloneablePowerInterf
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
     // There's a fallback "missing texture" image, so the game shouldn't crash if you accidentally put a non-existent file.
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(HealPulsePower.class.getSimpleName()+"84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(HealPulsePower.class.getSimpleName()+"32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(FuryCutterPower.class.getSimpleName()+"84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(FuryCutterPower.class.getSimpleName()+"32.png"));
 
-    public HealPulsePower(final AbstractCreature owner, final int amount) {
+    public FuryCutterPower(final AbstractCreature owner, final int amount) {
         name = NAME;
         ID = POWER_ID;
 
@@ -49,32 +53,16 @@ public class HealPulsePower extends PokemonPower implements CloneablePowerInterf
 
         updateDescription();
     }
-    public int onHeal(int healAmount) {
-        flash();
-        if(healAmount > 0)
-            addToBot((AbstractGameAction)new GainBlockAction(this.owner, owner, amount));
-        return healAmount;
-    }
 
-    public void wasHPLost(DamageInfo info, int damageAmount) {
-        if (damageAmount > 0 && info.owner == this.owner){
-        flash();
-        addToBot((AbstractGameAction)new GainBlockAction(this.owner, owner, amount));
-        }
-    }
+    public void atStartOfTurnPostDraw(AbstractPlayer p, AbstractMonster m) {
+        AbstractCard cardToAdd = new ChikoritaFuryCutter();
+        addToBot(new MoveCardsAction(p.hand, p.exhaustPile, cardToAdd, callback));
+        
+    } 
 
-    public int onLoseTempHp(DamageInfo info, int damageAmount) {
-        if (damageAmount > 0 && info.owner == this.owner) {
-            flash();
-            if (this.owner == null || this.owner.isPlayer) {
-                addToBot((AbstractGameAction)new GainBlockAction(this.owner, owner, amount));
-            }
-        }
-        return damageAmount;
-    }
     @Override
     public AbstractPower makeCopy() {
-        return new HealPulsePower(owner, amount);
+        return new FuryCutterPower(owner, amount);
     }
 
     @Override

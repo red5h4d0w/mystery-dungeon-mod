@@ -92,6 +92,12 @@
             "At the end of your turn choose up to #b%s card to #yretain. NL Those cards become #yEthereal."
         ]
     },
+    "mysteryDungeon:FuryCutterPower": {
+        "NAME": "Fury Cutter",
+        "DESCRIPTIONS": [
+            "Next Turn create #b%s Fury Cutter in your hand"
+        ]
+    },
     "mysteryDungeon:HailPower": {
         "NAME": "Hail",
         "DESCRIPTIONS": ["Whenever you draw a card deal #b%s damage to all enemies"]
