@@ -14,6 +14,13 @@
             "Vous receverez une relique dépendant de votre nature."
         ]
     },
+    "mysteryDungeon:BigRootRelic": {
+        "NAME": "Grosse Racine",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "Quand vous êtes à #b80% de #yPV ou moins, gagnez #ySoin."
+        ]
+    },
     "mysteryDungeon:BraveExplorerRelic": {
         "NAME": "Explorateur Brave",
         "FLAVOR": "What is this?",
