@@ -62,9 +62,9 @@ public class ChikoritaFuryCutter extends PokemonCard {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SLASH_DIAGONAL));
         addToBot(new ModifyDamageAction(uuid, magicNumber));
         if(!upgraded)
-        addToBot(new ApplyPowerAction(p, p, new FuryCutterPower(p, 1, false), 1));
+        addToBot(new ApplyPowerAction(p, p, new FuryCutterPower(p, 1, 0), 1));
         else
-        addToBot(new ApplyPowerAction(p, p, new FuryCutterPower(p, 1, true), 1));
+        addToBot(new ApplyPowerAction(p, p, new FuryCutterPower(p, 0, 1), 1));
         
     
     }
