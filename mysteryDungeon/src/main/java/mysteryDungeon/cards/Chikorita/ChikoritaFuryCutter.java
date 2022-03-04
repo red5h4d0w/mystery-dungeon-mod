@@ -55,21 +55,14 @@ public class ChikoritaFuryCutter extends PokemonCard {
         goBack = false;
     }
 
-    @Override
-    public void atTurnStart() {
-        if (goBack)
-            addToBot(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.exhaustPile,
-                    card -> card == this));
-        super.atTurnStart();
-    }
-
     // Actions the card should do.
     @Override
     @SuppressWarnings("all") // Removes a warning for the type cast
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SLASH_DIAGONAL));
         addToBot(new ModifyDamageAction(uuid, magicNumber));
-        goBack = true;
+        AbstractDungeon.actionManager.addToTurnStart(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.exhaustPile,
+        card -> card == this));
     }
 
     // Upgraded stats.
