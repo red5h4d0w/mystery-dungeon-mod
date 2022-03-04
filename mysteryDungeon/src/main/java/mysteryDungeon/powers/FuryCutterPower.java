@@ -11,6 +11,7 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -18,10 +19,14 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 //Gain 1 dex for the turn for each card played.
 
 public class FuryCutterPower extends PokemonPower implements CloneablePowerInterface {
+    public Logger logger = LogManager.getLogger(FuryCutterPower.class);
     public AbstractCreature source;
     public boolean upgrade;
     public static final String POWER_ID = MysteryDungeon.makeID("FuryCutterPower");
@@ -53,6 +58,11 @@ public class FuryCutterPower extends PokemonPower implements CloneablePowerInter
     }
 
     public void atStartOfTurnPostDraw(AbstractPlayer p, AbstractMonster m) {
+        for (AbstractCard card : p.exhaustPile.group) {
+            if (card.cardID == ChikoritaFuryCutter.ID) {
+                logger.info("message");
+            }
+        }
         addToBot(new MoveCardsAction(p.hand, p.exhaustPile, card -> card.cardID == ChikoritaFuryCutter.ID, amount));
         
     } 
