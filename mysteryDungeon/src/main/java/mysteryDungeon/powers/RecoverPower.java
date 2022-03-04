@@ -73,6 +73,8 @@ public class RecoverPower extends PokemonTwoAmountPower implements CloneablePowe
     @Override
     public int onHeal(int healAmount) {
         amount -= healAmount;
+        if(amount < 0)
+            amount = 0;
         updateDescription();
         return super.onHeal(healAmount);
     }
