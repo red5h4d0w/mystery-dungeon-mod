@@ -49,9 +49,10 @@ public class HealPulsePower extends PokemonPower implements CloneablePowerInterf
 
         updateDescription();
     }
-    public void onHeal(DamageInfo info, int healAmount) {
+    public int onHeal(int healAmount) {
         flash();
         addToBot((AbstractGameAction)new GainBlockAction(this.owner, owner, amount));
+        return healAmount;
     }
 
     public void wasHPLost(DamageInfo info, int damageAmount) {
