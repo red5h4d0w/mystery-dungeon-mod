@@ -20,19 +20,22 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class HealPulsePower extends PokemonPower implements CloneablePowerInterface, OnLoseTempHpPower  {
+public class HealPulsePower extends PokemonPower implements CloneablePowerInterface, OnLoseTempHpPower {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("HealPulsePower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    
 
-    // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
-    // There's a fallback "missing texture" image, so the game shouldn't crash if you accidentally put a non-existent file.
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(HealPulsePower.class.getSimpleName()+"84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(HealPulsePower.class.getSimpleName()+"32.png"));
+    // We create 2 new textures *Using This Specific Texture Loader* - an 84x84
+    // image and a 32x32 one.
+    // There's a fallback "missing texture" image, so the game shouldn't crash if
+    // you accidentally put a non-existent file.
+    private static final Texture tex84 = TextureLoader
+            .getTexture(makePowerPath(HealPulsePower.class.getSimpleName() + "84.png"));
+    private static final Texture tex32 = TextureLoader
+            .getTexture(makePowerPath(HealPulsePower.class.getSimpleName() + "32.png"));
 
     public HealPulsePower(final AbstractCreature owner, final int amount) {
         name = NAME;
@@ -49,17 +52,18 @@ public class HealPulsePower extends PokemonPower implements CloneablePowerInterf
 
         updateDescription();
     }
+
     public int onHeal(int healAmount) {
         flash();
-        if(healAmount > 0)
-            addToBot((AbstractGameAction)new GainBlockAction(this.owner, owner, amount));
+        if (healAmount > 0)
+            addToBot((AbstractGameAction) new GainBlockAction(this.owner, owner, amount));
         return healAmount;
     }
 
     public void wasHPLost(DamageInfo info, int damageAmount) {
-        if (damageAmount > 0 && info.owner == this.owner){
-        flash();
-        addToBot((AbstractGameAction)new GainBlockAction(this.owner, owner, amount));
+        if (damageAmount > 0 && info.owner == this.owner) {
+            flash();
+            addToBot((AbstractGameAction) new GainBlockAction(this.owner, owner, amount));
         }
     }
 
@@ -67,11 +71,12 @@ public class HealPulsePower extends PokemonPower implements CloneablePowerInterf
         if (damageAmount > 0 && info.owner == this.owner) {
             flash();
             if (this.owner == null || this.owner.isPlayer) {
-                addToBot((AbstractGameAction)new GainBlockAction(this.owner, owner, amount));
+                addToBot((AbstractGameAction) new GainBlockAction(this.owner, owner, amount));
             }
         }
         return damageAmount;
     }
+
     @Override
     public AbstractPower makeCopy() {
         return new HealPulsePower(owner, amount);
