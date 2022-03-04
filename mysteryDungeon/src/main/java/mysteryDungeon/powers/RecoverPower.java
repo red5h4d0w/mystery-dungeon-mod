@@ -15,6 +15,7 @@ import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -63,11 +64,12 @@ public class RecoverPower extends PokemonTwoAmountPower implements CloneablePowe
 
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
+        if(info.type!=DamageType.NORMAL) {
+            super.onAttack(info, damageAmount, target);
+            return;
+        }
         addToBot(new HealAction(owner, owner, Math.min(MathUtils.floor(0.2f * damageAmount), amount)));
         amount -= Math.min(MathUtils.floor(0.2f * damageAmount), amount);
-        if (amount==0) {
-            addToBot(new RemoveSpecificPowerAction(owner, owner, this));
-        }
         super.onAttack(info, damageAmount, target);
     }
 

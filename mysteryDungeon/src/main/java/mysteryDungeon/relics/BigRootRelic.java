@@ -16,7 +16,7 @@ import mysteryDungeon.util.TextureLoader;
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
-public class BigRootRelic extends PokemonRelic  {
+public class BigRootRelic extends PokemonRelic {
     public static final String ID = MysteryDungeon.makeID(BigRootRelic.class.getSimpleName());
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
@@ -32,16 +32,19 @@ public class BigRootRelic extends PokemonRelic  {
     @Override
     public void atTurnStart() {
         AbstractPlayer p = AbstractDungeon.player;
-        if (p.currentHealth < p.maxHealth-0.2f){
-            addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new RecoverPower(AbstractDungeon.player, 0), 0));
+        if (p.currentHealth < p.maxHealth * 0.8f) {
+            addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
+                    new RecoverPower(AbstractDungeon.player, 0), 0));
         }
     }
+
     @Override
-    public void onPlayerEndTurn()  {
+    public void onPlayerEndTurn() {
         AbstractPlayer p = AbstractDungeon.player;
-        if (p.currentHealth >= p.maxHealth-0.2f)
-        addToBot(new RemoveSpecificPowerAction(p, p, new RecoverPower(p, 0)));
+        if (p.currentHealth >= p.maxHealth * 0.8f)
+            addToBot(new RemoveSpecificPowerAction(p, p, new RecoverPower(p, 0)));
     }
+
     // Description
     @Override
     public String getUpdatedDescription() {
