@@ -11,7 +11,6 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -54,10 +53,7 @@ public class FuryCutterPower extends PokemonPower implements CloneablePowerInter
     }
 
     public void atStartOfTurnPostDraw(AbstractPlayer p, AbstractMonster m) {
-        AbstractCard cardToAdd = new ChikoritaFuryCutter();
-        if(upgrade)
-            cardToAdd.upgrade();
-        addToBot(new MoveCardsAction(p.hand, p.exhaustPile, 1));
+        addToBot(new MoveCardsAction(p.hand, p.exhaustPile, card -> card.cardID == ChikoritaFuryCutter.ID, amount));
         
     } 
 
