@@ -410,6 +410,10 @@
         "DESCRIPTION": "When you receive damage, gain Recover stacks for each damage you received. NL When you deal damage, heal 20%% of damage dealt up to the number of Recover stacks. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. NL Exhaust."
     },
+    "mysteryDungeon:ChikoritaRefresh": {
+        "NAME": "Refresh",
+        "DESCRIPTION": "Gain !M! Temporary Hp."
+    },
     "mysteryDungeon:ChikoritaSecretPower": {
         "NAME": "Secret Power",
         "DESCRIPTION": "Innate. NL Add random Power in your hand. NL Exhaust.",
