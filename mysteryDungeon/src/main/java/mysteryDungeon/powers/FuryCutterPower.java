@@ -1,6 +1,5 @@
 package mysteryDungeon.powers;
 
-import basemod.devcommands.hand.Hand;
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonPower;
@@ -12,7 +11,6 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -26,7 +24,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class FuryCutterPower extends PokemonPower implements CloneablePowerInterface {
     public AbstractCreature source;
-
+    public boolean upgrade;
     public static final String POWER_ID = MysteryDungeon.makeID("FuryCutterPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
@@ -38,12 +36,13 @@ public class FuryCutterPower extends PokemonPower implements CloneablePowerInter
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(FuryCutterPower.class.getSimpleName()+"84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(FuryCutterPower.class.getSimpleName()+"32.png"));
 
-    public FuryCutterPower(final AbstractCreature owner, final int amount) {
+    public FuryCutterPower(final AbstractCreature owner, final int amount, final boolean upgrade) {
         name = NAME;
         ID = POWER_ID;
 
         this.owner = owner;
         this.amount = amount;
+        this.upgrade = upgrade;
 
         type = PowerType.BUFF;
 
@@ -56,13 +55,15 @@ public class FuryCutterPower extends PokemonPower implements CloneablePowerInter
 
     public void atStartOfTurnPostDraw(AbstractPlayer p, AbstractMonster m) {
         AbstractCard cardToAdd = new ChikoritaFuryCutter();
-        addToBot(new MoveCardsAction(p.hand, p.exhaustPile, cardToAdd, callback));
+        if(upgrade)
+            cardToAdd.upgrade();
+        addToBot(new MoveCardsAction(p.hand, p.exhaustPile, 1));
         
     } 
 
     @Override
     public AbstractPower makeCopy() {
-        return new FuryCutterPower(owner, amount);
+        return new FuryCutterPower(owner, amount, upgrade);
     }
 
     @Override
