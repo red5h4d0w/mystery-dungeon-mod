@@ -42,6 +42,8 @@ public class ChikoritaFuryCutter extends PokemonCard {
     private static final int UPGRADE_MAGIC_NUMBER = 4;
 
     public boolean goBack;
+    public boolean wasPlayed;
+    public boolean turnHasEnded;
 
     // /STAT DECLARATION/
 
@@ -53,6 +55,8 @@ public class ChikoritaFuryCutter extends PokemonCard {
         isEthereal = true;
         exhaust = true;
         goBack = false;
+        wasPlayed = false;
+        
     }
 
     // Actions the card should do.
@@ -61,8 +65,15 @@ public class ChikoritaFuryCutter extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SLASH_DIAGONAL));
         addToBot(new ModifyDamageAction(uuid, magicNumber));
-        AbstractDungeon.actionManager.addToTurnStart(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.exhaustPile,
-        card -> card == this));
+        wasPlayed = true;
+    }
+
+    @SuppressWarnings("all") // Removes a warning for the type cast
+    public void triggerOnEndOfPlayerTurn(){
+            if(wasPlayed = true){
+            AbstractDungeon.actionManager.addToTurnStart(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.exhaustPile, card -> card == this));
+            wasPlayed = false;
+            }
     }
 
     // Upgraded stats.
