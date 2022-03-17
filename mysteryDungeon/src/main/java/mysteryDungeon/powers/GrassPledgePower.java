@@ -3,30 +3,28 @@ package mysteryDungeon.powers;
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonPower;
-import mysteryDungeon.interfaces.onDyingInterface;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.BetterOnApplyPowerPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
-import com.megacrit.cardcrawl.actions.utility.UseCardAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.CardQueueItem;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.PoisonPower;
+import com.megacrit.cardcrawl.powers.WeakPower;
 
 
 //Gain 1 dex for the turn for each card played.
 
-public class GrassPledgePower extends PokemonPower implements CloneablePowerInterface, onDyingInterface {
+public class GrassPledgePower extends PokemonPower implements CloneablePowerInterface, BetterOnApplyPowerPower {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("GrassPledgePower");
@@ -57,25 +55,31 @@ public class GrassPledgePower extends PokemonPower implements CloneablePowerInte
     }
 
     
-    public void onUseCard(com.megacrit.cardcrawl.powers.AbstractPower power, com.megacrit.cardcrawl.core.AbstractCreature target, com.megacrit.cardcrawl.core.AbstractCreature source) {
-        if(AbstractPower.power == new(WaterPledgePower(AbstractPlayer.player, AbstractPlayer.player))){
+    public boolean betterOnApplyPower(com.megacrit.cardcrawl.powers.AbstractPower power, com.megacrit.cardcrawl.core.AbstractCreature target, com.megacrit.cardcrawl.core.AbstractCreature source) {
+        if(power instanceof WaterPledgePower){
             if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
                 for (AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters) {
                     if (!monster.isDead && !monster.isDying) {
-                        addToBot(new ApplyPowerAction(AbstractMonster.monster, AbstractPlayer.p, new WeakPower(AbstractMonster.monster, AbstractPlayer.p, 2), 2));
+                        addToBot(new ApplyPowerAction(monster, target, new WeakPower(monster, 2, false), 2));
                     }
                 } 
             } 
+            addToBot(new RemoveSpecificPowerAction(target, source, this));
+            return false;
         }
-        if(AbstractPower.power == new(FirePledgePower(AbstractPlayer.player, AbstractPlayer.player))){
+        if(power instanceof FirePledgePower){
             if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
                 for (AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters) {
                     if (!monster.isDead && !monster.isDying) {
-                        addToBot(new ApplyPowerAction(AbstractMonster.monster, AbstractPlayer.p, new PoisonPower(AbstractMonster.monster, AbstractPlayer.p, 9), 9));
+                        addToBot(new ApplyPowerAction(monster, target, new PoisonPower(monster, target, 9), 2));
                     }
                 } 
-            } 
+            }
+            addToBot(new RemoveSpecificPowerAction(target, source, this));
+            return false;  
         }
+        else
+        return true;
     }
 
     public void atEndOfTurn(boolean isPlayer) {

@@ -1,24 +1,27 @@
-package mysteryDungeon.cards.Chikorita;
+package mysteryDungeon.cards.Cyndaquil;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.FlameAnimationEffect;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.GrassPledgePower;
+import mysteryDungeon.powers.BurnPower;
+import mysteryDungeon.powers.FirePledgePower;
 
-public class ChikoritaGrassPledge extends PokemonCard {
+public class CyndaquilFirePledge extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(ChikoritaGrassPledge.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CyndaquilFirePledge.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("Skill.png");
     public static final String NAME = cardStrings.NAME;
@@ -35,12 +38,12 @@ public class ChikoritaGrassPledge extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CHIKORITA_GREEN;
 
     private static final int COST = 1;
-    private static final int BASE_MAGIC_NUMBER = 6;
+    private static final int BASE_MAGIC_NUMBER = 10;
     private static final int UPGRADE_MAGIC_NUMBER = 3;
 
     // /STAT DECLARATION/
 
-    public ChikoritaGrassPledge() {
+    public CyndaquilFirePledge() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
@@ -49,8 +52,15 @@ public class ChikoritaGrassPledge extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new AddTemporaryHPAction(p, p, magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new GrassPledgePower(p, 1)));
+        if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+            for (AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters) {
+                if (!monster.isDead && !monster.isDying) {
+                    addToBot(new VFXAction(new FlameAnimationEffect(monster.hb)));
+                    addToBot(new ApplyPowerAction(monster, p, new BurnPower(monster, this.magicNumber), this.magicNumber));
+                } 
+            } 
+        }
+        addToBot(new ApplyPowerAction(p, p, new FirePledgePower(p, 1)));
     }
 
     // Upgraded stats.

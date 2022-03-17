@@ -67,8 +67,8 @@ public class RecoverPower extends PokemonTwoAmountPower implements CloneablePowe
             super.onAttack(info, damageAmount, target);
             return;
         }
-        addToBot(new HealAction(owner, owner, Math.min(MathUtils.floor(0.2f * damageAmount), amount)));
-        amount -= Math.min(MathUtils.floor(0.2f * damageAmount), amount);
+        addToBot(new HealAction(owner, owner, Math.min(MathUtils.floor(0.3f * damageAmount), amount)));
+        amount -= Math.min(MathUtils.floor(0.3f * damageAmount), amount);
         super.onAttack(info, damageAmount, target);
     }
 
