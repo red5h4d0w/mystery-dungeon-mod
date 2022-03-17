@@ -23,7 +23,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class RecoverPower extends PokemonTwoAmountPower implements CloneablePowerInterface, OnLoseTempHpPower {
+public class RecoverPower extends PokemonTwoAmountPower implements  CloneablePowerInterface, OnLoseTempHpPower {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("RecoverPower");
@@ -78,12 +78,13 @@ public class RecoverPower extends PokemonTwoAmountPower implements CloneablePowe
         amount2 += MathUtils.floor(damageAmount);
         return super.onAttacked(info, damageAmount);
     }
-    
+
     @Override
     public int onLoseTempHp(DamageInfo info, int damageAmount) {
         amount2 += MathUtils.floor(damageAmount);
-        return super.OnLoseTempHpPower(info, damageAmount);
+        return super.onLoseTempHp(info, damageAmount);
     }
+
     @Override
     public void atEndOfRound() {
         super.atEndOfRound();

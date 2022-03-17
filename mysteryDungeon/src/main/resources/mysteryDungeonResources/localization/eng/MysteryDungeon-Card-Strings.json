@@ -371,6 +371,10 @@
         "NAME": "Fury Cutter",
         "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Increase this card damage by !M! this combat. NL Create a copy of that card in your hand next turn. NL Exhaust."
     },
+    "mysteryDungeon:ChikoritaGrassKnot": {
+        "NAME": "Grass Knot",
+        "DESCRIPTION": "Remove 25% of the enemy's health. NL Exhaust."
+    },
     "mysteryDungeon:ChikoritaGrassPledge": {
         "NAME": "Grass Pledge",
         "DESCRIPTION": "Gain !M! Temporary Hp. NL If you play another Pledge card, activate a special effect."

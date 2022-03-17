@@ -5,7 +5,7 @@ import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class PokemonTwoAmountPower extends TwoAmountPower {
+public class PokemonTwoAmountPower extends TwoAmountPower  {
     
     @Override
     public void stackPower(int stackAmount)
