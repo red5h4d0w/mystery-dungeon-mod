@@ -148,6 +148,12 @@
             "Next Turn, Draw #b%s less cards."
         ]
     },
+    "mysteryDungeon:NextTurnLoseHpPower": {
+        "NAME": "Next Turn: Lose Hp",
+        "DESCRIPTIONS": [
+            "Next turn, Lose #b%s Hp."
+        ]
+    },
     "mysteryDungeon:NextTurnNoBlockPower": {
         "NAME": "Next Turn: No Block",
         "DESCRIPTIONS": [

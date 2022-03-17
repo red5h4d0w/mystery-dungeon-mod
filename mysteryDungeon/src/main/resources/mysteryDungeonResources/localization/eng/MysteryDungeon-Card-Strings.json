@@ -359,9 +359,17 @@
         "DESCRIPTION": "Apply X Weak. NL Apply 3X mysterydungeon:Burn. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. NL Exhaust."
     },
+    "mysteryDungeon:ChikoritaAncientPower": {
+        "NAME": "Ancient Power",
+        "DESCRIPTION": "Deal !D! damage. NL If you are missing more 20% of your health, deal !D! damage."
+    },
     "mysteryDungeon:ChikoritaAromatherapy": {
         "NAME": "Aromatherapy",
         "DESCRIPTION": "Whenever you take damage, gain !M! Strength."
+    },
+    "mysteryDungeon:ChikoritaBodySlam": {
+        "NAME": "Body Slam",
+        "DESCRIPTION": "Deal !D! damage. NL Next Turn Lose !M! Hp."
     },
     "mysteryDungeon:ChikoritaDefend": {
         "NAME": "Defend",
@@ -400,6 +408,10 @@
     "mysteryDungeon:ChikoritaMagicCoat": {
         "NAME": "Magic Coat",
         "DESCRIPTION": "Gain !M! Temporary Hp. NL This turn All self damage received will also be inflicted to ALL enemies."
+    },
+    "mysteryDungeon:ChikoritaMagicalLeaf": {
+        "NAME": "Magical Leaf",
+        "DESCRIPTION": "Deal !D! damage !M! times to random enemies."
     },
     "mysteryDungeon:ChikoritaPetalBlizzard": {
         "NAME": "Petal Blizzard",
