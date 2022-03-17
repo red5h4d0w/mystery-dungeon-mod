@@ -11,6 +11,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.math.MathUtils;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.OnLoseTempHpPower;
 // import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.HealthBarRenderPower;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -22,7 +23,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class RecoverPower extends PokemonTwoAmountPower implements CloneablePowerInterface {
+public class RecoverPower extends PokemonTwoAmountPower implements CloneablePowerInterface, OnLoseTempHpPower {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("RecoverPower");
@@ -77,7 +78,12 @@ public class RecoverPower extends PokemonTwoAmountPower implements CloneablePowe
         amount2 += MathUtils.floor(damageAmount);
         return super.onAttacked(info, damageAmount);
     }
-
+    
+    @Override
+    public int onLoseTempHp(DamageInfo info, int damageAmount) {
+        amount2 += MathUtils.floor(damageAmount);
+        return super.OnLoseTempHpPower(info, damageAmount);
+    }
     @Override
     public void atEndOfRound() {
         super.atEndOfRound();
