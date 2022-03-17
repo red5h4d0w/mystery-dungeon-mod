@@ -24,7 +24,6 @@ public class TotodileWaterPledge extends PokemonCard {
     public static final String IMG = makeCardPath("Skill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -64,7 +63,6 @@ public class TotodileWaterPledge extends PokemonCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
-            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

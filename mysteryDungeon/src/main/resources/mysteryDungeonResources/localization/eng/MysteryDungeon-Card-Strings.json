@@ -371,6 +371,10 @@
         "NAME": "Fury Cutter",
         "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Increase this card damage by !M! this combat. NL Create a copy of that card in your hand next turn. NL Exhaust."
     },
+    "mysteryDungeon:ChikoritaGrassPledge": {
+        "NAME": "Grass Pledge",
+        "DESCRIPTION": "Gain !M! Temporary Hp. NL If you play another Pledge card, activate a special effect."
+    },
     "mysteryDungeon:ChikoritaGrassWhistle": {
         "NAME": "Grass Whistle",
         "DESCRIPTION": "Apply Asleep to ALL enemies. NL Exhaust.",
@@ -452,6 +456,10 @@
     "mysteryDungeon:ChikoritaVineWhip": {
         "NAME": "Vine Whip",
         "DESCRIPTION": "Deal !D! damage. NL At the start of your next turn gain [E]."
+    },
+    "mysteryDungeon:CyndaquilFirePledge": {
+        "NAME": "Fire Pledge",
+        "DESCRIPTION": "Apply !M! Burn to all enemies. NL If you play another Pledge card, activate a special effect."
     },
     "mysteryDungeon:PikachuAgility": {
         "NAME": "Agility",
@@ -813,5 +821,9 @@
         "NAME": "Zen Headbutt",
         "DESCRIPTION": "Deal !D! damage NL Create a *Flinch and add it to your hand.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage NL Create an upgraded *Flinch and add it to your hand."
+    },
+    "mysteryDungeon:TotodileWaterPledge": {
+        "NAME": "Water Pledge",
+        "DESCRIPTION": "Channel !M! Frost orb. NL If you play another Pledge card, activate a special effect."
     }
 }

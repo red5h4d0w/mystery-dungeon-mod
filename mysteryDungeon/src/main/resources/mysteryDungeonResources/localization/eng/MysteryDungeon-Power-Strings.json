@@ -85,6 +85,10 @@
             "Enemy loses #b50%% of their Block at the end of their turn for #b%s turns."
         ]
     },
+    "mysteryDungeon:FirePledgePower": {
+        "NAME": "Fire Pledge",
+        "DESCRIPTIONS": ["When you play another Pledge card this turn, activate one of the following effects. NL Grass: Apply 9 Poison to all enemies. NL Water: Apply 2 vulnerable to all enemies."]
+    },
     "mysteryDungeon:FrustrationPower": {
         "NAME": "Frustration",
         "DESCRIPTIONS": [
@@ -97,6 +101,10 @@
         "DESCRIPTIONS": [
             "Next Turn create #b%s Fury Cutter in your hand"
         ]
+    },
+    "mysteryDungeon:GrassPledgePower": {
+        "NAME": "Grass Pledge",
+        "DESCRIPTIONS": ["When you play another Pledge card this turn, activate one of the following effects. NL Fire: Apply 9 Poison to all enemies. NL Water: Apply 2 weak to all enemies."]
     },
     "mysteryDungeon:HailPower": {
         "NAME": "Hail",
@@ -186,7 +194,7 @@
     "mysteryDungeon:RecoverPower": {
         "NAME": "Recover",
         "DESCRIPTIONS": [
-            "When this creature receives damage, increase the number of stacks by as much damage you received. NL When you deal damage, heal 20%% of damage dealt up to #b%s."
+            "When this creature receives damage, increase the number of stacks by as much damage you received. NL When you deal damage, heal 30%% of damage dealt up to #b%s."
         ]
     },
     "mysteryDungeon:ReduceHighestCostAtStartOfTurnPower": {
@@ -254,6 +262,10 @@
         "DESCRIPTIONS": [
             "Instead of decreasing by one every turn, the Poison on this enemy will increase by #b%s every turn."
         ]
+    },
+    "mysteryDungeon:WaterPledgePower": {
+        "NAME": "Water Pledge",
+        "DESCRIPTIONS": ["When you play another Pledge card this turn, activate one of the following effects. NL Grass: Apply 2 weak to all enemies. NL Fire: Apply 2 vulnerable to all enemies."]
     },
     "mysteryDungeon:WhirlpoolPower": {
         "NAME": "Whirlpool",
