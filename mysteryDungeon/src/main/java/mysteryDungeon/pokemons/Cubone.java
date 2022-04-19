@@ -19,7 +19,7 @@ public class Cubone extends AbstractPokemon {
         new BulbasaurTackle(), new BulbasaurTackle(), new BulbasaurDefend(), new BulbasaurDefend(), new BulbasaurLeechSeed()
     };
     public static Color COLOR = Color.GREEN.cpy();
-    public static CardColor CARD_COLOR = Pokemon.Enums.BULBASAUR_GREEN;
+    public static CardColor CARD_COLOR = Pokemon.Enums.NOT_IMPLEMENTED_COLOR;
     public static String PATH_TO_BACK_SPRITE = makeBackSpritePath(Cubone.class.getSimpleName()+".png");
 
     public Cubone(){
