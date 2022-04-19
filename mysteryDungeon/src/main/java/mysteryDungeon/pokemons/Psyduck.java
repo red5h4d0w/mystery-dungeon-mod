@@ -17,7 +17,7 @@ public class Psyduck extends AbstractPokemon {
         new BulbasaurTackle(), new BulbasaurTackle(), new BulbasaurDefend(), new BulbasaurDefend(), new BulbasaurLeechSeed()
     };
     public static Color COLOR = Color.GREEN.cpy();
-    public static CardColor CARD_COLOR = Pokemon.Enums.BULBASAUR_GREEN;
+    public static CardColor CARD_COLOR = Pokemon.Enums.NOT_IMPLEMENTED_COLOR;
 
     public Psyduck(){
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);

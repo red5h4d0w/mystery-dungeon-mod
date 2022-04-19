@@ -53,7 +53,7 @@ public class ThunderPower extends MysteryDungeonPower implements CloneablePowerI
 
     @Override
     public void onEvokeOrb(AbstractOrb orb) {
-        addToBot(new DamageAllEnemiesAction((AbstractPlayer)owner, amount, DamageType.NORMAL, AttackEffect.LIGHTNING));
+        addToBot(new DamageAllEnemiesAction((AbstractPlayer)owner, amount, DamageType.THORNS, AttackEffect.LIGHTNING));
         super.onEvokeOrb(orb);
     }
 
