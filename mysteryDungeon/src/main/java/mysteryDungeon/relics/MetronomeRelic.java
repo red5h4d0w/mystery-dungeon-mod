@@ -51,7 +51,7 @@ public class MetronomeRelic extends PokemonRelic {
                 .filter(c -> !c.tags.contains(CardTags.STARTER_DEFEND))
                 .filter(c -> !c.tags.contains(CardTags.STARTER_STRIKE))
                 .toArray(AbstractCard[]::new);
-            AbstractCard c = possibleCards[(int)AbstractDungeon.cardRng.random(possibleCards.length)];
+            AbstractCard c = possibleCards[(int)AbstractDungeon.cardRng.random(possibleCards.length-1)];
             c.setCostForTurn(0);
             addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, true));
             

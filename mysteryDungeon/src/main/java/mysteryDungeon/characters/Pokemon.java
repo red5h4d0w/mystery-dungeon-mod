@@ -131,6 +131,12 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         @SpireEnum(name = "TOTODILE_BLUE") 
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_TOTODILE_BLUE;
+        
+        @SpireEnum(name = "NOT_IMPLEMENTED_COLOR") // These two HAVE to have the same absolutely identical name.
+        public static AbstractCard.CardColor NOT_IMPLEMENTED_COLOR;
+        @SpireEnum(name = "NOT_IMPLEMENTED_COLOR") 
+        @SuppressWarnings("unused")
+        public static CardLibrary.LibraryType LIBRARY_NOT_IMPLEMENTED_COLOR;
     }
 
     // =============== CHARACTER ENUMERATORS  =================
