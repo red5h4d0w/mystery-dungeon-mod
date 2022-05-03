@@ -4,6 +4,7 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.common.ModifyDamageAction;
@@ -17,6 +18,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.powers.FuryCutterPower;
 
 public class ChikoritaFuryCutter extends PokemonCard {
 
@@ -65,6 +67,7 @@ public class ChikoritaFuryCutter extends PokemonCard {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SLASH_DIAGONAL));
         addToBot(new ModifyDamageAction(uuid, magicNumber));
         addToBot(new LoseHPAction(p, p, 2));
+        addToBot(new ApplyPowerAction(p, p, FuryCutterPower(p, 1, 0)));
     }
 
     @SuppressWarnings("all") // Removes a warning for the type cast

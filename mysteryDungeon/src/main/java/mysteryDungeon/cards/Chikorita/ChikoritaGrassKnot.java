@@ -50,6 +50,7 @@ public class ChikoritaGrassKnot extends PokemonCard {
     @Override
     @SuppressWarnings("all") // Removes a warning for the type cast
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new DamageAction(m, new DamageInfo(m, target.currentHealth * 0.25f, DamageType.HP_LOSS)));
     }
 
     // Upgraded stats.
