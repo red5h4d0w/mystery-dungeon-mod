@@ -5,6 +5,7 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.common.ModifyDamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -54,8 +55,6 @@ public class ChikoritaFuryCutter extends PokemonCard {
         magicNumber = baseMagicNumber;
         isEthereal = true;
         exhaust = true;
-        goBack = false;
-        wasPlayed = false;
         
     }
 
@@ -65,15 +64,12 @@ public class ChikoritaFuryCutter extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SLASH_DIAGONAL));
         addToBot(new ModifyDamageAction(uuid, magicNumber));
-        wasPlayed = true;
+        addToBot(new LoseHPAction(p, p, 2));
     }
 
     @SuppressWarnings("all") // Removes a warning for the type cast
-    public void triggerOnEndOfPlayerTurn(){
-            if(wasPlayed = true){
-            AbstractDungeon.actionManager.addToTurnStart(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.exhaustPile, card -> card == this));
-            wasPlayed = false;
-            }
+    public void triggerOnEndOfPlayerTurn(){ 
+        AbstractDungeon.actionManager.addToTurnStart(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.exhaustPile, card -> card == this));
     }
 
     // Upgraded stats.
