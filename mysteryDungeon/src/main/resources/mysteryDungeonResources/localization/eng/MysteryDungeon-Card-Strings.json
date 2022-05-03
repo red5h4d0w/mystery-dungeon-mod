@@ -377,7 +377,7 @@
     },
     "mysteryDungeon:ChikoritaFuryCutter": {
         "NAME": "Fury Cutter",
-        "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Increase this card damage by !M! this combat. NL Create a copy of that card in your hand next turn. NL Exhaust."
+        "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Increase this card damage by !M! this combat.NL Lose 1 Hp. NL Bring back a copy of that card in your hand next turn and lose 1 Hp NL Exhaust."
     },
     "mysteryDungeon:ChikoritaGrassKnot": {
         "NAME": "Grass Knot",
@@ -400,6 +400,10 @@
         "NAME": "Heal Pulse",
         "DESCRIPTION": "Whenever you inflict self damage or gain hp during your turn, gain !M! block.",
         "UPGRADE_DESCRIPTION": "Innate. NL Whenever you inflict self damage or gain hp during your turn, gain !M! block."
+    },
+    "mysteryDungeon:ChikoritaLeafGuard": {
+        "NAME": "Leaf Guard",
+        "DESCRIPTION": "At the start of your turn, remove all debuff you posses. for each debuff removed this way lose !M! Hp."
     },
     "mysteryDungeon:ChikoritaLeafStorm": {
         "NAME": "Leaf Storm",

@@ -2,7 +2,6 @@ package mysteryDungeon.cards.Chikorita;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -11,7 +10,6 @@ import com.megacrit.cardcrawl.actions.common.ModifyDamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -44,10 +42,6 @@ public class ChikoritaFuryCutter extends PokemonCard {
     private static final int BASE_MAGIC_NUMBER = 3;
     private static final int UPGRADE_MAGIC_NUMBER = 4;
 
-    public boolean goBack;
-    public boolean wasPlayed;
-    public boolean turnHasEnded;
-
     // /STAT DECLARATION/
 
     public ChikoritaFuryCutter() {
@@ -57,7 +51,7 @@ public class ChikoritaFuryCutter extends PokemonCard {
         magicNumber = baseMagicNumber;
         isEthereal = true;
         exhaust = true;
-        
+
     }
 
     // Actions the card should do.
@@ -66,13 +60,11 @@ public class ChikoritaFuryCutter extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SLASH_DIAGONAL));
         addToBot(new ModifyDamageAction(uuid, magicNumber));
-        addToBot(new LoseHPAction(p, p, 2));
-        addToBot(new ApplyPowerAction(p, p, FuryCutterPower(p, 1, 0)));
-    }
-
-    @SuppressWarnings("all") // Removes a warning for the type cast
-    public void triggerOnEndOfPlayerTurn(){ 
-        AbstractDungeon.actionManager.addToTurnStart(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.exhaustPile, card -> card == this));
+        addToBot(new LoseHPAction(p, p, 1));
+        if (!upgraded)
+            addToBot(new ApplyPowerAction(p, p, new FuryCutterPower(p, 1, 0)));
+        if (upgraded)
+            addToBot(new ApplyPowerAction(p, p, new FuryCutterPower(p, 1, 1)));
     }
 
     // Upgraded stats.

@@ -62,13 +62,6 @@ public class LeafGuardPower extends PokemonPower implements CloneablePowerInterf
 
     @Override
     public void updateDescription() {
-        if(amount == 1)
-        {
             description = DESCRIPTIONS[0];
-        } 
-        else
-        {
-            description = String.format(DESCRIPTIONS[1], amount);
-        }
     }
 }

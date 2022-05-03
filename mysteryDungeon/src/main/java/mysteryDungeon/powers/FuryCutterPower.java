@@ -11,6 +11,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
 import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
+import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -63,6 +64,7 @@ public class FuryCutterPower extends TwoAmountPower implements CloneablePowerInt
             addToBot(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.exhaustPile,
                     card -> card.cardID == ChikoritaFuryCutter.ID & !card.upgraded, amount2));
         addToBot(new RemoveSpecificPowerAction(owner, owner, this));
+        addToBot(new LoseHPAction(owner, owner, 1));
     }
 
     @Override

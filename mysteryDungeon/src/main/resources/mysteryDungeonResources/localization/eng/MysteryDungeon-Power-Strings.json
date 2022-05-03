@@ -99,7 +99,7 @@
     "mysteryDungeon:FuryCutterPower": {
         "NAME": "Fury Cutter",
         "DESCRIPTIONS": [
-            "Next Turn create #b%s Fury Cutter in your hand"
+            "Next Turn bring back #b%s Fury Cutter from the exhaust pile to your hand."
         ]
     },
     "mysteryDungeon:GrassPledgePower": {
@@ -111,7 +111,7 @@
         "DESCRIPTIONS": ["Whenever you draw a card deal #b%s damage to all enemies"]
     },
     "mysteryDungeon:HealPulsePower": {
-        "NAME": "HealPulse",
+        "NAME": "Heal Pulse",
         "DESCRIPTIONS": [
             "Whenever you inflict self damage or gain hp during your turn, gain #b%s block."
         ]
@@ -121,6 +121,12 @@
         "DESCRIPTIONS": [
             "When this enemy dies, ALL enemies receive damage equal to #b%d times its #yBurn Stacks. NL Currently it would deal #b%s damage to ALL enemies.",
             "When this enemy dies, ALL enemies receive damage equal to #b%d times its #yBurn Stacks. NL Currently it would deal #b%s damage to ALL enemies."
+        ]
+    },
+    "mysteryDungeon:LeafGuardPower": {
+        "NAME": "Leaf Guard",
+        "DESCRIPTIONS": [
+            "At the start of your turn, remove all debuff you posses. for each debuff removed this way lose #b%s Hp."
         ]
     },
     "mysteryDungeon:LeechSeedPower": {
