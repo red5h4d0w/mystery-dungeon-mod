@@ -37,7 +37,7 @@ public class ChikoritaAncientPower extends PokemonCard {
 
     private static final int COST = 2;
     private static final int DAMAGE = 15;
-    private static final int UPGRADE_PLUS_DMG = 5;
+    private static final int UPGRADE_PLUS_DMG = 3;
 
     // /STAT DECLARATION/
 
