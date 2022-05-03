@@ -377,7 +377,7 @@
     },
     "mysteryDungeon:ChikoritaFuryCutter": {
         "NAME": "Fury Cutter",
-        "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Increase this card damage by !M! this combat.NL Lose 1 Hp. NL Bring back a copy of that card in your hand next turn and lose 1 Hp NL Exhaust."
+        "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Increase this card damage by !M! this combat. NL Lose 1 Hp. NL Bring back a copy of that card in your hand next turn and lose 1 Hp. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaGrassKnot": {
         "NAME": "Grass Knot",
@@ -403,7 +403,7 @@
     },
     "mysteryDungeon:ChikoritaLeafGuard": {
         "NAME": "Leaf Guard",
-        "DESCRIPTION": "At the start of your turn, remove all debuff you posses. for each debuff removed this way lose !M! Hp."
+        "DESCRIPTION": "At the start of your turn, remove all debuff you possess. for each debuff removed this way lose !M! Hp."
     },
     "mysteryDungeon:ChikoritaLeafStorm": {
         "NAME": "Leaf Storm",
@@ -418,7 +418,7 @@
         "DESCRIPTION": "Deal !D! damage !M! times to random enemies."
     },
     "mysteryDungeon:ChikoritaNaturalGift": {
-        "NAME": "NAtural Gift",
+        "NAME": "Natural Gift",
         "DESCRIPTION": "Gain !M! Strength. NL Gain !mysteryDungeon:M2! Metallicize"
     },
     "mysteryDungeon:ChikoritaPetalBlizzard": {
@@ -432,11 +432,6 @@
     "mysteryDungeon:ChikoritaRazorLeaf": {
         "NAME": "Razor Leaf",
         "DESCRIPTION": "Lose !M! Hp. NL Deal !D! damage."
-    },
-    "mysteryDungeon:ChikoritaRecover": {
-        "NAME": "Recover",
-        "DESCRIPTION": "When you receive damage, gain Recover stacks for each damage you received. NL When you deal damage, heal 20%% of damage dealt up to the number of Recover stacks. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaRefresh": {
         "NAME": "Refresh",
