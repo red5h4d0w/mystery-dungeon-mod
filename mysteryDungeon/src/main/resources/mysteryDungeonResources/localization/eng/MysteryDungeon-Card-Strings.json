@@ -417,6 +417,10 @@
         "NAME": "Magical Leaf",
         "DESCRIPTION": "Deal !D! damage !M! times to random enemies."
     },
+    "mysteryDungeon:ChikoritaNaturalGift": {
+        "NAME": "NAtural Gift",
+        "DESCRIPTION": "Gain !M! Strength. NL Gain !mysteryDungeon:M2! Metallicize"
+    },
     "mysteryDungeon:ChikoritaPetalBlizzard": {
         "NAME": "Petal Blizzard",
         "DESCRIPTION": "Deal !D! damage to ALL enemies."

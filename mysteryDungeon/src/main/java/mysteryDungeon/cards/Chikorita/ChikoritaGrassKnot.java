@@ -30,9 +30,9 @@ public class ChikoritaGrassKnot extends PokemonCard {
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.BASIC;
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;
-    private static final CardType TYPE = CardType.ATTACK;
+    private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.CHIKORITA_GREEN;
 
     private static final int COST = 3;
