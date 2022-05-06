@@ -371,9 +371,21 @@
         "NAME": "Body Slam",
         "DESCRIPTION": "Deal !D! damage. NL Next Turn Lose !M! Hp."
     },
+    "mysteryDungeon:ChikoritaConfide": {
+        "NAME": "Confide",
+        "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Apply !M! Evasiveness Drop to ALL enemies. NL Exhaust."
+    },
+    "mysteryDungeon:ChikoritaCut": {
+        "NAME": "Cut",
+        "DESCRIPTION": "Lose !M! Hp. NL Deal !D! damage."
+    },
     "mysteryDungeon:ChikoritaDefend": {
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! Block."
+    },
+    "mysteryDungeon:ChikoritaEnergyBall": {
+        "NAME": "Energy Ball",
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! vulnerable."
     },
     "mysteryDungeon:ChikoritaFuryCutter": {
         "NAME": "Fury Cutter",
@@ -403,7 +415,8 @@
     },
     "mysteryDungeon:ChikoritaLeafGuard": {
         "NAME": "Leaf Guard",
-        "DESCRIPTION": "At the start of your turn, remove all debuff you possess. for each debuff removed this way lose !M! Hp."
+        "DESCRIPTION": "At the start of your turn, remove all debuff you possess. for each debuff removed this way lose !M! Hp.",
+        "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, remove all debuff you possess. for each debuff removed this way lose !M! Hp."
     },
     "mysteryDungeon:ChikoritaLeafStorm": {
         "NAME": "Leaf Storm",
@@ -420,6 +433,10 @@
     "mysteryDungeon:ChikoritaNaturalGift": {
         "NAME": "Natural Gift",
         "DESCRIPTION": "Gain !M! Strength. NL Gain !mysteryDungeon:M2! Metallicize"
+    },
+    "mysteryDungeon:ChikoritaNaturePowerGrassland": {
+        "NAME": "Nature Power: Grassland",
+        "DESCRIPTION": "Lose 3HP. NL Draw !M! cards."
     },
     "mysteryDungeon:ChikoritaPetalBlizzard": {
         "NAME": "Petal Blizzard",
@@ -466,7 +483,7 @@
     },
     "mysteryDungeon:ChikoritaSynthesis": {
         "NAME": "Synthesis",
-        "DESCRIPTION": "Heal !M! HP. NL At the start of your next turn, NL draw 2 more cards and gain [E] [E]. NL Exhaust."
+        "DESCRIPTION": "Heal !M! HP. NL At the start of your next turn, NL draw 1 more cards and gain [E]. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaTackle": {
         "NAME": "Tackle",
@@ -475,6 +492,14 @@
     "mysteryDungeon:ChikoritaVineWhip": {
         "NAME": "Vine Whip",
         "DESCRIPTION": "Deal !D! damage. NL At the start of your next turn gain [E]."
+    },
+    "mysteryDungeon:ChikoritaWorrySeed": {
+        "NAME": "Worry Seed",
+        "DESCRIPTION": "During your turns, Lose 1HP per card played. NL At the end of your turn, Heal 2 HP."
+    },
+    "mysteryDungeon:ChikoritaWringOut": {
+        "NAME": "Wring Out",
+        "DESCRIPTION": "Deal !D! damage. NL Lose !M! HP."
     },
     "mysteryDungeon:CyndaquilFirePledge": {
         "NAME": "Fire Pledge",

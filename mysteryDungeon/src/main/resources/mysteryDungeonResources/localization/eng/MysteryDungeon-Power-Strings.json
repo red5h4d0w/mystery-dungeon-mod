@@ -54,6 +54,12 @@
         "NAME": "Explorer Form",
         "DESCRIPTIONS": ["At the start of your turn Exhume #b%s random card."]
     },
+    "mysteryDungeon:ChikoritaWorrySeedPower": {
+        "NAME": "Worry Seed",
+        "DESCRIPTIONS": [
+            "During your turn, Lose #b%s HP per card played. At the end of your turn, Heal 2 times #b%s HP."
+        ]
+    },
     "mysteryDungeon:CounterPower": {
         "NAME": "Counter",
         "DESCRIPTIONS": [
