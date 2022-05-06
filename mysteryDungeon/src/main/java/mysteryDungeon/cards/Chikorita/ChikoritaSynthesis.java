@@ -43,7 +43,7 @@ public class ChikoritaSynthesis extends PokemonCard {
 
     public ChikoritaSynthesis() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseMagicNumber = 10;
+        baseMagicNumber = 8;
         magicNumber = baseMagicNumber;
         exhaust = true;
     }
@@ -53,8 +53,8 @@ public class ChikoritaSynthesis extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
         addToBot(new HealAction(p, p, magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, 2), 2));
-        addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 2), 2));
+        addToBot(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, 1), 1));
+        addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 1), 1));
     }
 
     // Upgraded stats.
