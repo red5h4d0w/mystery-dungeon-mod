@@ -61,8 +61,7 @@ public class ChikoritaWorrySeedPower extends PokemonPower implements CloneablePo
 
     public void atEndOfTurn(boolean isPlayer) {
         if (isPlayer)
-            addToBot(new HealAction((AbstractCreature) AbstractDungeon.player,
-                    (AbstractCreature) AbstractDungeon.player, 2 * amount));
+            addToBot(new HealAction(AbstractDungeon.player, AbstractDungeon.player, 2 * amount));
 
     }
 
