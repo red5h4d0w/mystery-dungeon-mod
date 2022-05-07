@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -45,16 +46,17 @@ public class ChikoritaAncientPower extends PokemonCard {
         baseDamage = DAMAGE;
         
     }
-    public void triggerOnGlowCheck(AbstractPlayer p) {
+
+    @Override
+    public void triggerOnGlowCheck() {
         glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-            if(p.currentHealth < p.maxHealth * 0.8f) {
-                glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
-            } 
+        if(AbstractDungeon.player.currentHealth < AbstractDungeon.player.maxHealth * 0.8f) {
+            glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+        } 
       }
       
     // Actions the card should do.
     @Override
-    @SuppressWarnings("all") // Removes a warning for the type cast
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
         if(p.currentHealth < p.maxHealth * 0.8f)
