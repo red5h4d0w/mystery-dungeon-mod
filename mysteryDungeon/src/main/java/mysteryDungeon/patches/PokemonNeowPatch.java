@@ -75,8 +75,7 @@ public class PokemonNeowPatch {
         traits.put("Timid",0);
     }
 
-    public static void InitializeQuestions()
-    {
+    public static void InitializeQuestions() {
         questions.clear();
         String json = Gdx.files.internal(LocalizationTool.LocalizationPath() + "Questions.json").readString(String.valueOf(StandardCharsets.UTF_8));
         ArrayList<Question> fullListOfQuestions = new Gson().fromJson(json, new TypeToken<ArrayList<Question>>() {}.getType());
@@ -342,10 +341,11 @@ public class PokemonNeowPatch {
                     screenNum++;
                     return SpireReturn.Return(null);
                 case 11:
+                    
                     ((Pokemon)AbstractDungeon.player).adventurer = implementedPokemons.get(buttonPressed);
                     String[] possibleNatures = NatureOfPokemon.get(((Pokemon)AbstractDungeon.player).adventurer.getClass().getSimpleName());
                     ((Pokemon)AbstractDungeon.player).DefineNature(possibleNatures[AbstractDungeon.eventRng.random(possibleNatures.length-1)]);
-                    AskQuestion(__instance, new Question(TEXT[8], implementedPokemons.stream().filter(p -> p != ((Pokemon)AbstractDungeon.player).adventurer).map(p -> p.name).toArray(size-> new String[size])));
+                    AskQuestion(__instance, new Question(TEXT[8], implementedPokemons.stream().filter(p -> p.color != implementedPokemons.get(buttonPressed).color).map(p -> p.name).toArray(size-> new String[size])));
                     screenNum=5;
                     return SpireReturn.Return(null);
                 case 99:
