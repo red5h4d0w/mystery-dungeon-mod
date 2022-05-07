@@ -440,7 +440,7 @@
     },
     "mysteryDungeon:ChikoritaOvergrow": {
         "NAME": "Overgrow",
-        "DESCRIPTION": "Each time you reach under 50% HP, your next attack deals !M! more damage. NL Gain !mysteryDungeon:M2! Poison."
+        "DESCRIPTION": "Each time you reach under 50% HP, your next attack deals !M! more damage."
     },
     "mysteryDungeon:ChikoritaPetalBlizzard": {
         "NAME": "Petal Blizzard",
@@ -499,7 +499,7 @@
     },
     "mysteryDungeon:ChikoritaWorrySeed": {
         "NAME": "Worry Seed",
-        "DESCRIPTION": "During your turns, Lose 1HP per card played. NL At the end of your turn, Heal 2 HP."
+        "DESCRIPTION": "During your turns, Lose 1HP per card played. NL At the end of your turn, Heal 3 HP."
     },
     "mysteryDungeon:ChikoritaWringOut": {
         "NAME": "Wring Out",

@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.PoisonPower;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
@@ -37,7 +36,6 @@ public class ChikoritaOvergrow extends PokemonCard {
     private static final int COST = 2;
     private static final int BASE_MAGIC_NUMBER = 6;
     private static final int UPGRADE_MAGIC_NUMBER = 3;
-    private static final int BASE_SECOND_MAGIC_NUMBER = 4;
 
     // /STAT DECLARATION/
 
@@ -45,8 +43,6 @@ public class ChikoritaOvergrow extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
-        baseSecondMagicNumber = BASE_SECOND_MAGIC_NUMBER;
-        secondMagicNumber = baseSecondMagicNumber;
     }
     
 
@@ -54,7 +50,6 @@ public class ChikoritaOvergrow extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new OvergrowPower(p, magicNumber), magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new PoisonPower(p, p, magicNumber), magicNumber));
     }
 
     // Upgraded stats.
