@@ -438,6 +438,10 @@
         "NAME": "Nature Power: Grassland",
         "DESCRIPTION": "Lose 3HP. NL Draw !M! cards."
     },
+    "mysteryDungeon:ChikoritaOvergrow": {
+        "NAME": "Overgrow",
+        "DESCRIPTION": "Each time you reach under 50% HP, your next attack deals !M! more damage. NL Gain !mysteryDungeon:M2! Poison."
+    },
     "mysteryDungeon:ChikoritaPetalBlizzard": {
         "NAME": "Petal Blizzard",
         "DESCRIPTION": "Deal !D! damage to ALL enemies."

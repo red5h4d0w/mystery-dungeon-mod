@@ -186,6 +186,12 @@
             "When you exhaust a card, apply #b%s #yBurn to a random enemy."
         ]
     },
+    "mysteryDungeon:OvergrowPower": {
+        "NAME": "Overgrow",
+        "DESCRIPTIONS": [
+            "Each time you reach under 50% HP, your next attack deals #b%s more damage."
+        ]
+    },
     "mysteryDungeon:PetalDancePower": {
         "NAME": "Petal Dance",
         "DESCRIPTIONS": [
