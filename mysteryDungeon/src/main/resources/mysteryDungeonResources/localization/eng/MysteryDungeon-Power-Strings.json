@@ -189,7 +189,7 @@
     "mysteryDungeon:OvergrowPower": {
         "NAME": "Overgrow",
         "DESCRIPTIONS": [
-            "Each time you reach under 50% HP, your next attack deals #b%s more damage."
+            "Each time you reach under 50%% HP, your next attack deals #b%s more damage."
         ]
     },
     "mysteryDungeon:PetalDancePower": {
