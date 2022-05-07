@@ -32,7 +32,7 @@ public class BigRootRelic extends PokemonRelic {
     @Override
     public void atTurnStart() {
         AbstractPlayer p = AbstractDungeon.player;
-        if (p.currentHealth < p.maxHealth * 0.8f) {
+        if (p.currentHealth < p.maxHealth * 0.7f) {
             addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
                     new RecoverPower(AbstractDungeon.player, 0), 0));
         }
@@ -41,7 +41,7 @@ public class BigRootRelic extends PokemonRelic {
     @Override
     public void onPlayerEndTurn() {
         AbstractPlayer p = AbstractDungeon.player;
-        if (p.currentHealth >= p.maxHealth * 0.8f)
+        if (p.currentHealth >= p.maxHealth * 0.7f)
             addToBot(new RemoveSpecificPowerAction(p, p, new RecoverPower(p, 0)));
     }
 

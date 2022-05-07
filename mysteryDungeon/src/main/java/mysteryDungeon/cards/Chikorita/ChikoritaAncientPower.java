@@ -30,13 +30,13 @@ public class ChikoritaAncientPower extends PokemonCard {
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Pokemon.Enums.CHIKORITA_GREEN;
 
     private static final int COST = 2;
-    private static final int DAMAGE = 15;
+    private static final int DAMAGE = 12;
     private static final int UPGRADE_PLUS_DMG = 3;
 
     // /STAT DECLARATION/
@@ -50,7 +50,7 @@ public class ChikoritaAncientPower extends PokemonCard {
     @Override
     public void triggerOnGlowCheck() {
         glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        if(AbstractDungeon.player.currentHealth < AbstractDungeon.player.maxHealth * 0.8f) {
+        if(AbstractDungeon.player.currentHealth < AbstractDungeon.player.maxHealth * 0.7f) {
             glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
         } 
       }
@@ -59,7 +59,7 @@ public class ChikoritaAncientPower extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
-        if(p.currentHealth < p.maxHealth * 0.8f)
+        if(p.currentHealth < p.maxHealth * 0.7f)
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
     }
 

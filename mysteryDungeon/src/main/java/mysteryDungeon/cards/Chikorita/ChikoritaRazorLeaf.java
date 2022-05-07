@@ -37,8 +37,8 @@ public class ChikoritaRazorLeaf extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CHIKORITA_GREEN;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 13;
-    private static final int UPGRADE_DAMAGE = 3;
+    private static final int DAMAGE = 14;
+    private static final int UPGRADE_DAMAGE = 4;
     private static final int BASE_MAGIC_NUMBER = 2;
 
 

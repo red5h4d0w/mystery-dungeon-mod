@@ -33,7 +33,7 @@ public class ChikoritaRefresh extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CHIKORITA_GREEN;
 
     private static final int COST = 1;
-    private static final int BASE_MAGIC_NUMBER = 5;
+    private static final int BASE_MAGIC_NUMBER = 6;
     private static final int UPGRADE_MAGIC_NUMBER = 2;
 
 

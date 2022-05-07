@@ -18,7 +18,7 @@
         "NAME": "Big Root",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "Whenever you are at 80% or less of your max Hp, gain Reovery."
+            "Whenever you are at 70% or less of your max Hp, gain Reovery."
         ]
     },
     "mysteryDungeon:BraveExplorerRelic": {
