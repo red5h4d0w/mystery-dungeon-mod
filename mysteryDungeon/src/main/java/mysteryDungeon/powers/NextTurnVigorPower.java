@@ -43,7 +43,7 @@ public class NextTurnVigorPower extends PokemonTwoAmountPower implements Cloneab
         this.amount = amount;
         this.amount2 = amount2;
 
-        type = PowerType.DEBUFF;
+        type = PowerType.BUFF;
         isTurnBased = true;
 
         // We load those txtures here.
