@@ -483,7 +483,7 @@
     },
     "mysteryDungeon:ChikoritaSunnyDay": {
         "NAME": "Sunny Day",
-        "DESCRIPTION": "For X turns your first attack will deal !M! more damage."
+        "DESCRIPTION": "For the next X turns your first attack will deal !M! more damage."
     },
     "mysteryDungeon:ChikoritaSweetScent": {
         "NAME": "Sweet Scent",
@@ -499,7 +499,7 @@
     },
     "mysteryDungeon:ChikoritaVineWhip": {
         "NAME": "Vine Whip",
-        "DESCRIPTION": "Deal !D! damage. NL At the start of your next turn gain [E]."
+        "DESCRIPTION": "Deal !D! damage. NL Put a card from your discard pile into your draw pile."
     },
     "mysteryDungeon:ChikoritaWorrySeed": {
         "NAME": "Worry Seed",
