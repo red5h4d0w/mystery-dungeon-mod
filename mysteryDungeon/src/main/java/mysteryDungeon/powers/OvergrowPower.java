@@ -2,7 +2,7 @@ package mysteryDungeon.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.abstracts.PokemonTwoAmountPower;
+import mysteryDungeon.abstracts.PokemonPower;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
@@ -19,7 +19,7 @@ import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class OvergrowPower extends PokemonTwoAmountPower implements CloneablePowerInterface {
+public class OvergrowPower extends PokemonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("OvergrowPower");
@@ -42,7 +42,6 @@ public class OvergrowPower extends PokemonTwoAmountPower implements CloneablePow
 
         this.owner = owner;
         this.amount = amount;
-        this.amount2 = 0;
 
         type = PowerType.BUFF;
         isTurnBased = false;
