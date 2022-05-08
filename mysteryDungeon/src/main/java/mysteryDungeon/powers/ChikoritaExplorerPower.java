@@ -54,7 +54,8 @@ public class ChikoritaExplorerPower extends PokemonPower implements CloneablePow
 
     @Override
     public int onHeal(int healAmount) {
-        addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(amount*healAmount, true), DamageType.THORNS, AttackEffect.POISON));
+        if(healAmount!=0)
+            addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(amount*healAmount, true), DamageType.THORNS, AttackEffect.POISON));
         return super.onHeal(healAmount);
     }
 
