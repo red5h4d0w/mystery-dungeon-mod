@@ -34,7 +34,7 @@ public class ChikoritaExplorerForm extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CHIKORITA_GREEN;
 
     private static final int COST = 3;
-    private static final int BASE_MAGIC_NUMBER = 2;
+    private static final int BASE_MAGIC_NUMBER = 1;
 
     // /STAT DECLARATION/
 
