@@ -2,8 +2,7 @@ package mysteryDungeon.cards.Chikorita;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.AttackDamageRandomEnemyAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -12,6 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.powers.ChikoritaExplorerPower;
 
 public class ChikoritaExplorerForm extends PokemonCard {
 
@@ -34,12 +34,16 @@ public class ChikoritaExplorerForm extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CHIKORITA_GREEN;
 
     private static final int COST = 3;
+    private static final int BASE_MAGIC_NUMBER = 2;
 
     // /STAT DECLARATION/
 
     public ChikoritaExplorerForm() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         isEthereal = true;
+        baseMagicNumber = BASE_MAGIC_NUMBER;
+        magicNumber = baseMagicNumber;
+        isAdventurerOnly = true;
         
     }
 
@@ -47,8 +51,7 @@ public class ChikoritaExplorerForm extends PokemonCard {
     @Override
     @SuppressWarnings("all") // Removes a warning for the type cast
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (int i = 0; i < this.magicNumber; i++)
-        addToBot((AbstractGameAction)new AttackDamageRandomEnemyAction(this, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL)); 
+        addToBot(new ApplyPowerAction(p, p, new ChikoritaExplorerPower(p, magicNumber), magicNumber));
     }
 
 
