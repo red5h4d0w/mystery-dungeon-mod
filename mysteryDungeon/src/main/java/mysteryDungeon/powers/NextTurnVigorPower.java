@@ -56,14 +56,13 @@ public class NextTurnVigorPower extends PokemonTwoAmountPower implements Cloneab
     @Override
     public void atStartOfTurn() {
         flash();
-        for (int i = 0; i < this.amount; i++){
             addToBot(new ApplyPowerAction(owner, owner, new VigorPower(owner, amount2), amount2));
             addToBot(new ReducePowerAction(owner, owner, this, 1));
             if(amount<1)
             {
                 addToBot(new RemoveSpecificPowerAction(owner, source, this));
             }
-        }
+       
     }
 
     @Override

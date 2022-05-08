@@ -60,7 +60,7 @@ public class ChikoritaSunnyDay extends PokemonCard {
         }
         for (int i = 0; i < this.energyOnUse; i++){
             if(energyOnUse>0)
-                addToBot(new ApplyPowerAction(p, p, new NextTurnVigorPower(p, energyOnUse, magicNumber), energyOnUse));
+                addToBot(new ApplyPowerAction(p, p, new NextTurnVigorPower(p, 1, magicNumber), 1));
             if (!freeToPlayOnce)
                 p.energy.use(EnergyPanel.totalCount);
         }
