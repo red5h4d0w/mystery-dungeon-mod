@@ -44,7 +44,7 @@ public class NextTurnVigorPower extends PokemonTwoAmountPower implements Cloneab
         this.amount2 = amount2;
 
         type = PowerType.DEBUFF;
-        isTurnBased = false;
+        isTurnBased = true;
 
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
