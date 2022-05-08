@@ -54,7 +54,7 @@ public class ChikoritaVineWhip extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
-        addToBot(new MoveCardsAction(AbstractDungeon.player.discardPile, AbstractDungeon.player.drawPile));
+        addToBot(new MoveCardsAction(AbstractDungeon.player.drawPile, AbstractDungeon.player.discardPile));
     }
 
     // Upgraded stats.

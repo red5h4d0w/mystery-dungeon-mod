@@ -7,12 +7,12 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.powers.NextTurnVigorPower;
 
 public class ChikoritaSunnyDay extends PokemonCard {
 
@@ -60,7 +60,7 @@ public class ChikoritaSunnyDay extends PokemonCard {
         }
         for (int i = 0; i < this.energyOnUse; i++){
             if(energyOnUse>0)
-                addToBot(new ApplyPowerAction(p, p, new VigorPower(p, magicNumber), magicNumber));
+                addToBot(new ApplyPowerAction(p, p, new NextTurnVigorPower(p, energyOnUse, magicNumber), energyOnUse));
             if (!freeToPlayOnce)
                 p.energy.use(EnergyPanel.totalCount);
         }
