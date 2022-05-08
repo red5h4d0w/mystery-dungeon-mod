@@ -409,6 +409,10 @@
         "DESCRIPTION": "Apply Asleep to ALL enemies. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Retain. NL Apply Asleep to ALL enemies. NL Exhaust."
     },
+    "mysteryDungeon:ChikoritaGrassyTerrain": {
+        "NAME": "Growl",
+        "DESCRIPTION": "Increase your max HP by !M!."
+    },
     "mysteryDungeon:ChikoritaGrowl": {
         "NAME": "Growl",
         "DESCRIPTION": "Apply !M! Weak to ALL enemies."
