@@ -52,7 +52,10 @@
     },
     "mysteryDungeon:ChikoritaExplorerPower": {
         "NAME": "Explorer Form",
-        "DESCRIPTIONS": ["When you heal #yHP, deal damage to ALL enemies equal to the amount healed."]
+        "DESCRIPTIONS": [
+            "When you heal #yHP, deal damage to ALL enemies equal to the amount healed.",
+            "When you heal #yHP, deal damage to ALL enemies equal to #b%s times the amounot healed."
+        ]
     },
     "mysteryDungeon:CharmanderExplorerPower": {
         "NAME": "Explorer Form",

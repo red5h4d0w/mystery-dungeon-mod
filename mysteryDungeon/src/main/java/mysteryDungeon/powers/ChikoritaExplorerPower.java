@@ -36,11 +36,12 @@ public class ChikoritaExplorerPower extends PokemonPower implements CloneablePow
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(ChikoritaExplorerPower.class.getSimpleName()+"84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(ChikoritaExplorerPower.class.getSimpleName()+"32.png"));
 
-    public ChikoritaExplorerPower(final AbstractCreature owner) {
+    public ChikoritaExplorerPower(final AbstractCreature owner, int amount) {
         name = NAME;
         ID = POWER_ID;
 
         this.owner = owner;
+        this.amount = amount;
 
         type = PowerType.BUFF;
 
@@ -53,13 +54,13 @@ public class ChikoritaExplorerPower extends PokemonPower implements CloneablePow
 
     @Override
     public int onHeal(int healAmount) {
-        addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(healAmount, true), DamageType.THORNS, AttackEffect.POISON));
+        addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(amount*healAmount, true), DamageType.THORNS, AttackEffect.POISON));
         return super.onHeal(healAmount);
     }
 
     @Override
     public AbstractPower makeCopy() {
-        return new ChikoritaExplorerPower(owner);
+        return new ChikoritaExplorerPower(owner, amount);
     }
 
     @Override
