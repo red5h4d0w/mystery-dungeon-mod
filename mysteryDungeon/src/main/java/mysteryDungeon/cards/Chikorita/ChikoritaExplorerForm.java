@@ -1,0 +1,66 @@
+package mysteryDungeon.cards.Chikorita;
+
+import static mysteryDungeon.MysteryDungeon.makeCardPath;
+
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.AttackDamageRandomEnemyAction;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+
+import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.characters.Pokemon;
+
+public class ChikoritaExplorerForm extends PokemonCard {
+
+    // TEXT DECLARATION
+
+    public static final String ID = MysteryDungeon.makeID(ChikoritaExplorerForm.class.getSimpleName());
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String IMG = makeCardPath("Power.png");
+    public static final String NAME = cardStrings.NAME;
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+
+    // /TEXT DECLARATION/
+
+    // STAT DECLARATION
+
+    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardType TYPE = CardType.POWER;
+    public static final CardColor COLOR = Pokemon.Enums.CHIKORITA_GREEN;
+
+    private static final int COST = 3;
+
+    // /STAT DECLARATION/
+
+    public ChikoritaExplorerForm() {
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        isEthereal = true;
+        
+    }
+
+    // Actions the card should do.
+    @Override
+    @SuppressWarnings("all") // Removes a warning for the type cast
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        for (int i = 0; i < this.magicNumber; i++)
+        addToBot((AbstractGameAction)new AttackDamageRandomEnemyAction(this, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL)); 
+    }
+
+
+
+    // Upgraded stats.
+    @Override
+    public void upgrade() {
+        if (!upgraded) {
+            upgradeName();
+            isEthereal = false;
+            rawDescription = UPGRADE_DESCRIPTION;
+            initializeDescription();
+        }
+    }
+}

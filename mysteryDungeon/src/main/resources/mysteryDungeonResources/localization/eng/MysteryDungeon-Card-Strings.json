@@ -387,6 +387,11 @@
         "NAME": "Energy Ball",
         "DESCRIPTION": "Deal !D! damage. NL Apply !M! vulnerable."
     },
+    "mysteryDungeon:ChikoritaExplorerForm": {
+        "NAME": "Explorer Form",
+        "DESCRIPTION": "Ethereal. NL When you heal HP, deal damage to ALL enemies equal to the amount healed.",
+        "UPGRADE_DESCRIPTION": "When you heal HP, deal damage to ALL enemies equal to the amount healed."
+    },
     "mysteryDungeon:ChikoritaFuryCutter": {
         "NAME": "Fury Cutter",
         "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Increase this card damage by !M! this combat. NL Lose 1 Hp. NL Bring back a copy of that card in your hand next turn and lose 1 Hp. NL Exhaust."
