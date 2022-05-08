@@ -392,6 +392,10 @@
         "DESCRIPTION": "Ethereal. NL When you heal HP, deal damage to ALL enemies equal to the amount healed.",
         "UPGRADE_DESCRIPTION": "When you heal HP, deal damage to ALL enemies equal to the amount healed."
     },
+    "mysteryDungeon:ChikoritaFlail": {
+        "NAME": "Flail",
+        "DESCRIPTION": "Deal !D! damage. NL If you have not played any card this turn, draw 1 card."
+    },
     "mysteryDungeon:ChikoritaFuryCutter": {
         "NAME": "Fury Cutter",
         "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Increase this card damage by !M! this combat. NL Lose 1 Hp. NL Bring back a copy of that card in your hand next turn and lose 1 Hp. NL Exhaust."
