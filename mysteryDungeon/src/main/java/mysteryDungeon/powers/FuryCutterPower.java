@@ -2,6 +2,7 @@ package mysteryDungeon.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.abstracts.PokemonTwoAmountPower;
 import mysteryDungeon.cards.Chikorita.ChikoritaFuryCutter;
 import mysteryDungeon.util.TextureLoader;
 
@@ -10,7 +11,6 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
-import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -21,7 +21,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class FuryCutterPower extends TwoAmountPower implements CloneablePowerInterface {
+public class FuryCutterPower extends PokemonTwoAmountPower implements CloneablePowerInterface {
     public AbstractCreature source;
     public boolean upgrade;
     public static final String POWER_ID = MysteryDungeon.makeID("FuryCutterPower");
@@ -57,12 +57,10 @@ public class FuryCutterPower extends TwoAmountPower implements CloneablePowerInt
 
     @Override
     public void atStartOfTurnPostDraw() {
-        if (upgrade)
-            addToBot(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.exhaustPile,
-                    card -> card.cardID == ChikoritaFuryCutter.ID & card.upgraded, amount));
-        if (!upgrade)
-            addToBot(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.exhaustPile,
-                    card -> card.cardID == ChikoritaFuryCutter.ID & !card.upgraded, amount2));
+        addToBot(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.exhaustPile,
+                card -> card.cardID == ChikoritaFuryCutter.ID & card.upgraded, amount));
+        addToBot(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.exhaustPile,
+                card -> card.cardID == ChikoritaFuryCutter.ID & !card.upgraded, amount2));
         addToBot(new RemoveSpecificPowerAction(owner, owner, this));
         addToBot(new LoseHPAction(owner, owner, 1));
     }
@@ -74,6 +72,11 @@ public class FuryCutterPower extends TwoAmountPower implements CloneablePowerInt
 
     @Override
     public void updateDescription() {
-        description = String.format(DESCRIPTIONS[0], amount);
+        if (amount2==0)
+            description = String.format(DESCRIPTIONS[0], amount);
+        else if (amount==0)
+            description = String.format(DESCRIPTIONS[1], amount2);
+        else 
+            description = String.format(DESCRIPTIONS[2], amount, amount2);
     }
 }

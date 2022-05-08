@@ -105,7 +105,9 @@
     "mysteryDungeon:FuryCutterPower": {
         "NAME": "Fury Cutter",
         "DESCRIPTIONS": [
-            "Next Turn bring back #b%s Fury Cutter from the exhaust pile to your hand."
+            "At the start of your turn, add #b%s #yFury #yCutter from cards exhausted this combat to your hand.",
+            "At the start of your turn, add #b%s #yFury #yCutter #y+ from cards exhausted this combat to your hand.",
+            "At the start of your turn, add #b%s #yFury #yCutter and #b%s #yFury #yCutter #y+ from cards exhausted this combat to your hand."
         ]
     },
     "mysteryDungeon:GrassPledgePower": {
