@@ -483,7 +483,7 @@
     },
     "mysteryDungeon:ChikoritaSunnyDay": {
         "NAME": "Sunny Day",
-        "DESCRIPTION": "For the next X turns your first attack will deal !M! more damage."
+        "DESCRIPTION": "For the next X turns your first attack will deal !M! more damage. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaSweetScent": {
         "NAME": "Sweet Scent",

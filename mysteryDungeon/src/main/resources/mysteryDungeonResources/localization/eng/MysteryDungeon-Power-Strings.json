@@ -182,6 +182,12 @@
             "During the next #b%s turns, you cannot gain Block."
         ]
     },
+    "mysteryDungeon:NextTurnVigorPower": {
+        "NAME": "Sunny Day",
+        "DESCRIPTIONS": [
+            "At the start of the next #b%s turns, Gain #b%s Vigor."
+        ]
+    },
     "mysteryDungeon:NoHealPower": {
         "NAME": "No Heal",
         "DESCRIPTIONS": [
