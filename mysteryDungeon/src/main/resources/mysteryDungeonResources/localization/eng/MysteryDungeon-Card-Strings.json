@@ -361,7 +361,7 @@
     },
     "mysteryDungeon:ChikoritaAncientPower": {
         "NAME": "Ancient Power",
-        "DESCRIPTION": "Deal !D! damage. NL If you are missing more 20% of your health, deal !D! damage."
+        "DESCRIPTION": "Deal !D! damage. NL If you are missing more then 30% of your health, deal !D! damage."
     },
     "mysteryDungeon:ChikoritaAromatherapy": {
         "NAME": "Aromatherapy",
@@ -398,11 +398,11 @@
     },
     "mysteryDungeon:ChikoritaFuryCutter": {
         "NAME": "Fury Cutter",
-        "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Increase this card damage by !M! this combat. NL Lose 1 Hp. NL Bring back a copy of that card in your hand next turn and lose 1 Hp. NL Exhaust."
+        "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Increase this card damage by !M! this combat. NL Lose 2 Hp. NL Bring back a copy of that card in your hand next turn and lose 2 Hp. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaGrassKnot": {
         "NAME": "Grass Knot",
-        "DESCRIPTION": "Remove 25% of the enemy's health. NL Exhaust."
+        "DESCRIPTION": "Remove 33% of the enemy's health. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaGrassPledge": {
         "NAME": "Grass Pledge",

@@ -62,7 +62,7 @@ public class FuryCutterPower extends PokemonTwoAmountPower implements CloneableP
         addToBot(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.exhaustPile,
                 card -> card.cardID == ChikoritaFuryCutter.ID & !card.upgraded, amount2));
         addToBot(new RemoveSpecificPowerAction(owner, owner, this));
-        addToBot(new LoseHPAction(owner, owner, 1));
+        addToBot(new LoseHPAction(owner, owner, 2));
     }
 
     @Override

@@ -40,7 +40,7 @@ public class ChikoritaFuryCutter extends PokemonCard {
     private static final int COST = 1;
     private static final int DAMAGE = 7;
     private static final int BASE_MAGIC_NUMBER = 3;
-    private static final int UPGRADE_MAGIC_NUMBER = 4;
+    private static final int UPGRADE_MAGIC_NUMBER = 2;
 
     // /STAT DECLARATION/
 
@@ -60,7 +60,7 @@ public class ChikoritaFuryCutter extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SLASH_DIAGONAL));
         addToBot(new ModifyDamageAction(uuid, magicNumber));
-        addToBot(new LoseHPAction(p, p, 1));
+        addToBot(new LoseHPAction(p, p, 2));
         if (!upgraded)
             addToBot(new ApplyPowerAction(p, p, new FuryCutterPower(p, 1, 0)));
         if (upgraded)

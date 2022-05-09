@@ -233,7 +233,7 @@
     "mysteryDungeon:RecoverPower": {
         "NAME": "Recover",
         "DESCRIPTIONS": [
-            "When this creature receives damage, increase the number of stacks by as much damage you received. NL When you deal damage, heal 30%% of damage dealt up to #b%s."
+            "When this creature receives damage, increase the number of stacks by as much damage you received. NL When you deal attack damage, heal 30%% of the attack damage dealt up to #b%s."
         ]
     },
     "mysteryDungeon:ReduceHighestCostAtStartOfTurnPower": {

@@ -36,7 +36,7 @@ public class ChikoritaCut extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CHIKORITA_GREEN;
 
     private static final int COST = 0;
-    private static final int DAMAGE = 4;
+    private static final int DAMAGE = 5;
     private static final int UPGRADE_PLUS_DMG = 3;
     private static final int BASE_MAGIC_NUMBER = 1;
 
