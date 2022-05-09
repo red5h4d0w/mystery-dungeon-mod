@@ -43,7 +43,6 @@ public class BellyDrumPower extends PokemonPower implements CloneablePowerInterf
         this.amount = amount;
 
         type = PowerType.BUFF;
-        isTurnBased = true;
 
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
