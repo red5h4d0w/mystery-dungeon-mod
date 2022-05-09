@@ -389,8 +389,8 @@
     },
     "mysteryDungeon:ChikoritaExplorerForm": {
         "NAME": "Explorer Form",
-        "DESCRIPTION": "Ethereal. NL When you heal HP, deal damage to ALL enemies equal to the amount healed.",
-        "UPGRADE_DESCRIPTION": "When you heal HP, deal damage to ALL enemies equal to the amount healed."
+        "DESCRIPTION": "Ethereal. NL When you heal HP, deal damage to ALL enemies equal to twice the amount healed.",
+        "UPGRADE_DESCRIPTION": "When you heal HP, deal damage to ALL enemies equal to twice the amount healed."
     },
     "mysteryDungeon:ChikoritaFlail": {
         "NAME": "Flail",
