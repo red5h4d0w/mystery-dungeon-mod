@@ -365,7 +365,8 @@
     },
     "mysteryDungeon:ChikoritaAromatherapy": {
         "NAME": "Aromatherapy",
-        "DESCRIPTION": "Whenever you take damage, gain !M! Strength."
+        "DESCRIPTION": "Whenever you take damage, gain !M! Strength.",
+        "UPGRADE_DESCRIPTION": "Whenever you take damage, gain !M! Strength. NL Next Turn Lose 1 HP"
     },
     "mysteryDungeon:ChikoritaBodySlam": {
         "NAME": "Body Slam",
