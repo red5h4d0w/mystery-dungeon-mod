@@ -299,9 +299,7 @@ public class PokemonNeowPatch {
                     if (!isTestRun)
                         ((Pokemon) AbstractDungeon.player).partner = possiblePartners.get(buttonPressed);
                     if (isTestRun) {
-                        ((Pokemon) AbstractDungeon.player).partner = implementedPokemons.stream()
-                                .filter(p -> p != ((Pokemon) AbstractDungeon.player).adventurer)
-                                .toArray(size -> new AbstractPokemon[size])[buttonPressed];
+                        ((Pokemon) AbstractDungeon.player).partner = implementedPokemons.stream().filter(p -> !p.color.equals(chosenPokemon.color)).toArray(AbstractPokemon[]::new)[buttonPressed];
                     }
                     // AskQuestion(__instance, new Question("I see, now brave the challenge of the
                     // tower", new String[]{"[Leave]"}));
