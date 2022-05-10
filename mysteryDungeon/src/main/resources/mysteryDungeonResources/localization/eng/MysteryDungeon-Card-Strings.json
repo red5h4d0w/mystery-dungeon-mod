@@ -145,7 +145,7 @@
     },
     "mysteryDungeon:BulbasaurStrengthSap": {
         "NAME": "Strength Sap",
-        "DESCRIPTION": "Ennemy loses !M! Strength. NL Gain !M! Strength if ennemy lost Strength that way. NL Exhaust."
+        "DESCRIPTION": "Enemy loses !M! Strength. NL Gain !M! Strength if enemy lost Strength that way. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurStunSpore": {
         "NAME": "Stun Spore",
