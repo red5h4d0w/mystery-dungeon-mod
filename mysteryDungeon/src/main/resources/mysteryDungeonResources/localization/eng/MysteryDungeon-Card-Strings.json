@@ -403,7 +403,7 @@
     },
     "mysteryDungeon:ChikoritaGrassKnot": {
         "NAME": "Grass Knot",
-        "DESCRIPTION": "Remove 33% of the enemy's health. NL Exhaust."
+        "DESCRIPTION": "Remove 33% of the enemy's maximum health. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaGrassPledge": {
         "NAME": "Grass Pledge",

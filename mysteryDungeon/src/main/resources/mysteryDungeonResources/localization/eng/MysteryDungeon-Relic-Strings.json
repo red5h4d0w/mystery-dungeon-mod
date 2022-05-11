@@ -18,7 +18,7 @@
         "NAME": "Big Root",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "Whenever you are at 70% or less of your max Hp, gain Recovery."
+            "Whenever you are at 70% or less of your max HP, gain mysterydungeon:Recovery."
         ]
     },
     "mysteryDungeon:BraveExplorerRelic": {

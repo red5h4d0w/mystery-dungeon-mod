@@ -96,6 +96,14 @@
         "DESCRIPTION": "When you play an #yAttack, #ychannel #b1 #yLightning if you have any empty #yOrb slot. NL When you #yexit this #ystance, gain #b7 #yBlock."
     },
     {
+        "PROPER_NAME": "Recovery",
+        "NAMES": [
+            "Recovery",
+            "recovery"
+        ],
+        "DESCRIPTION": "When you receives damage, increase the number of stacks by as much damage you received. NL When you deal attack damage, heal 30%% of the attack damage dealt up to the health you lost on the last turn."
+    },
+    {
         "PROPER_NAME": "Rest",
         "NAMES": [
             "Rest",
