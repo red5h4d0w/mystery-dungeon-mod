@@ -483,8 +483,8 @@
     },
     "mysteryDungeon:ChikoritaSnore": {
         "NAME": "Snore",
-        "DESCRIPTION": "If the enemy intends to attack, apply 1 Asleep. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "If the enemy intends to attack, apply 1 Asleep."
+        "DESCRIPTION": "If the enemy intends to attack, apply 1 mysterydungeon:Asleep. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "If the enemy intends to attack, apply 1 mysterydungeon:Asleep."
     },
     "mysteryDungeon:ChikoritaSolarBeam": {
         "NAME": "Solar Beam",
