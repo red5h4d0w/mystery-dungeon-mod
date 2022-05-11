@@ -104,6 +104,15 @@
         "DESCRIPTION": "You cannot play cards that target the enemy."
     },
     {
+        "PROPER_NAME": "Temporary HP",
+        "NAMES": [
+            "Temporary HP",
+            "Temporary_HP",
+            "temporary_HP"
+        ],
+        "DESCRIPTION": "Additional defense that will take damage instead of your health bar. It will act like normal health. You keep Temporary HP between turns but not between rooms."
+    },
+    {
         "PROPER_NAME": "Toxic",
         "NAMES": [
             "Toxic",
