@@ -52,6 +52,7 @@ public class StaticPower extends PokemonPower implements CloneablePowerInterface
 
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
+        if (damageAmount > 0)
         addToBot((AbstractGameAction)new EvokeWithoutRemovingOrbAction(1));
         return damageAmount;
     }

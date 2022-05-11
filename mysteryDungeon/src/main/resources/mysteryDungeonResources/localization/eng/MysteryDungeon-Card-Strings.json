@@ -407,7 +407,7 @@
     },
     "mysteryDungeon:ChikoritaGrassPledge": {
         "NAME": "Grass Pledge",
-        "DESCRIPTION": "Gain !M! Temporary Hp. NL If you play another Pledge card, activate a special effect."
+        "DESCRIPTION": "Gain !M! Temporary Hp. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
     },
     "mysteryDungeon:ChikoritaGrassWhistle": {
         "NAME": "Grass Whistle",
@@ -520,7 +520,7 @@
     },
     "mysteryDungeon:CyndaquilFirePledge": {
         "NAME": "Fire Pledge",
-        "DESCRIPTION": "Apply !M! Burn to all enemies. NL If you play another Pledge card, activate a special effect."
+        "DESCRIPTION": "Apply !M! Burn to all enemies. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
     },
     "mysteryDungeon:PikachuAgility": {
         "NAME": "Agility",
@@ -885,6 +885,6 @@
     },
     "mysteryDungeon:TotodileWaterPledge": {
         "NAME": "Water Pledge",
-        "DESCRIPTION": "Channel !M! Frost orb. NL If you play another Pledge card, activate a special effect."
+        "DESCRIPTION": "Channel !M! Frost orb. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
     }
 }
