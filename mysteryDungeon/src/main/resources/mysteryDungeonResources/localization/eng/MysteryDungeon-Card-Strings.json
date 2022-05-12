@@ -407,7 +407,7 @@
     },
     "mysteryDungeon:ChikoritaGrassPledge": {
         "NAME": "Grass Pledge",
-        "DESCRIPTION": "Gain !M! mysterydungeon:Temporary_HP. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
+        "DESCRIPTION": "Gain !M! Temporary HP. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
     },
     "mysteryDungeon:ChikoritaGrassWhistle": {
         "NAME": "Grass Whistle",
@@ -438,7 +438,7 @@
     },
     "mysteryDungeon:ChikoritaMagicCoat": {
         "NAME": "Magic Coat",
-        "DESCRIPTION": "Gain !M! mysterydungeon:Temporary_HP. NL This turn All self damage received will also be inflicted to ALL enemies."
+        "DESCRIPTION": "Gain !M! Temporary HP. NL Draw 1 card."
     },
     "mysteryDungeon:ChikoritaMagicalLeaf": {
         "NAME": "Magical Leaf",
@@ -470,7 +470,7 @@
     },
     "mysteryDungeon:ChikoritaRefresh": {
         "NAME": "Refresh",
-        "DESCRIPTION": "Gain !M! mysterydungeon:Temporary_HP."
+        "DESCRIPTION": "Gain !M! Temporary HP."
     },
     "mysteryDungeon:ChikoritaSecretPower": {
         "NAME": "Secret Power",
@@ -492,7 +492,8 @@
     },
     "mysteryDungeon:ChikoritaSunnyDay": {
         "NAME": "Sunny Day",
-        "DESCRIPTION": "For the next X turns your first attack will deal !M! more damage. NL Exhaust."
+        "DESCRIPTION": "Ethereal. NL When dealing damage to yourself, draw a card.",
+        "UPGRADE_DESCRIPTION": "When dealing damage to yourself, draw a card."
     },
     "mysteryDungeon:ChikoritaSweetScent": {
         "NAME": "Sweet Scent",
@@ -512,7 +513,7 @@
     },
     "mysteryDungeon:ChikoritaWorrySeed": {
         "NAME": "Worry Seed",
-        "DESCRIPTION": "During your turns, Lose 1 HP per card played. NL At the end of your turn, Heal 3 HP."
+        "DESCRIPTION": "When drawn draw !M! card. NL While in hand, Lose 1 HP per card played."
     },
     "mysteryDungeon:ChikoritaWringOut": {
         "NAME": "Wring Out",

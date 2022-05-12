@@ -65,7 +65,6 @@ public abstract class PokemonCard extends CustomCard {
         }
 
     }
-
     public void upgradeSecondMagicNumber(int amount) { 
         baseSecondMagicNumber += amount; // Upgrade the number by the amount you provide in your card.
         secondMagicNumber = baseSecondMagicNumber; // Set the number to be equal to the base value.

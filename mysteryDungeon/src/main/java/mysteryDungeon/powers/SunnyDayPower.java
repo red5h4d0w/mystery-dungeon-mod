@@ -9,20 +9,21 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.OnLoseTempHpPower;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class OvergrowPower extends PokemonPower implements CloneablePowerInterface {
+public class SunnyDayPower extends PokemonPower implements CloneablePowerInterface, OnLoseTempHpPower {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("OvergrowPower");
+    public static final String POWER_ID = MysteryDungeon.makeID("SunnyDayPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -32,11 +33,11 @@ public class OvergrowPower extends PokemonPower implements CloneablePowerInterfa
     // There's a fallback "missing texture" image, so the game shouldn't crash if
     // you accidentally put a non-existent file.
     private static final Texture tex84 = TextureLoader
-            .getTexture(makePowerPath(OvergrowPower.class.getSimpleName() + "84.png"));
+            .getTexture(makePowerPath(SunnyDayPower.class.getSimpleName() + "84.png"));
     private static final Texture tex32 = TextureLoader
-            .getTexture(makePowerPath(OvergrowPower.class.getSimpleName() + "32.png"));
+            .getTexture(makePowerPath(SunnyDayPower.class.getSimpleName() + "32.png"));
 
-    public OvergrowPower(final AbstractCreature owner, final int amount) {
+    public SunnyDayPower(final AbstractCreature owner, final int amount) {
         name = NAME;
         ID = POWER_ID;
 
@@ -44,7 +45,6 @@ public class OvergrowPower extends PokemonPower implements CloneablePowerInterfa
         this.amount = amount;
 
         type = PowerType.BUFF;
-        isTurnBased = false;
 
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
@@ -53,15 +53,27 @@ public class OvergrowPower extends PokemonPower implements CloneablePowerInterfa
         updateDescription();
     }
 
-    @Override
+
     public void wasHPLost(DamageInfo info, int damageAmount) {
-        if(owner.currentHealth < owner.maxHealth * 0.5f && owner.currentHealth + damageAmount > owner.maxHealth * 0.5f)
-            addToBot(new ApplyPowerAction(owner, owner, new VigorPower(owner, amount), amount));
+        if (damageAmount > 0 && info.owner == this.owner) {
+            flash();
+            addToBot((AbstractGameAction) new DrawCardAction(amount));
+        }
+    }
+
+    public int onLoseTempHp(DamageInfo info, int damageAmount) {
+        if (damageAmount > 0 && info.owner == this.owner) {
+            flash();
+            if (this.owner == null || this.owner.isPlayer) {
+                addToBot((AbstractGameAction) new DrawCardAction(amount));
+            }
+        }
+        return damageAmount;
     }
 
     @Override
     public AbstractPower makeCopy() {
-        return new OvergrowPower(owner, amount);
+        return new SunnyDayPower(owner, amount);
     }
 
     @Override

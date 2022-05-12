@@ -3,7 +3,7 @@ package mysteryDungeon.cards.Chikorita;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -12,7 +12,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.MagicCoatPower;
 
 public class ChikoritaMagicCoat extends PokemonCard {
 
@@ -35,8 +34,8 @@ public class ChikoritaMagicCoat extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CHIKORITA_GREEN;
 
     private static final int COST = 1;
-    private static final int BASE_MAGIC_NUMBER = 5;
-    private static final int UPGRADE_MAGIC_NUMBER = 2;
+    private static final int BASE_MAGIC_NUMBER = 4;
+    private static final int UPGRADE_MAGIC_NUMBER = 3;
 
 
     // /STAT DECLARATION/
@@ -51,7 +50,7 @@ public class ChikoritaMagicCoat extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new AddTemporaryHPAction(p, p, magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new MagicCoatPower(p, 1), 1));
+        addToBot(new DrawCardAction(1));
     }
 
     // Upgraded stats.
