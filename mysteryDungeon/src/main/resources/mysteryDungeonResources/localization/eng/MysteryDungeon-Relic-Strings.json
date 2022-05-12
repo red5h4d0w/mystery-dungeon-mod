@@ -105,6 +105,13 @@
             "At the start of every turn add a random card from Pokémon that are not in your team to your hand. It costs 0 this turn."
         ]
     },
+    "mysteryDungeon:MeadowPlateRelic": {
+        "NAME": "Meadow Plate",
+        "FLAVOR": "This plate increases the power of plant-type move.",
+        "DESCRIPTIONS": [
+            "Gain 20 max HP. AT the start of your turn if you are above 65% HP lose HP until you are not. If you are under 65% of your max HP, heal a maximum of 10HP up to 65% of your max HP"
+        ]
+    },
     "mysteryDungeon:MiracleSeedRelic": {
         "NAME": "Miracle Seed",
         "FLAVOR": "Its a seed invued with life force that boosts the power of Grass-type moves.",
