@@ -4,7 +4,7 @@ import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.abstracts.PokemonRelic;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.pokemons.Charmander;
+import mysteryDungeon.pokemons.Chikorita;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
@@ -35,7 +35,7 @@ public class GrassySeedRelic extends PokemonRelic {
     public GrassySeedRelic() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
 
-        cardColor = Charmander.CARD_COLOR;
+        cardColor = Chikorita.CARD_COLOR;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }

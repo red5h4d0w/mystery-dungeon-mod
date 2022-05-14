@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 
 import mysteryDungeon.abstracts.PokemonPotion;
-import mysteryDungeon.pokemons.Squirtle;
+import mysteryDungeon.pokemons.Chikorita;
 
 
 public class GrassGemPotion extends PokemonPotion {
@@ -25,14 +25,14 @@ public class GrassGemPotion extends PokemonPotion {
 
     public GrassGemPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java
-        super(NAME, POTION_ID, PotionRarity.UNCOMMON, IMG_STRING);
+        super(NAME, POTION_ID, PotionRarity.COMMON, IMG_STRING);
         
         // Potency is the damage/magic number equivalent of potions.
         potency = getPotency();
         
        // Do you throw this potion at an enemy or do you just consume it.
         isThrown = false;
-        cardColor = Squirtle.CARD_COLOR;
+        cardColor = Chikorita.CARD_COLOR;
 
 
         updateDescription();

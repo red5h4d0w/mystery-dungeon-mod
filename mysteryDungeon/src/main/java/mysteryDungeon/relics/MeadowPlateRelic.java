@@ -2,7 +2,7 @@ package mysteryDungeon.relics;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonRelic;
-import mysteryDungeon.pokemons.Charmander;
+import mysteryDungeon.pokemons.Chikorita;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
@@ -31,7 +31,7 @@ public class MeadowPlateRelic extends PokemonRelic {
     public MeadowPlateRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
 
-        cardColor = Charmander.CARD_COLOR;
+        cardColor = Chikorita.CARD_COLOR;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }
