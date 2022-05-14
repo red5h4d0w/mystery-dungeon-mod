@@ -3,6 +3,7 @@ package mysteryDungeon.relics;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.abstracts.PokemonRelic;
+import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.pokemons.Charmander;
 import mysteryDungeon.util.TextureLoader;
 
@@ -10,13 +11,10 @@ import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.common.HealAction;
-import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardTags;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
@@ -46,8 +44,8 @@ public class GrassySeedRelic extends PokemonRelic {
     public void atBattleStartPreDraw() {
         AbstractCard[] possibleCards = CardLibrary.cards.values().stream()
                 .filter(c -> c instanceof PokemonCard)
-                .filter(c -> c.color = Pokemon.partner.cardColor)
-                .filter(c -> c.color = Pokemon.adventurer.cardColor)
+                .filter(c -> c.color == Pokemon.partner.cardColor)
+                .filter(c -> c.color == Pokemon.adventurer.cardColor)
                 .filter(c -> c.color != CardColor.COLORLESS)
                 .filter(c -> !c.tags.contains(CardTags.STARTER_DEFEND))
                 .filter(c -> !c.tags.contains(CardTags.STARTER_STRIKE))
