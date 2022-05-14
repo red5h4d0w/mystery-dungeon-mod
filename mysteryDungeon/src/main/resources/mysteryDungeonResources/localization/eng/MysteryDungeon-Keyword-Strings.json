@@ -70,12 +70,18 @@
         "DESCRIPTION": "The first #b2 #ySkill played each turn will grant you #b1 #yFocus each. NL When you #yexit this #yStance, #yevoke your next #b2 #yOrbs."
     },
     {
-        "PROPER_NAME": "Pledge",
+        "PROPER_NAME": "Pledge Card",
         "NAMES": [
-            "Pledge",
-            "pledge"
+            "Pledge Card",
+            "Pledge_Card",
+            "Pledge Cards",
+            "Pledge_Cards",
+            "pledge card",
+            "pledge_card",
+            "pledge cards",
+            "pledge_cards"
         ],
-        "DESCRIPTION": "The Pledge cards are Fire Pledge, Grass Pledge and Water Pledge. Playing two of them in the same turn will create a special effect. Fire/Grass: 9 Poison to ALL enemies. Fire/Water: 2 Vulnerable to ALL enemies. Grass/Water: 2 Weak to ALL enemies."
+        "DESCRIPTION": "#yPledge #yCards are #yFire #yPledge, #yGrass #yPledge and #yWater #yPledge. Playing two different #yPledge #yCards on the same turn will activate a special effect. NL Fire+Grass: 9 Poison to ALL enemies. Fire+Water: 2 Vulnerable to ALL enemies. Grass+Water: 2 Weak to ALL enemies."
     },
     {
         "PROPER_NAME": "Poison Thorns",

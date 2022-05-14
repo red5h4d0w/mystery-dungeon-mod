@@ -407,7 +407,7 @@
     },
     "mysteryDungeon:ChikoritaGrassPledge": {
         "NAME": "Grass Pledge",
-        "DESCRIPTION": "Gain !M! Temporary HP. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
+        "DESCRIPTION": "Gain !M! Temporary HP. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
     },
     "mysteryDungeon:ChikoritaGrassWhistle": {
         "NAME": "Grass Whistle",
