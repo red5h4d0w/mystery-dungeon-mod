@@ -101,7 +101,7 @@
             "Recovery",
             "recovery"
         ],
-        "DESCRIPTION": "When you receives damage, increase the number of stacks by as much damage you received. NL When you deal attack damage, heal 30%% of the attack damage dealt up to the health you lost on the last turn."
+        "DESCRIPTION": "When you receives damage, increase the number of stacks by as much damage you received. NL When you deal attack damage, heal 30% of the attack damage dealt up to the health you lost on the last turn."
     },
     {
         "PROPER_NAME": "Rest",
