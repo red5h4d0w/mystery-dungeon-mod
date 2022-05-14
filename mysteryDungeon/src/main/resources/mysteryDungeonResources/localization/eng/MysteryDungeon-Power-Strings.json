@@ -64,7 +64,8 @@
     "mysteryDungeon:ChikoritaWorrySeedPower": {
         "NAME": "Worry Seed",
         "DESCRIPTIONS": [
-            "During your turn, Lose #b%s HP per card played. At the end of your turn, Heal 2 times #b%s HP."
+            "During your turn, Lose #b1 HP per card played. At the end of your turn, Heal #b2 HP.",
+            "During your turn, Lose #b%s HP per card played. At the end of your turn, Heal 2 HP #b%s times."
         ]
     },
     "mysteryDungeon:CounterPower": {
