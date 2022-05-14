@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.powers.PoisonPower;
 
 import mysteryDungeon.abstracts.PokemonPotion;
-import mysteryDungeon.pokemons.Charmander;
+import mysteryDungeon.pokemons.Chikorita;
 
 public class MagoBerryPotion extends PokemonPotion {
 
@@ -33,7 +33,7 @@ public class MagoBerryPotion extends PokemonPotion {
        // Do you throw this potion at an enemy or do you just consume it.
         isThrown = false;
 
-        cardColor = Charmander.CARD_COLOR;
+        cardColor = Chikorita.CARD_COLOR;
 
         updateDescription();
         

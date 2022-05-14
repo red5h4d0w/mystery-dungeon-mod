@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 
 import mysteryDungeon.abstracts.PokemonPotion;
-import mysteryDungeon.pokemons.Squirtle;
+import mysteryDungeon.pokemons.Chikorita;
 
 
 public class GrassGemPotion extends PokemonPotion {
@@ -32,7 +32,7 @@ public class GrassGemPotion extends PokemonPotion {
         
        // Do you throw this potion at an enemy or do you just consume it.
         isThrown = false;
-        cardColor = Squirtle.CARD_COLOR;
+        cardColor = Chikorita.CARD_COLOR;
 
 
         updateDescription();
