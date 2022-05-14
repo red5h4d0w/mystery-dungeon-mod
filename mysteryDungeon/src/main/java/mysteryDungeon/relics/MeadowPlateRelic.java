@@ -9,6 +9,7 @@ import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -47,9 +48,7 @@ public class MeadowPlateRelic extends PokemonRelic {
         if (p.currentHealth < p.maxHealth * 0.65f)
             addToBot(new HealAction(p, p, 10));
         if (p.currentHealth > p.maxHealth * 0.65f)
-            addToBot(new LoseHPAction(p, p, 1));
-        if (p.currentHealth > p.maxHealth * 0.65f)
-        return;
+            addToBot(new LoseHPAction(p, p, MathUtils.round(p.currentHealth - 0.65f * p.maxHealth)));
     }
 
     // Description
