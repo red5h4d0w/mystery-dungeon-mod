@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
 import mysteryDungeon.MysteryDungeon;
@@ -27,6 +28,8 @@ public class BigRootRelic extends PokemonRelic {
 
     public BigRootRelic() {
         super(ID, IMG, OUTLINE, RelicTier.SPECIAL, LandingSound.CLINK);
+        tips.clear();
+        tips.add(new PowerTip(name, description));
     }
 
     @Override
