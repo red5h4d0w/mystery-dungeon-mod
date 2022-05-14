@@ -17,6 +17,9 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 //Gain 1 dex for the turn for each card played.
 
 public class OvergrowPower extends PokemonPower implements CloneablePowerInterface {
@@ -35,6 +38,8 @@ public class OvergrowPower extends PokemonPower implements CloneablePowerInterfa
             .getTexture(makePowerPath(OvergrowPower.class.getSimpleName() + "84.png"));
     private static final Texture tex32 = TextureLoader
             .getTexture(makePowerPath(OvergrowPower.class.getSimpleName() + "32.png"));
+
+    public static Logger logger = LogManager.getLogger(OvergrowPower.class);
 
     public OvergrowPower(final AbstractCreature owner, final int amount) {
         name = NAME;
@@ -55,6 +60,7 @@ public class OvergrowPower extends PokemonPower implements CloneablePowerInterfa
 
     @Override
     public void wasHPLost(DamageInfo info, int damageAmount) {
+        logger.info(owner.currentHealth);
         if(owner.currentHealth < owner.maxHealth * 0.5f && owner.currentHealth + damageAmount > owner.maxHealth * 0.5f)
             addToBot(new ApplyPowerAction(owner, owner, new VigorPower(owner, amount), amount));
     }
