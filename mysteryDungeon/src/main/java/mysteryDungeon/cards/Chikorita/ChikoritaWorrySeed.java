@@ -20,7 +20,7 @@ public class ChikoritaWorrySeed extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(ChikoritaWorrySeed.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("ChikoritaPower.png");
+    public static final String IMG = makeCardPath("ChikoritaSkill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -49,8 +49,8 @@ public class ChikoritaWorrySeed extends PokemonCard {
 
     // Actions the card should do.
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m) { 
-        addToBot(new DrawCardAction(magicNumber));   
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new DrawCardAction(magicNumber));
     }
 
     @Override
@@ -62,12 +62,13 @@ public class ChikoritaWorrySeed extends PokemonCard {
     @Override
     public void triggerOnOtherCardPlayed(AbstractCard c) {
         addToTop(new LoseHPAction(AbstractDungeon.player, AbstractDungeon.player, 1));
-      }
+    }
 
+    @Override
     public void triggerWhenDrawn() {
         addToBot(new DrawCardAction(magicNumber));
-      }
-      
+    }
+
     // Upgraded stats.
     @Override
     public void upgrade() {
