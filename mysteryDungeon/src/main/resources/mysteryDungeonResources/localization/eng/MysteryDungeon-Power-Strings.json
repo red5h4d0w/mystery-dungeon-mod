@@ -279,6 +279,13 @@
             "Evoke %s orbs when you are attacked."
         ]
     },
+    "mysteryDungeon:SunnyDayPower": {
+        "NAME": "Sunny Day",
+        "DESCRIPTIONS": [
+            "When dealing damage to yourself, everytime you lose a total of 3HP draw %s card.",
+            "When dealing damage to yourself, everytime you lose a total of 3HP draw %s cards."
+        ]
+    },
     "mysteryDungeon:SweetKissPower": {
         "NAME": "Sweet Kiss",
         "DESCRIPTIONS": [

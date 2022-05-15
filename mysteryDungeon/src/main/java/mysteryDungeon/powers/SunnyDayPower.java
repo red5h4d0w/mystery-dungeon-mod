@@ -78,6 +78,9 @@ public class SunnyDayPower extends PokemonPower implements CloneablePowerInterfa
 
     @Override
     public void updateDescription() {
-        description = String.format(DESCRIPTIONS[0], amount);
+        if(amount==1)
+            description = String.format(DESCRIPTIONS[0], amount);
+        else
+            description = String.format(DESCRIPTIONS[1], amount);
     }
 }

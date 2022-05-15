@@ -492,8 +492,8 @@
     },
     "mysteryDungeon:ChikoritaSunnyDay": {
         "NAME": "Sunny Day",
-        "DESCRIPTION": "Ethereal. NL When dealing damage to yourself, draw a card.",
-        "UPGRADE_DESCRIPTION": "When dealing damage to yourself, draw a card."
+        "DESCRIPTION": "Ethereal. NL When dealing damage to yourself, everytime you lose a total of 3HP draw a card.",
+        "UPGRADE_DESCRIPTION": "When dealing damage to yourself, everytime you lose a total of 3HP draw a card."
     },
     "mysteryDungeon:ChikoritaSweetScent": {
         "NAME": "Sweet Scent",
