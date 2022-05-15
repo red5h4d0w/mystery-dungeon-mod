@@ -13,8 +13,8 @@ import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardTags;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
@@ -45,7 +45,7 @@ public class GrassySeedRelic extends PokemonRelic {
         AbstractCard[] possibleCards = CardLibrary.cards.values().stream()
                 .filter(c -> c instanceof PokemonCard)
                 .filter(c -> c.color == Pokemon.partner.cardColor || c.color == Pokemon.adventurer.cardColor)
-                .filter(c -> c.color != CardColor.COLORLESS)
+                .filter(c -> c.type == CardType.ATTACK)
                 .filter(c -> !c.tags.contains(CardTags.STARTER_DEFEND))
                 .filter(c -> !c.tags.contains(CardTags.STARTER_STRIKE))
                 .toArray(AbstractCard[]::new);
