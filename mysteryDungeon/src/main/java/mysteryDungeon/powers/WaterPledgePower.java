@@ -18,6 +18,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.LoseStrengthPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 
@@ -78,6 +80,13 @@ public class WaterPledgePower extends PokemonPower implements CloneablePowerInte
             }
             addToBot(new RemoveSpecificPowerAction(target, source, this));
             return false;  
+        }
+        if (power instanceof WaterPledgePower) {
+            addToBot(new ApplyPowerAction(owner, owner, new StrengthPower(owner, 3), 3));
+            addToBot(new ApplyPowerAction(owner, owner, new LoseStrengthPower(owner, 3), 3));
+
+            addToBot(new RemoveSpecificPowerAction(target, source, this));
+            return false;
         }
         else
         return true;

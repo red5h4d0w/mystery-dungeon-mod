@@ -11,6 +11,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.BetterOnApplyPowerPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -77,6 +78,12 @@ public class FirePledgePower extends PokemonPower implements CloneablePowerInter
             }
             addToBot(new RemoveSpecificPowerAction(target, source, this));
             return false;  
+        }
+        if (power instanceof FirePledgePower) {
+            addToBot(new GainEnergyAction(1));
+
+            addToBot(new RemoveSpecificPowerAction(target, source, this));
+            return false;
         }
         else
         return true;

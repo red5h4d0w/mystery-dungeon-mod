@@ -81,7 +81,7 @@
             "pledge cards",
             "pledge_cards"
         ],
-        "DESCRIPTION": "#yPledge #yCards are #yFire #yPledge, #yGrass #yPledge and #yWater #yPledge. Playing two different #yPledge #yCards on the same turn will activate a special effect. NL Fire+Grass: 9 Poison to ALL enemies. Fire+Water: 2 Vulnerable to ALL enemies. Grass+Water: 2 Weak to ALL enemies."
+        "DESCRIPTION": "#yPledge #yCards are #yFire #yPledge, #yGrass #yPledge and #yWater #yPledge. NL Fire+Grass: 9 Poison to ALL enemies. Fire+Water: 2 Vulnerable to ALL enemies. Grass+Water: 2 Weak to ALL enemies. Grass+Grass: Gain 1 Thorns. Fire+Fire: Gain 1 energy. Water+Water: Gain 3 Temporary Strength."
     },
     {
         "PROPER_NAME": "Poison Thorns",
