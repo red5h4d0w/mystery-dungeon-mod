@@ -9,6 +9,8 @@ import com.evacipated.cardcrawl.modthespire.lib.SpirePrefixPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpireReturn;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.RoomEventDialog;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
@@ -104,6 +106,8 @@ public class chronoModsPatch {
             if(playerInfo.character instanceof Pokemon) {
                 AbstractCard[] pokemonCards = CardLibrary.cards.values().stream()
                     .filter(c -> c instanceof PokemonCard)
+                    .filter(c -> c.type != CardType.STATUS || c.type != CardType.CURSE)
+                    .filter(c -> c.color != CardColor.COLORLESS)
                     .toArray(AbstractCard[]::new);
                 for(AbstractCard card : pokemonCards) {
                     anyCard.addToBottom(card);
