@@ -13,7 +13,6 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
@@ -34,9 +33,6 @@ public class DocileExplorerRelic extends PokemonRelic implements OnReceivePowerR
 
     public DocileExplorerRelic() {
         super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.CLINK);
-
-        tips.clear();
-        tips.add(new PowerTip(name, description));
     }
 
     public boolean onReceivePower(AbstractPower power, AbstractCreature source)

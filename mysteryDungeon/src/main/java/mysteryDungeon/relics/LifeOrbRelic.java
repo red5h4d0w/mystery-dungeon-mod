@@ -12,7 +12,6 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
 public class LifeOrbRelic extends PokemonRelic { 
@@ -28,10 +27,7 @@ public class LifeOrbRelic extends PokemonRelic {
 
     public LifeOrbRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
-
         cardColor = Charmander.CARD_COLOR;
-        tips.clear();
-        tips.add(new PowerTip(name, description));
     }
 
     @Override

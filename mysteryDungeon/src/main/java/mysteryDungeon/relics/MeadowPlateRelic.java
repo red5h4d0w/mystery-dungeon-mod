@@ -15,7 +15,6 @@ import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
 public class MeadowPlateRelic extends PokemonRelic { 
@@ -31,10 +30,7 @@ public class MeadowPlateRelic extends PokemonRelic {
 
     public MeadowPlateRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
-
         cardColor = Chikorita.CARD_COLOR;
-        tips.clear();
-        tips.add(new PowerTip(name, description));
     }
 
     @Override

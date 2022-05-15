@@ -11,7 +11,6 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.RetainCardPower;
 
@@ -26,9 +25,6 @@ public class TimidExplorerRelic extends PokemonRelic {
 
     public TimidExplorerRelic() {
         super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.CLINK);
-
-        tips.clear();
-        tips.add(new PowerTip(name, description));
     }
 
     @Override

@@ -12,7 +12,6 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.watcher.MasterRealityPower;
 
@@ -29,10 +28,7 @@ public class WaveIncenseRelic extends PokemonRelic {
 
     public WaveIncenseRelic() {
         super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.CLINK);
-
         cardColor = Squirtle.CARD_COLOR;
-        tips.clear();
-        tips.add(new PowerTip(name, description));
     }
 
     @Override

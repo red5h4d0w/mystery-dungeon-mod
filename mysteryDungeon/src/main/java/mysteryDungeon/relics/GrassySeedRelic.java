@@ -18,7 +18,6 @@ import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
-import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
 public class GrassySeedRelic extends PokemonRelic { 
@@ -36,8 +35,7 @@ public class GrassySeedRelic extends PokemonRelic {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
 
         cardColor = Chikorita.CARD_COLOR;
-        tips.clear();
-        tips.add(new PowerTip(name, description));
+        
     }
  
     @Override
