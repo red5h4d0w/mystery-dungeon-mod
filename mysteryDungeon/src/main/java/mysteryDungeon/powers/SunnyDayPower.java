@@ -58,19 +58,26 @@ public class SunnyDayPower extends PokemonTwoAmountPower implements CloneablePow
     public void wasHPLost(DamageInfo info, int damageAmount) {
         if (damageAmount > 0 && info.owner == this.owner) {
             flash();
+            if(damageAmount-amount2>=0)
+                addToBot((AbstractGameAction) new DrawCardAction(((damageAmount+3-amount2)/3)*amount));
             // Compute new remainder
             amount2 = (amount2-damageAmount) % 3 + 3 % 3;
-            if(damageAmount/3>0)
-                addToBot((AbstractGameAction) new DrawCardAction((damageAmount/3)*amount));
+            if(amount2==0) {
+                amount2+=3;
+            }
         }
     }
 
     public int onLoseTempHp(DamageInfo info, int damageAmount) {
         if (damageAmount > 0 && info.owner == this.owner) {
             flash();
+            if(damageAmount-amount2>=0)
+                addToBot((AbstractGameAction) new DrawCardAction(((damageAmount+3-amount2)/3)*amount));
+            // Compute new remainder
             amount2 = (amount2-damageAmount) % 3 + 3 % 3;
-            if(damageAmount/3>0)
-                addToBot((AbstractGameAction) new DrawCardAction((damageAmount/3)*amount));
+            if(amount2==0) {
+                amount2+=3;
+            }
         }
         return damageAmount;
     }
