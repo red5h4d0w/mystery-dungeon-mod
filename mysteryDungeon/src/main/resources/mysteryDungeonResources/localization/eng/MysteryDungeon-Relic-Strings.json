@@ -63,6 +63,13 @@
             "At the start of each combat, apply #b9 #yBurn to ALL enemies."
         ]
     },
+    "mysteryDungeon:GrassySeedRelic": {
+        "NAME": "Grassy Seed",
+        "FLAVOR": "It boosts Defense on Grassy Terrain.",
+        "DESCRIPTIONS": [
+            "At the start of combat add a random attack to your draw pile. It costs 0 this combat."
+        ]
+    },
     "mysteryDungeon:HardyExplorerRelic": {
         "NAME": "Hardy Explorer",
         "FLAVOR": "What is this?",
@@ -107,7 +114,7 @@
     },
     "mysteryDungeon:MeadowPlateRelic": {
         "NAME": "Meadow Plate",
-        "FLAVOR": "This plate increases the power of plant-type move.",
+        "FLAVOR": "A stone tablet imbued with the essence of plants. When used on a certain Pokémon, it allows that Pokémon to gain the power of the Grass type.",
         "DESCRIPTIONS": [
             "Gain 20 max HP. AT the start of your turn if you are above 65% HP lose HP until you are not. If you are under 65% of your max HP, heal a maximum of 10HP up to 65% of your max HP"
         ]
