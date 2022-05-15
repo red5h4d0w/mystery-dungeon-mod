@@ -106,7 +106,7 @@ public class chronoModsPatch {
             if(playerInfo.character instanceof Pokemon) {
                 AbstractCard[] pokemonCards = CardLibrary.cards.values().stream()
                     .filter(c -> c instanceof PokemonCard)
-                    .filter(c -> c.type != CardType.STATUS || c.type != CardType.CURSE)
+                    .filter(c -> c.type != CardType.STATUS && c.type != CardType.CURSE)
                     .filter(c -> c.color != CardColor.COLORLESS)
                     .toArray(AbstractCard[]::new);
                 for(AbstractCard card : pokemonCards) {
