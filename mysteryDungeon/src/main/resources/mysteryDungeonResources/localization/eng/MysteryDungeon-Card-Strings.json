@@ -513,7 +513,7 @@
     },
     "mysteryDungeon:ChikoritaWorrySeed": {
         "NAME": "Worry Seed",
-        "DESCRIPTION": "When drawn draw !M! card. NL While in hand, Lose 1 HP per card played."
+        "DESCRIPTION": "Unplayable. NL Ethereal. NL When drawn draw !M! card. NL While in hand, Lose 1 HP per card played."
     },
     "mysteryDungeon:ChikoritaWringOut": {
         "NAME": "Wring Out",
