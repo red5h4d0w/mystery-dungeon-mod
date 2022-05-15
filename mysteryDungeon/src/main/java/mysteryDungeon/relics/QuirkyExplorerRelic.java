@@ -10,7 +10,6 @@ import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
 public class QuirkyExplorerRelic extends PokemonRelic implements GoldBonusInterface{ 
@@ -28,8 +27,7 @@ public class QuirkyExplorerRelic extends PokemonRelic implements GoldBonusInterf
     public QuirkyExplorerRelic() {
         super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.CLINK);
 
-        tips.clear();
-        tips.add(new PowerTip(name, description));
+        
     }
 
     @Override

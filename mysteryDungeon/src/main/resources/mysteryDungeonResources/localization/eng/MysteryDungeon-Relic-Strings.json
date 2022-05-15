@@ -18,14 +18,14 @@
         "NAME": "Big Root",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "Whenever you are at 70% or less of your max HP, gain mysterydungeon:Recovery."
+            "Whenever you are at #b70% or less of your max HP, gain #yRecovery."
         ]
     },
     "mysteryDungeon:BraveExplorerRelic": {
         "NAME": "Brave Explorer",
         "FLAVOR": "A brave Explorer",
         "DESCRIPTIONS": [
-            "The first time you don't have any #yBlock at the end of your turn apply 2 vulnerable to all enemies."
+            "The first time you don't have any #yBlock at the end of your turn apply #b2 #yVulnerable to ALL enemies."
         ]
     },
     "mysteryDungeon:CalmExplorerRelic": {

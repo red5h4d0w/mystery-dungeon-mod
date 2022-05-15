@@ -13,7 +13,6 @@ import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
 public class LeftoversRelic extends PokemonRelic { 
@@ -31,8 +30,7 @@ public class LeftoversRelic extends PokemonRelic {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
 
         cardColor = Bulbasaur.CARD_COLOR;
-        tips.clear();
-        tips.add(new PowerTip(name, description));
+        
     }
 
     @Override

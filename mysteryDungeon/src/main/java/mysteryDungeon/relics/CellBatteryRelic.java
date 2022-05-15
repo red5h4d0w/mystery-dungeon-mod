@@ -12,7 +12,6 @@ import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
 public class CellBatteryRelic extends PokemonRelic { 
@@ -28,10 +27,7 @@ public class CellBatteryRelic extends PokemonRelic {
 
     public CellBatteryRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
-
         cardColor = Pikachu.CARD_COLOR;
-        tips.clear();
-        tips.add(new PowerTip(name, description));
     }
 
     @Override

@@ -18,7 +18,6 @@ import com.megacrit.cardcrawl.cards.AbstractCard.CardTags;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
-import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
 public class MetronomeRelic extends PokemonRelic { 
@@ -35,8 +34,7 @@ public class MetronomeRelic extends PokemonRelic {
     public MetronomeRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
 
-        tips.clear();
-        tips.add(new PowerTip(name, description));
+        
     }
 
     @Override

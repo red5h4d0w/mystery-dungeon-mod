@@ -13,7 +13,6 @@ import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
 public class CalmExplorerRelic extends PokemonRelic { 
@@ -31,9 +30,6 @@ public class CalmExplorerRelic extends PokemonRelic {
 
     public CalmExplorerRelic() {
         super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.CLINK);
-
-        tips.clear();
-        tips.add(new PowerTip(name, description));
     }
 
     @Override

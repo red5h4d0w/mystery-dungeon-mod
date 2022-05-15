@@ -1,6 +1,5 @@
 package mysteryDungeon.relics;
 
-import basemod.helpers.CardPowerTip;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonRelic;
 import mysteryDungeon.cards.tempCards.ColorlessAgility;
@@ -29,9 +28,6 @@ public class JollyExplorerRelic extends PokemonRelic {
 
     public JollyExplorerRelic() {
         super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.CLINK);
-
-        tips.clear();
-        tips.add(new CardPowerTip(new ColorlessAgility(), name, description));
     }
 
     @Override

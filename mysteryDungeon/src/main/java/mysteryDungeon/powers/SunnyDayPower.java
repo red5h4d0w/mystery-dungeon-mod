@@ -2,7 +2,7 @@ package mysteryDungeon.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.abstracts.PokemonPower;
+import mysteryDungeon.abstracts.PokemonTwoAmountPower;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
@@ -20,7 +20,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class SunnyDayPower extends PokemonPower implements CloneablePowerInterface, OnLoseTempHpPower {
+public class SunnyDayPower extends PokemonTwoAmountPower implements CloneablePowerInterface, OnLoseTempHpPower {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("SunnyDayPower");
@@ -43,6 +43,7 @@ public class SunnyDayPower extends PokemonPower implements CloneablePowerInterfa
 
         this.owner = owner;
         this.amount = amount;
+        this.amount2 = 3;
 
         type = PowerType.BUFF;
 
@@ -57,16 +58,19 @@ public class SunnyDayPower extends PokemonPower implements CloneablePowerInterfa
     public void wasHPLost(DamageInfo info, int damageAmount) {
         if (damageAmount > 0 && info.owner == this.owner) {
             flash();
-            addToBot((AbstractGameAction) new DrawCardAction(amount));
+            // Compute new remainder
+            amount2 = (amount2-damageAmount) % 3 + 3 % 3;
+            if(damageAmount/3>0)
+                addToBot((AbstractGameAction) new DrawCardAction((damageAmount/3)*amount));
         }
     }
 
     public int onLoseTempHp(DamageInfo info, int damageAmount) {
         if (damageAmount > 0 && info.owner == this.owner) {
             flash();
-            if (this.owner == null || this.owner.isPlayer) {
-                addToBot((AbstractGameAction) new DrawCardAction(amount));
-            }
+            amount2 = (amount2-damageAmount) % 3 + 3 % 3;
+            if(damageAmount/3>0)
+                addToBot((AbstractGameAction) new DrawCardAction((damageAmount/3)*amount));
         }
         return damageAmount;
     }

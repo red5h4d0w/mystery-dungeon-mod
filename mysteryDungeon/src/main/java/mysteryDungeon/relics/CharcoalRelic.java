@@ -17,7 +17,6 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
@@ -35,10 +34,7 @@ public class CharcoalRelic extends PokemonRelic implements OnApplyPowerRelic {
 
     public CharcoalRelic() {
         super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.CLINK);
-
         cardColor = Charmander.CARD_COLOR;
-        tips.clear();
-        tips.add(new PowerTip(name, description));
     }
 
     @Override
@@ -46,7 +42,6 @@ public class CharcoalRelic extends PokemonRelic implements OnApplyPowerRelic {
         if(power.type == PowerType.DEBUFF){
             addToBot((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)AbstractDungeon.player, this));
             addToBot((AbstractGameAction)new DamageAllEnemiesAction(null, 
-                  
                   DamageInfo.createDamageMatrix(1, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         }
         return true;
