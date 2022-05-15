@@ -35,8 +35,7 @@ public class ChikoritaWorrySeed extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CHIKORITA_GREEN;
 
     private static final int COST = -2;
-    private static final int BASE_MAGIC_NUMBER = 1;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
+    private static final int BASE_MAGIC_NUMBER = 2;
 
     // /STAT DECLARATION/
 
@@ -74,7 +73,8 @@ public class ChikoritaWorrySeed extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            isEthereal = false;
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

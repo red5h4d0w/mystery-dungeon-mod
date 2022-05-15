@@ -514,6 +514,7 @@
     "mysteryDungeon:ChikoritaWorrySeed": {
         "NAME": "Worry Seed",
         "DESCRIPTION": "Unplayable. NL Ethereal. NL When drawn draw !M! card. NL While in hand, Lose 1 HP per card played.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn draw !M! card. NL While in hand, Lose 1 HP per card played.",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
         ]
