@@ -386,7 +386,7 @@
     },
     "mysteryDungeon:ChikoritaEnergyBall": {
         "NAME": "Energy Ball",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! vulnerable."
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
     },
     "mysteryDungeon:ChikoritaExplorerForm": {
         "NAME": "Explorer Form",
@@ -403,7 +403,7 @@
     },
     "mysteryDungeon:ChikoritaGrassKnot": {
         "NAME": "Grass Knot",
-        "DESCRIPTION": "Remove 33% of the enemy's maximum health. NL Exhaust."
+        "DESCRIPTION": "Remove 33% of the enemy's remaining HP. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaGrassPledge": {
         "NAME": "Grass Pledge",
@@ -492,7 +492,7 @@
     },
     "mysteryDungeon:ChikoritaSunnyDay": {
         "NAME": "Sunny Day",
-        "DESCRIPTION": "Ethereal. NL When dealing damage to yourself, efor every 3 HP lost draw a card.",
+        "DESCRIPTION": "Ethereal. NL When dealing damage to yourself, for every 3 HP lost draw a card.",
         "UPGRADE_DESCRIPTION": "When dealing damage to yourself, for every 3 HP lost draw a card."
     },
     "mysteryDungeon:ChikoritaSweetScent": {
