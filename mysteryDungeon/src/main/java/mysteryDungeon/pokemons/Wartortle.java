@@ -12,5 +12,6 @@ public class Wartortle extends AbstractPokemon {
 
     public Wartortle(){
         super(COLOR, CARD_COLOR);
+        evolution = new Blastoise();
     }
 }
