@@ -62,9 +62,9 @@ public class SunnyDayPower extends PokemonTwoAmountPower implements CloneablePow
                 addToBot((AbstractGameAction) new DrawCardAction(((damageAmount+3-amount2)/3)*amount));
             // Compute new remainder
             amount2 = (amount2-damageAmount) % 3 + 3 % 3;
-            if(amount2==0) {
-                amount2+=3;
-            }
+        }
+        if(amount2==0) {
+            amount2+=3;
         }
     }
 
@@ -75,9 +75,9 @@ public class SunnyDayPower extends PokemonTwoAmountPower implements CloneablePow
                 addToBot((AbstractGameAction) new DrawCardAction(((damageAmount+3-amount2)/3)*amount));
             // Compute new remainder
             amount2 = (amount2-damageAmount) % 3 + 3 % 3;
-            if(amount2==0) {
-                amount2+=3;
-            }
+        }
+        if(amount2==0) {
+            amount2+=3;
         }
         return damageAmount;
     }
