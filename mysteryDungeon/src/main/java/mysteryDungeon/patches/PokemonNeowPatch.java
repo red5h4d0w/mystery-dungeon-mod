@@ -24,9 +24,11 @@ import com.megacrit.cardcrawl.vfx.InfiniteSpeechBubble;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import chronoMods.coop.CoopNeowEvent;
 import mysteryDungeon.cards.fakeCards.ExplorersDeck;
 import mysteryDungeon.cards.fakeCards.PartnersDeck;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.patches.CompatibilityPatches.chronoModsPatch;
 import mysteryDungeon.pokemons.*;
 import mysteryDungeon.util.LocalizationTool;
 
@@ -56,7 +58,10 @@ public class PokemonNeowPatch {
 
     public static boolean isTestRun = false;
 
-    public static void InitializeTraitsScore() {
+    public static boolean needsCoopBleesing = false;
+
+    public static void InitializeTraitsScore()
+    {
         logger.info(traits);
         traits.clear();
         traits.put("Brave", 0);
@@ -211,7 +216,10 @@ public class PokemonNeowPatch {
             if (!(AbstractDungeon.player instanceof Pokemon)) {
                 return SpireReturn.Continue();
             }
-            switch (screenNum) {
+            logger.info(screenNum);
+            logger.info("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+            logger.info(needsCoopBleesing);
+            switch(screenNum) {
                 case 0:
                     ShowNextDialog(__instance);
                     return SpireReturn.Return(null);
@@ -245,6 +253,12 @@ public class PokemonNeowPatch {
                             AbstractDungeon.player.masterDeck.removeCard(PartnersDeck.ID);
                             ((Pokemon) AbstractDungeon.player).awardThingsToAward();
                             screenNum = 99;
+                            if(needsCoopBleesing) {
+                                needsCoopBleesing = false;
+                                chronoModsPatch.ready = true;
+                                logger.info("allo");
+                                CoopNeowEvent.BeginNeowEvent.Postfix(__instance, false);
+                            }
                             return SpireReturn.Continue();
                     }
                     logger.info(isTestRun);
@@ -307,7 +321,13 @@ public class PokemonNeowPatch {
                     CardCrawlGame.dungeon.initializeCardPools();
                     AbstractDungeon.player.masterDeck.removeCard(ExplorersDeck.ID);
                     AbstractDungeon.player.masterDeck.removeCard(PartnersDeck.ID);
-                    ((Pokemon) AbstractDungeon.player).awardThingsToAward();
+                    ((Pokemon)AbstractDungeon.player).awardThingsToAward();
+                    if(needsCoopBleesing) {
+                        needsCoopBleesing = false;
+                        chronoModsPatch.ready = true;
+                        logger.info("allo");
+                        CoopNeowEvent.BeginNeowEvent.Postfix(__instance, false);
+                    }
                     screenNum = 99;
                     return SpireReturn.Continue();
                 case 6:
@@ -388,11 +408,16 @@ public class PokemonNeowPatch {
             return;
         }
         // Else look at the Pokémon's color and choose from existing pokémons
-        if (chosenPokemon.color == Color.GREEN.cpy()) {
+        if(chosenPokemon.color.equals(Color.GREEN.cpy()))
+        {
             chosenPokemon = new Bulbasaur();
-        } else if (chosenPokemon.color == Color.RED.cpy()) {
+        }
+        else if(chosenPokemon.color.equals(Color.RED.cpy()))
+        {
             chosenPokemon = new Charmander();
-        } else if (chosenPokemon.color == Color.BLUE.cpy()) {
+        }
+        else if(chosenPokemon.color.equals(Color.BLUE.cpy()))
+        {
             chosenPokemon = new Squirtle();
         } else {
             chosenPokemon = new Pikachu();

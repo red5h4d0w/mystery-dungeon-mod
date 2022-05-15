@@ -9,9 +9,6 @@ import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.actions.DiscardAnyNumberAction;
 import mysteryDungeon.pokemons.Squirtle;
@@ -26,8 +23,6 @@ public class AspearBerryPotion extends PokemonPotion {
 
     public static final String IMG_STRING = "aspear-berry.png";
 
-    public Logger logger = LogManager.getLogger(AspearBerryPotion.class);
-
     public AspearBerryPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java
         super(NAME, POTION_ID, PotionRarity.COMMON, IMG_STRING);
@@ -40,9 +35,6 @@ public class AspearBerryPotion extends PokemonPotion {
 
         cardColor = Squirtle.CARD_COLOR;
         
-        
-        logger.info(NAME);
-        logger.info(POTION_ID);
         updateDescription();
         // Initialize the on-hover name + description
         tips.add(new PowerTip(name, description));
