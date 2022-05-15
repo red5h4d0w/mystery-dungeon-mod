@@ -24,9 +24,11 @@ import com.megacrit.cardcrawl.vfx.InfiniteSpeechBubble;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import chronoMods.coop.CoopNeowEvent;
 import mysteryDungeon.cards.fakeCards.ExplorersDeck;
 import mysteryDungeon.cards.fakeCards.PartnersDeck;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.patches.CompatibilityPatches.chronoModsPatch;
 import mysteryDungeon.pokemons.*;
 import mysteryDungeon.util.LocalizationTool;
 
@@ -55,6 +57,8 @@ public class PokemonNeowPatch {
     public static boolean alienInvasion = false;
 
     public static boolean isTestRun = false;
+
+    public static boolean needsCoopBleesing = false;
 
     public static void InitializeTraitsScore()
     {
@@ -228,6 +232,9 @@ public class PokemonNeowPatch {
             if(!(AbstractDungeon.player instanceof Pokemon)) {
                 return SpireReturn.Continue();
             }
+            logger.info(screenNum);
+            logger.info("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+            logger.info(needsCoopBleesing);
             switch(screenNum) {
                 case 0:
                     ShowNextDialog(__instance);
@@ -260,6 +267,12 @@ public class PokemonNeowPatch {
                             AbstractDungeon.player.masterDeck.removeCard(PartnersDeck.ID);
                             ((Pokemon)AbstractDungeon.player).awardThingsToAward();
                             screenNum = 99;
+                            if(needsCoopBleesing) {
+                                needsCoopBleesing = false;
+                                chronoModsPatch.ready = true;
+                                logger.info("allo");
+                                CoopNeowEvent.BeginNeowEvent.Postfix(__instance, false);
+                            }
                             return SpireReturn.Continue();
                     }
                     logger.info(isTestRun);
@@ -332,6 +345,12 @@ public class PokemonNeowPatch {
                     AbstractDungeon.player.masterDeck.removeCard(ExplorersDeck.ID);
                     AbstractDungeon.player.masterDeck.removeCard(PartnersDeck.ID);
                     ((Pokemon)AbstractDungeon.player).awardThingsToAward();
+                    if(needsCoopBleesing) {
+                        needsCoopBleesing = false;
+                        chronoModsPatch.ready = true;
+                        logger.info("allo");
+                        CoopNeowEvent.BeginNeowEvent.Postfix(__instance, false);
+                    }
                     screenNum = 99;
                     return SpireReturn.Continue();
                 case 6:
@@ -344,6 +363,8 @@ public class PokemonNeowPatch {
                 case 11:
                     ((Pokemon)AbstractDungeon.player).adventurer = implementedPokemons.get(buttonPressed);
                     String[] possibleNatures = NatureOfPokemon.get(((Pokemon)AbstractDungeon.player).adventurer.getClass().getSimpleName());
+                    logger.info(((Pokemon)AbstractDungeon.player).adventurer.getClass().getSimpleName());
+                    logger.info(possibleNatures.length);
                     ((Pokemon)AbstractDungeon.player).DefineNature(possibleNatures[AbstractDungeon.eventRng.random(possibleNatures.length)]);
                     AskQuestion(__instance, new Question(TEXT[8], implementedPokemons.stream().filter(p -> p != ((Pokemon)AbstractDungeon.player).adventurer).map(p -> p.name).toArray(size-> new String[size])));
                     screenNum=5;
@@ -410,15 +431,15 @@ public class PokemonNeowPatch {
             return;
         }
         // Else look at the Pokémon's color and choose from existing pokémons
-        if(chosenPokemon.color == Color.GREEN.cpy())
+        if(chosenPokemon.color.equals(Color.GREEN.cpy()))
         {
             chosenPokemon = new Bulbasaur();
         }
-        else if(chosenPokemon.color == Color.RED.cpy())
+        else if(chosenPokemon.color.equals(Color.RED.cpy()))
         {
             chosenPokemon = new Charmander();
         }
-        else if(chosenPokemon.color == Color.BLUE.cpy())
+        else if(chosenPokemon.color.equals(Color.BLUE.cpy()))
         {
             chosenPokemon = new Squirtle();
         }
