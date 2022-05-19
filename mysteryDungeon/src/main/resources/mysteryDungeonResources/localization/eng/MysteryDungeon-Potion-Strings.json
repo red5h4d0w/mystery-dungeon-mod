@@ -17,6 +17,18 @@
             "Apply #b%s #yBurn to all enemies."
         ]
     },
+    "mysteryDungeon:GrassGemPotion": {
+        "NAME": "Grass Gem",
+        "DESCRIPTIONS": [
+            "Your next attack deals #b%s damage."
+        ]
+    },
+    "mysteryDungeon:MagoBerryPotion": {
+        "NAME": "Mago Berry",
+        "DESCRIPTIONS": [
+            "Heal 20HP. Gain 4 Poison."
+        ]
+    },
     "mysteryDungeon:PikachuCandyPotion": {
         "NAME": "Pikachu Candy",
         "DESCRIPTIONS": [
