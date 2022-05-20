@@ -35,7 +35,7 @@ public class ChikoritaSynthesis extends PokemonCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.CHIKORITA_GREEN;
 
-    private static final int COST = 3;
+    private static final int COST = -2;
     private int timesActivatedThisCombat = 0;
     private static final int  BASE_SECOND_MAGIC_NUMBER = 2;
     private static final int  UPGRADE_SECOND_MAGIC_NUMBER = 1;
