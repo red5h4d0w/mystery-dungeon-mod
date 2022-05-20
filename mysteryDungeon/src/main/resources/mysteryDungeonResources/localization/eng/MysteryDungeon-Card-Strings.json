@@ -395,7 +395,9 @@
     },
     "mysteryDungeon:ChikoritaFlail": {
         "NAME": "Flail",
-        "DESCRIPTION": "Deal !D! damage. NL If you have not played any card this turn, draw 1 card."
+        "DESCRIPTION": "Unplayable. NL Ethereal. NL When drawn, gain !M! Temporary Strength.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn, gain !M! Temporary Strength.",
+        "EXTENDED_DESCRIPTION": ["I can't play this card."]
     },
     "mysteryDungeon:ChikoritaFuryCutter": {
         "NAME": "Fury Cutter",
@@ -479,7 +481,7 @@
     },
     "mysteryDungeon:ChikoritaSeedBomb": {
         "NAME": "Seed Bomb",
-        "DESCRIPTION": "Deal !D! damage to a random enemy X times."
+        "DESCRIPTION": "Deal !D! damage. NL Next turn draw 2 more cards."
     },
     "mysteryDungeon:ChikoritaSnore": {
         "NAME": "Snore",
@@ -501,7 +503,9 @@
     },
     "mysteryDungeon:ChikoritaSynthesis": {
         "NAME": "Synthesis",
-        "DESCRIPTION": "Heal !M! HP. NL At the start of your next turn, NL draw 1 more cards and gain [E]. NL Exhaust."
+        "DESCRIPTION": "Unplayable. NL When drawn: Heal !M! HP. NL After activating this effect !mysteryDungeon:M2! times: Exhaust.",
+        "EXTENDED_DESCRIPTION": ["I can't play this card.",
+            "When Drawn: Exhaust."]
     },
     "mysteryDungeon:ChikoritaTackle": {
         "NAME": "Tackle",

@@ -26,7 +26,7 @@
     "mysteryDungeon:MagoBerryPotion": {
         "NAME": "Mago Berry",
         "DESCRIPTIONS": [
-            "Heal 20HP. Gain 4 Poison."
+            "Heal #b%sHP. Gain #b%s /5 #yPoison."
         ]
     },
     "mysteryDungeon:PikachuCandyPotion": {
