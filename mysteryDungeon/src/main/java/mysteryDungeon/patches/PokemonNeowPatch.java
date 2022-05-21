@@ -245,7 +245,7 @@ public class PokemonNeowPatch {
                                 .get(AbstractDungeon.eventRng.random(implementedPokemons.size() - 1));
                             ((Pokemon)AbstractDungeon.player).adventurer = chosenPokemon;
                             ((Pokemon) AbstractDungeon.player)
-                                .DefineNature(NatureOfPokemon.get(chosenPokemon.getClass().getSimpleName())[AbstractDungeon.eventRng.random(NatureOfPokemon.get(chosenPokemon.getClass().getSimpleName()).length) - 1]);
+                                .DefineNature(NatureOfPokemon.get(chosenPokemon.getClass().getSimpleName())[AbstractDungeon.eventRng.random(NatureOfPokemon.get(chosenPokemon.getClass().getSimpleName()).length - 1)]);
                             ((Pokemon)AbstractDungeon.player).partner = partnerChoices()
                                     .get(AbstractDungeon.eventRng.random(partnerChoices().size() - 1));
                             CardCrawlGame.dungeon.initializeCardPools();
