@@ -124,10 +124,11 @@ public class chronoModsPatch {
         public static void updatePool(CoopNeowReward __instance, RemotePlayer otherPlayer, ArrayList<AbstractCard> ___pool) {
             if (___pool.size() == 0) {
                 if(otherPlayer.character instanceof Pokemon) {
+                    Pokemon otherPokemon = (Pokemon)otherPlayer.character;
                     ___pool = CardLibrary.cards.values().stream()
                         .filter(c -> c instanceof PokemonCard)
                         .filter(c -> c.type != CardType.STATUS && c.type != CardType.CURSE)
-                        .filter(c -> c.color != CardColor.COLORLESS)
+                        .filter(c -> c.color == otherPokemon.adventurer.cardColor || c.color == otherPokemon.partner.cardColor)
                         .collect(Collectors.toCollection(ArrayList::new));
                 }
             }
