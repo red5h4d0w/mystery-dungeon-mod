@@ -245,7 +245,7 @@ public class PokemonNeowPatch {
                                 .get(AbstractDungeon.eventRng.random(implementedPokemons.size() - 1));
                             ((Pokemon)AbstractDungeon.player).adventurer = chosenPokemon;
                             ((Pokemon) AbstractDungeon.player)
-                                .DefineNature(NatureOfPokemon.get(chosenPokemon.getClass().getSimpleName())[AbstractDungeon.eventRng.random(1)]);
+                                .DefineNature(NatureOfPokemon.get(chosenPokemon.getClass().getSimpleName())[AbstractDungeon.eventRng.random(NatureOfPokemon.get(chosenPokemon.getClass().getSimpleName()).length)]);
                             ((Pokemon)AbstractDungeon.player).partner = partnerChoices()
                                     .get(AbstractDungeon.eventRng.random(partnerChoices().size() - 1));
                             CardCrawlGame.dungeon.initializeCardPools();
@@ -380,7 +380,7 @@ public class PokemonNeowPatch {
                 // add(new Mudkip());
             }
         };
-        ArrayList<AbstractPokemon> availablePartners = partners.stream().filter(p -> p.color != chosenPokemon.color)
+        ArrayList<AbstractPokemon> availablePartners = partners.stream().filter(p -> !p.color.equals(chosenPokemon.color))
                 .collect(Collectors.toCollection(ArrayList::new));
         for (int i = availablePartners.size(); i > 1; i--)
             Collections.swap(availablePartners, i - 1, AbstractDungeon.eventRng.random(i - 1));
