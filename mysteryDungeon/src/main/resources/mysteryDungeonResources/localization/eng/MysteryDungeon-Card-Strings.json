@@ -431,8 +431,8 @@
     },
     "mysteryDungeon:ChikoritaLeafGuard": {
         "NAME": "Leaf Guard",
-        "DESCRIPTION": "At the start of your turn, remove all debuff you possess. for each debuff removed this way lose !M! HP.",
-        "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, remove all debuff you possess. for each debuff removed this way lose !M! HP."
+        "DESCRIPTION": "At the start of your turn, remove all debuff you possess. For each debuff removed this way lose !M! HP.",
+        "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, remove all debuff you possess. For each debuff removed this way lose !M! HP."
     },
     "mysteryDungeon:ChikoritaLeafStorm": {
         "NAME": "Leaf Storm",
@@ -464,7 +464,7 @@
     },
     "mysteryDungeon:ChikoritaPetalDance": {
         "NAME": "Petal Dance",
-        "DESCRIPTION": "Unplayable. NL When drawn: Gain !M! Temporary HP and deal !D! damage to all enemies. NL Incrase the amount of Temporary HP by 1 and the damage by 2.",
+        "DESCRIPTION": "Unplayable. NL When drawn: Gain !M! Temporary HP and deal !D! damage to all enemies. NL Incrase the amount of Temporary HP by 1 and the damage by 4.",
         "EXTENDED_DESCRIPTION": ["I can't play this card."]
     },
     "mysteryDungeon:ChikoritaRazorLeaf": {

@@ -34,11 +34,10 @@ public class ChikoritaNaturalGift extends PokemonCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = Pokemon.Enums.CHIKORITA_GREEN;
 
-    private static final int COST = 1;
-    private static final int BASE_MAGIC_NUMBER = 1;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
-    private static final int BASE_SECOND_MAGIC_NUMBER = 1;
-    private static final int UPGRADE_SECOND_MAGIC_NUMBER = 1;
+    private static final int COST = 2;
+    private static final int UPGRADE_COST = 1;
+    private static final int BASE_MAGIC_NUMBER = 2;
+    private static final int BASE_SECOND_MAGIC_NUMBER = 2;
 
     // /STAT DECLARATION/
 
@@ -62,8 +61,7 @@ public class ChikoritaNaturalGift extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
-            upgradeSecondMagicNumber(UPGRADE_SECOND_MAGIC_NUMBER);
+            upgradeBaseCost(UPGRADE_COST);
             initializeDescription();
         }
     }
