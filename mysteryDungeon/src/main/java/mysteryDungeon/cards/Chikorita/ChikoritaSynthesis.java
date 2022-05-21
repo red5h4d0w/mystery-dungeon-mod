@@ -54,7 +54,6 @@ public class ChikoritaSynthesis extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        // Create an int which equals to your current energy.
         if (timesActivatedThisCombat<secondMagicNumber){
             addToBot(new HealAction(p, p, magicNumber));
             timesActivatedThisCombat++;

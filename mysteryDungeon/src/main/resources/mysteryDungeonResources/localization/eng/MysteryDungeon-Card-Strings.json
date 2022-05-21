@@ -464,7 +464,8 @@
     },
     "mysteryDungeon:ChikoritaPetalDance": {
         "NAME": "Petal Dance",
-        "DESCRIPTION": "Deal 7 damage to ALL enemies at the end of your turn for the next !M! turns. NL This damage behaves like Attack damage."
+        "DESCRIPTION": "Unplayable. NL When drawn: Gain !M! Temporary HP and deal !D! damage to all enemies. NL Incrase the amount of Temporary HP by 1 and the damage by 2.",
+        "EXTENDED_DESCRIPTION": ["I can't play this card."]
     },
     "mysteryDungeon:ChikoritaRazorLeaf": {
         "NAME": "Razor Leaf",
