@@ -323,6 +323,7 @@ public class PokemonNeowPatch {
                     AbstractDungeon.player.masterDeck.removeCard(ExplorersDeck.ID);
                     AbstractDungeon.player.masterDeck.removeCard(PartnersDeck.ID);
                     ((Pokemon)AbstractDungeon.player).awardThingsToAward();
+                    screenNum = 99;
                     if(needsCoopBleesing) {
                         needsCoopBleesing = false;
                         chronoModsPatch.ready = true;
@@ -330,7 +331,6 @@ public class PokemonNeowPatch {
                         CoopNeowEvent.BeginNeowEvent.Postfix(__instance, false);
                         return SpireReturn.Return();
                     }
-                    screenNum = 99;
                     return SpireReturn.Continue();
                 case 6:
                     break;
