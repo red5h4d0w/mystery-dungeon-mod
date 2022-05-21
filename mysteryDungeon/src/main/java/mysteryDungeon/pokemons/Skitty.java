@@ -16,7 +16,7 @@ public class Skitty extends AbstractPokemon {
     public static AbstractCard[] STARTING_DECK = new AbstractCard[] {
         new BulbasaurTackle(), new BulbasaurTackle(), new BulbasaurDefend(), new BulbasaurDefend(), new BulbasaurLeechSeed()
     };
-    public static Color COLOR = Color.GREEN.cpy();
+    public static Color COLOR = Color.PINK.cpy();
     public static CardColor CARD_COLOR = Pokemon.Enums.NOT_IMPLEMENTED_COLOR;
 
     public Skitty(){

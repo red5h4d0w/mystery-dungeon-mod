@@ -16,7 +16,7 @@ public class Machop extends AbstractPokemon {
     public static final AbstractCard[] STARTING_DECK = new AbstractCard[]{
         new BulbasaurTackle(), new BulbasaurTackle(), new BulbasaurDefend(), new BulbasaurDefend(), new BulbasaurLeechSeed()
     };
-    public static final Color COLOR = Color.GREEN.cpy();
+    public static final Color COLOR = Color.BROWN.cpy();
     public static final CardColor CARD_COLOR = Pokemon.Enums.NOT_IMPLEMENTED_COLOR;
 
     public Machop(){
