@@ -77,8 +77,6 @@ public class chronoModsPatch {
             if (PokemonNeowPatch.screenNum != 99) {
                 return SpireReturn.Return();
             }
-            logger.info("récompenses");
-            logger.info(CoopNeowEvent.rewards.size());
             return SpireReturn.Continue();
         }
 
