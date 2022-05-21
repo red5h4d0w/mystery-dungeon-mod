@@ -43,8 +43,8 @@ public class MetronomeRelic extends PokemonRelic {
             flash();
             AbstractCard[] possibleCards = CardLibrary.cards.values().stream()
                 .filter(c -> c instanceof PokemonCard)
-                .filter(c -> c.color != Pokemon.partner.cardColor)
-                .filter(c -> c.color != Pokemon.adventurer.cardColor)
+                .filter(c -> c.color != ((Pokemon)AbstractDungeon.player).partner.cardColor)
+                .filter(c -> c.color != ((Pokemon)AbstractDungeon.player).adventurer.cardColor)
                 .filter(c -> c.color != CardColor.COLORLESS)
                 .filter(c -> !c.tags.contains(CardTags.STARTER_DEFEND))
                 .filter(c -> !c.tags.contains(CardTags.STARTER_STRIKE))

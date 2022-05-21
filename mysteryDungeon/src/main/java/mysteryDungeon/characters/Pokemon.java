@@ -146,8 +146,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     // =============== BASE STATS =================
 
     
-    public static AbstractPokemon adventurer;
-    public static AbstractPokemon partner;
+    public AbstractPokemon adventurer;
+    public AbstractPokemon partner;
     public static final int ENERGY_PER_TURN = 3;
     public static final int STARTING_HP = 0;
     public static final int MAX_HP = 0;
@@ -618,11 +618,11 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     public static boolean hasChosenPikachu() {
         if(AbstractDungeon.player instanceof Pokemon) {
             if(((Pokemon)AbstractDungeon.player).hasChosenStarters()) {
-                if(adventurer.cardColor == Enums.PIKACHU_YELLOW)
+                if(((Pokemon)AbstractDungeon.player).adventurer.cardColor == Enums.PIKACHU_YELLOW)
                 {
                     return true;
                 }
-                if(partner.cardColor == Enums.PIKACHU_YELLOW)
+                if(((Pokemon)AbstractDungeon.player).partner.cardColor == Enums.PIKACHU_YELLOW)
                 {
                     return true;
                 }
@@ -634,11 +634,11 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     public static boolean hasChosenChikorita() {
         if(AbstractDungeon.player instanceof Pokemon) {
             if(((Pokemon)AbstractDungeon.player).hasChosenStarters()) {
-                if(adventurer.cardColor == Enums.CHIKORITA_GREEN)
+                if(((Pokemon)AbstractDungeon.player).adventurer.cardColor == Enums.CHIKORITA_GREEN)
                 {
                     return true;
                 }
-                if(partner.cardColor == Enums.CHIKORITA_GREEN)
+                if(((Pokemon)AbstractDungeon.player).partner.cardColor == Enums.CHIKORITA_GREEN)
                 {
                     return true;
                 }
@@ -738,18 +738,18 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     // Adventurer/Partner related switch statements
 
 
-    public static Color adventurersColor()
+    public Color adventurersColor()
     {
         if(adventurer != null)
             return adventurer.color;
-        return Color.GRAY;
+        return Color.GRAY.cpy();
     }
 
-    public static Color partnersColor()
+    public Color partnersColor()
     {
         if(partner != null)
             return partner.color;
-        return Color.GRAY;
+        return Color.GRAY.cpy();
     }
 
     public Color adventurerOrPartnerColor()

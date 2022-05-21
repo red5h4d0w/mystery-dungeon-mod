@@ -61,6 +61,7 @@ public class MetricsPatch {
             logger.info("======= data sent =======");
         }
     }
+
     @SuppressWarnings("all")
     public static RunDetails generateRunDetails() {
         RunDetails runDetails = new RunDetails();
@@ -78,10 +79,14 @@ public class MetricsPatch {
         runDetails.elapsedTime = CardCrawlGame.playtime;
         runDetails.score = GameOverScreen.calcScore(runDetails.win);
         runDetails.seed = SeedHelper.getString(Settings.seed);
-        if(Pokemon.adventurer!=null)
-            runDetails.pokemon1 = Pokemon.adventurer.name;
-        if(Pokemon.partner!=null)
-            runDetails.pokemon2 = Pokemon.partner.name;
+        if(AbstractDungeon.player instanceof Pokemon) {
+
+            if(((Pokemon)AbstractDungeon.player).adventurer!=null)
+                runDetails.pokemon1 = ((Pokemon)AbstractDungeon.player).adventurer.name;
+            if(((Pokemon)AbstractDungeon.player).partner!=null)
+                runDetails.pokemon2 = ((Pokemon)AbstractDungeon.player).partner.name;
+        }
+        
         ArrayList<CardDetails> cardDetails = new ArrayList<>();
         for (AbstractCard card : AbstractDungeon.player.masterDeck.group) {
             CardDetails cardDetail = new CardDetails();
@@ -89,6 +94,7 @@ public class MetricsPatch {
             cardDetail.upgrade = card.timesUpgraded;
             cardDetails.add(cardDetail);
         }
+        
         for (HashMap cardChoice : CardCrawlGame.metricData.card_choices) {
             // Handle picked card logic
             CardDetails pickedCardInfo = new CardDetails();
