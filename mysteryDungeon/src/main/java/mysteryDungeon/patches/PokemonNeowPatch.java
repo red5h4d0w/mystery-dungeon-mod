@@ -327,6 +327,7 @@ public class PokemonNeowPatch {
                         chronoModsPatch.ready = true;
                         logger.info("allo");
                         CoopNeowEvent.BeginNeowEvent.Postfix(__instance, false);
+                        return SpireReturn.Return();
                     }
                     screenNum = 99;
                     return SpireReturn.Continue();
