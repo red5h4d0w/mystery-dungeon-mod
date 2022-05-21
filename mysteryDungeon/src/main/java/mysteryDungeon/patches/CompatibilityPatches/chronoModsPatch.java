@@ -1,6 +1,8 @@
 package mysteryDungeon.patches.CompatibilityPatches;
 
 import java.nio.ByteBuffer;
+import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
@@ -20,6 +22,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import chronoMods.coop.CoopNeowEvent;
+import chronoMods.coop.CoopNeowReward;
 import chronoMods.network.NetworkHelper;
 import chronoMods.network.RemotePlayer;
 import chronoMods.utilities.AntiConsolePrintingPatches;
@@ -113,6 +116,23 @@ public class chronoModsPatch {
                 }
             }
         }
+    }
+
+    @SpirePatch(clz = CoopNeowReward.class, method = "linkedActivate", requiredModId = "chronoMods")
+    public static class ChangeLinkEffect {
+        @SpireInsertPatch(rloc = 807-798, localvars = "pool")
+        public static void updatePool(RemotePlayer __otherPlayer, ArrayList<AbstractCard> pool) {
+            if (pool.size() == 0) {
+                if(__otherPlayer.character instanceof Pokemon) {
+                    pool = CardLibrary.cards.values().stream()
+                        .filter(c -> c instanceof PokemonCard)
+                        .filter(c -> c.type != CardType.STATUS && c.type != CardType.CURSE)
+                        .filter(c -> c.color != CardColor.COLORLESS)
+                        .collect(Collectors.toCollection(ArrayList::new));
+                }
+            }
+        }
+
     }
     
     @SpirePatch(clz = AntiConsolePrintingPatches.RemoveLogging.class, method = "patch", requiredModId = "chronoMods")
