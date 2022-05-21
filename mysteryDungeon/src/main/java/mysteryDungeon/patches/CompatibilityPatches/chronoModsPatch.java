@@ -121,10 +121,10 @@ public class chronoModsPatch {
     @SpirePatch(clz = CoopNeowReward.class, method = "linkedActivate", requiredModId = "chronoMods")
     public static class ChangeLinkEffect {
         @SpireInsertPatch(rloc = 807-798, localvars = "pool")
-        public static void updatePool(RemotePlayer __otherPlayer, ArrayList<AbstractCard> pool) {
-            if (pool.size() == 0) {
-                if(__otherPlayer.character instanceof Pokemon) {
-                    pool = CardLibrary.cards.values().stream()
+        public static void updatePool(CoopNeowReward __instance, RemotePlayer otherPlayer, ArrayList<AbstractCard> ___pool) {
+            if (___pool.size() == 0) {
+                if(otherPlayer.character instanceof Pokemon) {
+                    ___pool = CardLibrary.cards.values().stream()
                         .filter(c -> c instanceof PokemonCard)
                         .filter(c -> c.type != CardType.STATUS && c.type != CardType.CURSE)
                         .filter(c -> c.color != CardColor.COLORLESS)
