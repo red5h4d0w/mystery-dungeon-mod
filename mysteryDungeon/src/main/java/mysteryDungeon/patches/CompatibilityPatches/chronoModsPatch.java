@@ -22,6 +22,7 @@ import org.apache.logging.log4j.Logger;
 import chronoMods.coop.CoopNeowEvent;
 import chronoMods.network.NetworkHelper;
 import chronoMods.network.RemotePlayer;
+import chronoMods.utilities.AntiConsolePrintingPatches;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.patches.PokemonNeowPatch;
@@ -113,6 +114,15 @@ public class chronoModsPatch {
                     anyCard.addToBottom(card);
                 }
             }
+        }
+    }
+    
+    @SpirePatch(clz = AntiConsolePrintingPatches.RemoveLogging.class, method = "patch", requiredModId = "chronoMods")
+    public static class AntiAntiConsolePrintingPatch {
+        public static boolean testBuild = true;
+        @SpirePrefixPatch
+        public static SpireReturn<Logger> returnRealLogger(Logger __result, String s) {
+            return testBuild ? SpireReturn.Return(__result) : SpireReturn.Continue();
         }
     }
 }
