@@ -123,9 +123,12 @@ public class chronoModsPatch {
     public static class ChangeLinkEffect {
         @SpireInsertPatch(rloc = 807-798, localvars = "pool")
         public static void updatePool(CoopNeowReward __instance, RemotePlayer otherPlayer, ArrayList<AbstractCard> pool) {
+            logger.info(pool.size());
             if (pool.size() == 0) {
+                logger.info("alloha");
                 if(otherPlayer.character instanceof Pokemon) {
                     Pokemon otherPokemon = (Pokemon)otherPlayer.character;
+                    logger.info(otherPokemon.partner.name);
                     pool = CardLibrary.cards.values().stream()
                         .filter(c -> c instanceof PokemonCard)
                         .filter(c -> c.type != CardType.STATUS && c.type != CardType.CURSE)

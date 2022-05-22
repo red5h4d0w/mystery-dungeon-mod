@@ -11,14 +11,17 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.math.MathUtils;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 // import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.HealthBarRenderPower;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 
 //Gain 1 dex for the turn for each card played.
 
@@ -70,6 +73,16 @@ public class RecoverPower extends PokemonTwoAmountPower implements  CloneablePow
         if(MathUtils.floor(0.3f * damageAmount)>0)
             addToBot(new HealAction(owner, owner, Math.min(MathUtils.floor(0.3f * damageAmount), amount)));
         amount -= Math.min(MathUtils.floor(0.3f * damageAmount), amount);
+        if(amount == 0) {
+            if(owner instanceof AbstractPlayer) {
+                if(owner.hasPower(OvergrowPower.POWER_ID)) {
+                    OvergrowPower overgrowPower = (OvergrowPower)owner.getPower(OvergrowPower.POWER_ID);
+                    if(overgrowPower.canActivate)
+                        addToBot(new ApplyPowerAction(overgrowPower.owner, overgrowPower.owner, new StrengthPower(overgrowPower.owner, overgrowPower.amount), overgrowPower.amount));
+                    overgrowPower.canActivate = false;    
+                }
+            }
+        }
         super.onAttack(info, damageAmount, target);
     }
 

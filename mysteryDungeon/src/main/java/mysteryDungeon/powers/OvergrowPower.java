@@ -9,13 +9,11 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -41,6 +39,8 @@ public class OvergrowPower extends PokemonPower implements CloneablePowerInterfa
 
     public static Logger logger = LogManager.getLogger(OvergrowPower.class);
 
+    public boolean canActivate;
+
     public OvergrowPower(final AbstractCreature owner, final int amount) {
         name = NAME;
         ID = POWER_ID;
@@ -54,15 +54,24 @@ public class OvergrowPower extends PokemonPower implements CloneablePowerInterfa
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
-
+        if(owner instanceof AbstractPlayer) {
+            if(owner.hasPower(RecoverPower.POWER_ID)) {
+                canActivate = owner.getPower(RecoverPower.POWER_ID).amount > 0;
+            }
+        }
+        canActivate = true;
         updateDescription();
     }
 
     @Override
-    public void wasHPLost(DamageInfo info, int damageAmount) {
-        logger.info(owner.currentHealth);
-        if(owner.currentHealth < owner.maxHealth * 0.5f && owner.currentHealth + damageAmount > owner.maxHealth * 0.5f)
-            addToBot(new ApplyPowerAction(owner, owner, new VigorPower(owner, amount), amount));
+    public void atStartOfTurn() {
+        canActivate = false;
+        if(owner instanceof AbstractPlayer) {
+            if(owner.hasPower(RecoverPower.POWER_ID)) {
+                canActivate = owner.getPower(RecoverPower.POWER_ID).amount > 0;
+            }
+        }
+        super.atStartOfTurn();
     }
 
     @Override
