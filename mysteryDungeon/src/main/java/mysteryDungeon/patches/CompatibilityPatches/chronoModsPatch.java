@@ -40,8 +40,10 @@ public class chronoModsPatch {
 
         @SpirePrefixPatch
         public static SpireReturn<Void> removeBlessing(NeowEvent __instance) {
+            logger.info(ready);
             if(AbstractDungeon.player instanceof Pokemon && !ready)
             {
+                
                 PokemonNeowPatch.needsCoopBleesing = true;
                 return SpireReturn.Return();
             }
@@ -121,11 +123,11 @@ public class chronoModsPatch {
     @SpirePatch(clz = CoopNeowReward.class, method = "linkedActivate", requiredModId = "chronoMods")
     public static class ChangeLinkEffect {
         @SpireInsertPatch(rloc = 807-798, localvars = "pool")
-        public static void updatePool(CoopNeowReward __instance, RemotePlayer otherPlayer, ArrayList<AbstractCard> ___pool) {
-            if (___pool.size() == 0) {
+        public static void updatePool(CoopNeowReward __instance, RemotePlayer otherPlayer, ArrayList<AbstractCard> pool) {
+            if (pool.size() == 0) {
                 if(otherPlayer.character instanceof Pokemon) {
                     Pokemon otherPokemon = (Pokemon)otherPlayer.character;
-                    ___pool = CardLibrary.cards.values().stream()
+                    pool = CardLibrary.cards.values().stream()
                         .filter(c -> c instanceof PokemonCard)
                         .filter(c -> c.type != CardType.STATUS && c.type != CardType.CURSE)
                         .filter(c -> c.color == otherPokemon.adventurer.cardColor || c.color == otherPokemon.partner.cardColor)
