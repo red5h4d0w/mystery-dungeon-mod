@@ -148,6 +148,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     
     public AbstractPokemon adventurer;
     public AbstractPokemon partner;
+    public static AbstractPokemon adventurerToLoad;
     public static final int ENERGY_PER_TURN = 3;
     public static final int STARTING_HP = 0;
     public static final int MAX_HP = 0;
@@ -301,8 +302,10 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 	}
 
     public boolean hasChosenStarters() {
-        if(partner==null||adventurer==null)
+        if(partner==null||adventurer==null) {
+            logger.info("YOU HAVE NO STARTERS....");
             return false;
+        }
         return true;
     }
 
@@ -479,6 +482,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     {
         logger.info("SAVING!!!!!!!!!!!!!!!!!!!!!!!!!!");
         ToSave saveInfo = new ToSave();
+        logger.info(adventurer.name);
         if(!hasChosenStarters())
             return saveInfo;
         saveInfo.adventurer = adventurer.getClass().getSimpleName();
