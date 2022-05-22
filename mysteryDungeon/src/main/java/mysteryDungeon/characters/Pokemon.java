@@ -482,7 +482,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     {
         logger.info("SAVING!!!!!!!!!!!!!!!!!!!!!!!!!!");
         ToSave saveInfo = new ToSave();
-        logger.info(adventurer.name);
         if(!hasChosenStarters())
             return saveInfo;
         saveInfo.adventurer = adventurer.getClass().getSimpleName();
