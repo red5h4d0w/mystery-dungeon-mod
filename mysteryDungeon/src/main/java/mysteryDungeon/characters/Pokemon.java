@@ -178,8 +178,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 
     // =============== /STRINGS/ =================
 
-    public static enum Nature
-    {
+    public static enum Nature {
         Brave,
         Calm,
         Docile,
@@ -194,7 +193,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         Sassy,
         Timid
     }
-    
 
 
     // =============== TEXTURES OF BIG ENERGY ORB ===============
@@ -350,8 +348,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         heal((int)((AbstractDungeon.ascensionLevel>=6?0.9f:1)*maxHealth));
     }
 
-    public void awardOrbSlots(AbstractPokemon pokemon)
-    {
+    public void awardOrbSlots(AbstractPokemon pokemon) {
         masterMaxOrbs+=pokemon.orbSlots;
     }
 
@@ -481,8 +478,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     @Override
-    public ToSave onSave()
-    {
+    public ToSave onSave() {
         logger.info("SAVING!!!!!!!!!!!!!!!!!!!!!!!!!!");
         ToSave saveInfo = new ToSave();
         if(!hasChosenStartersForSave())
@@ -509,8 +505,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     @Override
-    public void onLoad(ToSave saveInfo)
-    {
+    public void onLoad(ToSave saveInfo) {
         logger.info("LOADING MYSTERY DUNGEON CHARACTER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         if(saveInfo.adventurer!=null && saveInfo.partner!=null)
         {
@@ -604,7 +599,10 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     // Should return a new instance of your character, sending name as its name parameter.
     @Override
     public AbstractPlayer newInstance() {
-        return new Pokemon(name, chosenClass);
+        Pokemon pokemon = new Pokemon(name, chosenClass);
+        pokemon.setAdventurer(adventurer);
+        pokemon.setPartner(partner);
+        return pokemon;
     }
 
     // Should return a Color object to be used to color the miniature card images in run history.
@@ -623,12 +621,10 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     public static boolean hasChosenPikachu() {
         if(AbstractDungeon.player instanceof Pokemon) {
             if(((Pokemon)AbstractDungeon.player).hasChosenStarters()) {
-                if(((Pokemon)AbstractDungeon.player).adventurer.cardColor == Enums.PIKACHU_YELLOW)
-                {
+                if(((Pokemon)AbstractDungeon.player).adventurer.cardColor == Enums.PIKACHU_YELLOW) {
                     return true;
                 }
-                if(((Pokemon)AbstractDungeon.player).partner.cardColor == Enums.PIKACHU_YELLOW)
-                {
+                if(((Pokemon)AbstractDungeon.player).partner.cardColor == Enums.PIKACHU_YELLOW) {
                     return true;
                 }
             }
@@ -639,12 +635,10 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     public static boolean hasChosenChikorita() {
         if(AbstractDungeon.player instanceof Pokemon) {
             if(((Pokemon)AbstractDungeon.player).hasChosenStarters()) {
-                if(((Pokemon)AbstractDungeon.player).adventurer.cardColor == Enums.CHIKORITA_GREEN)
-                {
+                if(((Pokemon)AbstractDungeon.player).adventurer.cardColor == Enums.CHIKORITA_GREEN) {
                     return true;
                 }
-                if(((Pokemon)AbstractDungeon.player).partner.cardColor == Enums.CHIKORITA_GREEN)
-                {
+                if(((Pokemon)AbstractDungeon.player).partner.cardColor == Enums.CHIKORITA_GREEN) {
                     return true;
                 }
             }
@@ -734,8 +728,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         resetPikameter();
     }
 
-    public void DefineNature(String natureAsAString)
-    {
+    public void DefineNature(String natureAsAString) {
         nature = Nature.valueOf(natureAsAString);
     }
 
@@ -743,22 +736,19 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     // Adventurer/Partner related switch statements
 
 
-    public Color adventurersColor()
-    {
+    public Color adventurersColor() {
         if(adventurer != null)
             return adventurer.color;
         return Color.GRAY.cpy();
     }
 
-    public Color partnersColor()
-    {
+    public Color partnersColor() {
         if(partner != null)
             return partner.color;
         return Color.GRAY.cpy();
     }
 
-    public Color adventurerOrPartnerColor()
-    {
+    public Color adventurerOrPartnerColor() {
         return (new Random().nextInt() % 2 == 0)?partnersColor():adventurersColor();
     }
 
