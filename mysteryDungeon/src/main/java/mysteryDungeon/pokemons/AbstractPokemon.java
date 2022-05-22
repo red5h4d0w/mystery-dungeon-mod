@@ -45,7 +45,7 @@ public abstract class AbstractPokemon {
             setShiny(true);
         }
         else {
-            setShiny((new Random()).nextInt(100)<5);
+            setShiny((new Random()).nextInt(100)<8);
         }
     }
 

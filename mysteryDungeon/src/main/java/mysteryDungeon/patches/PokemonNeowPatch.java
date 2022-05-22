@@ -9,6 +9,7 @@ import java.util.stream.Collectors;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePrefixPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpireReturn;
@@ -242,12 +243,12 @@ public class PokemonNeowPatch {
                             break;
                         case 2:
                             chosenPokemon = implementedPokemons
-                                .get(AbstractDungeon.eventRng.random(implementedPokemons.size() - 1));
+                                .get(MathUtils.random(implementedPokemons.size()-1));
                             ((Pokemon)AbstractDungeon.player).setAdventurer(chosenPokemon);
                             ((Pokemon) AbstractDungeon.player)
                                 .DefineNature(NatureOfPokemon.get(chosenPokemon.getClass().getSimpleName())[AbstractDungeon.eventRng.random(NatureOfPokemon.get(chosenPokemon.getClass().getSimpleName()).length - 1)]);
                             ((Pokemon)AbstractDungeon.player).setPartner(partnerChoices()
-                                    .get(AbstractDungeon.eventRng.random(partnerChoices().size() - 1)));
+                                    .get(MathUtils.random(partnerChoices().size()-1)));
                             CardCrawlGame.dungeon.initializeCardPools();
                             AbstractDungeon.player.masterDeck.removeCard(ExplorersDeck.ID);
                             AbstractDungeon.player.masterDeck.removeCard(PartnersDeck.ID);
