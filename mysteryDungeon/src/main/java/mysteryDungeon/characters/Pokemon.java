@@ -148,7 +148,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     
     public AbstractPokemon adventurer;
     public AbstractPokemon partner;
-    public static AbstractPokemon adventurerToLoad;
+    public static AbstractPokemon adventurerToSave;
+    public static AbstractPokemon partnerToSave;
     public static final int ENERGY_PER_TURN = 3;
     public static final int STARTING_HP = 0;
     public static final int MAX_HP = 0;
@@ -290,7 +291,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
                 if (card.color.equals(color) && card.rarity != AbstractCard.CardRarity.BASIC &&
                     (!UnlockTracker.isCardLocked(c.getKey()) || Settings.isDailyRun)) {
                         if(card instanceof PokemonCard) {
-                            if(!((PokemonCard)card).isAdventurerOnly || color == adventurer.cardColor) {
+                            if(!((PokemonCard)card).isAdventurerOnly || color == adventurerToSave.cardColor) {
                                 tmpPool.add(card);
                             }
                         }
@@ -303,7 +304,13 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 
     public boolean hasChosenStarters() {
         if(partner==null||adventurer==null) {
-            logger.info("YOU HAVE NO STARTERS....");
+            return false;
+        }
+        return true;
+    }
+
+    public boolean hasChosenStartersForSave() {
+        if(partnerToSave==null||adventurerToSave==null) {
             return false;
         }
         return true;
@@ -457,9 +464,9 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         if(hasChosenStarters())
         {
             if(partner.evolve()!=null)
-                partner = partner.evolve();
+                setPartner(partner.evolve());
             if(adventurer.evolve()!=null)
-                adventurer = adventurer.evolve();
+                setAdventurer(adventurer.evolve());
             reloadAnimation();
         }
     }
@@ -482,12 +489,12 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     {
         logger.info("SAVING!!!!!!!!!!!!!!!!!!!!!!!!!!");
         ToSave saveInfo = new ToSave();
-        if(!hasChosenStarters())
+        if(!hasChosenStartersForSave())
             return saveInfo;
-        saveInfo.adventurer = adventurer.getClass().getSimpleName();
-        saveInfo.partner = partner.getClass().getSimpleName();
-        saveInfo.shinyPartner = partner.getShiny();
-        saveInfo.shinyAdventurer = adventurer.getShiny();
+        saveInfo.adventurer = adventurerToSave.getClass().getSimpleName();
+        saveInfo.partner = partnerToSave.getClass().getSimpleName();
+        saveInfo.shinyPartner = partnerToSave.getShiny();
+        saveInfo.shinyAdventurer = adventurerToSave.getShiny();
         logger.info(saveInfo.adventurer);
         logger.info(saveInfo.partner);
         saveInfo.maxPikaMeter = maxPikachuChargeCounter;
@@ -512,8 +519,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         if(saveInfo.adventurer!=null && saveInfo.partner!=null)
         {
             try {
-                adventurer = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+(saveInfo.adventurer)).getConstructor().newInstance();
-                partner = (AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+(saveInfo.partner)).getConstructor().newInstance();
+                setAdventurer((AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+(saveInfo.adventurer)).getConstructor().newInstance());
+                setPartner((AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+(saveInfo.partner)).getConstructor().newInstance());
                 adventurer.setShiny(saveInfo.shinyAdventurer);
                 partner.setShiny(saveInfo.shinyPartner);
             } catch (InstantiationException | IllegalAccessException | IllegalArgumentException
@@ -527,8 +534,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         } 
         else
         {
-            adventurer = null;
-            partner = null;
+            setAdventurer(null);
+            setPartner(null);
         }
         maxPikachuChargeCounter = saveInfo.maxPikaMeter;
         skipNextEvolution = true;
@@ -763,14 +770,23 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     public ArrayList<AbstractCard.CardColor> getUsedSubColors()
     {
         ArrayList<AbstractCard.CardColor> subcolors = new ArrayList<AbstractCard.CardColor>();
-        if(adventurer == null || partner == null)
-        {
+        if(!hasChosenStartersForSave()) {
             subcolors.add(Enums.COLOR_GRAY);
             return subcolors;
         }
-        subcolors.add(adventurer.cardColor);
-        subcolors.add(partner.cardColor);
+        subcolors.add(adventurerToSave.cardColor);
+        subcolors.add(partnerToSave.cardColor);
         return subcolors;
+    }
+
+    public void setAdventurer(AbstractPokemon adventurer) {
+        this.adventurer = adventurer;
+        adventurerToSave = adventurer;
+    }
+
+    public void setPartner(AbstractPokemon partner) {
+        this.partner = partner;
+        partnerToSave = partner;
     }
 
     public AbstractRelic natureRelatedRelic()

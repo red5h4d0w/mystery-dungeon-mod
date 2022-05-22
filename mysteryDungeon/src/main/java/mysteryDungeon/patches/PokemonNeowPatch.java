@@ -196,8 +196,8 @@ public class PokemonNeowPatch {
                 return;
             }
             if (!isDone) {
-                ((Pokemon)AbstractDungeon.player).adventurer = null;
-                ((Pokemon)AbstractDungeon.player).partner = null;
+                ((Pokemon)AbstractDungeon.player).setAdventurer(null);
+                ((Pokemon)AbstractDungeon.player).setPartner(null);
                 Pokemon.maxPikachuChargeCounter = 2;
                 answeredQuestions = 0;
                 screenNum = 0;
@@ -243,11 +243,11 @@ public class PokemonNeowPatch {
                         case 2:
                             chosenPokemon = implementedPokemons
                                 .get(AbstractDungeon.eventRng.random(implementedPokemons.size() - 1));
-                            ((Pokemon)AbstractDungeon.player).adventurer = chosenPokemon;
+                            ((Pokemon)AbstractDungeon.player).setAdventurer(chosenPokemon);
                             ((Pokemon) AbstractDungeon.player)
                                 .DefineNature(NatureOfPokemon.get(chosenPokemon.getClass().getSimpleName())[AbstractDungeon.eventRng.random(NatureOfPokemon.get(chosenPokemon.getClass().getSimpleName()).length - 1)]);
-                            ((Pokemon)AbstractDungeon.player).partner = partnerChoices()
-                                    .get(AbstractDungeon.eventRng.random(partnerChoices().size() - 1));
+                            ((Pokemon)AbstractDungeon.player).setPartner(partnerChoices()
+                                    .get(AbstractDungeon.eventRng.random(partnerChoices().size() - 1)));
                             CardCrawlGame.dungeon.initializeCardPools();
                             AbstractDungeon.player.masterDeck.removeCard(ExplorersDeck.ID);
                             AbstractDungeon.player.masterDeck.removeCard(PartnersDeck.ID);
@@ -292,7 +292,7 @@ public class PokemonNeowPatch {
                         DeterminePokemon(buttonPressed);
                         // TODO: remove/change when more pokémon are implemented
                         convertPokemonToImplementedPokemon();
-                        ((Pokemon)AbstractDungeon.player).adventurer = chosenPokemon;
+                        ((Pokemon)AbstractDungeon.player).setAdventurer(chosenPokemon);
                         possiblePartners = partnerChoices();
                         AskQuestion(__instance, new Question(chosenPokemon.name,
                                 possiblePartners.stream().map(p -> p.name).toArray(size -> new String[size]), null));
@@ -313,9 +313,9 @@ public class PokemonNeowPatch {
                 // Neow's last word + Partner attribution
                 case 5:
                     if (!isTestRun)
-                        ((Pokemon)AbstractDungeon.player).partner = possiblePartners.get(buttonPressed);
+                        ((Pokemon)AbstractDungeon.player).setPartner(possiblePartners.get(buttonPressed));
                     if (isTestRun) {
-                        ((Pokemon)AbstractDungeon.player).partner = implementedPokemons.stream().filter(p -> !p.color.equals(chosenPokemon.color)).toArray(AbstractPokemon[]::new)[buttonPressed];
+                        ((Pokemon)AbstractDungeon.player).setPartner(implementedPokemons.stream().filter(p -> !p.color.equals(chosenPokemon.color)).toArray(AbstractPokemon[]::new)[buttonPressed]);
                     }
                     // AskQuestion(__instance, new Question("I see, now brave the challenge of the
                     // tower", new String[]{"[Leave]"}));
@@ -344,7 +344,7 @@ public class PokemonNeowPatch {
                     return SpireReturn.Return();
                 case 11:
                     chosenPokemon = implementedPokemons.get(buttonPressed);
-                    ((Pokemon)AbstractDungeon.player).adventurer = chosenPokemon;
+                    ((Pokemon)AbstractDungeon.player).setAdventurer(chosenPokemon);
                     String[] possibleNatures = NatureOfPokemon
                             .get(((Pokemon)AbstractDungeon.player).adventurer.getClass().getSimpleName());
                     ((Pokemon) AbstractDungeon.player)
