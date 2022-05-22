@@ -281,11 +281,9 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     @Override
-	public ArrayList<AbstractCard> getCardPool(ArrayList<AbstractCard> tmpPool)
-	{
+	public ArrayList<AbstractCard> getCardPool(ArrayList<AbstractCard> tmpPool) {
         ArrayList<AbstractCard.CardColor> colors = getUsedSubColors();
-        for(AbstractCard.CardColor color : colors)
-        {
+        for(AbstractCard.CardColor color : colors) {
             for (Map.Entry<String, AbstractCard> c : CardLibrary.cards.entrySet()) {
                 AbstractCard card = c.getValue();
                 if (card.color.equals(color) && card.rarity != AbstractCard.CardRarity.BASIC &&
@@ -344,13 +342,11 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         return retVal;
     }
 
-    public void awardMaxHp(AbstractPokemon pokemon)
-    {
+    public void awardMaxHp(AbstractPokemon pokemon) {
         maxHealth+=pokemon.maxHp-(AbstractDungeon.ascensionLevel>=14?3:0);
     }
 
-    public void awardHp()
-    {
+    public void awardHp() {
         heal((int)((AbstractDungeon.ascensionLevel>=6?0.9f:1)*maxHealth));
     }
 
@@ -532,8 +528,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
             logger.info("Adventurer is " + adventurer.name);
             logger.info("Partner is " + partner.name);
         } 
-        else
-        {
+        else {
             setAdventurer(null);
             setPartner(null);
         }
@@ -789,10 +784,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         partnerToSave = partner;
     }
 
-    public AbstractRelic natureRelatedRelic()
-    {
-        switch(nature)
-        {
+    public AbstractRelic natureRelatedRelic() {
+        switch(nature) {
             case Brave:
                 return new BraveExplorerRelic();
             case Calm:
