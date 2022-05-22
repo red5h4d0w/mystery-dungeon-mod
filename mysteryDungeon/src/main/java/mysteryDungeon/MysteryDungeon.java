@@ -88,6 +88,7 @@ public class MysteryDungeon implements
 
     // Developper Settings
     public static final boolean TOGGLE_ON_SHINY = false;
+    public static final boolean ENFORCE_LOGS = true;
 
     // Mod-settings settings. This is if you want an on/off savable button
     public static Properties mysteryDungeonDefaultSettings = new Properties();

@@ -26,6 +26,7 @@ import chronoMods.coop.CoopNeowReward;
 import chronoMods.network.NetworkHelper;
 import chronoMods.network.RemotePlayer;
 import chronoMods.utilities.AntiConsolePrintingPatches;
+import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.patches.PokemonNeowPatch;
@@ -40,10 +41,8 @@ public class chronoModsPatch {
 
         @SpirePrefixPatch
         public static SpireReturn<Void> removeBlessing(NeowEvent __instance) {
-            logger.info(ready);
             if(AbstractDungeon.player instanceof Pokemon && !ready)
             {
-                
                 PokemonNeowPatch.needsCoopBleesing = true;
                 return SpireReturn.Return();
             }
@@ -140,10 +139,9 @@ public class chronoModsPatch {
     
     @SpirePatch(clz = AntiConsolePrintingPatches.RemoveLogging.class, method = "patch", requiredModId = "chronoMods")
     public static class AntiAntiConsolePrintingPatch {
-        public static boolean testBuild = true;
         @SpirePrefixPatch
         public static SpireReturn<Logger> returnRealLogger(Logger __result, String s) {
-            return testBuild ? SpireReturn.Return(__result) : SpireReturn.Continue();
+            return MysteryDungeon.ENFORCE_LOGS ? SpireReturn.Return(__result) : SpireReturn.Continue();
         }
     }
 }
