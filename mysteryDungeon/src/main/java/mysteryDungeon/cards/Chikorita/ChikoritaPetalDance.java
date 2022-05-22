@@ -23,7 +23,7 @@ public class ChikoritaPetalDance extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(ChikoritaPetalDance.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("ChikoritaPower.png");
+    public static final String IMG = makeCardPath("ChikoritaSkill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
@@ -39,9 +39,9 @@ public class ChikoritaPetalDance extends PokemonCard {
 
     private static final int COST = -2;
     private static final int DAMAGE = 4;
-    private static final int UPGRADE_PLUS_DMG = 2;
+    private static final int UPGRADE_PLUS_DMG = 4;
     private static final int BASE_MAGIC_NUMBER = 2;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
+    private static final int UPGRADE_MAGIC_NUMBER = 2;
 
 
     // /STAT DECLARATION/
@@ -58,7 +58,7 @@ public class ChikoritaPetalDance extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new AddTemporaryHPAction(p, p, magicNumber));
-        addToBot(new ModifyMagicNumberAction(uuid, 1));
+        addToBot(new ModifyMagicNumberAction(uuid, 2));
         addToBot(new AttackDamageRandomEnemyAction(this, AttackEffect.SLASH_HORIZONTAL));
         addToBot(new ModifyDamageAction(uuid, 4));
         }

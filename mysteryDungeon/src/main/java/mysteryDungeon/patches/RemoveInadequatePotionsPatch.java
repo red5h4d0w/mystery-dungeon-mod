@@ -15,18 +15,15 @@ import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.characters.Pokemon;
 
 
-public class RemoveInadequatePotionsPatch
-{
+public class RemoveInadequatePotionsPatch {
     public static final Logger logger = LogManager.getLogger(RemoveInadequatePotionsPatch.class.getName());
     @SpirePatch(clz = PotionHelper.class, method = "getPotions")
-    public static class PreRewardGeneration
-    {
+    public static class PreRewardGeneration {
         @SpirePostfixPatch
-        public static ArrayList<String> removeInadequatePotions(ArrayList<String> __retval, PlayerClass c, boolean getAll)
-        {
+        public static ArrayList<String> removeInadequatePotions(ArrayList<String> __retval, PlayerClass c, boolean getAll) {
             if(AbstractDungeon.player instanceof Pokemon && !getAll) {
                 Pokemon player = ((Pokemon)AbstractDungeon.player);
-                if(player.hasChosenStarters()) {
+                if(player.hasChosenStartersForSave()) {
                     ArrayList<String> toRemove = new ArrayList<String>();
                     for(String potionId: __retval) {
                         if(PotionHelper.getPotion(potionId) instanceof PokemonPotion) {

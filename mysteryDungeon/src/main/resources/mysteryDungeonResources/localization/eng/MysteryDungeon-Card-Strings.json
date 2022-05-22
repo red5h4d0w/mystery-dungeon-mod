@@ -431,8 +431,7 @@
     },
     "mysteryDungeon:ChikoritaLeafGuard": {
         "NAME": "Leaf Guard",
-        "DESCRIPTION": "At the start of your turn, remove all debuff you possess. For each debuff removed this way lose !M! HP.",
-        "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, remove all debuff you possess. For each debuff removed this way lose !M! HP."
+        "DESCRIPTION": "At the start of your turn, remove all debuff you possess. For each debuff removed this way lose !M! HP."
     },
     "mysteryDungeon:ChikoritaLeafStorm": {
         "NAME": "Leaf Storm",
