@@ -57,6 +57,7 @@ public class ChikoritaOvergrow extends PokemonCard {
         if (!upgraded) {
             upgradeName();
             isInnate = true;
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }
