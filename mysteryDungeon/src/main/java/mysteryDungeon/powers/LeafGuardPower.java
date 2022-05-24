@@ -50,10 +50,10 @@ public class LeafGuardPower extends PokemonPower implements CloneablePowerInterf
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         if(isPlayer) {
-            addToBot(new RemoveDebuffsAction(owner));
+            addToTop(new RemoveDebuffsAction(owner));
             int debuffCount = owner.powers.stream().filter(power -> power.type == PowerType.DEBUFF).toArray().length;
             for (int i = 0; i < debuffCount; i++)
-                addToBot(new LoseHPAction(owner, owner, amount));
+                addToTop(new LoseHPAction(owner, owner, amount));
         }
         super.atEndOfTurn(isPlayer);
     }

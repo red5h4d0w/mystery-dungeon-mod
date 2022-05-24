@@ -116,7 +116,7 @@
         "NAME": "Meadow Plate",
         "FLAVOR": "A stone tablet imbued with the essence of plants. When used on a certain Pokémon, it allows that Pokémon to gain the power of the Grass type.",
         "DESCRIPTIONS": [
-            "Gain 20 max HP. AT the start of your turn if you are above 65% HP lose HP until you are not. If you are under 65% of your max HP, heal a maximum of 10HP up to 65% of your max HP"
+            "Gain 20 max HP. At the start of combat if you are above 65% HP lose HP until you are not. If you are under 65% of your max HP, heal 10HP."
         ]
     },
     "mysteryDungeon:MiracleSeedRelic": {

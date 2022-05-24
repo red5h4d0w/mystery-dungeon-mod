@@ -431,7 +431,7 @@
     },
     "mysteryDungeon:ChikoritaLeafGuard": {
         "NAME": "Leaf Guard",
-        "DESCRIPTION": "At the start of your turn, remove all debuff you possess. For each debuff removed this way lose !M! HP."
+        "DESCRIPTION": "At the end of your turn, remove all debuff you possess. For each debuff removed this way lose !M! HP."
     },
     "mysteryDungeon:ChikoritaLeafStorm": {
         "NAME": "Leaf Storm",
@@ -455,8 +455,8 @@
     },
     "mysteryDungeon:ChikoritaOvergrow": {
         "NAME": "Overgrow",
-        "DESCRIPTION": "Each time you your recover counter reaches 0, gain !M! Strength.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Each time you your recover counter reaches 0, gain !M! Strength."
+        "DESCRIPTION": "Each time your recover counter reaches 0, gain !M! Strength.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Each time your recover counter reaches 0, gain !M! Strength."
     },
     "mysteryDungeon:ChikoritaPetalBlizzard": {
         "NAME": "Petal Blizzard",
@@ -464,7 +464,7 @@
     },
     "mysteryDungeon:ChikoritaPetalDance": {
         "NAME": "Petal Dance",
-        "DESCRIPTION": "Unplayable. NL When drawn: Gain !M! Temporary HP and deal !D! damage to all enemies. NL Incrase the amount of Temporary HP by 1 and the damage by 4 this combat.",
+        "DESCRIPTION": "Unplayable. NL When drawn: Gain !M! Temporary HP and deal !D! damage to all enemies. NL Increase the amount of Temporary HP by 1 and the damage by 4 this combat.",
         "EXTENDED_DESCRIPTION": ["I can't play this card."]
     },
     "mysteryDungeon:ChikoritaRazorLeaf": {
@@ -518,8 +518,8 @@
     },
     "mysteryDungeon:ChikoritaWorrySeed": {
         "NAME": "Worry Seed",
-        "DESCRIPTION": "Unplayable. NL Ethereal. NL When drawn draw !M! card. NL While in hand, Lose 1 HP per card played.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn draw !M! card. NL While in hand, Lose 1 HP per card played.",
+        "DESCRIPTION": "Unplayable. NL Ethereal. NL When drawn draw !M! cards. NL While in hand, Lose 1 HP per card played.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn draw !M! cards. NL While in hand, Lose 1 HP per card played.",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
         ]
