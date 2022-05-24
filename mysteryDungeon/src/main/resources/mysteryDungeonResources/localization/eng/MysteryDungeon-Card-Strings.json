@@ -528,9 +528,17 @@
         "NAME": "Wring Out",
         "DESCRIPTION": "Deal !D! damage. NL Lose !M! HP."
     },
+    "mysteryDungeon:CyndaquilDefend": {
+        "NAME": "Defend",
+        "DESCRIPTION": "Gain !B! block."
+    },
     "mysteryDungeon:CyndaquilFirePledge": {
         "NAME": "Fire Pledge",
         "DESCRIPTION": "Apply !M! mysterydungeon:Burn to all enemies. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
+    },
+    "mysteryDungeon:CyndaquilTackle": {
+        "NAME": "Tackle",
+        "DESCRIPTION": "Deal !D! damage."
     },
     "mysteryDungeon:PikachuAgility": {
         "NAME": "Agility",
