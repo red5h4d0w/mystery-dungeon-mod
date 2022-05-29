@@ -49,7 +49,6 @@ public class ChikoritaPetalDance extends PokemonCard {
     public ChikoritaPetalDance() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        isMultiDamage = true;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
     }
@@ -61,7 +60,7 @@ public class ChikoritaPetalDance extends PokemonCard {
         addToBot(new ModifyMagicNumberAction(uuid, 2));
         addToBot(new AttackDamageRandomEnemyAction(this, AttackEffect.SLASH_HORIZONTAL));
         addToBot(new ModifyDamageAction(uuid, 4));
-        }
+    }
 
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
