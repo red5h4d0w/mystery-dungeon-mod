@@ -24,6 +24,7 @@ public class CyndaquilFlameWheel extends PokemonCard {
     public static final String IMG = makeCardPath("Skill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -36,8 +37,7 @@ public class CyndaquilFlameWheel extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CYNDAQUIL_RED;
 
     private static final int COST = 2;
-    private static final int BASE_MAGIC_NUMBER = 14;
-    private static final int UPGRADE_MAGIC_NUMBER = 4;
+    private static final int BASE_MAGIC_NUMBER = 8;
 
     // /STAT DECLARATION/
 
@@ -51,6 +51,7 @@ public class CyndaquilFlameWheel extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(m, p, new BurnPower(m, magicNumber)));
+        addToBot(new ApplyPowerAction(m, p, new BurnPower(m, magicNumber)));
         addToBot(new EruptionAction(m));
         addToBot(new PressEndTurnButtonAction());
     }
@@ -60,7 +61,8 @@ public class CyndaquilFlameWheel extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            selfRetain = true;
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

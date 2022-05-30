@@ -538,7 +538,8 @@
     },
     "mysteryDungeon:CyndaquilFlameWheel": {
         "NAME": "Flame Wheel",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Cause an mysterydungeon:Eruption. NL End your turn."
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn twice. NL Cause an mysterydungeon:Eruption. NL End your turn.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! mysterydungeon:Burn twice. NL Cause an mysterydungeon:Eruption. NL End your turn."
     },
     "mysteryDungeon:CyndaquilTackle": {
         "NAME": "Tackle",
