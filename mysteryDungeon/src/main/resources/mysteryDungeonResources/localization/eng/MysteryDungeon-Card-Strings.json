@@ -547,8 +547,8 @@
     },
     "mysteryDungeon:CyndaquilFlashFire": {
         "NAME": "Flash Fire",
-        "DESCRIPTION": "Each time you play a card apply !M! mysterydungeon:Burn to all enemies.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Each time you play a card apply !M! mysterydungeon:Burn to all enemies."
+        "DESCRIPTION": "Add 2 Burn status card in your draw pile. NL Each time you play a card apply !M! mysterydungeon:Burn to all enemies.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Add 2 Burn status card in your draw pile. NL Each time you play a card apply !M! mysterydungeon:Burn to all enemies."
     },
     "mysteryDungeon:CyndaquilTackle": {
         "NAME": "Tackle",
