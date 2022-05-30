@@ -532,6 +532,10 @@
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! block."
     },
+    "mysteryDungeon:CyndaquilEmber": {
+        "NAME": "Ember",
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn."
+    },
     "mysteryDungeon:CyndaquilFirePledge": {
         "NAME": "Fire Pledge",
         "DESCRIPTION": "Apply !M! mysterydungeon:Burn to all enemies. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
