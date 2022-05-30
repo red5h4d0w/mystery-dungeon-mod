@@ -44,6 +44,14 @@
         "DESCRIPTION": "This card will not affect the Charge-Meter."
     },
     {
+        "PROPER_NAME": "Eruption",
+        "NAMES": [
+            "Eruption",
+            "eruption"
+        ],
+        "DESCRIPTION": "Deal damage to the target equal to the amount of Burn stacks on the target. Remove all Burn stacks."
+    },
+    {
         "PROPER_NAME": "Evasiveness Drop",
         "NAMES": [
             "Evasiveness Drop",

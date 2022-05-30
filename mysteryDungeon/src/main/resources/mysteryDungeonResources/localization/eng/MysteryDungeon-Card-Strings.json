@@ -536,6 +536,10 @@
         "NAME": "Fire Pledge",
         "DESCRIPTION": "Apply !M! mysterydungeon:Burn to all enemies. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
     },
+    "mysteryDungeon:CyndaquilFlameWheel": {
+        "NAME": "Flame Wheel",
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Cause an mysterydungeon:Eruption. NL End your turn."
+    },
     "mysteryDungeon:CyndaquilTackle": {
         "NAME": "Tackle",
         "DESCRIPTION": "Deal !D! damage."

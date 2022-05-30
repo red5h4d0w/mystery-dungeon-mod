@@ -2,8 +2,9 @@ package mysteryDungeon.actions;
 
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
@@ -27,8 +28,8 @@ public class EruptionAction extends AbstractGameAction {
     public void update() {
         if (target.hasPower(BurnPower.POWER_ID)) {
             int burnStacks = target.getPower(BurnPower.POWER_ID).amount;
-            addToBot(new DamageAllEnemiesAction(p, burnStacks, DamageType.THORNS, AttackEffect.FIRE));
-            addToBot(new RemoveSpecificPowerAction(target, p, target.getPower(BurnPower.POWER_ID)));
+            addToBot(new DamageAction(target, new DamageInfo(p, burnStacks, DamageType.THORNS), AttackEffect.FIRE));
+            addToBot(new RemoveSpecificPowerAction(target, p, target.getPower(BurnPower.POWER_ID))); 
         }
         isDone = true;
     }
