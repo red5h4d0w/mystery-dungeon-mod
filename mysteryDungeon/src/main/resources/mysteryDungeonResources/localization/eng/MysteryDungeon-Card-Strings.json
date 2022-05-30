@@ -545,6 +545,11 @@
         "DESCRIPTION": "Apply !M! mysterydungeon:Burn twice. NL Cause an mysterydungeon:Eruption. NL End your turn.",
         "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! mysterydungeon:Burn twice. NL Cause an mysterydungeon:Eruption. NL End your turn."
     },
+    "mysteryDungeon:CyndaquilFlashFire": {
+        "NAME": "Flash Fire",
+        "DESCRIPTION": "Each time you play a card apply !M! mysterydungeon:Burn to all enemies.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Each time you play a card apply !M! mysterydungeon:Burn to all enemies."
+    },
     "mysteryDungeon:CyndaquilTackle": {
         "NAME": "Tackle",
         "DESCRIPTION": "Deal !D! damage."
