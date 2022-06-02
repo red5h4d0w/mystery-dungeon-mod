@@ -316,7 +316,7 @@
         "DESCRIPTION": "对全体敌人施加 !M! 层 mysterydungeon:灼烧 。"
     },
     "mysteryDungeon:CharmanderMetalClaw": {
-        "NAME": "金属 爪 ",
+        "NAME": "金属爪",
         "DESCRIPTION": "造成 !D! 点伤害。 NL 本回合，所有“ mysterydungeon:爪 ”牌额外造成 !M! 点伤害。"
     },
     "mysteryDungeon:CharmanderOutrage": {
