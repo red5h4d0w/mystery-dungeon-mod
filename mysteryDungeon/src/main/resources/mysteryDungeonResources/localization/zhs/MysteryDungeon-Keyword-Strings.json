@@ -11,94 +11,78 @@
         "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
     },
     {
-        "PROPER_NAME": "Asleep",
+        "PROPER_NAME": "昏睡",
         "NAMES": [
-            "昏睡",
             "昏睡"
         ],
         "DESCRIPTION": "敌人昏睡后，不再执行意图。受到攻击后醒来，并执行昏睡前的意图。"
     },
     {
-        "PROPER_NAME": "Burn",
+        "PROPER_NAME": "灼烧",
         "NAMES": [
-            "灼烧",
             "灼烧"
         ],
         "DESCRIPTION": "每有 #b5 层，敌人伤害降低 #b1 点。每回合结束时，失去最大层数的 #b1/3 。"
     },
     {
-        "PROPER_NAME": "Claw",
+        "PROPER_NAME": "爪",
         "NAMES": [
-            "爪",
-            "爪",
             "爪"
         ],
         "DESCRIPTION": "名称中带“爪”的牌将视作同名牌。"
     },
     {
-        "PROPER_NAME": "Inert",
+        "PROPER_NAME": "惰性",
         "NAMES": [
-            "惰性",
             "惰性"
         ],
         "DESCRIPTION": "该卡将不会影响计数器。"
     },
     {
-        "PROPER_NAME": "Evasiveness Drop",
+        "PROPER_NAME": "防御下降",
         "NAMES": [
-            "防御下降",
-            "防御下降",
             "防御下降"
         ],
         "DESCRIPTION": "回合结束时，敌人失去 #b25% 的格挡值。"
     },
     {
-        "PROPER_NAME": "Leech Seed",
+        "PROPER_NAME": "寄生种子",
         "NAMES": [
-            "寄生种子",
             "寄生种子"
         ],
         "DESCRIPTION": "在敌方回合开始时。 NL 敌人每拥有一个寄生种子，失去 #b1 点 #y生命值 ， 你获得 #b1 点 #y生命值 。你的回合结束时, 如果敌人未受到寄生种子以外的伤害， 寄生种子层数将减半。"
     },
     {
-        "PROPER_NAME": "Negative Stance",
+        "PROPER_NAME": "负极态",
         "NAMES": [
-            "负极态",
-            "负极态",
             "负极态"
         ],
         "DESCRIPTION": "每回合打出的前 #b2 张 #y技能牌 ，各提供 #b1 点 #y专注 。 NL 当 #y退出 该姿态时, #y激发 下 #b2 个 #y充能球 。"
     },
     {
-        "PROPER_NAME": "Poison Thorns",
+        "PROPER_NAME": "毒刺",
         "NAMES": [
-            "毒刺",
-            "毒刺",
             "毒刺"
         ],
         "DESCRIPTION": "每当受到攻击时，攻击者获得中毒。"
     },
     {
-        "PROPER_NAME": "Positive Stance",
+        "PROPER_NAME": "正极态",
         "NAMES": [
-            "正极态",
-            "正极态",
             "正极态"
         ],
         "DESCRIPTION": "每当打出 #b1 张 #y攻击牌 ，生成 #b1 个 #y闪电充能球 。 NL （如果有空余栏位） NL 当 #y退出 该姿态时,获得 #b7 点格挡。"
     },
     {
-        "PROPER_NAME": "Rest",
+        "PROPER_NAME": "睡觉",
         "NAMES": [
-            "睡觉",
             "睡觉"
         ],
         "DESCRIPTION": "无法对目标敌人出牌。"
     },
     {
-        "PROPER_NAME": "Toxic",
+        "PROPER_NAME": "剧毒",
         "NAMES": [
-            "剧毒",
             "剧毒"
         ],
         "DESCRIPTION": "拥有 #y剧毒 状态的敌人， #y中毒 效果会增加。"

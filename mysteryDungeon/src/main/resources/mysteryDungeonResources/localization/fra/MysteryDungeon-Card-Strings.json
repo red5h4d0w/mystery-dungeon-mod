@@ -1,7 +1,7 @@
 {
     "mysteryDungeon:ExplorersDeck": {
         "NAME": "Deck de l'aventurier",
-        "DESCRIPTION": "Lorsque vous choisirez votre avennturier, deviendra 5 cartes associées à celui-ci."
+        "DESCRIPTION": "Lorsque vous choisirez votre aventurier, deviendra 5 cartes associées à celui-ci."
     },
     "mysteryDungeon:PartnersDeck": {
         "NAME": "Deck du coéquipier",
