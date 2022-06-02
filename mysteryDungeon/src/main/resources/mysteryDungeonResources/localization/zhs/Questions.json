@@ -1,11 +1,11 @@
 [
     {
-        "QUESTION": "Un voyou embête une fille dans une rue animée du centre ville! Que faites vous?",
+        "QUESTION": "一个罪犯在街道上正在骚扰一个女孩！ 你会怎么做？",
         "ANSWERS": [
-            "Je l'aide sans hésiter.",
-            "Je l'aide mais j'ai peur.",
-            "J'appelle la police.",
-            "De peur, je ne fais rien."
+            "除暴安良，义无反顾。",
+            "纵使恐惧，亦不退缩。",
+            "报警求援，理所当然。",
+            "置之不理，与我何干。"
         ],
         "POINTS": [
             [
@@ -26,11 +26,11 @@
         ]
     },
     {
-        "QUESTION": "Un étranger commence une conversation avec vous. Vous ne comprenez absolument rien à ce qu'il dit. Que lui dites-vous?",
+        "QUESTION": "一个外国人找你说话。老实说，你根本不知道他在讲什么。你会怎么回复？",
         "ANSWERS": [
-            "Ha, ha ! Oui, très drôle!",
-            "Hum... Vous pouvez répéter?",
-            "Bien... Hum, il faut que j'y aille."
+            "啊哈哈哈哈哈哈哈哈！",
+            "呃？要不你再说一遍？",
+            "这……这……这我得走了。"
         ],
         "POINTS": [
             [
@@ -45,11 +45,11 @@
         ]
     },
     {
-        "QUESTION": "Un ami vous ramène quelque chose que vous aviez oublié. Comment le remerciez-vous ? Vous dites ...",
+        "QUESTION": "一个朋友帮你找回了你弄丢的的东西，你会怎样表示感谢？",
         "ANSWERS": [
-            "Merci à profusion.",
-            "Merci et une blague.",
-            "Merci, mais calmement."
+            "中规中矩的表达感谢。",
+            "幽默活泼的表达感谢。",
+            "面无表情的表达感谢。"
         ],
         "POINTS": [
             [
@@ -65,11 +65,11 @@
         ]
     },
     {
-        "QUESTION": "Une main sort des toilettes! Que faites vous?",
+        "QUESTION": "马桶里伸出来一只人的手！你会怎么做？",
         "ANSWERS": [
-            "Je m'enfuis en hurlant.",
-            "Je referme le couvercle.",
-            "Je lui serre la main."
+            "放声尖叫，拔腿就跑。",
+            "一言不发，扣上盖子。",
+            "太有趣了，一把握住。."
         ],
         "POINTS": [
             [
@@ -87,11 +87,11 @@
         ]
     },
     {
-        "QUESTION": "Un contrôle va avoir lieu bientôt. Comment le préparez vous?",
+        "QUESTION": "快要考试了，你会怎么学习？",
         "ANSWERS": [
-            "J'étudie beaucoup.",
-            "Au dernier instante.",
-            "Je m'amuse."
+            "埋头苦学，当卷王！",
+            "我好困啊，再说吧！",
+            "接着奏乐，接着舞！"
         ],
         "POINTS": [
             [
@@ -106,10 +106,10 @@
         ]
     },
     {
-        "QUESTION": "Y a-t-il beaucoup de choses que vous aimeriez faire?",
+        "QUESTION": "你是否有很多想要做的事情？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "有啊。",
+            "没有。"
         ],
         "POINTS": [
             [
@@ -123,10 +123,10 @@
         ]
     },
     {
-        "QUESTION": "Avez-vous une personnalité enjouée?",
+        "QUESTION": "你性格开朗吗？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "对的。",
+            "烦诶。"
         ],
         "POINTS": [
             [
@@ -140,10 +140,10 @@
         ]
     },
     {
-        "QUESTION": "Arrivez-vous souvent en retard en cours ou aux réunions?",
+        "QUESTION": "在上学或约会中，你是否经常迟到？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "是的。",
+            "没有。"
         ],
         "POINTS": [
             [
@@ -157,10 +157,10 @@
         ]
     },
     {
-        "QUESTION": "Est-ce que vous pouvez vous concentrer sur quelque chose que vous aimez?",
+        "QUESTION": "对于你喜欢的事情，你会保持专注吗？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "是的。",
+            "不会。"
         ],
         "POINTS": [
             [
@@ -173,11 +173,11 @@
         ]
     },
     {
-        "QUESTION": "Osez-vous entrer dans une maison hantée?",
+        "QUESTION": "你敢进入鬼屋吗？",
         "ANSWERS": [
-            "Sans problèmes!",
-            "Euh... Non...",
-            "Oui, avec quelqu'un."
+            "当然没问题！",
+            "呃…呃……我觉得不行……",
+            "和喜欢的人一起就没问题。"
         ],
         "POINTS": [
             [
@@ -192,10 +192,10 @@
         ]
     },
     {
-        "QUESTION": "Est-ce que vous remerciez quelqu'un avec sincérité quand vous vous sentez reconnaissant(e)?",
+        "QUESTION": "当你感恩的时候，你足够虔诚吗？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "当然。",
+            "没有。"
         ],
         "POINTS": [
             [
@@ -209,10 +209,10 @@
         ]
     },
     {
-        "QUESTION": "Est-ce que les autres vous disent souvent que vous avez des réactions puériles?",
+        "QUESTION": "你会偶尔孩子气吗？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "是捏~",
+            "不会。"
         ],
         "POINTS": [
             [
@@ -225,10 +225,10 @@
         ]
     },
     {
-        "QUESTION": "Est-ce qu'on vous dit de faire attention à ce que vous racontez?",
+        "QUESTION": "当别人注视你时，你会说些什么吗？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "是的",
+            "不会"
         ],
         "POINTS": [
             [
@@ -241,10 +241,10 @@
         ]
     },
     {
-        "QUESTION": "Rêvez vous parfois de paresser sans être dérangé(e)?",
+        "QUESTION": "你是否会无所事事的闲逛？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "当然。",
+            "不啊。"
         ],
         "POINTS": [
             [
@@ -256,10 +256,10 @@
         ]
     },
     {
-        "QUESTION": "Vous arrive-t-il de vous endormir sans vous en rendre compte?",
+        "QUESTION": "你是否会不知不觉的睡着了？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "会的。",
+            "不会。"
         ],
         "POINTS": [
             [
@@ -272,10 +272,10 @@
         ]
     },
     {
-        "QUESTION": "Vous sentez vous misérable quand vous êtes seul(e)?",
+        "QUESTION": "当你一个人的时候，你会感到寂寞吗？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "是。",
+            "否。"
         ],
         "POINTS": [
             [
@@ -288,10 +288,10 @@
         ]
     },
     {
-        "QUESTION": "Avez-vous l'impression que vous avez ralenti le rythme dernièrement?",
+        "QUESTION": "你有没有感觉到你最近放慢了速度？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "是。",
+            "否。"
         ],
         "POINTS": [
             [
@@ -303,10 +303,10 @@
         ]
     },
     {
-        "QUESTION": "Est-ce que vous détestez être la dernière personne à quitter la salle de classe à la fin de la journée?",
+        "QUESTION": "你讨厌在一天结束时，成为最后一个离开课堂的人吗？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "是。",
+            "否。"
         ],
         "POINTS": [
             [
@@ -319,11 +319,11 @@
         ]
     },
     {
-        "QUESTION": "Aimez-vous les blagues idiotes?",
+        "QUESTION": "你喜欢玩双关梗吗？",
         "ANSWERS": [
-            "J'adore ça!",
-            "Un peu.",
-            "Pas du tout"
+            "超爱！",
+            "还行。",
+            "无聊。"
         ],
         "POINTS": [
             [
@@ -339,10 +339,10 @@
         ]
     },
     {
-        "QUESTION": "Est-ce que vous aimez les blagues?",
+        "QUESTION": "你喜欢恶作剧吗？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "是。",
+            "否。"
         ],
         "POINTS": [
             [
@@ -355,10 +355,10 @@
         ]
     },
     {
-        "QUESTION": "Aimez-vous vous battre?",
+        "QUESTION": "你喜欢战斗吗？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "是。",
+            "否。"
         ],
         "POINTS": [
             [
@@ -372,10 +372,10 @@
         ]
     },
     {
-        "QUESTION": "Est-ce que vous aimez imaginer des trucs pour vous amuser?",
+        "QUESTION": "你喜欢自娱自乐吗？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "是。",
+            "否。"
         ],
         "POINTS": [
             [
@@ -387,10 +387,10 @@
         ]
     },
     {
-        "QUESTION": "Est-ce que vous aimez vous amusez bruyamment avec les autres?",
+        "QUESTION": "你喜欢叽叽喳喳的讲个不停吗？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "是。",
+            "否。"
         ],
         "POINTS": [
             [
@@ -403,10 +403,10 @@
         ]
     },
     {
-        "QUESTION": "Bâillez-vous souvent?",
+        "QUESTION": "你经常打哈欠吗？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "是。",
+            "否。"
         ],
         "POINTS": [
             [
@@ -420,10 +420,10 @@
         ]
     },
     {
-        "QUESTION": "Est-ce que vous vous trouvez parfois soporifique et exagérément prudent(e)?",
+        "QUESTION": "你是否偶尔觉得自己过于谨慎？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "是。",
+            "否。"
         ],
         "POINTS": [
             [
@@ -436,10 +436,10 @@
         ]
     },
     {
-        "QUESTION": "Est-ce qu'il vous arrive parfois de ne plus rien avoir à faire tout d'un coup?",
+        "QUESTION": "你是否有时会突然无事可做？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "是。",
+            "否。"
         ],
         "POINTS": [
             [
@@ -451,10 +451,10 @@
         ]
     },
     {
-        "QUESTION": "Est-ce que vous riez beaucoup?",
+        "QUESTION": "你经常笑吗？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "是。",
+            "否。"
         ],
         "POINTS": [
             [
@@ -467,10 +467,10 @@
         ]
     },
     {
-        "QUESTION": "Est-ce que vous pensez que vous êtes cool? Soyez honnête.",
+        "QUESTION": "老实说，你觉得自己超酷吗？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "是。",
+            "否。"
         ],
         "POINTS": [
             [
@@ -482,13 +482,13 @@
         ]
     },
     {
-        "QUESTION": "Attrapez n'importe quel doigt de la main gauche avec la droite.",
+        "QUESTION": "随机抓住左手的任何一根手指。你抓住了什么？",
         "ANSWERS": [
-            "Pouce.",
-            "Index.",
-            "Majeur.",
-            "Annulaire.",
-            "Auriculaire."
+            "大拇指。",
+            "食指。",
+            "中指。",
+            "无名指。",
+            "小拇指。"
         ],
         "POINTS": [
             [
@@ -509,10 +509,10 @@
         ]
     },
     {
-        "QUESTION": "Avez-vous déjà construit un piège?",
+        "QUESTION": "你曾经制作过陷阱吗？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "是。",
+            "否。"
         ],
         "POINTS": [
             [
@@ -525,11 +525,11 @@
         ]
     },
     {
-        "QUESTION": "Comment répondez-vous à un e-mail?",
+        "QUESTION": "你回复电子邮件的速度有多快？",
         "ANSWERS": [
-            "Tout de suite.",
-            "Je répond, ou pas.",
-            "Trop fatiguant."
+            "马上就回复。",
+            "可能回复，也可能不回复。",
+            "这也太麻烦了。"
         ],
         "POINTS": [
             [
@@ -545,11 +545,11 @@
         ]
     },
     {
-        "QUESTION": "Vous êtes à la plage et le temps est superbe. Comment vous sentez vous?",
+        "QUESTION": "在海滩度过了愉快的一天。你感觉如何？",
         "ANSWERS": [
-            "Super bien!",
-            "Bien, je me repose...",
-            "J'ai envie de rentrer!"
+            "太棒了！",
+            "呼呼呼...",
+            "我想立即回家！"
         ],
         "POINTS": [
             [
@@ -564,11 +564,11 @@
         ]
     },
     {
-        "QUESTION": "C'est le week-end, mais personne ne veut jouer avec vous. Que faîtes-vous?",
+        "QUESTION": "这是一个周末，但没有人会和你一起玩。你会做什么？",
         "ANSWERS": [
-            "Une excursion.",
-            "Je traine sans but.",
-            "Je me recroqueville."
+            "去旅行咯。",
+            "闲来无事。",
+            "窝在角落。"
         ],
         "POINTS": [
             [
@@ -586,10 +586,10 @@
         ]
     },
     {
-        "QUESTION": "C'est la fête de l'été ! Vous aimez les festivals?",
+        "QUESTION": "夏天到了！你准备狂欢吗？",
         "ANSWERS": [
-            "J'adore!",
-            "Je m'en fiche."
+            "当然！",
+            "无聊。"
         ],
         "POINTS": [
             [
@@ -602,11 +602,11 @@
         ]
     },
     {
-        "QUESTION": "Ce sont les vacances d'été! Où aimeriez-vous aller?",
+        "QUESTION": "夏天到了。 NL 你想去哪里？",
         "ANSWERS": [
-            "À la plage!",
-            "En thalasso.",
-            "Qu'importe."
+            "沙滩！",
+            "按摩。",
+            "随便。"
         ],
         "POINTS": [
             [
@@ -621,10 +621,10 @@
         ]
     },
     {
-        "QUESTION": "En vacances, vous préférez:",
+        "QUESTION": "假期旅游，你会选择...",
         "ANSWERS": [
-            "Être seul.",
-            "Être avec les autres."
+            "自己去。",
+            "和小伙伴一起。"
         ],
         "POINTS": [
             [
@@ -638,10 +638,10 @@
         ]
     },
     {
-        "QUESTION": "On vous trouve \"étrange mais drôle.\" Comment vous sentez vous?",
+        "QUESTION": "有人称呼你为熬夜波比，这让你感觉怎么样？",
         "ANSWERS": [
-            "Content!",
-            "Pas content."
+            "笑死。",
+            "呃呃？"
         ],
         "POINTS": [
             [
@@ -655,11 +655,11 @@
         ]
     },
     {
-        "QUESTION": "La route se divise: elle part à droite et à gauche. On vous dit qu'il y a un trésor sur celle de droite. De quel coté allez-vous?",
+        "QUESTION": "前方的道路分为左右两侧。指示牌上写着右边有宝藏，你准备怎么做？",
         "ANSWERS": [
-            "Je vais à droite!",
-            "Un piège! À gauche.",
-            "Peu importe."
+            "毫不犹豫去右边。",
+            "肯定是走左边啊。",
+            "为啥我不能都走？"
         ],
         "POINTS": [
             [
@@ -674,11 +674,11 @@
         ]
     },
     {
-        "QUESTION": "Voici un seau. Si vous mettez de l'eau dedans, vous le remplissez...",
+        "QUESTION": "面前有一个桶。如果你往里面装水，你会装多少？",
         "ANSWERS": [
-            "À ras.",
-            "À demi.",
-            "Un peu."
+            "全都装满！",
+            "半桶就够。",
+            "就一点点……"
         ],
         "POINTS": [
             [
@@ -693,12 +693,12 @@
         ]
     },
     {
-        "QUESTION": "Vous aimez bien une personne... Mais aucun moyen de s'en approcher. Que faites-vous?",
+        "QUESTION": "你有喜欢的人，但没有接近的机会，你会怎么做？",
         "ANSWERS": [
-            "Je lui déclare ma flamme.",
-            "Je lui dis un jour, peut-être...",
-            "Je lui joue un tour.",
-            "Je l'admire de loin."
+            "勇敢去告白。",
+            "打个招呼吧。",
+            "捉弄一下她。",
+            "唔……再说吧。"
         ],
         "POINTS": [
             [
@@ -717,10 +717,10 @@
         ]
     },
     {
-        "QUESTION": "Vous entendez un cri venant de derrière la porte! Comment réagissez-vous?",
+        "QUESTION": "门后传来一声尖叫！你会有什么反应？",
         "ANSWERS": [
-            "Je l'ouvre d'un coup.",
-            "Je crie aussi!"
+            "快打开门。",
+            "我的妈呀！"
         ],
         "POINTS": [
             [
@@ -733,11 +733,11 @@
         ]
     },
     {
-        "QUESTION": "Il y a un portefeuille sur le bord de la route. Que faites vous?",
+        "QUESTION": "路边有一个钱包，你会怎么做？",
         "ANSWERS": [
-            "Je l'amène à la police!",
-            "Oui! Génial!",
-            "Personne ne regarde?"
+            "赶紧交给警察叔叔吧。",
+            "我寻思这也没人要啊。",
+            "先看看周围有没有人。"
         ],
         "POINTS": [
             [
@@ -752,11 +752,11 @@
         ]
     },
     {
-        "QUESTION": "Les extraterrestres nous envahissent! Que faites-vous?",
+        "QUESTION": "外星人入侵了！你会怎么做？",
         "ANSWERS": [
-            "Je lutte.",
-            "Je fuis.",
-            "Rien."
+            "碾碎他们！",
+            "我先润了。",
+            "关我啥事。"
         ],
         "POINTS": [
             [
@@ -771,10 +771,10 @@
         ]
     },
     {
-        "QUESTION": "Quand vous allez vous coucher le soir, comment laissez-vous la lumière?",
+        "QUESTION": "当你上床睡觉时，你会如何处理房间的灯？",
         "ANSWERS": [
-            "Allumée.",
-            "Éteinte."
+            "开着吧。",
+            "关灯睡觉。"
         ],
         "POINTS": [
             [
@@ -787,10 +787,10 @@
         ]
     },
     {
-        "QUESTION": "Dans les moments difficiles, est-ce que vous vous accrochez?",
+        "QUESTION": "当事情变得艰难时，你还要继续吗？",
         "ANSWERS": [
-            "Oui.",
-            "Non"
+            "是。",
+            "否。"
         ],
         "POINTS": [
             [
@@ -804,10 +804,10 @@
         ]
     },
     {
-        "QUESTION": "On vous donne le choix entre deux cadeaux. Lequel allez-vous prendre?",
+        "QUESTION": "面前摆着两份礼物，你准备要哪一个？",
         "ANSWERS": [
-            "Le gros.",
-            "Le petit."
+            "当然是大盒子了。",
+            "给我小盒子就行。"
         ],
         "POINTS": [
             [
@@ -821,11 +821,11 @@
         ]
     },
     {
-        "QUESTION": "On vous enferme par erreur dans une pièce noire comme de l'encre! Que faites-vous?",
+        "QUESTION": "你突然被锁在一个漆黑的房间里！你会做什么？",
         "ANSWERS": [
-            "J'enfonce la porte.",
-            "Je pleure.",
-            "Je nettoie."
+            "敲门。",
+            "哭哭。",
+            "要不……先打扫下？"
         ],
         "POINTS": [
             [
@@ -841,10 +841,10 @@
         ]
     },
     {
-        "QUESTION": "Vous cassez un œuf pourri dans votre chambre. NL Que faites vous?",
+        "QUESTION": "你在房间里打碎了一个臭鸡蛋！你会怎么做？",
         "ANSWERS": [
-            "J'ouvre vite la fenêtre.",
-            "Je le renifle d'abord."
+            "开窗散散味……",
+            "我得先闻闻……"
         ],
         "POINTS": [
             [
@@ -858,11 +858,11 @@
         ]
     },
     {
-        "QUESTION": "Vous découvrez un coffre au trésor! Que faites-vous?",
+        "QUESTION": "你遇到了一个宝箱，你会怎么做？",
         "ANSWERS": [
-            "Je l'ouvre de suite!",
-            "Rien... Un piège...",
-            "Rien, il sera vide..."
+            "立马打开！",
+            "不……这是一个陷阱！",
+            "这是个空箱子吧……"
         ],
         "POINTS": [
             [
@@ -877,11 +877,11 @@
         ]
     },
     {
-        "QUESTION": "Vous gagnez à la loterie! NL Que faites-vous de l'argent?",
+        "QUESTION": "中彩票啦！你会怎么花？",
         "ANSWERS": [
-            "Je m'en sers.",
-            "J'économise.",
-            "Je le donne."
+            "会所嫩模！",
+            "先存着吧！",
+            "我要捐了！"
         ],
         "POINTS": [
             [
@@ -899,11 +899,11 @@
         ]
     },
     {
-        "QUESTION": "Vous recevez un paquet cadeau! Mais vous ne savez pas ce qu'il y a dedans. Que faites-vous?",
+        "QUESTION": "你收到了一份礼物，但你不知道是什么，你会怎么做？",
         "ANSWERS": [
-            "Je l'ouvre tout de suite.",
-            "Je l'ouvre plus tard.",
-            "Quelqu'un me l'ouvre."
+            "立马打开！",
+            "等会再说。",
+            "找别人帮忙打开……"
         ],
         "POINTS": [
             [
@@ -918,11 +918,11 @@
         ]
     },
     {
-        "QUESTION": "Le président de la république est en face de vous. NL Comment lui parlez-vous?",
+        "QUESTION": "一个大人物站在你面前，你会怎么和他交流？",
         "ANSWERS": [
-            "Calmement.",
-            "Nerveusement.",
-            "ON S'EN FICHE!!!"
+            "不卑不亢。",
+            "小心翼翼。",
+            "你谁啊你？"
         ],
         "POINTS": [
             [
@@ -937,11 +937,11 @@
         ]
     },
     {
-        "QUESTION": "Votre ami(e) n'arrive pas à l'heure prévue pour votre rendez vous. Que faites-vous?",
+        "QUESTION": "你朋友迟到啦，你会怎么做？",
         "ANSWERS": [
-            "Je m'énerve.",
-            "J'attends.",
-            "En colère, je pars."
+            "有点不开心。",
+            "耐心等待吧。",
+            "怎么还不来啊！！！"
         ],
         "POINTS": [
             [
@@ -957,11 +957,11 @@
         ]
     },
     {
-        "QUESTION": "Une brute embête votre ami. Que faites vous?",
+        "QUESTION": "你的朋友被恶霸欺负了！你怎么办？",
         "ANSWERS": [
-            "J'affronte la brute.",
-            "Je la gronde de loin.",
-            "Je l'attaque par derrière."
+            "找回场子，直面恶霸！",
+            "风紧扯呼，我先溜了。",
+            "从背后给恶霸来一脚。"
         ],
         "POINTS": [
             [
@@ -977,10 +977,10 @@
         ]
     },
     {
-        "QUESTION": "Vous faites du saut à l'élastique pour la première fois. Vu que ça fait peur, vous faites un test avec une poupée... L'élastique craque! Sautez vous quand même?",
+        "QUESTION": "你觉得蹦极的绳子不太结实，你还会去跳吗？",
         "ANSWERS": [
-            "Oui.",
-            "Non."
+            "是。",
+            "否。"
         ],
         "POINTS": [
             [
@@ -994,10 +994,10 @@
         ]
     },
     {
-        "QUESTION": "Vous vous êtes bien battu... mais les extraterrestent gagnent. Il y en a un qui vous dit \"TU NOUS A IMPRESSIONNÉS. C'ÉTAIT UN PLAISIR À VOIR. JOINS TOI À NOUS, ET ENSEMBLE DIRIGEONS LE MONDE\"",
+        "QUESTION": "你在与外星人的战斗中失败了……但外星人觉得你是个可塑之才，邀请你一起统治世界。你会如何作答？",
         "ANSWERS": [
-            "J'accepte!",
-            "Je refuse."
+            "外星老爷，又高又硬！",
+            "但是，我要选择拒绝！"
         ],
         "POINTS": [
             [
@@ -1010,11 +1010,11 @@
         ]
     },
     {
-        "QUESTION": "Êtes-vous un garçon ou une fille?",
+        "QUESTION": "你是男孩还是女孩？",
         "ANSWERS": [
-            "Garçon.",
-            "Fille.",
-            "Autre."
+            "男孩。",
+            "女孩。",
+            "你猜？"
         ]
     }
 ]

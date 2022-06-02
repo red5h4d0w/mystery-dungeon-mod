@@ -1,0 +1,12 @@
+{
+    "mysteryDungeon:DefaultOrb": {
+        "NAME": "原初",
+        "DESCRIPTION": [
+            "#y被动： 在你的回合开始时，抽 #b",
+            " 牌。",
+            " 牌。",
+            " NL #y激发： 对所有敌人造成 #b",
+            " 点伤害。"
+        ]
+    }
+}

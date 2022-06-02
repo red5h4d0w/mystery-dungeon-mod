@@ -2,8 +2,8 @@ import json
 import os
 import shutil
 
-#TODO: look for change in Desc types for cards
-#TODO: look for deprrecated cards and remove them
+# TODO: look for change in Desc types for cards
+# TODO: look for deprrecated cards and remove them
 
 with os.scandir(os.path.join(os.path.dirname(os.path.realpath(__file__)), "eng")) as engDir:
     engJsonsPath = []
@@ -25,13 +25,25 @@ with os.scandir(os.path.dirname(os.path.realpath(__file__))) as it:
                                 localizedJson = json.loads(f.read())
                                 originalLocalizedJson = localizedJson
                             for keyword in engJson:
-                                if not keyword["PROPER_NAME"] in map(lambda x:x["PROPER_NAME"], localizedJson):
+                                if not keyword["PROPER_NAME"] in map(lambda x: x["PROPER_NAME"], localizedJson):
                                     localizedJson.append(keyword)
                             with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), entry.name, "MysteryDungeon-Keyword-Strings.json"), "w") as jsonFile:
-                                json.dump(localizedJson, jsonFile, indent=4, ensure_ascii=False)
-                        # Do not touch Questions.json
+                                json.dump(localizedJson, jsonFile,
+                                          indent=4, ensure_ascii=False)
+                        # update Questions.json
                         elif engJsonPath == "Questions.json":
-                            pass
+                            with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "eng", "Questions.json"), "r") as f:
+                                engJson = json.loads(f.read())
+                            with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), entry.name, "Questions.json"), "r") as f:
+                                localizedJson = json.loads(f.read())
+                                originalLocalizedJson = localizedJson
+                            for (index, question) in enumerate(engJson):
+                                # Ensure POINTS are not changed
+                                if "POINTS" in question:
+                                    localizedJson[index]["POINTS"] = question["POINTS"]
+                            with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), entry.name, "Questions.json"), "w") as jsonFile:
+                                json.dump(localizedJson, jsonFile,
+                                          indent=4, ensure_ascii=False)
                         # Touch every other file
                         else:
                             with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "eng", engJsonPath), "r") as f:
@@ -43,10 +55,11 @@ with os.scandir(os.path.dirname(os.path.realpath(__file__))) as it:
                                 if not key in localizedJson.keys():
                                     localizedJson[key] = value
                             with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), entry.name, engJsonPath), "w") as jsonFile:
-                                json.dump(localizedJson, jsonFile, indent=4, ensure_ascii=False)
+                                json.dump(localizedJson, jsonFile,
+                                          indent=4, ensure_ascii=False)
 
                     # Copy file if file does not exist
                     else:
                         print("creating file")
-                        shutil.copyfile(os.path.join(os.path.dirname(os.path.realpath(__file__)), "eng", engJsonPath), os.path.join(os.path.dirname(os.path.realpath(__file__)), entry.name, engJsonPath))
-            
+                        shutil.copyfile(os.path.join(os.path.dirname(os.path.realpath(__file__)), "eng", engJsonPath), os.path.join(
+                            os.path.dirname(os.path.realpath(__file__)), entry.name, engJsonPath))
