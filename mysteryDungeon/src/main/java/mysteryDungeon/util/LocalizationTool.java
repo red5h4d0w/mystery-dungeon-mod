@@ -104,5 +104,6 @@ public class LocalizationTool {
     static ArrayList<Settings.GameLanguage> implementedLanguages = new ArrayList<Settings.GameLanguage>() {{
         add(Settings.GameLanguage.ENG);
         add(Settings.GameLanguage.FRA);
+        add(Settings.GameLanguage.ZHS);
     }};
 }

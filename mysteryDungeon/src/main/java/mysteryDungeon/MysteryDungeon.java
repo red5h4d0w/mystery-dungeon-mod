@@ -192,9 +192,7 @@ public class MysteryDungeon implements
         return getModID() + "Resources/images/powers/" + resourcePath;
     }
     
-    public static String makeEventPath(String resourcePath) {
-        return getModID() + "Resources/images/events/" + resourcePath;
-    }
+    
     
     // =============== /MAKE IMAGE PATHS/ =================
     
@@ -474,9 +472,6 @@ public class MysteryDungeon implements
         
         // RelicStrings
         BaseMod.loadCustomStringsFile(RelicStrings.class, localizationPath + "MysteryDungeon-Relic-Strings.json");
-        
-        // Event Strings
-        BaseMod.loadCustomStringsFile(EventStrings.class, localizationPath + "MysteryDungeon-Event-Strings.json");
         
         // PotionStrings
         BaseMod.loadCustomStringsFile(PotionStrings.class, localizationPath + "MysteryDungeon-Potion-Strings.json");
