@@ -260,5 +260,17 @@
         "DESCRIPTIONS": [
             "When this creature receives damage, increase the number of stacks by as much damage you received. NL When you deal damage, heal 20%% of damage dealt up to #b%s."
         ]
+    },
+    "mysteryDungeon:LockDownPower": {
+        "NAME": "Lock-Down",
+        "DESCRIPTIONS": [
+            "At the end of the turn, do not return automatically to the center of the charge gauge."
+        ]
+    },
+    "mysteryDungeon:PikachuExplorerPower": {
+        "NAME": "Explorer Form",
+        "DESCRIPTIONS": [
+            "At the start of your turn Channel #b%s lightning orb. If you have at least 1 orb, at the start of your turn evoke your next #b%s orb."
+        ]
     }
 }

@@ -1,0 +1,51 @@
+{
+    "mysteryDungeon:AspearBerryPotion": {
+        "NAME": "利木果",
+        "DESCRIPTIONS": [
+            "从手牌中丢弃任意数量的牌。抽 #b%s 张牌。"
+        ]
+    },
+    "mysteryDungeon:DireHitPotion": {
+        "NAME": "要害攻击",
+        "DESCRIPTIONS": [
+            "下张攻击牌造成双倍伤害。"
+        ]
+    },
+    "mysteryDungeon:FlameOrbPotion": {
+        "NAME": "灼烧充能球",
+        "DESCRIPTIONS": [
+            "对所有敌人施加 #b%s #y灼烧 。"
+        ]
+    },
+    "mysteryDungeon:PikachuCandyPotion": {
+        "NAME": "皮卡丘的糖果",
+        "DESCRIPTIONS": [
+            "进入正极态或负极态。"
+        ]
+    },
+    "mysteryDungeon:PoisonBarbPotion": {
+        "NAME": "毒针",
+        "DESCRIPTIONS": [
+            "施加 #b%s #y中毒 。"
+        ]
+    },
+    "mysteryDungeon:SitrusBerryPotion": {
+        "NAME": "文柚果",
+        "DESCRIPTIONS": [
+            "将 #b%s 张牌从消耗牌堆置入手牌。",
+            "将 #b%s 张牌从消耗牌堆置入手牌。"
+        ]
+    },
+    "mysteryDungeon:XAttackPotion": {
+        "NAME": "力量强化",
+        "DESCRIPTIONS": [
+            "向手牌添加 #b%s #y畏缩 。本回合 #b0 费。"
+        ]
+    },
+    "mysteryDungeon:XSpAttackPotion": {
+        "NAME": "电能过载",
+        "DESCRIPTIONS": [
+            "向你的充能球栏位填满 #y闪电 。"
+        ]
+    }
+}

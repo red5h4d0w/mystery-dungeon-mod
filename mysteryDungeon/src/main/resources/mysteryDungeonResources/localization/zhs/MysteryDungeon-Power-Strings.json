@@ -1,0 +1,270 @@
+{
+    "mysteryDungeon:AgilityPower": {
+        "NAME": "高速移动",
+        "DESCRIPTIONS": [
+            "当进入或离开 #y姿态，抽 #b%s 张牌。",
+            "当进入或离开 #y姿态，抽 #b%s 张牌。"
+        ]
+    },
+    "mysteryDungeon:AsleepPower": {
+        "NAME": "昏睡",
+        "DESCRIPTIONS": [
+            "本回合，敌人昏睡，不再执行意图。受到攻击后醒来，并执行昏睡前的意图。",
+            " #b%s 回合内，敌人昏睡，不再执行意图。受到攻击后醒来，并执行昏睡前的意图。"
+        ]
+    },
+    "mysteryDungeon:AquaRingPower": {
+        "NAME": "水流环",
+        "DESCRIPTIONS": [
+            "本回合，每当一张牌被手动预见或丢弃时，获得 #b%s 点格挡。 NL 如果该牌是 #y状态牌 。造成 #b%s 点伤害。"
+        ]
+    },
+    "mysteryDungeon:BellyDrumPower": {
+        "NAME": "腹鼓",
+        "DESCRIPTIONS": [
+            "每回合打出的第一张牌费用为0且被消耗。",
+            "每回合打出的第 %s 张牌费用为0且被消耗。"
+        ]
+    },
+    "mysteryDungeon:BidePower": {
+        "NAME": "忍耐",
+        "DESCRIPTIONS": [
+            "每受到一次攻击，获得 #b%s 点临时力量。"
+        ]
+    },
+    "mysteryDungeon:BlazePower": {
+        "NAME": "火焰",
+        "DESCRIPTIONS": [
+            "每回合第一次能量为0后，获得 [E] 。",
+            "每回合第 #b%s 次能量为0后，获得 [E] 。"
+        ]
+    },
+    "mysteryDungeon:BurnPower": {
+        "NAME": "灼烧",
+        "DESCRIPTIONS": [
+            "每有 #b5 层， NL 敌人伤害降低 #b1 点。 NL 每回合结束时， NL 失去最大层数的 #b1/3 。"
+        ]
+    },
+    "mysteryDungeon:CharmanderExplorerPower": {
+        "NAME": "小火龙·冒险者笔记",
+        "DESCRIPTIONS": [
+            "在你的回合开始时，发掘 #b%s 张牌。"
+        ]
+    },
+    "mysteryDungeon:CounterPower": {
+        "NAME": "双倍奉还",
+        "DESCRIPTIONS": [
+            "若受到攻击后失去 #y全部防御 ，反击 #b%s 点伤害。",
+            "若受到攻击后失去 #y全部防御 ，反击 #b%s 点伤害。"
+        ]
+    },
+    "mysteryDungeon:DroughtPower": {
+        "NAME": "干旱",
+        "DESCRIPTIONS": [
+            "当你施加 #y灼烧 时，额外施加 #b%s 层。",
+            "当你施加 #y灼烧 时，额外施加 #b%s 层。"
+        ]
+    },
+    "mysteryDungeon:EncorePower": {
+        "NAME": "再来一次",
+        "DESCRIPTIONS": [
+            "本回合，你的下张 #y攻击牌 或 #y技能牌 将打出两次。"
+        ]
+    },
+    "mysteryDungeon:EndurePower": {
+        "NAME": "挺住",
+        "DESCRIPTIONS": [
+            "当你打出一张状态牌，造成 #b%s 点伤害。"
+        ]
+    },
+    "mysteryDungeon:EvasivenessDropPower": {
+        "NAME": "防御下降",
+        "DESCRIPTIONS": [
+            "敌人回合结束时，失去 #b50%% 格挡值。",
+            "敌人回合结束时，失去 #b50%% 格挡值，持续 #b%s 回合。"
+        ]
+    },
+    "mysteryDungeon:FrustrationPower": {
+        "NAME": "迁怒",
+        "DESCRIPTIONS": [
+            "每回合结束时，选择 #b1 张牌 #y保留 。 NL 这张牌被保留后变为 #y虚无 。",
+            "每回合结束时，选择 #b%s 张牌 #y保留 。 NL 这些牌被保留后变为 #y虚无 。"
+        ]
+    },
+    "mysteryDungeon:HailPower": {
+        "NAME": "冰雹",
+        "DESCRIPTIONS": [
+            "每当你抽牌，对所有敌人造成 #b%s 点伤害。"
+        ]
+    },
+    "mysteryDungeon:HeatCrashPower": {
+        "NAME": "高温重压",
+        "DESCRIPTIONS": [
+            "当该敌人死亡时，对全部敌人造成 #b%d 次 #y灼烧 层数的伤害。 NL 当前将对所有敌人造成 #b%s 点伤害。",
+            "当该敌人死亡时，对全部敌人造成 #b%d 次 #y灼烧 层数的伤害。 NL 当前将对所有敌人造成 #b%s 点伤害。"
+        ]
+    },
+    "mysteryDungeon:LeechSeedPower": {
+        "NAME": "寄生种子",
+        "DESCRIPTIONS": [
+            "在敌方回合开始时。 NL 敌人每拥有一个寄生种子，失去 #b%s 点生命值 ， 你获得 #b%s 点生命值。你的回合结束时, 如果敌人未受到寄生种子以外的伤害， 寄生种子层数将减半。"
+        ]
+    },
+    "mysteryDungeon:LightScreenPower": {
+        "NAME": "光墙",
+        "DESCRIPTIONS": [
+            "在你的回合结束时，每有一个空充能球栏位，获得 #b%s 点格挡。"
+        ]
+    },
+    "mysteryDungeon:LockDownPower": {
+        "NAME": "定时",
+        "DESCRIPTIONS": [
+            "在回合结束时，指针不再复位。"
+        ]
+    },
+    "mysteryDungeon:NextTurnDrawLessPower": {
+        "NAME": "下回合：减少抽牌",
+        "DESCRIPTIONS": [
+            "下回合，少抽1张牌。",
+            "下回合，少抽 #b%s 张牌。"
+        ]
+    },
+    "mysteryDungeon:NextTurnNoBlockPower": {
+        "NAME": "下回合: 无法格挡",
+        "DESCRIPTIONS": [
+            "下回合，你无法获得格挡。",
+            "下 #b%s 回合，你无法获得格挡。"
+        ]
+    },
+    "mysteryDungeon:NoHealPower": {
+        "NAME": "无法治疗",
+        "DESCRIPTIONS": [
+            "本回合你无法治疗。",
+            " #b%s 回合内，你无法治疗。"
+        ]
+    },
+    "mysteryDungeon:OutragePower": {
+        "NAME": "逆鳞",
+        "DESCRIPTIONS": [
+            "每消耗一张牌，对随机敌人施加 #b%s 层 #y灼烧 。"
+        ]
+    },
+    "mysteryDungeon:PetalDancePower": {
+        "NAME": "花瓣舞",
+        "DESCRIPTIONS": [
+            "在回合结束时，对所有敌人造成 #b%1$s 点伤害。 NL 视为攻击伤害。",
+            " #b%1$s 回合内，在回合结束时，对所有敌人造成 #b%2$s 点伤害。 NL 视为攻击伤害。"
+        ]
+    },
+    "mysteryDungeon:PoisonThornsPower": {
+        "NAME": "毒刺",
+        "DESCRIPTIONS": [
+            "每当受到攻击时，攻击者获得 #b%s 层 #y中毒 。"
+        ]
+    },
+    "mysteryDungeon:PikachuExplorerPower": {
+        "NAME": "皮卡丘·冒险者笔记",
+        "DESCRIPTIONS": [
+            "在你的回合开始时，激发 #b%s 闪电充能球，如果你至少拥有1个充能球，在你的回合开始时，激发 #b%s 充能球。"
+        ]
+    },
+    "mysteryDungeon:RainDancePower": {
+        "NAME": "求雨",
+        "DESCRIPTIONS": [
+            "本回合每制作一张牌，获得 #b%s 点 #y临时力量 。"
+        ]
+    },
+    "mysteryDungeon:RainDishPower": {
+        "NAME": "雨盘",
+        "DESCRIPTIONS": [
+            "每当一张牌被手动预见或丢弃时，获得 #b%s 点 #y格挡 。"
+        ]
+    },
+    "mysteryDungeon:ReduceHighestCostAtStartOfTurnPower": {
+        "NAME": "费用降低",
+        "DESCRIPTIONS": [
+            "抽牌后，降低手牌中费用最高的牌1点耗能。",
+            "抽牌后，降低手牌中费用最高的牌 #b%s 点耗能。"
+        ]
+    },
+    "mysteryDungeon:RestPower": {
+        "NAME": "睡觉",
+        "DESCRIPTIONS": [
+            "本回合内，你无法对目标敌人出牌。.",
+            "下回合结束前，你无法对目标敌人出牌。",
+            " #b%s 回合内，你无法对目标敌人出牌。"
+        ]
+    },
+    "mysteryDungeon:SleepTalkPower": {
+        "NAME": "梦话",
+        "DESCRIPTIONS": [
+            "每回合第一次消耗牌时，向手牌加入一张随机牌。",
+            "每回合第 #b%s 次消耗牌时，向手牌加入一张随机牌。"
+        ]
+    },
+    "mysteryDungeon:SolarPowerPower": {
+        "NAME": "太阳能",
+        "DESCRIPTIONS": [
+            "在你的回合开始时，若敌人被 #y灼烧，获得 #b%s 点 #y力量."
+        ]
+    },
+    "mysteryDungeon:SquirtleExplorerPower": {
+        "NAME": "杰尼龟·冒险者笔记",
+        "DESCRIPTIONS": [
+            "在你的下回合开始时，再抽 #b%s 张牌。每回合结束时，增加 #b%s 层效果。",
+            "在你的下回合开始时，再抽 #b%s 张牌。每回合结束时，增加 #b%s 层效果。"
+        ]
+    },
+    "mysteryDungeon:StaticPower": {
+        "NAME": "静电",
+        "DESCRIPTIONS": [
+            "每受一次伤害，激发 %s 充能球。",
+            "每受一次伤害，激发 %s 充能球。"
+        ]
+    },
+    "mysteryDungeon:SweetKissPower": {
+        "NAME": "天使之吻",
+        "DESCRIPTIONS": [
+            "每当你进入或退出一次姿态，给予所有敌人 #b%s 层 #y虚弱 。"
+        ]
+    },
+    "mysteryDungeon:ThunderPower": {
+        "NAME": "打雷",
+        "DESCRIPTIONS": [
+            "每当你激发一个充能球，对所有敌人造成 #b%s 点伤害。"
+        ]
+    },
+    "mysteryDungeon:TorrentPower": {
+        "NAME": "暴雨",
+        "DESCRIPTIONS": [
+            "当你洗牌时，获得 #b%s #y临时力量 。"
+        ]
+    },
+    "mysteryDungeon:ToxicPower": {
+        "NAME": "剧毒",
+        "DESCRIPTIONS": [
+            "每回合中毒层数不再降低1层。 NL 该名敌人身上的中毒将增加 #b%s 层。"
+        ]
+    },
+    "mysteryDungeon:WhirlpoolPower": {
+        "NAME": "潮旋",
+        "DESCRIPTIONS": [
+            "在你的回合开始时，抽 #b2 张牌并丢弃 #b2 张牌。",
+            "持续 #b%s 回合。 在你的回合开始时，抽 #b2 张牌并丢弃 #b2 张牌。"
+        ]
+    },
+    "mysteryDungeon:WorrySeedPower": {
+        "NAME": "烦恼种子",
+        "DESCRIPTIONS": [
+            "战斗结束后，卡牌奖励将额外包括1张牌。",
+            "战斗结束后，卡牌奖励将额外包括 #b%s 张牌。"
+        ]
+    },
+    "mysteryDungeon:YawnPower": {
+        "NAME": "哈欠",
+        "DESCRIPTIONS": [
+            "在敌人行动之前，陷入 #y昏睡 1回合。",
+            "在敌人行动之前，陷入 #y昏睡 #b%s 回合。"
+        ]
+    }
+}

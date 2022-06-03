@@ -1,7 +1,7 @@
 {
     "mysteryDungeon:ExplorersDeck": {
         "NAME": "Deck de l'aventurier",
-        "DESCRIPTION": "Lorsque vous choisirez votre avennturier, deviendra 5 cartes associées à celui-ci."
+        "DESCRIPTION": "Lorsque vous choisirez votre aventurier, deviendra 5 cartes associées à celui-ci."
     },
     "mysteryDungeon:PartnersDeck": {
         "NAME": "Deck du coéquipier",
@@ -537,7 +537,7 @@
         "NAME": "Anneau Hydro",
         "DESCRIPTION": "Défaussez jusqu'à !M! cartes de votre main. NL Pour chaque carte ainsi défaussée, ajoutez une *Peur à votre main.",
         "UPGRADE_DESCRIPTION": "Défaussez jusqu'à !M! cartes de votre main. NL Pour chaque carte ainsi défaussée, ajoutez une *Peur améliorée à votre main."
-      },
+    },
     "mysteryDungeon:SquirtleAquaTail": {
         "NAME": "Hydro-Queue",
         "DESCRIPTION": "Infligez !D! dégâts. NL Scrutez !M! cartes. NL Piochez !mysteryDungeon:M2! cartes. NL Défaussez !mysteryDungeon:M3! cartes.",
