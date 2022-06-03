@@ -148,12 +148,11 @@ public class PokemonNeowPatch {
                         chosenPokemon = femalePokemonChoices.get(nature);
                         return;
                     }
-                        
+
                 }
             }
         }
     }
-
 
     public static void AskQuestion(NeowEvent __instance) {
         Question questionToAsk = questions.get(answeredQuestions);
@@ -198,8 +197,8 @@ public class PokemonNeowPatch {
                 return;
             }
             if (!isDone) {
-                ((Pokemon)AbstractDungeon.player).setAdventurer(null);
-                ((Pokemon)AbstractDungeon.player).setPartner(null);
+                ((Pokemon) AbstractDungeon.player).setAdventurer(null);
+                ((Pokemon) AbstractDungeon.player).setPartner(null);
                 Pokemon.maxPikachuChargeCounter = 2;
                 answeredQuestions = 0;
                 screenNum = 0;
@@ -218,7 +217,7 @@ public class PokemonNeowPatch {
             if (!(AbstractDungeon.player instanceof Pokemon)) {
                 return SpireReturn.Continue();
             }
-            switch(screenNum) {
+            switch (screenNum) {
                 case 0:
                     ShowNextDialog(__instance);
                     return SpireReturn.Return();
@@ -241,18 +240,21 @@ public class PokemonNeowPatch {
                             break;
                         case 2:
                             chosenPokemon = implementedPokemons
-                                .get(MathUtils.random(implementedPokemons.size()-1));
-                            ((Pokemon)AbstractDungeon.player).setAdventurer(chosenPokemon);
+                                    .get(MathUtils.random(implementedPokemons.size() - 1));
+                            ((Pokemon) AbstractDungeon.player).setAdventurer(chosenPokemon);
                             ((Pokemon) AbstractDungeon.player)
-                                .DefineNature(NatureOfPokemon.get(chosenPokemon.getClass().getSimpleName())[AbstractDungeon.eventRng.random(NatureOfPokemon.get(chosenPokemon.getClass().getSimpleName()).length - 1)]);
-                            ((Pokemon)AbstractDungeon.player).setPartner(partnerChoices()
-                                    .get(MathUtils.random(partnerChoices().size()-1)));
+                                    .DefineNature(NatureOfPokemon.get(
+                                            chosenPokemon.getClass().getSimpleName())[AbstractDungeon.eventRng.random(
+                                                    NatureOfPokemon.get(chosenPokemon.getClass().getSimpleName()).length
+                                                            - 1)]);
+                            ((Pokemon) AbstractDungeon.player).setPartner(partnerChoices()
+                                    .get(MathUtils.random(partnerChoices().size() - 1)));
                             CardCrawlGame.dungeon.initializeCardPools();
                             AbstractDungeon.player.masterDeck.removeCard(ExplorersDeck.ID);
                             AbstractDungeon.player.masterDeck.removeCard(PartnersDeck.ID);
                             ((Pokemon) AbstractDungeon.player).awardThingsToAward();
                             screenNum = 99;
-                            if(needsCoopBleesing) {
+                            if (needsCoopBleesing) {
                                 needsCoopBleesing = false;
                                 chronoModsPatch.ready = true;
                                 logger.info("allo");
@@ -291,7 +293,7 @@ public class PokemonNeowPatch {
                         DeterminePokemon(buttonPressed);
                         // TODO: remove/change when more pokémon are implemented
                         convertPokemonToImplementedPokemon();
-                        ((Pokemon)AbstractDungeon.player).setAdventurer(chosenPokemon);
+                        ((Pokemon) AbstractDungeon.player).setAdventurer(chosenPokemon);
                         possiblePartners = partnerChoices();
                         AskQuestion(__instance, new Question(chosenPokemon.name,
                                 possiblePartners.stream().map(p -> p.name).toArray(size -> new String[size]), null));
@@ -312,9 +314,11 @@ public class PokemonNeowPatch {
                 // Neow's last word + Partner attribution
                 case 5:
                     if (!isTestRun)
-                        ((Pokemon)AbstractDungeon.player).setPartner(possiblePartners.get(buttonPressed));
+                        ((Pokemon) AbstractDungeon.player).setPartner(possiblePartners.get(buttonPressed));
                     if (isTestRun) {
-                        ((Pokemon)AbstractDungeon.player).setPartner(implementedPokemons.stream().filter(p -> !p.color.equals(chosenPokemon.color)).toArray(AbstractPokemon[]::new)[buttonPressed]);
+                        ((Pokemon) AbstractDungeon.player).setPartner(
+                                implementedPokemons.stream().filter(p -> !p.color.equals(chosenPokemon.color))
+                                        .toArray(AbstractPokemon[]::new)[buttonPressed]);
                     }
                     // AskQuestion(__instance, new Question("I see, now brave the challenge of the
                     // tower", new String[]{"[Leave]"}));
@@ -322,9 +326,9 @@ public class PokemonNeowPatch {
                     CardCrawlGame.dungeon.initializeCardPools();
                     AbstractDungeon.player.masterDeck.removeCard(ExplorersDeck.ID);
                     AbstractDungeon.player.masterDeck.removeCard(PartnersDeck.ID);
-                    ((Pokemon)AbstractDungeon.player).awardThingsToAward();
+                    ((Pokemon) AbstractDungeon.player).awardThingsToAward();
                     screenNum = 99;
-                    if(needsCoopBleesing) {
+                    if (needsCoopBleesing) {
                         needsCoopBleesing = false;
                         chronoModsPatch.ready = true;
                         logger.info("allo");
@@ -343,9 +347,9 @@ public class PokemonNeowPatch {
                     return SpireReturn.Return();
                 case 11:
                     chosenPokemon = implementedPokemons.get(buttonPressed);
-                    ((Pokemon)AbstractDungeon.player).setAdventurer(chosenPokemon);
+                    ((Pokemon) AbstractDungeon.player).setAdventurer(chosenPokemon);
                     String[] possibleNatures = NatureOfPokemon
-                            .get(((Pokemon)AbstractDungeon.player).adventurer.getClass().getSimpleName());
+                            .get(((Pokemon) AbstractDungeon.player).adventurer.getClass().getSimpleName());
                     ((Pokemon) AbstractDungeon.player)
                             .DefineNature(possibleNatures[AbstractDungeon.eventRng.random(possibleNatures.length - 1)]);
                     AskQuestion(__instance,
@@ -375,14 +379,15 @@ public class PokemonNeowPatch {
                 add(new Pikachu());
                 add(new Chikorita());
                 // TODO: uncomment next lines when those pokémons while be added
-                // add(new Cyndaquil());
+                add(new Cyndaquil());
                 // add(new Totodile());
                 // add(new Treecko());
                 // add(new Torchic());
                 // add(new Mudkip());
             }
         };
-        ArrayList<AbstractPokemon> availablePartners = partners.stream().filter(p -> !p.color.equals(chosenPokemon.color))
+        ArrayList<AbstractPokemon> availablePartners = partners.stream()
+                .filter(p -> !p.color.equals(chosenPokemon.color))
                 .collect(Collectors.toCollection(ArrayList::new));
         for (int i = availablePartners.size(); i > 1; i--)
             Collections.swap(availablePartners, i - 1, AbstractDungeon.eventRng.random(i - 1));
@@ -411,13 +416,11 @@ public class PokemonNeowPatch {
             return;
         }
         // Else look at the Pokémon's color and choose from existing pokémons
-        if(chosenPokemon.color.equals(Color.GREEN.cpy())) {
+        if (chosenPokemon.color.equals(Color.GREEN.cpy())) {
             chosenPokemon = new Bulbasaur();
-        }
-        else if(chosenPokemon.color.equals(Color.RED.cpy())) {
+        } else if (chosenPokemon.color.equals(Color.RED.cpy())) {
             chosenPokemon = new Charmander();
-        }
-        else if(chosenPokemon.color.equals(Color.BLUE.cpy())) {
+        } else if (chosenPokemon.color.equals(Color.BLUE.cpy())) {
             chosenPokemon = new Squirtle();
         } else {
             chosenPokemon = new Pikachu();

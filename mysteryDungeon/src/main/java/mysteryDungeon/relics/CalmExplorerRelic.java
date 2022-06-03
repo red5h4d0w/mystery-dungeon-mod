@@ -34,8 +34,7 @@ public class CalmExplorerRelic extends PokemonRelic {
 
     @Override
     public void atTurnStart() {
-        if(!used)
-        {
+        if(!used) {
             flash();
             addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             addToBot(new DrawCardAction(AbstractDungeon.player, 1));
@@ -44,8 +43,7 @@ public class CalmExplorerRelic extends PokemonRelic {
         }
     }
     @Override
-    public void atPreBattle()
-    {
+    public void atPreBattle() {
         used = false;
     }
 

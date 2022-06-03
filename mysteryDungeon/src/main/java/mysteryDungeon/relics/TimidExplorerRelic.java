@@ -28,8 +28,7 @@ public class TimidExplorerRelic extends PokemonRelic {
     }
 
     @Override
-    public void atPreBattle()
-    {
+    public void atPreBattle() {
         addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new RetainCardPower(AbstractDungeon.player, 1)));
     }
 
