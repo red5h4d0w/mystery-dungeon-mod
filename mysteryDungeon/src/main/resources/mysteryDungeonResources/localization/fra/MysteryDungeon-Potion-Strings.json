@@ -55,5 +55,17 @@
         "DESCRIPTIONS": [
             "Remplissez vos emplacements d'Orbes avec des Orbes Kérauniques."
         ]
+    },
+    "mysteryDungeon:GrassGemPotion": {
+        "NAME": "Grass Gem",
+        "DESCRIPTIONS": [
+            "Your next attack deals #b%s damage."
+        ]
+    },
+    "mysteryDungeon:MagoBerryPotion": {
+        "NAME": "Mago Berry",
+        "DESCRIPTIONS": [
+            "Heal 20HP. Gain 4 #yPoison."
+        ]
     }
 }

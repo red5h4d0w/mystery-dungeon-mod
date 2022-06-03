@@ -137,5 +137,35 @@
             "选择你的冒险家。",
             "选择你的伙伴。"
         ]
+    },
+    "mysteryDungeon:Bayleef": {
+        "NAMES": [
+            "Bayleef"
+        ]
+    },
+    "mysteryDungeon:Meganium": {
+        "NAMES": [
+            "Meganium"
+        ]
+    },
+    "mysteryDungeon:Quilava": {
+        "NAMES": [
+            "Quilava"
+        ]
+    },
+    "mysteryDungeon:Typhlosion": {
+        "NAMES": [
+            "Typhlosion"
+        ]
+    },
+    "mysteryDungeon:Croconaw": {
+        "NAMES": [
+            "Croconaw"
+        ]
+    },
+    "mysteryDungeon:Feraligatr": {
+        "NAMES": [
+            "Feraligatr"
+        ]
     }
 }

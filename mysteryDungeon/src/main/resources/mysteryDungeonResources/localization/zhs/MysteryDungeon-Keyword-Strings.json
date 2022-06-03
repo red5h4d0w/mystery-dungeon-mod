@@ -86,5 +86,137 @@
             "剧毒"
         ],
         "DESCRIPTION": "拥有 #y剧毒 状态的敌人， #y中毒 效果会增加。"
+    },
+    {
+        "PROPER_NAME": "Asleep",
+        "NAMES": [
+            "Asleep",
+            "asleep"
+        ],
+        "DESCRIPTION": "When an enemy is asleep, it will not act until it receives damage. When it receives damage, it will go back to the intent it had before sleeping."
+    },
+    {
+        "PROPER_NAME": "Burn",
+        "NAMES": [
+            "Burn",
+            "burn"
+        ],
+        "DESCRIPTION": "For each 5 stacks, enemy deals 1 less damage. Decreases by a third of all stacks at the end of the round."
+    },
+    {
+        "PROPER_NAME": "Claw",
+        "NAMES": [
+            "Claw",
+            "claws",
+            "claw"
+        ],
+        "DESCRIPTION": "Any card with \"Claw\" in its name counts as a claw."
+    },
+    {
+        "PROPER_NAME": "Inert",
+        "NAMES": [
+            "Inert",
+            "inert"
+        ],
+        "DESCRIPTION": "This card will not affect the Charge-Meter."
+    },
+    {
+        "PROPER_NAME": "Eruption",
+        "NAMES": [
+            "Eruption",
+            "eruption"
+        ],
+        "DESCRIPTION": "Deal damage to the target equal to the amount of Burn stacks on the target. Remove all Burn stacks."
+    },
+    {
+        "PROPER_NAME": "Evasiveness Drop",
+        "NAMES": [
+            "Evasiveness Drop",
+            "Evasiveness_Drop",
+            "evasiveness_drop"
+        ],
+        "DESCRIPTION": "At the end of the round, enemy loses #b25% of their Block."
+    },
+    {
+        "PROPER_NAME": "Leech Seed",
+        "NAMES": [
+            "Leech Seed",
+            "leech_seed"
+        ],
+        "DESCRIPTION": "At the start of their turn, for each Leech Seed the enemy has, it loses #b1 #yHP, and you gain #b1 #yHP.  At the end of the turn, if the leech seed's owner has not taken any damage from any other source, the amount is reduced by half."
+    },
+    {
+        "PROPER_NAME": "Negative Stance",
+        "NAMES": [
+            "Negative Stance",
+            "Negative_Stance",
+            "negative_stance"
+        ],
+        "DESCRIPTION": "The first #b2 #ySkill played each turn will grant you #b1 #yFocus each. NL When you #yexit this #yStance, #yevoke your next #b2 #yOrbs."
+    },
+    {
+        "PROPER_NAME": "Pledge Card",
+        "NAMES": [
+            "Pledge Card",
+            "Pledge_Card",
+            "Pledge Cards",
+            "Pledge_Cards",
+            "pledge card",
+            "pledge_card",
+            "pledge cards",
+            "pledge_cards"
+        ],
+        "DESCRIPTION": "#yPledge #yCards are #yFire #yPledge, #yGrass #yPledge and #yWater #yPledge. NL Fire+Grass: 9 Poison to ALL enemies. Fire+Water: 2 Vulnerable to ALL enemies. Grass+Water: 2 Weak to ALL enemies. Grass+Grass: Gain 1 Thorns. Fire+Fire: Gain 1 energy. Water+Water: Gain 3 Temporary Strength."
+    },
+    {
+        "PROPER_NAME": "Poison Thorns",
+        "NAMES": [
+            "Poison Thorns",
+            "Poison_Thorns",
+            "poison_thorns"
+        ],
+        "DESCRIPTION": "Every time you get attacked, attacker receives Poison."
+    },
+    {
+        "PROPER_NAME": "Positive Stance",
+        "NAMES": [
+            "Positive Stance",
+            "Positive_Stance",
+            "positive_stance"
+        ],
+        "DESCRIPTION": "When you play an #yAttack, #ychannel #b1 #yLightning if you have any empty #yOrb slot. NL When you #yexit this #ystance, gain #b7 #yBlock."
+    },
+    {
+        "PROPER_NAME": "Recovery",
+        "NAMES": [
+            "Recovery",
+            "recovery"
+        ],
+        "DESCRIPTION": "When you receives damage, increase the number of stacks by as much damage you received. NL When you deal attack damage, heal 30% of the attack damage dealt up to the health you lost on the last turn."
+    },
+    {
+        "PROPER_NAME": "Rest",
+        "NAMES": [
+            "Rest",
+            "rest"
+        ],
+        "DESCRIPTION": "You cannot play cards that target the enemy."
+    },
+    {
+        "PROPER_NAME": "Temporary HP",
+        "NAMES": [
+            "Temporary HP",
+            "Temporary_HP",
+            "temporary_HP"
+        ],
+        "DESCRIPTION": "Additional defense that will take damage instead of your health bar. It will act like normal health. You keep Temporary HP between turns but not between rooms."
+    },
+    {
+        "PROPER_NAME": "Toxic",
+        "NAMES": [
+            "Toxic",
+            "toxic"
+        ],
+        "DESCRIPTION": "Poison on enemies affected by Toxic go up by the amount of stack instead of going down."
     }
 ]

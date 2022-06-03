@@ -47,5 +47,17 @@
         "DESCRIPTIONS": [
             "向你的充能球栏位填满 #y闪电 。"
         ]
+    },
+    "mysteryDungeon:GrassGemPotion": {
+        "NAME": "Grass Gem",
+        "DESCRIPTIONS": [
+            "Your next attack deals #b%s damage."
+        ]
+    },
+    "mysteryDungeon:MagoBerryPotion": {
+        "NAME": "Mago Berry",
+        "DESCRIPTIONS": [
+            "Heal 20HP. Gain 4 #yPoison."
+        ]
     }
 }

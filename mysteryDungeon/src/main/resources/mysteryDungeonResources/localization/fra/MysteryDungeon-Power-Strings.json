@@ -272,5 +272,101 @@
         "DESCRIPTIONS": [
             "At the start of your turn Channel #b%s lightning orb. If you have at least 1 orb, at the start of your turn evoke your next #b%s orb."
         ]
+    },
+    "mysteryDungeon:AromatherapyPower": {
+        "NAME": "Aromatherapy",
+        "DESCRIPTIONS": [
+            "Whenever you take damage, gain #b%s Strength.",
+            "Whenever you take damage, gain #b%s Strength."
+        ]
+    },
+    "mysteryDungeon:ChikoritaExplorerPower": {
+        "NAME": "Explorer Form",
+        "DESCRIPTIONS": [
+            "When you heal #yHP, deal damage to ALL enemies equal to the amount healed.",
+            "When you heal #yHP, deal damage to ALL enemies equal to #b%s times the amounot healed."
+        ]
+    },
+    "mysteryDungeon:ChikoritaWorrySeedPower": {
+        "NAME": "Worry Seed",
+        "DESCRIPTIONS": [
+            "During your turn, Lose #b1 HP per card played. At the end of your turn, Heal #b2 HP.",
+            "During your turn, Lose #b%s HP per card played. At the end of your turn, Heal 2 HP #b%s times."
+        ]
+    },
+    "mysteryDungeon:FirePledgePower": {
+        "NAME": "Fire Pledge",
+        "DESCRIPTIONS": [
+            "When you play another Pledge card this turn, activate one of the following effects. NL Grass: Apply 9 Poison to all enemies. NL Water: Apply 2 Vulnerable to ALL enemies."
+        ]
+    },
+    "mysteryDungeon:FuryCutterPower": {
+        "NAME": "Fury Cutter",
+        "DESCRIPTIONS": [
+            "At the start of your turn, add #b%s #yFury #yCutter from cards exhausted this combat to your hand.",
+            "At the start of your turn, add #b%s #yFury #yCutter #y+ from cards exhausted this combat to your hand.",
+            "At the start of your turn, add #b%s #yFury #yCutter and #b%s #yFury #yCutter #y+ from cards exhausted this combat to your hand."
+        ]
+    },
+    "mysteryDungeon:GrassPledgePower": {
+        "NAME": "Grass Pledge",
+        "DESCRIPTIONS": [
+            "When you play another Pledge card this turn, activate one of the following effects. NL Fire: Apply 9 Poison to all enemies. NL Water: Apply 2 weak to all enemies."
+        ]
+    },
+    "mysteryDungeon:HealPulsePower": {
+        "NAME": "Heal Pulse",
+        "DESCRIPTIONS": [
+            "Whenever you inflict self damage or gain hp during your turn, gain #b%s block."
+        ]
+    },
+    "mysteryDungeon:LeafGuardPower": {
+        "NAME": "Leaf Guard",
+        "DESCRIPTIONS": [
+            "At the start of your turn, remove all debuff you posses. for each debuff removed this way lose #b%s Hp."
+        ]
+    },
+    "mysteryDungeon:MagicCoatPower": {
+        "NAME": "Magic Coat",
+        "DESCRIPTIONS": [
+            "This turn All self damage received will also be inflicted to ALL enemies."
+        ]
+    },
+    "mysteryDungeon:NextTurnLoseHpPower": {
+        "NAME": "Next Turn: Lose Hp",
+        "DESCRIPTIONS": [
+            "Next turn, Lose #b%s Hp."
+        ]
+    },
+    "mysteryDungeon:NextTurnVigorPower": {
+        "NAME": "Sunny Day",
+        "DESCRIPTIONS": [
+            "At the start of the next #b%s turns, Gain #b%s Vigor."
+        ]
+    },
+    "mysteryDungeon:OvergrowPower": {
+        "NAME": "Overgrow",
+        "DESCRIPTIONS": [
+            "Each time you your Recover counter reaches 0, gain #b%s Strength."
+        ]
+    },
+    "mysteryDungeon:RecoverPower": {
+        "NAME": "Recovery",
+        "DESCRIPTIONS": [
+            "When you receives damage, increase the number of stacks by as much damage you received. NL When you deal attack damage, heal 30%% of the attack damage dealt up to #b%s."
+        ]
+    },
+    "mysteryDungeon:SunnyDayPower": {
+        "NAME": "Sunny Day",
+        "DESCRIPTIONS": [
+            "When dealing damage to yourself, everytime you lose a total of 3HP draw %s card.",
+            "When dealing damage to yourself, everytime you lose a total of 3HP draw %s cards."
+        ]
+    },
+    "mysteryDungeon:WaterPledgePower": {
+        "NAME": "Water Pledge",
+        "DESCRIPTIONS": [
+            "When you play another Pledge card this turn, activate one of the following effects. NL Grass: Apply 2 weak to all enemies. NL Fire: Apply 2 vulnerable to all enemies."
+        ]
     }
 }

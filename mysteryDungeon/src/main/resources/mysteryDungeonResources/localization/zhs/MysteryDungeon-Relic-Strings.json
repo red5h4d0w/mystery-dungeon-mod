@@ -146,5 +146,26 @@
         "DESCRIPTIONS": [
             "每回合结束时，保留 #b1 张牌。"
         ]
+    },
+    "mysteryDungeon:BigRootRelic": {
+        "NAME": "Big Root",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "Whenever you are at #b70% or less of your max HP, gain #yRecovery."
+        ]
+    },
+    "mysteryDungeon:GrassySeedRelic": {
+        "NAME": "Grassy Seed",
+        "FLAVOR": "It boosts Defense on Grassy Terrain.",
+        "DESCRIPTIONS": [
+            "At the start of combat add a random attack to your draw pile. It costs 0 this combat."
+        ]
+    },
+    "mysteryDungeon:MeadowPlateRelic": {
+        "NAME": "Meadow Plate",
+        "FLAVOR": "A stone tablet imbued with the essence of plants. When used on a certain Pokémon, it allows that Pokémon to gain the power of the Grass type.",
+        "DESCRIPTIONS": [
+            "Gain 20 max HP. At the start of combat if you are above 65% HP lose HP until you are not. If you are under 65% of your max HP, heal 10HP."
+        ]
     }
 }
