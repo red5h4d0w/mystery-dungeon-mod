@@ -21,5 +21,6 @@ public class Cyndaquil extends AbstractPokemon {
 
     public Cyndaquil(){
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);
+        evolution = new Quilava();
     }
 }
