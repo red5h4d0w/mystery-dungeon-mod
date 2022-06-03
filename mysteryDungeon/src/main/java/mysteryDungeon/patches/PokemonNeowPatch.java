@@ -61,8 +61,7 @@ public class PokemonNeowPatch {
 
     public static boolean needsCoopBleesing = false;
 
-    public static void InitializeTraitsScore()
-    {
+    public static void InitializeTraitsScore() {
         logger.info(traits);
         traits.clear();
         traits.put("Brave", 0);
@@ -145,9 +144,11 @@ public class PokemonNeowPatch {
                         chosenPokemon = malePokemonChoices.get(nature);
                         return;
                     }
-                    case 1:
+                    case 1: {
                         chosenPokemon = femalePokemonChoices.get(nature);
                         return;
+                    }
+                        
                 }
             }
         }
