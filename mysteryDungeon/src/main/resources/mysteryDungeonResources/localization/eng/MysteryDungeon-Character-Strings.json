@@ -107,12 +107,32 @@
     },
     "mysteryDungeon:Cyndaquil": {
         "NAMES": [
-            "Pikachu"
+            "Cyndaquil"
+        ]
+    },
+    "mysteryDungeon:Quilava": {
+        "NAMES": [
+            "Quilava"
+        ]
+    },
+    "mysteryDungeon:Typhlosion": {
+        "NAMES": [
+            "Typhlosion"
         ]
     },
     "mysteryDungeon:Totodile": {
         "NAMES": [
-            "Pikachu"
+            "Totodile"
+        ]
+    },
+    "mysteryDungeon:Croconaw": {
+        "NAMES": [
+            "Croconaw"
+        ]
+    },
+    "mysteryDungeon:Feraligatr": {
+        "NAMES": [
+            "Feraligatr"
         ]
     },
     "mysteryDungeon:Treecko": {
