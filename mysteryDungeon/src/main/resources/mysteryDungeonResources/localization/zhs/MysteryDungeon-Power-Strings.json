@@ -341,7 +341,7 @@
     "mysteryDungeon:OvergrowPower": {
         "NAME": "Overgrow",
         "DESCRIPTIONS": [
-            "Each time you your Recover counter reaches 0, gain #b%s Strength."
+            "Each time you your Recover counter reaches #b0, gain #b%s Strength."
         ]
     },
     "mysteryDungeon:RecoverPower": {
