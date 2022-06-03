@@ -109,7 +109,7 @@
         "NAME": "勤奋的冒险家",
         "FLAVOR": "这是什么？",
         "DESCRIPTIONS": [
-            "每回合第一次失去生命后，获得 #b5 点格挡。 NL 如果该伤害来自敌人，将获得 #b1 blur。"
+            "每回合第一次失去生命后，获得 #b5 点格挡。 NL 如果该伤害来自敌人，将获得 #b1 残影。"
         ]
     },
     "mysteryDungeon:ImpishExplorerRelic": {

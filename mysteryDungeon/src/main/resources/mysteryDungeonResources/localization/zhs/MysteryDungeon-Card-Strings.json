@@ -290,7 +290,7 @@
     },
     "mysteryDungeon:CharmanderFlareBlitz": {
         "NAME": "闪焰冲锋",
-        "DESCRIPTION": "造成等同本场战斗消耗牌数量 !M! 次的伤害。"
+        "DESCRIPTION": "造成等同本场战斗消耗牌数量 !M! 倍的伤害。"
     },
     "mysteryDungeon:CharmanderFling": {
         "NAME": "投掷",
@@ -635,7 +635,7 @@
     },
     "mysteryDungeon:SquirtleMirrorCoat": {
         "NAME": "镜面反射",
-        "DESCRIPTION": "获得 !M! 层Blur和 !B! 点 格挡 。"
+        "DESCRIPTION": "获得 !M! 层 残影 和 !B! 点 格挡 。"
     },
     "mysteryDungeon:SquirtleMist": {
         "NAME": "白雾",
