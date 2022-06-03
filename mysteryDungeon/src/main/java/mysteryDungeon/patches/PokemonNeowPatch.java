@@ -409,20 +409,17 @@ public class PokemonNeowPatch {
 
     public static void convertPokemonToImplementedPokemon() {
         // If the Pokémon determined by the quiz is implemented, do nothing
-        if (implementedPokemons.stream().anyMatch(p -> p.cardColor == chosenPokemon.cardColor)) {
+        if (implementedPokemons.stream().anyMatch(p -> p.cardColor.equals(chosenPokemon.cardColor))) {
             return;
         }
         // Else look at the Pokémon's color and choose from existing pokémons
-        if(chosenPokemon.color.equals(Color.GREEN.cpy()))
-        {
+        if(chosenPokemon.color.equals(Color.GREEN.cpy())) {
             chosenPokemon = new Bulbasaur();
         }
-        else if(chosenPokemon.color.equals(Color.RED.cpy()))
-        {
+        else if(chosenPokemon.color.equals(Color.RED.cpy())) {
             chosenPokemon = new Charmander();
         }
-        else if(chosenPokemon.color.equals(Color.BLUE.cpy()))
-        {
+        else if(chosenPokemon.color.equals(Color.BLUE.cpy())) {
             chosenPokemon = new Squirtle();
         } else {
             chosenPokemon = new Pikachu();
@@ -475,6 +472,7 @@ public class PokemonNeowPatch {
             put("Pikachu", new String[] { "Impish", "Hardy" });
             put("Meowth", new String[] { "Quirky" });
             put("Chikorita", new String[] { "Docile" });
+            put("Cyndaquil", new String[] { "Timid" });
         }
     };
 
@@ -490,7 +488,7 @@ public class PokemonNeowPatch {
             // add(new Cubone());
             // add(new Eevee());
             add(new Chikorita());
-            // add(new Cyndaquil());
+            add(new Cyndaquil());
             // add(new Totodile());
             // add(new Treecko());
             // add(new Torchic());
