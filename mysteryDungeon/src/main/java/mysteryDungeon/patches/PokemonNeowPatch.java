@@ -218,9 +218,6 @@ public class PokemonNeowPatch {
             if (!(AbstractDungeon.player instanceof Pokemon)) {
                 return SpireReturn.Continue();
             }
-            logger.info(screenNum);
-            logger.info("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-            logger.info(needsCoopBleesing);
             switch(screenNum) {
                 case 0:
                     ShowNextDialog(__instance);
