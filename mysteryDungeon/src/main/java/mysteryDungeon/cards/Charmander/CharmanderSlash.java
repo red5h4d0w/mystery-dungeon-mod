@@ -52,8 +52,7 @@ public class CharmanderSlash extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for(int i=0; i<magicNumber;i++)
-        {
+        for(int i=0; i<magicNumber;i++) {
             addToBot(new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AttackEffect.SLASH_DIAGONAL));
         }
     }

@@ -49,8 +49,7 @@ public class SquirtleZenHeadbutt extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         cardsToPreview = new SquirtleFlinch();
-        if(upgraded)
-        {
+        if(upgraded) {
             AbstractCard upgradedFlinch = new SquirtleFlinch();
             upgradedFlinch.upgrade();
             cardsToPreview = upgradedFlinch;
@@ -63,8 +62,7 @@ public class SquirtleZenHeadbutt extends PokemonCard {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SMASH));
         if(!upgraded)
             addToBot(new MakeTempCardInHandAction(new SquirtleFlinch(), 1, false));
-        else
-        {
+        else {
             AbstractCard upgradedFlinch = new SquirtleFlinch();
             upgradedFlinch.upgrade();
             addToBot(new MakeTempCardInHandAction(upgradedFlinch, 1, false));
