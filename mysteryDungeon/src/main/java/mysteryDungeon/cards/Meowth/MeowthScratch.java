@@ -15,11 +15,11 @@ import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 
-public class MeowthTackle extends PokemonCard {
+public class MeowthScratch extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(MeowthTackle.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(MeowthScratch.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("Attack.png");
     public static final String NAME = cardStrings.NAME;
@@ -41,7 +41,7 @@ public class MeowthTackle extends PokemonCard {
 
     // /STAT DECLARATION/
 
-    public MeowthTackle() {
+    public MeowthScratch() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         this.tags.add(AbstractCard.CardTags.STARTER_STRIKE);
