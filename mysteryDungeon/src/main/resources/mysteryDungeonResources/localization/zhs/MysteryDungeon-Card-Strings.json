@@ -691,10 +691,6 @@
         "NAME": "杰尼攻击",
         "DESCRIPTION": "造成 !D! 点伤害。"
     },
-    "mysteryDungeon:SquirtleTailWhip": {
-        "NAME": "摇尾巴",
-        "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽 !M! 张牌。"
-    },
     "mysteryDungeon:SquirtleTorrent": {
         "NAME": "暴雨",
         "DESCRIPTION": "当你洗牌时，获得 !M! 点临时力量。"

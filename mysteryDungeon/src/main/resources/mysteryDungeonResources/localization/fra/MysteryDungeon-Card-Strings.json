@@ -690,10 +690,6 @@
         "NAME": "Charge",
         "DESCRIPTION": "Infligez !D! dégâts."
     },
-    "mysteryDungeon:SquirtleTailWhip": {
-        "NAME": "Mimi-Queue",
-        "DESCRIPTION": "Gagnez !B! d'Armure. NL Piochez !M! carte."
-    },
     "mysteryDungeon:SquirtleTorrent": {
         "NAME": "Torrent",
         "DESCRIPTION": "Lorsque vous mélangez votre pioche, gagnez !M! de Force Temporaire."

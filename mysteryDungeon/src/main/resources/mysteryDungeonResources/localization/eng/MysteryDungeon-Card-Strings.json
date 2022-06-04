@@ -880,10 +880,6 @@
         "NAME": "Tackle",
         "DESCRIPTION": "Deal !D! damage."
     },
-    "mysteryDungeon:SquirtleTailWhip": {
-        "NAME": "Tail Whip",
-        "DESCRIPTION": "Gain !B! Block. NL Draw !M! card."
-    },
     "mysteryDungeon:SquirtleTorrent": {
         "NAME": "Torrent",
         "DESCRIPTION": "Whenever you shuffle your draw pile, gain !M! Temporary Strength."
