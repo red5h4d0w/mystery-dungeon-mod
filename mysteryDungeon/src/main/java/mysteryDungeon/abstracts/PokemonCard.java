@@ -2,10 +2,13 @@ package mysteryDungeon.abstracts;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 
 import basemod.ReflectionHacks;
 import basemod.abstracts.CustomCard;
+import mysteryDungeon.powers.FreeSpendingThisTurnPower;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
@@ -28,7 +31,8 @@ public abstract class PokemonCard extends CustomCard {
     public boolean isSecondMagicNumberModified; // A boolean to check whether the number has been modified or not, for coloring purposes. (red/green)
     public boolean isThirdMagicNumberModified; // A boolean to check whether the number has been modified or not, for coloring purposes. (red/green)
     public boolean inert = false; // A boolean to indicate whether the card affects the charge meter.
-    public boolean isAdventurerOnly = false;
+    public boolean isAdventurerOnly = false; // Indicates if the card can only be obtained as adventurer of its card color
+    public int spendAmount = 0;
 
     public PokemonCard(final String id,
                                final String name,
@@ -41,7 +45,7 @@ public abstract class PokemonCard extends CustomCard {
                                final CardTarget target) {
 
         super(id, name, img, cost, rawDescription, type, color, rarity, target);
-        if(color!=CardColor.COLORLESS)
+        if(!color.equals(CardColor.COLORLESS))
             loadJokeCardImage(makeCardPath(this.getClass().getSimpleName().split("(?=\\p{Upper})")[0].toLowerCase()+".png"));
         // Set all the things to their default values.
         isCostModified = false;
@@ -90,5 +94,13 @@ public abstract class PokemonCard extends CustomCard {
         int th = cardTexture.getHeight();
         TextureAtlas.AtlasRegion cardImg = new TextureAtlas.AtlasRegion(cardTexture, 0, 0, tw, th);
         ReflectionHacks.setPrivateInherited(this, CustomCard.class, "jokePortrait", cardImg);
+    }
+
+    @Override
+    public boolean canPlay(AbstractCard card) {
+        if(spendAmount>0 && !AbstractDungeon.player.hasPower(FreeSpendingThisTurnPower.POWER_ID)) {
+            return super.canPlay(card) && !(spendAmount>AbstractDungeon.player.gold);
+        }
+        return super.canPlay(card);
     }
 }
