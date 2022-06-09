@@ -528,6 +528,10 @@
         "NAME": "Wring Out",
         "DESCRIPTION": "Deal !D! damage. NL Lose !M! HP."
     },
+    "mysteryDungeon:CyndaquilBurnUp": {
+        "NAME": "Fire Pledge",
+        "DESCRIPTION": "Add 2 Burn status cards to your draw pile. NL Apply !M! mysterydungeon:Burn to an enemy."
+    },
     "mysteryDungeon:CyndaquilDefend": {
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! block."
@@ -553,6 +557,11 @@
     "mysteryDungeon:CyndaquilTackle": {
         "NAME": "Tackle",
         "DESCRIPTION": "Deal !D! damage."
+    },
+    "mysteryDungeon:CyndaquilWillOWisp": {
+        "NAME": "Will-O-Wisp",
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn X times.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! mysterydungeon:Burn X+1 times."
     },
     "mysteryDungeon:PikachuAgility": {
         "NAME": "Agility",
