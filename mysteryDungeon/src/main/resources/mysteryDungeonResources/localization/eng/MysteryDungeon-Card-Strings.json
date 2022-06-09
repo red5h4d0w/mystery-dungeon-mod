@@ -528,6 +528,10 @@
         "NAME": "Wring Out",
         "DESCRIPTION": "Deal !D! damage. NL Lose !M! HP."
     },
+    "mysteryDungeon:CyndaquilBlastBurn": {
+        "NAME": "Blast Burn",
+        "DESCRIPTION": "Deal !D! damage. NL Cause an Eruption. NL End your Turn."
+    },
     "mysteryDungeon:CyndaquilBurnUp": {
         "NAME": "Fire Pledge",
         "DESCRIPTION": "Add 2 Burn status cards to your draw pile. NL Apply !M! mysterydungeon:Burn to an enemy."
@@ -553,6 +557,11 @@
         "NAME": "Flash Fire",
         "DESCRIPTION": "Add 2 Burn status card in your draw pile. NL Each time you play a card apply !M! mysterydungeon:Burn to all enemies.",
         "UPGRADE_DESCRIPTION": "Innate. NL Add 2 Burn status card in your draw pile. NL Each time you play a card apply !M! mysterydungeon:Burn to all enemies."
+    },
+    "mysteryDungeon:CyndaquilLeer": {
+        "NAME": "Flame Wheel",
+        "DESCRIPTION": "Apply !M! Vulnerable.",
+        "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable. NL Remove all the enemies block"
     },
     "mysteryDungeon:CyndaquilTackle": {
         "NAME": "Tackle",
