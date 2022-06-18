@@ -55,14 +55,14 @@ public class HeatWavePower extends PokemonPower implements CloneablePowerInterfa
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (info.owner != null && info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != this.owner) {
             flash();
-            addToTop(new ApplyPowerAction(info.owner, owner, new BurnPower(null, amount), amount));
-          } 
-          return damageAmount;
-        }
+            addToTop(new ApplyPowerAction(info.owner, owner, new BurnPower(info.owner, amount), amount));
+        } 
+        return damageAmount;
+    }
         
-        public void atStartOfTurn() {
-          addToBot(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, POWER_ID));
-        }
+    public void atStartOfTurn() {
+        addToBot(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, POWER_ID));
+    }
 
     @Override
     public AbstractPower makeCopy() {
