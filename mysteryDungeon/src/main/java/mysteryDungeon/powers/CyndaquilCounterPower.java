@@ -12,9 +12,9 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 
 //Gain 1 dex for the turn for each card played.
@@ -52,9 +52,8 @@ public class CyndaquilCounterPower extends PokemonPower implements CloneablePowe
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         if(isPlayer) {
-            addToBot(new GainBlockAction(owner, owner, amount*AbstractDungeon.player.energy.energy));
-            AbstractDungeon.player.energy.use(AbstractDungeon.player.energy.energy);
-
+            addToBot(new GainBlockAction(owner, owner, amount*EnergyPanel.getCurrentEnergy()));
+            EnergyPanel.useEnergy(EnergyPanel.getCurrentEnergy());
         }
         super.atEndOfTurn(isPlayer);
     }
