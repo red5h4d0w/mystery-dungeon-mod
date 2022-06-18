@@ -592,6 +592,10 @@
         "DESCRIPTION": "Apply !M! Vulnerable.",
         "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable. NL Remove all the enemie's block"
     },
+    "mysteryDungeon:CyndaquilOverheat": {
+        "NAME": "Overheat",
+        "DESCRIPTION": "Retain.  NL Cause an mysterydungeon:Eruption. NL Exhaust."
+    },
     "mysteryDungeon:CyndaquilTackle": {
         "NAME": "Tackle",
         "DESCRIPTION": "Deal !D! damage."
