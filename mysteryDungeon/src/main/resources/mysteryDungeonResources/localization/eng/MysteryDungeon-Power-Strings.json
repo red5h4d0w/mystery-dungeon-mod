@@ -75,6 +75,10 @@
             "When you lose all #yBlock and receive attack damage, deal #b%s damage to the attacker."
         ]
     },
+    "mysteryDungeon:CyndaquilExplorerPower": {
+        "NAME": "Explorer Form",
+        "DESCRIPTIONS": ["Whenever you apply #yBurn, deal #b%s damage to the target."]
+    },
     "mysteryDungeon:DroughtPower": {
         "NAME": "Drought",
         "DESCRIPTIONS": [
