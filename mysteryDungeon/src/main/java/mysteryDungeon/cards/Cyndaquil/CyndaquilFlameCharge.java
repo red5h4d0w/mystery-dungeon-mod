@@ -55,7 +55,7 @@ public class CyndaquilFlameCharge extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
         if(m.hasPower(BurnPower.POWER_ID))
-        addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 1), 1));
+        addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 2), 2));
     }
 
     // Upgraded stats.
