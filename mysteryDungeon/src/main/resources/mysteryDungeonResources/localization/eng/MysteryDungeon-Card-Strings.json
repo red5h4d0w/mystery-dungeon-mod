@@ -504,7 +504,7 @@
     },
     "mysteryDungeon:ChikoritaSynthesis": {
         "NAME": "Synthesis",
-        "DESCRIPTION": "Unplayable. NL When drawn: if you have the recovery power activated, gain !M! recovery stacks. NL After activating this effect !mysteryDungeon:M2! times: Exhaust.",
+        "DESCRIPTION": "Unplayable. NL When drawn: if you have mysterydungeon:Recover, gain !M! recovery stacks. NL After activating this effect !mysteryDungeon:M2! times: Exhaust.",
         "EXTENDED_DESCRIPTION": ["I can't play this card.",
             "When Drawn: Exhaust."]
     },
