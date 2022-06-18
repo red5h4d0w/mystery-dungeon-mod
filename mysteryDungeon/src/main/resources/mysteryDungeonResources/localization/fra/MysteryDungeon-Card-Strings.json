@@ -721,11 +721,6 @@
         "DESCRIPTION": "Infligez !D! dégâts NL Créez une *Peur et ajoutez-la à votre main.",
         "UPGRADE_DESCRIPTION": "Infligez !D! dégâts NL Créez une *Peur améliorée et ajoutez-la à votre main."
     },
-    "mysteryDungeon:ChikoritaRecover": {
-        "NAME": "Recover",
-        "DESCRIPTION": "When you receive damage, gain Recover stacks for each damage you received. NL When you deal damage, heal 20%% of damage dealt up to the number of Recover stacks. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. NL Exhaust."
-    },
     "mysteryDungeon:ChikoritaAncientPower": {
         "NAME": "Ancient Power",
         "DESCRIPTION": "Deal !D! damage. NL If you are missing more then 30% of your health, deal !D! damage."
@@ -930,5 +925,40 @@
     "mysteryDungeon:TotodileWaterPledge": {
         "NAME": "Water Pledge",
         "DESCRIPTION": "Channel !M! Frost orb. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
+    },
+    "mysteryDungeon:CyndaquilBlastBurn": {
+        "NAME": "Blast Burn",
+        "DESCRIPTION": "Deal !D! damage. NL Cause an Eruption. NL End your Turn."
+    },
+    "mysteryDungeon:CyndaquilBurnUp": {
+        "NAME": "Fire Pledge",
+        "DESCRIPTION": "Add 2 Burn status cards to your draw pile. NL Apply !M! mysterydungeon:Burn to an enemy."
+    },
+    "mysteryDungeon:CyndaquilCounter": {
+        "NAME": "Counter",
+        "DESCRIPTION": "At the end of your turn, spend all leftover energy. For every energy spent this way gain !M! block."
+    },
+    "mysteryDungeon:CyndaquilExplorerForm": {
+        "NAME": "Explorer Form",
+        "DESCRIPTION": "Whenever you apply mysterydungeon:Burn to an enemy, deal !M! damage to that enemy."
+    },
+    "mysteryDungeon:CyndaquilHeatWave": {
+        "NAME": "Heat Wave",
+        "DESCRIPTION": "Gain !B! block. NL Whenever you are attacked this turn, apply 5 mysterydungeon:Burn to your attacker."
+    },
+    "mysteryDungeon:CyndaquilInferno": {
+        "NAME": "Inferno",
+        "DESCRIPTION": "Your next eruption will not remove any burn stacks. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Your next eruption will not remove any burn stacks. NL Apply !M! mysterydungeon:Burn to all enemies. NL Exhaust."
+    },
+    "mysteryDungeon:CyndaquilLeer": {
+        "NAME": "Flame Wheel",
+        "DESCRIPTION": "Apply !M! Vulnerable.",
+        "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable. NL Remove all the enemies block"
+    },
+    "mysteryDungeon:CyndaquilWillOWisp": {
+        "NAME": "Will-O-Wisp",
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn X times.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! mysterydungeon:Burn X+1 times."
     }
 }
