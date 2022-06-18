@@ -587,6 +587,10 @@
         "DESCRIPTION": "Your next eruption will not remove any burn stacks. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Your next eruption will not remove any burn stacks. NL Apply !M! mysterydungeon:Burn to all enemies. NL Exhaust."
     },
+    "mysteryDungeon:CyndaquilLavaPlume": {
+        "NAME": "Lava Plume",
+        "DESCRIPTION": "Whenever you cause an eruption, Apply !M! mysterydungeon:Burn stacks on the target."
+    },
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "Leer",
         "DESCRIPTION": "Apply !M! Vulnerable.",
