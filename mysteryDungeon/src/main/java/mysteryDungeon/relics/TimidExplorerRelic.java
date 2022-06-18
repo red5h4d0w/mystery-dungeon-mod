@@ -28,8 +28,12 @@ public class TimidExplorerRelic extends PokemonRelic {
     }
 
     @Override
-    public void atPreBattle() {
-        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new RetainCardPower(AbstractDungeon.player, 1)));
+    public void onPlayerEndTurn() {
+        if(AbstractDungeon.player.energy.energy>1) {
+            AbstractDungeon.player.energy.use(1);
+            addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new RetainCardPower(AbstractDungeon.player, 1)));
+        }
+        super.onPlayerEndTurn();
     }
 
     // Description
