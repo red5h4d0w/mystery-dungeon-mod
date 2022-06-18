@@ -544,6 +544,10 @@
         "NAME": "Ember",
         "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn."
     },
+    "mysteryDungeon:CyndaquilExplorerForm": {
+        "NAME": "Explorer Form",
+        "DESCRIPTION": "Whenever you apply mysterydungeon:Burn to an enemy, deal !M! damage to that enemy."
+    },
     "mysteryDungeon:CyndaquilFirePledge": {
         "NAME": "Fire Pledge",
         "DESCRIPTION": "Apply !M! mysterydungeon:Burn to all enemies. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
@@ -557,6 +561,10 @@
         "NAME": "Flash Fire",
         "DESCRIPTION": "Add 2 Burn status card in your draw pile. NL Each time you play a card apply !M! mysterydungeon:Burn to all enemies.",
         "UPGRADE_DESCRIPTION": "Innate. NL Add 2 Burn status card in your draw pile. NL Each time you play a card apply !M! mysterydungeon:Burn to all enemies."
+    },
+    "mysteryDungeon:CyndaquilHeatWave": {
+        "NAME": "Heat Wave",
+        "DESCRIPTION": "Gain !B! block. NL Whenever you are attacked this turn, apply 5 mysterydungeon:Burn to your attacker."
     },
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "Flame Wheel",
