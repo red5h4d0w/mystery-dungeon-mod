@@ -560,6 +560,10 @@
         "NAME": "Flame Charge",
         "DESCRIPTION": "Deal !D! damage. If the enemy has burn stacks, gain [E] [E] next turn."
     },
+    "mysteryDungeon:CyndaquilFlamethrower": {
+        "NAME": "Flamethrower",
+        "DESCRIPTION": "Deal !D! dmage and apply !M! mysterydungeon:Burn to all enemies."
+    },
     "mysteryDungeon:CyndaquilFlameWheel": {
         "NAME": "Flame Wheel",
         "DESCRIPTION": "Apply !M! mysterydungeon:Burn twice. NL Cause an mysterydungeon:Eruption. NL End your turn.",
