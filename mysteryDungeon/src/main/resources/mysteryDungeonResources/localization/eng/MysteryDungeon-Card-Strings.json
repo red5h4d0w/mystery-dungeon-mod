@@ -536,6 +536,10 @@
         "NAME": "Fire Pledge",
         "DESCRIPTION": "Add 2 Burn status cards to your draw pile. NL Apply !M! mysterydungeon:Burn to an enemy."
     },
+    "mysteryDungeon:CyndaquilCounter": {
+        "NAME": "Counter",
+        "DESCRIPTION": "At the end of your turn, spend all leftover energy. For every energy spent this way gain !M! block."
+    },
     "mysteryDungeon:CyndaquilDefend": {
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! block."
@@ -565,6 +569,11 @@
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "Heat Wave",
         "DESCRIPTION": "Gain !B! block. NL Whenever you are attacked this turn, apply 5 mysterydungeon:Burn to your attacker."
+    },
+    "mysteryDungeon:CyndaquilInferno": {
+        "NAME": "Inferno",
+        "DESCRIPTION": "Your next eruption will not remove any burn stacks. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Your next eruption will not remove any burn stacks. NL Apply !M! mysterydungeon:Burn to all enemies. NL Exhaust."
     },
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "Flame Wheel",

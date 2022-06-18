@@ -15,6 +15,7 @@ import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.powers.BurnPower;
+import mysteryDungeon.powers.InfernoPower;
 
 public class CyndaquilInferno extends PokemonCard {
 
@@ -56,7 +57,8 @@ public class CyndaquilInferno extends PokemonCard {
                 if (!monster.isDead && !monster.isDying) {
                     addToBot(new VFXAction(new FlameAnimationEffect(monster.hb)));
                     addToBot(new ApplyPowerAction(monster, p, new BurnPower(monster, this.magicNumber), this.magicNumber));
-                } 
+                }
+        addToBot(new ApplyPowerAction(p, p, new InfernoPower(p, 1))); 
             } 
         }
         }

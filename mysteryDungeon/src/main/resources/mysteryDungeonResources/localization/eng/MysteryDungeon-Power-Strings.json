@@ -75,6 +75,12 @@
             "When you lose all #yBlock and receive attack damage, deal #b%s damage to the attacker."
         ]
     },
+    "mysteryDungeon:CyndaquilCounterPower": {
+        "NAME": "Counter",
+        "DESCRIPTIONS": [
+            "At the end of your turn spend all leftover energy and gain #b%s Block for each energy spent."
+        ]
+    },
     "mysteryDungeon:CyndaquilExplorerPower": {
         "NAME": "Explorer Form",
         "DESCRIPTIONS": ["Whenever you apply #yBurn, deal #b%s damage to the target."]
@@ -146,6 +152,13 @@
     "mysteryDungeon:HeatWavePower": {
         "NAME": "Heat Wave",
         "DESCRIPTIONS": ["Whenver you are attacked this turn, apply #b%s Burn to your attacker."]
+    },
+    "mysteryDungeon:InfernoPower": {
+        "NAME": "Inferno",
+        "DESCRIPTIONS": [
+            "Your next #yEruption will not remove any #yBurn stacks.",
+            "Your next #b%s #yEruption will not remove any #yBurn stacks."
+        ]
     },
     "mysteryDungeon:LeafGuardPower": {
         "NAME": "Leaf Guard",
