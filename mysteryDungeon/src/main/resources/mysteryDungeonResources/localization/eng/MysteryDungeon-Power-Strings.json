@@ -139,6 +139,10 @@
             "When this enemy dies, ALL enemies receive damage equal to #b%d times its #yBurn Stacks. NL Currently it would deal #b%s damage to ALL enemies."
         ]
     },
+    "mysteryDungeon:HeatWavePower": {
+        "NAME": "Heat Wave",
+        "DESCRIPTIONS": ["Whenver you are attacked this turn, apply #b%s Burn to your attacker."]
+    },
     "mysteryDungeon:LeafGuardPower": {
         "NAME": "Leaf Guard",
         "DESCRIPTIONS": [
