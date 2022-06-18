@@ -54,7 +54,6 @@ public class HeatWavePower extends PokemonPower implements CloneablePowerInterfa
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (info.owner != null && info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != this.owner) {
-            flash();
             addToTop(new ApplyPowerAction(info.owner, owner, new BurnPower(info.owner, amount), amount));
         } 
         return damageAmount;

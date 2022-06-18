@@ -7,6 +7,9 @@ import mysteryDungeon.util.TextureLoader;
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.unique.RetainCardsAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -22,13 +25,16 @@ public class TimidExplorerRelic extends PokemonRelic {
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("band5.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("default_clickable_relic.png"));
 
+    public static Logger logger = LogManager.getLogger(TimidExplorerRelic.class);
+
     public TimidExplorerRelic() {
         super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.CLINK);
     }
 
     @Override
     public void onPlayerEndTurn() {
-        if(AbstractDungeon.player.energy.energy>1) {
+        if(AbstractDungeon.player.energy.energy>=1) {
+            logger.info(AbstractDungeon.player.energy.energy);
             AbstractDungeon.player.energy.use(1);
             addToTop(new RetainCardsAction(AbstractDungeon.player, 1));
         }
