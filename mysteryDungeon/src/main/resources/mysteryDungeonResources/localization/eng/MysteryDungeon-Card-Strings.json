@@ -558,7 +558,7 @@
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "Flame Charge",
-        "DESCRIPTION": "Deal !D! damage. If the enemy has burn stacks, gain [E][E] next turn."
+        "DESCRIPTION": "Deal !D! damage. If the enemy has burn stacks, gain [E] [E] next turn."
     },
     "mysteryDungeon:CyndaquilFlameWheel": {
         "NAME": "Flame Wheel",
