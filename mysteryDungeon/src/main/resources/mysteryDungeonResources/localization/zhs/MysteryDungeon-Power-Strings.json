@@ -362,5 +362,30 @@
         "DESCRIPTIONS": [
             "When you play another Pledge card this turn, activate one of the following effects. NL Grass: Apply 2 weak to all enemies. NL Fire: Apply 2 vulnerable to all enemies."
         ]
+    },
+    "mysteryDungeon:CyndaquilCounterPower": {
+        "NAME": "Counter",
+        "DESCRIPTIONS": [
+            "At the end of your turn spend all leftover energy and gain #b%s Block for each energy spent."
+        ]
+    },
+    "mysteryDungeon:CyndaquilExplorerPower": {
+        "NAME": "Explorer Form",
+        "DESCRIPTIONS": [
+            "Whenever you apply #yBurn, deal #b%s damage to the target."
+        ]
+    },
+    "mysteryDungeon:HeatWavePower": {
+        "NAME": "Heat Wave",
+        "DESCRIPTIONS": [
+            "Whenver you are attacked this turn, apply #b%s Burn to your attacker."
+        ]
+    },
+    "mysteryDungeon:InfernoPower": {
+        "NAME": "Inferno",
+        "DESCRIPTIONS": [
+            "Your next #yEruption will not remove any #yBurn stacks.",
+            "Your next #b%s #yEruption will not remove any #yBurn stacks."
+        ]
     }
 }
