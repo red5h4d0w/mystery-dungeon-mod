@@ -52,16 +52,17 @@ public class CyndaquilInferno extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(upgraded){
-        if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
-            for (AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters) {
-                if (!monster.isDead && !monster.isDying) {
-                    addToBot(new VFXAction(new FlameAnimationEffect(monster.hb)));
-                    addToBot(new ApplyPowerAction(monster, p, new BurnPower(monster, this.magicNumber), this.magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new InfernoPower(p, 1)));
+        if (upgraded) {
+            if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+                for (AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters) {
+                    if (!monster.isDead && !monster.isDying) {
+                        addToBot(new VFXAction(new FlameAnimationEffect(monster.hb)));
+                        addToBot(new ApplyPowerAction(monster, p, new BurnPower(monster, this.magicNumber),
+                                this.magicNumber));
+                    }
                 }
-        addToBot(new ApplyPowerAction(p, p, new InfernoPower(p, 1))); 
-            } 
-        }
+            }
         }
     }
 
