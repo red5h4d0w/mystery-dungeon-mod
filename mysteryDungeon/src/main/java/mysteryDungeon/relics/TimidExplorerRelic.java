@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.actions.unique.RetainCardsAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 public class TimidExplorerRelic extends PokemonRelic { 
     public static final String ID = MysteryDungeon.makeID(TimidExplorerRelic.class.getSimpleName());
@@ -33,9 +34,8 @@ public class TimidExplorerRelic extends PokemonRelic {
 
     @Override
     public void onPlayerEndTurn() {
-        if(AbstractDungeon.player.energy.energy>=1) {
-            logger.info(AbstractDungeon.player.energy.energy);
-            AbstractDungeon.player.energy.use(1);
+        if(EnergyPanel.getCurrentEnergy()>=1) {
+            EnergyPanel.useEnergy(1);
             addToTop(new RetainCardsAction(AbstractDungeon.player, 1));
         }
         super.onPlayerEndTurn();
