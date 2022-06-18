@@ -52,10 +52,10 @@ public class CyndaquilExplorerPower extends PokemonPower implements CloneablePow
         updateDescription();
     }
     
-    public boolean betterOnApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source)
-    {
-        if(power.ID == BurnPower.POWER_ID)
-            addToBot(new DamageAction(owner, new DamageInfo(source, amount, DamageType.THORNS), AttackEffect.FIRE));
+    public boolean betterOnApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
+        if(power.ID == BurnPower.POWER_ID) {
+            addToBot(new DamageAction(target, new DamageInfo(source, amount, DamageType.THORNS), AttackEffect.FIRE));
+        }
         return true;
     }
 
