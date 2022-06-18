@@ -8,11 +8,10 @@ import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.unique.RetainCardsAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
-import com.megacrit.cardcrawl.powers.RetainCardPower;
 
 public class TimidExplorerRelic extends PokemonRelic { 
     public static final String ID = MysteryDungeon.makeID(TimidExplorerRelic.class.getSimpleName());
@@ -31,7 +30,7 @@ public class TimidExplorerRelic extends PokemonRelic {
     public void onPlayerEndTurn() {
         if(AbstractDungeon.player.energy.energy>1) {
             AbstractDungeon.player.energy.use(1);
-            addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new RetainCardPower(AbstractDungeon.player, 1)));
+            addToTop(new RetainCardsAction(AbstractDungeon.player, 1));
         }
         super.onPlayerEndTurn();
     }
