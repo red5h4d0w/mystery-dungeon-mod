@@ -42,6 +42,9 @@ public class LibraryTabsPatch {
         add("Charmander");
         add("Squirtle");
         add("Pikachu");
+        add("Meowth");
         add("Chikorita");
+        add("Cyndaquil");
+        add("Totodile");
     }};
 }
