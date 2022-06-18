@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
@@ -22,19 +21,19 @@ public class CyndaquilOverheat extends PokemonCard {
     public static final String IMG = makeCardPath("Skill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.CYNDAQUIL_RED;
 
-    private static final int COST = -1;
+    private static final int COST = 1;
+    private static final int UPGRADE_COST = 1;
     private static final int BASE_MAGIC_NUMBER = 7;
 
 
@@ -44,28 +43,14 @@ public class CyndaquilOverheat extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = BASE_MAGIC_NUMBER;
+        selfRetain = true;
         exhaust = true;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (energyOnUse < EnergyPanel.totalCount)
-        {
-            energyOnUse = EnergyPanel.totalCount; 
-        }
-        if (p.hasRelic("Chemical X")) {
-            energyOnUse += 2;
-            p.getRelic("Chemical X").flash();
-        }
-        energyOnUse += upgraded?1:0;
-        if(magicNumber*energyOnUse!=0) {
-            addToBot(new EruptionAction(m));
-        }
-        if (!freeToPlayOnce)
-        {
-            p.energy.use(EnergyPanel.totalCount);
-        }
+        addToBot(new EruptionAction(m));
     }
 
     // Upgraded stats.
@@ -73,7 +58,7 @@ public class CyndaquilOverheat extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = UPGRADE_DESCRIPTION;
+            upgradeBaseCost(UPGRADE_COST);
             initializeDescription();
         }
     }
