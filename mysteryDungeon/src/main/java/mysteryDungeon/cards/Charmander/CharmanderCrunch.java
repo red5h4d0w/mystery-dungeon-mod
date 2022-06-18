@@ -3,7 +3,7 @@ package mysteryDungeon.cards.Charmander;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.badlogic.gdx.graphics.Color;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -69,7 +69,7 @@ public class CharmanderCrunch extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new VFXAction(m, new BiteEffect(m.hb.cX, m.hb.cY - 40.0f * Settings.scale, Color.BLACK), 0.3f));
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.NONE));
         if(m.getIntentBaseDmg() >= 0)
         {
             addToBot(new GainBlockAction(p, p, block));
