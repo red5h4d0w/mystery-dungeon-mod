@@ -8,15 +8,13 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 public class PokemonPower extends AbstractPower {
     
     @Override
-    public void stackPower(int stackAmount)
-    {
+    public void stackPower(int stackAmount) {
         super.stackPower(stackAmount);
         updateDescription();
     }
 
     @Override
-    public void reducePower(int reduceAmount)
-    {
+    public void reducePower(int reduceAmount) {
         super.reducePower(reduceAmount);
         updateDescription();
     }

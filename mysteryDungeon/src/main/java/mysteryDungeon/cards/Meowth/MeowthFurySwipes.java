@@ -77,7 +77,6 @@ public class MeowthFurySwipes extends PokemonCard {
                     c.baseDamage = c.misc;
                   }
             }));
-            
         }
     }
 
