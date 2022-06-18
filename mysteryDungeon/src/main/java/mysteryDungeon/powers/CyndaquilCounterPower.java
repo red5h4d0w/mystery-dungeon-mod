@@ -66,11 +66,7 @@ public class CyndaquilCounterPower extends PokemonPower implements CloneablePowe
 
     @Override
     public void updateDescription() {
-        if(amount == 1) {
             description = String.format(DESCRIPTIONS[0], amount);
-        } 
-        else {
-            description = String.format(DESCRIPTIONS[1], amount);
-        }
+    
     }
 }
