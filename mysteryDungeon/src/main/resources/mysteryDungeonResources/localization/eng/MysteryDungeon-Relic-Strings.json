@@ -151,7 +151,7 @@
         "NAME": "Timid Explorer",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "At the end of each turn, if you have any lftover energy, spend 1 to retain 1 card."
+            "At the end of each turn, if you have any leftover energy, spend 1 to retain 1 card."
         ]
     },
     "mysteryDungeon:LightBallRelic": {
