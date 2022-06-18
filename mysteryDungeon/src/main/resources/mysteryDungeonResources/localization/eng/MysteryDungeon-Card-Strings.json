@@ -533,7 +533,7 @@
         "DESCRIPTION": "Deal !D! damage. NL Cause an Eruption. NL End your Turn."
     },
     "mysteryDungeon:CyndaquilBurnUp": {
-        "NAME": "Fire Pledge",
+        "NAME": "Burn Up",
         "DESCRIPTION": "Add 2 Burn status cards to your draw pile. NL Apply !M! mysterydungeon:Burn to an enemy."
     },
     "mysteryDungeon:CyndaquilCounter": {
@@ -554,6 +554,10 @@
     },
     "mysteryDungeon:CyndaquilFirePledge": {
         "NAME": "Fire Pledge",
+        "DESCRIPTION": "Deal !D! damage. If the enemy has burn stacks, gain 2 more energy next turn."
+    },
+    "mysteryDungeon:CyndaquilFlameCharge": {
+        "NAME": "Flame Charge",
         "DESCRIPTION": "Apply !M! mysterydungeon:Burn to all enemies. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
     },
     "mysteryDungeon:CyndaquilFlameWheel": {
@@ -576,7 +580,7 @@
         "UPGRADE_DESCRIPTION": "Your next eruption will not remove any burn stacks. NL Apply !M! mysterydungeon:Burn to all enemies. NL Exhaust."
     },
     "mysteryDungeon:CyndaquilLeer": {
-        "NAME": "Flame Wheel",
+        "NAME": "Leer",
         "DESCRIPTION": "Apply !M! Vulnerable.",
         "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable. NL Remove all the enemies block"
     },
