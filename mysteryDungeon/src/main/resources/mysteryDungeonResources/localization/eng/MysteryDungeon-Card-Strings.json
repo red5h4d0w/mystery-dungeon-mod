@@ -552,6 +552,10 @@
         "NAME": "Explorer Form",
         "DESCRIPTION": "Whenever you apply mysterydungeon:Burn to an enemy, deal !M! damage to that enemy."
     },
+    "mysteryDungeon:CyndaquilFireBlast": {
+        "NAME": "Fire Blast",
+        "DESCRIPTION": "Deal !D! damage. Apply !M! mysterydungeon:Burn."
+    },
     "mysteryDungeon:CyndaquilFirePledge": {
         "NAME": "Fire Pledge",
         "DESCRIPTION": "Apply !M! mysterydungeon:Burn to all enemies. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
