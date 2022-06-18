@@ -34,7 +34,9 @@ public class EruptionAction extends AbstractGameAction {
             if (AbstractDungeon.player.hasPower(InfernoPower.POWER_ID)) {
                 addToBot(new ReducePowerAction(AbstractDungeon.player, source, AbstractDungeon.player.getPower(InfernoPower.POWER_ID), 1));
             }
-            addToBot(new RemoveSpecificPowerAction(target, p, target.getPower(BurnPower.POWER_ID))); 
+            else {
+                addToBot(new RemoveSpecificPowerAction(target, p, target.getPower(BurnPower.POWER_ID))); 
+            }
         }
         isDone = true;
     }
