@@ -554,11 +554,11 @@
     },
     "mysteryDungeon:CyndaquilFirePledge": {
         "NAME": "Fire Pledge",
-        "DESCRIPTION": "Deal !D! damage. If the enemy has burn stacks, gain 2 more energy next turn."
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn to all enemies. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "Flame Charge",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn to all enemies. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
+        "DESCRIPTION": "Deal !D! damage. If the enemy has burn stacks, gain [E][E] next turn."
     },
     "mysteryDungeon:CyndaquilFlameWheel": {
         "NAME": "Flame Wheel",
@@ -582,7 +582,7 @@
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "Leer",
         "DESCRIPTION": "Apply !M! Vulnerable.",
-        "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable. NL Remove all the enemies block"
+        "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable. NL Remove all the enemie's block"
     },
     "mysteryDungeon:CyndaquilTackle": {
         "NAME": "Tackle",
