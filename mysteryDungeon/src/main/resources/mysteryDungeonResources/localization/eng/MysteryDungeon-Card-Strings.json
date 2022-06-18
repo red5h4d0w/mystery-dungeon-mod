@@ -530,7 +530,7 @@
     },
     "mysteryDungeon:CyndaquilBlastBurn": {
         "NAME": "Blast Burn",
-        "DESCRIPTION": "Deal !D! damage. NL Cause an Eruption. NL End your Turn."
+        "DESCRIPTION": "Deal !D! damage. NL Cause an mysterydungeon:Eruption. NL End your Turn."
     },
     "mysteryDungeon:CyndaquilBurnUp": {
         "NAME": "Burn Up",
