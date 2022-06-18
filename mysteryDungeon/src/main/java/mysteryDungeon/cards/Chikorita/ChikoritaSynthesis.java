@@ -13,7 +13,10 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.abstracts.PokemonTwoAmountPower;
+import mysteryDungeon.actions.SimpleAction;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.powers.RecoverPower;
 
 public class ChikoritaSynthesis extends PokemonCard {
 
@@ -55,8 +58,13 @@ public class ChikoritaSynthesis extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (timesActivatedThisCombat<secondMagicNumber){
-            addToBot(new HealAction(p, p, magicNumber));
-            timesActivatedThisCombat++;
+            if(p.hasPower(RecoverPower.POWER_ID)) {
+                addToBot(new SimpleAction(() -> {
+                    ((PokemonTwoAmountPower)p.getPower(RecoverPower.POWER_ID)).amount2 += magicNumber;
+                    p.getPower(RecoverPower.POWER_ID).updateDescription();
+                }));
+                timesActivatedThisCombat++;
+            }
         }
         if(timesActivatedThisCombat>=secondMagicNumber){
             addToBot(new ExhaustSpecificCardAction(this, AbstractDungeon.player.hand, true));
