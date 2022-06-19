@@ -540,6 +540,11 @@
         "NAME": "Counter",
         "DESCRIPTION": "At the end of your turn, spend all leftover energy. For every energy spent this way gain !M! block."
     },
+    "mysteryDungeon:CyndaquilCrushClaw": {
+        "NAME": "Crush Claw",
+        "DESCRIPTION": "Deal !D! damage. NL Your next mysterydungeon:Eruption will deal 50% more damage. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Your next mysterydungeon:Eruption will deal 50% more damage."
+    },
     "mysteryDungeon:CyndaquilDefend": {
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! block."

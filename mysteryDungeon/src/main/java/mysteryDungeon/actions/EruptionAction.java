@@ -48,6 +48,7 @@ public class EruptionAction extends AbstractGameAction {
             int burnStacks = 0;
             if(AbstractDungeon.player.hasPower(CrushClawPower.POWER_ID)){
                  burnStacks = MathUtils.floor(1.5f*target.getPower(BurnPower.POWER_ID).amount);
+                 addToBot(new ReducePowerAction(AbstractDungeon.player, source, AbstractDungeon.player.getPower(CrushClawPower.POWER_ID), 1));
             }
             else{
                  burnStacks = target.getPower(BurnPower.POWER_ID).amount;
