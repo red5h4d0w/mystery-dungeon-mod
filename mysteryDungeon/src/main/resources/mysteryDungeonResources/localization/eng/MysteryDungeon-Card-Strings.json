@@ -572,7 +572,7 @@
     },
     "mysteryDungeon:CyndaquilFlameBurst": {
         "NAME": "Flame Burst",
-        "DESCRIPTION": "Gain !B! block. NL Cause anmysterydungeon:Eruption. NL End your Turn."
+        "DESCRIPTION": "Gain !B! block. NL Cause an mysterydungeon:Eruption. NL End your Turn."
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "Flame Charge",
