@@ -565,6 +565,10 @@
         "NAME": "Fire Pledge",
         "DESCRIPTION": "Apply !M! mysterydungeon:Burn to all enemies. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
     },
+    "mysteryDungeon:CyndaquilFlameBurst": {
+        "NAME": "Flame Burst",
+        "DESCRIPTION": "Gain !B! block. NL Cause anmysterydungeon:Eruption. NL End your Turn."
+    },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "Flame Charge",
         "DESCRIPTION": "Deal !D! damage. If the enemy has burn stacks, gain [E] next turn."
