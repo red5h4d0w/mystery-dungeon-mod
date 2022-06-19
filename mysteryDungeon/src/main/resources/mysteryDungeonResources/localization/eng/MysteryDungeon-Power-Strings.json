@@ -81,7 +81,7 @@
             "At the end of your turn spend all leftover energy and gain #b%s Block for each energy spent."
         ]
     },
-    "mysteryDungeon:CyndaquilCrushClawPower": {
+    "mysteryDungeon:CrushClawPower": {
         "NAME": "Crush Claw",
         "DESCRIPTIONS": [
             "Your next Eruption will deal 50% more damage."
@@ -119,7 +119,7 @@
         "NAME": "Fire Pledge",
         "DESCRIPTIONS": ["When you play another Pledge card this turn, activate one of the following effects. NL Grass: Apply 9 Poison to all enemies. NL Water: Apply 2 Vulnerable to ALL enemies."]
     },
-    "mysteryDungeon:CyndaquilFlashFirePower": {
+    "mysteryDungeon:FlashFirePower": {
         "NAME": "Flash Fire",
         "DESCRIPTIONS": [
             "Every time you play a card apply #b%s burn to all enemies."
