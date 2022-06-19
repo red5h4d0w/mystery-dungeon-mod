@@ -38,20 +38,28 @@ public class EruptionAction extends AbstractGameAction {
     }
     
     public void update() {
+        // Check if target has Burn
         if (target.hasPower(BurnPower.POWER_ID)) {
+            // make a variable out the target's burnStacks
             int burnStacks = target.getPower(BurnPower.POWER_ID).amount;
+
+            // Process damage to deal
             if(toAll) {
                 addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, burnStacks, DamageType.THORNS, AttackEffect.FIRE));
             }
             else {
                 addToBot(new DamageAction(target, new DamageInfo(p, burnStacks, DamageType.THORNS), AttackEffect.FIRE));
             }
+
+            // Remove Inferno or burn depending
             if (AbstractDungeon.player.hasPower(InfernoPower.POWER_ID)) {
                 addToBot(new ReducePowerAction(AbstractDungeon.player, source, AbstractDungeon.player.getPower(InfernoPower.POWER_ID), 1));
             }
             else {
                 addToBot(new RemoveSpecificPowerAction(target, p, target.getPower(BurnPower.POWER_ID))); 
             }
+
+            // Place Burn back if player has Lava Plume
             if(AbstractDungeon.player.hasPower(LavaPlumePower.POWER_ID)){
                 addToBot(new ApplyPowerAction(target, source, new BurnPower(target,  target.getPower(LavaPlumePower.POWER_ID).amount)));
             }
