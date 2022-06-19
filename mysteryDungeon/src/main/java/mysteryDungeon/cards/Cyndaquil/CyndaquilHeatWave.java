@@ -35,7 +35,7 @@ public class CyndaquilHeatWave extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CYNDAQUIL_RED;
 
     private static final int COST = 2;
-    private static final int BLOCK = 12;
+    private static final int BLOCK = 14;
     private static final int UPGRADE_PLUS_BLOCK = 4;
 
 

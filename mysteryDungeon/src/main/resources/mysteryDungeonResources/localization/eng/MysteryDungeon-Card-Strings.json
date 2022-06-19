@@ -576,7 +576,7 @@
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "Flame Charge",
-        "DESCRIPTION": "Deal !D! damage. If the enemy has burn stacks, gain [E] next turn."
+        "DESCRIPTION": "Deal !D! damage. Apply !M! mysterydungeon:Burn."
     },
     "mysteryDungeon:CyndaquilFlamethrower": {
         "NAME": "Flamethrower",
@@ -621,6 +621,14 @@
     "mysteryDungeon:CyndaquilOverheat": {
         "NAME": "Overheat",
         "DESCRIPTION": "Retain.  NL Cause an mysterydungeon:Eruption. NL Exhaust."
+    },
+    "mysteryDungeon:CyndaquilRockTomb": {
+        "NAME": "Rock Tomb",
+        "DESCRIPTION": "Deal !D! damage and apply !M! Weak to all enemies."
+    },
+    "mysteryDungeon:CyndaquilRockSlide": {
+        "NAME": "Rock lide",
+        "DESCRIPTION": "Deal !D! damage. If the enemy has burn stacks, gain [E] next turn."
     },
     "mysteryDungeon:CyndaquilRollout": {
         "NAME": "Rollout",

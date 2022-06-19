@@ -10,17 +10,17 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.WeakPower;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.BurnPower;
 
-public class CyndaquilFlamethrower extends PokemonCard {
+public class CyndaquilRockTomb extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(CyndaquilFlamethrower.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CyndaquilRockTomb.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("Attack.png");
     public static final String NAME = cardStrings.NAME;
@@ -36,16 +36,15 @@ public class CyndaquilFlamethrower extends PokemonCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Pokemon.Enums.CYNDAQUIL_RED;
 
-    private static final int COST = 1;
-    private static final int DAMAGE = 9;
-    private static final int UPGRADE_PLUS_DMG = 3;
-    private static final int BASE_MAGIC_NUMBER = 9;
-    private static final int UPGRADE_MAGIC_NUMBER = 3;
+    private static final int COST = 2;
+    private static final int DAMAGE = 10;
+    private static final int UPGRADE_PLUS_DMG = 4;
+    private static final int BASE_MAGIC_NUMBER = 2;
 
 
     // /STAT DECLARATION/
 
-    public CyndaquilFlamethrower() {
+    public CyndaquilRockTomb() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseMagicNumber = BASE_MAGIC_NUMBER;
@@ -57,11 +56,11 @@ public class CyndaquilFlamethrower extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
-        addToBot(new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
+        addToBot(new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             for (AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters) {
                 if (!monster.isDead && !monster.isDying) {
-                    addToBot(new ApplyPowerAction(monster, p, new BurnPower(monster, this.magicNumber), this.magicNumber));
+                    addToBot(new ApplyPowerAction(monster, p, new WeakPower(monster, this.magicNumber, false), this.magicNumber));
                 } 
             } 
         }
@@ -73,7 +72,6 @@ public class CyndaquilFlamethrower extends PokemonCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             initializeDescription();
         }
     }
