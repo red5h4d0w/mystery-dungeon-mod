@@ -622,6 +622,10 @@
         "NAME": "Overheat",
         "DESCRIPTION": "Retain.  NL Cause an mysterydungeon:Eruption. NL Exhaust."
     },
+    "mysteryDungeon:CyndaquilRollout": {
+        "NAME": "Rollout",
+        "DESCRIPTION": "Deal !D! damage and gain !B! block per card played this turn."
+    },
     "mysteryDungeon:CyndaquilTackle": {
         "NAME": "Tackle",
         "DESCRIPTION": "Deal !D! damage."
