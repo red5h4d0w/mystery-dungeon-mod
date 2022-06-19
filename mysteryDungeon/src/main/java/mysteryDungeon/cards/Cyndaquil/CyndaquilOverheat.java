@@ -34,15 +34,12 @@ public class CyndaquilOverheat extends PokemonCard {
 
     private static final int COST = 1;
     private static final int UPGRADE_COST = 0;
-    private static final int BASE_MAGIC_NUMBER = 7;
 
 
     // /STAT DECLARATION/
 
     public CyndaquilOverheat() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseMagicNumber = BASE_MAGIC_NUMBER;
-        magicNumber = BASE_MAGIC_NUMBER;
         selfRetain = true;
         exhaust = true;
     }

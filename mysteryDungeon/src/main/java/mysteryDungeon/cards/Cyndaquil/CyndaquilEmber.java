@@ -37,9 +37,9 @@ public class CyndaquilEmber extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CYNDAQUIL_RED;
 
     private static final int COST = 0;
-    private static final int DAMAGE = 3;
+    private static final int DAMAGE = 4;
     private static final int UPGRADE_PLUS_DMG = 1;
-    private static final int BASE_MAGIC_NUMBER = 5;
+    private static final int BASE_MAGIC_NUMBER = 7;
     private static final int UPGRADE_MAGIC_NUMBER = 2;
 
 

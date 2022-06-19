@@ -1,6 +1,7 @@
 package mysteryDungeon.actions;
 
 
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -17,6 +18,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.ScreenOnFireEffect;
 
 import mysteryDungeon.powers.BurnPower;
+import mysteryDungeon.powers.CrushClawPower;
 import mysteryDungeon.powers.InfernoPower;
 import mysteryDungeon.powers.LavaPlumePower;
 
@@ -41,11 +43,19 @@ public class EruptionAction extends AbstractGameAction {
     public void update() {
         // Check if target has Burn
         if (target.hasPower(BurnPower.POWER_ID)) {
+
             // make a variable out the target's burnStacks
-            int burnStacks = target.getPower(BurnPower.POWER_ID).amount;
+            int burnStacks = 0;
+            if(AbstractDungeon.player.hasPower(CrushClawPower.POWER_ID)){
+                 burnStacks = MathUtils.floor(1.5f*target.getPower(BurnPower.POWER_ID).amount);
+            }
+            else{
+                 burnStacks = target.getPower(BurnPower.POWER_ID).amount;
+            }
 
             addToBot(new VFXAction(new ScreenOnFireEffect()));
-            // Process damage to deal
+
+            // Process damage to deal 
             if(toAll) {
                 addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, burnStacks, DamageType.THORNS, AttackEffect.FIRE));
             }

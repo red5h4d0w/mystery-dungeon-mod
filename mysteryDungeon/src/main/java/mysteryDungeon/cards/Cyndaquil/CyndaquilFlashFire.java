@@ -39,7 +39,7 @@ public class CyndaquilFlashFire extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CYNDAQUIL_RED;
 
     private static final int COST = 1;
-    private static final int BASE_MAGIC_NUMBER = 2;
+    private static final int BASE_MAGIC_NUMBER = 3;
 
 
     // /STAT DECLARATION/
