@@ -550,7 +550,7 @@
     },
     "mysteryDungeon:CyndaquilEruption": {
         "NAME": "Eruption",
-        "DESCRIPTION": "Cause an mysterydungeon:Eruption that hits all enemies.NL End your turn. NL Exhaust.",
+        "DESCRIPTION": "Cause an mysterydungeon:Eruption that hits all enemies. NL End your turn. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Cause an mysterydungeon:Eruption that hits all enemies. NL End your turn."
     },
     "mysteryDungeon:CyndaquilExplorerForm": {
