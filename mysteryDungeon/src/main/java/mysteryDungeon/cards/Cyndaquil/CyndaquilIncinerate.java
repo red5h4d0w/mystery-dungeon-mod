@@ -2,6 +2,7 @@ package mysteryDungeon.cards.Cyndaquil;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -9,14 +10,14 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
-import mysteryDungeon.actions.EruptionAction;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.powers.BurnPower;
 
-public class CyndaquilOverheat extends PokemonCard {
+public class CyndaquilIncinerate extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(CyndaquilOverheat.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CyndaquilIncinerate.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("Skill.png");
     public static final String NAME = cardStrings.NAME;
@@ -33,24 +34,21 @@ public class CyndaquilOverheat extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CYNDAQUIL_RED;
 
     private static final int COST = 1;
-    private static final int UPGRADE_COST = 0;
-    private static final int BASE_MAGIC_NUMBER = 7;
-
+    private static final int BASE_MAGIC_NUMBER = 12;
+    private static final int UPGRADE_MAGIC_NUMBER = 3;
 
     // /STAT DECLARATION/
 
-    public CyndaquilOverheat() {
+    public CyndaquilIncinerate() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
-        magicNumber = BASE_MAGIC_NUMBER;
-        selfRetain = true;
-        exhaust = true;
+        magicNumber = baseMagicNumber;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new EruptionAction(m));
+        addToBot(new ApplyPowerAction(m, p, new BurnPower(m, magicNumber)));
     }
 
     // Upgraded stats.
@@ -58,7 +56,7 @@ public class CyndaquilOverheat extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(UPGRADE_COST);
+            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             initializeDescription();
         }
     }
