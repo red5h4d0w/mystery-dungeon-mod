@@ -59,7 +59,6 @@ public class CyndaquilWillOWisp extends PokemonCard {
             energyOnUse += 2;
             p.getRelic("Chemical X").flash();
         }
-        energyOnUse += upgraded?1:0;
         if(magicNumber*energyOnUse!=0) {
             addToBot(new ApplyPowerAction(m, p, new BurnPower(m, magicNumber*energyOnUse), magicNumber*energyOnUse));
         }

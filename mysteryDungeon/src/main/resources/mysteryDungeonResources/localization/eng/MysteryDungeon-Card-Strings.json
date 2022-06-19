@@ -567,11 +567,11 @@
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "Flame Charge",
-        "DESCRIPTION": "Deal !D! damage. If the enemy has burn stacks, gain [E] [E] next turn."
+        "DESCRIPTION": "Deal !D! damage. If the enemy has burn stacks, gain [E] next turn."
     },
     "mysteryDungeon:CyndaquilFlamethrower": {
         "NAME": "Flamethrower",
-        "DESCRIPTION": "Deal !D! dmage and apply !M! mysterydungeon:Burn to all enemies."
+        "DESCRIPTION": "Deal !D! damage and apply !M! mysterydungeon:Burn to all enemies."
     },
     "mysteryDungeon:CyndaquilFlameWheel": {
         "NAME": "Flame Wheel",
@@ -583,9 +583,17 @@
         "DESCRIPTION": "Add 2 Burn status card in your draw pile. NL Each time you play a card apply !M! mysterydungeon:Burn to all enemies.",
         "UPGRADE_DESCRIPTION": "Innate. NL Add 2 Burn status card in your draw pile. NL Each time you play a card apply !M! mysterydungeon:Burn to all enemies."
     },
+    "mysteryDungeon:CyndaquilFling": {
+        "NAME": "Fling",
+        "DESCRIPTION": "Gain !B! block. NL Next turn gain !M! more [E]."
+    },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "Heat Wave",
         "DESCRIPTION": "Gain !B! block. NL Whenever you are attacked this turn, apply 5 mysterydungeon:Burn to your attacker."
+    },
+    "mysteryDungeon:CyndaquilIncinerate": {
+        "NAME": "Incinerate",
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn."
     },
     "mysteryDungeon:CyndaquilInferno": {
         "NAME": "Inferno",
@@ -599,7 +607,7 @@
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "Leer",
         "DESCRIPTION": "Apply !M! Vulnerable.",
-        "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable. NL Remove all the enemie's block"
+        "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable. NL Remove all the enemie's block."
     },
     "mysteryDungeon:CyndaquilOverheat": {
         "NAME": "Overheat",
@@ -611,8 +619,8 @@
     },
     "mysteryDungeon:CyndaquilWillOWisp": {
         "NAME": "Will-O-Wisp",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn X times.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! mysterydungeon:Burn X+1 times."
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn X times. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! mysterydungeon:Burn X times. NL Exhaust."
     },
     "mysteryDungeon:PikachuAgility": {
         "NAME": "Agility",
