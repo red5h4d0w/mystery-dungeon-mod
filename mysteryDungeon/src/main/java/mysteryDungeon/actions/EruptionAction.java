@@ -74,7 +74,7 @@ public class EruptionAction extends AbstractGameAction {
 
             // Place Burn back if player has Lava Plume
             if(AbstractDungeon.player.hasPower(LavaPlumePower.POWER_ID)){
-                addToBot(new ApplyPowerAction(target, source, new BurnPower(target,  target.getPower(LavaPlumePower.POWER_ID).amount)));
+                addToBot(new ApplyPowerAction(target, source, new BurnPower(target,  AbstractDungeon.player.getPower(LavaPlumePower.POWER_ID).amount)));
             }
         }
         isDone = true;
