@@ -374,7 +374,7 @@
     },
     "mysteryDungeon:ChikoritaConfide": {
         "NAME": "Confide",
-        "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Apply !M! Evasiveness Drop to ALL enemies. NL Exhaust."
+        "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Apply !M! mysterydungeon:Evasiveness Drop to ALL enemies. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaCut": {
         "NAME": "Cut",
@@ -455,8 +455,8 @@
     },
     "mysteryDungeon:ChikoritaOvergrow": {
         "NAME": "Overgrow",
-        "DESCRIPTION": "Each time your recover counter reaches 0, gain !M! Strength.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Each time your recover counter reaches 0, gain !M! Strength."
+        "DESCRIPTION": "Each time your mysterydungeon:Recovery counter reaches 0, gain !M! Strength.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Each time your mysterydungeon:Recover counter reaches 0, gain !M! Strength."
     },
     "mysteryDungeon:ChikoritaPetalBlizzard": {
         "NAME": "Petal Blizzard",
@@ -464,7 +464,7 @@
     },
     "mysteryDungeon:ChikoritaPetalDance": {
         "NAME": "Petal Dance",
-        "DESCRIPTION": "Unplayable. NL When drawn: Gain !M! Temporary HP and deal !D! damage to all enemies. NL Increase the amount of Temporary HP by 1 and the damage by 4 this combat.",
+        "DESCRIPTION": "Unplayable. NL When drawn: Gain !M! Temporary HP and deal !D! damage to all enemies. NL Increase the amount of Temporary HP by 2 and the damage by 4 this combat.",
         "EXTENDED_DESCRIPTION": ["I can't play this card."]
     },
     "mysteryDungeon:ChikoritaRazorLeaf": {
@@ -504,7 +504,7 @@
     },
     "mysteryDungeon:ChikoritaSynthesis": {
         "NAME": "Synthesis",
-        "DESCRIPTION": "Unplayable. NL When drawn: if you have mysterydungeon:Recover, gain !M! recovery stacks. NL After activating this effect !mysteryDungeon:M2! times: Exhaust.",
+        "DESCRIPTION": "Unplayable. NL When drawn: if you have mysterydungeon:Recovery, gain !M! recovery stacks. NL After activating this effect !mysteryDungeon:M2! times: Exhaust.",
         "EXTENDED_DESCRIPTION": ["I can't play this card.",
             "When Drawn: Exhaust."]
     },
@@ -564,11 +564,11 @@
     },
     "mysteryDungeon:CyndaquilFireBlast": {
         "NAME": "Fire Blast",
-        "DESCRIPTION": "Deal !D! damage. Apply !M! mysterydungeon:Burn."
+        "DESCRIPTION": "Deal !D! damage. Apply !M! mysterydungeon:Burn. NL Exhaust."
     },
     "mysteryDungeon:CyndaquilFirePledge": {
         "NAME": "Fire Pledge",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn to all enemies. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn to all enemies. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
     },
     "mysteryDungeon:CyndaquilFlameBurst": {
         "NAME": "Flame Burst",
@@ -627,7 +627,7 @@
         "DESCRIPTION": "Deal !D! damage and apply !M! Weak to all enemies."
     },
     "mysteryDungeon:CyndaquilRockSlide": {
-        "NAME": "Rock lide",
+        "NAME": "Rock Slide",
         "DESCRIPTION": "Deal !D! damage. If the enemy has burn stacks, gain [E] next turn."
     },
     "mysteryDungeon:CyndaquilRollout": {
