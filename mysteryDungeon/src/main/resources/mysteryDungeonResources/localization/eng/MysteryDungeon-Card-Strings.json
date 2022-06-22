@@ -374,7 +374,7 @@
     },
     "mysteryDungeon:ChikoritaConfide": {
         "NAME": "Confide",
-        "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Apply !M! mysterydungeon:Evasiveness Drop to ALL enemies. NL Exhaust."
+        "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Apply !M! mysterydungeon:Evasiveness_Drop to ALL enemies. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaCut": {
         "NAME": "Cut",
@@ -450,7 +450,7 @@
         "DESCRIPTION": "Gain !M! Strength. NL Gain !mysteryDungeon:M2! Block at the end of your turn."
     },
     "mysteryDungeon:ChikoritaNaturePowerGrassland": {
-        "NAME": "Nature Power: Grassland",
+        "NAME": "Nature Power: Grass",
         "DESCRIPTION": "Lose 3 HP. NL Draw !M! cards."
     },
     "mysteryDungeon:ChikoritaOvergrow": {
@@ -504,7 +504,7 @@
     },
     "mysteryDungeon:ChikoritaSynthesis": {
         "NAME": "Synthesis",
-        "DESCRIPTION": "Unplayable. NL When drawn: if you have mysterydungeon:Recovery, gain !M! recovery stacks. NL After activating this effect !mysteryDungeon:M2! times: Exhaust.",
+        "DESCRIPTION": "Unplayable. NL When drawn: if you have mysterydungeon:Recovery, gain !M! Recovery stacks. NL After activating this effect !mysteryDungeon:M2! times: Exhaust.",
         "EXTENDED_DESCRIPTION": ["I can't play this card.",
             "When Drawn: Exhaust."]
     },
@@ -714,7 +714,7 @@
         "DESCRIPTION": "At the end of your turn, gain !M! Block per empty Orb slot."
     },
     "mysteryDungeon:PikachuNastyPlot": {
-        "NAME": "Nasty Plot",
+        "NAME": "Calm Mind",
         "DESCRIPTION": "Gain !M! Orb slot.",
         "UPGRADE_DESCRIPTION": "Gain !M! Orb slots."
     },
