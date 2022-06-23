@@ -631,13 +631,17 @@
         "NAME": "Overheat",
         "DESCRIPTION": "Retain.  NL Cause an mysterydungeon:Eruption. NL Exhaust."
     },
+    "mysteryDungeon:CyndaquilReversal": {
+        "NAME": "Reversal",
+        "DESCRIPTION": "If the enemy has mysterydungeon:Burn stacks, Gain !B! block. NL If the enemy has no mysterydungeon:Burn stacks, apply !M! mysterydungeon:Burn. "
+    },
     "mysteryDungeon:CyndaquilRockTomb": {
         "NAME": "Rock Tomb",
         "DESCRIPTION": "Deal !D! damage and apply !M! Weak to all enemies."
     },
     "mysteryDungeon:CyndaquilRockSlide": {
         "NAME": "Rock Slide",
-        "DESCRIPTION": "Deal !D! damage. If the enemy has burn stacks, gain [E] next turn."
+        "DESCRIPTION": "Deal !D! damage. If the enemy has mysterydungeon:Burn stacks, gain [E] next turn."
     },
     "mysteryDungeon:CyndaquilRollout": {
         "NAME": "Rollout",
