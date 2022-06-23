@@ -148,8 +148,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     
     public AbstractPokemon adventurer;
     public AbstractPokemon partner;
-    public static AbstractPokemon adventurerToSave;
-    public static AbstractPokemon partnerToSave;
+    public static ToSave preparedSaveData = new ToSave();
     public static final int ENERGY_PER_TURN = 3;
     public static final int STARTING_HP = 0;
     public static final int MAX_HP = 0;
@@ -218,7 +217,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         super(name, setClass, orbTextures,
                 "mysteryDungeonResources/images/char/pokemon/orb/vfx.png", null, null, null);
 
-
         // =============== TEXTURES, ENERGY, LOADOUT =================  
 
         initializeClass(null, // required call to load textures and setup energy/loadout.
@@ -262,8 +260,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 
     public void setCampfirePose() {
         campfirePose = new Texture(1920, 1136, Pixmap.Format.RGBA4444);
-        if(hasChosenStarters())
-        {
+        if(hasChosenStarters()) {
             campfirePose.draw(partner.backSprite, 0, 1136-500);
             campfirePose.draw(adventurer.backSprite, partner.backSprite.getWidth(), 1136-500);
         }
@@ -287,9 +284,12 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
                 if (card.color.equals(color) && card.rarity != AbstractCard.CardRarity.BASIC &&
                     (!UnlockTracker.isCardLocked(c.getKey()) || Settings.isDailyRun)) {
                         if(card instanceof PokemonCard) {
-                            if(!((PokemonCard)card).isAdventurerOnly || color.equals(adventurerToSave.cardColor)) {
+                            if(!((PokemonCard)card).isAdventurerOnly || color.equals(adventurer.cardColor)) {
                                 tmpPool.add(card);
                             }
+                        }
+                        else {
+                            tmpPool.add(card);
                         }
                 }
             }
@@ -299,14 +299,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 	}
 
     public boolean hasChosenStarters() {
+        logger.info(adventurer);
         if(partner==null||adventurer==null) {
-            return false;
-        }
-        return true;
-    }
-
-    public boolean hasChosenStartersForSave() {
-        if(partnerToSave==null||adventurerToSave==null) {
             return false;
         }
         return true;
@@ -315,7 +309,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     public void reloadAnimation() {
         logger.info("ANIMATION");
         if(hasChosenStarters()) {
-            logger.info(adventurer.name);
             loadAnimation(adventurer.atlasUrl, adventurer.skeletonUrl, 0.250f);
             AnimationState.TrackEntry e = state.setAnimation(0, "Sprite", true);
             e.setTime(e.getEndTime() * MathUtils.random());
@@ -454,8 +447,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
             skipNextEvolution = false;
             return;
         }
-        if(hasChosenStarters())
-        {
+        if(hasChosenStarters()) {
             if(partner.evolve()!=null)
                 setPartner(partner.evolve());
             if(adventurer.evolve()!=null)
@@ -480,17 +472,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     @Override
     public ToSave onSave() {
         logger.info("SAVING!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        ToSave saveInfo = new ToSave();
-        if(!hasChosenStartersForSave())
-            return saveInfo;
-        saveInfo.adventurer = adventurerToSave.getClass().getSimpleName();
-        saveInfo.partner = partnerToSave.getClass().getSimpleName();
-        saveInfo.shinyPartner = partnerToSave.getShiny();
-        saveInfo.shinyAdventurer = adventurerToSave.getShiny();
-        logger.info(saveInfo.adventurer);
-        logger.info(saveInfo.partner);
-        saveInfo.maxPikaMeter = maxPikachuChargeCounter;
-        return saveInfo;
+        return preparedSaveData;
     }
 
     @Override
@@ -507,13 +489,13 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     @Override
     public void onLoad(ToSave saveInfo) {
         logger.info("LOADING MYSTERY DUNGEON CHARACTER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        if(saveInfo.adventurer!=null && saveInfo.partner!=null)
-        {
+        if(saveInfo.adventurer!=null && saveInfo.partner!=null) {
             try {
                 setAdventurer((AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+(saveInfo.adventurer)).getConstructor().newInstance());
                 setPartner((AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+(saveInfo.partner)).getConstructor().newInstance());
                 adventurer.setShiny(saveInfo.shinyAdventurer);
                 partner.setShiny(saveInfo.shinyPartner);
+                startingMaxHP = adventurer.maxHp+partner.maxHp-(AbstractDungeon.ascensionLevel>=14?6:0);
             } catch (InstantiationException | IllegalAccessException | IllegalArgumentException
                     | InvocationTargetException | NoSuchMethodException | SecurityException
                     | ClassNotFoundException e) {
@@ -522,10 +504,10 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
             }
             logger.info("Adventurer is " + adventurer.name);
             logger.info("Partner is " + partner.name);
+            preparedSaveData = saveInfo;
         } 
         else {
-            setAdventurer(null);
-            setPartner(null);
+            logger.info("yikes");
         }
         maxPikachuChargeCounter = saveInfo.maxPikaMeter;
         skipNextEvolution = true;
@@ -533,8 +515,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     @Override
-    public Type savedType()
-    {
+    public Type savedType() {
         return new TypeToken<ToSave>(){}.getType();
     }
 
@@ -600,8 +581,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     @Override
     public AbstractPlayer newInstance() {
         Pokemon pokemon = new Pokemon(name, chosenClass);
-        pokemon.setAdventurer(adventurer);
-        pokemon.setPartner(partner);
+        pokemon.onLoad(preparedSaveData);
         return pokemon;
     }
 
@@ -752,26 +732,38 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         return (new Random().nextInt() % 2 == 0)?partnersColor():adventurersColor();
     }
 
-    public ArrayList<AbstractCard.CardColor> getUsedSubColors()
-    {
+    public ArrayList<AbstractCard.CardColor> getUsedSubColors() {
         ArrayList<AbstractCard.CardColor> subcolors = new ArrayList<AbstractCard.CardColor>();
-        if(!hasChosenStartersForSave()) {
-            subcolors.add(Enums.COLOR_GRAY);
+        if(!hasChosenStarters()) {
+            logger.info("IRONCHADDDDDDDDD!");
+            subcolors.add(CardColor.RED);
             return subcolors;
         }
-        subcolors.add(adventurerToSave.cardColor);
-        subcolors.add(partnerToSave.cardColor);
+        subcolors.add(adventurer.cardColor);
+        subcolors.add(partner.cardColor);
         return subcolors;
     }
 
     public void setAdventurer(AbstractPokemon adventurer) {
         this.adventurer = adventurer;
-        adventurerToSave = adventurer;
+        prepareSaveData();
     }
 
     public void setPartner(AbstractPokemon partner) {
         this.partner = partner;
-        partnerToSave = partner;
+        prepareSaveData();     
+    }
+
+    public void prepareSaveData() {
+        if(hasChosenStarters()) {
+            preparedSaveData.adventurer = adventurer.getClass().getSimpleName();
+            preparedSaveData.partner = partner.getClass().getSimpleName();
+            preparedSaveData.shinyPartner = partner.getShiny();
+            preparedSaveData.shinyAdventurer = adventurer.getShiny();
+            logger.info("761: " + preparedSaveData.adventurer);
+            logger.info(preparedSaveData.partner);
+            preparedSaveData.maxPikaMeter = maxPikachuChargeCounter;
+        }
     }
 
     public AbstractRelic natureRelatedRelic() {
