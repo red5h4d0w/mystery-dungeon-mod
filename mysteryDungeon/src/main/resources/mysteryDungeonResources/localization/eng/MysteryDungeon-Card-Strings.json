@@ -562,6 +562,10 @@
         "NAME": "Explorer Form",
         "DESCRIPTION": "Whenever you apply mysterydungeon:Burn to an enemy, deal !M! damage to that enemy."
     },
+    "mysteryDungeon:CyndaquilFacade": {
+        "NAME": "Facade",
+        "DESCRIPTION": "Gain !M! Dexterity. NL Add a Burn status card to your draw pile."
+    },
     "mysteryDungeon:CyndaquilFireBlast": {
         "NAME": "Fire Blast",
         "DESCRIPTION": "Deal !D! damage. Apply !M! mysterydungeon:Burn. NL Exhaust."
@@ -594,6 +598,11 @@
     },
     "mysteryDungeon:CyndaquilFling": {
         "NAME": "Fling",
+        "DESCRIPTION": "Apply 5 mysterydungeon:Burn twice. NL Gain [E]. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Apply 5 mysterydungeon:Burn thrice. NL Gain [E] [E]. NL Exhaust."
+    },
+    "mysteryDungeon:CyndaquilSmokescreen": {
+        "NAME": "Smokescreen",
         "DESCRIPTION": "Gain !B! block. NL Next turn gain !M! more [E]."
     },
     "mysteryDungeon:CyndaquilHeatWave": {
