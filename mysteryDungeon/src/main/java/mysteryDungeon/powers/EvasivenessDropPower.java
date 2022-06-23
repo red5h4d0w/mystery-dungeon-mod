@@ -72,7 +72,7 @@ public class EvasivenessDropPower extends PokemonPower implements CloneablePower
         } 
         else
         {
-            description = String.format(DESCRIPTIONS[1], 2);
+            description = String.format(DESCRIPTIONS[1], amount);
         }
     }
 }

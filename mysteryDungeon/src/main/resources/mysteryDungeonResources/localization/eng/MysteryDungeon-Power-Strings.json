@@ -84,7 +84,8 @@
     "mysteryDungeon:CrushClawPower": {
         "NAME": "Crush Claw",
         "DESCRIPTIONS": [
-            "Your next Eruption will deal 50% more damage."
+            "Your next #yEruption will deal 50% more damage.",
+            "Your next #b%s #yEruption will deal 50%% more damage."
         ]
     },
     "mysteryDungeon:CyndaquilExplorerPower": {
@@ -111,7 +112,7 @@
     "mysteryDungeon:EvasivenessDropPower": {
         "NAME": "Evasiveness Drop",
         "DESCRIPTIONS": [
-            "Enemy loses #b50%% of their Block at the end of their turn.",
+            "Enemy loses #b50% of their Block at the end of their turn.",
             "Enemy loses #b50%% of their Block at the end of their turn for #b%s turns."
         ]
     },
@@ -171,6 +172,10 @@
             "Your next #yEruption will not remove any #yBurn stacks.",
             "Your next #b%s #yEruption will not remove any #yBurn stacks."
         ]
+    },
+    "mysteryDungeon:LavaPlumePower": {
+        "NAME": "Lava PLume",
+        "DESCRIPTIONS": ["Whenever you cause an #yEruption, Apply #b%s #yBurn to the target."]
     },
     "mysteryDungeon:LeafGuardPower": {
         "NAME": "Leaf Guard",
