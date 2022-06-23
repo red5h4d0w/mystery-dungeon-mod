@@ -51,7 +51,7 @@ public class EruptionAction extends AbstractGameAction {
                 burnStacks = target.getPower(BurnPower.POWER_ID).amount;
             }
 
-            addToBot(new VFXAction(new ScreenOnFireEffect()));
+            addToBot(new VFXAction(new ScreenOnFireEffect(), 0.5f));
 
             // Process damage to deal
             if (toAll) {
