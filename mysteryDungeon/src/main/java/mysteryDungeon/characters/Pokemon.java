@@ -299,7 +299,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 	}
 
     public boolean hasChosenStarters() {
-        logger.info(adventurer);
         if(partner==null||adventurer==null) {
             return false;
         }
@@ -733,9 +732,9 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public ArrayList<AbstractCard.CardColor> getUsedSubColors() {
+        onLoad(preparedSaveData);
         ArrayList<AbstractCard.CardColor> subcolors = new ArrayList<AbstractCard.CardColor>();
         if(!hasChosenStarters()) {
-            logger.info("IRONCHADDDDDDDDD!");
             subcolors.add(CardColor.RED);
             return subcolors;
         }
@@ -760,6 +759,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
             preparedSaveData.partner = partner.getClass().getSimpleName();
             preparedSaveData.shinyPartner = partner.getShiny();
             preparedSaveData.shinyAdventurer = adventurer.getShiny();
+            // TODO: check wtf happens with shiny
             logger.info("761: " + preparedSaveData.adventurer);
             logger.info(preparedSaveData.partner);
             preparedSaveData.maxPikaMeter = maxPikachuChargeCounter;
