@@ -60,8 +60,7 @@ public class CharmanderDragonTail extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, multiDamage, DamageType.NORMAL, AttackEffect.BLUNT_HEAVY));
-        if(upgraded)
-        {
+        if(upgraded) {
             addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DrawCardNextTurnPower(AbstractDungeon.player, magicNumber), magicNumber));
         }
         addToBot(new VFXAction(new ShowCardAndAddToDrawPileEffect(this, false, false)));
@@ -76,8 +75,7 @@ public class CharmanderDragonTail extends PokemonCard {
     public void triggerOnExhaust() {
         AbstractCard cardToAdd = makeStatEquivalentCopy();
         addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, multiDamage, DamageType.NORMAL, AttackEffect.BLUNT_HEAVY));
-        if(upgraded)
-        {
+        if(upgraded) {
             addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DrawCardNextTurnPower(AbstractDungeon.player, magicNumber), magicNumber));
         }
         addToBot(new MakeTempCardInDrawPileAction(cardToAdd, 1, false, false, false));
