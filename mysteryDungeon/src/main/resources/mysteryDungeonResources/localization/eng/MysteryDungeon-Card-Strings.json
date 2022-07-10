@@ -456,7 +456,7 @@
     "mysteryDungeon:ChikoritaOvergrow": {
         "NAME": "Overgrow",
         "DESCRIPTION": "Each time your mysterydungeon:Recovery counter reaches 0, gain !M! Strength.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Each time your mysterydungeon:Recover counter reaches 0, gain !M! Strength."
+        "UPGRADE_DESCRIPTION": "Innate. NL Each time your mysterydungeon:Recovery counter reaches 0, gain !M! Strength."
     },
     "mysteryDungeon:ChikoritaPetalBlizzard": {
         "NAME": "Petal Blizzard",
@@ -568,7 +568,7 @@
     },
     "mysteryDungeon:CyndaquilFireBlast": {
         "NAME": "Fire Blast",
-        "DESCRIPTION": "Deal !D! damage. Apply !M! mysterydungeon:Burn. NL Exhaust."
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn. NL Exhaust."
     },
     "mysteryDungeon:CyndaquilFirePledge": {
         "NAME": "Fire Pledge",
