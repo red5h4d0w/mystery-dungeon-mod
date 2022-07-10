@@ -657,7 +657,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         super.useCard(c, m, energyOnUse);
         if(hasChosenPikachu()) {
             if(c instanceof PokemonCard) { 
-                logger.info(((PokemonCard)c).inert);
                 if(((PokemonCard)c).inert) {
                     return;
                 }
