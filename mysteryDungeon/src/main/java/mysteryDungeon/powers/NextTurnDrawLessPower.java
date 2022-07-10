@@ -60,10 +60,8 @@ public class NextTurnDrawLessPower extends PokemonPower implements CloneablePowe
         ((AbstractPlayer)owner).gameHandSize-=amount;
     }
 
-    public boolean onReceivePower(AbstractPower p, AbstractCreature target, AbstractCreature source)
-    {
-        if(p instanceof NextTurnDrawLessPower && target==owner)
-        {
+    public boolean onReceivePower(AbstractPower p, AbstractCreature target, AbstractCreature source) {
+        if(p instanceof NextTurnDrawLessPower && target==owner) {
             ((AbstractPlayer)owner).gameHandSize = (((AbstractPlayer)owner).gameHandSize - p.amount >0)?((AbstractPlayer)owner).gameHandSize - p.amount:0;
         }
         return true;
@@ -80,19 +78,16 @@ public class NextTurnDrawLessPower extends PokemonPower implements CloneablePowe
     }
 
     @Override
-    public void onRemove()
-    {
+    public void onRemove() {
         ((AbstractPlayer)owner).gameHandSize=baseHandSize;
     }
 
     @Override
     public void updateDescription() {
-        if(amount == 1)
-        {
+        if(amount == 1) {
             description = DESCRIPTIONS[0];
         } 
-        else
-        {
+        else {
             description = String.format(DESCRIPTIONS[1], amount);
         }
     }
