@@ -51,7 +51,7 @@ public class CyndaquilSmokescreen extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(m, p, new EnergizedPower(m, magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, magicNumber)));
         addToBot(new GainBlockAction(p, p, block));
     }
 
