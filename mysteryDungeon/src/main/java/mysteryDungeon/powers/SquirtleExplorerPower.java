@@ -2,30 +2,30 @@ package mysteryDungeon.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.abstracts.PokemonPower;
+import mysteryDungeon.abstracts.PokemonTwoAmountPower;
+import mysteryDungeon.actions.SimpleAction;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 
 //Gain 1 dex for the turn for each card played.
 
-public class SquirtleExplorerPower extends PokemonPower implements CloneablePowerInterface {
+public class SquirtleExplorerPower extends PokemonTwoAmountPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID("SquirtleExplorerPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    public int drawAmount = 1;
     
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
@@ -38,6 +38,7 @@ public class SquirtleExplorerPower extends PokemonPower implements CloneablePowe
         ID = POWER_ID;
 
         this.amount = 1;
+        this.amount2 = 1;
         this.owner = owner;
 
         type = PowerType.BUFF;
@@ -51,9 +52,9 @@ public class SquirtleExplorerPower extends PokemonPower implements CloneablePowe
 
     @Override
     public void stackPower(int stackAmount) {
-    super.stackPower(stackAmount);
-    this.drawAmount++;
-  }
+        super.stackPower(stackAmount);
+        this.amount2++;
+    }
 
     @Override
     public AbstractPower makeCopy() {
@@ -63,17 +64,21 @@ public class SquirtleExplorerPower extends PokemonPower implements CloneablePowe
     @Override
     public void updateDescription() {
         if(amount==1) {
-            description = String.format(DESCRIPTIONS[0], drawAmount, amount);
+            description = String.format(DESCRIPTIONS[0], amount2, amount);
         }
         else {
-            description = String.format(DESCRIPTIONS[1], drawAmount, amount);
+            description = String.format(DESCRIPTIONS[1], amount2, amount);
         }
     }
-    public void onEnergyRecharge() {
-        flash();
-        AbstractDungeon.player.draw(this.drawAmount);
-        this.drawAmount += this.amount;
-        updateDescription();
-      }
+    
+    @Override
+    public void atStartOfTurnPostDraw() {
+        addToBot(new DrawCardAction(amount2));
+        addToBot(new SimpleAction(() -> {
+            amount2+=amount;
+            updateDescription();
+        }));
+        super.atStartOfTurnPostDraw();
+    }
 }
     

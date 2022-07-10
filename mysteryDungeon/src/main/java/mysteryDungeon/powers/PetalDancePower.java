@@ -3,6 +3,7 @@ package mysteryDungeon.powers;
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonPower;
+import mysteryDungeon.cards.Bulbasaur.BulbasaurTackle;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
@@ -23,6 +24,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.relics.PenNib;
 import com.megacrit.cardcrawl.vfx.PetalEffect;
 
 
@@ -64,6 +66,11 @@ public class PetalDancePower extends PokemonPower implements CloneablePowerInter
         flash();
         addToBot(new VFXAction(new PetalEffect(), 0.7f));
         addToBot(new DamageAllEnemiesAction((AbstractPlayer)owner, 7, DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+        if(owner instanceof AbstractPlayer) {
+            if(((AbstractPlayer)owner).hasRelic(PenNib.ID)) {
+                ((PenNib)((AbstractPlayer)owner).getRelic(PenNib.ID)).onUseCard(new BulbasaurTackle(), null);
+            }
+        }
         addToBot(new ReducePowerAction(owner, owner, this, 1));
     }
 
@@ -99,12 +106,10 @@ public class PetalDancePower extends PokemonPower implements CloneablePowerInter
             }
         }
         
-        if(amount == 1)
-        {
+        if(amount == 1) {
             description = String.format(DESCRIPTIONS[0], minDamageDealt);
         } 
-        else
-        {
+        else {
             description = String.format(DESCRIPTIONS[1], amount, minDamageDealt);
         }
     }
