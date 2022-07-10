@@ -361,7 +361,7 @@
     },
     "mysteryDungeon:ChikoritaAncientPower": {
         "NAME": "Ancient Power",
-        "DESCRIPTION": "Deal !D! damage. NL If you are missing more then 30% of your health, deal !D! damage."
+        "DESCRIPTION": "Deal !D! damage. NL If you are missing more than 30% of your HP, deal !D! damage."
     },
     "mysteryDungeon:ChikoritaAromatherapy": {
         "NAME": "Aromatherapy",

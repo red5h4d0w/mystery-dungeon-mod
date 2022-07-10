@@ -722,25 +722,25 @@
         "UPGRADE_DESCRIPTION": "Infligez !D! dégâts NL Créez une *Peur améliorée et ajoutez-la à votre main."
     },
     "mysteryDungeon:ChikoritaAncientPower": {
-        "NAME": "Ancient Power",
-        "DESCRIPTION": "Deal !D! damage. NL If you are missing more then 30% of your health, deal !D! damage."
+        "NAME": "Pouvoir Antique",
+        "DESCRIPTION": "Infligez !D! dégâts. NL S'il vous manque au moins 30% de vos PV, infligez !D! dégâts."
     },
     "mysteryDungeon:ChikoritaAromatherapy": {
         "NAME": "Aromatherapy",
-        "DESCRIPTION": "Whenever you take damage, gain !M! Strength.",
-        "UPGRADE_DESCRIPTION": "Whenever you take damage, gain !M! Strength. NL Next Turn Lose 1 HP"
+        "DESCRIPTION": "Lorsque vous recevez des dégâts, gagnez !M! Force.",
+        "UPGRADE_DESCRIPTION": "Lorsque vous recevez des dégâts, gagnez !M! Force. NL Prochain Tour: Perdez 1 PV"
     },
     "mysteryDungeon:ChikoritaBodySlam": {
         "NAME": "Body Slam",
-        "DESCRIPTION": "Deal !D! damage. NL Next Turn Lose !M! HP."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Prochain Tour: Perdez !M! PV."
     },
     "mysteryDungeon:ChikoritaConfide": {
         "NAME": "Confide",
-        "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Apply !M! Evasiveness Drop to ALL enemies. NL Exhaust."
+        "DESCRIPTION": "Infligez !M! Weak to ALL enemies. NL Infligez !M! Evasiveness Drop to ALL enemies. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaCut": {
         "NAME": "Cut",
-        "DESCRIPTION": "Lose !M! HP. NL Deal !D! damage."
+        "DESCRIPTION": "Perdez !M! PV. NL Infligez !D! dégâts."
     },
     "mysteryDungeon:ChikoritaDefend": {
         "NAME": "Defend",
@@ -748,98 +748,98 @@
     },
     "mysteryDungeon:ChikoritaEnergyBall": {
         "NAME": "Energy Ball",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Infligez !M! Vulnérable."
     },
     "mysteryDungeon:ChikoritaExplorerForm": {
         "NAME": "Explorer Form",
-        "DESCRIPTION": "Ethereal. NL When you heal HP, deal damage to ALL enemies equal to twice the amount healed.",
-        "UPGRADE_DESCRIPTION": "When you heal HP, deal damage to ALL enemies equal to twice the amount healed."
+        "DESCRIPTION": "Ethereal. NL When you heal PV, Infligez damage to ALL enemies equal to twice the amount healed.",
+        "UPGRADE_DESCRIPTION": "When you heal PV, Infligez damage to ALL enemies equal to twice the amount healed."
     },
     "mysteryDungeon:ChikoritaFlail": {
         "NAME": "Flail",
-        "DESCRIPTION": "Unplayable. NL Ethereal. NL When drawn, gain !M! Temporary Strength.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn, gain !M! Temporary Strength.",
+        "DESCRIPTION": "Unplayable. NL Ethereal. NL When drawn, gagnez !M! Temporary Force.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn, gagnez !M! Temporary Force.",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
         ]
     },
     "mysteryDungeon:ChikoritaFuryCutter": {
         "NAME": "Fury Cutter",
-        "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Increase this card damage by !M! this combat. NL Lose 2 HP. NL Bring back a copy of that card in your hand next turn and lose 2 HP. NL Exhaust."
+        "DESCRIPTION": "Ethereal. NL Infligez !D! dégâts. NL Increase this card damage by !M! this combat. NL Perdez 2 PV. NL Bring back a copy of that card in your hand Prochain Tour: and Perdez 2 PV. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaGrassKnot": {
         "NAME": "Grass Knot",
-        "DESCRIPTION": "Remove 33% of the enemy's remaining HP. NL Exhaust."
+        "DESCRIPTION": "Remove 33% of the enemy's remaining PV. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaGrassPledge": {
         "NAME": "Grass Pledge",
-        "DESCRIPTION": "Gain !M! Temporary HP. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
+        "DESCRIPTION": "Gagnez !M! PV Temporaires. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
     },
     "mysteryDungeon:ChikoritaGrassWhistle": {
         "NAME": "Grass Whistle",
-        "DESCRIPTION": "Apply mysterydungeon:Asleep to ALL enemies. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Apply mysterydungeon:Asleep to ALL enemies. NL Exhaust."
+        "DESCRIPTION": "Infligez mysterydungeon:Asleep to ALL enemies. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Infligez mysterydungeon:Asleep to ALL enemies. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaGrassyTerrain": {
         "NAME": "Grassy Terrain",
-        "DESCRIPTION": "Increase your max HP by !M!."
+        "DESCRIPTION": "Increase your max PV by !M!."
     },
     "mysteryDungeon:ChikoritaGrowl": {
         "NAME": "Growl",
-        "DESCRIPTION": "Apply !M! Weak to ALL enemies."
+        "DESCRIPTION": "Infligez !M! Weak to ALL enemies."
     },
     "mysteryDungeon:ChikoritaHealPulse": {
         "NAME": "Heal Pulse",
-        "DESCRIPTION": "Whenever you inflict self damage or gain HP during your turn, gain !M! block.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you inflict self damage or gain HP during your turn, gain !M! block."
+        "DESCRIPTION": "Whenever you inflict self damage or gain PV during your turn, gagnez !M! block.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you inflict self damage or gain PV during your turn, gagnez !M! block."
     },
     "mysteryDungeon:ChikoritaLeafGuard": {
         "NAME": "Leaf Guard",
-        "DESCRIPTION": "At the end of your turn, remove all debuff you possess. For each debuff removed this way lose !M! HP."
+        "DESCRIPTION": "At the end of your turn, remove all debuff you possess. For each debuff removed this way Perdez !M! PV."
     },
     "mysteryDungeon:ChikoritaLeafStorm": {
         "NAME": "Leaf Storm",
-        "DESCRIPTION": "Lose 1 HP !M! times. NL Deal !D! damage !M! times."
+        "DESCRIPTION": "Perdez 1 PV !M! times. NL Infligez !D! damage !M! times."
     },
     "mysteryDungeon:ChikoritaMagicCoat": {
         "NAME": "Magic Coat",
-        "DESCRIPTION": "Gain !M! Temporary HP. NL Draw 1 card."
+        "DESCRIPTION": "Gagnez !M! PV Temporaires. NL Piochez 1 card."
     },
     "mysteryDungeon:ChikoritaMagicalLeaf": {
         "NAME": "Magical Leaf",
-        "DESCRIPTION": "Deal !D! damage !M! times to random enemies."
+        "DESCRIPTION": "Infligez !D! damage !M! times to random enemies."
     },
     "mysteryDungeon:ChikoritaNaturalGift": {
         "NAME": "Natural Gift",
-        "DESCRIPTION": "Gain !M! Strength. NL Gain !mysteryDungeon:M2! Block at the end of your turn."
+        "DESCRIPTION": "Gagnez !M! Force. NL Gain !mysteryDungeon:M2! Block at the end of your turn."
     },
     "mysteryDungeon:ChikoritaNaturePowerGrassland": {
         "NAME": "Nature Power: Grassland",
-        "DESCRIPTION": "Lose 3 HP. NL Draw !M! cards."
+        "DESCRIPTION": "Perdez 3 PV. NL Piochez !M! cartes."
     },
     "mysteryDungeon:ChikoritaOvergrow": {
         "NAME": "Overgrow",
-        "DESCRIPTION": "Each time your recover counter reaches 0, gain !M! Strength.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Each time your recover counter reaches 0, gain !M! Strength."
+        "DESCRIPTION": "Each time your recover counter reaches 0, gagnez !M! Force.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Each time your recover counter reaches 0, gagnez !M! Force."
     },
     "mysteryDungeon:ChikoritaPetalBlizzard": {
         "NAME": "Petal Blizzard",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies."
+        "DESCRIPTION": "Infligez !D! damage to ALL enemies."
     },
     "mysteryDungeon:ChikoritaPetalDance": {
         "NAME": "Petal Dance",
-        "DESCRIPTION": "Unplayable. NL When drawn: Gain !M! Temporary HP and deal !D! damage to all enemies. NL Increase the amount of Temporary HP by 1 and the damage by 4 this combat.",
+        "DESCRIPTION": "Unplayable. NL When drawn: gagnez !M! PV Temporaires and Infligez !D! damage to all enemies. NL Increase the amount of PV Temporaires by 1 and the damage by 4 this combat.",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
         ]
     },
     "mysteryDungeon:ChikoritaRazorLeaf": {
         "NAME": "Razor Leaf",
-        "DESCRIPTION": "Lose !M! HP. NL Deal !D! damage."
+        "DESCRIPTION": "Perdez !M! PV. NL Infligez !D! dégâts."
     },
     "mysteryDungeon:ChikoritaRefresh": {
         "NAME": "Refresh",
-        "DESCRIPTION": "Gain !M! Temporary HP."
+        "DESCRIPTION": "Gagnez !M! PV Temporaires."
     },
     "mysteryDungeon:ChikoritaSecretPower": {
         "NAME": "Secret Power",
@@ -848,29 +848,29 @@
     },
     "mysteryDungeon:ChikoritaSeedBomb": {
         "NAME": "Seed Bomb",
-        "DESCRIPTION": "Deal !D! damage. NL Next turn draw 2 more cards."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Prochain Tour: draw 2 more cartes."
     },
     "mysteryDungeon:ChikoritaSnore": {
         "NAME": "Snore",
-        "DESCRIPTION": "If the enemy intends to attack, apply 1 mysterydungeon:Asleep. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "If the enemy intends to attack, apply 1 mysterydungeon:Asleep."
+        "DESCRIPTION": "If the enemy intends to attack, Infligez 1 mysterydungeon:Asleep. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "If the enemy intends to attack, Infligez 1 mysterydungeon:Asleep."
     },
     "mysteryDungeon:ChikoritaSolarBeam": {
         "NAME": "Solar Beam",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Draw !M! less cards during your next turn."
+        "DESCRIPTION": "Infligez !D! damage to ALL enemies. NL Piochez !M! less cartes during your Prochain Tour:."
     },
     "mysteryDungeon:ChikoritaSunnyDay": {
         "NAME": "Sunny Day",
-        "DESCRIPTION": "Ethereal. NL When dealing damage to yourself, for every 3 HP lost draw a card.",
-        "UPGRADE_DESCRIPTION": "When dealing damage to yourself, for every 3 HP lost draw a card."
+        "DESCRIPTION": "Ethereal. NL When dealing damage to yourself, for every 3 PV lost draw a card.",
+        "UPGRADE_DESCRIPTION": "When dealing damage to yourself, for every 3 PV lost draw a card."
     },
     "mysteryDungeon:ChikoritaSweetScent": {
         "NAME": "Sweet Scent",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Evasiveness_Drop. NL Apply !M! Vulnerable"
+        "DESCRIPTION": "Infligez !M! mysterydungeon:Evasiveness_Drop. NL Infligez !M! Vulnérable"
     },
     "mysteryDungeon:ChikoritaSynthesis": {
         "NAME": "Synthesis",
-        "DESCRIPTION": "Unplayable. NL When drawn: Heal !M! HP. NL After activating this effect !mysteryDungeon:M2! times: Exhaust.",
+        "DESCRIPTION": "Unplayable. NL When drawn: Heal !M! PV. NL After activating this effect !mysteryDungeon:M2! times: Exhaust.",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card.",
             "When Drawn: Exhaust."
@@ -878,23 +878,23 @@
     },
     "mysteryDungeon:ChikoritaTackle": {
         "NAME": "Tackle",
-        "DESCRIPTION": "Deal !D! damage."
+        "DESCRIPTION": "Infligez !D! dégâts."
     },
     "mysteryDungeon:ChikoritaVineWhip": {
         "NAME": "Vine Whip",
-        "DESCRIPTION": "Deal !D! damage. NL Put a card from your discard pile into your draw pile."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Put a card from your discard pile into your draw pile."
     },
     "mysteryDungeon:ChikoritaWorrySeed": {
         "NAME": "Worry Seed",
-        "DESCRIPTION": "Unplayable. NL Ethereal. NL When drawn draw !M! cards. NL While in hand, Lose 1 HP per card played.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn draw !M! cards. NL While in hand, Lose 1 HP per card played.",
+        "DESCRIPTION": "Unplayable. NL Ethereal. NL When drawn draw !M! cartes. NL While in hand, Perdez 1 PV per card played.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn draw !M! cartes. NL While in hand, Perdez 1 PV per card played.",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
         ]
     },
     "mysteryDungeon:ChikoritaWringOut": {
         "NAME": "Wring Out",
-        "DESCRIPTION": "Deal !D! damage. NL Lose !M! HP."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Perdez !M! PV."
     },
     "mysteryDungeon:CyndaquilDefend": {
         "NAME": "Defend",
@@ -902,25 +902,25 @@
     },
     "mysteryDungeon:CyndaquilEmber": {
         "NAME": "Ember",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Infligez !M! mysterydungeon:Burn."
     },
     "mysteryDungeon:CyndaquilFirePledge": {
         "NAME": "Fire Pledge",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn to all enemies. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
+        "DESCRIPTION": "Infligez !M! mysterydungeon:Burn to all enemies. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
     },
     "mysteryDungeon:CyndaquilFlameWheel": {
         "NAME": "Flame Wheel",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn twice. NL Cause an mysterydungeon:Eruption. NL End your turn.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! mysterydungeon:Burn twice. NL Cause an mysterydungeon:Eruption. NL End your turn."
+        "DESCRIPTION": "Infligez !M! mysterydungeon:Burn twice. NL Cause an mysterydungeon:Eruption. NL End your turn.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Infligez !M! mysterydungeon:Burn twice. NL Cause an mysterydungeon:Eruption. NL End your turn."
     },
     "mysteryDungeon:CyndaquilFlashFire": {
         "NAME": "Flash Fire",
-        "DESCRIPTION": "Add 2 Burn status card in your draw pile. NL Each time you play a card apply !M! mysterydungeon:Burn to all enemies.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Add 2 Burn status card in your draw pile. NL Each time you play a card apply !M! mysterydungeon:Burn to all enemies."
+        "DESCRIPTION": "Add 2 Burn status card in your draw pile. NL Each time you play a card Infligez !M! mysterydungeon:Burn to all enemies.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Add 2 Burn status card in your draw pile. NL Each time you play a card Infligez !M! mysterydungeon:Burn to all enemies."
     },
     "mysteryDungeon:CyndaquilTackle": {
         "NAME": "Tackle",
-        "DESCRIPTION": "Deal !D! damage."
+        "DESCRIPTION": "Infligez !D! dégâts."
     },
     "mysteryDungeon:TotodileWaterPledge": {
         "NAME": "Water Pledge",
@@ -928,37 +928,37 @@
     },
     "mysteryDungeon:CyndaquilBlastBurn": {
         "NAME": "Blast Burn",
-        "DESCRIPTION": "Deal !D! damage. NL Cause an Eruption. NL End your Turn."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Cause an Eruption. NL End your Turn."
     },
     "mysteryDungeon:CyndaquilBurnUp": {
         "NAME": "Fire Pledge",
-        "DESCRIPTION": "Add 2 Burn status cards to your draw pile. NL Apply !M! mysterydungeon:Burn to an enemy."
+        "DESCRIPTION": "Add 2 Burn status cartes to your draw pile. NL Infligez !M! mysterydungeon:Burn to an enemy."
     },
     "mysteryDungeon:CyndaquilCounter": {
         "NAME": "Counter",
-        "DESCRIPTION": "At the end of your turn, spend all leftover energy. For every energy spent this way gain !M! block."
+        "DESCRIPTION": "At the end of your turn, spend all leftover energy. For every energy spent this way gagnez !M! block."
     },
     "mysteryDungeon:CyndaquilExplorerForm": {
         "NAME": "Explorer Form",
-        "DESCRIPTION": "Whenever you apply mysterydungeon:Burn to an enemy, deal !M! damage to that enemy."
+        "DESCRIPTION": "Whenever you Infligez mysterydungeon:Burn to an enemy, Infligez !M! damage to that enemy."
     },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "Heat Wave",
-        "DESCRIPTION": "Gain !B! block. NL Whenever you are attacked this turn, apply 5 mysterydungeon:Burn to your attacker."
+        "DESCRIPTION": "Gain !B! block. NL Whenever you are attacked this turn, Infligez 5 mysterydungeon:Burn to your attacker."
     },
     "mysteryDungeon:CyndaquilInferno": {
         "NAME": "Inferno",
         "DESCRIPTION": "Your next eruption will not remove any burn stacks. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Your next eruption will not remove any burn stacks. NL Apply !M! mysterydungeon:Burn to all enemies. NL Exhaust."
+        "UPGRADE_DESCRIPTION": "Your next eruption will not remove any burn stacks. NL Infligez !M! mysterydungeon:Burn to all enemies. NL Exhaust."
     },
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "Flame Wheel",
-        "DESCRIPTION": "Apply !M! Vulnerable.",
-        "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable. NL Remove all the enemies block"
+        "DESCRIPTION": "Infligez !M! Vulnérable.",
+        "UPGRADE_DESCRIPTION": "Infligez !M! Vulnérable. NL Remove all the enemies block"
     },
     "mysteryDungeon:CyndaquilWillOWisp": {
         "NAME": "Will-O-Wisp",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn X times.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! mysterydungeon:Burn X+1 times."
+        "DESCRIPTION": "Infligez !M! mysterydungeon:Burn X times.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Infligez !M! mysterydungeon:Burn X+1 times."
     }
 }
