@@ -647,6 +647,10 @@
         "NAME": "Rollout",
         "DESCRIPTION": "Deal !D! damage and gain !B! block per card played this turn."
     },
+    "mysteryDungeon:CyndaquilSleepTalk": {
+        "NAME": "Sleep Talk",
+        "DESCRIPTION": "Whenever you create a Status card, draw !M! card."
+    },
     "mysteryDungeon:CyndaquilTackle": {
         "NAME": "Tackle",
         "DESCRIPTION": "Deal !D! damage."
