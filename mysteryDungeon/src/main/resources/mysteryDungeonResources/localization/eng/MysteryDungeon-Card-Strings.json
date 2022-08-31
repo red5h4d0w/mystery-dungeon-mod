@@ -546,6 +546,11 @@
         "DESCRIPTION": "Deal !D! damage. NL Your next mysterydungeon:Eruption will deal 50% more damage. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Your next mysterydungeon:Eruption will deal 50% more damage."
     },
+    "mysteryDungeon:CyndaquilCurse": {
+        "NAME": "Curse",
+        "DESCRIPTION": "Each status or curse you draw gives you [E]. NL Up to once per turn.",
+        "UPGRADE_DESCRIPTION": "Each status or curse you draw gives you [E]. NL Up to twice per turn."
+    },
     "mysteryDungeon:CyndaquilDefend": {
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! block."
