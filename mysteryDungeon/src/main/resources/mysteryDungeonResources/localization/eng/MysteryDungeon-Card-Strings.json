@@ -610,6 +610,11 @@
         "NAME": "Heat Wave",
         "DESCRIPTION": "Gain !B! block. NL Whenever you are attacked this turn, apply 5 mysterydungeon:Burn to your attacker."
     },
+    "mysteryDungeon:CyndaquilHowl": {
+        "NAME": "Howl",
+        "DESCRIPTION": "Add 1 Burn status card in your draw pile. NL Next turn gain [E] [E] [E].",
+        "UPGRADE_DESCRIPTION": "Next turn gain [E] [E] [E]."
+    },
     "mysteryDungeon:CyndaquilIncinerate": {
         "NAME": "Incinerate",
         "DESCRIPTION": "Apply !M! mysterydungeon:Burn."
