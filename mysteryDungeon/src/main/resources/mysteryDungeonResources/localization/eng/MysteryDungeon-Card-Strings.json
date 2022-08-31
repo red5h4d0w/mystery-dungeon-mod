@@ -623,6 +623,11 @@
         "DESCRIPTION": "Your next eruption will not remove any burn stacks. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Your next eruption will not remove any burn stacks. NL Apply !M! mysterydungeon:Burn to all enemies. NL Exhaust."
     },
+    "mysteryDungeon:CyndaquilLaserFocus": {
+        "NAME": "Laser Focus",
+        "DESCRIPTION": "Gain [E].",
+        "UPGRADE_DESCRIPTION": "Gain [E]. NL Draw a card."
+    },
     "mysteryDungeon:CyndaquilLavaPlume": {
         "NAME": "Lava Plume",
         "DESCRIPTION": "Whenever you cause an eruption, Apply !M! mysterydungeon:Burn stacks on the target."
@@ -656,6 +661,10 @@
     "mysteryDungeon:CyndaquilRollout": {
         "NAME": "Rollout",
         "DESCRIPTION": "Deal !D! damage and gain !B! block per card played this turn."
+    },
+    "mysteryDungeon:CyndaquilShadowClaw": {
+        "NAME": "Shadow Claw",
+        "DESCRIPTION": "Add a Dazed status card in your draw pile. NL Deal !D! damage."
     },
     "mysteryDungeon:CyndaquilSleepTalk": {
         "NAME": "Sleep Talk",
