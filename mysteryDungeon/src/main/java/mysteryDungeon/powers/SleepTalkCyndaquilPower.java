@@ -8,8 +8,6 @@ import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
-import java.io.ObjectInputFilter.Status;
-
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -53,9 +51,9 @@ public class SleepTalkCyndaquilPower extends PokemonPower implements CloneablePo
     }
 
     @Override
-    public void onCreateTempCard() {
-        if(AbstractCard.CardType.STATUS)
-       addToBot(new DrawCardAction(owner, amount));
+    public void onCreateTempCard(AbstractCard card) {
+        if(card.type == AbstractCard.CardType.STATUS)
+            addToBot(new DrawCardAction(owner, amount));
     }
 
     @Override

@@ -5,14 +5,9 @@ import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.actions.unique.PoisonLoseHpAction;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import mysteryDungeon.powers.ToxicPower;
 
 public class PoisonLoseHpActionPatch {
-
-    private static final Logger logger = LogManager.getLogger(PoisonLoseHpActionPatch.class.getName());
 
     @SpirePatch(
         clz = PoisonLoseHpAction.class,
@@ -25,9 +20,7 @@ public class PoisonLoseHpActionPatch {
         )
         public static void Insert(PoisonLoseHpAction __instance, AbstractPower p){
             AbstractPower toxic = __instance.target.getPower(ToxicPower.POWER_ID);
-            if(toxic != null)
-            {
-                logger.info(toxic.amount);
+            if(toxic != null) {
                 p.amount+= toxic.amount+1;
             }
         }
