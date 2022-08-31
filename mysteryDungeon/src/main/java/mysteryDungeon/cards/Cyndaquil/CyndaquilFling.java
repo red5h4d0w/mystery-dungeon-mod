@@ -54,8 +54,6 @@ public class CyndaquilFling extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(m, p, new BurnPower(m, 5)));
         addToBot(new ApplyPowerAction(m, p, new BurnPower(m, 5)));
-        if(upgraded)
-        addToBot(new ApplyPowerAction(m, p, new BurnPower(m, 5)));
         addToBot(new GainEnergyAction(magicNumber));
         }
 

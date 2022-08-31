@@ -600,11 +600,11 @@
     "mysteryDungeon:CyndaquilFling": {
         "NAME": "Fling",
         "DESCRIPTION": "Apply 5 mysterydungeon:Burn twice. NL Gain [E]. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply 5 mysterydungeon:Burn thrice. NL Gain [E] [E]. NL Exhaust."
+        "UPGRADE_DESCRIPTION": "Apply 5 mysterydungeon:Burn twice. NL Gain [E] [E]. NL Exhaust."
     },
     "mysteryDungeon:CyndaquilSmokescreen": {
         "NAME": "Smokescreen",
-        "DESCRIPTION": "Gain !B! block. NL Next turn gain !M! more [E]."
+        "DESCRIPTION": "Gain !B! block. NL Next turn gain [E]."
     },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "Heat Wave",
