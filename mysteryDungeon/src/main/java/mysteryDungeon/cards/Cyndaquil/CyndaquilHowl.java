@@ -25,7 +25,6 @@ public class CyndaquilHowl extends PokemonCard {
     public static final String IMG = makeCardPath("Skill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -38,7 +37,8 @@ public class CyndaquilHowl extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CYNDAQUIL_RED;
 
     private static final int COST = 1;
-    private static final int BASE_MAGIC_NUMBER = 3;
+    private static final int BASE_MAGIC_NUMBER = 2;
+    private static final int UPGRADE_MAGIC_NUMBER = -1;
 
     // /STAT DECLARATION/
 
@@ -53,8 +53,8 @@ public class CyndaquilHowl extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if(!upgraded)
-        addToBot(new MakeTempCardInDrawPileAction(new Burn(), 1, true, false, false));
-        addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, magicNumber)));
+        addToBot(new MakeTempCardInDrawPileAction(new Burn(), magicNumber, true, false, false));
+        addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 3)));
     }
 
     // Upgraded stats.
@@ -62,7 +62,7 @@ public class CyndaquilHowl extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = UPGRADE_DESCRIPTION;
+            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             initializeDescription();
         }
     }
