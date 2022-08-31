@@ -201,6 +201,13 @@
             "This turn All self damage received will also be inflicted to ALL enemies."
         ]
     },
+    "mysteryDungeon:NaturePOwerMountainPower": {
+        "NAME": "Nature Power: Mountain",
+        "DESCRIPTIONS": [
+            "This turn Burn stacks will not decrease.", 
+            "For the next #b%s turns Burn stacks will not decrease."
+        ]
+    },
     "mysteryDungeon:NextTurnDrawLessPower": {
         "NAME": "Next Turn Draw Less Cards",
         "DESCRIPTIONS": [
