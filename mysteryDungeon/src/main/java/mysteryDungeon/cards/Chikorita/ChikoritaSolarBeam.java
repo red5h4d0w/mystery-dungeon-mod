@@ -39,7 +39,7 @@ public class ChikoritaSolarBeam extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CHIKORITA_GREEN;
 
     private static final int COST = 3;
-    private static final int DAMAGE = 27;
+    private static final int DAMAGE = 22;
     private static final int UPGRADE_DAMAGE = 8;
 
     // /STAT DECLARATION/

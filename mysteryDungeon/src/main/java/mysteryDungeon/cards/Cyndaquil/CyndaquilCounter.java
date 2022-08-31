@@ -3,6 +3,7 @@ package mysteryDungeon.cards.Cyndaquil;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -37,7 +38,7 @@ public class CyndaquilCounter extends PokemonCard {
 
     private static final int COST = 1;
     private static final int BASE_MAGIC_NUMBER = 6;
-    private static final int UPGRADE_MAGIC_NUMBER = 3;
+    private static final int BLOCK = 4;
 
 
     // /STAT DECLARATION/
@@ -46,6 +47,7 @@ public class CyndaquilCounter extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        baseBlock = BLOCK;
     }
 
     // Actions the card should do.
@@ -53,6 +55,8 @@ public class CyndaquilCounter extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
         addToBot(new ApplyPowerAction(p, p, new CyndaquilCounterPower(p, magicNumber), magicNumber));
+        if(upgraded)
+            addToBot(new GainBlockAction(p, p, block));
     }
 
     // Upgraded stats.
@@ -60,7 +64,7 @@ public class CyndaquilCounter extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

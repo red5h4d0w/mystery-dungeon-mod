@@ -38,7 +38,7 @@ public class CyndaquilBlastBurn extends PokemonCard {
 
     private static final int COST = 2;
     private static final int UPGRADE_COST = 1;
-    private static final int DAMAGE = 13;
+    private static final int DAMAGE = 12;
 
 
     // /STAT DECLARATION/

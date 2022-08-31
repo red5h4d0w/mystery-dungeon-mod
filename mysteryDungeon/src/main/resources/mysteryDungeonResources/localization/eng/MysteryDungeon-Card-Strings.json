@@ -451,7 +451,7 @@
     },
     "mysteryDungeon:ChikoritaNaturePowerGrassland": {
         "NAME": "Nature Power: Grass",
-        "DESCRIPTION": "Lose 3 HP. NL Draw !M! cards."
+        "DESCRIPTION": "Lose 4 HP. NL Draw !M! cards."
     },
     "mysteryDungeon:ChikoritaOvergrow": {
         "NAME": "Overgrow",
@@ -538,7 +538,8 @@
     },
     "mysteryDungeon:CyndaquilCounter": {
         "NAME": "Counter",
-        "DESCRIPTION": "At the end of your turn, spend all leftover energy. For every energy spent this way gain !M! block."
+        "DESCRIPTION": "At the end of your turn, spend all leftover energy. For every energy spent this way gain !M! block.",
+        "UPGRADE_DESCRIPTION": "At the end of your turn, spend all leftover energy. For every energy spent this way gain !M! block. NL Gain !B! block."
     },
     "mysteryDungeon:CyndaquilCrushClaw": {
         "NAME": "Crush Claw",
@@ -580,7 +581,7 @@
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "Flame Charge",
-        "DESCRIPTION": "Deal !D! damage. Apply !M! mysterydungeon:Burn."
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn."
     },
     "mysteryDungeon:CyndaquilFlamethrower": {
         "NAME": "Flamethrower",
@@ -633,7 +634,7 @@
     },
     "mysteryDungeon:CyndaquilReversal": {
         "NAME": "Reversal",
-        "DESCRIPTION": "If the enemy has mysterydungeon:Burn stacks, Gain !B! block. NL If the enemy has no mysterydungeon:Burn stacks, apply !M! mysterydungeon:Burn. "
+        "DESCRIPTION": "If the enemy has mysterydungeon:Burn stacks, gain !B! block. NL If the enemy has no mysterydungeon:Burn stacks, apply !M! mysterydungeon:Burn. "
     },
     "mysteryDungeon:CyndaquilRockTomb": {
         "NAME": "Rock Tomb",

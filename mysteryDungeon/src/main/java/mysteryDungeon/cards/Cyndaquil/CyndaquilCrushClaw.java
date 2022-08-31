@@ -38,7 +38,7 @@ public class CyndaquilCrushClaw extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CYNDAQUIL_RED;
 
     private static final int COST = 2;
-    private static final int DAMAGE = 20;
+    private static final int DAMAGE = 15;
 
 
     // /STAT DECLARATION/

@@ -49,7 +49,7 @@ public class ChikoritaNaturePowerGrassland extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new LoseHPAction(p, p, 3));
+        addToBot(new LoseHPAction(p, p, 4));
         addToBot(new DrawCardAction(p, magicNumber));
     }
 
