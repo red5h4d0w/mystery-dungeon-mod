@@ -63,6 +63,9 @@ public class SleepTalkCyndaquilPower extends PokemonPower implements CloneablePo
 
     @Override
     public void updateDescription() {
-        description = String.format(DESCRIPTIONS[0], amount);
+        if(amount==1)
+            description = DESCRIPTIONS[0];
+        else
+            description = String.format(DESCRIPTIONS[1], amount);
     }
 }
