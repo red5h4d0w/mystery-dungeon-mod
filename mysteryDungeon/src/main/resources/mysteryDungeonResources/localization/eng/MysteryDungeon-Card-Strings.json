@@ -628,6 +628,11 @@
         "DESCRIPTION": "Apply !M! Vulnerable.",
         "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable. NL Remove all the enemie's block."
     },
+    "mysteryDungeon:CyndaquilNaturePowerMountain": {
+        "NAME": "Nature Power: Mountain",
+        "DESCRIPTION": "For X turns, mysterydungeon:Burn stacks do not decrease naturally on a chosen enemy.",
+        "UPGRADE_DESCRIPTION": "For X+1 turns, mysterydungeon:Burn stacks do not decrease naturally on a chosen enemy."
+    },
     "mysteryDungeon:CyndaquilOverheat": {
         "NAME": "Overheat",
         "DESCRIPTION": "Retain.  NL Cause an mysterydungeon:Eruption. NL Exhaust."

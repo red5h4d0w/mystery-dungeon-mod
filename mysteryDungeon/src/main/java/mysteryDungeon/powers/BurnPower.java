@@ -61,13 +61,16 @@ public class BurnPower extends PokemonPower implements CloneablePowerInterface {
     @Override
     public void atEndOfRound()
     {
-        int burnDown = MathUtils.ceil(amount/3.0f);
-        amount-=burnDown;
-        if(amount<=0)
-        {
-            addToBot(new RemoveSpecificPowerAction(owner, owner, this));
-        } else {
-            updateDescription();
+        if(!owner.hasPower(NaturePowerMountainPower.POWER_ID)){
+            int burnDown = MathUtils.ceil(amount/3.0f);
+            amount-=burnDown;
+            if(amount<=0)
+            {
+                addToBot(new RemoveSpecificPowerAction(owner, owner, this));
+            } 
+            else {
+                updateDescription();
+            }
         }
     }
 
