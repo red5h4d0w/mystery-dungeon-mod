@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.BurnPower;
+import mysteryDungeon.powers.NaturePowerMountainPower;
 
 public class CyndaquilNaturePowerMountain extends PokemonCard {
 
@@ -61,7 +61,7 @@ public class CyndaquilNaturePowerMountain extends PokemonCard {
         }
         energyOnUse += upgraded?1:0;
         if(magicNumber*energyOnUse!=0) {
-            addToBot(new ApplyPowerAction(m, p, new BurnPower(m, magicNumber*energyOnUse), magicNumber*energyOnUse));
+            addToBot(new ApplyPowerAction(m, p, new NaturePowerMountainPower(m, magicNumber*energyOnUse), magicNumber*energyOnUse));
         }
         if (!freeToPlayOnce)
         {
