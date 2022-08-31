@@ -655,7 +655,8 @@
     },
     "mysteryDungeon:CyndaquilSleepTalk": {
         "NAME": "Sleep Talk",
-        "DESCRIPTION": "Whenever you create a Status card, draw !M! card."
+        "DESCRIPTION": "For each created Status card, draw !M! card.",
+        "UPGRADE_DESCRIPTION": "For each created Status card, draw !M! card. NL Draw a card."
     },
     "mysteryDungeon:CyndaquilTackle": {
         "NAME": "Tackle",
