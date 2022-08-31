@@ -297,6 +297,13 @@
             "The first #b%s times you exhaust a card each turn, add a random card to your hand."
         ]
     },
+    "mysteryDungeon:CyndaquilSleepTalkPower": {
+        "NAME": "Petal Dance",
+        "DESCRIPTIONS": [
+            "Whenever you create Status Cards, draw a card.",
+            "Whenever you create Status Cards, draw #b%s card."
+        ]
+    },
     "mysteryDungeon:SolarPowerPower": {
         "NAME": "Solar Power",
         "DESCRIPTIONS": [
