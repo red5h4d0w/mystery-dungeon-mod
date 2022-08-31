@@ -7,7 +7,7 @@
     ],
     "credits": "Basemod, ModTheSpire, #modding",
     "description": "One last Dungeon for brave monsters from another world",
-    "version": "1.0.5",
+    "version": "1.5.0",
     "sts_version": "${SlayTheSpire.version}",
     "mts_version": "${ModTheSpire.version}",
     "dependencies": [
