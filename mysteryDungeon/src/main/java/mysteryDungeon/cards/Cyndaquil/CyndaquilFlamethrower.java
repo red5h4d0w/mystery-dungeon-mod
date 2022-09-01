@@ -62,7 +62,7 @@ public class CyndaquilFlamethrower extends PokemonCard {
             addToBot((AbstractGameAction)new AttackDamageRandomEnemyAction(this, AbstractGameAction.AttackEffect.FIRE));
         AbstractMonster randomMonster = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
         if (randomMonster != null)
-        addToBot(new RandomBurnAction(randomMonster, 9, magicNumber));            
+            addToBot(new RandomBurnAction(randomMonster, 9, magicNumber));            
         }
             
    
