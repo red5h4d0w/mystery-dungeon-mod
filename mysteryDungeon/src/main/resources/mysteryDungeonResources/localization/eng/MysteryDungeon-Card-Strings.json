@@ -590,7 +590,7 @@
     },
     "mysteryDungeon:CyndaquilFlamethrower": {
         "NAME": "Flamethrower",
-        "DESCRIPTION": "Deal !D! damage and apply 9 mysterydungeon:Burn to a random enemy !M! times."
+        "DESCRIPTION": "Add a Burn status card in your draw pile. NL Deal !D! damage to radom enemies and apply 9 mysterydungeon:Burn to random enemies !M! times."
     },
     "mysteryDungeon:CyndaquilFlameWheel": {
         "NAME": "Flame Wheel",
@@ -613,8 +613,8 @@
     },
     "mysteryDungeon:CyndaquilFrustration": {
         "NAME": "Frustration",
-        "DESCRIPTION": "Next turn, at the start of your turn apply 10 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Next turn, at the start of your turn apply 10 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption."
+        "DESCRIPTION": " Apply 12 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Apply 12 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption."
     },
     "mysteryDungeon:CyndaquilSmokescreen": {
         "NAME": "Smokescreen",

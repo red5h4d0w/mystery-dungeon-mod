@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.NextTurnBurnPower;
+import mysteryDungeon.powers.BurnPower;
 import mysteryDungeon.powers.NextTurnEruptionPower;
 
 public class CyndaquilFrustration extends PokemonCard {
@@ -48,7 +48,7 @@ public class CyndaquilFrustration extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(m, p, new NextTurnBurnPower(m, 10)));
+        addToBot(new ApplyPowerAction(m, p, new BurnPower(m, 12)));
         addToBot(new ApplyPowerAction(m, p, new NextTurnEruptionPower(m, 1)));
     }
 

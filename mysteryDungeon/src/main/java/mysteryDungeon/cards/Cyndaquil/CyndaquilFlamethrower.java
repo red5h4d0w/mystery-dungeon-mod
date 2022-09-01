@@ -3,20 +3,20 @@ package mysteryDungeon.cards.Cyndaquil;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.AttackDamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.status.Burn;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.actions.RandomBurnAction;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.BurnPower;
 
 public class CyndaquilFlamethrower extends PokemonCard {
 
@@ -58,11 +58,14 @@ public class CyndaquilFlamethrower extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
         addToBot(new MakeTempCardInDrawPileAction(new Burn(), 1, true, false, false));
-        for (int i = 0; i < this.magicNumber; i++){
-        addToBot((AbstractGameAction)new AttackDamageRandomEnemyAction(this, AbstractGameAction.AttackEffect.FIRE));
-        addToBot(new ApplyPowerAction(m, p, new BurnPower(m,9), 9));
-        } 
-    }
+        for (int i = 0; i < this.magicNumber; i++)
+            addToBot((AbstractGameAction)new AttackDamageRandomEnemyAction(this, AbstractGameAction.AttackEffect.FIRE));
+        AbstractMonster randomMonster = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
+        if (randomMonster != null)
+        addToBot(new RandomBurnAction(randomMonster, 9, magicNumber));            
+        }
+            
+   
 
     // Upgraded stats.
     @Override

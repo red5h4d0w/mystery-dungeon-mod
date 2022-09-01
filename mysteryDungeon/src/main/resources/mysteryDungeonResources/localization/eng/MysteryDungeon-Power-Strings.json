@@ -215,12 +215,6 @@
             "For the next #b%s turns Burn stacks will not decrease."
         ]
     },
-    "mysteryDungeon:NextTurnBurnPower": {
-        "NAME": "Next Turn Burn",
-        "DESCRIPTIONS": [
-            "Next Turn, apply #b%s Burn."
-        ]
-    },
     "mysteryDungeon:NextTurnDrawLessPower": {
         "NAME": "Next Turn Draw Less Cards",
         "DESCRIPTIONS": [

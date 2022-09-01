@@ -11,7 +11,6 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -23,12 +22,12 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class NextTurnEruptionPower extends PokemonPower implements CloneablePowerInterface {
     public AbstractCreature source;
+    public int counter = 0;
 
     public static final String POWER_ID = MysteryDungeon.makeID("NextTurnEruption");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    public static int baseHandSize;
     
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
@@ -58,20 +57,20 @@ public class NextTurnEruptionPower extends PokemonPower implements CloneablePowe
 
 
     @Override
-    public void atEndOfRound() {
-        addToBot(new RemoveSpecificPowerAction(owner, owner, this));
+    public void atStartOfTurn() {
+        if(counter == 1)
+        {
         AbstractMonster target = (AbstractMonster)owner;
         addToBot(new EruptionAction((AbstractMonster)target, false));
+        addToBot(new RemoveSpecificPowerAction(owner, owner, this));
+        
+        }
+        counter++;
     }
 
     @Override
     public AbstractPower makeCopy() {
         return new NextTurnEruptionPower(owner, amount);
-    }
-
-    @Override
-    public void onRemove() {
-        ((AbstractPlayer)owner).gameHandSize=baseHandSize;
     }
 
     @Override
