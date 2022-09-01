@@ -215,11 +215,24 @@
             "For the next #b%s turns Burn stacks will not decrease."
         ]
     },
+    "mysteryDungeon:NextTurnBurnPower": {
+        "NAME": "Next Turn Burn",
+        "DESCRIPTIONS": [
+            "Next Turn, apply #b%s Burn."
+        ]
+    },
     "mysteryDungeon:NextTurnDrawLessPower": {
         "NAME": "Next Turn Draw Less Cards",
         "DESCRIPTIONS": [
             "Next Turn, Draw 1 less card.", 
             "Next Turn, Draw #b%s less cards."
+        ]
+    },
+    "mysteryDungeon:NextTurnEruptionPower": {
+        "NAME": "Next Turn Eruption",
+        "DESCRIPTIONS": [
+            "Next Turn, Cause an Eruption.", 
+            "Next Turn, Cause #b%s Eruptions."
         ]
     },
     "mysteryDungeon:NextTurnLoseHpPower": {

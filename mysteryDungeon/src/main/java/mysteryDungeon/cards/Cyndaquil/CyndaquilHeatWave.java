@@ -50,7 +50,7 @@ public class CyndaquilHeatWave extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
-        addToBot(new ApplyPowerAction(p, p, new HeatWavePower(p, 5), 5));
+        addToBot(new ApplyPowerAction(p, p, new HeatWavePower(p, 9), 9));
     }
 
     // Upgraded stats.

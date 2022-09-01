@@ -590,7 +590,7 @@
     },
     "mysteryDungeon:CyndaquilFlamethrower": {
         "NAME": "Flamethrower",
-        "DESCRIPTION": "Deal !D! damage and apply !M! mysterydungeon:Burn to all enemies."
+        "DESCRIPTION": "Deal !D! damage and apply 9 mysterydungeon:Burn to a random enemy !M! times."
     },
     "mysteryDungeon:CyndaquilFlameWheel": {
         "NAME": "Flame Wheel",
@@ -607,13 +607,18 @@
         "DESCRIPTION": "Apply 5 mysterydungeon:Burn twice. NL Gain [E]. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Apply 5 mysterydungeon:Burn twice. NL Gain [E] [E]. NL Exhaust."
     },
+    "mysteryDungeon:CyndaquilFrustration": {
+        "NAME": "Frustration",
+        "DESCRIPTION": "Next turn, at the start of your turn apply 10 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Next turn, at the start of your turn apply 10 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption."
+    },
     "mysteryDungeon:CyndaquilSmokescreen": {
         "NAME": "Smokescreen",
         "DESCRIPTION": "Gain !B! block. NL Next turn gain [E]."
     },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "Heat Wave",
-        "DESCRIPTION": "Gain !B! block. NL Whenever you are attacked this turn, apply 5 mysterydungeon:Burn to your attacker."
+        "DESCRIPTION": "Gain !B! block. NL Whenever you are attacked this turn, apply 9 mysterydungeon:Burn to your attacker."
     },
     "mysteryDungeon:CyndaquilHowl": {
         "NAME": "Howl",
