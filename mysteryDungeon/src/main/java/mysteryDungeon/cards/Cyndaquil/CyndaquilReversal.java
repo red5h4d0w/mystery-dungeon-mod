@@ -38,8 +38,8 @@ public class CyndaquilReversal extends PokemonCard {
     private static final int COST = 1;
     private static final int BLOCK = 7;
     private static final int UPGRADE_PLUS_BLOCK = 3;
-    private static final int BASE_MAGIC_NUMBER = 9;
-    private static final int UPGRADE_MAGIC_NUMBER = 5;
+    private static final int BASE_MAGIC_NUMBER = 14;
+    private static final int UPGRADE_MAGIC_NUMBER = 3;
 
 
     // /STAT DECLARATION/
