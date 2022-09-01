@@ -597,6 +597,10 @@
         "DESCRIPTION": "Apply !M! mysterydungeon:Burn twice. NL Cause an mysterydungeon:Eruption. NL End your turn.",
         "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! mysterydungeon:Burn twice. NL Cause an mysterydungeon:Eruption. NL End your turn."
     },
+    "mysteryDungeon:CyndaquilFlareBlitz": {
+        "NAME": "Flare Blitz",
+        "DESCRIPTION": "Add 2 Void status card in your draw pile. NL Deal !D! damage. NL If the attack is Fatal, Gain [E] [E]."
+    },
     "mysteryDungeon:CyndaquilFlashFire": {
         "NAME": "Flash Fire",
         "DESCRIPTION": "Add 2 Burn status card in your draw pile. NL Each time you play a card apply !M! mysterydungeon:Burn to all enemies.",

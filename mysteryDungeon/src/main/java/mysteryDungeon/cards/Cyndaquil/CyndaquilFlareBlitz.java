@@ -2,12 +2,10 @@ package mysteryDungeon.cards.Cyndaquil;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.AttackDamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.status.Burn;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.status.VoidCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -15,14 +13,14 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.actions.FlareBlitzAction;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.BurnPower;
 
-public class CyndaquilFlamethrower extends PokemonCard {
+public class CyndaquilFlareBlitz extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(CyndaquilFlamethrower.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CyndaquilFlareBlitz.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("Attack.png");
     public static final String NAME = cardStrings.NAME;
@@ -34,34 +32,29 @@ public class CyndaquilFlamethrower extends PokemonCard {
     // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Pokemon.Enums.CYNDAQUIL_RED;
 
-    private static final int COST = 1;
-    private static final int DAMAGE = 1;
-    private static final int BASE_MAGIC_NUMBER = 3;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
+    private static final int COST = 2;
+    private static final int DAMAGE = 20;
+    private static final int UPGRADE_PLUS_DMG = 5;
 
 
     // /STAT DECLARATION/
 
-    public CyndaquilFlamethrower() {
+    public CyndaquilFlareBlitz() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        baseMagicNumber = BASE_MAGIC_NUMBER;
-        magicNumber = baseMagicNumber;cardsToPreview = (AbstractCard)new Burn();
+        cardsToPreview = (AbstractCard)new VoidCard();
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        // Create an int which equals to your current energy.
-        addToBot(new MakeTempCardInDrawPileAction(new Burn(), 1, true, false, false));
-        for (int i = 0; i < this.magicNumber; i++){
-        addToBot((AbstractGameAction)new AttackDamageRandomEnemyAction(this, AbstractGameAction.AttackEffect.FIRE));
-        addToBot(new ApplyPowerAction(m, p, new BurnPower(m,9), 9));
-        } 
+        addToBot(new MakeTempCardInDrawPileAction(new VoidCard(), 2, true, false, false));
+        addToBot(new FlareBlitzAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), 2));
+        
     }
 
     // Upgraded stats.
@@ -69,7 +62,7 @@ public class CyndaquilFlamethrower extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            upgradeDamage(UPGRADE_PLUS_DMG);
             initializeDescription();
         }
     }

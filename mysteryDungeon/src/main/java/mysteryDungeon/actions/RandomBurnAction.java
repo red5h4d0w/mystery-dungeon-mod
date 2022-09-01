@@ -14,9 +14,6 @@ import com.megacrit.cardcrawl.vfx.FlameAnimationEffect;
 import mysteryDungeon.powers.BurnPower;
 
 public class RandomBurnAction extends AbstractGameAction {
-    private static final float DURATION = 0.01F;
-    
-    private static final float POST_ATTACK_WAIT_DUR = 0.1F;
     
     private int numTimes;
     
