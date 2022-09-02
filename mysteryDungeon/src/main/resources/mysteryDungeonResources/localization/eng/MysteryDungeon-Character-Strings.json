@@ -165,7 +165,8 @@
             "I'd prefer choosing my team.", 
             "I'd like to get a random team.",
             "Choose your adventurer",
-            "Choose your partner"
+            "Choose your partner",
+            "You are a %s . NL Choose a partner."
         ]
     }
 }

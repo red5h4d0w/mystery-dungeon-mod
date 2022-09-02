@@ -145,7 +145,8 @@
             "Je préfèrerais chosir mon équipe.",
             "Je voudrais avoir une équipe aléatoire.",
             "Choisissez votre aventurier.",
-            "Choisissez votre partenaire"
+            "Choisissez votre partenaire",
+            "Vous êtes un %s . NL Choisissez votre partenaire"
         ]
     },
     "mysteryDungeon:Quilava": {

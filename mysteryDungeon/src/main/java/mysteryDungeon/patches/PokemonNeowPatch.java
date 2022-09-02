@@ -295,7 +295,7 @@ public class PokemonNeowPatch {
                         convertPokemonToImplementedPokemon();
                         ((Pokemon) AbstractDungeon.player).setAdventurer(chosenPokemon);
                         possiblePartners = partnerChoices();
-                        AskQuestion(__instance, new Question(chosenPokemon.name,
+                        AskQuestion(__instance, new Question(String.format(TEXT[9], chosenPokemon.name), 
                                 possiblePartners.stream().map(p -> p.name).toArray(size -> new String[size]), null));
                         screenNum++;
                         return SpireReturn.Return();

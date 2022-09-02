@@ -135,7 +135,8 @@
             "我愿意自己组建宝可梦团队！",
             "我愿意用随机的宝可梦团队！",
             "选择你的冒险家。",
-            "选择你的伙伴。"
+            "选择你的伙伴。",
+            "You are a %s。 NL Choose a partner"
         ]
     },
     "mysteryDungeon:Bayleef": {
