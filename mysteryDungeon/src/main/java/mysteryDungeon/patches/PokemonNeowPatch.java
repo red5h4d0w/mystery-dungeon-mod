@@ -363,44 +363,40 @@ public class PokemonNeowPatch {
         }
     }
 
-    public static ArrayList<AbstractPokemon> partnerChoices()
-    {
-        ArrayList<AbstractPokemon> partners = new ArrayList<AbstractPokemon>()
-        {{
-            add(new Bulbasaur());
-            add(new Charmander());
-            add(new Squirtle());
-            add(new Pikachu());
-            //TODO: uncomment next lines when those pokémons while be added
-            //add(new Chikorita());
-            //add(new Cyndaquil());
-            //add(new Totodile());
-            //add(new Treecko());
-            //add(new Torchic());
-            //add(new Mudkip());
-        }};
-        ArrayList<AbstractPokemon> availablePartners = partners.stream().filter(p->p.color!=chosenPokemon.color).collect(Collectors.toCollection(ArrayList::new));
-        for (int i=availablePartners.size(); i>1; i--)
-            Collections.swap(availablePartners, i-1, AbstractDungeon.eventRng.random(i-1));
+    public static ArrayList<AbstractPokemon> partnerChoices() {
+        ArrayList<AbstractPokemon> partners = new ArrayList<AbstractPokemon>() {
+            {
+                add(new Bulbasaur());
+                add(new Charmander());
+                add(new Squirtle());
+                add(new Pikachu());
+                // add(new Chikorita());
+                // TODO: uncomment next lines when those pokémons while be added
+                // add(new Cyndaquil());
+                // add(new Totodile());
+                // add(new Treecko());
+                // add(new Torchic());
+                // add(new Mudkip());
+            }
+        };
+        ArrayList<AbstractPokemon> availablePartners = partners.stream()
+                .filter(p -> !p.color.equals(chosenPokemon.color))
+                .collect(Collectors.toCollection(ArrayList::new));
+        for (int i = availablePartners.size(); i > 1; i--)
+            Collections.swap(availablePartners, i - 1, AbstractDungeon.eventRng.random(i - 1));
         ArrayList<AbstractPokemon> selectablePartners = new ArrayList<AbstractPokemon>();
         selectablePartners.add(availablePartners.get(0));
-        for(AbstractPokemon partner : availablePartners)
-        {
+        for (AbstractPokemon partner : availablePartners) {
             boolean toAdd = false;
-            for(AbstractPokemon sPartner : selectablePartners)
-            {
-                if(partner.color != sPartner.color)
-                {
+            for (AbstractPokemon sPartner : selectablePartners) {
+                if (partner.color != sPartner.color) {
                     toAdd = true;
-                }
-                else
-                {
+                } else {
                     toAdd = false;
                     break;
                 }
             }
-            if(toAdd)
-            {
+            if (toAdd) {
                 selectablePartners.add(partner);
             }
         }
