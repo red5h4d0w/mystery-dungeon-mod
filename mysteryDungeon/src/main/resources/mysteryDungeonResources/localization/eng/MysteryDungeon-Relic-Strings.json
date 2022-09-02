@@ -81,7 +81,7 @@
         "NAME": "Impish Explorer",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "The first time you evoke an orb each combat, gain a Focus."
+            "The first time you evoke an orb each combat, gain a #yFocus."
         ]
     },
     "mysteryDungeon:JollyExplorerRelic": {
@@ -95,7 +95,7 @@
         "NAME": "Leftovers",
         "FLAVOR": "Some food left form your last meal",
         "DESCRIPTIONS": [
-            "At the end of combat heal 3 hit points."
+            "At the end of combat heal #b3 HP."
         ]
     },
     "mysteryDungeon:LifeOrbRelic": {
