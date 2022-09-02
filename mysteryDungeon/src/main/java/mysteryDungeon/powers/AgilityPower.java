@@ -23,7 +23,7 @@ import com.megacrit.cardcrawl.stances.NeutralStance;
 public class AgilityPower extends PokemonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("AgilityPower");
+    public static final String POWER_ID = MysteryDungeon.makeID(AgilityPower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

@@ -25,7 +25,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 public class CyndaquilExplorerPower extends PokemonPower implements CloneablePowerInterface, BetterOnApplyPowerPower {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("CyndaquilExplorerPower");
+    public static final String POWER_ID = MysteryDungeon.makeID(CyndaquilExplorerPower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

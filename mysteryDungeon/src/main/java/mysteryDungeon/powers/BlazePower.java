@@ -29,7 +29,7 @@ public class BlazePower extends PokemonPower implements CloneablePowerInterface 
     public AbstractCreature source;
     public int counter = 0;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("BlazePower");
+    public static final String POWER_ID = MysteryDungeon.makeID(BlazePower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

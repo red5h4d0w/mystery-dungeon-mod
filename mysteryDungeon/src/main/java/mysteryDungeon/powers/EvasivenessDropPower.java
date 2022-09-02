@@ -18,16 +18,12 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 //Gain 1 dex for the turn for each card played.
 
 public class EvasivenessDropPower extends PokemonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final Logger logger = LogManager.getLogger(MysteryDungeon.class.getName());
-    public static final String POWER_ID = MysteryDungeon.makeID("EvasivenessDropPower");
+    public static final String POWER_ID = MysteryDungeon.makeID(EvasivenessDropPower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

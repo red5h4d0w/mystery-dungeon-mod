@@ -33,7 +33,7 @@ public class AsleepPower extends PokemonPower implements CloneablePowerInterface
 
     Logger logger = LogManager.getLogger(AsleepPower.class);
 
-    public static final String POWER_ID = MysteryDungeon.makeID("AsleepPower");
+    public static final String POWER_ID = MysteryDungeon.makeID(AsleepPower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
