@@ -341,11 +341,13 @@ public class PokemonNeowPatch {
                     screenNum++;
                     return SpireReturn.Return(null);
                 case 11:
-                    
-                    ((Pokemon)AbstractDungeon.player).adventurer = implementedPokemons.get(buttonPressed);
+                    chosenPokemon = implementedPokemons.get(buttonPressed);
+                    ((Pokemon)AbstractDungeon.player).adventurer = chosenPokemon;
                     String[] possibleNatures = NatureOfPokemon.get(((Pokemon)AbstractDungeon.player).adventurer.getClass().getSimpleName());
                     ((Pokemon)AbstractDungeon.player).DefineNature(possibleNatures[AbstractDungeon.eventRng.random(possibleNatures.length-1)]);
-                    AskQuestion(__instance, new Question(TEXT[8], implementedPokemons.stream().filter(p -> p.color != implementedPokemons.get(buttonPressed).color).map(p -> p.name).toArray(size-> new String[size])));
+                    AskQuestion(__instance, new Question(TEXT[8], 
+                        implementedPokemons.stream()
+                        .filter(p -> !p.color.equals(chosenPokemon.color)).map(p -> p.name).toArray(size-> new String[size])));
                     screenNum=5;
                     return SpireReturn.Return(null);
                 case 99:
