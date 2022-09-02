@@ -319,10 +319,10 @@
         ]
     },
     "mysteryDungeon:CyndaquilSleepTalkPower": {
-        "NAME": "Petal Dance",
+        "NAME": "Sleep Talk",
         "DESCRIPTIONS": [
-            "For each created Status Cards, draw a card.",
-            "For Each created Status Cards, draw #b%s card."
+            "When you create a Status Card, draw a card.",
+            "When you create a Status Card, draw #b%s card."
         ]
     },
     "mysteryDungeon:SolarPowerPower": {
