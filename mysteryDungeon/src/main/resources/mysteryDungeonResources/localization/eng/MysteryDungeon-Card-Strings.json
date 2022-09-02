@@ -426,8 +426,8 @@
     },
     "mysteryDungeon:ChikoritaHealPulse": {
         "NAME": "Heal Pulse",
-        "DESCRIPTION": "Whenever you inflict self damage or gain HP during your turn, gain !M! block.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you inflict self damage or gain HP during your turn, gain !M! block."
+        "DESCRIPTION": "Whenever you inflict self damage or gain HP during your turn, gain !M! Block.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you inflict self damage or gain HP during your turn, gain !M! Block."
     },
     "mysteryDungeon:ChikoritaLeafGuard": {
         "NAME": "Leaf Guard",
@@ -538,8 +538,8 @@
     },
     "mysteryDungeon:CyndaquilCounter": {
         "NAME": "Counter",
-        "DESCRIPTION": "At the end of your turn, spend all leftover energy. For every energy spent this way gain !M! block.",
-        "UPGRADE_DESCRIPTION": "At the end of your turn, spend all leftover energy. For every energy spent this way gain !M! block. NL Gain !B! block."
+        "DESCRIPTION": "At the end of your turn, spend all leftover energy. For every energy spent this way gain !M! Block.",
+        "UPGRADE_DESCRIPTION": "At the end of your turn, spend all leftover energy. For every energy spent this way gain !M! Block. NL Gain !B! Block."
     },
     "mysteryDungeon:CyndaquilCrushClaw": {
         "NAME": "Crush Claw",
@@ -553,7 +553,7 @@
     },
     "mysteryDungeon:CyndaquilDefend": {
         "NAME": "Defend",
-        "DESCRIPTION": "Gain !B! block."
+        "DESCRIPTION": "Gain !B! Block."
     },
     "mysteryDungeon:CyndaquilEmber": {
         "NAME": "Ember",
@@ -582,7 +582,7 @@
     },
     "mysteryDungeon:CyndaquilFlameBurst": {
         "NAME": "Flame Burst",
-        "DESCRIPTION": "Gain !B! block. NL Cause an mysterydungeon:Eruption. NL End your Turn."
+        "DESCRIPTION": "Gain !B! Block. NL Cause an mysterydungeon:Eruption. NL End your Turn."
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "Flame Charge",
@@ -599,7 +599,7 @@
     },
     "mysteryDungeon:CyndaquilFlareBlitz": {
         "NAME": "Flare Blitz",
-        "DESCRIPTION": "Add 2 Void status card in your draw pile. NL Deal !D! damage. NL If the attack is Fatal, Gain [E] [E]."
+        "DESCRIPTION": "Add 2 Void in your draw pile. NL Deal !D! damage. NL If the attack is Fatal, Gain [E] [E]."
     },
     "mysteryDungeon:CyndaquilFlashFire": {
         "NAME": "Flash Fire",
@@ -618,11 +618,11 @@
     },
     "mysteryDungeon:CyndaquilSmokescreen": {
         "NAME": "Smokescreen",
-        "DESCRIPTION": "Gain !B! block. NL Next turn gain [E]."
+        "DESCRIPTION": "Gain !B! Block. NL Next turn gain [E]."
     },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "Heat Wave",
-        "DESCRIPTION": "Gain !B! block. NL Whenever you are attacked this turn, apply 9 mysterydungeon:Burn to your attacker."
+        "DESCRIPTION": "Gain !B! Block. NL Whenever you are attacked this turn, apply 9 mysterydungeon:Burn to your attacker."
     },
     "mysteryDungeon:CyndaquilHowl": {
         "NAME": "Howl",
@@ -649,7 +649,7 @@
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "Leer",
         "DESCRIPTION": "Apply !M! Vulnerable.",
-        "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable. NL Remove all the enemie's block."
+        "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable. NL Remove all the target's Block."
     },
     "mysteryDungeon:CyndaquilNaturePowerMountain": {
         "NAME": "Nature Power: Mountain",
@@ -662,7 +662,7 @@
     },
     "mysteryDungeon:CyndaquilReversal": {
         "NAME": "Reversal",
-        "DESCRIPTION": "If the enemy has mysterydungeon:Burn stacks, gain !B! block. NL If the enemy has no mysterydungeon:Burn stacks, apply !M! mysterydungeon:Burn. "
+        "DESCRIPTION": "If the enemy has mysterydungeon:Burn stacks, gain !B! Block. NL If the enemy has no mysterydungeon:Burn stacks, apply !M! mysterydungeon:Burn. "
     },
     "mysteryDungeon:CyndaquilRockTomb": {
         "NAME": "Rock Tomb",
@@ -674,7 +674,7 @@
     },
     "mysteryDungeon:CyndaquilRollout": {
         "NAME": "Rollout",
-        "DESCRIPTION": "Deal !D! damage and gain !B! block per card played this turn."
+        "DESCRIPTION": "Deal !D! damage and gain !B! Block per card played this turn."
     },
     "mysteryDungeon:CyndaquilShadowClaw": {
         "NAME": "Shadow Claw",
@@ -880,8 +880,8 @@
     },
     "mysteryDungeon:SquirtleBodyPress": {
         "NAME": "Body Press",
-        "DESCRIPTION": "Gain !B! block. NL Add !M! *Flinch into your hand. They cost 0 this turn.",
-        "UPGRADE_DESCRIPTION": "Gain !B! block. NL Add !M! upgraded *Flinch into your hand. They cost 0 this turn."
+        "DESCRIPTION": "Gain !B! Block. NL Add !M! *Flinch into your hand. They cost 0 this turn.",
+        "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add !M! upgraded *Flinch into your hand. They cost 0 this turn."
     },
     "mysteryDungeon:SquirtleBrine": {
         "NAME": "Brine",
