@@ -88,16 +88,16 @@
             "At the end of your turn spend all leftover energy and gain #b%s Block for each energy spent."
         ]
     },
+    "mysteryDungeon:CyndaquilExplorerPower": {
+        "NAME": "Explorer Form",
+        "DESCRIPTIONS": ["Whenever you apply #yBurn, deal #b%s damage to the target."]
+    },
     "mysteryDungeon:CrushClawPower": {
         "NAME": "Crush Claw",
         "DESCRIPTIONS": [
             "Your next #yEruption will deal 50% more damage.",
             "Your next #b%s #yEruption will deal 50%% more damage."
         ]
-    },
-    "mysteryDungeon:CyndaquilExplorerPower": {
-        "NAME": "Explorer Form",
-        "DESCRIPTIONS": ["Whenever you apply #yBurn, deal #b%s damage to the target."]
     },
     "mysteryDungeon:DroughtPower": {
         "NAME": "Drought",
@@ -208,7 +208,7 @@
             "This turn All self damage received will also be inflicted to ALL enemies."
         ]
     },
-    "mysteryDungeon:NaturePOwerMountainPower": {
+    "mysteryDungeon:NaturePowerMountainPower": {
         "NAME": "Nature Power: Mountain",
         "DESCRIPTIONS": [
             "This turn Burn stacks will not decrease.", 
