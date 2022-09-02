@@ -50,8 +50,8 @@
     },
     "mysteryDungeon:BulbasaurDoubleEdge": {
         "NAME": "Double Edge",
-        "DESCRIPTION": "Deal !D! damage. NL Gain Strength equal to the unBlocked damage dealt. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times. NL Gain Strength equal to the unBlocked damage dealt. NL Exhaust."
+        "DESCRIPTION": "Deal !D! damage. NL Gain Strength equal to the unblocked damage dealt. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times. NL Gain Strength equal to the unblocked damage dealt. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurExplorerForm": {
         "NAME": "Explorer Form",
@@ -63,7 +63,7 @@
     },
     "mysteryDungeon:BulbasaurGigaDrain": {
         "NAME": "Giga Drain",
-        "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Heal HP equal to unBlocked damage."
+        "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Heal HP equal to unblocked damage."
     },
     "mysteryDungeon:BulbasaurGrowl": {
         "NAME": "Growl",
@@ -256,7 +256,7 @@
     },
     "mysteryDungeon:CharmanderEmber": {
         "NAME": "Ember",
-        "DESCRIPTION": "Deal !D! damage. NL Apply mysterydungeon:Burn equal to the unBlocked damage."
+        "DESCRIPTION": "Deal !D! damage. NL Apply mysterydungeon:Burn equal to the unblocked damage."
     },
     "mysteryDungeon:CharmanderExplorerForm": {
         "NAME": "Explorer Form",
