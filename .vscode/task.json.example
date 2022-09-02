@@ -1,0 +1,25 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Launch sts",
+            "type": "shell",
+            "command": "/usr/lib/jvm/java-8-openjdk/bin/java -jar /home/ismael/.steam/steam/steamapps/workshop/content/646570/1605060445/ModTheSpire.jar",
+            "problemMatcher": [],
+            "options": {
+                "cwd": "/home/ismael/.steam/steam/steamapps/common/SlayTheSpire/"
+              }
+        },
+        {
+            "label": "Second task",
+            "type": "shell",
+            "command": "/usr/lib/jvm/java-8-openjdk/bin/java -jar /home/ismael/.steam/steam/steamapps/workshop/content/646570/1605060445/ModTheSpire.jar --out-jar",
+            "problemMatcher": [],
+            "options": {
+                "cwd": "/home/ismael/.steam/steam/steamapps/common/SlayTheSpire/"
+              }
+        }
+    ]
+}
