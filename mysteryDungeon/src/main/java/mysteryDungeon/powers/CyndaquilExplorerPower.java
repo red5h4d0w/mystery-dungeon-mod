@@ -67,8 +67,6 @@ public class CyndaquilExplorerPower extends PokemonPower implements CloneablePow
 
     @Override
     public void updateDescription() {
-        
-            description = String.format(DESCRIPTIONS[0], amount);
-        
+        description = String.format(DESCRIPTIONS[0], amount);
     }
 }
