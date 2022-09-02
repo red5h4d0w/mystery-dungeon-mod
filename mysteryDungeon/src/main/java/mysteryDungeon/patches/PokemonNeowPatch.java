@@ -299,8 +299,8 @@ public class PokemonNeowPatch {
                         ((Pokemon)AbstractDungeon.player).adventurer = chosenPokemon;
                         possiblePartners = partnerChoices();
                         AskQuestion(__instance, new Question(chosenPokemon.name, 
-                            implementedPokemons.stream()
-                            .filter(p -> !p.color.equals(chosenPokemon.color)).map(p -> p.name).toArray(size-> new String[size])));
+                            possiblePartners.stream()
+                            .map(p -> p.name).toArray(size-> new String[size])));
                         screenNum++;
                         return SpireReturn.Return(null);
                     }
