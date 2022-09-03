@@ -52,7 +52,7 @@ public class CyndaquilFlameBurst extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(m, p, new BurnPower(m, magicNumber)));
         if(upgraded)
-        addToBot(new ApplyPowerAction(m, p, new CrushClawPower(p, 1)));
+        addToBot(new ApplyPowerAction(p, p, new CrushClawPower(p, 1)));
         addToBot(new ApplyPowerAction(m, p, new NextTurnEruptionPower(m, 1)));
         }
 
