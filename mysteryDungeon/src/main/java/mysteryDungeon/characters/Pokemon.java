@@ -443,15 +443,20 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 
     public void evolvePokemons() {
         if(skipNextEvolution) {
+            logger.info("SKIPPING EVOLUTION");
             skipNextEvolution = false;
             return;
         }
         if(hasChosenStarters()) {
+            logger.info("Gonna EVOLVE!!!!!");
             if(partner.evolve()!=null)
                 setPartner(partner.evolve());
             if(adventurer.evolve()!=null)
                 setAdventurer(adventurer.evolve());
             reloadAnimation();
+        }
+        else {
+            logger.info("no STARTERS WTH!");
         }
     }
 
@@ -485,8 +490,11 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         }
     }
 
-    @Override
     public void onLoad(ToSave saveInfo) {
+        onLoad(saveInfo, true);
+    }
+
+    public void onLoad(ToSave saveInfo, boolean skipNext) {
         logger.info("LOADING MYSTERY DUNGEON CHARACTER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         if(saveInfo.adventurer!=null && saveInfo.partner!=null) {
             try {
@@ -501,15 +509,13 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
                 logger.info(e.getMessage());
                 e.printStackTrace();
             }
-            logger.info("Adventurer is " + adventurer.name);
-            logger.info("Partner is " + partner.name);
             preparedSaveData = saveInfo;
         } 
         else {
             logger.info("yikes");
         }
         maxPikachuChargeCounter = saveInfo.maxPikaMeter;
-        skipNextEvolution = true;
+        skipNextEvolution = skipNext;
         reloadAnimation();
     }
 
@@ -580,7 +586,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     @Override
     public AbstractPlayer newInstance() {
         Pokemon pokemon = new Pokemon(name, chosenClass);
-        pokemon.onLoad(preparedSaveData);
+        pokemon.onLoad(preparedSaveData, false);
         return pokemon;
     }
 
@@ -731,7 +737,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public ArrayList<AbstractCard.CardColor> getUsedSubColors() {
-        onLoad(preparedSaveData);
+        onLoad(preparedSaveData, false);
         ArrayList<AbstractCard.CardColor> subcolors = new ArrayList<AbstractCard.CardColor>();
         if(!hasChosenStarters()) {
             subcolors.add(CardColor.RED);
