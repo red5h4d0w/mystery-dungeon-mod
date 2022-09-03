@@ -574,7 +574,7 @@
     },
     "mysteryDungeon:CyndaquilFireBlast": {
         "NAME": "Fire Blast",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Increase the amount of burn by !M!. NL Exhaust."
+        "DESCRIPTION": "Apply !mysteryDungeon:M2! mysterydungeon:Burn. NL Increase the amount of burn by !M!. NL Exhaust."
     },
     "mysteryDungeon:CyndaquilFirePledge": {
         "NAME": "Fire Pledge",

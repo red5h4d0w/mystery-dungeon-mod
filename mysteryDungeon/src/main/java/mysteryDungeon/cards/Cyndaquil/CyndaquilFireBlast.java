@@ -35,8 +35,9 @@ public class CyndaquilFireBlast extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CYNDAQUIL_RED;
 
     private static final int COST = 1;
-    private static final int BASE_MAGIC_NUMBER = 3;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
+    private static final int BASE_MAGIC_NUMBER = 5;
+    private static final int BASE_SECOND_MAGIC_NUMBER = 3;
+    private static final int UPGRADE_SECOND_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
@@ -45,6 +46,8 @@ public class CyndaquilFireBlast extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        baseSecondMagicNumber = BASE_SECOND_MAGIC_NUMBER;
+        secondMagicNumber = baseSecondMagicNumber;
         exhaust = true;
     }
 
@@ -52,8 +55,8 @@ public class CyndaquilFireBlast extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
-        addToBot(new IncreaseBurnAction(this.uuid, this.misc, magicNumber));
-        addToBot(new ApplyPowerAction(m, p, new BurnPower(m, 5), 5));
+        addToBot(new IncreaseBurnAction(this.uuid, this.misc, secondMagicNumber));
+        addToBot(new ApplyPowerAction(m, p, new BurnPower(m, magicNumber), magicNumber));
         
     }
 
@@ -62,7 +65,7 @@ public class CyndaquilFireBlast extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            upgradeMagicNumber(UPGRADE_SECOND_MAGIC_NUMBER);
             initializeDescription();
         }
     }
