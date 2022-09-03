@@ -587,7 +587,7 @@
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "Flame Charge",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn."
+        "DESCRIPTION": "Deal !D! damage. Gain !B! Block. NL Apply !M! mysterydungeon:Burn."
     },
     "mysteryDungeon:CyndaquilFlamethrower": {
         "NAME": "Flamethrower",
