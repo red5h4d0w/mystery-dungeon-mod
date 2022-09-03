@@ -582,7 +582,8 @@
     },
     "mysteryDungeon:CyndaquilFlameBurst": {
         "NAME": "Flame Burst",
-        "DESCRIPTION": "Gain !B! Block. NL Cause an mysterydungeon:Eruption. NL End your Turn."
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Next turn, cause an mysterydungeon:Eruption.",
+        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Next turn, cause an mysterydungeon:Eruption. NL Your next Eruption Deals 50% more damage."
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "Flame Charge",
@@ -590,7 +591,7 @@
     },
     "mysteryDungeon:CyndaquilFlamethrower": {
         "NAME": "Flamethrower",
-        "DESCRIPTION": "Add a Burn status card in your draw pile. NL Deal !D! damage to radom enemies and apply 9 mysterydungeon:Burn to random enemies !M! times."
+        "DESCRIPTION": "Add a Burn status card in your draw pile. NL Deal !D! damage to random enemies and apply 9 mysterydungeon:Burn to random enemies !M! times."
     },
     "mysteryDungeon:CyndaquilFlameWheel": {
         "NAME": "Flame Wheel",
@@ -599,7 +600,7 @@
     },
     "mysteryDungeon:CyndaquilFlareBlitz": {
         "NAME": "Flare Blitz",
-        "DESCRIPTION": "Add 2 Void in your draw pile. NL Deal !D! damage. NL If the attack is Fatal, Gain [E] [E]."
+        "DESCRIPTION": "Add 1 Void in your draw pile. NL Deal !D! damage. NL If the attack is Fatal, Gain [E] [E]."
     },
     "mysteryDungeon:CyndaquilFlashFire": {
         "NAME": "Flash Fire",
@@ -670,7 +671,7 @@
     },
     "mysteryDungeon:CyndaquilRockSlide": {
         "NAME": "Rock Slide",
-        "DESCRIPTION": "Deal !D! damage. If the enemy has mysterydungeon:Burn stacks, gain [E] next turn."
+        "DESCRIPTION": "Deal !D! damage. If the enemy has mysterydungeon:Burn stacks, gain [E] [E] next turn."
     },
     "mysteryDungeon:CyndaquilRollout": {
         "NAME": "Rollout",
