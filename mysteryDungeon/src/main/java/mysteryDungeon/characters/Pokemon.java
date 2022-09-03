@@ -495,7 +495,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public void onLoad(ToSave saveInfo, boolean skipNext) {
-        logger.info("LOADING MYSTERY DUNGEON CHARACTER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         if(saveInfo.adventurer!=null && saveInfo.partner!=null) {
             try {
                 setAdventurer((AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+(saveInfo.adventurer)).getConstructor().newInstance());
@@ -737,7 +736,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public ArrayList<AbstractCard.CardColor> getUsedSubColors() {
-        onLoad(preparedSaveData, false);
+        //onLoad(preparedSaveData, false);
         ArrayList<AbstractCard.CardColor> subcolors = new ArrayList<AbstractCard.CardColor>();
         if(!hasChosenStarters()) {
             subcolors.add(CardColor.RED);
