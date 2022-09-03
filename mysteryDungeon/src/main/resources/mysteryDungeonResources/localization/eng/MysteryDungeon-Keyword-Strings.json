@@ -58,7 +58,7 @@
             "Evasiveness_Drop",
             "evasiveness_drop"
         ],
-        "DESCRIPTION": "At the end of the round, enemy loses #b25% of their Block."
+        "DESCRIPTION": "At the end of the round, enemy loses #b50% of their Block."
     },
     {
         "PROPER_NAME": "Leech Seed",

@@ -36,7 +36,7 @@ public class CyndaquilExplorerForm extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CYNDAQUIL_RED;
 
     private static final int COST = 3;
-    private static final int BASE_MAGIC_NUMBER = 3;
+    private static final int BASE_MAGIC_NUMBER = 10;
     private static final int UPGRADE_MAGIC_NUMBER = 3;
 
 

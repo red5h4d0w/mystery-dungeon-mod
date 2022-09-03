@@ -20,7 +20,7 @@
     "mysteryDungeon:GrassGemPotion": {
         "NAME": "Grass Gem",
         "DESCRIPTIONS": [
-            "Your next attack deals #b%s damage."
+            "Your next attack deals #b%s more damage."
         ]
     },
     "mysteryDungeon:MagoBerryPotion": {

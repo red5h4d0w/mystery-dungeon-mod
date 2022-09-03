@@ -37,7 +37,7 @@ public class CyndaquilFlareBlitz extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CYNDAQUIL_RED;
 
     private static final int COST = 2;
-    private static final int DAMAGE = 20;
+    private static final int DAMAGE = 25;
     private static final int UPGRADE_PLUS_DMG = 5;
 
 
@@ -52,7 +52,7 @@ public class CyndaquilFlareBlitz extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new MakeTempCardInDrawPileAction(new VoidCard(), 2, true, false, false));
+        addToBot(new MakeTempCardInDrawPileAction(new VoidCard(), 1, true, false, false));
         addToBot(new FlareBlitzAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), 2));
         
     }

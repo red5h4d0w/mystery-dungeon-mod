@@ -38,7 +38,7 @@ public class CyndaquilCounter extends PokemonCard {
 
     private static final int COST = 1;
     private static final int BASE_MAGIC_NUMBER = 6;
-    private static final int BLOCK = 4;
+    private static final int BLOCK = 6;
 
 
     // /STAT DECLARATION/
