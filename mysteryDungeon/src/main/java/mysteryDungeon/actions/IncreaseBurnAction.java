@@ -21,12 +21,14 @@ public class IncreaseBurnAction extends AbstractGameAction {
         for (AbstractCard c : AbstractDungeon.player.masterDeck.group) {
             if (!c.uuid.equals(this.uuid))
                 continue;
-            c.magicNumber += miscIncrease;
+            c.baseMagicNumber += miscIncrease;
+            c.magicNumber = c.baseMagicNumber;
             c.applyPowers();
             c.isMagicNumberModified = false;
         }
         for (AbstractCard c : GetAllInBattleInstances.get(this.uuid)) {
-            c.magicNumber += miscIncrease;
+            c.baseMagicNumber += miscIncrease;
+            c.magicNumber = c.baseMagicNumber;
             c.applyPowers();
             c.isMagicNumberModified = false;
         }
