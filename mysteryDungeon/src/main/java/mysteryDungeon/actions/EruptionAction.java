@@ -18,6 +18,7 @@ import com.megacrit.cardcrawl.vfx.combat.ScreenOnFireEffect;
 
 import mysteryDungeon.powers.BurnPower;
 import mysteryDungeon.powers.CrushClawPower;
+import mysteryDungeon.powers.CyndaquilExplorerPower;
 import mysteryDungeon.powers.InfernoPower;
 import mysteryDungeon.powers.LavaPlumePower;
 
@@ -73,6 +74,11 @@ public class EruptionAction extends AbstractGameAction {
             if (AbstractDungeon.player.hasPower(LavaPlumePower.POWER_ID)) {
                 addToBot(new ApplyPowerAction(target, source,
                         new BurnPower(target, AbstractDungeon.player.getPower(LavaPlumePower.POWER_ID).amount)));
+            }
+            // deals Aoe dmg if player has Explorer form.
+            if (AbstractDungeon.player.hasPower(CyndaquilExplorerPower.POWER_ID)) {
+                addToBot(new DamageAllEnemiesAction
+                (AbstractDungeon.player, AbstractDungeon.player.getPower(CyndaquilExplorerPower.POWER_ID).amount, DamageType.THORNS, AttackEffect.FIRE));
             }
         }
         isDone = true;

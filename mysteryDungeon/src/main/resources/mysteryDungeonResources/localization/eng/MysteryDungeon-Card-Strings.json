@@ -566,7 +566,7 @@
     },
     "mysteryDungeon:CyndaquilExplorerForm": {
         "NAME": "Explorer Form",
-        "DESCRIPTION": "Whenever you apply mysterydungeon:Burn to an enemy, deal !M! damage to that enemy."
+        "DESCRIPTION": "Whenever you cause an mysterydungeon:Eruption, deal !M! damage to all enemies."
     },
     "mysteryDungeon:CyndaquilFacade": {
         "NAME": "Facade",

@@ -90,7 +90,7 @@
     },
     "mysteryDungeon:CyndaquilExplorerPower": {
         "NAME": "Explorer Form",
-        "DESCRIPTIONS": ["Whenever you apply #yBurn, deal #b%s damage to the target."]
+        "DESCRIPTIONS": ["Whenever you cause an #yEruption, Deal #b%s to all enemies."]
     },
     "mysteryDungeon:CrushClawPower": {
         "NAME": "Crush Claw",

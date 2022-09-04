@@ -9,11 +9,6 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.BetterOnApplyPowerPower;
-import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -22,7 +17,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class CyndaquilExplorerPower extends PokemonPower implements CloneablePowerInterface, BetterOnApplyPowerPower {
+public class CyndaquilExplorerPower extends PokemonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID(CyndaquilExplorerPower.class.getSimpleName());
@@ -51,14 +46,6 @@ public class CyndaquilExplorerPower extends PokemonPower implements CloneablePow
 
         updateDescription();
     }
-    
-    public boolean betterOnApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        if(power.ID == BurnPower.POWER_ID) {
-            addToBot(new DamageAction(target, new DamageInfo(source, amount, DamageType.THORNS), AttackEffect.FIRE));
-        }
-        return true;
-    }
-
 
     @Override
     public AbstractPower makeCopy() {
