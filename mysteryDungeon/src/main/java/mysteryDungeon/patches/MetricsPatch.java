@@ -37,6 +37,8 @@ public class MetricsPatch {
         @SpirePostfixPatch
         @SuppressWarnings("all")
         public static void Postfix() {
+            if(!(AbstractDungeon.player instanceof Pokemon))
+                return;
             if(!MysteryDungeon.sendRunData)
                 return;
             RunDetails runDetails = generateRunDetails();
@@ -52,6 +54,8 @@ public class MetricsPatch {
         @SpirePostfixPatch
         @SuppressWarnings("all")
         public static void Postfix() {
+            if(!(AbstractDungeon.player instanceof Pokemon))
+                return;
             if(!MysteryDungeon.sendRunData)
                 return;
             RunDetails runDetails = generateRunDetails();
