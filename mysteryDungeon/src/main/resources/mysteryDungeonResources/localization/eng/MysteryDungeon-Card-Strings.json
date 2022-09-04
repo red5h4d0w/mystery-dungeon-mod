@@ -640,8 +640,8 @@
     },
     "mysteryDungeon:CyndaquilLaserFocus": {
         "NAME": "Laser Focus",
-        "DESCRIPTION": "Gain [E].",
-        "UPGRADE_DESCRIPTION": "Gain [E]. NL Draw a card."
+        "DESCRIPTION": "Gain [E] [E].",
+        "UPGRADE_DESCRIPTION": "Gain [E] [E]. NL Draw a card."
     },
     "mysteryDungeon:CyndaquilLavaPlume": {
         "NAME": "Lava Plume",

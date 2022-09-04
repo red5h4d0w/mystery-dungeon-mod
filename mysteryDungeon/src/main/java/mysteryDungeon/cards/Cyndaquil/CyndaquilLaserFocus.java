@@ -29,13 +29,13 @@ public class CyndaquilLaserFocus extends PokemonCard {
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.CYNDAQUIL_RED;
 
     private static final int COST = 0;
-    private static final int BASE_MAGIC_NUMBER = 1;
+    private static final int BASE_MAGIC_NUMBER = 2;
 
     // /STAT DECLARATION/
 
