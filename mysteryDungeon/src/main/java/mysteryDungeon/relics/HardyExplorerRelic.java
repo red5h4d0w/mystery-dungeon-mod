@@ -44,24 +44,19 @@ public class HardyExplorerRelic extends PokemonRelic {
     }
     
     @Override
-    public void wasHPLost(int damageAmount)
-    {
-        if(!used&&AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && damageAmount > 0)
-        {
+    public void wasHPLost(int damageAmount) {
+        if(!used&&AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && damageAmount > 0) {
             flash();
-            addToBot(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, 5));           
+            addToTop(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, 5));           
             used = true;
         }
     }
 
     @Override
-    public int onAttacked(DamageInfo info, int damageAmount)
-    {
-        if(!used && info.type!=DamageType.HP_LOSS && info.type!=DamageType.THORNS && info.owner instanceof AbstractMonster)
-        {
-            if(damageAmount>AbstractDungeon.player.currentBlock)
-            {
-                addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new BlurPower(AbstractDungeon.player, 1)));
+    public int onAttacked(DamageInfo info, int damageAmount) {
+        if(!used && info.type!=DamageType.HP_LOSS && info.type!=DamageType.THORNS && info.owner instanceof AbstractMonster) {
+            if(damageAmount>AbstractDungeon.player.currentBlock) {
+                addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new BlurPower(AbstractDungeon.player, 1)));
             }
         }
         return damageAmount;
