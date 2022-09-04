@@ -23,6 +23,12 @@
             "Your next attack deals #b%s more damage."
         ]
     },
+    "mysteryDungeon:LepaBerryPotion": {
+        "NAME": "Lepa Berry",
+        "DESCRIPTIONS": [
+            "Retain #b%s cards."
+        ]
+    },
     "mysteryDungeon:MagoBerryPotion": {
         "NAME": "Mago Berry",
         "DESCRIPTIONS": [
