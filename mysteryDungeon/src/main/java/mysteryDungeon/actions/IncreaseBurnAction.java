@@ -14,7 +14,7 @@ public class IncreaseBurnAction extends AbstractGameAction {
     
     private UUID uuid;
     
-    public IncreaseBurnAction(UUID targetUUID, int miscValue, int miscIncrease) {
+    public IncreaseBurnAction(UUID targetUUID, int miscIncrease) {
       this.miscIncrease = miscIncrease;
       this.uuid = targetUUID;
     }

@@ -55,7 +55,7 @@ public class CyndaquilFireBlast extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
-        addToBot(new IncreaseBurnAction(this.uuid, this.misc, secondMagicNumber));
+        addToBot(new IncreaseBurnAction(this.uuid, secondMagicNumber));
         addToBot(new ApplyPowerAction(m, p, new BurnPower(m, magicNumber), magicNumber));
         
     }
@@ -65,7 +65,7 @@ public class CyndaquilFireBlast extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_SECOND_MAGIC_NUMBER);
+            upgradeSecondMagicNumber(UPGRADE_SECOND_MAGIC_NUMBER);
             initializeDescription();
         }
     }
