@@ -13,9 +13,9 @@
               }
         },
         {
-            "label": "Second task",
+            "label": "Package then run",
             "type": "shell",
-            "command": "/usr/lib/jvm/java-8-openjdk/bin/java -jar /home/ismael/.steam/steam/steamapps/workshop/content/646570/1605060445/ModTheSpire.jar --out-jar",
+            "command": "/opt/apache-maven-3.8.4/bin/mvn package -f /home/ismael/Documents/GitHub/mystery-dungeon-mod/mysteryDungeon/pom.xml && /usr/lib/jvm/java-8-openjdk/bin/java -jar /home/ismael/.steam/steam/steamapps/workshop/content/646570/1605060445/ModTheSpire.jar",
             "problemMatcher": [],
             "options": {
                 "cwd": "/home/ismael/.steam/steam/steamapps/common/SlayTheSpire/"
