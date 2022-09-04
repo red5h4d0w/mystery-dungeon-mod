@@ -16,8 +16,9 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.interfaces.ClawCardInterface;
 
-public class CyndaquilShadowClaw extends PokemonCard {
+public class CyndaquilShadowClaw extends PokemonCard implements ClawCardInterface {
 
     // TEXT DECLARATION
 
@@ -47,7 +48,7 @@ public class CyndaquilShadowClaw extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         this.cardsToPreview = (AbstractCard)new Dazed();
-  }
+    }
     
 
     // Actions the card should do.
@@ -57,6 +58,10 @@ public class CyndaquilShadowClaw extends PokemonCard {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
     }
 
+    @Override
+    public void clawUpgrade(int amount) {
+        baseDamage += amount;
+    }
     // Upgraded stats.
     @Override
     public void upgrade() {

@@ -13,9 +13,10 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.interfaces.ClawCardInterface;
 import mysteryDungeon.powers.CrushClawPower;
 
-public class CyndaquilCrushClaw extends PokemonCard {
+public class CyndaquilCrushClaw extends PokemonCard implements ClawCardInterface {
 
     // TEXT DECLARATION
 
@@ -54,7 +55,12 @@ public class CyndaquilCrushClaw extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HEAVY));
         addToBot(new ApplyPowerAction(p, p, new CrushClawPower(p, 1)));
-        }
+    }
+
+    @Override
+    public void clawUpgrade(int amount) {
+        baseDamage += amount;
+    }
 
     // Upgraded stats.
     @Override
