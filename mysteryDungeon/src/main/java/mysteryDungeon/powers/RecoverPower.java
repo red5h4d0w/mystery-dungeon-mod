@@ -83,12 +83,14 @@ public class RecoverPower extends PokemonTwoAmountPower implements  CloneablePow
                 }
             }
         }
+        updateDescription();
         super.onAttack(info, damageAmount, target);
     }
 
     @Override
     public void wasHPLost(DamageInfo info, int damageAmount) {
         amount2 += MathUtils.floor(damageAmount);
+        updateDescription();
         return;
     }
 
