@@ -78,8 +78,10 @@ public class ChikoritaSynthesis extends PokemonCard {
     public void triggerWhenDrawn() {
         {
             if (timesActivatedThisCombat<secondMagicNumber){
-                addToBot(new HealAction(AbstractDungeon.player, AbstractDungeon.player, magicNumber));
-                timesActivatedThisCombat++;
+                if(AbstractDungeon.player.hasPower(RecoverPower.POWER_ID)) {
+                    addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new RecoverPower(AbstractDungeon.player, magicNumber)));
+                    timesActivatedThisCombat++;
+                }
             }
         }
         if(timesActivatedThisCombat>=secondMagicNumber){
