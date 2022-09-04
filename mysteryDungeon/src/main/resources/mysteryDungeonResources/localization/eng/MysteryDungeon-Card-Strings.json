@@ -543,8 +543,8 @@
     },
     "mysteryDungeon:CyndaquilCrushClaw": {
         "NAME": "Crush Claw",
-        "DESCRIPTION": "Deal !D! damage. NL Your next mysterydungeon:Eruption will deal 50% more damage. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Your next mysterydungeon:Eruption will deal 50% more damage."
+        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Your next mysterydungeon:Eruption will deal 50% more damage. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Your next mysterydungeon:Eruption will deal 50% more damage."
     },
     "mysteryDungeon:CyndaquilCurse": {
         "NAME": "Curse",
