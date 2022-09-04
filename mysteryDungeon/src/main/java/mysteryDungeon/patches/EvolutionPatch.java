@@ -18,7 +18,6 @@ public class EvolutionPatch {
     public static void EvolvePokemon() {
         if(AbstractDungeon.player!=null) {
             if(AbstractDungeon.player instanceof Pokemon)
-                logger.info("CALLING FOR EVOLUTION ASDFHKADFSLKHJ");
                 ((Pokemon)AbstractDungeon.player).evolvePokemons();
         }
         
