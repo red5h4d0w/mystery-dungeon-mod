@@ -39,7 +39,7 @@ public class NaturePowerMountainPower extends PokemonPower implements CloneableP
         this.owner = owner;
         this.amount = amount;
 
-        type = PowerType.BUFF;
+        type = PowerType.DEBUFF;
         isTurnBased = true;
 
         // We load those txtures here.
