@@ -31,7 +31,7 @@ public class WorrySeedPower extends PokemonPower implements CloneablePowerInterf
 
     public static Logger logger = LogManager.getLogger(WorrySeedPower.class.getName());
 
-    public static final String POWER_ID = MysteryDungeon.makeID("WorrySeedPower");
+    public static final String POWER_ID = MysteryDungeon.makeID(WorrySeedPower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

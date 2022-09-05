@@ -25,7 +25,7 @@ public class YawnPower extends AbstractPower implements CloneablePowerInterface 
     public AbstractCreature source;
 
     public static final Logger logger = LogManager.getLogger(MysteryDungeon.class.getName());
-    public static final String POWER_ID = MysteryDungeon.makeID("YawnPower");
+    public static final String POWER_ID = MysteryDungeon.makeID(YawnPower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -69,12 +69,10 @@ public class YawnPower extends AbstractPower implements CloneablePowerInterface 
 
     @Override
     public void updateDescription() {
-        if(amount == 1)
-        {
+        if(amount == 1) {
             description = DESCRIPTIONS[0];
         } 
-        else
-        {
+        else {
             description = String.format(DESCRIPTIONS[1], amount);
         }
     }

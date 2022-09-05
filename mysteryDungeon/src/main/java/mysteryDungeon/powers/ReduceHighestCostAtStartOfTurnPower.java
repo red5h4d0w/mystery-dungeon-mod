@@ -25,7 +25,7 @@ public class ReduceHighestCostAtStartOfTurnPower extends PokemonPower implements
     public AbstractCreature source;
 
     public static final Logger logger = LogManager.getLogger(MysteryDungeon.class.getName());
-    public static final String POWER_ID = MysteryDungeon.makeID("ReduceHighestCostAtStartOfTurnPower");
+    public static final String POWER_ID = MysteryDungeon.makeID(ReduceHighestCostAtStartOfTurnPower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

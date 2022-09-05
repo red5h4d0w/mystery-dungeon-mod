@@ -55,8 +55,7 @@ public class CharmanderFling extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(upgraded)
-        {
+        if(upgraded) {
             addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn)));
             addToBot(new ApplyPowerAction(m, p, new BurnPower(p, magicNumber), magicNumber));
         }

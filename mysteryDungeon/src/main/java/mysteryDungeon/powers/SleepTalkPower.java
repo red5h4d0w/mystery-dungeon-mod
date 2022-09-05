@@ -24,7 +24,7 @@ public class SleepTalkPower extends PokemonPower implements CloneablePowerInterf
     public AbstractCreature source;
     public int timesActivated = 0;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("SleepTalkPower");
+    public static final String POWER_ID = MysteryDungeon.makeID(SleepTalkPower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

@@ -33,7 +33,7 @@ import com.megacrit.cardcrawl.vfx.PetalEffect;
 public class PetalDancePower extends PokemonPower implements CloneablePowerInterface, OnReceivePowerPower {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("PetalDancePower");
+    public static final String POWER_ID = MysteryDungeon.makeID(PetalDancePower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

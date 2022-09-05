@@ -25,7 +25,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 public class MagicCoatPower extends PokemonPower implements CloneablePowerInterface, OnLoseTempHpPower {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("MagicCoatPower");
+    public static final String POWER_ID = MysteryDungeon.makeID(MagicCoatPower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

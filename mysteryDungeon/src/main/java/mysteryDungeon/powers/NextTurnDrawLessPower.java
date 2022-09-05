@@ -24,7 +24,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 public class NextTurnDrawLessPower extends PokemonPower implements CloneablePowerInterface, OnReceivePowerPower {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("NextTurnDrawLessPower");
+    public static final String POWER_ID = MysteryDungeon.makeID(NextTurnDrawLessPower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

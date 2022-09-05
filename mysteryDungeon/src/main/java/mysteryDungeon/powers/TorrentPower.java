@@ -24,7 +24,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 public class TorrentPower extends PokemonPower implements CloneablePowerInterface, onShufflePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("TorrentPower");
+    public static final String POWER_ID = MysteryDungeon.makeID(TorrentPower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

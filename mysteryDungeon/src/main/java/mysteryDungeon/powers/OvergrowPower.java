@@ -23,7 +23,7 @@ import org.apache.logging.log4j.Logger;
 public class OvergrowPower extends PokemonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID("OvergrowPower");
+    public static final String POWER_ID = MysteryDungeon.makeID(OvergrowPower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
