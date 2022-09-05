@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.actions.unique.RetainCardsAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.relics.RunicPyramid;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 public class TimidExplorerRelic extends PokemonRelic { 
@@ -34,7 +35,7 @@ public class TimidExplorerRelic extends PokemonRelic {
 
     @Override
     public void onPlayerEndTurn() {
-        if(EnergyPanel.getCurrentEnergy()>=1) {
+        if(EnergyPanel.getCurrentEnergy()>=1 && !AbstractDungeon.player.hasRelic(RunicPyramid.ID) && !AbstractDungeon.player.hand.isEmpty() ) {
             EnergyPanel.useEnergy(1);
             addToTop(new RetainCardsAction(AbstractDungeon.player, 1));
         }
