@@ -483,7 +483,7 @@ public class PokemonNeowPatch {
             add(new Charmander());
             add(new Squirtle());
             add(new Pikachu());
-            // add(new Meowth());
+            add(new Meowth());
             // add(new Psyduck());
             // add(new Machop());
             // add(new Cubone());
