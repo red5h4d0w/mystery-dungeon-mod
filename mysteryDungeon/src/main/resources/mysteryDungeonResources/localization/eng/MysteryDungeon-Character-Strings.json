@@ -67,7 +67,12 @@
     },
     "mysteryDungeon:Meowth": {
         "NAMES": [
-            "Pikachu"
+            "Meowth"
+        ]
+    },
+    "mysteryDungeon:Persian": {
+        "NAMES": [
+            "Persian"
         ]
     },
     "mysteryDungeon:Psyduck": {
