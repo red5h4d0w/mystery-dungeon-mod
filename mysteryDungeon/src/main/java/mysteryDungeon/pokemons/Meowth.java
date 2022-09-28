@@ -4,9 +4,9 @@ import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 
-import mysteryDungeon.cards.Bulbasaur.BulbasaurDefend;
 import mysteryDungeon.cards.Bulbasaur.BulbasaurLeechSeed;
-import mysteryDungeon.cards.Bulbasaur.BulbasaurTackle;
+import mysteryDungeon.cards.Meowth.MeowthDefend;
+import mysteryDungeon.cards.Meowth.MeowthScratch;
 import mysteryDungeon.characters.Pokemon;
 
 public class Meowth extends AbstractPokemon {
@@ -14,10 +14,10 @@ public class Meowth extends AbstractPokemon {
     public static final int MAX_HP = 35;
     public static final int ORB_SLOTS = 1;
     public static final AbstractCard[] STARTING_DECK = new AbstractCard[]{
-        new BulbasaurTackle(), new BulbasaurTackle(), new BulbasaurDefend(), new BulbasaurDefend(), new BulbasaurLeechSeed()
+        new MeowthScratch(), new MeowthScratch(), new MeowthDefend(), new MeowthDefend(), new BulbasaurLeechSeed()
     };
-    public static final Color COLOR = Color.GREEN.cpy();
-    public static final CardColor CARD_COLOR = Pokemon.Enums.NOT_IMPLEMENTED_COLOR;
+    public static final Color COLOR = Color.WHITE.cpy();
+    public static final CardColor CARD_COLOR = Pokemon.Enums.MEOWTH_WHITE;
 
     public Meowth(){
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);

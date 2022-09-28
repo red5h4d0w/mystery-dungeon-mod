@@ -695,6 +695,14 @@
         "DESCRIPTION": "Apply !M! mysterydungeon:Burn X times. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! mysterydungeon:Burn X times. NL Exhaust."
     },
+    "mysteryDungeon:MeowthScratch": {
+        "NAME": "Scratch",
+        "DESCRIPTION": "Deal !D! damage."
+    },
+    "mysteryDungeon:MeowthDefend": {
+        "NAME": "Defend",
+        "DESCRIPTION": "Gain !B! block."
+    },
     "mysteryDungeon:PikachuAgility": {
         "NAME": "Agility",
         "DESCRIPTION": "Whenever you enter a stance, draw !M! card.",
