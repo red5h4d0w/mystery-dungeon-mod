@@ -695,13 +695,23 @@
         "DESCRIPTION": "Apply !M! mysterydungeon:Burn X times. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! mysterydungeon:Burn X times. NL Exhaust."
     },
-    "mysteryDungeon:MeowthScratch": {
-        "NAME": "Scratch",
-        "DESCRIPTION": "Deal !D! damage."
+    "mysteryDungeon:MeowthAttract": {
+        "NAME": "Attract",
+        "DESCRIPTION": "Gain !B! block. NL Lose !M! gold. NL Create a Snatch in your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Gain !B! block. NL Lose !M! gold. NL Create an Snatch+ in your hand. NL Exhaust."
     },
     "mysteryDungeon:MeowthDefend": {
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! block."
+    },
+    "mysteryDungeon:MeowthSnatch": {
+        "NAME": "Snatch",
+        "DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract in your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract+ in your hand. NL Exhaust."
+    },
+    "mysteryDungeon:MeowthScratch": {
+        "NAME": "Scratch",
+        "DESCRIPTION": "Deal !D! damage."
     },
     "mysteryDungeon:PikachuAgility": {
         "NAME": "Agility",

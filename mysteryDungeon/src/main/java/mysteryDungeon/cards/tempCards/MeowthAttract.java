@@ -1,13 +1,11 @@
-package mysteryDungeon.cards.Meowth;
+package mysteryDungeon.cards.tempCards;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.GainGoldAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -15,16 +13,15 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
-import mysteryDungeon.cards.tempCards.MeowthAttract;
-import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.cards.Meowth.MeowthSnatch;
 
-public class MeowthSnatch extends PokemonCard {
+public class MeowthAttract extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(MeowthSnatch.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(MeowthAttract.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("Skill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -34,43 +31,44 @@ public class MeowthSnatch extends PokemonCard {
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.BASIC;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
-    private static final CardType TYPE = CardType.ATTACK;
-    public static final CardColor COLOR = Pokemon.Enums.MEOWTH_WHITE;
+    private static final CardRarity RARITY = CardRarity.SPECIAL;
+    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardType TYPE = CardType.SKILL;
+    public static final CardColor COLOR = CardColor.COLORLESS;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 9;
-    private static final int UPGRADE_PLUS_DMG = 3;
-    private static final int BASE_MAGIC_NUMBER = 5;
+    private static final int BLOCK = 8;
+    private static final int UPGRADE_PLUS_BLOCK = 3;
+    private static final int BASE_MAGIC_NUMBER = -5;
+
 
     // /STAT DECLARATION/
 
-    public MeowthSnatch() {
+    public MeowthAttract() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseDamage = DAMAGE;
+        baseBlock = BLOCK;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
         exhaust = true;
-        cardsToPreview = (AbstractCard)new MeowthAttract();
+        cardsToPreview = (AbstractCard)new MeowthSnatch();
         if(upgraded) {
-            AbstractCard upgradedAttract = new MeowthAttract();
-            upgradedAttract.upgrade();
-            cardsToPreview = upgradedAttract;
+            AbstractCard upgradedSnatch = new MeowthSnatch();
+            upgradedSnatch.upgrade();
+            cardsToPreview = upgradedSnatch;
         }
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
+        addToBot(new GainBlockAction(p, p, block));
         addToBot(new GainGoldAction(magicNumber));
         if(!upgraded)
-            addToBot(new MakeTempCardInHandAction(new MeowthAttract(), 1, false));
+            addToBot(new MakeTempCardInHandAction(new MeowthSnatch(), 1, false));
         else {
-            AbstractCard upgradedAttract = new MeowthAttract();
-            upgradedAttract.upgrade();
-            addToBot(new MakeTempCardInHandAction(upgradedAttract, 1, false));
+            AbstractCard upgradedSnatch = new MeowthSnatch();
+            upgradedSnatch.upgrade();
+            addToBot(new MakeTempCardInHandAction(upgradedSnatch, 1, false));
         }
     }
 
@@ -79,7 +77,7 @@ public class MeowthSnatch extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeBlock(UPGRADE_PLUS_BLOCK);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
