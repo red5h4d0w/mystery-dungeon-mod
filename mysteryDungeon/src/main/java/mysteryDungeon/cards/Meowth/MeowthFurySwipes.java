@@ -40,7 +40,7 @@ public class MeowthFurySwipes extends PokemonCard {
 
     private static final int COST = 2;
     private static final int DAMAGE = 10;
-    private static final int BASE_MAGIC_NUMBER = 15;
+    private static final int BASE_MAGIC_NUMBER = 20;
     private static final int UPGRADE_MAGIC_NUMBER = -5;
 
     private static final int BASE_SECOND_MAGIC_NUMBER = 5;

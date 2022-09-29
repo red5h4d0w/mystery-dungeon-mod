@@ -3,7 +3,6 @@ package mysteryDungeon.cards.tempCards;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.GainGoldAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -13,6 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.actions.SpendGoldAction;
 import mysteryDungeon.cards.Meowth.MeowthSnatch;
 
 public class MeowthAttract extends PokemonCard {
@@ -39,7 +39,7 @@ public class MeowthAttract extends PokemonCard {
     private static final int COST = 1;
     private static final int BLOCK = 8;
     private static final int UPGRADE_PLUS_BLOCK = 3;
-    private static final int BASE_MAGIC_NUMBER = -5;
+    private static final int BASE_MAGIC_NUMBER = 5;
 
 
     // /STAT DECLARATION/
@@ -62,7 +62,7 @@ public class MeowthAttract extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
-        addToBot(new GainGoldAction(magicNumber));
+        addToBot(new SpendGoldAction(magicNumber));
         if(!upgraded)
             addToBot(new MakeTempCardInHandAction(new MeowthSnatch(), 1, false));
         else {

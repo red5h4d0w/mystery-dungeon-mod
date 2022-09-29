@@ -35,7 +35,7 @@ public class MeowthPunishment extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.MEOWTH_WHITE;
 
     private static final int COST = 2;
-    private static final int DAMAGE = 6;
+    private static final int DAMAGE = 10;
     private static final int BASE_MAGIC_NUMBER = 3;
     private static final int UPGRADE_MAGIC_NUMBER = 2;
 

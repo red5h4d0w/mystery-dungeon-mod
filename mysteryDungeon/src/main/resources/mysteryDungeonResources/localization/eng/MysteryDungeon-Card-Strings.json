@@ -697,12 +697,37 @@
     },
     "mysteryDungeon:MeowthAttract": {
         "NAME": "Attract",
-        "DESCRIPTION": "Gain !B! block. NL Lose !M! gold. NL Create a Snatch in your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Gain !B! block. NL Lose !M! gold. NL Create an Snatch+ in your hand. NL Exhaust."
+        "DESCRIPTION": "Gain !B! block. NL Spend !M! gold. NL Create a Snatch in your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Gain !B! block. NL Spend !M! gold. NL Create an Snatch+ in your hand. NL Exhaust."
+    },
+    "mysteryDungeon:MeowthCaptivate": {
+        "NAME": "Captivate",
+        "DESCRIPTION": "Spend !M! gold. NL This turn, the target loses !mysteryDungeon:M2! Strenght."
+    },
+    "mysteryDungeon:MeowthCovet": {
+        "NAME": "Covet",
+        "DESCRIPTION": "Give a random enemy !M! strenght. NL Gain !mysteryDungeon:M2! gold."
     },
     "mysteryDungeon:MeowthDefend": {
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! block."
+    },
+    "mysteryDungeon:MeowthFurySwipes": {
+        "NAME": "Fury Swipes",
+        "DESCRIPTION": "Deal !D! damage. NL If you have !M! gold, spend them and increase this card damage by !mysteryDungeon:M2! permanently. NL Exhaust."
+    },
+    "mysteryDungeon:MeowthNastyPlot": {
+        "NAME": "Nasty Plot",
+        "DESCRIPTION": "Spend !M! gold. NL Draw !mysteryDungeon:M2! cards."
+    },
+    "mysteryDungeon:MeowthPsychUp": {
+        "NAME": "Psych Up",
+        "DESCRIPTION": "When you give an enemy Strenght, gain as much Strenght.",
+        "UPGRADE_DESCRIPTION": "Innate. NL When you give an enemy Strenght, gain as much Strenght."
+    },
+    "mysteryDungeon:MeowthPunishment": {
+        "NAME": "Punishment",
+        "DESCRIPTION": "Deal !D! damage. NL Deal Addditionnal damage equal to !M! times the enemy's Strenght."
     },
     "mysteryDungeon:MeowthSnatch": {
         "NAME": "Snatch",
@@ -712,6 +737,14 @@
     "mysteryDungeon:MeowthScratch": {
         "NAME": "Scratch",
         "DESCRIPTION": "Deal !D! damage."
+    },
+    "mysteryDungeon:MeowthTaunt": {
+        "NAME": "Taunt",
+        "DESCRIPTION": "Gain !M! gold. NL End your turn."
+    },
+    "mysteryDungeon:MeowthThief": {
+        "NAME": "Thief",
+        "DESCRIPTION": "Gain !M! gold. NL Exhaust."
     },
     "mysteryDungeon:PikachuAgility": {
         "NAME": "Agility",
