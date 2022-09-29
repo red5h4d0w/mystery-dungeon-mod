@@ -742,6 +742,10 @@
         "NAME": "Scratch",
         "DESCRIPTION": "Deal !D! damage."
     },
+    "mysteryDungeon:MeowthSwagger": {
+        "NAME": "Swagger",
+        "DESCRIPTION": "Give an enemy !M! strenght. NL Stun that enemy."
+    },
     "mysteryDungeon:MeowthTaunt": {
         "NAME": "Taunt",
         "DESCRIPTION": "Gain !M! gold. NL End your turn."
