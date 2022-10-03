@@ -36,7 +36,7 @@ public class MeowthFoulPlay extends PokemonCard {
 
     private static final int COST = 1;
     private static final int DAMAGE = 7;
-    private static final int BASE_MAGIC_NUMBER = 50;
+    private static final int BASE_MAGIC_NUMBER = 100;
     private static final int UPGRADE_MAGIC_NUMBER = 50;
 
     // /STAT DECLARATION/
