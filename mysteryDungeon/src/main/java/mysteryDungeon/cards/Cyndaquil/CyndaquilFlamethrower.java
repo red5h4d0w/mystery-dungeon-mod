@@ -50,7 +50,8 @@ public class CyndaquilFlamethrower extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseMagicNumber = BASE_MAGIC_NUMBER;
-        magicNumber = baseMagicNumber;cardsToPreview = (AbstractCard)new Burn();
+        magicNumber = baseMagicNumber;
+        cardsToPreview = (AbstractCard)new Burn();
     }
 
     // Actions the card should do.
