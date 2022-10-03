@@ -36,7 +36,7 @@ public class MeowthCaptivate extends PokemonCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.MEOWTH_WHITE;
 
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int BASE_MAGIC_NUMBER = 7;
     private static final int BASE_SECOND_MAGIC_NUMBER = 7;
     private static final int UPGRADE_SECOND_MAGIC_NUMBER = 2;
