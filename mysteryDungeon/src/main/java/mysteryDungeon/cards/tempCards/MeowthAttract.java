@@ -56,14 +56,14 @@ public class MeowthAttract extends PokemonCard {
         magicNumber = baseMagicNumber;
         exhaust = true;
         this.noHover = noHover;
-        // if(!this.noHover) {
-        //     cardsToPreview = (AbstractCard)new MeowthSnatch(true);
-        //     if(upgraded) {
-        //         AbstractCard upgradedSnatch = new MeowthSnatch(true);
-        //         upgradedSnatch.upgrade();
-        //         cardsToPreview = upgradedSnatch;
-        //     }
-        // }
+        if(!this.noHover) {
+            cardsToPreview = (AbstractCard)new MeowthSnatch(true);
+            if(upgraded) {
+                AbstractCard upgradedSnatch = new MeowthSnatch(true);
+                upgradedSnatch.upgrade();
+                cardsToPreview = upgradedSnatch;
+            }
+        }
     }
 
 
