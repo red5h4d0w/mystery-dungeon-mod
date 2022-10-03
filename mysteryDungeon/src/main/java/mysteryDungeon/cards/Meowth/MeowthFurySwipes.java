@@ -67,15 +67,11 @@ public class MeowthFurySwipes extends PokemonCard {
                 for (AbstractCard c : p.masterDeck.group) {
                     if (!c.uuid.equals(uuid))
                       continue; 
-                    c.misc += secondMagicNumber;
-                    c.applyPowers();
-                    c.baseDamage = c.misc;
+                    c.baseDamage += secondMagicNumber;
                     c.isDamageModified = false;
                   } 
                   for (AbstractCard c : GetAllInBattleInstances.get(uuid)) {
-                    c.misc += secondMagicNumber;
-                    c.applyPowers();
-                    c.baseDamage = c.misc;
+                    c.baseDamage += secondMagicNumber;
                   }
             }));
         }

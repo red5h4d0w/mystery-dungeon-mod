@@ -13,7 +13,6 @@ import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.BetterOnApplyPowerP
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
@@ -54,8 +53,8 @@ public class PsychUpPower extends PokemonPower implements CloneablePowerInterfac
 
     @Override
     public boolean betterOnApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        if(source == AbstractDungeon.player && target!=AbstractDungeon.player && power instanceof StrengthPower) {
-            addToBot(new ApplyPowerAction(source, source, new StrengthPower(source, power.amount * amount), power.amount * amount));
+        if(source == owner && target!=owner && power instanceof StrengthPower) {
+            addToBot(new ApplyPowerAction(owner, owner, new StrengthPower(owner, power.amount * amount), power.amount * amount));
         }
         return false;
     }
