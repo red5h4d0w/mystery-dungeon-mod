@@ -7,6 +7,7 @@ import mysteryDungeon.cards.Bulbasaur.*;
 import mysteryDungeon.cards.Charmander.CharmanderScratch;
 import mysteryDungeon.cards.Chikorita.ChikoritaTackle;
 import mysteryDungeon.cards.Cyndaquil.CyndaquilTackle;
+import mysteryDungeon.cards.Meowth.MeowthScratch;
 import mysteryDungeon.cards.Pikachu.PikachuTackle;
 import mysteryDungeon.cards.Squirtle.SquirtleTackle;
 import mysteryDungeon.cards.Status.StatusFreeze;
@@ -454,6 +455,10 @@ public class MysteryDungeon implements
             .cards();
         new AutoAdd("MysteryDungeon")
             .packageFilter(PikachuTackle.class)
+            .setDefaultSeen(true)
+            .cards();
+            new AutoAdd("MysteryDungeon")
+            .packageFilter(MeowthScratch.class)
             .setDefaultSeen(true)
             .cards();
         new AutoAdd("MysteryDungeon")
