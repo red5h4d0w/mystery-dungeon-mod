@@ -49,7 +49,8 @@ public class MeowthFurySwipes extends PokemonCard {
 
     public MeowthFurySwipes() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseDamage = DAMAGE;
+        misc = DAMAGE;
+        baseDamage = misc;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
         baseSecondMagicNumber = BASE_SECOND_MAGIC_NUMBER;
@@ -67,11 +68,15 @@ public class MeowthFurySwipes extends PokemonCard {
                 for (AbstractCard c : p.masterDeck.group) {
                     if (!c.uuid.equals(uuid))
                       continue; 
-                    c.baseDamage += secondMagicNumber;
+                    c.misc += secondMagicNumber;
+                    c.applyPowers();
+                    c.baseDamage = c.misc;
                     c.isDamageModified = false;
                   } 
                   for (AbstractCard c : GetAllInBattleInstances.get(uuid)) {
-                    c.baseDamage += secondMagicNumber;
+                    c.misc += secondMagicNumber;
+                    c.applyPowers();
+                    c.baseDamage = c.misc;
                   }
             }));
         }
