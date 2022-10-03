@@ -73,6 +73,7 @@ public class CyndaquilWillOWisp extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            selfRetain = true;
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
