@@ -56,7 +56,7 @@ public class PsychUpPower extends PokemonPower implements CloneablePowerInterfac
         if(source == owner && target!=owner && power instanceof StrengthPower) {
             addToBot(new ApplyPowerAction(owner, owner, new StrengthPower(owner, power.amount * amount), power.amount * amount));
         }
-        return false;
+        return true;
     }
 
     @Override
