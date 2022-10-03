@@ -716,9 +716,17 @@
         "NAME": "Foul Play",
         "DESCRIPTION": "Deal !D! damage. NL If you have equal or less then !M! gold, deal !D! damage."
     },
+    "mysteryDungeon:MeowthFeint": {
+        "NAME": "Feint",
+        "DESCRIPTION": "Remove all block from the enemy. NL Deal damage equal to the amount of block removed."
+    },
     "mysteryDungeon:MeowthFurySwipes": {
         "NAME": "Fury Swipes",
         "DESCRIPTION": "Deal !D! damage. NL If you have !M! gold, spend them and increase this card damage by !mysteryDungeon:M2! permanently. NL Exhaust."
+    },
+    "mysteryDungeon:MeowthHonClaws": {
+        "NAME": "Hone Claws",
+        "DESCRIPTION": "Spend 10 gold. NL Gain !M! Strength"
     },
     "mysteryDungeon:MeowthNastyPlot": {
         "NAME": "Nasty Plot",
