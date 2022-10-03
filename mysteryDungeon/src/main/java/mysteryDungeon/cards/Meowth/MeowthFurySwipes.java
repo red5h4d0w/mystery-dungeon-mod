@@ -49,7 +49,8 @@ public class MeowthFurySwipes extends PokemonCard {
 
     public MeowthFurySwipes() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseDamage = DAMAGE;
+        misc = DAMAGE;
+        baseDamage = misc;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
         baseSecondMagicNumber = BASE_SECOND_MAGIC_NUMBER;
