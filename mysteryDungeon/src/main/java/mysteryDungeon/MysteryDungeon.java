@@ -239,6 +239,12 @@ public class MysteryDungeon implements
             ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
             ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
 
+        BaseMod.addColor(Pokemon.Enums.MEOWTH_WHITE, Color.WHITE.cpy(), Color.WHITE.cpy(), Color.WHITE.cpy(),
+            Color.WHITE.cpy(), Color.WHITE.cpy(), Color.WHITE.cpy(), Color.WHITE.cpy(),
+            ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
+            ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
+            ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
+
         BaseMod.addColor(Pokemon.Enums.CHIKORITA_GREEN, Color.GREEN.cpy(), Color.GREEN.cpy(), Color.GREEN.cpy(),
             Color.GREEN.cpy(), Color.GREEN.cpy(), Color.GREEN.cpy(), Color.GREEN.cpy(),
             ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
