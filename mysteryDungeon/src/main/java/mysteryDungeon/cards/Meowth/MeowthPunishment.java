@@ -51,17 +51,16 @@ public class MeowthPunishment extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int damageIncrease = m.hasPower(StrengthPower.POWER_ID)? m.getPower(StrengthPower.POWER_ID).amount * magicNumber: 0;
         addToBot(
-                new DamageAction(m, new DamageInfo(p, damage + damageIncrease, damageTypeForTurn), AttackEffect.SMASH));
+                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SMASH));
     }
 
     @Override
     public void calculateCardDamage(AbstractMonster m) {
-        int enemysStrength = m.hasPower(StrengthPower.POWER_ID)? m.getPower(StrengthPower.POWER_ID).amount * magicNumber: 0;
-        damage+=enemysStrength*magicNumber;
+        int enemysStrength = m.hasPower(StrengthPower.POWER_ID)? m.getPower(StrengthPower.POWER_ID).amount: 0;
+        baseDamage+=enemysStrength*magicNumber;
         super.calculateCardDamage(m);
-        damage-=enemysStrength*magicNumber;
+        baseDamage-=enemysStrength*magicNumber;
     }
 
     // Upgraded stats.
