@@ -36,7 +36,7 @@ public class MeowthFeint extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.MEOWTH_WHITE;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 6;
+    private static final int DAMAGE = 0;
     private static final int UPGRADE_PLUS_DMG = 4;
 
     // /STAT DECLARATION/
@@ -49,9 +49,15 @@ public class MeowthFeint extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-
         addToBot(new RemoveAllBlockAction(m, p));
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
+    }
+
+    @Override
+    public void calculateCardDamage(AbstractMonster m) {
+        baseDamage+=m.currentBlock;
+        super.calculateCardDamage(m);
+        baseDamage-=m.currentBlock;
     }
 
     // Upgraded stats.
