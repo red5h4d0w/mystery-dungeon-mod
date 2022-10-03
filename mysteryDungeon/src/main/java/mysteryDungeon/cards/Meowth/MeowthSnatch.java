@@ -43,21 +43,29 @@ public class MeowthSnatch extends PokemonCard {
     private static final int DAMAGE = 9;
     private static final int UPGRADE_PLUS_DMG = 3;
     private static final int BASE_MAGIC_NUMBER = 5;
+    private boolean noHover = false;
 
     // /STAT DECLARATION/
 
     public MeowthSnatch() {
+        this(false);
+    }
+
+    public MeowthSnatch(boolean noHover) {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
         exhaust = true;
-        cardsToPreview = (AbstractCard)new MeowthAttract();
-        if(upgraded) {
-            AbstractCard upgradedAttract = new MeowthAttract();
-            upgradedAttract.upgrade();
-            cardsToPreview = upgradedAttract;
-        }
+        this.noHover = noHover;
+        if(!this.noHover) {
+            cardsToPreview = (AbstractCard)new MeowthAttract(true);
+            if(upgraded) {
+                AbstractCard upgradedAttract = new MeowthAttract(true);
+                upgradedAttract.upgrade();
+                cardsToPreview = upgradedAttract;
+            }
+        } 
     }
 
     // Actions the card should do.

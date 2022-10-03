@@ -40,23 +40,32 @@ public class MeowthAttract extends PokemonCard {
     private static final int BLOCK = 8;
     private static final int UPGRADE_PLUS_BLOCK = 3;
     private static final int BASE_MAGIC_NUMBER = 5;
+    private boolean noHover = false;
 
 
     // /STAT DECLARATION/
 
     public MeowthAttract() {
+        this(false);
+    }
+
+    public MeowthAttract(boolean noHover) {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseBlock = BLOCK;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
         exhaust = true;
-        cardsToPreview = (AbstractCard)new MeowthSnatch();
-        if(upgraded) {
-            AbstractCard upgradedSnatch = new MeowthSnatch();
-            upgradedSnatch.upgrade();
-            cardsToPreview = upgradedSnatch;
-        }
+        this.noHover = noHover;
+        // if(!this.noHover) {
+        //     cardsToPreview = (AbstractCard)new MeowthSnatch(true);
+        //     if(upgraded) {
+        //         AbstractCard upgradedSnatch = new MeowthSnatch(true);
+        //         upgradedSnatch.upgrade();
+        //         cardsToPreview = upgradedSnatch;
+        //     }
+        // }
     }
+
 
     // Actions the card should do.
     @Override
