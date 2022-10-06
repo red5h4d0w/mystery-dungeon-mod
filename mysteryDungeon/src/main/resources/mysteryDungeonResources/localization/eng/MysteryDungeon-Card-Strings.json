@@ -695,6 +695,10 @@
         "DESCRIPTION": "Apply !M! mysterydungeon:Burn X times. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! mysterydungeon:Burn X times. NL Exhaust."
     },
+    "mysteryDungeon:MeowthAssurance": {
+        "NAME": "Assurance",
+        "DESCRIPTION": "Spend 3 gold. NL Apply 1 Weak. NL If this is the first card played this combat, gain !M! gold. NL Exhaust."
+    },
     "mysteryDungeon:MeowthAttract": {
         "NAME": "Attract",
         "DESCRIPTION": "Gain !B! block. NL Spend !M! gold. NL Create a Snatch in your hand. NL Exhaust.",
