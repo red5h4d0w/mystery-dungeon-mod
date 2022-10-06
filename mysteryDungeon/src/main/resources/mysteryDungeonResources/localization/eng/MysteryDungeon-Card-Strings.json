@@ -768,7 +768,7 @@
     },
     "mysteryDungeon:MeowthThief": {
         "NAME": "Thief",
-        "DESCRIPTION": "Deal !D! damage to !M! random enemies and obtain 1 gold !M! times."
+        "DESCRIPTION": "Deal !D! damage to !M! random enemies and obtain 2 gold !M! times. NL Exhaust."
     },
     "mysteryDungeon:PikachuAgility": {
         "NAME": "Agility",
