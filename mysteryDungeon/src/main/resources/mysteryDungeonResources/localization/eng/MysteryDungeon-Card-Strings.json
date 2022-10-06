@@ -734,8 +734,8 @@
     },
     "mysteryDungeon:MeowthPsychUp": {
         "NAME": "Psych Up",
-        "DESCRIPTION": "When you give an enemy Strenght, gain as much Strenght.",
-        "UPGRADE_DESCRIPTION": "Innate. NL When you give an enemy Strenght, gain as much Strenght."
+        "DESCRIPTION": "When you give an enemy Strenght, gain !M! Strenght.",
+        "UPGRADE_DESCRIPTION": "When you give an enemy Strenght, gain !M! Strenght."
     },
     "mysteryDungeon:MeowthPunishment": {
         "NAME": "Punishment",

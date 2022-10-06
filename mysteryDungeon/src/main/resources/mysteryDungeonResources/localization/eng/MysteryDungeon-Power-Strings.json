@@ -282,6 +282,10 @@
         "NAME": "Explorer Form",
         "DESCRIPTIONS": ["At the start of your turn Channel #b%s lightning orb. If you have at least 1 orb, at the start of your turn evoke your next #b%s orb."]
     },
+    "mysteryDungeon:PsychUpPower": {
+        "NAME": "Psych Up",
+        "DESCRIPTIONS": ["Whenever you give an enemy Strenght, gain #b%s Strenght."]
+    },
     "mysteryDungeon:RainDancePower": {
         "NAME": "Rain Dance",
         "DESCRIPTIONS": ["When a card is created, gain #b%s #yTemporary #yStrength."]
