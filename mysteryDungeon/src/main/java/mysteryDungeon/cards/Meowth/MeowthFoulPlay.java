@@ -3,12 +3,16 @@ package mysteryDungeon.cards.Meowth;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.WeakPower;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
@@ -36,8 +40,8 @@ public class MeowthFoulPlay extends PokemonCard {
 
     private static final int COST = 1;
     private static final int DAMAGE = 7;
-    private static final int BASE_MAGIC_NUMBER = 100;
-    private static final int UPGRADE_MAGIC_NUMBER = 50;
+    private static final int BASE_MAGIC_NUMBER = 1;
+    private static final int UPGRADE_MAGIC_NUMBER = 2;
 
     // /STAT DECLARATION/
 
@@ -52,9 +56,22 @@ public class MeowthFoulPlay extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SMASH));
-        if(p.gold <= magicNumber)   
-            addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SMASH));
+        if (AbstractDungeon.actionManager.cardsPlayedThisCombat.size() >= 2 && ((AbstractCard)AbstractDungeon.actionManager.cardsPlayedThisCombat
+          .get(AbstractDungeon.actionManager.cardsPlayedThisCombat
+            .size() - 2)).type == AbstractCard.CardType.ATTACK) {
+                addToBot(new ApplyPowerAction(p, m, new WeakPower(m, magicNumber, false)));
+                }
     }
+
+    public void triggerOnGlowCheck() {
+        if (!AbstractDungeon.actionManager.cardsPlayedThisCombat.isEmpty() && ((AbstractCard)AbstractDungeon.actionManager.cardsPlayedThisCombat
+          .get(AbstractDungeon.actionManager.cardsPlayedThisCombat
+            .size() - 1)).type == AbstractCard.CardType.ATTACK) {
+          this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+        } else {
+          this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        } 
+      }
 
     // Upgraded stats.
     @Override

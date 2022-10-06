@@ -712,13 +712,13 @@
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! block."
     },
-    "mysteryDungeon:MeowthFoulPlay": {
-        "NAME": "Foul Play",
-        "DESCRIPTION": "Deal !D! damage. NL If you have equal or less then !M! gold, deal !D! damage."
-    },
     "mysteryDungeon:MeowthFeint": {
         "NAME": "Feint",
         "DESCRIPTION": "Remove all block from the enemy. NL Deal damage equal to the amount of block removed."
+    },
+    "mysteryDungeon:MeowthFoulPlay": {
+        "NAME": "Foul Play",
+        "DESCRIPTION": "Deal !D! damage. NL If you have the last card you played is an ATTACK, apply !M! Weak."
     },
     "mysteryDungeon:MeowthFurySwipes": {
         "NAME": "Fury Swipes",
