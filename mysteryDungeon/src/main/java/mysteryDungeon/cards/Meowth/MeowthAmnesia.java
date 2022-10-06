@@ -2,7 +2,6 @@ package mysteryDungeon.cards.Meowth;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.jcraft.jogg.Buffer;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
