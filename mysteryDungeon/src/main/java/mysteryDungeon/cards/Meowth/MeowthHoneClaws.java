@@ -34,9 +34,9 @@ public class MeowthHoneClaws extends PokemonCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = Pokemon.Enums.MEOWTH_WHITE;
 
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final int BASE_MAGIC_NUMBER = 2;
-    private static final int UPGRADE_MAGIC_NUMBER = 2;
+    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
@@ -50,7 +50,7 @@ public class MeowthHoneClaws extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SpendGoldAction(10));
+        addToBot(new SpendGoldAction(15));
         addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, magicNumber)));
     }
 
