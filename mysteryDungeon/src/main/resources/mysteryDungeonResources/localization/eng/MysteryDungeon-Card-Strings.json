@@ -695,6 +695,10 @@
         "DESCRIPTION": "Apply !M! mysterydungeon:Burn X times. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! mysterydungeon:Burn X times. NL Exhaust."
     },
+    "mysteryDungeon:MeowthAmnesia": {
+        "NAME": "Amnesia",
+        "DESCRIPTION": "Spend 15 gold. NL Gain !M! Buffer."
+    },
     "mysteryDungeon:MeowthAssurance": {
         "NAME": "Assurance",
         "DESCRIPTION": "Spend 3 gold. NL Apply 1 Weak. NL If this is the first card played this combat, gain !M! gold. NL Exhaust."
