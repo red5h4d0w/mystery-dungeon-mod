@@ -495,6 +495,10 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public void onLoad(ToSave saveInfo, boolean skipNext) {
+        skipNextEvolution = skipNext;
+        if(saveInfo == null) {
+            return;
+        }
         if(saveInfo.adventurer!=null && saveInfo.partner!=null) {
             try {
                 setAdventurer((AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+(saveInfo.adventurer)).getConstructor().newInstance());
@@ -514,7 +518,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
             logger.info("yikes");
         }
         maxPikachuChargeCounter = saveInfo.maxPikaMeter;
-        skipNextEvolution = skipNext;
         reloadAnimation();
     }
 
