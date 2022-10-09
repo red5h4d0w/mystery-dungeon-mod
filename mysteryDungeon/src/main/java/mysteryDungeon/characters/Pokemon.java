@@ -478,6 +478,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     @Override
     public void onLoad(ToSave saveInfo)
     {
+        if(saveInfo == null)
+            return;
         logger.info("LOADING MYSTERY DUNGEON CHARACTER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         if(saveInfo.adventurer!=null && saveInfo.partner!=null)
         {
