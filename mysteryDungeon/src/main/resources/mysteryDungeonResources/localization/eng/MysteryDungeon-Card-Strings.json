@@ -724,6 +724,10 @@
         "NAME": "Feint",
         "DESCRIPTION": "Remove all block from the enemy. NL Deal damage equal to the amount of block removed."
     },
+    "mysteryDungeon:MeowthFlatter": {
+        "NAME": "Flatter",
+        "DESCRIPTION": "Give ALL enemies !M! Strength. NL Gain !B! block."
+    },
     "mysteryDungeon:MeowthFoulPlay": {
         "NAME": "Foul Play",
         "DESCRIPTION": "Deal !D! damage. NL If you have the last card you played is an ATTACK, apply !M! Weak."
