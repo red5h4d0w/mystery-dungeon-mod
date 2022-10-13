@@ -701,7 +701,7 @@
     },
     "mysteryDungeon:MeowthAssurance": {
         "NAME": "Assurance",
-        "DESCRIPTION": "Spend 3 gold. NL Apply 1 Weak. NL If this is the first card played this combat, gain !M! gold. NL Exhaust."
+        "DESCRIPTION": "Innate. NL Deal !D! damage. NL If the enemy's attacking, apply !M! Weak and gain 2 gold. NL Exhaust."
     },
     "mysteryDungeon:MeowthAttract": {
         "NAME": "Attract",
