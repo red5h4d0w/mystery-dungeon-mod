@@ -3,23 +3,23 @@ package mysteryDungeon.cards.Meowth;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.actions.SpendGoldAction;
 import mysteryDungeon.characters.Pokemon;
 
-public class MeowthFlatter extends PokemonCard {
+public class MeowthSpite extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(MeowthFlatter.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(MeowthSpite.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("Skill.png");
     public static final String NAME = cardStrings.NAME;
@@ -30,39 +30,44 @@ public class MeowthFlatter extends PokemonCard {
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
+    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.MEOWTH_WHITE;
 
-    private static final int COST = 2;
-    private static final int BASE_MAGIC_NUMBER = 2;
-    private static final int BLOCK = 20;
-    private static final int UPGRADE_PLUS_BLOCK = 5;
+    private static final int COST = -2;
+    private static final int BASE_MAGIC_NUMBER = 6;
+    private static final int UPGRADE_MAGIC_NUMBER = -2;
 
 
     // /STAT DECLARATION/
 
-    public MeowthFlatter() {
+    public MeowthSpite() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseBlock = BLOCK;
         baseMagicNumber = BASE_MAGIC_NUMBER;
-        magicNumber = baseMagicNumber;
+        magicNumber = BASE_MAGIC_NUMBER;
+        exhaust = true;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
-            for (AbstractMonster monster : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-                if (!monster.isDead && !monster.isDying) {
-                    AbstractDungeon.actionManager.addToBottom(
-                        new ApplyPowerAction(monster, p, new StrengthPower(monster, this.magicNumber), this.magicNumber)
-                    );
-                } 
-            } 
+        if (energyOnUse < EnergyPanel.totalCount)
+        {
+            energyOnUse = EnergyPanel.totalCount; 
         }
-        addToBot(new GainBlockAction(p, p, block));
+        if (p.hasRelic("Chemical X")) {
+            energyOnUse += 2;
+            p.getRelic("Chemical X").flash();
+        }
+        if(magicNumber*energyOnUse!=0) {
+            addToBot(new SpendGoldAction(magicNumber));
+            addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, 3*energyOnUse), 3*energyOnUse));
+        }
+        if (!freeToPlayOnce)
+        {
+            p.energy.use(EnergyPanel.totalCount);
+        }
     }
 
     // Upgraded stats.
@@ -70,7 +75,7 @@ public class MeowthFlatter extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBlock(UPGRADE_PLUS_BLOCK);
+            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             initializeDescription();
         }
     }

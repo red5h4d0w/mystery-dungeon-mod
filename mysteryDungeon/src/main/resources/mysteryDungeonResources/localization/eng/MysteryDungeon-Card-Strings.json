@@ -762,6 +762,10 @@
         "NAME": "Scratch",
         "DESCRIPTION": "Deal !D! damage."
     },
+    "mysteryDungeon:MeowthSpite": {
+        "NAME": "Spite",
+        "DESCRIPTION": "Spend !M! X gold. NL Gain 3X Strength. NL Exhaust."
+    },
     "mysteryDungeon:MeowthSwagger": {
         "NAME": "Swagger",
         "DESCRIPTION": "Give an enemy !M! strenght. NL Stun that enemy."
