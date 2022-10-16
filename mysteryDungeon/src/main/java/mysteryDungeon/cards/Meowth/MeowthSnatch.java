@@ -91,5 +91,8 @@ public class MeowthSnatch extends PokemonCard {
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
+        AbstractCard upgradedAttract = new MeowthAttract(true);
+        upgradedAttract.upgrade();
+        cardsToPreview = upgradedAttract;
     }
 }
