@@ -277,6 +277,9 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 
     @Override
 	public ArrayList<AbstractCard> getCardPool(ArrayList<AbstractCard> tmpPool) {
+        if(!hasChosenStarters()) {
+            onLoad(preparedSaveData);
+        }
         ArrayList<AbstractCard.CardColor> colors = getUsedSubColors();
         for(AbstractCard.CardColor color : colors) {
             for (Map.Entry<String, AbstractCard> c : CardLibrary.cards.entrySet()) {
@@ -475,7 +478,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 
     @Override
     public ToSave onSave() {
-        logger.info("SAVING!!!!!!!!!!!!!!!!!!!!!!!!!!");
         return preparedSaveData;
     }
 
