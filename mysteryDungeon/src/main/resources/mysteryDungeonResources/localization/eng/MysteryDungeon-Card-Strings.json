@@ -778,6 +778,11 @@
         "NAME": "Thief",
         "DESCRIPTION": "Deal !D! damage to !M! random enemies and obtain 2 gold !M! times. NL Exhaust."
     },
+    "mysteryDungeon:MeowthUTurn": {
+        "NAME": "U-Turn",
+        "DESCRIPTION": "Spend !M! gold. NL Create a card from your partner's deck in hand. NL It cost 0 this turn. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Spend !M! gold. NL Create a card from your partner's deck in hand. NL It cost 0 this combat. NL Exhaust."
+    },
     "mysteryDungeon:PikachuAgility": {
         "NAME": "Agility",
         "DESCRIPTION": "Whenever you enter a stance, draw !M! card.",
