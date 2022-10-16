@@ -710,11 +710,11 @@
     },
     "mysteryDungeon:MeowthCaptivate": {
         "NAME": "Captivate",
-        "DESCRIPTION": "Spend !M! gold. NL This turn, the target loses !mysteryDungeon:M2! Strenght."
+        "DESCRIPTION": "Spend !M! gold. NL This turn, the target loses !mysteryDungeon:M2! Strength."
     },
     "mysteryDungeon:MeowthCovet": {
         "NAME": "Covet",
-        "DESCRIPTION": "Give a random enemy !M! strenght. NL Gain !mysteryDungeon:M2! gold."
+        "DESCRIPTION": "Give a random enemy !M! Strength. NL Gain !mysteryDungeon:M2! gold."
     },
     "mysteryDungeon:MeowthDefend": {
         "NAME": "Defend",
@@ -746,12 +746,12 @@
     },
     "mysteryDungeon:MeowthPsychUp": {
         "NAME": "Psych Up",
-        "DESCRIPTION": "When you give an enemy Strenght, gain !M! Strenght.",
-        "UPGRADE_DESCRIPTION": "When you give an enemy Strenght, gain !M! Strenght."
+        "DESCRIPTION": "When you give an enemy Strength, gain !M! Strength.",
+        "UPGRADE_DESCRIPTION": "When you give an enemy Strength, gain !M! Strength."
     },
     "mysteryDungeon:MeowthPunishment": {
         "NAME": "Punishment",
-        "DESCRIPTION": "Deal !D! damage. NL Deal Addditionnal damage equal to !M! times the enemy's Strenght."
+        "DESCRIPTION": "Deal !D! damage. NL Deal Addditionnal damage equal to !M! times the enemy's Strength."
     },
     "mysteryDungeon:MeowthSnatch": {
         "NAME": "Snatch",
@@ -768,7 +768,7 @@
     },
     "mysteryDungeon:MeowthSwagger": {
         "NAME": "Swagger",
-        "DESCRIPTION": "Give an enemy !M! strenght. NL Stun that enemy."
+        "DESCRIPTION": "Give an enemy !M! Strength. NL Stun that enemy."
     },
     "mysteryDungeon:MeowthTaunt": {
         "NAME": "Taunt",
