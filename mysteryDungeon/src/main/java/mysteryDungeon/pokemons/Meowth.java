@@ -21,5 +21,6 @@ public class Meowth extends AbstractPokemon {
 
     public Meowth(){
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);
+        evolution = new Persian();
     }
 }
