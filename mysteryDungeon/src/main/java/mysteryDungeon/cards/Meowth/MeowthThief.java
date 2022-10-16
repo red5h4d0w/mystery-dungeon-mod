@@ -36,7 +36,7 @@ public class MeowthThief extends PokemonCard {
 
     private static final int COST = 1;
     private static final int DAMAGE = 6;
-    private static final int BASE_MAGIC_NUMBER = 4;
+    private static final int BASE_MAGIC_NUMBER = 2;
     private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
@@ -55,7 +55,7 @@ public class MeowthThief extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (int i = 0; i < this.magicNumber; i++){
             addToBot(new AttackDamageRandomEnemyAction(this, AttackEffect.SLASH_HORIZONTAL));
-            addToBot(new GainGoldAction(2));
+            addToBot(new GainGoldAction(4));
             }
     }
 

@@ -776,7 +776,7 @@
     },
     "mysteryDungeon:MeowthThief": {
         "NAME": "Thief",
-        "DESCRIPTION": "Deal !D! damage to !M! random enemies and obtain 2 gold !M! times. NL Exhaust."
+        "DESCRIPTION": "Deal !D! damage to !M! random enemies and obtain 4 gold !M! times. NL Exhaust."
     },
     "mysteryDungeon:MeowthUTurn": {
         "NAME": "U-Turn",
