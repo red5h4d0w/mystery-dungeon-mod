@@ -734,7 +734,7 @@
     },
     "mysteryDungeon:MeowthFurySwipes": {
         "NAME": "Fury Swipes",
-        "DESCRIPTION": "Deal !D! damage. NL If you have !M! gold, spend them and increase this card damage by !mysteryDungeon:M2! permanently. NL Exhaust."
+        "DESCRIPTION": "Deal !D! damage. NL If you have !M! gold, spend it and increase this card damage by !mysteryDungeon:M2! permanently. NL Exhaust."
     },
     "mysteryDungeon:MeowthHoneClaws": {
         "NAME": "Hone Claws",
