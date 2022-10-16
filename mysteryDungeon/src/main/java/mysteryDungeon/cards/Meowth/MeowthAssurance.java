@@ -58,8 +58,8 @@ public class MeowthAssurance extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.BLUNT_LIGHT));
         if (m != null && m.getIntentBaseDmg() >= 0)
-        addToBot (new ApplyPowerAction(p, m, new WeakPower(m, magicNumber , false)));
-            addToBot (new GainGoldAction(2));
+        addToBot (new ApplyPowerAction(m, p, new WeakPower(m, magicNumber , false)));
+            addToBot (new GainGoldAction(5));
 
     }
 
