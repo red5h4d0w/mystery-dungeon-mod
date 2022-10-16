@@ -574,7 +574,7 @@
     },
     "mysteryDungeon:CyndaquilFireBlast": {
         "NAME": "Fire Blast",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Increase the amount of mysterydungeon:Burn this card applies by !mysteryDungeon:M2!. NL Exhaust."
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Increase the amount of mysterydungeon:Burn this card applies by !mysteryDungeon:M2! permanently. NL Exhaust."
     },
     "mysteryDungeon:CyndaquilFirePledge": {
         "NAME": "Fire Pledge",
@@ -719,6 +719,11 @@
     "mysteryDungeon:MeowthDefend": {
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! block."
+    },
+    "mysteryDungeon:MeowthExplorerForm": {
+        "NAME": "Snatch",
+        "DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract in your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract+ in your hand. NL Exhaust."
     },
     "mysteryDungeon:MeowthFeint": {
         "NAME": "Feint",
