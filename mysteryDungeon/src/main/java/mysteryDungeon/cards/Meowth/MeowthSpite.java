@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.relics.ChemicalX;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 import mysteryDungeon.MysteryDungeon;
@@ -52,20 +53,18 @@ public class MeowthSpite extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (energyOnUse < EnergyPanel.totalCount)
-        {
+        if (energyOnUse < EnergyPanel.totalCount) {
             energyOnUse = EnergyPanel.totalCount; 
         }
-        if (p.hasRelic("Chemical X")) {
+        if (p.hasRelic(ChemicalX.ID)) {
             energyOnUse += 2;
-            p.getRelic("Chemical X").flash();
+            p.getRelic(ChemicalX.ID).flash();
         }
         if(magicNumber*energyOnUse!=0) {
             addToBot(new SpendGoldAction(magicNumber*energyOnUse));
             addToBot(new ApplyPowerAction(p, p, new StrengthPower(m, 3*energyOnUse), 3*energyOnUse));
         }
-        if (!freeToPlayOnce)
-        {
+        if (!freeToPlayOnce) {
             p.energy.use(EnergyPanel.totalCount);
         }
     }
