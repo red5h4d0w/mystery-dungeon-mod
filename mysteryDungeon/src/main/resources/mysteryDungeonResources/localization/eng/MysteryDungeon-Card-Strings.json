@@ -725,6 +725,10 @@
         "DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract in your hand. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract+ in your hand. NL Exhaust."
     },
+    "mysteryDungeon:MeowthFakeTears": {
+        "NAME": "Fake Tears",
+        "DESCRIPTION": "Spend !M! gold. NL Gain !B! block"
+    },
     "mysteryDungeon:MeowthFeint": {
         "NAME": "Feint",
         "DESCRIPTION": "Remove all block from the enemy. NL Deal damage equal to the amount of block removed."
@@ -748,6 +752,10 @@
     "mysteryDungeon:MeowthNastyPlot": {
         "NAME": "Nasty Plot",
         "DESCRIPTION": "Spend !M! gold. NL Draw !mysteryDungeon:M2! cards."
+    },
+    "mysteryDungeon:MeowthNightSlash": {
+        "NAME": "Night Slash",
+        "DESCRIPTION": "Deal !D! damage. NL Bring ALL 0 cost cards in your discard pile into your hand. NL Exhaust."
     },
     "mysteryDungeon:MeowthPsychUp": {
         "NAME": "Psych Up",
