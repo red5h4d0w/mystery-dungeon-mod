@@ -755,7 +755,7 @@
     },
     "mysteryDungeon:MeowthNightSlash": {
         "NAME": "Night Slash",
-        "DESCRIPTION": "Deal !D! damage. NL Bring ALL 0 cost cards in your discard pile into your hand. NL Exhaust."
+        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Bring ALL 0 cost cards in your discard pile into your hand. NL Exhaust."
     },
     "mysteryDungeon:MeowthPsychUp": {
         "NAME": "Psych Up",
@@ -781,7 +781,7 @@
     },
     "mysteryDungeon:MeowthSpite": {
         "NAME": "Spite",
-        "DESCRIPTION": "Spend !M! X gold. NL Gain 3X Strength. NL Exhaust."
+        "DESCRIPTION": "Spend !M! X gold. NL Gain 4X Strength. NL Exhaust."
     },
     "mysteryDungeon:MeowthSwagger": {
         "NAME": "Swagger",

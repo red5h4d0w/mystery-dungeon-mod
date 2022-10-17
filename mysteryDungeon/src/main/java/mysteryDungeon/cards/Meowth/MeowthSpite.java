@@ -37,7 +37,7 @@ public class MeowthSpite extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.MEOWTH_WHITE;
 
     private static final int COST = -1;
-    private static final int BASE_MAGIC_NUMBER = 6;
+    private static final int BASE_MAGIC_NUMBER = 8;
     private static final int UPGRADE_MAGIC_NUMBER = -2;
 
 
@@ -62,7 +62,7 @@ public class MeowthSpite extends PokemonCard {
         }
         if(magicNumber*energyOnUse!=0) {
             addToBot(new SpendGoldAction(magicNumber*energyOnUse));
-            addToBot(new ApplyPowerAction(p, p, new StrengthPower(m, 3*energyOnUse), 3*energyOnUse));
+            addToBot(new ApplyPowerAction(p, p, new StrengthPower(m, 4*energyOnUse), 4*energyOnUse));
         }
         if (!freeToPlayOnce) {
             p.energy.use(EnergyPanel.totalCount);
