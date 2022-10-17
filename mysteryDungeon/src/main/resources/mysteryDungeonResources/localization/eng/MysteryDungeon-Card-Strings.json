@@ -716,6 +716,11 @@
         "NAME": "Covet",
         "DESCRIPTION": "Give a random enemy !M! Strength. NL Gain !mysteryDungeon:M2! gold."
     },
+    "mysteryDungeon:MeowthDarkPulse": {
+        "NAME": "Dark Pulse",
+        "DESCRIPTION": "Deal !D! damage. NL Add a card from your discard pile into your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add a card from your discard pile into your hand."
+    },
     "mysteryDungeon:MeowthDefend": {
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! block."
