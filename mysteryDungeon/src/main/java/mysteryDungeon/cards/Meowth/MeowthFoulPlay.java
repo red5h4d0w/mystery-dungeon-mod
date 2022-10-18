@@ -41,7 +41,7 @@ public class MeowthFoulPlay extends PokemonCard {
     private static final int COST = 1;
     private static final int DAMAGE = 7;
     private static final int BASE_MAGIC_NUMBER = 1;
-    private static final int UPGRADE_MAGIC_NUMBER = 2;
+    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
     // /STAT DECLARATION/
 
@@ -59,7 +59,7 @@ public class MeowthFoulPlay extends PokemonCard {
         if (AbstractDungeon.actionManager.cardsPlayedThisCombat.size() >= 2 && ((AbstractCard)AbstractDungeon.actionManager.cardsPlayedThisCombat
           .get(AbstractDungeon.actionManager.cardsPlayedThisCombat
             .size() - 2)).type == AbstractCard.CardType.ATTACK) {
-                addToBot(new ApplyPowerAction(p, m, new WeakPower(m, magicNumber, false)));
+                addToBot(new ApplyPowerAction(m, p, new WeakPower(m, magicNumber, false)));
                 }
     }
 
