@@ -726,9 +726,9 @@
         "DESCRIPTION": "Gain !B! block."
     },
     "mysteryDungeon:MeowthExplorerForm": {
-        "NAME": "Snatch",
-        "DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract in your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract+ in your hand. NL Exhaust."
+        "NAME": "Explorer Form",
+        "DESCRIPTION": "Every turn the first gold cost is free.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Every turn the first gold cost is free."
     },
     "mysteryDungeon:MeowthFakeTears": {
         "NAME": "Fake Tears",
@@ -749,6 +749,10 @@
     "mysteryDungeon:MeowthFurySwipes": {
         "NAME": "Fury Swipes",
         "DESCRIPTION": "Deal !D! damage. NL If you have !M! gold, spend it and increase this card damage by !mysteryDungeon:M2! permanently. NL Exhaust."
+    },
+    "mysteryDungeon:MeowthHappyHour": {
+        "NAME": "Happy Hour",
+        "DESCRIPTION": "Gain !M! gold. NL Increase the amount by !mysteryDungeon:M2! permanently. NL Exhaust"
     },
     "mysteryDungeon:MeowthHoneClaws": {
         "NAME": "Hone Claws",
