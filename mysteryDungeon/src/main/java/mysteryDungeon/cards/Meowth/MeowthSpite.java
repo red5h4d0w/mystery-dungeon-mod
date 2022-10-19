@@ -69,6 +69,11 @@ public class MeowthSpite extends PokemonCard {
         }
     }
 
+    @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        return super.canUse(p, m) && canSpend(magicNumber*energyOnUse);
+    }
+
     // Upgraded stats.
     @Override
     public void upgrade() {

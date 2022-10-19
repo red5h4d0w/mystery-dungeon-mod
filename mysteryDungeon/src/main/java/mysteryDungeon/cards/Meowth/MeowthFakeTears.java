@@ -55,6 +55,11 @@ public class MeowthFakeTears extends PokemonCard {
         addToBot(new GainBlockAction(p, p, block));
     }
 
+    @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        return super.canUse(p, m) && canSpend(magicNumber);
+    }
+
     // Upgraded stats.
     @Override
     public void upgrade() {

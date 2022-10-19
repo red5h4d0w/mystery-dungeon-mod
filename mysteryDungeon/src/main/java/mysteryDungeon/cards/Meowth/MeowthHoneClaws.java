@@ -54,6 +54,11 @@ public class MeowthHoneClaws extends PokemonCard {
         addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, magicNumber)));
     }
 
+    @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        return super.canUse(p, m) && canSpend(15);
+    }
+
     // Upgraded stats.
     @Override
     public void upgrade() {

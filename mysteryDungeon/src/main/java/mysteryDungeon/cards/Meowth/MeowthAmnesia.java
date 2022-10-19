@@ -54,6 +54,11 @@ public class MeowthAmnesia extends PokemonCard {
         addToBot(new ApplyPowerAction(p, p, new BufferPower(p, magicNumber)));
     }
 
+    @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        return super.canUse(p, m) && canSpend(15);
+    }
+
     // Upgraded stats.
     @Override
     public void upgrade() {
