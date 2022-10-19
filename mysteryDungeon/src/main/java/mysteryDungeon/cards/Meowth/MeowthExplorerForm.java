@@ -22,6 +22,7 @@ public class MeowthExplorerForm extends PokemonCard {
     public static final String IMG = makeCardPath("Power.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -57,6 +58,7 @@ public class MeowthExplorerForm extends PokemonCard {
         if (!upgraded) {
             upgradeName();
             isInnate = true;
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

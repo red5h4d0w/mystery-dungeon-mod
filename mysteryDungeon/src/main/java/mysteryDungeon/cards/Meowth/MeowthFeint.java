@@ -24,6 +24,8 @@ public class MeowthFeint extends PokemonCard {
     public static final String IMG = makeCardPath("MeowthAttack.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    public static final String EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION[0];
 
     // /TEXT DECLARATION/
 
@@ -51,6 +53,12 @@ public class MeowthFeint extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new RemoveAllBlockAction(m, p));
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
+        if (!upgraded) {
+            rawDescription = cardStrings.DESCRIPTION;
+          } else {
+            rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+          } 
+          initializeDescription();
     }
 
     @Override
@@ -60,12 +68,26 @@ public class MeowthFeint extends PokemonCard {
         baseDamage-=m.currentBlock;
     }
 
+    public void applyPowers(AbstractMonster m) {
+        baseDamage = m.currentBlock;
+        if (upgraded)
+          baseDamage += 4; 
+        super.applyPowers();
+        if (!upgraded) {
+          rawDescription = cardStrings.DESCRIPTION;
+        } else {
+          rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+        } 
+        rawDescription += cardStrings.EXTENDED_DESCRIPTION[0];
+        initializeDescription();
+    }
     // Upgraded stats.
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

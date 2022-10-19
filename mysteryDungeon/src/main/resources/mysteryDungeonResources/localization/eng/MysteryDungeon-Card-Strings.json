@@ -736,7 +736,9 @@
     },
     "mysteryDungeon:MeowthFeint": {
         "NAME": "Feint",
-        "DESCRIPTION": "Remove all block from the enemy. NL Deal damage equal to the amount of block removed."
+        "DESCRIPTION": "Remove all block from the enemy. NL Deal damage equal to the amount of block removed.",
+        "UPGRADE_DESCRIPTION": "Remove all block from the enemy. NL Deal damage equal to the amount of block removed +4.",
+        "EXTENDED_DESCRIPTION":[" NL (Deals !D! damage.)"]
     },
     "mysteryDungeon:MeowthFlatter": {
         "NAME": "Flatter",
