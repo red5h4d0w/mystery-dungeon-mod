@@ -32,7 +32,7 @@ public class MeowthSpite extends PokemonCard {
     // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.MEOWTH_WHITE;
 
@@ -62,7 +62,7 @@ public class MeowthSpite extends PokemonCard {
         }
         if(magicNumber*energyOnUse!=0) {
             addToBot(new SpendGoldAction(magicNumber*energyOnUse));
-            addToBot(new ApplyPowerAction(p, p, new StrengthPower(m, 4*energyOnUse), 4*energyOnUse));
+            addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 4*energyOnUse), 4*energyOnUse));
         }
         if (!freeToPlayOnce) {
             p.energy.use(EnergyPanel.totalCount);
