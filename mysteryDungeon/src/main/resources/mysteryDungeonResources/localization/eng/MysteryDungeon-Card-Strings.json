@@ -811,6 +811,11 @@
         "NAME": "Taunt",
         "DESCRIPTION": "Gain !M! gold. NL End your turn."
     },
+    "mysteryDungeon:MeowthTechnician": {
+        "NAME": "Technician",
+        "DESCRIPTION": "At the start of your turn creat a Flurry in your hand.",
+        "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn creat a Flurry in your hand."
+    },
     "mysteryDungeon:MeowthThief": {
         "NAME": "Thief",
         "DESCRIPTION": "Deal !D! damage to !M! random enemies and obtain 4 gold !M! times. NL Exhaust."

@@ -50,7 +50,7 @@ public class MeowthPayday extends PokemonCard {
 
     public void applyPowers() {
         int realBaseDamage = this.baseDamage;
-        this.baseMagicNumber = AbstractDungeon.actionManager.mantraGained;
+        this.baseMagicNumber = Pokemon.goldSpentThisCombat;
         this.baseDamage += this.baseMagicNumber;
         super.applyPowers();
         this.baseDamage = realBaseDamage;
