@@ -158,6 +158,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     public static Nature nature;
     public static int pikachuChargeCounter = 0;
     public static int maxPikachuChargeCounter = 2;
+    public static int goldSpentThisCombat = 0;
 
     public Texture campfirePose;
 
@@ -713,6 +714,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     @Override
     public void applyStartOfCombatLogic() {
         super.applyStartOfCombatLogic();
+        goldSpentThisCombat = 0;
         resetPikameter();
     }
 
