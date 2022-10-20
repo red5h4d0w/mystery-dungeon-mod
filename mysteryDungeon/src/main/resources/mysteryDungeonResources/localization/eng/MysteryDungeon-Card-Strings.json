@@ -718,8 +718,8 @@
     },
     "mysteryDungeon:MeowthDarkPulse": {
         "NAME": "Dark Pulse",
-        "DESCRIPTION": "Deal !D! damage. NL Add a card from your discard pile into your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add a card from your discard pile into your hand."
+        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Add a card from your discard pile into your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Add a card from your discard pile into your hand."
     },
     "mysteryDungeon:MeowthDefend": {
         "NAME": "Defend",
