@@ -13,6 +13,7 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.BetterOnApplyPowerPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -36,7 +37,7 @@ public class LashOutPower extends PokemonPower implements CloneablePowerInterfac
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(LashOutPower.class.getSimpleName()+"84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(LashOutPower.class.getSimpleName()+"32.png"));
 
-    public LashOutPower(final AbstractCreature owner, final int amount) {
+    public LashOutPower(final AbstractCreature owner, final int amount, boolean upgrade) {
         name = NAME;
         ID = POWER_ID;
 
@@ -56,6 +57,9 @@ public class LashOutPower extends PokemonPower implements CloneablePowerInterfac
     @Override
     public boolean betterOnApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
         if(source == owner && target!=owner && power instanceof StrengthPower) {
+            AbstractCard flurry = new MeowthFlurry();
+            if(upgrade)
+                flurry.upgrade();
             addToBot((AbstractGameAction)new MakeTempCardInHandAction(new MeowthFlurry(), 1, false));
         }
         return true;
@@ -63,7 +67,7 @@ public class LashOutPower extends PokemonPower implements CloneablePowerInterfac
 
     @Override
     public AbstractPower makeCopy() {
-        return new LashOutPower(owner, amount);
+        return new LashOutPower(owner, amount, upgrade);
     }
 
     @Override

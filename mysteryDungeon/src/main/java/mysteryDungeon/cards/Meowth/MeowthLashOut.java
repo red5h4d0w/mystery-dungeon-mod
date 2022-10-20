@@ -3,6 +3,7 @@ package mysteryDungeon.cards.Meowth;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -10,6 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.cards.tempCards.MeowthFlurry;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.powers.LashOutPower;
 
@@ -44,12 +46,14 @@ public class MeowthLashOut extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        cardsToPreview = new MeowthFlurry();
     }
 
+    
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new LashOutPower(p, magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new LashOutPower(p, magicNumber, upgrade)));
     }
 
     // Upgraded stats.
@@ -59,6 +63,9 @@ public class MeowthLashOut extends PokemonCard {
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             upgradeName();
             initializeDescription();
+            AbstractCard upgradedFlurry = new MeowthFlurry();
+            upgradedFlurry.upgrade();
+            cardsToPreview = upgradedFlurry;
         }
     }
 }

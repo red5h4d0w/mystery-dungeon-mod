@@ -3,6 +3,7 @@ package mysteryDungeon.cards.Meowth;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -10,6 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.cards.tempCards.MeowthFlurry;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.powers.TechnicianPower;
 
@@ -44,6 +46,7 @@ public class MeowthTechnician extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        cardsToPreview = new MeowthFlurry();
     }
 
     // Actions the card should do.
@@ -60,6 +63,9 @@ public class MeowthTechnician extends PokemonCard {
             isInnate = true;
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
+            AbstractCard upgradedFlurry = new MeowthFlurry();
+            upgradedFlurry.upgrade();
+            cardsToPreview = upgradedFlurry;
         }
     }
 }
