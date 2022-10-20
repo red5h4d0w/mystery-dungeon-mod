@@ -744,6 +744,10 @@
         "NAME": "Flatter",
         "DESCRIPTION": "Give ALL enemies !M! Strength. NL Gain !B! block."
     },
+    "mysteryDungeon:MeowthFlurry": {
+        "NAME": "Flurry",
+        "DESCRIPTION": "Ethereal. NL Spend !M! gold. NL Deal !D! damage. NL Exhaust."
+    },
     "mysteryDungeon:MeowthFoulPlay": {
         "NAME": "Foul Play",
         "DESCRIPTION": "Deal !D! damage. NL If you have the last card you played is an ATTACK, apply !M! Weak."
