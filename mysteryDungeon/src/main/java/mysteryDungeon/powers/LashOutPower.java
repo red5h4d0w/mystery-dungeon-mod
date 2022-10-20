@@ -37,12 +37,13 @@ public class LashOutPower extends PokemonPower implements CloneablePowerInterfac
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(LashOutPower.class.getSimpleName()+"84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(LashOutPower.class.getSimpleName()+"32.png"));
 
-    public LashOutPower(final AbstractCreature owner, final int amount, boolean upgrade) {
+    public LashOutPower(final AbstractCreature owner, final int amount, boolean upgraded) {
         name = NAME;
         ID = POWER_ID;
 
         this.owner = owner;
         this.amount = amount;
+        this.upgraded = upgraded;
 
         type = PowerType.BUFF;
         isTurnBased = true;
@@ -58,7 +59,7 @@ public class LashOutPower extends PokemonPower implements CloneablePowerInterfac
     public boolean betterOnApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
         if(source == owner && target!=owner && power instanceof StrengthPower) {
             AbstractCard flurry = new MeowthFlurry();
-            if(upgrade)
+            if(upgraded)
                 flurry.upgrade();
             addToBot((AbstractGameAction)new MakeTempCardInHandAction(new MeowthFlurry(), 1, false));
         }
@@ -67,7 +68,7 @@ public class LashOutPower extends PokemonPower implements CloneablePowerInterfac
 
     @Override
     public AbstractPower makeCopy() {
-        return new LashOutPower(owner, amount, upgrade);
+        return new LashOutPower(owner, amount, upgraded);
     }
 
     @Override
