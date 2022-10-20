@@ -194,6 +194,12 @@
             "Your next #b%s #yEruption will not remove any #yBurn stacks."
         ]
     },
+    "mysteryDungeon:LashOutPower": {
+        "NAME": "Lash Out",
+        "DESCRIPTIONS": [
+            "Whenever you give an enemy Strength, create #b%s Flurry in hand."
+        ]
+    },
     "mysteryDungeon:LavaPlumePower": {
         "NAME": "Lava PLume",
         "DESCRIPTIONS": ["Whenever you cause an #yEruption, Apply #b%s #yBurn to the target."]
@@ -298,7 +304,7 @@
     },
     "mysteryDungeon:PsychUpPower": {
         "NAME": "Psych Up",
-        "DESCRIPTIONS": ["Whenever you give an enemy Strenght, gain #b%s Strenght."]
+        "DESCRIPTIONS": ["Whenever you give an enemy Strength, gain #b%s Strength."]
     },
     "mysteryDungeon:RainDancePower": {
         "NAME": "Rain Dance",
