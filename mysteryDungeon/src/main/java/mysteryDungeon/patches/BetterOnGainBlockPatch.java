@@ -1,6 +1,7 @@
 package mysteryDungeon.patches;
 
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
@@ -29,9 +30,9 @@ public class BetterOnGainBlockPatch {
             }
         }
         for (AbstractPower power: AbstractDungeon.getMonsters().monsters.stream()
-            .filter((monster)-> !monster.isDeadOrEscaped())
-            .map((monster)-> monster.powers)
-            .collect(ArrayList<AbstractPower>::new, ArrayList::addAll, ArrayList::addAll)) {
+            .filter( monster -> !monster.isDeadOrEscaped())
+            .flatMap( monster -> monster.powers.stream())
+            .collect(Collectors.toCollection(ArrayList::new))) {
             if(power instanceof BetterOnGainBlockInterface) {
                 ((BetterOnGainBlockInterface)power).betterOnGainBlock(__instance, blockAmount);
             }
