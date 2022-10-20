@@ -758,7 +758,12 @@
     },
     "mysteryDungeon:MeowthHoneClaws": {
         "NAME": "Hone Claws",
-        "DESCRIPTION": "Spend 15 gold. NL Gain !M! Strength"
+        "DESCRIPTION": "Give an enemy !B! block. NL Gain !M! Strength"
+    },
+    "mysteryDungeon:MeowthLastResort": {
+        "NAME": "Last Resort",
+        "DESCRIPTION": "Spend !M! gold. Discard your hand. NL Draw 10 cards. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Spend !M! gold. Discard your hand. NL Draw 10 cards. NL Exhaust."
     },
     "mysteryDungeon:MeowthNastyPlot": {
         "NAME": "Nasty Plot",
