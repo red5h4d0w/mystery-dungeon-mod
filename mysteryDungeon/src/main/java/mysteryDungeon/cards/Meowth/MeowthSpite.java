@@ -71,6 +71,9 @@ public class MeowthSpite extends PokemonCard {
 
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        if(p.hasRelic(ChemicalX.ID)) {
+            return super.canUse(p, m) && canSpend(magicNumber*(2+energyOnUse));
+        }
         return super.canUse(p, m) && canSpend(magicNumber*energyOnUse);
     }
 
