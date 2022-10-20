@@ -9,6 +9,7 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.powers.FreeSpendingThisTurnPower;
 
 public class SpendGoldAction extends AbstractGameAction {
@@ -29,6 +30,7 @@ public class SpendGoldAction extends AbstractGameAction {
         }
         CardCrawlGame.sound.play("GOLD_JINGLE");
         AbstractDungeon.player.gold -= goldAmount;
+        Pokemon.goldSpentThisCombat+=goldAmount;
         isDone = true;
     }
 }
