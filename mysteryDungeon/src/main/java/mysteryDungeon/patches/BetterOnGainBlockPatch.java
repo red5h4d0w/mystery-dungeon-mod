@@ -6,18 +6,18 @@ import java.util.stream.Collectors;
 import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 import mysteryDungeon.interfaces.BetterOnGainBlockInterface;
 
-@SpirePatch(clz = AbstractMonster.class, method="addBlock")
+@SpirePatch(clz = AbstractCreature.class, method="addBlock")
 public class BetterOnGainBlockPatch {
 
     @SpireInsertPatch(rloc=523-479, localvars="tmp")
-    public static void ActivatePowersAndRelics(AbstractMonster __instance, float tmp) {
+    public static void ActivatePowersAndRelics(AbstractCreature __instance, float tmp) {
         int blockAmount = MathUtils.floor(tmp);
         for (AbstractRelic relic: AbstractDungeon.player.relics) {
             if(relic instanceof BetterOnGainBlockInterface) {
