@@ -785,7 +785,7 @@
     "mysteryDungeon:MeowthPayday": {
         "NAME": "Payday",
         "DESCRIPTION": "Deal !D! damage. NL Deal additionnal damage equal to money spent this combat.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. Deal additionnal damage equal to money spent this combat."
+        "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL Deal additionnal damage equal to money spent this combat."
     },
     "mysteryDungeon:MeowthPsychUp": {
         "NAME": "Psych Up",
