@@ -62,7 +62,7 @@ public class LashOutPower extends PokemonPower implements CloneablePowerInterfac
             AbstractCard flurry = new MeowthFlurry();
             if(upgraded)
                 flurry.upgrade();
-            addToBot((AbstractGameAction)new MakeTempCardInHandAction(new MeowthFlurry(), 1, false));
+            addToBot((AbstractGameAction)new MakeTempCardInHandAction(new MeowthFlurry(), amount, false));
         }
         return true;
     }
@@ -73,7 +73,7 @@ public class LashOutPower extends PokemonPower implements CloneablePowerInterfac
             AbstractCard flurry = new MeowthFlurry();
             if(upgraded)
                 flurry.upgrade();
-            addToBot((AbstractGameAction)new MakeTempCardInHandAction(new MeowthFlurry(), 1, false));
+            addToBot((AbstractGameAction)new MakeTempCardInHandAction(new MeowthFlurry(), amount, false));
         }
     }
 
