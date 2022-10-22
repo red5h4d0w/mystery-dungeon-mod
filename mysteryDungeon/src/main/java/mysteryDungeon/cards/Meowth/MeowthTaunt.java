@@ -33,7 +33,7 @@ public class MeowthTaunt extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.MEOWTH_WHITE;
 
     private static final int COST = 2;
-    private static final int BASE_MAGIC_NUMBER = 30;
+    private static final int BASE_MAGIC_NUMBER = 20;
     private static final int UPGRADE_MAGIC_NUMBER = 5;
 
 

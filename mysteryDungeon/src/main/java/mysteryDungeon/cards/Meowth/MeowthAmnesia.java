@@ -50,7 +50,7 @@ public class MeowthAmnesia extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SpendGoldAction(15));
+        addToBot(new SpendGoldAction(12));
         addToBot(new ApplyPowerAction(p, p, new BufferPower(p, magicNumber)));
     }
 

@@ -55,7 +55,7 @@ public class MeowthThief extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (int i = 0; i < this.magicNumber; i++){
             addToBot(new AttackDamageRandomEnemyAction(this, AttackEffect.SLASH_HORIZONTAL));
-            addToBot(new GainGoldAction(4));
+            addToBot(new GainGoldAction(5));
             }
     }
 

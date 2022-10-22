@@ -34,9 +34,9 @@ public class MeowthFakeTears extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.MEOWTH_WHITE;
 
     private static final int COST = 0;
-    private static final int BLOCK = 7;
+    private static final int BLOCK = 8;
     private static final int UPGRADE_PLUS_BLOCK = 3;
-    private static final int BASE_MAGIC_NUMBER = 10;
+    private static final int BASE_MAGIC_NUMBER = 8;
 
 
     // /STAT DECLARATION/

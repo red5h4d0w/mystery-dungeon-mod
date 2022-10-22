@@ -697,11 +697,11 @@
     },
     "mysteryDungeon:MeowthAmnesia": {
         "NAME": "Amnesia",
-        "DESCRIPTION": "Spend 15 gold. NL Gain !M! Buffer."
+        "DESCRIPTION": "Spend 12 gold. NL Gain !M! Buffer."
     },
     "mysteryDungeon:MeowthAssurance": {
         "NAME": "Assurance",
-        "DESCRIPTION": "Innate. NL Deal !D! damage. NL If the enemy's attacking, apply !M! Weak and gain 5 gold. NL Exhaust."
+        "DESCRIPTION": "Innate. NL Deal !D! damage. NL If the enemy's attacking, apply !M! Weak and gain 7 gold. NL Exhaust."
     },
     "mysteryDungeon:MeowthAttract": {
         "NAME": "Attract",
@@ -746,7 +746,7 @@
     },
     "mysteryDungeon:MeowthFlurry": {
         "NAME": "Flurry",
-        "DESCRIPTION": "Ethereal. NL Spend !M! gold. NL Deal !D! damage. NL Exhaust."
+        "DESCRIPTION": "Ethereal. NL Gain !M! gold. NL Deal !D! damage. NL Exhaust."
     },
     "mysteryDungeon:MeowthFoulPlay": {
         "NAME": "Foul Play",
@@ -771,8 +771,8 @@
     },
     "mysteryDungeon:MeowthLashOut": {
         "NAME": "Lash Out",
-        "DESCRIPTION": "Whenever you give Strength or block to an enemy create a Flurry in hand.",
-        "UPGRADE_DESCRIPTION": "Whenever you give Strength or block to an enemy create a Flurry+ in hand."
+        "DESCRIPTION": "Whenever you give Strength or block to an enemy create !M! Flurry in hand.",
+        "UPGRADE_DESCRIPTION": "Whenever you give Strength or block to an enemy create !M! Flurry+ in hand."
     },
     "mysteryDungeon:MeowthNastyPlot": {
         "NAME": "Nasty Plot",
@@ -828,7 +828,7 @@
     },
     "mysteryDungeon:MeowthThief": {
         "NAME": "Thief",
-        "DESCRIPTION": "Deal !D! damage to !M! random enemies and obtain 4 gold !M! times. NL Exhaust."
+        "DESCRIPTION": "Deal !D! damage to !M! random enemies and obtain 5 gold !M! times. NL Exhaust."
     },
     "mysteryDungeon:MeowthThroatChop": {
         "NAME": "Throat Chop",
