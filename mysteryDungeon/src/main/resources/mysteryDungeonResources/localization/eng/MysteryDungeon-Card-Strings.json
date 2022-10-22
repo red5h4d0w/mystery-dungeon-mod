@@ -811,7 +811,7 @@
     },
     "mysteryDungeon:MeowthSpite": {
         "NAME": "Spite",
-        "DESCRIPTION": "Spend !M! X gold. NL Gain 4X Strength. NL Exhaust."
+        "DESCRIPTION": "Spend !M! X gold. NL Gain 2X Strength. NL Exhaust."
     },
     "mysteryDungeon:MeowthSwagger": {
         "NAME": "Swagger",

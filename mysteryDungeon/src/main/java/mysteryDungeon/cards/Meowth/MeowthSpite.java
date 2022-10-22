@@ -62,7 +62,7 @@ public class MeowthSpite extends PokemonCard {
         }
         if(magicNumber*energyOnUse!=0) {
             addToBot(new SpendGoldAction(magicNumber*energyOnUse));
-            addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 4*energyOnUse), 4*energyOnUse));
+            addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 2*energyOnUse), 2*energyOnUse));
         }
         if (!freeToPlayOnce) {
             p.energy.use(EnergyPanel.totalCount);
