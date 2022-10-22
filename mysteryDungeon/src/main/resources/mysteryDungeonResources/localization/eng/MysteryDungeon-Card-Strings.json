@@ -782,6 +782,11 @@
         "NAME": "Night Slash",
         "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Bring ALL 0 cost cards in your discard pile into your hand. NL Exhaust."
     },
+    "mysteryDungeon:MeowthPayday": {
+        "NAME": "Payday",
+        "DESCRIPTION": "Deal !D! damage. NL Deal additionnal damage equal to money spent this combat.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. Deal additionnal damage equal to money spent this combat."
+    },
     "mysteryDungeon:MeowthPsychUp": {
         "NAME": "Psych Up",
         "DESCRIPTION": "When you give an enemy Strength, gain !M! Strength.",
@@ -824,6 +829,10 @@
     "mysteryDungeon:MeowthThief": {
         "NAME": "Thief",
         "DESCRIPTION": "Deal !D! damage to !M! random enemies and obtain 4 gold !M! times. NL Exhaust."
+    },
+    "mysteryDungeon:MeowthThroatChop": {
+        "NAME": "Throat Chop",
+        "DESCRIPTION": "Deal !D! damage. NL Gain !B! block."
     },
     "mysteryDungeon:MeowthUTurn": {
         "NAME": "U-Turn",

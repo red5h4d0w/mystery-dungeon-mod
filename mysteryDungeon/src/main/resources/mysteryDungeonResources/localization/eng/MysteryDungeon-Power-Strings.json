@@ -382,6 +382,12 @@
             "Apply #b%s #yWeak to ALL enemies every time you enter or exit a stance."
         ]
     },
+    "mysteryDungeon:TechnicianPower": {
+        "NAME": "Technician",
+        "DESCRIPTIONS": [
+            "Create #b%s #yFlurry in your hand at the start of your turn."
+        ]
+    },
     "mysteryDungeon:ThunderPower": {
         "NAME": "Thunder",
         "DESCRIPTIONS": [

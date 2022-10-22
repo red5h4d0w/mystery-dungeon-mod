@@ -24,6 +24,7 @@ public class MeowthPayday extends PokemonCard {
     public static final String IMG = makeCardPath("MeowthAttack.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -77,6 +78,8 @@ public class MeowthPayday extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            selfRetain = true;
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }
