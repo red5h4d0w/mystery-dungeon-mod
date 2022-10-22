@@ -769,6 +769,11 @@
         "DESCRIPTION": "Spend !M! gold. Discard your hand. NL Draw 10 cards. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Retain. NL Spend !M! gold. Discard your hand. NL Draw 10 cards. NL Exhaust."
     },
+    "mysteryDungeon:MeowthLashOut": {
+        "NAME": "Lash Out",
+        "DESCRIPTION": "Whenever you give Strength or block to an enemy create a Flurry in hand.",
+        "UPGRADE_DESCRIPTION": "Whenever you give Strength or block to an enemy create a Flurry+ in hand."
+    },
     "mysteryDungeon:MeowthNastyPlot": {
         "NAME": "Nasty Plot",
         "DESCRIPTION": "Spend !M! gold. NL Draw !mysteryDungeon:M2! cards."
@@ -813,8 +818,8 @@
     },
     "mysteryDungeon:MeowthTechnician": {
         "NAME": "Technician",
-        "DESCRIPTION": "At the start of your turn creat a Flurry in your hand.",
-        "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn creat a Flurry in your hand."
+        "DESCRIPTION": "Innate. NL At the start of your turn creat a Flurry in your hand.",
+        "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn creat a Flurry+ in your hand."
     },
     "mysteryDungeon:MeowthThief": {
         "NAME": "Thief",

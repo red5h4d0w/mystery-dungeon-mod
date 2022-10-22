@@ -24,6 +24,7 @@ public class MeowthLashOut extends PokemonCard {
     public static final String IMG = makeCardPath("MeowthPower.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -53,7 +54,10 @@ public class MeowthLashOut extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new LashOutPower(p, magicNumber, upgrade)));
+        if(upgraded)
+        addToBot(new ApplyPowerAction(p, p, new LashOutPower(p, magicNumber, true)));
+        if(!upgraded)
+        addToBot(new ApplyPowerAction(p, p, new LashOutPower(p, magicNumber, false)));
     }
 
     // Upgraded stats.
@@ -63,6 +67,7 @@ public class MeowthLashOut extends PokemonCard {
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             upgradeName();
             initializeDescription();
+            rawDescription = UPGRADE_DESCRIPTION;
             AbstractCard upgradedFlurry = new MeowthFlurry();
             upgradedFlurry.upgrade();
             cardsToPreview = upgradedFlurry;

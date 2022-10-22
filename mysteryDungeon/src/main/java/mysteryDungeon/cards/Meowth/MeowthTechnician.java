@@ -46,13 +46,17 @@ public class MeowthTechnician extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        isInnate = true;
         cardsToPreview = new MeowthFlurry();
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new TechnicianPower(p, magicNumber)));
+        if(upgraded)
+        addToBot(new ApplyPowerAction(p, p, new TechnicianPower(p, magicNumber, true)));
+        if(!upgraded)
+        addToBot(new ApplyPowerAction(p, p, new TechnicianPower(p, magicNumber, false)));
     }
 
     // Upgraded stats.
@@ -60,7 +64,6 @@ public class MeowthTechnician extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            isInnate = true;
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
             AbstractCard upgradedFlurry = new MeowthFlurry();

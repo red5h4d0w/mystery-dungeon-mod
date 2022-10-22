@@ -4,6 +4,7 @@ import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonPower;
 import mysteryDungeon.cards.tempCards.MeowthFlurry;
+import mysteryDungeon.interfaces.BetterOnGainBlockInterface;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
@@ -23,7 +24,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class LashOutPower extends PokemonPower implements CloneablePowerInterface, BetterOnApplyPowerPower {
+public class LashOutPower extends PokemonPower implements CloneablePowerInterface, BetterOnApplyPowerPower, BetterOnGainBlockInterface {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID(LashOutPower.class.getSimpleName());
@@ -64,6 +65,16 @@ public class LashOutPower extends PokemonPower implements CloneablePowerInterfac
             addToBot((AbstractGameAction)new MakeTempCardInHandAction(new MeowthFlurry(), 1, false));
         }
         return true;
+    }
+
+    @Override
+    public void betterOnGainBlock(AbstractCreature receiver, int blockAmount) {
+        if(receiver!=owner) {
+            AbstractCard flurry = new MeowthFlurry();
+            if(upgraded)
+                flurry.upgrade();
+            addToBot((AbstractGameAction)new MakeTempCardInHandAction(new MeowthFlurry(), 1, false));
+        }
     }
 
     @Override
