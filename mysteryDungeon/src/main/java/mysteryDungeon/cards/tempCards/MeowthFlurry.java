@@ -36,7 +36,7 @@ public class MeowthFlurry extends PokemonCard {
 
     private static final int COST = 0;
     private static final int BASE_DAMAGE = 5;
-    private static final int UPGRADE_PLUS_DMG = 2;
+    private static final int UPGRADE_PLUS_DMG = 3;
     private static final int BASE_MAGIC_NUMBER = 2;
 
 
