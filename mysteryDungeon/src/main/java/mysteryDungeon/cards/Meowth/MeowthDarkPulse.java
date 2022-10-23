@@ -56,6 +56,10 @@ public class MeowthDarkPulse extends PokemonCard {
         addToBot(new BetterDiscardPileToHandAction(1));
     }
 
+    @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        return super.canUse(p, m) && canSpend(10);
+    }
     // Upgraded stats.
     @Override
     public void upgrade() {

@@ -718,8 +718,8 @@
     },
     "mysteryDungeon:MeowthDarkPulse": {
         "NAME": "Dark Pulse",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Add a card from your discard pile into your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Add a card from your discard pile into your hand."
+        "DESCRIPTION": "Spend 10 gold. NL Deal !D! damage to ALL enemies. NL Add a card from your discard pile into your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Spend 10 gold. NL Deal !D! damage to ALL enemies. NL Add a card from your discard pile into your hand."
     },
     "mysteryDungeon:MeowthDefend": {
         "NAME": "Defend",
@@ -780,7 +780,7 @@
     },
     "mysteryDungeon:MeowthNightSlash": {
         "NAME": "Night Slash",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Bring ALL 0 cost cards in your discard pile into your hand. NL Exhaust."
+        "DESCRIPTION": "Spend 10 gold. NL Deal !D! damage to ALL enemies. NL Bring ALL 0 cost cards in your discard pile into your hand. NL Exhaust."
     },
     "mysteryDungeon:MeowthPayday": {
         "NAME": "Payday",

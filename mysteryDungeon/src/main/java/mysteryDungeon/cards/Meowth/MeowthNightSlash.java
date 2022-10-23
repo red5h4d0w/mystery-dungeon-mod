@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.actions.SpendGoldAction;
 import mysteryDungeon.characters.Pokemon;
 
 public class MeowthNightSlash extends PokemonCard {
@@ -50,10 +51,16 @@ public class MeowthNightSlash extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SpendGoldAction(10));
         addToBot(new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         addToBot(new AllCostToHandAction(0));
     }
 
+    @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        return super.canUse(p, m) && canSpend(10);
+    }
+    
     // Upgraded stats.
     @Override
     public void upgrade() {
