@@ -750,11 +750,11 @@
     },
     "mysteryDungeon:MeowthFoulPlay": {
         "NAME": "Foul Play",
-        "DESCRIPTION": "Deal !D! damage. NL If you have the last card you played is an ATTACK, apply !M! Weak."
+        "DESCRIPTION": "Deal !D! damage. NL If the last card you played was an Attack, apply !M! Weak."
     },
     "mysteryDungeon:MeowthFurySwipes": {
         "NAME": "Fury Swipes",
-        "DESCRIPTION": "Deal !D! damage. NL If you have !M! gold, spend it and increase this card damage by !mysteryDungeon:M2! permanently. NL Exhaust."
+        "DESCRIPTION": "Deal !D! damage. NL If you have !M! gold, spend it and increase this card damage by !mysteryDungeon:M2!. NL Exhaust."
     },
     "mysteryDungeon:MeowthHappyHour": {
         "NAME": "Happy Hour",
