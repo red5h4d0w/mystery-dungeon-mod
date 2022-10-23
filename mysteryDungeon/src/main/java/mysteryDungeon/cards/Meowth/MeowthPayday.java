@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -28,7 +27,6 @@ public class MeowthPayday extends PokemonCard {
 
     // /TEXT DECLARATION/
 
-
     // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.RARE;
@@ -38,40 +36,34 @@ public class MeowthPayday extends PokemonCard {
 
     private static final int COST = 1;
     private static final int DAMAGE = 12;
-    private static final int BASE_MAGIC_NUMBER = 0;
 
     // /STAT DECLARATION/
 
     public MeowthPayday() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        baseMagicNumber = BASE_MAGIC_NUMBER;
-        magicNumber = baseMagicNumber;
     }
 
     public void applyPowers() {
         int realBaseDamage = this.baseDamage;
-        this.baseMagicNumber = Pokemon.goldSpentThisCombat;
-        this.baseDamage += this.baseMagicNumber;
+        this.baseDamage += Pokemon.goldSpentThisCombat;
         super.applyPowers();
         this.baseDamage = realBaseDamage;
         this.isDamageModified = (this.damage != this.baseDamage);
-      }
-      
-      public void calculateCardDamage(AbstractMonster mo) {
-        this.baseMagicNumber = AbstractDungeon.actionManager.mantraGained;
+    }
+
+    public void calculateCardDamage(AbstractMonster mo) {
         int realBaseDamage = this.baseDamage;
-        this.baseDamage += this.baseMagicNumber;
+        this.baseDamage += Pokemon.goldSpentThisCombat;
         super.calculateCardDamage(mo);
         this.baseDamage = realBaseDamage;
         this.isDamageModified = (this.damage != this.baseDamage);
-      }
-      
-      public void use(AbstractPlayer p, AbstractMonster m) {
-        this.damage += this.magicNumber;
-        calculateCardDamage(m);
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL, true));
-      }
+    }
+
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, this.damageTypeForTurn),
+                AbstractGameAction.AttackEffect.SLASH_DIAGONAL, true));
+    }
 
     // Upgraded stats.
     @Override
