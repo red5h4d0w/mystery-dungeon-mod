@@ -740,6 +740,10 @@
         "UPGRADE_DESCRIPTION": "Remove all block from the enemy. NL Deal damage equal to the amount of block removed +4.",
         "EXTENDED_DESCRIPTION":[" NL (Deals !D! damage.)"]
     },
+    "mysteryDungeon:MeowthFlash": {
+        "NAME": "Flash",
+        "DESCRIPTION": "Spend 10 gold. NL Gain !M! plated armor. NL Draw 1 card. NL Exhaust"
+    },
     "mysteryDungeon:MeowthFlatter": {
         "NAME": "Flatter",
         "DESCRIPTION": "Give ALL enemies !M! Strength. NL Gain !B! block."
