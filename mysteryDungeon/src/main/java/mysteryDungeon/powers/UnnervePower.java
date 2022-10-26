@@ -61,8 +61,8 @@ public class UnnervePower extends PokemonPower implements CloneablePowerInterfac
 
         if(counter>=30){
             addToTop(new ApplyPowerAction(owner, owner, new PlatedArmorPower(owner, amount)));
+            counter-=30;
         } 
-        counter-=30;
     }
 
     @Override
