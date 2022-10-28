@@ -838,6 +838,10 @@
         "NAME": "Throat Chop",
         "DESCRIPTION": "Deal !D! damage. NL Gain !B! block."
     },
+    "mysteryDungeon:MeowthUnnerve": {
+        "NAME": "Unnerve",
+        "DESCRIPTION": "Each time you spend a total of 30 gold in combat, gain !M! plated armor."
+    },
     "mysteryDungeon:MeowthUTurn": {
         "NAME": "U-Turn",
         "DESCRIPTION": "Spend !M! gold. NL Create a card from your partner's deck in hand. NL It cost 0 this turn. NL Exhaust.",
