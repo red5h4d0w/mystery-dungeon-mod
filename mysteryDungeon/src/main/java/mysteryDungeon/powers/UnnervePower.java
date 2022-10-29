@@ -10,6 +10,7 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -60,8 +61,8 @@ public class UnnervePower extends PokemonPower implements CloneablePowerInterfac
         counter+=spendAmount;
 
         if(counter>=30){
-            addToTop(new ApplyPowerAction(owner, owner, new PlatedArmorPower(owner, amount)));
-            counter-=30;
+            addToTop(new ApplyPowerAction(owner, owner, new PlatedArmorPower(owner, amount*MathUtils.floor(counter/30))));
+            counter=counter%30;
         } 
     }
 
