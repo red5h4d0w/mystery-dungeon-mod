@@ -821,6 +821,11 @@
         "NAME": "Swagger",
         "DESCRIPTION": "Give an enemy !M! Strength. NL Stun that enemy."
     },
+    "mysteryDungeon:MeowthSwitcheroo": {
+        "NAME": "Switcheroo",
+        "DESCRIPTION": "Exchange your Strength with the target's Strength.",
+        "UPGRADE_DESCRIPTION": "Lose !M! Strength. NL Exchange your Strength with the target's Strength."
+    },
     "mysteryDungeon:MeowthTaunt": {
         "NAME": "Taunt",
         "DESCRIPTION": "Gain !M! gold. NL End your turn."
