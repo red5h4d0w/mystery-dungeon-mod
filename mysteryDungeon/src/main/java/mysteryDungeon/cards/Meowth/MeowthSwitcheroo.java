@@ -46,11 +46,13 @@ public class MeowthSwitcheroo extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        exhaust = true;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if(upgraded)
         addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, -4), -4));
         addToBot(new SimpleAction(
             () -> {

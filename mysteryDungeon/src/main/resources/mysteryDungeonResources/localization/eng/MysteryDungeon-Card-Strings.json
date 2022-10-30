@@ -823,8 +823,8 @@
     },
     "mysteryDungeon:MeowthSwitcheroo": {
         "NAME": "Switcheroo",
-        "DESCRIPTION": "Exchange your Strength with the target's Strength.",
-        "UPGRADE_DESCRIPTION": "Lose !M! Strength. NL Exchange your Strength with the target's Strength."
+        "DESCRIPTION": "Exchange your Strength with the target's Strength. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Lose !M! Strength. NL Exchange your Strength with the target's Strength. NL Exhaust."
     },
     "mysteryDungeon:MeowthTaunt": {
         "NAME": "Taunt",
