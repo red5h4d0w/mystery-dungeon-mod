@@ -409,7 +409,7 @@
     "mysteryDungeon:UnnervePower": {
         "NAME": "Unnerve",
         "DESCRIPTIONS": [
-            "For every 30 gold spent in combat, gain #b%s Plated armor."
+            "For every 25 gold spent in combat, gain #b%s Plated armor."
         ]
     },
     "mysteryDungeon:WaterPledgePower": {

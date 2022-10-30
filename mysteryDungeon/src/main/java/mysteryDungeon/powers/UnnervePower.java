@@ -60,9 +60,9 @@ public class UnnervePower extends PokemonPower implements CloneablePowerInterfac
     public void onSpendGold(int spendAmount) {
         counter+=spendAmount;
 
-        if(counter>=30){
-            addToTop(new ApplyPowerAction(owner, owner, new PlatedArmorPower(owner, amount*MathUtils.floor(counter/30))));
-            counter=counter%30;
+        if(counter>=25){
+            addToTop(new ApplyPowerAction(owner, owner, new PlatedArmorPower(owner, amount*MathUtils.floor(counter/25))));
+            counter=counter%25;
         } 
     }
 

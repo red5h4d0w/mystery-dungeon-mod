@@ -845,7 +845,7 @@
     },
     "mysteryDungeon:MeowthUnnerve": {
         "NAME": "Unnerve",
-        "DESCRIPTION": "Each time you spend a total of 30 gold in combat, gain !M! plated armor."
+        "DESCRIPTION": "Each time you spend a total of 25 gold in combat, gain !M! plated armor."
     },
     "mysteryDungeon:MeowthUTurn": {
         "NAME": "U-Turn",
