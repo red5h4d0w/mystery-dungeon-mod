@@ -791,6 +791,11 @@
         "DESCRIPTION": "Deal !D! damage. NL Deal additionnal damage equal to money spent this combat.",
         "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL Deal additionnal damage equal to money spent this combat."
     },
+    "mysteryDungeon:MeowthPowerGem": {
+        "NAME": "Power Gem",
+        "DESCRIPTION": "Deal !D! damage. NL The next card with a gold cost this turn is free.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL The next !M! cards with a gold cost this turn are free."
+    },
     "mysteryDungeon:MeowthPsychUp": {
         "NAME": "Psych Up",
         "DESCRIPTION": "When you give an enemy Strength, gain !M! Strength.",
