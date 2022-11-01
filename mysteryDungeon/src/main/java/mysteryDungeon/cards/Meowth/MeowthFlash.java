@@ -3,7 +3,6 @@ package mysteryDungeon.cards.Meowth;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -36,7 +35,7 @@ public class MeowthFlash extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.MEOWTH_WHITE;
 
     private static final int COST = 1;
-    private static final int BASE_MAGIC_NUMBER = 3;
+    private static final int BASE_MAGIC_NUMBER = 4;
     private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
@@ -54,7 +53,6 @@ public class MeowthFlash extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SpendGoldAction(10));
         addToBot(new ApplyPowerAction(p, p, new PlatedArmorPower(p, magicNumber), magicNumber));
-        addToBot(new DrawCardAction(p, 1));
     }
 
     @Override

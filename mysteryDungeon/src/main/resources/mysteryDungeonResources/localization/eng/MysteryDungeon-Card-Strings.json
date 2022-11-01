@@ -742,7 +742,7 @@
     },
     "mysteryDungeon:MeowthFlash": {
         "NAME": "Flash",
-        "DESCRIPTION": "Spend 10 gold. NL Gain !M! plated armor. NL Draw 1 card. NL Exhaust"
+        "DESCRIPTION": "Spend 10 gold. NL Gain !M! plated armor. NL Exhaust"
     },
     "mysteryDungeon:MeowthFlatter": {
         "NAME": "Flatter",
@@ -805,6 +805,10 @@
         "NAME": "Punishment",
         "DESCRIPTION": "Deal !D! damage. NL Deal Addditionnal damage equal to !M! times the enemy's Strength."
     },
+    "mysteryDungeon:MeowthRoar": {
+        "NAME": "Roar",
+        "DESCRIPTION": "Give an enemy !M! Strength. NL Apply 99 Weak to an enemy. NL Exhaust."
+    },
     "mysteryDungeon:MeowthSnatch": {
         "NAME": "Snatch",
         "DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract in your hand. NL Exhaust.",
@@ -846,7 +850,7 @@
     },
     "mysteryDungeon:MeowthThroatChop": {
         "NAME": "Throat Chop",
-        "DESCRIPTION": "Deal !D! damage. NL Gain !B! block."
+        "DESCRIPTION": "Deal !D! damage. NL Gain !B! block. NL Gain !M! gold."
     },
     "mysteryDungeon:MeowthUnnerve": {
         "NAME": "Unnerve",
