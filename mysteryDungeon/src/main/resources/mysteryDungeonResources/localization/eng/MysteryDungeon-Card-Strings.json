@@ -750,7 +750,7 @@
     },
     "mysteryDungeon:MeowthFlurry": {
         "NAME": "Flurry",
-        "DESCRIPTION": "Ethereal. NL Gain !M! gold. NL Deal !D! damage. NL Exhaust."
+        "DESCRIPTION": "Ethereal. NL Spend !M! gold. NL Deal !D! damage. NL Exhaust."
     },
     "mysteryDungeon:MeowthFoulPlay": {
         "NAME": "Foul Play",
@@ -776,7 +776,7 @@
     "mysteryDungeon:MeowthLashOut": {
         "NAME": "Lash Out",
         "DESCRIPTION": "Whenever you give Strength or block to an enemy create !M! Flurry in hand.",
-        "UPGRADE_DESCRIPTION": "Whenever you give Strength or block to an enemy create !M! Flurry+ in hand."
+        "UPGRADE_DESCRIPTION": "Whenever you give Strength or block to an enemy create !M! Flurry + in hand."
     },
     "mysteryDungeon:MeowthNastyPlot": {
         "NAME": "Nasty Plot",
@@ -821,6 +821,10 @@
     "mysteryDungeon:MeowthScreech": {
         "NAME": "Screech",
         "DESCRIPTION": "Give an enemy !M! vulnerable and !B! block."
+    },
+    "mysteryDungeon:MeowthSnarl": {
+        "NAME": "Snarl",
+        "DESCRIPTION": "Give an enemy 8 Block. NL Gain !B! Block."
     },
     "mysteryDungeon:MeowthSpite": {
         "NAME": "Spite",
