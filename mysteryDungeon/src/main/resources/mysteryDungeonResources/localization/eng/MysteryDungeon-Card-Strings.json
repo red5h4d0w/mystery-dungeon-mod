@@ -768,6 +768,11 @@
         "NAME": "Hone Claws",
         "DESCRIPTION": "Give an enemy !B! block. NL Gain !M! Strength"
     },
+    "mysteryDungeon:MeowthHyperVoice": {
+        "NAME": "Hyper Voice",
+        "DESCRIPTION": "Ethereal. NL Spend !M! gold. NL Deal !D! damage. NL Increase those numbers by !mysteryDungeon:M2! and return the card to your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Spend !M! gold. NL Deal !D! damage. NL Increase those numbers by !mysteryDungeon:M2! and return the card to your hand. NL Exhaust."
+    },
     "mysteryDungeon:MeowthLastResort": {
         "NAME": "Last Resort",
         "DESCRIPTION": "Spend !M! gold. Discard your hand. NL Draw 10 cards. NL Exhaust.",
