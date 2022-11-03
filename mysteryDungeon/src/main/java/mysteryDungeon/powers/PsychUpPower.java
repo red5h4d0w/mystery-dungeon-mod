@@ -52,6 +52,12 @@ public class PsychUpPower extends PokemonPower implements CloneablePowerInterfac
     }
 
     @Override
+    public boolean betterOnApplyPower(AbstractPower arg0, AbstractCreature arg1, AbstractCreature arg2) {
+        // TODO Auto-generated method stub
+        return true;
+    }
+
+    @Override
     public int betterOnApplyPowerStacks(com.megacrit.cardcrawl.powers.AbstractPower power, com.megacrit.cardcrawl.core.AbstractCreature target, com.megacrit.cardcrawl.core.AbstractCreature source, int stackAmount) {
         if(source == owner && target!=owner && power instanceof StrengthPower && stackAmount >= 0) {
             addToBot(new ApplyPowerAction(owner, owner, new StrengthPower(owner, amount), amount));
