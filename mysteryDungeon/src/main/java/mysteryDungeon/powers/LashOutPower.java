@@ -57,14 +57,25 @@ public class LashOutPower extends PokemonPower implements CloneablePowerInterfac
     }
 
     @Override
-    public int betterOnApplyPowerStacks(com.megacrit.cardcrawl.powers.AbstractPower power, com.megacrit.cardcrawl.core.AbstractCreature target, com.megacrit.cardcrawl.core.AbstractCreature source, int stackAmount) {
-        if(source == owner && target!=owner && power instanceof StrengthPower && stackAmount >= 0) {
+    public boolean betterOnApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
+        if(source == owner && target!=owner && power instanceof StrengthPower && power.amount>0) {
             AbstractCard flurry = new MeowthFlurry();
             if(upgraded)
                 flurry.upgrade();
             addToBot((AbstractGameAction)new MakeTempCardInHandAction(new MeowthFlurry(), amount, false));
         }
-        return 0;
+        return true;
+    }
+
+    @Override
+    public int betterOnApplyPowerStacks(AbstractPower power, AbstractCreature target, AbstractCreature source, int stackAmount) {
+        if(source == owner && target!=owner && power instanceof StrengthPower && stackAmount > 0) {
+            AbstractCard flurry = new MeowthFlurry();
+            if(upgraded)
+                flurry.upgrade();
+            addToBot((AbstractGameAction)new MakeTempCardInHandAction(new MeowthFlurry(), amount, false));
+        }
+        return stackAmount;
     }
 
     @Override
