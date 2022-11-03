@@ -73,7 +73,7 @@ public class UnnervePower extends PokemonPower implements CloneablePowerInterfac
 
     @Override
     public void updateDescription() {
-        description = String.format(DESCRIPTIONS[0]);
+        description = String.format(DESCRIPTIONS[0], amount);
     }
 
    
