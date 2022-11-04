@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.actions.ModifyMagicNumberAction;
+import mysteryDungeon.actions.SpendGoldAction;
 import mysteryDungeon.characters.Pokemon;
 
 public class MeowthHyperVoice extends PokemonCard {
@@ -33,15 +34,14 @@ public class MeowthHyperVoice extends PokemonCard {
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Pokemon.Enums.MEOWTH_WHITE;
 
     private static final int COST = 0;
-    private static final int DAMAGE = 7;
+    private static final int DAMAGE = 8;
     private static final int BASE_MAGIC_NUMBER = 5;
-    private static final int BASE_SECOND_MAGIC_NUMBER = 4;
 
 
     // /STAT DECLARATION/
@@ -51,23 +51,30 @@ public class MeowthHyperVoice extends PokemonCard {
         baseDamage = DAMAGE;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
-        baseSecondMagicNumber = BASE_SECOND_MAGIC_NUMBER;
-        secondMagicNumber = baseSecondMagicNumber;
         isEthereal = true;
-        exhaust = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SpendGoldAction(magicNumber));
         addToBot(new DamageAction(m, new DamageInfo(p, damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.SLASH_DIAGONAL, true));
-        addToBot(new ModifyDamageAction(uuid, secondMagicNumber));
-        addToBot(new ModifyMagicNumberAction(uuid, secondMagicNumber));
-        
-        if(upgraded)
-            addToBot(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.exhaustPile, card -> card.cardID == MeowthHyperVoice.ID & card.upgraded, 1));
-        
-        addToBot(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.exhaustPile,
-                card -> card.cardID == MeowthHyperVoice.ID & !card.upgraded, 1));
+        addToBot(new ModifyDamageAction(uuid, 6));
+        addToBot(new ModifyMagicNumberAction(uuid, 4));
+    }
+
+    @Override
+    public void onMoveToDiscard() {
+    if(upgraded)
+        addToBot(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.discardPile, card -> card.cardID == MeowthHyperVoice.ID & card.upgraded, 1));
+    
+    addToBot(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.discardPile,
+            card -> card.cardID == MeowthHyperVoice.ID & !card.upgraded, 1));
+    super.onMoveToDiscard();
+    }
+
+    @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        return super.canUse(p, m) && canSpend(magicNumber);
     }
 
     // Upgraded stats.
@@ -75,7 +82,7 @@ public class MeowthHyperVoice extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            isEthereal = true;
+            isEthereal = false;
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

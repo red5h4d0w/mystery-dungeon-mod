@@ -770,8 +770,8 @@
     },
     "mysteryDungeon:MeowthHyperVoice": {
         "NAME": "Hyper Voice",
-        "DESCRIPTION": "Ethereal. NL Spend !M! gold. NL Deal !D! damage. NL Increase those numbers by !mysteryDungeon:M2! and return the card to your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Spend !M! gold. NL Deal !D! damage. NL Increase those numbers by !mysteryDungeon:M2! and return the card to your hand. NL Exhaust."
+        "DESCRIPTION": "Ethereal. NL Spend !M! gold. NL Deal !D! damage. NL Increase gold cost by 4 and damage by 6 for the combat. NL Return the card to your hand.",
+        "UPGRADE_DESCRIPTION": "Spend !M! gold. NL Deal !D! damage. NL Increase gold cost by 4 and damage by 6 for the combat. NL Return the card to your hand."
     },
     "mysteryDungeon:MeowthLastResort": {
         "NAME": "Last Resort",
