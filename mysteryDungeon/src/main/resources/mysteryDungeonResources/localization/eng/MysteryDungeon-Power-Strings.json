@@ -197,7 +197,7 @@
     "mysteryDungeon:LashOutPower": {
         "NAME": "Lash Out",
         "DESCRIPTIONS": [
-            "Whenever you give an enemy Strength, create #b%s Flurry in hand."
+            "Whenever you give an enemy Strength or Block, create #b%s Flurry in hand."
         ]
     },
     "mysteryDungeon:LavaPlumePower": {
