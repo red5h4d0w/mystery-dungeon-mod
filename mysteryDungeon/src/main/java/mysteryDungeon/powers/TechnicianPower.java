@@ -60,7 +60,7 @@ public class TechnicianPower extends PokemonPower implements CloneablePowerInter
     AbstractCard flurry = new MeowthFlurry();
     if(upgraded)
         flurry.upgrade();
-    addToBot((AbstractGameAction)new MakeTempCardInHandAction(new MeowthFlurry(), 1, false));
+    addToBot((AbstractGameAction)new MakeTempCardInHandAction(new MeowthFlurry(), amount, false));
     }
 
     @Override
