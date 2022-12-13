@@ -1227,6 +1227,10 @@
         "DESCRIPTION": "Deal !D! damage NL Create a *Flinch and add it to your hand.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage NL Create an upgraded *Flinch and add it to your hand."
     },
+    "mysteryDungeon:TotodileIceFang": {
+        "NAME": "Ice Fang",
+        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost orb."
+    },
     "mysteryDungeon:TotodileWaterPledge": {
         "NAME": "Water Pledge",
         "DESCRIPTION": "Channel !M! Frost orb. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
