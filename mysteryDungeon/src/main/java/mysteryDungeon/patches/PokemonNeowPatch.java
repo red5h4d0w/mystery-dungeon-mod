@@ -294,7 +294,7 @@ public class PokemonNeowPatch {
                         convertPokemonToImplementedPokemon();
                         ((Pokemon) AbstractDungeon.player).setAdventurer(chosenPokemon);
                         possiblePartners = partnerChoices();
-                        AskQuestion(__instance, new Question(String.format(TEXT[9], chosenPokemon.name),
+                        AskQuestion(__instance, new Question(String.format(TEXT[9], chosenPokemon.name, complexityOf(chosenPokemon)),
                                 possiblePartners.stream().map(p -> p.name).toArray(size -> new String[size]), null));
                         screenNum++;
                         return SpireReturn.Return();
@@ -341,7 +341,7 @@ public class PokemonNeowPatch {
                 // Test run choose option
                 case 10:
                     AskQuestion(__instance, new Question(TEXT[7],
-                            implementedPokemons.stream().map(p -> p.name).toArray(size -> new String[size])));
+                            implementedPokemons.stream().map(p -> p.name + " (" + complexityOf(p) + ")").toArray(size -> new String[size])));
                     screenNum++;
                     return SpireReturn.Return();
                 case 11:
@@ -355,7 +355,7 @@ public class PokemonNeowPatch {
                             new Question(TEXT[8],
                                     implementedPokemons.stream()
                                             .filter(p -> !p.color.equals(chosenPokemon.color))
-                                            .map(p -> p.name).toArray(String[]::new)));
+                                            .map(p -> p.name + " (" + complexityOf(p) + ")").toArray(String[]::new)));
                     screenNum = 5;
                     return SpireReturn.Return();
                 case 99:
@@ -496,6 +496,20 @@ public class PokemonNeowPatch {
             // add(new Skitty());
         }
     };
+
+    public static String complexityOf(AbstractPokemon p1, AbstractPokemon p2) {
+        int totalComplexity;
+        if(p2 != null)
+            totalComplexity = p1.complexity + p2.complexity;
+        else
+            totalComplexity = p1.complexity;
+        int numberOfFullStars = totalComplexity / 2;
+        boolean halfStar = totalComplexity % 2 == 0;
+        return numberOfFullStars + (halfStar?".5":"") + "*" ;
+    }
+    public static String complexityOf(AbstractPokemon p) {
+        return complexityOf(p, null);
+    }
 
     // Data structure to which the .json is fed
     public static class Question {

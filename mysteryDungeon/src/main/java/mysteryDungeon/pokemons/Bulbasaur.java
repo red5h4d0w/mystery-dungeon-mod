@@ -22,6 +22,7 @@ public class Bulbasaur extends AbstractPokemon {
     public Bulbasaur(){
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);
         evolution = new Ivysaur();
+        complexity = 1;
     }
 
 }

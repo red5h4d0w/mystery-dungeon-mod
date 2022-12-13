@@ -22,5 +22,6 @@ public class Charmander extends AbstractPokemon {
     public Charmander(){
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);
         evolution = new Charmeleon();
+        complexity = 2;
     }
 }

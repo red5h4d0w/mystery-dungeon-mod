@@ -23,5 +23,6 @@ public class Squirtle extends AbstractPokemon {
     public Squirtle(){
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);
         evolution = new Wartortle();
+        complexity = 3;
     }
 }

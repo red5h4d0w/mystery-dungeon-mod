@@ -24,5 +24,6 @@ public class Pikachu extends AbstractPokemon {
     public Pikachu(){
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);
         evolution = new Raichu();
+        complexity = 4;
     }
 }

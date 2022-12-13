@@ -171,7 +171,7 @@
             "I'd like to get a random team.",
             "Choose your adventurer",
             "Choose your partner",
-            "You are a %s . NL Choose a partner."
+            "You are a %s1. NL Choose a partner. NL (Expected complexity is %s2)"
         ]
     }
 }

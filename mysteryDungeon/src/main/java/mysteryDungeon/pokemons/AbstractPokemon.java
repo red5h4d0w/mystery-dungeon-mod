@@ -33,6 +33,8 @@ public abstract class AbstractPokemon {
     private boolean shiny;
     public AbstractPokemon evolution;
 
+    public int complexity = 0;
+
     public AbstractPokemon(int maxHp, int orbSlots, AbstractCard[] startingDeck, Color color, CardColor cardColor) {
         this.ID = makeID(getClass().getSimpleName());
         this.name = localizedName();
