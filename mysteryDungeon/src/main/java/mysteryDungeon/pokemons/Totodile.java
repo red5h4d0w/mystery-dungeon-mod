@@ -19,5 +19,6 @@ public class Totodile extends AbstractPokemon {
 
     public Totodile() {
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);
+        complexity = 2;
     }
 }
