@@ -17,7 +17,7 @@ public class Totodile extends AbstractPokemon {
     public static Color COLOR = Color.BLUE.cpy();
     public static CardColor CARD_COLOR = Pokemon.Enums.TOTODILE_BLUE;
 
-    public Totodile(){
+    public Totodile() {
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);
     }
 }

@@ -504,7 +504,7 @@ public class PokemonNeowPatch {
         else
             totalComplexity = p1.complexity;
         int numberOfFullStars = totalComplexity / 2;
-        boolean halfStar = totalComplexity % 2 == 0;
+        boolean halfStar = totalComplexity % 2 == 1;
         return numberOfFullStars + (halfStar?".5":"") + "*" ;
     }
     public static String complexityOf(AbstractPokemon p) {
