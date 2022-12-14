@@ -23,7 +23,7 @@ public class TotodileIceFang extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(TotodileIceFang.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("TotodileAttack.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
