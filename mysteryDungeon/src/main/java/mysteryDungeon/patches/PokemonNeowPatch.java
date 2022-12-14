@@ -473,6 +473,7 @@ public class PokemonNeowPatch {
             put("Meowth", new String[] { "Quirky" });
             put("Chikorita", new String[] { "Docile" });
             put("Cyndaquil", new String[] { "Timid" });
+            put("Totodile", new String[] { "Jolly", "Naive" });
         }
     };
 
@@ -489,7 +490,7 @@ public class PokemonNeowPatch {
             // add(new Eevee());
             add(new Chikorita());
             add(new Cyndaquil());
-            // add(new Totodile());
+            add(new Totodile());
             // add(new Treecko());
             // add(new Torchic());
             // add(new Mudkip());
