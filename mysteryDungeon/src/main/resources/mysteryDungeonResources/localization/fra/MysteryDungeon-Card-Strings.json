@@ -960,5 +960,299 @@
         "NAME": "Will-O-Wisp",
         "DESCRIPTION": "Infligez !M! mysterydungeon:Burn X times.",
         "UPGRADE_DESCRIPTION": "Retain. NL Infligez !M! mysterydungeon:Burn X+1 times."
+    },
+    "mysteryDungeon:CyndaquilCrushClaw": {
+        "NAME": "Crush Claw",
+        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Your next mysterydungeon:Eruption will deal 50% more damage. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Your next mysterydungeon:Eruption will deal 50% more damage."
+    },
+    "mysteryDungeon:CyndaquilCurse": {
+        "NAME": "Curse",
+        "DESCRIPTION": "Each status or curse you draw gives you [E]. NL Up to once per turn.",
+        "UPGRADE_DESCRIPTION": "Each status or curse you draw gives you [E]. NL Up to twice per turn."
+    },
+    "mysteryDungeon:CyndaquilEruption": {
+        "NAME": "Eruption",
+        "DESCRIPTION": "Cause an mysterydungeon:Eruption that hits all enemies. NL End your turn. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Cause an mysterydungeon:Eruption that hits all enemies. NL End your turn."
+    },
+    "mysteryDungeon:CyndaquilFacade": {
+        "NAME": "Facade",
+        "DESCRIPTION": "Gain !M! Dexterity. NL Add a Burn status card to your draw pile."
+    },
+    "mysteryDungeon:CyndaquilFireBlast": {
+        "NAME": "Fire Blast",
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Increase the amount of mysterydungeon:Burn this card applies by !mysteryDungeon:M2! permanently. NL Exhaust."
+    },
+    "mysteryDungeon:CyndaquilFlameBurst": {
+        "NAME": "Flame Burst",
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Next turn, cause an mysterydungeon:Eruption.",
+        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Next turn, cause an mysterydungeon:Eruption. NL Your next Eruption Deals 50% more damage."
+    },
+    "mysteryDungeon:CyndaquilFlameCharge": {
+        "NAME": "Flame Charge",
+        "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Apply !M! mysterydungeon:Burn."
+    },
+    "mysteryDungeon:CyndaquilFlamethrower": {
+        "NAME": "Flamethrower",
+        "DESCRIPTION": "Add a Burn status card in your draw pile. NL Deal !D! damage to a random enemy !M! times. NL Apply 9 mysterydungeon:Burn to random enemies !M! times."
+    },
+    "mysteryDungeon:CyndaquilFlareBlitz": {
+        "NAME": "Flare Blitz",
+        "DESCRIPTION": "Add 1 Void in your draw pile. NL Deal !D! damage. NL If the attack is Fatal, Gain [E] [E]."
+    },
+    "mysteryDungeon:CyndaquilFling": {
+        "NAME": "Fling",
+        "DESCRIPTION": "Apply 5 mysterydungeon:Burn twice. NL Gain [E]. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Apply 5 mysterydungeon:Burn twice. NL Gain [E] [E]. NL Exhaust."
+    },
+    "mysteryDungeon:CyndaquilFrustration": {
+        "NAME": "Frustration",
+        "DESCRIPTION": " Apply 12 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Apply 12 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption."
+    },
+    "mysteryDungeon:CyndaquilSmokescreen": {
+        "NAME": "Smokescreen",
+        "DESCRIPTION": "Gain !B! Block. NL Next turn gain [E]."
+    },
+    "mysteryDungeon:CyndaquilHowl": {
+        "NAME": "Howl",
+        "DESCRIPTION": "Add !M! Burn status card in your draw pile. NL Next turn gain [E] [E] [E]."
+    },
+    "mysteryDungeon:CyndaquilIncinerate": {
+        "NAME": "Incinerate",
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn."
+    },
+    "mysteryDungeon:CyndaquilLaserFocus": {
+        "NAME": "Laser Focus",
+        "DESCRIPTION": "Gain [E] [E].",
+        "UPGRADE_DESCRIPTION": "Gain [E] [E]. NL Draw a card."
+    },
+    "mysteryDungeon:CyndaquilLavaPlume": {
+        "NAME": "Lava Plume",
+        "DESCRIPTION": "Whenever you cause an eruption, Apply !M! mysterydungeon:Burn stacks on the target."
+    },
+    "mysteryDungeon:CyndaquilNaturePowerMountain": {
+        "NAME": "Nature Power: Mountain",
+        "DESCRIPTION": "For X turns, mysterydungeon:Burn stacks do not decrease naturally on a chosen enemy.",
+        "UPGRADE_DESCRIPTION": "For X+1 turns, mysterydungeon:Burn stacks do not decrease naturally on a chosen enemy."
+    },
+    "mysteryDungeon:CyndaquilOverheat": {
+        "NAME": "Overheat",
+        "DESCRIPTION": "Retain.  NL Cause an mysterydungeon:Eruption. NL Exhaust."
+    },
+    "mysteryDungeon:CyndaquilReversal": {
+        "NAME": "Reversal",
+        "DESCRIPTION": "If the enemy has mysterydungeon:Burn stacks, gain !B! Block. NL If the enemy has no mysterydungeon:Burn stacks, apply !M! mysterydungeon:Burn. "
+    },
+    "mysteryDungeon:CyndaquilRockTomb": {
+        "NAME": "Rock Tomb",
+        "DESCRIPTION": "Deal !D! damage and apply !M! Weak to all enemies."
+    },
+    "mysteryDungeon:CyndaquilRockSlide": {
+        "NAME": "Rock Slide",
+        "DESCRIPTION": "Deal !D! damage. If the enemy has mysterydungeon:Burn stacks, gain [E] [E] next turn."
+    },
+    "mysteryDungeon:CyndaquilRollout": {
+        "NAME": "Rollout",
+        "DESCRIPTION": "Deal !D! damage and gain !B! Block per card played this turn."
+    },
+    "mysteryDungeon:CyndaquilShadowClaw": {
+        "NAME": "Shadow Claw",
+        "DESCRIPTION": "Add a Dazed status card in your draw pile. NL Deal !D! damage."
+    },
+    "mysteryDungeon:CyndaquilSleepTalk": {
+        "NAME": "Sleep Talk",
+        "DESCRIPTION": "For each created Status card, draw !M! card.",
+        "UPGRADE_DESCRIPTION": "For each created Status card, draw !M! card. NL Draw a card."
+    },
+    "mysteryDungeon:MeowthAmnesia": {
+        "NAME": "Amnesia",
+        "DESCRIPTION": "Spend 12 gold. NL Gain !M! Buffer."
+    },
+    "mysteryDungeon:MeowthAssurance": {
+        "NAME": "Assurance",
+        "DESCRIPTION": "Innate. NL Deal !D! damage. NL If the enemy's attacking, apply !M! Weak and gain 7 gold. NL Exhaust."
+    },
+    "mysteryDungeon:MeowthAttract": {
+        "NAME": "Attract",
+        "DESCRIPTION": "Gain !B! block. NL Spend !M! gold. NL Create a Snatch in your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Gain !B! block. NL Spend !M! gold. NL Create an Snatch+ in your hand. NL Exhaust."
+    },
+    "mysteryDungeon:MeowthCaptivate": {
+        "NAME": "Captivate",
+        "DESCRIPTION": "Spend !M! gold. NL This turn, the target loses !mysteryDungeon:M2! Strength."
+    },
+    "mysteryDungeon:MeowthCovet": {
+        "NAME": "Covet",
+        "DESCRIPTION": "Give a random enemy !M! Strength. NL Gain !mysteryDungeon:M2! gold."
+    },
+    "mysteryDungeon:MeowthDarkPulse": {
+        "NAME": "Dark Pulse",
+        "DESCRIPTION": "Spend 10 gold. NL Deal !D! damage to ALL enemies. NL Add a card from your discard pile into your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Spend 10 gold. NL Deal !D! damage to ALL enemies. NL Add a card from your discard pile into your hand."
+    },
+    "mysteryDungeon:MeowthDefend": {
+        "NAME": "Defend",
+        "DESCRIPTION": "Gain !B! block."
+    },
+    "mysteryDungeon:MeowthExplorerForm": {
+        "NAME": "Explorer Form",
+        "DESCRIPTION": "Every turn the first gold cost is free.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Every turn the first gold cost is free."
+    },
+    "mysteryDungeon:MeowthFakeTears": {
+        "NAME": "Fake Tears",
+        "DESCRIPTION": "Spend !M! gold. NL Gain !B! block"
+    },
+    "mysteryDungeon:MeowthFeint": {
+        "NAME": "Feint",
+        "DESCRIPTION": "Remove all block from the enemy. NL Deal damage equal to the amount of block removed.",
+        "UPGRADE_DESCRIPTION": "Remove all block from the enemy. NL Deal damage equal to the amount of block removed +4.",
+        "EXTENDED_DESCRIPTION": [
+            " NL (Deals !D! damage.)"
+        ]
+    },
+    "mysteryDungeon:MeowthFlash": {
+        "NAME": "Flash",
+        "DESCRIPTION": "Spend 10 gold. NL Gain !M! plated armor. NL Exhaust"
+    },
+    "mysteryDungeon:MeowthFlatter": {
+        "NAME": "Flatter",
+        "DESCRIPTION": "Give ALL enemies !M! Strength. NL Gain !B! block."
+    },
+    "mysteryDungeon:MeowthFlurry": {
+        "NAME": "Flurry",
+        "DESCRIPTION": "Ethereal. NL Spend !M! gold. NL Deal !D! damage. NL Exhaust."
+    },
+    "mysteryDungeon:MeowthFoulPlay": {
+        "NAME": "Foul Play",
+        "DESCRIPTION": "Deal !D! damage. NL If the last card you played was an Attack, apply !M! Weak."
+    },
+    "mysteryDungeon:MeowthFurySwipes": {
+        "NAME": "Fury Swipes",
+        "DESCRIPTION": "Deal !D! damage. NL If you have !M! gold, spend it and increase this card damage by !mysteryDungeon:M2!. NL Exhaust."
+    },
+    "mysteryDungeon:MeowthHappyHour": {
+        "NAME": "Happy Hour",
+        "DESCRIPTION": "Gain !M! gold. NL Increase the amount by !mysteryDungeon:M2! permanently. NL Exhaust"
+    },
+    "mysteryDungeon:MeowthHoneClaws": {
+        "NAME": "Hone Claws",
+        "DESCRIPTION": "Give an enemy !B! block. NL Gain !M! Strength"
+    },
+    "mysteryDungeon:MeowthHyperVoice": {
+        "NAME": "Hyper Voice",
+        "DESCRIPTION": "Ethereal. NL Spend !M! gold. NL Deal !D! damage. NL Increase gold cost by 4 and damage by 6 for the combat. NL Return the card to your hand.",
+        "UPGRADE_DESCRIPTION": "Spend !M! gold. NL Deal !D! damage. NL Increase gold cost by 4 and damage by 6 for the combat. NL Return the card to your hand."
+    },
+    "mysteryDungeon:MeowthLastResort": {
+        "NAME": "Last Resort",
+        "DESCRIPTION": "Spend !M! gold. Discard your hand. NL Draw 10 cards. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Spend !M! gold. Discard your hand. NL Draw 10 cards. NL Exhaust."
+    },
+    "mysteryDungeon:MeowthLashOut": {
+        "NAME": "Lash Out",
+        "DESCRIPTION": "Whenever you give Strength or block to an enemy create !M! Flurry in hand.",
+        "UPGRADE_DESCRIPTION": "Whenever you give Strength or block to an enemy create !M! Flurry + in hand."
+    },
+    "mysteryDungeon:MeowthNastyPlot": {
+        "NAME": "Nasty Plot",
+        "DESCRIPTION": "Spend !M! gold. NL Draw !mysteryDungeon:M2! cards."
+    },
+    "mysteryDungeon:MeowthNightSlash": {
+        "NAME": "Night Slash",
+        "DESCRIPTION": "Spend 10 gold. NL Deal !D! damage to ALL enemies. NL Bring ALL 0 cost cards in your discard pile into your hand. NL Exhaust."
+    },
+    "mysteryDungeon:MeowthPayday": {
+        "NAME": "Payday",
+        "DESCRIPTION": "Deal !D! damage. NL Deal additionnal damage equal to money spent this combat.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL Deal additionnal damage equal to money spent this combat."
+    },
+    "mysteryDungeon:MeowthPowerGem": {
+        "NAME": "Power Gem",
+        "DESCRIPTION": "Deal !D! damage. NL The next card with a gold cost this turn is free.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL The next !M! cards with a gold cost this turn are free."
+    },
+    "mysteryDungeon:MeowthPsychUp": {
+        "NAME": "Psych Up",
+        "DESCRIPTION": "When you give an enemy Strength, gain !M! Strength.",
+        "UPGRADE_DESCRIPTION": "When you give an enemy Strength, gain !M! Strength."
+    },
+    "mysteryDungeon:MeowthPunishment": {
+        "NAME": "Punishment",
+        "DESCRIPTION": "Deal !D! damage. NL Deal Addditionnal damage equal to !M! times the enemy's Strength."
+    },
+    "mysteryDungeon:MeowthRoar": {
+        "NAME": "Roar",
+        "DESCRIPTION": "Give an enemy !M! Strength. NL Apply 99 Weak to an enemy. NL Exhaust."
+    },
+    "mysteryDungeon:MeowthSnatch": {
+        "NAME": "Snatch",
+        "DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract in your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract+ in your hand. NL Exhaust."
+    },
+    "mysteryDungeon:MeowthScratch": {
+        "NAME": "Scratch",
+        "DESCRIPTION": "Deal !D! damage."
+    },
+    "mysteryDungeon:MeowthScreech": {
+        "NAME": "Screech",
+        "DESCRIPTION": "Give an enemy !M! vulnerable and !B! block."
+    },
+    "mysteryDungeon:MeowthSnarl": {
+        "NAME": "Snarl",
+        "DESCRIPTION": "Give an enemy 8 Block. NL Gain !B! Block."
+    },
+    "mysteryDungeon:MeowthSpite": {
+        "NAME": "Spite",
+        "DESCRIPTION": "Spend !M! X gold. NL Gain 2X Strength. NL Exhaust."
+    },
+    "mysteryDungeon:MeowthSwagger": {
+        "NAME": "Swagger",
+        "DESCRIPTION": "Give an enemy !M! Strength. NL Stun that enemy."
+    },
+    "mysteryDungeon:MeowthSwitcheroo": {
+        "NAME": "Switcheroo",
+        "DESCRIPTION": "Exchange your Strength with the target's Strength. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Lose !M! Strength. NL Exchange your Strength with the target's Strength. NL Exhaust."
+    },
+    "mysteryDungeon:MeowthTaunt": {
+        "NAME": "Taunt",
+        "DESCRIPTION": "Gain !M! gold. NL End your turn."
+    },
+    "mysteryDungeon:MeowthTechnician": {
+        "NAME": "Technician",
+        "DESCRIPTION": "Innate. NL At the start of your turn creat a Flurry in your hand.",
+        "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn creat a Flurry+ in your hand."
+    },
+    "mysteryDungeon:MeowthThief": {
+        "NAME": "Thief",
+        "DESCRIPTION": "Deal !D! damage to !M! random enemies and obtain 5 gold !M! times. NL Exhaust."
+    },
+    "mysteryDungeon:MeowthThroatChop": {
+        "NAME": "Throat Chop",
+        "DESCRIPTION": "Deal !D! damage. NL Gain !B! block. NL Gain !M! gold."
+    },
+    "mysteryDungeon:MeowthUnnerve": {
+        "NAME": "Unnerve",
+        "DESCRIPTION": "Each time you spend a total of 25 gold in combat, gain !M! plated armor."
+    },
+    "mysteryDungeon:MeowthUTurn": {
+        "NAME": "U-Turn",
+        "DESCRIPTION": "Spend !M! gold. NL Create a card from your partner's deck in hand. NL It cost 0 this turn. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Spend !M! gold. NL Create a card from your partner's deck in hand. NL It cost 0 this combat. NL Exhaust."
+    },
+    "mysteryDungeon:TotodileDefend": {
+        "NAME": "Defend",
+        "DESCRIPTION": "Gain !B! Block."
+    },
+    "mysteryDungeon:TotodileIceFang": {
+        "NAME": "Ice Fang",
+        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost orb."
+    },
+    "mysteryDungeon:TotodileScratch": {
+        "NAME": "Scratch",
+        "DESCRIPTION": "Deal !D! damage."
     }
 }

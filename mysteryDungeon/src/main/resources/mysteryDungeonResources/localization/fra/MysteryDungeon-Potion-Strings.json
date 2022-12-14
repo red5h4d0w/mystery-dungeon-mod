@@ -67,5 +67,11 @@
         "DESCRIPTIONS": [
             "Heal 20HP. Gain 4 #yPoison."
         ]
+    },
+    "mysteryDungeon:LepaBerryPotion": {
+        "NAME": "Lepa Berry",
+        "DESCRIPTIONS": [
+            "Retain #b%s cards."
+        ]
     }
 }

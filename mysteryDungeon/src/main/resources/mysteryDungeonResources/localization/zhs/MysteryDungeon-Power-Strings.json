@@ -387,5 +387,90 @@
             "Your next #yEruption will not remove any #yBurn stacks.",
             "Your next #b%s #yEruption will not remove any #yBurn stacks."
         ]
+    },
+    "mysteryDungeon:CursePower": {
+        "NAME": "Curse",
+        "DESCRIPTIONS": [
+            "The first time you draw a status or curse each turn, gain [E].",
+            "The first #b%s times draw a status or a curse each turn, gain [E]."
+        ]
+    },
+    "mysteryDungeon:CrushClawPower": {
+        "NAME": "Crush Claw",
+        "DESCRIPTIONS": [
+            "Your next #yEruption will deal 50% more damage.",
+            "Your next #b%s #yEruption will deal 50%% more damage."
+        ]
+    },
+    "mysteryDungeon:FlashFirePower": {
+        "NAME": "Flash Fire",
+        "DESCRIPTIONS": [
+            "Every time you play a card apply #b%s #yBurn to all enemies."
+        ]
+    },
+    "mysteryDungeon:FreeSpendingEveryTurnPower": {
+        "NAME": "Investment",
+        "DESCRIPTIONS": [
+            "Each turn, the first time you should spend gold, do not spend any.",
+            "Each turn, the first #b%s times you should spend gold, do not spend any."
+        ]
+    },
+    "mysteryDungeon:FreeSpendingThisTurnPower": {
+        "NAME": "Bargain",
+        "DESCRIPTIONS": [
+            "Next time you should spend gold this turn, do not spend any.",
+            "Next #b%s times you should spend gold this turn, do not spend any."
+        ]
+    },
+    "mysteryDungeon:LashOutPower": {
+        "NAME": "Lash Out",
+        "DESCRIPTIONS": [
+            "Whenever you give an enemy Strength or Block, create #b%s Flurry in hand."
+        ]
+    },
+    "mysteryDungeon:LavaPlumePower": {
+        "NAME": "Lava PLume",
+        "DESCRIPTIONS": [
+            "Whenever you cause an #yEruption, Apply #b%s #yBurn to the target."
+        ]
+    },
+    "mysteryDungeon:NaturePowerMountainPower": {
+        "NAME": "Nature Power: Mountain",
+        "DESCRIPTIONS": [
+            "This turn Burn stacks will not decrease.",
+            "For the next #b%s turns Burn stacks will not decrease."
+        ]
+    },
+    "mysteryDungeon:NextTurnEruptionPower": {
+        "NAME": "Next Turn Eruption",
+        "DESCRIPTIONS": [
+            "Next Turn, Cause an Eruption.",
+            "Next Turn, Cause #b%s Eruptions."
+        ]
+    },
+    "mysteryDungeon:PsychUpPower": {
+        "NAME": "Psych Up",
+        "DESCRIPTIONS": [
+            "Whenever you give an enemy Strength, gain #b%s Strength."
+        ]
+    },
+    "mysteryDungeon:CyndaquilSleepTalkPower": {
+        "NAME": "Sleep Talk",
+        "DESCRIPTIONS": [
+            "When you create a Status Card, draw a card.",
+            "When you create a Status Card, draw #b%s card."
+        ]
+    },
+    "mysteryDungeon:TechnicianPower": {
+        "NAME": "Technician",
+        "DESCRIPTIONS": [
+            "Create #b%s #yFlurry in your hand at the start of your turn."
+        ]
+    },
+    "mysteryDungeon:UnnervePower": {
+        "NAME": "Unnerve",
+        "DESCRIPTIONS": [
+            "For every 25 gold spent in combat, gain #b%s Plated Armor."
+        ]
     }
 }

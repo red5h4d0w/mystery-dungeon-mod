@@ -168,5 +168,10 @@
         "NAMES": [
             "Feraligatr"
         ]
+    },
+    "mysteryDungeon:Persian": {
+        "NAMES": [
+            "Persian"
+        ]
     }
 }
