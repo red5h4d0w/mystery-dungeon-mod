@@ -1227,9 +1227,19 @@
         "DESCRIPTION": "Deal !D! damage NL Create a *Flinch and add it to your hand.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage NL Create an upgraded *Flinch and add it to your hand."
     },
+<<<<<<< Updated upstream
     "mysteryDungeon:TotodileIceFang": {
         "NAME": "Ice Fang",
         "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost orb."
+=======
+    "mysteryDungeon:TotodileDefend": {
+        "NAME": "Defend",
+        "DESCRIPTION": "Gain !B! Block."
+    },
+    "mysteryDungeon:TotodileScratch": {
+        "NAME": "Scratch",
+        "DESCRIPTION": "Deal !D! damage."
+>>>>>>> Stashed changes
     },
     "mysteryDungeon:TotodileWaterPledge": {
         "NAME": "Water Pledge",
