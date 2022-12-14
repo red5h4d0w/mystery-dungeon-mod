@@ -63,7 +63,7 @@ public class TotodileWatersport extends PokemonCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
-            upgradeMagicNumber(UPGRADE_SECOND_MAGIC_NUMBER);
+            upgradeSecondMagicNumber(UPGRADE_SECOND_MAGIC_NUMBER);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
