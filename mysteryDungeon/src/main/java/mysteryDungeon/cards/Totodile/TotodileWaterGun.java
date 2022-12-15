@@ -2,8 +2,7 @@ package mysteryDungeon.cards.Totodile;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -13,6 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.actions.DiscardTopOfDrawPileAction;
 import mysteryDungeon.characters.Pokemon;
 
 public class TotodileWaterGun extends PokemonCard {
@@ -54,10 +54,8 @@ public class TotodileWaterGun extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new MoveCardsAction(p.discardPile, p.drawPile, magicNumber));
-        addToBot(
-                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn),
-                        AbstractGameAction.AttackEffect.SMASH));
+        addToBot(new DiscardTopOfDrawPileAction(magicNumber));
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SMASH));
     }
 
     // Upgraded stats.
