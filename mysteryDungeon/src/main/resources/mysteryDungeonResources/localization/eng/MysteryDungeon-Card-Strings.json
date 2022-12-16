@@ -1231,6 +1231,10 @@
         "NAME": "Bite",
         "DESCRIPTION": "Deal !D! damage."
     },
+    "mysteryDungeon:TotodileConfide": {
+        "NAME": "Confide",
+        "DESCRIPTION": "Apply !M! vulnerable. NL Your next attack deals !mysteryDungeon:M2! additional damage. NL Exhaust."
+    },
     "mysteryDungeon:TotodileCrunch": {
         "NAME": "Crunch",
         "DESCRIPTION": "Deal !D! damage. NL Choose a card from your discard pile and add it to your hand."
