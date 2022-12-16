@@ -1247,7 +1247,12 @@
     },
     "mysteryDungeon:TotodileIceFang": {
         "NAME": "Ice Fang",
-        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost."
+        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Deal !D! damage. NL Channel !M! Frost."
+    },
+    "mysteryDungeon:TotodileIcePunch": {
+        "NAME": "Ice Punch",
+        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost. NL Evoke !M! Orb."
     },
     "mysteryDungeon:TotodileScratch": {
         "NAME": "Scratch",
