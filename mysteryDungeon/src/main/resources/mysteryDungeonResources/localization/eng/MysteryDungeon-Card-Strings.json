@@ -1267,8 +1267,8 @@
         "NAME": "Water Pledge",
         "DESCRIPTION": "Channel !M! Frost orb. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
     },
-    "mysteryDungeon:TotodileWatersport": {
-        "NAME": "Watersport",
+    "mysteryDungeon:TotodileWaterSport": {
+        "NAME": "Water Sport",
         "DESCRIPTION": "Discard the top card of your draw pile. NL Your next attack deals !mysteryDungeon:M2! additional damage.",
         "UPGRADE_DESCRIPTION": "Discard the 2 top card of your draw pile. NL Your next attack deals !mysteryDungeon:M2! additional damage."
     }
