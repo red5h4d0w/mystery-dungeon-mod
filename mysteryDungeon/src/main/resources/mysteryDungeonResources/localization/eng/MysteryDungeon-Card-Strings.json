@@ -1254,6 +1254,10 @@
         "NAME": "Ice Punch",
         "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost. NL Evoke !M! Orb."
     },
+    "mysteryDungeon:TotodileIcyWind": {
+        "NAME": "Icy Wind",
+        "DESCRIPTION": "Inert. NL Channel !M! Frost. NL Exhaust."
+    },
     "mysteryDungeon:TotodileScratch": {
         "NAME": "Scratch",
         "DESCRIPTION": "Deal !D! damage."
