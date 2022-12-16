@@ -1227,6 +1227,14 @@
         "DESCRIPTION": "Deal !D! damage NL Create a *Flinch and add it to your hand.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage NL Create an upgraded *Flinch and add it to your hand."
     },
+    "mysteryDungeon:TotodileBite": {
+        "NAME": "Bite",
+        "DESCRIPTION": "Deal !D! damage."
+    },
+    "mysteryDungeon:TotodileCrunch": {
+        "NAME": "Crunch",
+        "DESCRIPTION": "Deal !D! damage. NL Choose a card from your discard pile and add it to your hand."
+    },
     "mysteryDungeon:TotodileDefend": {
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! Block."
