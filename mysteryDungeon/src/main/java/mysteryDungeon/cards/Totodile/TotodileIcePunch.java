@@ -58,10 +58,9 @@ public class TotodileIcePunch extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn),AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn),AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         addToBot(new ChannelAction(new Frost()));
-        if(upgraded)
-            addToBot(new EvokeOrbAction(magicNumber));
+        addToBot(new EvokeOrbAction(magicNumber));
     }
 
     // Upgraded stats.
