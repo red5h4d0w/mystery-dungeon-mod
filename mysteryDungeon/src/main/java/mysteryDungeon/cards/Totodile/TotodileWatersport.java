@@ -2,7 +2,6 @@ package mysteryDungeon.cards.Totodile;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -12,6 +11,7 @@ import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.actions.DiscardTopOfDrawPileAction;
 import mysteryDungeon.characters.Pokemon;
 
 public class TotodileWatersport extends PokemonCard {
@@ -53,7 +53,7 @@ public class TotodileWatersport extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new MoveCardsAction(p.discardPile, p.drawPile, magicNumber));
+        addToBot(new DiscardTopOfDrawPileAction(magicNumber));
         addToBot(new ApplyPowerAction(p, p, new VigorPower(p, secondMagicNumber)));
     }
 
