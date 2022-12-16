@@ -126,6 +126,14 @@
         "DESCRIPTION": "You cannot play cards that target the enemy."
     },
     {
+        "PROPER_NAME": "Scoop-Up",
+        "NAMES": [
+            "Scoop-Up",
+            "scoop-up"
+        ],
+        "DESCRIPTION": "At the start of your turn but after you draw, if this card is in your discard pile add it to the top of your draw pile."
+    },
+    {
         "PROPER_NAME": "Temporary HP",
         "NAMES": [
             "Temporary HP",
