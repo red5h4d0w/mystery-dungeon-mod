@@ -3,7 +3,6 @@ package mysteryDungeon.cards.Totodile;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -14,9 +13,8 @@ import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.interfaces.onManualDiscardInterface;
 
-public class TotodileRainDance extends PokemonCard implements onManualDiscardInterface {
+public class TotodileRainDance extends PokemonCard {
 
     // TEXT DECLARATION
 
@@ -32,7 +30,7 @@ public class TotodileRainDance extends PokemonCard implements onManualDiscardInt
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.BASIC;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.TOTODILE_BLUE;
@@ -54,12 +52,12 @@ public class TotodileRainDance extends PokemonCard implements onManualDiscardInt
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new VigorPower(p, magicNumber)));
     }
-
     @Override
-    public void onManualDiscard(AbstractCard card) {
+    public void triggerOnManualDiscard() {
+        super.triggerOnManualDiscard();
         addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new VigorPower(AbstractDungeon.player, magicNumber)));
     }
-
+    
     // Upgraded stats.
     @Override
     public void upgrade() {

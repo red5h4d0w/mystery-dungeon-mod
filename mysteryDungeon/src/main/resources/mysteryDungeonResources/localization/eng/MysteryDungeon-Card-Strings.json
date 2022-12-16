@@ -1242,7 +1242,7 @@
     "mysteryDungeon:TotodileHail": {
         "NAME": "Hail",
         "DESCRIPTION": "Unplayable. NL When discarded: Channel !M! Frost.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL Scoop-up NL When discarded: Channel !M! Frost."
+        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up NL When discarded: Channel !M! Frost."
     },
     "mysteryDungeon:TotodileIceFang": {
         "NAME": "Ice Fang",
@@ -1255,7 +1255,7 @@
     "mysteryDungeon:TotodileRainDance": {
         "NAME": "Rain Dance",
         "DESCRIPTION": "Unplayable. NL When discarded: Your next attack deals !M! additional damage.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL Scoop-up NL When discarded: Your next attack deals !M! additional damage."
+        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up NL When discarded: Your next attack deals !M! additional damage."
     },
     "mysteryDungeon:TotodileWaterGun": {
         "NAME": "Water Gun",
