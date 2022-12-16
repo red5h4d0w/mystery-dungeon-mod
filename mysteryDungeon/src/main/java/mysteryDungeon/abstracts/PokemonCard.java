@@ -35,7 +35,6 @@ public abstract class PokemonCard extends CustomCard implements AtStartOfTurnPos
     public boolean isAdventurerOnly = false; // Indicates if the card can only be obtained as adventurer of its card color
     public boolean scoopUp = false; // A boolean that indicates if the card should be scooped up when discarded manually
 
-
     public PokemonCard(final String id,
                                final String name,
                                final String img,
@@ -106,11 +105,12 @@ public abstract class PokemonCard extends CustomCard implements AtStartOfTurnPos
     }
 
     public void atStartOfTurnPostDraw() {
-        if(scoopUp && AbstractDungeon.player.discardPile.contains(this)) {
-            addToBot(new SimpleAction(() -> {
-                AbstractDungeon.player.discardPile.removeCard(this);
+        addToBot(new SimpleAction(() -> {
+            if(scoopUp && AbstractDungeon.player.discardPile.group.stream().anyMatch(card -> card == this)) {
                 AbstractDungeon.player.drawPile.addToTop(this);
-            }));
-        }
+                AbstractDungeon.player.discardPile.removeCard(this);
+            }
+        }));
+    
     }
 }
