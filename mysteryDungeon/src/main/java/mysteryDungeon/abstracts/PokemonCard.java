@@ -8,11 +8,12 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import basemod.ReflectionHacks;
 import basemod.abstracts.CustomCard;
 import mysteryDungeon.actions.SimpleAction;
+import mysteryDungeon.interfaces.AtStartOfTurnPostDrawInterface;
 import mysteryDungeon.powers.FreeSpendingThisTurnPower;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-public abstract class PokemonCard extends CustomCard {
+public abstract class PokemonCard extends CustomCard implements AtStartOfTurnPostDrawInterface {
 
     // Custom Abstract Cards can be a bit confusing. While this is a simple base for simply adding a second magic number,
     // if you're new to modding I suggest you skip this file until you know what unique things that aren't provided
@@ -103,9 +104,8 @@ public abstract class PokemonCard extends CustomCard {
         }
         return true;
     }
-    @Override
-    public void atTurnStart() {
-        super.atTurnStart();
+
+    public void atStartOfTurnPostDraw() {
         if(scoopUp && AbstractDungeon.player.discardPile.contains(this)) {
             addToBot(new SimpleAction(() -> {
                 AbstractDungeon.player.discardPile.removeCard(this);

@@ -3,7 +3,6 @@ package mysteryDungeon.cards.Totodile;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -62,8 +61,9 @@ public class TotodileHail extends PokemonCard {
     }
 
     @Override
-    public boolean canPlay(AbstractCard card) {
-        return super.canPlay(card) && false;
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        cantUseMessage = cardStrings.EXTENDED_DESCRIPTION[0];
+        return false;
     }
 
     // Upgraded stats.

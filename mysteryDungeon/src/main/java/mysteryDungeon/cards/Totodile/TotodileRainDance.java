@@ -52,6 +52,13 @@ public class TotodileRainDance extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new VigorPower(p, magicNumber)));
     }
+
+    @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        cantUseMessage = cardStrings.EXTENDED_DESCRIPTION[0];
+        return false;
+    }
+
     @Override
     public void triggerOnManualDiscard() {
         super.triggerOnManualDiscard();
