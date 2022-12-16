@@ -14,11 +14,11 @@ import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.actions.DiscardTopOfDrawPileAction;
 import mysteryDungeon.characters.Pokemon;
 
-public class TotodileWaterSpout extends PokemonCard {
+public class TotodileWaterSport extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(TotodileWaterSpout.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(TotodileWaterSport.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("TotodileSkill.png");
     public static final String NAME = cardStrings.NAME;
@@ -42,7 +42,7 @@ public class TotodileWaterSpout extends PokemonCard {
 
     // /STAT DECLARATION/
 
-    public TotodileWaterSpout() {
+    public TotodileWaterSport() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
