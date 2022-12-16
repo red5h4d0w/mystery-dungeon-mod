@@ -50,7 +50,7 @@ public class TotodileIceFang extends PokemonCard {
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
         showEvokeValue = true;
-        showEvokeOrbCount = 2;
+        showEvokeOrbCount = 1;
     }
 
     // Actions the card should do.

@@ -1252,6 +1252,11 @@
         "NAME": "Scratch",
         "DESCRIPTION": "Deal !D! damage."
     },
+    "mysteryDungeon:TotodileRainDance": {
+        "NAME": "Rain Dance",
+        "DESCRIPTION": "Unplayable. NL When discarded: Your next attack deals !M! additional damage.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL Scoop-up NL When discarded: Your next attack deals !M! additional damage."
+    },
     "mysteryDungeon:TotodileWaterGun": {
         "NAME": "Water Gun",
         "DESCRIPTION": "Discard the !M! top card of your draw pile. NL Deal !D! damage."
@@ -1262,7 +1267,7 @@
     },
     "mysteryDungeon:TotodileWatersport": {
         "NAME": "Watersport",
-        "DESCRIPTION": "Discard the top card of your draw pile. NL Your next attack will deal !mysteryDungeon:M2! more damage.",
-        "UPGRADE_DESCRIPTION": "Discard the 2 top card of your draw pile. NL Your next attack will deal !mysteryDungeon:M2! more damage."
+        "DESCRIPTION": "Discard the top card of your draw pile. NL Your next attack deals !mysteryDungeon:M2! additional damage.",
+        "UPGRADE_DESCRIPTION": "Discard the 2 top card of your draw pile. NL Your next attack deals !mysteryDungeon:M2! additional damage."
     }
 }
