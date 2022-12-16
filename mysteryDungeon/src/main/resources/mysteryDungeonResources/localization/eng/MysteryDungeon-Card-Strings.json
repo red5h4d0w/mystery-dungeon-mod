@@ -1239,9 +1239,14 @@
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! Block."
     },
+    "mysteryDungeon:TotodileHail": {
+        "NAME": "Hail",
+        "DESCRIPTION": "Unplayable. NL When discarded: Channel !M! Frost.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL Scoop-up NL When discarded: Channel !M! Frost."
+    },
     "mysteryDungeon:TotodileIceFang": {
         "NAME": "Ice Fang",
-        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost orb."
+        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost."
     },
     "mysteryDungeon:TotodileScratch": {
         "NAME": "Scratch",

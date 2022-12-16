@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 
 import basemod.ReflectionHacks;
 import basemod.abstracts.CustomCard;
+import mysteryDungeon.actions.SimpleAction;
 import mysteryDungeon.powers.FreeSpendingThisTurnPower;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
@@ -31,6 +32,8 @@ public abstract class PokemonCard extends CustomCard {
     public boolean isThirdMagicNumberModified; // A boolean to check whether the number has been modified or not, for coloring purposes. (red/green)
     public boolean inert = false; // A boolean to indicate whether the card affects the charge meter.
     public boolean isAdventurerOnly = false; // Indicates if the card can only be obtained as adventurer of its card color
+    public boolean scoopUp = false; // A boolean that indicates if the card should be scooped up when discarded manually
+
 
     public PokemonCard(final String id,
                                final String name,
@@ -99,5 +102,15 @@ public abstract class PokemonCard extends CustomCard {
             return !(spendAmount>AbstractDungeon.player.gold);
         }
         return true;
+    }
+    @Override
+    public void atTurnStart() {
+        super.atTurnStart();
+        if(scoopUp && AbstractDungeon.player.discardPile.contains(this)) {
+            addToBot(new SimpleAction(() -> {
+                AbstractDungeon.player.discardPile.removeCard(this);
+                AbstractDungeon.player.drawPile.addToTop(this);
+            }));
+        }
     }
 }
