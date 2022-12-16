@@ -3,7 +3,6 @@ package mysteryDungeon.cards.Totodile;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -13,9 +12,8 @@ import com.megacrit.cardcrawl.orbs.Frost;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.interfaces.onManualDiscardInterface;
 
-public class TotodileHail extends PokemonCard implements onManualDiscardInterface {
+public class TotodileHail extends PokemonCard {
 
     // TEXT DECLARATION
 
@@ -57,7 +55,8 @@ public class TotodileHail extends PokemonCard implements onManualDiscardInterfac
     }
 
     @Override
-    public void onManualDiscard(AbstractCard card) {
+    public void triggerOnManualDiscard() {
+        super.triggerOnManualDiscard();
         addToBot(new ChannelAction(new Frost()));
     }
 
