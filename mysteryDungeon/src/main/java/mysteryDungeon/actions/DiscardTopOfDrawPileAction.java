@@ -23,6 +23,9 @@ public class DiscardTopOfDrawPileAction extends AbstractGameAction{
             return;
         } 
         else {
+            if(amount>AbstractDungeon.player.drawPile.size()) {
+                amount = AbstractDungeon.player.drawPile.size();
+            }
             for(int i=0;i<amount;i++) {
                 AbstractCard card = AbstractDungeon.player.drawPile.getNCardFromTop(i+1);
                 addToTop(new DiscardSpecificCardAction(card, AbstractDungeon.player.drawPile));
