@@ -1266,6 +1266,10 @@
         "NAME": "Scratch",
         "DESCRIPTION": "Deal !D! damage."
     },
+    "mysteryDungeon:TotodileSheerForce": {
+        "NAME": "Sheer Force",
+        "DESCRIPTION": "Whenever you deal !M! or more unblocked damage, channel 1 Frost."
+    },
     "mysteryDungeon:TotodileRainDance": {
         "NAME": "Rain Dance",
         "DESCRIPTION": "Unplayable. NL When discarded: Your next attack deals !M! additional damage.",

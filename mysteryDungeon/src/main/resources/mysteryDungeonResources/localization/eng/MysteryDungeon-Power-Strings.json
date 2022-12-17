@@ -400,6 +400,13 @@
             "When you shuffle your deck, gain #b%s #yTemporary #yStrength."
         ]
     },
+    "mysteryDungeon:TotodileSheerForce": {
+        "NAME": "Sheer Force",
+        "DESCRIPTIONS": [
+            "Whenever you deal #b%s1 or more unblocked damage, Channel #b1 Frost.",
+            "Whenever you deal #b%s1 or more unblocked damage, Channel #b%s2 Frost."
+        ]
+    },
     "mysteryDungeon:ToxicPower": {
         "NAME": "Toxic",
         "DESCRIPTIONS": [
