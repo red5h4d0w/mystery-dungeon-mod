@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.TotodileSheerForcePower;
+import mysteryDungeon.powers.SheerForcePower;
 
 public class TotodileSheerForce extends PokemonCard {
 
@@ -51,7 +51,7 @@ public class TotodileSheerForce extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new TotodileSheerForcePower(p, 1, magicNumber), 1));
+        addToBot(new ApplyPowerAction(p, p, new SheerForcePower(p, 1, magicNumber), 1));
     }
 
     // Upgraded stats.
