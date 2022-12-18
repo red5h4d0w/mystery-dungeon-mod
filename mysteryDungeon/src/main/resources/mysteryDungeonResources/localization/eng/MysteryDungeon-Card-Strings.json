@@ -767,7 +767,7 @@
     },
     "mysteryDungeon:MeowthHoneClaws": {
         "NAME": "Hone Claws",
-        "DESCRIPTION": "Give an enemy !B! block. NL Gain !M! Strength"
+        "DESCRIPTION": "Give an enemy !B! Block. NL Gain !M! Strength"
     },
     "mysteryDungeon:MeowthHyperVoice": {
         "NAME": "Hyper Voice",
@@ -809,7 +809,7 @@
     },
     "mysteryDungeon:MeowthPunishment": {
         "NAME": "Punishment",
-        "DESCRIPTION": "Deal !D! damage. NL Deal Addditionnal damage equal to !M! times the enemy's Strength."
+        "DESCRIPTION": "Deal !D! damage. NL Deal additionnal damage equal to !M! times the enemy's Strength."
     },
     "mysteryDungeon:MeowthRoar": {
         "NAME": "Roar",
@@ -826,7 +826,7 @@
     },
     "mysteryDungeon:MeowthScreech": {
         "NAME": "Screech",
-        "DESCRIPTION": "Give an enemy !M! vulnerable and !B! block."
+        "DESCRIPTION": "Give an enemy !M! Vulnerable and !B! Block."
     },
     "mysteryDungeon:MeowthSnarl": {
         "NAME": "Snarl",
@@ -860,7 +860,7 @@
     },
     "mysteryDungeon:MeowthThroatChop": {
         "NAME": "Throat Chop",
-        "DESCRIPTION": "Deal !D! damage. NL Gain !B! block. NL Gain !M! gold."
+        "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Gain !M! gold."
     },
     "mysteryDungeon:MeowthUnnerve": {
         "NAME": "Unnerve",
@@ -1239,7 +1239,7 @@
     },
     "mysteryDungeon:TotodileConfide": {
         "NAME": "Confide",
-        "DESCRIPTION": "Apply !M! vulnerable. NL Your next attack deals !mysteryDungeon:M2! additional damage. NL Exhaust."
+        "DESCRIPTION": "Apply !M! Vulnerable. NL Your next attack deals !mysteryDungeon:M2! additional damage. NL Exhaust."
     },
     "mysteryDungeon:TotodileCrunch": {
         "NAME": "Crunch",
