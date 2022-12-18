@@ -37,7 +37,7 @@ public class TotodileCrunch extends PokemonCard {
 
     private static final int COST = 2;
     private static final int DAMAGE = 10;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int UPGRADE_PLUS_DMG = 4;
     private static final int BASE_MAGIC_NUMBER = 1;
 
 
