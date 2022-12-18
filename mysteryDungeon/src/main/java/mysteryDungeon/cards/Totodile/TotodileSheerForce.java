@@ -19,7 +19,7 @@ public class TotodileSheerForce extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(TotodileSheerForce.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("TotodileSkill.png");
+    public static final String IMG = makeCardPath("TotodilePower.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -31,7 +31,7 @@ public class TotodileSheerForce extends PokemonCard {
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
-    private static final CardType TYPE = CardType.SKILL;
+    private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = Pokemon.Enums.TOTODILE_BLUE;
 
     private static final int COST = 2;

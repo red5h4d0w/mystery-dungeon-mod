@@ -3,14 +3,17 @@ package mysteryDungeon.cards.Totodile;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
+import com.megacrit.cardcrawl.vfx.combat.BlizzardEffect;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
@@ -31,14 +34,14 @@ public class TotodileBlizzard extends PokemonCard {
 
     // STAT DECLARATION
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Pokemon.Enums.TOTODILE_BLUE;
 
     private static final int COST = 3;
-    private static final int BASE_MAGIC_NUMBER = 3;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
+    private static final int BASE_MAGIC_NUMBER = 4;
+    private static final int UPGRADE_MAGIC_NUMBER = 6;
 
 
     // /STAT DECLARATION/
@@ -55,6 +58,11 @@ public class TotodileBlizzard extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         int orbCount = (int)AbstractDungeon.actionManager.orbsChanneledThisCombat.stream().filter(o -> !(o instanceof EmptyOrbSlot)).count();
         baseDamage = magicNumber * orbCount;
+        if (Settings.FAST_MODE) {
+            addToBot(new VFXAction(new BlizzardEffect(orbCount, AbstractDungeon.getMonsters().shouldFlipVfx()), 0.25F));
+        } else {
+            addToBot(new VFXAction(new BlizzardEffect(orbCount, AbstractDungeon.getMonsters().shouldFlipVfx()), 1.0F));
+        } 
         addToBot( new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SMASH));
     }
 
