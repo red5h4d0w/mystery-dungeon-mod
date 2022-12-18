@@ -1231,6 +1231,11 @@
         "NAME": "Bite",
         "DESCRIPTION": "Deal !D! damage."
     },
+    "mysteryDungeon:TotodileBlizzard": {
+        "NAME": "Blizzard",
+        "DESCRIPTION": "Deal !M! times the number of Frost orbs channneled this combat.",
+        "EXTENDED_DESCRIPTION": ["Deal !M! times the number of Frost orbs channneled this combat. NL (Currently deals !D! damage)"]
+    },
     "mysteryDungeon:TotodileConfide": {
         "NAME": "Confide",
         "DESCRIPTION": "Apply !M! vulnerable. NL Your next attack deals !mysteryDungeon:M2! additional damage. NL Exhaust."
