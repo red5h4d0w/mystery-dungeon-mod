@@ -1242,7 +1242,7 @@
     },
     "mysteryDungeon:TotodileCrunch": {
         "NAME": "Crunch",
-        "DESCRIPTION": "Deal !D! damage. NL Choose a card from your discard pile and add it to your hand."
+        "DESCRIPTION": "Deal !D! damage. NL Choose a card from your discard pile and add it to the top of your draw pile."
     },
     "mysteryDungeon:TotodileDefend": {
         "NAME": "Defend",
