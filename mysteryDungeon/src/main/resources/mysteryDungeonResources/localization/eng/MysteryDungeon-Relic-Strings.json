@@ -137,7 +137,7 @@
         "NAME": "Naive Explorer",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "At the start of your turn, if you have not taken any damage from attacks this combat, your next Attack deals 3 more damage."
+            "At the start of your turn, if you have not taken any damage from attacks this combat, your next Attack deals #b3 more damage."
         ]
     },
     "mysteryDungeon:QuirkyExplorerRelic": {
