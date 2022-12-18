@@ -796,7 +796,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
             case Lonely:
                 return new CalmExplorerRelic();
             case Naive:
-                return new CalmExplorerRelic();
+                return new NaiveExplorerRelic();
             case Quirky:
                 return new QuirkyExplorerRelic();
             case Relaxed:
