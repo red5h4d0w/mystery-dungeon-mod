@@ -42,6 +42,7 @@ public class MeowthHyperVoice extends PokemonCard {
     private static final int COST = 0;
     private static final int DAMAGE = 8;
     private static final int BASE_MAGIC_NUMBER = 5;
+    private boolean shouldReturn = false;
 
 
     // /STAT DECLARATION/
@@ -60,16 +61,23 @@ public class MeowthHyperVoice extends PokemonCard {
                 AbstractGameAction.AttackEffect.SLASH_DIAGONAL, true));
         addToBot(new ModifyDamageAction(uuid, 6));
         addToBot(new ModifyMagicNumberAction(uuid, 4));
+        shouldReturn = true;
     }
 
     @Override
     public void onMoveToDiscard() {
-    if(upgraded)
-        addToBot(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.discardPile, card -> card.cardID == MeowthHyperVoice.ID & card.upgraded, 1));
-    
-    addToBot(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.discardPile,
-            card -> card.cardID == MeowthHyperVoice.ID & !card.upgraded, 1));
-    super.onMoveToDiscard();
+        if(!shouldReturn) {
+            shouldReturn = false;
+            super.onMoveToDiscard();
+            return;
+        }
+        if(upgraded)
+            addToBot(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.discardPile, card -> card.cardID == MeowthHyperVoice.ID & card.upgraded, 1));
+        
+        addToBot(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.discardPile,
+                card -> card.cardID == MeowthHyperVoice.ID & !card.upgraded, 1));
+        shouldReturn = false;
+        super.onMoveToDiscard();
     }
 
     @Override
