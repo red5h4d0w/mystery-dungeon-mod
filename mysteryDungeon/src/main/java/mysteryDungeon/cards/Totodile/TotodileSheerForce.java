@@ -35,10 +35,9 @@ public class TotodileSheerForce extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.TOTODILE_BLUE;
 
     private static final int COST = 2;
+    private static final int UPGRADE_COST = 1;
 
-    private static final int BASE_MAGIC_NUMBER = 24;
-
-    private static final int UPGRADE_MAGIC_NUMBER = -4;
+    private static final int BASE_MAGIC_NUMBER = 21;
 
     // /STAT DECLARATION/
 
@@ -59,7 +58,7 @@ public class TotodileSheerForce extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            upgradeBaseCost(UPGRADE_COST);
             initializeDescription();
         }
     }
