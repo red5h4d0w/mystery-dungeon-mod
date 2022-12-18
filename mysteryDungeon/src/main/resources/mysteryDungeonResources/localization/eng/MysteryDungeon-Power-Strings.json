@@ -300,7 +300,7 @@
     },
     "mysteryDungeon:PikachuExplorerPower": {
         "NAME": "Explorer Form",
-        "DESCRIPTIONS": ["At the start of your turn Channel #b%s lightning orb. If you have at least 1 orb, at the start of your turn evoke your next #b%s orb."]
+        "DESCRIPTIONS": ["At the start of your turn, evoke your next Orb, then channel #b%s Lightning."]
     },
     "mysteryDungeon:PsychUpPower": {
         "NAME": "Psych Up",

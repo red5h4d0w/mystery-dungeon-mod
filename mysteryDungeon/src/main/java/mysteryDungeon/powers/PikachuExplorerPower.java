@@ -70,6 +70,6 @@ public class PikachuExplorerPower extends PokemonPower implements CloneablePower
 
     @Override
     public void updateDescription() {
-            description = String.format(DESCRIPTIONS[0], amount, amount);
+            description = String.format(DESCRIPTIONS[0], amount);
     }
 }
