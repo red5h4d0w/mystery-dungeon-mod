@@ -116,7 +116,7 @@
     },
     "mysteryDungeon:BulbasaurRazorLeaf": {
         "NAME": "Razor Leaf",
-        "DESCRIPTION": "Lose !M! Hp. NL Deal !D! damage."
+        "DESCRIPTION": "Deal !D! damage. NL Draw 1 card."
     },
     "mysteryDungeon:BulbasaurRest": {
         "NAME": "Rest",

@@ -36,9 +36,9 @@ public class TotodileSheerForce extends PokemonCard {
 
     private static final int COST = 2;
 
-    private static final int BASE_MAGIC_NUMBER = 16;
+    private static final int BASE_MAGIC_NUMBER = 24;
 
-    private static final int UPGRADE_MAGIC_NUMBER = -3;
+    private static final int UPGRADE_MAGIC_NUMBER = -4;
 
     // /STAT DECLARATION/
 
