@@ -377,9 +377,9 @@ public class PokemonNeowPatch {
                 add(new Squirtle());
                 add(new Pikachu());
                 add(new Chikorita());
-                // TODO: uncomment next lines when those pokémons while be added
+                // TODO: uncomment next lines when those pokémons will be added
                 add(new Cyndaquil());
-                // add(new Totodile());
+                add(new Totodile());
                 // add(new Treecko());
                 // add(new Torchic());
                 // add(new Mudkip());
