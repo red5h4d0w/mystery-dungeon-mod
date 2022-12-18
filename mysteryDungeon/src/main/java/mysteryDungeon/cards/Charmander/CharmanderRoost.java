@@ -14,13 +14,13 @@ import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.powers.SleepTalkPower;
 
-public class CharmanderSleepTalk extends PokemonCard {
+public class CharmanderRoost extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(CharmanderSleepTalk.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CharmanderRoost.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(CharmanderSleepTalk.class.getSimpleName()+".png");
+    public static final String IMG = makeCardPath(CharmanderRoost.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -42,7 +42,7 @@ public class CharmanderSleepTalk extends PokemonCard {
 
     // /STAT DECLARATION/
 
-    public CharmanderSleepTalk() {
+    public CharmanderRoost() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
