@@ -10,8 +10,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.orbs.Frost;
+import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
@@ -54,12 +53,8 @@ public class TotodileBlizzard extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int frostCount = 0;
-        for (AbstractOrb o : AbstractDungeon.actionManager.orbsChanneledThisCombat) {
-            if (o instanceof Frost)
-                frostCount++; 
-        } 
-        baseDamage = magicNumber * frostCount;
+        int orbCount = (int)AbstractDungeon.actionManager.orbsChanneledThisCombat.stream().filter(o -> !(o instanceof EmptyOrbSlot)).count();
+        baseDamage = magicNumber * orbCount;
         addToBot( new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SMASH));
     }
 
@@ -67,12 +62,8 @@ public class TotodileBlizzard extends PokemonCard {
     @Override
     public void applyPowers() {
         super.applyPowers();
-        int frostCount = 0;
-        for (AbstractOrb o : AbstractDungeon.actionManager.orbsChanneledThisCombat) {
-            if (o instanceof Frost)
-                frostCount++; 
-        }
-        baseDamage = frostCount * magicNumber;
+        int orbCount = (int)AbstractDungeon.actionManager.orbsChanneledThisCombat.stream().filter(o -> !(o instanceof EmptyOrbSlot)).count();
+        baseDamage = magicNumber * orbCount;
         super.applyPowers();
         rawDescription = String.format(cardStrings.EXTENDED_DESCRIPTION[0], baseDamage);
         initializeDescription();
