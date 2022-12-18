@@ -1266,7 +1266,7 @@
     },
     "mysteryDungeon:TotodileIcyWind": {
         "NAME": "Icy Wind",
-        "DESCRIPTION": "Inert. NL Channel !M! Frost. NL Exhaust."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Channel !M! Frost. NL Exhaust."
     },
     "mysteryDungeon:TotodileScratch": {
         "NAME": "Scratch",
@@ -1288,7 +1288,7 @@
     },
     "mysteryDungeon:TotodileWaterPledge": {
         "NAME": "Water Pledge",
-        "DESCRIPTION": "Channel !M! Frost orb. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
+        "DESCRIPTION": "Channel !M! Frost orb. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
     },
     "mysteryDungeon:TotodileWaterSport": {
         "NAME": "Water Sport",
