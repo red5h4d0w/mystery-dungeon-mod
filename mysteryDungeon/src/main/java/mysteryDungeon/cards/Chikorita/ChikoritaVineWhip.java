@@ -2,13 +2,12 @@ package mysteryDungeon.cards.Chikorita;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -25,6 +24,7 @@ public class ChikoritaVineWhip extends PokemonCard {
     public static final String IMG = makeCardPath("ChikoritaAttack.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -38,8 +38,9 @@ public class ChikoritaVineWhip extends PokemonCard {
 
     private static final int COST = 1;
     private static final int DAMAGE = 8;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int UPGRADE_PLUS_DMG = 2;
     private static final int BASE_MAGIC_NUMBER = 1;
+    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
     // /STAT DECLARATION/
 
@@ -54,7 +55,7 @@ public class ChikoritaVineWhip extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
-        addToBot(new MoveCardsAction(AbstractDungeon.player.drawPile, AbstractDungeon.player.discardPile));
+        addToBot(new DrawCardAction(p, magicNumber));
     }
 
     // Upgraded stats.
@@ -63,6 +64,8 @@ public class ChikoritaVineWhip extends PokemonCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

@@ -514,7 +514,8 @@
     },
     "mysteryDungeon:ChikoritaVineWhip": {
         "NAME": "Vine Whip",
-        "DESCRIPTION": "Deal !D! damage. NL Put a card from your discard pile into your draw pile."
+        "DESCRIPTION": "Deal !D! damage. NL Draw !M! card.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw !M! cards."
     },
     "mysteryDungeon:ChikoritaWorrySeed": {
         "NAME": "Worry Seed",
