@@ -133,6 +133,13 @@
             "Gain [E] at the start of your turn. NL Reduce your maximum hand size by 2."
         ]
     },
+    "mysteryDungeon:NaiveExplorerRelic": {
+        "NAME": "Naive Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "At the start of your turn, if you have not taken any damage from attacks this combat, your next Attack deals 3 more damage."
+        ]
+    },
     "mysteryDungeon:QuirkyExplorerRelic": {
         "NAME": "Quirky Explorer",
         "FLAVOR": "What is this?",
