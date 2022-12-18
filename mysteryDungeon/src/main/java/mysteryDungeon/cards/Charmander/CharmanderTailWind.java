@@ -14,13 +14,13 @@ import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.powers.BellyDrumPower;
 
-public class CharmanderBellyDrum extends PokemonCard {
+public class CharmanderTailWind extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(CharmanderBellyDrum.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CharmanderTailWind.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(CharmanderBellyDrum.class.getSimpleName()+".png");
+    public static final String IMG = makeCardPath(CharmanderTailWind.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
@@ -41,7 +41,7 @@ public class CharmanderBellyDrum extends PokemonCard {
 
     // /STAT DECLARATION/
 
-    public CharmanderBellyDrum() {
+    public CharmanderTailWind() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;

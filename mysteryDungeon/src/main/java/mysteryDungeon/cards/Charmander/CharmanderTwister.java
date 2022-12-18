@@ -16,13 +16,13 @@ import mysteryDungeon.actions.FlingAction;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.powers.BurnPower;
 
-public class CharmanderFling extends PokemonCard {
+public class CharmanderTwister extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(CharmanderFling.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CharmanderTwister.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(CharmanderFling.class.getSimpleName()+".png");
+    public static final String IMG = makeCardPath(CharmanderTwister.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -44,7 +44,7 @@ public class CharmanderFling extends PokemonCard {
 
     // /STAT DECLARATION/
 
-    public CharmanderFling() {
+    public CharmanderTwister() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseMagicNumber = BASE_MAGIC_NUMBER;

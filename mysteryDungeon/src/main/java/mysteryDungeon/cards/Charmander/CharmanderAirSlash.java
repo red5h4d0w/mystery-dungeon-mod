@@ -21,13 +21,13 @@ import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 
-public class CharmanderCrunch extends PokemonCard {
+public class CharmanderAirSlash extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(CharmanderCrunch.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CharmanderAirSlash.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(CharmanderCrunch.class.getSimpleName()+".png");
+    public static final String IMG = makeCardPath(CharmanderAirSlash.class.getSimpleName()+".png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
@@ -49,7 +49,7 @@ public class CharmanderCrunch extends PokemonCard {
 
     // /STAT DECLARATION/
 
-    public CharmanderCrunch() {
+    public CharmanderAirSlash() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BASE_BLOCK;
