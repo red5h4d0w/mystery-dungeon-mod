@@ -400,7 +400,11 @@
             "When you shuffle your deck, gain #b%s #yTemporary #yStrength."
         ]
     },
-    "mysteryDungeon:TotodileSheerForce": {
+    "mysteryDungeon:TotodileExplorerPower": {
+        "NAME": "Explorer Form",
+        "DESCRIPTIONS": ["At the start of your turn add #b%s card. From your discard pile"]
+    },
+    "mysteryDungeon:SheerForcePower": {
         "NAME": "Sheer Force",
         "DESCRIPTIONS": [
             "Whenever you deal #b%s1 or more unblocked damage, Channel #b1 Frost.",
