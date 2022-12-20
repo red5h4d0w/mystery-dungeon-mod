@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.powers.NextTurnDrawLessPower;
 import mysteryDungeon.powers.TotodileExplorerPower;
 
 public class TotodileExplorerForm extends PokemonCard {
@@ -51,6 +52,7 @@ public class TotodileExplorerForm extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new TotodileExplorerPower(p, magicNumber), magicNumber));
+        addToBot(new ApplyPowerAction(p,p, new NextTurnDrawLessPower(p, 1)));
     }
 
     // Upgraded stats.
