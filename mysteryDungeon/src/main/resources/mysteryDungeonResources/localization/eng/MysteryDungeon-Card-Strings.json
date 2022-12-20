@@ -1253,6 +1253,11 @@
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! Block."
     },
+    "mysteryDungeon:TotodileDive": {
+        "NAME": "Dive",
+        "DESCRIPTION": "Retain. NL Discard !M! cards form your hand.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Discard !M! cards form your hand. NL Draw 1 card."
+    },
     "mysteryDungeon:TotodileHail": {
         "NAME": "Hail",
         "DESCRIPTION": "Unplayable. NL When discarded: Channel !M! Frost.",
