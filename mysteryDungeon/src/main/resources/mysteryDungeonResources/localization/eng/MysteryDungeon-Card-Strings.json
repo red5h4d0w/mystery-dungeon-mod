@@ -601,7 +601,7 @@
     },
     "mysteryDungeon:CyndaquilFlareBlitz": {
         "NAME": "Flare Blitz",
-        "DESCRIPTION": "Add 1 Void in your draw pile. NL Deal !D! damage. NL If the attack is Fatal, Gain [E] [E]."
+        "DESCRIPTION": "Deal !D! damage. NL For every Status card currently in your deck, reduce this card's cost by 1."
     },
     "mysteryDungeon:CyndaquilFlashFire": {
         "NAME": "Flash Fire",
