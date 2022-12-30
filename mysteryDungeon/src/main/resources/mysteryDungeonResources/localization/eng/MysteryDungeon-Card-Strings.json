@@ -1258,6 +1258,11 @@
         "DESCRIPTION": "Retain. NL Discard !M! cards form your hand.",
         "UPGRADE_DESCRIPTION": "Retain. NL Discard !M! cards form your hand. NL Draw 1 card."
     },
+    "mysteryDungeon:TotodileEndure": {
+        "NAME": "Endure",
+        "DESCRIPTION": "If you take damage, channel !M! frost orb.",
+        "UPGRADE_DESCRIPTION": "Innate. NL If you take damage, channel !M! frost orb."
+    },
     "mysteryDungeon:TotodileExplorerForm": {
         "NAME": "Explorer Form",
         "DESCRIPTION": "Ethereal. NL At the start of your turn, add !M! card from your discard pile to your hand. NL Draw one less card per turn.",
@@ -1319,6 +1324,10 @@
         "NAME": "Water Sport",
         "DESCRIPTION": "Discard the top card of your draw pile. NL Your next attack deals !mysteryDungeon:M2! additional damage.",
         "UPGRADE_DESCRIPTION": "Discard the 2 top card of your draw pile. NL Your next attack deals !mysteryDungeon:M2! additional damage."
+    },
+    "mysteryDungeon:TotodileWhirlpool": {
+        "NAME": "Whirlpool",
+        "DESCRIPTION": "Discard the !M! top card of your draw pile. NL Gain !mysteryDungeon:M2! Focus."
     },
     "mysteryDungeon:TotodileWorkUp": {
         "NAME": "Work Up",
