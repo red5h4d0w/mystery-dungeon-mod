@@ -1234,8 +1234,8 @@
     },
     "mysteryDungeon:TotodileBlizzard": {
         "NAME": "Blizzard",
-        "DESCRIPTION": "Deal !M! times the number of Frost orbs channneled this combat.",
-        "EXTENDED_DESCRIPTION": ["Deal !M! times the number of Frost orbs channneled this combat. NL (Currently deals !D! damage)"]
+        "DESCRIPTION": "Deal !M! times the number of orbs channneled this combat.",
+        "EXTENDED_DESCRIPTION": ["Deal !M! times the number of orbs channneled this combat. NL (Currently deals !D! damage)"]
     },
     "mysteryDungeon:TotodileBlock": {
         "NAME": "Block",
