@@ -1314,5 +1314,9 @@
         "NAME": "Water Sport",
         "DESCRIPTION": "Discard the top card of your draw pile. NL Your next attack deals !mysteryDungeon:M2! additional damage.",
         "UPGRADE_DESCRIPTION": "Discard the 2 top card of your draw pile. NL Your next attack deals !mysteryDungeon:M2! additional damage."
+    },
+    "mysteryDungeon:TotodileWorkUp": {
+        "NAME": "Work Up",
+        "DESCRIPTION": "If you do not have any empty Orb slots, Gain !M! Orb slots."
     }
 }
