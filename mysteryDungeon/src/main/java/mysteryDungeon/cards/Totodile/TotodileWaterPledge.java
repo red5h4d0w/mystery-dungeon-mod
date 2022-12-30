@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.Frost;
+import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
@@ -35,8 +36,8 @@ public class TotodileWaterPledge extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.TOTODILE_BLUE;
 
     private static final int COST = 1;
-    private static final int BASE_MAGIC_NUMBER = 1;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
+    private static final int BASE_MAGIC_NUMBER = 3;
+    private static final int UPGRADE_MAGIC_NUMBER = 3;
 
     // /STAT DECLARATION/
 
@@ -45,15 +46,15 @@ public class TotodileWaterPledge extends PokemonCard {
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
         showEvokeValue = true;
-        showEvokeOrbCount = 2;
+        showEvokeOrbCount = 1;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ChannelAction(new Frost()));
-        if(upgraded)
-        addToBot(new ChannelAction(new Frost()));
+        addToBot(new ApplyPowerAction(p, p, new VigorPower(p, magicNumber)));
+
         addToBot(new ApplyPowerAction(p, p, new WaterPledgePower(p, 1)));
     }
 
