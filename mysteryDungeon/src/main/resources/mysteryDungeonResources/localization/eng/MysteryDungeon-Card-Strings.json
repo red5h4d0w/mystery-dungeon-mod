@@ -1269,6 +1269,11 @@
         "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up NL When discarded: Channel !M! Frost.",
         "EXTENDED_DESCRIPTION": ["I can't play this card."]
     },
+    "mysteryDungeon:TotodileHydroPump": {
+        "NAME": "Hydro Pump",
+        "DESCRIPTION": "Can only be used if there are no cards left in your draw pile. NL Deal !D! damage.",
+        "UPGRADE_DESCRIPTION": "Can only be used if there are !M! cards or less in your draw pile. NL Deal !D! damage."
+    },
     "mysteryDungeon:TotodileIceFang": {
         "NAME": "Ice Fang",
         "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost.",
