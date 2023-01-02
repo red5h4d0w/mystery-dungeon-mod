@@ -70,6 +70,11 @@
             "Pikachu"
         ]
     },
+    "mysteryDungeon:Persian": {
+        "NAMES": [
+            "Persian"
+        ]
+    },
     "mysteryDungeon:Psyduck": {
         "NAMES": [
             "Pikachu"
@@ -110,9 +115,29 @@
             "Pikachu"
         ]
     },
+    "mysteryDungeon:Quilava": {
+        "NAMES": [
+            "Quilava"
+        ]
+    },
+    "mysteryDungeon:Typhlosion": {
+        "NAMES": [
+            "Typhlosion"
+        ]
+    },
     "mysteryDungeon:Totodile": {
         "NAMES": [
             "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Croconaw": {
+        "NAMES": [
+            "Croconaw"
+        ]
+    },
+    "mysteryDungeon:Feraligatr": {
+        "NAMES": [
+            "Feraligatr"
         ]
     },
     "mysteryDungeon:Treecko": {
@@ -147,31 +172,6 @@
             "Choisissez votre aventurier.",
             "Choisissez votre partenaire",
             "Vous êtes un %s . NL Choisissez votre partenaire"
-        ]
-    },
-    "mysteryDungeon:Quilava": {
-        "NAMES": [
-            "Quilava"
-        ]
-    },
-    "mysteryDungeon:Typhlosion": {
-        "NAMES": [
-            "Typhlosion"
-        ]
-    },
-    "mysteryDungeon:Croconaw": {
-        "NAMES": [
-            "Croconaw"
-        ]
-    },
-    "mysteryDungeon:Feraligatr": {
-        "NAMES": [
-            "Feraligatr"
-        ]
-    },
-    "mysteryDungeon:Persian": {
-        "NAMES": [
-            "Persian"
         ]
     }
 }
