@@ -138,5 +138,13 @@
             "toxic"
         ],
         "DESCRIPTION": "Poison on enemies affected by Toxic go up by the amount of stack instead of going down."
+    },
+    {
+        "PROPER_NAME": "Vigor",
+        "NAMES": [
+            "Vigor",
+            "vigor"
+        ],
+        "DESCRIPTION": "Your next attack deals #b1 more damage per Vigor stack (before applying powers like #yVulnerable and such)."
     }
 ]

@@ -1257,6 +1257,11 @@
         "NAME": "Block",
         "DESCRIPTION": "Gain !B! Block. NL Channel !M! Frost."
     },
+    "mysteryDungeon:TotodileChipAway": {
+        "NAME": "Chip Away",
+        "DESCRIPTION": "Deal !D! damage. NL Gain as much mysterydungeon:Vigor as you had before.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! more mysterydungeon:Vigor than you had before."
+    },
     "mysteryDungeon:TotodileConfide": {
         "NAME": "Confide",
         "DESCRIPTION": "Apply !M! Vulnerable. NL Your next attack deals !mysteryDungeon:M2! additional damage. NL Exhaust."
