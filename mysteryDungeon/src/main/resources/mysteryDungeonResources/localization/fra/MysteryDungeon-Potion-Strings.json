@@ -1,12 +1,4 @@
 {
-    "mysteryDungeon:PlaceholderPotion": {
-        "NAME": "Placeholder Potion",
-        "DESCRIPTIONS": [
-            "Gain ",
-            " At the end of your turn, lose ",
-            " Strength."
-        ]
-    },
     "mysteryDungeon:AspearBerryPotion": {
         "NAME": "Aspear Berry",
         "DESCRIPTIONS": [
@@ -23,6 +15,24 @@
         "NAME": "Flame Orb",
         "DESCRIPTIONS": [
             "Appliquez #b%s de #Brûlure."
+        ]
+    },
+    "mysteryDungeon:GrassGemPotion": {
+        "NAME": "Grass Gem",
+        "DESCRIPTIONS": [
+            "Your next attack deals #b%s damage."
+        ]
+    },
+    "mysteryDungeon:LepaBerryPotion": {
+        "NAME": "Lepa Berry",
+        "DESCRIPTIONS": [
+            "Retain #b%s cards."
+        ]
+    },
+    "mysteryDungeon:MagoBerryPotion": {
+        "NAME": "Mago Berry",
+        "DESCRIPTIONS": [
+            "Heal 20HP. Gain 4 #yPoison."
         ]
     },
     "mysteryDungeon:PikachuCandyPotion": {
@@ -54,24 +64,6 @@
         "NAME": "X Sp. Attack",
         "DESCRIPTIONS": [
             "Remplissez vos emplacements d'Orbes avec des Orbes Kérauniques."
-        ]
-    },
-    "mysteryDungeon:GrassGemPotion": {
-        "NAME": "Grass Gem",
-        "DESCRIPTIONS": [
-            "Your next attack deals #b%s damage."
-        ]
-    },
-    "mysteryDungeon:MagoBerryPotion": {
-        "NAME": "Mago Berry",
-        "DESCRIPTIONS": [
-            "Heal 20HP. Gain 4 #yPoison."
-        ]
-    },
-    "mysteryDungeon:LepaBerryPotion": {
-        "NAME": "Lepa Berry",
-        "DESCRIPTIONS": [
-            "Retain #b%s cards."
         ]
     }
 }
