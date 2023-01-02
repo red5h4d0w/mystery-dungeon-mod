@@ -287,9 +287,12 @@
         ]
     },
     "mysteryDungeon:NextTurnVigorPower": {
-        "NAME": "Sunny Day",
+        "NAME": "Next Turn: Vigor",
         "DESCRIPTIONS": [
-            "At the start of the next #b%s turns, Gain #b%s Vigor."
+            "At the start of the next turn, gain #b1 #yVigor.",
+            "At the start of the next turn, gain #b%s #yVigor.",
+            "At the start of the next #b%s turns, gain #b1 #yVigor.",
+            "At the start of the next #b%s1 turns, gain #b%s2 #yVigor."
         ]
     },
     "mysteryDungeon:NoHealPower": {
