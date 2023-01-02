@@ -1,23 +1,23 @@
 {
     "mysteryDungeon:EtherealMod": {
         "TEXT": [
-            "Ethereal. NL "
+            "虚无。 NL "
         ]
     },
     "mysteryDungeon:ExhaustFromDeckAction": {
         "TEXT": [
-            "Choose a card to exhaust from your deck."
+            "从牌组中选择一张牌消耗。"
         ]
     },
     "mysteryDungeon:RetainCardsButEtherealModAction": {
         "TEXT": [
-            "Retain (cards will become ethereal)"
+            "保留(牌将变成虚无)"
         ]
     },
     "mysteryDungeon:PikachuMeter": {
         "TEXT": [
-            "Charge Meter",
-            "When you play a Skill, move toward the left of the meter. NL When you play an Attack, move toward the right of the meter. NL When you reach one of the end of the meter, enter the corresponding stances. NL At the end of every turn return to the center. NL You can hover this to see info on the stances."
+            "电力表",
+            "当打出一张技能牌，指针向负极态移动。 NL 当打出一张攻击牌，指针向正极态移动。 NL 当指针移动至末端，进入相应姿态。 NL 每回合结束后，指针将复位。 NL 悬停可查看相关姿态信息。"
         ]
     }
 }
