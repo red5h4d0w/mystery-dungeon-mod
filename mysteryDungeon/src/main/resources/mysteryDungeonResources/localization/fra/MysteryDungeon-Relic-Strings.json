@@ -63,6 +63,13 @@
             "Au début de chaque combat, appliquez #b9 #yBrûlures à TOUS les ennemis"
         ]
     },
+    "mysteryDungeon:GrassySeedRelic": {
+        "NAME": "Grassy Seed",
+        "FLAVOR": "It boosts Defense on Grassy Terrain.",
+        "DESCRIPTIONS": [
+            "At the start of combat add a random attack to your draw pile. It costs 0 this combat."
+        ]
+    },
     "mysteryDungeon:HardyExplorerRelic": {
         "NAME": "Explorateur Endurci",
         "FLAVOR": "What is this?",
@@ -82,6 +89,55 @@
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
             "Start each combat with an #yAgility."
+        ]
+    },
+    "mysteryDungeon:LeftoversRelic": {
+        "NAME": "Leftovers",
+        "FLAVOR": "Some food left form your last meal",
+        "DESCRIPTIONS": [
+            "À la fin d'un combat soignée vous de 3 point de vie."
+        ]
+    },
+    "mysteryDungeon:LifeOrbRelic": {
+        "NAME": "Life Orb",
+        "FLAVOR": "It boosts the power of moves, but at the cost of some HP on each hit.",
+        "DESCRIPTIONS": [
+            "Au début de votre tour, gagnez [E]. NL À la fin de votre tour, #yépuisé une carte aléatoire depuis votre main."
+        ]
+    },
+    "mysteryDungeon:MetronomeRelic": {
+        "NAME": "Métronome",
+        "FLAVOR": "Il suis son propre rythme.",
+        "DESCRIPTIONS": [
+            "Au début de tout les cours ajouter une carte aléatoire venant des Pokémons ne faisant pas partie de votre équipe dans votre main. Elle coûte 0 se tour-ci."
+        ]
+    },
+    "mysteryDungeon:MeadowPlateRelic": {
+        "NAME": "Meadow Plate",
+        "FLAVOR": "A stone tablet imbued with the essence of plants. When used on a certain Pokémon, it allows that Pokémon to gain the power of the Grass type.",
+        "DESCRIPTIONS": [
+            "Gain 20 max HP. At the start of combat if you are above 65% HP lose HP until you are not. If you are under 65% of your max HP, heal 10HP."
+        ]
+    },
+    "mysteryDungeon:MiracleSeedRelic": {
+        "NAME": "Graine Miracle",
+        "FLAVOR": "une grain empli de puissance des attaques de type PLANTE.",
+        "DESCRIPTIONS": [
+            "Chaque fois que vous appliquer  #b3 #ydebuffs en un tour, pigez une carte."
+        ]
+    },
+    "mysteryDungeon:MysticWaterRelic": {
+        "NAME": "Eau Mystic",
+        "FLAVOR": "This teardrop-shaped gem boosts the power of Water-type moves.",
+        "DESCRIPTIONS": [
+            "Au début de votre tour, gagnez [E]. NL réduisez la taille maximum de votre main de 2 cartes."
+        ]
+    },
+    "mysteryDungeon:NaiveExplorerRelic": {
+        "NAME": "Naive Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "At the start of your turn, if you have not taken any damage from attacks this combat, your next Attack deals #b3 more damage."
         ]
     },
     "mysteryDungeon:QuirkyExplorerRelic": {
@@ -112,60 +168,11 @@
             "Une fois par tour, lorsque vous jouez un pouvoir et que vous n'êtes dans aucune position, générez un place d'orbe. "
         ]
     },
-    "mysteryDungeon:LeftoversRelic": {
-        "NAME": "Leftovers",
-        "FLAVOR": "Some food left form your last meal",
-        "DESCRIPTIONS": [
-            "À la fin d'un combat soignée vous de 3 point de vie."
-        ]
-    },
-    "mysteryDungeon:LifeOrbRelic": {
-        "NAME": "Life Orb",
-        "FLAVOR": "It boosts the power of moves, but at the cost of some HP on each hit.",
-        "DESCRIPTIONS": [
-            "Au début de votre tour, gagnez [E]. NL À la fin de votre tour, #yépuisé une carte aléatoire depuis votre main."
-        ]
-    },
-    "mysteryDungeon:MysticWaterRelic": {
-        "NAME": "Eau Mystic",
-        "FLAVOR": "This teardrop-shaped gem boosts the power of Water-type moves.",
-        "DESCRIPTIONS": [
-            "Au début de votre tour, gagnez [E]. NL réduisez la taille maximum de votre main de 2 cartes."
-        ]
-    },
-    "mysteryDungeon:MiracleSeedRelic": {
-        "NAME": "Graine Miracle",
-        "FLAVOR": "une grain empli de puissance des attaques de type PLANTE.",
-        "DESCRIPTIONS": [
-            "Chaque fois que vous appliquer  #b3 #ydebuffs en un tour, pigez une carte."
-        ]
-    },
-    "mysteryDungeon:MetronomeRelic": {
-        "NAME": "Métronome",
-        "FLAVOR": "Il suis son propre rythme.",
-        "DESCRIPTIONS": [
-            "Au début de tout les cours ajouter une carte aléatoire venant des Pokémons ne faisant pas partie de votre équipe dans votre main. Elle coûte 0 se tour-ci."
-        ]
-    },
     "mysteryDungeon:WaveIncenseRelic": {
         "NAME": "Encens Vague",
-        "FLAVOR": "",
+        "FLAVOR": "Its a seed invued with life force that boosts the power of Grass-type moves.",
         "DESCRIPTIONS": [
             "À chaque combat applique le pouvoir Réalité-Maitresse."
-        ]
-    },
-    "mysteryDungeon:GrassySeedRelic": {
-        "NAME": "Grassy Seed",
-        "FLAVOR": "It boosts Defense on Grassy Terrain.",
-        "DESCRIPTIONS": [
-            "At the start of combat add a random attack to your draw pile. It costs 0 this combat."
-        ]
-    },
-    "mysteryDungeon:MeadowPlateRelic": {
-        "NAME": "Meadow Plate",
-        "FLAVOR": "A stone tablet imbued with the essence of plants. When used on a certain Pokémon, it allows that Pokémon to gain the power of the Grass type.",
-        "DESCRIPTIONS": [
-            "Gain 20 max HP. At the start of combat if you are above 65% HP lose HP until you are not. If you are under 65% of your max HP, heal 10HP."
         ]
     }
 }
