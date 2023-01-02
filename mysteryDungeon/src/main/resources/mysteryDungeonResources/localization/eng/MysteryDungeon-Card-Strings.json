@@ -1318,7 +1318,7 @@
     },
     "mysteryDungeon:TotodileWaterPledge": {
         "NAME": "Water Pledge",
-        "DESCRIPTION": "Channel !M! Frost orb. NL Your next attack deals !M! additional damage. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
+        "DESCRIPTION": "Channel 1 Frost orb. NL Your next attack deals !M! additional damage. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
     },
     "mysteryDungeon:TotodileWaterSport": {
         "NAME": "Water Sport",
