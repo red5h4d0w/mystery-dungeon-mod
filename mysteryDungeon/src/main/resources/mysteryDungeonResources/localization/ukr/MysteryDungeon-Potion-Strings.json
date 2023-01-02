@@ -2,25 +2,25 @@
     "mysteryDungeon:AspearBerryPotion": {
         "NAME": "Aspear Berry",
         "DESCRIPTIONS": [
-            "Défaussez autant de cartes de votre main que vous le souhaitez. Pigez #b%s 2 cartes."
+            "Discard any number of cards from your hand. Draw #b%s cards."
         ]
     },
     "mysteryDungeon:DireHitPotion": {
         "NAME": "Dire Hit",
         "DESCRIPTIONS": [
-            "Votre prochaine attaque infligera le double des dégâts."
+            "Your next attack deals double damage."
         ]
     },
     "mysteryDungeon:FlameOrbPotion": {
         "NAME": "Flame Orb",
         "DESCRIPTIONS": [
-            "Appliquez #b%s de #Brûlure."
+            "Apply #b%s #yBurn to all enemies."
         ]
     },
     "mysteryDungeon:GrassGemPotion": {
         "NAME": "Grass Gem",
         "DESCRIPTIONS": [
-            "Your next attack deals #b%s damage."
+            "Your next attack deals #b%s more damage."
         ]
     },
     "mysteryDungeon:LepaBerryPotion": {
@@ -38,32 +38,32 @@
     "mysteryDungeon:PikachuCandyPotion": {
         "NAME": "Pikachu Candy",
         "DESCRIPTIONS": [
-            "Entrez en Positivité ou en Négativité."
+            "Enter Positive or Negative Stance."
         ]
     },
     "mysteryDungeon:PoisonBarbPotion": {
         "NAME": "PoisonBarb",
         "DESCRIPTIONS": [
-            "Appliquez #b%s de Poison à un ennemi."
+            "Apply #b%s #yPoison to an enemy."
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {
         "NAME": "Sitrus Berry",
         "DESCRIPTIONS": [
-            "Ajoutez #b%s carte parmi vos cartes épuisées à votre main.",
-            "Ajoutez #b%s cartes parmi vos cartes épuisées à votre main."
+            "Put #b%s card from your exhaust pile in your hand.",
+            "Put #b%s cards from your exhaust pile in your hand."
         ]
     },
     "mysteryDungeon:XAttackPotion": {
         "NAME": "X Attack",
         "DESCRIPTIONS": [
-            "Ajoutez #b%s #yPeur à votre main."
+            "Add #b%s #yFlinch to your hand. They cost #b0 this turn."
         ]
     },
     "mysteryDungeon:XSpAttackPotion": {
         "NAME": "X Sp. Attack",
         "DESCRIPTIONS": [
-            "Remplissez vos emplacements d'Orbes avec des Orbes Kérauniques."
+            "Fill all your Orb slots with #yLightning."
         ]
     }
 }
