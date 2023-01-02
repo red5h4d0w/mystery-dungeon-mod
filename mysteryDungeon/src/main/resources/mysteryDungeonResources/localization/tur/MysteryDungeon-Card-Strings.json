@@ -1242,6 +1242,10 @@
         "DESCRIPTION": "Deal !D! damage NL Create a *Flinch and add it to your hand.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage NL Create an upgraded *Flinch and add it to your hand."
     },
+    "mysteryDungeon:TotodileAquaJet": {
+        "NAME": "Aqua Jet",
+        "DESCRIPTION": "Deal !D! damage. Next turn gain !M! mysterydungeon:Vigor."
+    },
     "mysteryDungeon:TotodileBite": {
         "NAME": "Bite",
         "DESCRIPTION": "Deal !D! damage."
@@ -1256,6 +1260,11 @@
     "mysteryDungeon:TotodileBlock": {
         "NAME": "Block",
         "DESCRIPTION": "Gain !B! Block. NL Channel !M! Frost."
+    },
+    "mysteryDungeon:TotodileChipAway": {
+        "NAME": "Chip Away",
+        "DESCRIPTION": "Deal !D! damage. NL Gain as much mysterydungeon:Vigor as you had before.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! more mysterydungeon:Vigor than you had before."
     },
     "mysteryDungeon:TotodileConfide": {
         "NAME": "Confide",
