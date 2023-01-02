@@ -1,0 +1,69 @@
+{
+    "mysteryDungeon:AspearBerryPotion": {
+        "NAME": "Aspear Berry",
+        "DESCRIPTIONS": [
+            "Discard any number of cards from your hand. Draw #b%s cards."
+        ]
+    },
+    "mysteryDungeon:DireHitPotion": {
+        "NAME": "Dire Hit",
+        "DESCRIPTIONS": [
+            "Your next attack deals double damage."
+        ]
+    },
+    "mysteryDungeon:FlameOrbPotion": {
+        "NAME": "Flame Orb",
+        "DESCRIPTIONS": [
+            "Apply #b%s #yBurn to all enemies."
+        ]
+    },
+    "mysteryDungeon:GrassGemPotion": {
+        "NAME": "Grass Gem",
+        "DESCRIPTIONS": [
+            "Your next attack deals #b%s more damage."
+        ]
+    },
+    "mysteryDungeon:LepaBerryPotion": {
+        "NAME": "Lepa Berry",
+        "DESCRIPTIONS": [
+            "Retain #b%s cards."
+        ]
+    },
+    "mysteryDungeon:MagoBerryPotion": {
+        "NAME": "Mago Berry",
+        "DESCRIPTIONS": [
+            "Heal 20HP. Gain 4 #yPoison."
+        ]
+    },
+    "mysteryDungeon:PikachuCandyPotion": {
+        "NAME": "Pikachu Candy",
+        "DESCRIPTIONS": [
+            "Enter Positive or Negative Stance."
+        ]
+    },
+    "mysteryDungeon:PoisonBarbPotion": {
+        "NAME": "PoisonBarb",
+        "DESCRIPTIONS": [
+            "Apply #b%s #yPoison to an enemy."
+        ]
+    },
+    "mysteryDungeon:SitrusBerryPotion": {
+        "NAME": "Sitrus Berry",
+        "DESCRIPTIONS": [
+            "Put #b%s card from your exhaust pile in your hand.",
+            "Put #b%s cards from your exhaust pile in your hand."
+        ]
+    },
+    "mysteryDungeon:XAttackPotion": {
+        "NAME": "X Attack",
+        "DESCRIPTIONS": [
+            "Add #b%s #yFlinch to your hand. They cost #b0 this turn."
+        ]
+    },
+    "mysteryDungeon:XSpAttackPotion": {
+        "NAME": "X Sp. Attack",
+        "DESCRIPTIONS": [
+            "Fill all your Orb slots with #yLightning."
+        ]
+    }
+}
