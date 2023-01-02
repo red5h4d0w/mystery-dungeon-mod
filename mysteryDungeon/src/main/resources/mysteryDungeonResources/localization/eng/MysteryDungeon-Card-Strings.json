@@ -133,7 +133,7 @@
     },
     "mysteryDungeon:BulbasaurSleepPowder": {
         "NAME": "Sleep Powder",
-        "DESCRIPTION":"Apply !M! mysterydungeon:Asleep to ALL enemies. NL Exhaust."
+        "DESCRIPTION": "Apply !M! mysterydungeon:Asleep to ALL enemies. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurSludgeBomb": {
         "NAME": "Sludge Bomb",
@@ -233,8 +233,10 @@
     "mysteryDungeon:CharmanderDragonPulse": {
         "NAME": "Dragon Pulse",
         "DESCRIPTION": "Unplayable. NL When drawn: NL Add a random card from your exhaust pile on the top of draw pile. NL After activating this effect !M! times: Exhaust.",
-        "EXTENDED_DESCRIPTION": ["I can't play this card.",
-            "When Drawn: Exhaust."]
+        "EXTENDED_DESCRIPTION": [
+            "I can't play this card.",
+            "When Drawn: Exhaust."
+        ]
     },
     "mysteryDungeon:CharmanderDragonRage": {
         "NAME": "Dragon Rage",
@@ -248,7 +250,9 @@
         "NAME": "Dragon Tail",
         "DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Add a copy of this card on top of your draw pile.",
         "UPGRADE_DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Add a copy of this card on top of your draw pile. NL Next Turn, draw 1 more card.",
-        "EXTENDED_DESCRIPTION": ["I can't play this card."]
+        "EXTENDED_DESCRIPTION": [
+            "I can't play this card."
+        ]
     },
     "mysteryDungeon:CharmanderDrought": {
         "NAME": "Drought",
@@ -397,7 +401,9 @@
         "NAME": "Flail",
         "DESCRIPTION": "Unplayable. NL Ethereal. NL When drawn, gain !M! Temporary Strength.",
         "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn, gain !M! Temporary Strength.",
-        "EXTENDED_DESCRIPTION": ["I can't play this card."]
+        "EXTENDED_DESCRIPTION": [
+            "I can't play this card."
+        ]
     },
     "mysteryDungeon:ChikoritaFuryCutter": {
         "NAME": "Fury Cutter",
@@ -465,7 +471,9 @@
     "mysteryDungeon:ChikoritaPetalDance": {
         "NAME": "Petal Dance",
         "DESCRIPTION": "Unplayable. NL When drawn: Gain !M! Temporary HP and deal !D! damage to all enemies. NL Increase the amount of Temporary HP by 2 and the damage by 4 this combat.",
-        "EXTENDED_DESCRIPTION": ["I can't play this card."]
+        "EXTENDED_DESCRIPTION": [
+            "I can't play this card."
+        ]
     },
     "mysteryDungeon:ChikoritaRazorLeaf": {
         "NAME": "Razor Leaf",
@@ -505,8 +513,10 @@
     "mysteryDungeon:ChikoritaSynthesis": {
         "NAME": "Synthesis",
         "DESCRIPTION": "Unplayable. NL When drawn: if you have mysterydungeon:Recovery, gain !M! Recovery stacks. NL After activating this effect !mysteryDungeon:M2! times: Exhaust.",
-        "EXTENDED_DESCRIPTION": ["I can't play this card.",
-            "When Drawn: Exhaust."]
+        "EXTENDED_DESCRIPTION": [
+            "I can't play this card.",
+            "When Drawn: Exhaust."
+        ]
     },
     "mysteryDungeon:ChikoritaTackle": {
         "NAME": "Tackle",
@@ -739,7 +749,9 @@
         "NAME": "Feint",
         "DESCRIPTION": "Remove all block from the enemy. NL Deal damage equal to the amount of block removed.",
         "UPGRADE_DESCRIPTION": "Remove all block from the enemy. NL Deal damage equal to the amount of block removed +4.",
-        "EXTENDED_DESCRIPTION":[" NL (Deals !D! damage.)"]
+        "EXTENDED_DESCRIPTION": [
+            " NL (Deals !D! damage.)"
+        ]
     },
     "mysteryDungeon:MeowthFlash": {
         "NAME": "Flash",
@@ -1094,7 +1106,9 @@
         "NAME": "Flash Cannon",
         "DESCRIPTION": "Deal damage equal to the number of cards in your discard pile.",
         "UPGRADE_DESCRIPTION": "Deal damage equal to the number of cards in your discard pile + 3.",
-        "EXTENDED_DESCRIPTION":[" NL (Deals !D! damage.)"]
+        "EXTENDED_DESCRIPTION": [
+            " NL (Deals !D! damage.)"
+        ]
     },
     "mysteryDungeon:SquirtleFlinch": {
         "NAME": "Flinch",
@@ -1235,7 +1249,9 @@
     "mysteryDungeon:TotodileBlizzard": {
         "NAME": "Blizzard",
         "DESCRIPTION": "Deal !M! times the number of orbs channneled this combat.",
-        "EXTENDED_DESCRIPTION": ["Deal !M! times the number of orbs channneled this combat. NL (Currently deals !D! damage)"]
+        "EXTENDED_DESCRIPTION": [
+            "Deal !M! times the number of orbs channneled this combat. NL (Currently deals !D! damage)"
+        ]
     },
     "mysteryDungeon:TotodileBlock": {
         "NAME": "Block",
@@ -1272,7 +1288,9 @@
         "NAME": "Hail",
         "DESCRIPTION": "Unplayable. NL When discarded: Channel !M! Frost.",
         "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up NL When discarded: Channel !M! Frost.",
-        "EXTENDED_DESCRIPTION": ["I can't play this card."]
+        "EXTENDED_DESCRIPTION": [
+            "I can't play this card."
+        ]
     },
     "mysteryDungeon:TotodileHydroPump": {
         "NAME": "Hydro Pump",
@@ -1304,13 +1322,17 @@
         "NAME": "Rain Dance",
         "DESCRIPTION": "Unplayable. NL When discarded: Your next attack deals !M! additional damage.",
         "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up NL When discarded: Your next attack deals !M! additional damage.",
-        "EXTENDED_DESCRIPTION": ["I can't play this card."]
+        "EXTENDED_DESCRIPTION": [
+            "I can't play this card."
+        ]
     },
     "mysteryDungeon:TotodileTorrent": {
         "NAME": "Torrent",
         "DESCRIPTION": "Unplayable. NL When discarded: Gain !M! Focus.",
         "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up NL When discarded: Gain !M! Focus.",
-        "EXTENDED_DESCRIPTION": ["I can't play this card."]
+        "EXTENDED_DESCRIPTION": [
+            "I can't play this card."
+        ]
     },
     "mysteryDungeon:TotodileWaterGun": {
         "NAME": "Water Gun",
