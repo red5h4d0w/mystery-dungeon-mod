@@ -1,14 +1,14 @@
 {
     "mysteryDungeon:NegativeStance": {
-        "NAME": "Negative Stance",
+        "NAME": "负极态",
         "DESCRIPTION": [
-            "The first #b2 #ySkill played each turn will grant you #b1 #yFocus each. NL When you #yexit this #ystance, #yevoke your next #yOrb."
+            "每回合打出的前 #b2 张 #y技能牌 ，各提供 #b1 点 #y专注 。 NL 当 #y退出 该姿态时, #y激发 下 #b1 个 #y充能球 。"
         ]
     },
     "mysteryDungeon:PositiveStance": {
-        "NAME": "Positive Stance",
+        "NAME": "正极态",
         "DESCRIPTION": [
-            "When you play an #yAttack, #ychannel #b1 #yLightning if you have any empty #yOrb #yslot. NL When you #yexit this #ystance, gain #b4 #yBlock."
+            "每当打出 #y1 张 #y攻击牌 ，生成 #b1 个 #y闪电充能球 。 NL （如果有空余栏位） NL 当 #y退出 该姿态时,获得 #b4 点格挡。"
         ]
     }
 }
