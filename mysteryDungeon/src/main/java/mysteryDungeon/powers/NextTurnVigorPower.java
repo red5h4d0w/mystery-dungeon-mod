@@ -72,8 +72,14 @@ public class NextTurnVigorPower extends PokemonTwoAmountPower implements Cloneab
 
     @Override
     public void updateDescription() {
-    
+        if(amount == 1 && amount2 == 1)
             description = DESCRIPTIONS[0];
+        else if(amount == 1 && amount2 != 1)
+            description = String.format(DESCRIPTIONS[1], amount2);
+        else if(amount != 1 && amount2 == 1)
+            description = String.format(DESCRIPTIONS[2], amount);
+        else if(amount != 1 && amount2 != 1)
+            description = String.format(DESCRIPTIONS[3], amount, amount2);
 
     }
 }
