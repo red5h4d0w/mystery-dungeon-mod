@@ -9,28 +9,28 @@
     },
     "mysteryDungeon:NatureRelatedRelic": {
         "NAME": "Relique de Nature",
-        "FLAVOR": "What is this?",
+        "FLAVOR": "Qu'est-ce que c'est ?",
         "DESCRIPTIONS": [
             "Vous receverez une relique dépendant de votre nature."
         ]
     },
     "mysteryDungeon:BigRootRelic": {
         "NAME": "Grosse Racine",
-        "FLAVOR": "What is this?",
+        "FLAVOR": "Qu'est-ce que c'est ?",
         "DESCRIPTIONS": [
-            "Quand vous êtes à #b80% de #yPV ou moins, gagnez #ySoin."
+            "Quand vous êtes à #b70% de #yPV ou moins, gagnez #ySoin."
         ]
     },
     "mysteryDungeon:BraveExplorerRelic": {
         "NAME": "Explorateur Brave",
-        "FLAVOR": "What is this?",
+        "FLAVOR": "Un explorateur brave",
         "DESCRIPTIONS": [
-            "Si vous n'avez pas #yd'Armure à la fin du tour, gagnez #b1 #yForce"
+            "Chaque combat, la première fois que vous terminez votre tour sans #yArmure, appliquez #b2 de #yVulnérabilité à TOUS les ennemis."
         ]
     },
     "mysteryDungeon:CalmExplorerRelic": {
         "NAME": "Explorateur Calme",
-        "FLAVOR": "What is this?",
+        "FLAVOR": "Qu'est-ce que c'est ?",
         "DESCRIPTIONS": [
             "Piochez #b1 carte et gagnez [E] au début de chaque combat."
         ]
@@ -39,19 +39,19 @@
         "NAME": "Pile",
         "FLAVOR": "Pile jetable. Tenue, elle augmente l'Attaque lorsque le Pokémon subit une attaque de type Électrik.",
         "DESCRIPTIONS": [
-            "La #yJauge #yde #yCharge aura maintenant trois espaces au lieu de deux. NL Vous ne retournez plus au centre de la jauge à la fin de vos tours."
+            "La #yJauge #yde #yCharge aura maintenant #b3 espaces entre les #ypositions. NL Vous ne retournez plus au centre de la jauge à la fin de vos tours."
         ]
     },
     "mysteryDungeon:CharcoalRelic": {
         "NAME": "Charbon",
         "FLAVOR": "Un combustible qui augmente la puissance des capacités de type Feu.",
         "DESCRIPTIONS": [
-            "Lorsque vous appliquez un #yDébuff, infligez #b1 dégat à TOUS le ennemis."
+            "Lorsque vous appliquez un #yDébuff, infligez #b1 dégat à TOUS les ennemis."
         ]
     },
     "mysteryDungeon:DocileExplorerRelic": {
         "NAME": "Explorateur Docile",
-        "FLAVOR": "What is this?",
+        "FLAVOR": "Qu'est-ce que c'est ?",
         "DESCRIPTIONS": [
             "Lorsque vous recevez un #yDébuff, gagnez #b2 #yd'Armure au tour suivant."
         ]
@@ -60,119 +60,119 @@
         "NAME": "Orbe Flamme",
         "FLAVOR": "Un orbe bizarre qui brûle son porteur durant le combat.",
         "DESCRIPTIONS": [
-            "Au début de chaque combat, appliquez #b9 #yBrûlures à TOUS les ennemis"
+            "Au début de chaque combat, appliquez #b9 #yBrûlures à TOUS les ennemis."
         ]
     },
     "mysteryDungeon:GrassySeedRelic": {
-        "NAME": "Grassy Seed",
-        "FLAVOR": "It boosts Defense on Grassy Terrain.",
+        "NAME": "Graine Herbe",
+        "FLAVOR": "Lorsque le terrain est couvert d'un champ herbu, cet objet augmente d'un cran la Défense du Pokémon qui la tient.",
         "DESCRIPTIONS": [
-            "At the start of combat add a random attack to your draw pile. It costs 0 this combat."
+            "Au début du combat, ajoutez une attaque aléatoire à votre pioche. Elle coûte #b0 ce combat."
         ]
     },
     "mysteryDungeon:HardyExplorerRelic": {
-        "NAME": "Explorateur Endurci",
-        "FLAVOR": "What is this?",
+        "NAME": "Explorateur Hardi",
+        "FLAVOR": "Qu'est-ce que c'est ?",
         "DESCRIPTIONS": [
-            "The first time you lose HP each turn, gain 5 Block. If this HP loss was from a monster's attack, gain 1 Blur"
+            "La première fois que vous perdez des #yPV à chaque tour, gagnez #b5 #yd'Armure. Si cette perte de #yPV provient de l'attaque d'un monstre, ne retirez pas votre #yArmure au début du prochain tour."
         ]
     },
     "mysteryDungeon:ImpishExplorerRelic": {
-        "NAME": "Explorateur Farceur",
-        "FLAVOR": "What is this?",
+        "NAME": "Explorateur Malin",
+        "FLAVOR": "Qu'est-ce que c'est ?",
         "DESCRIPTIONS": [
-            "The first time you evoke your last orb each combat, gain a Focus."
+            "Chaque combat, la première fois que vous #yactivez une #yOrbe, gagnez #b1 de #yConcentration."
         ]
     },
     "mysteryDungeon:JollyExplorerRelic": {
-        "NAME": "Explorateur Joyeux",
-        "FLAVOR": "What is this?",
+        "NAME": "Explorateur Jovial",
+        "FLAVOR": "Qu'est-ce que c'est ?",
         "DESCRIPTIONS": [
-            "Start each combat with an #yAgility."
+            "Commencez chaque combat avec une #yHâte."
         ]
     },
     "mysteryDungeon:LeftoversRelic": {
-        "NAME": "Leftovers",
-        "FLAVOR": "Some food left form your last meal",
+        "NAME": "Restes",
+        "FLAVOR": "Des restes de votre dernier repas",
         "DESCRIPTIONS": [
-            "À la fin d'un combat soignée vous de 3 point de vie."
+            "À la fin de chaque combat, soignez #b3 #yPV."
         ]
     },
     "mysteryDungeon:LifeOrbRelic": {
-        "NAME": "Life Orb",
-        "FLAVOR": "It boosts the power of moves, but at the cost of some HP on each hit.",
+        "NAME": "Orbe Vie",
+        "FLAVOR": "Cela augmente la puissance des capacités, mais au prix de quelques PV à chaque fois.",
         "DESCRIPTIONS": [
-            "Au début de votre tour, gagnez [E]. NL À la fin de votre tour, #yépuisé une carte aléatoire depuis votre main."
+            "Au début de votre tour, gagnez [E]. NL À la fin de votre tour, #yépuisez une carte aléatoire de votre main."
         ]
     },
     "mysteryDungeon:MetronomeRelic": {
         "NAME": "Métronome",
-        "FLAVOR": "Il suis son propre rythme.",
+        "FLAVOR": "Il suit son propre rythme.",
         "DESCRIPTIONS": [
-            "Au début de tout les cours ajouter une carte aléatoire venant des Pokémons ne faisant pas partie de votre équipe dans votre main. Elle coûte 0 se tour-ci."
+            "Au début de chaque tout, ajoutez une carte aléatoire venant d'un Pokémon ne faisant pas partie de votre équipe dans votre main. Elle coûte #b0 ce tour."
         ]
     },
     "mysteryDungeon:MeadowPlateRelic": {
-        "NAME": "Meadow Plate",
-        "FLAVOR": "A stone tablet imbued with the essence of plants. When used on a certain Pokémon, it allows that Pokémon to gain the power of the Grass type.",
+        "NAME": "Plaque Herbe",
+        "FLAVOR": "Une tablette de pierre imprégnée de l'essence des plantes. Lorsqu'elle est utilisée par un certain Pokémon, elle permet à ce Pokémon de gagner la puissance du type Herbe.",
         "DESCRIPTIONS": [
-            "Gain 20 max HP. At the start of combat if you are above 65% HP lose HP until you are not. If you are under 65% of your max HP, heal 10HP."
+            "Gagnez #b20 #yPV #ymax. Au début de chaque combat, si vous avez plus de #b65% de vos #yPV, perdez des #yPV jusqu'à en avoir #b65% de vos #yPV #ymax. Si vous avez moins de #y65% de vos #yPV, soignez #b10 PV."
         ]
     },
     "mysteryDungeon:MiracleSeedRelic": {
         "NAME": "Graine Miracle",
-        "FLAVOR": "une grain empli de puissance des attaques de type PLANTE.",
+        "FLAVOR": "Une graine emplie d'énergie vitale qui augmente la puissance des capacités de type Plante.",
         "DESCRIPTIONS": [
-            "Chaque fois que vous appliquer  #b3 #ydebuffs en un tour, pigez une carte."
+            "Chaque fois que vous appliquez #b3 #yMalus en un tour, piochez une carte."
         ]
     },
     "mysteryDungeon:MysticWaterRelic": {
-        "NAME": "Eau Mystic",
-        "FLAVOR": "This teardrop-shaped gem boosts the power of Water-type moves.",
+        "NAME": "Eau Mystique",
+        "FLAVOR": "Cette gemme en forme de goutte renforce la puissance des capacités de type Eau.",
         "DESCRIPTIONS": [
-            "Au début de votre tour, gagnez [E]. NL réduisez la taille maximum de votre main de 2 cartes."
+            "Au début de votre tour, gagnez [E]. NL Réduisez la taille maximale de votre main de #b2 cartes."
         ]
     },
     "mysteryDungeon:NaiveExplorerRelic": {
-        "NAME": "Naive Explorer",
-        "FLAVOR": "What is this?",
+        "NAME": "Explorateur Naïf",
+        "FLAVOR": "Qu'est-ce que c'est ?",
         "DESCRIPTIONS": [
-            "At the start of your turn, if you have not taken any damage from attacks this combat, your next Attack deals #b3 more damage."
+            "Au début de votre tour, si vous n'avez pas subi de dégâts d'attaques ce combat, votre prochaine attaque inflige #b3 dégâts supplémentaires."
         ]
     },
     "mysteryDungeon:QuirkyExplorerRelic": {
-        "NAME": "Explorateur Spécial",
-        "FLAVOR": "What is this?",
+        "NAME": "Explorateur Bizarre",
+        "FLAVOR": "Qu'est-ce que c'est ?",
         "DESCRIPTIONS": [
-            "Gain 5% more Gold in combat rewards."
+            "Gagnez #b5% #yd'or en plus en récompense de combat."
         ]
     },
     "mysteryDungeon:RelaxedExplorerRelic": {
         "NAME": "Explorateur Relax",
-        "FLAVOR": "What is this?",
+        "FLAVOR": "Qu'est-ce que c'est ?",
         "DESCRIPTIONS": [
-            "Au début de votre tour, #yscrutez #b1 carte."
+            "Au début de votre tour, #yScrutez #b1 carte."
         ]
     },
     "mysteryDungeon:TimidExplorerRelic": {
-        "NAME": "Timid Explorer",
-        "FLAVOR": "What is this?",
+        "NAME": "Explorateur Timide",
+        "FLAVOR": "Qu'est-ce que c'est ?",
         "DESCRIPTIONS": [
-            "At the end of each turn, Retain 1 card."
+            "À la fin de chaque tour, s'il vous reste de l'énergie, dépensez-en #b1 et #yretenez une carte."
         ]
     },
     "mysteryDungeon:LightBallRelic": {
         "NAME": "Balle Lumière",
-        "FLAVOR": "What is this?",
+        "FLAVOR": "Un orbe énigmatique qui augmente l'Attaque et l'Attaque Spéciale.",
         "DESCRIPTIONS": [
-            "Une fois par tour, lorsque vous jouez un pouvoir et que vous n'êtes dans aucune position, générez un place d'orbe. "
+            "Une fois par tour, lorsque vous jouez un #ypouvoir et que vous n'êtes dans aucune #yposition, gagnez #b1 #yemplacement #yd'Orbe."
         ]
     },
     "mysteryDungeon:WaveIncenseRelic": {
         "NAME": "Encens Vague",
-        "FLAVOR": "Its a seed invued with life force that boosts the power of Grass-type moves.",
+        "FLAVOR": "Cet encens a un arôme curieux qui augmente la puissance des capacités de type Eau.",
         "DESCRIPTIONS": [
-            "À chaque combat applique le pouvoir Réalité-Maitresse."
+            "Durant les combats, les cartes que vous créez sont #yaméliorées."
         ]
     }
 }

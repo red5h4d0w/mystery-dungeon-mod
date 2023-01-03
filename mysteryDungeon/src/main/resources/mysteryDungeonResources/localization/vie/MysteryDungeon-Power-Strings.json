@@ -9,7 +9,7 @@
     "mysteryDungeon:AromatherapyPower": {
         "NAME": "Aromatherapy",
         "DESCRIPTIONS": [
-            "Whenever you take damage, gain #b%s Strength.",
+            "Whenever you take damage, gain #b%s #yStrength.",
             "Whenever you take damage, gain #b%s Strength."
         ]
     },
@@ -17,19 +17,19 @@
         "NAME": "Asleep",
         "DESCRIPTIONS": [
             "This monster won't act this turn, unless it receives damage. If it does, it wakes up. When it wakes up, it will go back to the intent it had before falling asleep.",
-            "This monster won't act for #b%s turns, unless it receives damage. If it does, it wakes up. When it will wake up, it will go back to the intent it had before falling asleep."
+            "This monster won't act for the next #b%s turns, unless it receives damage. If it does, it wakes up. When it will wake up, it will go back to the intent it had before falling asleep."
         ]
     },
     "mysteryDungeon:AquaRingPower": {
         "NAME": "Aqua Ring",
         "DESCRIPTIONS": [
-            "This turn, for each card you scry or discard, gain #b%s block. NL If the card was a #yStatus card, deal #b%s damage to all enemies."
+            "This turn, for each card you #yscry or #ydiscard, gain #b%s #yBlock. NL If the card was a #yStatus card, deal #b%s damage to ALL enemies."
         ]
     },
     "mysteryDungeon:BellyDrumPower": {
         "NAME": "Belly Drum",
         "DESCRIPTIONS": [
-            "The first card you play each turn cost 0, but exhaust.",
+            "The first card you play each turn cost #b0, but #yexhausts.",
             "The first %s cards you play each turn cost 0, but exhaust."
         ]
     },
@@ -56,7 +56,7 @@
         "NAME": "Explorer Form",
         "DESCRIPTIONS": [
             "When you heal #yHP, deal damage to ALL enemies equal to the amount healed.",
-            "When you heal #yHP, deal damage to ALL enemies equal to #b%s times the amounot healed."
+            "When you heal #yHP, deal damage to ALL enemies equal to #b%s times the amount healed."
         ]
     },
     "mysteryDungeon:CharmanderExplorerPower": {
@@ -465,7 +465,7 @@
     "mysteryDungeon:WaterPledgePower": {
         "NAME": "Water Pledge",
         "DESCRIPTIONS": [
-            "When you play another Pledge card this turn, activate one of the following effects. NL Grass: Apply 2 weak to all enemies. NL Fire: Apply 2 vulnerable to all enemies."
+            "When you play another #yPledge card this turn, activate one of the following effects. NL Grass: Apply #b2 #yWeak to ALL enemies. NL Fire: Apply #b2 #yVulnerable to ALL enemies."
         ]
     },
     "mysteryDungeon:WhirlpoolPower": {

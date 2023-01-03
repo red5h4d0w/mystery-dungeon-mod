@@ -1,69 +1,69 @@
 {
     "mysteryDungeon:AspearBerryPotion": {
-        "NAME": "Aspear Berry",
+        "NAME": "Baie Willia",
         "DESCRIPTIONS": [
-            "Défaussez autant de cartes de votre main que vous le souhaitez. Pigez #b%s 2 cartes."
+            "Défaussez autant de cartes de votre main que vous le souhaitez. Pigez #b%s cartes."
         ]
     },
     "mysteryDungeon:DireHitPotion": {
-        "NAME": "Dire Hit",
+        "NAME": "Muscle +",
         "DESCRIPTIONS": [
             "Votre prochaine attaque infligera le double des dégâts."
         ]
     },
     "mysteryDungeon:FlameOrbPotion": {
-        "NAME": "Flame Orb",
+        "NAME": "Orbe Flamme",
         "DESCRIPTIONS": [
-            "Appliquez #b%s de #Brûlure."
+            "Appliquez #b%s de #Brûlure à TOUS les ennemis."
         ]
     },
     "mysteryDungeon:GrassGemPotion": {
-        "NAME": "Grass Gem",
+        "NAME": "Joyau Plante",
         "DESCRIPTIONS": [
-            "Your next attack deals #b%s damage."
+            "Votre prochaine attaque infligera #b%s dégâts supplémentaires."
         ]
     },
     "mysteryDungeon:LepaBerryPotion": {
-        "NAME": "Lepa Berry",
+        "NAME": "Baie Mepo",
         "DESCRIPTIONS": [
-            "Retain #b%s cards."
+            "Retenez #b%s cartes."
         ]
     },
     "mysteryDungeon:MagoBerryPotion": {
-        "NAME": "Mago Berry",
+        "NAME": "Baie Mago",
         "DESCRIPTIONS": [
-            "Heal 20HP. Gain 4 #yPoison."
+            "Soignez #b20 PV. Appliquez-vous #b4 #yPoison."
         ]
     },
     "mysteryDungeon:PikachuCandyPotion": {
-        "NAME": "Pikachu Candy",
+        "NAME": "Bonbon Pikachu",
         "DESCRIPTIONS": [
-            "Entrez en Positivité ou en Négativité."
+            "Entrez en #yPositivité ou en #yNégativité."
         ]
     },
     "mysteryDungeon:PoisonBarbPotion": {
-        "NAME": "PoisonBarb",
+        "NAME": "Pic Venin",
         "DESCRIPTIONS": [
             "Appliquez #b%s de Poison à un ennemi."
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {
-        "NAME": "Sitrus Berry",
+        "NAME": "Baie Sitrus",
         "DESCRIPTIONS": [
             "Ajoutez #b%s carte parmi vos cartes épuisées à votre main.",
             "Ajoutez #b%s cartes parmi vos cartes épuisées à votre main."
         ]
     },
     "mysteryDungeon:XAttackPotion": {
-        "NAME": "X Attack",
+        "NAME": "Attaque +",
         "DESCRIPTIONS": [
-            "Ajoutez #b%s #yPeur à votre main."
+            "Ajoutez #b%s #yPeur à votre main. Elles coûtent #b0 ce tour."
         ]
     },
     "mysteryDungeon:XSpAttackPotion": {
-        "NAME": "X Sp. Attack",
+        "NAME": "Atq. Spé. +",
         "DESCRIPTIONS": [
-            "Remplissez vos emplacements d'Orbes avec des Orbes Kérauniques."
+            "Remplissez vos emplacements #yd'Orbes avec des #yOrbes #yKérauniques."
         ]
     }
 }

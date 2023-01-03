@@ -17,7 +17,7 @@
     "mysteryDungeon:PikachuMeter": {
         "TEXT": [
             "Jauge de Charge",
-            "Quand vous jouez une #yCompétence, bougez le curseur d'un espace vers la gauche sur cette jauge. NL Quand vous jouez une #yAttaque, bougez le curseur d'un espace vers la droite sur cette jauge. NL Quand vous arrivez à un bout de la jauge, entrez dans la #yPosition correspondante. NL Vous pouvez survoler eci pour voir l'information sur les #Positions."
+            "Quand vous jouez une #yCompétence, déplacez le curseur d'un espace vers la gauche sur cette jauge. NL Quand vous jouez une #yAttaque, déplacez le curseur d'un espace vers la droite sur cette jauge. NL Quand vous arrivez à un bout de la jauge, entrez dans la #yPosition correspondante. NL Vous pouvez survoler ceci pour voir l'information sur les #yPositions."
         ]
     }
 }

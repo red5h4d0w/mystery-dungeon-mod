@@ -77,22 +77,22 @@
     },
     "mysteryDungeon:Psyduck": {
         "NAMES": [
-            "Pikachu"
+            "Psykokwak"
         ]
     },
     "mysteryDungeon:Machop": {
         "NAMES": [
-            "Pikachu"
+            "Machoc"
         ]
     },
     "mysteryDungeon:Cubone": {
         "NAMES": [
-            "Pikachu"
+            "Osselait"
         ]
     },
     "mysteryDungeon:Eevee": {
         "NAMES": [
-            "Pikachu"
+            "Évoli"
         ]
     },
     "mysteryDungeon:Chikorita": {
@@ -112,12 +112,12 @@
     },
     "mysteryDungeon:Cyndaquil": {
         "NAMES": [
-            "Pikachu"
+            "Héricendre"
         ]
     },
     "mysteryDungeon:Quilava": {
         "NAMES": [
-            "Quilava"
+            "Feurisson"
         ]
     },
     "mysteryDungeon:Typhlosion": {
@@ -127,51 +127,51 @@
     },
     "mysteryDungeon:Totodile": {
         "NAMES": [
-            "Pikachu"
+            "Kaïminus"
         ]
     },
     "mysteryDungeon:Croconaw": {
         "NAMES": [
-            "Croconaw"
+            "Crocrodil"
         ]
     },
     "mysteryDungeon:Feraligatr": {
         "NAMES": [
-            "Feraligatr"
+            "Aligatueur"
         ]
     },
     "mysteryDungeon:Treecko": {
         "NAMES": [
-            "Pikachu"
+            "Arcko"
         ]
     },
     "mysteryDungeon:Torchic": {
         "NAMES": [
-            "Pikachu"
+            "Poussifeu"
         ]
     },
     "mysteryDungeon:Mudkip": {
         "NAMES": [
-            "Pikachu"
+            "Gobou"
         ]
     },
     "mysteryDungeon:Skitty": {
         "NAMES": [
-            "Pikachu"
+            "Skitty"
         ]
     },
     "Neow": {
         "TEXT": [
-            "Ceci est le portail qui mène au monde des Pokémon!",
-            "Mais avant de vous laissez entrer, j'ai plusieurs questions à vous poser.",
-            "Je veux que vous y répondiez avec sincérité. NL On peut commencer?",
-            "D'accord... NL Commençons l'entretien!",
-            "Oui!",
-            "Je préfèrerais chosir mon équipe.",
+            "Ceci est le portail qui mène au monde des Pokémon !",
+            "Mais avant de vous laisser entrer, j'ai plusieurs questions à vous poser.",
+            "Je veux que vous y répondiez avec sincérité. NL On peut commencer ?",
+            "D'accord... NL Commençons l'entretien !",
+            "Oui !",
+            "Je préfèrerais choisir mon équipe.",
             "Je voudrais avoir une équipe aléatoire.",
             "Choisissez votre aventurier.",
             "Choisissez votre partenaire",
-            "Vous êtes un %s . NL Choisissez votre partenaire"
+            "Vous êtes un %s . NL Choisissez votre partenaire. (Complexité prévue : %s2)"
         ]
     }
 }

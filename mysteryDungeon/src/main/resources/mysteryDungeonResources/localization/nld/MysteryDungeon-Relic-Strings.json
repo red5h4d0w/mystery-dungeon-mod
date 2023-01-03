@@ -25,7 +25,7 @@
         "NAME": "Brave Explorer",
         "FLAVOR": "A brave Explorer",
         "DESCRIPTIONS": [
-            "The first time you don't have any #yBlock at the end of your turn apply #b2 #yVulnerable to ALL enemies."
+            "Each combat, the first time you end your turn without #yBlock apply #b2 #yVulnerable to ALL enemies."
         ]
     },
     "mysteryDungeon:CalmExplorerRelic": {
@@ -39,7 +39,7 @@
         "NAME": "Cell Battery",
         "FLAVOR": "A consumable battery. If the holder is hit by an Electric-type move, its Attack will rise.",
         "DESCRIPTIONS": [
-            "The charge meter will now have 3 steps between stances. NL You no longer return to the center of the charge meter at the start of your turn."
+            "The #yCharge #yMeter will now have #b3 steps between stances. NL You no longer return to the center of the charge meter at the start of your turn."
         ]
     },
     "mysteryDungeon:CharcoalRelic": {
@@ -67,21 +67,21 @@
         "NAME": "Grassy Seed",
         "FLAVOR": "It boosts Defense on Grassy Terrain.",
         "DESCRIPTIONS": [
-            "At the start of combat add a random attack to your draw pile. It costs 0 this combat."
+            "At the start of combat add a random attack to your draw pile. It costs #b0 this combat."
         ]
     },
     "mysteryDungeon:HardyExplorerRelic": {
         "NAME": "Hardy Explorer",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "The first time you lose HP each turn, gain 5 Block. If this HP loss was from a monster's attack, gain 1 Blur"
+            "The first time you lose #yHP each turn, gain #b5 #yBlock. If this #yHP loss was from a monster's attack, do not remove your #yBlock at the start of the next turn."
         ]
     },
     "mysteryDungeon:ImpishExplorerRelic": {
         "NAME": "Impish Explorer",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "The first time you evoke an orb each combat, gain a #yFocus."
+            "The first time you evoke an orb each combat, gain #b1 #yFocus."
         ]
     },
     "mysteryDungeon:JollyExplorerRelic": {
@@ -93,9 +93,9 @@
     },
     "mysteryDungeon:LeftoversRelic": {
         "NAME": "Leftovers",
-        "FLAVOR": "Some food left form your last meal",
+        "FLAVOR": "Some food left from your last meal",
         "DESCRIPTIONS": [
-            "At the end of combat heal #b3 HP."
+            "At the end of each combat heal #b3 #yHP."
         ]
     },
     "mysteryDungeon:LifeOrbRelic": {
@@ -109,28 +109,28 @@
         "NAME": "Metronome",
         "FLAVOR": "It follows its own rhythm.",
         "DESCRIPTIONS": [
-            "At the start of every turn add a random card from Pokémon that are not in your team to your hand. It costs 0 this turn."
+            "At the start of each turn add a random card from a Pokémon that is not in your team to your hand. It costs #b0 this turn."
         ]
     },
     "mysteryDungeon:MeadowPlateRelic": {
         "NAME": "Meadow Plate",
         "FLAVOR": "A stone tablet imbued with the essence of plants. When used on a certain Pokémon, it allows that Pokémon to gain the power of the Grass type.",
         "DESCRIPTIONS": [
-            "Gain 20 max HP. At the start of combat if you are above 65% HP lose HP until you are not. If you are under 65% of your max HP, heal 10HP."
+            "Gain #b20 #ymax #yHP. At the start of combat if you have more than #b65% of your #ymax #yHP lose #yHP until you have #y65% of your #ymax #yHP. If you have less than #b65% of your #ymax #yHP, heal #b10 #yHP."
         ]
     },
     "mysteryDungeon:MiracleSeedRelic": {
         "NAME": "Miracle Seed",
         "FLAVOR": "Its a seed invued with life force that boosts the power of Grass-type moves.",
         "DESCRIPTIONS": [
-            "Every time you apply #b3 #ydebuffs in a single turn draw a card."
+            "Every time you apply #b3 #yDebuffs in a single turn draw a card."
         ]
     },
     "mysteryDungeon:MysticWaterRelic": {
         "NAME": "Mystic Water",
         "FLAVOR": "This teardrop-shaped gem boosts the power of Water-type moves.",
         "DESCRIPTIONS": [
-            "Gain [E] at the start of your turn. NL Reduce your maximum hand size by 2."
+            "Gain [E] at the start of your turn. NL Reduce your maximum hand size by #b2."
         ]
     },
     "mysteryDungeon:NaiveExplorerRelic": {
@@ -144,35 +144,35 @@
         "NAME": "Quirky Explorer",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "Gain 5% more Gold in combat rewards."
+            "Gain #b5% more #yGold in combat rewards."
         ]
     },
     "mysteryDungeon:RelaxedExplorerRelic": {
         "NAME": "Relaxed Explorer",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "At the start of your turn, #yscry #b1."
+            "At the start of your turn, #yScry #b1."
         ]
     },
     "mysteryDungeon:TimidExplorerRelic": {
         "NAME": "Timid Explorer",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
-            "At the end of each turn, if you have any leftover energy, spend 1 to retain 1 card."
+            "At the end of each turn, if you have any leftover energy, spend #b1 and #yretain a card."
         ]
     },
     "mysteryDungeon:LightBallRelic": {
         "NAME": "Light Ball",
         "FLAVOR": "It's a puzzling orb that boosts its Attack and Sp. Atk stats.",
         "DESCRIPTIONS": [
-            "Once per turn, when you play a power and you are not in a stance, gain 1 orb slot."
+            "Once per turn, when you play a #ypower and you are not in a #ystance, gain #b1 #yorb #yslot."
         ]
     },
     "mysteryDungeon:WaveIncenseRelic": {
         "NAME": "Wave Incense",
-        "FLAVOR": "Its a seed invued with life force that boosts the power of Grass-type moves.",
+        "FLAVOR": "This incense has a curious aroma that boosts the power of Water-type moves.",
         "DESCRIPTIONS": [
-            "Each battle apply the #yMaster #yReality power."
+            "During combat, ALL cards you create are #yupgraded."
         ]
     }
 }

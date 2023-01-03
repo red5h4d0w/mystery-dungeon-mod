@@ -1,68 +1,68 @@
 {
     "mysteryDungeon:AgilityPower": {
-        "NAME": "Agility",
+        "NAME": "高速移动",
         "DESCRIPTIONS": [
-            "Whenever you enter or exit a #yStance, draw #b%s card.",
-            "Whenever you enter or exit a #yStance, draw #b%s cards."
+            "当进入或离开 #y姿态，抽 #b%s 张牌。",
+            "当进入或离开 #y姿态，抽 #b%s 张牌。"
         ]
     },
     "mysteryDungeon:AromatherapyPower": {
         "NAME": "Aromatherapy",
         "DESCRIPTIONS": [
-            "Whenever you take damage, gain #b%s Strength.",
+            "Whenever you take damage, gain #b%s #yStrength.",
             "Whenever you take damage, gain #b%s Strength."
         ]
     },
     "mysteryDungeon:AsleepPower": {
-        "NAME": "Asleep",
+        "NAME": "昏睡",
         "DESCRIPTIONS": [
-            "This monster won't act this turn, unless it receives damage. If it does, it wakes up. When it wakes up, it will go back to the intent it had before falling asleep.",
-            "This monster won't act for #b%s turns, unless it receives damage. If it does, it wakes up. When it will wake up, it will go back to the intent it had before falling asleep."
+            "本回合，敌人昏睡，不再执行意图。受到攻击后醒来，并执行昏睡前的意图。",
+            " #b%s 回合内，敌人昏睡，不再执行意图。受到攻击后醒来，并执行昏睡前的意图。"
         ]
     },
     "mysteryDungeon:AquaRingPower": {
-        "NAME": "Aqua Ring",
+        "NAME": "水流环",
         "DESCRIPTIONS": [
-            "This turn, for each card you scry or discard, gain #b%s block. NL If the card was a #yStatus card, deal #b%s damage to all enemies."
+            "本回合，每当一张牌被手动预见或丢弃时，获得 #b%s 点格挡。 NL 如果该牌是 #y状态牌 。造成 #b%s 点伤害。"
         ]
     },
     "mysteryDungeon:BellyDrumPower": {
-        "NAME": "Belly Drum",
+        "NAME": "腹鼓",
         "DESCRIPTIONS": [
-            "The first card you play each turn cost 0, but exhaust.",
-            "The first %s cards you play each turn cost 0, but exhaust."
+            "每回合打出的第一张牌费用为0且被消耗。",
+            "每回合打出的第 %s 张牌费用为0且被消耗。"
         ]
     },
     "mysteryDungeon:BidePower": {
-        "NAME": "Bide",
+        "NAME": "忍耐",
         "DESCRIPTIONS": [
-            "When you get attacked, Gain #b%s Temporary Strength."
+            "每受到一次攻击，获得 #b%s 点临时力量。"
         ]
     },
     "mysteryDungeon:BlazePower": {
-        "NAME": "Blaze",
+        "NAME": "火焰",
         "DESCRIPTIONS": [
-            "The first time you have no Energy left each turn, gain [E].",
-            "The first #b%s times you have no Energy left each turn, gain [E]."
+            "每回合第一次能量为0后，获得 [E] 。",
+            "每回合第 #b%s 次能量为0后，获得 [E] 。"
         ]
     },
     "mysteryDungeon:BurnPower": {
-        "NAME": "Burn",
+        "NAME": "灼烧",
         "DESCRIPTIONS": [
-            "For every 5 stacks of Burn, this creature deals 1 less damage. NL Currently deals #b%s less damage. NL The amount is reduced by a third every turn."
+            "每有 #b5 层， NL 敌人伤害降低 #b1 点。 NL 每回合结束时， NL 失去最大层数的 #b1/3 。"
         ]
     },
     "mysteryDungeon:ChikoritaExplorerPower": {
         "NAME": "Explorer Form",
         "DESCRIPTIONS": [
             "When you heal #yHP, deal damage to ALL enemies equal to the amount healed.",
-            "When you heal #yHP, deal damage to ALL enemies equal to #b%s times the amounot healed."
+            "When you heal #yHP, deal damage to ALL enemies equal to #b%s times the amount healed."
         ]
     },
     "mysteryDungeon:CharmanderExplorerPower": {
-        "NAME": "Explorer Form",
+        "NAME": "小火龙·冒险者笔记",
         "DESCRIPTIONS": [
-            "At the start of your turn Exhume #b%s random card."
+            "在你的回合开始时，发掘 #b%s 张牌。"
         ]
     },
     "mysteryDungeon:ChikoritaWorrySeedPower": {
@@ -73,10 +73,10 @@
         ]
     },
     "mysteryDungeon:CounterPower": {
-        "NAME": "Counter",
+        "NAME": "双倍奉还",
         "DESCRIPTIONS": [
-            "When you lose all #yBlock and receive attack damage, deal #b%s damage to the attacker.",
-            "When you lose all #yBlock and receive attack damage, deal #b%s damage to the attacker."
+            "若受到攻击后失去 #y全部防御 ，反击 #b%s 点伤害。",
+            "若受到攻击后失去 #y全部防御 ，反击 #b%s 点伤害。"
         ]
     },
     "mysteryDungeon:CursePower": {
@@ -95,7 +95,7 @@
     "mysteryDungeon:CyndaquilExplorerPower": {
         "NAME": "Explorer Form",
         "DESCRIPTIONS": [
-            "Whenever you cause an #yEruption, Deal #b%s to all enemies."
+            "Whenever you apply #yBurn, deal #b%s damage to the target."
         ]
     },
     "mysteryDungeon:CrushClawPower": {
@@ -106,29 +106,29 @@
         ]
     },
     "mysteryDungeon:DroughtPower": {
-        "NAME": "Drought",
+        "NAME": "干旱",
         "DESCRIPTIONS": [
-            "When you apply #yBurn apply #b%s more.",
-            "When you apply #yBurn apply #b%s more."
+            "当你施加 #y灼烧 时，额外施加 #b%s 层。",
+            "当你施加 #y灼烧 时，额外施加 #b%s 层。"
         ]
     },
     "mysteryDungeon:EncorePower": {
-        "NAME": "Encore",
+        "NAME": "再来一次",
         "DESCRIPTIONS": [
-            "This turn your next #yAttack or #ySkill is played twice"
+            "本回合，你的下张 #y攻击牌 或 #y技能牌 将打出两次。"
         ]
     },
     "mysteryDungeon:EndurePower": {
-        "NAME": "Endure",
+        "NAME": "挺住",
         "DESCRIPTIONS": [
-            "When you play a status card deal #b%s damage to ALL enemies."
+            "当你打出一张状态牌，造成 #b%s 点伤害。"
         ]
     },
     "mysteryDungeon:EvasivenessDropPower": {
-        "NAME": "Evasiveness Drop",
+        "NAME": "防御下降",
         "DESCRIPTIONS": [
-            "Enemy loses #b50% of their Block at the end of their turn.",
-            "Enemy loses #b50%% of their Block at the end of their turn for #b%s turns."
+            "敌人回合结束时，失去 #b50%% 格挡值。",
+            "敌人回合结束时，失去 #b50%% 格挡值，持续 #b%s 回合。"
         ]
     },
     "mysteryDungeon:FirePledgePower": {
@@ -158,10 +158,10 @@
         ]
     },
     "mysteryDungeon:FrustrationPower": {
-        "NAME": "Frustration",
+        "NAME": "迁怒",
         "DESCRIPTIONS": [
-            "At the end of your turn choose up to #b1 card to #yretain. NL This card becomes #yEthereal.",
-            "At the end of your turn choose up to #b%s card to #yretain. NL Those cards become #yEthereal."
+            "每回合结束时，选择 #b1 张牌 #y保留 。 NL 这张牌被保留后变为 #y虚无 。",
+            "每回合结束时，选择 #b%s 张牌 #y保留 。 NL 这些牌被保留后变为 #y虚无 。"
         ]
     },
     "mysteryDungeon:FuryCutterPower": {
@@ -179,9 +179,9 @@
         ]
     },
     "mysteryDungeon:HailPower": {
-        "NAME": "Hail",
+        "NAME": "冰雹",
         "DESCRIPTIONS": [
-            "Whenever you draw a card deal #b%s damage to all enemies"
+            "每当你抽牌，对所有敌人造成 #b%s 点伤害。"
         ]
     },
     "mysteryDungeon:HealPulsePower": {
@@ -191,10 +191,10 @@
         ]
     },
     "mysteryDungeon:HeatCrashPower": {
-        "NAME": "Heat Crash",
+        "NAME": "高温重压",
         "DESCRIPTIONS": [
-            "When this enemy dies, ALL enemies receive damage equal to #b%d times its #yBurn Stacks. NL Currently it would deal #b%s damage to ALL enemies.",
-            "When this enemy dies, ALL enemies receive damage equal to #b%d times its #yBurn Stacks. NL Currently it would deal #b%s damage to ALL enemies."
+            "当该敌人死亡时，对全部敌人造成 #b%d 次 #y灼烧 层数的伤害。 NL 当前将对所有敌人造成 #b%s 点伤害。",
+            "当该敌人死亡时，对全部敌人造成 #b%d 次 #y灼烧 层数的伤害。 NL 当前将对所有敌人造成 #b%s 点伤害。"
         ]
     },
     "mysteryDungeon:HeatWavePower": {
@@ -229,21 +229,21 @@
         ]
     },
     "mysteryDungeon:LeechSeedPower": {
-        "NAME": "Leech Seed",
+        "NAME": "寄生种子",
         "DESCRIPTIONS": [
-            "At the start of the turn, this monster loses #b%s HP, and you gain #b%s HP. At the end of the turn, if the leech seed's owner has not taken any damage from any other source, the amount is reduced by half."
+            "在敌方回合开始时。 NL 敌人每拥有一个寄生种子，失去 #b%s 点生命值 ， 你获得 #b%s 点生命值。你的回合结束时, 如果敌人未受到寄生种子以外的伤害， 寄生种子层数将减半。"
         ]
     },
     "mysteryDungeon:LightScreenPower": {
-        "NAME": "Light Screen",
+        "NAME": "光墙",
         "DESCRIPTIONS": [
-            "At the end of the turn, gain #b%s Block per empty orb slot."
+            "在你的回合结束时，每有一个空充能球栏位，获得 #b%s 点格挡。"
         ]
     },
     "mysteryDungeon:LockDownPower": {
-        "NAME": "Lock-Down",
+        "NAME": "定时",
         "DESCRIPTIONS": [
-            "At the end of the turn, do not return automatically to the center of the charge gauge."
+            "在回合结束时，指针不再复位。"
         ]
     },
     "mysteryDungeon:MagicCoatPower": {
@@ -260,10 +260,10 @@
         ]
     },
     "mysteryDungeon:NextTurnDrawLessPower": {
-        "NAME": "Next Turn Draw Less Cards",
+        "NAME": "下回合：减少抽牌",
         "DESCRIPTIONS": [
-            "Next Turn, Draw 1 less card.",
-            "Next Turn, Draw #b%s less cards."
+            "下回合，少抽1张牌。",
+            "下回合，少抽 #b%s 张牌。"
         ]
     },
     "mysteryDungeon:NextTurnEruptionPower": {
@@ -280,10 +280,10 @@
         ]
     },
     "mysteryDungeon:NextTurnNoBlockPower": {
-        "NAME": "Next Turn: No Block",
+        "NAME": "下回合: 无法格挡",
         "DESCRIPTIONS": [
-            "Next turn, you cannot gain Block",
-            "During the next #b%s turns, you cannot gain Block."
+            "下回合，你无法获得格挡。",
+            "下 #b%s 回合，你无法获得格挡。"
         ]
     },
     "mysteryDungeon:NextTurnVigorPower": {
@@ -296,16 +296,16 @@
         ]
     },
     "mysteryDungeon:NoHealPower": {
-        "NAME": "No Heal",
+        "NAME": "无法治疗",
         "DESCRIPTIONS": [
-            "You cannot heal this turn.",
-            "You cannot heal for #b%s turns."
+            "本回合你无法治疗。",
+            " #b%s 回合内，你无法治疗。"
         ]
     },
     "mysteryDungeon:OutragePower": {
-        "NAME": "Outrage",
+        "NAME": "逆鳞",
         "DESCRIPTIONS": [
-            "When you exhaust a card, apply #b%s #yBurn to a random enemy."
+            "每消耗一张牌，对随机敌人施加 #b%s 层 #y灼烧 。"
         ]
     },
     "mysteryDungeon:OvergrowPower": {
@@ -315,22 +315,22 @@
         ]
     },
     "mysteryDungeon:PetalDancePower": {
-        "NAME": "Petal Dance",
+        "NAME": "花瓣舞",
         "DESCRIPTIONS": [
-            "At the end of the turn, deal #b%1$s damage to ALL enemies. NL (This counts as an attack).",
-            "For #b%1$s turns, at the end of the turn, deal #b%2$s damage to ALL enemies. NL (This counts as an attack)."
+            "在回合结束时，对所有敌人造成 #b%1$s 点伤害。 NL 视为攻击伤害。",
+            " #b%1$s 回合内，在回合结束时，对所有敌人造成 #b%2$s 点伤害。 NL 视为攻击伤害。"
         ]
     },
     "mysteryDungeon:PoisonThornsPower": {
-        "NAME": "Poison Thorns",
+        "NAME": "毒刺",
         "DESCRIPTIONS": [
-            "When Attacked, apply #b%s #yPoison to the attacker."
+            "每当受到攻击时，攻击者获得 #b%s 层 #y中毒 。"
         ]
     },
     "mysteryDungeon:PikachuExplorerPower": {
-        "NAME": "Explorer Form",
+        "NAME": "皮卡丘·冒险者笔记",
         "DESCRIPTIONS": [
-            "At the start of your turn, evoke your next Orb, then channel #b%s Lightning."
+            "在你的回合开始时，激发 #b%s 闪电充能球，如果你至少拥有1个充能球，在你的回合开始时，激发 #b%s 充能球。"
         ]
     },
     "mysteryDungeon:PsychUpPower": {
@@ -340,15 +340,15 @@
         ]
     },
     "mysteryDungeon:RainDancePower": {
-        "NAME": "Rain Dance",
+        "NAME": "求雨",
         "DESCRIPTIONS": [
-            "When a card is created, gain #b%s #yTemporary #yStrength."
+            "本回合每制作一张牌，获得 #b%s 点 #y临时力量 。"
         ]
     },
     "mysteryDungeon:RainDishPower": {
-        "NAME": "Rain Dish",
+        "NAME": "雨盘",
         "DESCRIPTIONS": [
-            "When you manually scry or disacrd a card, gain #b%s #yBlock."
+            "每当一张牌被手动预见或丢弃时，获得 #b%s 点 #y格挡 。"
         ]
     },
     "mysteryDungeon:RecoverPower": {
@@ -358,25 +358,25 @@
         ]
     },
     "mysteryDungeon:ReduceHighestCostAtStartOfTurnPower": {
-        "NAME": "Lower Cost of Highest Cost Card",
+        "NAME": "费用降低",
         "DESCRIPTIONS": [
-            "The cost of your highest cost card is lowered by one after draw.",
-            "The cost of your #b%s highest cost cards is lowered by one after draw."
+            "抽牌后，降低手牌中费用最高的牌1点耗能。",
+            "抽牌后，降低手牌中费用最高的牌 #b%s 点耗能。"
         ]
     },
     "mysteryDungeon:RestPower": {
-        "NAME": "Rest",
+        "NAME": "睡觉",
         "DESCRIPTIONS": [
-            "You cannot play cards targeting the enemy during this turn.",
-            "You cannot play cards targeting the enemy during this turn and the next.",
-            "You cannot play cards targeting the enemy during this turn and the next #b%s turns."
+            "本回合内，你无法对目标敌人出牌。.",
+            "下回合结束前，你无法对目标敌人出牌。",
+            " #b%s 回合内，你无法对目标敌人出牌。"
         ]
     },
     "mysteryDungeon:SleepTalkPower": {
-        "NAME": "Sleep Talk",
+        "NAME": "梦话",
         "DESCRIPTIONS": [
-            "The first time you exhaust a card each turn, add a random card to your hand.",
-            "The first #b%s times you exhaust a card each turn, add a random card to your hand."
+            "每回合第一次消耗牌时，向手牌加入一张随机牌。",
+            "每回合第 #b%s 次消耗牌时，向手牌加入一张随机牌。"
         ]
     },
     "mysteryDungeon:CyndaquilSleepTalkPower": {
@@ -387,23 +387,23 @@
         ]
     },
     "mysteryDungeon:SolarPowerPower": {
-        "NAME": "Solar Power",
+        "NAME": "太阳能",
         "DESCRIPTIONS": [
-            "At the start of your turn, if an enemy has #yBurn, gain #b%s #yStrength."
+            "在你的回合开始时，若敌人被 #y灼烧，获得 #b%s 点 #y力量."
         ]
     },
     "mysteryDungeon:SquirtleExplorerPower": {
-        "NAME": "Explorer Form",
+        "NAME": "杰尼龟·冒险者笔记",
         "DESCRIPTIONS": [
-            "At the start of your next turn draw #b%s more card. Increase this amount by #b%s at the end of your turn.",
-            "At the start of your next turn draw #b%s more cards. Increase this amount by #b%s at the end of your turn."
+            "在你的下回合开始时，再抽 #b%s 张牌。每回合结束时，增加 #b%s 层效果。",
+            "在你的下回合开始时，再抽 #b%s 张牌。每回合结束时，增加 #b%s 层效果。"
         ]
     },
     "mysteryDungeon:StaticPower": {
-        "NAME": "Static",
+        "NAME": "静电",
         "DESCRIPTIONS": [
-            "Evoke %s orb when you are attacked.",
-            "Evoke %s orbs when you are attacked."
+            "每受一次伤害，激发 %s 充能球。",
+            "每受一次伤害，激发 %s 充能球。"
         ]
     },
     "mysteryDungeon:SunnyDayPower": {
@@ -414,9 +414,9 @@
         ]
     },
     "mysteryDungeon:SweetKissPower": {
-        "NAME": "Sweet Kiss",
+        "NAME": "天使之吻",
         "DESCRIPTIONS": [
-            "Apply #b%s #yWeak to ALL enemies every time you enter or exit a stance."
+            "每当你进入或退出一次姿态，给予所有敌人 #b%s 层 #y虚弱 。"
         ]
     },
     "mysteryDungeon:TechnicianPower": {
@@ -426,15 +426,15 @@
         ]
     },
     "mysteryDungeon:ThunderPower": {
-        "NAME": "Thunder",
+        "NAME": "打雷",
         "DESCRIPTIONS": [
-            "Whenever you evoke an Orb, deal #b%s damage to ALL enemies."
+            "每当你激发一个充能球，对所有敌人造成 #b%s 点伤害。"
         ]
     },
     "mysteryDungeon:TorrentPower": {
-        "NAME": "Torrent",
+        "NAME": "暴雨",
         "DESCRIPTIONS": [
-            "When you shuffle your deck, gain #b%s #yTemporary #yStrength."
+            "当你洗牌时，获得 #b%s #y临时力量 。"
         ]
     },
     "mysteryDungeon:TotodileExplorerPower": {
@@ -451,9 +451,9 @@
         ]
     },
     "mysteryDungeon:ToxicPower": {
-        "NAME": "Toxic",
+        "NAME": "剧毒",
         "DESCRIPTIONS": [
-            "Instead of decreasing by one every turn, the Poison on this enemy will increase by #b%s every turn."
+            "每回合中毒层数不再降低1层。 NL 该名敌人身上的中毒将增加 #b%s 层。"
         ]
     },
     "mysteryDungeon:UnnervePower": {
@@ -465,28 +465,28 @@
     "mysteryDungeon:WaterPledgePower": {
         "NAME": "Water Pledge",
         "DESCRIPTIONS": [
-            "When you play another Pledge card this turn, activate one of the following effects. NL Grass: Apply 2 weak to all enemies. NL Fire: Apply 2 vulnerable to all enemies."
+            "When you play another #yPledge card this turn, activate one of the following effects. NL Grass: Apply #b2 #yWeak to ALL enemies. NL Fire: Apply #b2 #yVulnerable to ALL enemies."
         ]
     },
     "mysteryDungeon:WhirlpoolPower": {
-        "NAME": "Whirlpool",
+        "NAME": "潮旋",
         "DESCRIPTIONS": [
-            "At the start of your turn, draw #b2 cards and discard #b2 cards.",
-            "For #b%s turns, at the start of your turn, draw #b2 cards and discard #b2 cards."
+            "在你的回合开始时，抽 #b2 张牌并丢弃 #b2 张牌。",
+            "持续 #b%s 回合。 在你的回合开始时，抽 #b2 张牌并丢弃 #b2 张牌。"
         ]
     },
     "mysteryDungeon:WorrySeedPower": {
-        "NAME": "Worry Seed",
+        "NAME": "烦恼种子",
         "DESCRIPTIONS": [
-            "At the end of this combat, your card rewards will have one more card choice.",
-            "At the end of this combat, your card rewards will have #b%s more card choices."
+            "战斗结束后，卡牌奖励将额外包括1张牌。",
+            "战斗结束后，卡牌奖励将额外包括 #b%s 张牌。"
         ]
     },
     "mysteryDungeon:YawnPower": {
-        "NAME": "Yawn",
+        "NAME": "哈欠",
         "DESCRIPTIONS": [
-            "Enemy will fall #yAsleep for one turn right before they act.",
-            "Enemy will fall #yAsleep for #b%s turns right before they act."
+            "在敌人行动之前，陷入 #y昏睡 1回合。",
+            "在敌人行动之前，陷入 #y昏睡 #b%s 回合。"
         ]
     }
 }

@@ -1,30 +1,30 @@
 {
     "mysteryDungeon:AspearBerryPotion": {
-        "NAME": "Aspear Berry",
+        "NAME": "利木果",
         "DESCRIPTIONS": [
-            "Discard any number of cards from your hand. Draw #b%s cards."
+            "从手牌中丢弃任意数量的牌。抽 #b%s 张牌。"
         ]
     },
     "mysteryDungeon:DireHitPotion": {
-        "NAME": "Dire Hit",
+        "NAME": "要害攻击",
         "DESCRIPTIONS": [
-            "Your next attack deals double damage."
+            "下张攻击牌造成双倍伤害。"
         ]
     },
     "mysteryDungeon:FlameOrbPotion": {
-        "NAME": "Flame Orb",
+        "NAME": "灼烧充能球",
         "DESCRIPTIONS": [
-            "Apply #b%s #yBurn to all enemies."
+            "对所有敌人施加 #b%s #y灼烧 。"
         ]
     },
     "mysteryDungeon:GrassGemPotion": {
         "NAME": "Grass Gem",
         "DESCRIPTIONS": [
-            "Your next attack deals #b%s more damage."
+            "Your next attack deals #b%s damage."
         ]
     },
     "mysteryDungeon:LepaBerryPotion": {
-        "NAME": "Lepa Berry",
+        "NAME": "Leppa Berry",
         "DESCRIPTIONS": [
             "Retain #b%s cards."
         ]
@@ -32,38 +32,38 @@
     "mysteryDungeon:MagoBerryPotion": {
         "NAME": "Mago Berry",
         "DESCRIPTIONS": [
-            "Heal 20HP. Gain 4 #yPoison."
+            "Heal #b20 HP. Gain #b4 #yPoison."
         ]
     },
     "mysteryDungeon:PikachuCandyPotion": {
-        "NAME": "Pikachu Candy",
+        "NAME": "皮卡丘的糖果",
         "DESCRIPTIONS": [
-            "Enter Positive or Negative Stance."
+            "进入正极态或负极态。"
         ]
     },
     "mysteryDungeon:PoisonBarbPotion": {
-        "NAME": "PoisonBarb",
+        "NAME": "毒针",
         "DESCRIPTIONS": [
-            "Apply #b%s #yPoison to an enemy."
+            "施加 #b%s #y中毒 。"
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {
-        "NAME": "Sitrus Berry",
+        "NAME": "文柚果",
         "DESCRIPTIONS": [
-            "Put #b%s card from your exhaust pile in your hand.",
-            "Put #b%s cards from your exhaust pile in your hand."
+            "将 #b%s 张牌从消耗牌堆置入手牌。",
+            "将 #b%s 张牌从消耗牌堆置入手牌。"
         ]
     },
     "mysteryDungeon:XAttackPotion": {
-        "NAME": "X Attack",
+        "NAME": "力量强化",
         "DESCRIPTIONS": [
-            "Add #b%s #yFlinch to your hand. They cost #b0 this turn."
+            "向手牌添加 #b%s #y畏缩 。本回合 #b0 费。"
         ]
     },
     "mysteryDungeon:XSpAttackPotion": {
-        "NAME": "X Sp. Attack",
+        "NAME": "电能过载",
         "DESCRIPTIONS": [
-            "Fill all your Orb slots with #yLightning."
+            "向你的充能球栏位填满 #y闪电 。"
         ]
     }
 }
