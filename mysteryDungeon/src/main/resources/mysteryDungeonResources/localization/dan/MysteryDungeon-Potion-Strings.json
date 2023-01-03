@@ -14,7 +14,7 @@
     "mysteryDungeon:FlameOrbPotion": {
         "NAME": "Flame Orb",
         "DESCRIPTIONS": [
-            "Apply #b%s #yBurn to all enemies."
+            "Apply #b%s #yBurn to ALL enemies."
         ]
     },
     "mysteryDungeon:GrassGemPotion": {
@@ -24,7 +24,7 @@
         ]
     },
     "mysteryDungeon:LepaBerryPotion": {
-        "NAME": "Lepa Berry",
+        "NAME": "Leppa Berry",
         "DESCRIPTIONS": [
             "Retain #b%s cards."
         ]
@@ -32,13 +32,13 @@
     "mysteryDungeon:MagoBerryPotion": {
         "NAME": "Mago Berry",
         "DESCRIPTIONS": [
-            "Heal 20HP. Gain 4 #yPoison."
+            "Heal #b20 HP. Gain #b4 #yPoison."
         ]
     },
     "mysteryDungeon:PikachuCandyPotion": {
         "NAME": "Pikachu Candy",
         "DESCRIPTIONS": [
-            "Enter Positive or Negative Stance."
+            "Enter #yPositive or #yNegative #yStance."
         ]
     },
     "mysteryDungeon:PoisonBarbPotion": {
