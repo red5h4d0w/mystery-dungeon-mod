@@ -485,8 +485,8 @@
     },
     "mysteryDungeon:ChikoritaSecretPower": {
         "NAME": "Secret Power",
-        "DESCRIPTION": "Innate. NL Add random Power in your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Add random upgraded Power in your hand. NL Exhaust."
+        "DESCRIPTION": "Innate. NL Add a random Power to your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Add a random upgraded Power to your hand. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaSeedBomb": {
         "NAME": "Seed Bomb",
@@ -559,8 +559,8 @@
     },
     "mysteryDungeon:CyndaquilCurse": {
         "NAME": "Curse",
-        "DESCRIPTION": "Each status or curse you draw gives you [E]. NL Up to once per turn.",
-        "UPGRADE_DESCRIPTION": "Each status or curse you draw gives you [E]. NL Up to twice per turn."
+        "DESCRIPTION": "Each turn, the first time you draw a Curse or a Status, gain [E].",
+        "UPGRADE_DESCRIPTION": "Each turn, the first 2 times you draw a Curse or a Status, gain [E]."
     },
     "mysteryDungeon:CyndaquilDefend": {
         "NAME": "Defend",
@@ -572,8 +572,8 @@
     },
     "mysteryDungeon:CyndaquilEruption": {
         "NAME": "Eruption",
-        "DESCRIPTION": "Cause an mysterydungeon:Eruption that hits all enemies. NL End your turn. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Cause an mysterydungeon:Eruption that hits all enemies. NL End your turn."
+        "DESCRIPTION": "Trigger an mysterydungeon:Eruption that hits ALL enemies. NL End your turn. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Trigger an mysterydungeon:Eruption that hits ALL enemies. NL End your turn."
     },
     "mysteryDungeon:CyndaquilExplorerForm": {
         "NAME": "Explorer Form",
@@ -581,7 +581,7 @@
     },
     "mysteryDungeon:CyndaquilFacade": {
         "NAME": "Facade",
-        "DESCRIPTION": "Gain !M! Dexterity. NL Add a Burn status card to your draw pile."
+        "DESCRIPTION": "Gain !M! Dexterity. NL Add a *Burn to your draw pile."
     },
     "mysteryDungeon:CyndaquilFireBlast": {
         "NAME": "Fire Blast",
@@ -593,7 +593,7 @@
     },
     "mysteryDungeon:CyndaquilFlameBurst": {
         "NAME": "Flame Burst",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Next turn, cause an mysterydungeon:Eruption.",
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Next turn, trigger an mysterydungeon:Eruption.",
         "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Next turn, cause an mysterydungeon:Eruption. NL Your next Eruption Deals 50% more damage."
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
@@ -625,7 +625,7 @@
     },
     "mysteryDungeon:CyndaquilFrustration": {
         "NAME": "Frustration",
-        "DESCRIPTION": " Apply 12 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption.",
+        "DESCRIPTION": "Apply 12 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption.",
         "UPGRADE_DESCRIPTION": "Retain. NL Apply 12 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption."
     },
     "mysteryDungeon:CyndaquilSmokescreen": {
@@ -638,7 +638,7 @@
     },
     "mysteryDungeon:CyndaquilHowl": {
         "NAME": "Howl",
-        "DESCRIPTION": "Add !M! Burn status card in your draw pile. NL Next turn gain [E] [E] [E]."
+        "DESCRIPTION": "Add !M! *Burn to your draw pile. NL Next turn gain [E] [E] [E]."
     },
     "mysteryDungeon:CyndaquilIncinerate": {
         "NAME": "Incinerate",
@@ -646,7 +646,7 @@
     },
     "mysteryDungeon:CyndaquilInferno": {
         "NAME": "Inferno",
-        "DESCRIPTION": "Your next eruption will not remove any burn stacks. NL Exhaust.",
+        "DESCRIPTION": "Your next mysterydungeon:Eruption will not remove any burn stacks. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Your next eruption will not remove any burn stacks. NL Apply !M! mysterydungeon:Burn to all enemies. NL Exhaust."
     },
     "mysteryDungeon:CyndaquilLaserFocus": {
@@ -656,7 +656,7 @@
     },
     "mysteryDungeon:CyndaquilLavaPlume": {
         "NAME": "Lava Plume",
-        "DESCRIPTION": "Whenever you cause an eruption, Apply !M! mysterydungeon:Burn stacks on the target."
+        "DESCRIPTION": "Whenever you trigger an mysterydungeon:Eruption, apply !M! mysterydungeon:Burn to the target."
     },
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "Leer",
@@ -665,20 +665,20 @@
     },
     "mysteryDungeon:CyndaquilNaturePowerMountain": {
         "NAME": "Nature Power: Mountain",
-        "DESCRIPTION": "For X turns, mysterydungeon:Burn stacks do not decrease naturally on a chosen enemy.",
+        "DESCRIPTION": "For the next X turns, mysterydungeon:Burn stacks do not decrease by themselves on the target.",
         "UPGRADE_DESCRIPTION": "For X+1 turns, mysterydungeon:Burn stacks do not decrease naturally on a chosen enemy."
     },
     "mysteryDungeon:CyndaquilOverheat": {
         "NAME": "Overheat",
-        "DESCRIPTION": "Retain.  NL Cause an mysterydungeon:Eruption. NL Exhaust."
+        "DESCRIPTION": "Retain. NL Trigger an mysterydungeon:Eruption. NL Exhaust."
     },
     "mysteryDungeon:CyndaquilReversal": {
         "NAME": "Reversal",
-        "DESCRIPTION": "If the enemy has mysterydungeon:Burn stacks, gain !B! Block. NL If the enemy has no mysterydungeon:Burn stacks, apply !M! mysterydungeon:Burn. "
+        "DESCRIPTION": "If the enemy has mysterydungeon:Burn, gain !B! Block. NL If the enemy has no mysterydungeon:Burn stacks, apply !M! mysterydungeon:Burn."
     },
     "mysteryDungeon:CyndaquilRockTomb": {
         "NAME": "Rock Tomb",
-        "DESCRIPTION": "Deal !D! damage and apply !M! Weak to all enemies."
+        "DESCRIPTION": "Deal !D! damage and apply !M! Weak to ALL enemies."
     },
     "mysteryDungeon:CyndaquilRockSlide": {
         "NAME": "Rock Slide",
@@ -686,15 +686,15 @@
     },
     "mysteryDungeon:CyndaquilRollout": {
         "NAME": "Rollout",
-        "DESCRIPTION": "Deal !D! damage and gain !B! Block per card played this turn."
+        "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block per card played this turn."
     },
     "mysteryDungeon:CyndaquilShadowClaw": {
         "NAME": "Shadow Claw",
-        "DESCRIPTION": "Add a Dazed status card in your draw pile. NL Deal !D! damage."
+        "DESCRIPTION": "Add a *Dazed in your draw pile. NL Deal !D! damage."
     },
     "mysteryDungeon:CyndaquilSleepTalk": {
         "NAME": "Sleep Talk",
-        "DESCRIPTION": "For each created Status card, draw !M! card.",
+        "DESCRIPTION": "When you create a Status card, draw !M! card.",
         "UPGRADE_DESCRIPTION": "For each created Status card, draw !M! card. NL Draw a card."
     },
     "mysteryDungeon:CyndaquilTackle": {
@@ -708,7 +708,7 @@
     },
     "mysteryDungeon:MeowthAmnesia": {
         "NAME": "Amnesia",
-        "DESCRIPTION": "Spend 12 gold. NL Gain !M! Buffer."
+        "DESCRIPTION": "Spend 12 gold. NL Prevent the next !M! time you would lose HP."
     },
     "mysteryDungeon:MeowthAssurance": {
         "NAME": "Assurance",
@@ -716,8 +716,8 @@
     },
     "mysteryDungeon:MeowthAttract": {
         "NAME": "Attract",
-        "DESCRIPTION": "Gain !B! block. NL Spend !M! gold. NL Create a Snatch in your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Gain !B! block. NL Spend !M! gold. NL Create an Snatch+ in your hand. NL Exhaust."
+        "DESCRIPTION": "Gain !B! block. NL Spend !M! gold. NL Create a *Snatch in your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Gain !B! block. NL Spend !M! gold. NL Create an upgraded Snatch in your hand. NL Exhaust."
     },
     "mysteryDungeon:MeowthCaptivate": {
         "NAME": "Captivate",
@@ -725,7 +725,7 @@
     },
     "mysteryDungeon:MeowthCovet": {
         "NAME": "Covet",
-        "DESCRIPTION": "Give a random enemy !M! Strength. NL Gain !mysteryDungeon:M2! gold."
+        "DESCRIPTION": "Apply !M! Strength to a random enemy. NL Gain !mysteryDungeon:M2! gold."
     },
     "mysteryDungeon:MeowthDarkPulse": {
         "NAME": "Dark Pulse",
@@ -734,7 +734,7 @@
     },
     "mysteryDungeon:MeowthDefend": {
         "NAME": "Defend",
-        "DESCRIPTION": "Gain !B! block."
+        "DESCRIPTION": "Gain !B! Block."
     },
     "mysteryDungeon:MeowthExplorerForm": {
         "NAME": "Explorer Form",
@@ -743,12 +743,12 @@
     },
     "mysteryDungeon:MeowthFakeTears": {
         "NAME": "Fake Tears",
-        "DESCRIPTION": "Spend !M! gold. NL Gain !B! block"
+        "DESCRIPTION": "Spend !M! gold. NL Gain !B! Block."
     },
     "mysteryDungeon:MeowthFeint": {
         "NAME": "Feint",
         "DESCRIPTION": "Remove all block from the enemy. NL Deal damage equal to the amount of block removed.",
-        "UPGRADE_DESCRIPTION": "Remove all block from the enemy. NL Deal damage equal to the amount of block removed +4.",
+        "UPGRADE_DESCRIPTION": "Remove all Block from the enemy. NL Deal damage equal to 4 more than the amount of Block removed.",
         "EXTENDED_DESCRIPTION": [
             " NL (Deals !D! damage.)"
         ]
