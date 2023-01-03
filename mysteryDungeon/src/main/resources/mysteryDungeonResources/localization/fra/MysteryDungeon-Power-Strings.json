@@ -7,29 +7,29 @@
         ]
     },
     "mysteryDungeon:AromatherapyPower": {
-        "NAME": "Aromatherapy",
+        "NAME": "Aromathérapie",
         "DESCRIPTIONS": [
-            "Whenever you take damage, gain #b%s Strength.",
-            "Whenever you take damage, gain #b%s Strength."
+            "Lorsque vous recevez des dégâts, gagnez #b%s de #yForce.",
+            "Lorsque vous recevez des dégâts, gagnez #b%s de #yForce."
         ]
     },
     "mysteryDungeon:AsleepPower": {
         "NAME": "Endormi",
         "DESCRIPTIONS": [
-            "Ce monstre ne se n'agira ce tour, à moins qu'il ne reçoive de dégâts. S'il reçoit des dégâts, il se réveillera. Lorsque qu'il se réveillera, son intention redeviendra celle qu'il avait avant de s'endormir.",
-            "Ce monstre ne se n'agira pour les #b%s prochains tours, à moins qu'il ne reçoive de dégâts. S'il reçoit des dégâts, il se réveillera. Lorsque qu'il se réveillera, son intention redeviendra celle qu'il avait avant de s'endormir."
+            "Ce monstre n'agira pas ce tour, à moins qu'il ne reçoive des dégâts. S'il reçoit des dégâts, il se réveillera. Lorsque qu'il se réveillera, son intention redeviendra celle qu'il avait avant de s'endormir.",
+            "Ce monstre n'agira pas pour les #b%s prochains tours, à moins qu'il ne reçoive des dégâts. S'il reçoit des dégâts, il se réveillera. Lorsque qu'il se réveillera, son intention redeviendra celle qu'il avait avant de s'endormir."
         ]
     },
     "mysteryDungeon:AquaRingPower": {
         "NAME": "Anneau Hydro",
         "DESCRIPTIONS": [
-            "Ce tour, lorsque vous scrutez ou défaussez une carte, gagnez #b%s #yd'Armure. NL Si cette carte était un Statut, infligez #b%s dégâts à TOUS les ennemis."
+            "Ce tour, lorsque vous #yscrutez ou #ydéfaussez une carte, gagnez #b%s #yd'Armure. NL Si cette carte était un Statut, infligez #b%s dégâts à TOUS les ennemis."
         ]
     },
     "mysteryDungeon:BellyDrumPower": {
         "NAME": "Cognobidon",
         "DESCRIPTIONS": [
-            "Chaque tour, la première carte jouée coûte 0, mais est épuisée.",
+            "Chaque tour, la première carte jouée coûte #b0, mais est #yépuisée.",
             "Chaque tour, les #b%s premières cartes jouées coûtent 0, mais sont épuisées."
         ]
     },
@@ -53,10 +53,10 @@
         ]
     },
     "mysteryDungeon:ChikoritaExplorerPower": {
-        "NAME": "Explorer Form",
+        "NAME": "Forme de l'Explorateur",
         "DESCRIPTIONS": [
-            "When you heal #yHP, deal damage to ALL enemies equal to the amount healed.",
-            "When you heal #yHP, deal damage to ALL enemies equal to #b%s times the amounot healed."
+            "Lorsque vous soignez des #yPV, infligez autant de dégâts que la quantité soignée à TOUS les ennemis.",
+            "Lorsque vous soignez des #yPV, infligez autant de dégâts que #b%s fois la quantité soignée à TOUS les ennemis."
         ]
     },
     "mysteryDungeon:CharmanderExplorerPower": {
@@ -66,7 +66,7 @@
         ]
     },
     "mysteryDungeon:ChikoritaWorrySeedPower": {
-        "NAME": "Worry Seed",
+        "NAME": "Soucigraine",
         "DESCRIPTIONS": [
             "During your turn, Lose #b1 HP per card played. At the end of your turn, Heal #b2 HP.",
             "During your turn, Lose #b%s HP per card played. At the end of your turn, Heal 2 HP #b%s times."
@@ -438,7 +438,7 @@
         ]
     },
     "mysteryDungeon:TotodileExplorerPower": {
-        "NAME": "Explorer Form",
+        "NAME": "Forme de l'Explorateur",
         "DESCRIPTIONS": [
             "At the start of your turn add #b%s card. From your discard pile"
         ]
@@ -463,9 +463,9 @@
         ]
     },
     "mysteryDungeon:WaterPledgePower": {
-        "NAME": "Water Pledge",
+        "NAME": "Aire d'Eau",
         "DESCRIPTIONS": [
-            "When you play another Pledge card this turn, activate one of the following effects. NL Grass: Apply 2 weak to all enemies. NL Fire: Apply 2 vulnerable to all enemies."
+            "Lorsque vous jouez une autre carte #yd'Aire ce tour, activez un des effets suivants. NL Plante : Appliquez #b2 de #yFaiblesse à TOUS les ennemis. NL Feu : Appliquez #b2 de #yVulnérabilité à TOUS les ennemis."
         ]
     },
     "mysteryDungeon:WhirlpoolPower": {
