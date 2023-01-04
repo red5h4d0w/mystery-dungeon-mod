@@ -1288,6 +1288,11 @@
         "DESCRIPTION": "Retain. NL Discard !M! cards from your hand.",
         "UPGRADE_DESCRIPTION": "Retain. NL Discard !M! cards from your hand. NL Draw 1 card."
     },
+    "mysteryDungeon:TotodileDoubleTeam": {
+        "NAME": "Double Team",
+        "DESCRIPTION": "mysterydungeon:Inert. NL Channel !M! Frost.",
+        "UPGRADE_DESCRIPTION": "Innate. NL mysterydungeon:Inert. NL Channel !M! Frost."
+    },
     "mysteryDungeon:TotodileEndure": {
         "NAME": "Endure",
         "DESCRIPTION": "If you take damage, channel !M! Frost.",
