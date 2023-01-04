@@ -1327,6 +1327,10 @@
         "NAME": "Sheer Force",
         "DESCRIPTION": "Whenever you deal !M! or more unblocked damage, channel 1 Frost."
     },
+    "mysteryDungeon:TotodileSubstitute": {
+        "NAME": "Substitute",
+        "DESCRIPTION": "Gain !B! block. NL Gain !M! mysterydungeon:Vigor. NL End Your Turn."
+    },
     "mysteryDungeon:TotodileRainDance": {
         "NAME": "Rain Dance",
         "DESCRIPTION": "Unplayable. NL When discarded: Your next Attack deals !M! additional damage.",
