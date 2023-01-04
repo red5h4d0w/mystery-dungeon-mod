@@ -17,7 +17,7 @@ public class StrengthAction extends AbstractGameAction {
     public void update() {
         for (AbstractCard c : DrawCardAction.drawnCards) {
             if (c.type == AbstractCard.CardType.ATTACK) {
-                addToBot(new ChannelAction(new Frost()));
+                addToTop(new ChannelAction(new Frost()));
             } 
         } 
         isDone = true;
