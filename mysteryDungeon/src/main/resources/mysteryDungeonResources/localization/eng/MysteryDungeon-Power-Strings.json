@@ -292,7 +292,7 @@
             "At the start of the next turn, gain #b1 #yVigor.",
             "At the start of the next turn, gain #b%s #yVigor.",
             "At the start of the next #b%s turns, gain #b1 #yVigor.",
-            "At the start of the next #b%s1 turns, gain #b%s2 #yVigor."
+            "At the start of the next #b%1$s turns, gain #b%2$s #yVigor."
         ]
     },
     "mysteryDungeon:NoHealPower": {
