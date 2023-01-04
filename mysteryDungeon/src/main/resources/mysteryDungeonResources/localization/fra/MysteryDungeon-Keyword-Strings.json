@@ -19,6 +19,15 @@
         "DESCRIPTION": "Quand un ennemi est endormi, il n'agira pas tant qu'il ne recevra pas de dégât. S'il en reçoit, son intention redeviendra celle qu'il avait avant de s'endormir."
     },
     {
+        "PROPER_NAME": "Armure Plaquée",
+        "NAMES": [
+            "Armure Plaquée",
+            "Armure_Plaquée",
+            "armure_plaquée"
+        ],
+        "DESCRIPTION": "À la fin de votre tour, gagnez autant d'Armure que la quantité d'Armure Plaquée que vous avez. Réduisez la quantité d'Armure Plaquée de 1 lorsque vous recevesz des dégâts d'attaque."
+    },
+    {
         "PROPER_NAME": "Brûlure",
         "NAMES": [
             "Brûlure",

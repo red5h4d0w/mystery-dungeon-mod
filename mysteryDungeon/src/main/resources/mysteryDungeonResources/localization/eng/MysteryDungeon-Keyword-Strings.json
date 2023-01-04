@@ -67,6 +67,15 @@
         "DESCRIPTION": "The first #b2 #ySkill played each turn will grant you #b1 #yFocus each. NL When you #yexit this #yStance, #yevoke your next #b2 #yOrbs."
     },
     {
+        "PROPER_NAME": "Plated Armor",
+        "NAMES": [
+            "Plated Armor",
+            "Plated_Armor",
+            "plated_armor"
+        ],
+        "DESCRIPTION": "At the end of your turn, gain Block equal to the number of Plated Armor Stacks. Reduce this amount by one evertime you take damage from an enemie's attack."
+    },
+    {
         "PROPER_NAME": "Pledge Card",
         "NAMES": [
             "Pledge Card",
