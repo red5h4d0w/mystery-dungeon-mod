@@ -48,6 +48,7 @@ public class TotodileAquaJet extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseMagicNumber = BASE_MAGIC_NUMBER;
+        magicNumber = baseMagicNumber;
         isInnate = true;
     }
 
