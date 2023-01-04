@@ -303,17 +303,17 @@
     },
     "mysteryDungeon:CharmanderHeatCrash": {
         "NAME": "Tacle Feu",
-        "DESCRIPTION": "Appliquez !M! mysterydungeon:Brûlure. NL Quand cet ennemi meurt, infligez autant de dégâts que sa quantité demysterydungeon:Brûlure à TOUS les ennemis. Épuisement.",
-        "UPGRADE_DESCRIPTION": "Appliquez !M! mysterydungeon:Brûlure. NL Quand cet ennemi meurt, infligez autant de dégâts que sa quantité de mysterydungeon:Brûlure à TOUS les ennemis."
+        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Brûlure. NL Quand cet ennemi meurt, infligez autant de dégâts que sa quantité demysterydungeon:Brûlure à TOUS les ennemis. Épuisement.",
+        "UPGRADE_DESCRIPTION": "Appliquez !M! de mysterydungeon:Brûlure. NL Quand cet ennemi meurt, infligez autant de dégâts que sa quantité de mysterydungeon:Brûlure à TOUS les ennemis."
     },
     "mysteryDungeon:CharmanderHeatWave": {
         "NAME": "Canicule",
-        "DESCRIPTION": "Gagnez !B! d'Armure. NL Appliquez !M! mysterydungeon:Brûlure. NL Épuisez une carte aléatoire de votre main.",
-        "UPGRADE_DESCRIPTION": "Gagnez !B! d'Armure. NL Appliquez !M! mysterydungeon:Brûlure. NL Épuisez une carte aléatoire de votre main."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Appliquez !M! de mysterydungeon:Brûlure. NL Épuisez une carte aléatoire de votre main.",
+        "UPGRADE_DESCRIPTION": "Gagnez !B! d'Armure. NL Appliquez !M! de mysterydungeon:Brûlure. NL Épuisez une carte aléatoire de votre main."
     },
     "mysteryDungeon:CharmanderInferno": {
         "NAME": "Feu d'Enfer",
-        "DESCRIPTION": "Appliquez !M! mysterydungeon:Brûlure à TOUS les ennemis."
+        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Brûlure à TOUS les ennemis."
     },
     "mysteryDungeon:CharmanderMetalClaw": {
         "NAME": "Griffe Acier",
@@ -321,7 +321,7 @@
     },
     "mysteryDungeon:CharmanderOutrage": {
         "NAME": "Colère",
-        "DESCRIPTION": "Lorsque vous épuisez une carte, appliquez !M! mysterydungeon:Brûlure à un ennemi aléatoire."
+        "DESCRIPTION": "Lorsque vous épuisez une carte, appliquez !M! de mysterydungeon:Brûlure à un ennemi aléatoire."
     },
     "mysteryDungeon:CharmanderOverheat": {
         "NAME": "Surchauffe",
@@ -329,7 +329,7 @@
     },
     "mysteryDungeon:CharmanderScaryFace": {
         "NAME": "Grimace",
-        "DESCRIPTION": "Gagnez !B! d'Armure. NL Appliquez !M! Faiblesse."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Appliquez !M! de Faiblesse."
     },
     "mysteryDungeon:CharmanderScratch": {
         "NAME": "Griffe",
@@ -1069,7 +1069,7 @@
     },
     "mysteryDungeon:SquirtleBodyPress": {
         "NAME": "Big Splash",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Si l'ennemi succombe, gagnez !B! d'Armure et !M! de Dextérité. Épuisement.",
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Ajoutez !M! *Peur à votre main. Elles coûtent 0 ce tour.",
         "UPGRADE_DESCRIPTION": "Gagnez !B! d'Armure. NL Ajoutez !M! *Peur améliorées à votre main. Elles coûtent 0 ce tour."
     },
     "mysteryDungeon:SquirtleBrine": {
