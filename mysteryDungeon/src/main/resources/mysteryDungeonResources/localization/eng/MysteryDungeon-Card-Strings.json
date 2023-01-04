@@ -1324,6 +1324,10 @@
         "NAME": "Icy Wind",
         "DESCRIPTION": "mysterydungeon:Inert. NL Channel !M! Frost. NL Exhaust."
     },
+    "mysteryDungeon:TotodileLiquidation": {
+        "NAME": "Liquidation",
+        "DESCRIPTION": "Deal !D! damage to ALL enemies."
+    },
     "mysteryDungeon:TotodileScratch": {
         "NAME": "Scratch",
         "DESCRIPTION": "Deal !D! damage."
