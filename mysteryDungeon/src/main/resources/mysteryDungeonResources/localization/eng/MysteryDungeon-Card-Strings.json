@@ -1366,6 +1366,10 @@
             "I can't play this card."
         ]
     },
+    "mysteryDungeon:TotodileThrash": {
+        "NAME": "Thrash",
+        "DESCRIPTION": "Every !mysteryDungeon:M2! Attack you play, gain !M! mysterydungeon:Vigor."
+    },
     "mysteryDungeon:TotodileTorrent": {
         "NAME": "Torrent",
         "DESCRIPTION": "Unplayable. NL When discarded: Gain !M! Focus.",
