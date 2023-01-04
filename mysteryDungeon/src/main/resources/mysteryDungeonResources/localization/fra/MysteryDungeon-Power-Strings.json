@@ -80,26 +80,26 @@
         ]
     },
     "mysteryDungeon:CursePower": {
-        "NAME": "Curse",
+        "NAME": "Malédiction",
         "DESCRIPTIONS": [
             "The first time you draw a status or curse each turn, gain [E].",
             "The first #b%s times draw a status or a curse each turn, gain [E]."
         ]
     },
     "mysteryDungeon:CyndaquilCounterPower": {
-        "NAME": "Counter",
+        "NAME": "Riposte",
         "DESCRIPTIONS": [
             "At the end of your turn spend all leftover energy and gain #b%s Block for each energy spent."
         ]
     },
     "mysteryDungeon:CyndaquilExplorerPower": {
-        "NAME": "Explorer Form",
+        "NAME": "Forme de l'Explorateur",
         "DESCRIPTIONS": [
             "Whenever you apply #yBurn, deal #b%s damage to the target."
         ]
     },
     "mysteryDungeon:CrushClawPower": {
-        "NAME": "Crush Claw",
+        "NAME": "Éclate Griffe",
         "DESCRIPTIONS": [
             "Your next #yEruption will deal 50% more damage.",
             "Your next #b%s #yEruption will deal 50%% more damage."
@@ -132,7 +132,7 @@
         ]
     },
     "mysteryDungeon:FirePledgePower": {
-        "NAME": "Fire Pledge",
+        "NAME": "Aire de Feu",
         "DESCRIPTIONS": [
             "When you play another Pledge card this turn, activate one of the following effects. NL Grass: Apply 9 Poison to all enemies. NL Water: Apply 2 Vulnerable to ALL enemies."
         ]
@@ -204,20 +204,20 @@
         ]
     },
     "mysteryDungeon:InfernoPower": {
-        "NAME": "Inferno",
+        "NAME": "Feu d'Enfer",
         "DESCRIPTIONS": [
             "Your next #yEruption will not remove any #yBurn stacks.",
             "Your next #b%s #yEruption will not remove any #yBurn stacks."
         ]
     },
     "mysteryDungeon:LashOutPower": {
-        "NAME": "Lash Out",
+        "NAME": "Cent Racunes",
         "DESCRIPTIONS": [
             "Whenever you give an enemy Strength or Block, create #b%s Flurry in hand."
         ]
     },
     "mysteryDungeon:LavaPlumePower": {
-        "NAME": "Lava PLume",
+        "NAME": "Ébullilave",
         "DESCRIPTIONS": [
             "Whenever you cause an #yEruption, Apply #b%s #yBurn to the target."
         ]
@@ -241,7 +241,7 @@
         ]
     },
     "mysteryDungeon:LockDownPower": {
-        "NAME": "Lock-Down",
+        "NAME": "Confinement",
         "DESCRIPTIONS": [
             "At the end of the turn, do not return automatically to the center of the charge gauge."
         ]
@@ -267,7 +267,7 @@
         ]
     },
     "mysteryDungeon:NextTurnEruptionPower": {
-        "NAME": "Next Turn Eruption",
+        "NAME": "Prochain tour : Éruption",
         "DESCRIPTIONS": [
             "Next Turn, Cause an Eruption.",
             "Next Turn, Cause #b%s Eruptions."
@@ -309,7 +309,7 @@
         ]
     },
     "mysteryDungeon:OvergrowPower": {
-        "NAME": "Overgrow",
+        "NAME": "Engrais",
         "DESCRIPTIONS": [
             "Each time you your Recover counter reaches 0, gain #b%s Strength."
         ]
@@ -328,13 +328,13 @@
         ]
     },
     "mysteryDungeon:PikachuExplorerPower": {
-        "NAME": "Explorer Form",
+        "NAME": "Forme de l'Explorateur",
         "DESCRIPTIONS": [
             "At the start of your turn Channel #b%s lightning orb. If you have at least 1 orb, at the start of your turn evoke your next #b%s orb."
         ]
     },
     "mysteryDungeon:PsychUpPower": {
-        "NAME": "Psych Up",
+        "NAME": "Boost",
         "DESCRIPTIONS": [
             "Whenever you give an enemy Strength, gain #b%s Strength."
         ]
@@ -380,10 +380,10 @@
         ]
     },
     "mysteryDungeon:CyndaquilSleepTalkPower": {
-        "NAME": "Sleep Talk",
+        "NAME": "Blabla Dodo",
         "DESCRIPTIONS": [
             "When you create a Status Card, draw a card.",
-            "When you create a Status Card, draw #b%s card."
+            "When you create a Status Card, draw #b%s cards."
         ]
     },
     "mysteryDungeon:SolarPowerPower": {
@@ -407,10 +407,10 @@
         ]
     },
     "mysteryDungeon:SunnyDayPower": {
-        "NAME": "Sunny Day",
+        "NAME": "Zénith",
         "DESCRIPTIONS": [
-            "When dealing damage to yourself, everytime you lose a total of 3HP draw %s card.",
-            "When dealing damage to yourself, everytime you lose a total of 3HP draw %s cards."
+            "When dealing damage to yourself, everytime you lose a total of 3 HP draw %s card.",
+            "When dealing damage to yourself, everytime you lose a total of 3 HP draw %s cards."
         ]
     },
     "mysteryDungeon:SweetKissPower": {
@@ -420,7 +420,7 @@
         ]
     },
     "mysteryDungeon:TechnicianPower": {
-        "NAME": "Technician",
+        "NAME": "Technicien",
         "DESCRIPTIONS": [
             "Create #b%s #yFlurry in your hand at the start of your turn."
         ]
@@ -444,7 +444,7 @@
         ]
     },
     "mysteryDungeon:SheerForcePower": {
-        "NAME": "Sheer Force",
+        "NAME": "Sans Limite",
         "DESCRIPTIONS": [
             "Whenever you deal #b%s1 or more unblocked damage, Channel #b1 Frost.",
             "Whenever you deal #b%s1 or more unblocked damage, Channel #b%s2 Frost."
@@ -457,9 +457,9 @@
         ]
     },
     "mysteryDungeon:UnnervePower": {
-        "NAME": "Unnerve",
+        "NAME": "Tension",
         "DESCRIPTIONS": [
-            "For every 25 gold spent in combat, gain #b%s Plated Armor."
+            "Pour chaque 25 or dépensé en combat, gagnez #b%s Armure Plaquée."
         ]
     },
     "mysteryDungeon:WaterPledgePower": {
