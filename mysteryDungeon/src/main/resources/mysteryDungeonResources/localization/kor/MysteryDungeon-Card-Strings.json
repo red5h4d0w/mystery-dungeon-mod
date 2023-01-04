@@ -303,8 +303,8 @@
     },
     "mysteryDungeon:CharmanderHeatCrash": {
         "NAME": "Heat Crash",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL When this enemy dies, ALL enemies receive damage equal to its mysterydungeon:Burn stacks. Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL When this enemy dies, ALL enemies receive damage equal to its mysterydungeon:Burn stacks."
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL When this enemy dies, deal damage equal to its mysterydungeon:Burn stacks to ALL enemies. Exhaust.",
+        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL When this enemy dies, deal damage equal to its mysterydungeon:Burn stacks to ALL enemies."
     },
     "mysteryDungeon:CharmanderHeatWave": {
         "NAME": "Heat Wave",
