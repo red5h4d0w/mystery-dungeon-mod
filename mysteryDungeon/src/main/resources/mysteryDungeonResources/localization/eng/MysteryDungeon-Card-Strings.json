@@ -1246,6 +1246,11 @@
         "NAME": "Aqua Jet",
         "DESCRIPTION": "Deal !D! damage. Next turn gain !M! mysterydungeon:Vigor."
     },
+    "mysteryDungeon:TotodileAquaTail": {
+        "NAME": "Aqua Tail",
+        "DESCRIPTION": "Deal !D! damage. NL Discard the top !M! cards from your draw pile.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Scry !M!."
+    },
     "mysteryDungeon:TotodileBite": {
         "NAME": "Bite",
         "DESCRIPTION": "Deal !D! damage."
