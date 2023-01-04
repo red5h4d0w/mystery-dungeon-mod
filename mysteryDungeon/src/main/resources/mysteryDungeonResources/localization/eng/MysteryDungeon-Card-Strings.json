@@ -1390,6 +1390,10 @@
         "NAME": "Water Pledge",
         "DESCRIPTION": "Channel 1 Frost orb. NL Your next attack deals !M! additional damage. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
     },
+    "mysteryDungeon:TotodileWaterPulse": {
+        "NAME": "Water Pulse",
+        "DESCRIPTION": "Discard the top !M! cards of your draw pile. For each card discarded this way, deal !D! damage."
+    },
     "mysteryDungeon:TotodileWaterSport": {
         "NAME": "Water Sport",
         "DESCRIPTION": "Discard the top card of your draw pile. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor.",
