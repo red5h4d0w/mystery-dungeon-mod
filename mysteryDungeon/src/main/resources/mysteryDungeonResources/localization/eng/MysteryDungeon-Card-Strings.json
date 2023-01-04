@@ -1366,6 +1366,10 @@
             "I can't play this card."
         ]
     },
+    "mysteryDungeon:TotodileWaterfall": {
+        "NAME": "Waterfall",
+        "DESCRIPTION": "At the end of your turn shuffle your draw pile. NL At the start of your turn Scry !M!."
+    },
     "mysteryDungeon:TotodileWaterGun": {
         "NAME": "Water Gun",
         "DESCRIPTION": "Discard the !M! top cards of your draw pile. NL Deal !D! damage."

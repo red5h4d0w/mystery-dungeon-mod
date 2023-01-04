@@ -462,6 +462,12 @@
             "For every 25 gold spent in combat, gain #b%s Plated Armor."
         ]
     },
+    "mysteryDungeon:WaterfallPower": {
+        "NAME": "Waterfall",
+        "DESCRIPTIONS": [
+            "At the end of the turn shuffle your draw pile with your discard pile. At the start of your turn scry #b%s cards."
+        ]
+    },
     "mysteryDungeon:WaterPledgePower": {
         "NAME": "Water Pledge",
         "DESCRIPTIONS": [
