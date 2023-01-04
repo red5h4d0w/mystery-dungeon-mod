@@ -141,7 +141,7 @@
     },
     "mysteryDungeon:BulbasaurSolarBeam": {
         "NAME": "Lance-Soleil",
-        "DESCRIPTION": "Infligez !D! dégâts à TOUS les ennemis. NL Au prochain tour, piochez !M! cartes de moins."
+        "DESCRIPTION": "Infligez !D! dégâts à TOUS les ennemis. NL Au prochain tour, piochez !M! cartes en moins."
     },
     "mysteryDungeon:BulbasaurStrengthSap": {
         "NAME": "Vole-Force",
@@ -176,7 +176,7 @@
     },
     "mysteryDungeon:BulbasaurVenoshock": {
         "NAME": "Choc Venin",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Inflige !M! dégâts supplémentaires pour chaque Poison sur l'ennemi."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Inflige des dégâts supplémentaires égaux à !M! fois la quantité de Poison de l'ennemi."
     },
     "mysteryDungeon:BulbasaurVineWhip": {
         "NAME": "Fouet Lianes",
@@ -188,8 +188,8 @@
     },
     "mysteryDungeon:BulbasaurYawn": {
         "NAME": "Baîllement",
-        "DESCRIPTION": "Éthérée. NL Appliquez !M! de mysterydungeon:Endormi à TOUS les ennemis juste avant qu'ils agissent (après le Poison, etc.). NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "Appliquez !M! de mysterydungeon:Endormi à TOUS les ennemis juste avant qu'ils agissent (après le Poison, etc.). NL Épuisement."
+        "DESCRIPTION": "Éthérée. NL Appliquez !M! de mysterydungeon:Endormi juste avant que cet ennemi agisse (après le Poison, etc.). NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Appliquez !M! de mysterydungeon:Endormi juste avant que cet ennemi agisse (après le Poison, etc.). NL Épuisement."
     },
     "mysteryDungeon:CharmanderAirCutter": {
         "NAME": "Tranch’Air",
@@ -210,7 +210,7 @@
     },
     "mysteryDungeon:CharmanderCounter": {
         "NAME": "Riposte",
-        "DESCRIPTION": "Gagnez !B! d'Armure. NL Si vous perdez toute votre armure et prenez des dégâts d'attaque, infligez !M! dégâts à l'attaquant."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Si vous perdez toute votre Armure et prenez des dégâts d'attaque, infligez !M! dégâts à l'attaquant."
     },
     "mysteryDungeon:CharmanderDefend": {
         "NAME": "Défense",
@@ -218,8 +218,8 @@
     },
     "mysteryDungeon:CharmanderDragonBreath": {
         "NAME": "Draco-Souffle",
-        "DESCRIPTION": "Gagnez [E] pour chaque !M! cartes épuisées ce combat.",
-        "UPGRADE_DESCRIPTION": "Gagnez [E] pour chaque !M! cartes épuisées ce combat. NL Gagnez [E]."
+        "DESCRIPTION": "Gagnez [E] pour chaque !M! carte épuisée ce combat.",
+        "UPGRADE_DESCRIPTION": "Gagnez [E] pour chaque !M! carte épuisée ce combat. NL Gagnez [E]."
     },
     "mysteryDungeon:CharmanderDragonClaw": {
         "NAME": "Drago-Griffe",
@@ -234,8 +234,8 @@
         "NAME": "Draco-Choc",
         "DESCRIPTION": "Injouable. NL Lorsque piochée: NL Ajoutez une carte aléatoire parmi les cartes épuisées ce combat sur le dessus de votre pioche. NL Après l'activation de cet effet !M! fois: Épuisement.",
         "EXTENDED_DESCRIPTION": [
-            "Je ne peux pas joeur cette carte.",
-            "Lorsque piochée: Épuisement."
+            "Je ne peux pas jouer cette carte.",
+            "Lorsque piochée : Épuisement."
         ]
     },
     "mysteryDungeon:CharmanderDragonRage": {
@@ -244,12 +244,12 @@
     },
     "mysteryDungeon:CharmanderDragonRush": {
         "NAME": "Draco-Charge",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Choisissez une carte de your exhaust pile et add it dans votre défausse. Épuisez a random carte from your draw pile. Épuisement."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Choisissez une carte parmi les cartes épuisées ce combat et ajoutez-la à votre défausse. Épuisez une carte aléatoire de votre pioche. NL Épuisement."
     },
     "mysteryDungeon:CharmanderDragonTail": {
         "NAME": "Draco-Queue",
-        "DESCRIPTION": "Injouable. NL Lorsqu'épuisée: NL Infligez !D! dégats à TOUS les ennemis. NL Ajoutez une copie de cette carte sur le dessus de votre pioche.",
-        "UPGRADE_DESCRIPTION": "Injouable. NL Lorsqu'épuisée: NL Infligez !D! dégats à TOUS les ennemis. NL Piochez !M! carte. NL Ajoutez une copie de cette carte sur le dessus de votre pioche.",
+        "DESCRIPTION": "Injouable. NL Lorsque épuisée: NL Infligez !D! dégâts à TOUS les ennemis. NL Ajoutez une copie de cette carte au sommet de votre pioche.",
+        "UPGRADE_DESCRIPTION": "Injouable. NL Lorsque épuisée: NL Infligez !D! dégâts à TOUS les ennemis. NL Ajoutez une copie de cette carte au sommet de votre pioche. NL Au prochain tour, piochez une carte supplémentaire.",
         "EXTENDED_DESCRIPTION": [
             "Je ne peux pas jouer cette carte."
         ]
@@ -280,13 +280,13 @@
         "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez !M! mysterydungeon:Brûlure."
     },
     "mysteryDungeon:CharmanderFireSpin": {
-        "NAME": "Dans Flammes",
-        "DESCRIPTION": "Éthérée. Appliquez autant de Poison que de mysterydungeon:Brûlure sur l'ennemi. NL Retirez TOUTES ses mysterydungeon:Brûlure.",
-        "UPGRADE_DESCRIPTION": "Appliquez autant de Poison que de mysterydungeon:Brûlure sur l'ennemi. NL Retirez TOUTES ses mysterydungeon:Brûlure."
+        "NAME": "Danse Flammes",
+        "DESCRIPTION": "Éthérée. NL Appliquez autant de Poison que de mysterydungeon:Brûlure sur l'ennemi. NL Retirez TOUTE sa mysterydungeon:Brûlure.",
+        "UPGRADE_DESCRIPTION": "Appliquez autant de Poison que de mysterydungeon:Brûlure sur l'ennemi. NL Retirez TOUTE sa mysterydungeon:Brûlure."
     },
     "mysteryDungeon:CharmanderFlamethrower": {
         "NAME": "Lance-Flammes",
-        "DESCRIPTION": "Infligez !D! dégats à TOUS les ennemis. NL Appliquez !M! mysterydungeon:Brûlure à TOUS les ennemis."
+        "DESCRIPTION": "Infligez !D! dégâts à TOUS les ennemis. NL Appliquez !M! mysterydungeon:Brûlure à TOUS les ennemis."
     },
     "mysteryDungeon:CharmanderFlareBlitz": {
         "NAME": "Boutefeu",
@@ -755,133 +755,133 @@
     },
     "mysteryDungeon:MeowthFlash": {
         "NAME": "Flash",
-        "DESCRIPTION": "Spend 10 gold. NL Gain !M! plated armor. NL Exhaust"
+        "DESCRIPTION": "Dépensez 10 or. NL Gagnez !M! d'Armure plaquée NL Épuisement."
     },
     "mysteryDungeon:MeowthFlatter": {
-        "NAME": "Flatter",
-        "DESCRIPTION": "Give ALL enemies !M! Strength. NL Gain !B! block."
+        "NAME": "Flatterie",
+        "DESCRIPTION": "Appliquez !M! de Force à TOUS les ennemis. NL Gagnez !B! d'Armure."
     },
     "mysteryDungeon:MeowthFlurry": {
-        "NAME": "Flurry",
-        "DESCRIPTION": "Ethereal. NL Spend !M! gold. NL Deal !D! damage. NL Exhaust."
+        "NAME": "Rafale",
+        "DESCRIPTION": "Éthérée. NL Dépensez !M! or. NL Infligez !D! dégâts. NL Épuisement."
     },
     "mysteryDungeon:MeowthFoulPlay": {
-        "NAME": "Foul Play",
-        "DESCRIPTION": "Deal !D! damage. NL If the last card you played was an Attack, apply !M! Weak."
+        "NAME": "Tricherie",
+        "DESCRIPTION": "Infligez !D! dégâts. NL Si la dernière carte que vous avez jouée était une Attaque, appliquez !M! de Faiblesse."
     },
     "mysteryDungeon:MeowthFurySwipes": {
-        "NAME": "Fury Swipes",
-        "DESCRIPTION": "Deal !D! damage. NL If you have !M! gold, spend it and increase this card damage by !mysteryDungeon:M2!. NL Exhaust."
+        "NAME": "Combo-Griffe",
+        "DESCRIPTION": "Infligez !D! dégâts. NL Si vous avez !M! or, dépensez-le et augmentez de manière permanente les dégâts de cette carte de !mysteryDungeon:M2!. NL Épuisement."
     },
     "mysteryDungeon:MeowthHappyHour": {
-        "NAME": "Happy Hour",
-        "DESCRIPTION": "Gain !M! gold. NL Increase the amount by !mysteryDungeon:M2! permanently. NL Exhaust"
+        "NAME": "Étrennes",
+        "DESCRIPTION": "Gagnez !M! or. NL Augmentez de manière permanente cette quantité de !mysteryDungeon:M2!. NL Épuisement."
     },
     "mysteryDungeon:MeowthHoneClaws": {
-        "NAME": "Hone Claws",
+        "NAME": "Aiguisage",
         "DESCRIPTION": "Give an enemy !B! block. NL Gain !M! Strength"
     },
     "mysteryDungeon:MeowthHyperVoice": {
-        "NAME": "Hyper Voice",
-        "DESCRIPTION": "Ethereal. NL Spend !M! gold. NL Deal !D! damage. NL Increase gold cost by 4 and damage by 6 for the combat. NL Return the card to your hand.",
-        "UPGRADE_DESCRIPTION": "Spend !M! gold. NL Deal !D! damage. NL Increase gold cost by 4 and damage by 6 for the combat. NL Return the card to your hand."
+        "NAME": "Mégaphone",
+        "DESCRIPTION": "Éthérée. NL Dépensez !M! or. NL Infligez !D! dégâts. NL Augmentez le coût en or de cette carte de 4 et ces dégâts de 6 pour ce combat. NL Ajoutez cette carte à votre main.",
+        "UPGRADE_DESCRIPTION": "Dépensez !M! or. NL Infligez !D! dégâts. NL Augmentez le coût en or de cette carte de 4 et ces dégâts de 6 pour ce combat. NL Ajoutez cette carte à votre main."
     },
     "mysteryDungeon:MeowthLastResort": {
-        "NAME": "Last Resort",
-        "DESCRIPTION": "Spend !M! gold. Discard your hand. NL Draw 10 cards. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Spend !M! gold. Discard your hand. NL Draw 10 cards. NL Exhaust."
+        "NAME": "Dernier Recours",
+        "DESCRIPTION": "Dépensez !M! or. Défaussez votre main. NL Piochez 10 cartes. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Retenue. NL Dépensez !M! or. Défaussez votre main. NL Piochez 10 cartes. NL Épuisement."
     },
     "mysteryDungeon:MeowthLashOut": {
-        "NAME": "Lash Out",
-        "DESCRIPTION": "Whenever you give Strength or block to an enemy create !M! Flurry in hand.",
-        "UPGRADE_DESCRIPTION": "Whenever you give Strength or block to an enemy create !M! Flurry + in hand."
+        "NAME": "Cent Racunes",
+        "DESCRIPTION": "Lorsque vous appliquez de la Force ou de l'Armure à un ennemi, créez !M! *Rafale dans votre main.",
+        "UPGRADE_DESCRIPTION": "Lorsque vous appliquez de la Force ou de l'Armure à un ennemi, créez !M! *Rafale améliorée dans votre main."
     },
     "mysteryDungeon:MeowthNastyPlot": {
-        "NAME": "Nasty Plot",
-        "DESCRIPTION": "Spend !M! gold. NL Draw !mysteryDungeon:M2! cards."
+        "NAME": "Machination",
+        "DESCRIPTION": "Dépensez !M! or. NL Piochez !mysteryDungeon:M2! cartes."
     },
     "mysteryDungeon:MeowthNightSlash": {
-        "NAME": "Night Slash",
-        "DESCRIPTION": "Spend 10 gold. NL Deal !D! damage to ALL enemies. NL Bring ALL 0 cost cards in your discard pile into your hand. NL Exhaust."
+        "NAME": "Tranche-Nuit",
+        "DESCRIPTION": "Dépensez 10 or. NL Infligez !D! dégâts à TOUS les ennemis. NL Ajoutez toutes les cartes de coût 0 de votre défausse à votre main. NL Épuisement."
     },
     "mysteryDungeon:MeowthPayday": {
-        "NAME": "Payday",
-        "DESCRIPTION": "Deal !D! damage. NL Deal additionnal damage equal to money spent this combat.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL Deal additionnal damage equal to money spent this combat."
+        "NAME": "Jackpot",
+        "DESCRIPTION": "Infligez !D! dégâts. NL Infligez des dégâts additionnels équivalent à la quantité d'or dépensée ce combat.",
+        "UPGRADE_DESCRIPTION": "Retenue. NL Infligez !D! dégâts. NL Infligez des dégâts additionnels équivalent à la quantité d'or dépensée ce combat."
     },
     "mysteryDungeon:MeowthPowerGem": {
-        "NAME": "Power Gem",
-        "DESCRIPTION": "Deal !D! damage. NL The next card with a gold cost this turn is free.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL The next !M! cards with a gold cost this turn are free."
+        "NAME": "Rayon Gemme",
+        "DESCRIPTION": "Infligez !D! dégâts. NL Ce tour, la prochaine carte avec un coût en or est gratuite.",
+        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Ce tour, les !M! prochaines cartes avec un coût en or sont gratuites."
     },
     "mysteryDungeon:MeowthPsychUp": {
-        "NAME": "Psych Up",
-        "DESCRIPTION": "When you give an enemy Strength, gain !M! Strength.",
-        "UPGRADE_DESCRIPTION": "When you give an enemy Strength, gain !M! Strength."
+        "NAME": "Boost",
+        "DESCRIPTION": "Lorsque vous appliquez de la Force à un ennemi, gagnez !M! de Force.",
+        "UPGRADE_DESCRIPTION": "Lorsque vous appliquez de la Force à un ennemi, gagnez !M! de Force."
     },
     "mysteryDungeon:MeowthPunishment": {
-        "NAME": "Punishment",
+        "NAME": "Punition",
         "DESCRIPTION": "Deal !D! damage. NL Deal Addditionnal damage equal to !M! times the enemy's Strength."
     },
     "mysteryDungeon:MeowthRoar": {
-        "NAME": "Roar",
-        "DESCRIPTION": "Give an enemy !M! Strength. NL Apply 99 Weak to an enemy. NL Exhaust."
+        "NAME": "Hurlement",
+        "DESCRIPTION": "Appliquez !M! de Force. NL Appliquez 99 de Faiblesse. NL Épuisement."
     },
     "mysteryDungeon:MeowthSnatch": {
-        "NAME": "Snatch",
-        "DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract in your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract+ in your hand. NL Exhaust."
+        "NAME": "Saisie",
+        "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !M! or. NL Créez une *Attraction dans votre main. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !M! or. NL Créez une *Attraction améliorée dans votre main. NL Épuisement."
     },
     "mysteryDungeon:MeowthScratch": {
-        "NAME": "Scratch",
-        "DESCRIPTION": "Deal !D! damage."
+        "NAME": "Griffe",
+        "DESCRIPTION": "Infligez !D! dégâts."
     },
     "mysteryDungeon:MeowthScreech": {
-        "NAME": "Screech",
+        "NAME": "Grincement",
         "DESCRIPTION": "Give an enemy !M! vulnerable and !B! block."
     },
     "mysteryDungeon:MeowthSnarl": {
-        "NAME": "Snarl",
-        "DESCRIPTION": "Give an enemy 8 Block. NL Gain !B! Block."
+        "NAME": "Aboiement",
+        "DESCRIPTION": "Appliquez 8 d'Armure. NL Gagnez !B! d'Armure."
     },
     "mysteryDungeon:MeowthSpite": {
-        "NAME": "Spite",
-        "DESCRIPTION": "Spend !M! X gold. NL Gain 2X Strength. NL Exhaust."
+        "NAME": "Dépit",
+        "DESCRIPTION": "Dépensez !M! X or. NL Gagnez 2X de Force. NL Épuisement."
     },
     "mysteryDungeon:MeowthSwagger": {
-        "NAME": "Swagger",
-        "DESCRIPTION": "Give an enemy !M! Strength. NL Stun that enemy."
+        "NAME": "Vantardise",
+        "DESCRIPTION": "Appliquez !M! de Force. NL Appliquez Étourdissement."
     },
     "mysteryDungeon:MeowthSwitcheroo": {
-        "NAME": "Switcheroo",
-        "DESCRIPTION": "Exchange your Strength with the target's Strength. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Lose !M! Strength. NL Exchange your Strength with the target's Strength. NL Exhaust."
+        "NAME": "Passe-Passe",
+        "DESCRIPTION": "Échangez votre Force avec celle de l'ennemi. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Perdez !M! de Force. NL Échangez votre Force avec celle de l'ennemi. NL Épuisement."
     },
     "mysteryDungeon:MeowthTaunt": {
-        "NAME": "Taunt",
-        "DESCRIPTION": "Gain !M! gold. NL End your turn."
+        "NAME": "Provoc",
+        "DESCRIPTION": "Gagnez !M! or. NL Terminez votre tour."
     },
     "mysteryDungeon:MeowthTechnician": {
-        "NAME": "Technician",
-        "DESCRIPTION": "Innate. NL At the start of your turn creat a Flurry in your hand.",
-        "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn creat a Flurry+ in your hand."
+        "NAME": "Technicien",
+        "DESCRIPTION": "Inné. NL Au début de votre tour, créez une *Rafale dans votre main.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Au début de votre tour, créez une *Rafale améliorée dans votre main."
     },
     "mysteryDungeon:MeowthThief": {
-        "NAME": "Thief",
-        "DESCRIPTION": "Deal !D! damage to !M! random enemies and obtain 5 gold !M! times. NL Exhaust."
+        "NAME": "Larcin",
+        "DESCRIPTION": "Infligez !D! dégâts à !M! ennemis aléatoires. NL Gagnez 5 or !M! fois. NL Épuisement."
     },
     "mysteryDungeon:MeowthThroatChop": {
-        "NAME": "Throat Chop",
+        "NAME": "Exécu-Son",
         "DESCRIPTION": "Deal !D! damage. NL Gain !B! block. NL Gain !M! gold."
     },
     "mysteryDungeon:MeowthUnnerve": {
-        "NAME": "Unnerve",
-        "DESCRIPTION": "Each time you spend a total of 25 gold in combat, gain !M! plated armor."
+        "NAME": "Tension",
+        "DESCRIPTION": "Ce combat, chaque fois que vous dépensez un total de 25 or, gagnez !M! Armure Plaquée."
     },
     "mysteryDungeon:MeowthUTurn": {
-        "NAME": "U-Turn",
-        "DESCRIPTION": "Spend !M! gold. NL Create a card from your partner's deck in hand. NL It cost 0 this turn. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Spend !M! gold. NL Create a card from your partner's deck in hand. NL It cost 0 this combat. NL Exhaust."
+        "NAME": "Demi-Tour",
+        "DESCRIPTION": "Dépensez !M! or. NL Créez une carte du deck de votre partenaire et ajoutez-la à votre main. NL Elle coûte 0 ce tour. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Dépensez !M! or. NL Créez une carte du deck de votre partenaire et ajoutez-la à votre main. NL Elle coûte 0 ce combat. NL Épuisement."
     },
     "mysteryDungeon:PikachuAgility": {
         "NAME": "Hâte",
@@ -1068,9 +1068,9 @@
         "DESCRIPTION": "Gagnez !B! d'Armure. NL Jusqu'au prochain tour, quand vous êtes attaqué, gagnez !M! de Force Temporaire."
     },
     "mysteryDungeon:SquirtleBodyPress": {
-        "NAME": "Body Press",
+        "NAME": "Big Splash",
         "DESCRIPTION": "Infligez !D! dégâts. NL Si l'ennemi succombe, gagnez !B! d'Armure et !M! de Dextérité. Épuisement.",
-        "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add !M! upgraded *Flinch into your hand. They cost 0 this turn."
+        "UPGRADE_DESCRIPTION": "Gagnez !B! d'Armure. NL Ajoutez !M! *Peur améliorées à votre main. Elles coûtent 0 ce tour."
     },
     "mysteryDungeon:SquirtleBrine": {
         "NAME": "Saumure",
@@ -1203,7 +1203,7 @@
         "UPGRADE_DESCRIPTION": "Ajoutez un *Coud'Krâne: *Partez! à votre défausse. NL Épuisement."
     },
     "mysteryDungeon:SquirtleSubstitute": {
-        "NAME": "Substitute",
+        "NAME": "Clonage",
         "DESCRIPTION": "Choisissez une carte de votre pioche. NL Ajoutez-la à votre main et placez une *Plaie là où était la carte choisie. NL Épuisement.",
         "UPGRADE_DESCRIPTION": "Choisissez une carte de votre pioche. NL Ajoutez une copie de cette carte à votre main et ajoutez une *Plaie à l'endroit de la carte. NL Épuisement."
     },
@@ -1243,125 +1243,125 @@
         "UPGRADE_DESCRIPTION": "Infligez !D! dégâts NL Créez une *Peur améliorée et ajoutez-la à votre main."
     },
     "mysteryDungeon:TotodileAquaJet": {
-        "NAME": "Aqua Jet",
-        "DESCRIPTION": "Deal !D! damage. Next turn gain !M! mysterydungeon:Vigor."
+        "NAME": "Aqua-Jet",
+        "DESCRIPTION": "Infligez !D! dégâts. Au prochain tour, gagnez !M! mysterydungeon:Vigueur."
     },
     "mysteryDungeon:TotodileBite": {
-        "NAME": "Bite",
-        "DESCRIPTION": "Deal !D! damage."
+        "NAME": "Morsure",
+        "DESCRIPTION": "Infligez !D! dégâts."
     },
     "mysteryDungeon:TotodileBlizzard": {
         "NAME": "Blizzard",
-        "DESCRIPTION": "Deal !M! times the number of orbs channneled this combat.",
+        "DESCRIPTION": "Infligez autant de dégâts que !M! fois le nombre d'Orbes canalisés ce combat.",
         "EXTENDED_DESCRIPTION": [
-            "Deal !M! times the number of orbs channneled this combat. NL (Currently deals !D! damage)"
+            "Infligez autant de dégâts que !M! fois le nombre d'Orbes canalisés ce combat. NL (Inflige présentement !D! dégâts.)"
         ]
     },
     "mysteryDungeon:TotodileBlock": {
-        "NAME": "Block",
-        "DESCRIPTION": "Gain !B! Block. NL Channel !M! Frost."
+        "NAME": "Barrage",
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Canalisez !M! Orbe Glaciaire."
     },
     "mysteryDungeon:TotodileChipAway": {
-        "NAME": "Chip Away",
-        "DESCRIPTION": "Deal !D! damage. NL Gain as much mysterydungeon:Vigor as you had before.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! more mysterydungeon:Vigor than you had before."
+        "NAME": "Attrition",
+        "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez autant de mysterydungeon:Vigueur que vous en aviez avant de jouer cette carte.",
+        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Gagnez 4 mysterydungeon:Vigueur de plus que vous en aviez avant de jouer cette carte."
     },
     "mysteryDungeon:TotodileConfide": {
-        "NAME": "Confide",
-        "DESCRIPTION": "Apply !M! Vulnerable. NL Your next attack deals !mysteryDungeon:M2! additional damage. NL Exhaust."
+        "NAME": "Confidence",
+        "DESCRIPTION": "Appliquez !M! de Vulnérabilité. NL Votre prochaine attaque infligera !mysteryDungeon:M2! dégâts additionnels. NL Épuisement."
     },
     "mysteryDungeon:TotodileCrunch": {
-        "NAME": "Crunch",
-        "DESCRIPTION": "Deal !D! damage. NL Choose a card from your discard pile and add it to the top of your draw pile."
+        "NAME": "Mâchouille",
+        "DESCRIPTION": "Infligez !D! dégâts. NL Choisissez une carte dans votre pile de défausse et ajoutez-la au-dessus de votre pioche."
     },
     "mysteryDungeon:TotodileDefend": {
-        "NAME": "Defend",
-        "DESCRIPTION": "Gain !B! Block."
+        "NAME": "Défense",
+        "DESCRIPTION": "Gagnez !B! d'Armure."
     },
     "mysteryDungeon:TotodileDive": {
-        "NAME": "Dive",
-        "DESCRIPTION": "Retain. NL Discard !M! cards form your hand.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Discard !M! cards form your hand. NL Draw 1 card."
+        "NAME": "Plongée",
+        "DESCRIPTION": "Retenue. NL Défaussez !M! cartes de votre main.",
+        "UPGRADE_DESCRIPTION": "Retenue. NL Défaussez !M! cartes de votre main. NL Piochez 1 carte."
     },
     "mysteryDungeon:TotodileEndure": {
-        "NAME": "Endure",
-        "DESCRIPTION": "If you take damage, channel !M! frost orb.",
-        "UPGRADE_DESCRIPTION": "Innate. NL If you take damage, channel !M! frost orb."
+        "NAME": "Ténacité",
+        "DESCRIPTION": "Si vous subissez des dégâts, canalisez !M ! Orbe Glaciaire.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Si vous subbissez des dégâts, canalisez !M! Orbe Glaciaire."
     },
     "mysteryDungeon:TotodileExplorerForm": {
-        "NAME": "Explorer Form",
-        "DESCRIPTION": "Ethereal. NL At the start of your turn, add !M! card from your discard pile to your hand. NL Draw one less card per turn.",
-        "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! card from your discard pile to your hand. NL Draw one less card per turn."
+        "NAME": "Forme de l'Explorateur",
+        "DESCRIPTION": "Éthérée. NL Au début de votre tour, ajoutez !M! carte de votre défausse à votre main. NL Piochez une carte de moins par tour.",
+        "UPGRADE_DESCRIPTION": "Au début de votre tour, ajoutez !M! carte de votre défausse à votre main. NL Piochez une carte de moins par tour."
     },
     "mysteryDungeon:TotodileHail": {
-        "NAME": "Hail",
-        "DESCRIPTION": "Unplayable. NL When discarded: Channel !M! Frost.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up NL When discarded: Channel !M! Frost.",
+        "NAME": "Grêle",
+        "DESCRIPTION": "Injouable. NL Lorsque défaussée : Canalisez !M! Orbe Glaciaire.",
+        "UPGRADE_DESCRIPTION": "Injouable. NL mysterydungeon:Scoop-up. NL Lorsque défaussée : Canalisez !M! Orbe Glaciaire.",
         "EXTENDED_DESCRIPTION": [
-            "I can't play this card."
+            "Je ne peux pas jouer cette carte."
         ]
     },
     "mysteryDungeon:TotodileHydroPump": {
-        "NAME": "Hydro Pump",
-        "DESCRIPTION": "Can only be used if there are no cards left in your draw pile. NL Deal !D! damage.",
-        "UPGRADE_DESCRIPTION": "Can only be used if there are !M! cards or less in your draw pile. NL Deal !D! damage."
+        "NAME": "Hydrocanon",
+        "DESCRIPTION": "Ne peut être utilisée que si vous n'avez plus de cartes dans votre pioche. NL Inflige !D! dégâts.",
+        "UPGRADE_DESCRIPTION": "Ne peut être utilisée que si vous n'avez que !M! cartes ou moins dans votre pioche. NL Inflige !D! dégâts."
     },
     "mysteryDungeon:TotodileIceFang": {
-        "NAME": "Ice Fang",
+        "NAME": "Crocs Givre",
         "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost orb.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Deal !D! damage. NL Channel !M! Frost."
+        "UPGRADE_DESCRIPTION": "Inné. NL Infligez !D! dégâts. NL Canalisez !M! Orbe Glaciaire."
     },
     "mysteryDungeon:TotodileIcePunch": {
-        "NAME": "Ice Punch",
-        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost. NL Evoke !M! Orb."
+        "NAME": "Poing Glace",
+        "DESCRIPTION": "Infligez !D! dégâts. NL Canalisez !M! Orbe Glaciaire. NL Activez !M! Orbe."
     },
     "mysteryDungeon:TotodileIcyWind": {
-        "NAME": "Icy Wind",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Channel !M! Frost. NL Exhaust."
+        "NAME": "Vent Glace",
+        "DESCRIPTION": "mysterydungeon:Inerte. NL Canalisez !M! Orbe Glaciaire. NL Épuisement."
     },
     "mysteryDungeon:TotodileScratch": {
-        "NAME": "Scratch",
-        "DESCRIPTION": "Deal !D! damage."
+        "NAME": "Griffe",
+        "DESCRIPTION": "Infligez !D! dégâts."
     },
     "mysteryDungeon:TotodileSheerForce": {
-        "NAME": "Sheer Force",
-        "DESCRIPTION": "Whenever you deal !M! or more unblocked damage, channel 1 Frost."
+        "NAME": "Sans Limite",
+        "DESCRIPTION": "Lorsque vous infligez !M! ou plus dégâts non-bloqués, canalisez 1 Orbe Glaciaire."
     },
     "mysteryDungeon:TotodileRainDance": {
-        "NAME": "Rain Dance",
-        "DESCRIPTION": "Unplayable. NL When discarded: Your next attack deals !M! additional damage.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up NL When discarded: Your next attack deals !M! additional damage.",
+        "NAME": "Danse Pluie",
+        "DESCRIPTION": "Injouable. NL Lorsque défaussée : Votre prochaine Attaque inflige !M! dégâts supplémentaires.",
+        "UPGRADE_DESCRIPTION": "Injouable. NL mysterydungeon:Scoop-up NL Lorsque défaussée: Votre prochaine Attaque inflige !M! dégâts supplémentaires.",
         "EXTENDED_DESCRIPTION": [
-            "I can't play this card."
+            "Je ne peux pas jouer cette carte."
         ]
     },
     "mysteryDungeon:TotodileTorrent": {
         "NAME": "Torrent",
-        "DESCRIPTION": "Unplayable. NL When discarded: Gain !M! Focus.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up NL When discarded: Gain !M! Focus.",
+        "DESCRIPTION": "Injouable. NL Lorsque défaussée : Gagnez !M! de Concentration.",
+        "UPGRADE_DESCRIPTION": "Injouable. NL mysterydungeon:Rappel. NL Lorsque défaussée : Gagnez !M! de Concentration.",
         "EXTENDED_DESCRIPTION": [
-            "I can't play this card."
+            "Je ne peux pas jouer cette carte."
         ]
     },
     "mysteryDungeon:TotodileWaterGun": {
-        "NAME": "Water Gun",
-        "DESCRIPTION": "Discard the !M! top card of your draw pile. NL Deal !D! damage."
+        "NAME": "Pistolet à O",
+        "DESCRIPTION": "Défaussez les !M! cartes au sommet de votre pioche. NL Infligez !D! dégâts."
     },
     "mysteryDungeon:TotodileWaterPledge": {
-        "NAME": "Water Pledge",
+        "NAME": "Aire d'Eau",
         "DESCRIPTION": "Channel !M! Frost orb. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
     },
     "mysteryDungeon:TotodileWaterSport": {
-        "NAME": "Water Sport",
-        "DESCRIPTION": "Discard the top card of your draw pile. NL Your next attack deals !mysteryDungeon:M2! additional damage.",
-        "UPGRADE_DESCRIPTION": "Discard the 2 top card of your draw pile. NL Your next attack deals !mysteryDungeon:M2! additional damage."
+        "NAME": "Tourniquet",
+        "DESCRIPTION": "Défaussez la carte au sommet de votre pioche. NL Gagnez !mysteryDungeon:M2! de mysterydungeon:Vigueur.",
+        "UPGRADE_DESCRIPTION": "Défaussez les 2 premières cartes au sommet de votre pioche. NL Gagnez !mysteryDungeon:M2! de mysterydungeon:Vigueur."
     },
     "mysteryDungeon:TotodileWhirlpool": {
-        "NAME": "Whirlpool",
-        "DESCRIPTION": "Discard the !M! top card of your draw pile. NL Gain !mysteryDungeon:M2! Focus."
+        "NAME": "Tourbillon",
+        "DESCRIPTION": "Défaussez les !M! premières cartes au sommet de votre pioche. NL Gagnez !mysteryDungeon:M2! de Concentration."
     },
     "mysteryDungeon:TotodileWorkUp": {
-        "NAME": "Work Up",
-        "DESCRIPTION": "If you do not have any empty Orb slots, Gain !M! Orb slots."
+        "NAME": "Rengorgement",
+        "DESCRIPTION": "Si vous n'avez pas d'Emplacement d'Orbe vide, Gain !M! Emplacements d'Orbes."
     }
 }
