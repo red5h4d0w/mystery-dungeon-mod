@@ -176,7 +176,7 @@
     },
     "mysteryDungeon:BulbasaurVenoshock": {
         "NAME": "Venoshock",
-        "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each stack of Poison of the ennemy."
+        "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each stack of Poison of the enemy."
     },
     "mysteryDungeon:BulbasaurVineWhip": {
         "NAME": "Vine Whip",
@@ -188,8 +188,8 @@
     },
     "mysteryDungeon:BulbasaurYawn": {
         "NAME": "Yawn",
-        "DESCRIPTION": "Ethereal. NL Apply !M! mysterydungeon:Asleep right before they act (after Poison, etc.). NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Asleep right before they act (after Poison, etc.). NL Exhaust."
+        "DESCRIPTION": "Ethereal. NL Apply !M! mysterydungeon:Asleep right before this enemy acts (after Poison, etc.). NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Asleep right before this enemy acts (after Poison, etc.). NL Exhaust."
     },
     "mysteryDungeon:CharmanderAirCutter": {
         "NAME": "Air Cutter",
@@ -244,7 +244,7 @@
     },
     "mysteryDungeon:CharmanderDragonRush": {
         "NAME": "Dragon Rush",
-        "DESCRIPTION": "Deal !D! damage. NL Choose a card from your exhaust pile and add it to your discard pile. Exhaust a random card from your draw pile. Exhaust."
+        "DESCRIPTION": "Deal !D! damage. NL Choose a card from your exhaust pile and add it to your discard pile. Exhaust a random card from your draw pile. NL Exhaust."
     },
     "mysteryDungeon:CharmanderDragonTail": {
         "NAME": "Dragon Tail",
@@ -281,8 +281,8 @@
     },
     "mysteryDungeon:CharmanderFireSpin": {
         "NAME": "Fire Spin",
-        "DESCRIPTION": "Ethereal. NL Apply Poison equal to its mysterydungeon:Burn. NL Remove all its mysterydungeon:Burn.",
-        "UPGRADE_DESCRIPTION": "Apply Poison equal to its mysterydungeon:Burn. NL Remove all its mysterydungeon:Burn."
+        "DESCRIPTION": "Ethereal. NL Apply Poison equal to its mysterydungeon:Burn. NL Remove ALL its mysterydungeon:Burn.",
+        "UPGRADE_DESCRIPTION": "Apply Poison equal to its mysterydungeon:Burn. NL Remove ALL its mysterydungeon:Burn."
     },
     "mysteryDungeon:CharmanderFlamethrower": {
         "NAME": "Flamethrower",
@@ -755,11 +755,11 @@
     },
     "mysteryDungeon:MeowthFlash": {
         "NAME": "Flash",
-        "DESCRIPTION": "Spend 10 gold. NL Gain !M! plated armor. NL Exhaust"
+        "DESCRIPTION": "Spend 10 gold. NL Gain !M! plated armor. NL Exhaust."
     },
     "mysteryDungeon:MeowthFlatter": {
         "NAME": "Flatter",
-        "DESCRIPTION": "Give ALL enemies !M! Strength. NL Gain !B! block."
+        "DESCRIPTION": "Apply !M! Strength to ALL enemies. NL Gain !B! Block."
     },
     "mysteryDungeon:MeowthFlurry": {
         "NAME": "Flurry",
@@ -771,11 +771,11 @@
     },
     "mysteryDungeon:MeowthFurySwipes": {
         "NAME": "Fury Swipes",
-        "DESCRIPTION": "Deal !D! damage. NL If you have !M! gold, spend it and increase this card damage by !mysteryDungeon:M2!. NL Exhaust."
+        "DESCRIPTION": "Deal !D! damage. NL If you have !M! gold, spend it and increase permanently this card's damage by !mysteryDungeon:M2!. NL Exhaust."
     },
     "mysteryDungeon:MeowthHappyHour": {
         "NAME": "Happy Hour",
-        "DESCRIPTION": "Gain !M! gold. NL Increase the amount by !mysteryDungeon:M2! permanently. NL Exhaust"
+        "DESCRIPTION": "Gain !M! gold. NL Increase the amount by !mysteryDungeon:M2! permanently. NL Exhaust."
     },
     "mysteryDungeon:MeowthHoneClaws": {
         "NAME": "Hone Claws",
@@ -793,8 +793,8 @@
     },
     "mysteryDungeon:MeowthLashOut": {
         "NAME": "Lash Out",
-        "DESCRIPTION": "Whenever you give Strength or block to an enemy create !M! Flurry in hand.",
-        "UPGRADE_DESCRIPTION": "Whenever you give Strength or block to an enemy create !M! Flurry + in hand."
+        "DESCRIPTION": "Whenever you apply Strength or Block to an enemy create !M! *Flurry in your hand.",
+        "UPGRADE_DESCRIPTION": "Whenever you apply Strength or Block to an enemy create !M! upgraded *Flurry in your hand."
     },
     "mysteryDungeon:MeowthNastyPlot": {
         "NAME": "Nasty Plot",
@@ -802,10 +802,10 @@
     },
     "mysteryDungeon:MeowthNightSlash": {
         "NAME": "Night Slash",
-        "DESCRIPTION": "Spend 10 gold. NL Deal !D! damage to ALL enemies. NL Bring ALL 0 cost cards in your discard pile into your hand. NL Exhaust."
+        "DESCRIPTION": "Spend 10 gold. NL Deal !D! damage to ALL enemies. NL Add ALL 0 cost cards in your discard pile into your hand. NL Exhaust."
     },
     "mysteryDungeon:MeowthPayday": {
-        "NAME": "Payday",
+        "NAME": "Pay Day",
         "DESCRIPTION": "Deal !D! damage. NL Deal additionnal damage equal to money spent this combat.",
         "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL Deal additionnal damage equal to money spent this combat."
     },
@@ -816,8 +816,8 @@
     },
     "mysteryDungeon:MeowthPsychUp": {
         "NAME": "Psych Up",
-        "DESCRIPTION": "When you give an enemy Strength, gain !M! Strength.",
-        "UPGRADE_DESCRIPTION": "When you give an enemy Strength, gain !M! Strength."
+        "DESCRIPTION": "When you apply Strength to an enemy, gain !M! Strength.",
+        "UPGRADE_DESCRIPTION": "When you apply Strength to an enemy, gain !M! Strength."
     },
     "mysteryDungeon:MeowthPunishment": {
         "NAME": "Punishment",
@@ -825,7 +825,7 @@
     },
     "mysteryDungeon:MeowthRoar": {
         "NAME": "Roar",
-        "DESCRIPTION": "Give an enemy !M! Strength. NL Apply 99 Weak to an enemy. NL Exhaust."
+        "DESCRIPTION": "Apply !M! Strength. NL Apply 99 Weak. NL Exhaust."
     },
     "mysteryDungeon:MeowthSnatch": {
         "NAME": "Snatch",
@@ -842,7 +842,7 @@
     },
     "mysteryDungeon:MeowthSnarl": {
         "NAME": "Snarl",
-        "DESCRIPTION": "Give an enemy 8 Block. NL Gain !B! Block."
+        "DESCRIPTION": "Apply 8 Block. NL Gain !B! Block."
     },
     "mysteryDungeon:MeowthSpite": {
         "NAME": "Spite",
@@ -850,7 +850,7 @@
     },
     "mysteryDungeon:MeowthSwagger": {
         "NAME": "Swagger",
-        "DESCRIPTION": "Give an enemy !M! Strength. NL Stun that enemy."
+        "DESCRIPTION": "Apply !M! Strength. NL Apply Stun."
     },
     "mysteryDungeon:MeowthSwitcheroo": {
         "NAME": "Switcheroo",
@@ -863,12 +863,12 @@
     },
     "mysteryDungeon:MeowthTechnician": {
         "NAME": "Technician",
-        "DESCRIPTION": "Innate. NL At the start of your turn creat a Flurry in your hand.",
-        "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn creat a Flurry+ in your hand."
+        "DESCRIPTION": "Innate. NL At the start of your turn create a *Flurry in your hand.",
+        "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn create an upgraded *Flurry in your hand."
     },
     "mysteryDungeon:MeowthThief": {
         "NAME": "Thief",
-        "DESCRIPTION": "Deal !D! damage to !M! random enemies and obtain 5 gold !M! times. NL Exhaust."
+        "DESCRIPTION": "Deal !D! damage to !M! random enemies. NL Gain 5 gold !M! times. NL Exhaust."
     },
     "mysteryDungeon:MeowthThroatChop": {
         "NAME": "Throat Chop",
@@ -876,7 +876,7 @@
     },
     "mysteryDungeon:MeowthUnnerve": {
         "NAME": "Unnerve",
-        "DESCRIPTION": "Each time you spend a total of 25 gold in combat, gain !M! plated armor."
+        "DESCRIPTION": "Each time you spend a total of 25 gold this combat, gain !M! Plated Armor."
     },
     "mysteryDungeon:MeowthUTurn": {
         "NAME": "U-Turn",
@@ -1252,9 +1252,9 @@
     },
     "mysteryDungeon:TotodileBlizzard": {
         "NAME": "Blizzard",
-        "DESCRIPTION": "Deal !M! times the number of orbs channneled this combat.",
+        "DESCRIPTION": "Deal damage equal to !M! times the number of orbs channeled this combat.",
         "EXTENDED_DESCRIPTION": [
-            "Deal !M! times the number of orbs channneled this combat. NL (Currently deals !D! damage)"
+            "Deal damage equal to !M! times the number of orbs channneled this combat. NL (Currently deals !D! damage.)"
         ]
     },
     "mysteryDungeon:TotodileBlock": {
@@ -1263,8 +1263,8 @@
     },
     "mysteryDungeon:TotodileChipAway": {
         "NAME": "Chip Away",
-        "DESCRIPTION": "Deal !D! damage. NL Gain as much mysterydungeon:Vigor as you had before.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! more mysterydungeon:Vigor than you had before."
+        "DESCRIPTION": "Deal !D! damage. NL Gain as much mysterydungeon:Vigor as you had before playing this card.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! more mysterydungeon:Vigor than you had before playing this card."
     },
     "mysteryDungeon:TotodileConfide": {
         "NAME": "Confide",
@@ -1280,13 +1280,13 @@
     },
     "mysteryDungeon:TotodileDive": {
         "NAME": "Dive",
-        "DESCRIPTION": "Retain. NL Discard !M! cards form your hand.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Discard !M! cards form your hand. NL Draw 1 card."
+        "DESCRIPTION": "Retain. NL Discard !M! cards from your hand.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Discard !M! cards from your hand. NL Draw 1 card."
     },
     "mysteryDungeon:TotodileEndure": {
         "NAME": "Endure",
-        "DESCRIPTION": "If you take damage, channel !M! frost orb.",
-        "UPGRADE_DESCRIPTION": "Innate. NL If you take damage, channel !M! frost orb."
+        "DESCRIPTION": "If you take damage, channel !M! Frost.",
+        "UPGRADE_DESCRIPTION": "Innate. NL If you take damage, channel !M! Frost."
     },
     "mysteryDungeon:TotodileExplorerForm": {
         "NAME": "Explorer Form",
@@ -1296,7 +1296,7 @@
     "mysteryDungeon:TotodileHail": {
         "NAME": "Hail",
         "DESCRIPTION": "Unplayable. NL When discarded: Channel !M! Frost.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up NL When discarded: Channel !M! Frost.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up. NL When discarded: Channel !M! Frost.",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
         ]
@@ -1329,8 +1329,8 @@
     },
     "mysteryDungeon:TotodileRainDance": {
         "NAME": "Rain Dance",
-        "DESCRIPTION": "Unplayable. NL When discarded: Your next attack deals !M! additional damage.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up NL When discarded: Your next attack deals !M! additional damage.",
+        "DESCRIPTION": "Unplayable. NL When discarded: Your next Attack deals !M! additional damage.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up NL When discarded: Your next Attack deals !M! additional damage.",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
         ]
@@ -1345,7 +1345,7 @@
     },
     "mysteryDungeon:TotodileWaterGun": {
         "NAME": "Water Gun",
-        "DESCRIPTION": "Discard the !M! top card of your draw pile. NL Deal !D! damage."
+        "DESCRIPTION": "Discard the !M! top cards of your draw pile. NL Deal !D! damage."
     },
     "mysteryDungeon:TotodileWaterPledge": {
         "NAME": "Water Pledge",
@@ -1353,15 +1353,15 @@
     },
     "mysteryDungeon:TotodileWaterSport": {
         "NAME": "Water Sport",
-        "DESCRIPTION": "Discard the top card of your draw pile. NL Your next attack deals !mysteryDungeon:M2! additional damage.",
-        "UPGRADE_DESCRIPTION": "Discard the 2 top card of your draw pile. NL Your next attack deals !mysteryDungeon:M2! additional damage."
+        "DESCRIPTION": "Discard the top card of your draw pile. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor.",
+        "UPGRADE_DESCRIPTION": "Discard the top 2 cards of your draw pile. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor."
     },
     "mysteryDungeon:TotodileWhirlpool": {
         "NAME": "Whirlpool",
-        "DESCRIPTION": "Discard the !M! top card of your draw pile. NL Gain !mysteryDungeon:M2! Focus."
+        "DESCRIPTION": "Discard the top !M! card of your draw pile. NL Gain !mysteryDungeon:M2! Focus."
     },
     "mysteryDungeon:TotodileWorkUp": {
         "NAME": "Work Up",
-        "DESCRIPTION": "If you do not have any empty Orb slots, Gain !M! Orb slots."
+        "DESCRIPTION": "If you do not have any empty Orb Slots, Gain !M! Orb Slots."
     }
 }
