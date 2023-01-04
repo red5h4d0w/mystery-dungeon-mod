@@ -25,14 +25,6 @@
         "DESCRIPTION": "Any card with \"Claw\" in its name counts as a claw."
     },
     {
-        "PROPER_NAME": "Inert",
-        "NAMES": [
-            "Inert",
-            "inert"
-        ],
-        "DESCRIPTION": "This card will not affect the Charge-Meter."
-    },
-    {
         "PROPER_NAME": "Eruption",
         "NAMES": [
             "Eruption",
@@ -48,6 +40,14 @@
             "evasiveness_drop"
         ],
         "DESCRIPTION": "At the end of the round, enemy loses #b50% of their Block."
+    },
+    {
+        "PROPER_NAME": "Inert",
+        "NAMES": [
+            "Inert",
+            "inert"
+        ],
+        "DESCRIPTION": "This card will not affect the Charge-Meter."
     },
     {
         "PROPER_NAME": "Leech Seed",
@@ -73,7 +73,7 @@
             "Plated_Armor",
             "plated_armor"
         ],
-        "DESCRIPTION": "At the end of your turn, gain Block equal to the number of Plated Armor Stacks. Reduce this amount by one evertime you take damage from an enemie's attack."
+        "DESCRIPTION": "At the end of your turn, gain Block equal to the number of Plated Armor Stacks. Reduce this amount by one evertime you take damage from an enemies attack."
     },
     {
         "PROPER_NAME": "Pledge Card",
@@ -113,7 +113,7 @@
             "Recovery",
             "recovery"
         ],
-        "DESCRIPTION": "When you receives damage, increase the number of stacks by as much damage you received. NL When you deal attack damage, heal 30% of the attack damage dealt up to the health you lost on the last turn."
+        "DESCRIPTION": "When you receives damage, increase the number of #yRecovery stacks by as much damage you received. NL When you deal attack damage, heal 30% of the attack damage dealt up to the number of #yRecovery stacks you had last turn."
     },
     {
         "PROPER_NAME": "Rest",
@@ -138,7 +138,7 @@
             "Temporary_HP",
             "temporary_HP"
         ],
-        "DESCRIPTION": "Additional defense that will take damage instead of your health bar. It will act like normal health. You keep Temporary HP between turns but not between rooms."
+        "DESCRIPTION": "Additional defense that will take damage instead of your #yHP. It acts like #yHP. You keep #yTemporary #yHP between turns but not between rooms."
     },
     {
         "PROPER_NAME": "Toxic",
