@@ -13,8 +13,10 @@ public class Totodile extends AbstractPokemon {
 
     public static int MAX_HP = 45;
     public static int ORB_SLOTS = 2;
-    public static AbstractCard[] STARTING_DECK = new AbstractCard[]{new TotodileScratch(), new TotodileScratch(), new TotodileDefend(), new TotodileDefend(), new TotodileIceFang()};
-    public static Color COLOR = Color.BLUE.cpy();
+    public static AbstractCard[] STARTING_DECK = new AbstractCard[]{
+        new TotodileScratch(), new TotodileScratch(), new TotodileDefend(), new TotodileDefend(), new TotodileIceFang()
+    };
+    public static final Color COLOR = Color.BLUE.cpy();
     public static CardColor CARD_COLOR = Pokemon.Enums.TOTODILE_BLUE;
 
     public Totodile() {
