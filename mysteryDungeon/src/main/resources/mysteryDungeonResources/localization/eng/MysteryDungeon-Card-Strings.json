@@ -1338,8 +1338,8 @@
     },
     "mysteryDungeon:TotodileRage": {
         "NAME": "Rage",
-        "DESCRIPTION": "At the start of the next X turn, gain !M! mysterydungeon:Vigor.",
-        "UPGRADE_DESCRIPTION": "At the start of the next X+1 turn, gain !M! mysterydungeon:Vigor."
+        "DESCRIPTION": "At the start of the next X turn, gain !M! mysterydungeon:Vigor. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "At the start of the next X+1 turn, gain !M! mysterydungeon:Vigor. NL Exhaust."
     },
     "mysteryDungeon:TotodileRainDance": {
         "NAME": "Rain Dance",
