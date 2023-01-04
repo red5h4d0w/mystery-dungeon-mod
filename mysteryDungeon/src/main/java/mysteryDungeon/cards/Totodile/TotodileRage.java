@@ -3,27 +3,27 @@ package mysteryDungeon.cards.Totodile;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.EndTurnAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.watcher.VigorPower;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.powers.NextTurnVigorPower;
 
-public class TotodileSubstitute extends PokemonCard {
+public class TotodileRage extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(TotodileSubstitute.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(TotodileRage.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("TotodileSkill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -35,27 +35,37 @@ public class TotodileSubstitute extends PokemonCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.TOTODILE_BLUE;
 
-    private static final int COST = 2;
-    private static final int BLOCK = 12;
-    private static final int UPGRADE_PLUS_BLOCK = 2;
-    private static final int BASE_MAGIC_NUMBER = 8;
-    private static final int UPGRADE_MAGIC_NUMBER = 10;
+    private static final int COST = -1;
+    private static final int BASE_MAGIC_NUMBER = 7;
 
     // /STAT DECLARATION/
 
-    public TotodileSubstitute() {
+    public TotodileRage() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseBlock = BLOCK;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        exhaust = true;
     }
 
+   // Actions the card should do.
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, p, block));
-        addToBot(new ApplyPowerAction(p, p, new VigorPower(p, magicNumber)));
-        addToBot(new EndTurnAction());
+        // Create an int which equals to your current energy.
+        if (energyOnUse < EnergyPanel.totalCount)
+        {
+            energyOnUse = EnergyPanel.totalCount; 
+        }
+        if (p.hasRelic("Chemical X")) {
+            energyOnUse += 2;
+            p.getRelic("Chemical X").flash();
+        }
+        if(upgraded)
+            energyOnUse++; 
+        if(energyOnUse>0)
+            addToBot(new ApplyPowerAction(p, p, new NextTurnVigorPower(p, energyOnUse, magicNumber), energyOnUse));
+        if (!freeToPlayOnce)
+            p.energy.use(EnergyPanel.totalCount);
     }
 
     // Upgraded stats.
@@ -63,8 +73,7 @@ public class TotodileSubstitute extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
-            upgradeBlock(UPGRADE_PLUS_BLOCK);
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

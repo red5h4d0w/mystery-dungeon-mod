@@ -1336,6 +1336,11 @@
         "NAME": "Substitute",
         "DESCRIPTION": "Gain !B! block. NL Gain !M! mysterydungeon:Vigor. NL End Your Turn."
     },
+    "mysteryDungeon:TotodileRage": {
+        "NAME": "Rage",
+        "DESCRIPTION": "At the start of the next X turn, gain !M! mysterydungeon:Vigor.",
+        "UPGRADE_DESCRIPTION": "At the start of the next X+1 turn, gain !M! mysterydungeon:Vigor."
+    },
     "mysteryDungeon:TotodileRainDance": {
         "NAME": "Rain Dance",
         "DESCRIPTION": "Unplayable. NL When discarded: Your next Attack deals !M! additional damage.",
