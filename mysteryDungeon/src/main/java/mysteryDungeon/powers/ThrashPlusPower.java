@@ -21,10 +21,10 @@ import mysteryDungeon.util.TextureLoader;
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 
-public class ThrashPower extends PokemonTwoAmountPower implements CloneablePowerInterface {
+public class ThrashPlusPower extends PokemonTwoAmountPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID(ThrashPower.class.getSimpleName());
+    public static final String POWER_ID = MysteryDungeon.makeID(ThrashPlusPower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -32,16 +32,16 @@ public class ThrashPower extends PokemonTwoAmountPower implements CloneablePower
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
     // There's a fallback "missing texture" image, so the game shouldn't crash if you accidentally put a non-existent file.
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(ThrashPower.class.getSimpleName()+"84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(ThrashPower.class.getSimpleName()+"32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(ThrashPlusPower.class.getSimpleName()+"84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(ThrashPlusPower.class.getSimpleName()+"32.png"));
 
-    public ThrashPower(final AbstractCreature owner, final int amount) {
+    public ThrashPlusPower(final AbstractCreature owner, final int amount) {
         name = NAME;
         ID = POWER_ID;
 
         this.owner = owner;
         this.amount = amount;
-        this.amount2 = 4;
+        this.amount2 = 3;
 
         type = PowerType.BUFF;
 
@@ -54,7 +54,7 @@ public class ThrashPower extends PokemonTwoAmountPower implements CloneablePower
 
     @Override
     public AbstractPower makeCopy() {
-        return new ThrashPower(owner, amount);
+        return new ThrashPlusPower(owner, amount);
     }
 
     @Override
@@ -63,7 +63,7 @@ public class ThrashPower extends PokemonTwoAmountPower implements CloneablePower
             amount2--;
             if(amount2==0) {
                 addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new VigorPower(AbstractDungeon.player, amount), amount));
-                amount2=4;
+                amount2=3;
             }
         }
         super.onPlayCard(card, m);
