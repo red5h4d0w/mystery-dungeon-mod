@@ -217,7 +217,7 @@
         ]
     },
     "mysteryDungeon:LavaPlumePower": {
-        "NAME": "Lava PLume",
+        "NAME": "Lava Plume",
         "DESCRIPTIONS": [
             "Whenever you cause an #yEruption, Apply #b%s #yBurn to the target."
         ]
@@ -267,7 +267,7 @@
         ]
     },
     "mysteryDungeon:NextTurnEruptionPower": {
-        "NAME": "Next Turn Eruption",
+        "NAME": "Next Turn: Eruption",
         "DESCRIPTIONS": [
             "Next Turn, Cause an Eruption.",
             "Next Turn, Cause #b%s Eruptions."
@@ -383,7 +383,7 @@
         "NAME": "Sleep Talk",
         "DESCRIPTIONS": [
             "When you create a Status Card, draw a card.",
-            "When you create a Status Card, draw #b%s card."
+            "When you create a Status Card, draw #b%s cards."
         ]
     },
     "mysteryDungeon:SolarPowerPower": {
@@ -409,8 +409,8 @@
     "mysteryDungeon:SunnyDayPower": {
         "NAME": "Sunny Day",
         "DESCRIPTIONS": [
-            "When dealing damage to yourself, everytime you lose a total of 3HP draw %s card.",
-            "When dealing damage to yourself, everytime you lose a total of 3HP draw %s cards."
+            "When dealing damage to yourself, everytime you lose a total of 3 HP draw %s card.",
+            "When dealing damage to yourself, everytime you lose a total of 3 HP draw %s cards."
         ]
     },
     "mysteryDungeon:SweetKissPower": {
