@@ -1318,7 +1318,7 @@
     },
     "mysteryDungeon:TotodileIceBeam": {
         "NAME": "Ice Beam",
-        "DESCRIPTION": "Gain !B! block. NL Channel !M! Frost."
+        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost."
     },
     "mysteryDungeon:TotodileIceFang": {
         "NAME": "Ice Fang",
