@@ -39,7 +39,7 @@ public class TotodileSubstitute extends PokemonCard {
     private static final int BLOCK = 12;
     private static final int UPGRADE_PLUS_BLOCK = 2;
     private static final int BASE_MAGIC_NUMBER = 8;
-    private static final int UPGRADE_MAGIC_NUMBER = 10;
+    private static final int UPGRADE_MAGIC_NUMBER = 2;
 
     // /STAT DECLARATION/
 

@@ -1244,7 +1244,7 @@
     },
     "mysteryDungeon:TotodileAquaJet": {
         "NAME": "Aqua Jet",
-        "DESCRIPTION": "Deal !D! damage. Next turn gain !M! mysterydungeon:Vigor."
+        "DESCRIPTION": "Innate. NL Deal !D! damage. Next turn gain !M! mysterydungeon:Vigor."
     },
     "mysteryDungeon:TotodileAquaTail": {
         "NAME": "Aqua Tail",
@@ -1315,6 +1315,10 @@
         "NAME": "Hydro Pump",
         "DESCRIPTION": "Can only be used if there are no cards left in your draw pile. NL Deal !D! damage.",
         "UPGRADE_DESCRIPTION": "Can only be used if there are !M! cards or less in your draw pile. NL Deal !D! damage."
+    },
+    "mysteryDungeon:TotodileIceBeam": {
+        "NAME": "Ice Beam",
+        "DESCRIPTION": "Gain !B! block. NL Channel !M! Frost."
     },
     "mysteryDungeon:TotodileIceFang": {
         "NAME": "Ice Fang",

@@ -49,6 +49,7 @@ public class TotodileAquaTail extends PokemonCard {
         baseDamage = DAMAGE;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        isInnate = true;
     }
 
     // Actions the card should do.
