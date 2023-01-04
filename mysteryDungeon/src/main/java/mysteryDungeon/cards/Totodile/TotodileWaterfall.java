@@ -26,7 +26,6 @@ public class TotodileWaterfall extends PokemonCard {
 
     // /TEXT DECLARATION/
 
-    
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
