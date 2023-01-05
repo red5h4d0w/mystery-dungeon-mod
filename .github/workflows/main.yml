@@ -32,4 +32,5 @@ jobs:
       - name: Commit & Push changes
         uses: actions-js/push@master
         with:
+          author_name: 'Version Change [bot]'
           github_token: ${{ secrets.GITHUB_TOKEN }}
