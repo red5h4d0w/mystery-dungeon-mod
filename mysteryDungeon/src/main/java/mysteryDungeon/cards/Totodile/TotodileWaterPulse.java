@@ -53,10 +53,10 @@ public class TotodileWaterPulse extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int numberOfHits = p.drawPile.size() > magicNumber? magicNumber: p.drawPile.size();
+        int multiplier = p.drawPile.size() > magicNumber? magicNumber: p.drawPile.size();
         addToBot(new DiscardTopOfDrawPileAction(magicNumber));
-        for(int i=0;i<numberOfHits;i++)
-            addToBot( new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SMASH));
+        if(multiplier!=0)
+            addToBot( new DamageAction(m, new DamageInfo(p, damage*multiplier, damageTypeForTurn), AttackEffect.SMASH));
     }
 
     // Upgraded stats.
