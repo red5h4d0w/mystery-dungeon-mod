@@ -1315,6 +1315,10 @@
             "I can't play this card."
         ]
     },
+    "mysteryDungeon:TotodileHydroCannon": {
+        "NAME": "Hydro Cannon",
+        "DESCRIPTION": "Costs 1 less [E] for each card discarded this turn. Deal !D! damage."
+    },
     "mysteryDungeon:TotodileHydroPump": {
         "NAME": "Hydro Pump",
         "DESCRIPTION": "Can only be used if there are no cards left in your draw pile. NL Deal !D! damage.",
