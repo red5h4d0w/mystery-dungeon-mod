@@ -1060,8 +1060,8 @@
     },
     "mysteryDungeon:SquirtleAquaTail": {
         "NAME": "Aqua Tail",
-        "DESCRIPTION": "Deal !D! damage. NL Scry !M! card. NL Draw !mysteryDungeon:M2! card. NL Discard !mysteryDungeon:M3! card.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Scry !M! card. NL Draw !mysteryDungeon:M2! card. NL Discard !mysteryDungeon:M3! card."
+        "DESCRIPTION": "Deal !D! damage. NL Scry !M!. NL Draw !mysteryDungeon:M2! card. NL Discard !mysteryDungeon:M3! card.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Scry !M!. NL Draw !mysteryDungeon:M2! card. NL Discard !mysteryDungeon:M3! card."
     },
     "mysteryDungeon:SquirtleBide": {
         "NAME": "Bide",
@@ -1099,8 +1099,8 @@
     },
     "mysteryDungeon:SquirtleFakeOut": {
         "NAME": "Fake Out",
-        "DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Scry !M! card. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Scry !M! cards. NL Exhaust."
+        "DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Scry !M!. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Scry !M!. NL Exhaust."
     },
     "mysteryDungeon:SquirtleFlashCannon": {
         "NAME": "Flash Cannon",
@@ -1112,8 +1112,8 @@
     },
     "mysteryDungeon:SquirtleFlinch": {
         "NAME": "Flinch",
-        "DESCRIPTION": "Deal !D! damage 2 times. NL Scry !M! card. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage 2 times. NL Scry !M! cards. NL Exhaust."
+        "DESCRIPTION": "Deal !D! damage 2 times. NL Scry !M!. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage 2 times. NL Scry !M!. NL Exhaust."
     },
     "mysteryDungeon:SquirtleFlipTurn": {
         "NAME": "Flip Turn",
@@ -1147,7 +1147,7 @@
     },
     "mysteryDungeon:SquirtleLifeDew": {
         "NAME": "Life Dew",
-        "DESCRIPTION": "Scry !M! cards. NL Draw !mysteryDungeon:M2! cards."
+        "DESCRIPTION": "Scry !M!. NL Draw !mysteryDungeon:M2! cards."
     },
     "mysteryDungeon:SquirtleLiquidation": {
         "NAME": "Liquidation",
@@ -1217,7 +1217,7 @@
     },
     "mysteryDungeon:SquirtleWaterGun": {
         "NAME": "Water Gun",
-        "DESCRIPTION": "Deal !D! damage. NL Scry !M! cards."
+        "DESCRIPTION": "Deal !D! damage. NL Scry !M!."
     },
     "mysteryDungeon:SquirtleWaterPulse": {
         "NAME": "Water Pulse",
@@ -1225,8 +1225,8 @@
     },
     "mysteryDungeon:SquirtleWaterSpout": {
         "NAME": "Water Spout",
-        "DESCRIPTION": "Scry !M! card. NL Apply !mysteryDungeon:M2! Weak. NL Deal !D! damage.",
-        "UPGRADE_DESCRIPTION": "Scry !M! cards. NL Apply !mysteryDungeon:M2! Weak. NL Deal !D! damage."
+        "DESCRIPTION": "Scry !M!. NL Apply !mysteryDungeon:M2! Weak. NL Deal !D! damage.",
+        "UPGRADE_DESCRIPTION": "Scry !M!. NL Apply !mysteryDungeon:M2! Weak. NL Deal !D! damage."
     },
     "mysteryDungeon:SquirtleWhirlpool": {
         "NAME": "Whirlpool",
@@ -1355,15 +1355,15 @@
     },
     "mysteryDungeon:TotodileStrength": {
         "NAME": "Strength",
-        "DESCRIPTION": "Draw !M! card. NL If you drew an Attack, channel 1 Frost orb."
+        "DESCRIPTION": "Draw !M! card. NL For each Attack drawn this way, channel 1 Frost."
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "Surf",
-        "DESCRIPTION": "Whenever you discard a card, gain !M! mysterydungeon:Temporary_Vigor."
+        "DESCRIPTION": "Whenever you discard a card, for every discarded card, gain !M! mysterydungeon:Temporary_Vigor."
     },
     "mysteryDungeon:TotodileSubstitute": {
         "NAME": "Substitute",
-        "DESCRIPTION": "Gain !B! block. NL Gain !M! mysterydungeon:Vigor. NL End Your Turn."
+        "DESCRIPTION": "Gain !B! Block. NL Gain !M! mysterydungeon:Vigor. NL End Your Turn."
     },
     "mysteryDungeon:TotodileRage": {
         "NAME": "Rage",
