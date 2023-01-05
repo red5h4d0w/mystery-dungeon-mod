@@ -57,6 +57,7 @@ public class AvalanchePower extends PokemonPower implements CloneablePowerInterf
     public void onEvokeOrb(AbstractOrb orb) {
         int blockAmount = AbstractDungeon.player.currentBlock;
         if(blockAmount!=0) {
+            flash();
             for(int i=0;i<amount;i++)
                 addToBot(new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, blockAmount, DamageType.THORNS), AttackEffect.BLUNT_LIGHT));
         }

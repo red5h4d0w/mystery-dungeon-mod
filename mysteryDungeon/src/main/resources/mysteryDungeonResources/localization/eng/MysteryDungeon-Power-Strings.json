@@ -253,6 +253,12 @@
             "At the end of the turn, do not return automatically to the center of the charge gauge."
         ]
     },
+    "mysteryDungeon:LoseVigorPower": {
+        "NAME": "Lose Vigor",
+        "DESCRIPTIONS": [
+            "At the end of the turn, lose #b%s #yVigor."
+        ]
+    },
     "mysteryDungeon:MagicCoatPower": {
         "NAME": "Magic Coat",
         "DESCRIPTIONS": [
@@ -418,6 +424,13 @@
         "DESCRIPTIONS": [
             "When dealing damage to yourself, everytime you lose a total of 3 HP draw %s card.",
             "When dealing damage to yourself, everytime you lose a total of 3 HP draw %s cards."
+        ]
+    },
+    "mysteryDungeon:SurfPower": {
+        "NAME": "Surf",
+        "DESCRIPTIONS": [
+            "Whenever you discard a card, gain 1 mysterydungeon:Temporary_Vigor.",
+            "Whenever you discard a card, gain %s mysterydungeon:Temporary_Vigor."
         ]
     },
     "mysteryDungeon:SweetKissPower": {

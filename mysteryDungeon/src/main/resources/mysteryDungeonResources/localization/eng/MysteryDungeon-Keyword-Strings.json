@@ -141,6 +141,16 @@
         "DESCRIPTION": "Additional defense that will take damage instead of your #yHP. It acts like #yHP. You keep #yTemporary #yHP between turns but not between rooms."
     },
     {
+        "PROPER_NAME": "Temporary Vigor",
+        "NAMES": [
+            "Temporary Vigor",
+            "Temporary_Vigor",
+            "temporary vigor",
+            "temporary_vigor"
+        ],
+        "DESCRIPTION": "Gain #yVigor, but lose #yVigor at the end of your turn."
+    },
+    {
         "PROPER_NAME": "Toxic",
         "NAMES": [
             "Toxic",
