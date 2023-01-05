@@ -256,6 +256,7 @@
     "mysteryDungeon:LoseVigorPower": {
         "NAME": "Lose Vigor",
         "DESCRIPTIONS": [
+            "At the end of the turn, lose #b%s #yVigor.",
             "At the end of the turn, lose #b%s #yVigor."
         ]
     },
