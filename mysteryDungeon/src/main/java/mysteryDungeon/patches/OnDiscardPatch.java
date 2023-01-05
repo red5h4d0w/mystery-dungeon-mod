@@ -23,6 +23,15 @@ public class OnDiscardPatch
             AbstractDungeon.player.relics.stream()
                 .filter(relic -> relic instanceof onDiscardInterface)
                 .forEach(relic -> ((onDiscardInterface)relic).onDiscard());
+            AbstractDungeon.player.hand.group.stream()
+                .filter(relic -> relic instanceof onDiscardInterface)
+                .forEach(relic -> ((onDiscardInterface)relic).onDiscard());
+            AbstractDungeon.player.discardPile.group.stream()
+                .filter(relic -> relic instanceof onDiscardInterface)
+                .forEach(relic -> ((onDiscardInterface)relic).onDiscard());
+            AbstractDungeon.player.drawPile.group.stream()
+                .filter(relic -> relic instanceof onDiscardInterface)
+                .forEach(relic -> ((onDiscardInterface)relic).onDiscard());
         }
     }
 }
