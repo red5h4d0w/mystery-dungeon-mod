@@ -38,7 +38,7 @@ public class TotodileHydroCannon extends PokemonCard {
 
     private static final int COST = 5;
     private static final int UPGRADE_COST = 4;
-    private static final int DAMAGE = 10;
+    private static final int DAMAGE = 25;
     private static final int BASE_MAGIC_NUMBER = 2;
 
 
