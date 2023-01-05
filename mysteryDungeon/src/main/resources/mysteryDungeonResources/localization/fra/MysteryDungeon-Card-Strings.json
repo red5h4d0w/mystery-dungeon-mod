@@ -369,12 +369,12 @@
     },
     "mysteryDungeon:ChikoritaAromatherapy": {
         "NAME": "Aromathérapie",
-        "DESCRIPTION": "Lorsque vous recevez des dégâts, gagnez !M! Force.",
-        "UPGRADE_DESCRIPTION": "Lorsque vous recevez des dégâts, gagnez !M! Force. NL Prochain Tour: Perdez 1 PV"
+        "DESCRIPTION": "Lorsque vous recevez des dégâts, gagnez !M! de Force.",
+        "UPGRADE_DESCRIPTION": "Lorsque vous recevez des dégâts, gagnez !M! de Force. NL Au prochain tour, perdez 1 PV"
     },
     "mysteryDungeon:ChikoritaBodySlam": {
         "NAME": "Plaquage",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Prochain Tour: Perdez !M! PV."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Au prochain tour, perdez !M! PV."
     },
     "mysteryDungeon:ChikoritaConfide": {
         "NAME": "Confidence",
@@ -390,87 +390,87 @@
     },
     "mysteryDungeon:ChikoritaEnergyBall": {
         "NAME": "Éco-Sphère",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Infligez !M! Vulnérable."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez !M! de Vulnérabilité."
     },
     "mysteryDungeon:ChikoritaExplorerForm": {
         "NAME": "Forme de l'Explorateur",
-        "DESCRIPTION": "Ethereal. NL When you heal PV, Infligez damage to ALL enemies equal to twice the amount healed.",
-        "UPGRADE_DESCRIPTION": "When you heal PV, Infligez damage to ALL enemies equal to twice the amount healed."
+        "DESCRIPTION": "Éthérée. NL Lorsque vous soignez des PV, Infligez des dégâts équivalents au double de la quantité soignée à TOUS les ennemis.",
+        "UPGRADE_DESCRIPTION": "Lorsque vous soignez des PV, Infligez des dégâts équivalents au double de la quantité soignée à TOUS les ennemis."
     },
     "mysteryDungeon:ChikoritaFlail": {
         "NAME": "Gigotage",
-        "DESCRIPTION": "Unplayable. NL Ethereal. NL When drawn, gagnez !M! Temporary Force.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn, gagnez !M! Temporary Force.",
+        "DESCRIPTION": "Injouable. NL Éthérée. NL Lorsque piochée, gagnez !M! de Force Temporaire.",
+        "UPGRADE_DESCRIPTION": "Injouable. NL Lorsque piochée, gagnez !M! de Force Temporaire.",
         "EXTENDED_DESCRIPTION": [
             "Je ne peux pas jouer cette carte."
         ]
     },
     "mysteryDungeon:ChikoritaFuryCutter": {
         "NAME": "Taillade",
-        "DESCRIPTION": "Ethereal. NL Infligez !D! dégâts. NL Increase this card damage by !M! this combat. NL Perdez 2 PV. NL Bring back a copy of that card in your hand Prochain Tour: and Perdez 2 PV. NL Exhaust."
+        "DESCRIPTION": "Éthérée. NL Infligez !D! dégâts. NL Augmentez les dégâts de cette carte de !M!. NL Perdez 2 PV. NL Au prochain tour, ajoutez une copie de cette carte à votre main et perdez 2 PV. NL Épuisement."
     },
     "mysteryDungeon:ChikoritaGrassKnot": {
         "NAME": "Nœud Herbe",
-        "DESCRIPTION": "Remove 33% of the enemy's remaining PV. NL Exhaust."
+        "DESCRIPTION": "Enlevez 33% des PV restants de l'ennemi. NL Épuisement."
     },
     "mysteryDungeon:ChikoritaGrassPledge": {
         "NAME": "Aire d'Herbe",
-        "DESCRIPTION": "Gagnez !M! PV Temporaires. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
+        "DESCRIPTION": "Gagnez !M! PV Temporaires. NL Si vous jouez une autre mysterydungeon:Carte_d'Aire ce tour, activez un effet supplémentaire."
     },
     "mysteryDungeon:ChikoritaGrassWhistle": {
         "NAME": "Siffl'Herbe",
-        "DESCRIPTION": "Infligez mysterydungeon:Asleep to ALL enemies. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Infligez mysterydungeon:Asleep to ALL enemies. NL Exhaust."
+        "DESCRIPTION": "Infligez mysterydungeon:Endormi à TOUS les ennemis. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Retenue. NL Infligez mysterydungeon:Endormi à TOUS les ennemis. NL Épuisement."
     },
     "mysteryDungeon:ChikoritaGrassyTerrain": {
         "NAME": "Champ Herbu",
-        "DESCRIPTION": "Increase your max PV by !M!."
+        "DESCRIPTION": "Augmentez vos PV de !M!."
     },
     "mysteryDungeon:ChikoritaGrowl": {
         "NAME": "Rugissement",
-        "DESCRIPTION": "Infligez !M! Weak to ALL enemies."
+        "DESCRIPTION": "Infligez !M! de Faiblesse à TOUS les ennemis."
     },
     "mysteryDungeon:ChikoritaHealPulse": {
         "NAME": "Vibra Soin",
-        "DESCRIPTION": "Whenever you inflict self damage or gain PV during your turn, gagnez !M! block.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you inflict self damage or gain PV during your turn, gagnez !M! block."
+        "DESCRIPTION": "Durant votre tour, lorsque vous vous infligez des dégâts ou soignez des PV, gagnez !M! d'Armure.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Durant votre tour, lorsque vous vous infligez des dégâts ou soignez des PV, gagnez !M! d'Armure."
     },
     "mysteryDungeon:ChikoritaLeafGuard": {
         "NAME": "Feuille Garde",
-        "DESCRIPTION": "At the end of your turn, remove all debuff you possess. For each debuff removed this way Perdez !M! PV."
+        "DESCRIPTION": "À la fin de votre tour, enlevez vos malus. Pour chaque malus ainsi retiré, perdez !M! PV."
     },
     "mysteryDungeon:ChikoritaLeafStorm": {
         "NAME": "Tempête Verte",
-        "DESCRIPTION": "Perdez 1 PV !M! times. NL Infligez !D! damage !M! times."
+        "DESCRIPTION": "Perdez 1 PV !M! fois. NL Infligez !D! dégâts !M! fois."
     },
     "mysteryDungeon:ChikoritaMagicCoat": {
         "NAME": "Reflet Magik",
-        "DESCRIPTION": "Gagnez !M! PV Temporaires. NL Piochez 1 card."
+        "DESCRIPTION": "Gagnez !M! PV Temporaires. NL Piochez 1 carte."
     },
     "mysteryDungeon:ChikoritaMagicalLeaf": {
         "NAME": "Feuille Magik",
-        "DESCRIPTION": "Infligez !D! damage !M! times to random enemies."
+        "DESCRIPTION": "Infligez !D! dégâts à un ennemi aléatoire !M! fois."
     },
     "mysteryDungeon:ChikoritaNaturalGift": {
         "NAME": "Don Naturel",
-        "DESCRIPTION": "Gagnez !M! Force. NL Gain !mysteryDungeon:M2! Block at the end of your turn."
+        "DESCRIPTION": "Gagnez !M! de Force. NL À la fin de votre tour, gagnez !mysteryDungeon:M2! d'Armure."
     },
     "mysteryDungeon:ChikoritaNaturePowerGrassland": {
-        "NAME": "Nature Power: Grassland",
-        "DESCRIPTION": "Perdez 3 PV. NL Piochez !M! cartes."
+        "NAME": "Force Nature : Plante",
+        "DESCRIPTION": "Perdez 4 PV. NL Piochez !M! cartes."
     },
     "mysteryDungeon:ChikoritaOvergrow": {
         "NAME": "Engrais",
-        "DESCRIPTION": "Each time your recover counter reaches 0, gagnez !M! Force.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Each time your recover counter reaches 0, gagnez !M! Force."
+        "DESCRIPTION": "Lorsque votre compteur de mysterydungeon:Soin atteint 0, gagnez !M! de Force.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Lorsque votre compteur de mysterydungeon:Soin atteint 0, gagnez !M! de Force."
     },
     "mysteryDungeon:ChikoritaPetalBlizzard": {
         "NAME": "Tempête Florale",
-        "DESCRIPTION": "Infligez !D! damage to ALL enemies."
+        "DESCRIPTION": "Infligez !D! dégâts à TOUS les ennemis."
     },
     "mysteryDungeon:ChikoritaPetalDance": {
         "NAME": "Danse Fleurs",
-        "DESCRIPTION": "Unplayable. NL When drawn: gagnez !M! PV Temporaires and Infligez !D! damage to all enemies. NL Increase the amount of PV Temporaires by 1 and the damage by 4 this combat.",
+        "DESCRIPTION": "Injouable. NL Lorsque piochée : gagnez !M! PV Temporaires et infligez !D! dégâts à TOUS les ennemis. NL Augmentez la quantité de PV Temporaires de cette carte de 2 et les dégâts de cette carte de 4 ce combat.",
         "EXTENDED_DESCRIPTION": [
             "Je ne peux pas jouer cette carte."
         ]
@@ -485,12 +485,12 @@
     },
     "mysteryDungeon:ChikoritaSecretPower": {
         "NAME": "Force Cachée",
-        "DESCRIPTION": "Inné. NL Ajoutez un pouvoir aléatoire à votre main. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "Inné. NL Ajoutez un pouvoir amélioré à votre main. NL Épuisement."
+        "DESCRIPTION": "Inné. NL Ajoutez un Pouvoir aléatoire à votre main. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Ajoutez un Pouvoir amélioré à votre main. NL Épuisement."
     },
     "mysteryDungeon:ChikoritaSeedBomb": {
         "NAME": "Canon Graine",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Prochain Tour: draw 2 more cartes."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Au prochain tour, piochez 2 cartes de plus."
     },
     "mysteryDungeon:ChikoritaSnore": {
         "NAME": "Bâillement",
