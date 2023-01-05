@@ -66,11 +66,17 @@ public class ThrashPower extends PokemonTwoAmountPower implements CloneablePower
                 amount2=4;
             }
         }
+        updateDescription();
         super.onPlayCard(card, m);
     }
 
     @Override
     public void updateDescription() {
-        description = String.format(DESCRIPTIONS[0], amount);
+        if(amount2<2) {
+            description = String.format(DESCRIPTIONS[0], amount, amount2);
+        }
+        else {
+            description = String.format(DESCRIPTIONS[1], amount, amount2);
+        }
     }
 }

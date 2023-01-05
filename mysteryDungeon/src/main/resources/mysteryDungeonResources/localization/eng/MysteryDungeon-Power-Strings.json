@@ -438,6 +438,20 @@
             "Whenever you evoke an Orb, deal #b%s damage to ALL enemies."
         ]
     },
+    "mysteryDungeon:ThrashPower": {
+        "NAME": "Thrash",
+        "DESCRIPTIONS": [
+            "Every 4 Attacks you play, gain %1$s #yVigor. NL (%2$s card till #yVigor gain)",
+            "Every 4 Attacks you play, gain %1$s #yVigor. NL (%2$s cards till #yVigor gain)"
+        ]
+    },
+    "mysteryDungeon:ThrashPlusPower": {
+        "NAME": "Thrash+",
+        "DESCRIPTIONS": [
+            "Every 3 Attacks you play, gain %1$s #yVigor. NL (%2$s card till #yVigor gain)",
+            "Every 3 Attacks you play, gain %1$s #yVigor. NL (%2$s cards till #yVigor gain)"
+        ]
+    },
     "mysteryDungeon:TorrentPower": {
         "NAME": "Torrent",
         "DESCRIPTIONS": [
