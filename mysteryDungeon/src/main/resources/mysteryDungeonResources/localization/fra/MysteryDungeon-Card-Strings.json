@@ -524,7 +524,7 @@
     },
     "mysteryDungeon:ChikoritaVineWhip": {
         "NAME": "Fouet Lianes",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Put a card from your discard pile into your draw pile.",
+        "DESCRIPTION": "Infligez !D! dégâts. NL Piochez !M! carte.",
         "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Piochez !M! cartes."
     },
     "mysteryDungeon:ChikoritaWorrySeed": {
@@ -1244,7 +1244,16 @@
     },
     "mysteryDungeon:TotodileAquaJet": {
         "NAME": "Aqua-Jet",
-        "DESCRIPTION": "Infligez !D! dégâts. Au prochain tour, gagnez !M! mysterydungeon:Vigueur."
+        "DESCRIPTION": "Inné. NL Infligez !D! dégâts. Au prochain tour, gagnez !M! mysterydungeon:Vigueur."
+    },
+    "mysteryDungeon:TotodileAquaTail": {
+        "NAME": "Hydro-Queue",
+        "DESCRIPTION": "Infligez !D! dégâts. NL Défaussez les !M! premières cartes au sommet de votre pioche.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Scry !M!."
+    },
+    "mysteryDungeon:TotodileAvalanche": {
+        "NAME": "Avalanche",
+        "DESCRIPTION": "Whenever you activate an Orb, deal damage equal to your Block to a random enemy."
     },
     "mysteryDungeon:TotodileBite": {
         "NAME": "Morsure",
@@ -1283,6 +1292,11 @@
         "DESCRIPTION": "Retenue. NL Défaussez !M! cartes de votre main.",
         "UPGRADE_DESCRIPTION": "Retenue. NL Défaussez !M! cartes de votre main. NL Piochez 1 carte."
     },
+    "mysteryDungeon:TotodileDoubleTeam": {
+        "NAME": "Reflet",
+        "DESCRIPTION": "mysterydungeon:Inerte. NL Canalisez !M! Orbe Glaciaire.",
+        "UPGRADE_DESCRIPTION": "Inné. NL mysterydungeon:Inerte. NL Canalisez !M! Orbe Glaciaire."
+    },
     "mysteryDungeon:TotodileEndure": {
         "NAME": "Ténacité",
         "DESCRIPTION": "Si vous subissez des dégâts, canalisez !M ! Orbe Glaciaire.",
@@ -1301,14 +1315,22 @@
             "Je ne peux pas jouer cette carte."
         ]
     },
+    "mysteryDungeon:TotodileHydroCannon": {
+        "NAME": "Hydro Cannon",
+        "DESCRIPTION": "Costs 1 less [E] for each card discarded this turn. Deal !D! damage."
+    },
     "mysteryDungeon:TotodileHydroPump": {
         "NAME": "Hydrocanon",
         "DESCRIPTION": "Ne peut être utilisée que si vous n'avez plus de cartes dans votre pioche. NL Inflige !D! dégâts.",
         "UPGRADE_DESCRIPTION": "Ne peut être utilisée que si vous n'avez que !M! cartes ou moins dans votre pioche. NL Inflige !D! dégâts."
     },
+    "mysteryDungeon:TotodileIceBeam": {
+        "NAME": "Laser Glace",
+        "DESCRIPTION": "Infligez !D! dégâts. NL Canalisez !M! Orbe Glaciaire."
+    },
     "mysteryDungeon:TotodileIceFang": {
         "NAME": "Crocs Givre",
-        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost orb.",
+        "DESCRIPTION": "Infligez !D! dégâts. NL Canalisez !M! Orbe Glaciaire.",
         "UPGRADE_DESCRIPTION": "Inné. NL Infligez !D! dégâts. NL Canalisez !M! Orbe Glaciaire."
     },
     "mysteryDungeon:TotodileIcePunch": {
@@ -1319,6 +1341,10 @@
         "NAME": "Vent Glace",
         "DESCRIPTION": "mysterydungeon:Inerte. NL Canalisez !M! Orbe Glaciaire. NL Épuisement."
     },
+    "mysteryDungeon:TotodileLiquidation": {
+        "NAME": "Aqua-Brêche",
+        "DESCRIPTION": "Infligez !D! dégâts à TOUS les ennemis."
+    },
     "mysteryDungeon:TotodileScratch": {
         "NAME": "Griffe",
         "DESCRIPTION": "Infligez !D! dégâts."
@@ -1326,6 +1352,23 @@
     "mysteryDungeon:TotodileSheerForce": {
         "NAME": "Sans Limite",
         "DESCRIPTION": "Lorsque vous infligez !M! ou plus dégâts non-bloqués, canalisez 1 Orbe Glaciaire."
+    },
+    "mysteryDungeon:TotodileStrength": {
+        "NAME": "Force",
+        "DESCRIPTION": "Draw !M! card. NL If you drew an Attack, channel 1 Frost orb."
+    },
+    "mysteryDungeon:TotodileSurf": {
+        "NAME": "Surf",
+        "DESCRIPTION": "Whenever you discard a card, gain !M! mysterydungeon:Temporary_Vigor."
+    },
+    "mysteryDungeon:TotodileSubstitute": {
+        "NAME": "Clonage",
+        "DESCRIPTION": "Gain !B! block. NL Gain !M! mysterydungeon:Vigor. NL End Your Turn."
+    },
+    "mysteryDungeon:TotodileRage": {
+        "NAME": "Colère",
+        "DESCRIPTION": "Au début des X prochains tours, gagnez !M! mysterydungeon:Vigueur. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Au début des X+1 prochains tours, gagnez !M! mysterydungeon:Vigueur. NL Épuisement."
     },
     "mysteryDungeon:TotodileRainDance": {
         "NAME": "Danse Pluie",
@@ -1335,6 +1378,10 @@
             "Je ne peux pas jouer cette carte."
         ]
     },
+    "mysteryDungeon:TotodileThrash": {
+        "NAME": "Mania",
+        "DESCRIPTION": "Toutes les !mysteryDungeon:M2! Attaques que vous jouez, gagnez !M! mysterydungeon:Vigueur."
+    },
     "mysteryDungeon:TotodileTorrent": {
         "NAME": "Torrent",
         "DESCRIPTION": "Injouable. NL Lorsque défaussée : Gagnez !M! de Concentration.",
@@ -1343,6 +1390,10 @@
             "Je ne peux pas jouer cette carte."
         ]
     },
+    "mysteryDungeon:TotodileWaterfall": {
+        "NAME": "Cascade",
+        "DESCRIPTION": "At the end of your turn shuffle your draw pile. NL At the start of your turn Scry !M!."
+    },
     "mysteryDungeon:TotodileWaterGun": {
         "NAME": "Pistolet à O",
         "DESCRIPTION": "Défaussez les !M! cartes au sommet de votre pioche. NL Infligez !D! dégâts."
@@ -1350,6 +1401,10 @@
     "mysteryDungeon:TotodileWaterPledge": {
         "NAME": "Aire d'Eau",
         "DESCRIPTION": "Channel !M! Frost orb. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
+    },
+    "mysteryDungeon:TotodileWaterPulse": {
+        "NAME": "Vibraqua",
+        "DESCRIPTION": "Défaussez les !M! cartes au sommet de votre pioche. Pour chaque carte ainsi défaussée, infligez !D! dégâts."
     },
     "mysteryDungeon:TotodileWaterSport": {
         "NAME": "Tourniquet",
