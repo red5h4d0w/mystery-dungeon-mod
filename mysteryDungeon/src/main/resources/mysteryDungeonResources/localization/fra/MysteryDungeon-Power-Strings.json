@@ -29,8 +29,8 @@
     "mysteryDungeon:AvalanchePower": {
         "NAME": "Avalanche",
         "DESCRIPTIONS": [
-            "Whenever you activate an Orb, deal damage equal to your Block to a random enemy.",
-            "Whenever you activate an Orb, deal damage equal to your Block to a random enemy %s times."
+            "Lorsque vous activez un Orbe, infligez autant de dégâts que vous avez d'Armure à un ennemi aléatoire.",
+            "Lorsque vous activez un Orbe, infligez autant de dégâts que vous avez d'Armure à un ennemi aléatoire %s fois."
         ]
     },
     "mysteryDungeon:BellyDrumPower": {
@@ -75,7 +75,7 @@
     "mysteryDungeon:ChikoritaWorrySeedPower": {
         "NAME": "Soucigraine",
         "DESCRIPTIONS": [
-            "During your turn, Lose #b1 HP per card played. At the end of your turn, Heal #b2 HP.",
+            "Durant votre tour, perdez #b1 HP par carte jouée. À la fin de votre tour, soignez #b2 PV.",
             "During your turn, Lose #b%s HP per card played. At the end of your turn, Heal 2 HP #b%s times."
         ]
     },
@@ -254,7 +254,7 @@
         ]
     },
     "mysteryDungeon:LoseVigorPower": {
-        "NAME": "Lose Vigor",
+        "NAME": "Perte de Vigueur",
         "DESCRIPTIONS": [
             "At the end of the turn, lose #b%s #yVigor.",
             "At the end of the turn, lose #b%s #yVigor."
@@ -283,14 +283,14 @@
     "mysteryDungeon:NextTurnEruptionPower": {
         "NAME": "Prochain tour : Éruption",
         "DESCRIPTIONS": [
-            "Next Turn, Cause an Eruption.",
-            "Next Turn, Cause #b%s Eruptions."
+            "Au prochain tour, déclenchez une #yÉruption.",
+            "Au prochain tour, déclenchez #b%s #yÉruptions."
         ]
     },
     "mysteryDungeon:NextTurnLoseHpPower": {
-        "NAME": "Next Turn: Lose Hp",
+        "NAME": "Prochain Tour : Perte de PV",
         "DESCRIPTIONS": [
-            "Next turn, Lose #b%s Hp."
+            "Au prochain tour, perdez #b%s PV."
         ]
     },
     "mysteryDungeon:NextTurnNoBlockPower": {
@@ -430,8 +430,8 @@
     "mysteryDungeon:SurfPower": {
         "NAME": "Surf",
         "DESCRIPTIONS": [
-            "Whenever you discard a card, gain 1 mysterydungeon:Temporary_Vigor.",
-            "Whenever you discard a card, gain %s mysterydungeon:Temporary_Vigor."
+            "Whenever you discard a card, for every card discarded, gain 1 mysterydungeon:Temporary_Vigor.",
+            "Whenever you discard a card, for every card discarded, gain %s mysterydungeon:Temporary_Vigor."
         ]
     },
     "mysteryDungeon:SweetKissPower": {
