@@ -21,10 +21,14 @@ public class OnManualDiscardPatch
         @SpireInsertPatch(rloc = 55-42, localvars = {"c"})
         public static void onManualDiscard(DiscardAction __instance, boolean ___endTurn, AbstractCard c)
         {
-            if(!___endTurn)
+            if(!___endTurn) {
                 AbstractDungeon.player.powers.stream()
                     .filter(power -> power instanceof onManualDiscardInterface)
                     .forEach(power -> ((onManualDiscardInterface)power).onManualDiscard(c));
+                AbstractDungeon.player.hand.group.stream()
+                    .filter(card -> card instanceof onManualDiscardInterface)
+                    .forEach(card -> ((onManualDiscardInterface)card).onManualDiscard(c));
+            }  
         }
     }
     @SpirePatch(clz = DiscardAction.class, method = "update", paramtypez = {})
@@ -36,6 +40,9 @@ public class OnManualDiscardPatch
             AbstractDungeon.player.powers.stream()
                 .filter(power -> power instanceof onManualDiscardInterface)
                 .forEach(power -> ((onManualDiscardInterface)power).onManualDiscard(c));
+            AbstractDungeon.player.hand.group.stream()
+                .filter(card -> card instanceof onManualDiscardInterface)
+                .forEach(card -> ((onManualDiscardInterface)card).onManualDiscard(c));
         }
     }
     @SpirePatch(clz = DiscardSpecificCardAction.class, method = "update", paramtypez = {})
@@ -47,8 +54,12 @@ public class OnManualDiscardPatch
             AbstractDungeon.player.powers.stream()
                 .filter(power -> power instanceof onManualDiscardInterface)
                 .forEach(power -> ((onManualDiscardInterface)power).onManualDiscard(___targetCard));
+            AbstractDungeon.player.hand.group.stream()
+                .filter(card -> card instanceof onManualDiscardInterface)
+                .forEach(card -> ((onManualDiscardInterface)card).onManualDiscard(___targetCard));
         }
     }
+
     @SpirePatch(clz = ScrapeFollowUpAction.class, method = "update", paramtypez = {})
     public static class OnManualDiscard4
     {
@@ -58,8 +69,12 @@ public class OnManualDiscardPatch
             AbstractDungeon.player.powers.stream()
                 .filter(power -> power instanceof onManualDiscardInterface)
                 .forEach(power -> ((onManualDiscardInterface)power).onManualDiscard(c));
+            AbstractDungeon.player.hand.group.stream()
+                .filter(card -> card instanceof onManualDiscardInterface)
+                .forEach(card -> ((onManualDiscardInterface)card).onManualDiscard(c));
         }
     }
+
     @SpirePatch(clz = GamblingChipAction.class, method = "update", paramtypez = {})
     public static class OnManualDiscard5
     {
@@ -69,8 +84,12 @@ public class OnManualDiscardPatch
             AbstractDungeon.player.powers.stream()
                 .filter(power -> power instanceof onManualDiscardInterface)
                 .forEach(power -> ((onManualDiscardInterface)power).onManualDiscard(c));
+            AbstractDungeon.player.hand.group.stream()
+                .filter(card -> card instanceof onManualDiscardInterface)
+                .forEach(card -> ((onManualDiscardInterface)card).onManualDiscard(c));
         }
     }
+
     @SpirePatch(clz = ScaldAction.class, method = "update", paramtypez = {})
     public static class OnManualDiscard6
     {
@@ -80,6 +99,9 @@ public class OnManualDiscardPatch
             AbstractDungeon.player.powers.stream()
                 .filter(power -> power instanceof onManualDiscardInterface)
                 .forEach(power -> ((onManualDiscardInterface)power).onManualDiscard(c));
+            AbstractDungeon.player.hand.group.stream()
+                .filter(card -> card instanceof onManualDiscardInterface)
+                .forEach(card -> ((onManualDiscardInterface)card).onManualDiscard(c));
         }
     }
 }
