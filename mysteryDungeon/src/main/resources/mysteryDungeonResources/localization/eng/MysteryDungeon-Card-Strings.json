@@ -1357,6 +1357,10 @@
         "NAME": "Strength",
         "DESCRIPTION": "Draw !M! card. NL If you drew an Attack, channel 1 Frost orb."
     },
+    "mysteryDungeon:TotodileSurf": {
+        "NAME": "Surf",
+        "DESCRIPTION": "Whenever you discard a card, gain !M! mysterydungeon:TemporaryVigor."
+    },
     "mysteryDungeon:TotodileSubstitute": {
         "NAME": "Substitute",
         "DESCRIPTION": "Gain !B! block. NL Gain !M! mysterydungeon:Vigor. NL End Your Turn."
