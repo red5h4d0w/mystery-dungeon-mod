@@ -26,6 +26,13 @@
             "This turn, for each card you #yscry or #ydiscard, gain #b%s #yBlock. NL If the card was a #yStatus card, deal #b%s damage to ALL enemies."
         ]
     },
+    "mysteryDungeon:AvalanchePower": {
+        "NAME": "Avalanche",
+        "DESCRIPTIONS": [
+            "Whenever you activate an Orb, deal damage equal to your Block to a random enemy.",
+            "Whenever you activate an Orb, deal damage equal to your Block to a random enemy %s times."
+        ]
+    },
     "mysteryDungeon:BellyDrumPower": {
         "NAME": "Belly Drum",
         "DESCRIPTIONS": [

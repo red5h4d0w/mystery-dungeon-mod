@@ -1251,6 +1251,10 @@
         "DESCRIPTION": "Deal !D! damage. NL Discard the top !M! cards from your draw pile.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Scry !M!."
     },
+    "mysteryDungeon:TotodileAvalanche": {
+        "NAME": "Avalanche",
+        "DESCRIPTION": "Whenever you activate an Orb, deal damage equal to your Block to a random enemy."
+    },
     "mysteryDungeon:TotodileBite": {
         "NAME": "Bite",
         "DESCRIPTION": "Deal !D! damage."
