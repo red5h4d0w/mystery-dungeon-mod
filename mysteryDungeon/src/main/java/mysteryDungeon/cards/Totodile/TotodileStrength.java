@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.actions.StrengthAction;
 import mysteryDungeon.characters.Pokemon;
 
 public class TotodileStrength extends PokemonCard {
@@ -50,6 +51,7 @@ public class TotodileStrength extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DrawCardAction(magicNumber));
+        addToBot(new StrengthAction(p, p));
     }
 
     // Upgraded stats.
