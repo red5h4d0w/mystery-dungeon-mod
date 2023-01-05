@@ -3,6 +3,7 @@ package mysteryDungeon.powers;
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonPower;
+import mysteryDungeon.actions.SimpleAction;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
@@ -55,12 +56,15 @@ public class AvalanchePower extends PokemonPower implements CloneablePowerInterf
 
     @Override
     public void onEvokeOrb(AbstractOrb orb) {
-        int blockAmount = AbstractDungeon.player.currentBlock;
-        if(blockAmount!=0) {
-            flash();
-            for(int i=0;i<amount;i++)
-                addToBot(new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, blockAmount, DamageType.THORNS), AttackEffect.BLUNT_LIGHT));
-        }
+        addToBot(new SimpleAction(()-> {
+            int blockAmount = AbstractDungeon.player.currentBlock;
+            if(blockAmount!=0) {
+                flash();
+                for(int i=0;i<amount;i++)
+                    addToTop(new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, blockAmount, DamageType.THORNS), AttackEffect.BLUNT_LIGHT));
+            }
+        }));
+        
         super.onEvokeOrb(orb);
     }
 
