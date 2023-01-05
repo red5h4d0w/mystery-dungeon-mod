@@ -1244,7 +1244,16 @@
     },
     "mysteryDungeon:TotodileAquaJet": {
         "NAME": "Aqua Jet",
-        "DESCRIPTION": "Deal !D! damage. Next turn gain !M! mysterydungeon:Vigor."
+        "DESCRIPTION": "Innate. NL Deal !D! damage. Next turn gain !M! mysterydungeon:Vigor."
+    },
+    "mysteryDungeon:TotodileAquaTail": {
+        "NAME": "Aqua Tail",
+        "DESCRIPTION": "Deal !D! damage. NL Discard the top !M! cards from your draw pile.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Scry !M!."
+    },
+    "mysteryDungeon:TotodileAvalanche": {
+        "NAME": "Avalanche",
+        "DESCRIPTION": "Whenever you activate an Orb, deal damage equal to your Block to a random enemy."
     },
     "mysteryDungeon:TotodileBite": {
         "NAME": "Bite",
@@ -1283,6 +1292,11 @@
         "DESCRIPTION": "Retain. NL Discard !M! cards from your hand.",
         "UPGRADE_DESCRIPTION": "Retain. NL Discard !M! cards from your hand. NL Draw 1 card."
     },
+    "mysteryDungeon:TotodileDoubleTeam": {
+        "NAME": "Double Team",
+        "DESCRIPTION": "mysterydungeon:Inert. NL Channel !M! Frost.",
+        "UPGRADE_DESCRIPTION": "Innate. NL mysterydungeon:Inert. NL Channel !M! Frost."
+    },
     "mysteryDungeon:TotodileEndure": {
         "NAME": "Endure",
         "DESCRIPTION": "If you take damage, channel !M! Frost.",
@@ -1301,10 +1315,18 @@
             "I can't play this card."
         ]
     },
+    "mysteryDungeon:TotodileHydroCannon": {
+        "NAME": "Hydro Cannon",
+        "DESCRIPTION": "Costs 1 less [E] for each card discarded this turn. Deal !D! damage."
+    },
     "mysteryDungeon:TotodileHydroPump": {
         "NAME": "Hydro Pump",
         "DESCRIPTION": "Can only be used if there are no cards left in your draw pile. NL Deal !D! damage.",
         "UPGRADE_DESCRIPTION": "Can only be used if there are !M! cards or less in your draw pile. NL Deal !D! damage."
+    },
+    "mysteryDungeon:TotodileIceBeam": {
+        "NAME": "Ice Beam",
+        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost."
     },
     "mysteryDungeon:TotodileIceFang": {
         "NAME": "Ice Fang",
@@ -1319,6 +1341,10 @@
         "NAME": "Icy Wind",
         "DESCRIPTION": "mysterydungeon:Inert. NL Channel !M! Frost. NL Exhaust."
     },
+    "mysteryDungeon:TotodileLiquidation": {
+        "NAME": "Liquidation",
+        "DESCRIPTION": "Deal !D! damage to ALL enemies."
+    },
     "mysteryDungeon:TotodileScratch": {
         "NAME": "Scratch",
         "DESCRIPTION": "Deal !D! damage."
@@ -1326,6 +1352,23 @@
     "mysteryDungeon:TotodileSheerForce": {
         "NAME": "Sheer Force",
         "DESCRIPTION": "Whenever you deal !M! or more unblocked damage, channel 1 Frost."
+    },
+    "mysteryDungeon:TotodileStrength": {
+        "NAME": "Strength",
+        "DESCRIPTION": "Draw !M! card. NL If you drew an Attack, channel 1 Frost orb."
+    },
+    "mysteryDungeon:TotodileSurf": {
+        "NAME": "Surf",
+        "DESCRIPTION": "Whenever you discard a card, gain !M! mysterydungeon:Temporary_Vigor."
+    },
+    "mysteryDungeon:TotodileSubstitute": {
+        "NAME": "Substitute",
+        "DESCRIPTION": "Gain !B! block. NL Gain !M! mysterydungeon:Vigor. NL End Your Turn."
+    },
+    "mysteryDungeon:TotodileRage": {
+        "NAME": "Rage",
+        "DESCRIPTION": "At the start of the next X turn, gain !M! mysterydungeon:Vigor. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "At the start of the next X+1 turn, gain !M! mysterydungeon:Vigor. NL Exhaust."
     },
     "mysteryDungeon:TotodileRainDance": {
         "NAME": "Rain Dance",
@@ -1335,6 +1378,10 @@
             "I can't play this card."
         ]
     },
+    "mysteryDungeon:TotodileThrash": {
+        "NAME": "Thrash",
+        "DESCRIPTION": "Every !mysteryDungeon:M2! Attack you play, gain !M! mysterydungeon:Vigor."
+    },
     "mysteryDungeon:TotodileTorrent": {
         "NAME": "Torrent",
         "DESCRIPTION": "Unplayable. NL When discarded: Gain !M! Focus.",
@@ -1343,6 +1390,10 @@
             "I can't play this card."
         ]
     },
+    "mysteryDungeon:TotodileWaterfall": {
+        "NAME": "Waterfall",
+        "DESCRIPTION": "At the end of your turn shuffle your draw pile. NL At the start of your turn Scry !M!."
+    },
     "mysteryDungeon:TotodileWaterGun": {
         "NAME": "Water Gun",
         "DESCRIPTION": "Discard the !M! top cards of your draw pile. NL Deal !D! damage."
@@ -1350,6 +1401,10 @@
     "mysteryDungeon:TotodileWaterPledge": {
         "NAME": "Water Pledge",
         "DESCRIPTION": "Channel 1 Frost orb. NL Your next attack deals !M! additional damage. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
+    },
+    "mysteryDungeon:TotodileWaterPulse": {
+        "NAME": "Water Pulse",
+        "DESCRIPTION": "Discard the top !M! cards of your draw pile. For each card discarded this way, deal !D! damage."
     },
     "mysteryDungeon:TotodileWaterSport": {
         "NAME": "Water Sport",
