@@ -346,8 +346,8 @@
     },
     "mysteryDungeon:CharmanderSmokescreen": {
         "NAME": "Brouillard",
-        "DESCRIPTION": "Gagnez !M! Intangible. NL Gagnez 2 Faiblesse. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "Gagnez !M! Intangible. NL Gagnez 1 Faiblesse. NL Épuisement."
+        "DESCRIPTION": "Gagnez !M! Intangible. NL Gagnez 3 de Faiblesse. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Gagnez !M! Intangible. NL Gagnez 2 de Faiblesse. NL Épuisement."
     },
     "mysteryDungeon:CharmanderSolarPower": {
         "NAME": "Force Soleil",
@@ -378,7 +378,7 @@
     },
     "mysteryDungeon:ChikoritaConfide": {
         "NAME": "Confidence",
-        "DESCRIPTION": "Infligez !M! Weak to ALL enemies. NL Infligez !M! Evasiveness Drop to ALL enemies. NL Exhaust."
+        "DESCRIPTION": "Infligez !M! de Faiblesse à TOUS les ennemis. NL Infligez !M! mysterydungeon:Perte_d'Évasion à TOUS les ennemis. NL Épuisement."
     },
     "mysteryDungeon:ChikoritaCut": {
         "NAME": "Coupe",
@@ -1249,11 +1249,11 @@
     "mysteryDungeon:TotodileAquaTail": {
         "NAME": "Hydro-Queue",
         "DESCRIPTION": "Infligez !D! dégâts. NL Défaussez les !M! premières cartes au sommet de votre pioche.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Scry !M!."
+        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Scrutez !M! cartes."
     },
     "mysteryDungeon:TotodileAvalanche": {
         "NAME": "Avalanche",
-        "DESCRIPTION": "Whenever you activate an Orb, deal damage equal to your Block to a random enemy."
+        "DESCRIPTION": "Lorsque vous activez un Orbe, infligez autant de dégâts que vous avez d'Armure à un ennemi aléatoire."
     },
     "mysteryDungeon:TotodileBite": {
         "NAME": "Morsure",
@@ -1316,8 +1316,8 @@
         ]
     },
     "mysteryDungeon:TotodileHydroCannon": {
-        "NAME": "Hydro Cannon",
-        "DESCRIPTION": "Costs 1 less [E] for each card discarded this turn. Deal !D! damage."
+        "NAME": "Hydroblast",
+        "DESCRIPTION": "Coûte 1 [E] en moins par carte défaussée ce tour. NL Infligez !D! dégâts."
     },
     "mysteryDungeon:TotodileHydroPump": {
         "NAME": "Hydrocanon",
@@ -1355,15 +1355,15 @@
     },
     "mysteryDungeon:TotodileStrength": {
         "NAME": "Force",
-        "DESCRIPTION": "Draw !M! card. NL If you drew an Attack, channel 1 Frost orb."
+        "DESCRIPTION": "Piochez !M! carte. NL Pour chaque Attaque ainsi piochée, canalisez 1 Orbe Glaciaire."
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "Surf",
-        "DESCRIPTION": "Whenever you discard a card, gain !M! mysterydungeon:Temporary_Vigor."
+        "DESCRIPTION": "Lorsque vous défaussez une carte, gagnez !M! mysterydungeon:Vigueur_Temporaire."
     },
     "mysteryDungeon:TotodileSubstitute": {
         "NAME": "Clonage",
-        "DESCRIPTION": "Gain !B! block. NL Gain !M! mysterydungeon:Vigor. NL End Your Turn."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Gagnez !M! mysterydungeon:Vigueur. NL Terminez votre tour."
     },
     "mysteryDungeon:TotodileRage": {
         "NAME": "Colère",
@@ -1392,7 +1392,7 @@
     },
     "mysteryDungeon:TotodileWaterfall": {
         "NAME": "Cascade",
-        "DESCRIPTION": "At the end of your turn shuffle your draw pile. NL At the start of your turn Scry !M!."
+        "DESCRIPTION": "À la fin de votre tour, mélangez votre pioche. NL Au début de votre tour, Scrutez !M! cartes."
     },
     "mysteryDungeon:TotodileWaterGun": {
         "NAME": "Pistolet à O",
