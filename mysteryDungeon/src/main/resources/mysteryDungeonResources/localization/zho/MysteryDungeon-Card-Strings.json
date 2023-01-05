@@ -1355,15 +1355,15 @@
     },
     "mysteryDungeon:TotodileStrength": {
         "NAME": "Strength",
-        "DESCRIPTION": "Draw !M! card. NL If you drew an Attack, channel 1 Frost orb."
+        "DESCRIPTION": "Draw !M! card. NL For each Attack drawn this way, channel 1 Frost."
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "Surf",
-        "DESCRIPTION": "Whenever you discard a card, gain !M! mysterydungeon:Temporary_Vigor."
+        "DESCRIPTION": "Whenever you discard a card, for every discarded card, gain !M! mysterydungeon:Temporary_Vigor."
     },
     "mysteryDungeon:TotodileSubstitute": {
         "NAME": "Substitute",
-        "DESCRIPTION": "Gain !B! block. NL Gain !M! mysterydungeon:Vigor. NL End Your Turn."
+        "DESCRIPTION": "Gain !B! Block. NL Gain !M! mysterydungeon:Vigor. NL End Your Turn."
     },
     "mysteryDungeon:TotodileRage": {
         "NAME": "Rage",
