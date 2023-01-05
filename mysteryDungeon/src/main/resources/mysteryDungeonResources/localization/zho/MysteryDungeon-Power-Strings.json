@@ -26,6 +26,13 @@
             "本回合，每当一张牌被手动预见或丢弃时，获得 #b%s 点格挡。 NL 如果该牌是 #y状态牌 。造成 #b%s 点伤害。"
         ]
     },
+    "mysteryDungeon:AvalanchePower": {
+        "NAME": "Avalanche",
+        "DESCRIPTIONS": [
+            "Whenever you activate an Orb, deal damage equal to your Block to a random enemy.",
+            "Whenever you activate an Orb, deal damage equal to your Block to a random enemy %s times."
+        ]
+    },
     "mysteryDungeon:BellyDrumPower": {
         "NAME": "腹鼓",
         "DESCRIPTIONS": [
@@ -68,7 +75,7 @@
     "mysteryDungeon:ChikoritaWorrySeedPower": {
         "NAME": "Worry Seed",
         "DESCRIPTIONS": [
-            "During your turn, Lose #b1 HP per card played. At the end of your turn, Heal #b2 HP.",
+            "During your turn, Lose #b1 HP per card played. At the end of your turn, heal #b2 HP.",
             "During your turn, Lose #b%s HP per card played. At the end of your turn, Heal 2 HP #b%s times."
         ]
     },
@@ -246,6 +253,13 @@
             "在回合结束时，指针不再复位。"
         ]
     },
+    "mysteryDungeon:LoseVigorPower": {
+        "NAME": "Lose Vigor",
+        "DESCRIPTIONS": [
+            "At the end of the turn, lose #b%s #yVigor.",
+            "At the end of the turn, lose #b%s #yVigor."
+        ]
+    },
     "mysteryDungeon:MagicCoatPower": {
         "NAME": "Magic Coat",
         "DESCRIPTIONS": [
@@ -269,14 +283,14 @@
     "mysteryDungeon:NextTurnEruptionPower": {
         "NAME": "Next Turn: Eruption",
         "DESCRIPTIONS": [
-            "Next Turn, Cause an Eruption.",
+            "Next Turn, trigger an #yEruption.",
             "Next Turn, Cause #b%s Eruptions."
         ]
     },
     "mysteryDungeon:NextTurnLoseHpPower": {
-        "NAME": "Next Turn: Lose Hp",
+        "NAME": "Next Turn: Lose HP",
         "DESCRIPTIONS": [
-            "Next turn, Lose #b%s Hp."
+            "Next turn, lose #b%s HP."
         ]
     },
     "mysteryDungeon:NextTurnNoBlockPower": {
@@ -292,7 +306,7 @@
             "At the start of the next turn, gain #b1 #yVigor.",
             "At the start of the next turn, gain #b%s #yVigor.",
             "At the start of the next #b%s turns, gain #b1 #yVigor.",
-            "At the start of the next #b%s1 turns, gain #b%s2 #yVigor."
+            "At the start of the next #b%1$s turns, gain #b%2$s #yVigor."
         ]
     },
     "mysteryDungeon:NoHealPower": {
@@ -413,6 +427,13 @@
             "When dealing damage to yourself, everytime you lose a total of 3 HP draw %s cards."
         ]
     },
+    "mysteryDungeon:SurfPower": {
+        "NAME": "Surf",
+        "DESCRIPTIONS": [
+            "Whenever you discard a card, for every card discarded, gain 1 mysterydungeon:Temporary_Vigor.",
+            "Whenever you discard a card, for every card discarded, gain %s mysterydungeon:Temporary_Vigor."
+        ]
+    },
     "mysteryDungeon:SweetKissPower": {
         "NAME": "天使之吻",
         "DESCRIPTIONS": [
@@ -429,6 +450,20 @@
         "NAME": "打雷",
         "DESCRIPTIONS": [
             "每当你激发一个充能球，对所有敌人造成 #b%s 点伤害。"
+        ]
+    },
+    "mysteryDungeon:ThrashPower": {
+        "NAME": "Thrash",
+        "DESCRIPTIONS": [
+            "Every 4 Attacks you play, gain %1$s #yVigor. NL (%2$s card till #yVigor gain)",
+            "Every 4 Attacks you play, gain %1$s #yVigor. NL (%2$s cards till #yVigor gain)"
+        ]
+    },
+    "mysteryDungeon:ThrashPlusPower": {
+        "NAME": "Thrash+",
+        "DESCRIPTIONS": [
+            "Every 3 Attacks you play, gain %1$s #yVigor. NL (%2$s card till #yVigor gain)",
+            "Every 3 Attacks you play, gain %1$s #yVigor. NL (%2$s cards till #yVigor gain)"
         ]
     },
     "mysteryDungeon:TorrentPower": {
@@ -460,6 +495,12 @@
         "NAME": "Unnerve",
         "DESCRIPTIONS": [
             "For every 25 gold spent in combat, gain #b%s Plated Armor."
+        ]
+    },
+    "mysteryDungeon:WaterfallPower": {
+        "NAME": "Waterfall",
+        "DESCRIPTIONS": [
+            "At the end of the turn shuffle your draw pile with your discard pile. At the start of your turn scry #b%s cards."
         ]
     },
     "mysteryDungeon:WaterPledgePower": {

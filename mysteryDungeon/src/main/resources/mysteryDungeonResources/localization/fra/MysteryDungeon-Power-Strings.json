@@ -26,6 +26,13 @@
             "Ce tour, lorsque vous #yscrutez ou #ydéfaussez une carte, gagnez #b%s #yd'Armure. NL Si cette carte était un Statut, infligez #b%s dégâts à TOUS les ennemis."
         ]
     },
+    "mysteryDungeon:AvalanchePower": {
+        "NAME": "Avalanche",
+        "DESCRIPTIONS": [
+            "Lorsque vous activez un Orbe, infligez autant de dégâts que vous avez d'Armure à un ennemi aléatoire.",
+            "Lorsque vous activez un Orbe, infligez autant de dégâts que vous avez d'Armure à un ennemi aléatoire %s fois."
+        ]
+    },
     "mysteryDungeon:BellyDrumPower": {
         "NAME": "Cognobidon",
         "DESCRIPTIONS": [
@@ -68,7 +75,7 @@
     "mysteryDungeon:ChikoritaWorrySeedPower": {
         "NAME": "Soucigraine",
         "DESCRIPTIONS": [
-            "During your turn, Lose #b1 HP per card played. At the end of your turn, Heal #b2 HP.",
+            "Durant votre tour, perdez #b1 HP par carte jouée. À la fin de votre tour, soignez #b2 PV.",
             "During your turn, Lose #b%s HP per card played. At the end of your turn, Heal 2 HP #b%s times."
         ]
     },
@@ -246,6 +253,13 @@
             "At the end of the turn, do not return automatically to the center of the charge gauge."
         ]
     },
+    "mysteryDungeon:LoseVigorPower": {
+        "NAME": "Perte de Vigueur",
+        "DESCRIPTIONS": [
+            "At the end of the turn, lose #b%s #yVigor.",
+            "At the end of the turn, lose #b%s #yVigor."
+        ]
+    },
     "mysteryDungeon:MagicCoatPower": {
         "NAME": "Magic Coat",
         "DESCRIPTIONS": [
@@ -269,14 +283,14 @@
     "mysteryDungeon:NextTurnEruptionPower": {
         "NAME": "Prochain tour : Éruption",
         "DESCRIPTIONS": [
-            "Next Turn, Cause an Eruption.",
-            "Next Turn, Cause #b%s Eruptions."
+            "Au prochain tour, déclenchez une #yÉruption.",
+            "Au prochain tour, déclenchez #b%s #yÉruptions."
         ]
     },
     "mysteryDungeon:NextTurnLoseHpPower": {
-        "NAME": "Next Turn: Lose Hp",
+        "NAME": "Prochain Tour : Perte de PV",
         "DESCRIPTIONS": [
-            "Next turn, Lose #b%s Hp."
+            "Au prochain tour, perdez #b%s PV."
         ]
     },
     "mysteryDungeon:NextTurnNoBlockPower": {
@@ -292,7 +306,7 @@
             "At the start of the next turn, gain #b1 #yVigor.",
             "At the start of the next turn, gain #b%s #yVigor.",
             "At the start of the next #b%s turns, gain #b1 #yVigor.",
-            "At the start of the next #b%s1 turns, gain #b%s2 #yVigor."
+            "At the start of the next #b%1$s turns, gain #b%2$s #yVigor."
         ]
     },
     "mysteryDungeon:NoHealPower": {
@@ -413,6 +427,13 @@
             "When dealing damage to yourself, everytime you lose a total of 3 HP draw %s cards."
         ]
     },
+    "mysteryDungeon:SurfPower": {
+        "NAME": "Surf",
+        "DESCRIPTIONS": [
+            "Whenever you discard a card, for every card discarded, gain 1 mysterydungeon:Temporary_Vigor.",
+            "Whenever you discard a card, for every card discarded, gain %s mysterydungeon:Temporary_Vigor."
+        ]
+    },
     "mysteryDungeon:SweetKissPower": {
         "NAME": "Doux Baiser",
         "DESCRIPTIONS": [
@@ -429,6 +450,20 @@
         "NAME": "Fatal-Foudre",
         "DESCRIPTIONS": [
             "Quand vous activez une #yOrbe, infligez #b%s dégâts à TOUS les ennemis."
+        ]
+    },
+    "mysteryDungeon:ThrashPower": {
+        "NAME": "Thrash",
+        "DESCRIPTIONS": [
+            "Every 4 Attacks you play, gain %1$s #yVigor. NL (%2$s card till #yVigor gain)",
+            "Every 4 Attacks you play, gain %1$s #yVigor. NL (%2$s cards till #yVigor gain)"
+        ]
+    },
+    "mysteryDungeon:ThrashPlusPower": {
+        "NAME": "Thrash+",
+        "DESCRIPTIONS": [
+            "Every 3 Attacks you play, gain %1$s #yVigor. NL (%2$s card till #yVigor gain)",
+            "Every 3 Attacks you play, gain %1$s #yVigor. NL (%2$s cards till #yVigor gain)"
         ]
     },
     "mysteryDungeon:TorrentPower": {
@@ -460,6 +495,12 @@
         "NAME": "Tension",
         "DESCRIPTIONS": [
             "Pour chaque 25 or dépensé en combat, gagnez #b%s Armure Plaquée."
+        ]
+    },
+    "mysteryDungeon:WaterfallPower": {
+        "NAME": "Waterfall",
+        "DESCRIPTIONS": [
+            "At the end of the turn shuffle your draw pile with your discard pile. At the start of your turn scry #b%s cards."
         ]
     },
     "mysteryDungeon:WaterPledgePower": {
