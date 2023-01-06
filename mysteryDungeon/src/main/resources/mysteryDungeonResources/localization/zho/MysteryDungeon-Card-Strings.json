@@ -508,7 +508,7 @@
     },
     "mysteryDungeon:ChikoritaSweetScent": {
         "NAME": "Sweet Scent",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Evasiveness_Drop. NL Apply !M! Vulnerable"
+        "DESCRIPTION": "Apply !M! mysterydungeon:Evasiveness_Drop. NL Apply !M! Vulnerable."
     },
     "mysteryDungeon:ChikoritaSynthesis": {
         "NAME": "Synthesis",
@@ -529,7 +529,7 @@
     },
     "mysteryDungeon:ChikoritaWorrySeed": {
         "NAME": "Worry Seed",
-        "DESCRIPTION": "Unplayable. NL Ethereal. NL When drawn draw !M! cards. NL While in hand, Lose 1 HP per card played.",
+        "DESCRIPTION": "Unplayable. NL Ethereal. NL When drawn: draw !M! cards. NL While in hand, lose 1 HP when you play a card.",
         "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn draw !M! cards. NL While in hand, Lose 1 HP per card played.",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
@@ -545,7 +545,7 @@
     },
     "mysteryDungeon:CyndaquilBurnUp": {
         "NAME": "Fire Pledge",
-        "DESCRIPTION": "Add 2 Burn status cards to your draw pile. NL Apply !M! mysterydungeon:Burn to an enemy."
+        "DESCRIPTION": "Add 2 *Burn to your draw pile. NL Apply !M! mysterydungeon:Burn."
     },
     "mysteryDungeon:CyndaquilCounter": {
         "NAME": "Counter",
@@ -615,7 +615,7 @@
     },
     "mysteryDungeon:CyndaquilFlashFire": {
         "NAME": "Flash Fire",
-        "DESCRIPTION": "Add 2 Burn status card in your draw pile. NL Each time you play a card apply !M! mysterydungeon:Burn to all enemies.",
+        "DESCRIPTION": "Add 2 *Burn in your draw pile. NL Each time you play a card apply !M! mysterydungeon:Burn to ALL enemies.",
         "UPGRADE_DESCRIPTION": "Innate. NL Add 2 Burn status card in your draw pile. NL Each time you play a card apply !M! mysterydungeon:Burn to all enemies."
     },
     "mysteryDungeon:CyndaquilFling": {
@@ -694,8 +694,8 @@
     },
     "mysteryDungeon:CyndaquilSleepTalk": {
         "NAME": "Sleep Talk",
-        "DESCRIPTION": "When you create a Status card, draw !M! card.",
-        "UPGRADE_DESCRIPTION": "For each created Status card, draw !M! card. NL Draw a card."
+        "DESCRIPTION": "When you create a Status, draw !M! card.",
+        "UPGRADE_DESCRIPTION": "For each created Status, draw !M! card. NL Draw a card."
     },
     "mysteryDungeon:CyndaquilTackle": {
         "NAME": "Tackle",
@@ -755,7 +755,7 @@
     },
     "mysteryDungeon:MeowthFlash": {
         "NAME": "Flash",
-        "DESCRIPTION": "Spend 10 gold. NL Gain !M! plated armor. NL Exhaust."
+        "DESCRIPTION": "Spend 10 gold. NL Gain !M! mysterydungeon:Plated_Armor. NL Exhaust."
     },
     "mysteryDungeon:MeowthFlatter": {
         "NAME": "Flatter",
