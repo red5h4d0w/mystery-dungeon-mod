@@ -779,7 +779,7 @@
     },
     "mysteryDungeon:MeowthHoneClaws": {
         "NAME": "Hone Claws",
-        "DESCRIPTION": "Give an enemy !B! Block. NL Gain !M! Strength"
+        "DESCRIPTION": "Apply !B! Block. NL Gain !M! Strength."
     },
     "mysteryDungeon:MeowthHyperVoice": {
         "NAME": "Hyper Voice",
