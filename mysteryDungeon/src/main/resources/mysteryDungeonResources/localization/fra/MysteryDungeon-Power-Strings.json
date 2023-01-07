@@ -75,7 +75,7 @@
     "mysteryDungeon:ChikoritaWorrySeedPower": {
         "NAME": "Soucigraine",
         "DESCRIPTIONS": [
-            "Durant votre tour, perdez #b1 HP par carte jouée. À la fin de votre tour, soignez #b2 PV.",
+            "During your turn, Lose #b1 HP per card played. At the end of your turn, Heal #b2 HP.",
             "During your turn, Lose #b%s HP per card played. At the end of your turn, Heal 2 HP #b%s times."
         ]
     },
@@ -283,14 +283,14 @@
     "mysteryDungeon:NextTurnEruptionPower": {
         "NAME": "Prochain tour : Éruption",
         "DESCRIPTIONS": [
-            "Au prochain tour, déclenchez une #yÉruption.",
+            "Next Turn, Cause an Eruption.",
             "Au prochain tour, déclenchez #b%s #yÉruptions."
         ]
     },
     "mysteryDungeon:NextTurnLoseHpPower": {
-        "NAME": "Prochain Tour : Perte de PV",
+        "NAME": "Next Turn: Lose Hp",
         "DESCRIPTIONS": [
-            "Au prochain tour, perdez #b%s PV."
+            "Next turn, Lose #b%s Hp."
         ]
     },
     "mysteryDungeon:NextTurnNoBlockPower": {
@@ -430,8 +430,8 @@
     "mysteryDungeon:SurfPower": {
         "NAME": "Surf",
         "DESCRIPTIONS": [
-            "Whenever you discard a card, for every card discarded, gain 1 mysterydungeon:Temporary_Vigor.",
-            "Whenever you discard a card, for every card discarded, gain %s mysterydungeon:Temporary_Vigor."
+            "Whenever you discard a card, gain 1 mysterydungeon:Temporary_Vigor.",
+            "Whenever you discard a card, gain %s mysterydungeon:Temporary_Vigor."
         ]
     },
     "mysteryDungeon:SweetKissPower": {
