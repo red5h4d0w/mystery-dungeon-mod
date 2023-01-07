@@ -615,17 +615,17 @@
     },
     "mysteryDungeon:CyndaquilFlashFire": {
         "NAME": "Torche",
-        "DESCRIPTION": "Add 2 Burn status card in your draw pile. NL Each time you play a card Infligez !M! mysterydungeon:Burn to all enemies.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Add 2 Burn status card in your draw pile. NL Each time you play a card Infligez !M! mysterydungeon:Burn to all enemies."
+        "DESCRIPTION": "Ajoutez 2 *Brûlure à votre pioche. NL Lorsque vous jouez une carte, appliquez !M! de mysterydungeon:Brûlure à TOUS les ennemis.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Ajoutez 2 *Brûlure à votre pioche. NL Lorsque vous jouez une carte, appliquez !M! de mysterydungeon:Brûlure à TOUS les ennemis."
     },
     "mysteryDungeon:CyndaquilFling": {
         "NAME": "Dégommage",
-        "DESCRIPTION": "Appliquez 5 mysterydungeon:Brûlure 2 fois. NL Gagnez [E]. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "Appliquez 5 mysterydungeon:Brûlure 2 fois. NL Gagnez [E] [E]. NL Épuisement."
+        "DESCRIPTION": "Appliquez 5 de mysterydungeon:Brûlure 2 fois. NL Gagnez [E]. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Appliquez 5 de mysterydungeon:Brûlure 2 fois. NL Gagnez [E] [E]. NL Épuisement."
     },
     "mysteryDungeon:CyndaquilFrustration": {
         "NAME": "Frustration",
-        "DESCRIPTION": "Appliquez 12 mysterydungeon:Brûlure. NL Au prochain tour, à la fin de votre tour déclenchez une mysterydungeon:Éruption.",
+        "DESCRIPTION": "Appliquez 12 de mysterydungeon:Brûlure. NL Au prochain tour, à la fin de votre tour, déclenchez une mysterydungeon:Éruption.",
         "UPGRADE_DESCRIPTION": "Retenue. NL Appliquez 12 mysterydungeon:Brûlure. NL Au prochain tour, à la fin de votre tour, déclenchez une mysterydungeon:Éruption."
     },
     "mysteryDungeon:CyndaquilSmokescreen": {
@@ -634,7 +634,7 @@
     },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "Canicule",
-        "DESCRIPTION": "Gain !B! block. NL Whenever you are attacked this turn, Infligez 5 mysterydungeon:Burn to your attacker."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Lorsque vous êtes attaqué ce tour, appliquez 5 de mysterydungeon:Brûlure à l'attaquant."
     },
     "mysteryDungeon:CyndaquilHowl": {
         "NAME": "Grondement",
@@ -646,8 +646,8 @@
     },
     "mysteryDungeon:CyndaquilInferno": {
         "NAME": "Feu d'Enfer",
-        "DESCRIPTION": "Votre prochaine mysterydungeon:Brûlure ne retirera pas la mysterydungeon:Brûlure de l'ennemi. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Your next eruption will not remove any burn stacks. NL Infligez !M! mysterydungeon:Burn to all enemies. NL Exhaust."
+        "DESCRIPTION": "Votre prochaine mysterydungeon:Éruption ne retirera pas la mysterydungeon:Brûlure de l'ennemi. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Votre prochaine mysterydungeon:Éruption ne retirera pas la mysterydungeon:Brûlure de l'ennemi. NL Appliquez !M! de mysterydungeon:Brûlure à TOUS les ennemis. Épuisement."
     },
     "mysteryDungeon:CyndaquilLaserFocus": {
         "NAME": "Affilage",
@@ -779,7 +779,7 @@
     },
     "mysteryDungeon:MeowthHoneClaws": {
         "NAME": "Aiguisage",
-        "DESCRIPTION": "Give an enemy !B! block. NL Gain !M! Strength"
+        "DESCRIPTION": "Appliquez !B! d'Armure. NL Gagnez !M! de Force."
     },
     "mysteryDungeon:MeowthHyperVoice": {
         "NAME": "Mégaphone",
