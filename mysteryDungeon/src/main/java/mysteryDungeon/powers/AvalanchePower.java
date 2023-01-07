@@ -64,7 +64,6 @@ public class AvalanchePower extends PokemonPower implements CloneablePowerInterf
                     addToTop(new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, blockAmount, DamageType.THORNS), AttackEffect.BLUNT_LIGHT));
             }
         }));
-        
         super.onEvokeOrb(orb);
     }
 
