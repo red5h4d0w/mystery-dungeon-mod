@@ -3,8 +3,6 @@ package mysteryDungeon.cards.Totodile;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.watcher.PressEndTurnButtonAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -35,27 +33,23 @@ public class TotodileSubstitute extends PokemonCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.TOTODILE_BLUE;
 
-    private static final int COST = 2;
-    private static final int BLOCK = 12;
-    private static final int UPGRADE_PLUS_BLOCK = 2;
-    private static final int BASE_MAGIC_NUMBER = 8;
-    private static final int UPGRADE_MAGIC_NUMBER = 2;
+    private static final int COST = 0;
+    private static final int BASE_MAGIC_NUMBER = 7;
+    private static final int UPGRADE_MAGIC_NUMBER = 3;
 
     // /STAT DECLARATION/
 
     public TotodileSubstitute() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseBlock = BLOCK;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        exhaust = true;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, p, block));
         addToBot(new ApplyPowerAction(p, p, new VigorPower(p, magicNumber)));
-        addToBot(new PressEndTurnButtonAction());
     }
 
     // Upgraded stats.
@@ -64,7 +58,6 @@ public class TotodileSubstitute extends PokemonCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
-            upgradeBlock(UPGRADE_PLUS_BLOCK);
             initializeDescription();
         }
     }

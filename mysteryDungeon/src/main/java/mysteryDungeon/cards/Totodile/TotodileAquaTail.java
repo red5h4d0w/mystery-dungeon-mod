@@ -13,7 +13,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
-import mysteryDungeon.actions.DiscardTopOfDrawPileAction;
 import mysteryDungeon.characters.Pokemon;
 
 public class TotodileAquaTail extends PokemonCard {
@@ -25,7 +24,6 @@ public class TotodileAquaTail extends PokemonCard {
     public static final String IMG = makeCardPath("TotodileAttack.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -38,8 +36,10 @@ public class TotodileAquaTail extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.TOTODILE_BLUE;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 10;
+    private static final int DAMAGE = 9;
+    private static final int UPGRADE_PLUS_DMG = 2;
     private static final int BASE_MAGIC_NUMBER = 2;
+    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
 
     // /STAT DECLARATION/
@@ -56,10 +56,7 @@ public class TotodileAquaTail extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SMASH));
-        if(!upgraded)
-            addToBot(new DiscardTopOfDrawPileAction(magicNumber));
-        if(upgraded)
-            addToBot(new ScryAction(magicNumber));
+        addToBot(new ScryAction(magicNumber));
     }
 
     // Upgraded stats.
@@ -67,7 +64,8 @@ public class TotodileAquaTail extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = UPGRADE_DESCRIPTION;
+            upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             initializeDescription();
         }
     }

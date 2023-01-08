@@ -1248,8 +1248,7 @@
     },
     "mysteryDungeon:TotodileAquaTail": {
         "NAME": "Aqua Tail",
-        "DESCRIPTION": "Deal !D! damage. NL Discard the top !M! cards from your draw pile.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Scry !M!."
+        "DESCRIPTION": "Deal !D! damage. NL Scry !M!."
     },
     "mysteryDungeon:TotodileAvalanche": {
         "NAME": "Avalanche",
@@ -1257,7 +1256,7 @@
     },
     "mysteryDungeon:TotodileBite": {
         "NAME": "Bite",
-        "DESCRIPTION": "Deal !D! damage."
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
     },
     "mysteryDungeon:TotodileBlizzard": {
         "NAME": "Blizzard",
@@ -1363,7 +1362,7 @@
     },
     "mysteryDungeon:TotodileSubstitute": {
         "NAME": "Substitute",
-        "DESCRIPTION": "Gain !B! Block. NL Gain !M! mysterydungeon:Vigor. NL End Your Turn."
+        "DESCRIPTION": "Gain !M! mysterydungeon:Vigor. NL Exhaust."
     },
     "mysteryDungeon:TotodileRage": {
         "NAME": "Rage",
@@ -1413,7 +1412,8 @@
     },
     "mysteryDungeon:TotodileWhirlpool": {
         "NAME": "Whirlpool",
-        "DESCRIPTION": "Discard the top !M! card of your draw pile. NL Gain !mysteryDungeon:M2! Focus."
+        "DESCRIPTION": "Discard the top !M! card of your draw pile. NL Gain !mysteryDungeon:M2! Focus. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Discard the top !M! card of your draw pile. NL Gain !mysteryDungeon:M2! Focus."
     },
     "mysteryDungeon:TotodileWorkUp": {
         "NAME": "Work Up",
