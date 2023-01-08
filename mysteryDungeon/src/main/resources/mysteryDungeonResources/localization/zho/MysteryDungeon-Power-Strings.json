@@ -75,7 +75,7 @@
     "mysteryDungeon:ChikoritaWorrySeedPower": {
         "NAME": "Worry Seed",
         "DESCRIPTIONS": [
-            "During your turn, Lose #b1 HP per card played. At the end of your turn, Heal #b2 HP.",
+            "During your turn, Lose #b1 HP per card played. At the end of your turn, heal #b2 HP.",
             "During your turn, Lose #b%s HP per card played. At the end of your turn, Heal 2 HP #b%s times."
         ]
     },
@@ -102,7 +102,7 @@
     "mysteryDungeon:CyndaquilExplorerPower": {
         "NAME": "Explorer Form",
         "DESCRIPTIONS": [
-            "Whenever you cause an #yEruption, Deal #b%s to all enemies."
+            "Whenever you cause an #yEruption, deal #b%s to ALL enemies."
         ]
     },
     "mysteryDungeon:CrushClawPower": {
@@ -128,7 +128,7 @@
     "mysteryDungeon:EndurePower": {
         "NAME": "挺住",
         "DESCRIPTIONS": [
-            "When you play a status card deal #b%s damage to ALL enemies."
+            "When you play a Status deal #b%s damage to ALL enemies."
         ]
     },
     "mysteryDungeon:EvasivenessDropPower": {
@@ -141,7 +141,7 @@
     "mysteryDungeon:FirePledgePower": {
         "NAME": "Fire Pledge",
         "DESCRIPTIONS": [
-            "When you play another Pledge card this turn, activate one of the following effects. NL Grass: Apply 9 Poison to all enemies. NL Water: Apply 2 Vulnerable to ALL enemies."
+            "When you play another #yPledge #yCard this turn, activate one of the following effects. NL Grass: Apply #b9 #yPoison to ALL enemies. NL Water: Apply #b2 #yVulnerable to ALL enemies."
         ]
     },
     "mysteryDungeon:FlashFirePower": {
@@ -283,14 +283,14 @@
     "mysteryDungeon:NextTurnEruptionPower": {
         "NAME": "Next Turn: Eruption",
         "DESCRIPTIONS": [
-            "Next Turn, Cause an Eruption.",
+            "Next Turn, trigger an #yEruption.",
             "Next Turn, Cause #b%s Eruptions."
         ]
     },
     "mysteryDungeon:NextTurnLoseHpPower": {
-        "NAME": "Next Turn: Lose Hp",
+        "NAME": "Next Turn: Lose HP",
         "DESCRIPTIONS": [
-            "Next turn, Lose #b%s Hp."
+            "Next turn, lose #b%s HP."
         ]
     },
     "mysteryDungeon:NextTurnNoBlockPower": {
@@ -430,8 +430,8 @@
     "mysteryDungeon:SurfPower": {
         "NAME": "Surf",
         "DESCRIPTIONS": [
-            "Whenever you discard a card, gain 1 mysterydungeon:Temporary_Vigor.",
-            "Whenever you discard a card, gain %s mysterydungeon:Temporary_Vigor."
+            "Whenever you discard a card, for every card discarded, gain 1 mysterydungeon:Temporary_Vigor.",
+            "Whenever you discard a card, for every card discarded, gain %s mysterydungeon:Temporary_Vigor."
         ]
     },
     "mysteryDungeon:SweetKissPower": {
