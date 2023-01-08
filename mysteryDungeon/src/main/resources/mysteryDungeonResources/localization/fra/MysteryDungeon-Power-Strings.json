@@ -141,7 +141,7 @@
     "mysteryDungeon:FirePledgePower": {
         "NAME": "Aire de Feu",
         "DESCRIPTIONS": [
-            "When you play another Pledge card this turn, activate one of the following effects. NL Grass: Apply 9 Poison to all enemies. NL Water: Apply 2 Vulnerable to ALL enemies."
+            "Lorsque vous jouez une autre #yCarte #yd'Aire ce tour, activez un des effets suivants. NL Plante : Appliquez #b9 de #yPoison à TOUS les ennemis. NL Eau : Appliquez #b2 de #yVulnérabilité à TOUS les ennemis."
         ]
     },
     "mysteryDungeon:FlashFirePower": {
