@@ -1404,7 +1404,7 @@
     },
     "mysteryDungeon:TotodileWaterPulse": {
         "NAME": "Water Pulse",
-        "DESCRIPTION": "Discard the top !M! cards of your draw pile. For each card discarded this way, deal !D! damage."
+        "DESCRIPTION": "Discard the top !M! cards of your draw pile. For each card discarded this way, deal !mysteryDungeon:M2! damage."
     },
     "mysteryDungeon:TotodileWaterSport": {
         "NAME": "Water Sport",

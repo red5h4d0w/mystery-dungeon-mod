@@ -36,7 +36,7 @@ public class TotodileWaterPulse extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.TOTODILE_BLUE;
 
     private static final int COST = 0;
-    private static final int DAMAGE = 3;
+    private static final int DAMAGE = 0;
     private static final int BASE_MAGIC_NUMBER = 4;
     private static final int UPGRADE_MAGIC_NUMBER = 1;
 
@@ -48,6 +48,8 @@ public class TotodileWaterPulse extends PokemonCard {
         baseDamage = DAMAGE;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        baseSecondMagicNumber = 3;
+        secondMagicNumber = 3;
     }
 
     // Actions the card should do.
@@ -56,7 +58,7 @@ public class TotodileWaterPulse extends PokemonCard {
         int multiplier = p.drawPile.size() > magicNumber? magicNumber: p.drawPile.size();
         addToBot(new DiscardTopOfDrawPileAction(magicNumber));
         if(multiplier!=0)
-            addToBot( new DamageAction(m, new DamageInfo(p, damage*multiplier, damageTypeForTurn), AttackEffect.SMASH));
+            addToBot( new DamageAction(m, new DamageInfo(p, damage+secondMagicNumber*multiplier, damageTypeForTurn), AttackEffect.SMASH));
     }
 
     // Upgraded stats.
