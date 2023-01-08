@@ -1380,7 +1380,7 @@
     },
     "mysteryDungeon:TotodileThrash": {
         "NAME": "Thrash",
-        "DESCRIPTION": "Every !mysteryDungeon:M2! Attack you play, gain !M! mysterydungeon:Vigor."
+        "DESCRIPTION": "Every !M! Attack you play, gain !mysteryDungeon:M2! mysterydungeon:Vigor."
     },
     "mysteryDungeon:TotodileTorrent": {
         "NAME": "Torrent",
