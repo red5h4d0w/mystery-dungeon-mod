@@ -102,7 +102,7 @@
     "mysteryDungeon:CyndaquilExplorerPower": {
         "NAME": "Forme de l'Explorateur",
         "DESCRIPTIONS": [
-            "Whenever you cause an #yEruption, Deal #b%s to all enemies."
+            "Lorsque vous déclenchez une #yÉruption, infligez #b%s dégâts à TOUS les ennemis."
         ]
     },
     "mysteryDungeon:CrushClawPower": {
@@ -128,7 +128,7 @@
     "mysteryDungeon:EndurePower": {
         "NAME": "Ténacité",
         "DESCRIPTIONS": [
-            "When you play a status card deal #b%s damage to ALL enemies."
+            "Lorsque vous jouez un #yStatut, infligez #b%s dégats à TOUS les ennemis."
         ]
     },
     "mysteryDungeon:EvasivenessDropPower": {
@@ -141,20 +141,20 @@
     "mysteryDungeon:FirePledgePower": {
         "NAME": "Aire de Feu",
         "DESCRIPTIONS": [
-            "When you play another Pledge card this turn, activate one of the following effects. NL Grass: Apply 9 Poison to all enemies. NL Water: Apply 2 Vulnerable to ALL enemies."
+            "Lorsque vous jouez une autre #yCarte #yd'Aire ce tour, activez un des effets suivants. NL Plante : Appliquez #b9 de #yPoison à TOUS les ennemis. NL Eau : Appliquez #b2 de #yVulnérabilité à TOUS les ennemis."
         ]
     },
     "mysteryDungeon:FlashFirePower": {
         "NAME": "Torche",
         "DESCRIPTIONS": [
-            "Every time you play a card apply #b%s #yBurn to all enemies."
+            "Lorsque vous jouez une carte, appliquez #b%s de #yBrûlure à TOUS les ennemis."
         ]
     },
     "mysteryDungeon:FreeSpendingEveryTurnPower": {
         "NAME": "Investissement",
         "DESCRIPTIONS": [
             "Chaque tour, la première fois que vous devez dépenser de l'or, n'en dépensez pas.",
-            "Each turn, the first #b%s times you should spend gold, do not spend any."
+            "Chaque tour, les premières #b%s fois que vous devez dépenser de l'or, n'en dépensez pas."
         ]
     },
     "mysteryDungeon:FreeSpendingThisTurnPower": {
@@ -362,7 +362,7 @@
     "mysteryDungeon:RainDishPower": {
         "NAME": "Cuvette",
         "DESCRIPTIONS": [
-            "When you manually scry or disacrd a card, gain #b%s #yBlock."
+            "Quand vous défaussez manuellement ou scrutez une carte, gagnez %s #yd'Armure."
         ]
     },
     "mysteryDungeon:RecoverPower": {

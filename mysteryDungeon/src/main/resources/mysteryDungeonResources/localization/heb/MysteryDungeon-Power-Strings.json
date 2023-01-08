@@ -102,7 +102,7 @@
     "mysteryDungeon:CyndaquilExplorerPower": {
         "NAME": "Explorer Form",
         "DESCRIPTIONS": [
-            "Whenever you cause an #yEruption, Deal #b%s to all enemies."
+            "Whenever you cause an #yEruption, deal #b%s to ALL enemies."
         ]
     },
     "mysteryDungeon:CrushClawPower": {
@@ -141,13 +141,13 @@
     "mysteryDungeon:FirePledgePower": {
         "NAME": "Fire Pledge",
         "DESCRIPTIONS": [
-            "When you play another Pledge card this turn, activate one of the following effects. NL Grass: Apply 9 Poison to all enemies. NL Water: Apply 2 Vulnerable to ALL enemies."
+            "When you play another #yPledge #yCard this turn, activate one of the following effects. NL Grass: Apply #b9 #yPoison to ALL enemies. NL Water: Apply #b2 #yVulnerable to ALL enemies."
         ]
     },
     "mysteryDungeon:FlashFirePower": {
         "NAME": "Flash Fire",
         "DESCRIPTIONS": [
-            "Every time you play a card apply #b%s #yBurn to all enemies."
+            "Whenever you play a card, apply #b%s #yBurn to ALL enemies."
         ]
     },
     "mysteryDungeon:FreeSpendingEveryTurnPower": {
@@ -362,7 +362,7 @@
     "mysteryDungeon:RainDishPower": {
         "NAME": "Rain Dish",
         "DESCRIPTIONS": [
-            "When you manually scry or disacrd a card, gain #b%s #yBlock."
+            "When you manually discard or scry a card, gain #b%s #yBlock."
         ]
     },
     "mysteryDungeon:RecoverPower": {
