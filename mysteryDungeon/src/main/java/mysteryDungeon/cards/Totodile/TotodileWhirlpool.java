@@ -23,6 +23,7 @@ public class TotodileWhirlpool extends PokemonCard {
     public static final String IMG = makeCardPath("TotodileSkill.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -34,10 +35,8 @@ public class TotodileWhirlpool extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.TOTODILE_BLUE;
 
     private static final int COST = 1;
-    private static final int BASE_MAGIC_NUMBER = 3;
-    private static final int UPGRADE_MAGIC_NUMBER = 3;
+    private static final int BASE_MAGIC_NUMBER = 4;
     private static final int BASE_SECOND_MAGIC_NUMBER = 1;
-    private static final int UPGRADE_SECOND_MAGIC_NUMBER = 1;
 
     // /STAT DECLARATION
 
@@ -47,6 +46,7 @@ public class TotodileWhirlpool extends PokemonCard {
         magicNumber = baseMagicNumber;
         baseSecondMagicNumber = BASE_SECOND_MAGIC_NUMBER;
         secondMagicNumber = baseSecondMagicNumber;
+        exhaust = true;
     }
 
     // Actions the card should do.
@@ -61,8 +61,8 @@ public class TotodileWhirlpool extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
-            upgradeSecondMagicNumber(UPGRADE_SECOND_MAGIC_NUMBER);
+            exhaust = false;
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }
