@@ -838,7 +838,7 @@
     },
     "mysteryDungeon:MeowthScreech": {
         "NAME": "Screech",
-        "DESCRIPTION": "Give an enemy !M! Vulnerable and !B! Block."
+        "DESCRIPTION": "Apply !M! Vulnerable. NL Apply !B! Block."
     },
     "mysteryDungeon:MeowthSnarl": {
         "NAME": "Snarl",
@@ -846,7 +846,7 @@
     },
     "mysteryDungeon:MeowthSpite": {
         "NAME": "Spite",
-        "DESCRIPTION": "Spend !M! X gold. NL Gain 2X Strength. NL Exhaust."
+        "DESCRIPTION": "Spend !M!X gold. NL Gain 2X Strength. NL Exhaust."
     },
     "mysteryDungeon:MeowthSwagger": {
         "NAME": "Swagger",
@@ -876,7 +876,7 @@
     },
     "mysteryDungeon:MeowthUnnerve": {
         "NAME": "Unnerve",
-        "DESCRIPTION": "Each time you spend a total of 25 gold this combat, gain !M! Plated Armor."
+        "DESCRIPTION": "Whenever you spend a total of 25 gold this combat, gain !M! mysterydungeon:Plated_Armor."
     },
     "mysteryDungeon:MeowthUTurn": {
         "NAME": "U-Turn",
@@ -1046,8 +1046,8 @@
     },
     "mysteryDungeon:PikachuWildCharge": {
         "NAME": "Wild Charge",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all orbs twice.",
-        "UPGRADE_DESCRIPTION": "Evoke all orbs twice."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke ALL Orbs twice.",
+        "UPGRADE_DESCRIPTION": "Evoke all Orbs twice."
     },
     "mysteryDungeon:PikachuZapCannon": {
         "NAME": "Zap Cannon",
@@ -1090,7 +1090,7 @@
     },
     "mysteryDungeon:SquirtleEndure": {
         "NAME": "Endure",
-        "DESCRIPTION": "When you play a status, deal !M! damage to ALL enemies. NL This damage behaves like Attack damage."
+        "DESCRIPTION": "When you play a Status, deal !M! damage to ALL enemies. NL This damage behaves like Attack damage."
     },
     "mysteryDungeon:SquirtleExplorerForm": {
         "NAME": "Explorer Form",
@@ -1117,12 +1117,12 @@
     },
     "mysteryDungeon:SquirtleFlipTurn": {
         "NAME": "Flip Turn",
-        "DESCRIPTION": "Gain !B! Block. NL draw !M! card. NL Discard !M! card.",
-        "UPGRADE_DESCRIPTION": "Gain !B! Block. NL draw !M! cards. NL Discard !M! cards."
+        "DESCRIPTION": "Gain !B! Block. NL Draw !M! card. NL Discard !M! card.",
+        "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Draw !M! cards. NL Discard !M! cards."
     },
     "mysteryDungeon:SquirtleGyroBall": {
         "NAME": "Gyro Ball",
-        "DESCRIPTION": "Add 1 *Freeze to your hand. NL Deal !D! damage per status in your hand. NL Discard ALL Statuses in your hand."
+        "DESCRIPTION": "Add 1 *Freeze to your hand. NL Deal !D! damage per Status in your hand. NL Discard ALL Statuses in your hand."
     },
     "mysteryDungeon:SquirtleHail": {
         "NAME": "Hail",
@@ -1159,7 +1159,7 @@
     },
     "mysteryDungeon:SquirtleMist": {
         "NAME": "Mist",
-        "DESCRIPTION": "Gain !B! Block. NL Gain !M! Artifact. "
+        "DESCRIPTION": "Gain !B! Block. NL Gain !M! Artifact."
     },
     "mysteryDungeon:SquirtleProtect": {
         "NAME": "Protect",
@@ -1189,7 +1189,7 @@
     },
     "mysteryDungeon:SquirtleSkullBashGo": {
         "NAME": "Skull Bash Go!",
-        "DESCRIPTION": " Retain. NL Deal !D! damage to ALL enemies. NL If this is the leftmost card of your hand, deal another !D! damage to ALL enemies. NL Exhaust.",
+        "DESCRIPTION": "Retain. NL Deal !D! damage to ALL enemies. NL If this is the leftmost card of your hand, deal another !D! damage to ALL enemies. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage to ALL enemies. NL If this is the leftmost card of your hand, deal another !D! damage to ALL enemies. NL Exhaust."
     },
     "mysteryDungeon:SquirtleSkullBashReady": {
@@ -1373,7 +1373,7 @@
     "mysteryDungeon:TotodileRainDance": {
         "NAME": "Rain Dance",
         "DESCRIPTION": "Unplayable. NL When discarded: Your next Attack deals !M! additional damage.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up NL When discarded: Your next Attack deals !M! additional damage.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up. NL When discarded: Your next Attack deals !M! additional damage.",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
         ]
@@ -1385,7 +1385,7 @@
     "mysteryDungeon:TotodileTorrent": {
         "NAME": "Torrent",
         "DESCRIPTION": "Unplayable. NL When discarded: Gain !M! Focus.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up NL When discarded: Gain !M! Focus.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up. NL When discarded: Gain !M! Focus.",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
         ]
@@ -1417,6 +1417,6 @@
     },
     "mysteryDungeon:TotodileWorkUp": {
         "NAME": "Work Up",
-        "DESCRIPTION": "If you do not have any empty Orb Slots, Gain !M! Orb Slots."
+        "DESCRIPTION": "If you do not have any empty Orb Slots, gain !M! Orb Slots."
     }
 }
