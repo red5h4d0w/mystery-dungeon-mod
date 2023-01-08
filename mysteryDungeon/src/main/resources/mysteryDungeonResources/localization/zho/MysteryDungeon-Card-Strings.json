@@ -370,11 +370,11 @@
     "mysteryDungeon:ChikoritaAromatherapy": {
         "NAME": "Aromatherapy",
         "DESCRIPTION": "Whenever you take damage, gain !M! Strength.",
-        "UPGRADE_DESCRIPTION": "Whenever you take damage, gain !M! Strength. NL Next turn, lose 1 HP"
+        "UPGRADE_DESCRIPTION": "Whenever you take damage, gain !M! Strength. NL Next Turn Lose 1 HP"
     },
     "mysteryDungeon:ChikoritaBodySlam": {
         "NAME": "Body Slam",
-        "DESCRIPTION": "Deal !D! damage. NL Next Turn, lose !M! HP."
+        "DESCRIPTION": "Deal !D! damage. NL Next Turn Lose !M! HP."
     },
     "mysteryDungeon:ChikoritaConfide": {
         "NAME": "Confide",
@@ -407,7 +407,7 @@
     },
     "mysteryDungeon:ChikoritaFuryCutter": {
         "NAME": "Fury Cutter",
-        "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Increase this card damage by !M! this combat. NL Lose 2 HP. NL Add a copy of that card in your hand next turn and lose 2 HP. NL Exhaust."
+        "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Increase this card damage by !M! this combat. NL Lose 2 HP. NL Bring back a copy of that card in your hand next turn and lose 2 HP. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaGrassKnot": {
         "NAME": "Grass Knot",
@@ -415,7 +415,7 @@
     },
     "mysteryDungeon:ChikoritaGrassPledge": {
         "NAME": "Grass Pledge",
-        "DESCRIPTION": "Gain !M! Temporary HP. NL If you play another mysterydungeon:Pledge_Card this turn, activate an additional effect."
+        "DESCRIPTION": "Gain !M! Temporary HP. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
     },
     "mysteryDungeon:ChikoritaGrassWhistle": {
         "NAME": "Grass Whistle",
@@ -449,7 +449,7 @@
     },
     "mysteryDungeon:ChikoritaMagicalLeaf": {
         "NAME": "Magical Leaf",
-        "DESCRIPTION": "Deal !D! damage to a random enemy !M! times."
+        "DESCRIPTION": "Deal !D! damage !M! times to random enemies."
     },
     "mysteryDungeon:ChikoritaNaturalGift": {
         "NAME": "Natural Gift",
@@ -490,7 +490,7 @@
     },
     "mysteryDungeon:ChikoritaSeedBomb": {
         "NAME": "Seed Bomb",
-        "DESCRIPTION": "Deal !D! damage. NL Next turn, draw 2 more cards."
+        "DESCRIPTION": "Deal !D! damage. NL Next turn draw 2 more cards."
     },
     "mysteryDungeon:ChikoritaSnore": {
         "NAME": "Snore",
@@ -1355,15 +1355,15 @@
     },
     "mysteryDungeon:TotodileStrength": {
         "NAME": "Strength",
-        "DESCRIPTION": "Draw !M! card. NL For each Attack drawn this way, channel 1 Frost."
+        "DESCRIPTION": "Draw !M! card. NL If you drew an Attack, channel 1 Frost orb."
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "Surf",
-        "DESCRIPTION": "Whenever you discard a card, for every discarded card, gain !M! mysterydungeon:Temporary_Vigor."
+        "DESCRIPTION": "Whenever you discard a card, gain !M! mysterydungeon:Temporary_Vigor."
     },
     "mysteryDungeon:TotodileSubstitute": {
         "NAME": "Substitute",
-        "DESCRIPTION": "Gain !B! Block. NL Gain !M! mysterydungeon:Vigor. NL End Your Turn."
+        "DESCRIPTION": "Gain !B! block. NL Gain !M! mysterydungeon:Vigor. NL End Your Turn."
     },
     "mysteryDungeon:TotodileRage": {
         "NAME": "Rage",
