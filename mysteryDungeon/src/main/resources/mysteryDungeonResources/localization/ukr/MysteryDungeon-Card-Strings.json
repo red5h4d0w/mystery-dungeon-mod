@@ -1046,8 +1046,8 @@
     },
     "mysteryDungeon:PikachuWildCharge": {
         "NAME": "Wild Charge",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all Orbs twice.",
-        "UPGRADE_DESCRIPTION": "Evoke ALL Orbs twice."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke ALL Orbs twice.",
+        "UPGRADE_DESCRIPTION": "Evoke all Orbs twice."
     },
     "mysteryDungeon:PikachuZapCannon": {
         "NAME": "Zap Cannon",
@@ -1380,12 +1380,12 @@
     },
     "mysteryDungeon:TotodileThrash": {
         "NAME": "Thrash",
-        "DESCRIPTION": "Every !M! Attack you play, gain !mysteryDungeon:M2! mysterydungeon:Vigor."
+        "DESCRIPTION": "Every !mysteryDungeon:M2! Attack you play, gain !M! mysterydungeon:Vigor."
     },
     "mysteryDungeon:TotodileTorrent": {
         "NAME": "Torrent",
         "DESCRIPTION": "Unplayable. NL When discarded: Gain !M! Focus.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up NL When discarded: Gain !M! Focus.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up. NL When discarded: Gain !M! Focus.",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
         ]
@@ -1404,7 +1404,7 @@
     },
     "mysteryDungeon:TotodileWaterPulse": {
         "NAME": "Water Pulse",
-        "DESCRIPTION": "Discard the top !M! cards of your draw pile. For each card discarded this way, deal !mysteryDungeon:M2! damage."
+        "DESCRIPTION": "Discard the top !M! cards of your draw pile. For each card discarded this way, deal !D! damage."
     },
     "mysteryDungeon:TotodileWaterSport": {
         "NAME": "Water Sport",
@@ -1417,6 +1417,6 @@
     },
     "mysteryDungeon:TotodileWorkUp": {
         "NAME": "Work Up",
-        "DESCRIPTION": "If you do not have any empty Orb Slot, gain !M! Orb Slots."
+        "DESCRIPTION": "If you do not have any empty Orb Slots, gain !M! Orb Slots."
     }
 }
