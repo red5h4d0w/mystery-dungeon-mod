@@ -141,7 +141,7 @@
     "mysteryDungeon:FirePledgePower": {
         "NAME": "Fire Pledge",
         "DESCRIPTIONS": [
-            "When you play another Pledge card this turn, activate one of the following effects. NL Grass: Apply 9 Poison to all enemies. NL Water: Apply 2 Vulnerable to ALL enemies."
+            "When you play another #yPledge #yCard this turn, activate one of the following effects. NL Grass: Apply #b9 #yPoison to ALL enemies. NL Water: Apply #b2 #yVulnerable to ALL enemies."
         ]
     },
     "mysteryDungeon:FlashFirePower": {
