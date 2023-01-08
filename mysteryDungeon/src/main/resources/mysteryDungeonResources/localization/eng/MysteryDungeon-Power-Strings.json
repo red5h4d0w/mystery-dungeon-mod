@@ -481,8 +481,8 @@
     "mysteryDungeon:SheerForcePower": {
         "NAME": "Sheer Force",
         "DESCRIPTIONS": [
-            "Whenever you deal #b%s1 or more unblocked damage, Channel #b1 Frost.",
-            "Whenever you deal #b%s1 or more unblocked damage, Channel #b%s2 Frost."
+            "Whenever you deal #b%1$s or more unblocked damage, Channel #b1 #yFrost.",
+            "Whenever you deal #b%1$s or more unblocked damage, Channel #b%2$s #yFrost."
         ]
     },
     "mysteryDungeon:ToxicPower": {
