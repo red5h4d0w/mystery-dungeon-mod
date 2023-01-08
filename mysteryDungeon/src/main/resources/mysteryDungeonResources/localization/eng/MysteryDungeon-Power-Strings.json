@@ -89,14 +89,14 @@
     "mysteryDungeon:CursePower": {
         "NAME": "Curse",
         "DESCRIPTIONS": [
-            "The first time you draw a status or curse each turn, gain [E].",
-            "The first #b%s times draw a status or a curse each turn, gain [E]."
+            "The first time you draw a Status or Curse each turn, gain [E].",
+            "The first #b%s times draw a Status or a Curse each turn, gain [E]."
         ]
     },
     "mysteryDungeon:CyndaquilCounterPower": {
         "NAME": "Counter",
         "DESCRIPTIONS": [
-            "At the end of your turn spend all leftover energy and gain #b%s Block for each energy spent."
+            "At the end of your turn spend all leftover energy and gain #b%s #yBlock for each energy spent."
         ]
     },
     "mysteryDungeon:CyndaquilExplorerPower": {

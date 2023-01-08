@@ -89,20 +89,20 @@
     "mysteryDungeon:CursePower": {
         "NAME": "Curse",
         "DESCRIPTIONS": [
-            "The first time you draw a status or curse each turn, gain [E].",
-            "The first #b%s times draw a status or a curse each turn, gain [E]."
+            "The first time you draw a Status or Curse each turn, gain [E].",
+            "The first #b%s times draw a Status or a Curse each turn, gain [E]."
         ]
     },
     "mysteryDungeon:CyndaquilCounterPower": {
         "NAME": "Counter",
         "DESCRIPTIONS": [
-            "At the end of your turn spend all leftover energy and gain #b%s Block for each energy spent."
+            "At the end of your turn spend all leftover energy and gain #b%s #yBlock for each energy spent."
         ]
     },
     "mysteryDungeon:CyndaquilExplorerPower": {
         "NAME": "Explorer Form",
         "DESCRIPTIONS": [
-            "Whenever you apply #yBurn, deal #b%s damage to the target."
+            "Whenever you cause an #yEruption, Deal #b%s to all enemies."
         ]
     },
     "mysteryDungeon:CrushClawPower": {
@@ -128,7 +128,7 @@
     "mysteryDungeon:EndurePower": {
         "NAME": "挺住",
         "DESCRIPTIONS": [
-            "当你打出一张状态牌，造成 #b%s 点伤害。"
+            "When you play a status card deal #b%s damage to ALL enemies."
         ]
     },
     "mysteryDungeon:EvasivenessDropPower": {
@@ -188,7 +188,7 @@
     "mysteryDungeon:HailPower": {
         "NAME": "冰雹",
         "DESCRIPTIONS": [
-            "每当你抽牌，对所有敌人造成 #b%s 点伤害。"
+            "Whenever you draw a card deal #b%s damage to all enemies"
         ]
     },
     "mysteryDungeon:HealPulsePower": {
@@ -274,10 +274,10 @@
         ]
     },
     "mysteryDungeon:NextTurnDrawLessPower": {
-        "NAME": "下回合：减少抽牌",
+        "NAME": "Next Turn Draw Less Cards",
         "DESCRIPTIONS": [
-            "下回合，少抽1张牌。",
-            "下回合，少抽 #b%s 张牌。"
+            "Next Turn, Draw 1 less card.",
+            "Next Turn, Draw #b%s less cards."
         ]
     },
     "mysteryDungeon:NextTurnEruptionPower": {
@@ -331,8 +331,8 @@
     "mysteryDungeon:PetalDancePower": {
         "NAME": "花瓣舞",
         "DESCRIPTIONS": [
-            "在回合结束时，对所有敌人造成 #b%1$s 点伤害。 NL 视为攻击伤害。",
-            " #b%1$s 回合内，在回合结束时，对所有敌人造成 #b%2$s 点伤害。 NL 视为攻击伤害。"
+            "At the end of the turn, deal #b%1$s damage to ALL enemies. NL (This counts as an attack).",
+            "For #b%1$s turns, at the end of the turn, deal #b%2$s damage to ALL enemies. NL (This counts as an attack)."
         ]
     },
     "mysteryDungeon:PoisonThornsPower": {
@@ -362,7 +362,7 @@
     "mysteryDungeon:RainDishPower": {
         "NAME": "雨盘",
         "DESCRIPTIONS": [
-            "每当一张牌被手动预见或丢弃时，获得 #b%s 点 #y格挡 。"
+            "When you manually scry or disacrd a card, gain #b%s #yBlock."
         ]
     },
     "mysteryDungeon:RecoverPower": {
@@ -481,8 +481,8 @@
     "mysteryDungeon:SheerForcePower": {
         "NAME": "Sheer Force",
         "DESCRIPTIONS": [
-            "Whenever you deal #b%s1 or more unblocked damage, Channel #b1 Frost.",
-            "Whenever you deal #b%s1 or more unblocked damage, Channel #b%s2 Frost."
+            "Whenever you deal #b%1$s or more unblocked damage, Channel #b1 #yFrost.",
+            "Whenever you deal #b%1$s or more unblocked damage, Channel #b%2$s #yFrost."
         ]
     },
     "mysteryDungeon:ToxicPower": {

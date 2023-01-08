@@ -838,7 +838,7 @@
     },
     "mysteryDungeon:MeowthScreech": {
         "NAME": "Screech",
-        "DESCRIPTION": "Give an enemy !M! vulnerable and !B! block."
+        "DESCRIPTION": "Apply !M! Vulnerable. NL Apply !B! Block."
     },
     "mysteryDungeon:MeowthSnarl": {
         "NAME": "Snarl",
@@ -846,7 +846,7 @@
     },
     "mysteryDungeon:MeowthSpite": {
         "NAME": "Spite",
-        "DESCRIPTION": "Spend !M! X gold. NL Gain 2X Strength. NL Exhaust."
+        "DESCRIPTION": "Spend !M!X gold. NL Gain 2X Strength. NL Exhaust."
     },
     "mysteryDungeon:MeowthSwagger": {
         "NAME": "Swagger",
@@ -876,7 +876,7 @@
     },
     "mysteryDungeon:MeowthUnnerve": {
         "NAME": "Unnerve",
-        "DESCRIPTION": "Each time you spend a total of 25 gold this combat, gain !M! Plated Armor."
+        "DESCRIPTION": "Whenever you spend a total of 25 gold this combat, gain !M! mysterydungeon:Plated_Armor."
     },
     "mysteryDungeon:MeowthUTurn": {
         "NAME": "U-Turn",
@@ -1046,8 +1046,8 @@
     },
     "mysteryDungeon:PikachuWildCharge": {
         "NAME": "疯狂伏特",
-        "DESCRIPTION": " mysterydungeon:惰性 。 NL 激发所有充能球2次。",
-        "UPGRADE_DESCRIPTION": "激发所有充能球2次。"
+        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all Orbs twice.",
+        "UPGRADE_DESCRIPTION": "Evoke ALL Orbs twice."
     },
     "mysteryDungeon:PikachuZapCannon": {
         "NAME": "电磁炮",
@@ -1090,7 +1090,7 @@
     },
     "mysteryDungeon:SquirtleEndure": {
         "NAME": "挺住",
-        "DESCRIPTION": "当你打出一张状态牌，对所有敌人造成 !M! 点伤害。 NL 视为攻击伤害。"
+        "DESCRIPTION": "When you play a Status, deal !M! damage to ALL enemies. NL This damage behaves like Attack damage."
     },
     "mysteryDungeon:SquirtleExplorerForm": {
         "NAME": "杰尼龟·冒险者笔记",
@@ -1117,12 +1117,12 @@
     },
     "mysteryDungeon:SquirtleFlipTurn": {
         "NAME": "快速折返",
-        "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽 !M! 张牌。 NL 丢弃 !M! 张牌。",
-        "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽 !M! 张牌。 NL 丢弃 !M! 张牌。"
+        "DESCRIPTION": "Gain !B! Block. NL Draw !M! card. NL Discard !M! card.",
+        "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Draw !M! cards. NL Discard !M! cards."
     },
     "mysteryDungeon:SquirtleGyroBall": {
         "NAME": "陀螺球",
-        "DESCRIPTION": "向手牌添加1张冷冻。 NL 手牌中每张状态牌造成 !D! 点伤害。 NL 丢弃手牌中所有状态牌。"
+        "DESCRIPTION": "Add 1 *Freeze to your hand. NL Deal !D! damage per Status in your hand. NL Discard ALL Statuses in your hand."
     },
     "mysteryDungeon:SquirtleHail": {
         "NAME": "冰雹",
@@ -1159,7 +1159,7 @@
     },
     "mysteryDungeon:SquirtleMist": {
         "NAME": "白雾",
-        "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得 !M! 层人工制品。 "
+        "DESCRIPTION": "Gain !B! Block. NL Gain !M! Artifact."
     },
     "mysteryDungeon:SquirtleProtect": {
         "NAME": "守住",
@@ -1189,7 +1189,7 @@
     },
     "mysteryDungeon:SquirtleSkullBashGo": {
         "NAME": "火箭头锤",
-        "DESCRIPTION": " 保留。 NL 对所有敌人造成 !D! 点伤害。 NL 如果该牌在手牌最左侧，对所有敌人造成 !D! 点伤害。 NL 消耗。",
+        "DESCRIPTION": "Retain. NL Deal !D! damage to ALL enemies. NL If this is the leftmost card of your hand, deal another !D! damage to ALL enemies. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "保留。 NL 对所有敌人造成 !D! 点伤害。 NL 如果该牌在手牌最左侧，对所有敌人造成 !D! 点伤害。 NL 消耗。"
     },
     "mysteryDungeon:SquirtleSkullBashReady": {
@@ -1373,14 +1373,14 @@
     "mysteryDungeon:TotodileRainDance": {
         "NAME": "Rain Dance",
         "DESCRIPTION": "Unplayable. NL When discarded: Your next Attack deals !M! additional damage.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up NL When discarded: Your next Attack deals !M! additional damage.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up. NL When discarded: Your next Attack deals !M! additional damage.",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
         ]
     },
     "mysteryDungeon:TotodileThrash": {
         "NAME": "Thrash",
-        "DESCRIPTION": "Every !mysteryDungeon:M2! Attack you play, gain !M! mysterydungeon:Vigor."
+        "DESCRIPTION": "Every !M! Attack you play, gain !mysteryDungeon:M2! mysterydungeon:Vigor."
     },
     "mysteryDungeon:TotodileTorrent": {
         "NAME": "Torrent",
@@ -1404,7 +1404,7 @@
     },
     "mysteryDungeon:TotodileWaterPulse": {
         "NAME": "Water Pulse",
-        "DESCRIPTION": "Discard the top !M! cards of your draw pile. For each card discarded this way, deal !D! damage."
+        "DESCRIPTION": "Discard the top !M! cards of your draw pile. For each card discarded this way, deal !mysteryDungeon:M2! damage."
     },
     "mysteryDungeon:TotodileWaterSport": {
         "NAME": "Water Sport",
@@ -1417,6 +1417,6 @@
     },
     "mysteryDungeon:TotodileWorkUp": {
         "NAME": "Work Up",
-        "DESCRIPTION": "If you do not have any empty Orb Slots, Gain !M! Orb Slots."
+        "DESCRIPTION": "If you do not have any empty Orb Slot, gain !M! Orb Slots."
     }
 }
