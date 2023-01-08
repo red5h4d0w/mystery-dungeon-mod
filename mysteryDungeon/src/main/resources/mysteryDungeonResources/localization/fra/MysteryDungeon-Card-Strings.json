@@ -821,7 +821,7 @@
     },
     "mysteryDungeon:MeowthPunishment": {
         "NAME": "Punition",
-        "DESCRIPTION": "Deal !D! damage. NL Deal Addditionnal damage equal to !M! times the enemy's Strength."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Infligez des dégâts supplémentaires équivalent à!M! fois la Force de l'ennemi."
     },
     "mysteryDungeon:MeowthRoar": {
         "NAME": "Hurlement",
@@ -838,7 +838,7 @@
     },
     "mysteryDungeon:MeowthScreech": {
         "NAME": "Grincement",
-        "DESCRIPTION": "Give an enemy !M! vulnerable and !B! block."
+        "DESCRIPTION": "Appliquez !M! de Vulnérabilité. NL Appliquez !B! d'Armure."
     },
     "mysteryDungeon:MeowthSnarl": {
         "NAME": "Aboiement",
@@ -846,11 +846,11 @@
     },
     "mysteryDungeon:MeowthSpite": {
         "NAME": "Dépit",
-        "DESCRIPTION": "Dépensez !M! X or. NL Gagnez 2X de Force. NL Épuisement."
+        "DESCRIPTION": "Dépensez !M!X or. NL Gagnez 2X de Force. NL Épuisement."
     },
     "mysteryDungeon:MeowthSwagger": {
         "NAME": "Vantardise",
-        "DESCRIPTION": "Appliquez !M! de Force. NL Appliquez Étourdissement."
+        "DESCRIPTION": "Appliquez !M! de Force. NL Appliquez d'Étourdissement."
     },
     "mysteryDungeon:MeowthSwitcheroo": {
         "NAME": "Passe-Passe",
@@ -872,11 +872,11 @@
     },
     "mysteryDungeon:MeowthThroatChop": {
         "NAME": "Exécu-Son",
-        "DESCRIPTION": "Deal !D! damage. NL Gain !B! block. NL Gain !M! gold."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL Gagnez !M! or."
     },
     "mysteryDungeon:MeowthUnnerve": {
         "NAME": "Tension",
-        "DESCRIPTION": "Ce combat, chaque fois que vous dépensez un total de 25 or, gagnez !M! Armure Plaquée."
+        "DESCRIPTION": "Ce combat, lorsque que vous dépensez un total de 25 or, gagnez !M! mysterydungeon:d'Armure_Plaquée."
     },
     "mysteryDungeon:MeowthUTurn": {
         "NAME": "Demi-Tour",
@@ -930,7 +930,7 @@
     "mysteryDungeon:PikachuEncore": {
         "NAME": "Encore",
         "DESCRIPTION": "mysterydungeon:Inerte. NL Pendant ce tour, votre prochaine Attaque ou Compétence sera jouée 2 fois.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inerte. NL Pendant ce tour, vos 2 prochaines !M! Attaques ou Compétences seront jouées 2 fois."
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inerte. NL Pendant ce tour, vos !M! prochaines Attaques ou Compétences seront jouées 2 fois."
     },
     "mysteryDungeon:PikachuExplorerForm": {
         "NAME": "Forme de l'Explorateur",
@@ -999,8 +999,8 @@
     },
     "mysteryDungeon:PikachuStatic": {
         "NAME": "Statik",
-        "DESCRIPTION": "Activez l'effet actif de votre prochain Orbe !M! fois quand vous êtes attaqué.",
-        "UPGRADE_DESCRIPTION": "Activez l'effet actif de votre prochain Orbe !M! fois quand vous êtes attaqué."
+        "DESCRIPTION": "Déclenchez l'effet actif de votre prochain Orbe !M! fois quand vous êtes attaqué.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Déclenchez l'effet actif de votre prochain Orbe !M! fois quand vous êtes attaqué."
     },
     "mysteryDungeon:PikachuSweetKiss": {
         "NAME": "Doux Baiser",
@@ -1086,7 +1086,7 @@
     },
     "mysteryDungeon:SquirtleDoubleTeam": {
         "NAME": "Reflet",
-        "DESCRIPTION": "Gagnez !B! d'Armure. Lorsque piochée: Ajoutez une copie de cette carte à votre main. NL Épuisement."
+        "DESCRIPTION": "Gagnez !B! d'Armure. Lorsque piochée : ajoutez une copie de cette carte à votre main. NL Épuisement."
     },
     "mysteryDungeon:SquirtleEndure": {
         "NAME": "Ténacité",
@@ -1122,7 +1122,7 @@
     },
     "mysteryDungeon:SquirtleGyroBall": {
         "NAME": "Gyroballe",
-        "DESCRIPTION": "Ajoutez 1 *Gel à votre main. NL Infligez !D! dégâts par status dans votre main. NL Défaussez TOUS les Statut en main."
+        "DESCRIPTION": "Ajoutez 1 *Gel à votre main. NL Infligez !D! dégâts par Statut dans votre main. NL Défaussez TOUS les Statuts en main."
     },
     "mysteryDungeon:SquirtleHail": {
         "NAME": "Grêle",
@@ -1159,7 +1159,7 @@
     },
     "mysteryDungeon:SquirtleMist": {
         "NAME": "Brume",
-        "DESCRIPTION": "Si un ennemi ne compte pas attaquer, gagnez !M! Artéfact. NL Gagnez !B! d'Armure."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Gagnez !M! d'Artéfact."
     },
     "mysteryDungeon:SquirtleProtect": {
         "NAME": "Abri",
@@ -1185,12 +1185,12 @@
     },
     "mysteryDungeon:SquirtleShellSmash": {
         "NAME": "Exuviation",
-        "DESCRIPTION": "Gagnez !M! Force. NL Ajoutez !mysteryDungeon:M2! *Gel à votre pioche. NL Épuisement."
+        "DESCRIPTION": "Gagnez !M! de Force. NL Ajoutez !mysteryDungeon:M2! *Gel à votre pioche. NL Épuisement."
     },
     "mysteryDungeon:SquirtleSkullBashGo": {
         "NAME": "Coud'Krâne: Partez!",
-        "DESCRIPTION": " Infligez !D! dégâts à TOUS les ennemis. NL Si cette carte est la plus à gauche de votre main, infligez !D! dégâts de plus à TOUS les ennemis. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "Retenue. NL Infligez !D! dégâts à TOUS les ennemis. NL Si cette carte est la plus à gauche de votre main, infligez !D! dégâts de plus à TOUS les ennemis. Épuisement."
+        "DESCRIPTION": "Retenue. NL Infligez !D! dégâts à TOUS les ennemis. NL Si cette carte est la plus à gauche de votre main, infligez !D! dégâts de plus à TOUS les ennemis. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Retenue. NL Infligez !D! dégâts à TOUS les ennemis. NL Si cette carte est la plus à gauche de votre main, infligez !D! dégâts de plus à TOUS les ennemis. NL Épuisement."
     },
     "mysteryDungeon:SquirtleSkullBashReady": {
         "NAME": "Coud'Krâne: À Vos Marques!",
@@ -1230,7 +1230,7 @@
     },
     "mysteryDungeon:SquirtleWhirlpool": {
         "NAME": "Tourbillon",
-        "DESCRIPTION": "Au début de vos X prochains, piochez 2 cartes de plus et défaussez 2 cartes. NL Épuisement.",
+        "DESCRIPTION": "Au début de vos X prochains tours, piochez 2 cartes de plus et défaussez 2 cartes. NL Épuisement.",
         "UPGRADE_DESCRIPTION": "Au début de vos X+1 prochains tours, piochez 2 cartes de plus et défaussez 2 cartes. NL Épuisement."
     },
     "mysteryDungeon:SquirtleWithdraw": {
@@ -1299,7 +1299,7 @@
     },
     "mysteryDungeon:TotodileEndure": {
         "NAME": "Ténacité",
-        "DESCRIPTION": "Si vous subissez des dégâts, canalisez !M ! Orbe Glaciaire.",
+        "DESCRIPTION": "Si vous subissez des dégâts, canalisez !M! Orbe Glaciaire.",
         "UPGRADE_DESCRIPTION": "Inné. NL Si vous subbissez des dégâts, canalisez !M! Orbe Glaciaire."
     },
     "mysteryDungeon:TotodileExplorerForm": {
@@ -1310,7 +1310,7 @@
     "mysteryDungeon:TotodileHail": {
         "NAME": "Grêle",
         "DESCRIPTION": "Injouable. NL Lorsque défaussée : Canalisez !M! Orbe Glaciaire.",
-        "UPGRADE_DESCRIPTION": "Injouable. NL mysterydungeon:Scoop-up. NL Lorsque défaussée : Canalisez !M! Orbe Glaciaire.",
+        "UPGRADE_DESCRIPTION": "Injouable. NL mysterydungeon:Rappel. NL Lorsque défaussée : Canalisez !M! Orbe Glaciaire.",
         "EXTENDED_DESCRIPTION": [
             "Je ne peux pas jouer cette carte."
         ]
@@ -1355,7 +1355,7 @@
     },
     "mysteryDungeon:TotodileStrength": {
         "NAME": "Force",
-        "DESCRIPTION": "Draw !M! card. NL If you drew an Attack, channel 1 Frost orb."
+        "DESCRIPTION": "Piochez !M! carte. NL Pour chaque Attaque ainsi piochée, canalisez 1 Orbe Glaciaire."
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "Surf",
@@ -1373,14 +1373,14 @@
     "mysteryDungeon:TotodileRainDance": {
         "NAME": "Danse Pluie",
         "DESCRIPTION": "Injouable. NL Lorsque défaussée : Votre prochaine Attaque inflige !M! dégâts supplémentaires.",
-        "UPGRADE_DESCRIPTION": "Injouable. NL mysterydungeon:Scoop-up NL Lorsque défaussée: Votre prochaine Attaque inflige !M! dégâts supplémentaires.",
+        "UPGRADE_DESCRIPTION": "Injouable. NL mysterydungeon:Rappel. NL Lorsque défaussée : Votre prochaine Attaque inflige !M! dégâts supplémentaires.",
         "EXTENDED_DESCRIPTION": [
             "Je ne peux pas jouer cette carte."
         ]
     },
     "mysteryDungeon:TotodileThrash": {
         "NAME": "Mania",
-        "DESCRIPTION": "Toutes les !mysteryDungeon:M2! Attaques que vous jouez, gagnez !M! mysterydungeon:Vigueur."
+        "DESCRIPTION": "Toutes les !mysteryDungeon:M2! Attaques que vous jouez, gagnez !M! de mysterydungeon:Vigueur."
     },
     "mysteryDungeon:TotodileTorrent": {
         "NAME": "Torrent",
@@ -1400,7 +1400,7 @@
     },
     "mysteryDungeon:TotodileWaterPledge": {
         "NAME": "Aire d'Eau",
-        "DESCRIPTION": "Channel !M! Frost orb. NL If you play another mysterydungeon:Pledge card this turn, activate a special effect."
+        "DESCRIPTION": "Canalisez !M! Orbe Glaciaire. NL Si vous jouez une autre mysterydungeon:Carte_d'Aire ce tour, activez un effet supplémentaire."
     },
     "mysteryDungeon:TotodileWaterPulse": {
         "NAME": "Vibraqua",
@@ -1417,6 +1417,6 @@
     },
     "mysteryDungeon:TotodileWorkUp": {
         "NAME": "Rengorgement",
-        "DESCRIPTION": "Si vous n'avez pas d'Emplacement d'Orbe vide, Gain !M! Emplacements d'Orbes."
+        "DESCRIPTION": "Si vous n'avez pas d'Emplacement d'Orbe vide, gagnez !M! Emplacements d'Orbes."
     }
 }
