@@ -1090,7 +1090,7 @@
     },
     "mysteryDungeon:SquirtleEndure": {
         "NAME": "Ténacité",
-        "DESCRIPTION": "Quand vous jouez un Statut, infligez !M! dégâts à TOUS les ennemis."
+        "DESCRIPTION": "Quand vous jouez un Statut, infligez !M! dégâts à TOUS les ennemis. NL Ces dégâts se comportent comme des dégâts d'Attaque."
     },
     "mysteryDungeon:SquirtleExplorerForm": {
         "NAME": "Forme de l'Explorateur",
@@ -1380,7 +1380,7 @@
     },
     "mysteryDungeon:TotodileThrash": {
         "NAME": "Mania",
-        "DESCRIPTION": "Toutes les !mysteryDungeon:M2! Attaques que vous jouez, gagnez !M! de mysterydungeon:Vigueur."
+        "DESCRIPTION": "Chaque !M! Attaque que vous jouez, gagnez !mysterydungeon:M2! de mysterydungeon:Vigueur."
     },
     "mysteryDungeon:TotodileTorrent": {
         "NAME": "Torrent",
@@ -1404,7 +1404,7 @@
     },
     "mysteryDungeon:TotodileWaterPulse": {
         "NAME": "Vibraqua",
-        "DESCRIPTION": "Défaussez les !M! cartes au sommet de votre pioche. Pour chaque carte ainsi défaussée, infligez !D! dégâts."
+        "DESCRIPTION": "Défaussez les !M! cartes au sommet de votre pioche. Pour chaque carte ainsi défaussée, infligez !mysteryDungeon:M2! dégâts."
     },
     "mysteryDungeon:TotodileWaterSport": {
         "NAME": "Tourniquet",
