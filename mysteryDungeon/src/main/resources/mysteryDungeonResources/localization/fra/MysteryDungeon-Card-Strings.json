@@ -788,8 +788,8 @@
     },
     "mysteryDungeon:MeowthLastResort": {
         "NAME": "Dernier Recours",
-        "DESCRIPTION": "Spend !M! gold. NL Discard your hand. NL Draw 10 cards. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Spend !M! gold. NL Discard your hand. NL Draw 10 cards. NL Exhaust."
+        "DESCRIPTION": "Dépensez !M! or. NL Défaussez votre main. NL Piochez 10 cartes. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Retenue. NL Dépensez !M! or. NL Défaussez votre main. NL Piochez 10 cartes. NL Épuisement."
     },
     "mysteryDungeon:MeowthLashOut": {
         "NAME": "Cent Racunes",
@@ -1248,7 +1248,7 @@
     },
     "mysteryDungeon:TotodileAquaTail": {
         "NAME": "Hydro-Queue",
-        "DESCRIPTION": "Deal !D! damage. NL Scry !M!."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Scrutez !M! cartes."
     },
     "mysteryDungeon:TotodileAvalanche": {
         "NAME": "Avalanche",
@@ -1256,7 +1256,7 @@
     },
     "mysteryDungeon:TotodileBite": {
         "NAME": "Morsure",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez !M! de Vulnérabilité."
     },
     "mysteryDungeon:TotodileBlizzard": {
         "NAME": "Blizzard",
@@ -1293,8 +1293,8 @@
     },
     "mysteryDungeon:TotodileDoubleTeam": {
         "NAME": "Reflet",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke your next orb X times.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Evoke your next orb X times. NL Channel !M! Frost."
+        "DESCRIPTION": "mysterydungeon:Inerte. NL Activez votre prochain Orbe X fois.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inerte. NL Activez votre prochain Orbe X fois. NL Canalisez !M! Orbe Glaciaire."
     },
     "mysteryDungeon:TotodileEndure": {
         "NAME": "Ténacité",
@@ -1354,7 +1354,7 @@
     },
     "mysteryDungeon:TotodileStrength": {
         "NAME": "Force",
-        "DESCRIPTION": "Draw !M! card. NL If you draw an Attack card this way, channel 1 Frost."
+        "DESCRIPTION": "Piochez !M! carte. NL Si vous piochez une Attaque par cet effet, canalisez un Orbe Glaciaire."
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "Surf",
@@ -1362,7 +1362,7 @@
     },
     "mysteryDungeon:TotodileSubstitute": {
         "NAME": "Clonage",
-        "DESCRIPTION": "Gain !M! mysterydungeon:Vigor. NL Exhaust."
+        "DESCRIPTION": "Gagnez !M! de mysterydungeon:Vigueur. NL Épuisement."
     },
     "mysteryDungeon:TotodileRage": {
         "NAME": "Colère",
@@ -1412,8 +1412,8 @@
     },
     "mysteryDungeon:TotodileWhirlpool": {
         "NAME": "Tourbillon",
-        "DESCRIPTION": "Discard the top !M! card of your draw pile. NL Gain !mysteryDungeon:M2! Focus. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Discard the top !M! card of your draw pile. NL Gain !mysteryDungeon:M2! Focus."
+        "DESCRIPTION": "Défaussez les !M! premières cartes au sommet de votre pioche. NL Gagnez !mysteryDungeon:M2! de Concentration. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Défaussez les !M! premières cartes au sommet de votre pioche. NL Gagnez !mysteryDungeon:M2! de Concentration."
     },
     "mysteryDungeon:TotodileWorkUp": {
         "NAME": "Rengorgement",
