@@ -500,7 +500,7 @@
     "mysteryDungeon:WaterfallPower": {
         "NAME": "Waterfall",
         "DESCRIPTIONS": [
-            "At the end of the turn shuffle your draw pile with your discard pile. At the start of your turn scry #b%s cards."
+            "At the end of the turn, shuffle you discard pile into your draw pile. At the start of your turn, scry #b%s cards."
         ]
     },
     "mysteryDungeon:WaterPledgePower": {
