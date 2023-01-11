@@ -188,7 +188,7 @@
     "mysteryDungeon:HailPower": {
         "NAME": "Grêle",
         "DESCRIPTIONS": [
-            "Whenever you draw a card deal #b%s damage to all enemies"
+            "Lorsque vous piochez des cartes, infligez #b%s dégâts à TOUS les ennemis."
         ]
     },
     "mysteryDungeon:HealPulsePower": {
@@ -263,7 +263,7 @@
     "mysteryDungeon:MagicCoatPower": {
         "NAME": "Reflet Magik",
         "DESCRIPTIONS": [
-            "This turn All self damage received will also be inflicted to ALL enemies."
+            "À chaque fois que vous vous infligez des dégâts ce tour, infligez autant de dégâts à TOUS les ennemis."
         ]
     },
     "mysteryDungeon:NaturePowerMountainPower": {
@@ -274,10 +274,10 @@
         ]
     },
     "mysteryDungeon:NextTurnDrawLessPower": {
-        "NAME": "Next Turn Draw Less Cards",
+        "NAME": "Prochain Tour : Pioche Plus Petite",
         "DESCRIPTIONS": [
-            "Next Turn, Draw 1 less card.",
-            "Next Turn, Draw #b%s less cards."
+            "Au prochain tour, piochez #b1 carte de moins.",
+            "Au prochain tour, piochez #b%s cartes de moins."
         ]
     },
     "mysteryDungeon:NextTurnEruptionPower": {
@@ -494,13 +494,13 @@
     "mysteryDungeon:UnnervePower": {
         "NAME": "Tension",
         "DESCRIPTIONS": [
-            "For every 25 gold spent in combat, gain #b%s Plated Armor."
+            "Pour chaque 25 or dépensé, gagnez #b%s #yd'Armure #yPlaquée."
         ]
     },
     "mysteryDungeon:WaterfallPower": {
         "NAME": "Cascade",
         "DESCRIPTIONS": [
-            "At the end of the turn shuffle your draw pile with your discard pile. At the start of your turn scry #b%s cards."
+            "À la fin de vos tours, mélangez votre défausse à votre pioche. Au début de vos tours, scrutez #b%s cartes."
         ]
     },
     "mysteryDungeon:WaterPledgePower": {
