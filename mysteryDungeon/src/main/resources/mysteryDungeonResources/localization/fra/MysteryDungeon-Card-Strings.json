@@ -788,8 +788,8 @@
     },
     "mysteryDungeon:MeowthLastResort": {
         "NAME": "Dernier Recours",
-        "DESCRIPTION": "Dépensez !M! or. Défaussez votre main. NL Piochez 10 cartes. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "Retenue. NL Dépensez !M! or. Défaussez votre main. NL Piochez 10 cartes. NL Épuisement."
+        "DESCRIPTION": "Dépensez !M! or. NL Défaussez votre main. NL Piochez 10 cartes. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Retenue. NL Dépensez !M! or. NL Défaussez votre main. NL Piochez 10 cartes. NL Épuisement."
     },
     "mysteryDungeon:MeowthLashOut": {
         "NAME": "Cent Racunes",
@@ -1248,8 +1248,7 @@
     },
     "mysteryDungeon:TotodileAquaTail": {
         "NAME": "Hydro-Queue",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Défaussez les !M! premières cartes au sommet de votre pioche.",
-        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Scrutez !M! cartes."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Scrutez !M! cartes."
     },
     "mysteryDungeon:TotodileAvalanche": {
         "NAME": "Avalanche",
@@ -1257,7 +1256,7 @@
     },
     "mysteryDungeon:TotodileBite": {
         "NAME": "Morsure",
-        "DESCRIPTION": "Infligez !D! dégâts."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez !M! de Vulnérabilité."
     },
     "mysteryDungeon:TotodileBlizzard": {
         "NAME": "Blizzard",
@@ -1294,8 +1293,8 @@
     },
     "mysteryDungeon:TotodileDoubleTeam": {
         "NAME": "Reflet",
-        "DESCRIPTION": "mysterydungeon:Inerte. NL Canalisez !M! Orbe Glaciaire.",
-        "UPGRADE_DESCRIPTION": "Inné. NL mysterydungeon:Inerte. NL Canalisez !M! Orbe Glaciaire."
+        "DESCRIPTION": "mysterydungeon:Inerte. NL Activez votre prochain Orbe X fois.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inerte. NL Activez votre prochain Orbe X fois. NL Canalisez !M! Orbe Glaciaire."
     },
     "mysteryDungeon:TotodileEndure": {
         "NAME": "Ténacité",
@@ -1355,7 +1354,7 @@
     },
     "mysteryDungeon:TotodileStrength": {
         "NAME": "Force",
-        "DESCRIPTION": "Piochez !M! carte. NL Pour chaque Attaque ainsi piochée, canalisez 1 Orbe Glaciaire."
+        "DESCRIPTION": "Piochez !M! carte. NL Si vous piochez une Attaque par cet effet, canalisez un Orbe Glaciaire."
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "Surf",
@@ -1363,7 +1362,7 @@
     },
     "mysteryDungeon:TotodileSubstitute": {
         "NAME": "Clonage",
-        "DESCRIPTION": "Gagnez !B! d'Armure. NL Gagnez !M! mysterydungeon:Vigueur. NL Terminez votre tour."
+        "DESCRIPTION": "Gagnez !M! de mysterydungeon:Vigueur. NL Épuisement."
     },
     "mysteryDungeon:TotodileRage": {
         "NAME": "Colère",
@@ -1413,7 +1412,8 @@
     },
     "mysteryDungeon:TotodileWhirlpool": {
         "NAME": "Tourbillon",
-        "DESCRIPTION": "Défaussez les !M! premières cartes au sommet de votre pioche. NL Gagnez !mysteryDungeon:M2! de Concentration."
+        "DESCRIPTION": "Défaussez les !M! premières cartes au sommet de votre pioche. NL Gagnez !mysteryDungeon:M2! de Concentration. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Défaussez les !M! premières cartes au sommet de votre pioche. NL Gagnez !mysteryDungeon:M2! de Concentration."
     },
     "mysteryDungeon:TotodileWorkUp": {
         "NAME": "Rengorgement",

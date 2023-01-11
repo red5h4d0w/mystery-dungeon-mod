@@ -788,8 +788,8 @@
     },
     "mysteryDungeon:MeowthLastResort": {
         "NAME": "Last Resort",
-        "DESCRIPTION": "Spend !M! gold. Discard your hand. NL Draw 10 cards. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Spend !M! gold. Discard your hand. NL Draw 10 cards. NL Exhaust."
+        "DESCRIPTION": "Spend !M! gold. NL Discard your hand. NL Draw 10 cards. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Spend !M! gold. NL Discard your hand. NL Draw 10 cards. NL Exhaust."
     },
     "mysteryDungeon:MeowthLashOut": {
         "NAME": "Lash Out",
@@ -1248,8 +1248,7 @@
     },
     "mysteryDungeon:TotodileAquaTail": {
         "NAME": "Aqua Tail",
-        "DESCRIPTION": "Deal !D! damage. NL Discard the top !M! cards from your draw pile.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Scry !M!."
+        "DESCRIPTION": "Deal !D! damage. NL Scry !M!."
     },
     "mysteryDungeon:TotodileAvalanche": {
         "NAME": "Avalanche",
@@ -1257,7 +1256,7 @@
     },
     "mysteryDungeon:TotodileBite": {
         "NAME": "Bite",
-        "DESCRIPTION": "Deal !D! damage."
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
     },
     "mysteryDungeon:TotodileBlizzard": {
         "NAME": "Blizzard",
@@ -1294,8 +1293,8 @@
     },
     "mysteryDungeon:TotodileDoubleTeam": {
         "NAME": "Double Team",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Channel !M! Frost.",
-        "UPGRADE_DESCRIPTION": "Innate. NL mysterydungeon:Inert. NL Channel !M! Frost."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke your next Orb X times.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Evoke your next Orb X times. NL Channel !M! Frost."
     },
     "mysteryDungeon:TotodileEndure": {
         "NAME": "Endure",
@@ -1355,7 +1354,7 @@
     },
     "mysteryDungeon:TotodileStrength": {
         "NAME": "Strength",
-        "DESCRIPTION": "Draw !M! card. NL If you drew an Attack, channel 1 Frost orb."
+        "DESCRIPTION": "Draw !M! card. NL If you drew an Attack card this way, channel 1 Frost."
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "Surf",
@@ -1363,7 +1362,7 @@
     },
     "mysteryDungeon:TotodileSubstitute": {
         "NAME": "Substitute",
-        "DESCRIPTION": "Gain !B! block. NL Gain !M! mysterydungeon:Vigor. NL End Your Turn."
+        "DESCRIPTION": "Gain !M! mysterydungeon:Vigor. NL Exhaust."
     },
     "mysteryDungeon:TotodileRage": {
         "NAME": "Rage",
@@ -1413,7 +1412,8 @@
     },
     "mysteryDungeon:TotodileWhirlpool": {
         "NAME": "Whirlpool",
-        "DESCRIPTION": "Discard the top !M! card of your draw pile. NL Gain !mysteryDungeon:M2! Focus."
+        "DESCRIPTION": "Discard the top !M! cards of your draw pile. NL Gain !mysteryDungeon:M2! Focus. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Discard the top !M! cards of your draw pile. NL Gain !mysteryDungeon:M2! Focus."
     },
     "mysteryDungeon:TotodileWorkUp": {
         "NAME": "Work Up",

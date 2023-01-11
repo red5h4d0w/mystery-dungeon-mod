@@ -102,7 +102,7 @@
     "mysteryDungeon:CyndaquilExplorerPower": {
         "NAME": "Explorer Form",
         "DESCRIPTIONS": [
-            "Whenever you cause an #yEruption, deal #b%s to ALL enemies."
+            "Whenever you cause an #yEruption, Deal #b%s to all enemies."
         ]
     },
     "mysteryDungeon:CrushClawPower": {
@@ -147,7 +147,7 @@
     "mysteryDungeon:FlashFirePower": {
         "NAME": "Flash Fire",
         "DESCRIPTIONS": [
-            "Whenever you play a card, apply #b%s #yBurn to ALL enemies."
+            "Every time you play a card apply #b%s #yBurn to all enemies."
         ]
     },
     "mysteryDungeon:FreeSpendingEveryTurnPower": {
@@ -362,7 +362,7 @@
     "mysteryDungeon:RainDishPower": {
         "NAME": "Rain Dish",
         "DESCRIPTIONS": [
-            "When you manually discard or scry a card, gain #b%s #yBlock."
+            "When you manually scry or disacrd a card, gain #b%s #yBlock."
         ]
     },
     "mysteryDungeon:RecoverPower": {
@@ -500,7 +500,7 @@
     "mysteryDungeon:WaterfallPower": {
         "NAME": "Waterfall",
         "DESCRIPTIONS": [
-            "At the end of the turn shuffle your draw pile with your discard pile. At the start of your turn scry #b%s cards."
+            "At the end of the turn, shuffle you discard pile into your draw pile. At the start of your turn, scry #b%s cards."
         ]
     },
     "mysteryDungeon:WaterPledgePower": {
