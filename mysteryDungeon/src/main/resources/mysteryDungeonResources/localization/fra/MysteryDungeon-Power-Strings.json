@@ -174,15 +174,15 @@
     "mysteryDungeon:FuryCutterPower": {
         "NAME": "Taillade",
         "DESCRIPTIONS": [
-            "At the start of your turn, add #b%s #yFury #yCutter from cards exhausted this combat to your hand.",
-            "At the start of your turn, add #b%s #yFury #yCutter #y+ from cards exhausted this combat to your hand.",
-            "At the start of your turn, add #b%s #yFury #yCutter and #b%s #yFury #yCutter #y+ from cards exhausted this combat to your hand."
+            "Au début de votre tour, ajoutez #b%s #yTaillade parmi les cartes épuisées ce combat à votre main.",
+            "Au début de votre tour, ajoutez #b%s #yTaillade améliorée parmi les cartes épuisées ce combat à votre main.",
+            "Au début de votre tour, ajoutez #b%s #yTaillade et #b%s #yTaillade améliorée parmi les cartes épuisées ce combat à votre main."
         ]
     },
     "mysteryDungeon:GrassPledgePower": {
         "NAME": "Aire d'Herbe",
         "DESCRIPTIONS": [
-            "When you play another Pledge card this turn, activate one of the following effects. NL Fire: Apply 9 Poison to all enemies. NL Water: Apply 2 weak to all enemies."
+            "Lorsque vous jouez une autre #yCarte #yd'Aire ce tour, activez un des effets suivants. NL Plante : Appliquez #b9 de #yPoison à TOUS les ennemis. NL Eau : Appliquez #b2 de #yFaiblesse à TOUS les ennemis."
         ]
     },
     "mysteryDungeon:HailPower": {
@@ -194,7 +194,7 @@
     "mysteryDungeon:HealPulsePower": {
         "NAME": "Vibra Soin",
         "DESCRIPTIONS": [
-            "Whenever you inflict self damage or gain hp during your turn, gain #b%s block."
+            "Durant votre tour, lorsque vous vous infligez des dégâts ou soignez des PV, gagnez #b%s #yd'Armure."
         ]
     },
     "mysteryDungeon:HeatCrashPower": {
@@ -207,32 +207,32 @@
     "mysteryDungeon:HeatWavePower": {
         "NAME": "Canicule",
         "DESCRIPTIONS": [
-            "Whenver you are attacked this turn, apply #b%s Burn to your attacker."
+            "Lorsque vous êtes attaqué ce tour, appliquez #b%s de #yBrûlure à l'attaquant."
         ]
     },
     "mysteryDungeon:InfernoPower": {
         "NAME": "Feu d'Enfer",
         "DESCRIPTIONS": [
-            "Your next #yEruption will not remove any #yBurn stacks.",
-            "Your next #b%s #yEruption will not remove any #yBurn stacks."
+            "Votre prochaine #yÉruption n'enlèvera pas de #yBrûlure.",
+            "Vos #b%s prochaines #yÉruptions n'enlèveront pas de #yBrûlure."
         ]
     },
     "mysteryDungeon:LashOutPower": {
         "NAME": "Cent Racunes",
         "DESCRIPTIONS": [
-            "Whenever you give an enemy Strength or Block, create #b%s Flurry in hand."
+            "Lorsque vous appliquez de la #yForce ou de #yl'Armure, créez #b%s #yRafale dans votre main."
         ]
     },
     "mysteryDungeon:LavaPlumePower": {
         "NAME": "Ébullilave",
         "DESCRIPTIONS": [
-            "Whenever you cause an #yEruption, Apply #b%s #yBurn to the target."
+            "Lorsque vous déclenchez une #yÉruption, appliquez #b%s de #yBrûlure à la cible."
         ]
     },
     "mysteryDungeon:LeafGuardPower": {
         "NAME": "Feuille Garde",
         "DESCRIPTIONS": [
-            "At the start of your turn, remove all debuff you posses. for each debuff removed this way lose #b%s Hp."
+            "À la fin de votre tour, enlevez TOUS vos malus. Pour chaque malus ainsi retiré, perdez #b%s PV."
         ]
     },
     "mysteryDungeon:LeechSeedPower": {
@@ -331,8 +331,8 @@
     "mysteryDungeon:PetalDancePower": {
         "NAME": "Danse Fleurs",
         "DESCRIPTIONS": [
-            "At the end of the turn, deal #b%1$s damage to ALL enemies. NL (This counts as an attack).",
-            "For #b%1$s turns, at the end of the turn, deal #b%2$s damage to ALL enemies. NL (This counts as an attack)."
+            "À la fin de votre tour, infligez #b%1$s dégâts à TOUS les ennemis. NL (Ceci compte comme une #yAttaque).",
+            "À la fin de vos #b%1$s prochains tours, infligez #b%2$s dégâts à TOUS les ennemis. NL (Ceci compte comme une #yAttaque)."
         ]
     },
     "mysteryDungeon:PoisonThornsPower": {
@@ -350,7 +350,7 @@
     "mysteryDungeon:PsychUpPower": {
         "NAME": "Boost",
         "DESCRIPTIONS": [
-            "Whenever you give an enemy Strength, gain #b%s Strength."
+            "Lorsque vous appliquez de la #yForce, gagnez #b%s de #yForce."
         ]
     },
     "mysteryDungeon:RainDancePower": {
@@ -368,7 +368,7 @@
     "mysteryDungeon:RecoverPower": {
         "NAME": "Soin",
         "DESCRIPTIONS": [
-            "When you receives damage, increase the number of stacks by as much damage you received. NL When you deal attack damage, heal 30%% of the attack damage dealt up to #b%s."
+            "Lorsque vous subissez des dégâts, augmentez la quantité de #ySoin d'autant que le nombre de dégâts que vous avez reçus. NL Lorsque vous infligez des dégâts d'attaque, soignez 30%% des dégâts infligés pour un maximum de #b%s dégâts."
         ]
     },
     "mysteryDungeon:ReduceHighestCostAtStartOfTurnPower": {
@@ -423,8 +423,8 @@
     "mysteryDungeon:SunnyDayPower": {
         "NAME": "Zénith",
         "DESCRIPTIONS": [
-            "When dealing damage to yourself, everytime you lose a total of 3 HP draw %s card.",
-            "When dealing damage to yourself, everytime you lose a total of 3 HP draw %s cards."
+            "Lorsque vous vous infligez des dégâts, pour chaque 3 PV perdu au total, piochez %s carte.",
+            "Lorsque vous vous infligez des dégâts, pour chaque 3 PV perdu au total, piochez %s cartes."
         ]
     },
     "mysteryDungeon:SurfPower": {
@@ -443,7 +443,7 @@
     "mysteryDungeon:TechnicianPower": {
         "NAME": "Technicien",
         "DESCRIPTIONS": [
-            "Create #b%s #yFlurry in your hand at the start of your turn."
+            "Au début de votre tour, créez #b%s #yRafale dans votre main."
         ]
     },
     "mysteryDungeon:ThunderPower": {
@@ -475,14 +475,14 @@
     "mysteryDungeon:TotodileExplorerPower": {
         "NAME": "Forme de l'Explorateur",
         "DESCRIPTIONS": [
-            "At the start of your turn add #b%s card. From your discard pile"
+            "Au début de votre tour, ajoutez #b%s carte de votre défausse à votre main."
         ]
     },
     "mysteryDungeon:SheerForcePower": {
         "NAME": "Sans Limite",
         "DESCRIPTIONS": [
-            "Whenever you deal #b%1$s or more unblocked damage, Channel #b1 #yFrost.",
-            "Whenever you deal #b%1$s or more unblocked damage, Channel #b%2$s #yFrost."
+            "Lorsque vous infligez #b%1$s ou plus dégâts non-bloqués, canalisez #b1 Orbe Glaciaire.",
+            "Lorsque vous infligez #b%1$s ou plus dégâts non-bloqués, canalisez #b%2$s #yOrbes #yGlaciaires."
         ]
     },
     "mysteryDungeon:ToxicPower": {

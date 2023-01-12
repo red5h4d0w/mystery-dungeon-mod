@@ -175,7 +175,7 @@
         "NAME": "Fury Cutter",
         "DESCRIPTIONS": [
             "At the start of your turn, add #b%s #yFury #yCutter from cards exhausted this combat to your hand.",
-            "At the start of your turn, add #b%s #yFury #yCutter #y+ from cards exhausted this combat to your hand.",
+            "At the start of your turn, add #b%s upgraded #yFury #yCutter from cards exhausted this combat to your hand.",
             "At the start of your turn, add #b%s #yFury #yCutter and #b%s #yFury #yCutter #y+ from cards exhausted this combat to your hand."
         ]
     },
@@ -220,7 +220,7 @@
     "mysteryDungeon:LashOutPower": {
         "NAME": "Lash Out",
         "DESCRIPTIONS": [
-            "Whenever you give an enemy Strength or Block, create #b%s Flurry in hand."
+            "Whenever you apply #yStrength or #yBlock, create #b%s #yFlurry in your hand."
         ]
     },
     "mysteryDungeon:LavaPlumePower": {
@@ -423,8 +423,8 @@
     "mysteryDungeon:SunnyDayPower": {
         "NAME": "Sunny Day",
         "DESCRIPTIONS": [
-            "When dealing damage to yourself, everytime you lose a total of 3 HP draw %s card.",
-            "When dealing damage to yourself, everytime you lose a total of 3 HP draw %s cards."
+            "Whenever you deal yourself damage, for each 3 HP lost total, draw %s card.",
+            "Whenever you deal yourself damage, for each 3 HP lost total, draw %s cards."
         ]
     },
     "mysteryDungeon:SurfPower": {
@@ -443,7 +443,7 @@
     "mysteryDungeon:TechnicianPower": {
         "NAME": "Technician",
         "DESCRIPTIONS": [
-            "Create #b%s #yFlurry in your hand at the start of your turn."
+            "At the start of your turn, create #b%s #yFlurry in your hand."
         ]
     },
     "mysteryDungeon:ThunderPower": {
@@ -475,7 +475,7 @@
     "mysteryDungeon:TotodileExplorerPower": {
         "NAME": "Explorer Form",
         "DESCRIPTIONS": [
-            "At the start of your turn add #b%s card. From your discard pile"
+            "At the start of your turn, add #b%s card from your discard pile to your hand."
         ]
     },
     "mysteryDungeon:SheerForcePower": {
@@ -500,7 +500,7 @@
     "mysteryDungeon:WaterfallPower": {
         "NAME": "Waterfall",
         "DESCRIPTIONS": [
-            "At the end of the turn, shuffle you discard pile into your draw pile. At the start of your turn, scry #b%s cards."
+            "At the end of the turn shuffle your draw pile with your discard pile. At the start of your turn scry #b%s cards."
         ]
     },
     "mysteryDungeon:WaterPledgePower": {

@@ -175,14 +175,14 @@
         "NAME": "Fury Cutter",
         "DESCRIPTIONS": [
             "At the start of your turn, add #b%s #yFury #yCutter from cards exhausted this combat to your hand.",
-            "At the start of your turn, add #b%s #yFury #yCutter #y+ from cards exhausted this combat to your hand.",
+            "At the start of your turn, add #b%s upgraded #yFury #yCutter from cards exhausted this combat to your hand.",
             "At the start of your turn, add #b%s #yFury #yCutter and #b%s #yFury #yCutter #y+ from cards exhausted this combat to your hand."
         ]
     },
     "mysteryDungeon:GrassPledgePower": {
         "NAME": "Grass Pledge",
         "DESCRIPTIONS": [
-            "When you play another Pledge card this turn, activate one of the following effects. NL Fire: Apply 9 Poison to all enemies. NL Water: Apply 2 weak to all enemies."
+            "When you play another #yPledge #yCard this turn, activate one of the following effects. NL Fire: Apply #b9 #yPoison to ALL enemies. NL Water: Apply #b2 #yWeak to ALL enemies."
         ]
     },
     "mysteryDungeon:HailPower": {
@@ -194,7 +194,7 @@
     "mysteryDungeon:HealPulsePower": {
         "NAME": "Heal Pulse",
         "DESCRIPTIONS": [
-            "Whenever you inflict self damage or gain hp during your turn, gain #b%s block."
+            "Whenever you deal yourself damage or gain HP during your turn, gain #b%s #yBlock."
         ]
     },
     "mysteryDungeon:HeatCrashPower": {
@@ -207,7 +207,7 @@
     "mysteryDungeon:HeatWavePower": {
         "NAME": "Heat Wave",
         "DESCRIPTIONS": [
-            "Whenver you are attacked this turn, apply #b%s Burn to your attacker."
+            "Whenever you are attacked this turn, apply #b%s #yBurn to your attacker."
         ]
     },
     "mysteryDungeon:InfernoPower": {
@@ -220,19 +220,19 @@
     "mysteryDungeon:LashOutPower": {
         "NAME": "Lash Out",
         "DESCRIPTIONS": [
-            "Whenever you give an enemy Strength or Block, create #b%s Flurry in hand."
+            "Whenever you apply #yStrength or #yBlock, create #b%s #yFlurry in your hand."
         ]
     },
     "mysteryDungeon:LavaPlumePower": {
         "NAME": "Lava Plume",
         "DESCRIPTIONS": [
-            "Whenever you cause an #yEruption, Apply #b%s #yBurn to the target."
+            "Whenever you trigger an #yEruption, apply #b%s #yBurn to the target."
         ]
     },
     "mysteryDungeon:LeafGuardPower": {
         "NAME": "Leaf Guard",
         "DESCRIPTIONS": [
-            "At the start of your turn, remove all debuff you posses. for each debuff removed this way lose #b%s Hp."
+            "At the start of your turn, remove ALL debuff you have. for each debuff removed this way lose #b%s HP."
         ]
     },
     "mysteryDungeon:LeechSeedPower": {
@@ -331,8 +331,8 @@
     "mysteryDungeon:PetalDancePower": {
         "NAME": "Petal Dance",
         "DESCRIPTIONS": [
-            "At the end of the turn, deal #b%1$s damage to ALL enemies. NL (This counts as an attack).",
-            "For #b%1$s turns, at the end of the turn, deal #b%2$s damage to ALL enemies. NL (This counts as an attack)."
+            "At the end of the turn, deal #b%1$s damage to ALL enemies. NL (This counts as an #yAttack).",
+            "For #b%1$s turns, at the end of the turn, deal #b%2$s damage to ALL enemies. NL (This counts as an #yAttack)."
         ]
     },
     "mysteryDungeon:PoisonThornsPower": {
@@ -350,7 +350,7 @@
     "mysteryDungeon:PsychUpPower": {
         "NAME": "Psych Up",
         "DESCRIPTIONS": [
-            "Whenever you give an enemy Strength, gain #b%s Strength."
+            "Whenever you apply #yStrength gain #b%s #yStrength."
         ]
     },
     "mysteryDungeon:RainDancePower": {
@@ -423,8 +423,8 @@
     "mysteryDungeon:SunnyDayPower": {
         "NAME": "Sunny Day",
         "DESCRIPTIONS": [
-            "When dealing damage to yourself, everytime you lose a total of 3 HP draw %s card.",
-            "When dealing damage to yourself, everytime you lose a total of 3 HP draw %s cards."
+            "Whenever you deal yourself damage, for each 3 HP lost total, draw %s card.",
+            "Whenever you deal yourself damage, for each 3 HP lost total, draw %s cards."
         ]
     },
     "mysteryDungeon:SurfPower": {
@@ -443,7 +443,7 @@
     "mysteryDungeon:TechnicianPower": {
         "NAME": "Technician",
         "DESCRIPTIONS": [
-            "Create #b%s #yFlurry in your hand at the start of your turn."
+            "At the start of your turn, create #b%s #yFlurry in your hand."
         ]
     },
     "mysteryDungeon:ThunderPower": {
@@ -475,14 +475,14 @@
     "mysteryDungeon:TotodileExplorerPower": {
         "NAME": "Explorer Form",
         "DESCRIPTIONS": [
-            "At the start of your turn add #b%s card. From your discard pile"
+            "At the start of your turn, add #b%s card from your discard pile to your hand."
         ]
     },
     "mysteryDungeon:SheerForcePower": {
         "NAME": "Sheer Force",
         "DESCRIPTIONS": [
-            "Whenever you deal #b%1$s or more unblocked damage, Channel #b1 #yFrost.",
-            "Whenever you deal #b%1$s or more unblocked damage, Channel #b%2$s #yFrost."
+            "Whenever you deal #b%1$s or more unblocked damage, channel #b1 #yFrost.",
+            "Whenever you deal #b%1$s or more unblocked damage, channel #b%2$s #yFrost."
         ]
     },
     "mysteryDungeon:ToxicPower": {
