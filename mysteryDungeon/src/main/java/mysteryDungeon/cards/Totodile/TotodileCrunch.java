@@ -53,7 +53,7 @@ public class TotodileCrunch extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn),AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new MoveCardsAction(p.drawPile, p.discardPile, magicNumber));
+        addToBot(new MoveCardsAction(p.drawPile, p.hand, magicNumber));
     }
 
     // Upgraded stats.
