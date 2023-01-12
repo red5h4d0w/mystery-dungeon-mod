@@ -134,7 +134,9 @@ public class MysteryDungeon implements
     // =============== MAKE IMAGE PATHS =================
     
     public static String makeCardPath(String resourcePath) {
-        return getModID() + "Resources/images/cards/" + resourcePath;
+        String pokemonName = resourcePath.split("(?=[A-Z])")[0];
+        String fileName = resourcePath.substring(pokemonName.length());
+        return getModID() + "Resources/images/cards/" + pokemonName + "/" + fileName;
     }
     
     public static String makeAudioPath(String resourcePath) {

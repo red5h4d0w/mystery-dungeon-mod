@@ -13,6 +13,9 @@ import mysteryDungeon.powers.FreeSpendingThisTurnPower;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public abstract class PokemonCard extends CustomCard implements AtStartOfTurnPostDrawInterface {
 
     // Custom Abstract Cards can be a bit confusing. While this is a simple base for simply adding a second magic number,
@@ -35,6 +38,8 @@ public abstract class PokemonCard extends CustomCard implements AtStartOfTurnPos
     public boolean isAdventurerOnly = false; // Indicates if the card can only be obtained as adventurer of its card color
     public boolean scoopUp = false; // A boolean that indicates if the card should be scooped up when discarded manually
 
+    public static Logger logger = LogManager.getLogger(PokemonCard.class);
+
     public PokemonCard(final String id,
                                final String name,
                                final String img,
@@ -47,7 +52,7 @@ public abstract class PokemonCard extends CustomCard implements AtStartOfTurnPos
 
         super(id, name, img, cost, rawDescription, type, color, rarity, target);
         if(!color.equals(CardColor.COLORLESS))
-            loadJokeCardImage(makeCardPath(this.getClass().getSimpleName().split("(?=\\p{Upper})")[0].toLowerCase()+".png"));
+            loadJokeCardImage(makeCardPath(this.getClass().getSimpleName().split("(?=[A-Z])")[0]+type.toString().substring(0, 1)+type.toString().substring(1).toLowerCase()+".png"));
         // Set all the things to their default values.
         isCostModified = false;
         isCostModifiedForTurn = false;
@@ -83,6 +88,7 @@ public abstract class PokemonCard extends CustomCard implements AtStartOfTurnPos
     }
 
     public void loadJokeCardImage(String img) {
+        logger.info(img);
         Texture cardTexture;
         if (imgMap.containsKey(img)) {
           cardTexture = imgMap.get(img);
