@@ -1293,8 +1293,8 @@
     },
     "mysteryDungeon:TotodileDoubleTeam": {
         "NAME": "Double Team",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke your next Orb X times.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Evoke your next Orb X times. NL Channel !M! Frost."
+        "DESCRIPTION": "You may add !M! card from your discard pile to the top of your draw pile. NL You may add !M! card from your discard pile to your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "You may add !M! cards from your discard pile to the top of your draw pile. NL You may add !M! cards from your discard pile to your hand. NL Exhaust."
     },
     "mysteryDungeon:TotodileEndure": {
         "NAME": "Endure",
