@@ -1,8 +1,8 @@
 package mysteryDungeon.actions;
 
-import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DiscardSpecificCardAction;
+import com.megacrit.cardcrawl.actions.utility.DiscardToHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
@@ -31,7 +31,7 @@ public class TotodileSubstituteAction extends AbstractGameAction{
                 AbstractCard card = AbstractDungeon.player.drawPile.getNCardFromTop(i);
                 addToTop(new DiscardSpecificCardAction(card, AbstractDungeon.player.drawPile));
                 if (card.type == AbstractCard.CardType.ATTACK) {
-                    addToTop(new MoveCardsAction(AbstractDungeon.player.discardPile, AbstractDungeon.player.hand));
+                    addToTop(new DiscardToHandAction(card));
                 }
             }  
         } 
