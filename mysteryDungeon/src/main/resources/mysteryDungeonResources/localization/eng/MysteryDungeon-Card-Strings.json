@@ -1274,9 +1274,9 @@
         "DESCRIPTION": "Deal !D! damage. NL Gain as much mysterydungeon:Vigor as you had before playing this card.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! more mysterydungeon:Vigor than you had before playing this card."
     },
-    "mysteryDungeon:TotodileConfide": {
-        "NAME": "Confide",
-        "DESCRIPTION": "Apply !M! Vulnerable. NL Your next attack deals !mysteryDungeon:M2! additional damage. NL Exhaust."
+    "mysteryDungeon:TotodileNaturePowerSea": {
+        "NAME": "Nature Power: Sea",
+        "DESCRIPTION": "Apply !M! Vulnerable. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor."
     },
     "mysteryDungeon:TotodileCrunch": {
         "NAME": "Crunch",
@@ -1371,8 +1371,8 @@
     },
     "mysteryDungeon:TotodileRainDance": {
         "NAME": "Rain Dance",
-        "DESCRIPTION": "Unplayable. NL When discarded: Your next Attack deals !M! additional damage.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up. NL When discarded: Your next Attack deals !M! additional damage.",
+        "DESCRIPTION": "Unplayable. NL When discarded: Gain !M! mysterydungeon:Vigor.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up. NL When discarded: Gain !M! mysterydungeon:Vigor",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
         ]
@@ -1399,7 +1399,7 @@
     },
     "mysteryDungeon:TotodileWaterPledge": {
         "NAME": "Water Pledge",
-        "DESCRIPTION": "Channel 1 Frost orb. NL Your next attack deals !M! additional damage. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
+        "DESCRIPTION": "Channel 1 Frost orb. NL Gain !M! mysterydungeon:Vigor. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
     },
     "mysteryDungeon:TotodileWaterPulse": {
         "NAME": "Water Pulse",

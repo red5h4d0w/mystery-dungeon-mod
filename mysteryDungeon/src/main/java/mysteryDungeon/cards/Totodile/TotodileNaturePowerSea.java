@@ -14,11 +14,11 @@ import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 
-public class TotodileConfide extends PokemonCard {
+public class TotodileNaturePowerSea extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(TotodileConfide.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(TotodileNaturePowerSea.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("TotodileSkill.png");
     public static final String NAME = cardStrings.NAME;
@@ -41,7 +41,7 @@ public class TotodileConfide extends PokemonCard {
 
     // /STAT DECLARATION/
 
-    public TotodileConfide() {
+    public TotodileNaturePowerSea() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
