@@ -32,7 +32,7 @@ public class GrassySeedRelic extends PokemonRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("default_clickable_relic.png"));
 
     public GrassySeedRelic() {
-        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.CLINK);
 
         cardColor = Chikorita.CARD_COLOR;
         
