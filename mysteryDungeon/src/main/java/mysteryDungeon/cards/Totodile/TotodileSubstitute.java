@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
-import mysteryDungeon.actions.TotodileSubstituteAction;
+import mysteryDungeon.actions.DiscardTopOfDrawPileAction;
 import mysteryDungeon.characters.Pokemon;
 
 public class TotodileSubstitute extends PokemonCard {
@@ -50,7 +50,7 @@ public class TotodileSubstitute extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new TotodileSubstituteAction(magicNumber));
+        addToBot(new DiscardTopOfDrawPileAction(magicNumber, (card) -> card.type.equals(CardType.ATTACK)));
     }
 
     // Upgraded stats.
