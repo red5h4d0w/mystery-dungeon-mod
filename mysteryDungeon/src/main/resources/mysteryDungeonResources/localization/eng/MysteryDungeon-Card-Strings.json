@@ -1362,7 +1362,8 @@
     },
     "mysteryDungeon:TotodileSubstitute": {
         "NAME": "Substitute",
-        "DESCRIPTION": "Gain !M! mysterydungeon:Vigor. NL Exhaust."
+        "DESCRIPTION": "Innate. NL Discard the top !M! cards from your draw pile. NL Put Attack cards discarded this way in your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Discard the top !M! cards from your draw pile. NL Put Attack cards discarded this way in your hand. NL Exhaust."
     },
     "mysteryDungeon:TotodileRage": {
         "NAME": "Rage",
