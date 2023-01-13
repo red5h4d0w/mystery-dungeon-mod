@@ -1274,13 +1274,13 @@
         "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez autant de mysterydungeon:Vigueur que vous en aviez avant de jouer cette carte.",
         "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Gagnez 4 mysterydungeon:Vigueur de plus que vous en aviez avant de jouer cette carte."
     },
-    "mysteryDungeon:TotodileConfide": {
-        "NAME": "Confidence",
-        "DESCRIPTION": "Appliquez !M! de Vulnérabilité. NL Votre prochaine attaque infligera !mysteryDungeon:M2! dégâts additionnels. NL Épuisement."
+    "mysteryDungeon:TotodileNaturePowerSea": {
+        "NAME": "Nature Power: Sea",
+        "DESCRIPTION": "Apply !M! Vulnerable. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor. NL Exhaust."
     },
     "mysteryDungeon:TotodileCrunch": {
         "NAME": "Mâchouille",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Choisissez une carte dans votre pile de défausse et ajoutez-la au-dessus de votre pioche."
+        "DESCRIPTION": "Deal !D! damage. NL Choose a card from your discard pile and add it to your hand."
     },
     "mysteryDungeon:TotodileDefend": {
         "NAME": "Défense",
@@ -1293,8 +1293,8 @@
     },
     "mysteryDungeon:TotodileDoubleTeam": {
         "NAME": "Reflet",
-        "DESCRIPTION": "mysterydungeon:Inerte. NL Activez votre prochain Orbe X fois.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inerte. NL Activez votre prochain Orbe X fois. NL Canalisez !M! Orbe Glaciaire."
+        "DESCRIPTION": "You may add !M! card from your discard pile to the top of your draw pile. NL You may add !M! card from your discard pile to your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "You may add !M! cards from your discard pile to the top of your draw pile. NL You may add !M! cards from your discard pile to your hand. NL Exhaust."
     },
     "mysteryDungeon:TotodileEndure": {
         "NAME": "Ténacité",
@@ -1362,7 +1362,8 @@
     },
     "mysteryDungeon:TotodileSubstitute": {
         "NAME": "Clonage",
-        "DESCRIPTION": "Gagnez !M! de mysterydungeon:Vigueur. NL Épuisement."
+        "DESCRIPTION": "Innate. NL Discard the top !M! cards from your draw pile. NL Put Attack cards discarded this way in your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Discard the top !M! cards from your draw pile. NL Put Attack cards discarded this way in your hand. NL Exhaust."
     },
     "mysteryDungeon:TotodileRage": {
         "NAME": "Colère",
@@ -1371,8 +1372,8 @@
     },
     "mysteryDungeon:TotodileRainDance": {
         "NAME": "Danse Pluie",
-        "DESCRIPTION": "Injouable. NL Lorsque défaussée : Votre prochaine Attaque inflige !M! dégâts supplémentaires.",
-        "UPGRADE_DESCRIPTION": "Injouable. NL mysterydungeon:Rappel. NL Lorsque défaussée : Votre prochaine Attaque inflige !M! dégâts supplémentaires.",
+        "DESCRIPTION": "Unplayable. NL When discarded: Gain !M! mysterydungeon:Vigor.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up. NL When discarded: Gain !M! mysterydungeon:Vigor",
         "EXTENDED_DESCRIPTION": [
             "Je ne peux pas jouer cette carte."
         ]
@@ -1399,7 +1400,7 @@
     },
     "mysteryDungeon:TotodileWaterPledge": {
         "NAME": "Aire d'Eau",
-        "DESCRIPTION": "Canalisez !M! Orbe Glaciaire. NL Si vous jouez une autre mysterydungeon:Carte_d'Aire ce tour, activez un effet supplémentaire."
+        "DESCRIPTION": "Channel 1 Frost orb. NL Gain !M! mysterydungeon:Vigor. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
     },
     "mysteryDungeon:TotodileWaterPulse": {
         "NAME": "Vibraqua",
