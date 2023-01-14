@@ -370,11 +370,11 @@
     "mysteryDungeon:ChikoritaAromatherapy": {
         "NAME": "Aromatherapy",
         "DESCRIPTION": "Whenever you take damage, gain !M! Strength.",
-        "UPGRADE_DESCRIPTION": "Whenever you take damage, gain !M! Strength. NL Next Turn Lose 1 HP"
+        "UPGRADE_DESCRIPTION": "Whenever you take damage, gain !M! Strength. NL Next turn, lose 1 HP"
     },
     "mysteryDungeon:ChikoritaBodySlam": {
         "NAME": "Body Slam",
-        "DESCRIPTION": "Deal !D! damage. NL Next Turn Lose !M! HP."
+        "DESCRIPTION": "Deal !D! damage. NL Next Turn, lose !M! HP."
     },
     "mysteryDungeon:ChikoritaConfide": {
         "NAME": "Confide",
@@ -407,7 +407,7 @@
     },
     "mysteryDungeon:ChikoritaFuryCutter": {
         "NAME": "Fury Cutter",
-        "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Increase this card damage by !M! this combat. NL Lose 2 HP. NL Bring back a copy of that card in your hand next turn and lose 2 HP. NL Exhaust."
+        "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Increase this card damage by !M! this combat. NL Lose 2 HP. NL Add a copy of that card in your hand next turn and lose 2 HP. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaGrassKnot": {
         "NAME": "Grass Knot",
@@ -415,7 +415,7 @@
     },
     "mysteryDungeon:ChikoritaGrassPledge": {
         "NAME": "Grass Pledge",
-        "DESCRIPTION": "Gain !M! Temporary HP. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
+        "DESCRIPTION": "Gain !M! Temporary HP. NL If you play another mysterydungeon:Pledge_Card this turn, activate an additional effect."
     },
     "mysteryDungeon:ChikoritaGrassWhistle": {
         "NAME": "Grass Whistle",
@@ -432,7 +432,7 @@
     },
     "mysteryDungeon:ChikoritaHealPulse": {
         "NAME": "Heal Pulse",
-        "DESCRIPTION": "Whenever you inflict self damage or gain HP during your turn, gain !M! Block.",
+        "DESCRIPTION": "Whenever you inflict self damage or heal HP during your turn, gain !M! Block.",
         "UPGRADE_DESCRIPTION": "Innate. NL Whenever you inflict self damage or gain HP during your turn, gain !M! Block."
     },
     "mysteryDungeon:ChikoritaLeafGuard": {
@@ -449,7 +449,7 @@
     },
     "mysteryDungeon:ChikoritaMagicalLeaf": {
         "NAME": "Magical Leaf",
-        "DESCRIPTION": "Deal !D! damage !M! times to random enemies."
+        "DESCRIPTION": "Deal !D! damage to a random enemy !M! times."
     },
     "mysteryDungeon:ChikoritaNaturalGift": {
         "NAME": "Natural Gift",
@@ -461,7 +461,7 @@
     },
     "mysteryDungeon:ChikoritaOvergrow": {
         "NAME": "Overgrow",
-        "DESCRIPTION": "Each time your mysterydungeon:Recovery counter reaches 0, gain !M! Strength.",
+        "DESCRIPTION": "Whenever your mysterydungeon:Recovery counter reaches 0, gain !M! Strength.",
         "UPGRADE_DESCRIPTION": "Innate. NL Each time your mysterydungeon:Recovery counter reaches 0, gain !M! Strength."
     },
     "mysteryDungeon:ChikoritaPetalBlizzard": {
@@ -490,7 +490,7 @@
     },
     "mysteryDungeon:ChikoritaSeedBomb": {
         "NAME": "Seed Bomb",
-        "DESCRIPTION": "Deal !D! damage. NL Next turn draw 2 more cards."
+        "DESCRIPTION": "Deal !D! damage. NL Next turn, draw 2 more cards."
     },
     "mysteryDungeon:ChikoritaSnore": {
         "NAME": "Snore",
@@ -779,7 +779,7 @@
     },
     "mysteryDungeon:MeowthHoneClaws": {
         "NAME": "Hone Claws",
-        "DESCRIPTION": "Give an enemy !B! Block. NL Gain !M! Strength"
+        "DESCRIPTION": "Apply !B! Block. NL Gain !M! Strength."
     },
     "mysteryDungeon:MeowthHyperVoice": {
         "NAME": "Hyper Voice",
@@ -1046,8 +1046,8 @@
     },
     "mysteryDungeon:PikachuWildCharge": {
         "NAME": "Wild Charge",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke ALL Orbs twice.",
-        "UPGRADE_DESCRIPTION": "Evoke all Orbs twice."
+        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all Orbs twice.",
+        "UPGRADE_DESCRIPTION": "Evoke ALL Orbs twice."
     },
     "mysteryDungeon:PikachuZapCannon": {
         "NAME": "Zap Cannon",
@@ -1060,8 +1060,8 @@
     },
     "mysteryDungeon:SquirtleAquaTail": {
         "NAME": "Aqua Tail",
-        "DESCRIPTION": "Deal !D! damage. NL Scry !M! card. NL Draw !mysteryDungeon:M2! card. NL Discard !mysteryDungeon:M3! card.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Scry !M! card. NL Draw !mysteryDungeon:M2! card. NL Discard !mysteryDungeon:M3! card."
+        "DESCRIPTION": "Deal !D! damage. NL Scry !M!. NL Draw !mysteryDungeon:M2! card. NL Discard !mysteryDungeon:M3! card.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Scry !M!. NL Draw !mysteryDungeon:M2! card. NL Discard !mysteryDungeon:M3! card."
     },
     "mysteryDungeon:SquirtleBide": {
         "NAME": "Bide",
@@ -1099,8 +1099,8 @@
     },
     "mysteryDungeon:SquirtleFakeOut": {
         "NAME": "Fake Out",
-        "DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Scry !M! card. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Scry !M! cards. NL Exhaust."
+        "DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Scry !M!. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Scry !M!. NL Exhaust."
     },
     "mysteryDungeon:SquirtleFlashCannon": {
         "NAME": "Flash Cannon",
@@ -1112,8 +1112,8 @@
     },
     "mysteryDungeon:SquirtleFlinch": {
         "NAME": "Flinch",
-        "DESCRIPTION": "Deal !D! damage 2 times. NL Scry !M! card. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage 2 times. NL Scry !M! cards. NL Exhaust."
+        "DESCRIPTION": "Deal !D! damage 2 times. NL Scry !M!. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage 2 times. NL Scry !M!. NL Exhaust."
     },
     "mysteryDungeon:SquirtleFlipTurn": {
         "NAME": "Flip Turn",
@@ -1147,7 +1147,7 @@
     },
     "mysteryDungeon:SquirtleLifeDew": {
         "NAME": "Life Dew",
-        "DESCRIPTION": "Scry !M! cards. NL Draw !mysteryDungeon:M2! cards."
+        "DESCRIPTION": "Scry !M!. NL Draw !mysteryDungeon:M2! cards."
     },
     "mysteryDungeon:SquirtleLiquidation": {
         "NAME": "Liquidation",
@@ -1217,7 +1217,7 @@
     },
     "mysteryDungeon:SquirtleWaterGun": {
         "NAME": "Water Gun",
-        "DESCRIPTION": "Deal !D! damage. NL Scry !M! cards."
+        "DESCRIPTION": "Deal !D! damage. NL Scry !M!."
     },
     "mysteryDungeon:SquirtleWaterPulse": {
         "NAME": "Water Pulse",
@@ -1225,8 +1225,8 @@
     },
     "mysteryDungeon:SquirtleWaterSpout": {
         "NAME": "Water Spout",
-        "DESCRIPTION": "Scry !M! card. NL Apply !mysteryDungeon:M2! Weak. NL Deal !D! damage.",
-        "UPGRADE_DESCRIPTION": "Scry !M! cards. NL Apply !mysteryDungeon:M2! Weak. NL Deal !D! damage."
+        "DESCRIPTION": "Scry !M!. NL Apply !mysteryDungeon:M2! Weak. NL Deal !D! damage.",
+        "UPGRADE_DESCRIPTION": "Scry !M!. NL Apply !mysteryDungeon:M2! Weak. NL Deal !D! damage."
     },
     "mysteryDungeon:SquirtleWhirlpool": {
         "NAME": "Whirlpool",
@@ -1274,13 +1274,13 @@
         "DESCRIPTION": "Deal !D! damage. NL Gain as much mysterydungeon:Vigor as you had before playing this card.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! more mysterydungeon:Vigor than you had before playing this card."
     },
-    "mysteryDungeon:TotodileConfide": {
-        "NAME": "Confide",
-        "DESCRIPTION": "Apply !M! Vulnerable. NL Your next attack deals !mysteryDungeon:M2! additional damage. NL Exhaust."
+    "mysteryDungeon:TotodileNaturePowerSea": {
+        "NAME": "Nature Power: Sea",
+        "DESCRIPTION": "Apply !M! Vulnerable. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor. NL Exhaust."
     },
     "mysteryDungeon:TotodileCrunch": {
         "NAME": "Crunch",
-        "DESCRIPTION": "Deal !D! damage. NL Choose a card from your discard pile and add it to the top of your draw pile."
+        "DESCRIPTION": "Deal !D! damage. NL Choose a card from your discard pile and add it to your hand."
     },
     "mysteryDungeon:TotodileDefend": {
         "NAME": "Defend",
@@ -1293,8 +1293,8 @@
     },
     "mysteryDungeon:TotodileDoubleTeam": {
         "NAME": "Double Team",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke your next orb X times.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Evoke your next orb X times. NL Channel !M! Frost."
+        "DESCRIPTION": "You may add !M! card from your discard pile to the top of your draw pile. NL You may add !M! card from your discard pile to your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "You may add !M! cards from your discard pile to the top of your draw pile. NL You may add !M! cards from your discard pile to your hand. NL Exhaust."
     },
     "mysteryDungeon:TotodileEndure": {
         "NAME": "Endure",
@@ -1354,15 +1354,16 @@
     },
     "mysteryDungeon:TotodileStrength": {
         "NAME": "Strength",
-        "DESCRIPTION": "Draw !M! card. NL If you draw an Attack card this way, channel 1 Frost."
+        "DESCRIPTION": "Draw !M! card. NL If you drew an Attack card this way, channel 1 Frost."
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "Surf",
-        "DESCRIPTION": "Whenever you discard a card, gain !M! mysterydungeon:Temporary_Vigor."
+        "DESCRIPTION": "Whenever you discard a card, for every discarded card, gain !M! mysterydungeon:Temporary_Vigor."
     },
     "mysteryDungeon:TotodileSubstitute": {
         "NAME": "Substitute",
-        "DESCRIPTION": "Gain !M! mysterydungeon:Vigor. NL Exhaust."
+        "DESCRIPTION": "Innate. NL Discard the top !M! cards from your draw pile. NL Put Attack cards discarded this way in your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Discard the top !M! cards from your draw pile. NL Put Attack cards discarded this way in your hand. NL Exhaust."
     },
     "mysteryDungeon:TotodileRage": {
         "NAME": "Rage",
@@ -1371,20 +1372,20 @@
     },
     "mysteryDungeon:TotodileRainDance": {
         "NAME": "Rain Dance",
-        "DESCRIPTION": "Unplayable. NL When discarded: Your next Attack deals !M! additional damage.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up. NL When discarded: Your next Attack deals !M! additional damage.",
+        "DESCRIPTION": "Unplayable. NL When discarded: Gain !M! mysterydungeon:Vigor.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up. NL When discarded: Gain !M! mysterydungeon:Vigor.",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
         ]
     },
     "mysteryDungeon:TotodileThrash": {
         "NAME": "Thrash",
-        "DESCRIPTION": "Every !mysteryDungeon:M2! Attack you play, gain !M! mysterydungeon:Vigor."
+        "DESCRIPTION": "Every !M! Attack you play, gain !mysteryDungeon:M2! mysterydungeon:Vigor."
     },
     "mysteryDungeon:TotodileTorrent": {
         "NAME": "Torrent",
         "DESCRIPTION": "Unplayable. NL When discarded: Gain !M! Focus.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up. NL When discarded: Gain !M! Focus.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up NL When discarded: Gain !M! Focus.",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
         ]
@@ -1399,11 +1400,11 @@
     },
     "mysteryDungeon:TotodileWaterPledge": {
         "NAME": "Water Pledge",
-        "DESCRIPTION": "Channel 1 Frost orb. NL Your next attack deals !M! additional damage. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
+        "DESCRIPTION": "Channel 1 Frost. NL Gain !M! mysterydungeon:Vigor. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
     },
     "mysteryDungeon:TotodileWaterPulse": {
         "NAME": "Water Pulse",
-        "DESCRIPTION": "Discard the top !M! cards of your draw pile. For each card discarded this way, deal !D! damage."
+        "DESCRIPTION": "Discard the top !M! cards of your draw pile. For each card discarded this way, deal !mysteryDungeon:M2! damage."
     },
     "mysteryDungeon:TotodileWaterSport": {
         "NAME": "Water Sport",
@@ -1412,11 +1413,11 @@
     },
     "mysteryDungeon:TotodileWhirlpool": {
         "NAME": "Whirlpool",
-        "DESCRIPTION": "Discard the top !M! card of your draw pile. NL Gain !mysteryDungeon:M2! Focus. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Discard the top !M! card of your draw pile. NL Gain !mysteryDungeon:M2! Focus."
+        "DESCRIPTION": "Discard the top !M! cards of your draw pile. NL Gain !mysteryDungeon:M2! Focus. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Discard the top !M! cards of your draw pile. NL Gain !mysteryDungeon:M2! Focus."
     },
     "mysteryDungeon:TotodileWorkUp": {
         "NAME": "Work Up",
-        "DESCRIPTION": "If you do not have any empty Orb Slots, gain !M! Orb Slots."
+        "DESCRIPTION": "If you do not have any empty Orb Slot, gain !M! Orb Slots."
     }
 }
