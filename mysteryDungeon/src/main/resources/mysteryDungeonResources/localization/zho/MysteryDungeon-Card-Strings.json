@@ -16,41 +16,41 @@
         "DESCRIPTION": "向手牌添加一张随机攻击牌。"
     },
     "mysteryDungeon:ChooseNegative": {
-        "NAME": "Negative Stance",
-        "DESCRIPTION": "Enter mysterydungeon:Negative_Stance."
+        "NAME": "负极态",
+        "DESCRIPTION": "进入 mysterydungeon:负极态 。"
     },
     "mysteryDungeon:ChoosePositive": {
-        "NAME": "Positive Stance",
-        "DESCRIPTION": "Enter mysterydungeon:Positive_Stance."
+        "NAME": "正极态",
+        "DESCRIPTION": "进入 mysterydungeon:正极态 。"
     },
     "mysteryDungeon:ChooseSkill": {
-        "NAME": "Skill",
-        "DESCRIPTION": "Add a random Skill to your hand."
+        "NAME": "技能",
+        "DESCRIPTION": "向手牌添加一张随机技能牌。"
     },
     "mysteryDungeon:StatusFreeze": {
-        "NAME": "Freeze",
-        "DESCRIPTION": "Retain."
+        "NAME": "冷冻",
+        "DESCRIPTION": "保留。"
     },
     "mysteryDungeon:BulbasaurBulletSeed": {
-        "NAME": "Bullet Seed",
-        "DESCRIPTION": "Deal !D! damage !M! times. NL Can be upgraded multiple times."
+        "NAME": "种子机关枪",
+        "DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 可多次升级。"
     },
     "mysteryDungeon:BulbasaurChlorophyll": {
-        "NAME": "Chlorophyll",
-        "DESCRIPTION": "Draw !M! card. NL If you drew an Attack, gain 1 Strength.",
-        "UPGRADE_DESCRIPTION": "Draw !M! cards. NL For each Attack drawn this way, gain 1 Strength."
+        "NAME": "叶绿素",
+        "DESCRIPTION": "抽 !M! 张牌。 NL 若抽到一张攻击牌，获得1点力量。",
+        "UPGRADE_DESCRIPTION": "抽 !M! 张牌。 NL 每抽到一张攻击牌，获得1点力量。"
     },
     "mysteryDungeon:BulbasaurDefend": {
-        "NAME": "Defend",
-        "DESCRIPTION": "Gain !B! Block."
+        "NAME": "防御",
+        "DESCRIPTION": "获得 !B! 点 格挡 。"
     },
     "mysteryDungeon:BulbasaurDefenseCurl": {
-        "NAME": "Defense Curl",
-        "DESCRIPTION": "Gain !B! Block."
+        "NAME": "变圆",
+        "DESCRIPTION": "获得 !B! 点 格挡 。"
     },
     "mysteryDungeon:BulbasaurDoubleEdge": {
-        "NAME": "Double Edge",
-        "DESCRIPTION": "Deal !D! damage. NL Gain Strength equal to the unblocked damage dealt. NL Exhaust.",
+        "NAME": "双刃",
+        "DESCRIPTION": "造成 !D! 点伤害。 NL 获得等同于未 格挡 伤害的力量。 NL 消耗。",
         "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 获得等同于未 格挡 伤害的力量。 NL 消耗。"
     },
     "mysteryDungeon:BulbasaurExplorerForm": {
@@ -1373,7 +1373,7 @@
     "mysteryDungeon:TotodileRainDance": {
         "NAME": "Rain Dance",
         "DESCRIPTION": "Unplayable. NL When discarded: Gain !M! mysterydungeon:Vigor.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up. NL When discarded: Gain !M! mysterydungeon:Vigor.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up. NL When discarded: Gain !M! mysterydungeon:Vigor",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
         ]
@@ -1400,7 +1400,7 @@
     },
     "mysteryDungeon:TotodileWaterPledge": {
         "NAME": "Water Pledge",
-        "DESCRIPTION": "Channel 1 Frost. NL Gain !M! mysterydungeon:Vigor. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
+        "DESCRIPTION": "Channel 1 Frost orb. NL Gain !M! mysterydungeon:Vigor. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
     },
     "mysteryDungeon:TotodileWaterPulse": {
         "NAME": "Water Pulse",
