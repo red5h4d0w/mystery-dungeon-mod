@@ -1,17 +1,150 @@
 {
     "mysteryDungeon:DefaultClickableRelic": {
-        "NAME": "Right-Clicky Relic",
-        "FLAVOR": "The more you right-click it, the more orbs you've evoked in your lifetime.",
+        "NAME": "오른쪽 클릭 유물",
+        "FLAVOR": "당신은 오른쪽 마우스를 클릭하면 할수록, 당신의 일생에서 더 많은 일을 불러일으킵니다.",
         "DESCRIPTIONS": [
-            "[#2aecd7]Usable [#2aecd7]once [#2aecd7]per [#2aecd7]turn.[] NL #yEvoke your rightmost Orb.",
-            "YOU ARE MINE!"
+            "[#2aecd7] 번 사용가능. [#2aecd7] 턴당 [#2aecd7] 회 가장 오른쪽 구체를 [#2aecd7] 번 #y발현 합니다.",
+            "넌 내꺼야!"
         ]
     },
     "mysteryDungeon:NatureRelatedRelic": {
-        "NAME": "Nature Related Relic",
-        "FLAVOR": "What is this?",
+        "NAME": "? 유물",
+        "FLAVOR": "이게 뭐지?",
         "DESCRIPTIONS": [
-            "You will receive a relic that depends on your nature."
+            "당신의 본성에 의해 유물이 정해집니다."
+        ]
+    },
+    "mysteryDungeon:BraveExplorerRelic": {
+        "NAME": "용감한 탐험가",
+        "FLAVOR": "그저 용감한 탐험가",
+        "DESCRIPTIONS": [
+            "전투당 한번, 턴 종료시 방어도 가 없다면 적 전체에게 취약을 2 부여합니다."
+        ]
+    },
+    "mysteryDungeon:CalmExplorerRelic": {
+        "NAME": "차분한 탐험가",
+        "FLAVOR": "이게 뭐지?",
+        "DESCRIPTIONS": [
+            "전투 시작 후 카드를 #b1 장 뽑고 [E] 를 얻습니다."
+        ]
+    },
+    "mysteryDungeon:CellBatteryRelic": {
+        "NAME": "충전지",
+        "FLAVOR": "소모성 배터리. 지닌 포켓몬이 전기타입 공격을 받으면 공격이 상승합니다.",
+        "DESCRIPTIONS": [
+            "전압 표시기의 끝에 도달하려면 3번 움직여야 합니다. NL 더이상 전압표시기는 중앙으로 돌아오지 않습니다."
+        ]
+    },
+    "mysteryDungeon:CharcoalRelic": {
+        "NAME": "목탄",
+        "FLAVOR": "가연성 연료.포켓몬에게 지니게 하면 불꽃 기술의 위력이 상승합니다.",
+        "DESCRIPTIONS": [
+            "적에게 부정적인 효과를 부여할 때마다 적 전체에게 피해를 #b1 줍니다."
+        ]
+    },
+    "mysteryDungeon:DocileExplorerRelic": {
+        "NAME": "정직한 탐험가",
+        "FLAVOR": "이게 뭐지?",
+        "DESCRIPTIONS": [
+            "부정적인 효과를 받으면 다음 턴에 방어도를 #b2 얻습니다."
+        ]
+    },
+    "mysteryDungeon:FlameOrbRelic": {
+        "NAME": "화염 구슬",
+        "FLAVOR": "만지면 열을 내는 이상한 구슬. 지니게 하면 배틀 중에 화상 상태가 됩니다.",
+        "DESCRIPTIONS": [
+            "전투 시작 후 적 전체에게 #y화상 을 #b9 부여합니다."
+        ]
+    },
+    "mysteryDungeon:HardyExplorerRelic": {
+        "NAME": "강인한 모험가",
+        "FLAVOR": "이게 뭐지?",
+        "DESCRIPTIONS": [
+            "매턴 1회 체력을 잃었을 때 방어도를 5 얻습니다. 공격으로 인해 체력이 잃은 경우 흐릿함을 1 얻습니다."
+        ]
+    },
+    "mysteryDungeon:ImpishExplorerRelic": {
+        "NAME": "장난꾸러기 탐험가",
+        "FLAVOR": "이게 뭐지?",
+        "DESCRIPTIONS": [
+            "전투당 한번 구체를 발현하면 밀집을 1 얻습니다."
+        ]
+    },
+    "mysteryDungeon:JollyExplorerRelic": {
+        "NAME": "즐거운 탐험가",
+        "FLAVOR": "이게 뭐지?",
+        "DESCRIPTIONS": [
+            "전투 시작시 #y고속이동 한장을 손에 넣습니다."
+        ]
+    },
+    "mysteryDungeon:LeftoversRelic": {
+        "NAME": "먹다남은음식",
+        "FLAVOR": "당신은 밥을 먹고 음식을 좀 남겼습니다.",
+        "DESCRIPTIONS": [
+            "전투 종료시 체력을 3 회복합니다."
+        ]
+    },
+    "mysteryDungeon:LifeOrbRelic": {
+        "NAME": "생명의 구슬",
+        "FLAVOR": "지니게 하면 공격할 때마다 체력이 조금씩 줄지만 기술의 위력이 올라갑니다.",
+        "DESCRIPTIONS": [
+            "턴 시작시 [E] 을 얻습니다. NL 턴 종료시, 손에 있는 무작위 카드 1장을 소멸합니다."
+        ]
+    },
+    "mysteryDungeon:MetronomeRelic": {
+        "NAME": "메트로놈",
+        "FLAVOR": "자신만의 리듬을 가지고 있습니다.",
+        "DESCRIPTIONS": [
+            "턴 시작시 자기 팀이 아닌 포켓몬의 무작위 카드 한장을 손에 넣습니다. 이번 전투 동안 비용이 0이 됩니다."
+        ]
+    },
+    "mysteryDungeon:MiracleSeedRelic": {
+        "NAME": "기적의 씨",
+        "FLAVOR": "생명이 깃든 씨앗. 지니게 하면 풀타입 기술의 위력이 올라갑니다.",
+        "DESCRIPTIONS": [
+            "한턴에 부정적인 효과를 #b3 번 부여할 경우 카드 1장 뽑습니다."
+        ]
+    },
+    "mysteryDungeon:MysticWaterRelic": {
+        "NAME": "신비의 물방울",
+        "FLAVOR": "눈물방울 모양의 보석. 지니게 하면 물 기술의 위력이 상승합니다.",
+        "DESCRIPTIONS": [
+            "턴 시작시 [E] 얻습니다. NL 손에 있는 카드의 최대 매수가 2 줄어듭니다."
+        ]
+    },
+    "mysteryDungeon:QuirkyExplorerRelic": {
+        "NAME": "별난 탐험가",
+        "FLAVOR": "이게 뭐지?",
+        "DESCRIPTIONS": [
+            "적 처치시 얻는 골드의 양이 5% 증가합니다."
+        ]
+    },
+    "mysteryDungeon:RelaxedExplorerRelic": {
+        "NAME": "느긋한 탐험가",
+        "FLAVOR": "이게 뭐지?",
+        "DESCRIPTIONS": [
+            "내 턴 시작시 #y예지 #b1."
+        ]
+    },
+    "mysteryDungeon:TimidExplorerRelic": {
+        "NAME": "소심한 탐험가",
+        "FLAVOR": "이게 뭐지?",
+        "DESCRIPTIONS": [
+            "내 턴 종료시 1 장까지 카드를 보존합니다."
+        ]
+    },
+    "mysteryDungeon:LightBallRelic": {
+        "NAME": "전기구슬",
+        "FLAVOR": "피카츄에게 지니게 하면 공격과 특수공격의 위력이 올라가는 이상한 구슬입니다.",
+        "DESCRIPTIONS": [
+            "매턴 한번, #y상태 가 아닐때 파워카드를 사용하면, 구체 슬롯을 1 얻습니다."
+        ]
+    },
+    "mysteryDungeon:WaveIncenseRelic": {
+        "NAME": "잔물결 향로",
+        "FLAVOR": "이상한 향기의 향로. 지니게 하면 물타입 기술의 위력이 올라갑니다.",
+        "DESCRIPTIONS": [
+            "전투 시작시 #y현실지배 1장을 손에 넣습니다."
         ]
     },
     "mysteryDungeon:BigRootRelic": {
@@ -21,95 +154,11 @@
             "Whenever you are at #b70% or less of your max HP, gain #yRecovery."
         ]
     },
-    "mysteryDungeon:BraveExplorerRelic": {
-        "NAME": "Brave Explorer",
-        "FLAVOR": "A brave Explorer",
-        "DESCRIPTIONS": [
-            "Each combat, the first time you end your turn without #yBlock apply #b2 #yVulnerable to ALL enemies."
-        ]
-    },
-    "mysteryDungeon:CalmExplorerRelic": {
-        "NAME": "Calm Explorer",
-        "FLAVOR": "What is this?",
-        "DESCRIPTIONS": [
-            "Draw #b1 card and gain [E] at the start of every fight."
-        ]
-    },
-    "mysteryDungeon:CellBatteryRelic": {
-        "NAME": "Cell Battery",
-        "FLAVOR": "A consumable battery. If the holder is hit by an Electric-type move, its Attack will rise.",
-        "DESCRIPTIONS": [
-            "The #yCharge #yMeter will now have #b3 steps between stances. NL You no longer return to the center of the charge meter at the start of your turn."
-        ]
-    },
-    "mysteryDungeon:CharcoalRelic": {
-        "NAME": "Charcoal",
-        "FLAVOR": "It's a combustible fuel that boosts the power of Fire-type moves.",
-        "DESCRIPTIONS": [
-            "Every time you apply a #ydebuff deal #b1 damage to ALL enemies."
-        ]
-    },
-    "mysteryDungeon:DocileExplorerRelic": {
-        "NAME": "Docile Explorer",
-        "FLAVOR": "What is this?",
-        "DESCRIPTIONS": [
-            "When you receive a #yDebuff, gain #b2 Block on the following turn."
-        ]
-    },
-    "mysteryDungeon:FlameOrbRelic": {
-        "NAME": "Flame Orb",
-        "FLAVOR": "It's a bizarre orb that will afflict the holder with a burn during battle.",
-        "DESCRIPTIONS": [
-            "At the start of each combat, apply #b9 #yBurn to ALL enemies."
-        ]
-    },
     "mysteryDungeon:GrassySeedRelic": {
         "NAME": "Grassy Seed",
         "FLAVOR": "It boosts Defense on Grassy Terrain.",
         "DESCRIPTIONS": [
             "At the start of combat add a random attack to your draw pile. It costs #b0 this combat."
-        ]
-    },
-    "mysteryDungeon:HardyExplorerRelic": {
-        "NAME": "Hardy Explorer",
-        "FLAVOR": "What is this?",
-        "DESCRIPTIONS": [
-            "The first time you lose #yHP each turn, gain #b5 #yBlock. If this #yHP loss was from a monster's attack, do not remove your #yBlock at the start of the next turn."
-        ]
-    },
-    "mysteryDungeon:ImpishExplorerRelic": {
-        "NAME": "Impish Explorer",
-        "FLAVOR": "What is this?",
-        "DESCRIPTIONS": [
-            "The first time you evoke an orb each combat, gain #b1 #yFocus."
-        ]
-    },
-    "mysteryDungeon:JollyExplorerRelic": {
-        "NAME": "Jolly Explorer",
-        "FLAVOR": "What is this?",
-        "DESCRIPTIONS": [
-            "Start each combat with an #yAgility."
-        ]
-    },
-    "mysteryDungeon:LeftoversRelic": {
-        "NAME": "Leftovers",
-        "FLAVOR": "Some food left from your last meal",
-        "DESCRIPTIONS": [
-            "At the end of each combat heal #b3 #yHP."
-        ]
-    },
-    "mysteryDungeon:LifeOrbRelic": {
-        "NAME": "Life Orb",
-        "FLAVOR": "It boosts the power of moves, but at the cost of some HP on each hit.",
-        "DESCRIPTIONS": [
-            "Gain [E] at the start of your turn. NL At the end of your turn, exhaust a random card from your hand."
-        ]
-    },
-    "mysteryDungeon:MetronomeRelic": {
-        "NAME": "Metronome",
-        "FLAVOR": "It follows its own rhythm.",
-        "DESCRIPTIONS": [
-            "At the start of each turn add a random card from a Pokémon that is not in your team to your hand. It costs #b0 this turn."
         ]
     },
     "mysteryDungeon:MeadowPlateRelic": {
@@ -119,60 +168,11 @@
             "Gain #b20 #ymax #yHP. At the start of combat if you have more than #b65% of your #ymax #yHP lose #yHP until you have #y65% of your #ymax #yHP. If you have less than #b65% of your #ymax #yHP, heal #b10 #yHP."
         ]
     },
-    "mysteryDungeon:MiracleSeedRelic": {
-        "NAME": "Miracle Seed",
-        "FLAVOR": "Its a seed invued with life force that boosts the power of Grass-type moves.",
-        "DESCRIPTIONS": [
-            "Every time you apply #b3 #yDebuffs in a single turn draw a card."
-        ]
-    },
-    "mysteryDungeon:MysticWaterRelic": {
-        "NAME": "Mystic Water",
-        "FLAVOR": "This teardrop-shaped gem boosts the power of Water-type moves.",
-        "DESCRIPTIONS": [
-            "Gain [E] at the start of your turn. NL Reduce your maximum hand size by #b2."
-        ]
-    },
     "mysteryDungeon:NaiveExplorerRelic": {
         "NAME": "Naive Explorer",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
             "At the start of your turn, if you have not taken any damage from attacks this combat, your next Attack deals #b3 more damage."
-        ]
-    },
-    "mysteryDungeon:QuirkyExplorerRelic": {
-        "NAME": "Quirky Explorer",
-        "FLAVOR": "What is this?",
-        "DESCRIPTIONS": [
-            "Gain #b5% more #yGold in combat rewards."
-        ]
-    },
-    "mysteryDungeon:RelaxedExplorerRelic": {
-        "NAME": "Relaxed Explorer",
-        "FLAVOR": "What is this?",
-        "DESCRIPTIONS": [
-            "At the start of your turn, #yScry #b1."
-        ]
-    },
-    "mysteryDungeon:TimidExplorerRelic": {
-        "NAME": "Timid Explorer",
-        "FLAVOR": "What is this?",
-        "DESCRIPTIONS": [
-            "At the end of each turn, if you have any leftover energy, spend #b1 and #yretain a card."
-        ]
-    },
-    "mysteryDungeon:LightBallRelic": {
-        "NAME": "Light Ball",
-        "FLAVOR": "It's a puzzling orb that boosts its Attack and Sp. Atk stats.",
-        "DESCRIPTIONS": [
-            "Once per turn, when you play a #ypower and you are not in a #ystance, gain #b1 #yorb #yslot."
-        ]
-    },
-    "mysteryDungeon:WaveIncenseRelic": {
-        "NAME": "Wave Incense",
-        "FLAVOR": "This incense has a curious aroma that boosts the power of Water-type moves.",
-        "DESCRIPTIONS": [
-            "During combat, ALL cards you create are #yupgraded."
         ]
     }
 }

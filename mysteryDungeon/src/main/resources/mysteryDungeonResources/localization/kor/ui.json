@@ -1,23 +1,17 @@
 {
     "mysteryDungeon:EtherealMod": {
-        "TEXT": [
-            "Ethereal. NL "
-        ]
+        "TEXT": ["휘발성. NL "]
     },
     "mysteryDungeon:ExhaustFromDeckAction": {
-        "TEXT": [
-            "Choose a card to exhaust from your deck."
-        ]
+        "TEXT": ["덱에서 소멸할 카드를 선택하세요."]
     },
     "mysteryDungeon:RetainCardsButEtherealModAction": {
-        "TEXT": [
-            "Retain (cards will become ethereal)"
-        ]
+        "TEXT": ["보존합니다. (카드가 휘발성을 갖습니다.)"]
     },
     "mysteryDungeon:PikachuMeter": {
         "TEXT": [
-            "Charge Meter",
-            "When you play a #ySkill, move toward the left of the meter. NL When you play an #yAttack, move toward the right of the meter. NL When you reach one of the end of the meter, enter the corresponding #ystances. NL At the end of every turn return to the center. NL You can hover this to see info on the #ystances."
+            "전압 표시기",
+            "#y스킬카드 를 사용할 때 마다 침이 왼쪽으로 움직입니다. NL #y공격카드 를 사용할 때 마다 침이 오른쪽으로 움직입니다. 침이 끝에 도달하면 #y상태 에 들어가며, 턴 종료시 중앙으로 돌아갑니다. NL 마우스를 올리면 세부내용을 확인할 수 있습니다."
         ]
     }
 }

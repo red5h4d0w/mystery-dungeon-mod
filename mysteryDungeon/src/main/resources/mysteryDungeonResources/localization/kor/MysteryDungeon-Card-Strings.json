@@ -1,195 +1,363 @@
 {
     "mysteryDungeon:ExplorersDeck": {
-        "NAME": "Explorer's deck",
-        "DESCRIPTION": "Will become a deck of 5 cards once you choose your explorer."
+        "NAME": "탐험가의 덱",
+        "DESCRIPTION": "탐험가 전용 카드 5장을 덱에 넣습니다."
     },
     "mysteryDungeon:PartnersDeck": {
-        "NAME": "Partner's Deck",
-        "DESCRIPTION": "Will become a deck of 5 cards once you choose your partner."
+        "NAME": "파트너의 덱",
+        "DESCRIPTION": "파트너 전용 카드 5장을 덱에 넣습니다."
     },
     "mysteryDungeon:ColorlessAgility": {
-        "NAME": "Agility",
-        "DESCRIPTION": "Retain. NL Draw !M! cards. NL Exhaust."
+        "NAME": "고속이동",
+        "DESCRIPTION": "보존. NL 카드를 !M! 장 뽑습니다. NL 소멸."
     },
     "mysteryDungeon:ChooseAttack": {
-        "NAME": "Attack",
-        "DESCRIPTION": "Add a random Attack to your hand."
+        "NAME": "공격",
+        "DESCRIPTION": "손에 무작위 공격카드를 추가합니다."
     },
     "mysteryDungeon:ChooseNegative": {
-        "NAME": "Negative Stance",
-        "DESCRIPTION": "Enter mysterydungeon:Negative_Stance."
+        "NAME": "마이너스",
+        "DESCRIPTION": "mysterydungeon:마이너스상태 가 됩니다."
     },
     "mysteryDungeon:ChoosePositive": {
-        "NAME": "Positive Stance",
-        "DESCRIPTION": "Enter mysterydungeon:Positive_Stance."
+        "NAME": "플러스",
+        "DESCRIPTION": "mysterydungeon:플러스상태 가 됩니다."
     },
     "mysteryDungeon:ChooseSkill": {
-        "NAME": "Skill",
-        "DESCRIPTION": "Add a random Skill to your hand."
+        "NAME": "스킬",
+        "DESCRIPTION": "손에 무작위 스킬카드를 추가합니다."
     },
     "mysteryDungeon:StatusFreeze": {
-        "NAME": "Freeze",
-        "DESCRIPTION": "Retain."
+        "NAME": "얼음",
+        "DESCRIPTION": "보존."
     },
     "mysteryDungeon:BulbasaurBulletSeed": {
-        "NAME": "Bullet Seed",
-        "DESCRIPTION": "Deal !D! damage !M! times. NL Can be upgraded multiple times."
+        "NAME": "씨기관총",
+        "DESCRIPTION": "피해를 !D! 만큼 !M! 번 줍니다. NL 강화 횟수에 제한이 없습니다."
     },
     "mysteryDungeon:BulbasaurChlorophyll": {
-        "NAME": "Chlorophyll",
-        "DESCRIPTION": "Draw !M! card. NL If you drew an Attack, gain 1 Strength.",
-        "UPGRADE_DESCRIPTION": "Draw !M! cards. NL For each Attack drawn this way, gain 1 Strength."
+        "NAME": "엽록소",
+        "DESCRIPTION": "카드를 !M! 장 뽑습니다. NL 공격 카드를 뽑았다면, 힘 을 1 얻습니다.",
+        "UPGRADE_DESCRIPTION": "카드를 !M! 장 뽑습니다. NL 뽑은 공격 카드 한 장당, 힘 을 1 얻습니다."
     },
     "mysteryDungeon:BulbasaurDefend": {
-        "NAME": "Defend",
-        "DESCRIPTION": "Gain !B! Block."
+        "NAME": "수비",
+        "DESCRIPTION": "방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:BulbasaurDefenseCurl": {
-        "NAME": "Defense Curl",
-        "DESCRIPTION": "Gain !B! Block."
+        "NAME": "웅크리기",
+        "DESCRIPTION": "방어도 를 !B! 얻습니다"
     },
     "mysteryDungeon:BulbasaurDoubleEdge": {
-        "NAME": "Double Edge",
-        "DESCRIPTION": "Deal !D! damage. NL Gain Strength equal to the unblocked damage dealt. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times. NL Gain Strength equal to the unblocked damage dealt. NL Exhaust."
+        "NAME": "이판사판태클",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 막히지 않은 피해만큼 힘 을 얻습니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "피해를 !D! 만큼 !M! 번 줍니다. NL 막히지 않은 피해만큼 힘 을 얻습니다. NL 소멸."
     },
     "mysteryDungeon:BulbasaurExplorerForm": {
-        "NAME": "Explorer Form",
-        "DESCRIPTION": "Gain !M! Regen. NL At the start of your turn lose 1 Dexterity."
+        "NAME": "탐험가의 자세",
+        "DESCRIPTION": "재생을 !M! 얻습니다. NL 턴이 시작되면 민첩을 1 잃습니다."
     },
     "mysteryDungeon:BulbasaurFrenzyPlant": {
-        "NAME": "Frenzy Plant",
-        "DESCRIPTION": "Deal !D! damage !M! times. NL Apply 2 Poison !M! times. NL You cannot heal during this turn."
+        "NAME": "하드플랜트",
+        "DESCRIPTION": "피해를 !D! 만큼 !M! 번 줍니다. NL 중독 을 2 만큼 !M! 번 부여합니다. NL 이번 턴에 회복 할 수 없습니다."
     },
     "mysteryDungeon:BulbasaurGigaDrain": {
-        "NAME": "Giga Drain",
-        "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Heal HP equal to unblocked damage."
+        "NAME": "기가드레인",
+        "DESCRIPTION": "휘발성. NL 피해를 !D! 줍니다. NL 막히지 않은 피해만큼 체력을 회복합니다."
     },
     "mysteryDungeon:BulbasaurGrowl": {
-        "NAME": "Growl",
-        "DESCRIPTION": "Apply !M! Weak to ALL enemies."
+        "NAME": "울음소리",
+        "DESCRIPTION": "적 전체에게 약화를 !M! 부여합니다."
     },
     "mysteryDungeon:BulbasaurGrowth": {
-        "NAME": "Growth",
-        "DESCRIPTION": "Gain !M! Strength."
+        "NAME": "성장",
+        "DESCRIPTION": "힘 을 !M! 얻습니다."
     },
     "mysteryDungeon:BulbasaurIngrain": {
-        "NAME": "Ingrain",
-        "DESCRIPTION": "Apply 1 mysterydungeon:Leech_Seed to a random enemy !M! times. NL Lose 2 Dexterity. NL Exhaust."
+        "NAME": "뿌리박기",
+        "DESCRIPTION": "무작위 적에게 mysterydungeon:씨뿌리기 를 !M! 번 부여합니다. NL 민첩 을 2 잃습니다. NL 소멸."
     },
     "mysteryDungeon:BulbasaurLeechSeed": {
-        "NAME": "Leech Seed",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Leech_Seed. NL Exhaust."
+        "NAME": "씨뿌리기",
+        "DESCRIPTION": " mysterydungeon:씨뿌리기 를 !M! 부여합니다. NL 소멸."
     },
     "mysteryDungeon:BulbasaurMegaDrain": {
-        "NAME": "Mega Drain",
-        "DESCRIPTION": "Heal !M! HP per different *debuff on the enemy.",
-        "UPGRADE_DESCRIPTION": "Heal !M! HP per different *debuff on the enemy. NL Next turn draw 1 more card."
+        "NAME": "메가드레인",
+        "DESCRIPTION": "체력을 !M! 회복합니다. NL 적에게 부여된 부정적인 효과 갯수만큼 반복합니다.",
+        "UPGRADE_DESCRIPTION": "체력을 !M! 회복합니다. NL 적에게 부여된 부정적인 효과 갯수만큼 반복합니다. NL 다음 턴에 카드를 1장 더 뽑습니다."
     },
     "mysteryDungeon:BulbasaurPetalBlizzard": {
-        "NAME": "Petal Blizzard",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies."
+        "NAME": "꽃보라",
+        "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다."
     },
     "mysteryDungeon:BulbasaurPetalDance": {
-        "NAME": "Petal Dance",
-        "DESCRIPTION": "Deal 7 damage to ALL enemies at the end of your turn for the next !M! turns. NL This damage behaves like Attack damage."
+        "NAME": "꽃잎댄스",
+        "DESCRIPTION": "턴 종료 시, 적 전체에게 피해를 7 줍니다. NL !M! 번 반복합니다. NL 피해는 공격으로 간주합니다."
     },
     "mysteryDungeon:BulbasaurPoisonJab": {
-        "NAME": "Poison Jab",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! Poison 2 times."
+        "NAME": "독찌르기",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 중독 을 !M! 만큼 2번 부여합니다."
     },
     "mysteryDungeon:BulbasaurPoisonPoint": {
-        "NAME": "Poison Point",
-        "DESCRIPTION": "Gain !M! mysterydungeon:Poison_Thorns."
+        "NAME": "독가시",
+        "DESCRIPTION": "mysterydungeon:독가시 를 !M! 얻습니다."
     },
     "mysteryDungeon:BulbasaurPoisonPowder": {
-        "NAME": "Poison Powder",
-        "DESCRIPTION": "Apply !M! Poison to ALL enemies."
+        "NAME": "독가루",
+        "DESCRIPTION": "적 전체에게 중독 을 !M! 만큼 부여합니다."
     },
     "mysteryDungeon:BulbasaurPowerWhip": {
-        "NAME": "Power Whip",
-        "DESCRIPTION": "Retain. NL Deal !D! damage."
+        "NAME": "파워휩",
+        "DESCRIPTION": "보존. NL 피해를 !D! 줍니다."
     },
     "mysteryDungeon:BulbasaurProtect": {
-        "NAME": "Protect",
-        "DESCRIPTION": "Gain !B! Block. NL You cannot gain Block from cards during the next !M! turns."
+        "NAME": "방어",
+        "DESCRIPTION": "방어도 를 !B! 얻습니다. NL 다음 !M! 턴 동안 카드를 통해 방어도 를 얻을 수 없습니다."
     },
     "mysteryDungeon:BulbasaurRazorLeaf": {
-        "NAME": "Razor Leaf",
-        "DESCRIPTION": "Deal !D! damage. NL Draw 1 card."
+        "NAME": "잎날가르기",
+        "DESCRIPTION": "체력을 !M! 잃습니다. NL 피해를 !D! 줍니다."
     },
     "mysteryDungeon:BulbasaurRest": {
-        "NAME": "Rest",
-        "DESCRIPTION": "Heal !mysteryDungeon:M2! HP. mysterydungeon:Rest for !M! turns."
+        "NAME": "잠자기",
+        "DESCRIPTION": "체력을 !mysteryDungeon:M2! 회복합니다.  mysterydungeon:잠자기 를 !M! 얻습니다."
     },
     "mysteryDungeon:BulbasaurSecretPower": {
-        "NAME": "Secret Power",
-        "DESCRIPTION": "Innate. NL Add random Power in your hand. NL Exhaust",
-        "UPGRADE_DESCRIPTION": "Innate. NL Add random upgraded Power in your hand. NL Exhaust"
+        "NAME": "비밀의 힘",
+        "DESCRIPTION": "선천성. NL 무작위 파워 카드를 1 장 얻습니다. NL 소멸",
+        "UPGRADE_DESCRIPTION": "선천성. NL 강화된 무작위 파워 카드를 1 장 얻습니다. NL 소멸"
     },
     "mysteryDungeon:BulbasaurSeedBomb": {
-        "NAME": "Seed Bomb",
-        "DESCRIPTION": "Deal !D! damage to a random enemy X times."
+        "NAME": "씨폭탄",
+        "DESCRIPTION": "무작위 적에게 피해를 !D! 만큼 X번 줍니다."
     },
     "mysteryDungeon:BulbasaurSleepPowder": {
-        "NAME": "Sleep Powder",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Asleep to ALL enemies. NL Exhaust."
+        "NAME": "수면가루",
+        "DESCRIPTION":"적 전체에게 mysterydungeon:잚듬 을 !M! 부여합니다. NL 소멸."
     },
     "mysteryDungeon:BulbasaurSludgeBomb": {
-        "NAME": "Sludge Bomb",
-        "DESCRIPTION": "Apply !M! Poison."
+        "NAME": "오물폭탄",
+        "DESCRIPTION": "중독 을 !M! 부여합니다."
     },
     "mysteryDungeon:BulbasaurSolarBeam": {
-        "NAME": "Solar Beam",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Draw !M! less cards during your next turn."
+        "NAME": "솔라빔",
+        "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 다음 턴 시작시 카드를 !M! 장 덜 뽑습니다."
     },
     "mysteryDungeon:BulbasaurStrengthSap": {
-        "NAME": "Strength Sap",
-        "DESCRIPTION": "Enemy loses !M! Strength. NL Gain !M! Strength if enemy lost Strength that way. NL Exhaust."
+        "NAME": "힘흡수",
+        "DESCRIPTION": "힘을 !M! 감소시킵시다. NL 그 대상이 힘 이 감소했다면, 힘 을 !M! 얻습니다. NL 소멸."
     },
     "mysteryDungeon:BulbasaurStunSpore": {
-        "NAME": "Stun Spore",
-        "DESCRIPTION": "Apply !M! *Slow. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! *Slow. NL Exhaust."
+        "NAME": "저리가루",
+        "DESCRIPTION": "*둔화 를 !M! 부여합니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "선천성. NL *둔화 를 !M! 부여합니다. NL 소멸."
     },
     "mysteryDungeon:BulbasaurSunnyDay": {
-        "NAME": "Sunny Day",
-        "DESCRIPTION": "Ethereal. NL At the start of each turn, NL draw one more card and reduce by 1 the cost of the card with the highest cost in your hand.",
-        "UPGRADE_DESCRIPTION": "At the start of each turn, NL draw one more card and reduce by 1 the cost of the card with the highest cost in your hand."
+        "NAME": "쾌청",
+        "DESCRIPTION": "휘발성. NL 내 턴 시작시 카드 한장을 더 뽑고, 손에 있는 가장 높은 비용의 카드 1장의 비용을 1 감소합니다.",
+        "UPGRADE_DESCRIPTION": "내 턴 시작시 카드 한장을 더 뽑고, 손에 있는 가장 높은 비용의 카드 1장의 비용을 1 감소합니다."
     },
     "mysteryDungeon:BulbasaurSweetScent": {
-        "NAME": "Sweet Scent",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Evasiveness_Drop. NL Apply !M! Vulnerable"
+        "NAME": "달콤한 향기",
+        "DESCRIPTION": "  mysterydungeon:회피율_감소 를 !M! 부여합니다. NL 취약 을 !M! 부여합니다."
     },
     "mysteryDungeon:BulbasaurSynthesis": {
-        "NAME": "Synthesis",
-        "DESCRIPTION": "Heal !M! HP. NL At the start of your next turn, NL draw 2 more cards and gain [E] [E]. NL Exhaust."
+        "NAME": "광합성",
+        "DESCRIPTION": "체력을 !M! 회복합니다. NL 다음턴에 2장 더 뽑고 [E] [E] 를 얻습니다. NL 소멸."
     },
     "mysteryDungeon:BulbasaurTackle": {
-        "NAME": "Tackle",
-        "DESCRIPTION": "Deal !D! damage."
+        "NAME": "타격",
+        "DESCRIPTION": "피해를 !D! 줍니다."
     },
     "mysteryDungeon:BulbasaurToxic": {
-        "NAME": "Toxic",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Toxic to ALL enemies. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! mysterydungeon:Toxic to ALL enemies. NL Exhaust."
+        "NAME": "맹독",
+        "DESCRIPTION": "적 전체에게 mysterydungeon:맹독 을 !M! 부여합니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "선천성. NL 적 전체에게 mysterydungeon:맹독 을 !M! 부여합니다. NL 소멸."
     },
     "mysteryDungeon:BulbasaurVenoshock": {
-        "NAME": "Venoshock",
-        "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each stack of Poison of the enemy."
+        "NAME": "베놈쇼크",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 적이 갖고 있는 독만큼 추가 피해 !M! 을 줍니다."
     },
     "mysteryDungeon:BulbasaurVineWhip": {
-        "NAME": "Vine Whip",
-        "DESCRIPTION": "Deal !D! damage. NL At the start of your next turn gain [E]."
+        "NAME": "덩쿨채찍",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 다음턴에 [E] 을 얻습니다."
     },
     "mysteryDungeon:BulbasaurWorrySeed": {
-        "NAME": "Worry Seed",
-        "DESCRIPTION": "Your *card *rewards will contain 1 more card choice."
+        "NAME": "고민씨",
+        "DESCRIPTION": "카드 보상에서 카드 선택지가 1개 더 주어집니다."
     },
     "mysteryDungeon:BulbasaurYawn": {
-        "NAME": "Yawn",
-        "DESCRIPTION": "Ethereal. NL Apply !M! mysterydungeon:Asleep right before this enemy acts (after Poison, etc.). NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Asleep right before this enemy acts (after Poison, etc.). NL Exhaust."
+        "NAME": "하품",
+        "DESCRIPTION": "휘발성. NL 상대 턴이 시작할 때 !M! mysterydungeon:잚듬 을 부여합니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "상대 턴이 시작할 때 !M! mysterydungeon:잚듬 을 부여합니다. NL 소멸."
+    },
+    "mysteryDungeon:CharmanderBellyDrum": {
+        "NAME": "배북",
+        "DESCRIPTION": "턴 시작시, 카드를 !M! 장 더 뽑습니다. NL 매 턴 첫 번째로 사용하는 카드의 비용을 0으로 만들고 소멸시킵니다."
+    },
+    "mysteryDungeon:CharmanderBlastBurn": {
+        "NAME": "블러스트 번",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 카드를 전부 소멸시킵니다."
+    },
+    "mysteryDungeon:CharmanderBlaze": {
+        "NAME": "맹화",
+        "DESCRIPTION": "취약 을 2 얻습니다. NL 매턴 1회 [E] 를 모두 소모할 경우, [E] 를 얻습니다.",
+        "UPGRADE_DESCRIPTION": "취약 을 2 얻습니다. NL 매턴 2회 [E] 를 모두 소모할 경우, [E] 를 얻습니다."
+    },
+    "mysteryDungeon:CharmanderCounter": {
+        "NAME": "카운터",
+        "DESCRIPTION": "방어도 를 !B! 얻습니다. NL 모든 방어도 를 잃고 피해를 받은 경우, 그 대상에게 피해를 !M! 줍니다."
+    },
+    "mysteryDungeon:CharmanderCrunch": {
+        "NAME": "깨물어부수기",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 선택한 적이 공격할 의도가 있다면, 방어도 를 !B! 얻습니다."
+    },
+    "mysteryDungeon:CharmanderDefend": {
+        "NAME": "수비",
+        "DESCRIPTION": "방어도 를 !B! 얻습니다."
+    },
+    "mysteryDungeon:CharmanderDragonBreath": {
+        "NAME": "용의 숨결",
+        "DESCRIPTION": "소멸된 카드 3 장당 [E] 를 얻습니다",
+        "UPGRADE_DESCRIPTION": "소멸된 카드 3 장당 [E] 를 얻습니다. NL [E] 를 얻습니다."
+    },
+    "mysteryDungeon:CharmanderDragonClaw": {
+        "NAME": "드래곤 클로",
+        "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다."
+    },
+    "mysteryDungeon:CharmanderDragonDance": {
+        "NAME": "용춤",
+        "DESCRIPTION": "카드를 !M! 장 소멸시킵시다. NL 카드를 !mysteryDungeon:M2! 장 뽑습니다. NL (버릴 카드가 !M! 장 이상일 때 사용할 수 있습니다.)",
+        "UPGRADE_DESCRIPTION": "카드를 !mysteryDungeon:M2! 장 뽑습니다. NL 카드를 !M! 장 소멸시킵니다."
+    },
+    "mysteryDungeon:CharmanderDragonPulse": {
+        "NAME": "용의 파동",
+        "DESCRIPTION": "사용불가. NL 이 카드를 뽑을 경우: 소멸한 카드에 있는 무작위 카드를 뽑을 카드 더미 맨 위로 가져옵니다. NL 이 효과가 !M! 번 발생한 경우: 소멸합니다.",
+        "EXTENDED_DESCRIPTION": ["I can't play this card.",
+            "When Drawn: Exhaust."]
+    },
+    "mysteryDungeon:CharmanderDragonRage": {
+        "NAME": "용의 분노",
+        "DESCRIPTION": "휘발성. NL 적의 체력을 !M! 감소시킵니다. 소멸."
+    },
+    "mysteryDungeon:CharmanderDragonRush": {
+        "NAME": "드래곤다이브",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸된 카드 한장을 선택하고 버린 카드 더미에 추가합니다. NL 뽑을 카드 더미에 있는 카드 1장을 무작위로 소멸시킵니다. NL 소멸."
+    },
+    "mysteryDungeon:CharmanderDragonTail": {
+        "NAME": "드래곤 테일",
+        "DESCRIPTION": "사용불가. NL 소멸할 경우 : 적 전체에게 피해를 !D! 줍니다. NL 뽑을 카드 더미 맨 위의 이 카드를 1 장 복사해 가져옵니다.",
+        "UPGRADE_DESCRIPTION": "사용불가. NL 소멸할 경우 : 적 전체에게 피해를 !D! 줍니다. NL 뽑을 카드 더미 맨 위의 이 카드를 1 장 복사해 가져옵니다. NL 다음 턴에 카드를 1장 더 뽑습니다.",
+        "EXTENDED_DESCRIPTION": ["I can't play this card."]
+    },
+    "mysteryDungeon:CharmanderDrought": {
+        "NAME": "가뭄",
+        "DESCRIPTION": "mysterydungeon:화상 을 부여할때 마다, 추가로 !M! 만큼 더 부여합니다."
+    },
+    "mysteryDungeon:CharmanderEmber": {
+        "NAME": "불꽃세례",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 막히지 않은 피해만큼 mysterydungeon:화상 을 부여합니다."
+    },
+    "mysteryDungeon:CharmanderExplorerForm": {
+        "NAME": "탐험가의 자세",
+        "DESCRIPTION": "휘발성. NL 턴 시작시 소멸된 카드 더미에서 무작위 카드 !M! 장을 손으로 가져옵니다. NL 카드 한장을 덜 뽑습니다. NL (중복부여불가)",
+        "UPGRADE_DESCRIPTION": "턴 시작시 소멸된 카드 더미에서 무작위 카드 !M! 장을 손으로 가져옵니다. NL 카드 한장을 덜 뽑습니다. NL (중복부여불가)"
+    },
+    "mysteryDungeon:CharmanderFacade": {
+        "NAME": "객기",
+        "DESCRIPTION": "민첩 을 !M! 얻습니다. NL 인공물 을 !mysteryDungeon:M2! 얻습니다."
+    },
+    "mysteryDungeon:CharmanderFireBlast": {
+        "NAME": "불대문자",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL mysterydungeon:화상 을 !M! 부여합니다. NL 소멸."
+    },
+    "mysteryDungeon:CharmanderFireFang": {
+        "NAME": "불꽃엄니",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL mysterydungeon:화상 을 !M! 부여합니다."
+    },
+    "mysteryDungeon:CharmanderFireSpin": {
+        "NAME": "회오리 불꽃",
+        "DESCRIPTION": "선천성. NL mysterydungeon:화상 만큼 중독 을 부여합니다. NL 모든 mysterydungeon:화상 을 제거합니다.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:화상 만큼 중독 을 부여합니다. NL 모든 mysterydungeon:화상 을 제거합니다."
+    },
+    "mysteryDungeon:CharmanderFlamethrower": {
+        "NAME": "화염방사",
+        "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 적 적체에게  mysterydungeon:화상 을 !M! 부여합니다."
+    },
+    "mysteryDungeon:CharmanderFlareBlitz": {
+        "NAME": "플레어드라이브",
+        "DESCRIPTION": "이번 전투동안 소멸된 카드 한 장당 !M! 을 곱하여 피해를 줍니다. (이 피해는 공격으로 간주하지 않습니다.)"
+    },
+    "mysteryDungeon:CharmanderFling": {
+        "NAME": "내던지기",
+        "DESCRIPTION": "카드를 최대 4장 소멸 시킵니다. 이 카드로 소멸된 갯수만큼 피해를 !D! 주고 mysterydungeon:화상 을 !M! 부여합니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "피해를 !D! 주고 !M! mysterydungeon:화상 을 부여합니다. NL 카드를 최대 4장 소멸 시킵니다. NL 이 카드로 소멸된 갯수만큼 피해를 !D! 주고 mysterydungeon:화상 을 !M! 부여합니다. NL 소멸."
+    },
+    "mysteryDungeon:CharmanderFrustration": {
+        "NAME": "화풀이",
+        "DESCRIPTION": "내 턴 종료 시, 카드 1 장을 보존 합니다. 그 카드는 휘발성 을 갖습니다."
+    },
+    "mysteryDungeon:CharmanderHeatCrash": {
+        "NAME": "히트스탬프",
+        "DESCRIPTION": "mysterydungeon:화상 을 !M! 부여합니다. NL 적이 죽을 경우 적 전체에게  mysterydungeon:화상 만큼 피해를 줍니다. NL 소멸",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:화상 을 !M! 부여합니다. NL 적이 죽을 경우 적 전체에게 mysterydungeon:화상 만큼 피해를 줍니다"
+    },
+    "mysteryDungeon:CharmanderHeatWave": {
+        "NAME": "열풍",
+        "DESCRIPTION": "방어도 를 !B! 얻습니다. NL  mysterydungeon:화상 을 !M! 부여합니다. NL 무작위 카드 1 장을 소멸시킵니다.",
+        "UPGRADE_DESCRIPTION": "방어도 를 !B! 얻습니다. NL mysterydungeon:화상 을 !M! 부여합니다. NL 카드 1 장을 선택하여 소멸시킵니다."
+    },
+    "mysteryDungeon:CharmanderInferno": {
+        "NAME": "연옥",
+        "DESCRIPTION": " 적 전체에게 mysterydungeon:화상 을 !M! 부여합니다."
+    },
+    "mysteryDungeon:CharmanderMetalClaw": {
+        "NAME": "메탈클로",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 전투 동안 모든 mysterydungeon:클로 카드의 피해량이 !M! 증가합니다."
+    },
+    "mysteryDungeon:CharmanderOutrage": {
+        "NAME": "역린",
+        "DESCRIPTION": "카드가 소멸될 경우, 무작위 적에게  mysterydungeon:화상 을 !M! 부여합니다."
+    },
+    "mysteryDungeon:CharmanderOverheat": {
+        "NAME": "오버히트",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 적에게 부여된 mysterydungeon:화상 만큼 추가로 피해를 줍니다."
+    },
+    "mysteryDungeon:CharmanderScaryFace": {
+        "NAME": "겁나는 얼굴",
+        "DESCRIPTION": "방어도 를 !B! 얻습니다. NL 약화 를 !M! 부여합니다."
+    },
+    "mysteryDungeon:CharmanderScratch": {
+        "NAME": "할퀴기",
+        "DESCRIPTION": "피해를 !D! 줍니다."
+    },
+    "mysteryDungeon:CharmanderShadowClaw": {
+        "NAME": "섀도클로",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다. NL *메탈클로 를 사용할 때 피해량 대신 방어도 가 오릅니다."
+    },
+    "mysteryDungeon:CharmanderSlash": {
+        "NAME": "베어가르기",
+        "DESCRIPTION": "적 전체에게 피해를 !D! 만큼 !M! 번 줍니다."
+    },
+    "mysteryDungeon:CharmanderSleepTalk": {
+        "NAME": "잠꼬대",
+        "DESCRIPTION": "매턴 1회 카드가 소멸될 경우, 무작위 카드를 1 장 얻습니다.",
+        "UPGRADE_DESCRIPTION": "매턴 2회 카드가 소멸될 경우, 무작위 카드를 1 장 얻습니다."
+    },
+    "mysteryDungeon:CharmanderSmokescreen": {
+        "NAME": "연막",
+        "DESCRIPTION": "불가침을 !M! 얻습니다. NL 약화를 3 얻습니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "불가침을 !M! 얻습니다. NL 약화를 2 얻습니다. NL 소멸."
+    },
+    "mysteryDungeon:CharmanderSolarPower": {
+        "NAME": "썬파워",
+        "DESCRIPTION": "턴 시작 시, 적이 mysterydungeon:화상 상태라면, 힘 을 1 얻습니다.",
+        "UPGRADE_DESCRIPTION": "선천성. NL 턴 시작 시, 적이 mysterydungeon:화상 상태라면, 힘 을 1 얻습니다."
+    },
+    "mysteryDungeon:CharmanderWillOWisp": {
+        "NAME": "도깨비불",
+        "DESCRIPTION": "약화 를 X 부여합니다. NL mysterydungeon:화상 을 3X 부여합니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "약화 를 X+1 부여합니다. NL  mysterydungeon:화상 을 3(X+1)부여합니다. NL 소멸"
     },
     "mysteryDungeon:CharmanderAirCutter": {
         "NAME": "Air Cutter",
@@ -199,169 +367,14 @@
         "NAME": "Air Slash",
         "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, gain !B! Block."
     },
-    "mysteryDungeon:CharmanderBlastBurn": {
-        "NAME": "Blast Burn",
-        "DESCRIPTION": "Deal !D! damage. NL Exhaust your hand."
-    },
-    "mysteryDungeon:CharmanderBlaze": {
-        "NAME": "Blaze",
-        "DESCRIPTION": "Gain 2 Vulnerable. NL The first time you spend all energy each turn, gain [E].",
-        "UPGRADE_DESCRIPTION": "Gain 2 Vulnerable. NL The first 2 times you spend all energy each turn, gain [E]."
-    },
-    "mysteryDungeon:CharmanderCounter": {
-        "NAME": "Counter",
-        "DESCRIPTION": "Gain !B! Block. NL If you lose all Block and take damage from an attack, deal !M! damage to the attacker."
-    },
-    "mysteryDungeon:CharmanderDefend": {
-        "NAME": "Defend",
-        "DESCRIPTION": "Gain !B! Block."
-    },
-    "mysteryDungeon:CharmanderDragonBreath": {
-        "NAME": "Dragon Breath",
-        "DESCRIPTION": "Gain [E] for every !M! cards in your exhaust pile.",
-        "UPGRADE_DESCRIPTION": "Gain [E] for every !M! cards in your exhaust pile. NL Gain [E]."
-    },
-    "mysteryDungeon:CharmanderDragonClaw": {
-        "NAME": "Dragon Claw",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL (Scales when using *Metal *Claw.)"
-    },
-    "mysteryDungeon:CharmanderDragonDance": {
-        "NAME": "Dragon Dance",
-        "DESCRIPTION": "Exhaust !M! cards. NL Draw !mysteryDungeon:M2! cards. NL (You cannot play this card if you cannot exhaust !M! cards.)",
-        "UPGRADE_DESCRIPTION": "Draw !mysteryDungeon:M2! cards NL Exhaust !M! cards."
-    },
-    "mysteryDungeon:CharmanderDragonPulse": {
-        "NAME": "Dragon Pulse",
-        "DESCRIPTION": "Unplayable. NL When drawn: NL Add a random card from your exhaust pile on the top of draw pile. NL After activating this effect !M! times: Exhaust.",
-        "EXTENDED_DESCRIPTION": [
-            "I can't play this card.",
-            "When Drawn: Exhaust."
-        ]
-    },
-    "mysteryDungeon:CharmanderDragonRage": {
-        "NAME": "Dragon Rage",
-        "DESCRIPTION": "Ethereal. NL Enemy loses !M! HP. Exhaust."
-    },
-    "mysteryDungeon:CharmanderDragonRush": {
-        "NAME": "Dragon Rush",
-        "DESCRIPTION": "Deal !D! damage. NL Choose a card from your exhaust pile and add it to your discard pile. Exhaust a random card from your draw pile. NL Exhaust."
-    },
-    "mysteryDungeon:CharmanderDragonTail": {
-        "NAME": "Dragon Tail",
-        "DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Add a copy of this card on top of your draw pile.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL When exhausted: NL Deal !D! damage to ALL enemies. NL Add a copy of this card on top of your draw pile. NL Next Turn, draw 1 more card.",
-        "EXTENDED_DESCRIPTION": [
-            "I can't play this card."
-        ]
-    },
-    "mysteryDungeon:CharmanderDrought": {
-        "NAME": "Drought",
-        "DESCRIPTION": "When you apply mysterydungeon:Burn, apply !M! more."
-    },
-    "mysteryDungeon:CharmanderEmber": {
-        "NAME": "Ember",
-        "DESCRIPTION": "Deal !D! damage. NL Apply mysterydungeon:Burn equal to the unblocked damage."
-    },
-    "mysteryDungeon:CharmanderExplorerForm": {
-        "NAME": "Explorer Form",
-        "DESCRIPTION": "Ethereal. NL At the start of your turn, add !M! random card from your exhaust pile to your hand. NL Draw one less card per turn.",
-        "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! random card from your exhaust pile to your hand. NL Draw one less card per turn."
-    },
-    "mysteryDungeon:CharmanderFacade": {
-        "NAME": "Facade",
-        "DESCRIPTION": "Gain !M! Dexterity and !mysteryDungeon:M2! Artifact."
-    },
-    "mysteryDungeon:CharmanderFireBlast": {
-        "NAME": "Fire Blast",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn. NL Exhaust."
-    },
-    "mysteryDungeon:CharmanderFireFang": {
-        "NAME": "Fire Fang",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn."
-    },
-    "mysteryDungeon:CharmanderFireSpin": {
-        "NAME": "Fire Spin",
-        "DESCRIPTION": "Ethereal. NL Apply Poison equal to its mysterydungeon:Burn. NL Remove ALL its mysterydungeon:Burn.",
-        "UPGRADE_DESCRIPTION": "Apply Poison equal to its mysterydungeon:Burn. NL Remove ALL its mysterydungeon:Burn."
-    },
-    "mysteryDungeon:CharmanderFlamethrower": {
-        "NAME": "Flamethrower",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Apply !M! mysterydungeon:Burn to ALL enemies."
-    },
-    "mysteryDungeon:CharmanderFlareBlitz": {
-        "NAME": "Flare Blitz",
-        "DESCRIPTION": "Deal damage equal to !M! times the number of exhausted cards this combat."
-    },
     "mysteryDungeon:CharmanderTwister": {
         "NAME": "Twister",
         "DESCRIPTION": "Exhaust up to 4 cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! mysterydungeon:Burn NL Exhaust up to 4 cards. NL Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust."
     },
-    "mysteryDungeon:CharmanderFrustration": {
-        "NAME": "Frustration",
-        "DESCRIPTION": "At the end of each turn, retain a card. This card will become Ethereal after being retained."
-    },
-    "mysteryDungeon:CharmanderHeatCrash": {
-        "NAME": "Heat Crash",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL When this enemy dies, deal damage equal to its mysterydungeon:Burn stacks to ALL enemies. Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL When this enemy dies, deal damage equal to its mysterydungeon:Burn stacks to ALL enemies."
-    },
-    "mysteryDungeon:CharmanderHeatWave": {
-        "NAME": "Heat Wave",
-        "DESCRIPTION": "Gain !B! Block. NL Apply !M! mysterydungeon:Burn. NL Exhaust a random card in your hand.",
-        "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Apply !M! mysterydungeon:Burn. NL Exhaust a card in your hand."
-    },
-    "mysteryDungeon:CharmanderInferno": {
-        "NAME": "Inferno",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn to ALL enemies."
-    },
-    "mysteryDungeon:CharmanderMetalClaw": {
-        "NAME": "Metal Claw",
-        "DESCRIPTION": "Deal !D! damage. NL All your mysterydungeon:Claws deal !M! more damage this combat."
-    },
-    "mysteryDungeon:CharmanderOutrage": {
-        "NAME": "Outrage",
-        "DESCRIPTION": "Whenever you exhaust a card, apply !M! mysterydungeon:Burn to a random enemy."
-    },
-    "mysteryDungeon:CharmanderOverheat": {
-        "NAME": "Overheat",
-        "DESCRIPTION": "Deal !D! damage. NL Deal additional damage equal to the number of mysterydungeon:Burn stacks on the enemy."
-    },
-    "mysteryDungeon:CharmanderScaryFace": {
-        "NAME": "Scary Face",
-        "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak."
-    },
-    "mysteryDungeon:CharmanderScratch": {
-        "NAME": "Scratch",
-        "DESCRIPTION": "Deal !D! damage."
-    },
-    "mysteryDungeon:CharmanderShadowClaw": {
-        "NAME": "Shadow Claw",
-        "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL This cards Block gets more Block instead of damage when using *Metal *Claw."
-    },
-    "mysteryDungeon:CharmanderRoost": {
-        "NAME": "Roost",
-        "DESCRIPTION": "The first time you exhaust a card each turn, add a random card to your hand.",
-        "UPGRADE_DESCRIPTION": "The first 2 times you exhaust a card each turn, add a random card to your hand."
-    },
-    "mysteryDungeon:CharmanderSmokescreen": {
-        "NAME": "Smokescreen",
-        "DESCRIPTION": "Gain !M! Intangible. NL Gain 3 Weak. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Gain !M! Intangible. NL Gain 2 Weak. NL Exhaust."
-    },
-    "mysteryDungeon:CharmanderSolarPower": {
-        "NAME": "Solar Power",
-        "DESCRIPTION": "At the start of each turn, gain 1 Strength if an enemy is affected by mysterydungeon:Burn.",
-        "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn, gain 1 Strength if an enemy is affected by mysterydungeon:Burn."
-    },
     "mysteryDungeon:CharmanderTailWind": {
         "NAME": "Tail Wind",
         "DESCRIPTION": "At the start of your turn, draw !M! more card. NL The first card you play each turn costs 0 and exhausts."
-    },
-    "mysteryDungeon:CharmanderWillOWisp": {
-        "NAME": "Will-O-Wisp",
-        "DESCRIPTION": "Apply X Weak. NL Apply 3X mysterydungeon:Burn. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply X+1 Weak. NL Apply 3(X+1) mysterydungeon:Burn. NL Exhaust."
     },
     "mysteryDungeon:ChikoritaAncientPower": {
         "NAME": "Ancient Power",
@@ -884,363 +897,365 @@
         "UPGRADE_DESCRIPTION": "Spend !M! gold. NL Create a card from your partner's deck in hand. NL It cost 0 this combat. NL Exhaust."
     },
     "mysteryDungeon:PikachuAgility": {
-        "NAME": "Agility",
-        "DESCRIPTION": "Whenever you enter a stance, draw !M! card.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you enter a stance, draw !M! card."
+        "NAME": "고속이동",
+        "DESCRIPTION": "상태에 들어가면, 카드를 !M! 장 뽑습니다.",
+        "UPGRADE_DESCRIPTION": "선천성. NL 상태에 들어가면, 카드를 !M! 장 뽑습니다."
     },
     "mysteryDungeon:PikachuChargeBeam": {
-        "NAME": "Charge Beam",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Channel !M! Lightning. NL Exhaust"
+        "NAME": "차지빔",
+        "DESCRIPTION": "mysterydungeon:절연체. NL 전기를 !M! 회 영창합니다. NL 소멸"
     },
     "mysteryDungeon:PikachuCharge": {
-        "NAME": "Charge",
-        "DESCRIPTION": "Gain !M! Focus. NL Remove ALL Orbs."
+        "NAME": "충전",
+        "DESCRIPTION": "밀집을 !M! 얻습니다. NL 모든 구체를 제거합니다."
     },
     "mysteryDungeon:PikachuCharm": {
-        "NAME": "Charm",
-        "DESCRIPTION": "Apply !M! Vulnerable. NL Apply !M! Lock-On. NL Exhaust."
+        "NAME": "애교부리기",
+        "DESCRIPTION": "취약을 !M! 부여합니다. NL 조준을 !M! 부여합니다. NL 소멸."
     },
     "mysteryDungeon:PikachuDefend": {
-        "NAME": "Defend",
-        "DESCRIPTION": "Gain !B! Block."
+        "NAME": "수비",
+        "DESCRIPTION": "방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:PikachuDischarge": {
-        "NAME": "Discharge",
-        "DESCRIPTION": "Deal !D! damage. NL Evoke !M! Orb.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Evoke !M! Orbs."
+        "NAME": "방전",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 구체를 !M! 번 발현합니다.",
+        "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 구체를 !M! 번 발현합니다."
     },
     "mysteryDungeon:PikachuEerieImpulse": {
-        "NAME": "Eerie Impulse",
-        "DESCRIPTION": "Gain !M! Strength. NL Gain !M! Dexterity. NL Lose 2 Focus."
+        "NAME": "괴전파",
+        "DESCRIPTION": "힘을 !M! 얻습니다. NL 민첩을 !M! 얻습니다. NL 밀집을 2 잃습니다."
     },
     "mysteryDungeon:PikachuElectricTerrain": {
-        "NAME": "Electric Terrain",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Positive Stance. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Positive Stance. NL Exhaust."
+        "NAME": "일렉트릭필드",
+        "DESCRIPTION": "mysterydungeon:절연체. NL mysterydungeon:플러스상태 가 됩니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:절연체. NL 보존. NL mysterydungeon:플러스상태 가 됩니다. NL 소멸."
     },
     "mysteryDungeon:PikachuElectroBall": {
-        "NAME": "Electro Ball",
-        "DESCRIPTION": "Evoke your next orb !M! times. NL Increase this amount by 1 this combat."
+        "NAME": "일렉트릭볼",
+        "DESCRIPTION": "가장 오른쪽의 구체를 !M! 번 발현합니다. NL 이 카드를 사용할 때마다 이번 전투 동안 이 카드의 발현 횟수를 1 증가합니다."
     },
     "mysteryDungeon:PikachuElectroweb": {
-        "NAME": "Elecroweb",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Put !M! cards from your discard pile into your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Put !M! cards from your discard pile into your hand. NL Exhaust."
+        "NAME": "일렉트릭네트",
+        "DESCRIPTION": "mysterydungeon:절연체. NL 버린 카드 더미에서 카드 !M! 장을 가져옵니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:절연체. NL 보존. NL 버린 카드 더미에서 카드 !M! 장을 가져옵니다. NL 소멸."
     },
     "mysteryDungeon:PikachuEncore": {
-        "NAME": "Encore",
-        "DESCRIPTION": "mysterydungeon:Inert. NL This turn, your next Attack or Skill will be played twice.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL This turn, your next !M! Attacks or Skills will be played twice."
+        "NAME": "앵콜",
+        "DESCRIPTION": "mysterydungeon:절연체. NL 이번 턴 동안 다음에 사용하는 공격카드 또는 스킬카드가 2 번 사용됩니다.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:절연체. NL 이번 턴 동안 다음에 사용하는 공격카드 또는 스킬카드 2장이 2 번 사용됩니다."
     },
     "mysteryDungeon:PikachuExplorerForm": {
-        "NAME": "Explorer Form",
-        "DESCRIPTION": "At the start of your turn, evoke your next Orb, then channel !M! Lightning.",
-        "UPGRADE_DESCRIPTION": "At the start of your turn, evoke your next Orb, then channel !M! Lightning."
+        "NAME": "탐험가의 자세",
+        "DESCRIPTION": "턴 시작시 구체를 !M! 번 발현하고 전기를 !M! 번 영창합니다.",
+        "UPGRADE_DESCRIPTION": "턴 시작시 구체를 !M! 발현하고 전기를 !M! 번 영창합니다."
     },
     "mysteryDungeon:PikachuHiddenPower": {
-        "NAME": "Hidden Power",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Choose between a random Attack or Skill to add to your hand. NL It costs 0 this turn. NL Exhaust."
+        "NAME": "잠재파워",
+        "DESCRIPTION": "mysterydungeon:절연체. NL 무작위 공격카드 또는 스킬카드를 선택하여 가져옵니다. NL 이번턴 동안 그 카드의 비용이 0이 됩니다. NL 소멸."
     },
     "mysteryDungeon:PikachuIronTail": {
-        "NAME": "Iron Tail",
-        "DESCRIPTION": "Deal !D! damage. NL Increase this card damage by !M! this combat."
+        "NAME": "아이언테일",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 이 카드를 사용할 때마다 이번 전투 동안 이 카드의 피해량이 !M! 증가합니다."
     },
     "mysteryDungeon:PikachuLightningRod": {
-        "NAME": "Lightning Rod",
-        "DESCRIPTION": "Gain !B! Block. NL Channel !M! Lightning Orb."
+        "NAME": "피뢰침",
+        "DESCRIPTION": "방어도를 !B! 얻습니다. NL 전기를 !M! 영창합니다."
     },
     "mysteryDungeon:PikachuLightScreen": {
-        "NAME": "Light Screen",
-        "DESCRIPTION": "At the end of your turn, gain !M! Block per empty Orb slot."
+        "NAME": "빛의 장막",
+        "DESCRIPTION": "턴 종료시,빈 구체 갯수 하나당 방어도를 !M! 얻습니다."
     },
     "mysteryDungeon:PikachuNastyPlot": {
-        "NAME": "Calm Mind",
-        "DESCRIPTION": "Gain !M! Orb slot.",
-        "UPGRADE_DESCRIPTION": "Gain !M! Orb slots."
+        "NAME": "나쁜음모",
+        "DESCRIPTION": "구체 슬롯을 !M! 개 얻습니다.",
+        "UPGRADE_DESCRIPTION": "구체 슬롯을 !M! 개 얻습니다."
     },
     "mysteryDungeon:PikachuNuzzle": {
-        "NAME": "Nuzzle",
-        "DESCRIPTION": "Deal !D! damage per channeled Orb.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal !D! damage per channeled Orb."
+        "NAME": "볼부비부비",
+        "DESCRIPTION": "영창된 구체 하나당 피해를 !D! 줍니다.",
+        "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 영창된 구체 하나당 피해를 !D! 줍니다."
     },
     "mysteryDungeon:PikachuPlayNice": {
-        "NAME": "Play Nice",
-        "DESCRIPTION": "Gain !B! Block. NL Draw !M! card."
+        "NAME": "친해지기",
+        "DESCRIPTION": "방어도를 !B! 얻습니다. NL 카드를 !M! 뽑습니다."
     },
     "mysteryDungeon:PikachuPlayRough": {
-        "NAME": "Play Rough",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
+        "NAME": "치근거리기",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 약화를 !M! 부여합니다."
     },
     "mysteryDungeon:PikachuQuickAttack": {
-        "NAME": "Quick Attack",
-        "DESCRIPTION": "Deal !D! damage."
+        "NAME": "전광석화",
+        "DESCRIPTION": "피해를 !D! 줍니다."
     },
     "mysteryDungeon:PikachuReflect": {
-        "NAME": "Reflect",
-        "DESCRIPTION": "Gain !B! Block. NL Increase this card Block by !M! this combat."
+        "NAME": "리플렉터",
+        "DESCRIPTION": "방어도 를 !B! 얻습니다. NL 이 카드를 사용할 때마다 이번 전투 동안 이 카드의 방어도 를 !M! 증가시킵니다."
     },
     "mysteryDungeon:PikachuSafeguard": {
-        "NAME": "Safeguard",
-        "DESCRIPTION": "Gain !B! Block. NL Retain your hand this turn.",
-        "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Retain your hand for !M! turns."
+        "NAME": "신비의부적",
+        "DESCRIPTION": "방어도를 !B! 얻습니다. NL 이번 턴 종료시 카드를 버리지 않습니다.",
+        "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL !M! 동안 카드를 버리지 않습니다."
     },
     "mysteryDungeon:PikachuShockWave": {
-        "NAME": "Shock Wave",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Apply !M! Lock-On to ALL enemies."
+        "NAME": "전격파",
+        "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 적 전체에게 조준을 !M! 부여합니다."
     },
     "mysteryDungeon:PikachuSpark": {
-        "NAME": "Spark",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Deal !D! damage. NL Do not return to the center of the *Charge *Meter at the end of your turn. NL Exhaust."
+        "NAME": "스파크",
+        "DESCRIPTION": "mysterydungeon:절연체. NL 피해를 !D! 줍니다. NL 턴 종료 시, *전압 *표시기 가 중앙으로 돌아오지 않습니다. NL 소멸."
     },
     "mysteryDungeon:PikachuSpeedSwap": {
-        "NAME": "Speed Swap",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Enter Negative Stance. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Enter Negative Stance. NL Exhaust."
+        "NAME": "스피드스웹",
+        "DESCRIPTION": "mysterydungeon:절연체. NL mysterydungeon:마이너스상태 가 됩니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:절연체. NL 보존. NL mysterydungeon:마이너스상태 가 됩니다. NL 소멸."
     },
     "mysteryDungeon:PikachuStatic": {
-        "NAME": "Static",
-        "DESCRIPTION": "For every hit taken, trigger the evoke effect of your next Orb !M! times.",
-        "UPGRADE_DESCRIPTION": "Innate. NL For every hit taken, trigger the evoke effect your next Orb !M! times."
+        "NAME": "정전기",
+        "DESCRIPTION": "공격 피해를 받을 때마다 가장 오른쪽의 구체를 !M! 번 발현합니다.",
+        "UPGRADE_DESCRIPTION": "선천성. NL 공격 피해를 받을 때마다 가장 오른쪽의 구체를 !M! 번 발현합니다."
     },
     "mysteryDungeon:PikachuSweetKiss": {
-        "NAME": "Sweet Kiss",
-        "DESCRIPTION": "This turn, apply !M! Weak to ALL enemies every time you enter or exit a stance."
+        "NAME": "천사의키스",
+        "DESCRIPTION": "이번턴에 상태에 들어가거나 벗어난 경우 적 전체에게 약화를 !M! 부여합니다."
     },
     "mysteryDungeon:PikachuSwift": {
-        "NAME": "Swift",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Draw !M! cards."
+        "NAME": "스피드스타",
+        "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 카드를 !M! 장 뽑습니다."
     },
     "mysteryDungeon:PikachuTackle": {
-        "NAME": "Tackle",
-        "DESCRIPTION": "Deal !D! damage."
+        "NAME": "타격",
+        "DESCRIPTION": "피해를 !D! 줍니다."
     },
     "mysteryDungeon:PikachuThunder": {
-        "NAME": "Thunder",
-        "DESCRIPTION": "Whenever you evoke an Orb, deal !M! damage to ALL enemies."
+        "NAME": "번개",
+        "DESCRIPTION": "구체를 발현할 경우 적 전체에게 피해를 !M! 줍니다."
     },
     "mysteryDungeon:PikachuThunderbolt": {
-        "NAME": "Thunderbolt",
-        "DESCRIPTION": "Deal !D! damage X times. NL If the last card played was a skill, gain [E]."
+        "NAME": "10 만볼트",
+        "DESCRIPTION": "피해를 !D! 만큼 X 번 줍니다. NL 이번 전투에서 직전에 사용한 카드가 스킬 카드일 경우 [E] 를 얻습니다."
     },
     "mysteryDungeon:PikachuThunderPunch": {
-        "NAME": "Thunder Punch",
-        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Lightning."
+        "NAME": "번개펀치",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 전기를 !M! 번 영창합니다."
     },
     "mysteryDungeon:PikachuThundershock": {
-        "NAME": "Thundershock",
-        "DESCRIPTION": "Deal !D! damage. NL If you are not in a stance, gain [E]"
+        "NAME": "전기쇼크",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 상태가 아니라면 [E] 를 얻습니다."
     },
     "mysteryDungeon:PikachuThunderwave": {
-        "NAME": "Thunder Wave",
-        "DESCRIPTION": "Gain !B! Block. NL Gain !M! more Block if you are not in a stance.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Gain !B! Block. NL Gain !M! more Block if you are not in a stance."
+        "NAME": "전기자석파",
+        "DESCRIPTION": "방어도를 !B! 얻습니다. NL 어떠한 상태도 아니라면 방어도를 !M! 얻습니다.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:절연체. NL 방어도를 !B! 얻습니다. NL 어떠도 상태가 아니라면 방어도를 !M! 얻습니다."
     },
     "mysteryDungeon:PikachuVoltSwitch": {
-        "NAME": "Volt Switch",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Choose between mysterydungeon:Positive_Stance or mysterydungeon:Negative_Stance and enter the chosen Stance. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "mysterydungeon:Inert. NL Retain. NL Choose between mysterydungeon:Positive_Stance or mysterydungeon:Negative_Stance and enter the chosen Stance."
+        "NAME": "볼트체인지",
+        "DESCRIPTION": "mysterydungeon:절연체. NL 보존. NL mysterydungeon:플러스상태 또는 mysterydungeon:마이너스상태 로 들어갑니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:절연체. NL 보존. NL mysterydungeon:플러스상태 또는 mysterydungeon:마이너스상태 로 들어갑니다."
     },
     "mysteryDungeon:PikachuVoltTackle": {
-        "NAME": "Volt Tackle",
-        "DESCRIPTION": "Innate. NL Deal !D! damage. NL Channel !M! Lightning. NL Exhaust."
+        "NAME": "볼트태클",
+        "DESCRIPTION": "선천성. NL 피해를 !D! 줍니다. NL 전기를 !M! 번 영창합니다. NL 소멸."
     },
     "mysteryDungeon:PikachuWildCharge": {
-        "NAME": "Wild Charge",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all Orbs twice.",
-        "UPGRADE_DESCRIPTION": "Evoke ALL Orbs twice."
+        "NAME": "와이드볼트",
+        "DESCRIPTION": "mysterydungeon:절연체. NL 모든 구체가 2번 발현합니다.",
+        "UPGRADE_DESCRIPTION": "모든 구체가 2번 발현합니다."
     },
     "mysteryDungeon:PikachuZapCannon": {
-        "NAME": "Zap Cannon",
-        "DESCRIPTION": "Channel 1 Lightning per enemy. NL Deal !D! damage to all enemies. NL Exhaust."
+        "NAME": "전자포",
+        "DESCRIPTION": "전투중인 적 하나당 전기를 1 번 영창합니다. NL 적 전체에게 피해를 !D! 줍니다. NL 소멸."
     },
     "mysteryDungeon:SquirtleAquaRing": {
-        "NAME": "Aqua Ring",
-        "DESCRIPTION": "Discard up to !M! cards in your hand. NL For each card discarded this way, add a *Flinch in your hand.",
-        "UPGRADE_DESCRIPTION": "Discard up to !M! cards in your hand. NL For each card discarded this way, add an upgraded *Flinch in your hand."
+        "NAME": "아쿠아링",
+        "DESCRIPTION": "카드를 !M! 장 버립니다. NL 이 카드로 버린 카드 한장 당 *풀죽음 을 얻습니다.",
+        "UPGRADE_DESCRIPTION": "카드를 !M! 장 버립니다. NL 이 카드로 버린 카드 한장 당 강화된 *풀죽음 을 얻습니다."
     },
     "mysteryDungeon:SquirtleAquaTail": {
-        "NAME": "Aqua Tail",
-        "DESCRIPTION": "Deal !D! damage. NL Scry !M!. NL Draw !mysteryDungeon:M2! card. NL Discard !mysteryDungeon:M3! card.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Scry !M!. NL Draw !mysteryDungeon:M2! card. NL Discard !mysteryDungeon:M3! card."
+        "NAME": "아쿠아테일",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 예지 !M! . NL 카드를 !mysteryDungeon:M2! 장 뽑습니다. NL 카드를 !mysteryDungeon:M3! 장 버립니다.",
+        "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 예지 !M! . NL 카드를 !mysteryDungeon:M2! 장 뽑습니다. NL 카드를 !mysteryDungeon:M3! 장 버립니다."
     },
     "mysteryDungeon:SquirtleBide": {
-        "NAME": "Bide",
-        "DESCRIPTION": "Gain !B! Block. NL Until next turn, when you get attacked, gain !M! Temporary Strength."
+        "NAME": "참기",
+        "DESCRIPTION": "방어도를 !B! 얻습니다. NL 이번 턴에 공격을 받을 경우 임시 힘 을 !M! 얻습니다."
     },
     "mysteryDungeon:SquirtleBodyPress": {
-        "NAME": "Body Press",
-        "DESCRIPTION": "Gain !B! Block. NL Add !M! *Flinch into your hand. They cost 0 this turn.",
-        "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add !M! upgraded *Flinch into your hand. They cost 0 this turn."
+        "NAME": "바디프레스",
+        "DESCRIPTION": "방어도를 !B! 얻습니다. NL *풀죽음 을 !M! 장 얻습니다. 이번 턴 동안 그 카드의 비용이 0이 됩니다.",
+        "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL 강화된 *풀죽음 을 !M! 장 얻습니다. 이번 턴 동안 그 카드의 비용이 0이 됩니다."
     },
     "mysteryDungeon:SquirtleBrine": {
-        "NAME": "Brine",
-        "DESCRIPTION": "Deal !D! damage. If your draw pile has equal or more cards than your discard pile, deal !D! damage."
+        "NAME": "소금물",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 뽑을 카드 더미 갯수가 버린 카드 더미 갯수보다 같거나 많을 경우, 피해를 !D! 줍니다."
     },
     "mysteryDungeon:SquirtleDefend": {
-        "NAME": "Defend",
-        "DESCRIPTION": "Gain !B! Block."
+        "NAME": "수비",
+        "DESCRIPTION": "방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:SquirtleDive": {
-        "NAME": "Dive",
-        "DESCRIPTION": "Exhaust all your statuses. NL Add !M! *Hazes in random locations in your draw pile and discard pile. NL Exhaust."
+        "NAME": "다이빙",
+        "DESCRIPTION": "모든 상태이상을 제거합니다. NL 뽑을 카드 더미와 버린 카드 더미에 무작위로 *흑안개 를 !M! 장 넣습니다. NL 소멸."
     },
     "mysteryDungeon:SquirtleDoubleTeam": {
-        "NAME": "Double Team",
-        "DESCRIPTION": "Gain !B! Block. When drawn: add a copy of this card in your hand. NL Exhaust."
+        "NAME": "그림자분신",
+        "DESCRIPTION": "방어도를 !B! 얻습니다. 이 카드를 뽑으면 이 카드를 한 장 복사하여 얻습니다. NL 소멸."
     },
     "mysteryDungeon:SquirtleEndure": {
-        "NAME": "Endure",
-        "DESCRIPTION": "When you play a Status, deal !M! damage to ALL enemies. NL This damage behaves like Attack damage."
+        "NAME": "버티기",
+        "DESCRIPTION": "상태이상 카드를 사용하면, 전체에게 피해를 !M! 줍니다. NL 피해는 공격으로 간주합니다."
     },
     "mysteryDungeon:SquirtleExplorerForm": {
-        "NAME": "Explorer Form",
-        "DESCRIPTION": "At the start of your turn draw one more card and increase this gain by one.",
-        "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn draw one more card and increase this gain by one."
+        "NAME": "탐험가의 자세",
+        "DESCRIPTION": "내 턴 시작시 뽑을 카드 더미 맨 위 부터 카드 1 장을 가져옵니다. NL 이 효과는 매 턴 1만큼 증가합니다.",
+        "UPGRADE_DESCRIPTION": "선천성. NL 내 턴 시작시 뽑을 카드 더미 맨 위 부터 카드 1 장을 가져옵니다. NL 이 효과는 매 턴 1만큼 증가합니다."
     },
     "mysteryDungeon:SquirtleFakeOut": {
-        "NAME": "Fake Out",
-        "DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Scry !M!. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Deal !D! damage. NL Gain !B! Block. NL Scry !M!. NL Exhaust."
+        "NAME": "속이다",
+        "DESCRIPTION": "선천성. NL 피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다. NL 예지 !M! NL 소멸.",
+        "UPGRADE_DESCRIPTION": "선천성. NL 피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다. NL 예지 !M! NL 소멸."
     },
     "mysteryDungeon:SquirtleFlashCannon": {
-        "NAME": "Flash Cannon",
-        "DESCRIPTION": "Deal damage equal to the number of cards in your discard pile.",
-        "UPGRADE_DESCRIPTION": "Deal damage equal to the number of cards in your discard pile + 3.",
-        "EXTENDED_DESCRIPTION": [
-            " NL (Deals !D! damage.)"
-        ]
+        "NAME": "러스트 캐논",
+        "DESCRIPTION": "버린 카드 더미에 있는 카드의 수만큼 피해를 줍니다.",
+        "UPGRADE_DESCRIPTION": "버린 카드 더미에 있는 카드의 수에 3을 더한 만큼 피해를 줍니다.",
+        "EXTENDED_DESCRIPTION":[" NL (피해를 !D! 줍니다.)"]
     },
     "mysteryDungeon:SquirtleFlinch": {
-        "NAME": "Flinch",
-        "DESCRIPTION": "Deal !D! damage 2 times. NL Scry !M!. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage 2 times. NL Scry !M!. NL Exhaust."
+        "NAME": "풀죽음",
+        "DESCRIPTION": "피해를 !D! 만큼 2 번 줍니다. NL 예지 !M! NL 소멸.",
+        "UPGRADE_DESCRIPTION": "피해를 !D! 만큼 2 번 줍니다. NL 예지 !M! NL 소멸."
     },
     "mysteryDungeon:SquirtleFlipTurn": {
-        "NAME": "Flip Turn",
-        "DESCRIPTION": "Gain !B! Block. NL Draw !M! card. NL Discard !M! card.",
-        "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Draw !M! cards. NL Discard !M! cards."
+        "NAME": "퀵턴",
+        "DESCRIPTION": "방어도를 !B! 얻습니다. NL 카드를 !M! 장 뽑습니다. NL 카드를 !M! 장 버립니다.",
+        "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL 카드를 !M! 뽑습니다. NL 카드를 !M! 버립니다."
     },
     "mysteryDungeon:SquirtleGyroBall": {
-        "NAME": "Gyro Ball",
-        "DESCRIPTION": "Add 1 *Freeze to your hand. NL Deal !D! damage per Status in your hand. NL Discard ALL Statuses in your hand."
+        "NAME": "자이로볼",
+        "DESCRIPTION": " *얼음 을 얻습니다. NL 손에 있는 *얼음 카드 한장 당 !D! 피해를 줍니다. NL *얼음 카드를 전부 버립니다."
     },
     "mysteryDungeon:SquirtleHail": {
-        "NAME": "Hail",
-        "DESCRIPTION": "Whenever you draw cards, deal !M! damage to ALL enemies."
+        "NAME": "싸라기눈",
+        "DESCRIPTION": "카드를 뽑았을 때, 적 전체에게 피해를 !M! 줍니다."
     },
     "mysteryDungeon:SquirtleHaze": {
-        "NAME": "Haze",
-        "DESCRIPTION": "Gain [E] [E]. NL Add !M! *Freeze to your discard pile.",
-        "UPGRADE_DESCRIPTION": "Gain [E] [E] [E]. NL Add !M! *Freeze to your discard pile."
+        "NAME": "흑안개",
+        "DESCRIPTION": " [E] [E] 를 얻습니다. NL 버린 카드 더미에 *얼음 을 !M! 넣습니다.",
+        "UPGRADE_DESCRIPTION": "[E] [E] [E] 를 얻습니다. 버린 카드 더미에 *얼음 을 !M! 넣습니다."
     },
     "mysteryDungeon:SquirtleHydroCannon": {
-        "NAME": "Hydro Cannon",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Shuffle 2 *Freeze into your draw pile."
+        "NAME": "하이드로캐논",
+        "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 뽑을 카드 더미에 *얼음 을 2 장 넣습니다."
     },
     "mysteryDungeon:SquirtleIceBeam": {
-        "NAME": "Ice Beam",
-        "DESCRIPTION": "Deal !D! damage. NL Add 1 *Freeze to your hand."
+        "NAME": "냉동빔",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL *얼음 을 1 장을 얻습니다."
     },
     "mysteryDungeon:SquirtleIronDefense": {
-        "NAME": "Iron Defense",
-        "DESCRIPTION": "Gain !M! Dexterity."
+        "NAME": "철벽",
+        "DESCRIPTION": "민첩을 !M! 얻습니다."
     },
     "mysteryDungeon:SquirtleLifeDew": {
-        "NAME": "Life Dew",
-        "DESCRIPTION": "Scry !M!. NL Draw !mysteryDungeon:M2! cards."
+        "NAME": "생명의 물방울",
+        "DESCRIPTION": "예지 !M! NL 카드를 !mysteryDungeon:M2! 뽑습니다."
     },
     "mysteryDungeon:SquirtleLiquidation": {
-        "NAME": "Liquidation",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies."
+        "NAME": "아쿠아브레이크",
+        "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다."
     },
     "mysteryDungeon:SquirtleMirrorCoat": {
-        "NAME": "Mirror Coat",
-        "DESCRIPTION": "Gain !M! Blur and !B! Block."
+        "NAME": "미러코트",
+        "DESCRIPTION": " 흐릿함을 !M! 얻습니다. NL 방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:SquirtleMist": {
-        "NAME": "Mist",
-        "DESCRIPTION": "Gain !B! Block. NL Gain !M! Artifact."
+        "NAME": "흰안개",
+        "DESCRIPTION": "방어도를 !B! 얻습니다. NL 인공물을 !M! 얻습니다. "
     },
     "mysteryDungeon:SquirtleProtect": {
-        "NAME": "Protect",
-        "DESCRIPTION": "Gain !B! Block. NL You cannot gain Block during the next !M! turns."
+        "NAME": "방어",
+        "DESCRIPTION": "방어도를 !B! 얻습니다. NL 다음 !M! 턴 동안 방어도를 얻을 수 없습니다."
     },
     "mysteryDungeon:SquirtleRainDance": {
-        "NAME": "Rain Dance",
-        "DESCRIPTION": "When a card is created this combat, gain !M! Temporary Strength.",
-        "UPGRADE_DESCRIPTION": "Innate. NL When a card is created this combat, gain !M! Temporary Strength."
+        "NAME": "비바라기",
+        "DESCRIPTION": "전투 중에 카드를 생성할 때마다, 임시 힘 을 !M! 얻습니다.",
+        "UPGRADE_DESCRIPTION": "선천성. NL 전투 중에 카드를 생성할 때마다, 임시 힘 을 !M! 얻습니다."
     },
     "mysteryDungeon:SquirtleRainDish": {
-        "NAME": "Rain Dish",
-        "DESCRIPTION": "Whenever a card is manually scried or discarded, gain !M! Block.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Whenever a card is manually scried or discarded, gain !M! Block."
+        "NAME": "젖은접시",
+        "DESCRIPTION": "카드를 버릴 때 마다, 방어도를 !M! 얻습니다.",
+        "UPGRADE_DESCRIPTION": "선천성. NL 카드를 버릴 때 마다, 방어도를 !M! 얻습니다."
     },
     "mysteryDungeon:SquirtleRapidSpin": {
-        "NAME": "Rapid Spin",
-        "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, gain !M! artifact."
+        "NAME": "고속스핀",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 선택한 적이 공격할 의도가 있다면, 인공물을 !M! 얻습니다."
     },
     "mysteryDungeon:SquirtleScald": {
-        "NAME": "Scald",
-        "DESCRIPTION": "Discard up to !mysteryDungeon:M2! cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card discarded that way."
+        "NAME": "열탕",
+        "DESCRIPTION": "카드를 최대 !mysteryDungeon:M2! 장 버립니다.  이 카드로 버려진 갯수만큼 피해를 !D! 주고  !M! mysterydungeon:화상 을 부여합니다."
     },
     "mysteryDungeon:SquirtleShellSmash": {
-        "NAME": "Shell Smash",
-        "DESCRIPTION": "Gain !M! Strength. NL Shuffle !mysteryDungeon:M2! *Freeze into your draw pile."
+        "NAME": "껍질깨기",
+        "DESCRIPTION": "힘을 !M! 얻습니다. NL 뽑을 카드 더미에 *얼음 을 !mysteryDungeon:M2! 장 넣습니다."
     },
     "mysteryDungeon:SquirtleSkullBashGo": {
-        "NAME": "Skull Bash Go!",
-        "DESCRIPTION": "Retain. NL Deal !D! damage to ALL enemies. NL If this is the leftmost card of your hand, deal another !D! damage to ALL enemies. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage to ALL enemies. NL If this is the leftmost card of your hand, deal another !D! damage to ALL enemies. NL Exhaust."
+        "NAME": "로켓박치기:발싸",
+        "DESCRIPTION": "보존. NL 적 전체에게 피해를 !D! 줍니다. NL 이 카드가 패에 가장 왼쪽에 있는 카드라면 적 전체에게 피해를 !D! 줍니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "보존. NL 적 전체에게 피해를 !D! 줍니다. NL 이 카드가 패에 가장 왼쪽에 있는 카드라면 적 전체에게 피해를 !D! 줍니다. NL 소멸."
     },
     "mysteryDungeon:SquirtleSkullBashReady": {
-        "NAME": "Skull Bash: Ready!",
-        "DESCRIPTION": "Shuffle a *Skull *Bash: *Set in your draw pile.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Shuffle a *Skull *Bash: *Set in your draw pile."
+        "NAME": "로켓박치기:제자리에",
+        "DESCRIPTION": "뽑을 카드 더미에 *로켓박치기:준비 를 넣습니다.",
+        "UPGRADE_DESCRIPTION": "선천성. NL 뽑을 카드 더미에 *로켓박치기:준비 를 넣습니다."
     },
     "mysteryDungeon:SquirtleSkullBashSet": {
-        "NAME": "Skull Bash: Set!",
-        "DESCRIPTION": "Ethereal. NL Add a *Skull *Bash: *Go! into your draw pile. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Add a *Skull *Bash: *Go! into your draw pile. NL Exhaust."
+        "NAME": "로켓박치기:준비",
+        "DESCRIPTION": "휘발성. NL 뽑을 카드 더미에 *로켓박치기:발싸 를 넣습니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "뽑을 카드 더미에 *로켓박치기:발싸 를 넣습니다. NL 소멸."
     },
     "mysteryDungeon:SquirtleSubstitute": {
-        "NAME": "Substitute",
-        "DESCRIPTION": "Choose a card from your draw pile. NL Add it to your hand and put a *Wound where the card was. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Choose a card from your draw pile. NL Add a copy of that card to your hand and put a *Wound at the card's location. NL Exhaust."
+        "NAME": "대타출동",
+        "DESCRIPTION": "뽑을 카드 더미에서 카드 1 장을 손으로 가져옵니다. 그 카드가 있던 자리에 *상처 를 넣습니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "뽑을 카드 더미에서 카드 1 장을 복사해 가져옵니다. 그 카드가 있던 자리에 *상처 를 넣습니다. NL 소멸."
     },
     "mysteryDungeon:SquirtleTackle": {
-        "NAME": "Tackle",
-        "DESCRIPTION": "Deal !D! damage."
+        "NAME": "타격",
+        "DESCRIPTION": "피해를 !D! 줍니다."
+    },
+    "mysteryDungeon:SquirtleTailWhip": {
+        "NAME": "꼬리흔들기",
+        "DESCRIPTION": "방어도를 !B! 얻습니다. NL 카드를 !M! 장 뽑습니다."
     },
     "mysteryDungeon:SquirtleTorrent": {
-        "NAME": "Torrent",
-        "DESCRIPTION": "Whenever you shuffle your draw pile, gain !M! Temporary Strength."
+        "NAME": "급류",
+        "DESCRIPTION": "덱을 섞을 때마다 임시 힘 을 !M! 얻습니다."
     },
     "mysteryDungeon:SquirtleWaterGun": {
-        "NAME": "Water Gun",
-        "DESCRIPTION": "Deal !D! damage. NL Scry !M!."
+        "NAME": "물대포",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 예지 !M! "
     },
     "mysteryDungeon:SquirtleWaterPulse": {
-        "NAME": "Water Pulse",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
+        "NAME": "물의 파동",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 취약을 !M! 부여합니다."
     },
     "mysteryDungeon:SquirtleWaterSpout": {
-        "NAME": "Water Spout",
-        "DESCRIPTION": "Scry !M!. NL Apply !mysteryDungeon:M2! Weak. NL Deal !D! damage.",
-        "UPGRADE_DESCRIPTION": "Scry !M!. NL Apply !mysteryDungeon:M2! Weak. NL Deal !D! damage."
+        "NAME": "해수스파우팅",
+        "DESCRIPTION": "예지 !M! NL 약화를 !mysteryDungeon:M2! 부여합니다. NL 피해를 !D! 줍니다.",
+        "UPGRADE_DESCRIPTION": "예지 !M! NL 약화를 !mysteryDungeon:M2! 부여합니다. NL 피해를 !D! 줍니다."
     },
     "mysteryDungeon:SquirtleWhirlpool": {
-        "NAME": "Whirlpool",
-        "DESCRIPTION": "At the start of your X next turns, draw 2 more cards and discard 2 cards. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "At the start of your X+1 next turns, draw 2 more cards and discard 2 cards. NL Exhaust."
+        "NAME": "바다회오리",
+        "DESCRIPTION": "턴 시작시 x 턴 동안, 2장을 더 뽑고 2장을 버립니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "턴 시작시 x+1 턴 동안, 2장을 더 뽑고 2장을 버립니다. NL 소멸."
     },
     "mysteryDungeon:SquirtleWithdraw": {
-        "NAME": "Withdraw",
-        "DESCRIPTION": "Shuffle your discard pile into your deck. NL Gain !M! Block per card in hand."
+        "NAME": "껍질에숨기",
+        "DESCRIPTION": "손에 있는 카드 한장 당 방어도를 !M! 을 얻습니다"
     },
     "mysteryDungeon:SquirtleZenHeadbutt": {
-        "NAME": "Zen Headbutt",
-        "DESCRIPTION": "Deal !D! damage NL Create a *Flinch and add it to your hand.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage NL Create an upgraded *Flinch and add it to your hand."
+        "NAME": "사념의박치기",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 풀죽음을 얻습니다",
+        "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 강화된 풀죽음을 얻습니다."
     },
     "mysteryDungeon:TotodileAquaJet": {
         "NAME": "Aqua Jet",

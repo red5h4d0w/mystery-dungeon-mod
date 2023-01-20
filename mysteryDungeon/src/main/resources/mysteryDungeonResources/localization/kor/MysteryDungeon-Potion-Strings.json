@@ -1,20 +1,20 @@
 {
     "mysteryDungeon:AspearBerryPotion": {
-        "NAME": "Aspear Berry",
+        "NAME": "배리열매",
         "DESCRIPTIONS": [
-            "Discard any number of cards from your hand. Draw #b%s cards."
+            "원하는 만큼 카드를 버립니다. 카드를 #b%s 뽑습니다."
         ]
     },
     "mysteryDungeon:DireHitPotion": {
-        "NAME": "Dire Hit",
+        "NAME": "크리티컬커터",
         "DESCRIPTIONS": [
-            "Your next attack deals double damage."
+            "다음에 사용하는 공격카드의 피해량이 2 배가 됩니다."
         ]
     },
     "mysteryDungeon:FlameOrbPotion": {
-        "NAME": "Flame Orb",
+        "NAME": "화염구슬",
         "DESCRIPTIONS": [
-            "Apply #b%s #yBurn to ALL enemies."
+            "적 전체에게 #y화상 을 #b%s 부여합니다."
         ]
     },
     "mysteryDungeon:GrassGemPotion": {
@@ -36,34 +36,34 @@
         ]
     },
     "mysteryDungeon:PikachuCandyPotion": {
-        "NAME": "Pikachu Candy",
+        "NAME": "피카츄 사탕",
         "DESCRIPTIONS": [
-            "Enter #yPositive or #yNegative #yStance."
+            "#y플러스상태 또는 #y마이너스상태 가 됩니다."
         ]
     },
     "mysteryDungeon:PoisonBarbPotion": {
-        "NAME": "PoisonBarb",
+        "NAME": "독바늘",
         "DESCRIPTIONS": [
-            "Apply #b%s #yPoison to an enemy."
+            "#y중독 을 #b%s 부여합니다."
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {
-        "NAME": "Sitrus Berry",
+        "NAME": "자뭉열매",
         "DESCRIPTIONS": [
-            "Put #b%s card from your exhaust pile in your hand.",
-            "Put #b%s cards from your exhaust pile in your hand."
+            "소멸된 카드를 #b%s 장 선택해 가져옵니다.",
+            "소멸된 카드를 #b%s 장 선택해 가져옵니다."
         ]
     },
     "mysteryDungeon:XAttackPotion": {
-        "NAME": "X Attack",
+        "NAME": "플러스 파워",
         "DESCRIPTIONS": [
-            "Add #b%s #yFlinch to your hand. They cost #b0 this turn."
+            "#y풀죽음 #b%s 장을 얻습니다. 이번 턴 동안 그 카드의 비용이 0이 됩니다."
         ]
     },
     "mysteryDungeon:XSpAttackPotion": {
-        "NAME": "X Sp. Attack",
+        "NAME": "스페셜 업",
         "DESCRIPTIONS": [
-            "Fill all your Orb slots with #yLightning."
+            "모든 구체 슬롯에 #y전기 를 #b1 번 영창합니다."
         ]
     }
 }
