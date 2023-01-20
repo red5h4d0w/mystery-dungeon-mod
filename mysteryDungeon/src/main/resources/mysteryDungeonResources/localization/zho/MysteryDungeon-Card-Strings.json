@@ -1,19 +1,19 @@
 {
     "mysteryDungeon:ExplorersDeck": {
-        "NAME": "冒险家牌组",
-        "DESCRIPTION": "一旦你选择了冒险家，将获得5张牌。"
+        "NAME": "Explorer's deck",
+        "DESCRIPTION": "Will become a deck of 5 cards once you choose your explorer."
     },
     "mysteryDungeon:PartnersDeck": {
-        "NAME": "伙伴牌组",
-        "DESCRIPTION": "一旦你选择了伙伴，将获得5张牌。"
+        "NAME": "Partner's Deck",
+        "DESCRIPTION": "Will become a deck of 5 cards once you choose your partner."
     },
     "mysteryDungeon:ColorlessAgility": {
-        "NAME": "高速移动",
-        "DESCRIPTION": "保留。 NL 抽 !M! 张牌。 NL 消耗。"
+        "NAME": "Agility",
+        "DESCRIPTION": "Retain. NL Draw !M! cards. NL Exhaust."
     },
     "mysteryDungeon:ChooseAttack": {
-        "NAME": "攻击",
-        "DESCRIPTION": "向手牌添加一张随机攻击牌。"
+        "NAME": "Attack",
+        "DESCRIPTION": "Add a random Attack to your hand."
     },
     "mysteryDungeon:ChooseNegative": {
         "NAME": "Negative Stance",
@@ -51,145 +51,145 @@
     "mysteryDungeon:BulbasaurDoubleEdge": {
         "NAME": "Double Edge",
         "DESCRIPTION": "Deal !D! damage. NL Gain Strength equal to the unblocked damage dealt. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 获得等同于未 格挡 伤害的力量。 NL 消耗。"
+        "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times. NL Gain Strength equal to the unblocked damage dealt. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurExplorerForm": {
-        "NAME": "妙蛙种子·冒险者笔记",
-        "DESCRIPTION": "获得 !M! 层回复。 NL 在回合开始时，失去1点 敏捷 。"
+        "NAME": "Explorer Form",
+        "DESCRIPTION": "Gain !M! Regen. NL At the start of your turn lose 1 Dexterity."
     },
     "mysteryDungeon:BulbasaurFrenzyPlant": {
-        "NAME": "疯狂植物",
-        "DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 施加2层中毒 !M! 次。 NL 本回合无法回复生命。"
+        "NAME": "Frenzy Plant",
+        "DESCRIPTION": "Deal !D! damage !M! times. NL Apply 2 Poison !M! times. NL You cannot heal during this turn."
     },
     "mysteryDungeon:BulbasaurGigaDrain": {
-        "NAME": "终极吸收",
-        "DESCRIPTION": "虚无。 NL 造成 !D! 点伤害。 NL 回复等同于未 格挡 伤害的生命。"
+        "NAME": "Giga Drain",
+        "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Heal HP equal to unblocked damage."
     },
     "mysteryDungeon:BulbasaurGrowl": {
-        "NAME": "叫声",
-        "DESCRIPTION": "对所有敌人施加 !M! 层 虚弱 。"
+        "NAME": "Growl",
+        "DESCRIPTION": "Apply !M! Weak to ALL enemies."
     },
     "mysteryDungeon:BulbasaurGrowth": {
-        "NAME": "生长",
-        "DESCRIPTION": "获得 !M! 点力量。"
+        "NAME": "Growth",
+        "DESCRIPTION": "Gain !M! Strength."
     },
     "mysteryDungeon:BulbasaurIngrain": {
-        "NAME": "扎根",
-        "DESCRIPTION": "向随机敌人施加1层 mysterydungeon:寄生种子  !M! 次。 NL 失去2点 敏捷 。 NL 消耗。"
+        "NAME": "Ingrain",
+        "DESCRIPTION": "Apply 1 mysterydungeon:Leech_Seed to a random enemy !M! times. NL Lose 2 Dexterity. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurLeechSeed": {
-        "NAME": "寄生种子",
-        "DESCRIPTION": "施加 !M! 层 mysterydungeon:寄生种子 。 NL 消耗。"
+        "NAME": "Leech Seed",
+        "DESCRIPTION": "Apply !M! mysterydungeon:Leech_Seed. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurMegaDrain": {
-        "NAME": "超级吸收",
-        "DESCRIPTION": "敌人每拥有1种减益效果，回复 !M! 生命值。",
-        "UPGRADE_DESCRIPTION": "敌人每拥有1种减益效果，回复 !M! 生命值。 NL 下回合多抽1张牌。"
+        "NAME": "Mega Drain",
+        "DESCRIPTION": "Heal !M! HP per different *debuff on the enemy.",
+        "UPGRADE_DESCRIPTION": "Heal !M! HP per different *debuff on the enemy. NL Next turn draw 1 more card."
     },
     "mysteryDungeon:BulbasaurPetalBlizzard": {
-        "NAME": "落英缤纷",
-        "DESCRIPTION": "对所有敌人造成 !D! 点伤害。"
+        "NAME": "Petal Blizzard",
+        "DESCRIPTION": "Deal !D! damage to ALL enemies."
     },
     "mysteryDungeon:BulbasaurPetalDance": {
-        "NAME": "花瓣舞",
-        "DESCRIPTION": "下 !M! 回合，在回合结束时，对所有敌人造成7点伤害。 NL 视为攻击伤害。"
+        "NAME": "Petal Dance",
+        "DESCRIPTION": "Deal 7 damage to ALL enemies at the end of your turn for the next !M! turns. NL This damage behaves like Attack damage."
     },
     "mysteryDungeon:BulbasaurPoisonJab": {
-        "NAME": "毒击",
-        "DESCRIPTION": "造成 !D! 点伤害。 NL 施加 !M! 层中毒2次。"
+        "NAME": "Poison Jab",
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! Poison 2 times."
     },
     "mysteryDungeon:BulbasaurPoisonPoint": {
-        "NAME": "毒刺",
-        "DESCRIPTION": "获得 !M! 层 mysterydungeon:毒刺 。"
+        "NAME": "Poison Point",
+        "DESCRIPTION": "Gain !M! mysterydungeon:Poison_Thorns."
     },
     "mysteryDungeon:BulbasaurPoisonPowder": {
-        "NAME": "毒粉",
-        "DESCRIPTION": "对所有敌人施加 !M! 层中毒。"
+        "NAME": "Poison Powder",
+        "DESCRIPTION": "Apply !M! Poison to ALL enemies."
     },
     "mysteryDungeon:BulbasaurPowerWhip": {
-        "NAME": "强力鞭打",
-        "DESCRIPTION": "保留。 NL 造成 !D! 点伤害。"
+        "NAME": "Power Whip",
+        "DESCRIPTION": "Retain. NL Deal !D! damage."
     },
     "mysteryDungeon:BulbasaurProtect": {
-        "NAME": "守住",
-        "DESCRIPTION": "获得 !B! 点 格挡 。 NL 下 !M! 回合内，无法再从牌中获得 格挡 值。"
+        "NAME": "Protect",
+        "DESCRIPTION": "Gain !B! Block. NL You cannot gain Block from cards during the next !M! turns."
     },
     "mysteryDungeon:BulbasaurRazorLeaf": {
-        "NAME": "飞叶快刀",
-        "DESCRIPTION": "失去 !M! 生命值。 NL 造成 !D! 点伤害。"
+        "NAME": "Razor Leaf",
+        "DESCRIPTION": "Deal !D! damage. NL Draw 1 card."
     },
     "mysteryDungeon:BulbasaurRest": {
-        "NAME": "睡觉",
-        "DESCRIPTION": "回复 !mysteryDungeon:M2! 点生命值。 mysterydungeon:睡觉 !M! 回合。"
+        "NAME": "Rest",
+        "DESCRIPTION": "Heal !mysteryDungeon:M2! HP. mysterydungeon:Rest for !M! turns."
     },
     "mysteryDungeon:BulbasaurSecretPower": {
-        "NAME": "秘密之力",
-        "DESCRIPTION": "固有。 NL 向手牌添加1张随机能力牌。 NL 消耗。",
-        "UPGRADE_DESCRIPTION": "固有。 NL 向手牌添加1张随机升级后的能力牌。 NL 消耗。"
+        "NAME": "Secret Power",
+        "DESCRIPTION": "Innate. NL Add random Power in your hand. NL Exhaust",
+        "UPGRADE_DESCRIPTION": "Innate. NL Add random upgraded Power in your hand. NL Exhaust"
     },
     "mysteryDungeon:BulbasaurSeedBomb": {
-        "NAME": "种子炸弹",
-        "DESCRIPTION": "对随机敌人造成 !D! 点伤害X次。"
+        "NAME": "Seed Bomb",
+        "DESCRIPTION": "Deal !D! damage to a random enemy X times."
     },
     "mysteryDungeon:BulbasaurSleepPowder": {
-        "NAME": "催眠粉",
-        "DESCRIPTION": "向所有敌人施加 !M! 层 mysterydungeon:昏睡 。 NL 消耗。"
+        "NAME": "Sleep Powder",
+        "DESCRIPTION": "Apply !M! mysterydungeon:Asleep to ALL enemies. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurSludgeBomb": {
-        "NAME": "污泥炸弹",
-        "DESCRIPTION": "施加 !M! 层中毒。"
+        "NAME": "Sludge Bomb",
+        "DESCRIPTION": "Apply !M! Poison."
     },
     "mysteryDungeon:BulbasaurSolarBeam": {
-        "NAME": "日光束",
-        "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 下回合少抽 !M! 张牌。"
+        "NAME": "Solar Beam",
+        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Draw !M! less cards during your next turn."
     },
     "mysteryDungeon:BulbasaurStrengthSap": {
-        "NAME": "吸收力量",
-        "DESCRIPTION": "敌人失去 !M! 点力量。 NL 若敌人失去力量，获得 !M! 点力量。 NL 消耗。"
+        "NAME": "Strength Sap",
+        "DESCRIPTION": "Enemy loses !M! Strength. NL Gain !M! Strength if enemy lost Strength that way. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurStunSpore": {
-        "NAME": "麻痹粉",
-        "DESCRIPTION": "施加 !M! 层缓慢。 NL 消耗。",
-        "UPGRADE_DESCRIPTION": "固有。 NL 施加 !M! 层缓慢。 NL 消耗。"
+        "NAME": "Stun Spore",
+        "DESCRIPTION": "Apply !M! *Slow. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! *Slow. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurSunnyDay": {
-        "NAME": "大晴天",
-        "DESCRIPTION": "虚无。 NL 每回合开始时， NL 额外再抽一张牌，降低手牌中费用最高的牌1点耗能。",
-        "UPGRADE_DESCRIPTION": "每回合开始时， NL 额外再抽一张牌，降低手牌中费用最高的牌1点耗能。"
+        "NAME": "Sunny Day",
+        "DESCRIPTION": "Ethereal. NL At the start of each turn, NL draw one more card and reduce by 1 the cost of the card with the highest cost in your hand.",
+        "UPGRADE_DESCRIPTION": "At the start of each turn, NL draw one more card and reduce by 1 the cost of the card with the highest cost in your hand."
     },
     "mysteryDungeon:BulbasaurSweetScent": {
-        "NAME": "甜甜香气",
-        "DESCRIPTION": "施加 !M! 层 mysterydungeon:防御下降 。 NL 施加 !M! 层易伤。"
+        "NAME": "Sweet Scent",
+        "DESCRIPTION": "Apply !M! mysterydungeon:Evasiveness_Drop. NL Apply !M! Vulnerable"
     },
     "mysteryDungeon:BulbasaurSynthesis": {
-        "NAME": "光合作用",
-        "DESCRIPTION": "回复 !M! 点生命。 NL 下回合开始时， NL 额外再抽两张牌获得 [E] [E] 。 NL 消耗。"
+        "NAME": "Synthesis",
+        "DESCRIPTION": "Heal !M! HP. NL At the start of your next turn, NL draw 2 more cards and gain [E] [E]. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurTackle": {
-        "NAME": "撞击",
-        "DESCRIPTION": "造成 !D! 点伤害。"
+        "NAME": "Tackle",
+        "DESCRIPTION": "Deal !D! damage."
     },
     "mysteryDungeon:BulbasaurToxic": {
-        "NAME": "剧毒",
-        "DESCRIPTION": "向所有敌人施加 !M! 层 mysterydungeon:剧毒 。 NL 消耗。",
-        "UPGRADE_DESCRIPTION": "固有。 NL 向所有敌人施加 !M! 层 mysterydungeon:剧毒 。 NL 消耗。"
+        "NAME": "Toxic",
+        "DESCRIPTION": "Apply !M! mysterydungeon:Toxic to ALL enemies. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! mysterydungeon:Toxic to ALL enemies. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurVenoshock": {
-        "NAME": "毒液冲击",
-        "DESCRIPTION": "造成 !D! 点伤害。 NL 根据敌人中毒层数，额外造成 !M! 点伤害。"
+        "NAME": "Venoshock",
+        "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each stack of Poison of the enemy."
     },
     "mysteryDungeon:BulbasaurVineWhip": {
-        "NAME": "藤鞭",
-        "DESCRIPTION": "造成 !D! 点伤害。 NL 在下回合开始时，获得 [E] 。"
+        "NAME": "Vine Whip",
+        "DESCRIPTION": "Deal !D! damage. NL At the start of your next turn gain [E]."
     },
     "mysteryDungeon:BulbasaurWorrySeed": {
-        "NAME": "烦恼种子",
-        "DESCRIPTION": "战斗结束后，卡牌奖励将额外包括1张牌。"
+        "NAME": "Worry Seed",
+        "DESCRIPTION": "Your *card *rewards will contain 1 more card choice."
     },
     "mysteryDungeon:BulbasaurYawn": {
-        "NAME": "哈欠",
-        "DESCRIPTION": "虚无。 NL 在敌人行动之前施加 !M! 层 mysterydungeon:昏睡 。(在中毒之后). NL 消耗。",
-        "UPGRADE_DESCRIPTION": "在敌人行动之前施加 !M! 层 mysterydungeon:昏睡 。(在中毒之后). NL 消耗。"
+        "NAME": "Yawn",
+        "DESCRIPTION": "Ethereal. NL Apply !M! mysterydungeon:Asleep right before this enemy acts (after Poison, etc.). NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Asleep right before this enemy acts (after Poison, etc.). NL Exhaust."
     },
     "mysteryDungeon:CharmanderAirCutter": {
         "NAME": "Air Cutter",
@@ -200,41 +200,41 @@
         "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, gain !B! Block."
     },
     "mysteryDungeon:CharmanderBlastBurn": {
-        "NAME": "爆炸烈焰",
-        "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗你的手牌。"
+        "NAME": "Blast Burn",
+        "DESCRIPTION": "Deal !D! damage. NL Exhaust your hand."
     },
     "mysteryDungeon:CharmanderBlaze": {
-        "NAME": "火焰",
-        "DESCRIPTION": "获得2层易伤。 NL 每回合第一次能量为0后，获得 [E]。",
-        "UPGRADE_DESCRIPTION": "获得2层易伤。 NL 每回合前两次能量为0后，获得 [E]。"
+        "NAME": "Blaze",
+        "DESCRIPTION": "Gain 2 Vulnerable. NL The first time you spend all energy each turn, gain [E].",
+        "UPGRADE_DESCRIPTION": "Gain 2 Vulnerable. NL The first 2 times you spend all energy each turn, gain [E]."
     },
     "mysteryDungeon:CharmanderCounter": {
-        "NAME": "双倍奉还",
-        "DESCRIPTION": "获得 !B! 点 格挡 。 NL 若受到攻击后失去全部防御，反击 !M! 点伤害。"
+        "NAME": "Counter",
+        "DESCRIPTION": "Gain !B! Block. NL If you lose all Block and take damage from an attack, deal !M! damage to the attacker."
     },
     "mysteryDungeon:CharmanderDefend": {
-        "NAME": "防御",
-        "DESCRIPTION": "获得 !B! 点 格挡 。"
+        "NAME": "Defend",
+        "DESCRIPTION": "Gain !B! Block."
     },
     "mysteryDungeon:CharmanderDragonBreath": {
-        "NAME": "龙息",
-        "DESCRIPTION": "消耗牌堆每 !M! 张牌，获得 [E] 。",
-        "UPGRADE_DESCRIPTION": "消耗牌堆每 !M! 张牌，获得 [E] 。 NL 获得 [E]."
+        "NAME": "Dragon Breath",
+        "DESCRIPTION": "Gain [E] for every !M! cards in your exhaust pile.",
+        "UPGRADE_DESCRIPTION": "Gain [E] for every !M! cards in your exhaust pile. NL Gain [E]."
     },
     "mysteryDungeon:CharmanderDragonClaw": {
-        "NAME": "龙爪",
-        "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL (当使用金属 mysterydungeon:爪 时，鳞片)"
+        "NAME": "Dragon Claw",
+        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL (Scales when using *Metal *Claw.)"
     },
     "mysteryDungeon:CharmanderDragonDance": {
-        "NAME": "龙之舞",
-        "DESCRIPTION": "消耗 !M! 张牌。 NL 抽 !mysteryDungeon:M2! 张牌。 NL (如果无法消耗 !M! 张牌，则该牌无法打出。)",
-        "UPGRADE_DESCRIPTION": "抽 !mysteryDungeon:M2! 张牌。 NL 消耗 !M! 张牌。"
+        "NAME": "Dragon Dance",
+        "DESCRIPTION": "Exhaust !M! cards. NL Draw !mysteryDungeon:M2! cards. NL (You cannot play this card if you cannot exhaust !M! cards.)",
+        "UPGRADE_DESCRIPTION": "Draw !mysteryDungeon:M2! cards NL Exhaust !M! cards."
     },
     "mysteryDungeon:CharmanderDragonPulse": {
-        "NAME": "龙之波动",
-        "DESCRIPTION": "无法打出。 NL 抽到该牌时: NL 从消耗牌堆随机向抽牌堆顶部添加一张牌。 NL 触发 !M! 次后: 消耗。",
+        "NAME": "Dragon Pulse",
+        "DESCRIPTION": "Unplayable. NL When drawn: NL Add a random card from your exhaust pile on the top of draw pile. NL After activating this effect !M! times: Exhaust.",
         "EXTENDED_DESCRIPTION": [
-            "我无法打出这张牌。",
+            "I can't play this card.",
             "抽到时: 消耗。"
         ]
     },
@@ -1373,7 +1373,7 @@
     "mysteryDungeon:TotodileRainDance": {
         "NAME": "Rain Dance",
         "DESCRIPTION": "Unplayable. NL When discarded: Gain !M! mysterydungeon:Vigor.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up. NL When discarded: Gain !M! mysterydungeon:Vigor.",
+        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up. NL When discarded: Gain !M! mysterydungeon:Vigor",
         "EXTENDED_DESCRIPTION": [
             "I can't play this card."
         ]
@@ -1400,7 +1400,7 @@
     },
     "mysteryDungeon:TotodileWaterPledge": {
         "NAME": "Water Pledge",
-        "DESCRIPTION": "Channel 1 Frost. NL Gain !M! mysterydungeon:Vigor. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
+        "DESCRIPTION": "Channel 1 Frost orb. NL Gain !M! mysterydungeon:Vigor. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
     },
     "mysteryDungeon:TotodileWaterPulse": {
         "NAME": "Water Pulse",
