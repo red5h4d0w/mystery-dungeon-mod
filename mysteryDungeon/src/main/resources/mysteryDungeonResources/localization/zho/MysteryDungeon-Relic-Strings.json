@@ -1,10 +1,10 @@
 {
     "mysteryDungeon:DefaultClickableRelic": {
-        "NAME": "Right-Clicky Relic",
-        "FLAVOR": "The more you right-click it, the more orbs you've evoked in your lifetime.",
+        "NAME": "右击之力",
+        "FLAVOR": "点击的越多，激发的越多。",
         "DESCRIPTIONS": [
-            "[#2aecd7]Usable [#2aecd7]once [#2aecd7]per [#2aecd7]turn.[] NL #yEvoke your rightmost Orb.",
-            "YOU ARE MINE!"
+            "[#2aecd7]每回合触发一次。[] NL #y激发 最右侧充能球。",
+            "你是我的了！"
         ]
     },
     "mysteryDungeon:NatureRelatedRelic": {
