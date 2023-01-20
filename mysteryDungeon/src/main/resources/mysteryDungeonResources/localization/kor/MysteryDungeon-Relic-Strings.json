@@ -1,10 +1,10 @@
 {
     "mysteryDungeon:DefaultClickableRelic": {
-        "NAME": "오른쪽 클릭 유물",
-        "FLAVOR": "당신은 오른쪽 마우스를 클릭하면 할수록, 당신의 일생에서 더 많은 일을 불러일으킵니다.",
+        "NAME": "Right-Clicky Relic",
+        "FLAVOR": "The more you right-click it, the more orbs you've evoked in your lifetime.",
         "DESCRIPTIONS": [
-            "[#2aecd7] 번 사용가능. [#2aecd7] 턴당 [#2aecd7] 회 가장 오른쪽 구체를 [#2aecd7] 번 #y발현 합니다.",
-            "넌 내꺼야!"
+            "[#2aecd7]Usable [#2aecd7]once [#2aecd7]per [#2aecd7]turn.[] NL #yEvoke your rightmost Orb.",
+            "YOU ARE MINE!"
         ]
     },
     "mysteryDungeon:NatureRelatedRelic": {
@@ -12,6 +12,13 @@
         "FLAVOR": "이게 뭐지?",
         "DESCRIPTIONS": [
             "당신의 본성에 의해 유물이 정해집니다."
+        ]
+    },
+    "mysteryDungeon:BigRootRelic": {
+        "NAME": "Big Root",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "Whenever you are at #b70% or less of your max HP, gain #yRecovery."
         ]
     },
     "mysteryDungeon:BraveExplorerRelic": {
@@ -56,6 +63,13 @@
             "전투 시작 후 적 전체에게 #y화상 을 #b9 부여합니다."
         ]
     },
+    "mysteryDungeon:GrassySeedRelic": {
+        "NAME": "Grassy Seed",
+        "FLAVOR": "It boosts Defense on Grassy Terrain.",
+        "DESCRIPTIONS": [
+            "At the start of combat add a random attack to your draw pile. It costs #b0 this combat."
+        ]
+    },
     "mysteryDungeon:HardyExplorerRelic": {
         "NAME": "강인한 모험가",
         "FLAVOR": "이게 뭐지?",
@@ -98,6 +112,13 @@
             "턴 시작시 자기 팀이 아닌 포켓몬의 무작위 카드 한장을 손에 넣습니다. 이번 전투 동안 비용이 0이 됩니다."
         ]
     },
+    "mysteryDungeon:MeadowPlateRelic": {
+        "NAME": "Meadow Plate",
+        "FLAVOR": "A stone tablet imbued with the essence of plants. When used on a certain Pokémon, it allows that Pokémon to gain the power of the Grass type.",
+        "DESCRIPTIONS": [
+            "Gain #b20 #ymax #yHP. At the start of combat if you have more than #b65% of your #ymax #yHP lose #yHP until you have #y65% of your #ymax #yHP. If you have less than #b65% of your #ymax #yHP, heal #b10 #yHP."
+        ]
+    },
     "mysteryDungeon:MiracleSeedRelic": {
         "NAME": "기적의 씨",
         "FLAVOR": "생명이 깃든 씨앗. 지니게 하면 풀타입 기술의 위력이 올라갑니다.",
@@ -110,6 +131,13 @@
         "FLAVOR": "눈물방울 모양의 보석. 지니게 하면 물 기술의 위력이 상승합니다.",
         "DESCRIPTIONS": [
             "턴 시작시 [E] 얻습니다. NL 손에 있는 카드의 최대 매수가 2 줄어듭니다."
+        ]
+    },
+    "mysteryDungeon:NaiveExplorerRelic": {
+        "NAME": "Naive Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "At the start of your turn, if you have not taken any damage from attacks this combat, your next Attack deals #b3 more damage."
         ]
     },
     "mysteryDungeon:QuirkyExplorerRelic": {
@@ -145,34 +173,6 @@
         "FLAVOR": "이상한 향기의 향로. 지니게 하면 물타입 기술의 위력이 올라갑니다.",
         "DESCRIPTIONS": [
             "전투 시작시 #y현실지배 1장을 손에 넣습니다."
-        ]
-    },
-    "mysteryDungeon:BigRootRelic": {
-        "NAME": "Big Root",
-        "FLAVOR": "What is this?",
-        "DESCRIPTIONS": [
-            "Whenever you are at #b70% or less of your max HP, gain #yRecovery."
-        ]
-    },
-    "mysteryDungeon:GrassySeedRelic": {
-        "NAME": "Grassy Seed",
-        "FLAVOR": "It boosts Defense on Grassy Terrain.",
-        "DESCRIPTIONS": [
-            "At the start of combat add a random attack to your draw pile. It costs #b0 this combat."
-        ]
-    },
-    "mysteryDungeon:MeadowPlateRelic": {
-        "NAME": "Meadow Plate",
-        "FLAVOR": "A stone tablet imbued with the essence of plants. When used on a certain Pokémon, it allows that Pokémon to gain the power of the Grass type.",
-        "DESCRIPTIONS": [
-            "Gain #b20 #ymax #yHP. At the start of combat if you have more than #b65% of your #ymax #yHP lose #yHP until you have #y65% of your #ymax #yHP. If you have less than #b65% of your #ymax #yHP, heal #b10 #yHP."
-        ]
-    },
-    "mysteryDungeon:NaiveExplorerRelic": {
-        "NAME": "Naive Explorer",
-        "FLAVOR": "What is this?",
-        "DESCRIPTIONS": [
-            "At the start of your turn, if you have not taken any damage from attacks this combat, your next Attack deals #b3 more damage."
         ]
     }
 }
