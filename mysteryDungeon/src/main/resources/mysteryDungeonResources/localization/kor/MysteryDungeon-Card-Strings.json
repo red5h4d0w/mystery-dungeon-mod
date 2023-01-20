@@ -79,7 +79,7 @@
     },
     "mysteryDungeon:BulbasaurLeechSeed": {
         "NAME": "씨뿌리기",
-        "DESCRIPTION": " mysterydungeon:씨뿌리기 를 !M! 부여합니다. NL 소멸."
+        "DESCRIPTION": "mysterydungeon:씨뿌리기 를 !M! 부여합니다. NL 소멸."
     },
     "mysteryDungeon:BulbasaurMegaDrain": {
         "NAME": "메가드레인",
@@ -120,7 +120,7 @@
     },
     "mysteryDungeon:BulbasaurRest": {
         "NAME": "잠자기",
-        "DESCRIPTION": "체력을 !mysteryDungeon:M2! 회복합니다.  mysterydungeon:잠자기 를 !M! 얻습니다."
+        "DESCRIPTION": "체력을 !mysteryDungeon:M2! 회복합니다. mysterydungeon:잠자기 를 !M! 얻습니다."
     },
     "mysteryDungeon:BulbasaurSecretPower": {
         "NAME": "비밀의 힘",
@@ -159,7 +159,7 @@
     },
     "mysteryDungeon:BulbasaurSweetScent": {
         "NAME": "달콤한 향기",
-        "DESCRIPTION": "  mysterydungeon:회피율_감소 를 !M! 부여합니다. NL 취약 을 !M! 부여합니다."
+        "DESCRIPTION": "mysterydungeon:회피율_감소 를 !M! 부여합니다. NL 취약 을 !M! 부여합니다."
     },
     "mysteryDungeon:BulbasaurSynthesis": {
         "NAME": "광합성",
@@ -286,7 +286,7 @@
     },
     "mysteryDungeon:CharmanderFlamethrower": {
         "NAME": "화염방사",
-        "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 적 적체에게  mysterydungeon:화상 을 !M! 부여합니다."
+        "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 적 적체에게 mysterydungeon:화상 을 !M! 부여합니다."
     },
     "mysteryDungeon:CharmanderFlareBlitz": {
         "NAME": "플레어드라이브",
