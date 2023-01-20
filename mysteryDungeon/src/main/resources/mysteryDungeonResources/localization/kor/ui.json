@@ -1,12 +1,18 @@
 {
     "mysteryDungeon:EtherealMod": {
-        "TEXT": ["휘발성. NL "]
+        "TEXT": [
+            "휘발성. NL "
+        ]
     },
     "mysteryDungeon:ExhaustFromDeckAction": {
-        "TEXT": ["덱에서 소멸할 카드를 선택하세요."]
+        "TEXT": [
+            "덱에서 소멸할 카드를 선택하세요."
+        ]
     },
     "mysteryDungeon:RetainCardsButEtherealModAction": {
-        "TEXT": ["보존합니다. (카드가 휘발성을 갖습니다.)"]
+        "TEXT": [
+            "보존합니다. (카드가 휘발성을 갖습니다.)"
+        ]
     },
     "mysteryDungeon:PikachuMeter": {
         "TEXT": [

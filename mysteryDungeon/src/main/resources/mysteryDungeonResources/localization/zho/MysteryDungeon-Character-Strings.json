@@ -1,73 +1,73 @@
 {
     "mysteryDungeon:Pokemon": {
         "NAMES": [
-            "宝可梦",
-            "宝可梦"
+            "The Pokémon",
+            "the Pokémon"
         ],
         "TEXT": [
-            "你忘掉了过去，成为了一只宝可梦， NL 去探索高塔，寻回失去的记忆。",
-            "NL 你已经到达顶层。现在可以稍事休息，然后与宝可梦朋友们一起执行另一个任务",
-            "加入宝可梦大家庭吧~"
+            "You have been reincarnated as a Pokémon. Without any recollection of your former self, NL you decide that you'll help an adventurer in reaching the top of the dungeon.",
+            "NL You have reached the top floor of the dungeon. You can now rest at the base before taking another mission with your new Pokémon friends",
+            "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~pokémon~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
         ]
     },
     "mysteryDungeon:Bulbasaur": {
         "NAMES": [
-            "妙蛙种子"
+            "Bulbasaur"
         ]
     },
     "mysteryDungeon:Ivysaur": {
         "NAMES": [
-            "妙蛙草"
+            "Ivysaur"
         ]
     },
     "mysteryDungeon:Venusaur": {
         "NAMES": [
-            "妙蛙花"
+            "Venusaur"
         ]
     },
     "mysteryDungeon:Charmander": {
         "NAMES": [
-            "小火龙"
+            "Charmander"
         ]
     },
     "mysteryDungeon:Charmeleon": {
         "NAMES": [
-            "火恐龙"
+            "Charmeleon"
         ]
     },
     "mysteryDungeon:Charizard": {
         "NAMES": [
-            "喷火龙"
+            "Charizard"
         ]
     },
     "mysteryDungeon:Squirtle": {
         "NAMES": [
-            "杰尼龟"
+            "Squirtle"
         ]
     },
     "mysteryDungeon:Wartortle": {
         "NAMES": [
-            "卡咪龟"
+            "Wartortle"
         ]
     },
     "mysteryDungeon:Blastoise": {
         "NAMES": [
-            "水箭龟"
+            "Blastoise"
         ]
     },
     "mysteryDungeon:Pikachu": {
         "NAMES": [
-            "皮卡丘"
+            "Pikachu"
         ]
     },
     "mysteryDungeon:Raichu": {
         "NAMES": [
-            "雷丘"
+            "Raichu"
         ]
     },
     "mysteryDungeon:Meowth": {
         "NAMES": [
-            "喵喵"
+            "Meowth"
         ]
     },
     "mysteryDungeon:Persian": {
@@ -77,27 +77,27 @@
     },
     "mysteryDungeon:Psyduck": {
         "NAMES": [
-            "可达鸭"
+            "Psyduck"
         ]
     },
     "mysteryDungeon:Machop": {
         "NAMES": [
-            "腕力"
+            "Machop"
         ]
     },
     "mysteryDungeon:Cubone": {
         "NAMES": [
-            "卡拉卡拉"
+            "Cubone"
         ]
     },
     "mysteryDungeon:Eevee": {
         "NAMES": [
-            "伊布"
+            "Eevee"
         ]
     },
     "mysteryDungeon:Chikorita": {
         "NAMES": [
-            "菊草叶"
+            "Chikorita"
         ]
     },
     "mysteryDungeon:Bayleef": {
@@ -112,7 +112,7 @@
     },
     "mysteryDungeon:Cyndaquil": {
         "NAMES": [
-            "火球鼠"
+            "Cyndaquil"
         ]
     },
     "mysteryDungeon:Quilava": {
@@ -127,7 +127,7 @@
     },
     "mysteryDungeon:Totodile": {
         "NAMES": [
-            "小锯鳄"
+            "Totodile"
         ]
     },
     "mysteryDungeon:Croconaw": {
@@ -142,36 +142,36 @@
     },
     "mysteryDungeon:Treecko": {
         "NAMES": [
-            "木守宫"
+            "Treecko"
         ]
     },
     "mysteryDungeon:Torchic": {
         "NAMES": [
-            "火稚鸡"
+            "Torchic"
         ]
     },
     "mysteryDungeon:Mudkip": {
         "NAMES": [
-            "水跃鱼"
+            "Mudkip"
         ]
     },
     "mysteryDungeon:Skitty": {
         "NAMES": [
-            "向尾喵"
+            "Skitty"
         ]
     },
     "Neow": {
         "TEXT": [
-            "这是通往宝可梦世界的门户",
-            "但在我允许你通过之前，我有几个问题要问你。",
-            "我希望你能如实回答。 NL 准备好了吗？",
-            "好的... NL 让我们开始吧",
-            "好的!",
-            "我愿意自己组建宝可梦团队！",
-            "我愿意用随机的宝可梦团队！",
-            "选择你的冒险家。",
-            "选择你的伙伴。",
-            "You are a %s。 NL Choose a partner"
+            "This is the portal that leads to the world of Pokémon",
+            "But before I can let you through, I have several questions for you.",
+            "I want you to answer them sincerely. NL Are you ready?",
+            "OK... NL Let the interview begin!",
+            "Yes!",
+            "I'd prefer choosing my team.",
+            "I'd like to get a random team.",
+            "Choose your adventurer",
+            "Choose your partner",
+            "You are a %s1. NL Choose a partner. NL (Expected complexity is %s2)"
         ]
     }
 }
