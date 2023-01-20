@@ -1,0 +1,150 @@
+{
+    "mysteryDungeon:DefaultClickableRelic": {
+        "NAME": "오른쪽 클릭 유물",
+        "FLAVOR": "당신은 오른쪽 마우스를 클릭하면 할수록, 당신의 일생에서 더 많은 일을 불러일으킵니다.",
+        "DESCRIPTIONS": [
+            "[#2aecd7] 번 사용가능. [#2aecd7] 턴당 [#2aecd7] 회 가장 오른쪽 구체를 [#2aecd7] 번 #y발현 합니다.",
+            "넌 내꺼야!"
+        ]
+    },
+    "mysteryDungeon:NatureRelatedRelic": {
+        "NAME": "? 유물",
+        "FLAVOR": "이게 뭐지?",
+        "DESCRIPTIONS": [
+            "당신의 본성에 의해 유물이 정해집니다."
+        ]
+    },
+    "mysteryDungeon:BraveExplorerRelic": {
+        "NAME": "용감한 탐험가",
+        "FLAVOR": "그저 용감한 탐험가",
+        "DESCRIPTIONS": [
+            "전투당 한번, 턴 종료시 방어도 가 없다면 적 전체에게 취약을 2 부여합니다."
+        ]
+    },
+    "mysteryDungeon:CalmExplorerRelic": {
+        "NAME": "차분한 탐험가",
+        "FLAVOR": "이게 뭐지?",
+        "DESCRIPTIONS": [
+            "전투 시작 후 카드를 #b1 장 뽑고 [E] 를 얻습니다."
+        ]
+    },
+    "mysteryDungeon:CellBatteryRelic": {
+        "NAME": "충전지",
+        "FLAVOR": "소모성 배터리. 지닌 포켓몬이 전기타입 공격을 받으면 공격이 상승합니다.",
+        "DESCRIPTIONS": [
+            "전압 표시기의 끝에 도달하려면 3번 움직여야 합니다. NL 더이상 전압표시기는 중앙으로 돌아오지 않습니다."
+        ]
+    },
+    "mysteryDungeon:CharcoalRelic": {
+        "NAME": "목탄",
+        "FLAVOR": "가연성 연료.포켓몬에게 지니게 하면 불꽃 기술의 위력이 상승합니다.",
+        "DESCRIPTIONS": [
+            "적에게 부정적인 효과를 부여할 때마다 적 전체에게 피해를 #b1 줍니다."
+        ]
+    },
+    "mysteryDungeon:DocileExplorerRelic": {
+        "NAME": "정직한 탐험가",
+        "FLAVOR": "이게 뭐지?",
+        "DESCRIPTIONS": [
+            "부정적인 효과를 받으면 다음 턴에 방어도를 #b2 얻습니다."
+        ]
+    },
+    "mysteryDungeon:FlameOrbRelic": {
+        "NAME": "화염 구슬",
+        "FLAVOR": "만지면 열을 내는 이상한 구슬. 지니게 하면 배틀 중에 화상 상태가 됩니다.",
+        "DESCRIPTIONS": [
+            "전투 시작 후 적 전체에게 #y화상 을 #b9 부여합니다."
+        ]
+    },
+    "mysteryDungeon:HardyExplorerRelic": {
+        "NAME": "강인한 모험가",
+        "FLAVOR": "이게 뭐지?",
+        "DESCRIPTIONS": [
+            "매턴 1회 체력을 잃었을 때 방어도를 5 얻습니다. 공격으로 인해 체력이 잃은 경우 흐릿함을 1 얻습니다."
+        ]
+    },
+    "mysteryDungeon:ImpishExplorerRelic": {
+        "NAME": "장난꾸러기 탐험가",
+        "FLAVOR": "이게 뭐지?",
+        "DESCRIPTIONS": [
+            "전투당 한번 구체를 발현하면 밀집을 1 얻습니다."
+        ]
+    },
+    "mysteryDungeon:JollyExplorerRelic": {
+        "NAME": "즐거운 탐험가",
+        "FLAVOR": "이게 뭐지?",
+        "DESCRIPTIONS": [
+            "전투 시작시 #y고속이동 한장을 손에 넣습니다."
+        ]
+    },
+    "mysteryDungeon:LeftoversRelic": {
+        "NAME": "먹다남은음식",
+        "FLAVOR": "당신은 밥을 먹고 음식을 좀 남겼습니다.",
+        "DESCRIPTIONS": [
+            "전투 종료시 체력을 3 회복합니다."
+        ]
+    },
+    "mysteryDungeon:LifeOrbRelic": {
+        "NAME": "생명의 구슬",
+        "FLAVOR": "지니게 하면 공격할 때마다 체력이 조금씩 줄지만 기술의 위력이 올라갑니다.",
+        "DESCRIPTIONS": [
+            "턴 시작시 [E] 을 얻습니다. NL 턴 종료시, 손에 있는 무작위 카드 1장을 소멸합니다."
+        ]
+    },
+    "mysteryDungeon:MetronomeRelic": {
+        "NAME": "메트로놈",
+        "FLAVOR": "자신만의 리듬을 가지고 있습니다.",
+        "DESCRIPTIONS": [
+            "턴 시작시 자기 팀이 아닌 포켓몬의 무작위 카드 한장을 손에 넣습니다. 이번 전투 동안 비용이 0이 됩니다."
+        ]
+    },
+    "mysteryDungeon:MiracleSeedRelic": {
+        "NAME": "기적의 씨",
+        "FLAVOR": "생명이 깃든 씨앗. 지니게 하면 풀타입 기술의 위력이 올라갑니다.",
+        "DESCRIPTIONS": [
+            "한턴에 부정적인 효과를 #b3 번 부여할 경우 카드 1장 뽑습니다."
+        ]
+    },
+    "mysteryDungeon:MysticWaterRelic": {
+        "NAME": "신비의 물방울",
+        "FLAVOR": "눈물방울 모양의 보석. 지니게 하면 물 기술의 위력이 상승합니다.",
+        "DESCRIPTIONS": [
+            "턴 시작시 [E] 얻습니다. NL 손에 있는 카드의 최대 매수가 2 줄어듭니다."
+        ]
+    },
+    "mysteryDungeon:QuirkyExplorerRelic": {
+        "NAME": "별난 탐험가",
+        "FLAVOR": "이게 뭐지?",
+        "DESCRIPTIONS": [
+            "적 처치시 얻는 골드의 양이 5% 증가합니다."
+        ]
+    },
+    "mysteryDungeon:RelaxedExplorerRelic": {
+        "NAME": "느긋한 탐험가",
+        "FLAVOR": "이게 뭐지?",
+        "DESCRIPTIONS": [
+            "내 턴 시작시 #y예지 #b1."
+        ]
+    },
+    "mysteryDungeon:TimidExplorerRelic": {
+        "NAME": "소심한 탐험가",
+        "FLAVOR": "이게 뭐지?",
+        "DESCRIPTIONS": [
+            "내 턴 종료시 1 장까지 카드를 보존합니다."
+        ]
+    },
+    "mysteryDungeon:LightBallRelic": {
+        "NAME": "전기구슬",
+        "FLAVOR": "피카츄에게 지니게 하면 공격과 특수공격의 위력이 올라가는 이상한 구슬입니다.",
+        "DESCRIPTIONS": [
+            "매턴 한번, #y상태 가 아닐때 파워카드를 사용하면, 구체 슬롯을 1 얻습니다."
+        ]
+    },
+    "mysteryDungeon:WaveIncenseRelic": {
+        "NAME": "잔물결 향로",
+        "FLAVOR": "이상한 향기의 향로. 지니게 하면 물타입 기술의 위력이 올라갑니다.",
+        "DESCRIPTIONS": [
+            "전투 시작시 #y현실지배 1장을 손에 넣습니다."
+        ]
+    }
+}

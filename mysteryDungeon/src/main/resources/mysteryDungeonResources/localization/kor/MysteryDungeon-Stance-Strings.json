@@ -1,0 +1,14 @@
+{
+    "mysteryDungeon:NegativeStance": {
+        "NAME": "마이너스 상태",
+        "DESCRIPTION": [
+            "매턴 #b2 회 #y스킬카드를 사용할 경우 #y밀집 을 1 얻습니다. NL #y마이너스상태 에서 벗아날때 #y구체 #b1 개를 발현합니다."
+        ]
+    },
+    "mysteryDungeon:PositiveStance": {
+        "NAME": "플러스 상태",
+        "DESCRIPTION": [
+            "#y공격카드 를 사용할 경우, 빈 #y구체슬롯 에 #y전기 를 1 번 영창합니다. NL #y플러스상태 에서 벗어날 경우, #y방어도 를 #b4 얻습니다."
+        ]
+    }
+}

@@ -1,0 +1,141 @@
+{
+    "mysteryDungeon:Pokemon": {
+        "NAMES": [
+            "포켓몬",
+            "포켓몬"
+        ],
+        "TEXT": [
+            "당신은 예전 모습에 대한 어떠한 기억도 없어진 채 포켓몬으로 환생했습니다. NL 당신은 모험가가 탑의 정상에 오르는 것을 돕기로 했습니다.",
+            "NL 당신은 탑의 정상에 도착했습니다. 이제 새로운 포켓몬 친구들과 다른 임무를 수행하기 전에 기지에서 쉴 수 있습니다.",
+            "불이 켜지지 않은 거리를 돌아다니며, 당신은 후드를 쓴 사람들이 어두운 의식을 진행하는 것을 보게 됩니다. 당신이 다가가자, 그들은 섬뜩한 목소리로 당신을 향해 다가옵니다. 그 순간 가장 키가 큰 사람이 송곳니를 드러내고 길고 창백한 손을 당신을 향해 뻗습니다. NL ~\"Join~ ~us~ ~pokémon~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
+        ]
+    },
+    "mysteryDungeon:Bulbasaur": {
+        "NAMES": [
+            "이상해씨"
+        ]
+    },
+    "mysteryDungeon:Ivysaur": {
+        "NAMES": [
+            "이상해풀"
+        ]
+    },
+    "mysteryDungeon:Venusaur": {
+        "NAMES": [
+            "이상해꽃"
+        ]
+    },
+    "mysteryDungeon:Charmander": {
+        "NAMES": [
+            "파이리"
+        ]
+    },
+    "mysteryDungeon:Charmeleon": {
+        "NAMES": [
+            "리자드"
+        ]
+    },
+    "mysteryDungeon:Charizard": {
+        "NAMES": [
+            "리자몽"
+        ]
+    },
+    "mysteryDungeon:Squirtle": {
+        "NAMES": [
+            "꼬부기"
+        ]
+    },
+    "mysteryDungeon:Wartortle": {
+        "NAMES": [
+            "어니부기"
+        ]
+    },
+    "mysteryDungeon:Blastoise": {
+        "NAMES": [
+            "거북왕"
+        ]
+    },
+    "mysteryDungeon:Pikachu": {
+        "NAMES": [
+            "피카츄"
+        ]
+    },
+    "mysteryDungeon:Raichu": {
+        "NAMES": [
+            "라이츄"
+        ]
+    },
+    "mysteryDungeon:Meowth": {
+        "NAMES": [
+            "피카츄"
+        ]
+    },
+    "mysteryDungeon:Psyduck": {
+        "NAMES": [
+            "피카츄"
+        ]
+    },
+    "mysteryDungeon:Machop": {
+        "NAMES": [
+            "피카츄"
+        ]
+    },
+    "mysteryDungeon:Cubone": {
+        "NAMES": [
+            "피카츄"
+        ]
+    },
+    "mysteryDungeon:Eevee": {
+        "NAMES": [
+            "피카츄"
+        ]
+    },
+    "mysteryDungeon:Chikorita": {
+        "NAMES": [
+            "피카츄"
+        ]
+    },
+    "mysteryDungeon:Cyndaquil": {
+        "NAMES": [
+            "피카츄"
+        ]
+    },
+    "mysteryDungeon:Totodile": {
+        "NAMES": [
+            "피카츄"
+        ]
+    },
+    "mysteryDungeon:Treecko": {
+        "NAMES": [
+            "피카츄"
+        ]
+    },
+    "mysteryDungeon:Torchic": {
+        "NAMES": [
+            "피카츄"
+        ]
+    },
+    "mysteryDungeon:Mudkip": {
+        "NAMES": [
+            "피카츄"
+        ]
+    },
+    "mysteryDungeon:Skitty": {
+        "NAMES": [
+            "피카츄"
+        ]
+    },
+    "Neow": {
+        "TEXT": [
+            "여기는 포켓몬들의 세계로 통하는 입구다.",
+            "모험에 나서기 전에 너에게 몇 가지 질문이 있다.",
+            "솔직하게 대답해주기 바란다. NL 준비가 되었는가?",
+            "좋아... NL 질문을 시작하겠다.",
+            "그래!", 
+            "내 팀을 선택한다.", 
+            "무작위 팀을 선택한다.",
+            "모험가를 선택해라.",
+            "파트너를 선택해라."
+        ]
+    }
+}

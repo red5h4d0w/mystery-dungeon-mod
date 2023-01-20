@@ -1,0 +1,51 @@
+{
+    "mysteryDungeon:AspearBerryPotion": {
+        "NAME": "배리열매",
+        "DESCRIPTIONS": [
+            "원하는 만큼 카드를 버립니다. 카드를 #b%s 뽑습니다."
+        ]
+    },
+    "mysteryDungeon:DireHitPotion": {
+        "NAME": "크리티컬커터",
+        "DESCRIPTIONS": [
+            "다음에 사용하는 공격카드의 피해량이 2 배가 됩니다."
+        ]
+    },
+    "mysteryDungeon:FlameOrbPotion": {
+        "NAME": "화염구슬",
+        "DESCRIPTIONS": [
+            "적 전체에게 #y화상 을 #b%s 부여합니다."
+        ]
+    },
+    "mysteryDungeon:PikachuCandyPotion": {
+        "NAME": "피카츄 사탕",
+        "DESCRIPTIONS": [
+            "#y플러스상태 또는 #y마이너스상태 가 됩니다."
+        ]
+    },
+    "mysteryDungeon:PoisonBarbPotion": {
+        "NAME": "독바늘",
+        "DESCRIPTIONS": [
+            "#y중독 을 #b%s 부여합니다."
+        ]
+    },
+    "mysteryDungeon:SitrusBerryPotion": {
+        "NAME": "자뭉열매",
+        "DESCRIPTIONS": [
+            "소멸된 카드를 #b%s 장 선택해 가져옵니다.",
+            "소멸된 카드를 #b%s 장 선택해 가져옵니다."
+        ]
+    },
+    "mysteryDungeon:XAttackPotion": {
+        "NAME": "플러스 파워",
+        "DESCRIPTIONS": [
+            "#y풀죽음 #b%s 장을 얻습니다. 이번 턴 동안 그 카드의 비용이 0이 됩니다."
+        ]
+    },
+    "mysteryDungeon:XSpAttackPotion": {
+        "NAME": "스페셜 업",
+        "DESCRIPTIONS": [
+            "모든 구체 슬롯에 #y전기 를 #b1 번 영창합니다."
+        ]
+    }
+}
