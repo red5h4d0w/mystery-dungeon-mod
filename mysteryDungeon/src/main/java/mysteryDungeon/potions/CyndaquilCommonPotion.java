@@ -15,7 +15,7 @@ import mysteryDungeon.pokemons.Charmander;
 
 public class CyndaquilCommonPotion extends PokemonPotion {
 
-    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("CyndaquilCommonRelic");
+    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(CyndaquilCommonPotion.class.getSimpleName());
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
     
     public static final String NAME = potionStrings.NAME;
