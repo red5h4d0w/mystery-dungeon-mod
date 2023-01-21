@@ -18,6 +18,7 @@ import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.interfaces.onSpendGoldInterface;
 import mysteryDungeon.powers.FreeSpendingThisTurnPower;
+import mysteryDungeon.relics.AmuletCoinRelic;
 
 public class SpendGoldAction extends AbstractGameAction {
 
@@ -25,11 +26,22 @@ public class SpendGoldAction extends AbstractGameAction {
 
     public int goldAmount;
 
+    private boolean avoidable;
+
     public SpendGoldAction(int goldAmount) {
+        this(goldAmount, true);
+    }
+
+    public SpendGoldAction(int goldAmount, boolean avoidable) {
         this.goldAmount = goldAmount;
+        this.avoidable = avoidable;
     }
   
     public void update() {
+        if (AbstractDungeon.player.hasRelic(AmuletCoinRelic.ID) && avoidable) {
+            isDone = true;
+            return;
+        }
         if (AbstractDungeon.player.hasPower(FreeSpendingThisTurnPower.POWER_ID)) {
             addToTop(new ReducePowerAction(AbstractDungeon.player, AbstractDungeon.player, AbstractDungeon.player.getPower(FreeSpendingThisTurnPower.POWER_ID), 1));
             isDone = true;

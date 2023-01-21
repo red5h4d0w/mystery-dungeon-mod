@@ -10,6 +10,7 @@ import basemod.abstracts.CustomCard;
 import mysteryDungeon.actions.SimpleAction;
 import mysteryDungeon.interfaces.AtStartOfTurnPostDrawInterface;
 import mysteryDungeon.powers.FreeSpendingThisTurnPower;
+import mysteryDungeon.relics.AmuletCoinRelic;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
@@ -104,6 +105,9 @@ public abstract class PokemonCard extends CustomCard implements AtStartOfTurnPos
     }
 
     public boolean canSpend(int spendAmount) {
+        if(AbstractDungeon.player.hasRelic(AmuletCoinRelic.ID)) {
+            return true;
+        }
         if(spendAmount>0 && !AbstractDungeon.player.hasPower(FreeSpendingThisTurnPower.POWER_ID)) {
             return !(spendAmount>AbstractDungeon.player.gold);
         }
