@@ -20,7 +20,8 @@
     "mysteryDungeon:ElixirPotion": {
         "NAME": "Elixir",
         "DESCRIPTIONS": [
-            "Gain [E] [E] [E]. Add 2 Burn cards to your hand."
+            "Gain [E] [E] [E]. Add 2 #yBurn  to your hand.",
+            "Gain [E] [E] [E] [E] [E] [E]. Add 4 #yBurn to your hand."
         ]
     },
     "mysteryDungeon:FlameOrbPotion": {
