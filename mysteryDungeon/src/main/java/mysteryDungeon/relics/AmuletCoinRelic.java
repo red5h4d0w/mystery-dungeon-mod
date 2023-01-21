@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonRelic;
 import mysteryDungeon.actions.SpendGoldAction;
+import mysteryDungeon.pokemons.Meowth;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
@@ -22,13 +23,14 @@ public class AmuletCoinRelic extends PokemonRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("big-root.png"));
 
     public AmuletCoinRelic() {
-        super(ID, IMG, OUTLINE, RelicTier.SPECIAL, LandingSound.CLINK);
+        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
+        cardColor = Meowth.CARD_COLOR;
     }
 
     @Override
     public void atTurnStart() {
         super.atTurnStart();
-        addToBot(new SpendGoldAction(20));
+        addToBot(new SpendGoldAction(20, false));
     }
 
     // Description
