@@ -44,7 +44,7 @@
     "mysteryDungeon:MagoBerryPotion": {
         "NAME": "Mago Berry",
         "DESCRIPTIONS": [
-            "Heal #b20 HP. Gain #b4 #yPoison."
+            "Heal #b%1$s HP. Gain #b%2$s #yPoison."
         ]
     },
     "mysteryDungeon:MeowthCandyPotion": {

@@ -80,6 +80,6 @@ public class MagoBerryPotion extends PokemonPotion {
     }
 
     public void updateDescription() {
-        description = String.format(DESCRIPTIONS[0], potency);
+        description = String.format(DESCRIPTIONS[0], potency, potency/5);
     }
 }
