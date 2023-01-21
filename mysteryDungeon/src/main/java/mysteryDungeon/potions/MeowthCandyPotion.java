@@ -14,7 +14,7 @@ import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.actions.SpendGoldAction;
 import mysteryDungeon.pokemons.Meowth;
 
-public class MeowthUncommonPotion extends PokemonPotion {
+public class MeowthCandyPotion extends PokemonPotion {
 
     public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("MeowthUncommonPotion");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
@@ -24,9 +24,9 @@ public class MeowthUncommonPotion extends PokemonPotion {
 
     public static final String IMG_STRING = "aspear-berry.png";
 
-    public MeowthUncommonPotion() {
+    public MeowthCandyPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java
-        super(NAME, POTION_ID, PotionRarity.UNCOMMON, IMG_STRING);
+        super(NAME, POTION_ID, PotionRarity.COMMON, IMG_STRING);
         
         // Potency is the damage/magic number equivalent of potions.
         potency = getPotency();
@@ -67,7 +67,7 @@ public class MeowthUncommonPotion extends PokemonPotion {
 
     @Override
     public AbstractPotion makeCopy() {
-        return new MeowthUncommonPotion();
+        return new MeowthCandyPotion();
     }
 
     // This is your potency.

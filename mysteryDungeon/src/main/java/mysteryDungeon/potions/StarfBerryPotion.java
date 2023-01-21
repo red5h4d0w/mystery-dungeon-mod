@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.pokemons.Totodile;
 
-public class TotodileCommonPotion extends PokemonPotion {
+public class StarfBerryPotion extends PokemonPotion {
 
     public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("TotodileCommonPotion");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
@@ -23,7 +23,7 @@ public class TotodileCommonPotion extends PokemonPotion {
 
     public static final String IMG_STRING = "flame-orb.png";
 
-    public TotodileCommonPotion() {
+    public StarfBerryPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java
         super(NAME, POTION_ID, PotionRarity.UNCOMMON, IMG_STRING);
         
@@ -64,7 +64,7 @@ public class TotodileCommonPotion extends PokemonPotion {
     
     @Override
     public AbstractPotion makeCopy() {
-        return new TotodileCommonPotion();
+        return new StarfBerryPotion();
     }
 
     // This is your potency.
