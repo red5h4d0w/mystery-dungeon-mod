@@ -3,19 +3,22 @@ package mysteryDungeon.relics;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonRelic;
-import mysteryDungeon.pokemons.Totodile;
+import mysteryDungeon.actions.EruptionAction;
+import mysteryDungeon.actions.SpendGoldAction;
+import mysteryDungeon.pokemons.Cyndaquil;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
-public class SplashPlateRelic extends PokemonRelic {
-    public static final String ID = MysteryDungeon.makeID(SplashPlateRelic.class.getSimpleName());
+public class FlamePlateRelic extends PokemonRelic {
+    public static final String ID = MysteryDungeon.makeID(FlamePlateRelic.class.getSimpleName());
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;
@@ -23,26 +26,26 @@ public class SplashPlateRelic extends PokemonRelic {
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("big-root.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("big-root.png"));
 
-    private boolean used;
-
-    public SplashPlateRelic() {
+    public FlamePlateRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
-        cardColor = Totodile.CARD_COLOR;
-    }
-
-    @Override
-    public void onEvokeOrb(AbstractOrb ammo) {
-        super.onEvokeOrb(ammo);
-        if(!used) {
-            addToBot(new GainEnergyAction(1));
-            used = true;
-        }
+        cardColor = Cyndaquil.CARD_COLOR;
     }
 
     @Override
     public void atTurnStart() {
         super.atTurnStart();
-        used = false;
+        addToBot(new GainEnergyAction(1));
+    }
+
+    @Override
+    public void onPlayerEndTurn() {
+        super.onPlayerEndTurn();
+        for(AbstractMonster m: AbstractDungeon.getMonsters().monsters) {
+            if(!m.isDeadOrEscaped()) {
+                addToBot(new EruptionAction(m));
+            }
+        }
+        
     }
 
     // Description
