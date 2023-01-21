@@ -15,7 +15,7 @@ import mysteryDungeon.pokemons.Squirtle;
 
 public class AspearBerryPotion extends PokemonPotion {
 
-    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("AspearBerryPotion");
+    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(AspearBerryPotion.class.getSimpleName());
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
     
     public static final String NAME = potionStrings.NAME;
