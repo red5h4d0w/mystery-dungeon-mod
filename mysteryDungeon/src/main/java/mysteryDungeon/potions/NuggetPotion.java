@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.potions.AbstractPotion;
 import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.pokemons.Meowth;
 
-public class MeowthCommonPotion extends PokemonPotion {
+public class NuggetPotion extends PokemonPotion {
 
     public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("MeowthCommonPotion");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
@@ -20,7 +20,7 @@ public class MeowthCommonPotion extends PokemonPotion {
 
     public static final String IMG_STRING = "aspear-berry.png";
 
-    public MeowthCommonPotion() {
+    public NuggetPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java
         super(NAME, POTION_ID, PotionRarity.COMMON, IMG_STRING);
         
@@ -45,7 +45,7 @@ public class MeowthCommonPotion extends PokemonPotion {
     
     @Override
     public AbstractPotion makeCopy() {
-        return new MeowthCommonPotion();
+        return new NuggetPotion();
     }
 
     // This is your potency.
