@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonRelic;
 import mysteryDungeon.actions.EruptionAction;
-import mysteryDungeon.actions.SpendGoldAction;
 import mysteryDungeon.pokemons.Cyndaquil;
 import mysteryDungeon.util.TextureLoader;
 
