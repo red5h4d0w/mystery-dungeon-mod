@@ -13,7 +13,7 @@ import mysteryDungeon.powers.BurnPower;
 import mysteryDungeon.powers.NaturePowerMountainPower;
 import mysteryDungeon.pokemons.Charmander;
 
-public class CyndaquilCommonRelic extends PokemonPotion {
+public class CyndaquilCommonPotion extends PokemonPotion {
 
     public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("CyndaquilCommonRelic");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
@@ -23,7 +23,7 @@ public class CyndaquilCommonRelic extends PokemonPotion {
 
     public static final String IMG_STRING = "flame-orb.png";
 
-    public CyndaquilCommonRelic() {
+    public CyndaquilCommonPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java
         super(NAME, POTION_ID, PotionRarity.UNCOMMON, IMG_STRING);
         
@@ -63,7 +63,7 @@ public class CyndaquilCommonRelic extends PokemonPotion {
     
     @Override
     public AbstractPotion makeCopy() {
-        return new CyndaquilCommonRelic();
+        return new CyndaquilCommonPotion();
     }
 
     // This is your potency.
