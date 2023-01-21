@@ -303,7 +303,7 @@
     },
     "mysteryDungeon:CharmanderHeatCrash": {
         "NAME": "히트스탬프",
-        "DESCRIPTION": "mysterydungeon:화상 을 !M! 부여합니다. NL 적이 죽을 경우 적 전체에게  mysterydungeon:화상 만큼 피해를 줍니다. NL 소멸",
+        "DESCRIPTION": "mysterydungeon:화상 을 !M! 부여합니다. NL 적이 죽을 경우 적 전체에게 mysterydungeon:화상 만큼 피해를 줍니다. NL 소멸",
         "UPGRADE_DESCRIPTION": "mysterydungeon:화상 을 !M! 부여합니다. NL 적이 죽을 경우 적 전체에게 mysterydungeon:화상 만큼 피해를 줍니다"
     },
     "mysteryDungeon:CharmanderHeatWave": {
