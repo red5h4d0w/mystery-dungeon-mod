@@ -378,7 +378,7 @@
     },
     "mysteryDungeon:ChikoritaConfide": {
         "NAME": "Confidence",
-        "DESCRIPTION": "Infligez !M! de Faiblesse à TOUS les ennemis. NL Infligez !M! mysterydungeon:Perte_d'Évasion à TOUS les ennemis. NL Épuisement."
+        "DESCRIPTION": "Infligez !M! de Faiblesse à TOUS les ennemis. NL Infligez !M! mysterydungeon:Baisse_d'Évasion à TOUS les ennemis. NL Épuisement."
     },
     "mysteryDungeon:ChikoritaCut": {
         "NAME": "Coupe",
