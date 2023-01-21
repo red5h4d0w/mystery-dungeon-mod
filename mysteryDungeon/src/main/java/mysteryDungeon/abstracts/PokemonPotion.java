@@ -2,11 +2,14 @@ package mysteryDungeon.abstracts;
 
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 
 import basemod.ReflectionHacks;
 import basemod.abstracts.CustomPotion;
 import mysteryDungeon.MysteryDungeon;
+import mysteryDungeon.powers.FreeSpendingThisTurnPower;
+import mysteryDungeon.relics.AmuletCoinRelic;
 import mysteryDungeon.util.TextureLoader;
 
 public abstract class PokemonPotion extends CustomPotion {
@@ -22,4 +25,14 @@ public abstract class PokemonPotion extends CustomPotion {
     }
 
     public abstract void updateDescription();
+
+    public boolean canSpend(int spendAmount) {
+        if(AbstractDungeon.player.hasRelic(AmuletCoinRelic.ID)) {
+            return true;
+        }
+        if(spendAmount>0 && !AbstractDungeon.player.hasPower(FreeSpendingThisTurnPower.POWER_ID)) {
+            return !(spendAmount>AbstractDungeon.player.gold);
+        }
+        return true;
+    }
 }
