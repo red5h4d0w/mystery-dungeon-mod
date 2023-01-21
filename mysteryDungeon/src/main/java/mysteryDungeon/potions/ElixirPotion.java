@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom.RoomPhase;
 import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.pokemons.Cyndaquil;
 
-public class LeppaBerry extends PokemonPotion {
+public class ElixirPotion extends PokemonPotion {
 
     public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("CyndaquilUncommonPotion");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
@@ -24,7 +24,7 @@ public class LeppaBerry extends PokemonPotion {
 
     public static final String IMG_STRING = "aspear-berry.png";
 
-    public LeppaBerry() {
+    public ElixirPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java
         super(NAME, POTION_ID, PotionRarity.UNCOMMON, IMG_STRING);
         
@@ -52,7 +52,7 @@ public class LeppaBerry extends PokemonPotion {
 
     @Override
     public AbstractPotion makeCopy() {
-        return new LeppaBerry();
+        return new ElixirPotion();
     }
 
     // This is your potency.
