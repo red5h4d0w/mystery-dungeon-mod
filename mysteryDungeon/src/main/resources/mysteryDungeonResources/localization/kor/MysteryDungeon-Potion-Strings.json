@@ -5,10 +5,23 @@
             "원하는 만큼 카드를 버립니다. 카드를 #b%s 뽑습니다."
         ]
     },
+    "mysteryDungeon:AuxPowerGuardPotion": {
+        "NAME": "Aux Power Guard",
+        "DESCRIPTIONS": [
+            "Gain #b%s #yfocus."
+        ]
+    },
     "mysteryDungeon:DireHitPotion": {
         "NAME": "크리티컬커터",
         "DESCRIPTIONS": [
             "다음에 사용하는 공격카드의 피해량이 2 배가 됩니다."
+        ]
+    },
+    "mysteryDungeon:ElixirPotion": {
+        "NAME": "Elixir",
+        "DESCRIPTIONS": [
+            "Gain [E] [E] [E]. Add 2 #yBurn  to your hand.",
+            "Gain [E] [E] [E] [E] [E] [E]. Add 4 #yBurn to your hand."
         ]
     },
     "mysteryDungeon:FlameOrbPotion": {
@@ -32,7 +45,19 @@
     "mysteryDungeon:MagoBerryPotion": {
         "NAME": "Mago Berry",
         "DESCRIPTIONS": [
-            "Heal #b20 HP. Gain #b4 #yPoison."
+            "Heal #b%1$s HP. Gain #b%2$s #yPoison."
+        ]
+    },
+    "mysteryDungeon:MeowthCandyPotion": {
+        "NAME": "Meowth Candy",
+        "DESCRIPTIONS": [
+            "Spend #b20 #ygold. Create 2 random potion effects."
+        ]
+    },
+    "mysteryDungeon:NuggetPotion": {
+        "NAME": "Nugget",
+        "DESCRIPTIONS": [
+            "Gain #b20 #ygold"
         ]
     },
     "mysteryDungeon:PikachuCandyPotion": {
@@ -47,11 +72,23 @@
             "#y중독 을 #b%s 부여합니다."
         ]
     },
+    "mysteryDungeon:RawstBerryPotion": {
+        "NAME": "Rawst Berry",
+        "DESCRIPTIONS": [
+            "Apply #b%s #yBurn. Burn stacks don't decrease for #b1 turn."
+        ]
+    },
     "mysteryDungeon:SitrusBerryPotion": {
         "NAME": "자뭉열매",
         "DESCRIPTIONS": [
             "소멸된 카드를 #b%s 장 선택해 가져옵니다.",
             "소멸된 카드를 #b%s 장 선택해 가져옵니다."
+        ]
+    },
+    "mysteryDungeon:StarfBerryPotion": {
+        "NAME": "Starf Berry",
+        "DESCRIPTIONS": [
+            "Gain #b%s #yVigor."
         ]
     },
     "mysteryDungeon:XAttackPotion": {
