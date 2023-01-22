@@ -32,7 +32,7 @@
         "NAME": "Black Glasses",
         "FLAVOR": "It's a pair of shady- looking glasses that boost the power of the holder's Dark-type moves.",
         "DESCRIPTIONS": [
-            "At the start of each turne, Deal damage to ALL enemies euqivalent to how much Strength they have."
+            "At the start of each turn, deal damage to ALL enemies equal to their #yStrength."
         ]
     },
     "mysteryDungeon:BraveExplorerRelic": {
@@ -78,10 +78,10 @@
         ]
     },
     "mysteryDungeon:FlamePlateRelic": {
-        "NAME": "FlamePlate",
+        "NAME": "Flame Plate",
         "FLAVOR": "This stone tablet is imbued with the essence of fire and boosts the power of the holder's Fire-type moves.",
         "DESCRIPTIONS": [
-            "Gain [E] at the start of your turn. NL At the end of your turn, cause an eruption on ALL enemies."
+            "Gain [E] at the start of your turn. NL At the end of your turn, trigger an #yEruption on ALL enemies."
         ]
     },
     "mysteryDungeon:GrassySeedRelic": {
@@ -176,10 +176,10 @@
         ]
     },
     "mysteryDungeon:SplashPlateRelic": {
-        "NAME": "SplashPlate",
+        "NAME": "Splash Plate",
         "FLAVOR": "This stone tablet is imbued with the essence of water and boosts the power of the holder's Water-type moves.",
         "DESCRIPTIONS": [
-            "The first time you evoke an orb each turn, gain [E]"
+            "The first time you evoke an #yOrb each turn, gain [E] ."
         ]
     },
     "mysteryDungeon:TimidExplorerRelic": {
@@ -207,7 +207,7 @@
         "NAME": "Water Gem",
         "FLAVOR": "This gem is imbued with the essence of water and will boost the power of a Water-type moves, but only once.",
         "DESCRIPTIONS": [
-            "When you deal more then #b20 attack damage in a single hit, deal #b5 damage to ALL enemies"
+            "When you deal more than #b20 attack damage in a single hit, deal #b5 damage to ALL enemies."
         ]
     }
 }
