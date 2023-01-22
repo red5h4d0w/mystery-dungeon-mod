@@ -14,11 +14,25 @@
             "Vous receverez une relique dépendant de votre nature."
         ]
     },
+    "mysteryDungeon:AmuletCoinRelic": {
+        "NAME": "Amulet Coin",
+        "FLAVOR": "It doubles any prize money received as long as the holder joins the battle at least once.",
+        "DESCRIPTIONS": [
+            "Cards no longer cost you money in combat. At the start of your turn, spend #b20 gold."
+        ]
+    },
     "mysteryDungeon:BigRootRelic": {
         "NAME": "Grosse Racine",
         "FLAVOR": "Qu'est-ce que c'est ?",
         "DESCRIPTIONS": [
             "Quand vous êtes à #b70% de #yPV ou moins, gagnez #ySoin."
+        ]
+    },
+    "mysteryDungeon:BlackGlassesRelic": {
+        "NAME": "Black Glasses",
+        "FLAVOR": "It's a pair of shady- looking glasses that boost the power of the holder's Dark-type moves.",
+        "DESCRIPTIONS": [
+            "At the start of each turne, Deal damage to ALL enemies euqivalent to how much Strength they have."
         ]
     },
     "mysteryDungeon:BraveExplorerRelic": {
@@ -56,11 +70,18 @@
             "Lorsque vous recevez un #yDébuff, gagnez #b2 #yd'Armure au tour suivant."
         ]
     },
-    "mysteryDungeon:FlameOrbRelic": {
-        "NAME": "Orbe Flamme",
-        "FLAVOR": "Un orbe bizarre qui brûle son porteur durant le combat.",
+    "mysteryDungeon:FireGemRelic": {
+        "NAME": "Fire Gem",
+        "FLAVOR": "This gem is imbued with the essence of fire and will boost the power of a Fire-type moves, but only once.",
         "DESCRIPTIONS": [
-            "Au début de chaque combat, appliquez #b9 #yBrûlures à TOUS les ennemis."
+            "At the start of each combat, apply #b10 #yBurn to ALL enemies."
+        ]
+    },
+    "mysteryDungeon:FlamePlateRelic": {
+        "NAME": "FlamePlate",
+        "FLAVOR": "This stone tablet is imbued with the essence of fire and boosts the power of the holder's Fire-type moves.",
+        "DESCRIPTIONS": [
+            "Gain [E] at the start of your turn. NL At the end of your turn, cause an eruption on ALL enemies."
         ]
     },
     "mysteryDungeon:GrassySeedRelic": {
@@ -154,6 +175,13 @@
             "Au début de votre tour, #yScrutez #b1 carte."
         ]
     },
+    "mysteryDungeon:SplashPlateRelic": {
+        "NAME": "SplashPlate",
+        "FLAVOR": "This stone tablet is imbued with the essence of water and boosts the power of the holder's Water-type moves.",
+        "DESCRIPTIONS": [
+            "The first time you evoke an orb each turn, gain [E]"
+        ]
+    },
     "mysteryDungeon:TimidExplorerRelic": {
         "NAME": "Explorateur Timide",
         "FLAVOR": "Qu'est-ce que c'est ?",
@@ -173,6 +201,13 @@
         "FLAVOR": "Cet encens a un arôme curieux qui augmente la puissance des capacités de type Eau.",
         "DESCRIPTIONS": [
             "Durant les combats, les cartes que vous créez sont #yaméliorées."
+        ]
+    },
+    "mysteryDungeon:WaterGemRelic": {
+        "NAME": "Water Gem",
+        "FLAVOR": "This gem is imbued with the essence of water and will boost the power of a Water-type moves, but only once.",
+        "DESCRIPTIONS": [
+            "When you deal more then #b20 attack damage in a single hit, deal #b5 damage to ALL enemies"
         ]
     }
 }
