@@ -20,8 +20,8 @@
     "mysteryDungeon:ElixirPotion": {
         "NAME": "Elixir",
         "DESCRIPTIONS": [
-            "Gain [E] [E] [E] . Add 2 #yBurn to your hand.",
-            "Gain [E] [E] [E] [E] [E] [E] . Add 4 #yBurn to your hand."
+            "Gain [E] [E] [E] . Add #b2 #yBurn to your hand.",
+            "Gain [E] [E] [E] [E] [E] [E] . Add #b4 #yBurn to your hand."
         ]
     },
     "mysteryDungeon:FlameOrbPotion": {
@@ -51,13 +51,13 @@
     "mysteryDungeon:MeowthCandyPotion": {
         "NAME": "Meowth Candy",
         "DESCRIPTIONS": [
-            "Spend #b20 #ygold. Create 2 random potion effects."
+            "Spend #b20 gold. Do the effects of #b2 random #yPotions."
         ]
     },
     "mysteryDungeon:NuggetPotion": {
         "NAME": "Nugget",
         "DESCRIPTIONS": [
-            "Gain #b20 #ygold"
+            "Gain #b20 gold."
         ]
     },
     "mysteryDungeon:PikachuCandyPotion": {
@@ -75,7 +75,7 @@
     "mysteryDungeon:RawstBerryPotion": {
         "NAME": "Rawst Berry",
         "DESCRIPTIONS": [
-            "Apply #b%s #yBurn. Burn stacks don't decrease for #b1 turn."
+            "Apply #b%s #yBurn. Burn stacks don't decrease for #b1 turn on the target."
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {
