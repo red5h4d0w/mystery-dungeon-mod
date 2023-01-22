@@ -55,10 +55,8 @@ public class LeppaBerryPotion extends PokemonPotion {
 
     @Override
     public void use(AbstractCreature target) {
-        for(int i=0; i<potency; i++){
-            addToBot(new RetainCardsAction(target, potency));
-        }
-      }
+        addToBot(new RetainCardsAction(target, potency));
+    }
     
     @Override
     public AbstractPotion makeCopy() {
