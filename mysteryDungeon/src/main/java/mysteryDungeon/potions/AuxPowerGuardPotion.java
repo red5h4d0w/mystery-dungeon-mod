@@ -13,9 +13,9 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom.RoomPhase;
 import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.pokemons.Totodile;
 
-public class AuxPowerGardPotion extends PokemonPotion {
+public class AuxPowerGuardPotion extends PokemonPotion {
 
-    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(AuxPowerGardPotion.class.getSimpleName());
+    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(AuxPowerGuardPotion.class.getSimpleName());
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
     
     public static final String NAME = potionStrings.NAME;
@@ -23,7 +23,7 @@ public class AuxPowerGardPotion extends PokemonPotion {
 
     public static final String IMG_STRING = "aspear-berry.png";
 
-    public AuxPowerGardPotion() {
+    public AuxPowerGuardPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java
         super(NAME, POTION_ID, PotionRarity.RARE, IMG_STRING);
         
@@ -50,7 +50,7 @@ public class AuxPowerGardPotion extends PokemonPotion {
 
     @Override
     public AbstractPotion makeCopy() {
-        return new AuxPowerGardPotion();
+        return new AuxPowerGuardPotion();
     }
 
     // This is your potency.

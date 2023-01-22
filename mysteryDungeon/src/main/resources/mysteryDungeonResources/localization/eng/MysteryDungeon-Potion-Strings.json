@@ -8,7 +8,7 @@
     "mysteryDungeon:AuxPowerGuardPotion": {
         "NAME": "Aux Power Guard",
         "DESCRIPTIONS": [
-            "Gain #b%s #yfocus."
+            "Gain #b%s #yFocus."
         ]
     },
     "mysteryDungeon:DireHitPotion": {
@@ -20,8 +20,8 @@
     "mysteryDungeon:ElixirPotion": {
         "NAME": "Elixir",
         "DESCRIPTIONS": [
-            "Gain [E] [E] [E]. Add 2 #yBurn  to your hand.",
-            "Gain [E] [E] [E] [E] [E] [E]. Add 4 #yBurn to your hand."
+            "Gain [E] [E] [E] . Add 2 #yBurn to your hand.",
+            "Gain [E] [E] [E] [E] [E] [E] . Add 4 #yBurn to your hand."
         ]
     },
     "mysteryDungeon:FlameOrbPotion": {
