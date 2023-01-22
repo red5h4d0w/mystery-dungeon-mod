@@ -5,10 +5,23 @@
             "Défaussez autant de cartes de votre main que vous le souhaitez. Pigez #b%s cartes."
         ]
     },
+    "mysteryDungeon:AuxPowerGuardPotion": {
+        "NAME": "Double Extra",
+        "DESCRIPTIONS": [
+            "Gain #b%s #yfocus."
+        ]
+    },
     "mysteryDungeon:DireHitPotion": {
         "NAME": "Muscle +",
         "DESCRIPTIONS": [
             "Votre prochaine attaque infligera le double des dégâts."
+        ]
+    },
+    "mysteryDungeon:ElixirPotion": {
+        "NAME": "Elixir",
+        "DESCRIPTIONS": [
+            "Gain [E] [E] [E]. Add 2 #yBurn  to your hand.",
+            "Gain [E] [E] [E] [E] [E] [E]. Add 4 #yBurn to your hand."
         ]
     },
     "mysteryDungeon:FlameOrbPotion": {
@@ -32,7 +45,19 @@
     "mysteryDungeon:MagoBerryPotion": {
         "NAME": "Baie Mago",
         "DESCRIPTIONS": [
-            "Soignez #b20 PV. Appliquez-vous #b4 #yPoison."
+            "Heal #b%1$s HP. Gain #b%2$s #yPoison."
+        ]
+    },
+    "mysteryDungeon:MeowthCandyPotion": {
+        "NAME": "Meowth Candy",
+        "DESCRIPTIONS": [
+            "Spend #b20 #ygold. Create 2 random potion effects."
+        ]
+    },
+    "mysteryDungeon:NuggetPotion": {
+        "NAME": "Nugget",
+        "DESCRIPTIONS": [
+            "Gain #b20 #ygold"
         ]
     },
     "mysteryDungeon:PikachuCandyPotion": {
@@ -47,11 +72,23 @@
             "Appliquez #b%s de Poison à un ennemi."
         ]
     },
+    "mysteryDungeon:RawstBerryPotion": {
+        "NAME": "Rawst Berry",
+        "DESCRIPTIONS": [
+            "Apply #b%s #yBurn. Burn stacks don't decrease for #b1 turn."
+        ]
+    },
     "mysteryDungeon:SitrusBerryPotion": {
         "NAME": "Baie Sitrus",
         "DESCRIPTIONS": [
             "Ajoutez #b%s carte parmi vos cartes épuisées à votre main.",
             "Ajoutez #b%s cartes parmi vos cartes épuisées à votre main."
+        ]
+    },
+    "mysteryDungeon:StarfBerryPotion": {
+        "NAME": "Starf Berry",
+        "DESCRIPTIONS": [
+            "Gain #b%s #yVigor."
         ]
     },
     "mysteryDungeon:XAttackPotion": {
