@@ -19,7 +19,7 @@ import mysteryDungeon.pokemons.Pikachu;
 
 public class PikachuCandyPotion extends PokemonPotion {
 
-    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("PikachuCandyPotion");
+    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(PikachuCandyPotion.class.getSimpleName());
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
     
     public static final String NAME = potionStrings.NAME;

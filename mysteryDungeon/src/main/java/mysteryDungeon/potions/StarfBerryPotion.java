@@ -15,7 +15,7 @@ import mysteryDungeon.pokemons.Totodile;
 
 public class StarfBerryPotion extends PokemonPotion {
 
-    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("TotodileCommonPotion");
+    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(StarfBerryPotion.class.getSimpleName());
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
     
     public static final String NAME = potionStrings.NAME;

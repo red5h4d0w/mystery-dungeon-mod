@@ -16,7 +16,7 @@ import mysteryDungeon.pokemons.Squirtle;
 
 public class XAttackPotion extends PokemonPotion {
 
-    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("XAttackPotion");
+    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(XAttackPotion.class.getSimpleName());
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
     
     public static final String NAME = potionStrings.NAME;

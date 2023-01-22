@@ -15,7 +15,7 @@ import mysteryDungeon.pokemons.Chikorita;
 
 public class MagoBerryPotion extends PokemonPotion {
 
-    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("MagoBerryPotion");
+    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(MagoBerryPotion.class.getSimpleName());
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
     
     public static final String NAME = potionStrings.NAME;

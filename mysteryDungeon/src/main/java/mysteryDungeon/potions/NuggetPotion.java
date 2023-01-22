@@ -12,7 +12,7 @@ import mysteryDungeon.pokemons.Meowth;
 
 public class NuggetPotion extends PokemonPotion {
 
-    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("MeowthCommonPotion");
+    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(NuggetPotion.class.getSimpleName());
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
     
     public static final String NAME = potionStrings.NAME;

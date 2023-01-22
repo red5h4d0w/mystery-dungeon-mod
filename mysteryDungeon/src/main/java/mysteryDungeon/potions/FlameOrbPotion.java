@@ -15,7 +15,7 @@ import mysteryDungeon.pokemons.Charmander;
 
 public class FlameOrbPotion extends PokemonPotion {
 
-    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID("FlameOrbPotion");
+    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(FlameOrbPotion.class.getSimpleName());
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
     
     public static final String NAME = potionStrings.NAME;
