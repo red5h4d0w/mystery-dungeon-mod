@@ -11,17 +11,17 @@ import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.pokemons.Charmander;
 
 
-public class LepaBerryPotion extends PokemonPotion {
+public class LeppaBerryPotion extends PokemonPotion {
 
-    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(LepaBerryPotion.class.getSimpleName());
+    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(LeppaBerryPotion.class.getSimpleName());
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
     
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
 
-    public static final String IMG_STRING = "sitrus-berry.png";
+    public static final String IMG_STRING = "leppa-berry.png";
 
-    public LepaBerryPotion() {
+    public LeppaBerryPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java
         super(NAME, POTION_ID, PotionRarity.RARE, IMG_STRING);
         
@@ -62,7 +62,7 @@ public class LepaBerryPotion extends PokemonPotion {
     
     @Override
     public AbstractPotion makeCopy() {
-        return new LepaBerryPotion();
+        return new LeppaBerryPotion();
     }
 
     // This is your potency.
