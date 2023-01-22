@@ -24,8 +24,8 @@ public class DiscardTopOfDrawPileAction extends AbstractGameAction{
     }
 
     public DiscardTopOfDrawPileAction(int amount) {
-        super();
         this.amount = amount;
+        this.addToHandConditional = (card) -> false;
     }
 
     public DiscardTopOfDrawPileAction() {
