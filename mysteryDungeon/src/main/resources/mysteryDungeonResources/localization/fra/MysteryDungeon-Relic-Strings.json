@@ -14,11 +14,25 @@
             "Vous receverez une relique dépendant de votre nature."
         ]
     },
+    "mysteryDungeon:AmuletCoinRelic": {
+        "NAME": "Pièce Rune",
+        "FLAVOR": "Lors d'un match, si ce Pokémon en question participe au combat, les gains d'argent au final seront doublés.",
+        "DESCRIPTIONS": [
+            "Les cartes ne vous coûtent plus d'argent lors des combats. Au début de chaque tour, dépensez #b20 or."
+        ]
+    },
     "mysteryDungeon:BigRootRelic": {
         "NAME": "Grosse Racine",
         "FLAVOR": "Qu'est-ce que c'est ?",
         "DESCRIPTIONS": [
             "Quand vous êtes à #b70% de #yPV ou moins, gagnez #ySoin."
+        ]
+    },
+    "mysteryDungeon:BlackGlassesRelic": {
+        "NAME": "Lunettes Noires",
+        "FLAVOR": "Une paire de lunettes à l’aspect louche qui augmente la puissance des capacités de type Ténèbres.",
+        "DESCRIPTIONS": [
+            "Au début de votre tour, infligez des dégâts équivalents à leur #yForce à TOUS les ennemis."
         ]
     },
     "mysteryDungeon:BraveExplorerRelic": {
@@ -56,11 +70,18 @@
             "Lorsque vous recevez un #yDébuff, gagnez #b2 #yd'Armure au tour suivant."
         ]
     },
-    "mysteryDungeon:FlameOrbRelic": {
-        "NAME": "Orbe Flamme",
-        "FLAVOR": "Un orbe bizarre qui brûle son porteur durant le combat.",
+    "mysteryDungeon:FireGemRelic": {
+        "NAME": "Joyau Feu",
+        "FLAVOR": "Un joyau augmentant une fois la puissance des capacités de type Feu.",
         "DESCRIPTIONS": [
-            "Au début de chaque combat, appliquez #b9 #yBrûlures à TOUS les ennemis."
+            "Au début de chaque combat, appliquez #b10 de #yBrûlure à TOUS les ennemis."
+        ]
+    },
+    "mysteryDungeon:FlamePlateRelic": {
+        "NAME": "Plaque Flamme",
+        "FLAVOR": "Une tablette en pierre augmentant la puissance des capacités de type Feu.",
+        "DESCRIPTIONS": [
+            "Gagnez [E] au début de votre tour. NL À la fin de votre tour, déclenchez une #yÉruption sur TOUS les ennemis."
         ]
     },
     "mysteryDungeon:GrassySeedRelic": {
@@ -154,6 +175,13 @@
             "Au début de votre tour, #yScrutez #b1 carte."
         ]
     },
+    "mysteryDungeon:SplashPlateRelic": {
+        "NAME": "Plaque Hydro",
+        "FLAVOR": "Une tablette en pierre augmentant la puissance des capacités de type Eau.",
+        "DESCRIPTIONS": [
+            "La première fois que vous activez un #yOrbe chaque tour, gagnez [E] ."
+        ]
+    },
     "mysteryDungeon:TimidExplorerRelic": {
         "NAME": "Explorateur Timide",
         "FLAVOR": "Qu'est-ce que c'est ?",
@@ -173,6 +201,13 @@
         "FLAVOR": "Cet encens a un arôme curieux qui augmente la puissance des capacités de type Eau.",
         "DESCRIPTIONS": [
             "Durant les combats, les cartes que vous créez sont #yaméliorées."
+        ]
+    },
+    "mysteryDungeon:WaterGemRelic": {
+        "NAME": "Joyau Eau",
+        "FLAVOR": "Un joyau augmentant une fois la puissance des capacités de type Eau.",
+        "DESCRIPTIONS": [
+            "Lorsque que vous infligez plus de #b20 dégâts en une attaque, infligez #b5 dégâts à TOUS les ennemis."
         ]
     }
 }
