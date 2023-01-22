@@ -8,7 +8,7 @@
     "mysteryDungeon:AuxPowerGuardPotion": {
         "NAME": "Double Extra",
         "DESCRIPTIONS": [
-            "Gain #b%s #yfocus."
+            "Gagnez #b%s de #yConcentration."
         ]
     },
     "mysteryDungeon:DireHitPotion": {
@@ -18,10 +18,10 @@
         ]
     },
     "mysteryDungeon:ElixirPotion": {
-        "NAME": "Elixir",
+        "NAME": "Élixir",
         "DESCRIPTIONS": [
-            "Gain [E] [E] [E]. Add 2 #yBurn  to your hand.",
-            "Gain [E] [E] [E] [E] [E] [E]. Add 4 #yBurn to your hand."
+            "Gagnez [E] [E] [E] . Ajoutez #b2 #yBrûlures à votre main.",
+            "Gagnez [E] [E] [E] [E] [E] [E] . Ajoutez #b4 #yBrûlures à votre main."
         ]
     },
     "mysteryDungeon:FlameOrbPotion": {
@@ -45,19 +45,19 @@
     "mysteryDungeon:MagoBerryPotion": {
         "NAME": "Baie Mago",
         "DESCRIPTIONS": [
-            "Heal #b%1$s HP. Gain #b%2$s #yPoison."
+            "Soignez #b%1$s PV. Appliquez-vous #b%2$s de #yPoison."
         ]
     },
     "mysteryDungeon:MeowthCandyPotion": {
-        "NAME": "Meowth Candy",
+        "NAME": "Bonbon Miaouss",
         "DESCRIPTIONS": [
-            "Spend #b20 #ygold. Create 2 random potion effects."
+            "Dépensez #b20 or. Appliquez les effets de #b2 #yPotions aléatoires."
         ]
     },
     "mysteryDungeon:NuggetPotion": {
-        "NAME": "Nugget",
+        "NAME": "Pépite",
         "DESCRIPTIONS": [
-            "Gain #b20 #ygold"
+            "Gagnez #b20 or."
         ]
     },
     "mysteryDungeon:PikachuCandyPotion": {
@@ -73,9 +73,9 @@
         ]
     },
     "mysteryDungeon:RawstBerryPotion": {
-        "NAME": "Rawst Berry",
+        "NAME": "Baie Fraive",
         "DESCRIPTIONS": [
-            "Apply #b%s #yBurn. Burn stacks don't decrease for #b1 turn."
+            "Appliquez #b%s de #yBrûlure. La #yBrûlure de la cible ne diminuera pas pendant #b1 tour."
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {
@@ -86,9 +86,9 @@
         ]
     },
     "mysteryDungeon:StarfBerryPotion": {
-        "NAME": "Starf Berry",
+        "NAME": "Baie Frista",
         "DESCRIPTIONS": [
-            "Gain #b%s #yVigor."
+            "Gagnez #b%s de #yVigueur."
         ]
     },
     "mysteryDungeon:XAttackPotion": {
