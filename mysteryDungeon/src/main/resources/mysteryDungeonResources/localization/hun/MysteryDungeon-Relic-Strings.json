@@ -14,11 +14,25 @@
             "You will receive a relic that depends on your nature."
         ]
     },
+    "mysteryDungeon:AmuletCoinRelic": {
+        "NAME": "Amulet Coin",
+        "FLAVOR": "It doubles any prize money received as long as the holder joins the battle at least once.",
+        "DESCRIPTIONS": [
+            "Cards no longer cost you money in combat. At the start of your turn, spend #b20 gold."
+        ]
+    },
     "mysteryDungeon:BigRootRelic": {
         "NAME": "Big Root",
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
             "Whenever you are at #b70% or less of your max HP, gain #yRecovery."
+        ]
+    },
+    "mysteryDungeon:BlackGlassesRelic": {
+        "NAME": "Black Glasses",
+        "FLAVOR": "It's a pair of shady- looking glasses that boost the power of the holder's Dark-type moves.",
+        "DESCRIPTIONS": [
+            "At the start of each turn, deal damage to ALL enemies equal to their #yStrength."
         ]
     },
     "mysteryDungeon:BraveExplorerRelic": {
@@ -56,11 +70,18 @@
             "When you receive a #yDebuff, gain #b2 Block on the following turn."
         ]
     },
-    "mysteryDungeon:FlameOrbRelic": {
-        "NAME": "Flame Orb",
-        "FLAVOR": "It's a bizarre orb that will afflict the holder with a burn during battle.",
+    "mysteryDungeon:FireGemRelic": {
+        "NAME": "Fire Gem",
+        "FLAVOR": "This gem is imbued with the essence of fire and will boost the power of a Fire-type moves, but only once.",
         "DESCRIPTIONS": [
-            "At the start of each combat, apply #b9 #yBurn to ALL enemies."
+            "At the start of each combat, apply #b10 #yBurn to ALL enemies."
+        ]
+    },
+    "mysteryDungeon:FlamePlateRelic": {
+        "NAME": "Flame Plate",
+        "FLAVOR": "This stone tablet is imbued with the essence of fire and boosts the power of the holder's Fire-type moves.",
+        "DESCRIPTIONS": [
+            "Gain [E] at the start of your turn. NL At the end of your turn, trigger an #yEruption on ALL enemies."
         ]
     },
     "mysteryDungeon:GrassySeedRelic": {
@@ -154,6 +175,13 @@
             "At the start of your turn, #yScry #b1."
         ]
     },
+    "mysteryDungeon:SplashPlateRelic": {
+        "NAME": "Splash Plate",
+        "FLAVOR": "This stone tablet is imbued with the essence of water and boosts the power of the holder's Water-type moves.",
+        "DESCRIPTIONS": [
+            "The first time you evoke an #yOrb each turn, gain [E] ."
+        ]
+    },
     "mysteryDungeon:TimidExplorerRelic": {
         "NAME": "Timid Explorer",
         "FLAVOR": "What is this?",
@@ -173,6 +201,13 @@
         "FLAVOR": "This incense has a curious aroma that boosts the power of Water-type moves.",
         "DESCRIPTIONS": [
             "During combat, ALL cards you create are #yupgraded."
+        ]
+    },
+    "mysteryDungeon:WaterGemRelic": {
+        "NAME": "Water Gem",
+        "FLAVOR": "This gem is imbued with the essence of water and will boost the power of a Water-type moves, but only once.",
+        "DESCRIPTIONS": [
+            "When you deal more than #b20 attack damage in a single hit, deal #b5 damage to ALL enemies."
         ]
     }
 }
