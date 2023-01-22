@@ -1,39 +1,39 @@
 {
     "mysteryDungeon:AspearBerryPotion": {
-        "NAME": "Aspear Berry",
+        "NAME": "利木果",
         "DESCRIPTIONS": [
-            "Discard any number of cards from your hand. Draw #b%s cards."
+            "从手牌中丢弃任意数量的牌。抽 #b%s 张牌。"
         ]
     },
     "mysteryDungeon:AuxPowerGuardPotion": {
         "NAME": "Aux Power Guard",
         "DESCRIPTIONS": [
-            "Gain #b%s #yfocus."
+            "Gain #b%s #yFocus."
         ]
     },
     "mysteryDungeon:DireHitPotion": {
-        "NAME": "Dire Hit",
+        "NAME": "要害攻击",
         "DESCRIPTIONS": [
-            "Your next attack deals double damage."
+            "下张攻击牌造成双倍伤害。"
         ]
     },
     "mysteryDungeon:ElixirPotion": {
         "NAME": "Elixir",
         "DESCRIPTIONS": [
-            "Gain [E] [E] [E]. Add 2 #yBurn  to your hand.",
-            "Gain [E] [E] [E] [E] [E] [E]. Add 4 #yBurn to your hand."
+            "Gain [E] [E] [E] . Add #b2 #yBurn to your hand.",
+            "Gain [E] [E] [E] [E] [E] [E] . Add #b4 #yBurn to your hand."
         ]
     },
     "mysteryDungeon:FlameOrbPotion": {
-        "NAME": "Flame Orb",
+        "NAME": "灼烧充能球",
         "DESCRIPTIONS": [
-            "Apply #b%s #yBurn to ALL enemies."
+            "对所有敌人施加 #b%s #y灼烧 。"
         ]
     },
     "mysteryDungeon:GrassGemPotion": {
         "NAME": "Grass Gem",
         "DESCRIPTIONS": [
-            "Your next attack deals #b%s more damage."
+            "Your next attack deals #b%s damage."
         ]
     },
     "mysteryDungeon:LepaBerryPotion": {
@@ -51,38 +51,38 @@
     "mysteryDungeon:MeowthCandyPotion": {
         "NAME": "Meowth Candy",
         "DESCRIPTIONS": [
-            "Spend #b20 #ygold. Create 2 random potion effects."
+            "Spend #b20 gold. Do the effects of #b2 random #yPotions."
         ]
     },
     "mysteryDungeon:NuggetPotion": {
         "NAME": "Nugget",
         "DESCRIPTIONS": [
-            "Gain #b20 #ygold"
+            "Gain #b20 gold."
         ]
     },
     "mysteryDungeon:PikachuCandyPotion": {
-        "NAME": "Pikachu Candy",
+        "NAME": "皮卡丘的糖果",
         "DESCRIPTIONS": [
-            "Enter #yPositive or #yNegative #yStance."
+            "进入正极态或负极态。"
         ]
     },
     "mysteryDungeon:PoisonBarbPotion": {
-        "NAME": "PoisonBarb",
+        "NAME": "毒针",
         "DESCRIPTIONS": [
-            "Apply #b%s #yPoison to an enemy."
+            "施加 #b%s #y中毒 。"
         ]
     },
     "mysteryDungeon:RawstBerryPotion": {
         "NAME": "Rawst Berry",
         "DESCRIPTIONS": [
-            "Apply #b%s #yBurn. Burn stacks don't decrease for #b1 turn."
+            "Apply #b%s #yBurn. Burn stacks don't decrease for #b1 turn on the target."
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {
-        "NAME": "Sitrus Berry",
+        "NAME": "文柚果",
         "DESCRIPTIONS": [
-            "Put #b%s card from your exhaust pile in your hand.",
-            "Put #b%s cards from your exhaust pile in your hand."
+            "将 #b%s 张牌从消耗牌堆置入手牌。",
+            "将 #b%s 张牌从消耗牌堆置入手牌。"
         ]
     },
     "mysteryDungeon:StarfBerryPotion": {
@@ -92,15 +92,15 @@
         ]
     },
     "mysteryDungeon:XAttackPotion": {
-        "NAME": "X Attack",
+        "NAME": "力量强化",
         "DESCRIPTIONS": [
-            "Add #b%s #yFlinch to your hand. They cost #b0 this turn."
+            "向手牌添加 #b%s #y畏缩 。本回合 #b0 费。"
         ]
     },
     "mysteryDungeon:XSpAttackPotion": {
-        "NAME": "X Sp. Attack",
+        "NAME": "电能过载",
         "DESCRIPTIONS": [
-            "Fill all your Orb slots with #yLightning."
+            "向你的充能球栏位填满 #y闪电 。"
         ]
     }
 }
