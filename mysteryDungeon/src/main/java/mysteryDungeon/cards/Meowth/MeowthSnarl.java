@@ -35,6 +35,7 @@ public class MeowthSnarl extends PokemonCard {
     private static final int COST = 1;
     private static final int BLOCK = 12;
     private static final int UPGRADE_PLUS_BLOCK = 4;
+    private static final int BASE_MAGIC_NUMBER = 8;
 
 
     // /STAT DECLARATION/
@@ -42,13 +43,15 @@ public class MeowthSnarl extends PokemonCard {
     public MeowthSnarl() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseBlock = BLOCK;
+        baseMagicNumber = BASE_MAGIC_NUMBER;
+        magicNumber = baseMagicNumber;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
-        addToBot(new GainBlockAction(m,p, 8));
+        addToBot(new GainBlockAction(m, p, magicNumber));
     }
 
     // Upgraded stats.
