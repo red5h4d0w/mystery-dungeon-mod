@@ -1298,8 +1298,7 @@
     },
     "mysteryDungeon:TotodileEndure": {
         "NAME": "Endure",
-        "DESCRIPTION": "If you take damage, channel !M! Frost.",
-        "UPGRADE_DESCRIPTION": "Innate. NL If you take damage, channel !M! Frost."
+        "DESCRIPTION": "The next !M! times you would take damage, do not take any and discard the top 6 cards of your draw pile."
     },
     "mysteryDungeon:TotodileExplorerForm": {
         "NAME": "Explorer Form",
