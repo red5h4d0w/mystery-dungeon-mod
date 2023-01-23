@@ -9,8 +9,8 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.NonStackablePower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -21,7 +21,7 @@ import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class NextTurnVigorPower extends PokemonTwoAmountPower implements CloneablePowerInterface {
+public class NextTurnVigorPower extends PokemonTwoAmountPower implements CloneablePowerInterface, NonStackablePower {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID(NextTurnVigorPower.class.getSimpleName());
@@ -56,13 +56,21 @@ public class NextTurnVigorPower extends PokemonTwoAmountPower implements Cloneab
     @Override
     public void atStartOfTurn() {
         flash();
-            addToBot(new ApplyPowerAction(owner, owner, new VigorPower(owner, amount2), amount2));
-            addToBot(new ReducePowerAction(owner, owner, this, 1));
-            if(amount<1)
-            {
-                addToBot(new RemoveSpecificPowerAction(owner, source, this));
-            }
-       
+        addToBot(new ApplyPowerAction(owner, owner, new VigorPower(owner, amount), amount));
+        amount2--;
+        if(amount2<1)
+        {
+            addToBot(new RemoveSpecificPowerAction(owner, source, this));
+        }
+        updateDescription();
+    }
+
+    @Override
+    public boolean isStackable(AbstractPower power) {
+        if(power instanceof NextTurnVigorPower) {
+            return ((NextTurnVigorPower)power).amount2 == this.amount2;
+        }
+        return false;
     }
 
     @Override
@@ -74,12 +82,12 @@ public class NextTurnVigorPower extends PokemonTwoAmountPower implements Cloneab
     public void updateDescription() {
         if(amount == 1 && amount2 == 1)
             description = DESCRIPTIONS[0];
-        else if(amount == 1 && amount2 != 1)
-            description = String.format(DESCRIPTIONS[1], amount2);
         else if(amount != 1 && amount2 == 1)
-            description = String.format(DESCRIPTIONS[2], amount);
+            description = String.format(DESCRIPTIONS[1], amount);
+        else if(amount == 1 && amount2 != 1)
+            description = String.format(DESCRIPTIONS[2], amount2);
         else if(amount != 1 && amount2 != 1)
-            description = String.format(DESCRIPTIONS[3], amount, amount2);
+            description = String.format(DESCRIPTIONS[3], amount2, amount);
 
     }
 }
