@@ -9,18 +9,21 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.NonStackablePower;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 //Gain 1 dex for the turn for each card played.
 
-public class OvergrowPower extends PokemonPower implements CloneablePowerInterface {
+public class OvergrowPower extends PokemonPower implements CloneablePowerInterface, NonStackablePower {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID(OvergrowPower.class.getSimpleName());
@@ -39,8 +42,6 @@ public class OvergrowPower extends PokemonPower implements CloneablePowerInterfa
 
     public static Logger logger = LogManager.getLogger(OvergrowPower.class);
 
-    public boolean canActivate;
-
     public OvergrowPower(final AbstractCreature owner, final int amount) {
         name = NAME;
         ID = POWER_ID;
@@ -54,24 +55,16 @@ public class OvergrowPower extends PokemonPower implements CloneablePowerInterfa
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
-        if(owner instanceof AbstractPlayer) {
-            if(owner.hasPower(RecoverPower.POWER_ID)) {
-                canActivate = owner.getPower(RecoverPower.POWER_ID).amount > 0;
-            }
-        }
-        canActivate = true;
+        
         updateDescription();
     }
 
     @Override
-    public void atStartOfTurn() {
-        canActivate = false;
-        if(owner instanceof AbstractPlayer) {
-            if(owner.hasPower(RecoverPower.POWER_ID)) {
-                canActivate = owner.getPower(RecoverPower.POWER_ID).amount > 0;
-            }
-        }
-        super.atStartOfTurn();
+    public int onHeal(int healAmount) {
+        flash();
+        if (healAmount >= amount)
+            addToBot((AbstractGameAction) new ApplyPowerAction(owner, owner, new StrengthPower(owner, healAmount/amount)));
+            return healAmount;
     }
 
     @Override

@@ -325,7 +325,7 @@
     "mysteryDungeon:OvergrowPower": {
         "NAME": "Overgrow",
         "DESCRIPTIONS": [
-            "Each time you your Recover counter reaches #b0, gain #b%s Strength."
+            "For every #b%s HP healed, gain 1 Strength."
         ]
     },
     "mysteryDungeon:PetalDancePower": {
