@@ -36,10 +36,10 @@
             "Votre prochaine attaque infligera #b%s dégâts supplémentaires."
         ]
     },
-    "mysteryDungeon:LepaBerryPotion": {
+    "mysteryDungeon:LeppaBerryPotion": {
         "NAME": "Baie Mepo",
         "DESCRIPTIONS": [
-            "Retenez #b%s cartes."
+            "Choisissez #b%s cartes à retenir à la fin de votre tour."
         ]
     },
     "mysteryDungeon:MagoBerryPotion": {

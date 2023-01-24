@@ -779,7 +779,7 @@
     },
     "mysteryDungeon:MeowthHoneClaws": {
         "NAME": "Aiguisage",
-        "DESCRIPTION": "Appliquez !B! d'Armure. NL Gagnez !M! de Force."
+        "DESCRIPTION": "Appliquez !mysteryDungeon:M2! d'Armure. NL Gagnez !M! de Force."
     },
     "mysteryDungeon:MeowthHyperVoice": {
         "NAME": "Mégaphone",
@@ -827,22 +827,22 @@
         "NAME": "Hurlement",
         "DESCRIPTION": "Appliquez !M! de Force. NL Appliquez 99 de Faiblesse. NL Épuisement."
     },
-    "mysteryDungeon:MeowthSnatch": {
-        "NAME": "Saisie",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !M! or. NL Créez une *Attraction dans votre main. NL Épuisement.",
-        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !M! or. NL Créez une *Attraction améliorée dans votre main. NL Épuisement."
-    },
     "mysteryDungeon:MeowthScratch": {
         "NAME": "Griffe",
         "DESCRIPTION": "Infligez !D! dégâts."
     },
     "mysteryDungeon:MeowthScreech": {
         "NAME": "Grincement",
-        "DESCRIPTION": "Appliquez !M! de Vulnérabilité. NL Appliquez !B! d'Armure."
+        "DESCRIPTION": "Appliquez !M! de Vulnérabilité. NL Appliquez !mysteryDungeon:M2! d'Armure."
     },
     "mysteryDungeon:MeowthSnarl": {
         "NAME": "Aboiement",
-        "DESCRIPTION": "Appliquez 8 d'Armure. NL Gagnez !B! d'Armure."
+        "DESCRIPTION": "Appliquez !M! d'Armure. NL Gagnez !B! d'Armure."
+    },
+    "mysteryDungeon:MeowthSnatch": {
+        "NAME": "Saisie",
+        "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !M! or. NL Créez une *Attraction dans votre main. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !M! or. NL Créez une *Attraction améliorée dans votre main. NL Épuisement."
     },
     "mysteryDungeon:MeowthSpite": {
         "NAME": "Dépit",
@@ -1298,8 +1298,7 @@
     },
     "mysteryDungeon:TotodileEndure": {
         "NAME": "Ténacité",
-        "DESCRIPTION": "Si vous subissez des dégâts, canalisez !M! Orbe Glaciaire.",
-        "UPGRADE_DESCRIPTION": "Inné. NL Si vous subbissez des dégâts, canalisez !M! Orbe Glaciaire."
+        "DESCRIPTION": "Les !M! prochaines fois que vous subissez des dégâts, n'en recevez pas et défaussez les 6 cartes au-dessus de votre pioche."
     },
     "mysteryDungeon:TotodileExplorerForm": {
         "NAME": "Forme de l'Explorateur",
