@@ -478,6 +478,13 @@
             "Au début de votre tour, ajoutez #b%s carte de votre défausse à votre main."
         ]
     },
+    "mysteryDungeon:TotodileEndurePower": {
+        "NAME": "Ténacité",
+        "DESCRIPTIONS": [
+            "La prochaine fois que vous subissez des dégâts, n'en recevez pas et défaussez les #b%s cartes au-dessus de votre pioche.",
+            "Les #b%1$s prochaines fois que vous subissez des dégâts, n'en recevez pas et défaussez les #b%2$s cartes au-dessus de votre pioche."
+        ]
+    },
     "mysteryDungeon:SheerForcePower": {
         "NAME": "Sans Limite",
         "DESCRIPTIONS": [

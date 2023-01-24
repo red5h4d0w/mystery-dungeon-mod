@@ -779,7 +779,7 @@
     },
     "mysteryDungeon:MeowthHoneClaws": {
         "NAME": "Hone Claws",
-        "DESCRIPTION": "Give an enemy !B! Block. NL Gain !M! Strength"
+        "DESCRIPTION": "Apply !mysteryDungeon:M2! Block. NL Gain !M! Strength."
     },
     "mysteryDungeon:MeowthHyperVoice": {
         "NAME": "Hyper Voice",
@@ -827,22 +827,22 @@
         "NAME": "Roar",
         "DESCRIPTION": "Apply !M! Strength. NL Apply 99 Weak. NL Exhaust."
     },
-    "mysteryDungeon:MeowthSnatch": {
-        "NAME": "Snatch",
-        "DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract in your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract+ in your hand. NL Exhaust."
-    },
     "mysteryDungeon:MeowthScratch": {
         "NAME": "Scratch",
         "DESCRIPTION": "Deal !D! damage."
     },
     "mysteryDungeon:MeowthScreech": {
         "NAME": "Screech",
-        "DESCRIPTION": "Apply !M! Vulnerable. NL Apply !B! Block."
+        "DESCRIPTION": "Apply !M! Vulnerable. NL Apply !mysteryDungeon:M2! Block."
     },
     "mysteryDungeon:MeowthSnarl": {
         "NAME": "Snarl",
-        "DESCRIPTION": "Apply 8 Block. NL Gain !B! Block."
+        "DESCRIPTION": "Apply !M! Block. NL Gain !B! Block."
+    },
+    "mysteryDungeon:MeowthSnatch": {
+        "NAME": "Snatch",
+        "DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract in your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract+ in your hand. NL Exhaust."
     },
     "mysteryDungeon:MeowthSpite": {
         "NAME": "Spite",
@@ -1298,8 +1298,7 @@
     },
     "mysteryDungeon:TotodileEndure": {
         "NAME": "Endure",
-        "DESCRIPTION": "If you take damage, channel !M! Frost.",
-        "UPGRADE_DESCRIPTION": "Innate. NL If you take damage, channel !M! Frost."
+        "DESCRIPTION": "The next !M! times you would take damage, do not take any and discard the top 6 cards of your draw pile."
     },
     "mysteryDungeon:TotodileExplorerForm": {
         "NAME": "Explorer Form",

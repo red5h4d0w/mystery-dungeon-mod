@@ -478,6 +478,13 @@
             "At the start of your turn, add #b%s card from your discard pile to your hand."
         ]
     },
+    "mysteryDungeon:TotodileEndurePower": {
+        "NAME": "Endure",
+        "DESCRIPTIONS": [
+            "The next time you would take damage, do not take any and discard the top #b%s cards of your draw pile.",
+            "The next #b%1$s times you would take damage, do not take any and discard the top #b%2$s cards of your draw pile."
+        ]
+    },
     "mysteryDungeon:SheerForcePower": {
         "NAME": "Sheer Force",
         "DESCRIPTIONS": [

@@ -36,10 +36,10 @@
             "Your next attack deals #b%s more damage."
         ]
     },
-    "mysteryDungeon:LepaBerryPotion": {
+    "mysteryDungeon:LeppaBerryPotion": {
         "NAME": "Leppa Berry",
         "DESCRIPTIONS": [
-            "Retain #b%s cards."
+            "Choose #b%s cards to retain at the end of your turn."
         ]
     },
     "mysteryDungeon:MagoBerryPotion": {
