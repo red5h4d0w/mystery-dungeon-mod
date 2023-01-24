@@ -57,7 +57,7 @@ public class TotodileHydroPump extends PokemonCard {
 
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        return super.canUse(p, m) && p.drawPile.size() >= magicNumber;
+        return super.canUse(p, m) && p.drawPile.size() <= magicNumber;
     }
 
     // Upgraded stats.
