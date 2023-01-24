@@ -478,6 +478,13 @@
             "Au début de votre tour, ajoutez #b%s carte de votre défausse à votre main."
         ]
     },
+    "mysteryDungeon:TotodileEndurePower": {
+        "NAME": "Drought",
+        "DESCRIPTIONS": [
+            "The next time you would take damage, do not take any and discard the top #b%s cards of your draw pile.",
+            "The next #b%1$s times you would take damage, do not take any and discard the top #b%2$s cards of your draw pile."
+        ]
+    },
     "mysteryDungeon:SheerForcePower": {
         "NAME": "Sans Limite",
         "DESCRIPTIONS": [
