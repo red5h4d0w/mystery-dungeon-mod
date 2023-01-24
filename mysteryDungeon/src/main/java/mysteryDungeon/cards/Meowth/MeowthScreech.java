@@ -37,7 +37,7 @@ public class MeowthScreech extends PokemonCard {
     private static final int COST = 0;
     private static final int BASE_MAGIC_NUMBER = 2;
     private static final int UPGRADE_MAGIC_NUMBER = 2;
-    private static final int BLOCK = 13;
+    private static final int BASE_SECOND_MAGIC_NUMBER = 13;
 
 
     // /STAT DECLARATION/
@@ -46,14 +46,15 @@ public class MeowthScreech extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
-        baseBlock = BLOCK;
+        baseSecondMagicNumber = BASE_SECOND_MAGIC_NUMBER;
+        secondMagicNumber = baseSecondMagicNumber;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, magicNumber, false)));
-        addToBot(new GainBlockAction(m, p, block));
+        addToBot(new GainBlockAction(m, p, secondMagicNumber));
 
     }
 

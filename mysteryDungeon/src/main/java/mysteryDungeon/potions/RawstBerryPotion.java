@@ -21,7 +21,7 @@ public class RawstBerryPotion extends PokemonPotion {
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
 
-    public static final String IMG_STRING = "flame-orb.png";
+    public static final String IMG_STRING = "rawst-berry.png";
 
     public RawstBerryPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java

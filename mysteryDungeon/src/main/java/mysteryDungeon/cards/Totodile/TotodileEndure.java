@@ -22,7 +22,6 @@ public class TotodileEndure extends PokemonCard {
     public static final String IMG = makeCardPath("TotodilePower.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -36,7 +35,8 @@ public class TotodileEndure extends PokemonCard {
 
     private static final int COST = 1;
 
-    private static final int BASE_MAGIC_NUMBER = 1;
+    private static final int BASE_MAGIC_NUMBER = 2;
+    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
     // /STAT DECLARATION/
 
@@ -58,8 +58,7 @@ public class TotodileEndure extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            isInnate = true;
-            rawDescription = UPGRADE_DESCRIPTION;
+            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
             initializeDescription();
         }
     }

@@ -22,7 +22,7 @@ public class ElixirPotion extends PokemonPotion {
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
 
-    public static final String IMG_STRING = "aspear-berry.png";
+    public static final String IMG_STRING = "elixir.png";
 
     public ElixirPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java

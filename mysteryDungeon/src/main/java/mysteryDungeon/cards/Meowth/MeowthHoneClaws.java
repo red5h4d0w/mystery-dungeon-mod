@@ -35,24 +35,25 @@ public class MeowthHoneClaws extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.MEOWTH_WHITE;
 
     private static final int COST = 0;
-    private static final int BLOCK = 13;
     private static final int BASE_MAGIC_NUMBER = 1;
     private static final int UPGRADE_MAGIC_NUMBER = 1;
+    private static final int BASE_SECOND_MAGIC_NUMBER = 13;
 
 
     // /STAT DECLARATION/
 
     public MeowthHoneClaws() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseBlock = BLOCK;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        baseSecondMagicNumber = BASE_SECOND_MAGIC_NUMBER;
+        secondMagicNumber = baseSecondMagicNumber;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(m, p, block));
+        addToBot(new GainBlockAction(m, p, secondMagicNumber));
         addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, magicNumber)));
     }
 

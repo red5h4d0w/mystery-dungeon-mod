@@ -52,8 +52,7 @@ public class TotodileRage extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
-        if (energyOnUse < EnergyPanel.totalCount)
-        {
+        if (energyOnUse < EnergyPanel.totalCount) {
             energyOnUse = EnergyPanel.totalCount; 
         }
         if (p.hasRelic("Chemical X")) {
@@ -63,7 +62,7 @@ public class TotodileRage extends PokemonCard {
         if(upgraded)
             energyOnUse++; 
         if(energyOnUse>0)
-            addToBot(new ApplyPowerAction(p, p, new NextTurnVigorPower(p, energyOnUse, magicNumber), energyOnUse));
+            addToBot(new ApplyPowerAction(p, p, new NextTurnVigorPower(p, magicNumber, energyOnUse), magicNumber));
         if (!freeToPlayOnce)
             p.energy.use(EnergyPanel.totalCount);
     }

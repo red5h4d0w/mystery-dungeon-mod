@@ -56,7 +56,7 @@ public class TotodileAquaJet extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot( new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SMASH));
-        addToBot(new ApplyPowerAction(p, p, new NextTurnVigorPower(p, 1, magicNumber), magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new NextTurnVigorPower(p, magicNumber, 1), magicNumber));
     }
 
     // Upgraded stats.

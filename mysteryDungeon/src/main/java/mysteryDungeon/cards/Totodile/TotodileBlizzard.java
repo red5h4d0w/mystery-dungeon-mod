@@ -39,7 +39,7 @@ public class TotodileBlizzard extends PokemonCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Pokemon.Enums.TOTODILE_BLUE;
 
-    private static final int COST = 3;
+    private static final int COST = 2;
     private static final int BASE_MAGIC_NUMBER = 6;
     private static final int UPGRADE_MAGIC_NUMBER = 2;
 

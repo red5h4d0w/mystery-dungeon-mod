@@ -3,20 +3,18 @@ package mysteryDungeon.powers;
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonPower;
+import mysteryDungeon.actions.DiscardTopOfDrawPileAction;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.orbs.Frost;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 
@@ -36,6 +34,8 @@ public class TotodileEndurePower extends PokemonPower implements CloneablePowerI
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(TotodileEndurePower.class.getSimpleName()+"84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(TotodileEndurePower.class.getSimpleName()+"32.png"));
 
+    private static final int discardAmount = 6;
+
     public TotodileEndurePower(final AbstractCreature owner, final int amount) {
         name = NAME;
         ID = POWER_ID;
@@ -44,6 +44,7 @@ public class TotodileEndurePower extends PokemonPower implements CloneablePowerI
         this.amount = amount;
 
         type = PowerType.BUFF;
+        isTurnBased = false;
 
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
@@ -54,8 +55,12 @@ public class TotodileEndurePower extends PokemonPower implements CloneablePowerI
 
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
-        if (damageAmount > 0 && info.type == DamageType.NORMAL)
-            addToBot((AbstractGameAction)new ChannelAction(new Frost()));
+        if(damageAmount>owner.currentBlock) {
+            flash();
+            addToBot(new DiscardTopOfDrawPileAction(discardAmount));
+            addToBot(new ReducePowerAction(owner, owner, this, 1));
+            return 0;
+        }
         return damageAmount;
     }
 
@@ -66,10 +71,11 @@ public class TotodileEndurePower extends PokemonPower implements CloneablePowerI
 
     @Override
     public void updateDescription() {
-        if(amount==1)
-            description = String.format(DESCRIPTIONS[0], amount);
-        else
-            description = String.format(DESCRIPTIONS[1], amount);
+        if(amount==1) {
+            description = String.format(DESCRIPTIONS[0], discardAmount);
+        }
+        else {
+            description = String.format(DESCRIPTIONS[0], amount, discardAmount);
+        }
     }
 }
-
