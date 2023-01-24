@@ -479,10 +479,10 @@
         ]
     },
     "mysteryDungeon:TotodileEndurePower": {
-        "NAME": "Drought",
+        "NAME": "Ténacité",
         "DESCRIPTIONS": [
-            "The next time you would take damage, do not take any and discard the top #b%s cards of your draw pile.",
-            "The next #b%1$s times you would take damage, do not take any and discard the top #b%2$s cards of your draw pile."
+            "La prochaine fois que vous subissez des dégâts, n'en recevez pas et défaussez les #b%s cartes au-dessus de votre pioche.",
+            "Les #b%1$s prochaines fois que vous subissez des dégâts, n'en recevez pas et défaussez les #b%2$s cartes au-dessus de votre pioche."
         ]
     },
     "mysteryDungeon:SheerForcePower": {
