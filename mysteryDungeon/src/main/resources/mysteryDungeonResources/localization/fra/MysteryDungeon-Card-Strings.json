@@ -779,7 +779,7 @@
     },
     "mysteryDungeon:MeowthHoneClaws": {
         "NAME": "Aiguisage",
-        "DESCRIPTION": "Apply !mysteryDungeon:M2! Block. NL Gain !M! Strength."
+        "DESCRIPTION": "Appliquez !mysteryDungeon:M2! d'Armure. NL Gagnez !M! de Force."
     },
     "mysteryDungeon:MeowthHyperVoice": {
         "NAME": "Mégaphone",
@@ -833,11 +833,11 @@
     },
     "mysteryDungeon:MeowthScreech": {
         "NAME": "Grincement",
-        "DESCRIPTION": "Apply !M! Vulnerable. NL Apply !mysteryDungeon:M2! Block."
+        "DESCRIPTION": "Appliquez !M! de Vulnérabilité. NL Appliquez !mysteryDungeon:M2! d'Armure."
     },
     "mysteryDungeon:MeowthSnarl": {
         "NAME": "Aboiement",
-        "DESCRIPTION": "Apply !M! Block. NL Gain !B! Block."
+        "DESCRIPTION": "Appliquez !M! d'Armure. NL Gagnez !B! d'Armure."
     },
     "mysteryDungeon:MeowthSnatch": {
         "NAME": "Saisie",
@@ -1298,7 +1298,7 @@
     },
     "mysteryDungeon:TotodileEndure": {
         "NAME": "Ténacité",
-        "DESCRIPTION": "The next !M! times you would take damage, do not take any and discard the top 6 cards of your draw pile."
+        "DESCRIPTION": "Les !M! prochaines fois que vous subissez des dégâts, n'en recevez pas et défaussez les 6 cartes au-dessus de votre pioche."
     },
     "mysteryDungeon:TotodileExplorerForm": {
         "NAME": "Forme de l'Explorateur",
