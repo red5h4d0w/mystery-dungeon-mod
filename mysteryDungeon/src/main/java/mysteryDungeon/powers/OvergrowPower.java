@@ -2,13 +2,14 @@ package mysteryDungeon.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
-import mysteryDungeon.abstracts.PokemonPower;
+import mysteryDungeon.abstracts.PokemonTwoAmountPower;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.NonStackablePower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -23,7 +24,7 @@ import org.apache.logging.log4j.Logger;
 
 //Gain 1 dex for the turn for each card played.
 
-public class OvergrowPower extends PokemonPower implements CloneablePowerInterface, NonStackablePower {
+public class OvergrowPower extends PokemonTwoAmountPower implements CloneablePowerInterface, NonStackablePower {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID(OvergrowPower.class.getSimpleName());
@@ -42,12 +43,13 @@ public class OvergrowPower extends PokemonPower implements CloneablePowerInterfa
 
     public static Logger logger = LogManager.getLogger(OvergrowPower.class);
 
-    public OvergrowPower(final AbstractCreature owner, final int amount) {
+    public OvergrowPower(final AbstractCreature owner, final int amount, final int amount2) {
         name = NAME;
         ID = POWER_ID;
 
         this.owner = owner;
         this.amount = amount;
+        this.amount2 = amount2;
 
         type = PowerType.BUFF;
         isTurnBased = false;
@@ -62,18 +64,26 @@ public class OvergrowPower extends PokemonPower implements CloneablePowerInterfa
     @Override
     public int onHeal(int healAmount) {
         flash();
-        if (healAmount >= amount)
+        if (healAmount >= amount2)
             addToBot((AbstractGameAction) new ApplyPowerAction(owner, owner, new StrengthPower(owner, healAmount/amount)));
             return healAmount;
     }
 
     @Override
+    public boolean isStackable(AbstractPower power) {
+        if(power instanceof OvergrowPower) {
+            return ((TwoAmountPower)power).amount2 == amount2;
+        }
+        return false;
+    }
+
+    @Override
     public AbstractPower makeCopy() {
-        return new OvergrowPower(owner, amount);
+        return new OvergrowPower(owner, amount, amount2);
     }
 
     @Override
     public void updateDescription() {
-        description = String.format(DESCRIPTIONS[0], amount);
+        description = String.format(DESCRIPTIONS[0], amount, amount2);
     }
 }

@@ -36,6 +36,7 @@ public class ChikoritaOvergrow extends PokemonCard {
     private static final int COST = 1;
     private static final int BASE_MAGIC_NUMBER = 3;
     private static final int UPGRADE_MAGIC_NUMBER = -1;
+    private static final int BASE_SECOND_MAGIC_NUMBER = 1;
 
     // /STAT DECLARATION/
 
@@ -43,13 +44,15 @@ public class ChikoritaOvergrow extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        baseSecondMagicNumber = BASE_SECOND_MAGIC_NUMBER;
+        secondMagicNumber = baseSecondMagicNumber;
     }
     
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new OvergrowPower(p, magicNumber), magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new OvergrowPower(p, secondMagicNumber, magicNumber), secondMagicNumber));
     }
 
     // Upgraded stats.

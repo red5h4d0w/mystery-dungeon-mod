@@ -11,7 +11,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.ThrashPlusPower;
 import mysteryDungeon.powers.ThrashPower;
 
 public class TotodileThrash extends PokemonCard {
@@ -55,12 +54,7 @@ public class TotodileThrash extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(upgraded) {
-            addToBot(new ApplyPowerAction(p, p, new ThrashPlusPower(p, secondMagicNumber), secondMagicNumber));
-        }
-        else {
-            addToBot(new ApplyPowerAction(p, p, new ThrashPower(p, secondMagicNumber), secondMagicNumber));
-        }
+        addToBot(new ApplyPowerAction(p, p, new ThrashPower(p, secondMagicNumber, magicNumber), secondMagicNumber));
     }
 
     // Upgraded stats.

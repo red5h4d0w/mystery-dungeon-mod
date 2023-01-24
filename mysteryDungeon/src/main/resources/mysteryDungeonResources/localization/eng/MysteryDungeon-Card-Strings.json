@@ -461,7 +461,7 @@
     },
     "mysteryDungeon:ChikoritaOvergrow": {
         "NAME": "Overgrow",
-        "DESCRIPTION": "For every !M! HP healed, gain 1 Strength."
+        "DESCRIPTION": "Whenever you heal !M! or more HP, for every !M! HP healed, gain !mysteryDungeon:M2! Strength."
     },
     "mysteryDungeon:ChikoritaPetalBlizzard": {
         "NAME": "Petal Blizzard",
