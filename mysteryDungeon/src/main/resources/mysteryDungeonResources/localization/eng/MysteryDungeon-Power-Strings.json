@@ -10,7 +10,7 @@
         "NAME": "Aromatherapy",
         "DESCRIPTIONS": [
             "Whenever you take damage, gain #b%s #yStrength.",
-            "Whenever you take damage, gain #b%s #yStrength."
+            "Whenever you take damage, gain #b%s Strength."
         ]
     },
     "mysteryDungeon:AsleepPower": {
@@ -325,7 +325,7 @@
     "mysteryDungeon:OvergrowPower": {
         "NAME": "Overgrow",
         "DESCRIPTIONS": [
-            "Whenever you heal #b%1$s or more HP, for every #b%1$s HP healed, gain #b%2$s Strength."
+            "Each time you your Recover counter reaches #b0, gain #b%s Strength."
         ]
     },
     "mysteryDungeon:PetalDancePower": {
@@ -455,10 +455,15 @@
     "mysteryDungeon:ThrashPower": {
         "NAME": "Thrash",
         "DESCRIPTIONS": [
-            "Every %1$s Attack you play, gain %1$s #yVigor. NL (%2$s card till #yVigor gain)",
-            "Every %1$s Attack you play, gain %1$s #yVigor. NL (%2$s cards till #yVigor gain)",
-            "Every %1$s Attack you play, gain %1$s #yVigor. NL (%2$s card till #yVigor gain)",
-            "Every %1$s Attack you play, gain %1$s #yVigor. NL (%2$s cards till #yVigor gain)"
+            "Every 4 Attacks you play, gain %1$s #yVigor. NL (%2$s card till #yVigor gain)",
+            "Every 4 Attacks you play, gain %1$s #yVigor. NL (%2$s cards till #yVigor gain)"
+        ]
+    },
+    "mysteryDungeon:ThrashPlusPower": {
+        "NAME": "Thrash+",
+        "DESCRIPTIONS": [
+            "Every 3 Attacks you play, gain %1$s #yVigor. NL (%2$s card till #yVigor gain)",
+            "Every 3 Attacks you play, gain %1$s #yVigor. NL (%2$s cards till #yVigor gain)"
         ]
     },
     "mysteryDungeon:TorrentPower": {
