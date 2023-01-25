@@ -10,7 +10,7 @@
         "NAME": "Aromathérapie",
         "DESCRIPTIONS": [
             "Lorsque vous recevez des dégâts, gagnez #b%s de #yForce.",
-            "Lorsque vous recevez des dégâts, gagnez #b%s de #yForce."
+            "Whenever you take damage, gain #b%s #yStrength."
         ]
     },
     "mysteryDungeon:AsleepPower": {
@@ -325,7 +325,7 @@
     "mysteryDungeon:OvergrowPower": {
         "NAME": "Engrais",
         "DESCRIPTIONS": [
-            "Lorsque votre compteur de Soin atteint #b0, gagnez #b%s de Force."
+            "Whenever you heal #b%1$s or more HP, for every #b%1$s HP healed, gain #b%2$s Strength."
         ]
     },
     "mysteryDungeon:PetalDancePower": {
@@ -455,15 +455,10 @@
     "mysteryDungeon:ThrashPower": {
         "NAME": "Mania",
         "DESCRIPTIONS": [
-            "À chaque 4 Attaques que vous jouez, gagnez %1$s de #yVigueur. NL (%2$s carte avant de gagner de la #yVigueur)",
-            "À chaque 4 Attaques que vous jouez, gagnez %1$s de #yVigueur. NL (%2$s cartes avant de gagner de la #yVigueur)"
-        ]
-    },
-    "mysteryDungeon:ThrashPlusPower": {
-        "NAME": "Mania+",
-        "DESCRIPTIONS": [
-            "À chaque 3 Attaques que vous jouez, gagnez %1$s de #yVigueur. NL (%2$s carte avant de gagner de la #yVigueur)",
-            "À chaque 3 Attaques que vous jouez, gagnez %1$s de #yVigueur. NL (%2$s cartes avant de gagner de la #yVigueur)"
+            "Every %1$s Attack you play, gain %1$s #yVigor. NL (%2$s card till #yVigor gain)",
+            "Every %1$s Attack you play, gain %1$s #yVigor. NL (%2$s cards till #yVigor gain)",
+            "Every %1$s Attack you play, gain %1$s #yVigor. NL (%2$s card till #yVigor gain)",
+            "Every %1$s Attack you play, gain %1$s #yVigor. NL (%2$s cards till #yVigor gain)"
         ]
     },
     "mysteryDungeon:TorrentPower": {
