@@ -461,8 +461,7 @@
     },
     "mysteryDungeon:ChikoritaOvergrow": {
         "NAME": "Engrais",
-        "DESCRIPTION": "Lorsque votre compteur de mysterydungeon:Soin atteint 0, gagnez !M! de Force.",
-        "UPGRADE_DESCRIPTION": "Inné. NL Lorsque votre compteur de mysterydungeon:Soin atteint 0, gagnez !M! de Force."
+        "DESCRIPTION": "Whenever you heal !M! or more HP, for every !M! HP healed, gain !mysteryDungeon:M2! Strength."
     },
     "mysteryDungeon:ChikoritaPetalBlizzard": {
         "NAME": "Tempête Florale",

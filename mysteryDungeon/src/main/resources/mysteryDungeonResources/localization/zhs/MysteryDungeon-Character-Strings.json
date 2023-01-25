@@ -70,6 +70,11 @@
             "喵喵"
         ]
     },
+    "mysteryDungeon:Persian": {
+        "NAMES": [
+            "Persian"
+        ]
+    },
     "mysteryDungeon:Psyduck": {
         "NAMES": [
             "可达鸭"
@@ -95,14 +100,44 @@
             "菊草叶"
         ]
     },
+    "mysteryDungeon:Bayleef": {
+        "NAMES": [
+            "Bayleef"
+        ]
+    },
+    "mysteryDungeon:Meganium": {
+        "NAMES": [
+            "Meganium"
+        ]
+    },
     "mysteryDungeon:Cyndaquil": {
         "NAMES": [
             "火球鼠"
         ]
     },
+    "mysteryDungeon:Quilava": {
+        "NAMES": [
+            "Quilava"
+        ]
+    },
+    "mysteryDungeon:Typhlosion": {
+        "NAMES": [
+            "Typhlosion"
+        ]
+    },
     "mysteryDungeon:Totodile": {
         "NAMES": [
             "小锯鳄"
+        ]
+    },
+    "mysteryDungeon:Croconaw": {
+        "NAMES": [
+            "Croconaw"
+        ]
+    },
+    "mysteryDungeon:Feraligatr": {
+        "NAMES": [
+            "Feraligatr"
         ]
     },
     "mysteryDungeon:Treecko": {
@@ -136,42 +171,7 @@
             "我愿意用随机的宝可梦团队！",
             "选择你的冒险家。",
             "选择你的伙伴。",
-            "You are a %s。 NL Choose a partner"
-        ]
-    },
-    "mysteryDungeon:Bayleef": {
-        "NAMES": [
-            "Bayleef"
-        ]
-    },
-    "mysteryDungeon:Meganium": {
-        "NAMES": [
-            "Meganium"
-        ]
-    },
-    "mysteryDungeon:Quilava": {
-        "NAMES": [
-            "Quilava"
-        ]
-    },
-    "mysteryDungeon:Typhlosion": {
-        "NAMES": [
-            "Typhlosion"
-        ]
-    },
-    "mysteryDungeon:Croconaw": {
-        "NAMES": [
-            "Croconaw"
-        ]
-    },
-    "mysteryDungeon:Feraligatr": {
-        "NAMES": [
-            "Feraligatr"
-        ]
-    },
-    "mysteryDungeon:Persian": {
-        "NAMES": [
-            "Persian"
+            "You are a %s1. NL Choose a partner. NL (Expected complexity is %s2)"
         ]
     }
 }
