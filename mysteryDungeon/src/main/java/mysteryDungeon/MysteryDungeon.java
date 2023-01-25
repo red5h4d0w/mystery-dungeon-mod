@@ -517,9 +517,6 @@ public class MysteryDungeon implements
         // CharacterStrings
         BaseMod.loadCustomStringsFile(CharacterStrings.class, localizationPath + "MysteryDungeon-Character-Strings.json");
         
-        // OrbStrings
-        BaseMod.loadCustomStringsFile(OrbStrings.class, localizationPath + "MysteryDungeon-Orb-Strings.json");
-        
         // UIStrings
         BaseMod.loadCustomStringsFile(UIStrings.class, localizationPath + "ui.json");
 
