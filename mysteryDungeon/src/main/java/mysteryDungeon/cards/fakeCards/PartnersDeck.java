@@ -16,7 +16,7 @@ public class PartnersDeck extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(PartnersDeck.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("PartnersDeck.png");
+    public static final String IMG = makeCardPath(PartnersDeck.class.getSimpleName());
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;

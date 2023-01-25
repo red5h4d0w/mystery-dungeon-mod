@@ -19,7 +19,7 @@ public class ChikoritaHealPulse extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(ChikoritaHealPulse.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("ChikoritaPower.png");
+    public static final String IMG = makeCardPath("ChikoritaPower");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;

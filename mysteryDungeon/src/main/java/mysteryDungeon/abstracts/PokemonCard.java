@@ -53,7 +53,7 @@ public abstract class PokemonCard extends CustomCard implements AtStartOfTurnPos
 
         super(id, name, img, cost, rawDescription, type, color, rarity, target);
         if(!color.equals(CardColor.COLORLESS))
-            loadJokeCardImage(makeCardPath(this.getClass().getSimpleName().split("(?=[A-Z])")[0]+type.toString().substring(0, 1)+type.toString().substring(1).toLowerCase()+".png"));
+            loadJokeCardImage(makeCardPath(this.getClass().getSimpleName().split("(?=[A-Z])")[0]+type.toString().substring(0, 1)+type.toString().substring(1).toLowerCase()));
         // Set all the things to their default values.
         isCostModified = false;
         isCostModifiedForTurn = false;

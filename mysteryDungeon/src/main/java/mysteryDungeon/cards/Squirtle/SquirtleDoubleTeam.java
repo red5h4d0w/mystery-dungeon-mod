@@ -20,7 +20,7 @@ public class SquirtleDoubleTeam extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(SquirtleDoubleTeam.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(SquirtleDoubleTeam.class.getSimpleName()+".png");
+    public static final String IMG = makeCardPath(SquirtleDoubleTeam.class.getSimpleName());
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

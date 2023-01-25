@@ -21,7 +21,7 @@ public class SquirtleDive extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(SquirtleDive.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(SquirtleDive.class.getSimpleName()+".png");
+    public static final String IMG = makeCardPath(SquirtleDive.class.getSimpleName());
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

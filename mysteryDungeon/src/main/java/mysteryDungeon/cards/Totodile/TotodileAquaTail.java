@@ -21,7 +21,7 @@ public class TotodileAquaTail extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(TotodileAquaTail.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("TotodileAttack.png");
+    public static final String IMG = makeCardPath("TotodileAttack");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

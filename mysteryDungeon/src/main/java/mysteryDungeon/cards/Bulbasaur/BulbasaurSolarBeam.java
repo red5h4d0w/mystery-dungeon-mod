@@ -24,7 +24,7 @@ public class BulbasaurSolarBeam extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(BulbasaurSolarBeam.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(BulbasaurSolarBeam.class.getSimpleName()+".png");
+    public static final String IMG = makeCardPath(BulbasaurSolarBeam.class.getSimpleName());
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

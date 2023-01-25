@@ -120,8 +120,8 @@ public class MysteryDungeon implements
     // Character assets
     private static final String THE_DEFAULT_BUTTON = "mysteryDungeonResources/images/charSelect/PokemonCharacterButton.png";
     private static final String THE_DEFAULT_PORTRAIT = "mysteryDungeonResources/images/charSelect/mysteryDungeonCover.png";
-    public static final String THE_DEFAULT_SHOULDER_1 = "mysteryDungeonResources/images/char/pokemon/Bulbasaur_back.png";
-    public static final String THE_DEFAULT_SHOULDER_2 = "mysteryDungeonResources/images/char/pokemon/Charmander_back.png";
+    public static final String THE_DEFAULT_SHOULDER_1 = "mysteryDungeonResources/images/backSprites/Pikachu.png";
+    public static final String THE_DEFAULT_SHOULDER_2 = "mysteryDungeonResources/images/backSprites/Pikachu.png";
     public static final String THE_DEFAULT_CORPSE = "mysteryDungeonResources/images/char/pokemon/corpse.png";
     
     //Mod Badge - A small icon that appears in the mod settings menu next to your mod.
@@ -135,7 +135,8 @@ public class MysteryDungeon implements
     
     public static String makeCardPath(String resourcePath) {
         String pokemonName = resourcePath.split("(?=[A-Z])")[0];
-        String fileName = resourcePath.substring(pokemonName.length());
+        String fileName = resourcePath.substring(pokemonName.length()) + ".png";
+        logger.info(fileName);
         return getModID() + "Resources/images/cards/" + pokemonName + "/" + fileName;
     }
     
