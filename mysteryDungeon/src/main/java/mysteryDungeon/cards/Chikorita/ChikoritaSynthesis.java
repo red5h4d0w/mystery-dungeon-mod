@@ -22,7 +22,7 @@ public class ChikoritaSynthesis extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(ChikoritaSynthesis.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("ChikoritaSkill.png");
+    public static final String IMG = makeCardPath(ChikoritaSynthesis.class.getSimpleName());
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

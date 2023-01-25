@@ -23,7 +23,7 @@ public class ChikoritaPetalDance extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(ChikoritaPetalDance.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("ChikoritaSkill.png");
+    public static final String IMG = makeCardPath(ChikoritaPetalDance.class.getSimpleName());
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
