@@ -74,7 +74,7 @@ public class AromatherapyPower extends PokemonPower implements CloneablePowerInt
     public void updateDescription() {
         if(amount == 1)
         {
-            description = DESCRIPTIONS[0];
+            description = String.format(DESCRIPTIONS[0], amount);
         } 
         else
         {

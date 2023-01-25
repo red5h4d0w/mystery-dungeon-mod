@@ -10,7 +10,7 @@
         "NAME": "Aromatherapy",
         "DESCRIPTIONS": [
             "Whenever you take damage, gain #b%s #yStrength.",
-            "Whenever you take damage, gain #b%s Strength."
+            "Whenever you take damage, gain #b%s #yStrength."
         ]
     },
     "mysteryDungeon:AsleepPower": {
