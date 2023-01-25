@@ -63,11 +63,12 @@ public class OvergrowPower extends PokemonTwoAmountPower implements CloneablePow
 
     @Override
     public int onHeal(int healAmount) {
-        if(healAmount >= amount2)
+        if (healAmount >= amount2) {
             flash();
-        if (healAmount >= amount2)
-            addToBot((AbstractGameAction) new ApplyPowerAction(owner, owner, new StrengthPower(owner, healAmount/amount)));
-            return healAmount;
+            addToBot((AbstractGameAction) new ApplyPowerAction(owner, owner, new StrengthPower(owner, amount*healAmount/amount2)));
+        }
+            
+        return healAmount;
     }
 
     @Override
@@ -85,6 +86,6 @@ public class OvergrowPower extends PokemonTwoAmountPower implements CloneablePow
 
     @Override
     public void updateDescription() {
-        description = String.format(DESCRIPTIONS[0], amount, amount2);
+        description = String.format(DESCRIPTIONS[0], amount2, amount);
     }
 }
