@@ -461,7 +461,7 @@
     },
     "mysteryDungeon:ChikoritaOvergrow": {
         "NAME": "Engrais",
-        "DESCRIPTION": "Whenever you heal !M! or more HP, for every !M! HP healed, gain !mysteryDungeon:M2! Strength."
+        "DESCRIPTION": "À chaque fois que vous soignez !M! ou plus PV, pour chaque !M! PV soignés, gagnez !mysteryDungeon:M2! de Force."
     },
     "mysteryDungeon:ChikoritaPetalBlizzard": {
         "NAME": "Tempête Florale",
