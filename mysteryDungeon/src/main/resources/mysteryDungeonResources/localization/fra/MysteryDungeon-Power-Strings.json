@@ -10,7 +10,7 @@
         "NAME": "Aromathérapie",
         "DESCRIPTIONS": [
             "Lorsque vous recevez des dégâts, gagnez #b%s de #yForce.",
-            "Whenever you take damage, gain #b%s #yStrength."
+            "Lorsque vous recevez des dégâts, gagnez #b%s de #yForce."
         ]
     },
     "mysteryDungeon:AsleepPower": {
@@ -325,7 +325,7 @@
     "mysteryDungeon:OvergrowPower": {
         "NAME": "Engrais",
         "DESCRIPTIONS": [
-            "Whenever you heal #b%1$s or more HP, for every #b%1$s HP healed, gain #b%2$s Strength."
+            "Chaque fois que vous soignez #b%1$s PV ou plus, pour chaque #b%1$s PV soignés, gagnez #b%2$s de Force."
         ]
     },
     "mysteryDungeon:PetalDancePower": {
