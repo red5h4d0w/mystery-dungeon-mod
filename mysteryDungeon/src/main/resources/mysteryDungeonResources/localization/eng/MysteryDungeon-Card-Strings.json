@@ -1275,7 +1275,7 @@
     },
     "mysteryDungeon:TotodileNaturePowerSea": {
         "NAME": "Nature Power: Sea",
-        "DESCRIPTION": "Apply !M! Vulnerable. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor. NL Exhaust."
+        "DESCRIPTION": "Apply !M! Vulnerable. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor."
     },
     "mysteryDungeon:TotodileCrunch": {
         "NAME": "Crunch",

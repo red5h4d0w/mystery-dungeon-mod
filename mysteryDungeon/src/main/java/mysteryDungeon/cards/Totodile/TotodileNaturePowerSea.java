@@ -47,7 +47,6 @@ public class TotodileNaturePowerSea extends PokemonCard {
         magicNumber = baseMagicNumber;
         baseSecondMagicNumber = BASE_SECOND_MAGIC_NUMBER;
         secondMagicNumber = baseSecondMagicNumber;
-        exhaust = true;
     }
 
     // Actions the card should do.
