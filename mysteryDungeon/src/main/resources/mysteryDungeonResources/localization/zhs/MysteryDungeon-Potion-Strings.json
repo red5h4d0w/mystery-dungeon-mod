@@ -30,10 +30,10 @@
             "对所有敌人施加 #b%s #y灼烧 。"
         ]
     },
-    "mysteryDungeon:GrassGemPotion": {
-        "NAME": "Grass Gem",
+    "mysteryDungeon:AuxPowerPotion": {
+        "NAME": "Aux Power",
         "DESCRIPTIONS": [
-            "Your next attack deals #b%s damage."
+            "Your next attack deals #b%s more damage."
         ]
     },
     "mysteryDungeon:LeppaBerryPotion": {
