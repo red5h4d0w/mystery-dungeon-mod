@@ -19,7 +19,7 @@ public class ChikoritaLeafGuard extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(ChikoritaLeafGuard.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("ChikoritaPower");
+    public static final String IMG = makeCardPath(ChikoritaLeafGuard.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
