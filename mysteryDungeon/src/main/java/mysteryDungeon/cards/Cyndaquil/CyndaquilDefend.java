@@ -18,7 +18,7 @@ public class CyndaquilDefend extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(CyndaquilDefend.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CyndaquilDefend.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("CyndaquilSkill");
     public static final String NAME = cardStrings.NAME;

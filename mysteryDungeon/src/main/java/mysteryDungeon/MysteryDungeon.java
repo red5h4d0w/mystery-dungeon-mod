@@ -139,6 +139,14 @@ public class MysteryDungeon implements
         logger.info(fileName);
         return getModID() + "Resources/images/cards/" + pokemonName + "/" + fileName;
     }
+
+    public static String makeCardPath(Class<?> clz) {
+        String resourcePath = clz.getSimpleName();
+        String pokemonName = resourcePath.split("(?=[A-Z])")[0];
+        String fileName = resourcePath.substring(pokemonName.length()) + ".png";
+        logger.info(fileName);
+        return getModID() + "Resources/images/cards/" + pokemonName + "/" + fileName;
+    }
     
     public static String makeAudioPath(String resourcePath) {
         return getModID() + "Resources/sound/" + resourcePath;
@@ -559,5 +567,9 @@ public class MysteryDungeon implements
     // in order to avoid conflicts if any other mod uses the same ID.
     public static String makeID(String idText) {
         return getModID() + ":" + idText;
+    }
+
+    public static String makeID(Class<?> clz) {
+        return getModID() + ":" + clz.getSimpleName();
     }
 }

@@ -18,7 +18,7 @@ import com.megacrit.cardcrawl.powers.watcher.MasterRealityPower;
 public class WaveIncenseRelic extends PokemonRelic { 
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID(WaveIncenseRelic.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(WaveIncenseRelic.class);
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

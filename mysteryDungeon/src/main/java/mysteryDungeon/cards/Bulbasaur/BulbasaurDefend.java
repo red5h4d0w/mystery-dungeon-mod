@@ -18,9 +18,9 @@ public class BulbasaurDefend extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(BulbasaurDefend.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(BulbasaurDefend.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(BulbasaurDefend.class.getSimpleName());
+    public static final String IMG = makeCardPath(BulbasaurDefend.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

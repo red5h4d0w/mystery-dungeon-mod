@@ -18,9 +18,9 @@ public class CharmanderDragonRage extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(CharmanderDragonRage.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CharmanderDragonRage.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(CharmanderDragonRage.class.getSimpleName());
+    public static final String IMG = makeCardPath(CharmanderDragonRage.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

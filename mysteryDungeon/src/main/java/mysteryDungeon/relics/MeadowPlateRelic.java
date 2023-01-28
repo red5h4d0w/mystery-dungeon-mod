@@ -20,7 +20,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 public class MeadowPlateRelic extends PokemonRelic { 
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID(MeadowPlateRelic.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(MeadowPlateRelic.class);
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

@@ -19,7 +19,7 @@ import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
 public class LightBallRelic extends PokemonRelic {
-    public static final String ID = MysteryDungeon.makeID(LightBallRelic.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(LightBallRelic.class);
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

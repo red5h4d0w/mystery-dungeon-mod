@@ -17,9 +17,9 @@ public class CharmanderAirCutter extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(CharmanderAirCutter.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CharmanderAirCutter.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(CharmanderAirCutter.class.getSimpleName());
+    public static final String IMG = makeCardPath(CharmanderAirCutter.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

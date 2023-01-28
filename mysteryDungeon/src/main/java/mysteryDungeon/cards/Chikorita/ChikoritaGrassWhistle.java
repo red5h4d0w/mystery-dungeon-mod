@@ -18,7 +18,7 @@ public class ChikoritaGrassWhistle extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(ChikoritaGrassWhistle.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(ChikoritaGrassWhistle.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("ChikoritaSkill");
     public static final String NAME = cardStrings.NAME;

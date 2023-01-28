@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 public class QuirkyExplorerRelic extends PokemonRelic implements GoldBonusInterface {
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID(QuirkyExplorerRelic.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(QuirkyExplorerRelic.class);
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

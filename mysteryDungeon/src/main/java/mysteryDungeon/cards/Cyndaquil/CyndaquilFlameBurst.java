@@ -19,7 +19,7 @@ public class CyndaquilFlameBurst extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(CyndaquilFlameBurst.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CyndaquilFlameBurst.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("CyndaquilSkill");
     public static final String NAME = cardStrings.NAME;

@@ -20,7 +20,7 @@ public class MeowthSpite extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(MeowthSpite.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(MeowthSpite.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("MeowthSkill");
     public static final String NAME = cardStrings.NAME;

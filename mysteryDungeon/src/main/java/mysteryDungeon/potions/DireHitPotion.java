@@ -15,7 +15,7 @@ import mysteryDungeon.pokemons.Bulbasaur;
 
 public class DireHitPotion extends PokemonPotion {
 
-    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(DireHitPotion.class.getSimpleName());
+    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(DireHitPotion.class);
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
     
     public static final String NAME = potionStrings.NAME;

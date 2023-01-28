@@ -24,7 +24,7 @@ import mysteryDungeon.vfx.NegativeStanceParticle;
 
 
 public class NegativeStance extends PokemonStance {
-    public static final String STANCE_ID = MysteryDungeon.makeID(NegativeStance.class.getSimpleName());
+    public static final String STANCE_ID = MysteryDungeon.makeID(NegativeStance.class);
     
     private static final StanceStrings stanceString = CardCrawlGame.languagePack.getStanceString(STANCE_ID);
     private int timesActivatedThisTurn = 0;

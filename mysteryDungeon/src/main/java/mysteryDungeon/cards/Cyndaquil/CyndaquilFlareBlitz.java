@@ -20,7 +20,7 @@ public class CyndaquilFlareBlitz extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(CyndaquilFlareBlitz.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CyndaquilFlareBlitz.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("CyndaquilAttack");
     public static final String NAME = cardStrings.NAME;

@@ -21,7 +21,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 public class NoHealPower extends PokemonPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID(NoHealPower.class.getSimpleName());
+    public static final String POWER_ID = MysteryDungeon.makeID(NoHealPower.class);
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -29,8 +29,8 @@ public class NoHealPower extends PokemonPower implements CloneablePowerInterface
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
     // There's a fallback "missing texture" image, so the game shouldn't crash if you accidentally put a non-existent file.
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(NoHealPower.class.getSimpleName()+"84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(NoHealPower.class.getSimpleName()+"32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(NoHealPower.class+"84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(NoHealPower.class+"32.png"));
 
     public NoHealPower(final AbstractCreature owner, final int amount) {
         name = NAME;

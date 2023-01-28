@@ -17,7 +17,7 @@ public class TotodileDive extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(TotodileDive.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(TotodileDive.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("TotodileSkill");
     public static final String NAME = cardStrings.NAME;

@@ -15,7 +15,7 @@ import mysteryDungeon.pokemons.Pikachu;
 
 public class XSpAttackPotion extends PokemonPotion {
 
-    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(XSpAttackPotion.class.getSimpleName());
+    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(XSpAttackPotion.class);
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
     
     public static final String NAME = potionStrings.NAME;

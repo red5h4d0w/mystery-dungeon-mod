@@ -22,7 +22,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 public class DocileExplorerRelic extends PokemonRelic implements OnReceivePowerRelic { 
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID(DocileExplorerRelic.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(DocileExplorerRelic.class);
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

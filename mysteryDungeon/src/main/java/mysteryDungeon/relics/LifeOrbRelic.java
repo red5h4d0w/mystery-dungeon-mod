@@ -17,7 +17,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 public class LifeOrbRelic extends PokemonRelic { 
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID(LifeOrbRelic.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(LifeOrbRelic.class);
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

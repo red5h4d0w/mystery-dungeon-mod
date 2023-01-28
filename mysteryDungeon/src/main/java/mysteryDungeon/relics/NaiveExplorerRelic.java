@@ -18,7 +18,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 public class NaiveExplorerRelic extends PokemonRelic { 
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID(NaiveExplorerRelic.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(NaiveExplorerRelic.class);
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

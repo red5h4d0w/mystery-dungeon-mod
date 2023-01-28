@@ -18,7 +18,7 @@ import com.megacrit.cardcrawl.powers.FocusPower;
 public class ImpishExplorerRelic extends PokemonRelic { 
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID(ImpishExplorerRelic.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(ImpishExplorerRelic.class);
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

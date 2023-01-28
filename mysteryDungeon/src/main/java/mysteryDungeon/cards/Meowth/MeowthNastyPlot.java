@@ -17,7 +17,7 @@ public class MeowthNastyPlot extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(MeowthNastyPlot.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(MeowthNastyPlot.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("MeowthSkill");
     public static final String NAME = cardStrings.NAME;

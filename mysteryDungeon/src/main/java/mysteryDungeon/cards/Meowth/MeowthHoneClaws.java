@@ -18,7 +18,7 @@ public class MeowthHoneClaws extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(MeowthHoneClaws.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(MeowthHoneClaws.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("MeowthSkill");
     public static final String NAME = cardStrings.NAME;

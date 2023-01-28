@@ -24,7 +24,7 @@ import com.megacrit.cardcrawl.powers.PlatedArmorPower;
 public class UnnervePower extends PokemonPower implements CloneablePowerInterface, onSpendGoldInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID(UnnervePower.class.getSimpleName());
+    public static final String POWER_ID = MysteryDungeon.makeID(UnnervePower.class);
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -34,8 +34,8 @@ public class UnnervePower extends PokemonPower implements CloneablePowerInterfac
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
     // There's a fallback "missing texture" image, so the game shouldn't crash if you accidentally put a non-existent file.
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(UnnervePower.class.getSimpleName()+"84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(UnnervePower.class.getSimpleName()+"32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(UnnervePower.class+"84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(UnnervePower.class+"32.png"));
 
     public UnnervePower(final AbstractCreature owner, final int amount) {
         name = NAME;

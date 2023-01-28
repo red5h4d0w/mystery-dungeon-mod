@@ -24,7 +24,7 @@ import mysteryDungeon.vfx.PositiveStanceParticle;
 
 
 public class PositiveStance extends PokemonStance {
-    public static final String STANCE_ID = MysteryDungeon.makeID(PositiveStance.class.getSimpleName());
+    public static final String STANCE_ID = MysteryDungeon.makeID(PositiveStance.class);
     
     private static final StanceStrings stanceString = CardCrawlGame.languagePack.getStanceString(STANCE_ID);
   

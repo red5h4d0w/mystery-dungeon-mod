@@ -23,9 +23,9 @@ public class CharmanderShadowClaw extends PokemonCard implements ClawCardInterfa
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(CharmanderShadowClaw.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CharmanderShadowClaw.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(CharmanderShadowClaw.class.getSimpleName());
+    public static final String IMG = makeCardPath(CharmanderShadowClaw.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

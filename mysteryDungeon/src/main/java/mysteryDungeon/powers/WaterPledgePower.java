@@ -28,7 +28,7 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 public class WaterPledgePower extends PokemonPower implements CloneablePowerInterface, BetterOnApplyPowerPower {
     public AbstractCreature source;
 
-    public static final String POWER_ID = MysteryDungeon.makeID(WaterPledgePower.class.getSimpleName());
+    public static final String POWER_ID = MysteryDungeon.makeID(WaterPledgePower.class);
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -38,9 +38,9 @@ public class WaterPledgePower extends PokemonPower implements CloneablePowerInte
     // There's a fallback "missing texture" image, so the game shouldn't crash if
     // you accidentally put a non-existent file.
     private static final Texture tex84 = TextureLoader
-            .getTexture(makePowerPath(WaterPledgePower.class.getSimpleName() + "84.png"));
+            .getTexture(makePowerPath(WaterPledgePower.class + "84.png"));
     private static final Texture tex32 = TextureLoader
-            .getTexture(makePowerPath(WaterPledgePower.class.getSimpleName() + "32.png"));
+            .getTexture(makePowerPath(WaterPledgePower.class + "32.png"));
 
     public WaterPledgePower(final AbstractCreature owner, final int amount) {
         name = NAME;

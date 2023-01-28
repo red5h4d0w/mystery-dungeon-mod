@@ -18,9 +18,9 @@ public class BulbasaurSleepPowder extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(BulbasaurSleepPowder.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(BulbasaurSleepPowder.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(BulbasaurSleepPowder.class.getSimpleName());
+    public static final String IMG = makeCardPath(BulbasaurSleepPowder.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

@@ -52,7 +52,7 @@ public class PikachuMeter {
     private static final float BOX_W = 325.0F * Settings.xScale;
     private static final float METER_HEIGHT = 50.0f * Settings.yScale;
 
-    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString(MysteryDungeon.makeID(PikachuMeter.class.getSimpleName())); 
+    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString(MysteryDungeon.makeID(PikachuMeter.class)); 
 
     private static final String TITLE = uiStrings.TEXT[0];
 

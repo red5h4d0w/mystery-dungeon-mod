@@ -21,7 +21,7 @@ import com.megacrit.cardcrawl.relics.RunicPyramid;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 public class TimidExplorerRelic extends PokemonRelic { 
-    public static final String ID = MysteryDungeon.makeID(TimidExplorerRelic.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(TimidExplorerRelic.class);
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 public class MysticWaterRelic extends PokemonRelic { 
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID(MysticWaterRelic.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(MysticWaterRelic.class);
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

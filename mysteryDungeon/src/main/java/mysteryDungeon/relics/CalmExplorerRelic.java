@@ -18,7 +18,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 public class CalmExplorerRelic extends PokemonRelic { 
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID(CalmExplorerRelic.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CalmExplorerRelic.class);
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

@@ -20,9 +20,9 @@ public class CharmanderBlastBurn extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(CharmanderBlastBurn.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CharmanderBlastBurn.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(CharmanderBlastBurn.class.getSimpleName());
+    public static final String IMG = makeCardPath(CharmanderBlastBurn.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

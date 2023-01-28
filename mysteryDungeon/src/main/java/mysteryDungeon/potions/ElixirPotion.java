@@ -16,7 +16,7 @@ import mysteryDungeon.pokemons.Cyndaquil;
 
 public class ElixirPotion extends PokemonPotion {
 
-    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(ElixirPotion.class.getSimpleName());
+    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(ElixirPotion.class);
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
     
     public static final String NAME = potionStrings.NAME;

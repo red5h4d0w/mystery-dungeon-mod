@@ -17,9 +17,9 @@ public class PikachuPlayNice extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(PikachuPlayNice.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(PikachuPlayNice.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(PikachuPlayNice.class.getSimpleName());
+    public static final String IMG = makeCardPath(PikachuPlayNice.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

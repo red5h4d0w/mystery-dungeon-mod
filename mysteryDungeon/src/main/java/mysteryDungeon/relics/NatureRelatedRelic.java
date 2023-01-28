@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 public class NatureRelatedRelic extends PokemonRelic { 
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID(NatureRelatedRelic.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(NatureRelatedRelic.class);
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

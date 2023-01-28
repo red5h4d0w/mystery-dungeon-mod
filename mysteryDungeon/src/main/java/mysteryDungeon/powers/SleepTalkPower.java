@@ -24,7 +24,7 @@ public class SleepTalkPower extends PokemonPower implements CloneablePowerInterf
     public AbstractCreature source;
     public int timesActivated = 0;
 
-    public static final String POWER_ID = MysteryDungeon.makeID(SleepTalkPower.class.getSimpleName());
+    public static final String POWER_ID = MysteryDungeon.makeID(SleepTalkPower.class);
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -32,8 +32,8 @@ public class SleepTalkPower extends PokemonPower implements CloneablePowerInterf
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
     // There's a fallback "missing texture" image, so the game shouldn't crash if you accidentally put a non-existent file.
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(SleepTalkPower.class.getSimpleName()+"84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(SleepTalkPower.class.getSimpleName()+"32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(SleepTalkPower.class+"84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(SleepTalkPower.class+"32.png"));
 
     public SleepTalkPower(final AbstractCreature owner, final int amount) {
         name = NAME;

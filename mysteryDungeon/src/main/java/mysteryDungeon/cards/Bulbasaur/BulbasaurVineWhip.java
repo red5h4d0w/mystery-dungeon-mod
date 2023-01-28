@@ -20,9 +20,9 @@ public class BulbasaurVineWhip extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(BulbasaurVineWhip.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(BulbasaurVineWhip.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(BulbasaurVineWhip.class.getSimpleName());
+    public static final String IMG = makeCardPath(BulbasaurVineWhip.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

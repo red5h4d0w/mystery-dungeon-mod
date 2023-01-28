@@ -18,9 +18,9 @@ public class ChikoritaAromatherapy extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(ChikoritaAromatherapy.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(ChikoritaAromatherapy.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(ChikoritaAromatherapy.class.getSimpleName());
+    public static final String IMG = makeCardPath(ChikoritaAromatherapy.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;

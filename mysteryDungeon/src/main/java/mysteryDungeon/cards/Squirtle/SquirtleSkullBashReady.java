@@ -17,9 +17,9 @@ public class SquirtleSkullBashReady extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(SquirtleSkullBashReady.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(SquirtleSkullBashReady.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(SquirtleSkullBashReady.class.getSimpleName());
+    public static final String IMG = makeCardPath(SquirtleSkullBashReady.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;

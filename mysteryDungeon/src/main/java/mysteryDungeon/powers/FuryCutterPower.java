@@ -24,7 +24,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 public class FuryCutterPower extends PokemonTwoAmountPower implements CloneablePowerInterface {
     public AbstractCreature source;
     public boolean upgrade;
-    public static final String POWER_ID = MysteryDungeon.makeID(FuryCutterPower.class.getSimpleName());
+    public static final String POWER_ID = MysteryDungeon.makeID(FuryCutterPower.class);
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -34,9 +34,9 @@ public class FuryCutterPower extends PokemonTwoAmountPower implements CloneableP
     // There's a fallback "missing texture" image, so the game shouldn't crash if
     // you accidentally put a non-existent file.
     private static final Texture tex84 = TextureLoader
-            .getTexture(makePowerPath(FuryCutterPower.class.getSimpleName() + "84.png"));
+            .getTexture(makePowerPath(FuryCutterPower.class + "84.png"));
     private static final Texture tex32 = TextureLoader
-            .getTexture(makePowerPath(FuryCutterPower.class.getSimpleName() + "32.png"));
+            .getTexture(makePowerPath(FuryCutterPower.class + "32.png"));
 
     public FuryCutterPower(final AbstractCreature owner, final int amount, final int upgradeAmount) {
         name = NAME;

@@ -17,7 +17,7 @@ import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
 public class BigRootRelic extends PokemonRelic {
-    public static final String ID = MysteryDungeon.makeID(BigRootRelic.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(BigRootRelic.class);
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

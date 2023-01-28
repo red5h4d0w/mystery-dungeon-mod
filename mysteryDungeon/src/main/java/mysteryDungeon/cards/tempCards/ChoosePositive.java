@@ -21,9 +21,9 @@ public class ChoosePositive extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(ChoosePositive.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(ChoosePositive.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(ChoosePositive.class.getSimpleName());
+    public static final String IMG = makeCardPath(ChoosePositive.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

@@ -17,9 +17,9 @@ public class BulbasaurStrengthSap extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(BulbasaurStrengthSap.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(BulbasaurStrengthSap.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(BulbasaurStrengthSap.class.getSimpleName());
+    public static final String IMG = makeCardPath(BulbasaurStrengthSap.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;

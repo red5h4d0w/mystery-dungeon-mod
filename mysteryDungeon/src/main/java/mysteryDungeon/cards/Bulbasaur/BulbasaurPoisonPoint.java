@@ -18,9 +18,9 @@ public class BulbasaurPoisonPoint extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(BulbasaurPoisonPoint.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(BulbasaurPoisonPoint.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(BulbasaurPoisonPoint.class.getSimpleName());
+    public static final String IMG = makeCardPath(BulbasaurPoisonPoint.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

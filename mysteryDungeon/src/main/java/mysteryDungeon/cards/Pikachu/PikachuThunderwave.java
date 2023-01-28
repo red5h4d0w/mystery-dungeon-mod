@@ -20,9 +20,9 @@ public class PikachuThunderwave extends PokemonCard {
     // TEXT DECLARATION
 
     public Logger logger = LogManager.getLogger(PikachuThunderwave.class);
-    public static final String ID = MysteryDungeon.makeID(PikachuThunderwave.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(PikachuThunderwave.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(PikachuThunderwave.class.getSimpleName());
+    public static final String IMG = makeCardPath(PikachuThunderwave.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;

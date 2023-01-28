@@ -18,7 +18,7 @@ public class ChikoritaSweetScent extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(ChikoritaSweetScent.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(ChikoritaSweetScent.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = makeCardPath("ChikoritaSkill");
     public static final String NAME = cardStrings.NAME;

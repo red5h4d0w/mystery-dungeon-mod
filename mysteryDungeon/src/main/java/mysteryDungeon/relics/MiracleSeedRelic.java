@@ -22,7 +22,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 public class MiracleSeedRelic extends PokemonRelic implements OnApplyPowerRelic { 
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID(MiracleSeedRelic.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(MiracleSeedRelic.class);
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

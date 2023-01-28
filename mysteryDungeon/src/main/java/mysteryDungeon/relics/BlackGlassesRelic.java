@@ -22,7 +22,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 public class BlackGlassesRelic extends PokemonRelic  { 
 
     // ID, images, text.
-    public static final String ID = MysteryDungeon.makeID(BlackGlassesRelic.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(BlackGlassesRelic.class);
 
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;

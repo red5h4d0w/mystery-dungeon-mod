@@ -19,9 +19,9 @@ public class PikachuDischarge extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(PikachuDischarge.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(PikachuDischarge.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(PikachuDischarge.class.getSimpleName());
+    public static final String IMG = makeCardPath(PikachuDischarge.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;

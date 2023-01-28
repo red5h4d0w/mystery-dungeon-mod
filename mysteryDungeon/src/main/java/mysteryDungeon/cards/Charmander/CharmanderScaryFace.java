@@ -18,9 +18,9 @@ public class CharmanderScaryFace extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(CharmanderScaryFace.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(CharmanderScaryFace.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(CharmanderScaryFace.class.getSimpleName());
+    public static final String IMG = makeCardPath(CharmanderScaryFace.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

@@ -20,9 +20,9 @@ public class BulbasaurVenoshock extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(BulbasaurVenoshock.class.getSimpleName());
+    public static final String ID = MysteryDungeon.makeID(BulbasaurVenoshock.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(BulbasaurVenoshock.class.getSimpleName());
+    public static final String IMG = makeCardPath(BulbasaurVenoshock.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
