@@ -1275,7 +1275,7 @@
     },
     "mysteryDungeon:TotodileNaturePowerSea": {
         "NAME": "Force-Nature: Mer",
-        "DESCRIPTION": "Appliquez !M! de Vulnérabilité. NL Gagnez !mysteryDungeon:M2! de mysterydungeon:Vigueur. NL Épuisement."
+        "DESCRIPTION": "Apply !M! Vulnerable. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor."
     },
     "mysteryDungeon:TotodileCrunch": {
         "NAME": "Mâchouille",
@@ -1356,7 +1356,8 @@
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "Surf",
-        "DESCRIPTION": "Lorsque vous défaussez une carte, gagnez !M! mysterydungeon:Vigueur_Temporaire."
+        "DESCRIPTION": "Lorsque vous défaussez une carte, gagnez !M! mysterydungeon:Vigueur_Temporaire.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you discard a card, for every discarded card, gain !M! mysterydungeon:Temporary_Vigor."
     },
     "mysteryDungeon:TotodileSubstitute": {
         "NAME": "Clonage",
