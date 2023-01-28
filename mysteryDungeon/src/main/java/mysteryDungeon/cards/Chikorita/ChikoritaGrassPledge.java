@@ -20,7 +20,7 @@ public class ChikoritaGrassPledge extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(ChikoritaGrassPledge.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("ChikoritaSkill");
+    public static final String IMG = makeCardPath(ChikoritaGrassPledge.class.getSimpleName());
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
