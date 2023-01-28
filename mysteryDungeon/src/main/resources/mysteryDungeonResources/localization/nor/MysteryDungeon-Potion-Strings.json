@@ -30,8 +30,8 @@
             "Apply #b%s #yBurn to ALL enemies."
         ]
     },
-    "mysteryDungeon:GrassGemPotion": {
-        "NAME": "Grass Gem",
+    "mysteryDungeon:AuxPowerPotion": {
+        "NAME": "Aux Power",
         "DESCRIPTIONS": [
             "Your next attack deals #b%s more damage."
         ]
