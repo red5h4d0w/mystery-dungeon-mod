@@ -13,17 +13,17 @@ import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.pokemons.Chikorita;
 
 
-public class GrassGemPotion extends PokemonPotion {
+public class AuxPowerPotion extends PokemonPotion {
 
-    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(GrassGemPotion.class.getSimpleName());
+    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(AuxPowerPotion.class.getSimpleName());
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
     
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
 
-    public static final String IMG_STRING = "x-atk.png";
+    public static final String IMG_STRING = "aux-power.png";
 
-    public GrassGemPotion() {
+    public AuxPowerPotion() {
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java
         super(NAME, POTION_ID, PotionRarity.COMMON, IMG_STRING);
         
@@ -62,7 +62,7 @@ public class GrassGemPotion extends PokemonPotion {
     
     @Override
     public AbstractPotion makeCopy() {
-        return new GrassGemPotion();
+        return new AuxPowerPotion();
     }
 
     // This is your potency.
