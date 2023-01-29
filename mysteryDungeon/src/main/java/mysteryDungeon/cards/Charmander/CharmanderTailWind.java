@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.powers.DrawPower;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.BellyDrumPower;
+import mysteryDungeon.powers.TailWindPower;
 
 public class CharmanderTailWind extends PokemonCard {
 
@@ -51,7 +51,7 @@ public class CharmanderTailWind extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Create an int which equals to your current energy.
-        addToBot(new ApplyPowerAction(p, p, new BellyDrumPower(p, magicNumber), magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new TailWindPower(p, magicNumber), magicNumber));
         addToBot(new ApplyPowerAction(p, p, new DrawPower(p, magicNumber), magicNumber));
     }
 
