@@ -33,11 +33,11 @@
             "Lorsque vous activez un Orbe, infligez autant de dégâts que vous avez d'Armure à un ennemi aléatoire %s fois."
         ]
     },
-    "mysteryDungeon:BellyDrumPower": {
-        "NAME": "Cognobidon",
+    "mysteryDungeon:TailWindPower": {
+        "NAME": "Tail Wind",
         "DESCRIPTIONS": [
-            "Chaque tour, la première carte jouée coûte #b0, mais est #yépuisée.",
-            "Chaque tour, les #b%s premières cartes jouées coûtent 0, mais sont épuisées."
+            "The first card you play each turn cost #b0, but #yexhausts.",
+            "The first %s cards you play each turn cost 0, but exhaust."
         ]
     },
     "mysteryDungeon:BidePower": {
