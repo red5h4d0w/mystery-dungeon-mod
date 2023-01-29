@@ -33,11 +33,11 @@
             "Whenever you activate an Orb, deal damage equal to your Block to a random enemy %s times."
         ]
     },
-    "mysteryDungeon:BellyDrumPower": {
-        "NAME": "腹鼓",
+    "mysteryDungeon:TailWindPower": {
+        "NAME": "Tail Wind",
         "DESCRIPTIONS": [
-            "每回合打出的第一张牌费用为0且被消耗。",
-            "每回合打出的第 %s 张牌费用为0且被消耗。"
+            "The first card you play each turn cost #b0, but #yexhausts.",
+            "The first %s cards you play each turn cost 0, but exhaust."
         ]
     },
     "mysteryDungeon:BidePower": {
