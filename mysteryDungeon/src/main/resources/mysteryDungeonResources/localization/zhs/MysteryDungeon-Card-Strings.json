@@ -292,8 +292,8 @@
         "NAME": "闪焰冲锋",
         "DESCRIPTION": "造成等同本场战斗消耗牌数量 !M! 倍的伤害。"
     },
-    "mysteryDungeon:CharmanderTwister": {
-        "NAME": "Twister",
+    "mysteryDungeon:CharmanderFling": {
+        "NAME": "Fling",
         "DESCRIPTION": "Exhaust up to 4 cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! mysterydungeon:Burn NL Exhaust up to 4 cards. NL Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust."
     },
@@ -339,8 +339,8 @@
         "NAME": "影爪",
         "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 当使用金属 mysterydungeon:爪 时，该牌获得更多 格挡 。"
     },
-    "mysteryDungeon:CharmanderRoost": {
-        "NAME": "Roost",
+    "mysteryDungeon:CharmanderSleepTalk": {
+        "NAME": "Sleep Talk",
         "DESCRIPTION": "The first time you exhaust a card each turn, add a random card to your hand.",
         "UPGRADE_DESCRIPTION": "The first 2 times you exhaust a card each turn, add a random card to your hand."
     },
