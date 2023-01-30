@@ -31,9 +31,9 @@
         ]
     },
     "mysteryDungeon:AuxPowerPotion": {
-        "NAME": "Aux Power",
+        "NAME": "Offensive Extra",
         "DESCRIPTIONS": [
-            "Your next attack deals #b%s more damage."
+            "Votre prochaine attaque infligera #b%s dégâts supplémentaires."
         ]
     },
     "mysteryDungeon:LeppaBerryPotion": {

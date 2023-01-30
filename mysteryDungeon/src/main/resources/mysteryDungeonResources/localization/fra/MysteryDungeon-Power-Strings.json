@@ -34,10 +34,10 @@
         ]
     },
     "mysteryDungeon:TailWindPower": {
-        "NAME": "Tail Wind",
+        "NAME": "Vent Arrière",
         "DESCRIPTIONS": [
-            "The first card you play each turn cost #b0, but #yexhausts.",
-            "The first %s cards you play each turn cost 0, but exhaust."
+            "Chaque tour, la première carte jouée coûte #b0, mais est #yépuisée.",
+            "Chaque tour, les #b%s premières cartes jouées coûtent 0, mais sont épuisées."
         ]
     },
     "mysteryDungeon:BidePower": {
@@ -455,10 +455,10 @@
     "mysteryDungeon:ThrashPower": {
         "NAME": "Mania",
         "DESCRIPTIONS": [
-            "Every %1$s Attack you play, gain %2$s #yVigor. NL (%3$s card till #yVigor gain)",
-            "Every %1$s Attack you play, gain %2$s #yVigor. NL (%3$s cards till #yVigor gain)",
-            "Every %1$s Attack you play, gain %2$s #yVigor. NL (%3$s card till #yVigor gain)",
-            "Every %1$s Attack you play, gain %2$s #yVigor. NL (%3$s cards till #yVigor gain)"
+            "À chaque %1$s Attaque que vous jouez, gagnez %2$s de #yVigueur. NL (%3$s carte avant de gagner de la #yVigueur)",
+            "À chaque %1$s Attaques que vous jouez, gagnez %2$s de #yVigueur. NL (%3$s carte avant de gagner de la #yVigueur)",
+            "À chaque %1$s Attaque que vous jouez, gagnez %2$s de #yVigueur. NL (%3$s cartes avant de gagner de la #yVigueur)",
+            "À chaque %1$s Attaques que vous jouez, gagnez %2$s de #yVigueur. NL (%3$s cartes avant de gagner de la #yVigueur)"
         ]
     },
     "mysteryDungeon:TorrentPower": {

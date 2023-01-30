@@ -1,51 +1,51 @@
 {
     "mysteryDungeon:ExplorersDeck": {
-        "NAME": "冒险家牌组",
-        "DESCRIPTION": "一旦你选择了冒险家，将获得5张牌。"
+        "NAME": "Explorer's deck",
+        "DESCRIPTION": "Will become a deck of 5 cards once you choose your explorer."
     },
     "mysteryDungeon:PartnersDeck": {
-        "NAME": "伙伴牌组",
-        "DESCRIPTION": "一旦你选择了伙伴，将获得5张牌。"
+        "NAME": "Partner's Deck",
+        "DESCRIPTION": "Will become a deck of 5 cards once you choose your partner."
     },
     "mysteryDungeon:ColorlessAgility": {
-        "NAME": "高速移动",
-        "DESCRIPTION": "保留。 NL 抽 !M! 张牌。 NL 消耗。"
+        "NAME": "Agility",
+        "DESCRIPTION": "Retain. NL Draw !M! cards. NL Exhaust."
     },
     "mysteryDungeon:ChooseAttack": {
-        "NAME": "攻击",
-        "DESCRIPTION": "向手牌添加一张随机攻击牌。"
+        "NAME": "Attack",
+        "DESCRIPTION": "Add a random Attack to your hand."
     },
     "mysteryDungeon:ChooseNegative": {
-        "NAME": "负极态",
-        "DESCRIPTION": "进入 mysterydungeon:负极态 。"
+        "NAME": "Negative Stance",
+        "DESCRIPTION": "Enter mysterydungeon:Negative_Stance."
     },
     "mysteryDungeon:ChoosePositive": {
-        "NAME": "正极态",
-        "DESCRIPTION": "进入 mysterydungeon:正极态 。"
+        "NAME": "Positive Stance",
+        "DESCRIPTION": "Enter mysterydungeon:Positive_Stance."
     },
     "mysteryDungeon:ChooseSkill": {
-        "NAME": "技能",
-        "DESCRIPTION": "向手牌添加一张随机技能牌。"
+        "NAME": "Skill",
+        "DESCRIPTION": "Add a random Skill to your hand."
     },
     "mysteryDungeon:StatusFreeze": {
-        "NAME": "冷冻",
-        "DESCRIPTION": "保留。"
+        "NAME": "Freeze",
+        "DESCRIPTION": "Retain."
     },
     "mysteryDungeon:BulbasaurBulletSeed": {
-        "NAME": "种子机关枪",
-        "DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 可多次升级。"
+        "NAME": "Bullet Seed",
+        "DESCRIPTION": "Deal !D! damage !M! times. NL Can be upgraded multiple times."
     },
     "mysteryDungeon:BulbasaurChlorophyll": {
-        "NAME": "叶绿素",
-        "DESCRIPTION": "抽 !M! 张牌。 NL 若抽到一张攻击牌，获得1点力量。",
-        "UPGRADE_DESCRIPTION": "抽 !M! 张牌。 NL 每抽到一张攻击牌，获得1点力量。"
+        "NAME": "Chlorophyll",
+        "DESCRIPTION": "Draw !M! card. NL If you drew an Attack, gain 1 Strength.",
+        "UPGRADE_DESCRIPTION": "Draw !M! cards. NL For each Attack drawn this way, gain 1 Strength."
     },
     "mysteryDungeon:BulbasaurDefend": {
-        "NAME": "防御",
-        "DESCRIPTION": "获得 !B! 点 格挡 。"
+        "NAME": "Defend",
+        "DESCRIPTION": "Gain !B! Block."
     },
     "mysteryDungeon:BulbasaurDefenseCurl": {
-        "NAME": "变圆",
+        "NAME": "Defense Curl",
         "DESCRIPTION": "获得 !B! 点 格挡 。"
     },
     "mysteryDungeon:BulbasaurDoubleEdge": {
