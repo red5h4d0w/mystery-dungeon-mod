@@ -30,10 +30,10 @@
             "적 전체에게 #y화상 을 #b%s 부여합니다."
         ]
     },
-    "mysteryDungeon:GrassGemPotion": {
-        "NAME": "풀주얼",
+    "mysteryDungeon:AuxPowerPotion": {
+        "NAME": "Aux Power",
         "DESCRIPTIONS": [
-            "활력을 #b%s 얻습니다."
+            "Your next attack deals #b%s more damage."
         ]
     },
     "mysteryDungeon:LeppaBerryPotion": {
