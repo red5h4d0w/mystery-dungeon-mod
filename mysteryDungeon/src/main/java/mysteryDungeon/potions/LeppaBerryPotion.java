@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 
 import mysteryDungeon.abstracts.PokemonPotion;
-import mysteryDungeon.pokemons.Charmander;
+import mysteryDungeon.pokemons.Cyndaquil;
 
 
 public class LeppaBerryPotion extends PokemonPotion {
@@ -31,7 +31,7 @@ public class LeppaBerryPotion extends PokemonPotion {
        // Do you throw this potion at an enemy or do you just consume it.
         isThrown = false;
 
-        cardColor = Charmander.CARD_COLOR;
+        cardColor = Cyndaquil.CARD_COLOR;
 
         updateDescription();
         

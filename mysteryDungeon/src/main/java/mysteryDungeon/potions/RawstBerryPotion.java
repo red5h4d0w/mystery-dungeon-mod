@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.potions.AbstractPotion;
 import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.powers.BurnPower;
 import mysteryDungeon.powers.NaturePowerMountainPower;
-import mysteryDungeon.pokemons.Charmander;
+import mysteryDungeon.pokemons.Cyndaquil;
 
 public class RawstBerryPotion extends PokemonPotion {
 
@@ -33,7 +33,7 @@ public class RawstBerryPotion extends PokemonPotion {
        // Do you throw this potion at an enemy or do you just consume it.
         isThrown = true;
 
-        cardColor = Charmander.CARD_COLOR;
+        cardColor = Cyndaquil.CARD_COLOR;
 
         updateDescription();
         
