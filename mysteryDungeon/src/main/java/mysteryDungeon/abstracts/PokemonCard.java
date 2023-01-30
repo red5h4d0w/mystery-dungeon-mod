@@ -89,7 +89,6 @@ public abstract class PokemonCard extends CustomCard implements AtStartOfTurnPos
     }
 
     public void loadJokeCardImage(String img) {
-        logger.info(img);
         Texture cardTexture;
         if (imgMap.containsKey(img)) {
           cardTexture = imgMap.get(img);

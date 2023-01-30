@@ -136,7 +136,6 @@ public class MysteryDungeon implements
     public static String makeCardPath(String resourcePath) {
         String pokemonName = resourcePath.split("(?=[A-Z])")[0];
         String fileName = resourcePath.substring(pokemonName.length()) + ".png";
-        logger.info(fileName);
         return getModID() + "Resources/images/cards/" + pokemonName + "/" + fileName;
     }
 
@@ -144,7 +143,6 @@ public class MysteryDungeon implements
         String resourcePath = clz.getSimpleName();
         String pokemonName = resourcePath.split("(?=[A-Z])")[0];
         String fileName = resourcePath.substring(pokemonName.length()) + ".png";
-        logger.info(fileName);
         return getModID() + "Resources/images/cards/" + pokemonName + "/" + fileName;
     }
     
