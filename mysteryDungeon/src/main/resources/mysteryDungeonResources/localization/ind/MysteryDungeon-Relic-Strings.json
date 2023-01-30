@@ -1,0 +1,213 @@
+{
+    "mysteryDungeon:DefaultClickableRelic": {
+        "NAME": "Right-Clicky Relic",
+        "FLAVOR": "The more you right-click it, the more orbs you've evoked in your lifetime.",
+        "DESCRIPTIONS": [
+            "[#2aecd7]Usable [#2aecd7]once [#2aecd7]per [#2aecd7]turn.[] NL #yEvoke your rightmost Orb.",
+            "YOU ARE MINE!"
+        ]
+    },
+    "mysteryDungeon:NatureRelatedRelic": {
+        "NAME": "Nature Related Relic",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "You will receive a relic that depends on your nature."
+        ]
+    },
+    "mysteryDungeon:AmuletCoinRelic": {
+        "NAME": "Amulet Coin",
+        "FLAVOR": "It doubles any prize money received as long as the holder joins the battle at least once.",
+        "DESCRIPTIONS": [
+            "Cards no longer cost you money in combat. At the start of your turn, spend #b20 gold."
+        ]
+    },
+    "mysteryDungeon:BigRootRelic": {
+        "NAME": "Big Root",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "Whenever you are at #b70% or less of your max HP, gain #yRecovery."
+        ]
+    },
+    "mysteryDungeon:BlackGlassesRelic": {
+        "NAME": "Black Glasses",
+        "FLAVOR": "It's a pair of shady- looking glasses that boost the power of the holder's Dark-type moves.",
+        "DESCRIPTIONS": [
+            "At the start of each turn, deal damage to ALL enemies equal to their #yStrength."
+        ]
+    },
+    "mysteryDungeon:BraveExplorerRelic": {
+        "NAME": "Brave Explorer",
+        "FLAVOR": "A brave Explorer",
+        "DESCRIPTIONS": [
+            "Each combat, the first time you end your turn without #yBlock apply #b2 #yVulnerable to ALL enemies."
+        ]
+    },
+    "mysteryDungeon:CalmExplorerRelic": {
+        "NAME": "Calm Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "Draw #b1 card and gain [E] at the start of every fight."
+        ]
+    },
+    "mysteryDungeon:CellBatteryRelic": {
+        "NAME": "Cell Battery",
+        "FLAVOR": "A consumable battery. If the holder is hit by an Electric-type move, its Attack will rise.",
+        "DESCRIPTIONS": [
+            "The #yCharge #yMeter will now have #b3 steps between stances. NL You no longer return to the center of the charge meter at the start of your turn."
+        ]
+    },
+    "mysteryDungeon:CharcoalRelic": {
+        "NAME": "Charcoal",
+        "FLAVOR": "It's a combustible fuel that boosts the power of Fire-type moves.",
+        "DESCRIPTIONS": [
+            "Every time you apply a #ydebuff deal #b1 damage to ALL enemies."
+        ]
+    },
+    "mysteryDungeon:DocileExplorerRelic": {
+        "NAME": "Docile Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "When you receive a #yDebuff, gain #b2 Block on the following turn."
+        ]
+    },
+    "mysteryDungeon:FireGemRelic": {
+        "NAME": "Fire Gem",
+        "FLAVOR": "This gem is imbued with the essence of fire and will boost the power of a Fire-type moves, but only once.",
+        "DESCRIPTIONS": [
+            "At the start of each combat, apply #b10 #yBurn to ALL enemies."
+        ]
+    },
+    "mysteryDungeon:FlamePlateRelic": {
+        "NAME": "Flame Plate",
+        "FLAVOR": "This stone tablet is imbued with the essence of fire and boosts the power of the holder's Fire-type moves.",
+        "DESCRIPTIONS": [
+            "Gain [E] at the start of your turn. NL At the end of your turn, trigger an #yEruption on ALL enemies."
+        ]
+    },
+    "mysteryDungeon:GrassySeedRelic": {
+        "NAME": "Grassy Seed",
+        "FLAVOR": "It boosts Defense on Grassy Terrain.",
+        "DESCRIPTIONS": [
+            "At the start of combat add a random attack to your draw pile. It costs #b0 this combat."
+        ]
+    },
+    "mysteryDungeon:HardyExplorerRelic": {
+        "NAME": "Hardy Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "The first time you lose #yHP each turn, gain #b5 #yBlock. If this #yHP loss was from a monster's attack, do not remove your #yBlock at the start of the next turn."
+        ]
+    },
+    "mysteryDungeon:ImpishExplorerRelic": {
+        "NAME": "Impish Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "The first time you evoke an orb each combat, gain #b1 #yFocus."
+        ]
+    },
+    "mysteryDungeon:JollyExplorerRelic": {
+        "NAME": "Jolly Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "Start each combat with an #yAgility."
+        ]
+    },
+    "mysteryDungeon:LeftoversRelic": {
+        "NAME": "Leftovers",
+        "FLAVOR": "Some food left from your last meal",
+        "DESCRIPTIONS": [
+            "At the end of each combat heal #b3 #yHP."
+        ]
+    },
+    "mysteryDungeon:LifeOrbRelic": {
+        "NAME": "Life Orb",
+        "FLAVOR": "It boosts the power of moves, but at the cost of some HP on each hit.",
+        "DESCRIPTIONS": [
+            "Gain [E] at the start of your turn. NL At the end of your turn, exhaust a random card from your hand."
+        ]
+    },
+    "mysteryDungeon:MetronomeRelic": {
+        "NAME": "Metronome",
+        "FLAVOR": "It follows its own rhythm.",
+        "DESCRIPTIONS": [
+            "At the start of each turn add a random card from a Pokémon that is not in your team to your hand. It costs #b0 this turn."
+        ]
+    },
+    "mysteryDungeon:MeadowPlateRelic": {
+        "NAME": "Meadow Plate",
+        "FLAVOR": "A stone tablet imbued with the essence of plants. When used on a certain Pokémon, it allows that Pokémon to gain the power of the Grass type.",
+        "DESCRIPTIONS": [
+            "Gain #b20 #ymax #yHP. At the start of combat if you have more than #b65% of your #ymax #yHP lose #yHP until you have #y65% of your #ymax #yHP. If you have less than #b65% of your #ymax #yHP, heal #b10 #yHP."
+        ]
+    },
+    "mysteryDungeon:MiracleSeedRelic": {
+        "NAME": "Miracle Seed",
+        "FLAVOR": "Its a seed invued with life force that boosts the power of Grass-type moves.",
+        "DESCRIPTIONS": [
+            "Every time you apply #b3 #yDebuffs in a single turn draw a card."
+        ]
+    },
+    "mysteryDungeon:MysticWaterRelic": {
+        "NAME": "Mystic Water",
+        "FLAVOR": "This teardrop-shaped gem boosts the power of Water-type moves.",
+        "DESCRIPTIONS": [
+            "Gain [E] at the start of your turn. NL Reduce your maximum hand size by #b2."
+        ]
+    },
+    "mysteryDungeon:NaiveExplorerRelic": {
+        "NAME": "Naive Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "At the start of your turn, if you have not taken any damage from attacks this combat, your next Attack deals #b3 more damage."
+        ]
+    },
+    "mysteryDungeon:QuirkyExplorerRelic": {
+        "NAME": "Quirky Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "Gain #b5% more #yGold in combat rewards."
+        ]
+    },
+    "mysteryDungeon:RelaxedExplorerRelic": {
+        "NAME": "Relaxed Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "At the start of your turn, #yScry #b1."
+        ]
+    },
+    "mysteryDungeon:SplashPlateRelic": {
+        "NAME": "Splash Plate",
+        "FLAVOR": "This stone tablet is imbued with the essence of water and boosts the power of the holder's Water-type moves.",
+        "DESCRIPTIONS": [
+            "The first time you evoke an #yOrb each turn, gain [E] ."
+        ]
+    },
+    "mysteryDungeon:TimidExplorerRelic": {
+        "NAME": "Timid Explorer",
+        "FLAVOR": "What is this?",
+        "DESCRIPTIONS": [
+            "At the end of each turn, if you have any leftover energy, spend #b1 and #yretain a card."
+        ]
+    },
+    "mysteryDungeon:LightBallRelic": {
+        "NAME": "Light Ball",
+        "FLAVOR": "It's a puzzling orb that boosts its Attack and Sp. Atk stats.",
+        "DESCRIPTIONS": [
+            "Once per turn, when you play a #ypower and you are not in a #ystance, gain #b1 #yorb #yslot."
+        ]
+    },
+    "mysteryDungeon:WaveIncenseRelic": {
+        "NAME": "Wave Incense",
+        "FLAVOR": "This incense has a curious aroma that boosts the power of Water-type moves.",
+        "DESCRIPTIONS": [
+            "During combat, ALL cards you create are #yupgraded."
+        ]
+    },
+    "mysteryDungeon:WaterGemRelic": {
+        "NAME": "Water Gem",
+        "FLAVOR": "This gem is imbued with the essence of water and will boost the power of a Water-type moves, but only once.",
+        "DESCRIPTIONS": [
+            "When you deal more than #b20 attack damage in a single hit, deal #b5 damage to ALL enemies."
+        ]
+    }
+}
