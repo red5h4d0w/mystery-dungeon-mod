@@ -1,10 +1,10 @@
 {
     "mysteryDungeon:DefaultClickableRelic": {
-        "NAME": "오른쪽 클릭 유물",
-        "FLAVOR": "당신은 오른쪽 마우스를 클릭하면 할수록, 당신의 일생에서 더 많은 일을 불러일으킵니다.",
+        "NAME": "Right-Clicky Relic",
+        "FLAVOR": "The more you right-click it, the more orbs you've evoked in your lifetime.",
         "DESCRIPTIONS": [
-            "[#2aecd7] 번 사용가능. [#2aecd7] 턴당 [#2aecd7] 회 가장 오른쪽 구체를 [#2aecd7] 번 #y발현 합니다.",
-            "넌 내꺼야!"
+            "[#2aecd7]Usable [#2aecd7]once [#2aecd7]per [#2aecd7]turn.[] NL #yEvoke your rightmost Orb.",
+            "YOU ARE MINE!"
         ]
     },
     "mysteryDungeon:NatureRelatedRelic": {
