@@ -192,12 +192,12 @@
         "UPGRADE_DESCRIPTION": "상대 턴이 시작할 때 !M! mysterydungeon:잚듬 을 부여합니다. NL 소멸."
     },
     "mysteryDungeon:CharmanderAirCutter": {
-        "NAME": "Air Cutter",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies !M! times."
+        "NAME": "에어컷터",
+        "DESCRIPTION": "적 전체에게 피해를 !D! 만큼 !M! 번 줍니다."
     },
     "mysteryDungeon:CharmanderAirSlash": {
-        "NAME": "Air Slash",
-        "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, gain !B! Block."
+        "NAME": "에어슬레시",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 선택한 적이 공격할 의도가 있다면, 방어도 를 !B! 얻습니다."
     },
     "mysteryDungeon:CharmanderBlastBurn": {
         "NAME": "블러스트 번",
@@ -234,8 +234,8 @@
         "NAME": "용의 파동",
         "DESCRIPTION": "사용불가. NL 이 카드를 뽑을 경우: 소멸한 카드에 있는 무작위 카드를 뽑을 카드 더미 맨 위로 가져옵니다. NL 이 효과가 !M! 번 발생한 경우: 소멸합니다.",
         "EXTENDED_DESCRIPTION": [
-            "I can't play this card.",
-            "When Drawn: Exhaust."
+            "이 카드는 사용할 수 없습니다.",
+            "뽑을 경우 : 소멸합니다."
         ]
     },
     "mysteryDungeon:CharmanderDragonRage": {
@@ -251,7 +251,7 @@
         "DESCRIPTION": "사용불가. NL 소멸할 경우 : 적 전체에게 피해를 !D! 줍니다. NL 뽑을 카드 더미 맨 위의 이 카드를 1 장 복사해 가져옵니다.",
         "UPGRADE_DESCRIPTION": "사용불가. NL 소멸할 경우 : 적 전체에게 피해를 !D! 줍니다. NL 뽑을 카드 더미 맨 위의 이 카드를 1 장 복사해 가져옵니다. NL 다음 턴에 카드를 1장 더 뽑습니다.",
         "EXTENDED_DESCRIPTION": [
-            "I can't play this card."
+            "이 카드는 사용할 수 없습니다."
         ]
     },
     "mysteryDungeon:CharmanderDrought": {
@@ -293,9 +293,9 @@
         "DESCRIPTION": "이번 전투동안 소멸된 카드 한 장당 !M! 을 곱하여 피해를 줍니다. (이 피해는 공격으로 간주하지 않습니다.)"
     },
     "mysteryDungeon:CharmanderFling": {
-        "NAME": "Fling",
-        "DESCRIPTION": "Exhaust up to 4 cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! mysterydungeon:Burn NL Exhaust up to 4 cards. NL Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust."
+        "NAME": "내던지기",
+        "DESCRIPTION": "카드를 최대 4장 소멸 시킵니다. 이 카드로 소멸된 갯수만큼 피해를 !D! 주고 mysterydungeon:화상 을 !M! 부여합니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "피해를 !D! 주고 !M! mysterydungeon:화상 을 부여합니다. NL 카드를 최대 4장 소멸 시킵니다. NL 이 카드로 소멸된 갯수만큼 피해를 !D! 주고 mysterydungeon:화상 을 !M! 부여합니다. NL 소멸."
     },
     "mysteryDungeon:CharmanderFrustration": {
         "NAME": "화풀이",
@@ -1356,8 +1356,8 @@
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "파도타기",
-        "DESCRIPTION": "카드를 버릴 때 마다, mysterydungeon:임시_활력 을 !M! 얻습니다.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you discard a card, for every discarded card, gain !M! mysterydungeon:Temporary_Vigor."
+        "DESCRIPTION": "자신의 턴에 카드를 버릴 때 마다, mysterydungeon:임시_활력 을 !M! 얻습니다.",
+        "UPGRADE_DESCRIPTION": "선천성. NL 자신의 턴에 카드를 버릴 때 마다, mysterydungeon:임시_활력 을 !M! 얻습니다."
     },
     "mysteryDungeon:TotodileSubstitute": {
         "NAME": "대타출동",
