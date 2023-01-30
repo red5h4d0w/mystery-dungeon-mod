@@ -22,7 +22,7 @@ public class MeowthThroatChop extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(MeowthThroatChop.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("MeowthAttack");
+    public static final String IMG = makeCardPath(MeowthThroatChop.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

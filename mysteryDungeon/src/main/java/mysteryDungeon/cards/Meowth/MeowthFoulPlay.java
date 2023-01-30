@@ -24,7 +24,7 @@ public class MeowthFoulPlay extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(MeowthFoulPlay.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("MeowthAttack");
+    public static final String IMG = makeCardPath(MeowthFoulPlay.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

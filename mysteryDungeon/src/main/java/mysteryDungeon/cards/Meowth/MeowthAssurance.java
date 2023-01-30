@@ -23,7 +23,7 @@ public class MeowthAssurance extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(MeowthAssurance.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("MeowthAttack");
+    public static final String IMG = makeCardPath(MeowthAssurance.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
