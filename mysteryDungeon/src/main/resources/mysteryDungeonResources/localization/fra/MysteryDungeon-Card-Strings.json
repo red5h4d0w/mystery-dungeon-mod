@@ -1275,7 +1275,7 @@
     },
     "mysteryDungeon:TotodileNaturePowerSea": {
         "NAME": "Force-Nature: Mer",
-        "DESCRIPTION": "Apply !M! Vulnerable. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor."
+        "DESCRIPTION": "Appliquez !M! de Vulnérabilité. NL Gagnez !mysteryDungeon:M2! de mysterydungeon:Vigueur. NL Épuisement."
     },
     "mysteryDungeon:TotodileCrunch": {
         "NAME": "Mâchouille",
