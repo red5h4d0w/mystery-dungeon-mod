@@ -20,7 +20,7 @@ jobs:
         id: setup-ffmpeg
       
       - name: generate-small-card-images
-        run: ./github/workflows/scripts/generate-small-card-images.sh
+        run: .github/workflows/scripts/generate-small-card-images.sh
         
       - name: Commit & Push changes
         uses: actions-js/push@master
