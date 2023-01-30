@@ -293,9 +293,9 @@
         "DESCRIPTION": "Infligez autant de dégâts que !M! fois le nombre de cartes épuisées ce combat."
     },
     "mysteryDungeon:CharmanderFling": {
-        "NAME": "Fling",
-        "DESCRIPTION": "Exhaust up to 4 cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! mysterydungeon:Burn NL Exhaust up to 4 cards. NL Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust."
+        "NAME": "Dégommage",
+        "DESCRIPTION": "Épuisez jusqu'à 4 cartes. Infligez !D! dégâts et appliquez !M! mysterydungeon:Brûlure par carte épuisée de cette façon. NL Épuisement.",
+        "UPGRADE_DESCRIPTION": "Infligez !D! dégâts et appliquez !M! mysterydungeon:Brûlure. NL Épuisez jusqu'à 4 cartes. Infligez !D! dégâts et appliquez !M! mysterydungeon:Brûlure par carte épuisée de cette façon. NL Épuisement."
     },
     "mysteryDungeon:CharmanderFrustration": {
         "NAME": "Frustration",
@@ -340,9 +340,9 @@
         "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL La quantité d'Armure de cette carte est améliorée plutôt que ses dégâts lorsque *Griffe *Acier est jouée."
     },
     "mysteryDungeon:CharmanderSleepTalk": {
-        "NAME": "Sleep Talk",
-        "DESCRIPTION": "The first time you exhaust a card each turn, add a random card to your hand.",
-        "UPGRADE_DESCRIPTION": "The first 2 times you exhaust a card each turn, add a random card to your hand."
+        "NAME": "Blabla Dodo",
+        "DESCRIPTION": "Chaque tour, la première fois que vous épuisez une carte, ajoutez une carte aléatoire à votre main.",
+        "UPGRADE_DESCRIPTION": "Chaque tour, les #b2 premières fois que vous #yépuisez une carte, ajoutez une carte aléatoire à votre main."
     },
     "mysteryDungeon:CharmanderSmokescreen": {
         "NAME": "Brouillard",
@@ -1275,7 +1275,7 @@
     },
     "mysteryDungeon:TotodileNaturePowerSea": {
         "NAME": "Force-Nature: Mer",
-        "DESCRIPTION": "Appliquez !M! de Vulnérabilité. NL Gagnez !mysteryDungeon:M2! de mysterydungeon:Vigueur. NL Épuisement."
+        "DESCRIPTION": "Appliquez !M! de Vulnérabilité. NL Gagnez !mysteryDungeon:M2! de mysterydungeon:Vigueur."
     },
     "mysteryDungeon:TotodileCrunch": {
         "NAME": "Mâchouille",
@@ -1357,7 +1357,7 @@
     "mysteryDungeon:TotodileSurf": {
         "NAME": "Surf",
         "DESCRIPTION": "Lorsque vous défaussez une carte, gagnez !M! mysterydungeon:Vigueur_Temporaire.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you discard a card, for every discarded card, gain !M! mysterydungeon:Temporary_Vigor."
+        "UPGRADE_DESCRIPTION": "Inné. NL Lorsque vous défaussez une carte, pour chaque carte ainsi défaussée, gagnez !M! de mysterydungeon:Vigueur_Temporaire."
     },
     "mysteryDungeon:TotodileSubstitute": {
         "NAME": "Clonage",
