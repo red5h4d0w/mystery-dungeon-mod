@@ -33,11 +33,11 @@
             "구체를 발현할때 마다, 무작위 적에게 현재 방어도 만큼 피해를 %s 번 줍니다."
         ]
     },
-    "mysteryDungeon:BellyDrumPower": {
-        "NAME": "배북",
+    "mysteryDungeon:TailWindPower": {
+        "NAME": "Tail Wind",
         "DESCRIPTIONS": [
-            "매 턴마다 플레이하는 첫 번째 카드의 비용이 0이 되고 소멸합니다.",
-            "매 턴마다 플레이하는 첫 번째 카드의 비용이 0이 되고 소멸합니다."
+            "The first card you play each turn cost #b0, but #yexhausts.",
+            "The first %s cards you play each turn cost 0, but exhaust."
         ]
     },
     "mysteryDungeon:BidePower": {
@@ -389,7 +389,7 @@
     "mysteryDungeon:SleepTalkPower": {
         "NAME": "잠꼬대",
         "DESCRIPTIONS": [
-            "매턴 #b1 회 카드가 소멸될 경우, 무작위 카드를 1 장 얻습니다.", 
+            "매턴 #b1 회 카드가 소멸될 경우, 무작위 카드를 1 장 얻습니다.",
             "매턴 #b%s 회 카드가 소멸될 경우, 무작위 카드를 1 장 얻습니다."
         ]
     },
