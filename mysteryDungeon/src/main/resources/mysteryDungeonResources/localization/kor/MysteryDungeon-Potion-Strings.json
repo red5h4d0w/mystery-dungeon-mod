@@ -30,8 +30,8 @@
             "적 전체에게 #y화상 을 #b%s 부여합니다."
         ]
     },
-    "mysteryDungeon:GrassGemPotion": {
-        "NAME": "Grass Gem",
+    "mysteryDungeon:AuxPowerPotion": {
+        "NAME": "Aux Power",
         "DESCRIPTIONS": [
             "Your next attack deals #b%s more damage."
         ]

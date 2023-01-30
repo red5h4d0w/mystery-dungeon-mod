@@ -292,8 +292,8 @@
         "NAME": "Flare Blitz",
         "DESCRIPTION": "Deal damage equal to !M! times the number of exhausted cards this combat."
     },
-    "mysteryDungeon:CharmanderTwister": {
-        "NAME": "Twister",
+    "mysteryDungeon:CharmanderFling": {
+        "NAME": "Fling",
         "DESCRIPTION": "Exhaust up to 4 cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! mysterydungeon:Burn NL Exhaust up to 4 cards. NL Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust."
     },
@@ -339,8 +339,8 @@
         "NAME": "Shadow Claw",
         "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL This cards Block gets more Block instead of damage when using *Metal *Claw."
     },
-    "mysteryDungeon:CharmanderRoost": {
-        "NAME": "Roost",
+    "mysteryDungeon:CharmanderSleepTalk": {
+        "NAME": "Sleep Talk",
         "DESCRIPTION": "The first time you exhaust a card each turn, add a random card to your hand.",
         "UPGRADE_DESCRIPTION": "The first 2 times you exhaust a card each turn, add a random card to your hand."
     },
@@ -1275,7 +1275,7 @@
     },
     "mysteryDungeon:TotodileNaturePowerSea": {
         "NAME": "Nature Power: Sea",
-        "DESCRIPTION": "Apply !M! Vulnerable. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor. NL Exhaust."
+        "DESCRIPTION": "Apply !M! Vulnerable. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor."
     },
     "mysteryDungeon:TotodileCrunch": {
         "NAME": "Crunch",
@@ -1356,7 +1356,8 @@
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "Surf",
-        "DESCRIPTION": "Whenever you discard a card, for every discarded card, gain !M! mysterydungeon:Temporary_Vigor."
+        "DESCRIPTION": "Whenever you discard a card, for every discarded card, gain !M! mysterydungeon:Temporary_Vigor.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you discard a card, for every discarded card, gain !M! mysterydungeon:Temporary_Vigor."
     },
     "mysteryDungeon:TotodileSubstitute": {
         "NAME": "Substitute",

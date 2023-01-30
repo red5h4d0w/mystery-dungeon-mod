@@ -10,7 +10,7 @@
         "NAME": "Aromathérapie",
         "DESCRIPTIONS": [
             "Lorsque vous recevez des dégâts, gagnez #b%s de #yForce.",
-            "Whenever you take damage, gain #b%s #yStrength."
+            "Lorsque vous recevez des dégâts, gagnez #b%s de #yForce."
         ]
     },
     "mysteryDungeon:AsleepPower": {
@@ -33,11 +33,11 @@
             "Lorsque vous activez un Orbe, infligez autant de dégâts que vous avez d'Armure à un ennemi aléatoire %s fois."
         ]
     },
-    "mysteryDungeon:BellyDrumPower": {
-        "NAME": "Cognobidon",
+    "mysteryDungeon:TailWindPower": {
+        "NAME": "Tail Wind",
         "DESCRIPTIONS": [
-            "Chaque tour, la première carte jouée coûte #b0, mais est #yépuisée.",
-            "Chaque tour, les #b%s premières cartes jouées coûtent 0, mais sont épuisées."
+            "The first card you play each turn cost #b0, but #yexhausts.",
+            "The first %s cards you play each turn cost 0, but exhaust."
         ]
     },
     "mysteryDungeon:BidePower": {
@@ -325,7 +325,7 @@
     "mysteryDungeon:OvergrowPower": {
         "NAME": "Engrais",
         "DESCRIPTIONS": [
-            "Whenever you heal #b%1$s or more HP, for every #b%1$s HP healed, gain #b%2$s Strength."
+            "Chaque fois que vous soignez #b%1$s PV ou plus, pour chaque #b%1$s PV soignés, gagnez #b%2$s de Force."
         ]
     },
     "mysteryDungeon:PetalDancePower": {
@@ -455,10 +455,10 @@
     "mysteryDungeon:ThrashPower": {
         "NAME": "Mania",
         "DESCRIPTIONS": [
-            "Every %1$s Attack you play, gain %1$s #yVigor. NL (%2$s card till #yVigor gain)",
-            "Every %1$s Attack you play, gain %1$s #yVigor. NL (%2$s cards till #yVigor gain)",
-            "Every %1$s Attack you play, gain %1$s #yVigor. NL (%2$s card till #yVigor gain)",
-            "Every %1$s Attack you play, gain %1$s #yVigor. NL (%2$s cards till #yVigor gain)"
+            "Every %1$s Attack you play, gain %2$s #yVigor. NL (%3$s card till #yVigor gain)",
+            "Every %1$s Attack you play, gain %2$s #yVigor. NL (%3$s cards till #yVigor gain)",
+            "Every %1$s Attack you play, gain %2$s #yVigor. NL (%3$s card till #yVigor gain)",
+            "Every %1$s Attack you play, gain %2$s #yVigor. NL (%3$s cards till #yVigor gain)"
         ]
     },
     "mysteryDungeon:TorrentPower": {

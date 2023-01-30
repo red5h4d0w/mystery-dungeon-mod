@@ -33,8 +33,8 @@
             "Whenever you activate an Orb, deal damage equal to your Block to a random enemy %s times."
         ]
     },
-    "mysteryDungeon:BellyDrumPower": {
-        "NAME": "Belly Drum",
+    "mysteryDungeon:TailWindPower": {
+        "NAME": "Tail Wind",
         "DESCRIPTIONS": [
             "The first card you play each turn cost #b0, but #yexhausts.",
             "The first %s cards you play each turn cost 0, but exhaust."
@@ -455,10 +455,10 @@
     "mysteryDungeon:ThrashPower": {
         "NAME": "Thrash",
         "DESCRIPTIONS": [
-            "Every %1$s Attack you play, gain %1$s #yVigor. NL (%2$s card till #yVigor gain)",
-            "Every %1$s Attack you play, gain %1$s #yVigor. NL (%2$s cards till #yVigor gain)",
-            "Every %1$s Attack you play, gain %1$s #yVigor. NL (%2$s card till #yVigor gain)",
-            "Every %1$s Attack you play, gain %1$s #yVigor. NL (%2$s cards till #yVigor gain)"
+            "Every %1$s Attack you play, gain %2$s #yVigor. NL (%3$s card till #yVigor gain)",
+            "Every %1$s Attack you play, gain %2$s #yVigor. NL (%3$s cards till #yVigor gain)",
+            "Every %1$s Attack you play, gain %2$s #yVigor. NL (%3$s card till #yVigor gain)",
+            "Every %1$s Attack you play, gain %2$s #yVigor. NL (%3$s cards till #yVigor gain)"
         ]
     },
     "mysteryDungeon:TorrentPower": {

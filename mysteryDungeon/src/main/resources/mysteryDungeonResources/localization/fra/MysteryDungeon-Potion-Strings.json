@@ -30,10 +30,10 @@
             "Appliquez #b%s de #Brûlure à TOUS les ennemis."
         ]
     },
-    "mysteryDungeon:GrassGemPotion": {
-        "NAME": "Joyau Plante",
+    "mysteryDungeon:AuxPowerPotion": {
+        "NAME": "Aux Power",
         "DESCRIPTIONS": [
-            "Votre prochaine attaque infligera #b%s dégâts supplémentaires."
+            "Your next attack deals #b%s more damage."
         ]
     },
     "mysteryDungeon:LeppaBerryPotion": {
