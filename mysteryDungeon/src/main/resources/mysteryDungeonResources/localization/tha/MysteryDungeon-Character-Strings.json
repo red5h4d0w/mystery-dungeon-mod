@@ -1,0 +1,177 @@
+{
+    "mysteryDungeon:Pokemon": {
+        "NAMES": [
+            "The Pokémon",
+            "the Pokémon"
+        ],
+        "TEXT": [
+            "You have been reincarnated as a Pokémon. Without any recollection of your former self, NL you decide that you'll help an adventurer in reaching the top of the dungeon.",
+            "NL You have reached the top floor of the dungeon. You can now rest at the base before taking another mission with your new Pokémon friends",
+            "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~pokémon~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
+        ]
+    },
+    "mysteryDungeon:Bulbasaur": {
+        "NAMES": [
+            "Bulbasaur"
+        ]
+    },
+    "mysteryDungeon:Ivysaur": {
+        "NAMES": [
+            "Ivysaur"
+        ]
+    },
+    "mysteryDungeon:Venusaur": {
+        "NAMES": [
+            "Venusaur"
+        ]
+    },
+    "mysteryDungeon:Charmander": {
+        "NAMES": [
+            "Charmander"
+        ]
+    },
+    "mysteryDungeon:Charmeleon": {
+        "NAMES": [
+            "Charmeleon"
+        ]
+    },
+    "mysteryDungeon:Charizard": {
+        "NAMES": [
+            "Charizard"
+        ]
+    },
+    "mysteryDungeon:Squirtle": {
+        "NAMES": [
+            "Squirtle"
+        ]
+    },
+    "mysteryDungeon:Wartortle": {
+        "NAMES": [
+            "Wartortle"
+        ]
+    },
+    "mysteryDungeon:Blastoise": {
+        "NAMES": [
+            "Blastoise"
+        ]
+    },
+    "mysteryDungeon:Pikachu": {
+        "NAMES": [
+            "Pikachu"
+        ]
+    },
+    "mysteryDungeon:Raichu": {
+        "NAMES": [
+            "Raichu"
+        ]
+    },
+    "mysteryDungeon:Meowth": {
+        "NAMES": [
+            "Meowth"
+        ]
+    },
+    "mysteryDungeon:Persian": {
+        "NAMES": [
+            "Persian"
+        ]
+    },
+    "mysteryDungeon:Psyduck": {
+        "NAMES": [
+            "Psyduck"
+        ]
+    },
+    "mysteryDungeon:Machop": {
+        "NAMES": [
+            "Machop"
+        ]
+    },
+    "mysteryDungeon:Cubone": {
+        "NAMES": [
+            "Cubone"
+        ]
+    },
+    "mysteryDungeon:Eevee": {
+        "NAMES": [
+            "Eevee"
+        ]
+    },
+    "mysteryDungeon:Chikorita": {
+        "NAMES": [
+            "Chikorita"
+        ]
+    },
+    "mysteryDungeon:Bayleef": {
+        "NAMES": [
+            "Bayleef"
+        ]
+    },
+    "mysteryDungeon:Meganium": {
+        "NAMES": [
+            "Meganium"
+        ]
+    },
+    "mysteryDungeon:Cyndaquil": {
+        "NAMES": [
+            "Cyndaquil"
+        ]
+    },
+    "mysteryDungeon:Quilava": {
+        "NAMES": [
+            "Quilava"
+        ]
+    },
+    "mysteryDungeon:Typhlosion": {
+        "NAMES": [
+            "Typhlosion"
+        ]
+    },
+    "mysteryDungeon:Totodile": {
+        "NAMES": [
+            "Totodile"
+        ]
+    },
+    "mysteryDungeon:Croconaw": {
+        "NAMES": [
+            "Croconaw"
+        ]
+    },
+    "mysteryDungeon:Feraligatr": {
+        "NAMES": [
+            "Feraligatr"
+        ]
+    },
+    "mysteryDungeon:Treecko": {
+        "NAMES": [
+            "Treecko"
+        ]
+    },
+    "mysteryDungeon:Torchic": {
+        "NAMES": [
+            "Torchic"
+        ]
+    },
+    "mysteryDungeon:Mudkip": {
+        "NAMES": [
+            "Mudkip"
+        ]
+    },
+    "mysteryDungeon:Skitty": {
+        "NAMES": [
+            "Skitty"
+        ]
+    },
+    "Neow": {
+        "TEXT": [
+            "This is the portal that leads to the world of Pokémon",
+            "But before I can let you through, I have several questions for you.",
+            "I want you to answer them sincerely. NL Are you ready?",
+            "OK... NL Let the interview begin!",
+            "Yes!",
+            "I'd prefer choosing my team.",
+            "I'd like to get a random team.",
+            "Choose your adventurer",
+            "Choose your partner",
+            "You are a %s1. NL Choose a partner. NL (Expected complexity is %s2)"
+        ]
+    }
+}
