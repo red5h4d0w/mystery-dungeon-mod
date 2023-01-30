@@ -1,3 +1,4 @@
+[![Crowdin](https://badges.crowdin.net/sts-mystery-dungeon-mod/localized.svg)](https://crowdin.com/project/sts-mystery-dungeon-mod)
 # Mystery Dungeon mod
 
 Created with Default base mod as a template
