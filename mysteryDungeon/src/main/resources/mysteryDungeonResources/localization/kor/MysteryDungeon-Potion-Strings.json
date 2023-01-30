@@ -6,9 +6,9 @@
         ]
     },
     "mysteryDungeon:AuxPowerGuardPotion": {
-        "NAME": "Aux Power Guard",
+        "NAME": "멀티업",
         "DESCRIPTIONS": [
-            "Gain #b%s #yFocus."
+            "#y밀집 을 #b%s 얻습니다."
         ]
     },
     "mysteryDungeon:DireHitPotion": {
@@ -18,10 +18,10 @@
         ]
     },
     "mysteryDungeon:ElixirPotion": {
-        "NAME": "Elixir",
+        "NAME": "pp맥스",
         "DESCRIPTIONS": [
-            "Gain [E] [E] [E] . Add #b2 #yBurn to your hand.",
-            "Gain [E] [E] [E] [E] [E] [E] . Add #b4 #yBurn to your hand."
+            " [E] [E] [E] 를 얻습니다. 손에 #y화상 을 #b2 장 넣습니다.",
+            " [E] [E] [E] [E] [E] [E] 를 얻습니다. 손에 #y화상 을 #b4 장 넣습니다."
         ]
     },
     "mysteryDungeon:FlameOrbPotion": {
@@ -30,38 +30,38 @@
             "적 전체에게 #y화상 을 #b%s 부여합니다."
         ]
     },
-    "mysteryDungeon:AuxPowerPotion": {
-        "NAME": "Aux Power",
+    "mysteryDungeon:GrassGemPotion": {
+        "NAME": "풀주얼",
         "DESCRIPTIONS": [
-            "Your next attack deals #b%s more damage."
+            "활력을 #b%s 얻습니다."
         ]
     },
     "mysteryDungeon:LeppaBerryPotion": {
-        "NAME": "Leppa Berry",
+        "NAME": "과사열매",
         "DESCRIPTIONS": [
-            "Choose #b%s cards to retain at the end of your turn."
+            "턴 종료시 카드 #b%s 장에 #y보존 효과를 추가합니다."
         ]
     },
     "mysteryDungeon:MagoBerryPotion": {
-        "NAME": "Mago Berry",
+        "NAME": "마고열매",
         "DESCRIPTIONS": [
-            "Heal #b%1$s HP. Gain #b%2$s #yPoison."
+            "체력을 #b%1$s 회복합니다. #y중독 을 #b%2$s 얻습니다."
         ]
     },
     "mysteryDungeon:MeowthCandyPotion": {
-        "NAME": "Meowth Candy",
+        "NAME": "냐옹사탕",
         "DESCRIPTIONS": [
-            "Spend #b20 gold. Do the effects of #b2 random #yPotions."
+            "골드를 #b20 소모합니다. 무작위 포션 #b2 개의 효과를 발동시킵니다."
         ]
     },
     "mysteryDungeon:NuggetPotion": {
-        "NAME": "Nugget",
+        "NAME": "금구슬",
         "DESCRIPTIONS": [
-            "Gain #b20 gold."
+            "골드를 #b10 얻습니다."
         ]
     },
     "mysteryDungeon:PikachuCandyPotion": {
-        "NAME": "피카츄 사탕",
+        "NAME": "피카츄사탕",
         "DESCRIPTIONS": [
             "#y플러스상태 또는 #y마이너스상태 가 됩니다."
         ]
@@ -73,9 +73,9 @@
         ]
     },
     "mysteryDungeon:RawstBerryPotion": {
-        "NAME": "Rawst Berry",
+        "NAME": "복분열매",
         "DESCRIPTIONS": [
-            "Apply #b%s #yBurn. Burn stacks don't decrease for #b1 turn on the target."
+            "#y화상 을 #b%s 부여합니다. 턴 종료시 #y화상 이 줄어들지 않습니다."
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {
@@ -86,9 +86,9 @@
         ]
     },
     "mysteryDungeon:StarfBerryPotion": {
-        "NAME": "Starf Berry",
+        "NAME": "스타열매",
         "DESCRIPTIONS": [
-            "Gain #b%s #yVigor."
+            "#y활력 을 #b%s 얻습니다."
         ]
     },
     "mysteryDungeon:XAttackPotion": {

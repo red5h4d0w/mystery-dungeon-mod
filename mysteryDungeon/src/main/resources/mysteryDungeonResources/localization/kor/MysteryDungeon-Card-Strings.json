@@ -340,9 +340,9 @@
         "DESCRIPTION": "피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다. NL *메탈클로 를 사용할 때 피해량 대신 방어도 가 오릅니다."
     },
     "mysteryDungeon:CharmanderSleepTalk": {
-        "NAME": "Sleep Talk",
-        "DESCRIPTION": "The first time you exhaust a card each turn, add a random card to your hand.",
-        "UPGRADE_DESCRIPTION": "The first 2 times you exhaust a card each turn, add a random card to your hand."
+        "NAME": "TODO:",
+        "DESCRIPTION": "매턴 1회 카드가 소멸될 경우, 무작위 카드를 1 장 얻습니다.",
+        "UPGRADE_DESCRIPTION": "매턴 2회 카드가 소멸될 경우, 무작위 카드를 1 장 얻습니다."
     },
     "mysteryDungeon:CharmanderSmokescreen": {
         "NAME": "연막",
@@ -355,8 +355,8 @@
         "UPGRADE_DESCRIPTION": "선천성. NL 턴 시작 시, 적이 mysterydungeon:화상 상태라면, 힘 을 1 얻습니다."
     },
     "mysteryDungeon:CharmanderTailWind": {
-        "NAME": "Tail Wind",
-        "DESCRIPTION": "At the start of your turn, draw !M! more card. NL The first card you play each turn costs 0 and exhausts."
+       "NAME": "순풍",
+        "DESCRIPTION": "턴 시작시, 카드를 !M! 장 더 뽑습니다. NL 매 턴 첫 번째로 사용하는 카드의 비용을 0으로 만들고 소멸시킵니다."
     },
     "mysteryDungeon:CharmanderWillOWisp": {
         "NAME": "도깨비불",
@@ -364,523 +364,523 @@
         "UPGRADE_DESCRIPTION": "약화 를 X+1 부여합니다. NL  mysterydungeon:화상 을 3(X+1)부여합니다. NL 소멸"
     },
     "mysteryDungeon:ChikoritaAncientPower": {
-        "NAME": "Ancient Power",
-        "DESCRIPTION": "Deal !D! damage. NL If you are missing more than 30% of your HP, deal !D! damage."
+        "NAME": "원시의힘",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 체력이 30% 이하일 때, 피해를 !D! 줍니다."
     },
     "mysteryDungeon:ChikoritaAromatherapy": {
-        "NAME": "Aromatherapy",
-        "DESCRIPTION": "Whenever you take damage, gain !M! Strength.",
-        "UPGRADE_DESCRIPTION": "Whenever you take damage, gain !M! Strength. NL Next Turn Lose 1 HP"
+        "NAME": "아로마테라피",
+        "DESCRIPTION": "체력을 잃을 때 마다, 힘을 !M! 얻습니다.",
+        "UPGRADE_DESCRIPTION": "피해를 받을 때 마다, 힘을 !M! 얻습니다. NL 다음 턴에 체력을 1 잃습니다."
     },
     "mysteryDungeon:ChikoritaBodySlam": {
-        "NAME": "Body Slam",
-        "DESCRIPTION": "Deal !D! damage. NL Next Turn Lose !M! HP."
+        "NAME": "누르기",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 다음 턴에 체력을 !M! 잃습니다."
     },
     "mysteryDungeon:ChikoritaConfide": {
-        "NAME": "Confide",
-        "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Apply !M! mysterydungeon:Evasiveness_Drop to ALL enemies. NL Exhaust."
+        "NAME": "비밀이야기",
+        "DESCRIPTION": "적 전체에게 약화를 !M! 부여합니다. NL 모든 적에게 mysterydungeon:회피율감소를 !M! 부여합니다. NL 소멸."
     },
     "mysteryDungeon:ChikoritaCut": {
-        "NAME": "Cut",
-        "DESCRIPTION": "Lose !M! HP. NL Deal !D! damage."
+        "NAME": "풀베기",
+        "DESCRIPTION": "체력을 !M! 잃습니다. NL 피해를 !D! 줍니다."
     },
     "mysteryDungeon:ChikoritaDefend": {
-        "NAME": "Defend",
-        "DESCRIPTION": "Gain !B! Block."
+        "NAME": "수비",
+        "DESCRIPTION": "방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:ChikoritaEnergyBall": {
-        "NAME": "Energy Ball",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
+        "NAME": "에너지볼",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 취약을 !M! 부여합니다."
     },
     "mysteryDungeon:ChikoritaExplorerForm": {
-        "NAME": "Explorer Form",
-        "DESCRIPTION": "Ethereal. NL When you heal HP, deal damage to ALL enemies equal to twice the amount healed.",
-        "UPGRADE_DESCRIPTION": "When you heal HP, deal damage to ALL enemies equal to twice the amount healed."
+        "NAME": "탐험가의 자세",
+        "DESCRIPTION": "휘발성. NL 체력을 회복할 때 마다, 적 전체에게 회복량의 2배 만큼 피해를 줍니다.",
+        "UPGRADE_DESCRIPTION": "체력을 회복할 때 마다, 적 전체에게 회복량의 2배 만큼 피해를 줍니다."
     },
     "mysteryDungeon:ChikoritaFlail": {
-        "NAME": "Flail",
-        "DESCRIPTION": "Unplayable. NL Ethereal. NL When drawn, gain !M! Temporary Strength.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn, gain !M! Temporary Strength.",
+        "NAME": "바둥바둥",
+        "DESCRIPTION": "사용불가. NL 휘발성. NL 카드를 뽑았을 때, 임시 힘을 !M! 얻습니다.",
+        "UPGRADE_DESCRIPTION": "사용불가. NL 카드를 뽑았을 때, 임시 힘을 !M! 얻습니다.",
         "EXTENDED_DESCRIPTION": [
-            "I can't play this card."
+            "이 카드는 사용할 수 없습니다."
         ]
     },
     "mysteryDungeon:ChikoritaFuryCutter": {
-        "NAME": "Fury Cutter",
-        "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Increase this card damage by !M! this combat. NL Lose 2 HP. NL Bring back a copy of that card in your hand next turn and lose 2 HP. NL Exhaust."
+        "NAME": "연속자르기",
+        "DESCRIPTION": "휘발성. NL 피해를 !D! 줍니다. NL 이번 전투 동안 이 카드의 피해량이 !M! 증가합니다. NL 체력을 2 잃습니다. NL 다음 턴에 그 카드를 한 장 복사하여 얻고 체력을 2 잃습니다. NL 소멸."
     },
     "mysteryDungeon:ChikoritaGrassKnot": {
-        "NAME": "Grass Knot",
-        "DESCRIPTION": "Remove 33% of the enemy's remaining HP. NL Exhaust."
+        "NAME": "풀묶기",
+        "DESCRIPTION": "남아있는 적의 체력에 33% 만큼 피해를 줍니다. NL 소멸."
     },
     "mysteryDungeon:ChikoritaGrassPledge": {
-        "NAME": "Grass Pledge",
-        "DESCRIPTION": "Gain !M! Temporary HP. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
+        "NAME": "풀의맹세",
+        "DESCRIPTION": "mysterydungeon:임시체력 을 !M! 얻습니다. NL 이번 턴에 다른 mysterydungeon:맹세 카드를 사용했다면, 특별한 효과가 발동됩니다."
     },
     "mysteryDungeon:ChikoritaGrassWhistle": {
-        "NAME": "Grass Whistle",
-        "DESCRIPTION": "Apply mysterydungeon:Asleep to ALL enemies. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Apply mysterydungeon:Asleep to ALL enemies. NL Exhaust."
+        "NAME": "풀피리",
+        "DESCRIPTION": "적 전체에게 mysterydungeon:잚듬 을 부여합니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "보존. NL 적 전체에게 mysterydungeon:잚듬 을 부여합니다. NL 소멸."
     },
     "mysteryDungeon:ChikoritaGrassyTerrain": {
-        "NAME": "Grassy Terrain",
-        "DESCRIPTION": "Increase your max HP by !M!."
+        "NAME": "그래스필드",
+        "DESCRIPTION": "최대 체력이 !M! 증가합니다."
     },
     "mysteryDungeon:ChikoritaGrowl": {
-        "NAME": "Growl",
-        "DESCRIPTION": "Apply !M! Weak to ALL enemies."
+        "NAME": "울음소리",
+        "DESCRIPTION": "적 전체에게 약화를 !M! 부여합니다."
     },
     "mysteryDungeon:ChikoritaHealPulse": {
-        "NAME": "Heal Pulse",
-        "DESCRIPTION": "Whenever you inflict self damage or gain HP during your turn, gain !M! Block.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you inflict self damage or gain HP during your turn, gain !M! Block."
+        "NAME": "치유파동",
+        "DESCRIPTION": "내 턴에 체력을 잃거나 체력을 회복한 경우, 방어도를 !M! 얻습니다.",
+        "UPGRADE_DESCRIPTION": "선천성. NL 내 턴에 체력을 잃거나 체력을 회복한 경우, 방어도를 !M! 얻습니다."
     },
     "mysteryDungeon:ChikoritaLeafGuard": {
-        "NAME": "Leaf Guard",
-        "DESCRIPTION": "At the end of your turn, remove all debuff you possess. For each debuff removed this way lose !M! HP."
+        "NAME": "리프가드",
+        "DESCRIPTION": "턴 종료시, 내 부정적인 효과가 모두 제거됩니다. 이 카드로 부정적인 효과가 제거될 경우 체력을 !M! 잃습니다."
     },
     "mysteryDungeon:ChikoritaLeafStorm": {
-        "NAME": "Leaf Storm",
-        "DESCRIPTION": "Lose 1 HP !M! times. NL Deal !D! damage !M! times."
+        "NAME": "리프스톰",
+        "DESCRIPTION": "체력을 1 만큼 !M! 번 잃습니다. NL 피해를 !D! 만큼 !M! 번 줍니다."
     },
     "mysteryDungeon:ChikoritaMagicCoat": {
-        "NAME": "Magic Coat",
-        "DESCRIPTION": "Gain !M! Temporary HP. NL Draw 1 card."
+        "NAME": "매직코트",
+        "DESCRIPTION": "mysterydungeon:임시체력 을 !M! 얻습니다. NL 카드를 1 장 뽑습니다."
     },
     "mysteryDungeon:ChikoritaMagicalLeaf": {
-        "NAME": "Magical Leaf",
-        "DESCRIPTION": "Deal !D! damage !M! times to random enemies."
+        "NAME": "메지컬리프",
+        "DESCRIPTION": "무작위 적에게 피해를 !D! 만큼 !M! 줍니다."
     },
     "mysteryDungeon:ChikoritaNaturalGift": {
-        "NAME": "Natural Gift",
-        "DESCRIPTION": "Gain !M! Strength. NL Gain !mysteryDungeon:M2! Block at the end of your turn."
+        "NAME": "자연의은혜",
+        "DESCRIPTION": "힘을 !M! 얻습니다. NL 턴 종료시 방어도를 !mysteryDungeon:M2! 얻습니다."
     },
     "mysteryDungeon:ChikoritaNaturePowerGrassland": {
-        "NAME": "Nature Power: Grass",
-        "DESCRIPTION": "Lose 4 HP. NL Draw !M! cards."
+        "NAME": "자연의힘:풀",
+        "DESCRIPTION": "체력을 4 잃습니다. NL 카드를 !M! 장 뽑습니다."
     },
     "mysteryDungeon:ChikoritaOvergrow": {
-        "NAME": "Overgrow",
-        "DESCRIPTION": "Whenever you heal !M! or more HP, for every !M! HP healed, gain !mysteryDungeon:M2! Strength."
+        "NAME": "심록",
+        "DESCRIPTION": "체력이 !M! 이상 회복될 때 마다, !M! 회복 당, 힘을 !mysteryDungeon:M2! 얻습니다."
     },
     "mysteryDungeon:ChikoritaPetalBlizzard": {
-        "NAME": "Petal Blizzard",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies."
+        "NAME": "꽃보라",
+        "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다."
     },
     "mysteryDungeon:ChikoritaPetalDance": {
-        "NAME": "Petal Dance",
-        "DESCRIPTION": "Unplayable. NL When drawn: Gain !M! Temporary HP and deal !D! damage to all enemies. NL Increase the amount of Temporary HP by 2 and the damage by 4 this combat.",
+        "NAME": "꽃잎댄스",
+        "DESCRIPTION": "사용불가. NL 이 카드를 뽑을 경우: mysterydungeon:임시체력 을 !M! 얻고 무작위 적에게 피해를 !D! 줍니다. NL 이번 전투동안 얻는 mysterydungeon:임시체력 이 1 만큼 증가하고 피해량이 4 만큼 증가합니다.",
         "EXTENDED_DESCRIPTION": [
-            "I can't play this card."
+            "이 카드는 사용할 수 없습니다."
         ]
     },
     "mysteryDungeon:ChikoritaRazorLeaf": {
-        "NAME": "Razor Leaf",
-        "DESCRIPTION": "Lose !M! HP. NL Deal !D! damage."
+        "NAME": "잎날가르기",
+        "DESCRIPTION": "체력을 !M! 잃습니다. NL 피해를 !D! 줍니다."
     },
     "mysteryDungeon:ChikoritaRefresh": {
-        "NAME": "Refresh",
-        "DESCRIPTION": "Gain !M! Temporary HP."
+        "NAME": "리프레쉬",
+        "DESCRIPTION": "mysterydungeon:임시체력 을 !M! 얻습니다."
     },
     "mysteryDungeon:ChikoritaSecretPower": {
-        "NAME": "Secret Power",
-        "DESCRIPTION": "Innate. NL Add a random Power to your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Add a random upgraded Power to your hand. NL Exhaust."
+        "NAME": "비밀의 힘",
+        "DESCRIPTION": "선천성. NL 무작위 파워 카드를 1 장 얻습니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "선천성. NL 강화된 무작위 파워 카드를 1 장 얻습니다. NL 소멸."
     },
     "mysteryDungeon:ChikoritaSeedBomb": {
-        "NAME": "Seed Bomb",
-        "DESCRIPTION": "Deal !D! damage. NL Next turn draw 2 more cards."
+        "NAME": "씨폭탄",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 다음 턴에 카드를 2장 더 뽑습니다."
     },
     "mysteryDungeon:ChikoritaSnore": {
-        "NAME": "Snore",
-        "DESCRIPTION": "If the enemy intends to attack, apply 1 mysterydungeon:Asleep. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "If the enemy intends to attack, apply 1 mysterydungeon:Asleep."
+        "NAME": "코골기",
+        "DESCRIPTION": "선택한 적이 공격할 의도가 있다면, mysterydungeon:잚듬 을 1 부여합니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "선택한 적이 공격할 의도가 있다면, mysterydungeon:잚듬 을 1 부여합니다."
     },
     "mysteryDungeon:ChikoritaSolarBeam": {
-        "NAME": "Solar Beam",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Draw !M! less cards during your next turn."
+        "NAME": "솔라빔",
+        "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 다음 턴 시작시 카드를 !M! 장 덜 뽑습니다."
     },
     "mysteryDungeon:ChikoritaSunnyDay": {
-        "NAME": "Sunny Day",
-        "DESCRIPTION": "Ethereal. NL When dealing damage to yourself, for every 3 HP lost draw a card.",
-        "UPGRADE_DESCRIPTION": "When dealing damage to yourself, for every 3 HP lost draw a card."
+        "NAME": "쾌청",
+        "DESCRIPTION": "휘발성. NL 내 턴에 3 체력을 잃을 때 마다, 카드를 1장 뽑습니다.",
+        "UPGRADE_DESCRIPTION": "내 턴에 3 체력을 잃을 때 마다, 카드를 1장 뽑습니다."
     },
     "mysteryDungeon:ChikoritaSweetScent": {
-        "NAME": "Sweet Scent",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Evasiveness_Drop. NL Apply !M! Vulnerable."
+        "NAME": "달콤한향기",
+        "DESCRIPTION": "mysterydungeon:회피율_감소 를 !M! 부여합니다. NL 취약을 !M! 부여합니다."
     },
     "mysteryDungeon:ChikoritaSynthesis": {
-        "NAME": "Synthesis",
-        "DESCRIPTION": "Unplayable. NL When drawn: if you have mysterydungeon:Recovery, gain !M! Recovery stacks. NL After activating this effect !mysteryDungeon:M2! times: Exhaust.",
+        "NAME": "광합성",
+        "DESCRIPTION": "사용불가. NL 이 카드를 뽑을 경우: mysterydungeon:치유 를 가지고 있다면, mysterydungeon:치유 를 !M! 얻습니다. NL 이 효과가 !mysteryDungeon:M2! 번 발생할 경우: 소멸합니다.",
         "EXTENDED_DESCRIPTION": [
-            "I can't play this card.",
-            "When Drawn: Exhaust."
+            "이 카드는 사용할 수 없습니다.",
+            "이카드를 뽑을 때 : 소멸합니다."
         ]
     },
     "mysteryDungeon:ChikoritaTackle": {
-        "NAME": "Tackle",
-        "DESCRIPTION": "Deal !D! damage."
+        "NAME": "타격",
+        "DESCRIPTION": "피해를 !D! 줍니다."
     },
     "mysteryDungeon:ChikoritaVineWhip": {
-        "NAME": "Vine Whip",
-        "DESCRIPTION": "Deal !D! damage. NL Draw !M! card.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw !M! cards."
+        "NAME": "덩쿨채찍",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 카드를 !M! 장 뽑습니다.",
+        "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 카드를 !M! 장 뽑습니다."
     },
     "mysteryDungeon:ChikoritaWorrySeed": {
-        "NAME": "Worry Seed",
-        "DESCRIPTION": "Unplayable. NL Ethereal. NL When drawn: draw !M! cards. NL While in hand, lose 1 HP when you play a card.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn draw !M! cards. NL While in hand, Lose 1 HP per card played.",
+        "NAME": "고민씨",
+        "DESCRIPTION": "사용불가. NL 휘발성. NL 이 카드를 뽑을 경우: 카드를 !M! 장 뽑습니다. NL 이 카드가 손에 있을 때 카드를 사용할 때마다 체력을 1 잃습니다.",
+        "UPGRADE_DESCRIPTION": "사용불가. NL 이 카드를 뽑을 경우: 카드를 !M! 장 뽑습니다. NL 이 카드가 손에 있을 때 카드를 사용할 때마다 체력을 1 잃습니다.",
         "EXTENDED_DESCRIPTION": [
-            "I can't play this card."
+            "이 카드는 사용할 수 없습니다."
         ]
     },
     "mysteryDungeon:ChikoritaWringOut": {
-        "NAME": "Wring Out",
-        "DESCRIPTION": "Deal !D! damage. NL Lose !M! HP."
+        "NAME": "쥐어짜기",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 체력을 !M! 잃습니다."
     },
     "mysteryDungeon:CyndaquilBlastBurn": {
-        "NAME": "Blast Burn",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn. NL Trigger an mysterydungeon:Eruption. NL End your Turn."
+        "NAME": "블러스트번",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL  mysterydungeon:화상 을 !M! 부여합니다. mysterydungeon:분화 를 발동합니다. NL 턴을 종료합니다."
     },
     "mysteryDungeon:CyndaquilBurnUp": {
-        "NAME": "Burn Up",
-        "DESCRIPTION": "Add 2 *Burn to your draw pile. NL Apply !M! mysterydungeon:Burn."
+        "NAME": "불사르기",
+        "DESCRIPTION": "*화상을 2장을 뽑을 카드 더미에 넣습니다. NL mysterydungeon:화상 을 !M! 부여합니다."
     },
     "mysteryDungeon:CyndaquilCounter": {
-        "NAME": "Counter",
-        "DESCRIPTION": "At the end of your turn, spend all leftover energy. For every energy spent this way gain !M! Block.",
-        "UPGRADE_DESCRIPTION": "At the end of your turn, spend all leftover energy. For every energy spent this way gain !M! Block. NL Gain !B! Block."
+        "NAME": "카운터",
+        "DESCRIPTION": "턴 종료시, 남은 [E] 를 모두 소모합니다. 이 카드로 소모한 [E] 당 방어도를 !M! 얻습니다.",
+        "UPGRADE_DESCRIPTION": "턴 종료시, 남은 [E] 를 모두 소모합니다. 이 카드로 소모한 [E] 당 방어도를 !M! 얻습니다. NL 방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:CyndaquilCrushClaw": {
-        "NAME": "Crush Claw",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Your next mysterydungeon:Eruption will deal 50% more damage. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Your next mysterydungeon:Eruption will deal 50% more damage."
+        "NAME": "브레이크크루",
+        "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 다음 턴에 mysterydungeon:분화 의 피해가 50% 증가합니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 다음 턴에 mysterydungeon:분화 의 피해가 50% 증가합니다."
     },
     "mysteryDungeon:CyndaquilCurse": {
-        "NAME": "Curse",
-        "DESCRIPTION": "Each turn, the first time you draw a Curse or a Status, gain [E].",
-        "UPGRADE_DESCRIPTION": "Each turn, the first 2 times you draw a Curse or a Status, gain [E]."
+        "NAME": "저주",
+        "DESCRIPTION": "매턴 1회 저주나 상태이상을 뽑을 경우, [E] 를 얻습니다.",
+        "UPGRADE_DESCRIPTION": "매턴 2회 저주나 상태이상을 뽑을 경우, [E] 를 얻습니다."
     },
     "mysteryDungeon:CyndaquilDefend": {
-        "NAME": "Defend",
-        "DESCRIPTION": "Gain !B! Block."
+        "NAME": "수비",
+        "DESCRIPTION": "방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:CyndaquilEmber": {
-        "NAME": "Ember",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn."
+        "NAME": "불꽃세례",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL  mysterydungeon:화상 을 !M! 부여합니다."
     },
     "mysteryDungeon:CyndaquilEruption": {
-        "NAME": "Eruption",
-        "DESCRIPTION": "Trigger an mysterydungeon:Eruption that hits ALL enemies. NL End your turn. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Trigger an mysterydungeon:Eruption that hits ALL enemies. NL End your turn."
+        "NAME": "분화",
+        "DESCRIPTION": "mysterydungeon:분화 가 적 전체에게 발동합니다. 턴을 종료합니다. NL 소멸",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:분화 가 적 전체에게 발동합니다. 턴을 종료합니다.NL 소멸"
     },
     "mysteryDungeon:CyndaquilExplorerForm": {
-        "NAME": "Explorer Form",
-        "DESCRIPTION": "Whenever you cause an mysterydungeon:Eruption, deal !M! damage to all enemies."
+        "NAME": "탐험가의 자세",
+        "DESCRIPTION": "mysterydungeon:분화 가 발동할 때 마다, 모든 적에게 피해를 !M! 줍니다."
     },
     "mysteryDungeon:CyndaquilFacade": {
-        "NAME": "Facade",
-        "DESCRIPTION": "Gain !M! Dexterity. NL Add a *Burn to your draw pile."
+        "NAME": "객기",
+        "DESCRIPTION": "민첩을 !M! 얻습니다. NL 뽑을 카드 더미에 *화상을 1장 넣습니다."
     },
     "mysteryDungeon:CyndaquilFireBlast": {
-        "NAME": "Fire Blast",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Increase the amount of mysterydungeon:Burn this card applies by !mysteryDungeon:M2! permanently. NL Exhaust."
+        "NAME": "불대문자",
+        "DESCRIPTION": "mysterydungeon:화상 을 !M! 부여합니다. NL 영구적으로 이 카드의 mysterydungeon:화상 을 !mysteryDungeon:M2! 증가시킵니다. NL 소멸."
     },
     "mysteryDungeon:CyndaquilFirePledge": {
-        "NAME": "Fire Pledge",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn to ALL enemies. NL If you play another mysterydungeon:Pledge_Card this turn, activate an additional effect."
+        "NAME": "불꽃의맹세",
+        "DESCRIPTION": "적 전체에게 mysterydungeon:화상 을 !M! 부여합니다. NL 이번 턴에 다른 mysterydungeon:맹세 카드를 사용했다면, 특별한 효과가 발동됩니다."
     },
     "mysteryDungeon:CyndaquilFlameBurst": {
-        "NAME": "Flame Burst",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Next turn, trigger an mysterydungeon:Eruption.",
-        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Next turn, cause an mysterydungeon:Eruption. NL Your next Eruption Deals 50% more damage."
+        "NAME": "불꽃튀기기",
+        "DESCRIPTION": "mysterydungeon:화상 을 !M! 부여합니다. NL 다음 턴에, mysterydungeon:분화 를 발동합니다.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:화상 을 !M! 부여합니다. NL 다음 턴에, mysterydungeon:분화 를 발동합니다. NL 다음 턴에 mysterydungeon:분화 의 피해가 50% 증가합니다."
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
-        "NAME": "Flame Charge",
-        "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Apply !M! mysterydungeon:Burn."
+        "NAME": "니트로차지",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다. NL mysterydungeon:화상 을 !M! 부여합니다."
     },
     "mysteryDungeon:CyndaquilFlamethrower": {
-        "NAME": "Flamethrower",
-        "DESCRIPTION": "Add a Burn status card in your draw pile. NL Deal !D! damage to a random enemy !M! times. NL Apply 9 mysterydungeon:Burn to random enemies !M! times."
+        "NAME": "화염방사",
+        "DESCRIPTION": "뽑을 카드 더미에 *화상을 추가합니다. NL 무작위 적에게 피해를 !D! 만큼 !M! 번 줍니다. NL 무작위 적에게 mysterydungeon:화상을 9 만큼 !M! 번 부여합니다."
     },
     "mysteryDungeon:CyndaquilFlameWheel": {
-        "NAME": "Flame Wheel",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn twice. NL Cause an mysterydungeon:Eruption. NL End your turn.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! mysterydungeon:Burn twice. NL Cause an mysterydungeon:Eruption. NL End your turn."
+        "NAME": "화염바퀴",
+        "DESCRIPTION": " mysterydungeon:화상 을 !M! 만큼 2번 부여합니다. NL mysterydungeon:분화 를 발동합니다. NL 턴을 종료합니다.",
+        "UPGRADE_DESCRIPTION": "보존. NL mysterydungeon:화상 을 !M! 만큼 2번 부여합니다. NL mysterydungeon:분화 를 발동합니다. NL 턴을 종료합니다."
     },
     "mysteryDungeon:CyndaquilFlareBlitz": {
-        "NAME": "Flare Blitz",
-        "DESCRIPTION": "Deal !D! damage. NL For every Status currently in your deck, reduce this card's cost by 1."
+        "NAME": "플레어드라이브",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 덱에 있는 상태이상 카드 수만큼 이 카드의 비용이 1 감소합니다."
     },
     "mysteryDungeon:CyndaquilFlashFire": {
-        "NAME": "Flash Fire",
-        "DESCRIPTION": "Add 2 *Burn in your draw pile. NL Each time you play a card apply !M! mysterydungeon:Burn to ALL enemies.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Add 2 Burn status card in your draw pile. NL Each time you play a card apply !M! mysterydungeon:Burn to all enemies."
+        "NAME": "타오르는불꽃",
+        "DESCRIPTION": "뽑을 카드 더미에 *화상을 2장 넣습니다. NL 매턴 카드를 사용할 때 마다 적 전체에게 mysterydungeon:화상 을 !M! 부여합니다.",
+        "UPGRADE_DESCRIPTION": "선천성. NL 뽑을 카드 더미에 *화상을 2장 넣습니다. NL 매턴 카드를 사용할 때 마다 적 전체에게 mysterydungeon:화상 을 !M! 부여합니다."
     },
     "mysteryDungeon:CyndaquilFling": {
-        "NAME": "Fling",
-        "DESCRIPTION": "Apply 5 mysterydungeon:Burn twice. NL Gain [E]. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Apply 5 mysterydungeon:Burn twice. NL Gain [E] [E]. NL Exhaust."
+        "NAME": "내던지기",
+        "DESCRIPTION": "mysterydungeon:화상 을 5 만큼 2번 부여합니다. NL [E] 를 얻습니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "mysterydungeon:화상 을 5 만큼 2번 부여합니다. NL [E] [E] 를 얻습니다. NL 소멸."
     },
     "mysteryDungeon:CyndaquilFrustration": {
-        "NAME": "Frustration",
-        "DESCRIPTION": "Apply 12 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Apply 12 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption."
+        "NAME": "화풀이",
+        "DESCRIPTION": "mysterydungeon:화상 을 12 부여합니다. NL 다음 턴에 턴 종료시 mysterydungeon:분화 를 발동합니다.",
+        "UPGRADE_DESCRIPTION": "보존. NL mysterydungeon:화상 을 12 부여합니다. NL 다음 턴에 턴 종료시 mysterydungeon:분화 를 발동합니다."
     },
     "mysteryDungeon:CyndaquilSmokescreen": {
-        "NAME": "Smokescreen",
-        "DESCRIPTION": "Gain !B! Block. NL Next turn gain [E]."
+        "NAME": "연막",
+        "DESCRIPTION": "방어도를 !B! 얻습니다. NL 다음턴에 [E] 를 얻습니다."
     },
     "mysteryDungeon:CyndaquilHeatWave": {
-        "NAME": "Heat Wave",
-        "DESCRIPTION": "Gain !B! Block. NL Whenever you are attacked this turn, apply 9 mysterydungeon:Burn to your attacker."
+        "NAME": "열풍",
+        "DESCRIPTION": "방어도를 !B! 얻습니다. NL 이번 턴에 공격을 받을 때 마다, 그 대상에게 mysterydungeon:화상 을 9 부여합니다."
     },
     "mysteryDungeon:CyndaquilHowl": {
-        "NAME": "Howl",
-        "DESCRIPTION": "Add !M! *Burn to your draw pile. NL Next turn gain [E] [E] [E]."
+        "NAME": "멀리짖음",
+        "DESCRIPTION": "뽑을 카드 더미에 *화상을 !M! 장 넣습니다. NL 다음 턴에 [E] [E] [E] 를 얻습니다."
     },
     "mysteryDungeon:CyndaquilIncinerate": {
-        "NAME": "Incinerate",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn."
+        "NAME": "불태우기",
+        "DESCRIPTION": "mysterydungeon:화상 을 !M! 부여합니다."
     },
     "mysteryDungeon:CyndaquilInferno": {
-        "NAME": "Inferno",
-        "DESCRIPTION": "Your next mysterydungeon:Eruption will not remove any burn stacks. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Your next eruption will not remove any burn stacks. NL Apply !M! mysterydungeon:Burn to all enemies. NL Exhaust."
+        "NAME": "연옥",
+        "DESCRIPTION": "다음에 발동하는  mysterydungeon:분화 가 화상을 제거하지 않습니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "다음에 발동하는 mysterydungeon:분화 가 화상을 제거하지 않습니다. NL 적 전체에게 mysterydungeon:화상을 !M! 부여합니다. NL 소멸."
     },
     "mysteryDungeon:CyndaquilLaserFocus": {
-        "NAME": "Laser Focus",
-        "DESCRIPTION": "Gain [E] [E].",
-        "UPGRADE_DESCRIPTION": "Gain [E] [E]. NL Draw a card."
+        "NAME": "예민해지기",
+        "DESCRIPTION": "[E] [E] 을 얻습니다.",
+        "UPGRADE_DESCRIPTION": "[E] [E] 을 얻습니다. NL 카드를 1장 뽑습니다."
     },
     "mysteryDungeon:CyndaquilLavaPlume": {
-        "NAME": "Lava Plume",
-        "DESCRIPTION": "Whenever you trigger an mysterydungeon:Eruption, apply !M! mysterydungeon:Burn to the target."
+        "NAME": "분연",
+        "DESCRIPTION": "mysterydungeon:분화 가 발동할 때 마다, 그 대상에게 mysterydungeon:화상을 !M! 부여합니다."
     },
     "mysteryDungeon:CyndaquilLeer": {
-        "NAME": "Leer",
-        "DESCRIPTION": "Apply !M! Vulnerable.",
-        "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable. NL Remove all the target's Block."
+        "NAME": "째려보기",
+        "DESCRIPTION": "취약을 !M! 부여합니다.",
+        "UPGRADE_DESCRIPTION": "취약을 !M! 부여합니다. NL 적의 모든 방어도를 없앱니다."
     },
     "mysteryDungeon:CyndaquilNaturePowerMountain": {
-        "NAME": "Nature Power: Mountain",
-        "DESCRIPTION": "For the next X turns, mysterydungeon:Burn stacks do not decrease by themselves on the target.",
-        "UPGRADE_DESCRIPTION": "For X+1 turns, mysterydungeon:Burn stacks do not decrease naturally on a chosen enemy."
+        "NAME": "자연의힘:산",
+        "DESCRIPTION": "X 턴 동안, 턴 종료시 mysterydungeon:화상 이 줄어들지 않습니다.",
+        "UPGRADE_DESCRIPTION": "X+1 턴 동안, 턴 종료시 mysterydungeon:화상 이 줄어들지 않습니다."
     },
     "mysteryDungeon:CyndaquilOverheat": {
-        "NAME": "Overheat",
-        "DESCRIPTION": "Retain. NL Trigger an mysterydungeon:Eruption. NL Exhaust."
+        "NAME": "오버히트",
+        "DESCRIPTION": "보존. NL mysterydungeon:분화 를 발동합니다. NL 소멸."
     },
     "mysteryDungeon:CyndaquilReversal": {
-        "NAME": "Reversal",
-        "DESCRIPTION": "If the enemy has mysterydungeon:Burn, gain !B! Block. NL If the enemy has no mysterydungeon:Burn stacks, apply !M! mysterydungeon:Burn."
+        "NAME": "기사회생",
+        "DESCRIPTION": "적이 mysterydungeon:화상 상태라면, 방어도를 !B! 얻습니다. NL 적이 mysterydungeon:화상 상태가 아니라면, mysterydungeon:화상 을 !M! 부여합니다."
     },
     "mysteryDungeon:CyndaquilRockTomb": {
-        "NAME": "Rock Tomb",
-        "DESCRIPTION": "Deal !D! damage and apply !M! Weak to ALL enemies."
+        "NAME": "암석봉인",
+        "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 적 전체에게 약화를 !M! 부여합니다."
     },
     "mysteryDungeon:CyndaquilRockSlide": {
-        "NAME": "Rock Slide",
-        "DESCRIPTION": "Deal !D! damage. If the enemy has mysterydungeon:Burn stacks, gain [E] [E] next turn."
+        "NAME": "스톤샤워",
+        "DESCRIPTION": "피해를 !D! 줍니다. 적이 mysterydungeon:화상 상태라면, 다음 턴에 [E] [E] 를 얻습니다."
     },
     "mysteryDungeon:CyndaquilRollout": {
-        "NAME": "Rollout",
-        "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block per card played this turn."
+        "NAME": "구르기",
+        "DESCRIPTION": "이번 턴에 사용한 카드 수 만큼 피해를 !D! 주고 방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:CyndaquilShadowClaw": {
-        "NAME": "Shadow Claw",
-        "DESCRIPTION": "Add a *Dazed in your draw pile. NL Deal !D! damage."
+        "NAME": "섀도크루",
+        "DESCRIPTION": "뽑을 카드 더미에 *어지러움을 1 장 넣습니다. NL 피해를 !D! 줍니다."
     },
     "mysteryDungeon:CyndaquilSleepTalk": {
-        "NAME": "Sleep Talk",
-        "DESCRIPTION": "When you create a Status, draw !M! card.",
-        "UPGRADE_DESCRIPTION": "For each created Status, draw !M! card. NL Draw a card."
+        "NAME": "잠꼬대",
+        "DESCRIPTION": "상태이상 카드를 생성할 때 마다, 카드를 !M! 뽑습니다.",
+        "UPGRADE_DESCRIPTION": "상태이상 카드를 생성할 때 마다, 카드를 !M! 뽑습니다. NL 카드를 1 장 뽑습니다."
     },
     "mysteryDungeon:CyndaquilTackle": {
-        "NAME": "Tackle",
-        "DESCRIPTION": "Deal !D! damage."
+        "NAME": "타격",
+        "DESCRIPTION": "피해를 !D! 줍니다."
     },
     "mysteryDungeon:CyndaquilWillOWisp": {
-        "NAME": "Will-O-Wisp",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn X times. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! mysterydungeon:Burn X times. NL Exhaust."
+        "NAME": "도깨비불",
+        "DESCRIPTION": "mysterydungeon:화상 을 !M! 만큼 X 번 부여합니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "보존. NL mysterydungeon:화상 을 !M! 만큼 X 번 부여합니다. NL 소멸."
     },
     "mysteryDungeon:MeowthAmnesia": {
-        "NAME": "Amnesia",
-        "DESCRIPTION": "Spend 12 gold. NL Prevent the next !M! time you would lose HP."
+        "NAME": "망각술",
+        "DESCRIPTION": "골드를 12 소모합니다. NL 체력을 잃은 것을 !M! 회 막아줍니다."
     },
     "mysteryDungeon:MeowthAssurance": {
-        "NAME": "Assurance",
-        "DESCRIPTION": "Innate. NL Deal !D! damage. NL If the enemy's attacking, apply !M! Weak and gain 7 gold. NL Exhaust."
+        "NAME": "승부굳히기",
+        "DESCRIPTION": "선천성. NL 피해를 !D! 줍니다. NL 선택한 적이 공격할 의도가 있다면, 약화를 !M! 부여합니다. NL 골드를 7 얻습니다. NL 소멸."
     },
     "mysteryDungeon:MeowthAttract": {
-        "NAME": "Attract",
-        "DESCRIPTION": "Gain !B! block. NL Spend !M! gold. NL Create a *Snatch in your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Gain !B! block. NL Spend !M! gold. NL Create an upgraded Snatch in your hand. NL Exhaust."
+        "NAME": "헤롱헤롱",
+        "DESCRIPTION": "방어도를 !B! 얻습니다. NL 골드를 !M! 소모합니다. NL *가로채기 1장을 얻습니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL 골드를 !M! 소모합니다. NL 강화된 *가로채기 1장을 얻습니다. NL 소멸."
     },
     "mysteryDungeon:MeowthCaptivate": {
-        "NAME": "Captivate",
-        "DESCRIPTION": "Spend !M! gold. NL This turn, the target loses !mysteryDungeon:M2! Strength."
+        "NAME": "유혹",
+        "DESCRIPTION": "골드를 !M! 소모합니다. NL 이번 턴에만 힘을 !mysteryDungeon:M2! 감소시킵니다."
     },
     "mysteryDungeon:MeowthCovet": {
-        "NAME": "Covet",
-        "DESCRIPTION": "Apply !M! Strength to a random enemy. NL Gain !mysteryDungeon:M2! gold."
+        "NAME": "탐내다",
+        "DESCRIPTION": "무작위 적에게 힘을 !M! 부여합니다. NL 골드를 !mysteryDungeon:M2! 얻습니다."
     },
     "mysteryDungeon:MeowthDarkPulse": {
-        "NAME": "Dark Pulse",
-        "DESCRIPTION": "Spend 10 gold. NL Deal !D! damage to ALL enemies. NL Add a card from your discard pile into your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Spend 10 gold. NL Deal !D! damage to ALL enemies. NL Add a card from your discard pile into your hand."
+        "NAME": "악의파동",
+        "DESCRIPTION": "골드를 10 소모합니다. NL 적 전체에게 피해를 !D! 줍니다. NL 버린 카드 더미에서 카드 한장을 선택해서 손으로 가져옵니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "골드를 10 소모합니다. NL 적 전체에게 피해를 !D! 줍니다. NL 버린 카드 더미에서 카드 한장을 선택해서 손으로 가져옵니다."
     },
     "mysteryDungeon:MeowthDefend": {
-        "NAME": "Defend",
-        "DESCRIPTION": "Gain !B! Block."
+        "NAME": "수비",
+        "DESCRIPTION": "방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:MeowthExplorerForm": {
-        "NAME": "Explorer Form",
-        "DESCRIPTION": "Every turn the first gold cost is free.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Every turn the first gold cost is free."
+        "NAME": "탐험가의 자세",
+        "DESCRIPTION": "턴 시작시, 매턴 1회 다음에 사용하는 카드가 골드를 소모할 경우 소모하지 않습니다.",
+        "UPGRADE_DESCRIPTION": "선천성. NL 턴 시작시, 다음에 사용하는 카드가 골드를 소모할 경우 소모하지 않습니다."
     },
     "mysteryDungeon:MeowthFakeTears": {
-        "NAME": "Fake Tears",
-        "DESCRIPTION": "Spend !M! gold. NL Gain !B! Block."
+        "NAME": "거짓울음",
+        "DESCRIPTION": "골드를 !M! 소모합니다. NL 방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:MeowthFeint": {
-        "NAME": "Feint",
-        "DESCRIPTION": "Remove all block from the enemy. NL Deal damage equal to the amount of block removed.",
-        "UPGRADE_DESCRIPTION": "Remove all Block from the enemy. NL Deal damage equal to 4 more than the amount of Block removed.",
+        "NAME": "페인트",
+        "DESCRIPTION": "적의 방어도를 제거합니다. NL 방어도를 제거한 만큼 피해를 줍니다.",
+        "UPGRADE_DESCRIPTION": "적의 방어도를 제거합니다. NL 방어도를 제거한 만큼의 4를 더해 피해를 줍니다.",
         "EXTENDED_DESCRIPTION": [
-            " NL (Deals !D! damage.)"
+            " NL (피해를 !D! 줍니다.)"
         ]
     },
     "mysteryDungeon:MeowthFlash": {
-        "NAME": "Flash",
-        "DESCRIPTION": "Spend 10 gold. NL Gain !M! mysterydungeon:Plated_Armor. NL Exhaust."
+        "NAME": "플래시",
+        "DESCRIPTION": "골드를 10 소모합니다. NL mysterydungeon:판금갑옷을 !M! 얻습니다. NL 소멸."
     },
     "mysteryDungeon:MeowthFlatter": {
-        "NAME": "Flatter",
-        "DESCRIPTION": "Apply !M! Strength to ALL enemies. NL Gain !B! Block."
+        "NAME": "부추기기",
+        "DESCRIPTION": "적 전체에게 힘을 !M! 부여합니다. NL 방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:MeowthFlurry": {
-        "NAME": "Flurry",
-        "DESCRIPTION": "Ethereal. NL Spend !M! gold. NL Deal !D! damage. NL Exhaust."
+        "NAME": "난동",
+        "DESCRIPTION": "휘발성. NL 골드를 !M! 소모합니다. NL 피해를 !D! 줍니다. NL 소멸."
     },
     "mysteryDungeon:MeowthFoulPlay": {
-        "NAME": "Foul Play",
-        "DESCRIPTION": "Deal !D! damage. NL If the last card you played was an Attack, apply !M! Weak."
+        "NAME": "속임수",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 전투에서 직전에 사용한 카드가 공격카드일 경우, 약화를 !M! 부여합니다."
     },
     "mysteryDungeon:MeowthFurySwipes": {
-        "NAME": "Fury Swipes",
-        "DESCRIPTION": "Deal !D! damage. NL If you have !M! gold, spend it and increase permanently this card's damage by !mysteryDungeon:M2!. NL Exhaust."
+        "NAME": "마구할퀴기",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 골드를 !M! 만큼 가지고 있다면, 골드를 소모하고 영구적으로 이 카드의 피해량을 !mysteryDungeon:M2! 증가시킵니다. NL 소멸."
     },
     "mysteryDungeon:MeowthHappyHour": {
-        "NAME": "Happy Hour",
-        "DESCRIPTION": "Gain !M! gold. NL Increase the amount by !mysteryDungeon:M2! permanently. NL Exhaust."
+        "NAME": "해피타임",
+        "DESCRIPTION": "골드를 !M! 얻습니다. NL 영구적으로 이 카드로 얻는 골드의 양을 !mysteryDungeon:M2! 만큼 증가합니다. NL 소멸."
     },
     "mysteryDungeon:MeowthHoneClaws": {
-        "NAME": "Hone Claws",
-        "DESCRIPTION": "Apply !mysteryDungeon:M2! Block. NL Gain !M! Strength."
+        "NAME": "손톱갈기",
+        "DESCRIPTION": "적에게 방어도를 !mysteryDungeon:M2! 부여합니다. NL 힘을 !M! 얻습니다."
     },
     "mysteryDungeon:MeowthHyperVoice": {
-        "NAME": "Hyper Voice",
-        "DESCRIPTION": "Ethereal. NL Spend !M! gold. NL Deal !D! damage. NL Increase gold cost by 4 and damage by 6 for the combat. NL Return the card to your hand.",
-        "UPGRADE_DESCRIPTION": "Spend !M! gold. NL Deal !D! damage. NL Increase gold cost by 4 and damage by 6 for the combat. NL Return the card to your hand."
+        "NAME": "하이퍼보이스",
+        "DESCRIPTION": "휘발성. NL 골드를 !M! 소모합니다. NL 피해를 !D! 줍니다. NL 이번 전투 동안 피해량이 6 증가하고 골드 소모량이 4 증가합니다. NL 이 카드는 손으로 돌아옵니다.",
+        "UPGRADE_DESCRIPTION": "골드를 !M! 소모합니다. NL 피해를 !D! 줍니다. NL 이번 전투 동안 피해량이 6 증가하고 골드 소모량이 4 증가합니다. NL 이 카드는 손으로 돌아옵니다."
     },
     "mysteryDungeon:MeowthLastResort": {
-        "NAME": "Last Resort",
-        "DESCRIPTION": "Spend !M! gold. NL Discard your hand. NL Draw 10 cards. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Spend !M! gold. NL Discard your hand. NL Draw 10 cards. NL Exhaust."
+        "NAME": "비장의무기",
+        "DESCRIPTION": "골드를 !M! 소모합니다. NL 카드를 모두 버립니다. NL 카드를 10 장 뽑습니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "보존. NL 골드를 !M! 소모합니다. NL 카드를 모두 버립니다. NL 카드를 10 장 뽑습니다. NL 소멸."
     },
     "mysteryDungeon:MeowthLashOut": {
-        "NAME": "Lash Out",
-        "DESCRIPTION": "Whenever you apply Strength or Block to an enemy create !M! *Flurry in your hand.",
-        "UPGRADE_DESCRIPTION": "Whenever you apply Strength or Block to an enemy create !M! upgraded *Flurry in your hand."
+        "NAME": "분풀이",
+        "DESCRIPTION": "적에게 힘을 부여하거나 방어도를 부여한 경우 *난동 을 !M! 장 얻습니다.",
+        "UPGRADE_DESCRIPTION": "적에게 힘을 부여하거나 방어도를 부여한 경우 강화된 *난동 을 !M! 장 얻습니다."
     },
     "mysteryDungeon:MeowthNastyPlot": {
-        "NAME": "Nasty Plot",
-        "DESCRIPTION": "Spend !M! gold. NL Draw !mysteryDungeon:M2! cards."
+        "NAME": "나쁜음모",
+        "DESCRIPTION": "골드를 !M! 소모합니다. NL 카드를 !mysteryDungeon:M2! 장 뽑습니다."
     },
     "mysteryDungeon:MeowthNightSlash": {
-        "NAME": "Night Slash",
-        "DESCRIPTION": "Spend 10 gold. NL Deal !D! damage to ALL enemies. NL Add ALL 0 cost cards in your discard pile into your hand. NL Exhaust."
+        "NAME": "깜짝배기",
+        "DESCRIPTION": "골드를 10 얻습니다. NL 적 전체에게 피해를 !D! 줍니다. NL 버린 카드 더미에 있는 비용이 0인 카드를 모두 손으로 가져옵니다. NL 소멸."
     },
     "mysteryDungeon:MeowthPayday": {
-        "NAME": "Pay Day",
-        "DESCRIPTION": "Deal !D! damage. NL Deal additionnal damage equal to money spent this combat.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL Deal additionnal damage equal to money spent this combat."
+        "NAME": "고양이돈받기",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 전투동안 소모한 골드만큼 추가로 피해를 줍니다.",
+        "UPGRADE_DESCRIPTION": "Retain. NL 피해를 !D! 줍니다. NL 이번 전투동안 소모한 골드만큼 추가로 피해를 줍니다."
     },
     "mysteryDungeon:MeowthPowerGem": {
-        "NAME": "Power Gem",
-        "DESCRIPTION": "Deal !D! damage. NL The next card with a gold cost this turn is free.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL The next !M! cards with a gold cost this turn are free."
+        "NAME": "파워잼",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 턴에 골드를 사용하는 다음 카드가 골드를 소모하지 않습니다.",
+        "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 이번 턴에 골드를 사용하는 다음 카드가 골드를 소모하지 않습니다."
     },
     "mysteryDungeon:MeowthPsychUp": {
-        "NAME": "Psych Up",
-        "DESCRIPTION": "When you apply Strength to an enemy, gain !M! Strength.",
-        "UPGRADE_DESCRIPTION": "When you apply Strength to an enemy, gain !M! Strength."
+        "NAME": "자기암시",
+        "DESCRIPTION": "적에게 힘을 부여할때, 힘을 !M! 얻습니다.",
+        "UPGRADE_DESCRIPTION": "적에게 힘을 부여할때, 힘을 !M! 얻습니다."
     },
     "mysteryDungeon:MeowthPunishment": {
-        "NAME": "Punishment",
-        "DESCRIPTION": "Deal !D! damage. NL Deal additionnal damage equal to !M! times the enemy's Strength."
+        "NAME": "혼내기",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 적에 힘 의 !M! 배 만큼 추가로 피해를 줍니다."
     },
     "mysteryDungeon:MeowthRoar": {
-        "NAME": "Roar",
-        "DESCRIPTION": "Apply !M! Strength. NL Apply 99 Weak. NL Exhaust."
-    },
-    "mysteryDungeon:MeowthScratch": {
-        "NAME": "Scratch",
-        "DESCRIPTION": "Deal !D! damage."
-    },
-    "mysteryDungeon:MeowthScreech": {
-        "NAME": "Screech",
-        "DESCRIPTION": "Apply !M! Vulnerable. NL Apply !mysteryDungeon:M2! Block."
-    },
-    "mysteryDungeon:MeowthSnarl": {
-        "NAME": "Snarl",
-        "DESCRIPTION": "Apply !M! Block. NL Gain !B! Block."
+        "NAME": "울부짓기",
+        "DESCRIPTION": "힘을 !M! 부여합니다. NL 약화를 99 부여합니다. NL 소멸."
     },
     "mysteryDungeon:MeowthSnatch": {
-        "NAME": "Snatch",
-        "DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract in your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract+ in your hand. NL Exhaust."
+        "NAME": "가로채기",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 골드를 !M! 얻습니다. NL *헤롱헤롱 을 1장 얻습니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 골드를 !M! 얻습니다. NL 강화된 *헤롱헤롱 을 1장 얻습니다. NL 소멸."
+    },
+    "mysteryDungeon:MeowthScratch": {
+        "NAME": "할퀴기",
+        "DESCRIPTION": "피해를 !D! 줍니다."
+    },
+    "mysteryDungeon:MeowthScreech": {
+        "NAME": "싫은소리",
+        "DESCRIPTION": "취약을 !M! 부여합니다. NL 방어도를 !mysteryDungeon:M2! 부여합니다."
+    },
+    "mysteryDungeon:MeowthSnarl": {
+        "NAME": "바크아웃",
+        "DESCRIPTION": "방어도를 8 부여합니다. NL 방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:MeowthSpite": {
-        "NAME": "Spite",
-        "DESCRIPTION": "Spend !M!X gold. NL Gain 2X Strength. NL Exhaust."
+        "NAME": "원한",
+        "DESCRIPTION": "골드를 !M! X 소모합니다. NL 힘을 2X 얻습니다. NL 소멸."
     },
     "mysteryDungeon:MeowthSwagger": {
-        "NAME": "Swagger",
-        "DESCRIPTION": "Apply !M! Strength. NL Apply Stun."
+        "NAME": "뽐내기",
+        "DESCRIPTION": "힘을 !M! 부여합니다. NL 기절을 부여합니다."
     },
     "mysteryDungeon:MeowthSwitcheroo": {
-        "NAME": "Switcheroo",
-        "DESCRIPTION": "Exchange your Strength with the target's Strength. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Lose !M! Strength. NL Exchange your Strength with the target's Strength. NL Exhaust."
+        "NAME": "바꿔치기",
+        "DESCRIPTION": "대상과 힘을 서로 바꿉니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "힘을 !M! 잃습니다. NL 대상과 힘을 서로 바꿉니다. NL 소멸."
     },
     "mysteryDungeon:MeowthTaunt": {
-        "NAME": "Taunt",
-        "DESCRIPTION": "Gain !M! gold. NL End your turn."
+        "NAME": "도발",
+        "DESCRIPTION": "골드를 !M! 얻습니다. NL 턴을 종료합니다."
     },
     "mysteryDungeon:MeowthTechnician": {
-        "NAME": "Technician",
-        "DESCRIPTION": "Innate. NL At the start of your turn create a *Flurry in your hand.",
-        "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn create an upgraded *Flurry in your hand."
+        "NAME": "테크니션",
+        "DESCRIPTION": "선천성. NL 턴 시작시 *난동 을 1장 얻습니다.",
+        "UPGRADE_DESCRIPTION": "선천성. NL 턴 시작시 강화된 *난동 을 1장 얻습니다."
     },
     "mysteryDungeon:MeowthThief": {
-        "NAME": "Thief",
-        "DESCRIPTION": "Deal !D! damage to !M! random enemies. NL Gain 5 gold !M! times. NL Exhaust."
+        "NAME": "도둑질",
+        "DESCRIPTION": "무작위 적 !M! 명에게 피해를 !D! 줍니다. NL 골드를 5 만큼 !M! 번 얻습니다. NL 소멸."
     },
     "mysteryDungeon:MeowthThroatChop": {
-        "NAME": "Throat Chop",
-        "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Gain !M! gold."
+        "NAME": "지옥찌르기",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다. NL 골드를 !M! 얻습니다."
     },
     "mysteryDungeon:MeowthUnnerve": {
-        "NAME": "Unnerve",
-        "DESCRIPTION": "Whenever you spend a total of 25 gold this combat, gain !M! mysterydungeon:Plated_Armor."
+        "NAME": "긴장감",
+        "DESCRIPTION": "이번 전투 에서 골드를 25 소모할 때 마다, mysterydungeon:판금갑옷을 !M! 얻습니다."
     },
     "mysteryDungeon:MeowthUTurn": {
-        "NAME": "U-Turn",
-        "DESCRIPTION": "Spend !M! gold. NL Create a card from your partner's deck in hand. NL It cost 0 this turn. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Spend !M! gold. NL Create a card from your partner's deck in hand. NL It cost 0 this combat. NL Exhaust."
+        "NAME": "유턴",
+        "DESCRIPTION": "골드를 !M! 소모합니다. NL 파트너의 무작위 카드를 손으로 가져옵니다. NL 이번 턴 동안 그 카드의 비용이 0이 됩니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "골드를 !M! 소모합니다. NL 파트너의 무작위 카드를 손으로 가져옵니다. NL 이번 전투 동안 그 카드의 비용이 0이 됩니다. NL 소멸."
     },
     "mysteryDungeon:PikachuAgility": {
         "NAME": "고속이동",
@@ -1242,181 +1242,180 @@
         "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 강화된 풀죽음을 얻습니다."
     },
     "mysteryDungeon:TotodileAquaJet": {
-        "NAME": "Aqua Jet",
-        "DESCRIPTION": "Innate. NL Deal !D! damage. Next turn gain !M! mysterydungeon:Vigor."
+        "NAME": "아쿠아제트",
+        "DESCRIPTION": "선천성. NL 피해를 !D! 줍니다. 다음턴에 mysterydungeon:활력을 !M! 얻습니다."
     },
     "mysteryDungeon:TotodileAquaTail": {
-        "NAME": "Aqua Tail",
-        "DESCRIPTION": "Deal !D! damage. NL Scry !M!."
+        "NAME": "아쿠아테일",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 예지 !M!."
     },
     "mysteryDungeon:TotodileAvalanche": {
-        "NAME": "Avalanche",
-        "DESCRIPTION": "Whenever you activate an Orb, deal damage equal to your Block to a random enemy."
+        "NAME": "눈사태",
+        "DESCRIPTION": "구채를 발현할때 마다, 무작위 적에게 현재 방어도 만큼 피해를 줍니다."
     },
     "mysteryDungeon:TotodileBite": {
-        "NAME": "Bite",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
+        "NAME": "물기",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 취약을 !M! 부여합니다."
     },
     "mysteryDungeon:TotodileBlizzard": {
-        "NAME": "Blizzard",
-        "DESCRIPTION": "Deal damage equal to !M! times the number of orbs channeled this combat.",
+        "NAME": "눈보라",
+        "DESCRIPTION": "이번 전투동안 영창된 구체 갯수의 !M! 배 만큼 피해를 줍니다.",
         "EXTENDED_DESCRIPTION": [
-            "Deal damage equal to !M! times the number of orbs channneled this combat. NL (Currently deals !D! damage.)"
+            "이번 전투동안 영창된 구체 갯수의 !M! 배 만큼 피해를 줍니다. NL (현재 피해를 !D! 줍니다.)"
         ]
     },
     "mysteryDungeon:TotodileBlock": {
-        "NAME": "Block",
-        "DESCRIPTION": "Gain !B! Block. NL Channel !M! Frost."
+        "NAME": "블록",
+        "DESCRIPTION": "방어도를 !B! 줍니다. NL 냉기를 !M! 영창합니다."
     },
     "mysteryDungeon:TotodileChipAway": {
-        "NAME": "Chip Away",
-        "DESCRIPTION": "Deal !D! damage. NL Gain as much mysterydungeon:Vigor as you had before playing this card.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! more mysterydungeon:Vigor than you had before playing this card."
+        "NAME": "야금야금",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL mysterydungeon:활력 을 잃지 않습니다.",
+        "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL mysterydungeon:활력 을 잃지 않습니다. NL mysterydungeon:활력 을 !M! 얻습니다."
     },
     "mysteryDungeon:TotodileNaturePowerSea": {
-        "NAME": "Nature Power: Sea",
-        "DESCRIPTION": "Apply !M! Vulnerable. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor."
+        "NAME": "자연의힘:물",
+        "DESCRIPTION": "취약을 !M! 부여합니다. NL mysterydungeon:활력 을 !mysteryDungeon:M2! 얻습니다. NL 소멸."
     },
     "mysteryDungeon:TotodileCrunch": {
-        "NAME": "Crunch",
-        "DESCRIPTION": "Deal !D! damage. NL Choose a card from your discard pile and add it to your hand."
+        "NAME": "깨물어부수기",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 버린 카드 더미에 있는 카드를 1장 선택해 손으로 가져옵니다."
     },
     "mysteryDungeon:TotodileDefend": {
-        "NAME": "Defend",
-        "DESCRIPTION": "Gain !B! Block."
+        "NAME": "수비",
+        "DESCRIPTION": "방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:TotodileDive": {
-        "NAME": "Dive",
-        "DESCRIPTION": "Retain. NL Discard !M! cards from your hand.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Discard !M! cards from your hand. NL Draw 1 card."
+        "NAME": "다이빙",
+        "DESCRIPTION": "보존. NL 카드를 !M! 장 버립니다.",
+        "UPGRADE_DESCRIPTION": "보존. NL 카드를 !M! 장 버립니다. NL 카드를 1장 뽑습니다."
     },
     "mysteryDungeon:TotodileDoubleTeam": {
-        "NAME": "Double Team",
-        "DESCRIPTION": "You may add !M! card from your discard pile to the top of your draw pile. NL You may add !M! card from your discard pile to your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "You may add !M! cards from your discard pile to the top of your draw pile. NL You may add !M! cards from your discard pile to your hand. NL Exhaust."
+        "NAME": "그림자분신",
+        "DESCRIPTION": "버린 카드 더미에서 카드를 !M! 장 선택하여 뽑을 카드 더미 맨 위에 놓습니다. NL 버린 카드 더미에 있는 카드를 !M! 장 선택해 손으로 가져옵니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "버린 카드 더미에서 카드를 !M! 장 선택하여 뽑을 카드 더미 맨 위에 놓습니다. NL 버린 카드 더미에 있는 카드를 !M! 장 선택해 손으로 가져옵니다. NL 소멸."
     },
     "mysteryDungeon:TotodileEndure": {
-        "NAME": "Endure",
-        "DESCRIPTION": "The next !M! times you would take damage, do not take any and discard the top 6 cards of your draw pile."
+        "NAME": "버티기",
+        "DESCRIPTION": "다음 턴 !M! 회 동안 피해를 받은 경우, 피해를 받지 않고 뽑을 카드 더미 맨 위부터 6장을 버립니다."
     },
     "mysteryDungeon:TotodileExplorerForm": {
-        "NAME": "Explorer Form",
-        "DESCRIPTION": "Ethereal. NL At the start of your turn, add !M! card from your discard pile to your hand. NL Draw one less card per turn.",
-        "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! card from your discard pile to your hand. NL Draw one less card per turn."
+        "NAME": "탐험가의 자세",
+        "DESCRIPTION": "휘발성. NL 턴 시작시, 버린 카드 더미에 있는 카드를 !M! 장 선택해 손으로 가져옵니다. NL 카드 한장을 덜 뽑습니다.",
+        "UPGRADE_DESCRIPTION": "턴 시작시, 버린 카드 더미에 있는 카드를 !M! 장 선택해 손으로 가져옵니다. NL 카드 한장을 덜 뽑습니다."
     },
     "mysteryDungeon:TotodileHail": {
-        "NAME": "Hail",
-        "DESCRIPTION": "Unplayable. NL When discarded: Channel !M! Frost.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up. NL When discarded: Channel !M! Frost.",
+        "NAME": "싸라기눈",
+        "DESCRIPTION": "사용불가. NL 이 카드가 버려지면 냉기를 !M! 번 영창합니다.",
+        "UPGRADE_DESCRIPTION": "사용불가. NL mysterydungeon:뒀다쓰기. NL 이 카드가 버려지면 냉기를 !M! 번 영창합니다.",
         "EXTENDED_DESCRIPTION": [
-            "I can't play this card."
+            "이 카드는 사용할 수 없습니다."
         ]
     },
     "mysteryDungeon:TotodileHydroCannon": {
-        "NAME": "Hydro Cannon",
-        "DESCRIPTION": "Costs 1 less [E] for each card discarded this turn. Deal !D! damage."
+        "NAME": "하이드로캐논",
+        "DESCRIPTION": "이번 턴에 버린 카드의 수만큼 비용이 [E] 감소합니다. 피해를 !D! 줍니다."
     },
     "mysteryDungeon:TotodileHydroPump": {
-        "NAME": "Hydro Pump",
-        "DESCRIPTION": "Can only be used if there are no cards left in your draw pile. NL Deal !D! damage.",
-        "UPGRADE_DESCRIPTION": "Can only be used if there are !M! cards or less in your draw pile. NL Deal !D! damage."
+        "NAME": "하이드로펌프",
+        "DESCRIPTION": "뽑을 카드 더미에 카드가 하나도 없을 때만 사용할 수 있습니다. NL 피해를 !D! 줍니다.",
+        "UPGRADE_DESCRIPTION": "뽑을 카드 더미에 카드가 !M! 장 이하일 때만 사용할 수 있습니다. NL 피해를 !D! 줍니다."
     },
     "mysteryDungeon:TotodileIceBeam": {
-        "NAME": "Ice Beam",
-        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost."
+        "NAME": "냉동빔",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 냉기를 !M! 번 영창합니다."
     },
     "mysteryDungeon:TotodileIceFang": {
-        "NAME": "Ice Fang",
-        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Deal !D! damage. NL Channel !M! Frost."
+        "NAME": "얼음엄니",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 냉기를 !M! 영창합니다.",
+        "UPGRADE_DESCRIPTION": "선천성. NL 피해를 !D! 줍니다. NL 냉기를 !M! 영창합니다."
     },
     "mysteryDungeon:TotodileIcePunch": {
-        "NAME": "Ice Punch",
-        "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost. NL Evoke !M! Orb."
+        "NAME": "냉동펀치",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 냉기를 !M! 번 영창합니다. NL 구체를 !M! 1번 발현합니다."
     },
     "mysteryDungeon:TotodileIcyWind": {
-        "NAME": "Icy Wind",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Channel !M! Frost. NL Exhaust."
+        "NAME": "얼다바람",
+        "DESCRIPTION": "mysterydungeon:절연체. NL 냉기를 !M! 번 영창합니다. NL 소멸."
     },
     "mysteryDungeon:TotodileLiquidation": {
-        "NAME": "Liquidation",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies."
+        "NAME": "아쿠아브레이크",
+        "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다."
     },
     "mysteryDungeon:TotodileScratch": {
-        "NAME": "Scratch",
-        "DESCRIPTION": "Deal !D! damage."
+        "NAME": "할퀴기",
+        "DESCRIPTION": "피해를 !D! 줍니다."
     },
     "mysteryDungeon:TotodileSheerForce": {
-        "NAME": "Sheer Force",
-        "DESCRIPTION": "Whenever you deal !M! or more unblocked damage, channel 1 Frost."
+        "NAME": "우격다짐",
+        "DESCRIPTION": "공격 피해를 !M! 이상 받을 때마다, 냉기를 1 번 영창합니다."
     },
     "mysteryDungeon:TotodileStrength": {
-        "NAME": "Strength",
-        "DESCRIPTION": "Draw !M! card. NL If you draw an Attack card this way, channel 1 Frost."
+        "NAME": "괴력",
+        "DESCRIPTION": "카드를 !M! 장 뽑습니다. NL 공격 카드를 뽑았다면, 냉기를 1번 영창합니다."
     },
     "mysteryDungeon:TotodileSurf": {
-        "NAME": "Surf",
-        "DESCRIPTION": "Whenever you discard a card, gain !M! mysterydungeon:Temporary_Vigor.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you discard a card, for every discarded card, gain !M! mysterydungeon:Temporary_Vigor."
+        "NAME": "파도타기",
+        "DESCRIPTION": "카드를 버릴 때 마다, mysterydungeon:임시_활력 을 !M! 얻습니다."
     },
     "mysteryDungeon:TotodileSubstitute": {
-        "NAME": "Substitute",
-        "DESCRIPTION": "Innate. NL Discard the top !M! cards from your draw pile. NL Put Attack cards discarded this way in your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Discard the top !M! cards from your draw pile. NL Put Attack cards discarded this way in your hand. NL Exhaust."
+        "NAME": "대타출동",
+        "DESCRIPTION": "선천성. NL 뽑을 카드 더미 맨 위에 카드를 !M! 장 버립니다. NL 이 카드로 버린 공격카드를 손으로 가져옵니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "선천성. NL 보존. NL  뽑을 카드 더미 맨 위에 카드를 !M! 장 버립니다. NL 이 카드로 버린 공격카드를 손으로 가져옵니다. NL 소멸."
     },
     "mysteryDungeon:TotodileRage": {
-        "NAME": "Rage",
-        "DESCRIPTION": "At the start of the next X turn, gain !M! mysterydungeon:Vigor. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "At the start of the next X+1 turn, gain !M! mysterydungeon:Vigor. NL Exhaust."
+        "NAME": "분노",
+        "DESCRIPTION": "X 턴 동안, 턴 시작시 mysterydungeon:활력 을 !M! 얻습니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "X 턴 동안, 턴 시작시 mysterydungeon:활력 을 !M! 얻습니다. NL 소멸."
     },
     "mysteryDungeon:TotodileRainDance": {
-        "NAME": "Rain Dance",
-        "DESCRIPTION": "Unplayable. NL When discarded: Gain !M! mysterydungeon:Vigor.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up. NL When discarded: Gain !M! mysterydungeon:Vigor",
+        "NAME": "비바라기",
+        "DESCRIPTION": "사용불가. NL 이 카드가 버려지면 mysterydungeon:활력 을 !M! 얻습니다.",
+        "UPGRADE_DESCRIPTION": "사용불가. NL mysterydungeon:뒀다쓰기. NL 이 카드가 버려지면 mysterydungeon:활력 을 !M! 얻습니다.",
         "EXTENDED_DESCRIPTION": [
-            "I can't play this card."
+            "이 카드는 사용할 수 없습니다."
         ]
     },
     "mysteryDungeon:TotodileThrash": {
-        "NAME": "Thrash",
-        "DESCRIPTION": "Every !mysteryDungeon:M2! Attack you play, gain !M! mysterydungeon:Vigor."
+        "NAME": "난동부리기",
+        "DESCRIPTION": "이번 전투 동안 사용하는 공격카드 !M! 개 당, mysterydungeon:활력을  !mysteryDungeon:M2! 얻습니다."
     },
     "mysteryDungeon:TotodileTorrent": {
-        "NAME": "Torrent",
-        "DESCRIPTION": "Unplayable. NL When discarded: Gain !M! Focus.",
-        "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up. NL When discarded: Gain !M! Focus.",
+        "NAME": "급류",
+        "DESCRIPTION": "사용불가. NL 이 카드가 버려지면 밀집을 !M! 얻습니다.",
+        "UPGRADE_DESCRIPTION": "사용불가. NL mysterydungeon:뒀다쓰기. NL 이 카드가 버려지면 밀집을 !M! 얻습니다.",
         "EXTENDED_DESCRIPTION": [
-            "I can't play this card."
+            "이 카드는 사용할 수 없습니다."
         ]
     },
     "mysteryDungeon:TotodileWaterfall": {
-        "NAME": "Waterfall",
-        "DESCRIPTION": "At the end of your turn shuffle your draw pile. NL At the start of your turn Scry !M!."
+        "NAME": "폭포오르기",
+        "DESCRIPTION": "턴 종료시 버려진 카드를 뽑을 카드 더미에 섞어 넣습니다. NL 턴 시작시 예지 !M!."
     },
     "mysteryDungeon:TotodileWaterGun": {
-        "NAME": "Water Gun",
-        "DESCRIPTION": "Discard the !M! top cards of your draw pile. NL Deal !D! damage."
+        "NAME": "물대포",
+        "DESCRIPTION": "뽑을 카드 더미 맨 위에 카드를 !M! 장 버립니다. NL 피해를 !D! 줍니다."
     },
     "mysteryDungeon:TotodileWaterPledge": {
-        "NAME": "Water Pledge",
-        "DESCRIPTION": "Channel 1 Frost orb. NL Gain !M! mysterydungeon:Vigor. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
+        "NAME": "물의맹세",
+        "DESCRIPTION": "냉기를 1번 영창합니다. NL mysterydungeon:활력 을 !M! 얻습니다. NL 이번 턴에 다른 mysterydungeon:맹세 카드를 사용 했다면, 특별한 효과가 발동됩니다."
     },
     "mysteryDungeon:TotodileWaterPulse": {
-        "NAME": "Water Pulse",
-        "DESCRIPTION": "Discard the top !M! cards of your draw pile. For each card discarded this way, deal !D! damage."
+        "NAME": "물의파동",
+        "DESCRIPTION": "뽑을 카드 더미 맨 위에 카드를 !M! 장 버립니다. 이 카드로 버려진 카드 한장당, 피해를 !D! 줍니다."
     },
     "mysteryDungeon:TotodileWaterSport": {
-        "NAME": "Water Sport",
-        "DESCRIPTION": "Discard the top card of your draw pile. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor.",
-        "UPGRADE_DESCRIPTION": "Discard the top 2 cards of your draw pile. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor."
+        "NAME": "물놀이",
+        "DESCRIPTION": "뽑을 카드 더미 맨 위에 카드를 1장 버립니다. NL mysterydungeon:활력 을 !mysteryDungeon:M2! 얻습니다.",
+        "UPGRADE_DESCRIPTION": "뽑을 카드 더미 맨 위에 카드를 2장 버립니다. NL mysterydungeon:활력 을 !mysteryDungeon:M2! 얻습니다."
     },
     "mysteryDungeon:TotodileWhirlpool": {
-        "NAME": "Whirlpool",
-        "DESCRIPTION": "Discard the top !M! card of your draw pile. NL Gain !mysteryDungeon:M2! Focus. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Discard the top !M! card of your draw pile. NL Gain !mysteryDungeon:M2! Focus."
+        "NAME": "바다회오리",
+        "DESCRIPTION": "뽑을 카드 더미 맨 위에 카드를 !M! 장 버립니다. NL 밀집을 !mysteryDungeon:M2! 얻습니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "뽑을 카드 더미 맨 위에 카드를 !M! 장 버립니다. NL 밀집을 !mysteryDungeon:M2! 얻습니다."
     },
     "mysteryDungeon:TotodileWorkUp": {
-        "NAME": "Work Up",
-        "DESCRIPTION": "If you do not have any empty Orb Slots, gain !M! Orb Slots."
+        "NAME": "분발",
+        "DESCRIPTION": "빈 구체슬롯이 없는 경우, 구체슬롯을 !M! 얻습니다."
     }
 }

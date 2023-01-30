@@ -48,9 +48,10 @@
     {
         "PROPER_NAME": "회피율 감소",
         "NAMES": [
-            "회피율 감소",
+            "회피율감소를",
             "회피율_감소",
-            "회피율_감소를"
+            "회피율_감소를",
+			"회피율감소"
         ],
         "DESCRIPTION": "턴이 끝날 경우, 방어력의 25%를 잃습니다."
     },
@@ -101,80 +102,81 @@
             "맹독",
             "맹독을"
         ],
-        "DESCRIPTION": "턴 시작시 맹독 수치만큼 피해를 입히고, 줄어드는 대신 중첩된 양만큼 증가합니다."
+        "DESCRIPTION": "상대 턴 시작시 부여된 중독이 줄어드는 대신 맹독만큼 증가합니다."
     },
     {
-        "PROPER_NAME": "Eruption",
+        "PROPER_NAME": "분화",
         "NAMES": [
-            "Eruption",
-            "eruption"
+            "분화",
+            "분화를"
         ],
-        "DESCRIPTION": "Deal damage to the target equal to the amount of Burn stacks on the target. Remove all Burn stacks."
+        "DESCRIPTION": "적에게 부여된 화상만큼 피해를 줍니다. 모든 화상을 제거합니다."
     },
     {
-        "PROPER_NAME": "Plated Armor",
+        "PROPER_NAME": "판금갑옷",
         "NAMES": [
-            "Plated Armor",
-            "Plated_Armor",
-            "plated_armor"
+            "판금갑옷을",
+            "판금갑옷",
+            "판금_갑옷"
         ],
-        "DESCRIPTION": "At the end of your turn, gain Block equal to the number of Plated Armor Stacks. Reduce this amount by one evertime you take damage from an enemies attack."
+        "DESCRIPTION": "턴 종료시, 턴이 끝날 때 판금 갑옷 수치만큼의 방어도를 얻습니다. 막히지 않은 피해를 받을 때마다 판금 갑옷 수치가 1 감소합니다."
     },
     {
-        "PROPER_NAME": "Pledge Card",
+        "PROPER_NAME": "맹세",
         "NAMES": [
-            "Pledge Card",
-            "Pledge_Card",
-            "Pledge Cards",
+            "맹세",
+            "맹세카드를",
+            "맹세를",
             "Pledge_Cards",
             "pledge card",
             "pledge_card",
             "pledge cards",
             "pledge_cards"
         ],
-        "DESCRIPTION": "#yPledge #yCards are #yFire #yPledge, #yGrass #yPledge and #yWater #yPledge. NL Fire+Grass: 9 Poison to ALL enemies. Fire+Water: 2 Vulnerable to ALL enemies. Grass+Water: 2 Weak to ALL enemies. Grass+Grass: Gain 1 Thorns. Fire+Fire: Gain 1 energy. Water+Water: Gain 3 Temporary Strength."
+        "DESCRIPTION": "#y맹세카드 는 #y불꽃의맹세 , #y풀의맹세 , #y물의맹세 입니다. NL 불꽃+풀: 적 전체에게 중독을 9 부여합니다. NL 불꽃+물: 적 전체에게 #y취약 을 2 부여합니다. NL 풀+물: 약화를 2 부여합니다. NL 풀+풀: 가시를 #b1 얻습니다. NL 불꽃+불꽃: 에너지를 #b1 얻습니다. NL 물+물: 임시 힘을 #b3 얻습니다."
     },
     {
-        "PROPER_NAME": "Recovery",
+        "PROPER_NAME": "치유",
         "NAMES": [
-            "Recovery",
-            "recovery"
+            "치유",
+            "치유를"
         ],
-        "DESCRIPTION": "When you receives damage, increase the number of #yRecovery stacks by as much damage you received. NL When you deal attack damage, heal 30% of the attack damage dealt up to the number of #yRecovery stacks you had last turn."
+        "DESCRIPTION": "피해를 받을 경우, 피해를 받은 만큼 #치유 스택으로 변환합니다. 턴 종료시 사라집니다. NL 적을 공격할 경우, 피해량의 30% 만큼 회복합니다."
     },
     {
-        "PROPER_NAME": "Scoop-Up",
+        "PROPER_NAME": "뒀다쓰기",
         "NAMES": [
-            "Scoop-Up",
-            "scoop-up"
+            "뒀다쓰기",
+            "뒀다쓰기."
         ],
-        "DESCRIPTION": "At the start of your turn but after you draw, if this card is in your discard pile add it to the top of your draw pile."
+        "DESCRIPTION": "턴 시작시, 이 카드가 버린 카드 더미에 있다면 뽑을 카드 맨 위에 놓습니다."
     },
     {
-        "PROPER_NAME": "Temporary HP",
+        "PROPER_NAME": "임시 체력",
         "NAMES": [
-            "Temporary HP",
-            "Temporary_HP",
-            "temporary_HP"
+            "임시_체력",
+            "임시체력을",
+            "임시_체력",
+			"임시체력"
         ],
-        "DESCRIPTION": "Additional defense that will take damage instead of your #yHP. It acts like #yHP. You keep #yTemporary #yHP between turns but not between rooms."
+        "DESCRIPTION": "피해를 입을 경우 #y체력 대신 #y임시체력 이 대신 소비됩니다. NL 그것은 체력으로 간주됩니다. 턴 종료시 유지됩니다."
     },
     {
-        "PROPER_NAME": "Temporary Vigor",
+        "PROPER_NAME": "임시 활력",
         "NAMES": [
-            "Temporary Vigor",
-            "Temporary_Vigor",
+            "임시활력",
+            "임시_활력",
             "temporary vigor",
             "temporary_vigor"
         ],
-        "DESCRIPTION": "Gain #yVigor, but lose #yVigor at the end of your turn."
+        "DESCRIPTION": "#y활력 을 얻습니다. 턴 종료시 #y활력 을 잃습니다."
     },
     {
-        "PROPER_NAME": "Vigor",
+        "PROPER_NAME": "활력",
         "NAMES": [
-            "Vigor",
-            "vigor"
+            "활력",
+            "활력을"
         ],
-        "DESCRIPTION": "Your next attack deals #b1 more damage per Vigor stack (before applying powers like #yVulnerable and such)."
+        "DESCRIPTION": "다음 공격의 활력 만큼 피해량이 #b1 증가 합니다."
     }
 ]

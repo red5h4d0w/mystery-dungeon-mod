@@ -5,9 +5,9 @@
             "포켓몬"
         ],
         "TEXT": [
-            "당신은 예전 모습에 대한 어떠한 기억도 없어진 채 포켓몬으로 환생했습니다. NL 당신은 모험가가 탑의 정상에 오르는 것을 돕기로 했습니다.",
-            "NL 당신은 탑의 정상에 도착했습니다. 이제 새로운 포켓몬 친구들과 다른 임무를 수행하기 전에 기지에서 쉴 수 있습니다.",
-            "불이 켜지지 않은 거리를 돌아다니며, 당신은 후드를 쓴 사람들이 어두운 의식을 진행하는 것을 보게 됩니다. 당신이 다가가자, 그들은 섬뜩한 목소리로 당신을 향해 다가옵니다. 그 순간 가장 키가 큰 사람이 송곳니를 드러내고 길고 창백한 손을 당신을 향해 뻗습니다. NL ~\"Join~ ~us~ ~pokémon~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
+            "당신은 기억을 잃은 채 포켓몬으로 환생했습니다. 당신은 탐험가가 탑의 정상에 오르는 것을 돕기로 했습니다.",
+            "NL 당신은 탑의 정상에 도착했습니다. 이제 새로운 친구들과 다른 임무를 수행하기 전에 기지에서 쉴 수 있습니다.",
+            "불이 켜지지 않은 거리를 돌아다니며, 당신은 후드를 쓴 사람들이 어두운 의식을 진행하는 것을 보게 됩니다. 당신이 다가가자, 그들은 섬뜩한 목소리로 당신을 향해 다가옵니다. 그 순간 우두머리처럼 보이는 사람이 송곳니를 드러내고 길고 창백한 손을 당신을 향해 뻗습니다. NL ~\"들어와라.~ ~포켓몬..~ ~우리와~ ~함께~ ~그리고~ ~느껴라.~ ~따듯함을~ ~첩탑의\"~"
         ]
     },
     "mysteryDungeon:Bulbasaur": {
@@ -42,7 +42,7 @@
     },
     "mysteryDungeon:Squirtle": {
         "NAMES": [
-            "꼬부기"
+            "꼬북이"
         ]
     },
     "mysteryDungeon:Wartortle": {
@@ -67,97 +67,97 @@
     },
     "mysteryDungeon:Meowth": {
         "NAMES": [
-            "Meowth"
+            "냐옹"
         ]
     },
     "mysteryDungeon:Persian": {
         "NAMES": [
-            "Persian"
+            "페르시온"
         ]
     },
     "mysteryDungeon:Psyduck": {
         "NAMES": [
-            "Psyduck"
+            "고라파덕"
         ]
     },
     "mysteryDungeon:Machop": {
         "NAMES": [
-            "Machop"
+            "알통몬"
         ]
     },
     "mysteryDungeon:Cubone": {
         "NAMES": [
-            "Cubone"
+            "탕구리"
         ]
     },
     "mysteryDungeon:Eevee": {
         "NAMES": [
-            "Eevee"
+            "이브이"
         ]
     },
     "mysteryDungeon:Chikorita": {
         "NAMES": [
-            "Chikorita"
+            "치코리타"
         ]
     },
     "mysteryDungeon:Bayleef": {
         "NAMES": [
-            "Bayleef"
+            "베이리프"
         ]
     },
     "mysteryDungeon:Meganium": {
         "NAMES": [
-            "Meganium"
+            "메가니움"
         ]
     },
     "mysteryDungeon:Cyndaquil": {
         "NAMES": [
-            "Cyndaquil"
+            "브케인"
         ]
     },
     "mysteryDungeon:Quilava": {
         "NAMES": [
-            "Quilava"
+            "마그케인"
         ]
     },
     "mysteryDungeon:Typhlosion": {
         "NAMES": [
-            "Typhlosion"
+            "블레이범"
         ]
     },
     "mysteryDungeon:Totodile": {
         "NAMES": [
-            "Totodile"
+            "리아코"
         ]
     },
     "mysteryDungeon:Croconaw": {
         "NAMES": [
-            "Croconaw"
+            "엘리게이"
         ]
     },
     "mysteryDungeon:Feraligatr": {
         "NAMES": [
-            "Feraligatr"
+            "장크로다일"
         ]
     },
     "mysteryDungeon:Treecko": {
         "NAMES": [
-            "Treecko"
+            "나무지기"
         ]
     },
     "mysteryDungeon:Torchic": {
         "NAMES": [
-            "Torchic"
+            "아차모"
         ]
     },
     "mysteryDungeon:Mudkip": {
         "NAMES": [
-            "Mudkip"
+            "물짱이"
         ]
     },
     "mysteryDungeon:Skitty": {
         "NAMES": [
-            "Skitty"
+            "에나비"
         ]
     },
     "Neow": {
@@ -166,12 +166,12 @@
             "모험에 나서기 전에 너에게 몇 가지 질문이 있다.",
             "솔직하게 대답해주기 바란다. NL 준비가 되었는가?",
             "좋아... NL 질문을 시작하겠다.",
-            "그래!",
-            "내 팀을 선택한다.",
+            "그래!", 
+            "내 팀을 선택한다.", 
             "무작위 팀을 선택한다.",
-            "모험가를 선택해라.",
+            "탐험가를 선택해라.",
             "파트너를 선택해라.",
-            "You are a %s1. NL Choose a partner. NL (Expected complexity is %s2)"
+            "너는 %s (이)다. NL 파트너를 선택해라. NL (예상 난이도 : %s2)"
         ]
     }
 }

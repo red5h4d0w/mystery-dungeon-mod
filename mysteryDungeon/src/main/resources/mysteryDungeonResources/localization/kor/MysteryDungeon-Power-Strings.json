@@ -7,10 +7,10 @@
         ]
     },
     "mysteryDungeon:AromatherapyPower": {
-        "NAME": "Aromatherapy",
+        "NAME": "아로마테라피",
         "DESCRIPTIONS": [
-            "Whenever you take damage, gain #b%s #yStrength.",
-            "Whenever you take damage, gain #b%s #yStrength."
+            "체력을 잃을 때 마다, #y힘 을 #b%s 얻습니다.",
+            "체력을 잃을 때 마다, #y힘 을 #b%s 얻습니다."
         ]
     },
     "mysteryDungeon:AsleepPower": {
@@ -27,17 +27,17 @@
         ]
     },
     "mysteryDungeon:AvalanchePower": {
-        "NAME": "Avalanche",
+        "NAME": "눈사태",
         "DESCRIPTIONS": [
-            "Whenever you activate an Orb, deal damage equal to your Block to a random enemy.",
-            "Whenever you activate an Orb, deal damage equal to your Block to a random enemy %s times."
+            "구체를 발현할때 마다, 무작위 적에게 현재 방어도 만큼 피해를 줍니다.",
+            "구체를 발현할때 마다, 무작위 적에게 현재 방어도 만큼 피해를 %s 번 줍니다."
         ]
     },
-    "mysteryDungeon:TailWindPower": {
-        "NAME": "Tail Wind",
+    "mysteryDungeon:BellyDrumPower": {
+        "NAME": "배북",
         "DESCRIPTIONS": [
-            "The first card you play each turn cost #b0, but #yexhausts.",
-            "The first %s cards you play each turn cost 0, but exhaust."
+            "매 턴마다 플레이하는 첫 번째 카드의 비용이 0이 되고 소멸합니다.",
+            "매 턴마다 플레이하는 첫 번째 카드의 비용이 0이 되고 소멸합니다."
         ]
     },
     "mysteryDungeon:BidePower": {
@@ -60,23 +60,23 @@
         ]
     },
     "mysteryDungeon:ChikoritaExplorerPower": {
-        "NAME": "Explorer Form",
+        "NAME": "탐험가의 자세",
         "DESCRIPTIONS": [
-            "When you heal #yHP, deal damage to ALL enemies equal to the amount healed.",
-            "When you heal #yHP, deal damage to ALL enemies equal to #b%s times the amount healed."
+            "체력을 회복할 때 마다, 적 전체에게 회복량의 2배 만큼 피해를 줍니다.",
+            "체력을 회복할 때 마다, 적 전체에게 회복량의 2배 만큼 피해를 #b%s 번 줍니다."
         ]
     },
     "mysteryDungeon:CharmanderExplorerPower": {
         "NAME": "탐험가의 자세",
         "DESCRIPTIONS": [
-            "턴 시작시 무작위 카드를 #b%s 장 얻습니다."
+            "턴 시작시 소멸된 카드 더미에서 무작위 카드 #b%s 장을 손으로 가져옵니다."
         ]
     },
     "mysteryDungeon:ChikoritaWorrySeedPower": {
-        "NAME": "Worry Seed",
+        "NAME": "고민씨",
         "DESCRIPTIONS": [
-            "During your turn, Lose #b1 HP per card played. At the end of your turn, heal #b2 HP.",
-            "During your turn, Lose #b%s HP per card played. At the end of your turn, Heal 2 HP #b%s times."
+            "이번 턴 동안, 카드를 사용할 때마다 체력을 #b1 잃습니다. 턴 종료시 체력을 #b2 회복합니다.",
+            "이번 턴 동안, 카드를 사용할 때마다 체력을 #b1 만큼 #b%s 잃습니다.턴 종료시 체력을 #b2 만큼 #b%s 번 회복합니다."
         ]
     },
     "mysteryDungeon:CounterPower": {
@@ -87,36 +87,36 @@
         ]
     },
     "mysteryDungeon:CursePower": {
-        "NAME": "Curse",
+        "NAME": "저주",
         "DESCRIPTIONS": [
-            "The first time you draw a Status or Curse each turn, gain [E].",
-            "The first #b%s times draw a Status or a Curse each turn, gain [E]."
+            "매턴 1회 저주나 상태이상을 뽑을 경우, 에너지를 얻습니다.",
+            "매턴 #b%s 회 저주나 상태이상을 뽑을 경우, 에너지를 얻습니다."
         ]
     },
     "mysteryDungeon:CyndaquilCounterPower": {
-        "NAME": "Counter",
+        "NAME": "카운터",
         "DESCRIPTIONS": [
-            "At the end of your turn spend all leftover energy and gain #b%s #yBlock for each energy spent."
+            "턴 종료시, 남은 에너지를 모두 소모합니다. 이 카드로 소모한 에너지 하나 당 방어도를 #b%s 얻습니다."
         ]
     },
     "mysteryDungeon:CyndaquilExplorerPower": {
-        "NAME": "Explorer Form",
+        "NAME": "탐험가의 자세",
         "DESCRIPTIONS": [
-            "Whenever you cause an #yEruption, deal #b%s to ALL enemies."
+            "#y분화 가 발동할 때 마다, 모든 적에게 피해를 #b%s 줍니다."
         ]
     },
     "mysteryDungeon:CrushClawPower": {
-        "NAME": "Crush Claw",
+        "NAME": "브레이크크루",
         "DESCRIPTIONS": [
-            "Your next #yEruption will deal 50% more damage.",
-            "Your next #b%s #yEruption will deal 50%% more damage."
+            "다음 턴에 #y분화 의 피해량이 50% 증가합니다.",
+            "#b%s 턴 동안 #y분화 의 피해량이 50% 증가합니다."
         ]
     },
     "mysteryDungeon:DroughtPower": {
         "NAME": "가뭄",
         "DESCRIPTIONS": [
-            "#y화상 을 부여할때 마다 추가로 #b%s  만큼 더 부여합니다.",
-            "#y화상 을 부여할때 마다 추가로 #b%s  만큼 더 부여합니다."
+            "#y화상 을 부여할때 마다 추가로 #b%s 만큼 더 부여합니다.",
+            "#y화상 을 부여할때 마다 추가로 #b%s 만큼 더 부여합니다."
         ]
     },
     "mysteryDungeon:EncorePower": {
@@ -139,29 +139,29 @@
         ]
     },
     "mysteryDungeon:FirePledgePower": {
-        "NAME": "Fire Pledge",
+        "NAME": "불꽃의맹세",
         "DESCRIPTIONS": [
-            "When you play another #yPledge #yCard this turn, activate one of the following effects. NL Grass: Apply #b9 #yPoison to ALL enemies. NL Water: Apply #b2 #yVulnerable to ALL enemies."
+            "이번 턴에 다른 #y맹세 #y카드를 사용 했다면, 특별한 효과가 발동됩니다. NL 풀: 적 전체에게 #y중독 을 #b9 부여합니다. NL 물: 모든 적에게 취약을 #b2 부여합니다."
         ]
     },
     "mysteryDungeon:FlashFirePower": {
-        "NAME": "Flash Fire",
+        "NAME": "타오르는불꽃",
         "DESCRIPTIONS": [
-            "Whenever you play a card, apply #b%s #yBurn to ALL enemies."
+            "매턴 카드를 사용할 때 마다 적 전체에게 #y화상 을 #b%s 부여합니다."
         ]
     },
     "mysteryDungeon:FreeSpendingEveryTurnPower": {
-        "NAME": "Investment",
+        "NAME": "투자",
         "DESCRIPTIONS": [
-            "Each turn, the first time you should spend gold, do not spend any.",
-            "Each turn, the first #b%s times you should spend gold, do not spend any."
+            "턴 시작시, 매턴 1회 사용하는 다음에 사용하는 카드가 골드를 소모할 경우 소모하지 않습니다.",
+            "턴 시작시, 매턴 #b%s 회 사용하는 다음에 사용하는 카드가 골드를 소모할 경우 소모하지 않습니다."
         ]
     },
     "mysteryDungeon:FreeSpendingThisTurnPower": {
-        "NAME": "Bargain",
+        "NAME": "할인",
         "DESCRIPTIONS": [
-            "Next time you should spend gold this turn, do not spend any.",
-            "Next #b%s times you should spend gold this turn, do not spend any."
+            "이번 턴에 골드를 사용하는 다음 카드가 골드를 소모하지 않습니다.",
+            "이번 턴에 #b%s 번 골드를 사용하는 다음 카드가 골드를 소모하지 않습니다."
         ]
     },
     "mysteryDungeon:FrustrationPower": {
@@ -172,17 +172,17 @@
         ]
     },
     "mysteryDungeon:FuryCutterPower": {
-        "NAME": "Fury Cutter",
+        "NAME": "연속자르기",
         "DESCRIPTIONS": [
-            "At the start of your turn, add #b%s #yFury #yCutter from cards exhausted this combat to your hand.",
-            "At the start of your turn, add #b%s upgraded #yFury #yCutter from cards exhausted this combat to your hand.",
-            "At the start of your turn, add #b%s #yFury #yCutter and #b%s #yFury #yCutter #y+ from cards exhausted this combat to your hand."
+            "다음 턴에 #y연속자르기 를 #b%s 장 얻습니다.",
+            "다음 턴에 #y강화된 #y연속자르기 를 #b%s 장 얻습니다.",
+            "다음 턴에 #y연속자르기 #b%s 장과 #y강화된 #y연속자르기 #b%s 장을 얻습니다."
         ]
     },
     "mysteryDungeon:GrassPledgePower": {
-        "NAME": "Grass Pledge",
+        "NAME": "풀의맹세",
         "DESCRIPTIONS": [
-            "When you play another #yPledge #yCard this turn, activate one of the following effects. NL Fire: Apply #b9 #yPoison to ALL enemies. NL Water: Apply #b2 #yWeak to ALL enemies."
+            "이번 턴에 다른 #y맹세 #y카드를 사용 했다면, 특별한 효과가 발동됩니다. NL 불꽃: 적 전체에게 #y중독 을 #b9 부여합니다. NL 물: 적 전체에게 약화를 #b2 부여합니다."
         ]
     },
     "mysteryDungeon:HailPower": {
@@ -192,9 +192,9 @@
         ]
     },
     "mysteryDungeon:HealPulsePower": {
-        "NAME": "Heal Pulse",
+        "NAME": "치유파동",
         "DESCRIPTIONS": [
-            "Whenever you deal yourself damage or gain HP during your turn, gain #b%s #yBlock."
+            "내 턴에 체력을 잃거나 체력을 회복한 경우, 방어도를 #b%s 얻습니다."
         ]
     },
     "mysteryDungeon:HeatCrashPower": {
@@ -205,34 +205,34 @@
         ]
     },
     "mysteryDungeon:HeatWavePower": {
-        "NAME": "Heat Wave",
+        "NAME": "열풍",
         "DESCRIPTIONS": [
-            "Whenever you are attacked this turn, apply #b%s #yBurn to your attacker."
+            "이번 턴에 공격을 받을 때 마다, 그 대상에게 #y화상 을 #b%s 부여합니다."
         ]
     },
     "mysteryDungeon:InfernoPower": {
-        "NAME": "Inferno",
+        "NAME": "연옥",
         "DESCRIPTIONS": [
-            "Your next #yEruption will not remove any #yBurn stacks.",
-            "Your next #b%s #yEruption will not remove any #yBurn stacks."
+            "다음에 발동하는 #y분화 가 화상을 제거하지 않습니다.",
+            "#b%s 번 발동하는 동안 #y분화 가 화상을 제거하지 않습니다."
         ]
     },
     "mysteryDungeon:LashOutPower": {
-        "NAME": "Lash Out",
+        "NAME": "분풀이",
         "DESCRIPTIONS": [
-            "Whenever you apply #yStrength or #yBlock, create #b%s #yFlurry in your hand."
+            "적에게 힘을 부여하거나 방어도를 부여한 경우 #y난동 을 #b%s 을 갖습니다."
         ]
     },
     "mysteryDungeon:LavaPlumePower": {
-        "NAME": "Lava Plume",
+        "NAME": "분연",
         "DESCRIPTIONS": [
-            "Whenever you trigger an #yEruption, apply #b%s #yBurn to the target."
+            "분화 가 발동할 때 마다, 그 대상에게 화상을 #b%s 부여합니다."
         ]
     },
     "mysteryDungeon:LeafGuardPower": {
-        "NAME": "Leaf Guard",
+        "NAME": "리프가드",
         "DESCRIPTIONS": [
-            "At the start of your turn, remove ALL debuff you have. for each debuff removed this way lose #b%s HP."
+            "턴 종료시, 내 부정적인 효과가 모두 제거됩니다. 이 카드로 부정적인 효과가 제거될 경우 체력을 #b%s 잃습니다."
         ]
     },
     "mysteryDungeon:LeechSeedPower": {
@@ -254,78 +254,78 @@
         ]
     },
     "mysteryDungeon:LoseVigorPower": {
-        "NAME": "Lose Vigor",
+        "NAME": "임시 활력",
         "DESCRIPTIONS": [
-            "At the end of the turn, lose #b%s #yVigor.",
-            "At the end of the turn, lose #b%s #yVigor."
+            "턴 종료시, #y활력 을 #b%s 잃습니다.",
+            "턴 종료시, #y활력 을 #b%s 잃습니다."
         ]
     },
     "mysteryDungeon:MagicCoatPower": {
-        "NAME": "Magic Coat",
+        "NAME": "매직코트",
         "DESCRIPTIONS": [
-            "Whenever you deal yourself damage this turn, deal as much damage to ALL enemies."
+            "이번 턴에 피해를 입을 때 마다, 그 만큼 적 전체에게 피해를 줍니다."
         ]
     },
     "mysteryDungeon:NaturePowerMountainPower": {
-        "NAME": "Nature Power: Mountain",
+        "NAME": "자연의힘:산",
         "DESCRIPTIONS": [
-            "This turn Burn stacks will not decrease.",
-            "For the next #b%s turns Burn stacks will not decrease."
+            "이번 턴에, 상대 턴 종료시 #y화상 이 줄어들지 않습니다.",
+            "#b%s 턴 동안, 상대 턴 종료시 #y화상 이 줄어들지 않습니다."
         ]
     },
     "mysteryDungeon:NextTurnDrawLessPower": {
-        "NAME": "드로우 감소",
+        "NAME": "다음턴:드로우 감소",
         "DESCRIPTIONS": [
             "다음 턴에 카드를 1장 덜 뽑습니다.",
             "다음 턴에 카드를 #b%s 장 덜 뽑습니다."
         ]
     },
     "mysteryDungeon:NextTurnEruptionPower": {
-        "NAME": "Next Turn: Eruption",
+        "NAME": "다음턴:분화",
         "DESCRIPTIONS": [
-            "Next Turn, trigger an #yEruption.",
-            "Next Turn, Cause #b%s Eruptions."
+            "다음 턴 상대 턴 시작시 #y분화 를 발동합니다.",
+            "다음 턴 상대 턴 시작시 #y분화 를 #b%s 번 발동합니다."
         ]
     },
     "mysteryDungeon:NextTurnLoseHpPower": {
-        "NAME": "Next Turn: Lose HP",
+        "NAME": "다음턴:체력감소",
         "DESCRIPTIONS": [
-            "Next turn, lose #b%s HP."
+            "다음턴에 체력을 #b%s 잃습니다."
         ]
     },
     "mysteryDungeon:NextTurnNoBlockPower": {
-        "NAME": "방어 불가",
+        "NAME": "다음턴:방어불가",
         "DESCRIPTIONS": [
-            "다음 턴에 방어도를 얻을 수 없습니다.",
-            "다음 #b%s 턴 동안 방어도를 얻을 수 없습니다."
+            "다음턴에 방어도를 얻을 수 없습니다.",
+            "#b%s 턴 동안 방어도를 얻을 수 없습니다."
         ]
     },
     "mysteryDungeon:NextTurnVigorPower": {
-        "NAME": "Next Turn: Vigor",
+        "NAME": "다음턴:활력",
         "DESCRIPTIONS": [
-            "At the start of the next turn, gain #b1 #yVigor.",
-            "At the start of the next turn, gain #b%s #yVigor.",
-            "At the start of the next #b%s turns, gain #b1 #yVigor.",
-            "At the start of the next #b%1$s turns, gain #b%2$s #yVigor."
+            "다음턴에 #y활력 을 #b1 얻습니다.",
+            "다음턴에 #y활력 을 #b%s 얻습니다.",
+            "다음턴에 #b%s 턴 동안, #y활력 을 #b1 얻습니다.",
+            "다음턴에 #b%1$s 턴 동안, #y활력 을 #b%2$s 얻습니다."
         ]
     },
     "mysteryDungeon:NoHealPower": {
-        "NAME": "회복 불가",
+        "NAME": "회복불가",
         "DESCRIPTIONS": [
-            "이번 턴에 회복할 수 없습니다.",
-            "#b%s 턴 동안 회복할 수 없습니다."
+            "회복할 수 없습니다.",
+            "#b%s 턴 동안, 회복할 수 없습니다."
         ]
     },
     "mysteryDungeon:OutragePower": {
         "NAME": "역린",
         "DESCRIPTIONS": [
-            "카드가 소멸될 경우, 무작위 적에게 #y화상 을 #b%s 부여합니다."
+            "카드가 소멸될 경우, 무작위 적에게 화상을 #b%s 부여합니다."
         ]
     },
     "mysteryDungeon:OvergrowPower": {
-        "NAME": "Overgrow",
+        "NAME": "심록",
         "DESCRIPTIONS": [
-            "Whenever you heal #b%1$s or more HP, for every #b%1$s HP healed, gain #b%2$s Strength."
+            "체력이 #b%1$s 이상 회복될 때 마다, #b%1$s 회복 당, 힘을 #b%2$s 얻습니다."
         ]
     },
     "mysteryDungeon:PetalDancePower": {
@@ -348,9 +348,9 @@
         ]
     },
     "mysteryDungeon:PsychUpPower": {
-        "NAME": "Psych Up",
+        "NAME": "자기암시",
         "DESCRIPTIONS": [
-            "Whenever you apply #yStrength gain #b%s #yStrength."
+            "적에게 #y힘 을 부여할때, #y힘 을 #b%s 얻습니다."
         ]
     },
     "mysteryDungeon:RainDancePower": {
@@ -366,9 +366,9 @@
         ]
     },
     "mysteryDungeon:RecoverPower": {
-        "NAME": "Recovery",
+        "NAME": "치유",
         "DESCRIPTIONS": [
-            "When you receives damage, increase the number of stacks by as much damage you received. NL When you deal attack damage, heal 30%% of the attack damage dealt up to #b%s."
+            "피해를 받을 경우, 피해를 받은 만큼 #y치유 스택으로 변환합니다. 턴 종료시 사라집니다. NL 적을 공격할 경우, 피해량의 30%% 만큼 회복합니다. NL 최대 #b%s 회복합니다."
         ]
     },
     "mysteryDungeon:ReduceHighestCostAtStartOfTurnPower": {
@@ -381,23 +381,23 @@
     "mysteryDungeon:RestPower": {
         "NAME": "잠자기",
         "DESCRIPTIONS": [
-            "#b%s 턴 동안 적에게 카드를 쓸 수 없습니다.",
-            "You cannot play cards targeting the enemy during this turn and the next.",
-            "You cannot play cards targeting the enemy during this turn and the next #b%s turns."
+            "이번 턴에 적에게 카드를 쓸 수 없습니다.",
+            "이번 턴과 다음 턴에 적에게 카드를 쓸 수 없습니다.",
+            "#b%s 턴 동안 적에게 카드를 쓸 수 없습니다."
         ]
     },
     "mysteryDungeon:SleepTalkPower": {
         "NAME": "잠꼬대",
         "DESCRIPTIONS": [
-            "매턴 #b1 회 카드가 소멸될 경우, 무작위 카드를 1 장 얻습니다.",
+            "매턴 #b1 회 카드가 소멸될 경우, 무작위 카드를 1 장 얻습니다.", 
             "매턴 #b%s 회 카드가 소멸될 경우, 무작위 카드를 1 장 얻습니다."
         ]
     },
     "mysteryDungeon:CyndaquilSleepTalkPower": {
-        "NAME": "Sleep Talk",
+        "NAME": "잠꼬대",
         "DESCRIPTIONS": [
-            "When you create a Status Card, draw a card.",
-            "When you create a Status Card, draw #b%s cards."
+            "상태이상 카드를 생성할 때 마다, 카드를 1장 뽑습니다.",
+            "상태이상 카드를 생성할 때 마다, 카드를 #b%s 장 뽑습니다."
         ]
     },
     "mysteryDungeon:SolarPowerPower": {
@@ -421,17 +421,17 @@
         ]
     },
     "mysteryDungeon:SunnyDayPower": {
-        "NAME": "Sunny Day",
+        "NAME": "쾌청",
         "DESCRIPTIONS": [
-            "Whenever you deal yourself damage, for each 3 HP lost total, draw %s card.",
-            "Whenever you deal yourself damage, for each 3 HP lost total, draw %s cards."
+            "내 턴에 3 체력을 잃을 때 마다, 카드를 %s 장 뽑습니다.",
+            "내 턴에 3 체력을 잃을 때 마다, 카드를 %s 장 뽑습니다."
         ]
     },
     "mysteryDungeon:SurfPower": {
-        "NAME": "Surf",
+        "NAME": "파도타기",
         "DESCRIPTIONS": [
-            "Whenever you discard a card, for every card discarded, gain 1 mysterydungeon:Temporary_Vigor.",
-            "Whenever you discard a card, for every card discarded, gain %s mysterydungeon:Temporary_Vigor."
+            "카드를 버릴 때 마다, #y임시 #y활력 을 1 얻습니다.",
+            "카드를 버릴 때 마다, #y임시 #y활력 을 %s 얻습니다."
         ]
     },
     "mysteryDungeon:SweetKissPower": {
@@ -441,9 +441,9 @@
         ]
     },
     "mysteryDungeon:TechnicianPower": {
-        "NAME": "Technician",
+        "NAME": "테크니션",
         "DESCRIPTIONS": [
-            "At the start of your turn, create #b%s #yFlurry in your hand."
+            "턴 시작시 #y난동 을 #b%s 장 얻습니다."
         ]
     },
     "mysteryDungeon:ThunderPower": {
@@ -453,12 +453,12 @@
         ]
     },
     "mysteryDungeon:ThrashPower": {
-        "NAME": "Thrash",
+        "NAME": "난동부리기",
         "DESCRIPTIONS": [
-            "Every %1$s Attack you play, gain %2$s #yVigor. NL (%3$s card till #yVigor gain)",
-            "Every %1$s Attack you play, gain %2$s #yVigor. NL (%3$s cards till #yVigor gain)",
-            "Every %1$s Attack you play, gain %2$s #yVigor. NL (%3$s card till #yVigor gain)",
-            "Every %1$s Attack you play, gain %2$s #yVigor. NL (%3$s cards till #yVigor gain)"
+            "이번 전투 동안 사용하는 공격카드 %1$s 개 당, #y활력 을 %1$s 얻습니다. NL (%2$s 장 사용한 후 #y활력 을 얻습니다.)",
+            "이번 전투 동안 사용하는 공격카드 %1$s 개 당, #y활력 을 %1$s 얻습니다. NL (%2$s 장 사용한 후 #y활력 을 얻습니다.)",
+            "이번 전투 동안 사용하는 공격카드 %1$s 개 당, #y활력 을 %1$s 얻습니다. NL (%2$s 장 사용한 후 #y활력 을 얻습니다.)",
+            "이번 전투 동안 사용하는 공격카드 %1$s 개 당, #y활력 을 %1$s 얻습니다. NL (%2$s 장 사용한 후 #y활력 을 얻습니다.)"
         ]
     },
     "mysteryDungeon:TorrentPower": {
@@ -468,47 +468,47 @@
         ]
     },
     "mysteryDungeon:TotodileExplorerPower": {
-        "NAME": "Explorer Form",
+        "NAME": "탐험가의 자세",
         "DESCRIPTIONS": [
-            "At the start of your turn, add #b%s card from your discard pile to your hand."
+            "턴 시작시, 버린 카드 더미에서 카드 #b%s 장을 선택해 손으로 가져옵니다."
         ]
     },
     "mysteryDungeon:TotodileEndurePower": {
-        "NAME": "Endure",
+        "NAME": "버티기",
         "DESCRIPTIONS": [
-            "The next time you would take damage, do not take any and discard the top #b%s cards of your draw pile.",
-            "The next #b%1$s times you would take damage, do not take any and discard the top #b%2$s cards of your draw pile."
+            "피해를 받은 경우, 피해를 받지 않고 뽑을 카드 더미 맨 위부터 #b%s 장을 버립니다.",
+            "#b%1$s 회 동안 피해를 받은 경우, 피해를 받지 않고 뽑을 카드 더미 맨 위부터  #b%2$s 장을 버립니다."
         ]
     },
     "mysteryDungeon:SheerForcePower": {
-        "NAME": "Sheer Force",
+        "NAME": "우격다짐",
         "DESCRIPTIONS": [
-            "Whenever you deal #b%1$s or more unblocked damage, channel #b1 #yFrost.",
-            "Whenever you deal #b%1$s or more unblocked damage, channel #b%2$s #yFrost."
+            "공격 피해를 #b%1$s 이상 받을 때마다, 냉기를 #b1 번 영창합니다.",
+            "공격 피해를 #b%1$s 이상 받을 때마다, 냉기를 #b%2$s 번 영창합니다."
         ]
     },
     "mysteryDungeon:ToxicPower": {
         "NAME": "맹독",
         "DESCRIPTIONS": [
-            "부여된 중독이 줄어드는 대신 #b%s 만큼 증가합니다."
+            "상대 턴 시작시 부여된 중독이 줄어드는 대신 #b%s 만큼 증가합니다."
         ]
     },
     "mysteryDungeon:UnnervePower": {
-        "NAME": "Unnerve",
+        "NAME": "긴장감",
         "DESCRIPTIONS": [
-            "For every 25 gold spent, gain #b%s #yPlated #yArmor."
+            "이번 전투 에서 골드를 25 소모할 때 마다, 판금갑옷을 #b%s 얻습니다."
         ]
     },
     "mysteryDungeon:WaterfallPower": {
-        "NAME": "Waterfall",
+        "NAME": "폭포오르기",
         "DESCRIPTIONS": [
-            "At the end of the turn, shuffle you discard pile into your draw pile. At the start of your turn, scry #b%s cards."
+            "턴 종료시 버려진 카드를 뽑을 카드 더미에 섞어 넣습니다. 턴 시작시 예지 #b%s "
         ]
     },
     "mysteryDungeon:WaterPledgePower": {
-        "NAME": "Water Pledge",
+        "NAME": "물의맹세",
         "DESCRIPTIONS": [
-            "When you play another #yPledge card this turn, activate one of the following effects. NL Grass: Apply #b2 #yWeak to ALL enemies. NL Fire: Apply #b2 #yVulnerable to ALL enemies."
+            "이번 턴에 다른 #y맹세 #y카드를 사용 했다면, 특별한 효과가 발동됩니다. NL 풀: 적 전체에게 #y약화 를 #b2 부여합니다. NL 불꽃: 적 전체에게 #y취약 을 #b2 부여합니다."
         ]
     },
     "mysteryDungeon:WhirlpoolPower": {

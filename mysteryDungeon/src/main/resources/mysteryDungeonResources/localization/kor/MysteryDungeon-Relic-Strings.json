@@ -1,10 +1,10 @@
 {
     "mysteryDungeon:DefaultClickableRelic": {
-        "NAME": "Right-Clicky Relic",
-        "FLAVOR": "The more you right-click it, the more orbs you've evoked in your lifetime.",
+        "NAME": "오른쪽 클릭 유물",
+        "FLAVOR": "당신은 오른쪽 마우스를 클릭하면 할수록, 당신의 일생에서 더 많은 일을 불러일으킵니다.",
         "DESCRIPTIONS": [
-            "[#2aecd7]Usable [#2aecd7]once [#2aecd7]per [#2aecd7]turn.[] NL #yEvoke your rightmost Orb.",
-            "YOU ARE MINE!"
+            "[#2aecd7] 번 사용가능. [#2aecd7] 턴당 [#2aecd7] 회 가장 오른쪽 구체를 [#2aecd7] 번 #y발현 합니다.",
+            "넌 내꺼야!"
         ]
     },
     "mysteryDungeon:NatureRelatedRelic": {
@@ -15,24 +15,24 @@
         ]
     },
     "mysteryDungeon:AmuletCoinRelic": {
-        "NAME": "Amulet Coin",
-        "FLAVOR": "It doubles any prize money received as long as the holder joins the battle at least once.",
+        "NAME": "부적금화",
+        "FLAVOR": "이 도구를 지닌 포켓몬이 한 번이라도 배틀에 나오면 상금을 2배로 받는다. ",
         "DESCRIPTIONS": [
-            "Cards no longer cost you money in combat. At the start of your turn, spend #b20 gold."
+            "더 이상 카드가 골드를 소모하지 않습니다. 턴 시작시 골드를 #b20 소모합니다."
         ]
     },
     "mysteryDungeon:BigRootRelic": {
-        "NAME": "Big Root",
-        "FLAVOR": "What is this?",
+        "NAME": "큰뿌리",
+        "FLAVOR": "이게 뭐지?",
         "DESCRIPTIONS": [
-            "Whenever you are at #b70% or less of your max HP, gain #yRecovery."
+            "체력이 70% 이하일 때, #y치유 상태가 됩니다."
         ]
     },
     "mysteryDungeon:BlackGlassesRelic": {
-        "NAME": "Black Glasses",
-        "FLAVOR": "It's a pair of shady- looking glasses that boost the power of the holder's Dark-type moves.",
+        "NAME": "검은 안경",
+        "FLAVOR": "괴상하게 보이는 안경. 지니게 하면 악 타입 기술의 위력이 올라갑니다.",
         "DESCRIPTIONS": [
-            "At the start of each turn, deal damage to ALL enemies equal to their #yStrength."
+            "턴 시작시, 적에게 부여된 #y힘 만큼 적 전체에게 피해를 줍니다."
         ]
     },
     "mysteryDungeon:BraveExplorerRelic": {
@@ -71,24 +71,24 @@
         ]
     },
     "mysteryDungeon:FireGemRelic": {
-        "NAME": "Fire Gem",
-        "FLAVOR": "This gem is imbued with the essence of fire and will boost the power of a Fire-type moves, but only once.",
+        "NAME": "불꽃주얼",
+        "FLAVOR": "불꽃타입의 주얼. 지니게 하면 한 번만 불꽃 기술의 위력이 강해집니다.",
         "DESCRIPTIONS": [
-            "At the start of each combat, apply #b10 #yBurn to ALL enemies."
+            "전투 시작시 적 전체에게 #y화상 을 #b10 부여합니다."
         ]
     },
     "mysteryDungeon:FlamePlateRelic": {
-        "NAME": "Flame Plate",
-        "FLAVOR": "This stone tablet is imbued with the essence of fire and boosts the power of the holder's Fire-type moves.",
+        "NAME": "불구슬플레이트",
+        "FLAVOR": "불꽃타입의 석판. 지니게 하면 불꽃타입 기술의 위력이 강해진다.",
         "DESCRIPTIONS": [
-            "Gain [E] at the start of your turn. NL At the end of your turn, trigger an #yEruption on ALL enemies."
+            "턴 시작시 [E] 를 얻습니다. NL 턴 종료시 적 전체에게 #y분화 를 발동합니다."
         ]
     },
     "mysteryDungeon:GrassySeedRelic": {
-        "NAME": "Grassy Seed",
-        "FLAVOR": "It boosts Defense on Grassy Terrain.",
+        "NAME": "그래스시드",
+        "FLAVOR": "그래스필드가 활성화 되어 있을 때 이 도구를 지니게 한 포켓몬이 있으면 그 포켓몬의 방어가 한 단계 올라갑니다.",
         "DESCRIPTIONS": [
-            "At the start of combat add a random attack to your draw pile. It costs #b0 this combat."
+            "전투 시작시 무작위 공격 카드 한장을 가져옵니다. 이번 전투 동안 비용이 #b0 이 됩니다."
         ]
     },
     "mysteryDungeon:HardyExplorerRelic": {
@@ -134,10 +134,10 @@
         ]
     },
     "mysteryDungeon:MeadowPlateRelic": {
-        "NAME": "Meadow Plate",
-        "FLAVOR": "A stone tablet imbued with the essence of plants. When used on a certain Pokémon, it allows that Pokémon to gain the power of the Grass type.",
+        "NAME": "초록플레이트",
+        "FLAVOR": "풀타입의 석판. 지니게 하면 풀타입 기술의 위력이 강해진다.",
         "DESCRIPTIONS": [
-            "Gain #b20 #ymax #yHP. At the start of combat if you have more than #b65% of your #ymax #yHP lose #yHP until you have #y65% of your #ymax #yHP. If you have less than #b65% of your #ymax #yHP, heal #b10 #yHP."
+            "#y최대체력 을 #b20 얻습니다. 전투 시작시 #y체력 이 65% 이상인 경우 65%가 될때 까지 #y체력 을 잃습니다. 전투 시작시 #y체력 이 65% 미만인 경우 #y체력 을 #b10 회복합니다."
         ]
     },
     "mysteryDungeon:MiracleSeedRelic": {
@@ -155,10 +155,10 @@
         ]
     },
     "mysteryDungeon:NaiveExplorerRelic": {
-        "NAME": "Naive Explorer",
-        "FLAVOR": "What is this?",
+        "NAME": "순진한 탐혐가",
+        "FLAVOR": "이게 뭐지?",
         "DESCRIPTIONS": [
-            "At the start of your turn, if you have not taken any damage from attacks this combat, your next Attack deals #b3 more damage."
+            "이번 전투에서 공격으로 인한 피해를 입지 않은 경우, 턴 시작시 #y활력 을 #b3 얻습니다."
         ]
     },
     "mysteryDungeon:QuirkyExplorerRelic": {
@@ -176,10 +176,10 @@
         ]
     },
     "mysteryDungeon:SplashPlateRelic": {
-        "NAME": "Splash Plate",
-        "FLAVOR": "This stone tablet is imbued with the essence of water and boosts the power of the holder's Water-type moves.",
+        "NAME": "물방울플레이트",
+        "FLAVOR": "물타입의 석판. 지니게 하면 물타입 기술의 위력이 강해집니다.",
         "DESCRIPTIONS": [
-            "The first time you evoke an #yOrb each turn, gain [E] ."
+            "매턴 1회 구체가 #y발현 했을 때, [E] 를 얻습니다."
         ]
     },
     "mysteryDungeon:TimidExplorerRelic": {
@@ -197,17 +197,17 @@
         ]
     },
     "mysteryDungeon:WaveIncenseRelic": {
-        "NAME": "잔물결 향로",
+        "NAME": "잔물결향로",
         "FLAVOR": "이상한 향기의 향로. 지니게 하면 물타입 기술의 위력이 올라갑니다.",
         "DESCRIPTIONS": [
             "전투 시작시 #y현실지배 1장을 손에 넣습니다."
         ]
     },
     "mysteryDungeon:WaterGemRelic": {
-        "NAME": "Water Gem",
-        "FLAVOR": "This gem is imbued with the essence of water and will boost the power of a Water-type moves, but only once.",
+        "NAME": "물주얼",
+        "FLAVOR": "물타입의 주얼. 지니게 하면 한 번만 물 기술의 위력이 강해집니다.",
         "DESCRIPTIONS": [
-            "When you deal more than #b20 attack damage in a single hit, deal #b5 damage to ALL enemies."
+            "한번에 피해를 #b20 이상 줄 때 마다, 적 전체에게 피해를 #b5 줍니다."
         ]
     }
 }
