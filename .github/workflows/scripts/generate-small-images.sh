@@ -1,3 +1,4 @@
+cd mysteryDungeon/src/main/resources/mysteryDungeonResources/images/cards/
 for d in */; do
     cd "$d"
     for i in *_p.png; do
@@ -5,3 +6,4 @@ for d in */; do
     done
     cd ..
 done
+cd ../../../../../../../
