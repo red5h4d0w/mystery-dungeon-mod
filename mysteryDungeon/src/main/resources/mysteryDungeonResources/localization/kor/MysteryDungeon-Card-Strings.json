@@ -1356,7 +1356,7 @@
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "파도타기",
-        "DESCRIPTION": "카드를 버릴 때 마다, mysterydungeon:임시_활력 을 !M! 얻습니다.",
+        "DESCRIPTION": "자신의 턴에 카드를 버릴 때 마다, mysterydungeon:임시_활력 을 !M! 얻습니다.",
         "UPGRADE_DESCRIPTION": "선천성. NL 자신의 턴에 카드를 버릴 때 마다, mysterydungeon:임시_활력 을 !M! 얻습니다."
     },
     "mysteryDungeon:TotodileSubstitute": {
