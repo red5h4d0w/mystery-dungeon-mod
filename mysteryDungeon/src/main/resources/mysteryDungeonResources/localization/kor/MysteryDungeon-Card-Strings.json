@@ -355,7 +355,7 @@
         "UPGRADE_DESCRIPTION": "선천성. NL 턴 시작 시, 적이 mysterydungeon:화상 상태라면, 힘 을 1 얻습니다."
     },
     "mysteryDungeon:CharmanderTailWind": {
-       "NAME": "순풍",
+        "NAME": "순풍",
         "DESCRIPTION": "턴 시작시, 카드를 !M! 장 더 뽑습니다. NL 매 턴 첫 번째로 사용하는 카드의 비용을 0으로 만들고 소멸시킵니다."
     },
     "mysteryDungeon:CharmanderWillOWisp": {
@@ -826,11 +826,6 @@
         "NAME": "울부짓기",
         "DESCRIPTION": "힘을 !M! 부여합니다. NL 약화를 99 부여합니다. NL 소멸."
     },
-    "mysteryDungeon:MeowthSnatch": {
-        "NAME": "가로채기",
-        "DESCRIPTION": "피해를 !D! 줍니다. NL 골드를 !M! 얻습니다. NL *헤롱헤롱 을 1장 얻습니다. NL 소멸.",
-        "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 골드를 !M! 얻습니다. NL 강화된 *헤롱헤롱 을 1장 얻습니다. NL 소멸."
-    },
     "mysteryDungeon:MeowthScratch": {
         "NAME": "할퀴기",
         "DESCRIPTION": "피해를 !D! 줍니다."
@@ -842,6 +837,11 @@
     "mysteryDungeon:MeowthSnarl": {
         "NAME": "바크아웃",
         "DESCRIPTION": "방어도를 8 부여합니다. NL 방어도를 !B! 얻습니다."
+    },
+    "mysteryDungeon:MeowthSnatch": {
+        "NAME": "가로채기",
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 골드를 !M! 얻습니다. NL *헤롱헤롱 을 1장 얻습니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 골드를 !M! 얻습니다. NL 강화된 *헤롱헤롱 을 1장 얻습니다. NL 소멸."
     },
     "mysteryDungeon:MeowthSpite": {
         "NAME": "원한",
@@ -1356,7 +1356,8 @@
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "파도타기",
-        "DESCRIPTION": "카드를 버릴 때 마다, mysterydungeon:임시_활력 을 !M! 얻습니다."
+        "DESCRIPTION": "카드를 버릴 때 마다, mysterydungeon:임시_활력 을 !M! 얻습니다.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you discard a card, for every discarded card, gain !M! mysterydungeon:Temporary_Vigor."
     },
     "mysteryDungeon:TotodileSubstitute": {
         "NAME": "대타출동",
