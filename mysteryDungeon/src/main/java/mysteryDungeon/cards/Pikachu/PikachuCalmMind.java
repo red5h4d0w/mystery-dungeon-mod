@@ -11,13 +11,13 @@ import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
 
-public class PikachuNastyPlot extends PokemonCard {
+public class PikachuCalmMind extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(PikachuNastyPlot.class);
+    public static final String ID = MysteryDungeon.makeID(PikachuCalmMind.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(PikachuNastyPlot.class);
+    public static final String IMG = makeCardPath(PikachuCalmMind.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -39,7 +39,7 @@ public class PikachuNastyPlot extends PokemonCard {
 
     // /STAT DECLARATION/
 
-    public PikachuNastyPlot() {
+    public PikachuCalmMind() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;

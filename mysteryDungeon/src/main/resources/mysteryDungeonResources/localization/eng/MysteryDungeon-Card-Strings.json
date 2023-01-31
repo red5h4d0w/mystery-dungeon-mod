@@ -952,7 +952,7 @@
         "NAME": "Light Screen",
         "DESCRIPTION": "At the end of your turn, gain !M! Block per empty Orb slot."
     },
-    "mysteryDungeon:PikachuNastyPlot": {
+    "mysteryDungeon:PikachuCalmMind": {
         "NAME": "Calm Mind",
         "DESCRIPTION": "Gain !M! Orb slot.",
         "UPGRADE_DESCRIPTION": "Gain !M! Orb slots."
