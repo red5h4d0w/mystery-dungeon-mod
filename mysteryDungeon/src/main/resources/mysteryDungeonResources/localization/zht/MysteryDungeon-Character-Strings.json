@@ -6,48 +6,48 @@
         ],
         "TEXT": [
             "你忘掉了过去，成为了一只宝可梦， NL 去探索高塔，寻回失去的记忆。",
-            "NL 你已经到达顶层。现在可以稍事休息，然后与宝可梦朋友们一起执行另一个任务",
-            "加入宝可梦大家庭吧~"
+            "NL You have reached the top floor of the dungeon. You can now rest at the base before taking another mission with your new Pokémon friends",
+            "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~pokémon~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
         ]
     },
     "mysteryDungeon:Bulbasaur": {
         "NAMES": [
-            "妙蛙种子"
+            "Bulbasaur"
         ]
     },
     "mysteryDungeon:Ivysaur": {
         "NAMES": [
-            "妙蛙草"
+            "Ivysaur"
         ]
     },
     "mysteryDungeon:Venusaur": {
         "NAMES": [
-            "妙蛙花"
+            "Venusaur"
         ]
     },
     "mysteryDungeon:Charmander": {
         "NAMES": [
-            "小火龙"
+            "Charmander"
         ]
     },
     "mysteryDungeon:Charmeleon": {
         "NAMES": [
-            "火恐龙"
+            "Charmeleon"
         ]
     },
     "mysteryDungeon:Charizard": {
         "NAMES": [
-            "喷火龙"
+            "Charizard"
         ]
     },
     "mysteryDungeon:Squirtle": {
         "NAMES": [
-            "杰尼龟"
+            "Squirtle"
         ]
     },
     "mysteryDungeon:Wartortle": {
         "NAMES": [
-            "卡咪龟"
+            "Wartortle"
         ]
     },
     "mysteryDungeon:Blastoise": {
