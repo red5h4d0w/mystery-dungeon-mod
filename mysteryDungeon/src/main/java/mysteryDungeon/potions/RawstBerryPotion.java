@@ -33,6 +33,8 @@ public class RawstBerryPotion extends PokemonPotion {
        // Do you throw this potion at an enemy or do you just consume it.
         isThrown = true;
 
+        targetRequired = true;
+
         cardColor = Charmander.CARD_COLOR;
 
         updateDescription();

@@ -33,9 +33,9 @@ public class SunnyDayPower extends PokemonTwoAmountPower implements CloneablePow
     // There's a fallback "missing texture" image, so the game shouldn't crash if
     // you accidentally put a non-existent file.
     private static final Texture tex84 = TextureLoader
-            .getTexture(makePowerPath(SunnyDayPower.class + "84.png"));
+            .getTexture(makePowerPath(SunnyDayPower.class )+"84.png");
     private static final Texture tex32 = TextureLoader
-            .getTexture(makePowerPath(SunnyDayPower.class + "32.png"));
+            .getTexture(makePowerPath(SunnyDayPower.class )+"32.png");
 
     public SunnyDayPower(final AbstractCreature owner, final int amount) {
         name = NAME;

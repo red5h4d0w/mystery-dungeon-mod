@@ -35,8 +35,8 @@ public class LashOutPower extends PokemonPower implements CloneablePowerInterfac
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
     // There's a fallback "missing texture" image, so the game shouldn't crash if you accidentally put a non-existent file.
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(LashOutPower.class+"84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(LashOutPower.class+"32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath(LashOutPower.class)+"84.png");
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath(LashOutPower.class)+"32.png");
 
     public LashOutPower(final AbstractCreature owner, final int amount, boolean upgraded) {
         name = NAME;

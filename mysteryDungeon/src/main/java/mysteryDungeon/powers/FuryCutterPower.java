@@ -34,9 +34,9 @@ public class FuryCutterPower extends PokemonTwoAmountPower implements CloneableP
     // There's a fallback "missing texture" image, so the game shouldn't crash if
     // you accidentally put a non-existent file.
     private static final Texture tex84 = TextureLoader
-            .getTexture(makePowerPath(FuryCutterPower.class + "84.png"));
+            .getTexture(makePowerPath(FuryCutterPower.class )+"84.png");
     private static final Texture tex32 = TextureLoader
-            .getTexture(makePowerPath(FuryCutterPower.class + "32.png"));
+            .getTexture(makePowerPath(FuryCutterPower.class )+"32.png");
 
     public FuryCutterPower(final AbstractCreature owner, final int amount, final int upgradeAmount) {
         name = NAME;

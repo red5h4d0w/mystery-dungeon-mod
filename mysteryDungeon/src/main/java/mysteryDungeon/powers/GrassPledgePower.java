@@ -37,9 +37,9 @@ public class GrassPledgePower extends PokemonPower implements CloneablePowerInte
     // There's a fallback "missing texture" image, so the game shouldn't crash if
     // you accidentally put a non-existent file.
     private static final Texture tex84 = TextureLoader
-            .getTexture(makePowerPath(GrassPledgePower.class + "84.png"));
+            .getTexture(makePowerPath(GrassPledgePower.class )+"84.png");
     private static final Texture tex32 = TextureLoader
-            .getTexture(makePowerPath(GrassPledgePower.class + "32.png"));
+            .getTexture(makePowerPath(GrassPledgePower.class )+"32.png");
 
     public GrassPledgePower(final AbstractCreature owner, final int amount) {
         name = NAME;
