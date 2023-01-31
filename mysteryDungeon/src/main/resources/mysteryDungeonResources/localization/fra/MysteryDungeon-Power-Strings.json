@@ -132,7 +132,7 @@
         ]
     },
     "mysteryDungeon:EvasivenessDropPower": {
-        "NAME": "Perte d'Évasion",
+        "NAME": "Baisse d'Évasion",
         "DESCRIPTIONS": [
             "Cet ennemi perd #b50% de son Armure à la fin de son tour.",
             "Cet ennemi perd #b50%% de son Armure à la fin de ses #b%s prochains tours."
