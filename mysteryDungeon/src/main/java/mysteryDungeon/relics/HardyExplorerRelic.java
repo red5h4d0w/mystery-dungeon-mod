@@ -28,7 +28,7 @@ public class HardyExplorerRelic extends PokemonRelic {
     public static final String NAME = relicStrings.NAME;
     public static final String[] DESCRIPTIONS = relicStrings.DESCRIPTIONS;
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("band1.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("default_clickable_relic.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("band1.png"));
 
     private boolean used = false; // We should make sure the relic is only activateable during our turn, not the enemies'.
 

@@ -26,8 +26,8 @@ public class WaterGemRelic extends PokemonRelic {
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;
     public static final String[] DESCRIPTIONS = relicStrings.DESCRIPTIONS;
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("wave-incense.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("wave-incense.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("water-gem.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("water-gem.png"));
 
     public WaterGemRelic() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
