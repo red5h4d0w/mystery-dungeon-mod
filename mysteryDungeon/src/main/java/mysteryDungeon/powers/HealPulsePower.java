@@ -10,7 +10,6 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.OnLoseTempHpPower;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -54,16 +53,18 @@ public class HealPulsePower extends PokemonPower implements CloneablePowerInterf
     }
 
     public int onHeal(int healAmount) {
-        flash();
-        if (healAmount > 0)
-            addToBot((AbstractGameAction) new GainBlockAction(this.owner, owner, amount));
+        if (healAmount > 0) {
+            flash();
+            addToBot(new GainBlockAction(this.owner, owner, amount));
+        }
+            
         return healAmount;
     }
 
     public void wasHPLost(DamageInfo info, int damageAmount) {
         if (damageAmount > 0 && info.owner == this.owner) {
             flash();
-            addToBot((AbstractGameAction) new GainBlockAction(this.owner, owner, amount));
+            addToBot(new GainBlockAction(this.owner, owner, amount));
         }
     }
 
@@ -71,7 +72,7 @@ public class HealPulsePower extends PokemonPower implements CloneablePowerInterf
         if (damageAmount > 0 && info.owner == this.owner) {
             flash();
             if (this.owner == null || this.owner.isPlayer) {
-                addToBot((AbstractGameAction) new GainBlockAction(this.owner, owner, amount));
+                addToBot(new GainBlockAction(this.owner, owner, amount));
             }
         }
         return damageAmount;
