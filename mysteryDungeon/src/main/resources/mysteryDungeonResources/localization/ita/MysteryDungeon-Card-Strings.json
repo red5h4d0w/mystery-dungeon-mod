@@ -627,10 +627,6 @@
         "DESCRIPTION": "Apply 12 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption.",
         "UPGRADE_DESCRIPTION": "Retain. NL Apply 12 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption."
     },
-    "mysteryDungeon:CyndaquilSmokescreen": {
-        "NAME": "Smokescreen",
-        "DESCRIPTION": "Gain !B! Block. NL Next turn gain [E]."
-    },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "Heat Wave",
         "DESCRIPTION": "Gain !B! Block. NL Whenever you are attacked this turn, apply 9 mysterydungeon:Burn to your attacker."
@@ -675,13 +671,13 @@
         "NAME": "Reversal",
         "DESCRIPTION": "If the enemy has mysterydungeon:Burn, gain !B! Block. NL If the enemy has no mysterydungeon:Burn stacks, apply !M! mysterydungeon:Burn."
     },
-    "mysteryDungeon:CyndaquilRockTomb": {
-        "NAME": "Rock Tomb",
-        "DESCRIPTION": "Deal !D! damage and apply !M! Weak to ALL enemies."
-    },
     "mysteryDungeon:CyndaquilRockSlide": {
         "NAME": "Rock Slide",
         "DESCRIPTION": "Deal !D! damage. If the enemy has mysterydungeon:Burn stacks, gain [E] [E] next turn."
+    },
+    "mysteryDungeon:CyndaquilRockTomb": {
+        "NAME": "Rock Tomb",
+        "DESCRIPTION": "Deal !D! damage and apply !M! Weak to ALL enemies."
     },
     "mysteryDungeon:CyndaquilRollout": {
         "NAME": "Rollout",
@@ -695,6 +691,10 @@
         "NAME": "Sleep Talk",
         "DESCRIPTION": "When you create a Status, draw !M! card.",
         "UPGRADE_DESCRIPTION": "For each created Status, draw !M! card. NL Draw a card."
+    },
+    "mysteryDungeon:CyndaquilSmokescreen": {
+        "NAME": "Smokescreen",
+        "DESCRIPTION": "Gain !B! Block. NL Next turn gain [E]."
     },
     "mysteryDungeon:CyndaquilTackle": {
         "NAME": "Tackle",
@@ -952,7 +952,7 @@
         "NAME": "Light Screen",
         "DESCRIPTION": "At the end of your turn, gain !M! Block per empty Orb slot."
     },
-    "mysteryDungeon:PikachuNastyPlot": {
+    "mysteryDungeon:PikachuCalmMind": {
         "NAME": "Calm Mind",
         "DESCRIPTION": "Gain !M! Orb slot.",
         "UPGRADE_DESCRIPTION": "Gain !M! Orb slots."
