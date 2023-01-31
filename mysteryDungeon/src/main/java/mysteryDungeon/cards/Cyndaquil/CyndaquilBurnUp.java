@@ -24,7 +24,7 @@ public class CyndaquilBurnUp extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(CyndaquilBurnUp.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("CyndaquilSkill");
+    public static final String IMG = makeCardPath(CyndaquilBurnUp.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

@@ -22,7 +22,7 @@ public class CyndaquilFacade extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(CyndaquilFacade.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("CyndaquilPower");
+    public static final String IMG = makeCardPath(CyndaquilFacade.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 

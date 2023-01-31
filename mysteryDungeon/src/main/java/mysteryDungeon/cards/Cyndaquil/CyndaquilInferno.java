@@ -23,7 +23,7 @@ public class CyndaquilInferno extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(CyndaquilInferno.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("CyndaquilSkill");
+    public static final String IMG = makeCardPath(CyndaquilInferno.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
