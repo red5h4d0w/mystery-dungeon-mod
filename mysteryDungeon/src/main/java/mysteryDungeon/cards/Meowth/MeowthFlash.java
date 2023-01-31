@@ -20,7 +20,7 @@ public class MeowthFlash extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(MeowthFlash.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("MeowthSkill");
+    public static final String IMG = makeCardPath(MeowthFlash.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
