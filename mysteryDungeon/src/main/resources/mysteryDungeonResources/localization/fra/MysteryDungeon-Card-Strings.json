@@ -627,10 +627,6 @@
         "DESCRIPTION": "Appliquez 12 de mysterydungeon:Brûlure. NL Au prochain tour, à la fin de votre tour, déclenchez une mysterydungeon:Éruption.",
         "UPGRADE_DESCRIPTION": "Retenue. NL Appliquez 12 mysterydungeon:Brûlure. NL Au prochain tour, à la fin de votre tour, déclenchez une mysterydungeon:Éruption."
     },
-    "mysteryDungeon:CyndaquilSmokescreen": {
-        "NAME": "Brouillard",
-        "DESCRIPTION": "Gagnez !B! d'Armure. NL Au prochain tour, gagnez [E]."
-    },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "Canicule",
         "DESCRIPTION": "Gagnez !B! d'Armure. NL Lorsque vous êtes attaqué ce tour, appliquez 5 de mysterydungeon:Brûlure à l'attaquant."
@@ -675,13 +671,13 @@
         "NAME": "Contre",
         "DESCRIPTION": "Si l'ennemi a de la mysterydungeon:Brûlure, gagnez !B! d'Armure. NL Si l'ennemi n'a pas de mysterydungeon:Brûlure, appliquez !M! de mysterydungeon:Brûlure."
     },
-    "mysteryDungeon:CyndaquilRockTomb": {
-        "NAME": "Tomberoche",
-        "DESCRIPTION": "Infligez !D! dégâts et appliquez !M! de Faiblesse à TOUS les ennemis."
-    },
     "mysteryDungeon:CyndaquilRockSlide": {
         "NAME": "Éboulement",
         "DESCRIPTION": "Infligez !D! dégâts. Si l'ennemi a de la mysterydungeon:Brûlure, gagnez [E] [E] au prochain tour."
+    },
+    "mysteryDungeon:CyndaquilRockTomb": {
+        "NAME": "Tomberoche",
+        "DESCRIPTION": "Infligez !D! dégâts et appliquez !M! de Faiblesse à TOUS les ennemis."
     },
     "mysteryDungeon:CyndaquilRollout": {
         "NAME": "Roulade",
@@ -695,6 +691,10 @@
         "NAME": "Blabla Dodo",
         "DESCRIPTION": "Lorsque vous créez un Statut, piochez !M! carte.",
         "UPGRADE_DESCRIPTION": "Lorsque vous créez un Statut, piochez !M! carte. NL Piochez une carte."
+    },
+    "mysteryDungeon:CyndaquilSmokescreen": {
+        "NAME": "Brouillard",
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Au prochain tour, gagnez [E]."
     },
     "mysteryDungeon:CyndaquilTackle": {
         "NAME": "Charge",
@@ -952,10 +952,10 @@
         "NAME": "Mur Lumière",
         "DESCRIPTION": "À la fin de votre tour, gagnez !M! d'Armure par emplacements d'Orbe vides."
     },
-    "mysteryDungeon:PikachuNastyPlot": {
-        "NAME": "Machination",
+    "mysteryDungeon:PikachuCalmMind": {
+        "NAME": "Plénitude",
         "DESCRIPTION": "Gagnez !M! emplacement d'Orbe.",
-        "UPGRADE_DESCRIPTION": "Gagnez !M! emplacements d'Orbe"
+        "UPGRADE_DESCRIPTION": "Gagnez !M! emplacements d'Orbe."
     },
     "mysteryDungeon:PikachuNuzzle": {
         "NAME": "Frotte-Frimousse",
