@@ -627,10 +627,6 @@
         "DESCRIPTION": "Apply 12 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption.",
         "UPGRADE_DESCRIPTION": "Retain. NL Apply 12 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption."
     },
-    "mysteryDungeon:CyndaquilSmokescreen": {
-        "NAME": "Smokescreen",
-        "DESCRIPTION": "Gain !B! Block. NL Next turn gain [E]."
-    },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "Heat Wave",
         "DESCRIPTION": "Gain !B! Block. NL Whenever you are attacked this turn, apply 9 mysterydungeon:Burn to your attacker."
@@ -695,6 +691,10 @@
         "NAME": "Sleep Talk",
         "DESCRIPTION": "When you create a Status, draw !M! card.",
         "UPGRADE_DESCRIPTION": "For each created Status, draw !M! card. NL Draw a card."
+    },
+    "mysteryDungeon:CyndaquilSmokescreen": {
+        "NAME": "Smokescreen",
+        "DESCRIPTION": "Gain !B! Block. NL Next turn gain [E]."
     },
     "mysteryDungeon:CyndaquilTackle": {
         "NAME": "Tackle",
