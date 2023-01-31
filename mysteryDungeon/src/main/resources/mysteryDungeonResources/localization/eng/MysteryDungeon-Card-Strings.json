@@ -671,13 +671,13 @@
         "NAME": "Reversal",
         "DESCRIPTION": "If the enemy has mysterydungeon:Burn, gain !B! Block. NL If the enemy has no mysterydungeon:Burn stacks, apply !M! mysterydungeon:Burn."
     },
-    "mysteryDungeon:CyndaquilRockTomb": {
-        "NAME": "Rock Tomb",
-        "DESCRIPTION": "Deal !D! damage and apply !M! Weak to ALL enemies."
-    },
     "mysteryDungeon:CyndaquilRockSlide": {
         "NAME": "Rock Slide",
         "DESCRIPTION": "Deal !D! damage. If the enemy has mysterydungeon:Burn stacks, gain [E] [E] next turn."
+    },
+    "mysteryDungeon:CyndaquilRockTomb": {
+        "NAME": "Rock Tomb",
+        "DESCRIPTION": "Deal !D! damage and apply !M! Weak to ALL enemies."
     },
     "mysteryDungeon:CyndaquilRollout": {
         "NAME": "Rollout",
