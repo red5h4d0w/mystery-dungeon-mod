@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -52,13 +53,34 @@ public class TotodileWaterPulse extends PokemonCard {
         secondMagicNumber = 3;
     }
 
+
+    public void applyPowers() {
+        int realBaseDamage = this.baseDamage;
+        this.baseDamage += secondMagicNumber*millableCardNum();
+        super.applyPowers();
+        this.baseDamage = realBaseDamage;
+        this.isDamageModified = (this.damage != this.baseDamage);
+    }
+
+    public void calculateCardDamage(AbstractMonster mo) {
+        int realBaseDamage = this.baseDamage;
+        this.baseDamage += secondMagicNumber*millableCardNum();
+        super.calculateCardDamage(mo);
+        this.baseDamage = realBaseDamage;
+        this.isDamageModified = (this.damage != this.baseDamage);
+    }
+
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         int multiplier = p.drawPile.size() > magicNumber? magicNumber: p.drawPile.size();
         addToBot(new DiscardTopOfDrawPileAction(magicNumber));
         if(multiplier!=0)
-            addToBot( new DamageAction(m, new DamageInfo(p, damage+secondMagicNumber*multiplier, damageTypeForTurn), AttackEffect.SMASH));
+            addToBot( new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SMASH));
+    }
+
+    private int millableCardNum() {
+        return AbstractDungeon.player.drawPile.size() > magicNumber? magicNumber: AbstractDungeon.player.drawPile.size();
     }
 
     // Upgraded stats.
