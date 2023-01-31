@@ -627,10 +627,6 @@
         "DESCRIPTION": "mysterydungeon:화상 을 12 부여합니다. NL 다음 턴에 턴 종료시 mysterydungeon:분화 를 발동합니다.",
         "UPGRADE_DESCRIPTION": "보존. NL mysterydungeon:화상 을 12 부여합니다. NL 다음 턴에 턴 종료시 mysterydungeon:분화 를 발동합니다."
     },
-    "mysteryDungeon:CyndaquilSmokescreen": {
-        "NAME": "연막",
-        "DESCRIPTION": "방어도를 !B! 얻습니다. NL 다음턴에 [E] 를 얻습니다."
-    },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "열풍",
         "DESCRIPTION": "방어도를 !B! 얻습니다. NL 이번 턴에 공격을 받을 때 마다, 그 대상에게 mysterydungeon:화상 을 9 부여합니다."
@@ -675,13 +671,13 @@
         "NAME": "기사회생",
         "DESCRIPTION": "적이 mysterydungeon:화상 상태라면, 방어도를 !B! 얻습니다. NL 적이 mysterydungeon:화상 상태가 아니라면, mysterydungeon:화상 을 !M! 부여합니다."
     },
-    "mysteryDungeon:CyndaquilRockTomb": {
-        "NAME": "암석봉인",
-        "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 적 전체에게 약화를 !M! 부여합니다."
-    },
     "mysteryDungeon:CyndaquilRockSlide": {
         "NAME": "스톤샤워",
         "DESCRIPTION": "피해를 !D! 줍니다. 적이 mysterydungeon:화상 상태라면, 다음 턴에 [E] [E] 를 얻습니다."
+    },
+    "mysteryDungeon:CyndaquilRockTomb": {
+        "NAME": "암석봉인",
+        "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 적 전체에게 약화를 !M! 부여합니다."
     },
     "mysteryDungeon:CyndaquilRollout": {
         "NAME": "구르기",
@@ -695,6 +691,10 @@
         "NAME": "잠꼬대",
         "DESCRIPTION": "상태이상 카드를 생성할 때 마다, 카드를 !M! 뽑습니다.",
         "UPGRADE_DESCRIPTION": "상태이상 카드를 생성할 때 마다, 카드를 !M! 뽑습니다. NL 카드를 1 장 뽑습니다."
+    },
+    "mysteryDungeon:CyndaquilSmokescreen": {
+        "NAME": "연막",
+        "DESCRIPTION": "방어도를 !B! 얻습니다. NL 다음턴에 [E] 를 얻습니다."
     },
     "mysteryDungeon:CyndaquilTackle": {
         "NAME": "타격",
@@ -952,8 +952,8 @@
         "NAME": "빛의 장막",
         "DESCRIPTION": "턴 종료시,빈 구체 갯수 하나당 방어도를 !M! 얻습니다."
     },
-    "mysteryDungeon:PikachuNastyPlot": {
-        "NAME": "나쁜음모",
+    "mysteryDungeon:PikachuCalmMind": {
+        "NAME": "명상",
         "DESCRIPTION": "구체 슬롯을 !M! 개 얻습니다.",
         "UPGRADE_DESCRIPTION": "구체 슬롯을 !M! 개 얻습니다."
     },
@@ -1356,7 +1356,7 @@
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "파도타기",
-        "DESCRIPTION": "카드를 버릴 때 마다, mysterydungeon:임시_활력 을 !M! 얻습니다.",
+        "DESCRIPTION": "자신의 턴에 카드를 버릴 때 마다, mysterydungeon:임시_활력 을 !M! 얻습니다.",
         "UPGRADE_DESCRIPTION": "선천성. NL 자신의 턴에 카드를 버릴 때 마다, mysterydungeon:임시_활력 을 !M! 얻습니다."
     },
     "mysteryDungeon:TotodileSubstitute": {
