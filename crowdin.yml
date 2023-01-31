@@ -1,3 +1,4 @@
+commit_message: [skip ci] New translations {fileName} ({languageName})
 files:
   - source: /mysteryDungeon/src/main/resources/mysteryDungeonResources/localization/eng
     ignore:
