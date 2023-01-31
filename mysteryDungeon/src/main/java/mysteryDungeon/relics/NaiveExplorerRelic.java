@@ -8,14 +8,17 @@ import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.mod.stslib.relics.BetterOnLoseHpRelic;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
-public class NaiveExplorerRelic extends PokemonRelic { 
+public class NaiveExplorerRelic extends PokemonRelic implements BetterOnLoseHpRelic{ 
 
     // ID, images, text.
     public static final String ID = MysteryDungeon.makeID(NaiveExplorerRelic.class);
@@ -42,12 +45,12 @@ public class NaiveExplorerRelic extends PokemonRelic {
     }
 
     @Override
-    public void wasHPLost(int damageAmount) {
-        super.wasHPLost(damageAmount);
+    public int betterOnLoseHp(DamageInfo damageInfo, int damageAmount) {
         if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT && 
-            damageAmount > 0) {
+            damageAmount > 0 && damageInfo.type==DamageType.NORMAL) {
             works = false;
         } 
+        return damageAmount;
     }
 
     @Override
