@@ -171,7 +171,7 @@
             "我愿意用随机的宝可梦团队！",
             "选择你的冒险家。",
             "选择你的伙伴。",
-            "You are a %s1. NL Choose a partner. NL (Expected complexity is %s2)"
+            "You are a %1$s. NL Choose a partner. NL (Expected complexity is %2$s)"
         ]
     }
 }
