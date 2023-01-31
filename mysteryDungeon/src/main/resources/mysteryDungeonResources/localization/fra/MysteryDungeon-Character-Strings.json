@@ -171,7 +171,7 @@
             "Je voudrais avoir une équipe aléatoire.",
             "Choisissez votre aventurier.",
             "Choisissez votre partenaire",
-            "Vous êtes un %s . NL Choisissez votre partenaire. (Complexité prévue : %s2)"
+            "Vous êtes un %2$s . NL Choisissez votre partenaire. (Complexité prévue : %2$s)"
         ]
     }
 }
