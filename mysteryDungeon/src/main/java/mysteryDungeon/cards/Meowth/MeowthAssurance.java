@@ -29,7 +29,6 @@ public class MeowthAssurance extends PokemonCard {
 
     // /TEXT DECLARATION/
 
-
     // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -57,9 +56,9 @@ public class MeowthAssurance extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.BLUNT_LIGHT));
-        if (m != null && m.getIntentBaseDmg() >= 0){
-            addToBot (new ApplyPowerAction(m, p, new WeakPower(m, magicNumber , false)));
-            addToBot (new GainGoldAction(7));
+        if (m != null && m.getIntentBaseDmg() >= 0) {
+            addToBot(new ApplyPowerAction(m, p, new WeakPower(m, magicNumber, false)));
+            addToBot(new GainGoldAction(7));
         }
 
     }

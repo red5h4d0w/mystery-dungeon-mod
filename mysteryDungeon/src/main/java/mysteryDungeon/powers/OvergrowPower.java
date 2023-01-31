@@ -37,9 +37,9 @@ public class OvergrowPower extends PokemonTwoAmountPower implements CloneablePow
     // There's a fallback "missing texture" image, so the game shouldn't crash if
     // you accidentally put a non-existent file.
     private static final Texture tex84 = TextureLoader
-            .getTexture(makePowerPath(OvergrowPower.class + "84.png"));
+            .getTexture(makePowerPath(OvergrowPower.class )+"84.png");
     private static final Texture tex32 = TextureLoader
-            .getTexture(makePowerPath(OvergrowPower.class + "32.png"));
+            .getTexture(makePowerPath(OvergrowPower.class )+"32.png");
 
     public static Logger logger = LogManager.getLogger(OvergrowPower.class);
 

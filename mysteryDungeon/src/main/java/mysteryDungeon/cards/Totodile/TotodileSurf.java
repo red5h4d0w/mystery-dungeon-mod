@@ -19,7 +19,7 @@ public class TotodileSurf extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(TotodileSurf.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("TotodileSkill");
+    public static final String IMG = makeCardPath(TotodileSurf.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;

@@ -18,7 +18,7 @@ public class TotodileDoubleTeam extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(TotodileDoubleTeam.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath("TotodileSkill");
+    public static final String IMG = makeCardPath(TotodileDoubleTeam.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRGADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;

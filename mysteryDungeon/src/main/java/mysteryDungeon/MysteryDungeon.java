@@ -194,8 +194,8 @@ public class MysteryDungeon implements
         return getModID() + "Resources/images/potions/outline/" + resourcePath;
     }
 
-    public static String makePowerPath(String resourcePath) {
-        return getModID() + "Resources/images/powers/" + resourcePath;
+    public static String makePowerPath(Class<?> clz) {
+        return getModID() + "Resources/images/powers/" + clz.getSimpleName();
     }
     
     

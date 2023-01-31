@@ -30,9 +30,9 @@ public class FreeSpendingEveryTurnPower extends PokemonPower implements Cloneabl
     // There's a fallback "missing texture" image, so the game shouldn't crash if
     // you accidentally put a non-existent file.
     private static final Texture tex84 = TextureLoader
-            .getTexture(makePowerPath(FreeSpendingEveryTurnPower.class + "84.png"));
+            .getTexture(makePowerPath(FreeSpendingEveryTurnPower.class )+"84.png");
     private static final Texture tex32 = TextureLoader
-            .getTexture(makePowerPath(FreeSpendingEveryTurnPower.class + "32.png"));
+            .getTexture(makePowerPath(FreeSpendingEveryTurnPower.class )+"32.png");
 
     public FreeSpendingEveryTurnPower(final AbstractCreature owner, final int amount) {
         name = NAME;
