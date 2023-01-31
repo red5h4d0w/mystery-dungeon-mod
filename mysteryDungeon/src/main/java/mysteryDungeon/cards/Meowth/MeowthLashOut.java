@@ -64,11 +64,11 @@ public class MeowthLashOut extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            initializeDescription();
             rawDescription = UPGRADE_DESCRIPTION;
             AbstractCard upgradedFlurry = new MeowthFlurry();
             upgradedFlurry.upgrade();
             cardsToPreview = upgradedFlurry;
+            initializeDescription();
         }
     }
 }
