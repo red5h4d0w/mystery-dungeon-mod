@@ -23,8 +23,7 @@ public class RelaxedExplorerRelic extends PokemonRelic {
     public static final String NAME = relicStrings.NAME;
     public static final String[] DESCRIPTIONS = relicStrings.DESCRIPTIONS;
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("band4.png"));
-    private static final Texture OUTLINE = TextureLoader
-            .getTexture(makeRelicOutlinePath("default_clickable_relic.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("band4.png"));
 
     public RelaxedExplorerRelic() {
         super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.CLINK);

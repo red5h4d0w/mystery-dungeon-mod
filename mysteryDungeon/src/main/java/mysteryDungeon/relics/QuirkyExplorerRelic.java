@@ -21,8 +21,7 @@ public class QuirkyExplorerRelic extends PokemonRelic implements GoldBonusInterf
     public static final String NAME = relicStrings.NAME;
     public static final String[] DESCRIPTIONS = relicStrings.DESCRIPTIONS;
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("band2.png"));
-    private static final Texture OUTLINE = TextureLoader
-            .getTexture(makeRelicOutlinePath("default_clickable_relic.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("band2.png"));
 
     public QuirkyExplorerRelic() {
         super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.CLINK);

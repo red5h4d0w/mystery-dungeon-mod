@@ -19,8 +19,8 @@ public class AmuletCoinRelic extends PokemonRelic {
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;
     public static final String[] DESCRIPTIONS = relicStrings.DESCRIPTIONS;
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("big-root.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("big-root.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("amulet-coin.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("amulet-coin.png"));
 
     public AmuletCoinRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);

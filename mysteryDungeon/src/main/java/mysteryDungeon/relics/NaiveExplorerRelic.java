@@ -24,7 +24,7 @@ public class NaiveExplorerRelic extends PokemonRelic {
     public static final String NAME = relicStrings.NAME;
     public static final String[] DESCRIPTIONS = relicStrings.DESCRIPTIONS;
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("band9.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("default_clickable_relic.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("band9.png"));
 
     private boolean works; 
 

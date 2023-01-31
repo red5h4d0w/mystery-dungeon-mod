@@ -24,8 +24,8 @@ public class FireGemRelic extends PokemonRelic {
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;
     public static final String[] DESCRIPTIONS = relicStrings.DESCRIPTIONS;
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("wave-incense.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("wave-incense.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("fire-gem.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("fire-gem.png"));
 
     public FireGemRelic() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);

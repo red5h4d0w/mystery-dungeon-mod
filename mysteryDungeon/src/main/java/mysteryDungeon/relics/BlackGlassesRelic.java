@@ -27,8 +27,8 @@ public class BlackGlassesRelic extends PokemonRelic  {
     private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String NAME = relicStrings.NAME;
     public static final String[] DESCRIPTIONS = relicStrings.DESCRIPTIONS;
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("miracle-seed.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("miracle-seed.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("black-glasses.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("black-glasses.png"));
 
     public BlackGlassesRelic() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.CLINK);
