@@ -9,9 +9,9 @@ import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.NonStackablePower;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -65,7 +65,7 @@ public class OvergrowPower extends PokemonTwoAmountPower implements CloneablePow
     public int onHeal(int healAmount) {
         if (healAmount >= amount2) {
             flash();
-            addToBot((AbstractGameAction) new ApplyPowerAction(owner, owner, new StrengthPower(owner, amount*healAmount/amount2)));
+            addToBot( new ApplyPowerAction(owner, owner, new StrengthPower(owner, (int)amount*MathUtils.floor(healAmount/amount2))));
         }
             
         return healAmount;

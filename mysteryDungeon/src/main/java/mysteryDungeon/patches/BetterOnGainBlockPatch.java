@@ -16,7 +16,7 @@ import mysteryDungeon.interfaces.BetterOnGainBlockInterface;
 @SpirePatch(clz = AbstractCreature.class, method="addBlock")
 public class BetterOnGainBlockPatch {
 
-    @SpireInsertPatch(rloc=523-479, localvars="tmp")
+    @SpireInsertPatch(rloc=499-479, localvars="tmp")
     public static void ActivatePowersAndRelics(AbstractCreature __instance, float tmp) {
         int blockAmount = MathUtils.floor(tmp);
         for (AbstractRelic relic: AbstractDungeon.player.relics) {
