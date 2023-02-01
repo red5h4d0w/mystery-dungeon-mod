@@ -72,6 +72,6 @@ public class WaterfallPower extends PokemonPower implements CloneablePowerInterf
 
     @Override
     public void updateDescription() {
-            description = String.format(DESCRIPTIONS[0], amount);
-        }
+        description = String.format(DESCRIPTIONS[0], amount);
+    }
 }
