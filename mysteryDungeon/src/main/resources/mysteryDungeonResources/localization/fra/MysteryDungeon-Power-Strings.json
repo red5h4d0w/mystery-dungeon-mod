@@ -430,8 +430,8 @@
     "mysteryDungeon:SurfPower": {
         "NAME": "Surf",
         "DESCRIPTIONS": [
-            "Lorsque vous défaussez une carte, gagnez 1 de mysterydungeon:Vigueur_Temporaire.",
-            "Lorsque vous défaussez une carte, gagnez %s de mysterydungeon:Vigueur_Temporaire."
+            "Lorsque vous défaussez une carte, gagnez 1 de #yVigueur #yTemporaire.",
+            "Lorsque vous défaussez une carte, gagnez %s de #yVigueur #yTemporaire."
         ]
     },
     "mysteryDungeon:SweetKissPower": {
