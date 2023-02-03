@@ -61,7 +61,9 @@ public class CyndaquilRollout extends PokemonCard {
         if (c.type == AbstractCard.CardType.SKILL)
           count++;
         if (c.type == AbstractCard.CardType.POWER)
-          count++;  
+          count++;
+        if (c.type == AbstractCard.CardType.STATUS)
+          count++;    
         }
             for (int i = 0; i < count-1; i++){
             addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
