@@ -80,6 +80,11 @@ public class MeowthAttract extends PokemonCard {
             addToBot(new MakeTempCardInHandAction(upgradedSnatch, 1, false));
         }
     }
+    
+    @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        return super.canUse(p, m) && canSpend(magicNumber);
+    }
 
     // Upgraded stats.
     @Override

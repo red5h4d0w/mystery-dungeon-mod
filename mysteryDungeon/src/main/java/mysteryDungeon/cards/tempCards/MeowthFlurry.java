@@ -58,6 +58,11 @@ public class MeowthFlurry extends PokemonCard {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.SMASH));
     }
 
+    @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        return super.canUse(p, m) && canSpend(magicNumber);
+    }
+
     // Upgraded stats.
     @Override
     public void upgrade() {
