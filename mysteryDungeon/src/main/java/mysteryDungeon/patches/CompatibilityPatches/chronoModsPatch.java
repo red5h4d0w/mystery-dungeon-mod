@@ -119,9 +119,9 @@ public class chronoModsPatch {
         }
     }
 
-    @SpirePatch(clz = CoopNeowReward.class, method = "linkedActivate", requiredModId = "chronoMods")
+    @SpirePatch(clz = CoopNeowReward.class, method = "getOtherCardPool", requiredModId = "chronoMods")
     public static class ChangeLinkEffect {
-        @SpireInsertPatch(rloc = 807-798, localvars = "pool")
+        @SpireInsertPatch(rloc = 975-972, localvars = "pool")
         public static void updatePool(CoopNeowReward __instance, RemotePlayer otherPlayer, ArrayList<AbstractCard> pool) {
             logger.info(pool.size());
             if (pool.size() == 0) {
