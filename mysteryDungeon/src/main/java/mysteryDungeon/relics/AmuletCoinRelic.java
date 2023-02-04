@@ -2,6 +2,7 @@ package mysteryDungeon.relics;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
 import mysteryDungeon.MysteryDungeon;
@@ -30,7 +31,8 @@ public class AmuletCoinRelic extends PokemonRelic {
     @Override
     public void atTurnStart() {
         super.atTurnStart();
-        addToBot(new SpendGoldAction(20, false));
+        if(AbstractDungeon.player.gold>0)
+            addToBot(new SpendGoldAction(Math.min(AbstractDungeon.player.gold, 20), false));
     }
 
     // Description
