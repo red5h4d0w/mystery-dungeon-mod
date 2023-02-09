@@ -1,12 +1,4 @@
 {
-    "mysteryDungeon:DefaultClickableRelic": {
-        "NAME": "右击之力",
-        "FLAVOR": "点击的越多，激发的越多。",
-        "DESCRIPTIONS": [
-            "[#2aecd7]每回合触发一次。[] NL #y激发 最右侧充能球。",
-            "你是我的了！"
-        ]
-    },
     "mysteryDungeon:NatureRelatedRelic": {
         "NAME": "自然宝典",
         "FLAVOR": "奇妙的力量",
