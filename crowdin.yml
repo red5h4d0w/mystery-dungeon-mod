@@ -1,8 +1,0 @@
-commit_message: [skip ci] New translations {fileName} ({languageName})
-files:
-  - source: /mysteryDungeon/src/main/resources/mysteryDungeonResources/localization/eng
-    ignore:
-      - /mysteryDungeon/src/main/resources/mysteryDungeonResources/localization/eng/Questions.json
-      - /mysteryDungeon/src/main/resources/mysteryDungeonResources/localization/eng/MysteryDungeon-Orb-Strings.json
-      - /mysteryDungeon/src/main/resources/mysteryDungeonResources/localization/eng/MysteryDungeon-Keyword-Strings.json
-    translation: /mysteryDungeon/src/main/resources/mysteryDungeonResources/localization/%three_letters_code%/%file_name%.json
