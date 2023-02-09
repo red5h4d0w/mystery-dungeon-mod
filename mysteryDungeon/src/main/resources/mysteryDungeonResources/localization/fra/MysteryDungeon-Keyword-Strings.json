@@ -73,7 +73,9 @@
         "NAMES": [
             "Armure Plaquée",
             "Armure_Plaquée",
-            "armure_plaquée"
+            "armure_plaquée",
+            "d'Armure Plaquée",
+            "d'armure_plaquée"
         ],
         "DESCRIPTION": "À la fin de votre tour, gagnez autant d'Armure que la quantité d'Armure Plaquée que vous avez. Réduisez la quantité d'Armure Plaquée de 1 lorsque vous recevesz des dégâts d'attaque."
     },
@@ -106,7 +108,7 @@
             "Positivité",
             "positivité"
         ],
-        "DESCRIPTION": "Quand vous jouez une #yAttaque, canalisez #b1 #yOrbe #yKéraunique si vous avez un emplacement d'#yOrbe libre. NL Lorsque vous sortez de cette position, gagnez #b7 d'#yArmure."
+        "DESCRIPTION": "Quand vous jouez une #yAttaque, canalisez #b1 #yOrbe #yKéraunique si vous avez un emplacement #yd'Orbe libre. NL Lorsque vous sortez de cette position, gagnez #b7 d'#yArmure."
     },
     {
         "PROPER_NAME": "Soin",
@@ -144,7 +146,7 @@
             "pv temporaire",
             "pv_temporaire"
         ],
-        "DESCRIPTION": "Une défense supplémentaire qui prend des dégâts à la palce de vos PV. Agissent comme des #yPV. Vous conservez les #yPV #yTemporaires entre les tours, mais pas entre les salles."
+        "DESCRIPTION": "Une défense supplémentaire qui prend des dégâts à la place de vos PV. Agissent comme des #yPV. Vous conservez les #yPV #yTemporaires entre les tours, mais pas entre les salles."
     },
     {
         "PROPER_NAME": "Toxik",

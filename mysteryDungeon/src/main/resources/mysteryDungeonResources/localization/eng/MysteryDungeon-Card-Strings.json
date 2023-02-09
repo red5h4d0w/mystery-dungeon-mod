@@ -858,7 +858,7 @@
     },
     "mysteryDungeon:MeowthTaunt": {
         "NAME": "Taunt",
-        "DESCRIPTION": "Gain !M! gold. NL End your turn."
+        "DESCRIPTION": "Gain !M! gold. NL End your turn. NL Exhaust."
     },
     "mysteryDungeon:MeowthTechnician": {
         "NAME": "Technician",
