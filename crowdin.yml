@@ -5,4 +5,4 @@ files:
       - /mysteryDungeon/src/main/resources/mysteryDungeonResources/localization/eng/MysteryDungeon-Orb-Strings.json
       - /mysteryDungeon/src/main/resources/mysteryDungeonResources/localization/eng/MysteryDungeon-Keyword-Strings.json
     translation: /mysteryDungeon/src/main/resources/mysteryDungeonResources/localization/%three_letters_code%/%file_name%.json
-commit_message: '[skip-ci]'
+commit_message: '[skip ci]'
