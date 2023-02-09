@@ -46,10 +46,10 @@
     },
     "mysteryDungeon:BulbasaurDefenseCurl": {
         "NAME": "Defense Curl",
-        "DESCRIPTION": "获得 !B! 点 格挡 。"
+        "DESCRIPTION": "Gain !B! Block."
     },
     "mysteryDungeon:BulbasaurDoubleEdge": {
-        "NAME": "双刃",
+        "NAME": "Double Edge",
         "DESCRIPTION": "造成 !D! 点伤害。 NL 获得等同于未 格挡 伤害的力量。 NL 消耗。",
         "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 获得等同于未 格挡 伤害的力量。 NL 消耗。"
     },
@@ -123,7 +123,7 @@
         "DESCRIPTION": "回复 !mysteryDungeon:M2! 点生命值。 mysterydungeon:睡觉 !M! 回合。"
     },
     "mysteryDungeon:BulbasaurSecretPower": {
-        "NAME": "秘密之力",
+        "NAME": "Secret Power",
         "DESCRIPTION": "固有。 NL 向手牌添加1张随机能力牌。 NL 消耗。",
         "UPGRADE_DESCRIPTION": "固有。 NL 向手牌添加1张随机升级后的能力牌。 NL 消耗。"
     },
@@ -170,7 +170,7 @@
         "DESCRIPTION": "造成 !D! 点伤害。"
     },
     "mysteryDungeon:BulbasaurToxic": {
-        "NAME": "剧毒",
+        "NAME": "Toxic",
         "DESCRIPTION": "向所有敌人施加 !M! 层 mysterydungeon:剧毒 。 NL 消耗。",
         "UPGRADE_DESCRIPTION": "固有。 NL 向所有敌人施加 !M! 层 mysterydungeon:剧毒 。 NL 消耗。"
     },
@@ -189,7 +189,7 @@
     "mysteryDungeon:BulbasaurYawn": {
         "NAME": "哈欠",
         "DESCRIPTION": "虚无。 NL 在敌人行动之前施加 !M! 层 mysterydungeon:昏睡 。(在中毒之后). NL 消耗。",
-        "UPGRADE_DESCRIPTION": "在敌人行动之前施加 !M! 层 mysterydungeon:昏睡 。(在中毒之后). NL 消耗。"
+        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Asleep right before this enemy acts (after Poison, etc.). NL Exhaust."
     },
     "mysteryDungeon:CharmanderAirCutter": {
         "NAME": "Air Cutter",
@@ -200,7 +200,7 @@
         "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, gain !B! Block."
     },
     "mysteryDungeon:CharmanderBlastBurn": {
-        "NAME": "爆炸烈焰",
+        "NAME": "Blast Burn",
         "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗你的手牌。"
     },
     "mysteryDungeon:CharmanderBlaze": {
