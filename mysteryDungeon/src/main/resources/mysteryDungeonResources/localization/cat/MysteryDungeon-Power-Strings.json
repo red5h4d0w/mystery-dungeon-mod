@@ -430,8 +430,8 @@
     "mysteryDungeon:SurfPower": {
         "NAME": "Surf",
         "DESCRIPTIONS": [
-            "Whenever you discard a card, for every card discarded, gain 1 mysterydungeon:Temporary_Vigor.",
-            "Whenever you discard a card, for every card discarded, gain %s mysterydungeon:Temporary_Vigor."
+            "Whenever you discard a card, for every card discarded, gain 1 #yTemporary #yVigor.",
+            "Whenever you discard a card, for every card discarded, gain %s #yTemporary #yVigor."
         ]
     },
     "mysteryDungeon:SweetKissPower": {
