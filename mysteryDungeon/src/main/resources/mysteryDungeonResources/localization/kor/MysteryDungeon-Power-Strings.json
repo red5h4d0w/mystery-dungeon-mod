@@ -106,23 +106,23 @@
         ]
     },
     "mysteryDungeon:CrushClawPower": {
-        "NAME": "브레이크크루",
+        "NAME": "브레이크클로",
         "DESCRIPTIONS": [
-            "다음 턴에 #y분화 의 피해량이 50% 증가합니다.",
-            "#b%s 턴 동안 #y분화 의 피해량이 50% 증가합니다."
+            "다음 턴에 #y분화의 피해량이 50% 증가합니다.",
+            "#b%s턴 동안 #y분화의 피해량이 50% 증가합니다."
         ]
     },
     "mysteryDungeon:DroughtPower": {
         "NAME": "가뭄",
         "DESCRIPTIONS": [
-            "#y화상 을 부여할때 마다 추가로 #b%s 만큼 더 부여합니다.",
-            "#y화상 을 부여할때 마다 추가로 #b%s 만큼 더 부여합니다."
+            "#y화상을 부여할 때마다 추가로 #b%s만큼 더 부여합니다.",
+            "#y화상을 부여할 때마다 추가로 #b%s만큼 더 부여합니다."
         ]
     },
     "mysteryDungeon:EncorePower": {
-        "NAME": "앵콜",
+        "NAME": "앙코르",
         "DESCRIPTIONS": [
-            "이번 턴에 사용하는 #y공격카드 또는 #y스킬카드가 2 번 사용됩니다."
+            "이번 턴에 사용하는 #y공격 카드나 #y스킬 카드가 2번 사용됩니다."
         ]
     },
     "mysteryDungeon:EndurePower": {
