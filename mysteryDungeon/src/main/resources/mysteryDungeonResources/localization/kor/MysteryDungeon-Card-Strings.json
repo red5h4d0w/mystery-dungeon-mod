@@ -192,15 +192,15 @@
         "UPGRADE_DESCRIPTION": "상대 턴이 시작할 때 !M! mysterydungeon:잚듬 을 부여합니다. NL 소멸."
     },
     "mysteryDungeon:CharmanderAirCutter": {
-        "NAME": "에어컷터",
+        "NAME": "에어커터",
         "DESCRIPTION": "적 전체에게 피해를 !D! 만큼 !M! 번 줍니다."
     },
     "mysteryDungeon:CharmanderAirSlash": {
-        "NAME": "에어슬레시",
+        "NAME": "에어슬래시",
         "DESCRIPTION": "피해를 !D! 줍니다. NL 선택한 적이 공격할 의도가 있다면, 방어도 를 !B! 얻습니다."
     },
     "mysteryDungeon:CharmanderBlastBurn": {
-        "NAME": "블러스트 번",
+        "NAME": "블라스트번",
         "DESCRIPTION": "피해를 !D! 줍니다. NL 카드를 전부 소멸시킵니다."
     },
     "mysteryDungeon:CharmanderBlaze": {
@@ -226,7 +226,7 @@
         "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다."
     },
     "mysteryDungeon:CharmanderDragonDance": {
-        "NAME": "용춤",
+        "NAME": "용의춤",
         "DESCRIPTION": "카드를 !M! 장 소멸시킵시다. NL 카드를 !mysteryDungeon:M2! 장 뽑습니다. NL (버릴 카드가 !M! 장 이상일 때 사용할 수 있습니다.)",
         "UPGRADE_DESCRIPTION": "카드를 !mysteryDungeon:M2! 장 뽑습니다. NL 카드를 !M! 장 소멸시킵니다."
     },
@@ -350,7 +350,7 @@
         "UPGRADE_DESCRIPTION": "불가침을 !M! 얻습니다. NL 약화를 2 얻습니다. NL 소멸."
     },
     "mysteryDungeon:CharmanderSolarPower": {
-        "NAME": "썬파워",
+        "NAME": "선파워",
         "DESCRIPTION": "턴 시작 시, 적이 mysterydungeon:화상 상태라면, 힘 을 1 얻습니다.",
         "UPGRADE_DESCRIPTION": "선천성. NL 턴 시작 시, 적이 mysterydungeon:화상 상태라면, 힘 을 1 얻습니다."
     },
@@ -448,7 +448,7 @@
         "DESCRIPTION": "mysterydungeon:임시체력 을 !M! 얻습니다. NL 카드를 1 장 뽑습니다."
     },
     "mysteryDungeon:ChikoritaMagicalLeaf": {
-        "NAME": "메지컬리프",
+        "NAME": "매지컬리프",
         "DESCRIPTION": "무작위 적에게 피해를 !D! 만큼 !M! 줍니다."
     },
     "mysteryDungeon:ChikoritaNaturalGift": {
@@ -539,7 +539,7 @@
         "DESCRIPTION": "피해를 !D! 줍니다. NL 체력을 !M! 잃습니다."
     },
     "mysteryDungeon:CyndaquilBlastBurn": {
-        "NAME": "블러스트번",
+        "NAME": "블라스트번",
         "DESCRIPTION": "피해를 !D! 줍니다. NL  mysterydungeon:화상 을 !M! 부여합니다. mysterydungeon:분화 를 발동합니다. NL 턴을 종료합니다."
     },
     "mysteryDungeon:CyndaquilBurnUp": {
@@ -552,7 +552,7 @@
         "UPGRADE_DESCRIPTION": "턴 종료시, 남은 [E] 를 모두 소모합니다. 이 카드로 소모한 [E] 당 방어도를 !M! 얻습니다. NL 방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:CyndaquilCrushClaw": {
-        "NAME": "브레이크크루",
+        "NAME": "브레이크클로",
         "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 다음 턴에 mysterydungeon:분화 의 피해가 50% 증가합니다. NL 소멸.",
         "UPGRADE_DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 다음 턴에 mysterydungeon:분화 의 피해가 50% 증가합니다."
     },
@@ -684,8 +684,8 @@
         "DESCRIPTION": "이번 턴에 사용한 카드 수 만큼 피해를 !D! 주고 방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:CyndaquilShadowClaw": {
-        "NAME": "섀도크루",
-        "DESCRIPTION": "뽑을 카드 더미에 *어지러움을 1 장 넣습니다. NL 피해를 !D! 줍니다."
+        "NAME": "섀도클로",
+        "DESCRIPTION": "뽑을 카드 더미에 *어지러움을 1장 넣습니다. NL 피해를 !D! 줍니다."
     },
     "mysteryDungeon:CyndaquilSleepTalk": {
         "NAME": "잠꼬대",
@@ -1097,7 +1097,7 @@
         "UPGRADE_DESCRIPTION": "선천성. NL 내 턴 시작시 뽑을 카드 더미 맨 위 부터 카드 1 장을 가져옵니다. NL 이 효과는 매 턴 1만큼 증가합니다."
     },
     "mysteryDungeon:SquirtleFakeOut": {
-        "NAME": "속이다",
+        "NAME": "속이기",
         "DESCRIPTION": "선천성. NL 피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다. NL 예지 !M! NL 소멸.",
         "UPGRADE_DESCRIPTION": "선천성. NL 피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다. NL 예지 !M! NL 소멸."
     },
@@ -1335,7 +1335,7 @@
         "DESCRIPTION": "피해를 !D! 줍니다. NL 냉기를 !M! 번 영창합니다. NL 구체를 !M! 1번 발현합니다."
     },
     "mysteryDungeon:TotodileIcyWind": {
-        "NAME": "얼다바람",
+        "NAME": "얼어붙은바람",
         "DESCRIPTION": "mysterydungeon:절연체. NL 냉기를 !M! 번 영창합니다. NL 소멸."
     },
     "mysteryDungeon:TotodileLiquidation": {
