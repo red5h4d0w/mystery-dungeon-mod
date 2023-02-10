@@ -50,101 +50,101 @@
     },
     "mysteryDungeon:BulbasaurDoubleEdge": {
         "NAME": "Double Edge",
-        "DESCRIPTION": "造成 !D! 点伤害。 NL 获得等同于未 格挡 伤害的力量。 NL 消耗。",
-        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 获得等同于未 格挡 伤害的力量。 NL 消耗。"
+        "DESCRIPTION": "Deal !D! damage. NL Gain Strength equal to the unblocked damage dealt. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times. NL Gain Strength equal to the unblocked damage dealt. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurExplorerForm": {
-        "NAME": "妙蛙种子·冒险者笔记",
-        "DESCRIPTION": "获得 !M! 层回复。 NL 在回合开始时，失去1点 敏捷 。"
+        "NAME": "Explorer Form",
+        "DESCRIPTION": "Gain !M! Regen. NL At the start of your turn lose 1 Dexterity."
     },
     "mysteryDungeon:BulbasaurFrenzyPlant": {
-        "NAME": "疯狂植物",
-        "DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 施加2层中毒 !M! 次。 NL 本回合无法回复生命。"
+        "NAME": "Frenzy Plant",
+        "DESCRIPTION": "Deal !D! damage !M! times. NL Apply 2 Poison !M! times. NL You cannot heal during this turn."
     },
     "mysteryDungeon:BulbasaurGigaDrain": {
-        "NAME": "终极吸收",
-        "DESCRIPTION": "虚无。 NL 造成 !D! 点伤害。 NL 回复等同于未 格挡 伤害的生命。"
+        "NAME": "Giga Drain",
+        "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Heal HP equal to unblocked damage."
     },
     "mysteryDungeon:BulbasaurGrowl": {
-        "NAME": "叫声",
-        "DESCRIPTION": "对所有敌人施加 !M! 层 虚弱 。"
+        "NAME": "Growl",
+        "DESCRIPTION": "Apply !M! Weak to ALL enemies."
     },
     "mysteryDungeon:BulbasaurGrowth": {
-        "NAME": "生长",
-        "DESCRIPTION": "获得 !M! 点力量。"
+        "NAME": "Growth",
+        "DESCRIPTION": "Gain !M! Strength."
     },
     "mysteryDungeon:BulbasaurIngrain": {
-        "NAME": "扎根",
-        "DESCRIPTION": "向随机敌人施加1层 mysterydungeon:寄生种子 !M! 次。 NL 失去2点 敏捷 。 NL 消耗。"
+        "NAME": "Ingrain",
+        "DESCRIPTION": "Apply 1 mysterydungeon:Leech_Seed to a random enemy !M! times. NL Lose 2 Dexterity. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurLeechSeed": {
-        "NAME": "寄生种子",
-        "DESCRIPTION": "施加 !M! 层 mysterydungeon:寄生种子 。 NL 消耗。"
+        "NAME": "Leech Seed",
+        "DESCRIPTION": "Apply !M! mysterydungeon:Leech_Seed. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurMegaDrain": {
-        "NAME": "超级吸收",
-        "DESCRIPTION": "敌人每拥有1种减益效果，回复 !M! 生命值。",
-        "UPGRADE_DESCRIPTION": "敌人每拥有1种减益效果，回复 !M! 生命值。 NL 下回合多抽1张牌。"
+        "NAME": "Mega Drain",
+        "DESCRIPTION": "Heal !M! HP per different *debuff on the enemy.",
+        "UPGRADE_DESCRIPTION": "Heal !M! HP per different *debuff on the enemy. NL Next turn draw 1 more card."
     },
     "mysteryDungeon:BulbasaurPetalBlizzard": {
-        "NAME": "落英缤纷",
-        "DESCRIPTION": "对所有敌人造成 !D! 点伤害。"
+        "NAME": "Petal Blizzard",
+        "DESCRIPTION": "Deal !D! damage to ALL enemies."
     },
     "mysteryDungeon:BulbasaurPetalDance": {
-        "NAME": "花瓣舞",
-        "DESCRIPTION": "下 !M! 回合，在回合结束时，对所有敌人造成7点伤害。 NL 视为攻击伤害。"
+        "NAME": "Petal Dance",
+        "DESCRIPTION": "Deal 7 damage to ALL enemies at the end of your turn for the next !M! turns. NL This damage behaves like Attack damage."
     },
     "mysteryDungeon:BulbasaurPoisonJab": {
-        "NAME": "毒击",
-        "DESCRIPTION": "造成 !D! 点伤害。 NL 施加 !M! 层中毒2次。"
+        "NAME": "Poison Jab",
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! Poison 2 times."
     },
     "mysteryDungeon:BulbasaurPoisonPoint": {
-        "NAME": "毒刺",
-        "DESCRIPTION": "获得 !M! 层 mysterydungeon:毒刺 。"
+        "NAME": "Poison Point",
+        "DESCRIPTION": "Gain !M! mysterydungeon:Poison_Thorns."
     },
     "mysteryDungeon:BulbasaurPoisonPowder": {
-        "NAME": "毒粉",
-        "DESCRIPTION": "对所有敌人施加 !M! 层中毒。"
+        "NAME": "Poison Powder",
+        "DESCRIPTION": "Apply !M! Poison to ALL enemies."
     },
     "mysteryDungeon:BulbasaurPowerWhip": {
-        "NAME": "强力鞭打",
-        "DESCRIPTION": "保留。 NL 造成 !D! 点伤害。"
+        "NAME": "Power Whip",
+        "DESCRIPTION": "Retain. NL Deal !D! damage."
     },
     "mysteryDungeon:BulbasaurProtect": {
-        "NAME": "守住",
-        "DESCRIPTION": "获得 !B! 点 格挡 。 NL 下 !M! 回合内，无法再从牌中获得 格挡 值。"
+        "NAME": "Protect",
+        "DESCRIPTION": "Gain !B! Block. NL You cannot gain Block from cards during the next !M! turns."
     },
     "mysteryDungeon:BulbasaurRazorLeaf": {
-        "NAME": "飞叶快刀",
-        "DESCRIPTION": "失去 !M! 生命值。 NL 造成 !D! 点伤害。"
+        "NAME": "Razor Leaf",
+        "DESCRIPTION": "Deal !D! damage. NL Draw 1 card."
     },
     "mysteryDungeon:BulbasaurRest": {
-        "NAME": "睡觉",
-        "DESCRIPTION": "回复 !mysteryDungeon:M2! 点生命值。 mysterydungeon:睡觉 !M! 回合。"
+        "NAME": "Rest",
+        "DESCRIPTION": "Heal !mysteryDungeon:M2! HP. mysterydungeon:Rest for !M! turns."
     },
     "mysteryDungeon:BulbasaurSecretPower": {
         "NAME": "Secret Power",
-        "DESCRIPTION": "固有。 NL 向手牌添加1张随机能力牌。 NL 消耗。",
-        "UPGRADE_DESCRIPTION": "固有。 NL 向手牌添加1张随机升级后的能力牌。 NL 消耗。"
+        "DESCRIPTION": "Innate. NL Add random Power in your hand. NL Exhaust",
+        "UPGRADE_DESCRIPTION": "Innate. NL Add random upgraded Power in your hand. NL Exhaust"
     },
     "mysteryDungeon:BulbasaurSeedBomb": {
-        "NAME": "种子炸弹",
-        "DESCRIPTION": "对随机敌人造成 !D! 点伤害X次。"
+        "NAME": "Seed Bomb",
+        "DESCRIPTION": "Deal !D! damage to a random enemy X times."
     },
     "mysteryDungeon:BulbasaurSleepPowder": {
-        "NAME": "催眠粉",
-        "DESCRIPTION": "向所有敌人施加 !M! 层 mysterydungeon:昏睡 。 NL 消耗。"
+        "NAME": "Sleep Powder",
+        "DESCRIPTION": "Apply !M! mysterydungeon:Asleep to ALL enemies. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurSludgeBomb": {
-        "NAME": "污泥炸弹",
-        "DESCRIPTION": "施加 !M! 层中毒。"
+        "NAME": "Sludge Bomb",
+        "DESCRIPTION": "Apply !M! Poison."
     },
     "mysteryDungeon:BulbasaurSolarBeam": {
-        "NAME": "日光束",
-        "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 下回合少抽 !M! 张牌。"
+        "NAME": "Solar Beam",
+        "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Draw !M! less cards during your next turn."
     },
     "mysteryDungeon:BulbasaurStrengthSap": {
-        "NAME": "吸收力量",
+        "NAME": "Strength Sap",
         "DESCRIPTION": "敌人失去 !M! 点力量。 NL 若敌人失去力量，获得 !M! 点力量。 NL 消耗。"
     },
     "mysteryDungeon:BulbasaurStunSpore": {
