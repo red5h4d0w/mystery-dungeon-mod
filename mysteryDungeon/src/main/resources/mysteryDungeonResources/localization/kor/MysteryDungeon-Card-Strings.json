@@ -13,7 +13,7 @@
     },
     "mysteryDungeon:ChooseAttack": {
         "NAME": "공격",
-        "DESCRIPTION": "손에 무작위 공격카드를 추가합니다."
+        "DESCRIPTION": "손에 무작위 공격 카드를 추가합니다."
     },
     "mysteryDungeon:ChooseNegative": {
         "NAME": "마이너스",
@@ -25,7 +25,7 @@
     },
     "mysteryDungeon:ChooseSkill": {
         "NAME": "스킬",
-        "DESCRIPTION": "손에 무작위 스킬카드를 추가합니다."
+        "DESCRIPTION": "손에 무작위 스킬 카드를 추가합니다."
     },
     "mysteryDungeon:StatusFreeze": {
         "NAME": "얼음",
@@ -33,12 +33,12 @@
     },
     "mysteryDungeon:BulbasaurBulletSeed": {
         "NAME": "씨기관총",
-        "DESCRIPTION": "피해를 !D! 만큼 !M! 번 줍니다. NL 강화 횟수에 제한이 없습니다."
+        "DESCRIPTION": "피해를 !D!만큼 !M!번 줍니다. NL 강화 횟수에 제한이 없습니다."
     },
     "mysteryDungeon:BulbasaurChlorophyll": {
         "NAME": "엽록소",
-        "DESCRIPTION": "카드를 !M! 장 뽑습니다. NL 공격 카드를 뽑았다면, 힘 을 1 얻습니다.",
-        "UPGRADE_DESCRIPTION": "카드를 !M! 장 뽑습니다. NL 뽑은 공격 카드 한 장당, 힘 을 1 얻습니다."
+        "DESCRIPTION": "카드를 !M! 장 뽑습니다. NL 공격 카드를 뽑았다면 힘을 1 얻습니다.",
+        "UPGRADE_DESCRIPTION": "카드를 !M!장 뽑습니다. NL 뽑은 공격 카드 한 장당 힘을 1 얻습니다."
     },
     "mysteryDungeon:BulbasaurDefend": {
         "NAME": "수비",
@@ -46,12 +46,12 @@
     },
     "mysteryDungeon:BulbasaurDefenseCurl": {
         "NAME": "웅크리기",
-        "DESCRIPTION": "방어도 를 !B! 얻습니다"
+        "DESCRIPTION": "방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:BulbasaurDoubleEdge": {
         "NAME": "이판사판태클",
-        "DESCRIPTION": "피해를 !D! 줍니다. NL 막히지 않은 피해만큼 힘 을 얻습니다. NL 소멸.",
-        "UPGRADE_DESCRIPTION": "피해를 !D! 만큼 !M! 번 줍니다. NL 막히지 않은 피해만큼 힘 을 얻습니다. NL 소멸."
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 막히지 않은 피해만큼 힘을 얻습니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "피해를 !D!만큼 !M!번 줍니다. NL 막히지 않은 피해만큼 힘을 얻습니다. NL 소멸."
     },
     "mysteryDungeon:BulbasaurExplorerForm": {
         "NAME": "탐험가의 자세",
@@ -59,7 +59,7 @@
     },
     "mysteryDungeon:BulbasaurFrenzyPlant": {
         "NAME": "하드플랜트",
-        "DESCRIPTION": "피해를 !D! 만큼 !M! 번 줍니다. NL 중독 을 2 만큼 !M! 번 부여합니다. NL 이번 턴에 회복 할 수 없습니다."
+        "DESCRIPTION": "피해를 !D!만큼 !M!번 줍니다. NL 중독을 2만큼 !M!번 부여합니다. NL 이번 턴에 회복할 수 없습니다."
     },
     "mysteryDungeon:BulbasaurGigaDrain": {
         "NAME": "기가드레인",
@@ -71,7 +71,7 @@
     },
     "mysteryDungeon:BulbasaurGrowth": {
         "NAME": "성장",
-        "DESCRIPTION": "힘 을 !M! 얻습니다."
+        "DESCRIPTION": "힘을 !M! 얻습니다."
     },
     "mysteryDungeon:BulbasaurIngrain": {
         "NAME": "뿌리박기",
@@ -210,7 +210,7 @@
     },
     "mysteryDungeon:CharmanderCounter": {
         "NAME": "카운터",
-        "DESCRIPTION": "방어도 를 !B! 얻습니다. NL 모든 방어도 를 잃고 피해를 받은 경우, 그 대상에게 피해를 !M! 줍니다."
+        "DESCRIPTION": "방어도를 !B! 얻습니다. NL 모든 방어도를 잃고 피해를 받은 경우, 그 대상에게 피해를 !M! 줍니다."
     },
     "mysteryDungeon:CharmanderDefend": {
         "NAME": "수비",
