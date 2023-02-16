@@ -479,7 +479,7 @@
         "DESCRIPTION": "체력을 !M! 잃습니다. NL 피해를 !D! 줍니다."
     },
     "mysteryDungeon:ChikoritaRefresh": {
-        "NAME": "리프레쉬",
+        "NAME": "리프레시",
         "DESCRIPTION": "mysterydungeon:임시체력 을 !M! 얻습니다."
     },
     "mysteryDungeon:ChikoritaSecretPower": {
@@ -823,7 +823,7 @@
         "DESCRIPTION": "피해를 !D! 줍니다. NL 적에 힘 의 !M! 배 만큼 추가로 피해를 줍니다."
     },
     "mysteryDungeon:MeowthRoar": {
-        "NAME": "울부짓기",
+        "NAME": "울부짖기",
         "DESCRIPTION": "힘을 !M! 부여합니다. NL 약화를 99 부여합니다. NL 소멸."
     },
     "mysteryDungeon:MeowthScratch": {
@@ -992,7 +992,7 @@
         "DESCRIPTION": "mysterydungeon:절연체. NL 피해를 !D! 줍니다. NL 턴 종료 시, *전압 *표시기 가 중앙으로 돌아오지 않습니다. NL 소멸."
     },
     "mysteryDungeon:PikachuSpeedSwap": {
-        "NAME": "스피드스웹",
+        "NAME": "스피드스왑",
         "DESCRIPTION": "mysterydungeon:절연체. NL mysterydungeon:마이너스상태 가 됩니다. NL 소멸.",
         "UPGRADE_DESCRIPTION": "mysterydungeon:절연체. NL 보존. NL mysterydungeon:마이너스상태 가 됩니다. NL 소멸."
     },
@@ -1102,7 +1102,7 @@
         "UPGRADE_DESCRIPTION": "선천성. NL 피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다. NL 예지 !M! NL 소멸."
     },
     "mysteryDungeon:SquirtleFlashCannon": {
-        "NAME": "러스트 캐논",
+        "NAME": "러스터캐논",
         "DESCRIPTION": "버린 카드 더미에 있는 카드의 수만큼 피해를 줍니다.",
         "UPGRADE_DESCRIPTION": "버린 카드 더미에 있는 카드의 수에 3을 더한 만큼 피해를 줍니다.",
         "EXTENDED_DESCRIPTION": [
@@ -1187,7 +1187,7 @@
         "DESCRIPTION": "힘을 !M! 얻습니다. NL 뽑을 카드 더미에 *얼음 을 !mysteryDungeon:M2! 장 넣습니다."
     },
     "mysteryDungeon:SquirtleSkullBashGo": {
-        "NAME": "로켓박치기:발싸",
+        "NAME": "로켓박치기 발사!",
         "DESCRIPTION": "보존. NL 적 전체에게 피해를 !D! 줍니다. NL 이 카드가 패에 가장 왼쪽에 있는 카드라면 적 전체에게 피해를 !D! 줍니다. NL 소멸.",
         "UPGRADE_DESCRIPTION": "보존. NL 적 전체에게 피해를 !D! 줍니다. NL 이 카드가 패에 가장 왼쪽에 있는 카드라면 적 전체에게 피해를 !D! 줍니다. NL 소멸."
     },
