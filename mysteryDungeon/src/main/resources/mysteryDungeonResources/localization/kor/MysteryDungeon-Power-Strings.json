@@ -49,8 +49,8 @@
     "mysteryDungeon:BlazePower": {
         "NAME": "맹화",
         "DESCRIPTIONS": [
-            "매턴 1 회 남은 에너지가 없을때, [E] 를 얻습니다.",
-            "매턴 #b%s 회 남은 에너지가 없을때, [E] 를 얻습니다."
+            "매턴 1회 남은 에너지가 없을 때 [E] 를 얻습니다.",
+            "매 턴 #b%s 회 남은 에너지가 없을 때 [E] 를 얻습니다."
         ]
     },
     "mysteryDungeon:BurnPower": {
