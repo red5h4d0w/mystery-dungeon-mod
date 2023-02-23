@@ -1288,7 +1288,7 @@
     "mysteryDungeon:TotodileDive": {
         "NAME": "Dive",
         "DESCRIPTION": "Retain. NL Discard !M! cards from your hand.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Discard !M! cards from your hand. NL Draw 1 card."
+        "UPGRADE_DESCRIPTION": "Retain. NL Discard !M! cards from your hand. NL Draw 2 cards."
     },
     "mysteryDungeon:TotodileDoubleTeam": {
         "NAME": "Double Team",

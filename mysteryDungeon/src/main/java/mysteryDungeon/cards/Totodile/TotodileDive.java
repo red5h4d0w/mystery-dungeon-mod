@@ -51,7 +51,7 @@ public class TotodileDive extends PokemonCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DiscardAction(p, p, magicNumber, false));
         if(upgraded)
-            addToBot(new DrawCardAction(p, 1));
+            addToBot(new DrawCardAction(p, 2));
         }
 
     // Upgraded stats.
