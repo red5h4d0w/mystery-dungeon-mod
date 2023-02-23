@@ -47,6 +47,7 @@ public class TotodileHydroPump extends PokemonCard {
         baseDamage = DAMAGE;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        selfRetain = true;
     }
 
     // Actions the card should do.

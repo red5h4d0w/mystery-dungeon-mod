@@ -1318,8 +1318,8 @@
     },
     "mysteryDungeon:TotodileHydroPump": {
         "NAME": "Hydro Pump",
-        "DESCRIPTION": "Can only be used if there are no cards left in your draw pile. NL Deal !D! damage.",
-        "UPGRADE_DESCRIPTION": "Can only be used if there are !M! cards or less in your draw pile. NL Deal !D! damage."
+        "DESCRIPTION": "Retain. NL Can only be used if there are no cards left in your draw pile. NL Deal !D! damage.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Can only be used if there are !M! cards or less in your draw pile. NL Deal !D! damage."
     },
     "mysteryDungeon:TotodileIceBeam": {
         "NAME": "Ice Beam",
