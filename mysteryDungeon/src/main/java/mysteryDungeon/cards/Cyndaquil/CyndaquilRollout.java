@@ -37,7 +37,7 @@ public class CyndaquilRollout extends PokemonCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = Pokemon.Enums.CYNDAQUIL_RED;
 
-    private static final int COST = 0;
+    private static final int COST = 1;
     private static final int DAMAGE = 3;
     private static final int UPGRADE_PLUS_DMG = 1;
     private static final int BLOCK = 3;
