@@ -37,7 +37,7 @@ public class TotodileThrash extends PokemonCard {
 
     private static final int BASE_MAGIC_NUMBER = 4;
     private static final int UPGRADE_MAGIC_NUMBER = -1;
-    private static final int BASE_SECOND_MAGIC_NUMBER = 6;
+    private static final int BASE_SECOND_MAGIC_NUMBER = 8;
 
     // /STAT DECLARATION/
 
