@@ -1352,7 +1352,7 @@
     },
     "mysteryDungeon:TotodileStrength": {
         "NAME": "Strength",
-        "DESCRIPTION": "Draw !M! card. NL If you drew an Attack card this way, channel 1 Frost."
+        "DESCRIPTION": "Scry !M! card. NL Draw !M! card. NL If you drew an Attack card this way, channel 1 Frost."
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "Surf",
