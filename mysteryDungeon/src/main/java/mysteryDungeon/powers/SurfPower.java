@@ -57,7 +57,7 @@ public class SurfPower extends PokemonPower implements CloneablePowerInterface, 
         addToBot(new ApplyPowerAction(owner, owner, new VigorPower(owner, amount), amount));
         addToBot(new ApplyPowerAction(owner, owner, new LoseVigorPower(owner, amount), amount));
     }
-
+    @Override
     public void onScry() {
         flash();
         addToBot(new ApplyPowerAction(owner, owner, new VigorPower(owner, amount), amount));
