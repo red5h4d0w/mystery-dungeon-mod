@@ -64,6 +64,12 @@ public class TotodileTorrent extends PokemonCard {
         super.triggerOnManualDiscard();
         addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new FocusPower(AbstractDungeon.player, magicNumber), magicNumber));
     }
+
+    @Override
+    public void triggerOnScry() {
+        super.triggerOnScry();
+        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new FocusPower(AbstractDungeon.player, magicNumber), magicNumber));
+      }
     
     // Upgraded stats.
     @Override

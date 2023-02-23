@@ -61,6 +61,12 @@ public class TotodileHail extends PokemonCard {
     }
 
     @Override
+    public void triggerOnScry() {
+        super.triggerOnScry();
+        addToBot(new ChannelAction(new Frost()));
+      }
+
+    @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
         cantUseMessage = cardStrings.EXTENDED_DESCRIPTION[0];
         return false;

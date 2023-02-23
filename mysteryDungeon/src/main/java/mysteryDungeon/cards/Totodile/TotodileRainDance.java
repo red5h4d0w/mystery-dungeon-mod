@@ -64,6 +64,12 @@ public class TotodileRainDance extends PokemonCard {
         super.triggerOnManualDiscard();
         addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new VigorPower(AbstractDungeon.player, magicNumber)));
     }
+
+    @Override
+    public void triggerOnScry() {
+        super.triggerOnScry();
+        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new VigorPower(AbstractDungeon.player, magicNumber)));
+      }
     
     // Upgraded stats.
     @Override
