@@ -214,7 +214,7 @@
     },
     "mysteryDungeon:CharmanderDefend": {
         "NAME": "수비",
-        "DESCRIPTION": "방어도 를 !B! 얻습니다."
+        "DESCRIPTION": "방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:CharmanderDragonBreath": {
         "NAME": "용의 숨결",
@@ -222,11 +222,11 @@
         "UPGRADE_DESCRIPTION": "소멸된 카드 3 장당 [E] 를 얻습니다. NL [E] 를 얻습니다."
     },
     "mysteryDungeon:CharmanderDragonClaw": {
-        "NAME": "드래곤 클로",
+        "NAME": "드래곤클로",
         "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다."
     },
     "mysteryDungeon:CharmanderDragonDance": {
-        "NAME": "용의춤",
+        "NAME": "용의 춤",
         "DESCRIPTION": "카드를 !M! 장 소멸시킵시다. NL 카드를 !mysteryDungeon:M2! 장 뽑습니다. NL (버릴 카드가 !M! 장 이상일 때 사용할 수 있습니다.)",
         "UPGRADE_DESCRIPTION": "카드를 !mysteryDungeon:M2! 장 뽑습니다. NL 카드를 !M! 장 소멸시킵니다."
     },
@@ -235,7 +235,7 @@
         "DESCRIPTION": "사용불가. NL 이 카드를 뽑을 경우: 소멸한 카드에 있는 무작위 카드를 뽑을 카드 더미 맨 위로 가져옵니다. NL 이 효과가 !M! 번 발생한 경우: 소멸합니다.",
         "EXTENDED_DESCRIPTION": [
             "이 카드는 사용할 수 없습니다.",
-            "뽑을 경우 : 소멸합니다."
+            "뽑으면 소멸합니다."
         ]
     },
     "mysteryDungeon:CharmanderDragonRage": {
@@ -247,16 +247,16 @@
         "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸된 카드 한장을 선택하고 버린 카드 더미에 추가합니다. NL 뽑을 카드 더미에 있는 카드 1장을 무작위로 소멸시킵니다. NL 소멸."
     },
     "mysteryDungeon:CharmanderDragonTail": {
-        "NAME": "드래곤 테일",
-        "DESCRIPTION": "사용불가. NL 소멸할 경우 : 적 전체에게 피해를 !D! 줍니다. NL 뽑을 카드 더미 맨 위의 이 카드를 1 장 복사해 가져옵니다.",
-        "UPGRADE_DESCRIPTION": "사용불가. NL 소멸할 경우 : 적 전체에게 피해를 !D! 줍니다. NL 뽑을 카드 더미 맨 위의 이 카드를 1 장 복사해 가져옵니다. NL 다음 턴에 카드를 1장 더 뽑습니다.",
+        "NAME": "드래곤테일",
+        "DESCRIPTION": "사용 불가. NL 소멸할 때 적 전체에게 피해를 !D! 줍니다. NL 뽑을 카드 더미 맨 위의 이 카드를 1장 복사해 가져옵니다.",
+        "UPGRADE_DESCRIPTION": "사용 불가. NL 소멸할 때 적 전체에게 피해를 !D! 줍니다. NL 뽑을 카드 더미 맨 위의 이 카드를 1장 복사해 가져옵니다. NL 다음 턴에 카드를 1장 더 뽑습니다.",
         "EXTENDED_DESCRIPTION": [
             "이 카드는 사용할 수 없습니다."
         ]
     },
     "mysteryDungeon:CharmanderDrought": {
         "NAME": "가뭄",
-        "DESCRIPTION": "mysterydungeon:화상 을 부여할때 마다, 추가로 !M! 만큼 더 부여합니다."
+        "DESCRIPTION": "mysterydungeon:화상 을 부여할 때마다, 추가로 !M! 만큼 더 부여합니다."
     },
     "mysteryDungeon:CharmanderEmber": {
         "NAME": "불꽃세례",
@@ -280,7 +280,7 @@
         "DESCRIPTION": "피해를 !D! 줍니다. NL mysterydungeon:화상 을 !M! 부여합니다."
     },
     "mysteryDungeon:CharmanderFireSpin": {
-        "NAME": "회오리 불꽃",
+        "NAME": "회오리불꽃",
         "DESCRIPTION": "선천성. NL mysterydungeon:화상 만큼 중독 을 부여합니다. NL 모든 mysterydungeon:화상 을 제거합니다.",
         "UPGRADE_DESCRIPTION": "mysterydungeon:화상 만큼 중독 을 부여합니다. NL 모든 mysterydungeon:화상 을 제거합니다."
     },
@@ -340,7 +340,7 @@
         "DESCRIPTION": "피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다. NL *메탈클로 를 사용할 때 피해량 대신 방어도 가 오릅니다."
     },
     "mysteryDungeon:CharmanderSleepTalk": {
-        "NAME": "TODO:",
+        "NAME": "잠꼬대",
         "DESCRIPTION": "매턴 1회 카드가 소멸될 경우, 무작위 카드를 1 장 얻습니다.",
         "UPGRADE_DESCRIPTION": "매턴 2회 카드가 소멸될 경우, 무작위 카드를 1 장 얻습니다."
     },
@@ -364,7 +364,7 @@
         "UPGRADE_DESCRIPTION": "약화 를 X+1 부여합니다. NL  mysterydungeon:화상 을 3(X+1)부여합니다. NL 소멸"
     },
     "mysteryDungeon:ChikoritaAncientPower": {
-        "NAME": "원시의힘",
+        "NAME": "원시의 힘",
         "DESCRIPTION": "피해를 !D! 줍니다. NL 체력이 30% 이하일 때, 피해를 !D! 줍니다."
     },
     "mysteryDungeon:ChikoritaAromatherapy": {
@@ -414,7 +414,7 @@
         "DESCRIPTION": "남아있는 적의 체력에 33% 만큼 피해를 줍니다. NL 소멸."
     },
     "mysteryDungeon:ChikoritaGrassPledge": {
-        "NAME": "풀의맹세",
+        "NAME": "풀의 맹세",
         "DESCRIPTION": "mysterydungeon:임시체력 을 !M! 얻습니다. NL 이번 턴에 다른 mysterydungeon:맹세 카드를 사용했다면, 특별한 효과가 발동됩니다."
     },
     "mysteryDungeon:ChikoritaGrassWhistle": {
@@ -452,16 +452,16 @@
         "DESCRIPTION": "무작위 적에게 피해를 !D! 만큼 !M! 줍니다."
     },
     "mysteryDungeon:ChikoritaNaturalGift": {
-        "NAME": "자연의은혜",
-        "DESCRIPTION": "힘을 !M! 얻습니다. NL 턴 종료시 방어도를 !mysteryDungeon:M2! 얻습니다."
+        "NAME": "자연의 은혜",
+        "DESCRIPTION": "힘을 !M! 얻습니다. NL 턴 종료 시 방어도를 !mysteryDungeon:M2! 얻습니다."
     },
     "mysteryDungeon:ChikoritaNaturePowerGrassland": {
-        "NAME": "자연의힘:풀",
+        "NAME": "자연의 힘: 풀",
         "DESCRIPTION": "체력을 4 잃습니다. NL 카드를 !M! 장 뽑습니다."
     },
     "mysteryDungeon:ChikoritaOvergrow": {
         "NAME": "심록",
-        "DESCRIPTION": "체력이 !M! 이상 회복될 때 마다, !M! 회복 당, 힘을 !mysteryDungeon:M2! 얻습니다."
+        "DESCRIPTION": "체력이 !M! 이상 회복될 때마다, !M! 회복당 힘을 !mysteryDungeon:M2! 얻습니다."
     },
     "mysteryDungeon:ChikoritaPetalBlizzard": {
         "NAME": "꽃보라",
@@ -506,7 +506,7 @@
         "UPGRADE_DESCRIPTION": "내 턴에 3 체력을 잃을 때 마다, 카드를 1장 뽑습니다."
     },
     "mysteryDungeon:ChikoritaSweetScent": {
-        "NAME": "달콤한향기",
+        "NAME": "달콤한 향기",
         "DESCRIPTION": "mysterydungeon:회피율_감소 를 !M! 부여합니다. NL 취약을 !M! 부여합니다."
     },
     "mysteryDungeon:ChikoritaSynthesis": {
@@ -613,7 +613,7 @@
         "DESCRIPTION": "피해를 !D! 줍니다. NL 덱에 있는 상태이상 카드 수만큼 이 카드의 비용이 1 감소합니다."
     },
     "mysteryDungeon:CyndaquilFlashFire": {
-        "NAME": "타오르는불꽃",
+        "NAME": "타오르는 불꽃",
         "DESCRIPTION": "뽑을 카드 더미에 *화상을 2장 넣습니다. NL 매턴 카드를 사용할 때 마다 적 전체에게 mysterydungeon:화상 을 !M! 부여합니다.",
         "UPGRADE_DESCRIPTION": "선천성. NL 뽑을 카드 더미에 *화상을 2장 넣습니다. NL 매턴 카드를 사용할 때 마다 적 전체에게 mysterydungeon:화상 을 !M! 부여합니다."
     },
@@ -632,7 +632,7 @@
         "DESCRIPTION": "방어도를 !B! 얻습니다. NL 이번 턴에 공격을 받을 때 마다, 그 대상에게 mysterydungeon:화상 을 9 부여합니다."
     },
     "mysteryDungeon:CyndaquilHowl": {
-        "NAME": "멀리짖음",
+        "NAME": "멀리짖기",
         "DESCRIPTION": "뽑을 카드 더미에 *화상을 !M! 장 넣습니다. NL 다음 턴에 [E] [E] [E] 를 얻습니다."
     },
     "mysteryDungeon:CyndaquilIncinerate": {
@@ -796,11 +796,11 @@
         "UPGRADE_DESCRIPTION": "적에게 힘을 부여하거나 방어도를 부여한 경우 강화된 *난동 을 !M! 장 얻습니다."
     },
     "mysteryDungeon:MeowthNastyPlot": {
-        "NAME": "나쁜음모",
+        "NAME": "나쁜 음모",
         "DESCRIPTION": "골드를 !M! 소모합니다. NL 카드를 !mysteryDungeon:M2! 장 뽑습니다."
     },
     "mysteryDungeon:MeowthNightSlash": {
-        "NAME": "깜짝배기",
+        "NAME": "깜짝베기",
         "DESCRIPTION": "골드를 10 얻습니다. NL 적 전체에게 피해를 !D! 줍니다. NL 버린 카드 더미에 있는 비용이 0인 카드를 모두 손으로 가져옵니다. NL 소멸."
     },
     "mysteryDungeon:MeowthPayday": {
