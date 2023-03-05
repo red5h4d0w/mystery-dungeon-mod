@@ -858,7 +858,7 @@
     },
     "mysteryDungeon:MeowthTaunt": {
         "NAME": "Provoc",
-        "DESCRIPTION": "Gain !M! gold. NL End your turn. NL Exhaust."
+        "DESCRIPTION": "Gagnez !M! or. NL Terminez votre tour. NL Épuisement."
     },
     "mysteryDungeon:MeowthTechnician": {
         "NAME": "Technicien",
@@ -1288,7 +1288,7 @@
     "mysteryDungeon:TotodileDive": {
         "NAME": "Plongée",
         "DESCRIPTION": "Retenue. NL Défaussez !M! cartes de votre main.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Discard !M! cards from your hand. NL Draw 2 cards."
+        "UPGRADE_DESCRIPTION": "Retenue. NL Défaussez !M! cartes de votre main. NL Piochez 2 cartes."
     },
     "mysteryDungeon:TotodileDoubleTeam": {
         "NAME": "Reflet",
