@@ -116,7 +116,7 @@
     },
     "mysteryDungeon:BulbasaurRazorLeaf": {
         "NAME": "飞叶快刀",
-        "DESCRIPTION": "失去 !M! 生命值。 NL 造成 !D! 点伤害。"
+        "DESCRIPTION": "造成 !D! 点伤害。NL Draw 1 card."
     },
     "mysteryDungeon:BulbasaurRest": {
         "NAME": "睡觉",
@@ -193,11 +193,11 @@
     },
     "mysteryDungeon:CharmanderAirCutter": {
         "NAME": "Air Cutter",
-        "DESCRIPTION": "Deal !D! damage to ALL enemies !M! times."
+        "DESCRIPTION": "对所有敌人造成 !D! 点伤害 !M! 次。"
     },
     "mysteryDungeon:CharmanderAirSlash": {
         "NAME": "Air Slash",
-        "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, gain !B! Block."
+        "DESCRIPTION": "造成 !D! 点伤害。 NL 若敌人意图为攻击，获得 !B! 点格挡。"
     },
     "mysteryDungeon:CharmanderBlastBurn": {
         "NAME": "爆炸烈焰",
@@ -223,7 +223,7 @@
     },
     "mysteryDungeon:CharmanderDragonClaw": {
         "NAME": "龙爪",
-        "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL (当使用金属 mysterydungeon:爪 时，鳞片)"
+        "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL (可被 *金属 mysterydungeon:爪 增强伤害)"
     },
     "mysteryDungeon:CharmanderDragonDance": {
         "NAME": "龙之舞",
@@ -294,8 +294,8 @@
     },
     "mysteryDungeon:CharmanderFling": {
         "NAME": "Fling",
-        "DESCRIPTION": "Exhaust up to 4 cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! mysterydungeon:Burn NL Exhaust up to 4 cards. NL Deal !D! damage and apply !M! mysterydungeon:Burn per card exhausted that way. NL Exhaust."
+        "DESCRIPTION": "消耗最多 4 张牌。每因此消耗一张牌，造成 !D! 点伤害并施加 !M! 层 mysterydungeon:灼烧 。 NL 消耗。",
+        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害并施加 !M! 层 mysterydungeon:灼烧 。 NL 消耗最多 4 张牌。 NL 每因此消耗一张牌，造成 !D! 点伤害并施加 !M! 层 mysterydungeon:灼烧 。 NL 消耗。"
     },
     "mysteryDungeon:CharmanderFrustration": {
         "NAME": "迁怒",
