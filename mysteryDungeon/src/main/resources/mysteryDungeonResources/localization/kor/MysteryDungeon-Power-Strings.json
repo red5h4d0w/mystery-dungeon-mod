@@ -344,7 +344,7 @@
     "mysteryDungeon:PikachuExplorerPower": {
         "NAME": "탐험가의 자세",
         "DESCRIPTIONS": [
-            "턴 시작시 #b%s 번 발현하고 전기를 #b%s 번 영창합니다."
+            "턴 시작시 가장 오른쪽 구체를 발현하고 전기를 #b%s 번 영창합니다."
         ]
     },
     "mysteryDungeon:PsychUpPower": {
