@@ -57,7 +57,7 @@
     "mysteryDungeon:NuggetPotion": {
         "NAME": "Nugget",
         "DESCRIPTIONS": [
-            "Gain #b20 gold."
+            "Gain #b%s gold."
         ]
     },
     "mysteryDungeon:PikachuCandyPotion": {

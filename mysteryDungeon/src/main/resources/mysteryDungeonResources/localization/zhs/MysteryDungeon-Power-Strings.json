@@ -344,7 +344,7 @@
     "mysteryDungeon:PikachuExplorerPower": {
         "NAME": "皮卡丘·冒险者笔记",
         "DESCRIPTIONS": [
-            "在你的回合开始时，激发 #b%s 闪电充能球，如果你至少拥有1个充能球，在你的回合开始时，激发 #b%s 充能球。"
+            "在你的回合开始时，激发下一个充能球，然后生成 #b%s 闪电充能球。"
         ]
     },
     "mysteryDungeon:PsychUpPower": {

@@ -18,7 +18,7 @@
         ]
     },
     "mysteryDungeon:ElixirPotion": {
-        "NAME": "pp맥스",
+        "NAME": "PP맥스",
         "DESCRIPTIONS": [
             " [E] [E] [E] 를 얻습니다. 손에 #y화상 을 #b2 장 넣습니다.",
             " [E] [E] [E] [E] [E] [E] 를 얻습니다. 손에 #y화상 을 #b4 장 넣습니다."
@@ -57,7 +57,7 @@
     "mysteryDungeon:NuggetPotion": {
         "NAME": "금구슬",
         "DESCRIPTIONS": [
-            "골드를 #b10 얻습니다."
+            "골드를 #b%s 얻습니다."
         ]
     },
     "mysteryDungeon:PikachuCandyPotion": {

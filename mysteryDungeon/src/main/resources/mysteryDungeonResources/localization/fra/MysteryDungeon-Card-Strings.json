@@ -858,7 +858,7 @@
     },
     "mysteryDungeon:MeowthTaunt": {
         "NAME": "Provoc",
-        "DESCRIPTION": "Gagnez !M! or. NL Terminez votre tour."
+        "DESCRIPTION": "Gagnez !M! or. NL Terminez votre tour. NL Épuisement."
     },
     "mysteryDungeon:MeowthTechnician": {
         "NAME": "Technicien",
@@ -1288,7 +1288,7 @@
     "mysteryDungeon:TotodileDive": {
         "NAME": "Plongée",
         "DESCRIPTION": "Retenue. NL Défaussez !M! cartes de votre main.",
-        "UPGRADE_DESCRIPTION": "Retenue. NL Défaussez !M! cartes de votre main. NL Piochez 1 carte."
+        "UPGRADE_DESCRIPTION": "Retenue. NL Défaussez !M! cartes de votre main. NL Piochez 2 cartes."
     },
     "mysteryDungeon:TotodileDoubleTeam": {
         "NAME": "Reflet",
@@ -1318,8 +1318,8 @@
     },
     "mysteryDungeon:TotodileHydroPump": {
         "NAME": "Hydrocanon",
-        "DESCRIPTION": "Ne peut être utilisée que si vous n'avez plus de cartes dans votre pioche. NL Inflige !D! dégâts.",
-        "UPGRADE_DESCRIPTION": "Ne peut être utilisée que si vous n'avez que !M! cartes ou moins dans votre pioche. NL Inflige !D! dégâts."
+        "DESCRIPTION": "Retenue. NL Ne peut être utilisée que si vous n'avez plus de cartes dans votre pioche. NL Inflige !D! dégâts.",
+        "UPGRADE_DESCRIPTION": "Retenue. NL Ne peut être utilisée que si vous n'avez que !M! cartes ou moins dans votre pioche. NL Inflige !D! dégâts."
     },
     "mysteryDungeon:TotodileIceBeam": {
         "NAME": "Laser Glace",
@@ -1352,7 +1352,7 @@
     },
     "mysteryDungeon:TotodileStrength": {
         "NAME": "Force",
-        "DESCRIPTION": "Piochez !M! carte. NL Si vous piochez une Attaque par cet effet, canalisez un Orbe Glaciaire."
+        "DESCRIPTION": "Scrutez !M! cartes. NL Piochez !M! carte. NL Si vous piochez une Attaque par cet effet, canalisez un Orbe Glaciaire."
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "Surf",

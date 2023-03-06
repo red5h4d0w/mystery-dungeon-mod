@@ -13,7 +13,7 @@
     },
     "mysteryDungeon:ChooseAttack": {
         "NAME": "공격",
-        "DESCRIPTION": "손에 무작위 공격카드를 추가합니다."
+        "DESCRIPTION": "손에 무작위 공격 카드를 추가합니다."
     },
     "mysteryDungeon:ChooseNegative": {
         "NAME": "마이너스",
@@ -25,7 +25,7 @@
     },
     "mysteryDungeon:ChooseSkill": {
         "NAME": "스킬",
-        "DESCRIPTION": "손에 무작위 스킬카드를 추가합니다."
+        "DESCRIPTION": "손에 무작위 스킬 카드를 추가합니다."
     },
     "mysteryDungeon:StatusFreeze": {
         "NAME": "얼음",
@@ -33,12 +33,12 @@
     },
     "mysteryDungeon:BulbasaurBulletSeed": {
         "NAME": "씨기관총",
-        "DESCRIPTION": "피해를 !D! 만큼 !M! 번 줍니다. NL 강화 횟수에 제한이 없습니다."
+        "DESCRIPTION": "피해를 !D!만큼 !M!번 줍니다. NL 강화 횟수에 제한이 없습니다."
     },
     "mysteryDungeon:BulbasaurChlorophyll": {
         "NAME": "엽록소",
-        "DESCRIPTION": "카드를 !M! 장 뽑습니다. NL 공격 카드를 뽑았다면, 힘 을 1 얻습니다.",
-        "UPGRADE_DESCRIPTION": "카드를 !M! 장 뽑습니다. NL 뽑은 공격 카드 한 장당, 힘 을 1 얻습니다."
+        "DESCRIPTION": "카드를 !M! 장 뽑습니다. NL 공격 카드를 뽑았다면 힘을 1 얻습니다.",
+        "UPGRADE_DESCRIPTION": "카드를 !M!장 뽑습니다. NL 뽑은 공격 카드 한 장당 힘을 1 얻습니다."
     },
     "mysteryDungeon:BulbasaurDefend": {
         "NAME": "수비",
@@ -46,12 +46,12 @@
     },
     "mysteryDungeon:BulbasaurDefenseCurl": {
         "NAME": "웅크리기",
-        "DESCRIPTION": "방어도 를 !B! 얻습니다"
+        "DESCRIPTION": "방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:BulbasaurDoubleEdge": {
         "NAME": "이판사판태클",
-        "DESCRIPTION": "피해를 !D! 줍니다. NL 막히지 않은 피해만큼 힘 을 얻습니다. NL 소멸.",
-        "UPGRADE_DESCRIPTION": "피해를 !D! 만큼 !M! 번 줍니다. NL 막히지 않은 피해만큼 힘 을 얻습니다. NL 소멸."
+        "DESCRIPTION": "피해를 !D! 줍니다. NL 막히지 않은 피해만큼 힘을 얻습니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "피해를 !D!만큼 !M!번 줍니다. NL 막히지 않은 피해만큼 힘을 얻습니다. NL 소멸."
     },
     "mysteryDungeon:BulbasaurExplorerForm": {
         "NAME": "탐험가의 자세",
@@ -59,7 +59,7 @@
     },
     "mysteryDungeon:BulbasaurFrenzyPlant": {
         "NAME": "하드플랜트",
-        "DESCRIPTION": "피해를 !D! 만큼 !M! 번 줍니다. NL 중독 을 2 만큼 !M! 번 부여합니다. NL 이번 턴에 회복 할 수 없습니다."
+        "DESCRIPTION": "피해를 !D!만큼 !M!번 줍니다. NL 중독을 2만큼 !M!번 부여합니다. NL 이번 턴에 회복할 수 없습니다."
     },
     "mysteryDungeon:BulbasaurGigaDrain": {
         "NAME": "기가드레인",
@@ -71,7 +71,7 @@
     },
     "mysteryDungeon:BulbasaurGrowth": {
         "NAME": "성장",
-        "DESCRIPTION": "힘 을 !M! 얻습니다."
+        "DESCRIPTION": "힘을 !M! 얻습니다."
     },
     "mysteryDungeon:BulbasaurIngrain": {
         "NAME": "뿌리박기",
@@ -192,15 +192,15 @@
         "UPGRADE_DESCRIPTION": "상대 턴이 시작할 때 !M! mysterydungeon:잚듬 을 부여합니다. NL 소멸."
     },
     "mysteryDungeon:CharmanderAirCutter": {
-        "NAME": "에어컷터",
+        "NAME": "에어커터",
         "DESCRIPTION": "적 전체에게 피해를 !D! 만큼 !M! 번 줍니다."
     },
     "mysteryDungeon:CharmanderAirSlash": {
-        "NAME": "에어슬레시",
+        "NAME": "에어슬래시",
         "DESCRIPTION": "피해를 !D! 줍니다. NL 선택한 적이 공격할 의도가 있다면, 방어도 를 !B! 얻습니다."
     },
     "mysteryDungeon:CharmanderBlastBurn": {
-        "NAME": "블러스트 번",
+        "NAME": "블라스트번",
         "DESCRIPTION": "피해를 !D! 줍니다. NL 카드를 전부 소멸시킵니다."
     },
     "mysteryDungeon:CharmanderBlaze": {
@@ -210,11 +210,11 @@
     },
     "mysteryDungeon:CharmanderCounter": {
         "NAME": "카운터",
-        "DESCRIPTION": "방어도 를 !B! 얻습니다. NL 모든 방어도 를 잃고 피해를 받은 경우, 그 대상에게 피해를 !M! 줍니다."
+        "DESCRIPTION": "방어도를 !B! 얻습니다. NL 모든 방어도를 잃고 피해를 받은 경우, 그 대상에게 피해를 !M! 줍니다."
     },
     "mysteryDungeon:CharmanderDefend": {
         "NAME": "수비",
-        "DESCRIPTION": "방어도 를 !B! 얻습니다."
+        "DESCRIPTION": "방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:CharmanderDragonBreath": {
         "NAME": "용의 숨결",
@@ -222,11 +222,11 @@
         "UPGRADE_DESCRIPTION": "소멸된 카드 3 장당 [E] 를 얻습니다. NL [E] 를 얻습니다."
     },
     "mysteryDungeon:CharmanderDragonClaw": {
-        "NAME": "드래곤 클로",
+        "NAME": "드래곤클로",
         "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다."
     },
     "mysteryDungeon:CharmanderDragonDance": {
-        "NAME": "용춤",
+        "NAME": "용의 춤",
         "DESCRIPTION": "카드를 !M! 장 소멸시킵시다. NL 카드를 !mysteryDungeon:M2! 장 뽑습니다. NL (버릴 카드가 !M! 장 이상일 때 사용할 수 있습니다.)",
         "UPGRADE_DESCRIPTION": "카드를 !mysteryDungeon:M2! 장 뽑습니다. NL 카드를 !M! 장 소멸시킵니다."
     },
@@ -235,7 +235,7 @@
         "DESCRIPTION": "사용불가. NL 이 카드를 뽑을 경우: 소멸한 카드에 있는 무작위 카드를 뽑을 카드 더미 맨 위로 가져옵니다. NL 이 효과가 !M! 번 발생한 경우: 소멸합니다.",
         "EXTENDED_DESCRIPTION": [
             "이 카드는 사용할 수 없습니다.",
-            "뽑을 경우 : 소멸합니다."
+            "뽑으면 소멸합니다."
         ]
     },
     "mysteryDungeon:CharmanderDragonRage": {
@@ -247,16 +247,16 @@
         "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸된 카드 한장을 선택하고 버린 카드 더미에 추가합니다. NL 뽑을 카드 더미에 있는 카드 1장을 무작위로 소멸시킵니다. NL 소멸."
     },
     "mysteryDungeon:CharmanderDragonTail": {
-        "NAME": "드래곤 테일",
-        "DESCRIPTION": "사용불가. NL 소멸할 경우 : 적 전체에게 피해를 !D! 줍니다. NL 뽑을 카드 더미 맨 위의 이 카드를 1 장 복사해 가져옵니다.",
-        "UPGRADE_DESCRIPTION": "사용불가. NL 소멸할 경우 : 적 전체에게 피해를 !D! 줍니다. NL 뽑을 카드 더미 맨 위의 이 카드를 1 장 복사해 가져옵니다. NL 다음 턴에 카드를 1장 더 뽑습니다.",
+        "NAME": "드래곤테일",
+        "DESCRIPTION": "사용 불가. NL 소멸할 때 적 전체에게 피해를 !D! 줍니다. NL 뽑을 카드 더미 맨 위의 이 카드를 1장 복사해 가져옵니다.",
+        "UPGRADE_DESCRIPTION": "사용 불가. NL 소멸할 때 적 전체에게 피해를 !D! 줍니다. NL 뽑을 카드 더미 맨 위의 이 카드를 1장 복사해 가져옵니다. NL 다음 턴에 카드를 1장 더 뽑습니다.",
         "EXTENDED_DESCRIPTION": [
             "이 카드는 사용할 수 없습니다."
         ]
     },
     "mysteryDungeon:CharmanderDrought": {
         "NAME": "가뭄",
-        "DESCRIPTION": "mysterydungeon:화상 을 부여할때 마다, 추가로 !M! 만큼 더 부여합니다."
+        "DESCRIPTION": "mysterydungeon:화상 을 부여할 때마다, 추가로 !M! 만큼 더 부여합니다."
     },
     "mysteryDungeon:CharmanderEmber": {
         "NAME": "불꽃세례",
@@ -280,7 +280,7 @@
         "DESCRIPTION": "피해를 !D! 줍니다. NL mysterydungeon:화상 을 !M! 부여합니다."
     },
     "mysteryDungeon:CharmanderFireSpin": {
-        "NAME": "회오리 불꽃",
+        "NAME": "회오리불꽃",
         "DESCRIPTION": "선천성. NL mysterydungeon:화상 만큼 중독 을 부여합니다. NL 모든 mysterydungeon:화상 을 제거합니다.",
         "UPGRADE_DESCRIPTION": "mysterydungeon:화상 만큼 중독 을 부여합니다. NL 모든 mysterydungeon:화상 을 제거합니다."
     },
@@ -340,7 +340,7 @@
         "DESCRIPTION": "피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다. NL *메탈클로 를 사용할 때 피해량 대신 방어도 가 오릅니다."
     },
     "mysteryDungeon:CharmanderSleepTalk": {
-        "NAME": "TODO:",
+        "NAME": "잠꼬대",
         "DESCRIPTION": "매턴 1회 카드가 소멸될 경우, 무작위 카드를 1 장 얻습니다.",
         "UPGRADE_DESCRIPTION": "매턴 2회 카드가 소멸될 경우, 무작위 카드를 1 장 얻습니다."
     },
@@ -350,7 +350,7 @@
         "UPGRADE_DESCRIPTION": "불가침을 !M! 얻습니다. NL 약화를 2 얻습니다. NL 소멸."
     },
     "mysteryDungeon:CharmanderSolarPower": {
-        "NAME": "썬파워",
+        "NAME": "선파워",
         "DESCRIPTION": "턴 시작 시, 적이 mysterydungeon:화상 상태라면, 힘 을 1 얻습니다.",
         "UPGRADE_DESCRIPTION": "선천성. NL 턴 시작 시, 적이 mysterydungeon:화상 상태라면, 힘 을 1 얻습니다."
     },
@@ -364,7 +364,7 @@
         "UPGRADE_DESCRIPTION": "약화 를 X+1 부여합니다. NL  mysterydungeon:화상 을 3(X+1)부여합니다. NL 소멸"
     },
     "mysteryDungeon:ChikoritaAncientPower": {
-        "NAME": "원시의힘",
+        "NAME": "원시의 힘",
         "DESCRIPTION": "피해를 !D! 줍니다. NL 체력이 30% 이하일 때, 피해를 !D! 줍니다."
     },
     "mysteryDungeon:ChikoritaAromatherapy": {
@@ -414,7 +414,7 @@
         "DESCRIPTION": "남아있는 적의 체력에 33% 만큼 피해를 줍니다. NL 소멸."
     },
     "mysteryDungeon:ChikoritaGrassPledge": {
-        "NAME": "풀의맹세",
+        "NAME": "풀의 맹세",
         "DESCRIPTION": "mysterydungeon:임시체력 을 !M! 얻습니다. NL 이번 턴에 다른 mysterydungeon:맹세 카드를 사용했다면, 특별한 효과가 발동됩니다."
     },
     "mysteryDungeon:ChikoritaGrassWhistle": {
@@ -448,20 +448,20 @@
         "DESCRIPTION": "mysterydungeon:임시체력 을 !M! 얻습니다. NL 카드를 1 장 뽑습니다."
     },
     "mysteryDungeon:ChikoritaMagicalLeaf": {
-        "NAME": "메지컬리프",
+        "NAME": "매지컬리프",
         "DESCRIPTION": "무작위 적에게 피해를 !D! 만큼 !M! 줍니다."
     },
     "mysteryDungeon:ChikoritaNaturalGift": {
-        "NAME": "자연의은혜",
-        "DESCRIPTION": "힘을 !M! 얻습니다. NL 턴 종료시 방어도를 !mysteryDungeon:M2! 얻습니다."
+        "NAME": "자연의 은혜",
+        "DESCRIPTION": "힘을 !M! 얻습니다. NL 턴 종료 시 방어도를 !mysteryDungeon:M2! 얻습니다."
     },
     "mysteryDungeon:ChikoritaNaturePowerGrassland": {
-        "NAME": "자연의힘:풀",
+        "NAME": "자연의 힘: 풀",
         "DESCRIPTION": "체력을 4 잃습니다. NL 카드를 !M! 장 뽑습니다."
     },
     "mysteryDungeon:ChikoritaOvergrow": {
         "NAME": "심록",
-        "DESCRIPTION": "체력이 !M! 이상 회복될 때 마다, !M! 회복 당, 힘을 !mysteryDungeon:M2! 얻습니다."
+        "DESCRIPTION": "체력이 !M! 이상 회복될 때마다, !M! 회복당 힘을 !mysteryDungeon:M2! 얻습니다."
     },
     "mysteryDungeon:ChikoritaPetalBlizzard": {
         "NAME": "꽃보라",
@@ -479,7 +479,7 @@
         "DESCRIPTION": "체력을 !M! 잃습니다. NL 피해를 !D! 줍니다."
     },
     "mysteryDungeon:ChikoritaRefresh": {
-        "NAME": "리프레쉬",
+        "NAME": "리프레시",
         "DESCRIPTION": "mysterydungeon:임시체력 을 !M! 얻습니다."
     },
     "mysteryDungeon:ChikoritaSecretPower": {
@@ -506,7 +506,7 @@
         "UPGRADE_DESCRIPTION": "내 턴에 3 체력을 잃을 때 마다, 카드를 1장 뽑습니다."
     },
     "mysteryDungeon:ChikoritaSweetScent": {
-        "NAME": "달콤한향기",
+        "NAME": "달콤한 향기",
         "DESCRIPTION": "mysterydungeon:회피율_감소 를 !M! 부여합니다. NL 취약을 !M! 부여합니다."
     },
     "mysteryDungeon:ChikoritaSynthesis": {
@@ -539,7 +539,7 @@
         "DESCRIPTION": "피해를 !D! 줍니다. NL 체력을 !M! 잃습니다."
     },
     "mysteryDungeon:CyndaquilBlastBurn": {
-        "NAME": "블러스트번",
+        "NAME": "블라스트번",
         "DESCRIPTION": "피해를 !D! 줍니다. NL  mysterydungeon:화상 을 !M! 부여합니다. mysterydungeon:분화 를 발동합니다. NL 턴을 종료합니다."
     },
     "mysteryDungeon:CyndaquilBurnUp": {
@@ -552,7 +552,7 @@
         "UPGRADE_DESCRIPTION": "턴 종료시, 남은 [E] 를 모두 소모합니다. 이 카드로 소모한 [E] 당 방어도를 !M! 얻습니다. NL 방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:CyndaquilCrushClaw": {
-        "NAME": "브레이크크루",
+        "NAME": "브레이크클로",
         "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 다음 턴에 mysterydungeon:분화 의 피해가 50% 증가합니다. NL 소멸.",
         "UPGRADE_DESCRIPTION": "적 전체에게 피해를 !D! 줍니다. NL 다음 턴에 mysterydungeon:분화 의 피해가 50% 증가합니다."
     },
@@ -613,7 +613,7 @@
         "DESCRIPTION": "피해를 !D! 줍니다. NL 덱에 있는 상태이상 카드 수만큼 이 카드의 비용이 1 감소합니다."
     },
     "mysteryDungeon:CyndaquilFlashFire": {
-        "NAME": "타오르는불꽃",
+        "NAME": "타오르는 불꽃",
         "DESCRIPTION": "뽑을 카드 더미에 *화상을 2장 넣습니다. NL 매턴 카드를 사용할 때 마다 적 전체에게 mysterydungeon:화상 을 !M! 부여합니다.",
         "UPGRADE_DESCRIPTION": "선천성. NL 뽑을 카드 더미에 *화상을 2장 넣습니다. NL 매턴 카드를 사용할 때 마다 적 전체에게 mysterydungeon:화상 을 !M! 부여합니다."
     },
@@ -632,7 +632,7 @@
         "DESCRIPTION": "방어도를 !B! 얻습니다. NL 이번 턴에 공격을 받을 때 마다, 그 대상에게 mysterydungeon:화상 을 9 부여합니다."
     },
     "mysteryDungeon:CyndaquilHowl": {
-        "NAME": "멀리짖음",
+        "NAME": "멀리짖기",
         "DESCRIPTION": "뽑을 카드 더미에 *화상을 !M! 장 넣습니다. NL 다음 턴에 [E] [E] [E] 를 얻습니다."
     },
     "mysteryDungeon:CyndaquilIncinerate": {
@@ -684,8 +684,8 @@
         "DESCRIPTION": "이번 턴에 사용한 카드 수 만큼 피해를 !D! 주고 방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:CyndaquilShadowClaw": {
-        "NAME": "섀도크루",
-        "DESCRIPTION": "뽑을 카드 더미에 *어지러움을 1 장 넣습니다. NL 피해를 !D! 줍니다."
+        "NAME": "섀도클로",
+        "DESCRIPTION": "뽑을 카드 더미에 *어지러움을 1장 넣습니다. NL 피해를 !D! 줍니다."
     },
     "mysteryDungeon:CyndaquilSleepTalk": {
         "NAME": "잠꼬대",
@@ -796,11 +796,11 @@
         "UPGRADE_DESCRIPTION": "적에게 힘을 부여하거나 방어도를 부여한 경우 강화된 *난동 을 !M! 장 얻습니다."
     },
     "mysteryDungeon:MeowthNastyPlot": {
-        "NAME": "나쁜음모",
+        "NAME": "나쁜 음모",
         "DESCRIPTION": "골드를 !M! 소모합니다. NL 카드를 !mysteryDungeon:M2! 장 뽑습니다."
     },
     "mysteryDungeon:MeowthNightSlash": {
-        "NAME": "깜짝배기",
+        "NAME": "깜짝베기",
         "DESCRIPTION": "골드를 10 얻습니다. NL 적 전체에게 피해를 !D! 줍니다. NL 버린 카드 더미에 있는 비용이 0인 카드를 모두 손으로 가져옵니다. NL 소멸."
     },
     "mysteryDungeon:MeowthPayday": {
@@ -823,7 +823,7 @@
         "DESCRIPTION": "피해를 !D! 줍니다. NL 적에 힘 의 !M! 배 만큼 추가로 피해를 줍니다."
     },
     "mysteryDungeon:MeowthRoar": {
-        "NAME": "울부짓기",
+        "NAME": "울부짖기",
         "DESCRIPTION": "힘을 !M! 부여합니다. NL 약화를 99 부여합니다. NL 소멸."
     },
     "mysteryDungeon:MeowthScratch": {
@@ -858,7 +858,7 @@
     },
     "mysteryDungeon:MeowthTaunt": {
         "NAME": "도발",
-        "DESCRIPTION": "골드를 !M! 얻습니다. NL 턴을 종료합니다."
+        "DESCRIPTION": "골드를 !M! 얻습니다. NL 턴을 종료합니다. NL 소멸."
     },
     "mysteryDungeon:MeowthTechnician": {
         "NAME": "테크니션",
@@ -992,7 +992,7 @@
         "DESCRIPTION": "mysterydungeon:절연체. NL 피해를 !D! 줍니다. NL 턴 종료 시, *전압 *표시기 가 중앙으로 돌아오지 않습니다. NL 소멸."
     },
     "mysteryDungeon:PikachuSpeedSwap": {
-        "NAME": "스피드스웹",
+        "NAME": "스피드스왑",
         "DESCRIPTION": "mysterydungeon:절연체. NL mysterydungeon:마이너스상태 가 됩니다. NL 소멸.",
         "UPGRADE_DESCRIPTION": "mysterydungeon:절연체. NL 보존. NL mysterydungeon:마이너스상태 가 됩니다. NL 소멸."
     },
@@ -1097,12 +1097,12 @@
         "UPGRADE_DESCRIPTION": "선천성. NL 내 턴 시작시 뽑을 카드 더미 맨 위 부터 카드 1 장을 가져옵니다. NL 이 효과는 매 턴 1만큼 증가합니다."
     },
     "mysteryDungeon:SquirtleFakeOut": {
-        "NAME": "속이다",
+        "NAME": "속이기",
         "DESCRIPTION": "선천성. NL 피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다. NL 예지 !M! NL 소멸.",
         "UPGRADE_DESCRIPTION": "선천성. NL 피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다. NL 예지 !M! NL 소멸."
     },
     "mysteryDungeon:SquirtleFlashCannon": {
-        "NAME": "러스트 캐논",
+        "NAME": "러스터캐논",
         "DESCRIPTION": "버린 카드 더미에 있는 카드의 수만큼 피해를 줍니다.",
         "UPGRADE_DESCRIPTION": "버린 카드 더미에 있는 카드의 수에 3을 더한 만큼 피해를 줍니다.",
         "EXTENDED_DESCRIPTION": [
@@ -1187,7 +1187,7 @@
         "DESCRIPTION": "힘을 !M! 얻습니다. NL 뽑을 카드 더미에 *얼음 을 !mysteryDungeon:M2! 장 넣습니다."
     },
     "mysteryDungeon:SquirtleSkullBashGo": {
-        "NAME": "로켓박치기:발싸",
+        "NAME": "로켓박치기 발사!",
         "DESCRIPTION": "보존. NL 적 전체에게 피해를 !D! 줍니다. NL 이 카드가 패에 가장 왼쪽에 있는 카드라면 적 전체에게 피해를 !D! 줍니다. NL 소멸.",
         "UPGRADE_DESCRIPTION": "보존. NL 적 전체에게 피해를 !D! 줍니다. NL 이 카드가 패에 가장 왼쪽에 있는 카드라면 적 전체에게 피해를 !D! 줍니다. NL 소멸."
     },
@@ -1288,7 +1288,7 @@
     "mysteryDungeon:TotodileDive": {
         "NAME": "다이빙",
         "DESCRIPTION": "보존. NL 카드를 !M! 장 버립니다.",
-        "UPGRADE_DESCRIPTION": "보존. NL 카드를 !M! 장 버립니다. NL 카드를 1장 뽑습니다."
+        "UPGRADE_DESCRIPTION": "보존. NL 카드를 !M! 장 버립니다. NL 카드를 2장 뽑습니다."
     },
     "mysteryDungeon:TotodileDoubleTeam": {
         "NAME": "그림자분신",
@@ -1318,8 +1318,8 @@
     },
     "mysteryDungeon:TotodileHydroPump": {
         "NAME": "하이드로펌프",
-        "DESCRIPTION": "뽑을 카드 더미에 카드가 하나도 없을 때만 사용할 수 있습니다. NL 피해를 !D! 줍니다.",
-        "UPGRADE_DESCRIPTION": "뽑을 카드 더미에 카드가 !M! 장 이하일 때만 사용할 수 있습니다. NL 피해를 !D! 줍니다."
+        "DESCRIPTION": "보존. 뽑을 카드 더미에 남은 카드가 없을 때만 사용할 수 있습니다. NL 피해를 !D! 줍니다.",
+        "UPGRADE_DESCRIPTION": "보존. 뽑을 카드 더미에 카드가 !M! 장 이하일 때만 사용할 수 있습니다. NL 피해를 !D! 줍니다."
     },
     "mysteryDungeon:TotodileIceBeam": {
         "NAME": "냉동빔",
@@ -1335,7 +1335,7 @@
         "DESCRIPTION": "피해를 !D! 줍니다. NL 냉기를 !M! 번 영창합니다. NL 구체를 !M! 1번 발현합니다."
     },
     "mysteryDungeon:TotodileIcyWind": {
-        "NAME": "얼다바람",
+        "NAME": "얼어붙은바람",
         "DESCRIPTION": "mysterydungeon:절연체. NL 냉기를 !M! 번 영창합니다. NL 소멸."
     },
     "mysteryDungeon:TotodileLiquidation": {
@@ -1352,7 +1352,7 @@
     },
     "mysteryDungeon:TotodileStrength": {
         "NAME": "괴력",
-        "DESCRIPTION": "카드를 !M! 장 뽑습니다. NL 공격 카드를 뽑았다면, 냉기를 1번 영창합니다."
+        "DESCRIPTION": "예지 !M! . NL 카드를 !M! 장 뽑습니다. NL 공격 카드를 뽑았다면, 냉기를 1번 영창합니다."
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "파도타기",

@@ -14,7 +14,7 @@
         ]
     },
     "mysteryDungeon:AsleepPower": {
-        "NAME": "잚듬",
+        "NAME": "잠듦",
         "DESCRIPTIONS": [
             "피해를 입을 때까지 행동하지 않습니다. 피해를 입을 경우, 잠자기 전 행동으로 돌아갑니다.",
             "피해를 입을 때까지 행동하지 않습니다. 피해를 입을 경우, 잠자기 전 행동으로 돌아갑니다."
@@ -49,8 +49,8 @@
     "mysteryDungeon:BlazePower": {
         "NAME": "맹화",
         "DESCRIPTIONS": [
-            "매턴 1 회 남은 에너지가 없을때, [E] 를 얻습니다.",
-            "매턴 #b%s 회 남은 에너지가 없을때, [E] 를 얻습니다."
+            "매턴 1회 남은 에너지가 없을 때 [E] 를 얻습니다.",
+            "매 턴 #b%s 회 남은 에너지가 없을 때 [E] 를 얻습니다."
         ]
     },
     "mysteryDungeon:BurnPower": {
@@ -106,23 +106,23 @@
         ]
     },
     "mysteryDungeon:CrushClawPower": {
-        "NAME": "브레이크크루",
+        "NAME": "브레이크클로",
         "DESCRIPTIONS": [
-            "다음 턴에 #y분화 의 피해량이 50% 증가합니다.",
-            "#b%s 턴 동안 #y분화 의 피해량이 50% 증가합니다."
+            "다음 턴에 #y분화의 피해량이 50% 증가합니다.",
+            "#b%s턴 동안 #y분화의 피해량이 50% 증가합니다."
         ]
     },
     "mysteryDungeon:DroughtPower": {
         "NAME": "가뭄",
         "DESCRIPTIONS": [
-            "#y화상 을 부여할때 마다 추가로 #b%s 만큼 더 부여합니다.",
-            "#y화상 을 부여할때 마다 추가로 #b%s 만큼 더 부여합니다."
+            "#y화상을 부여할 때마다 추가로 #b%s만큼 더 부여합니다.",
+            "#y화상을 부여할 때마다 추가로 #b%s만큼 더 부여합니다."
         ]
     },
     "mysteryDungeon:EncorePower": {
-        "NAME": "앵콜",
+        "NAME": "앙코르",
         "DESCRIPTIONS": [
-            "이번 턴에 사용하는 #y공격카드 또는 #y스킬카드가 2 번 사용됩니다."
+            "이번 턴에 사용하는 #y공격 카드나 #y스킬 카드가 2번 사용됩니다."
         ]
     },
     "mysteryDungeon:EndurePower": {
@@ -344,7 +344,7 @@
     "mysteryDungeon:PikachuExplorerPower": {
         "NAME": "탐험가의 자세",
         "DESCRIPTIONS": [
-            "턴 시작시 #b%s 번 발현하고 전기를 #b%s 번 영창합니다."
+            "턴 시작시 가장 오른쪽 구체를 발현하고 전기를 #b%s 번 영창합니다."
         ]
     },
     "mysteryDungeon:PsychUpPower": {
