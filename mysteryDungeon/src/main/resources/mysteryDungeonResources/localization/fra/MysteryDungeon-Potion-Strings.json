@@ -57,7 +57,7 @@
     "mysteryDungeon:NuggetPotion": {
         "NAME": "Pépite",
         "DESCRIPTIONS": [
-            "Gagnez #b20 or."
+            "Gagnez #b%s or."
         ]
     },
     "mysteryDungeon:PikachuCandyPotion": {
