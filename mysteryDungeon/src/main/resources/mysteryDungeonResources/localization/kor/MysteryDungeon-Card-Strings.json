@@ -1352,7 +1352,7 @@
     },
     "mysteryDungeon:TotodileStrength": {
         "NAME": "괴력",
-        "DESCRIPTION": "Scry !M! card. NL Draw !M! card. NL If you drew an Attack card this way, channel 1 Frost."
+        "DESCRIPTION": "예지 !M! . NL 카드를 !M! 장 뽑습니다. NL 공격 카드를 뽑았다면, 냉기를 1번 영창합니다."
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "파도타기",
