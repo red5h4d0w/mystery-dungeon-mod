@@ -116,7 +116,7 @@
     },
     "mysteryDungeon:BulbasaurRazorLeaf": {
         "NAME": "飞叶快刀",
-        "DESCRIPTION": "造成 !D! 点伤害。NL 抽 1 张牌。"
+        "DESCRIPTION": "失去 !M! 生命值。 NL 造成 !D! 点伤害。"
     },
     "mysteryDungeon:BulbasaurRest": {
         "NAME": "睡觉",
