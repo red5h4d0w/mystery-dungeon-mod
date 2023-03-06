@@ -116,7 +116,7 @@
     },
     "mysteryDungeon:BulbasaurRazorLeaf": {
         "NAME": "飞叶快刀",
-        "DESCRIPTION": "造成 !D! 点伤害。NL Draw 1 card."
+        "DESCRIPTION": "造成 !D! 点伤害。NL 抽 1 张牌。"
     },
     "mysteryDungeon:BulbasaurRest": {
         "NAME": "睡觉",
@@ -317,7 +317,7 @@
     },
     "mysteryDungeon:CharmanderMetalClaw": {
         "NAME": "金属爪",
-        "DESCRIPTION": "造成 !D! 点伤害。 NL 本回合，所有“ mysterydungeon:爪 ”牌额外造成 !M! 点伤害。"
+        "DESCRIPTION": "造成 !D! 点伤害。 NL 本场战斗，所有“ mysterydungeon:爪 ”牌额外造成 !M! 点伤害。"
     },
     "mysteryDungeon:CharmanderOutrage": {
         "NAME": "逆鳞",
@@ -337,12 +337,12 @@
     },
     "mysteryDungeon:CharmanderShadowClaw": {
         "NAME": "影爪",
-        "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 当使用金属 mysterydungeon:爪 时，该牌获得更多 格挡 。"
+        "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 当使用金属 mysterydungeon:爪 时，该牌获得更多 格挡 而不是更多伤害。"
     },
     "mysteryDungeon:CharmanderSleepTalk": {
         "NAME": "Sleep Talk",
-        "DESCRIPTION": "The first time you exhaust a card each turn, add a random card to your hand.",
-        "UPGRADE_DESCRIPTION": "The first 2 times you exhaust a card each turn, add a random card to your hand."
+        "DESCRIPTION": "每回合第一次消耗卡牌后，向手牌添加一张随机牌。",
+        "UPGRADE_DESCRIPTION": "每回合前两次消耗卡牌后，向手牌添加一张随机牌。"
     },
     "mysteryDungeon:CharmanderSmokescreen": {
         "NAME": "烟幕",
