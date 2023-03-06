@@ -226,7 +226,7 @@
         "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다."
     },
     "mysteryDungeon:CharmanderDragonDance": {
-        "NAME": "용의 춤",
+        "NAME": "용의춤",
         "DESCRIPTION": "카드를 !M! 장 소멸시킵시다. NL 카드를 !mysteryDungeon:M2! 장 뽑습니다. NL (버릴 카드가 !M! 장 이상일 때 사용할 수 있습니다.)",
         "UPGRADE_DESCRIPTION": "카드를 !mysteryDungeon:M2! 장 뽑습니다. NL 카드를 !M! 장 소멸시킵니다."
     },
@@ -858,7 +858,7 @@
     },
     "mysteryDungeon:MeowthTaunt": {
         "NAME": "도발",
-        "DESCRIPTION": "골드를 !M! 얻습니다. NL 턴을 종료합니다. NL 소멸."
+        "DESCRIPTION": "골드를 !M! 얻습니다. NL 턴을 종료합니다."
     },
     "mysteryDungeon:MeowthTechnician": {
         "NAME": "테크니션",
@@ -1288,7 +1288,7 @@
     "mysteryDungeon:TotodileDive": {
         "NAME": "다이빙",
         "DESCRIPTION": "보존. NL 카드를 !M! 장 버립니다.",
-        "UPGRADE_DESCRIPTION": "보존. NL 카드를 !M! 장 버립니다. NL 카드를 2장 뽑습니다."
+        "UPGRADE_DESCRIPTION": "보존. NL 카드를 !M! 장 버립니다. NL 카드를 1장 뽑습니다."
     },
     "mysteryDungeon:TotodileDoubleTeam": {
         "NAME": "그림자분신",
@@ -1318,8 +1318,8 @@
     },
     "mysteryDungeon:TotodileHydroPump": {
         "NAME": "하이드로펌프",
-        "DESCRIPTION": "보존. 뽑을 카드 더미에 남은 카드가 없을 때만 사용할 수 있습니다. NL 피해를 !D! 줍니다.",
-        "UPGRADE_DESCRIPTION": "보존. 뽑을 카드 더미에 카드가 !M! 장 이하일 때만 사용할 수 있습니다. NL 피해를 !D! 줍니다."
+        "DESCRIPTION": "뽑을 카드 더미에 카드가 하나도 없을 때만 사용할 수 있습니다. NL 피해를 !D! 줍니다.",
+        "UPGRADE_DESCRIPTION": "뽑을 카드 더미에 카드가 !M! 장 이하일 때만 사용할 수 있습니다. NL 피해를 !D! 줍니다."
     },
     "mysteryDungeon:TotodileIceBeam": {
         "NAME": "냉동빔",
@@ -1352,7 +1352,7 @@
     },
     "mysteryDungeon:TotodileStrength": {
         "NAME": "괴력",
-        "DESCRIPTION": "예지 !M! . NL 카드를 !M! 장 뽑습니다. NL 공격 카드를 뽑았다면, 냉기를 1번 영창합니다."
+        "DESCRIPTION": "카드를 !M! 장 뽑습니다. NL 공격 카드를 뽑았다면, 냉기를 1번 영창합니다."
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "파도타기",
