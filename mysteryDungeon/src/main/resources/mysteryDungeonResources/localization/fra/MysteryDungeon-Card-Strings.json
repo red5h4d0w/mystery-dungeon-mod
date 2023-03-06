@@ -1318,8 +1318,8 @@
     },
     "mysteryDungeon:TotodileHydroPump": {
         "NAME": "Hydrocanon",
-        "DESCRIPTION": "Retain. NL Can only be used if there are no cards left in your draw pile. NL Deal !D! damage.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Can only be used if there are !M! cards or less in your draw pile. NL Deal !D! damage."
+        "DESCRIPTION": "Retenue. NL Ne peut être utilisée que si vous n'avez plus de cartes dans votre pioche. NL Inflige !D! dégâts.",
+        "UPGRADE_DESCRIPTION": "Retenue. NL Ne peut être utilisée que si vous n'avez que !M! cartes ou moins dans votre pioche. NL Inflige !D! dégâts."
     },
     "mysteryDungeon:TotodileIceBeam": {
         "NAME": "Laser Glace",
@@ -1352,7 +1352,7 @@
     },
     "mysteryDungeon:TotodileStrength": {
         "NAME": "Force",
-        "DESCRIPTION": "Scry !M! card. NL Draw !M! card. NL If you drew an Attack card this way, channel 1 Frost."
+        "DESCRIPTION": "Scrutez !M! cartes. NL Piochez !M! carte. NL Si vous piochez une Attaque par cet effet, canalisez un Orbe Glaciaire."
     },
     "mysteryDungeon:TotodileSurf": {
         "NAME": "Surf",
