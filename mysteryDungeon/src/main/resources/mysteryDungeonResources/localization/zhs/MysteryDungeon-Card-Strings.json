@@ -356,7 +356,7 @@
     },
     "mysteryDungeon:CharmanderTailWind": {
         "NAME": "Tail Wind",
-        "DESCRIPTION": "At the start of your turn, draw !M! more card. NL The first card you play each turn costs 0 and exhausts."
+        "DESCRIPTION": "回合开始时，额外再抽 !M! 张牌。 NL 每回合你打出的第一张牌耗能为 0 并获得消耗。"
     },
     "mysteryDungeon:CharmanderWillOWisp": {
         "NAME": "鬼火",
@@ -365,16 +365,16 @@
     },
     "mysteryDungeon:ChikoritaAncientPower": {
         "NAME": "Ancient Power",
-        "DESCRIPTION": "Deal !D! damage. NL If you are missing more then 30% of your health, deal !D! damage."
+        "DESCRIPTION": "造成 !D! 点伤害。 NL 如果你失去超过 30% 的生命值, 再造成 !D! 点伤害。"
     },
     "mysteryDungeon:ChikoritaAromatherapy": {
         "NAME": "Aromatherapy",
-        "DESCRIPTION": "Whenever you take damage, gain !M! Strength.",
-        "UPGRADE_DESCRIPTION": "Whenever you take damage, gain !M! Strength. NL Next turn, lose 1 HP"
+        "DESCRIPTION": "每当你受到伤害时，获得 !M! 点力量。",
+        "UPGRADE_DESCRIPTION": "每当你受到伤害时，获得 !M! 点力量。 NL 下一回合，失去 1 点生命值。"
     },
     "mysteryDungeon:ChikoritaBodySlam": {
         "NAME": "Body Slam",
-        "DESCRIPTION": "Deal !D! damage. NL Next Turn, lose !M! HP."
+        "DESCRIPTION": "造成 !D! 点伤害。 NL 下一回合，失去 !M! 点生命。"
     },
     "mysteryDungeon:ChikoritaConfide": {
         "NAME": "Confide",
@@ -954,8 +954,8 @@
     },
     "mysteryDungeon:PikachuCalmMind": {
         "NAME": "Calm Mind",
-        "DESCRIPTION": "Gain !M! Orb slot.",
-        "UPGRADE_DESCRIPTION": "Gain !M! Orb slots."
+        "DESCRIPTION": "获得 !M! 个充能球栏位。",
+        "UPGRADE_DESCRIPTION": "获得 !M! 个充能球栏位。"
     },
     "mysteryDungeon:PikachuNuzzle": {
         "NAME": "蹭蹭脸颊",
@@ -1045,8 +1045,8 @@
     },
     "mysteryDungeon:PikachuWildCharge": {
         "NAME": "疯狂伏特",
-        "DESCRIPTION": "mysterydungeon:Inert. NL Evoke all Orbs twice.",
-        "UPGRADE_DESCRIPTION": "Evoke ALL Orbs twice."
+        "DESCRIPTION": "mysterydungeon:惰性 。 NL 激发所有充能球两次。",
+        "UPGRADE_DESCRIPTION": "激发所有充能球两次。"
     },
     "mysteryDungeon:PikachuZapCannon": {
         "NAME": "电磁炮",
