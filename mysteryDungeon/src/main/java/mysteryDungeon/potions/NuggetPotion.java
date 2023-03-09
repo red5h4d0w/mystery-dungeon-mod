@@ -55,7 +55,7 @@ public class NuggetPotion extends PokemonPotion {
     // This is your potency.
     @Override
     public int getPotency(final int potency) {
-        return 10;
+        return 20;
     }
 
     public boolean canUse() {
