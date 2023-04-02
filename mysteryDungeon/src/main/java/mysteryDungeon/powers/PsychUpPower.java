@@ -53,7 +53,6 @@ public class PsychUpPower extends PokemonPower implements CloneablePowerInterfac
 
     @Override
     public boolean betterOnApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        // TODO Auto-generated method stub
         if(source == owner && target!=owner && power instanceof StrengthPower && power.amount >= 0) {
             addToBot(new ApplyPowerAction(owner, owner, new StrengthPower(owner, amount), amount));
         }
