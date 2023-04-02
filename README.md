@@ -6,10 +6,10 @@ Created with Default base mod as a template
 
 This mod introduces
 
-* 4 new characters.
-* A total of 163 new cards.
-* 8 new relics.
-* 8 new potions. 
+* 8 new characters.
+* A total of many new cards.
+* lots of new relics.
+* lots of new potions. 
 
 
 ## Bulbasaur

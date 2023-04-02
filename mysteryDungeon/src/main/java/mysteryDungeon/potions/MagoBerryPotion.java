@@ -59,7 +59,7 @@ public class MagoBerryPotion extends PokemonPotion {
     public void use(AbstractCreature target) {
         addToBot(new HealAction(AbstractDungeon.player, AbstractDungeon.player, potency));
         addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new PoisonPower(AbstractDungeon.player, AbstractDungeon.player, potency/5), potency/5));
-      }
+    }
     
     @Override
     public AbstractPotion makeCopy() {
