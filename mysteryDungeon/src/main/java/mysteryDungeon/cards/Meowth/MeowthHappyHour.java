@@ -5,15 +5,18 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 import com.megacrit.cardcrawl.actions.common.GainGoldAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.GetAllInBattleInstances;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
-import mysteryDungeon.actions.IncreaseMoneyAction;
+import mysteryDungeon.actions.SimpleAction;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.interfaces.onLoadCardMiscInterface;
 
-public class MeowthHappyHour extends PokemonCard {
+public class MeowthHappyHour extends PokemonCard implements onLoadCardMiscInterface {
 
     // TEXT DECLARATION
 
@@ -43,8 +46,9 @@ public class MeowthHappyHour extends PokemonCard {
 
     public MeowthHappyHour() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseMagicNumber = BASE_MAGIC_NUMBER;
-        magicNumber = BASE_MAGIC_NUMBER;
+        misc = BASE_MAGIC_NUMBER;
+        baseMagicNumber = misc;
+        magicNumber = baseMagicNumber;
         baseSecondMagicNumber = BASE_SECOND_MAGIC_NUMBER;
         secondMagicNumber = baseSecondMagicNumber;
         exhaust = true;
@@ -53,10 +57,23 @@ public class MeowthHappyHour extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new IncreaseMoneyAction(this.uuid, secondMagicNumber));
+        addToBot(new SimpleAction(() -> {
+            AbstractDungeon.player.masterDeck.group.stream()
+                .filter(c -> c.uuid == uuid)
+                .forEach(c -> {
+                    c.misc += secondMagicNumber;
+                    c.applyPowers();
+                    c.baseMagicNumber = c.misc;
+                    c.magicNumber = c.misc;
+                });
+            GetAllInBattleInstances.get(uuid).stream().forEach(c -> {
+                c.misc += secondMagicNumber;
+                c.applyPowers();
+                c.baseMagicNumber = c.misc;
+                c.magicNumber = c.misc;
+            });
+        }));
         addToBot(new GainGoldAction(magicNumber));
-
-        
     }
 
     // Upgraded stats.
@@ -67,5 +84,12 @@ public class MeowthHappyHour extends PokemonCard {
             upgradeSecondMagicNumber(UPGRADE_SECOND_MAGIC_NUMBER);
             initializeDescription();
         }
+    }
+
+    @Override
+    public void onLoadCardMisc(int miscAmount) {
+        baseMagicNumber = miscAmount;
+        magicNumber = miscAmount;
+        initializeDescription();
     }
 }
