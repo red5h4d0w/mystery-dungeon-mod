@@ -584,7 +584,7 @@
     },
     "mysteryDungeon:CyndaquilFireBlast": {
         "NAME": "Déflagration",
-        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Brûlure. NL Augmentez de manière permanente la quantité de mysterydungeon:Brûlure que cette carte applique de !myseryDungeon:M2!. NL Épuisement."
+        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Brûlure. NL Augmentez de manière permanente la quantité de mysterydungeon:Brûlure que cette carte applique de !mysteryDungeon:M2!. NL Épuisement."
     },
     "mysteryDungeon:CyndaquilFirePledge": {
         "NAME": "Aire de Feu",
