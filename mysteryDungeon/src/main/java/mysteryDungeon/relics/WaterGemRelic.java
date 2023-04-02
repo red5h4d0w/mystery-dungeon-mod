@@ -41,7 +41,7 @@ public class WaterGemRelic extends PokemonRelic {
             return;
         }
         if(damageAmount > 20) {
-            addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(5), DamageType.THORNS, AttackEffect.FIRE));
+            addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(5), DamageType.THORNS, AttackEffect.FIRE));
         }
     }
     @Override
