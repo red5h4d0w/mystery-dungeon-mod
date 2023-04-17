@@ -7,24 +7,24 @@
         ]
     },
     "mysteryDungeon:AmuletCoinRelic": {
-        "NAME": "Amulet Coin",
-        "FLAVOR": "It doubles any prize money received as long as the holder joins the battle at least once.",
+        "NAME": "守护金币",
+        "FLAVOR": "只要持有人至少一次参加战斗，它就会使收到的任何奖金增加一倍。",
         "DESCRIPTIONS": [
-            "Cards no longer cost you money in combat. At the start of your turn, spend #b20 gold."
+            "卡片在战斗中不再需要钱。在你的回合开始时，花掉 #b20 金币。"
         ]
     },
     "mysteryDungeon:BigRootRelic": {
-        "NAME": "Big Root",
-        "FLAVOR": "What is this?",
+        "NAME": "大根茎",
+        "FLAVOR": "这是什么？",
         "DESCRIPTIONS": [
-            "Whenever you are at #b70% or less of your max HP, gain #yRecovery."
+            "当你的HP少于 #b70% 时，获得 #yRecovery。"
         ]
     },
     "mysteryDungeon:BlackGlassesRelic": {
-        "NAME": "Black Glasses",
-        "FLAVOR": "It's a pair of shady- looking glasses that boost the power of the holder's Dark-type moves.",
+        "NAME": "黑色眼镜",
+        "FLAVOR": "这是一双漆黑的眼镜，可以提升持有者暗属性招式的力量",
         "DESCRIPTIONS": [
-            "At the start of each turn, deal damage to ALL enemies equal to their #yStrength."
+            "每回合开始时，对所有敌人造成等于其 #yStrength 的伤害。"
         ]
     },
     "mysteryDungeon:BraveExplorerRelic": {
@@ -63,24 +63,24 @@
         ]
     },
     "mysteryDungeon:FireGemRelic": {
-        "NAME": "Fire Gem",
-        "FLAVOR": "This gem is imbued with the essence of fire and will boost the power of a Fire-type moves, but only once.",
+        "NAME": "火之宝石",
+        "FLAVOR": "这个宝石充满了火焰的精华，可以提升火属性招式的力量，但是只能使用一次",
         "DESCRIPTIONS": [
-            "At the start of each combat, apply #b10 #yBurn to ALL enemies."
+            "每场战斗开始时，向所有敌人施加 #b10 层 #y烧伤 。"
         ]
     },
     "mysteryDungeon:FlamePlateRelic": {
-        "NAME": "Flame Plate",
-        "FLAVOR": "This stone tablet is imbued with the essence of fire and boosts the power of the holder's Fire-type moves.",
+        "NAME": "火焰石板",
+        "FLAVOR": "这个宝石充满了火焰的精华，可以提升火属性招式的力量",
         "DESCRIPTIONS": [
-            "Gain [E] at the start of your turn. NL At the end of your turn, trigger an #yEruption on ALL enemies."
+            "在你回合开始时获得 [E] 。NL 在你的回合结束时，对所有敌人触发#yEruption。"
         ]
     },
     "mysteryDungeon:GrassySeedRelic": {
-        "NAME": "Grassy Seed",
-        "FLAVOR": "It boosts Defense on Grassy Terrain.",
+        "NAME": "奇迹之种",
+        "FLAVOR": "在青草场地上，增加防御",
         "DESCRIPTIONS": [
-            "At the start of combat add a random attack to your draw pile. It costs #b0 this combat."
+            "在战斗开始时，你的卡堆会添加一个随机攻击牌。这场战斗中它消耗 #b0。"
         ]
     },
     "mysteryDungeon:HardyExplorerRelic": {
@@ -126,10 +126,10 @@
         ]
     },
     "mysteryDungeon:MeadowPlateRelic": {
-        "NAME": "Meadow Plate",
-        "FLAVOR": "A stone tablet imbued with the essence of plants. When used on a certain Pokémon, it allows that Pokémon to gain the power of the Grass type.",
+        "NAME": "碧绿石板",
+        "FLAVOR": "一块石板已经装满植物的精髓。 当使用于某个Pokemon时，它允许Pokemon获得草属性的力量。",
         "DESCRIPTIONS": [
-            "Gain #b20 #ymax #yHP. At the start of combat if you have more than #b65% of your #ymax #yHP lose #yHP until you have #y65% of your #ymax #yHP. If you have less than #b65% of your #ymax #yHP, heal #b10 #yHP."
+            "获得 #b20 最大 #yHP，在战斗开始时，如果的 #yHP 超过最大 #yHP 的#b65% ，失去生命值直到变成最大 #yHP 的#b65% 。如果的 #yHP 低于最大 #yHP 的#b65%，治疗 #b10 #yHP."
         ]
     },
     "mysteryDungeon:MiracleSeedRelic": {
@@ -147,10 +147,10 @@
         ]
     },
     "mysteryDungeon:NaiveExplorerRelic": {
-        "NAME": "Naive Explorer",
-        "FLAVOR": "What is this?",
+        "NAME": "天真的冒险家",
+        "FLAVOR": "这是什么？",
         "DESCRIPTIONS": [
-            "At the start of your turn, if you have not taken any damage from attacks this combat, your next Attack deals #b3 more damage."
+            "在你的回合开始时，如果你在这场战斗中没有收到伤害，你下次攻击提高 #b3 点伤害。"
         ]
     },
     "mysteryDungeon:QuirkyExplorerRelic": {
@@ -168,10 +168,10 @@
         ]
     },
     "mysteryDungeon:SplashPlateRelic": {
-        "NAME": "Splash Plate",
-        "FLAVOR": "This stone tablet is imbued with the essence of water and boosts the power of the holder's Water-type moves.",
+        "NAME": "水滴石板",
+        "FLAVOR": "这个宝石充满了水的精华，可以提升水属性招式的力量",
         "DESCRIPTIONS": [
-            "The first time you evoke an #yOrb each turn, gain [E] ."
+            "每回合第一次召唤 #y充能球，获得 [E] 。"
         ]
     },
     "mysteryDungeon:TimidExplorerRelic": {
@@ -196,10 +196,10 @@
         ]
     },
     "mysteryDungeon:WaterGemRelic": {
-        "NAME": "Water Gem",
-        "FLAVOR": "This gem is imbued with the essence of water and will boost the power of a Water-type moves, but only once.",
+        "NAME": "水之宝石",
+        "FLAVOR": "这个宝石充满了水的精华，可以提升水属性招式的力量，但是只能使用一次",
         "DESCRIPTIONS": [
-            "When you deal more than #b20 attack damage in a single hit, deal #b5 damage to ALL enemies."
+            "当你在单次击中造成超过 #b20 攻击伤害时，对所有敌人造成 #b5 点伤害。"
         ]
     }
 }
