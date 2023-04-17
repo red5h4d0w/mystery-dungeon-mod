@@ -72,7 +72,7 @@
     },
     "mysteryDungeon:Persian": {
         "NAMES": [
-            "Persian"
+            "猫老大"
         ]
     },
     "mysteryDungeon:Psyduck": {
@@ -102,12 +102,12 @@
     },
     "mysteryDungeon:Bayleef": {
         "NAMES": [
-            "Bayleef"
+            "月桂叶"
         ]
     },
     "mysteryDungeon:Meganium": {
         "NAMES": [
-            "Meganium"
+            "大菊花"
         ]
     },
     "mysteryDungeon:Cyndaquil": {
@@ -117,12 +117,12 @@
     },
     "mysteryDungeon:Quilava": {
         "NAMES": [
-            "Quilava"
+            "火岩鼠"
         ]
     },
     "mysteryDungeon:Typhlosion": {
         "NAMES": [
-            "Typhlosion"
+            "火暴兽"
         ]
     },
     "mysteryDungeon:Totodile": {
@@ -132,12 +132,12 @@
     },
     "mysteryDungeon:Croconaw": {
         "NAMES": [
-            "Croconaw"
+            "蓝鳄"
         ]
     },
     "mysteryDungeon:Feraligatr": {
         "NAMES": [
-            "Feraligatr"
+            "大力鳄"
         ]
     },
     "mysteryDungeon:Treecko": {
@@ -171,7 +171,7 @@
             "我愿意用随机的宝可梦团队！",
             "选择你的冒险家。",
             "选择你的伙伴。",
-            "You are a %1$s. NL Choose a partner. NL (Expected complexity is %2$s)"
+            "你成为了%1$s. NL 选择一位伙伴(Expected complexity is %2$s)."
         ]
     }
 }
