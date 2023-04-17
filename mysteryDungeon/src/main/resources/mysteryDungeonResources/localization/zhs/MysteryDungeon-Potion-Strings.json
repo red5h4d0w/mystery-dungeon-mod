@@ -6,9 +6,9 @@
         ]
     },
     "mysteryDungeon:AuxPowerGuardPotion": {
-        "NAME": "Aux Power Guard",
+        "NAME": "多重强化",
         "DESCRIPTIONS": [
-            "Gain #b%s #yFocus."
+            "获得 #b%s #y集中 。"
         ]
     },
     "mysteryDungeon:DireHitPotion": {
@@ -18,10 +18,10 @@
         ]
     },
     "mysteryDungeon:ElixirPotion": {
-        "NAME": "Elixir",
+        "NAME": "PP多项小补剂",
         "DESCRIPTIONS": [
-            "Gain [E] [E] [E] . Add #b2 #yBurn to your hand.",
-            "Gain [E] [E] [E] [E] [E] [E] . Add #b4 #yBurn to your hand."
+            "获得 [E] [E] [E] . 添加 #b2 #y烧伤 到手牌.",
+            "获得 [E] [E] [E] [E] [E] . 添加 #b2 #yBurn 到手牌."
         ]
     },
     "mysteryDungeon:FlameOrbPotion": {
@@ -31,33 +31,33 @@
         ]
     },
     "mysteryDungeon:AuxPowerPotion": {
-        "NAME": "Aux Power",
+        "NAME": "进攻药丸",
         "DESCRIPTIONS": [
-            "Your next attack deals #b%s more damage."
+            "下张攻击牌造成 #b%s 点额外伤害。"
         ]
     },
     "mysteryDungeon:LeppaBerryPotion": {
-        "NAME": "Leppa Berry",
+        "NAME": "苹野果",
         "DESCRIPTIONS": [
-            "Choose #b%s cards to retain at the end of your turn."
+            "在你的回合结束时，选择 #b%s 张牌保留。"
         ]
     },
     "mysteryDungeon:MagoBerryPotion": {
-        "NAME": "Mago Berry",
+        "NAME": "芒芒果",
         "DESCRIPTIONS": [
-            "Heal #b%1$s HP. Gain #b%2$s #yPoison."
+            "回复 #b%1$s HP. 获得 #b%2$s #y中毒."
         ]
     },
     "mysteryDungeon:MeowthCandyPotion": {
-        "NAME": "Meowth Candy",
+        "NAME": "喵喵的糖果",
         "DESCRIPTIONS": [
-            "Spend #b20 gold. Do the effects of #b2 random #yPotions."
+            "花费 #b20 金币. 使用 #b2 随机 #y药水."
         ]
     },
     "mysteryDungeon:NuggetPotion": {
-        "NAME": "Nugget",
+        "NAME": "金珠",
         "DESCRIPTIONS": [
-            "Gain #b%s gold."
+            "获得 #b%s 金币."
         ]
     },
     "mysteryDungeon:PikachuCandyPotion": {
@@ -73,9 +73,9 @@
         ]
     },
     "mysteryDungeon:RawstBerryPotion": {
-        "NAME": "Rawst Berry",
+        "NAME": "莓莓果",
         "DESCRIPTIONS": [
-            "Apply #b%s #yBurn. Burn stacks don't decrease for #b1 turn on the target."
+            "施加 #b%s 层 #y烧伤 。目标的 #y烧伤 层数 将在 #b1 回合内不会减少。"
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {
@@ -86,7 +86,7 @@
         ]
     },
     "mysteryDungeon:StarfBerryPotion": {
-        "NAME": "Starf Berry",
+        "NAME": "星桃果",
         "DESCRIPTIONS": [
             "Gain #b%s #yVigor."
         ]
