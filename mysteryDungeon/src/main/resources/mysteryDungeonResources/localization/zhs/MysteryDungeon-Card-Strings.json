@@ -655,7 +655,7 @@
     },
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "Flame Wheel",
-        "DESCRIPTION": "Apply !M! Vulnerable.",
+        "DESCRIPTION": "施加 !M! 易伤",
         "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable. NL Remove all the enemies block"
     },
     "mysteryDungeon:CyndaquilNaturePowerMountain": {
@@ -832,7 +832,7 @@
     },
     "mysteryDungeon:MeowthScreech": {
         "NAME": "Screech",
-        "DESCRIPTION": "Apply !M! Vulnerable. NL Apply !mysteryDungeon:M2! Block."
+        "DESCRIPTION": "施加 !M! 易伤. NL 施加 !mysteryDungeon:M2! 格挡."
     },
     "mysteryDungeon:MeowthSnarl": {
         "NAME": "大声咆哮！！！",
