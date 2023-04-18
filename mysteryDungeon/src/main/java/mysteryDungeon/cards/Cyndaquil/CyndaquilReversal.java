@@ -4,9 +4,11 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.status.Burn;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -36,10 +38,10 @@ public class CyndaquilReversal extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CYNDAQUIL_RED;
 
     private static final int COST = 1;
-    private static final int BLOCK = 7;
-    private static final int UPGRADE_PLUS_BLOCK = 3;
-    private static final int BASE_MAGIC_NUMBER = 14;
-    private static final int UPGRADE_MAGIC_NUMBER = 3;
+    private static final int BLOCK = 9;
+    private static final int UPGRADE_PLUS_BLOCK = 2;
+    private static final int BASE_MAGIC_NUMBER = 9;
+    private static final int UPGRADE_MAGIC_NUMBER = 2;
 
 
     // /STAT DECLARATION/
@@ -49,17 +51,16 @@ public class CyndaquilReversal extends PokemonCard {
         baseBlock = BLOCK;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        cardsToPreview = (AbstractCard)new Burn();
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(m.hasPower(BurnPower.POWER_ID)){
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
-        }
-        else{
-            addToBot(new ApplyPowerAction(m, p, new BurnPower(m, this.magicNumber)));
-        }
+        addToBot(new GainBlockAction(p, p, block));
+        addToBot(new ApplyPowerAction(m, p, new BurnPower(m, this.magicNumber)));
+        addToBot(new MakeTempCardInHandAction(new Burn(), false));
+        
     }
 
     // Upgraded stats.

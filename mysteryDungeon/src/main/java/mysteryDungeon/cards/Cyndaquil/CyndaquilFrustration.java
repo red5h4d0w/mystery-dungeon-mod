@@ -48,7 +48,7 @@ public class CyndaquilFrustration extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(m, p, new BurnPower(m, 12)));
+        addToBot(new ApplyPowerAction(m, p, new BurnPower(m, 20)));
         addToBot(new ApplyPowerAction(m, p, new NextTurnEruptionPower(m, 1)));
     }
 
