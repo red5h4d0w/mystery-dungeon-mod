@@ -35,8 +35,8 @@ public class CyndaquilLeer extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CYNDAQUIL_RED;
 
     private static final int COST = 0;
-    private static final int BASE_MAGIC_NUMBER = 2;
-    private static final int UPGRADE_MAGIC_NUMBER = 6;
+    private static final int BASE_MAGIC_NUMBER = 1;
+    private static final int UPGRADE_MAGIC_NUMBER = 1;
 
     // /STAT DECLARATION/
 
@@ -49,8 +49,7 @@ public class CyndaquilLeer extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(upgraded)
-            addToBot(new ApplyPowerAction(p, p, new CrushClawPower(p, magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new CrushClawPower(p, magicNumber)));
         addToBot(new RemoveAllBlockAction(m, p));
     } 
 

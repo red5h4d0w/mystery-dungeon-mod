@@ -656,8 +656,8 @@
     },
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "Leer",
-        "DESCRIPTION": "Remove all the target's Block.",
-        "UPGRADE_DESCRIPTION": "Remove all the target's Block. NL Your next mysterydungeon:Eruption will deal 50% more damage."
+        "DESCRIPTION": "Remove all the target's Block. NL Your next mysterydungeon:Eruption will deal 50% more damage.",
+        "UPGRADE_DESCRIPTION": "Remove all the target's Block. NL Your next !M! mysterydungeon:Eruption will deal 50% more damage."
     },
     "mysteryDungeon:CyndaquilNaturePowerMountain": {
         "NAME": "Nature Power: Mountain",
