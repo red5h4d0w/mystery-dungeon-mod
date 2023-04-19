@@ -540,7 +540,8 @@
     },
     "mysteryDungeon:CyndaquilBlastBurn": {
         "NAME": "Rafale Feu",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez !M! de mysterydungeon:Brûlure NL Déclenchez une mysterydungeon:Éruption. NL Terminez votre tour."
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Trigger an mysterydungeon:Eruption.",
+        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Trigger an mysterydungeon:Eruption. NL Apply !M! mysterydungeon:Burn."
     },
     "mysteryDungeon:CyndaquilBurnUp": {
         "NAME": "Flamme Ultime",
@@ -624,8 +625,8 @@
     },
     "mysteryDungeon:CyndaquilFrustration": {
         "NAME": "Frustration",
-        "DESCRIPTION": "Appliquez 12 de mysterydungeon:Brûlure. NL Au prochain tour, à la fin de votre tour, déclenchez une mysterydungeon:Éruption.",
-        "UPGRADE_DESCRIPTION": "Retenue. NL Appliquez 12 mysterydungeon:Brûlure. NL Au prochain tour, à la fin de votre tour, déclenchez une mysterydungeon:Éruption."
+        "DESCRIPTION": "Apply 20 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Apply 20 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption."
     },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "Canicule",
@@ -655,8 +656,8 @@
     },
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "Groz'Yeux",
-        "DESCRIPTION": "Appliquez !M! de Vulnérabilité.",
-        "UPGRADE_DESCRIPTION": "Appliquez !M! de Vulnérabilité. NL Retirez toute l'Armure de l'ennemi."
+        "DESCRIPTION": "Remove all the target's Block. NL Your next mysterydungeon:Eruption will deal 50% more damage.",
+        "UPGRADE_DESCRIPTION": "Remove all the target's Block. NL Your next !M! mysterydungeon:Eruption will deal 50% more damage."
     },
     "mysteryDungeon:CyndaquilNaturePowerMountain": {
         "NAME": "Force Nature : Montagne",
@@ -1234,7 +1235,7 @@
     },
     "mysteryDungeon:SquirtleWithdraw": {
         "NAME": "Repli",
-        "DESCRIPTION": "Mélangez votre défausse à votre pioche. NL Gagnez 2 d'Armure par carte en main."
+        "DESCRIPTION": "Shuffle your discard pile into your deck. NL Gain !M! Block per card in hand. NL (Unnafected by Dexterity and the Frail status)."
     },
     "mysteryDungeon:SquirtleZenHeadbutt": {
         "NAME": "Psykoud'Boul",
