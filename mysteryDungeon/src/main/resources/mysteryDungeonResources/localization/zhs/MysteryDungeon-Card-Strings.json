@@ -419,8 +419,8 @@
     },
     "mysteryDungeon:ChikoritaGrassWhistle": {
         "NAME": "草笛",
-        "DESCRIPTION": "Apply mysterydungeon:Asleep to ALL enemies. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Apply mysterydungeon:Asleep to ALL enemies. NL Exhaust."
+        "DESCRIPTION": "向所有敌人施加!M! 层 mysterydungeon:昏睡 。 NL 消耗。",
+        "UPGRADE_DESCRIPTION": "固有。 NL 向所有敌人施加!M! 层 mysterydungeon:昏睡 。 NL 消耗。"
     },
     "mysteryDungeon:ChikoritaGrassyTerrain": {
         "NAME": "青草场地",
@@ -479,13 +479,13 @@
         "DESCRIPTION": "失去 !M! HP. NL 造成 !D! 伤害."
     },
     "mysteryDungeon:ChikoritaRefresh": {
-        "NAME": "Refresh",
+        "NAME": "焕然一新",
         "DESCRIPTION": "获得 !M! 临时HP。"
     },
     "mysteryDungeon:ChikoritaSecretPower": {
         "NAME": "秘密之力",
-        "DESCRIPTION": "Innate. NL Add a random Power to your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Add a random upgraded Power to your hand. NL Exhaust."
+        "DESCRIPTION": "固有。 NL 向手牌添加1张随机能力牌。 NL 耗竭。",
+        "UPGRADE_DESCRIPTION": "固有。 NL 向手牌添加1张随机升级后的能力牌。 NL 耗竭。"
     },
     "mysteryDungeon:ChikoritaSeedBomb": {
         "NAME": "种子炸弹",
@@ -493,8 +493,8 @@
     },
     "mysteryDungeon:ChikoritaSnore": {
         "NAME": "打鼾",
-        "DESCRIPTION": "If the enemy intends to attack, apply 1 mysterydungeon:Asleep. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "If the enemy intends to attack, apply 1 mysterydungeon:Asleep."
+        "DESCRIPTION": "如果敌人打算进攻，对敌人施加 1 mysterydungeon：Asleep。NL 耗竭",
+        "UPGRADE_DESCRIPTION": "如果敌人打算进攻，对敌人施加 1 mysterydungeon：Asleep。"
     },
     "mysteryDungeon:ChikoritaSolarBeam": {
         "NAME": "日光束",
@@ -502,8 +502,8 @@
     },
     "mysteryDungeon:ChikoritaSunnyDay": {
         "NAME": "大晴天",
-        "DESCRIPTION": "Ethereal. NL When dealing damage to yourself, for every 3 HP lost draw a card.",
-        "UPGRADE_DESCRIPTION": "When dealing damage to yourself, for every 3 HP lost draw a card."
+        "DESCRIPTION": "虚无。NL 当给自己造成伤害时，NL 每3点伤害， 抽一张卡。",
+        "UPGRADE_DESCRIPTION": "当给自己造成伤害时，NL 每3点伤害， 抽一张卡。"
     },
     "mysteryDungeon:ChikoritaSweetScent": {
         "NAME": "甜蜜气息",
@@ -535,12 +535,13 @@
         ]
     },
     "mysteryDungeon:ChikoritaWringOut": {
-        "NAME": "Wring Out",
+        "NAME": "绞紧",
         "DESCRIPTION": "造成 !D! 伤害. NL 失去 !M! HP."
     },
     "mysteryDungeon:CyndaquilBlastBurn": {
         "NAME": "爆炸烈焰",
-        "DESCRIPTION": "Deal !D! damage. NL Cause an Eruption. NL End your Turn."
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Trigger an mysterydungeon:Eruption.",
+        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Trigger an mysterydungeon:Eruption. NL Apply !M! mysterydungeon:Burn."
     },
     "mysteryDungeon:CyndaquilBurnUp": {
         "NAME": "Fire Pledge",
@@ -624,8 +625,8 @@
     },
     "mysteryDungeon:CyndaquilFrustration": {
         "NAME": "迁怒",
-        "DESCRIPTION": "NL 施加 12 mysterydungeon:烧伤。NL 下个回合，在回合结束时造成一次 mysterydungeon:引燃.",
-        "UPGRADE_DESCRIPTION": "保留。 NL 施加 12 mysterydungeon:烧伤。NL 下个回合，在回合结束时造成一次 mysterydungeon:引燃."
+        "DESCRIPTION": "Apply 20 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Apply 20 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption."
     },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "热风",
@@ -645,7 +646,7 @@
         "UPGRADE_DESCRIPTION": "下一次引燃不会移除烧伤。NL 施加 !M! mysterydungeon:烧伤 到所有敌人。NL Exhaust。"
     },
     "mysteryDungeon:CyndaquilLaserFocus": {
-        "NAME": "Laser Focus",
+        "NAME": "聚气",
         "DESCRIPTION": "获得 [E] [E]。",
         "UPGRADE_DESCRIPTION": "获得 [E] [E]。NL 抽一张卡。"
     },
@@ -655,33 +656,33 @@
     },
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "Flame Wheel",
-        "DESCRIPTION": "施加 !M! 易伤",
-        "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable. NL Remove all the enemies block"
+        "DESCRIPTION": "Remove all the target's Block. NL Your next mysterydungeon:Eruption will deal 50% more damage.",
+        "UPGRADE_DESCRIPTION": "Remove all the target's Block. NL Your next !M! mysterydungeon:Eruption will deal 50% more damage."
     },
     "mysteryDungeon:CyndaquilNaturePowerMountain": {
-        "NAME": "Nature Power: Mountain",
-        "DESCRIPTION": "For the next X turns, mysterydungeon:Burn stacks do not decrease by themselves on the target.",
-        "UPGRADE_DESCRIPTION": "For X+1 turns, mysterydungeon:Burn stacks do not decrease naturally on a chosen enemy."
+        "NAME": "自然之力：大地",
+        "DESCRIPTION": "在接下来的 X 回合，目标的 mysterydungeon:烧伤 层数不会减少。",
+        "UPGRADE_DESCRIPTION": "在接下来的 X+1 回合，目标的 mysterydungeon:烧伤 层数不会减少。"
     },
     "mysteryDungeon:CyndaquilOverheat": {
         "NAME": "过热",
         "DESCRIPTION": "保留。NL 触发一次mysterydungeon:引燃。NL 耗竭"
     },
     "mysteryDungeon:CyndaquilReversal": {
-        "NAME": "Reversal",
+        "NAME": "起死回生",
         "DESCRIPTION": "If the enemy has mysterydungeon:Burn, gain !B! Block. NL If the enemy has no mysterydungeon:Burn stacks, apply !M! mysterydungeon:Burn."
     },
     "mysteryDungeon:CyndaquilRockSlide": {
         "NAME": "岩崩",
-        "DESCRIPTION": "Deal !D! damage. If the enemy has mysterydungeon:Burn stacks, gain [E] [E] next turn."
+        "DESCRIPTION": "造成 !D! 伤害。如果敌人处于 mysterydungeon:烧伤 ，下回合获得 [E] [E]"
     },
     "mysteryDungeon:CyndaquilRockTomb": {
         "NAME": "岩石封",
-        "DESCRIPTION": "Deal !D! damage and apply !M! Weak to ALL enemies."
+        "DESCRIPTION": "造成 !D! 伤，对所有敌人造成 !M! 层 虚弱。"
     },
     "mysteryDungeon:CyndaquilRollout": {
-        "NAME": "Rollout",
-        "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block per card played this turn."
+        "NAME": "倒下",
+        "DESCRIPTION": "造成 !D! 伤害. NL 获得本回合打出的卡次数的 !B! 格挡."
     },
     "mysteryDungeon:CyndaquilShadowClaw": {
         "NAME": "暗影爪",
@@ -689,7 +690,7 @@
     },
     "mysteryDungeon:CyndaquilSleepTalk": {
         "NAME": "梦话",
-        "DESCRIPTION": "When you create a Status, draw !M! card.",
+        "DESCRIPTION": "当您制造一张状态卡时，抽一张卡。",
         "UPGRADE_DESCRIPTION": "For each created Status, draw !M! card. NL Draw a card."
     },
     "mysteryDungeon:CyndaquilSmokescreen": {
@@ -707,23 +708,23 @@
     },
     "mysteryDungeon:MeowthAmnesia": {
         "NAME": "超级健忘！",
-        "DESCRIPTION": "Spend 12 gold. NL Prevent the next !M! time you would lose HP."
+        "DESCRIPTION": "花费12金。NL 阻止下 !M！次受到伤害。"
     },
     "mysteryDungeon:MeowthAssurance": {
         "NAME": "恶意追击",
         "DESCRIPTION": "Innate. NL Deal !D! damage. NL If the enemy's attacking, apply !M! Weak and gain 7 gold. NL Exhaust."
     },
     "mysteryDungeon:MeowthAttract": {
-        "NAME": "Attract",
-        "DESCRIPTION": "Gain !B! block. NL Spend !M! gold. NL Create a *Snatch in your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Gain !B! block. NL Spend !M! gold. NL Create an upgraded Snatch in your hand. NL Exhaust."
+        "NAME": "迷人",
+        "DESCRIPTION": "获得 !B! 格挡. NL 花费 !M! gold. NL 将一张 *Snatch 加入你的手牌. NL 耗竭.",
+        "UPGRADE_DESCRIPTION": "获得 !B! 格挡. NL 花费 !M! gold. NL 将一张升级过的 *Snatch 加入你的手牌. NL 耗竭."
     },
     "mysteryDungeon:MeowthCaptivate": {
         "NAME": "诱惑",
         "DESCRIPTION": "花费 !M! gold 。NL 这个回合，目标失去 !mysteryDungeon:M2! Strength"
     },
     "mysteryDungeon:MeowthCovet": {
-        "NAME": "Covet",
+        "NAME": "索要",
         "DESCRIPTION": "对手获得 !M! 点力量. NL 获得 !mysteryDungeon:M2! gold."
     },
     "mysteryDungeon:MeowthDarkPulse": {
@@ -745,11 +746,11 @@
         "DESCRIPTION": "花费 !M! gold 。NL 获得 !B! 格挡."
     },
     "mysteryDungeon:MeowthFeint": {
-        "NAME": "Feint",
-        "DESCRIPTION": "Remove all block from the enemy. NL Deal damage equal to the amount of block removed.",
-        "UPGRADE_DESCRIPTION": "Remove all Block from the enemy. NL Deal damage equal to 4 more than the amount of Block removed.",
+        "NAME": "佯攻",
+        "DESCRIPTION": "移除敌人所有格挡。NL 造成移除格挡点数的伤害",
+        "UPGRADE_DESCRIPTION": "移除敌人所有格挡。NL 造成移除格挡点数+4 的伤害",
         "EXTENDED_DESCRIPTION": [
-            " NL (Deals !D! damage.)"
+            " NL (造成 !D! 点伤害。)"
         ]
     },
     "mysteryDungeon:MeowthFlash": {
@@ -757,8 +758,8 @@
         "DESCRIPTION": "Spend 10 gold. NL Gain !M! mysterydungeon:Plated_Armor. NL Exhaust."
     },
     "mysteryDungeon:MeowthFlatter": {
-        "NAME": "Flatter",
-        "DESCRIPTION": "Apply !M! Strength to ALL enemies. NL Gain !B! Block."
+        "NAME": "虚张声势",
+        "DESCRIPTION": "使所有敌人获得 !M! 力量. NL 获得 !B! 格挡."
     },
     "mysteryDungeon:MeowthFlurry": {
         "NAME": "Flurry",
@@ -769,7 +770,7 @@
         "DESCRIPTION": "Deal !D! damage. NL If the last card you played was an Attack, apply !M! Weak."
     },
     "mysteryDungeon:MeowthFurySwipes": {
-        "NAME": "Fury Swipes",
+        "NAME": "疯狂乱抓",
         "DESCRIPTION": "Deal !D! damage. NL If you have !M! gold, spend it and increase permanently this card's damage by !mysteryDungeon:M2!. NL Exhaust."
     },
     "mysteryDungeon:MeowthHappyHour": {
@@ -814,12 +815,12 @@
         "UPGRADE_DESCRIPTION": "Deal !D! damage. NL The next !M! cards with a gold cost this turn are free."
     },
     "mysteryDungeon:MeowthPsychUp": {
-        "NAME": "Psych Up",
+        "NAME": "自我暗示",
         "DESCRIPTION": "When you apply Strength to an enemy, gain !M! Strength.",
         "UPGRADE_DESCRIPTION": "When you apply Strength to an enemy, gain !M! Strength."
     },
     "mysteryDungeon:MeowthPunishment": {
-        "NAME": "Punishment",
+        "NAME": "惩罚",
         "DESCRIPTION": "Deal !D! damage. NL Deal Addditionnal damage equal to !M! times the enemy's Strength."
     },
     "mysteryDungeon:MeowthRoar": {
@@ -827,33 +828,33 @@
         "DESCRIPTION": "Apply !M! Strength. NL Apply 99 Weak. NL Exhaust."
     },
     "mysteryDungeon:MeowthScratch": {
-        "NAME": "Scratch",
-        "DESCRIPTION": "Deal !D! damage."
+        "NAME": "抓",
+        "DESCRIPTION": "造成 !D! 点伤害。"
     },
     "mysteryDungeon:MeowthScreech": {
-        "NAME": "Screech",
+        "NAME": "刺耳声",
         "DESCRIPTION": "施加 !M! 易伤. NL 施加 !mysteryDungeon:M2! 格挡."
     },
     "mysteryDungeon:MeowthSnarl": {
         "NAME": "大声咆哮！！！",
-        "DESCRIPTION": "Apply !M! Block. NL Gain !B! Block."
+        "DESCRIPTION": "花费 !M! gold 。NL 获得 !B! 格挡."
     },
     "mysteryDungeon:MeowthSnatch": {
-        "NAME": "Snatch",
-        "DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract in your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! gold. NL Create an Attract+ in your hand. NL Exhaust."
+        "NAME": "抢夺",
+        "DESCRIPTION": "获得 !B! 格挡. NL 花费 !M! gold. NL 将一张 *Snatch 加入你的手牌. NL 耗竭.",
+        "UPGRADE_DESCRIPTION": "获得 !B! 格挡. NL 花费 !M! gold. NL 将一张 *Snatch 加入你的手牌. NL 耗竭."
     },
     "mysteryDungeon:MeowthSpite": {
-        "NAME": "Spite",
+        "NAME": "怨恨",
         "DESCRIPTION": "Spend !M!X gold. NL Gain 2X Strength. NL Exhaust."
     },
     "mysteryDungeon:MeowthSwagger": {
-        "NAME": "Swagger",
+        "NAME": "虚张声势",
         "DESCRIPTION": "Apply !M! Strength. NL Apply Stun."
     },
     "mysteryDungeon:MeowthSwitcheroo": {
         "NAME": "调包",
-        "DESCRIPTION": "Exchange your Strength with the target's Strength. NL Exhaust.",
+        "DESCRIPTION": "交换你与对手的力量。NL 耗竭",
         "UPGRADE_DESCRIPTION": "Lose !M! Strength. NL Exchange your Strength with the target's Strength. NL Exhaust."
     },
     "mysteryDungeon:MeowthTaunt": {
@@ -1158,7 +1159,7 @@
     },
     "mysteryDungeon:SquirtleMist": {
         "NAME": "白雾",
-        "DESCRIPTION": "Gain !B! Block. NL Gain !M! Artifact."
+        "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得 !M! 层人工制品。"
     },
     "mysteryDungeon:SquirtleProtect": {
         "NAME": "守住",
@@ -1234,7 +1235,7 @@
     },
     "mysteryDungeon:SquirtleWithdraw": {
         "NAME": "缩入壳中",
-        "DESCRIPTION": "将弃牌堆洗入牌库 NL 手牌中每张牌获得 !M! 点 格挡 。"
+        "DESCRIPTION": "Shuffle your discard pile into your deck. NL Gain !M! Block per card in hand. NL (Unnafected by Dexterity and the Frail status)."
     },
     "mysteryDungeon:SquirtleZenHeadbutt": {
         "NAME": "意念头锤",
@@ -1274,7 +1275,7 @@
         "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! more mysterydungeon:Vigor than you had before playing this card."
     },
     "mysteryDungeon:TotodileNaturePowerSea": {
-        "NAME": "Nature Power: Sea",
+        "NAME": "自然之力：海",
         "DESCRIPTION": "Apply !M! Vulnerable. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor."
     },
     "mysteryDungeon:TotodileCrunch": {
@@ -1291,7 +1292,7 @@
         "UPGRADE_DESCRIPTION": "Retain. NL Discard !M! cards from your hand. NL Draw 2 cards."
     },
     "mysteryDungeon:TotodileDoubleTeam": {
-        "NAME": "Double Team",
+        "NAME": "影子分身",
         "DESCRIPTION": "You may add !M! card from your discard pile to the top of your draw pile. NL You may add !M! card from your discard pile to your hand. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "You may add !M! cards from your discard pile to the top of your draw pile. NL You may add !M! cards from your discard pile to your hand. NL Exhaust."
     },
@@ -1322,50 +1323,50 @@
         "UPGRADE_DESCRIPTION": "Retain. NL Can only be used if there are !M! cards or less in your draw pile. NL Deal !D! damage."
     },
     "mysteryDungeon:TotodileIceBeam": {
-        "NAME": "Ice Beam",
+        "NAME": "冰冻光束",
         "DESCRIPTION": "造成 !D! 伤害。NL 生成 !M! 冰霜充能球"
     },
     "mysteryDungeon:TotodileIceFang": {
-        "NAME": "Ice Fang",
+        "NAME": "冰之牙",
         "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost orb.",
         "UPGRADE_DESCRIPTION": "固有。NL 造成 !D! 伤害。NL 生成 !M! 冰霜充能球"
     },
     "mysteryDungeon:TotodileIcePunch": {
-        "NAME": "Ice Punch",
+        "NAME": "冰冻拳",
         "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost. NL Evoke !M! Orb."
     },
     "mysteryDungeon:TotodileIcyWind": {
-        "NAME": "Icy Wind",
+        "NAME": "冷冻风",
         "DESCRIPTION": "mysterydungeon:惰性 。 NL 生成 !M! 个冰霜。 NL 消耗。"
     },
     "mysteryDungeon:TotodileLiquidation": {
-        "NAME": "Liquidation",
+        "NAME": "水流裂破",
         "DESCRIPTION": "Deal !D! damage to ALL enemies."
     },
     "mysteryDungeon:TotodileScratch": {
-        "NAME": "Scratch",
-        "DESCRIPTION": "Deal !D! damage."
+        "NAME": "抓",
+        "DESCRIPTION": "造成 !D! 点伤害。"
     },
     "mysteryDungeon:TotodileSheerForce": {
-        "NAME": "Sheer Force",
+        "NAME": "强行",
         "DESCRIPTION": "Whenever you deal !M! or more unblocked damage, channel 1 Frost."
     },
     "mysteryDungeon:TotodileStrength": {
-        "NAME": "Strength",
+        "NAME": "力量",
         "DESCRIPTION": "预见 !M! 张卡. NL 抽 !M! 张卡. NL 如果从总抽到攻击卡, 生成1个冰霜充能球"
     },
     "mysteryDungeon:TotodileSurf": {
-        "NAME": "Surf",
+        "NAME": "冲浪",
         "DESCRIPTION": "Whenever you discard a card, for every discarded card, gain !M! mysterydungeon:Temporary_Vigor.",
         "UPGRADE_DESCRIPTION": "Innate. NL Whenever you discard a card, for every discarded card, gain !M! mysterydungeon:Temporary_Vigor."
     },
     "mysteryDungeon:TotodileSubstitute": {
-        "NAME": "Substitute",
+        "NAME": "替身",
         "DESCRIPTION": "Innate. NL Discard the top !M! cards from your draw pile. NL Put Attack cards discarded this way in your hand. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Discard the top !M! cards from your draw pile. NL Put Attack cards discarded this way in your hand. NL Exhaust."
     },
     "mysteryDungeon:TotodileRage": {
-        "NAME": "Rage",
+        "NAME": "愤怒",
         "DESCRIPTION": "At the start of the next X turn, gain !M! mysterydungeon:Vigor. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "At the start of the next X+1 turn, gain !M! mysterydungeon:Vigor. NL Exhaust."
     },
@@ -1382,19 +1383,19 @@
         "DESCRIPTION": "Every !M! Attack you play, gain !mysteryDungeon:M2! mysterydungeon:Vigor."
     },
     "mysteryDungeon:TotodileTorrent": {
-        "NAME": "Torrent",
+        "NAME": "激流",
         "DESCRIPTION": "Unplayable. NL When discarded: Gain !M! Focus.",
         "UPGRADE_DESCRIPTION": "Unplayable. NL mysterydungeon:Scoop-up NL When discarded: Gain !M! Focus.",
         "EXTENDED_DESCRIPTION": [
-            "I can't play this card."
+            "我无法打出这张牌。"
         ]
     },
     "mysteryDungeon:TotodileWaterfall": {
-        "NAME": "Waterfall",
+        "NAME": "攀瀑",
         "DESCRIPTION": "At the end of your turn shuffle your draw pile. NL At the start of your turn Scry !M!."
     },
     "mysteryDungeon:TotodileWaterGun": {
-        "NAME": "Water Gun",
+        "NAME": "水枪",
         "DESCRIPTION": "Discard the !M! top cards of your draw pile. NL Deal !D! damage."
     },
     "mysteryDungeon:TotodileWaterPledge": {
@@ -1402,16 +1403,16 @@
         "DESCRIPTION": "Channel 1 Frost. NL Gain !M! mysterydungeon:Vigor. NL If you play another mysterydungeon:Pledge_Card this turn, activate a special effect."
     },
     "mysteryDungeon:TotodileWaterPulse": {
-        "NAME": "Water Pulse",
+        "NAME": "水之波动",
         "DESCRIPTION": "Discard the top !M! cards of your draw pile. For each card discarded this way, deal !mysteryDungeon:M2! damage."
     },
     "mysteryDungeon:TotodileWaterSport": {
-        "NAME": "Water Sport",
+        "NAME": "喷水",
         "DESCRIPTION": "Discard the top card of your draw pile. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor.",
         "UPGRADE_DESCRIPTION": "Discard the top 2 cards of your draw pile. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor."
     },
     "mysteryDungeon:TotodileWhirlpool": {
-        "NAME": "Whirlpool",
+        "NAME": "潮旋",
         "DESCRIPTION": "Discard the top !M! cards of your draw pile. NL Gain !mysteryDungeon:M2! Focus. NL Exhaust.",
         "UPGRADE_DESCRIPTION": "Discard the top !M! cards of your draw pile. NL Gain !mysteryDungeon:M2! Focus."
     },
