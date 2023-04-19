@@ -368,7 +368,7 @@
     "mysteryDungeon:RecoverPower": {
         "NAME": "自我再生",
         "DESCRIPTIONS": [
-            "When you receives damage, increase the number of stacks by as much damage you received. NL When you deal attack damage, heal 30%% of the attack damage dealt up to #b%s."
+            "每当你受到伤害，累计伤害点数。每当你造成伤害，治疗伤害量的百分之30，治疗量最多不超过累计伤害点数。"
         ]
     },
     "mysteryDungeon:ReduceHighestCostAtStartOfTurnPower": {
@@ -396,8 +396,8 @@
     "mysteryDungeon:CyndaquilSleepTalkPower": {
         "NAME": "梦话",
         "DESCRIPTIONS": [
-            "When you create a Status Card, draw a card.",
-            "When you create a Status Card, draw #b%s cards."
+            "当您制造一张状态卡时，抽一张卡。",
+            "当您制造一张状态卡时，抽 #b%s 张卡。"
         ]
     },
     "mysteryDungeon:SolarPowerPower": {
@@ -423,8 +423,8 @@
     "mysteryDungeon:SunnyDayPower": {
         "NAME": "大晴天",
         "DESCRIPTIONS": [
-            "Whenever you deal yourself damage, for each 3 HP lost total, draw %s card.",
-            "Whenever you deal yourself damage, for each 3 HP lost total, draw %s cards."
+            "每当你对自己造成伤害时，每损失3点HP，抽 %s 张卡。",
+            "每当你对自己造成伤害时，每损失3点HP，抽 %s 张卡。"
         ]
     },
     "mysteryDungeon:SurfPower": {
@@ -483,8 +483,8 @@
     "mysteryDungeon:SheerForcePower": {
         "NAME": "强行",
         "DESCRIPTIONS": [
-            "Whenever you deal #b%1$s or more unblocked damage, channel #b1 #yFrost.",
-            "Whenever you deal #b%1$s or more unblocked damage, channel #b%2$s #yFrost."
+            "每当你造成超过 #b%1$s 未被格挡的伤害，生成 #b1 个 #y冰霜.",
+            "每当你造成超过 #b%1$s 未被格挡的伤害，生成 #b%2$s 个 #y冰霜."
         ]
     },
     "mysteryDungeon:ToxicPower": {
