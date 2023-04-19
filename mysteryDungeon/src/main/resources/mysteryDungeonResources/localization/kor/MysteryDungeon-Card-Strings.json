@@ -540,7 +540,8 @@
     },
     "mysteryDungeon:CyndaquilBlastBurn": {
         "NAME": "블라스트번",
-        "DESCRIPTION": "피해를 !D! 줍니다. NL  mysterydungeon:화상 을 !M! 부여합니다. mysterydungeon:분화 를 발동합니다. NL 턴을 종료합니다."
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Trigger an mysterydungeon:Eruption.",
+        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Trigger an mysterydungeon:Eruption. NL Apply !M! mysterydungeon:Burn."
     },
     "mysteryDungeon:CyndaquilBurnUp": {
         "NAME": "불사르기",
@@ -624,8 +625,8 @@
     },
     "mysteryDungeon:CyndaquilFrustration": {
         "NAME": "화풀이",
-        "DESCRIPTION": "mysterydungeon:화상 을 12 부여합니다. NL 다음 턴에 턴 종료시 mysterydungeon:분화 를 발동합니다.",
-        "UPGRADE_DESCRIPTION": "보존. NL mysterydungeon:화상 을 12 부여합니다. NL 다음 턴에 턴 종료시 mysterydungeon:분화 를 발동합니다."
+        "DESCRIPTION": "Apply 20 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Apply 20 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption."
     },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "열풍",
@@ -655,8 +656,8 @@
     },
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "째려보기",
-        "DESCRIPTION": "취약을 !M! 부여합니다.",
-        "UPGRADE_DESCRIPTION": "취약을 !M! 부여합니다. NL 적의 모든 방어도를 없앱니다."
+        "DESCRIPTION": "Remove all the target's Block. NL Your next mysterydungeon:Eruption will deal 50% more damage.",
+        "UPGRADE_DESCRIPTION": "Remove all the target's Block. NL Your next !M! mysterydungeon:Eruption will deal 50% more damage."
     },
     "mysteryDungeon:CyndaquilNaturePowerMountain": {
         "NAME": "자연의힘:산",
@@ -1234,7 +1235,7 @@
     },
     "mysteryDungeon:SquirtleWithdraw": {
         "NAME": "껍질에숨기",
-        "DESCRIPTION": "손에 있는 카드 한장 당 방어도를 !M! 을 얻습니다"
+        "DESCRIPTION": "Shuffle your discard pile into your deck. NL Gain !M! Block per card in hand. NL (Unnafected by Dexterity and the Frail status)."
     },
     "mysteryDungeon:SquirtleZenHeadbutt": {
         "NAME": "사념의박치기",
