@@ -598,7 +598,7 @@
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "니트로차지",
-        "DESCRIPTION": "피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다. NL mysterydungeon:화상 을 !M! 부여합니다."
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn. NL Add a burn card to your hand."
     },
     "mysteryDungeon:CyndaquilFlamethrower": {
         "NAME": "화염방사",
@@ -634,7 +634,8 @@
     },
     "mysteryDungeon:CyndaquilHowl": {
         "NAME": "멀리짖기",
-        "DESCRIPTION": "뽑을 카드 더미에 *화상을 !M! 장 넣습니다. NL 다음 턴에 [E] [E] [E] 를 얻습니다."
+        "DESCRIPTION": "Next turn gain [E] [E] [E].",
+        "UPGRADE_DESCRIPTION": "Next turn gain [E] [E] [E]. NL Next turn draw 1 more card."
     },
     "mysteryDungeon:CyndaquilIncinerate": {
         "NAME": "불태우기",
@@ -670,7 +671,7 @@
     },
     "mysteryDungeon:CyndaquilReversal": {
         "NAME": "기사회생",
-        "DESCRIPTION": "적이 mysterydungeon:화상 상태라면, 방어도를 !B! 얻습니다. NL 적이 mysterydungeon:화상 상태가 아니라면, mysterydungeon:화상 을 !M! 부여합니다."
+        "DESCRIPTION": "Gain !B! Block. NL Apply !M! mysterydungeon:Burn. NL NL Add a burn card to your hand."
     },
     "mysteryDungeon:CyndaquilRockSlide": {
         "NAME": "스톤샤워",
