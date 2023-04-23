@@ -598,7 +598,7 @@
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "Nitrocharge",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL Appliquez !M! de mysterydungeon:Brûlure."
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn. NL Add a burn card to your hand."
     },
     "mysteryDungeon:CyndaquilFlamethrower": {
         "NAME": "Lance-Flammes",
@@ -634,7 +634,8 @@
     },
     "mysteryDungeon:CyndaquilHowl": {
         "NAME": "Grondement",
-        "DESCRIPTION": "Ajoutez !M! *Brûlure à votre pioche. NL Au prochain tour, gagnez [E] [E] [E]."
+        "DESCRIPTION": "Next turn gain [E] [E] [E].",
+        "UPGRADE_DESCRIPTION": "Next turn gain [E] [E] [E]. NL Next turn draw 1 more card."
     },
     "mysteryDungeon:CyndaquilIncinerate": {
         "NAME": "Calcination",
@@ -670,7 +671,7 @@
     },
     "mysteryDungeon:CyndaquilReversal": {
         "NAME": "Contre",
-        "DESCRIPTION": "Si l'ennemi a de la mysterydungeon:Brûlure, gagnez !B! d'Armure. NL Si l'ennemi n'a pas de mysterydungeon:Brûlure, appliquez !M! de mysterydungeon:Brûlure."
+        "DESCRIPTION": "Gain !B! Block. NL Apply !M! mysterydungeon:Burn. NL NL Add a burn card to your hand."
     },
     "mysteryDungeon:CyndaquilRockSlide": {
         "NAME": "Éboulement",
