@@ -634,7 +634,7 @@
     },
     "mysteryDungeon:CyndaquilHowl": {
         "NAME": "长嚎",
-        "DESCRIPTION": "Next turn gain [E] [E] [E].",
+        "DESCRIPTION": "下个回合，获得 [E] [E] [E]。",
         "UPGRADE_DESCRIPTION": "Next turn gain [E] [E] [E]. NL Next turn draw 1 more card."
     },
     "mysteryDungeon:CyndaquilIncinerate": {
