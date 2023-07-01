@@ -1379,7 +1379,7 @@
     },
     "mysteryDungeon:TotodileThrash": {
         "NAME": "Mania",
-        "DESCRIPTION": "Chaque !M! Attaque que vous jouez, gagnez !mysterydungeon:M2! de mysterydungeon:Vigueur."
+        "DESCRIPTION": "Chaque !M! Attaque que vous jouez, gagnez !mysteryDungeon:M2! de mysterydungeon:Vigueur."
     },
     "mysteryDungeon:TotodileTorrent": {
         "NAME": "Torrent",
