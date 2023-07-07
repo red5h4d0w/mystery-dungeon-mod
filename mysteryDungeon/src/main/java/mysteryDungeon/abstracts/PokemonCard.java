@@ -14,6 +14,8 @@ import mysteryDungeon.relics.AmuletCoinRelic;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
+import java.util.Locale;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -53,7 +55,7 @@ public abstract class PokemonCard extends CustomCard implements AtStartOfTurnPos
 
         super(id, name, img, cost, rawDescription, type, color, rarity, target);
         if(!color.equals(CardColor.COLORLESS))
-            loadJokeCardImage(makeCardPath(this.getClass().getSimpleName().split("(?=[A-Z])")[0]+type.toString().substring(0, 1)+type.toString().substring(1).toLowerCase()));
+            loadJokeCardImage(makeCardPath(this.getClass().getSimpleName().split("(?=[A-Z])")[0]+type.name().substring(0, 1)+type.name().substring(1).toLowerCase(Locale.CANADA_FRENCH)));
         // Set all the things to their default values.
         isCostModified = false;
         isCostModifiedForTurn = false;
