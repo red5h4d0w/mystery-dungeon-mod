@@ -400,14 +400,14 @@
     "mysteryDungeon:ChikoritaFlail": {
         "NAME": "抓狂",
         "DESCRIPTION": "无法打出。NL 虚无。NL 抽到时 ，获得 !M! 临时力量。",
-        "UPGRADE_DESCRIPTION": "无法打出。NL 虚无。NL 抽到时 ，获得 !M! 临时力量。",
+        "UPGRADE_DESCRIPTION": "无法打出。NL 抽到时 ，获得 !M! 临时力量。",
         "EXTENDED_DESCRIPTION": [
             "我无法打出这张牌。"
         ]
     },
     "mysteryDungeon:ChikoritaFuryCutter": {
         "NAME": "连斩",
-        "DESCRIPTION": "虚无. NL 造成 !D! 伤害。NL 这场战斗中增加 !M! 点伤害. NL 失去 2 HP. NL 下回合在手牌中增加2张复制 并失去 2 HP. NL 耗竭."
+        "DESCRIPTION": "虚无. NL 造成 !D! 伤害。NL 这场战斗中增加 !M! 点伤害. NL 失去 2 HP. NL 下回合在手牌中增加1张复制 并失去 2 HP. NL 消耗."
     },
     "mysteryDungeon:ChikoritaGrassKnot": {
         "NAME": "打草结",
