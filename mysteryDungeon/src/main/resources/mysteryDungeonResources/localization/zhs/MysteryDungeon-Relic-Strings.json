@@ -38,12 +38,12 @@
         "NAME": "温和的冒险家",
         "FLAVOR": "这是什么？",
         "DESCRIPTIONS": [
-            "每场战斗开始时。 NL 抽 #b1 张牌。 NL 获得 [E] 。"
+            "每场战斗开始时，抽 #b1 张牌并获得 [E] 。"
         ]
     },
     "mysteryDungeon:CellBatteryRelic": {
         "NAME": "充电电池",
-        "FLAVOR": "一种消耗性电池。。",
+        "FLAVOR": "一种消耗性电池。",
         "DESCRIPTIONS": [
             "电力表两端将为 #b3 层计数器。每回合结束后，指针将不再复位。"
         ]
@@ -66,21 +66,21 @@
         "NAME": "火之宝石",
         "FLAVOR": "这个宝石充满了火焰的精华，可以提升火属性招式的力量，但是只能使用一次",
         "DESCRIPTIONS": [
-            "每场战斗开始时，向所有敌人施加 #b10 层 #y烧伤 。"
+            "每场战斗开始时，向所有敌人施加 #b10 层 #y灼烧。"
         ]
     },
     "mysteryDungeon:FlamePlateRelic": {
         "NAME": "火焰石板",
         "FLAVOR": "这个宝石充满了火焰的精华，可以提升火属性招式的力量",
         "DESCRIPTIONS": [
-            "在你回合开始时获得 [E] 。NL 在你的回合结束时，对所有敌人触发#yEruption。"
+            "在你回合开始时获得 [E] 。NL 在你的回合结束时，对所有敌人触发#y引燃。"
         ]
     },
     "mysteryDungeon:GrassySeedRelic": {
         "NAME": "奇迹之种",
         "FLAVOR": "在青草场地上，增加防御",
         "DESCRIPTIONS": [
-            "在战斗开始时，你的卡堆会添加一个随机攻击牌。这场战斗中它消耗 #b0。"
+            "在战斗开始时，你的卡堆会添加一个随机攻击牌。这场战斗中它耗能变为 #b0。"
         ]
     },
     "mysteryDungeon:HardyExplorerRelic": {
@@ -150,7 +150,7 @@
         "NAME": "天真的冒险家",
         "FLAVOR": "这是什么？",
         "DESCRIPTIONS": [
-            "在你的回合开始时，如果你在这场战斗中没有收到伤害，你下次攻击提高 #b3 点伤害。"
+            "在你的回合开始时，如果你在这场战斗中没有受到伤害，你下次攻击提高 #b3 点伤害。"
         ]
     },
     "mysteryDungeon:QuirkyExplorerRelic": {
@@ -192,7 +192,7 @@
         "NAME": "涟漪薰香",
         "FLAVOR": "奇异的熏香。",
         "DESCRIPTIONS": [
-            "每场战斗都将施加 #y大师 能力。"
+            "战斗中你制造的所有卡牌都是 #y已升级 的。"
         ]
     },
     "mysteryDungeon:WaterGemRelic": {
