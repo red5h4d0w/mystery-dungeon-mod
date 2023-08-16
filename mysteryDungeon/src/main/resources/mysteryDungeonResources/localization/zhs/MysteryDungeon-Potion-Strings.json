@@ -21,7 +21,7 @@
         "NAME": "PP多项小补剂",
         "DESCRIPTIONS": [
             "获得 [E] [E] [E] . 添加 #b2 #y烧伤 到手牌.",
-            "获得 [E] [E] [E] [E] [E] . 添加 #b2 #yBurn 到手牌."
+            "获得 [E] [E] [E] [E] [E] [E] . 添加 #b4 #yBurn 到手牌."
         ]
     },
     "mysteryDungeon:FlameOrbPotion": {
@@ -75,7 +75,7 @@
     "mysteryDungeon:RawstBerryPotion": {
         "NAME": "莓莓果",
         "DESCRIPTIONS": [
-            "施加 #b%s 层 #y烧伤 。目标的 #y烧伤 层数 将在 #b1 回合内不会减少。"
+            "施加 #b%s 层 #y灼烧 。目标的 #y灼烧 层数 将在 #b1 回合内不会减少。"
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {
