@@ -37,7 +37,7 @@
         "NAME": "顺风",
         "DESCRIPTIONS": [
             "每回合打出的第 1 张牌费用为 #b0 ，但是将会 #y消耗 。",
-            "每回合打出的第 %s 张牌费用为 #b0 且 #y消耗 。"
+            "每回合打出的前 %s 张牌费用为 #b0 且 #y消耗 。"
         ]
     },
     "mysteryDungeon:BidePower": {
@@ -76,7 +76,7 @@
         "NAME": "烦恼种子",
         "DESCRIPTIONS": [
             "在你的回合，每打出 1 张牌将失去 #b1 点生命。在回合结束时，回复 #b2 点生命。",
-            "在你的回合，每打出 1 张牌将失去 #b%s 点生命。在回合结束时，回复 #b%s 点生命。"
+            "在你的回合，每打出 1 张牌将失去 #b%s 点生命。在回合结束时，回复 2 点生命 #b%s 次。"
         ]
     },
     "mysteryDungeon:CounterPower": {
@@ -90,7 +90,7 @@
         "NAME": "诅咒",
         "DESCRIPTIONS": [
             "每回合第一次抽到状态牌或诅咒牌时，获得 [E] 。",
-            "每回合第 #b%s 次抽到状态牌或诅咒牌时，获得 [E] 。"
+            "每回合前 #b%s 次抽到状态牌或诅咒牌时，获得 [E] 。"
         ]
     },
     "mysteryDungeon:CyndaquilCounterPower": {
@@ -109,7 +109,7 @@
         "NAME": "撕裂抓",
         "DESCRIPTIONS": [
             "你的下一个 #y引燃 会造成 50% 额外伤害。",
-            "你的下一个 #y引燃 会造成 50% 额外伤害。"
+            "你的下 #b%s 个 #y引燃 会造成 50% 额外伤害。"
         ]
     },
     "mysteryDungeon:DroughtPower": {
@@ -147,21 +147,21 @@
     "mysteryDungeon:FlashFirePower": {
         "NAME": "引火",
         "DESCRIPTIONS": [
-            "每当你打出一张卡牌，对所有敌人施加 #b%s 层 #y烧伤"
+            "每当你打出一张卡牌，对所有敌人施加 #b%s 层 #y灼烧"
         ]
     },
     "mysteryDungeon:FreeSpendingEveryTurnPower": {
         "NAME": "Investment",
         "DESCRIPTIONS": [
             "每回合，你第一次需要花费gold时，免除费用。",
-            "每回合，你第 #b%s 次需要花费gold时，免除费用。"
+            "每回合，你前 #b%s 次需要花费gold时，免除费用。"
         ]
     },
     "mysteryDungeon:FreeSpendingThisTurnPower": {
         "NAME": "讨价还价",
         "DESCRIPTIONS": [
             "下一次需要花费gold时，免除费用。",
-            "加下来 #b%s 次需要花费gold时，免除费用"
+            "接下来 #b%s 次需要花费gold时，免除费用"
         ]
     },
     "mysteryDungeon:FrustrationPower": {
@@ -174,15 +174,15 @@
     "mysteryDungeon:FuryCutterPower": {
         "NAME": "连斩",
         "DESCRIPTIONS": [
-            "在你的回合开始时，添加 这场战斗中已经耗竭次数的 #b%s #y连斩 到你的手牌。",
-            "在你的回合开始时，添加 这场战斗中已经耗竭次数的 #b%s #y连斩 到你的手牌，并将其升级。",
-            "在你的回合开始时，添加 这场战斗中已经耗竭次数的 #b%s #y连斩 和 #y连斩+ 到你的手牌。"
+            "在你的回合开始时，添加 这场战斗中已经消耗次数的 #b%s #y连斩 到你的手牌。",
+            "在你的回合开始时，添加 这场战斗中已经消耗次数的 #b%s #y连斩 到你的手牌，并将其升级。",
+            "在你的回合开始时，添加 这场战斗中已经消耗次数的 #b%s #y连斩 和 #b%s #y连斩+ 到你的手牌。"
         ]
     },
     "mysteryDungeon:GrassPledgePower": {
         "NAME": "草之誓约",
         "DESCRIPTIONS": [
-            "当你在这回合打出另一张#y誓约 #y卡，触发以下效果。NL 火：对所有敌人施加 #b9 层 #y中毒."
+            "当你在这回合打出另一张#y誓约 #y卡，触发以下效果。NL 火：对所有敌人施加 #b9 层 #y中毒. NL Water: Apply #b2 #yWeak to ALL enemies."
         ]
     },
     "mysteryDungeon:HailPower": {
@@ -207,14 +207,14 @@
     "mysteryDungeon:HeatWavePower": {
         "NAME": "热风",
         "DESCRIPTIONS": [
-            "这个回合每当你被攻击时，对攻击者施加#b%s #y烧伤。"
+            "这个回合每当你被攻击时，对攻击者施加#b%s #y灼烧。"
         ]
     },
     "mysteryDungeon:InfernoPower": {
         "NAME": "炼狱",
         "DESCRIPTIONS": [
-            "你的下 #b 次 #y引燃 将不会移除 #y烧伤",
-            "你的下 #b%s 次 #y引燃 将不会移除 #y烧伤"
+            "你的下次 #y引燃 将不会移除 #y烧伤",
+            "你的下 #b%s 次 #y引燃 将不会移除 #y灼烧"
         ]
     },
     "mysteryDungeon:LashOutPower": {
@@ -226,7 +226,7 @@
     "mysteryDungeon:LavaPlumePower": {
         "NAME": "爆炸烈焰",
         "DESCRIPTIONS": [
-            "每当你触发一次 #y引燃，对对手施加 #b%s 层 #y烧伤"
+            "每当你触发一次 #y引燃，对对手施加 #b%s 层 #y灼烧"
         ]
     },
     "mysteryDungeon:LeafGuardPower": {
@@ -269,8 +269,8 @@
     "mysteryDungeon:NaturePowerMountainPower": {
         "NAME": "自然力量：山地",
         "DESCRIPTIONS": [
-            "这回合，烧伤不会减少。",
-            "加下来 #b%s 个回合，烧伤不会减少。"
+            "这回合，灼烧不会减少。",
+            "接下来 #b%s 个回合，灼烧不会减少。"
         ]
     },
     "mysteryDungeon:NextTurnDrawLessPower": {
@@ -303,10 +303,10 @@
     "mysteryDungeon:NextTurnVigorPower": {
         "NAME": "Next Turn: Vigor",
         "DESCRIPTIONS": [
-            "At the start of the next turn, gain #b1 #yVigor.",
-            "At the start of the next turn, gain #b%s #yVigor.",
-            "At the start of the next #b%s turns, gain #b1 #yVigor.",
-            "加下来 #b%1$s 个回合开始时, 获得 #b%2$s #yVigor."
+            "下回合开始时, 获得 #b1 #yVigor.",
+            "下回合开始时, 获得 #b%s #yVigor.",
+            "接下来 #b%s 个回合开始时, 获得 #b1 #yVigor.",
+            "接下来 #b%1$s 个回合开始时, 获得 #b%2$s #yVigor."
         ]
     },
     "mysteryDungeon:NoHealPower": {
@@ -350,7 +350,7 @@
     "mysteryDungeon:PsychUpPower": {
         "NAME": "自我暗示",
         "DESCRIPTIONS": [
-            "每当你受到伤害时，获得 #b%s #y力量。"
+            "每当你获得力量时，额外获得 #b%s #y力量。"
         ]
     },
     "mysteryDungeon:RainDancePower": {
@@ -368,7 +368,7 @@
     "mysteryDungeon:RecoverPower": {
         "NAME": "自我再生",
         "DESCRIPTIONS": [
-            "每当你受到伤害，累计伤害点数。每当你造成伤害，治疗伤害量的百分之30，治疗量最多不超过累计伤害点数。"
+            "每当你受到伤害，累计伤害点数。每当你造成伤害，治疗伤害量的百分之30，治疗量最多不超过累计伤害点数(#b%s)。"
         ]
     },
     "mysteryDungeon:ReduceHighestCostAtStartOfTurnPower": {
@@ -390,7 +390,7 @@
         "NAME": "梦话",
         "DESCRIPTIONS": [
             "每回合第一次消耗牌时，向手牌加入一张随机牌。",
-            "每回合第 #b%s 次消耗牌时，向手牌加入一张随机牌。"
+            "每回合前 #b%s 次消耗牌时，向手牌加入一张随机牌。"
         ]
     },
     "mysteryDungeon:CyndaquilSleepTalkPower": {
@@ -476,8 +476,8 @@
     "mysteryDungeon:TotodileEndurePower": {
         "NAME": "挺住",
         "DESCRIPTIONS": [
-            "下一次收到伤害时，免疫伤害，并从抽牌堆丢弃 #b%s 张卡",
-            "下 #b%1$s 次收到伤害时，免疫伤害，并从抽牌堆丢弃 #b%1$s 张卡"
+            "下一次受到伤害时，免疫伤害，并从抽牌堆丢弃 #b%s 张卡",
+            "下 #b%1$s 次受到伤害时，免疫伤害，并从抽牌堆丢弃 #b%2$s 张卡"
         ]
     },
     "mysteryDungeon:SheerForcePower": {
