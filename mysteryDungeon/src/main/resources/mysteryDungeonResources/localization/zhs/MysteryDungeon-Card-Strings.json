@@ -411,7 +411,7 @@
     },
     "mysteryDungeon:ChikoritaGrassKnot": {
         "NAME": "打草结",
-        "DESCRIPTION": "移除 33% 敌方当前 HP. NL 耗竭."
+        "DESCRIPTION": "移除 33% 敌方当前 HP. NL 消耗."
     },
     "mysteryDungeon:ChikoritaGrassPledge": {
         "NAME": "草之誓约",
@@ -432,7 +432,7 @@
     },
     "mysteryDungeon:ChikoritaHealPulse": {
         "NAME": "治愈波动",
-        "DESCRIPTION": "Whenever you inflict self damage or gain HP during your turn, gain !M! block.",
+        "DESCRIPTION": "在你的回合，每当你对自己造成伤害或者获得hp，获得 !M! 格挡",
         "UPGRADE_DESCRIPTION": "固有。 NL 在你的回合，每当你对自己造成伤害或者获得hp，获得 !M! 格挡"
     },
     "mysteryDungeon:ChikoritaLeafGuard": {
@@ -449,15 +449,15 @@
     },
     "mysteryDungeon:ChikoritaMagicalLeaf": {
         "NAME": "魔法叶",
-        "DESCRIPTION": "对随机敌人造成 !D! 点伤害X次。"
+        "DESCRIPTION": "对随机敌人造成 !D! 点伤害 !M! 次。"
     },
     "mysteryDungeon:ChikoritaNaturalGift": {
         "NAME": "自然之恩",
-        "DESCRIPTION": "在你的回合结束时，获得 !M! 力量. NL 获得 !mysteryDungeon:M2! 格挡"
+        "DESCRIPTION": "获得 !M! 力量. NL 在你的回合结束时，获得 !mysteryDungeon:M2! 格挡"
     },
     "mysteryDungeon:ChikoritaNaturePowerGrassland": {
         "NAME": "Nature Power: Grassland",
-        "DESCRIPTION": "Lose 3 HP. NL Draw !M! cards."
+        "DESCRIPTION": "Lose 4 HP. NL Draw !M! cards."
     },
     "mysteryDungeon:ChikoritaOvergrow": {
         "NAME": "疯狂机器",
@@ -469,7 +469,7 @@
     },
     "mysteryDungeon:ChikoritaPetalDance": {
         "NAME": "花瓣舞",
-        "DESCRIPTION": "Unplayable. NL When drawn: Gain !M! Temporary HP and deal !D! damage to all enemies. NL Increase the amount of Temporary HP by 1 and the damage by 4 this combat.",
+        "DESCRIPTION": "Unplayable. NL When drawn: Gain !M! Temporary HP and deal !D! damage to all enemies. NL Increase the amount of Temporary HP by 2 and the damage by 4 this combat.",
         "EXTENDED_DESCRIPTION": [
             "我无法打出这张牌。"
         ]
@@ -485,7 +485,7 @@
     "mysteryDungeon:ChikoritaSecretPower": {
         "NAME": "秘密之力",
         "DESCRIPTION": "固有。 NL 向手牌添加1张随机能力牌。 NL 耗竭。",
-        "UPGRADE_DESCRIPTION": "固有。 NL 向手牌添加1张随机升级后的能力牌。 NL 耗竭。"
+        "UPGRADE_DESCRIPTION": "固有。 NL 向手牌添加1张随机升级后的能力牌。 NL 消耗。"
     },
     "mysteryDungeon:ChikoritaSeedBomb": {
         "NAME": "种子炸弹",
@@ -493,8 +493,8 @@
     },
     "mysteryDungeon:ChikoritaSnore": {
         "NAME": "打鼾",
-        "DESCRIPTION": "如果敌人打算进攻，对敌人施加 1 mysterydungeon：Asleep。NL 耗竭",
-        "UPGRADE_DESCRIPTION": "如果敌人打算进攻，对敌人施加 1 mysterydungeon：Asleep。"
+        "DESCRIPTION": "如果敌人打算进攻，对敌人施加 1 mysterydungeon:昏睡。NL 消耗",
+        "UPGRADE_DESCRIPTION": "如果敌人打算进攻，对敌人施加 1 mysterydungeon:昏睡。"
     },
     "mysteryDungeon:ChikoritaSolarBeam": {
         "NAME": "日光束",
@@ -511,7 +511,7 @@
     },
     "mysteryDungeon:ChikoritaSynthesis": {
         "NAME": "光合作用",
-        "DESCRIPTION": "Unplayable. NL When drawn: Heal !M! HP. NL After activating this effect !mysteryDungeon:M2! times: Exhaust.",
+        "DESCRIPTION": "Unplayable. NL When drawn: if you have mysterydungeon:Recovery, gain !M! Recovery stacks. NL After activating this effect !mysteryDungeon:M2! times: Exhaust.",
         "EXTENDED_DESCRIPTION": [
             "我无法打出这张牌。",
             "抽到时: 消耗。"
@@ -523,8 +523,8 @@
     },
     "mysteryDungeon:ChikoritaVineWhip": {
         "NAME": "藤鞭",
-        "DESCRIPTION": "Deal !D! damage. NL Put a card from your discard pile into your draw pile.",
-        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。NL 抽 1 张牌。"
+        "DESCRIPTION": "造成 !D! 点伤害。NL 抽 !M! 张牌。",
+        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。NL 抽 !M! 张牌。"
     },
     "mysteryDungeon:ChikoritaWorrySeed": {
         "NAME": "烦恼种子",
@@ -544,8 +544,8 @@
         "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Trigger an mysterydungeon:Eruption. NL Apply !M! mysterydungeon:Burn."
     },
     "mysteryDungeon:CyndaquilBurnUp": {
-        "NAME": "Fire Pledge",
-        "DESCRIPTION": "添加2*灼伤到您的抽牌堆。NL 造成 !M! mysterydungeon:烧伤。"
+        "NAME": "Burn Up",
+        "DESCRIPTION": "添加2*灼伤到您的抽牌堆。NL 造成 !M! mysterydungeon:灼烧。"
     },
     "mysteryDungeon:CyndaquilCounter": {
         "NAME": "反拳",
@@ -554,30 +554,30 @@
     },
     "mysteryDungeon:CyndaquilCrushClaw": {
         "NAME": "撕裂抓",
-        "DESCRIPTION": "对所有敌人造成 !D! 伤害。不要再让你下一张 mysterydungeon:Eruption 造成50%额外伤害。NL 耗竭。",
-        "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 伤害。不要再让你下一张 mysterydungeon:Eruption 造成50%额外伤害。NL 耗竭。"
+        "DESCRIPTION": "对所有敌人造成 !D! 伤害。你的下一次 mysterydungeon:引燃 造成50%额外伤害。NL 消耗。",
+        "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 伤害。你的下一次 mysterydungeon:引燃 造成50%额外伤害。"
     },
     "mysteryDungeon:CyndaquilCurse": {
         "NAME": "诅咒",
-        "DESCRIPTION": "每回合前两次抽到诅咒或者状态时, 获得 [E]。",
-        "UPGRADE_DESCRIPTION": "每回合第1次抽到诅咒或者状态时, 获得 [E]。"
+        "DESCRIPTION": "每回合第1次抽到诅咒或者状态时, 获得 [E]。",
+        "UPGRADE_DESCRIPTION": "每回合前两次抽到诅咒或者状态时, 获得 [E]。"
     },
     "mysteryDungeon:CyndaquilDefend": {
         "NAME": "防御",
-        "DESCRIPTION": "Gain !B! block."
+        "DESCRIPTION": "获得 !B! 格挡."
     },
     "mysteryDungeon:CyndaquilEmber": {
         "NAME": "火花",
-        "DESCRIPTION": "造成 !D! 伤害. NL 施加 !M! mysterydungeon:Burn."
+        "DESCRIPTION": "造成 !D! 伤害. NL 施加 !M! mysterydungeon:灼烧."
     },
     "mysteryDungeon:CyndaquilEruption": {
         "NAME": "喷火",
-        "DESCRIPTION": "触发一次mysterydungeon:引燃，这个伤害将作用域所有其它敌人。NL 结束你的回合。NL 耗竭。",
-        "UPGRADE_DESCRIPTION": "触发一次mysterydungeon:引燃，这个伤害将作用域所有其它敌人。NL 结束你的回合。"
+        "DESCRIPTION": "触发一次mysterydungeon:引燃，这个伤害将作用于所有敌人。NL 结束你的回合。NL 消耗。",
+        "UPGRADE_DESCRIPTION": "触发一次mysterydungeon:引燃，这个伤害将作用于所有敌人。NL 结束你的回合。"
     },
     "mysteryDungeon:CyndaquilExplorerForm": {
         "NAME": "火球鼠·冒险者笔记",
-        "DESCRIPTION": "Whenever you apply mysterydungeon:Burn to an enemy, deal !M! damage to that enemy."
+        "DESCRIPTION": "Whenever you cause an mysterydungeon:Eruption, deal !M! damage to all enemies."
     },
     "mysteryDungeon:CyndaquilFacade": {
         "NAME": "硬撑",
@@ -593,8 +593,8 @@
     },
     "mysteryDungeon:CyndaquilFlameBurst": {
         "NAME": "烈焰溅射",
-        "DESCRIPTION": "施加 12 mysterydungeon:烧伤。NL 下个回合，在回合结束时造成一次 mysterydungeon:引燃.",
-        "UPGRADE_DESCRIPTION": "造成 !M! mysterydungeon:烧伤。NL 下个回合，造成一次mysterydungeon:引燃。NL 你的下一次 引燃 将造成 50%额外伤害"
+        "DESCRIPTION": "施加 !M! mysterydungeon:灼烧。NL 下个回合，在回合结束时造成一次 mysterydungeon:引燃.",
+        "UPGRADE_DESCRIPTION": "造成 !M! mysterydungeon:灼烧。NL 下个回合，造成一次mysterydungeon:引燃。NL 你的下一次 引燃 将造成 50%额外伤害"
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "火焰驱进",
@@ -602,16 +602,16 @@
     },
     "mysteryDungeon:CyndaquilFlamethrower": {
         "NAME": "喷射火焰",
-        "DESCRIPTION": "在抽牌堆中添加一张 灼伤 状态牌。NL 对随机敌人造成 !D! 伤害 !M! 次。NL 对随机敌人施加 9 层mysterydungeon:烧伤"
+        "DESCRIPTION": "在抽牌堆中添加一张 灼伤 状态牌。NL 对随机敌人造成 !D! 伤害 !M! 次。NL 对随机敌人施加 9 层mysterydungeon:灼烧 !M! 次。"
     },
     "mysteryDungeon:CyndaquilFlameWheel": {
         "NAME": "火焰轮",
-        "DESCRIPTION": "NL 造成 !M! mysterydungeon:烧伤 两次。NL 造成一次mysterydungeon:引燃。NL 结束你的回合",
-        "UPGRADE_DESCRIPTION": "保留。 NL 造成 !M! mysterydungeon:烧伤 两次。NL 造成一次mysterydungeon:引燃。NL 结束你的回合"
+        "DESCRIPTION": "NL 造成 !M! mysterydungeon:灼烧 两次。NL 造成一次mysterydungeon:引燃。NL 结束你的回合",
+        "UPGRADE_DESCRIPTION": "保留。 NL 造成 !M! mysterydungeon:灼烧 两次。NL 造成一次mysterydungeon:引燃。NL 结束你的回合"
     },
     "mysteryDungeon:CyndaquilFlareBlitz": {
         "NAME": "闪焰冲锋",
-        "DESCRIPTION": "Add 1 Void in your draw pile. NL Deal !D! damage. NL If the attack is Fatal, Gain [E] [E]."
+        "DESCRIPTION": "Deal !D! damage. NL For every Status currently in your deck, reduce this card's cost by 1."
     },
     "mysteryDungeon:CyndaquilFlashFire": {
         "NAME": "引火",
@@ -630,7 +630,7 @@
     },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "热风",
-        "DESCRIPTION": "Gain !B! block. NL Whenever you are attacked this turn, apply 5 mysterydungeon:Burn to your attacker."
+        "DESCRIPTION": "Gain !B! block. NL Whenever you are attacked this turn, apply 9 mysterydungeon:Burn to your attacker."
     },
     "mysteryDungeon:CyndaquilHowl": {
         "NAME": "长嚎",
@@ -639,12 +639,12 @@
     },
     "mysteryDungeon:CyndaquilIncinerate": {
         "NAME": "烧尽",
-        "DESCRIPTION": "施加 !M! mysterydungeon:Burn."
+        "DESCRIPTION": "施加 !M! mysterydungeon:灼烧."
     },
     "mysteryDungeon:CyndaquilInferno": {
         "NAME": "炼狱",
-        "DESCRIPTION": "你的下一次mysterydungeon:引燃 将不会移除烧伤。 NL 耗竭",
-        "UPGRADE_DESCRIPTION": "下一次引燃不会移除烧伤。NL 施加 !M! mysterydungeon:烧伤 到所有敌人。NL Exhaust。"
+        "DESCRIPTION": "你的下一次mysterydungeon:引燃 将不会移除灼烧。 NL 消耗",
+        "UPGRADE_DESCRIPTION": "下一次引燃不会移除灼烧。NL 施加 !M! mysterydungeon:灼烧 到所有敌人。NL 消耗。"
     },
     "mysteryDungeon:CyndaquilLaserFocus": {
         "NAME": "聚气",
@@ -653,10 +653,10 @@
     },
     "mysteryDungeon:CyndaquilLavaPlume": {
         "NAME": "喷烟",
-        "DESCRIPTION": "每当你触发一次mysterydungeon:引燃，对目标施加 !M! mysterydungeon:烧伤"
+        "DESCRIPTION": "每当你触发一次mysterydungeon:引燃，对目标施加 !M! mysterydungeon:灼烧"
     },
     "mysteryDungeon:CyndaquilLeer": {
-        "NAME": "Flame Wheel",
+        "NAME": "Leer",
         "DESCRIPTION": "Remove all the target's Block. NL Your next mysterydungeon:Eruption will deal 50% more damage.",
         "UPGRADE_DESCRIPTION": "Remove all the target's Block. NL Your next !M! mysterydungeon:Eruption will deal 50% more damage."
     },
