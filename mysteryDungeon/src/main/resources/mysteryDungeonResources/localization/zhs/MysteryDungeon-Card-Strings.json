@@ -662,12 +662,12 @@
     },
     "mysteryDungeon:CyndaquilNaturePowerMountain": {
         "NAME": "自然之力：大地",
-        "DESCRIPTION": "在接下来的 X 回合，目标的 mysterydungeon:烧伤 层数不会减少。",
-        "UPGRADE_DESCRIPTION": "在接下来的 X+1 回合，目标的 mysterydungeon:烧伤 层数不会减少。"
+        "DESCRIPTION": "在接下来的 X 回合，目标的 mysterydungeon:灼烧 层数不会减少。",
+        "UPGRADE_DESCRIPTION": "在接下来的 X+1 回合，目标的 mysterydungeon:灼烧 层数不会减少。"
     },
     "mysteryDungeon:CyndaquilOverheat": {
         "NAME": "过热",
-        "DESCRIPTION": "保留。NL 触发一次mysterydungeon:引燃。NL 耗竭"
+        "DESCRIPTION": "保留。NL 触发一次mysterydungeon:引燃。NL 消耗"
     },
     "mysteryDungeon:CyndaquilReversal": {
         "NAME": "起死回生",
@@ -675,11 +675,11 @@
     },
     "mysteryDungeon:CyndaquilRockSlide": {
         "NAME": "岩崩",
-        "DESCRIPTION": "造成 !D! 伤害。如果敌人处于 mysterydungeon:烧伤 ，下回合获得 [E] [E]"
+        "DESCRIPTION": "造成 !D! 伤害。如果敌人有 mysterydungeon:灼烧 状态，下回合获得 [E] [E]"
     },
     "mysteryDungeon:CyndaquilRockTomb": {
         "NAME": "岩石封",
-        "DESCRIPTION": "造成 !D! 伤，对所有敌人造成 !M! 层 虚弱。"
+        "DESCRIPTION": "造成 !D! 伤害，对所有敌人造成 !M! 层 虚弱。"
     },
     "mysteryDungeon:CyndaquilRollout": {
         "NAME": "倒下",
