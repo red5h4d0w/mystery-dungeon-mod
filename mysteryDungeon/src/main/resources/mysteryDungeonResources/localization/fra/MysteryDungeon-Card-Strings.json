@@ -437,7 +437,7 @@
     },
     "mysteryDungeon:ChikoritaLeafGuard": {
         "NAME": "Feuille Garde",
-        "DESCRIPTION": "À la fin de votre tour, enlevez vos malus. Pour chaque malus ainsi retiré, perdez !M! PV."
+        "DESCRIPTION": "Au début de votre tour, enlevez TOUS vos malus. Pour chaque malus ainsi retiré, perdez !M! PV."
     },
     "mysteryDungeon:ChikoritaLeafStorm": {
         "NAME": "Tempête Verte",
