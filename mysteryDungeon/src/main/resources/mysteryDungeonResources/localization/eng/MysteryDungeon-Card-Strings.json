@@ -540,8 +540,7 @@
     },
     "mysteryDungeon:CyndaquilBlastBurn": {
         "NAME": "Blast Burn",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Trigger an mysterydungeon:Eruption.",
-        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Trigger an mysterydungeon:Eruption. NL Apply !M! mysterydungeon:Burn."
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn. NL Trigger an mysterydungeon:Eruption. NL End your Turn."
     },
     "mysteryDungeon:CyndaquilBurnUp": {
         "NAME": "Burn Up",
@@ -625,8 +624,8 @@
     },
     "mysteryDungeon:CyndaquilFrustration": {
         "NAME": "Frustration",
-        "DESCRIPTION": "Apply 20 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Apply 20 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption."
+        "DESCRIPTION": "Apply 12 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Apply 12 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption."
     },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "Heat Wave",
@@ -657,8 +656,8 @@
     },
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "Leer",
-        "DESCRIPTION": "Remove all the target's Block. NL Your next mysterydungeon:Eruption will deal 50% more damage.",
-        "UPGRADE_DESCRIPTION": "Remove all the target's Block. NL Your next !M! mysterydungeon:Eruption will deal 50% more damage."
+        "DESCRIPTION": "Apply !M! Vulnerable.",
+        "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable. NL Remove all the target's Block."
     },
     "mysteryDungeon:CyndaquilNaturePowerMountain": {
         "NAME": "Nature Power: Mountain",
@@ -1236,7 +1235,7 @@
     },
     "mysteryDungeon:SquirtleWithdraw": {
         "NAME": "Withdraw",
-        "DESCRIPTION": "Shuffle your discard pile into your deck. NL Gain !M! Block per card in hand. NL (Unnafected by Dexterity and the Frail status)."
+        "DESCRIPTION": "Shuffle your discard pile into your deck. NL Gain !M! Block per card in hand."
     },
     "mysteryDungeon:SquirtleZenHeadbutt": {
         "NAME": "Zen Headbutt",
