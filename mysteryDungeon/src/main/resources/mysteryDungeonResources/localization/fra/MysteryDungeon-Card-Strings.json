@@ -541,7 +541,7 @@
     "mysteryDungeon:CyndaquilBlastBurn": {
         "NAME": "Rafale Feu",
         "DESCRIPTION": "Appliquez !M! de mysterydungeon:Brûlure. Déclenchez une mysterydungeon:Éruption.",
-        "UPGRADE_DESCRIPTION": "Appliquez !M! de mysterydungeon:Brûlure. Déclenchez une mysterydungeon:Éruption. NL Appliquez !M! de muysterydungeon:Brûlure."
+        "UPGRADE_DESCRIPTION": "Appliquez !M! de mysterydungeon:Brûlure. Déclenchez une mysterydungeon:Éruption. NL Appliquez !M! de mysterydungeon:Brûlure."
     },
     "mysteryDungeon:CyndaquilBurnUp": {
         "NAME": "Flamme Ultime",
