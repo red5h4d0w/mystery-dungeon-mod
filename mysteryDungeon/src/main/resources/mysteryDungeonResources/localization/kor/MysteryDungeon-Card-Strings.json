@@ -657,7 +657,7 @@
     },
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "째려보기",
-        "DESCRIPTION": "Remove all the target's Block. NL Your next mysterydungeon:Eruption will deal 50% more damage.",
+        "DESCRIPTION": "Remove ALL the target's Block. NL Your next mysterydungeon:Eruption will deal 50% more damage.",
         "UPGRADE_DESCRIPTION": "Remove all the target's Block. NL Your next !M! mysterydungeon:Eruption will deal 50% more damage."
     },
     "mysteryDungeon:CyndaquilNaturePowerMountain": {
@@ -671,7 +671,7 @@
     },
     "mysteryDungeon:CyndaquilReversal": {
         "NAME": "기사회생",
-        "DESCRIPTION": "Gain !B! Block. NL Apply !M! mysterydungeon:Burn. NL NL Add a burn card to your hand."
+        "DESCRIPTION": "Gain !B! Block. NL Apply !M! mysterydungeon:Burn. NL Add a *Burn to your hand."
     },
     "mysteryDungeon:CyndaquilRockSlide": {
         "NAME": "스톤샤워",
