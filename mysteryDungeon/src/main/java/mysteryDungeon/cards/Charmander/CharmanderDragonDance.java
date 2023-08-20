@@ -36,7 +36,7 @@ public class CharmanderDragonDance extends PokemonCard {
 
     private static final int COST = 0;
     private static final int BASE_MAGIC_NUMBER = 2;
-    private static final int BASE_SECOND_MAGIC_NUMBER = 4;
+    private static final int BASE_SECOND_MAGIC_NUMBER = 2;
 
 
     // /STAT DECLARATION/

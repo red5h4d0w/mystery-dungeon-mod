@@ -659,6 +659,7 @@
         "NAME": "Leer",
         "DESCRIPTION": "Remove ALL the target's Block. NL Your next mysterydungeon:Eruption will deal 50% more damage.",
         "UPGRADE_DESCRIPTION": "Remove ALL the target's Block. NL Your next !M! mysterydungeon:Eruption will deal 50% more damage."
+
     },
     "mysteryDungeon:CyndaquilNaturePowerMountain": {
         "NAME": "Nature Power: Mountain",
