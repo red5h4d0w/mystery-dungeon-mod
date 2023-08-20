@@ -437,7 +437,7 @@
     },
     "mysteryDungeon:ChikoritaLeafGuard": {
         "NAME": "叶子防守",
-        "DESCRIPTION": "在你的回合结束时，移除你的所有负面效果。每移除一种负面效果，失去 !M! 点生命。"
+        "DESCRIPTION": "At the start of your turn, remove ALL debuff you possess. For each debuff removed this way lose !M! HP."
     },
     "mysteryDungeon:ChikoritaLeafStorm": {
         "NAME": "飞叶风暴",
@@ -540,7 +540,7 @@
     },
     "mysteryDungeon:CyndaquilBlastBurn": {
         "NAME": "爆炸烈焰",
-        "DESCRIPTION": "造成 !D! 点伤害。 NL mysterydungeon:引燃 。 NL 结束你的回合。",
+        "DESCRIPTION": "给予 !M! 层 mysterydungeon:灼烧 。 NL mysterydungeon:引燃 。",
         "UPGRADE_DESCRIPTION": "给予 !M! 层 mysterydungeon:灼烧 。 NL mysterydungeon:引燃 。 NL 给予 !M! 层 mysterydungeon:灼烧 。"
     },
     "mysteryDungeon:CyndaquilBurnUp": {
