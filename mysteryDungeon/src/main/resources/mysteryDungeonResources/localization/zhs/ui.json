@@ -1,17 +1,17 @@
 {
     "mysteryDungeon:EtherealMod": {
         "TEXT": [
-            "虚无。 NL "
+            "虚无 。 NL "
         ]
     },
     "mysteryDungeon:ExhaustFromDeckAction": {
         "TEXT": [
-            "从牌组中选择一张牌消耗。"
+            "从牌组中选择一张牌 消耗 。"
         ]
     },
     "mysteryDungeon:RetainCardsButEtherealModAction": {
         "TEXT": [
-            "保留(牌将变成虚无)"
+            "保留 （牌将变成 虚无 ）"
         ]
     },
     "mysteryDungeon:PikachuMeter": {
