@@ -3,6 +3,7 @@ package mysteryDungeon.cards.Totodile;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -12,8 +13,9 @@ import com.megacrit.cardcrawl.orbs.Frost;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.interfaces.onCardScriedInterface;
 
-public class TotodileHail extends PokemonCard {
+public class TotodileHail extends PokemonCard implements onCardScriedInterface {
 
     // TEXT DECLARATION
 
@@ -25,7 +27,6 @@ public class TotodileHail extends PokemonCard {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
-
 
     // STAT DECLARATION
 
@@ -61,10 +62,11 @@ public class TotodileHail extends PokemonCard {
     }
 
     @Override
-    public void triggerOnScry() {
-        super.triggerOnScry();
-        addToBot(new ChannelAction(new Frost()));
-      }
+    public void onCardScried(AbstractCard card) {
+        if (card == this) {
+            addToBot(new ChannelAction(new Frost()));
+        }
+    }
 
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {

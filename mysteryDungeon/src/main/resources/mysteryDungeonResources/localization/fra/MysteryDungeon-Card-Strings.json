@@ -540,7 +540,8 @@
     },
     "mysteryDungeon:CyndaquilBlastBurn": {
         "NAME": "Rafale Feu",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez !M! de mysterydungeon:Brûlure NL Déclenchez une mysterydungeon:Éruption. NL Terminez votre tour."
+        "DESCRIPTION": "Appliquez !M! de mysterydungeon:Brûlure. Déclenchez une mysterydungeon:Éruption.",
+        "UPGRADE_DESCRIPTION": "Appliquez !M! de mysterydungeon:Brûlure. Déclenchez une mysterydungeon:Éruption. NL Appliquez !M! de muysterydungeon:Brûlure."
     },
     "mysteryDungeon:CyndaquilBurnUp": {
         "NAME": "Flamme Ultime",
@@ -597,7 +598,7 @@
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "Nitrocharge",
-        "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL Appliquez !M! de mysterydungeon:Brûlure."
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn. NL Add a burn card to your hand."
     },
     "mysteryDungeon:CyndaquilFlamethrower": {
         "NAME": "Lance-Flammes",
@@ -624,8 +625,8 @@
     },
     "mysteryDungeon:CyndaquilFrustration": {
         "NAME": "Frustration",
-        "DESCRIPTION": "Appliquez 12 de mysterydungeon:Brûlure. NL Au prochain tour, à la fin de votre tour, déclenchez une mysterydungeon:Éruption.",
-        "UPGRADE_DESCRIPTION": "Retenue. NL Appliquez 12 mysterydungeon:Brûlure. NL Au prochain tour, à la fin de votre tour, déclenchez une mysterydungeon:Éruption."
+        "DESCRIPTION": "Apply 20 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Apply 20 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption."
     },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "Canicule",
@@ -633,7 +634,8 @@
     },
     "mysteryDungeon:CyndaquilHowl": {
         "NAME": "Grondement",
-        "DESCRIPTION": "Ajoutez !M! *Brûlure à votre pioche. NL Au prochain tour, gagnez [E] [E] [E]."
+        "DESCRIPTION": "Au prochain tour, gagnez [E] [E] [E].",
+        "UPGRADE_DESCRIPTION": "Au prochain tour, gagnez [E] [E] [E]. NL Au prochain tour, piochez 1 carte de plus."
     },
     "mysteryDungeon:CyndaquilIncinerate": {
         "NAME": "Calcination",
@@ -655,8 +657,8 @@
     },
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "Groz'Yeux",
-        "DESCRIPTION": "Appliquez !M! de Vulnérabilité.",
-        "UPGRADE_DESCRIPTION": "Appliquez !M! de Vulnérabilité. NL Retirez toute l'Armure de l'ennemi."
+        "DESCRIPTION": "Enlevez TOUTE l'armure de l'ennemi. NL Votre prochaine mysterydungeon:Éruption infligera 50% plus de dégâts.",
+        "UPGRADE_DESCRIPTION": "Enlevez TOUTE l'armure de l'ennemi. NL Vos !M! prochaines mysterydungeon:Éruptions infligeront 50% plus de dégâts."
     },
     "mysteryDungeon:CyndaquilNaturePowerMountain": {
         "NAME": "Force Nature : Montagne",
@@ -669,7 +671,7 @@
     },
     "mysteryDungeon:CyndaquilReversal": {
         "NAME": "Contre",
-        "DESCRIPTION": "Si l'ennemi a de la mysterydungeon:Brûlure, gagnez !B! d'Armure. NL Si l'ennemi n'a pas de mysterydungeon:Brûlure, appliquez !M! de mysterydungeon:Brûlure."
+        "DESCRIPTION": "Gagnez !B! d'Armure. NL Appliquez !M! de mysterydungeon:Brûlure. NL Ajoutez une *Brûlure à votre main."
     },
     "mysteryDungeon:CyndaquilRockSlide": {
         "NAME": "Éboulement",
@@ -893,7 +895,7 @@
     },
     "mysteryDungeon:PikachuCharge": {
         "NAME": "Chargeur",
-        "DESCRIPTION": "Gagnez !M! de Concentration. NL Retirez TOUTES vos Orbes"
+        "DESCRIPTION": "Gagnez !M! de Concentration. NL Retirez TOUTES vos Orbes."
     },
     "mysteryDungeon:PikachuCharm": {
         "NAME": "Charme",
@@ -1234,7 +1236,7 @@
     },
     "mysteryDungeon:SquirtleWithdraw": {
         "NAME": "Repli",
-        "DESCRIPTION": "Mélangez votre défausse à votre pioche. NL Gagnez 2 d'Armure par carte en main."
+        "DESCRIPTION": "Mélangez votre défausse à votre pioche. NL Gagnez !M! d'Armure pour chaque carte en main. NL (n'est pas affecté par la Dextérité, ni la Fragilité)."
     },
     "mysteryDungeon:SquirtleZenHeadbutt": {
         "NAME": "Psykoud'Boul",
@@ -1379,7 +1381,7 @@
     },
     "mysteryDungeon:TotodileThrash": {
         "NAME": "Mania",
-        "DESCRIPTION": "Chaque !M! Attaque que vous jouez, gagnez !mysterydungeon:M2! de mysterydungeon:Vigueur."
+        "DESCRIPTION": "Chaque !M! Attaque que vous jouez, gagnez !mysteryDungeon:M2! de mysterydungeon:Vigueur."
     },
     "mysteryDungeon:TotodileTorrent": {
         "NAME": "Torrent",

@@ -3,6 +3,7 @@ package mysteryDungeon.cards.Totodile;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -13,8 +14,9 @@ import com.megacrit.cardcrawl.powers.FocusPower;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.characters.Pokemon;
+import mysteryDungeon.interfaces.onCardScriedInterface;
 
-public class TotodileTorrent extends PokemonCard {
+public class TotodileTorrent extends PokemonCard implements onCardScriedInterface {
 
     // TEXT DECLARATION
 
@@ -26,7 +28,6 @@ public class TotodileTorrent extends PokemonCard {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
-
 
     // STAT DECLARATION
 
@@ -62,15 +63,18 @@ public class TotodileTorrent extends PokemonCard {
     @Override
     public void triggerOnManualDiscard() {
         super.triggerOnManualDiscard();
-        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new FocusPower(AbstractDungeon.player, magicNumber), magicNumber));
+        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
+                new FocusPower(AbstractDungeon.player, magicNumber), magicNumber));
     }
 
     @Override
-    public void triggerOnScry() {
-        super.triggerOnScry();
-        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new FocusPower(AbstractDungeon.player, magicNumber), magicNumber));
-      }
-    
+    public void onCardScried(AbstractCard card) {
+        if (card == this) {
+            addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
+                    new FocusPower(AbstractDungeon.player, magicNumber), magicNumber));
+        }
+    }
+
     // Upgraded stats.
     @Override
     public void upgrade() {

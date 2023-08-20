@@ -159,7 +159,7 @@
     },
     "mysteryDungeon:BulbasaurSweetScent": {
         "NAME": "Sweet Scent",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Evasiveness_Drop. NL Apply !M! Vulnerable"
+        "DESCRIPTION": "Apply !M! mysterydungeon:Evasiveness_Drop. NL Apply !M! Vulnerable."
     },
     "mysteryDungeon:BulbasaurSynthesis": {
         "NAME": "Synthesis",
@@ -657,8 +657,9 @@
     },
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "Leer",
-        "DESCRIPTION": "Remove all the target's Block. NL Your next mysterydungeon:Eruption will deal 50% more damage.",
-        "UPGRADE_DESCRIPTION": "Remove all the target's Block. NL Your next !M! mysterydungeon:Eruption will deal 50% more damage."
+        "DESCRIPTION": "Remove ALL the target's Block. NL Your next mysterydungeon:Eruption will deal 50% more damage.",
+        "UPGRADE_DESCRIPTION": "Remove ALL the target's Block. NL Your next !M! mysterydungeon:Eruption will deal 50% more damage."
+
     },
     "mysteryDungeon:CyndaquilNaturePowerMountain": {
         "NAME": "Nature Power: Mountain",
@@ -671,7 +672,7 @@
     },
     "mysteryDungeon:CyndaquilReversal": {
         "NAME": "Reversal",
-        "DESCRIPTION": "Gain !B! Block. NL Apply !M! mysterydungeon:Burn. NL NL Add a burn card to your hand."
+        "DESCRIPTION": "Gain !B! Block. NL Apply !M! mysterydungeon:Burn. NL Add a *Burn to your hand."
     },
     "mysteryDungeon:CyndaquilRockSlide": {
         "NAME": "Rock Slide",
