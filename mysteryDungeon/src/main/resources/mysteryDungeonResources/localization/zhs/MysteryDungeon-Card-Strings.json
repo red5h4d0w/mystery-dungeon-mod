@@ -437,7 +437,7 @@
     },
     "mysteryDungeon:ChikoritaLeafGuard": {
         "NAME": "叶子防守",
-        "DESCRIPTION": "At the start of your turn, remove ALL debuff you possess. For each debuff removed this way lose !M! HP."
+        "DESCRIPTION": "在你的回合开始时，移除你的所有负面效果。每移除一种负面效果，失去 !M! 点生命。"
     },
     "mysteryDungeon:ChikoritaLeafStorm": {
         "NAME": "飞叶风暴",
@@ -598,7 +598,7 @@
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "蓄能焰袭",
-        "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 给予 !M! 层 mysterydungeon:灼烧 。"
+        "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 mysterydungeon:灼烧 。将一张 *灼伤 加入你的手牌。"
     },
     "mysteryDungeon:CyndaquilFlamethrower": {
         "NAME": "喷射火焰",
@@ -625,8 +625,8 @@
     },
     "mysteryDungeon:CyndaquilFrustration": {
         "NAME": "迁怒",
-        "DESCRIPTION": "给予 12 层 mysterydungeon:灼烧 。 NL 下回合，当你的回合结束时，mysterydungeon:引燃 。",
-        "UPGRADE_DESCRIPTION": "保留 。 NL 给予 12 层 mysterydungeon:灼烧 。 NL 下回合，当你的回合结束时，mysterydungeon:引燃 。"
+        "DESCRIPTION": "给予 20 层 mysterydungeon:灼烧 。 NL 下回合，当你的回合结束时，mysterydungeon:引燃 。",
+        "UPGRADE_DESCRIPTION": "保留 。 NL 给予 20 层 mysterydungeon:灼烧 。 NL 下回合，当你的回合结束时，mysterydungeon:引燃 。"
     },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "热风",
@@ -634,7 +634,7 @@
     },
     "mysteryDungeon:CyndaquilHowl": {
         "NAME": "长嚎",
-        "DESCRIPTION": "将 !M! 张 *灼伤 放入你的抽牌堆中。 NL 下一回合获得 [E] [E] [E] 。",
+        "DESCRIPTION": "下一回合获得 [E] [E] [E] 。",
         "UPGRADE_DESCRIPTION": "下一回合获得 [E] [E] [E] 并多抽1张牌。"
     },
     "mysteryDungeon:CyndaquilIncinerate": {
@@ -656,9 +656,9 @@
         "DESCRIPTION": "每当你mysterydungeon:引燃 ，给予目标 !M! 层 mysterydungeon:灼烧 。"
     },
     "mysteryDungeon:CyndaquilLeer": {
-        "NAME": "火焰轮",
-        "DESCRIPTION": "给予 !M! 层 易伤 。",
-        "UPGRADE_DESCRIPTION": "给予 !M! 层 易伤 。 NL 去除敌人的所有 格挡 值。"
+        "NAME": "瞪眼",
+        "DESCRIPTION": "去除敌人的所有 格挡 值。下一次 mysterydungeon:引燃 增加 50% 伤害。",
+        "UPGRADE_DESCRIPTION": "去除敌人的所有 格挡 值。下 !M! 次 mysterydungeon:引燃 增加 50% 伤害。"
     },
     "mysteryDungeon:CyndaquilNaturePowerMountain": {
         "NAME": "自然之力：山地",
@@ -671,7 +671,7 @@
     },
     "mysteryDungeon:CyndaquilReversal": {
         "NAME": "绝处逢生",
-        "DESCRIPTION": "如果敌人有 mysterydungeon:灼烧 状态， 获得 !B! 点 格挡 。 NL 如果敌人没有 mysterydungeon:灼烧 状态， 给予 !M! 层 mysterydungeon:灼烧 。"
+        "DESCRIPTION": "获得 !B! 点 格挡 。 NL 给予 !M! 层 mysterydungeon:灼烧 。 NL 将一张 *灼伤 加入你的手牌。"
     },
     "mysteryDungeon:CyndaquilRockSlide": {
         "NAME": "岩崩",
