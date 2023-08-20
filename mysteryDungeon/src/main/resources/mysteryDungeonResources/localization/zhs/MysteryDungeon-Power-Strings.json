@@ -141,7 +141,7 @@
     "mysteryDungeon:FirePledgePower": {
         "NAME": "火之誓约",
         "DESCRIPTIONS": [
-            "当你在本回合打出另一张 #y誓约牌 时，激活以下效果中的一个。 NL 草：给予所有敌人 #b9 层 #y中毒 。 NL 水：给予所有敌人 #b2 层 #y易伤 。 NL 火：获得 [E] 。"
+            "When you play another #yPledge #yCard this turn, activate one of the following effects. NL Grass: Apply #b9 #yPoison to ALL enemies. NL Fire: Gain [E]. NL Water: Apply #b2 #yVulnerable to ALL enemies."
         ]
     },
     "mysteryDungeon:FlashFirePower": {
@@ -182,7 +182,7 @@
     "mysteryDungeon:GrassPledgePower": {
         "NAME": "草之誓约",
         "DESCRIPTIONS": [
-            "当你在本回合打出另一张 #y誓约牌 时，激活以下效果中的一个。 NL 火：给予所有敌人 #b9 层 #y中毒 。 NL 水：给予所有敌人 #b2 层 #y虚弱 。 NL 草：获得 #b1 层 #y荆棘 。"
+            "When you play another #yPledge #yCard this turn, activate one of the following effects. NL Grass: Gain #b1 #yThorns. NL Fire: Apply #b9 #yPoison to ALL enemies. NL Water: Apply #b2 #yWeak to ALL enemies."
         ]
     },
     "mysteryDungeon:HailPower": {
@@ -508,7 +508,7 @@
     "mysteryDungeon:WaterPledgePower": {
         "NAME": "水之誓约",
         "DESCRIPTIONS": [
-            "当你在本回合打出另一张 #y誓约牌 时，激活以下效果中的一个。 NL 草：给予所有敌人 #b2 层 #y虚弱 。 NL 火：给予所有敌人 #b2 层 #y易伤 。 NL 水：获得 #b3 层 #y临时力量 。"
+            "When you play another #yPledge card this turn, activate one of the following effects. NL Grass: Apply #b2 #yWeak to ALL enemies. NL Fire: Apply #b2 #yVulnerable to ALL enemies. NL Water: Gain #b3 #yTemporary #Strength."
         ]
     },
     "mysteryDungeon:WhirlpoolPower": {
