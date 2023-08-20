@@ -597,7 +597,7 @@
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "Flame Charge",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn. NL Add a burn card to your hand."
+        "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Apply !M! mysterydungeon:Burn."
     },
     "mysteryDungeon:CyndaquilFlamethrower": {
         "NAME": "Flamethrower",
@@ -633,8 +633,7 @@
     },
     "mysteryDungeon:CyndaquilHowl": {
         "NAME": "Howl",
-        "DESCRIPTION": "Next turn gain [E] [E] [E].",
-        "UPGRADE_DESCRIPTION": "Next turn gain [E] [E] [E]. NL Next turn draw 1 more card."
+        "DESCRIPTION": "Add !M! *Burn to your draw pile. NL Next turn gain [E] [E] [E]."
     },
     "mysteryDungeon:CyndaquilIncinerate": {
         "NAME": "Incinerate",
@@ -670,7 +669,7 @@
     },
     "mysteryDungeon:CyndaquilReversal": {
         "NAME": "Reversal",
-        "DESCRIPTION": "Gain !B! Block. NL Apply !M! mysterydungeon:Burn. NL NL Add a burn card to your hand."
+        "DESCRIPTION": "If the enemy has mysterydungeon:Burn, gain !B! Block. NL If the enemy has no mysterydungeon:Burn stacks, apply !M! mysterydungeon:Burn."
     },
     "mysteryDungeon:CyndaquilRockSlide": {
         "NAME": "Rock Slide",
