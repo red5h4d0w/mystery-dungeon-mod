@@ -368,7 +368,7 @@
         "DESCRIPTION": "造成 !D! 点伤害。 NL 如果你失去超过 30% 的生命, 再造成 !D! 点伤害。"
     },
     "mysteryDungeon:ChikoritaAromatherapy": {
-        "NAME": "芳香疗法",
+        "NAME": "芳香治疗",
         "DESCRIPTION": "每当你受到伤害时，获得 !M! 点 力量 。",
         "UPGRADE_DESCRIPTION": "每当你受到伤害时，获得 !M! 点 力量 。 NL 下一回合，失去 1 点生命。"
     },
@@ -437,7 +437,7 @@
     },
     "mysteryDungeon:ChikoritaLeafGuard": {
         "NAME": "叶子防守",
-        "DESCRIPTION": "在你的回合开始时，移除你的所有负面效果。每移除一种负面效果，失去 !M! 点生命。"
+        "DESCRIPTION": "在你的回合结束时，移除你的所有负面效果。每移除一种负面效果，失去 !M! 点生命。"
     },
     "mysteryDungeon:ChikoritaLeafStorm": {
         "NAME": "飞叶风暴",
@@ -511,7 +511,7 @@
     },
     "mysteryDungeon:ChikoritaSynthesis": {
         "NAME": "光合作用",
-        "DESCRIPTION": "不能被打出 。 NL 抽到本牌时，回复 !M! 点生命。 NL 激活该效果 !mysteryDungeon:M2! 次后 消耗 。",
+        "DESCRIPTION": "不能被打出 。 NL 抽到本牌时，若你有 mysterydungeon:回复 状态，获得 !M! 层回复。 NL 激活该效果 !mysteryDungeon:M2! 次后 消耗 。",
         "EXTENDED_DESCRIPTION": [
             "我无法打出这张牌。",
             "抽到本牌时 消耗 。"
@@ -1173,7 +1173,7 @@
     },
     "mysteryDungeon:SquirtleRainDish": {
         "NAME": "雨盘",
-        "DESCRIPTION": "每当一张牌被手动丢弃时，获得 !M! 点 格挡 。",
+        "DESCRIPTION": "每当一张牌被手动预见或丢弃时，获得 !M! 点 格挡 。",
         "UPGRADE_DESCRIPTION": "固有 。 NL 每当一张牌被手动丢弃时，获得 !M! 点 格挡 。"
     },
     "mysteryDungeon:SquirtleRapidSpin": {
@@ -1236,7 +1236,7 @@
     },
     "mysteryDungeon:SquirtleWithdraw": {
         "NAME": "缩入壳中",
-        "DESCRIPTION": "将弃牌堆洗入牌库 NL 手牌中每张牌获得 !M! 点 格挡 。"
+        "DESCRIPTION": "将弃牌堆洗入牌库 NL 手牌中每张牌获得 !M! 点 格挡 。(不受 敏捷 和 脆弱 的影响)"
     },
     "mysteryDungeon:SquirtleZenHeadbutt": {
         "NAME": "意念头锤",
