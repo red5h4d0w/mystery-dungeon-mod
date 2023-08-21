@@ -39,6 +39,13 @@
         "DESCRIPTION": "该卡将不会影响计数器。"
     },
     {
+        "PROPER_NAME": "引燃",
+        "NAMES": [
+            "引燃"
+        ],
+        "DESCRIPTION": "对敌人造成等同于 #y灼烧 层数的伤害。移除全部 #y灼烧 。"
+    },
+    {
         "PROPER_NAME": "防御下降",
         "NAMES": [
             "防御下降"
@@ -60,6 +67,13 @@
         "DESCRIPTION": "每回合打出的前 #b2 张 #y技能牌 ，各提供 #b1 点 #y专注 。 NL 当 #y退出 该姿态时, #y激发 下 #b2 个 #y充能球 。"
     },
     {
+        "PROPER_NAME": "誓约牌",
+        "NAMES": [
+            "誓约牌"
+        ],
+        "DESCRIPTION": "#y誓约牌 包括 #y火之誓约 ， #y草之誓约 和 #y水之誓约 。"
+    },
+    {
         "PROPER_NAME": "毒刺",
         "NAMES": [
             "毒刺"
@@ -74,6 +88,13 @@
         "DESCRIPTION": "每当打出 #b1 张 #y攻击牌 ，生成 #b1 个 #y闪电充能球 。 NL （如果有空余栏位） NL 当 #y退出 该姿态时,获得 #b7 点格挡。"
     },
     {
+        "PROPER_NAME": "回复",
+        "NAMES": [
+            "回复"
+        ],
+        "DESCRIPTION": "每当你损失生命时，在下回合获得等同于损失生命值的层数的 #y回复 。 NL 每当你造成攻击伤害时，回复伤害值 30%% 的生命（不会超过 #y回复 层数），并减少 #y回复 层数。 NL #y回复 层数会在回合结束后消失。"
+    },
+    {
         "PROPER_NAME": "睡觉",
         "NAMES": [
             "睡觉"
@@ -81,11 +102,25 @@
         "DESCRIPTION": "无法对目标敌人出牌。"
     },
     {
+        "PROPER_NAME": "回收",
+        "NAMES": [
+            "回收"
+        ],
+        "DESCRIPTION": "抽牌后，如果这张牌在弃牌堆中，将其放入抽牌堆顶部。"
+    },
+    {
         "PROPER_NAME": "剧毒",
         "NAMES": [
             "剧毒"
         ],
         "DESCRIPTION": "拥有 #y剧毒 状态的敌人， #y中毒 效果会增加。"
+    },
+    {
+        "PROPER_NAME": "活力",
+        "NAMES": [
+            "活力"
+        ],
+        "DESCRIPTION": "你的下一次攻击额外造成等同于 #y活力 层数的伤害（在计算 #y易伤 等状态之前）。"
     },
     {
         "PROPER_NAME": "Asleep",
@@ -203,6 +238,14 @@
         "DESCRIPTION": "You cannot play cards that target the enemy."
     },
     {
+        "PROPER_NAME": "Scoop-Up",
+        "NAMES": [
+            "Scoop-Up",
+            "scoop-up"
+        ],
+        "DESCRIPTION": "At the start of your turn but after you draw, if this card is in your discard pile add it to the top of your draw pile."
+    },
+    {
         "PROPER_NAME": "Temporary HP",
         "NAMES": [
             "Temporary HP",
@@ -212,11 +255,29 @@
         "DESCRIPTION": "Additional defense that will take damage instead of your health bar. It will act like normal health. You keep Temporary HP between turns but not between rooms."
     },
     {
+        "PROPER_NAME": "Temporary Vigor",
+        "NAMES": [
+            "Temporary Vigor",
+            "Temporary_Vigor",
+            "temporary vigor",
+            "temporary_vigor"
+        ],
+        "DESCRIPTION": "Gain #yVigor, but lose #yVigor at the end of your turn."
+    },
+    {
         "PROPER_NAME": "Toxic",
         "NAMES": [
             "Toxic",
             "toxic"
         ],
         "DESCRIPTION": "Poison on enemies affected by Toxic go up by the amount of stack instead of going down."
+    },
+    {
+        "PROPER_NAME": "Vigor",
+        "NAMES": [
+            "Vigor",
+            "vigor"
+        ],
+        "DESCRIPTION": "Your next attack deals #b1 more damage per Vigor stack (before applying powers like #yVulnerable and such)."
     }
 ]
