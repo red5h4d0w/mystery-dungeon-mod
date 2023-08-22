@@ -1173,7 +1173,7 @@
     },
     "mysteryDungeon:SquirtleRainDish": {
         "NAME": "雨盘",
-        "DESCRIPTION": "每当一张牌被手动预见或丢弃时，获得 !M! 点 格挡 。",
+        "DESCRIPTION": "每当一张牌被手动丢弃时，获得 !M! 点 格挡 。",
         "UPGRADE_DESCRIPTION": "固有 。 NL 每当一张牌被手动丢弃时，获得 !M! 点 格挡 。"
     },
     "mysteryDungeon:SquirtleRapidSpin": {
