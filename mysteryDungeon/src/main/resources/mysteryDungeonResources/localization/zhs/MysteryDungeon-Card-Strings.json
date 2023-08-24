@@ -75,7 +75,7 @@
     },
     "mysteryDungeon:BulbasaurIngrain": {
         "NAME": "扎根",
-        "DESCRIPTION": "向随机敌人给予1层 mysterydungeon:寄生种子 !M! 次。 NL 失去2点 敏捷 。 NL 消耗 。"
+        "DESCRIPTION": "给予随机敌人1层 mysterydungeon:寄生种子 !M! 次。 NL 失去2点 敏捷 。 NL 消耗 。"
     },
     "mysteryDungeon:BulbasaurLeechSeed": {
         "NAME": "寄生种子",
@@ -116,7 +116,7 @@
     },
     "mysteryDungeon:BulbasaurRazorLeaf": {
         "NAME": "飞叶快刀",
-        "DESCRIPTION": "造成 !D! 伤害。 NL 抽1张牌。"
+        "DESCRIPTION": "造成 !D! 点伤害。 NL 抽1张牌。"
     },
     "mysteryDungeon:BulbasaurRest": {
         "NAME": "睡觉",
@@ -149,13 +149,13 @@
     },
     "mysteryDungeon:BulbasaurStunSpore": {
         "NAME": "麻痹粉",
-        "DESCRIPTION": "给予 !M! 层缓慢。 NL 消耗 。",
-        "UPGRADE_DESCRIPTION": "固有 。 NL 给予 !M! 层缓慢。 NL 消耗 。"
+        "DESCRIPTION": "给予 !M! 层 *缓慢 。 NL 消耗 。",
+        "UPGRADE_DESCRIPTION": "固有 。 NL 给予 !M! 层 *缓慢 。 NL 消耗 。"
     },
     "mysteryDungeon:BulbasaurSunnyDay": {
         "NAME": "大晴天",
-        "DESCRIPTION": "虚无 。 NL 每回合开始时， NL 额外再抽一张牌，降低手牌中费用最高的牌1点耗能。",
-        "UPGRADE_DESCRIPTION": "每回合开始时， NL 额外再抽一张牌，降低手牌中费用最高的牌1点耗能。"
+        "DESCRIPTION": "虚无 。 NL 每回合开始时额外抽一张牌， NL 并降低手牌中费用最高的牌1点耗能。",
+        "UPGRADE_DESCRIPTION": "每回合开始时额外抽一张牌， NL 并降低手牌中费用最高的牌1点耗能。"
     },
     "mysteryDungeon:BulbasaurSweetScent": {
         "NAME": "甜甜香气",
@@ -163,7 +163,7 @@
     },
     "mysteryDungeon:BulbasaurSynthesis": {
         "NAME": "光合作用",
-        "DESCRIPTION": "回复 !M! 点生命。 NL 下回合开始时， NL 额外再抽两张牌获得 [E] [E] 。 NL 消耗 。"
+        "DESCRIPTION": "回复 !M! 点生命。 NL 下回合额外抽两张牌并获得 [E] [E] 。 NL 消耗 。"
     },
     "mysteryDungeon:BulbasaurTackle": {
         "NAME": "撞击",
@@ -223,7 +223,7 @@
     },
     "mysteryDungeon:CharmanderDragonClaw": {
         "NAME": "龙爪",
-        "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL （可被 *金属 mysterydungeon:爪 增强伤害。）"
+        "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL （可被 *金属爪 增强伤害。）"
     },
     "mysteryDungeon:CharmanderDragonDance": {
         "NAME": "龙之舞",
@@ -244,7 +244,7 @@
     },
     "mysteryDungeon:CharmanderDragonRush": {
         "NAME": "龙之俯冲",
-        "DESCRIPTION": "造成 !D! 点伤害。 NL 从你的 消耗 牌堆中选择一张牌并将其添加到你的弃牌堆。 NL 从你的牌堆随机抽一张牌。 NL 消耗 。"
+        "DESCRIPTION": "造成 !D! 点伤害。 NL 将 消耗 牌堆中的一张牌加入到你的弃牌堆。 NL 随机 消耗 你抽牌堆中的一张牌。 NL 消耗 。"
     },
     "mysteryDungeon:CharmanderDragonTail": {
         "NAME": "龙尾",
@@ -356,7 +356,7 @@
     },
     "mysteryDungeon:CharmanderTailWind": {
         "NAME": "顺风",
-        "DESCRIPTION": "回合开始时，额外再抽 !M! 张牌。 NL 每回合你打出的第一张牌耗能为 0 并获得 消耗 。"
+        "DESCRIPTION": "在每回合开始时额外抽 !M! 张牌。 NL 每回合你打出的第一张牌耗能为 0 并被 消耗 。"
     },
     "mysteryDungeon:CharmanderWillOWisp": {
         "NAME": "鬼火",
@@ -365,7 +365,7 @@
     },
     "mysteryDungeon:ChikoritaAncientPower": {
         "NAME": "原始之力",
-        "DESCRIPTION": "造成 !D! 点伤害。 NL 如果你失去超过 30% 的生命, 再造成 !D! 点伤害。"
+        "DESCRIPTION": "造成 !D! 点伤害。 NL 如果你已失去超过 30% 的生命， 再造成 !D! 点伤害。"
     },
     "mysteryDungeon:ChikoritaAromatherapy": {
         "NAME": "芳香治疗",
@@ -382,7 +382,7 @@
     },
     "mysteryDungeon:ChikoritaCut": {
         "NAME": "居合劈",
-        "DESCRIPTION": "失去 !M! 生命。 NL 造成 !D! 点伤害。"
+        "DESCRIPTION": "失去 !M! 点生命。 NL 造成 !D! 点伤害。"
     },
     "mysteryDungeon:ChikoritaDefend": {
         "NAME": "防御",
@@ -407,7 +407,7 @@
     },
     "mysteryDungeon:ChikoritaFuryCutter": {
         "NAME": "连斩",
-        "DESCRIPTION": "虚无 。 NL 造成 !D! 伤害。 NL 在本场战斗中，增加这张牌 !M! 点伤害。 NL 失去 2 点生命。 NL 下一回合，将该牌的复制品添加至你的手牌并失去 2 点生命。 NL 消耗 。"
+        "DESCRIPTION": "虚无 。 NL 造成 !D! 点伤害。 NL 在本场战斗中，增加这张牌 !M! 点伤害。 NL 失去 2 点生命。 NL 下一回合，将该牌的复制品添加至你的手牌并失去 2 点生命。 NL 消耗 。"
     },
     "mysteryDungeon:ChikoritaGrassKnot": {
         "NAME": "打草结",
@@ -593,8 +593,8 @@
     },
     "mysteryDungeon:CyndaquilFlameBurst": {
         "NAME": "烈焰溅射",
-        "DESCRIPTION": "给予 !M! 层 mysterydungeon:灼烧 。 NL 下回合，mysterydungeon:引燃 。",
-        "UPGRADE_DESCRIPTION": "给予 !M! 层 mysterydungeon:灼烧 。 NL 下回合，mysterydungeon:引燃 。下一次 mysterydungeon:引燃 增加 50% 伤害。"
+        "DESCRIPTION": "给予 !M! 层 mysterydungeon:灼烧 。 NL 下回合， mysterydungeon:引燃 。",
+        "UPGRADE_DESCRIPTION": "给予 !M! 层 mysterydungeon:灼烧 。 NL 下回合， mysterydungeon:引燃 。下一次 mysterydungeon:引燃 增加 50% 伤害。"
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "蓄能焰袭",
@@ -653,12 +653,12 @@
     },
     "mysteryDungeon:CyndaquilLavaPlume": {
         "NAME": "喷烟",
-        "DESCRIPTION": "每当你mysterydungeon:引燃 ，给予目标 !M! 层 mysterydungeon:灼烧 。"
+        "DESCRIPTION": "每当你 mysterydungeon:引燃 ，给予目标 !M! 层 mysterydungeon:灼烧 。"
     },
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "瞪眼",
-        "DESCRIPTION": "去除敌人的所有 格挡 值。下一次 mysterydungeon:引燃 增加 50% 伤害。",
-        "UPGRADE_DESCRIPTION": "去除敌人的所有 格挡 值。下 !M! 次 mysterydungeon:引燃 增加 50% 伤害。"
+        "DESCRIPTION": "去除敌人的所有 格挡 值。 NL 下一次 mysterydungeon:引燃 增加 50% 伤害。",
+        "UPGRADE_DESCRIPTION": "去除敌人的所有 格挡 值。 NL 下 !M! 次 mysterydungeon:引燃 增加 50% 伤害。"
     },
     "mysteryDungeon:CyndaquilNaturePowerMountain": {
         "NAME": "自然之力：山地",
@@ -713,7 +713,7 @@
     },
     "mysteryDungeon:MeowthAssurance": {
         "NAME": "恶意追击",
-        "DESCRIPTION": "固有 。 NL 造成 !D! 点伤害。 NL 若敌人意图为攻击，给予 !M! 层虚弱并获得7金币。 NL 消耗 。"
+        "DESCRIPTION": "固有 。 NL 造成 !D! 点伤害。 NL 若敌人意图为攻击，给予 !M! 层 虚弱 并获得7金币。 NL 消耗 。"
     },
     "mysteryDungeon:MeowthAttract": {
         "NAME": "迷人",
@@ -756,7 +756,7 @@
     },
     "mysteryDungeon:MeowthFlash": {
         "NAME": "闪光",
-        "DESCRIPTION": "花费10金币。 NL 获得 !M! mysterydungeon:板甲 。 NL 消耗 。"
+        "DESCRIPTION": "花费10金币。 NL 获得 !M! 层 mysterydungeon:板甲 。 NL 消耗 。"
     },
     "mysteryDungeon:MeowthFlatter": {
         "NAME": "吹捧",
@@ -1083,15 +1083,15 @@
     },
     "mysteryDungeon:SquirtleDive": {
         "NAME": "潜水",
-        "DESCRIPTION": "清除全部状态。 NL 向抽牌堆或弃牌堆随机添加 !M! 张黑雾。 NL 消耗 。"
+        "DESCRIPTION": "清除全部状态。 NL 向抽牌堆或弃牌堆随机添加 !M! 张 *黑雾 。 NL 消耗 。"
     },
     "mysteryDungeon:SquirtleDoubleTeam": {
         "NAME": "影子分身",
-        "DESCRIPTION": "获得 !B! 点 格挡 。 抽到本牌时，向手牌添加一张复制品。 NL 消耗 。"
+        "DESCRIPTION": "获得 !B! 点 格挡 。 NL 每当你抽到这张牌，都增加一张其复制品到你的手牌。 NL 消耗 。"
     },
     "mysteryDungeon:SquirtleEndure": {
         "NAME": "挺住",
-        "DESCRIPTION": "每当你打出一张 状态牌 时, 对所有敌人造成 !M! 点伤害。 NL 视为攻击伤害。"
+        "DESCRIPTION": "每当你打出一张 状态牌 时， 对所有敌人造成 !M! 点伤害。 NL 视为攻击伤害。"
     },
     "mysteryDungeon:SquirtleExplorerForm": {
         "NAME": "杰尼龟·冒险者笔记",
@@ -1144,7 +1144,7 @@
     },
     "mysteryDungeon:SquirtleIronDefense": {
         "NAME": "铁壁",
-        "DESCRIPTION": "获得 !M! 层 敏捷 。"
+        "DESCRIPTION": "获得 !M! 点 敏捷 。"
     },
     "mysteryDungeon:SquirtleLifeDew": {
         "NAME": "生命水滴",
@@ -1195,8 +1195,8 @@
     },
     "mysteryDungeon:SquirtleSkullBashReady": {
         "NAME": "火箭头锤：准备！",
-        "DESCRIPTION": "将一张 *火箭头锤 洗入抽牌堆。",
-        "UPGRADE_DESCRIPTION": "固有 。 NL 将一张 *火箭头锤：启动 洗入抽牌堆。"
+        "DESCRIPTION": "将一张 *火箭头锤：启动！ 洗入抽牌堆。",
+        "UPGRADE_DESCRIPTION": "固有 。 NL 将一张 *火箭头锤：启动！ 洗入抽牌堆。"
     },
     "mysteryDungeon:SquirtleSkullBashSet": {
         "NAME": "火箭头锤：启动！",
@@ -1236,7 +1236,7 @@
     },
     "mysteryDungeon:SquirtleWithdraw": {
         "NAME": "缩入壳中",
-        "DESCRIPTION": "将弃牌堆洗入牌库 NL 手牌中每张牌获得 !M! 点 格挡 。(不受 敏捷 和 脆弱 的影响)"
+        "DESCRIPTION": "将弃牌堆洗入抽牌堆。 NL 手牌中每有一张牌， 获得 !M! 点 格挡 。 NL 本牌 格挡 值不受 敏捷 和 脆弱 的影响。"
     },
     "mysteryDungeon:SquirtleZenHeadbutt": {
         "NAME": "意念头锤",
