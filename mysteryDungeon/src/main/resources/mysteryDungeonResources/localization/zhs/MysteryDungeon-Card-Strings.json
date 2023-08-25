@@ -756,7 +756,7 @@
     },
     "mysteryDungeon:MeowthFlash": {
         "NAME": "闪光",
-        "DESCRIPTION": "花费10金币。 NL 获得 !M! 层 mysterydungeon:板甲 。 NL 消耗 。"
+        "DESCRIPTION": "花费10金币。 NL 获得 !M! 层 多层护甲 。 NL 消耗 。"
     },
     "mysteryDungeon:MeowthFlatter": {
         "NAME": "吹捧",
@@ -877,7 +877,7 @@
     },
     "mysteryDungeon:MeowthUnnerve": {
         "NAME": "紧张感",
-        "DESCRIPTION": "每当你在本场战斗中花费总共25金币， 获得 !M! 层 mysterydungeon:板甲 。"
+        "DESCRIPTION": "每当你在本场战斗中花费总共25金币， 获得 !M! 层 多层护甲 。"
     },
     "mysteryDungeon:MeowthUTurn": {
         "NAME": "急速折返",
