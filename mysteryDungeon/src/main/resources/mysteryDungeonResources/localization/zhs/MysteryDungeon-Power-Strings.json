@@ -496,7 +496,7 @@
     "mysteryDungeon:UnnervePower": {
         "NAME": "紧张感",
         "DESCRIPTIONS": [
-            "每当你在本场战斗中花费总共25金币，  获得 #b%s 层 #y板甲 。"
+            "每当你在本场战斗中花费总共25金币， 获得 #b%s 层 #y多层护甲 。"
         ]
     },
     "mysteryDungeon:WaterfallPower": {
