@@ -3,6 +3,7 @@ package mysteryDungeon.powers;
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonPower;
+import mysteryDungeon.interfaces.BetterOnGainBlockInterface;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
@@ -20,7 +21,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 //Gain 1 dex for the turn for each card played.
 
-public class PsychUpPower extends PokemonPower implements CloneablePowerInterface, BetterOnApplyPowerPower {
+public class PsychUpPower extends PokemonPower implements CloneablePowerInterface, BetterOnApplyPowerPower, BetterOnGainBlockInterface {
     public AbstractCreature source;
 
     public static final String POWER_ID = MysteryDungeon.makeID(PsychUpPower.class);
@@ -57,6 +58,13 @@ public class PsychUpPower extends PokemonPower implements CloneablePowerInterfac
             addToBot(new ApplyPowerAction(owner, owner, new StrengthPower(owner, amount), amount));
         }
         return true;
+    }
+
+    @Override
+    public void betterOnGainBlock(AbstractCreature receiver, int blockAmount) {
+        if(receiver!=owner){
+            addToBot(new ApplyPowerAction(owner, owner, new StrengthPower(owner, amount), amount));
+        }
     }
 
     @Override

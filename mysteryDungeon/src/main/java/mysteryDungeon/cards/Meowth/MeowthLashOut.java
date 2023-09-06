@@ -47,6 +47,7 @@ public class MeowthLashOut extends PokemonCard {
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
         cardsToPreview = new MeowthFlurry();
+        isInnate = true;
     }
 
     
