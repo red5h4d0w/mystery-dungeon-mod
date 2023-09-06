@@ -1303,8 +1303,8 @@
     },
     "mysteryDungeon:TotodileExplorerForm": {
         "NAME": "Forme de l'Explorateur",
-        "DESCRIPTION": "Éthérée. NL Au début de votre tour, ajoutez !M! carte de votre défausse à votre main. NL Piochez une carte de moins par tour.",
-        "UPGRADE_DESCRIPTION": "Au début de votre tour, ajoutez !M! carte de votre défausse à votre main. NL Piochez une carte de moins par tour."
+        "DESCRIPTION": "Ethereal. NL At the start of your turn, add !M! random card from your discard pile to your hand. NL Draw two less card per turn.",
+        "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! random card from your discard pile to your hand. NL Draw two less card per turn."
     },
     "mysteryDungeon:TotodileHail": {
         "NAME": "Grêle",
