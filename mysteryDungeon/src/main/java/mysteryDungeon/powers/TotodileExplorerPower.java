@@ -3,13 +3,13 @@ package mysteryDungeon.powers;
 import basemod.interfaces.CloneablePowerInterface;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonPower;
+import mysteryDungeon.actions.MoveRandomCardsAction;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -55,8 +55,8 @@ public class TotodileExplorerPower extends PokemonPower implements CloneablePowe
     public void atStartOfTurn()
     {
         if(AbstractDungeon.player.discardPile.group.size()>0)
-            addToBot(new MoveCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.discardPile, amount));
-        addToBot(new ApplyPowerAction(owner,owner, new NextTurnDrawLessPower(owner, 1)));
+            addToBot(new MoveRandomCardsAction(AbstractDungeon.player.hand, AbstractDungeon.player.discardPile, amount));
+        addToBot(new ApplyPowerAction(owner,owner, new NextTurnDrawLessPower(owner, 2)));
     }
 
     @Override
