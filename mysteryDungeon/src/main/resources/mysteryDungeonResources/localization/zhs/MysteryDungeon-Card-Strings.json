@@ -1303,8 +1303,8 @@
     },
     "mysteryDungeon:TotodileExplorerForm": {
         "NAME": "小锯鳄·冒险者笔记",
-        "DESCRIPTION": "虚无 。 NL 在你的回合开始时，将 !M! 张弃牌堆的牌返回手牌。 NL 每回合少抽一张牌。",
-        "UPGRADE_DESCRIPTION": "在你的回合开始时，将 !M! 张弃牌堆的牌返回手牌。 NL 每回合少抽一张牌。"
+        "DESCRIPTION": "Ethereal. NL At the start of your turn, add !M! random card from your discard pile to your hand. NL Draw two less card per turn.",
+        "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! random card from your discard pile to your hand. NL Draw two less card per turn."
     },
     "mysteryDungeon:TotodileHail": {
         "NAME": "冰雹",
