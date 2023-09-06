@@ -1303,8 +1303,8 @@
     },
     "mysteryDungeon:TotodileExplorerForm": {
         "NAME": "탐험가의 자세",
-        "DESCRIPTION": "휘발성. NL 턴 시작시, 버린 카드 더미에 있는 카드를 !M! 장 선택해 손으로 가져옵니다. NL 카드 한장을 덜 뽑습니다.",
-        "UPGRADE_DESCRIPTION": "턴 시작시, 버린 카드 더미에 있는 카드를 !M! 장 선택해 손으로 가져옵니다. NL 카드 한장을 덜 뽑습니다."
+        "DESCRIPTION": "Ethereal. NL At the start of your turn, add !M! random card from your discard pile to your hand. NL Draw two less card per turn.",
+        "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! random card from your discard pile to your hand. NL Draw two less card per turn."
     },
     "mysteryDungeon:TotodileHail": {
         "NAME": "싸라기눈",
