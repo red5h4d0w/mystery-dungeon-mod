@@ -794,8 +794,8 @@
     },
     "mysteryDungeon:MeowthLashOut": {
         "NAME": "Lash Out",
-        "DESCRIPTION": "Whenever you apply Strength or Block to an enemy create !M! *Flurry in your hand.",
-        "UPGRADE_DESCRIPTION": "Whenever you apply Strength or Block to an enemy create !M! upgraded *Flurry in your hand."
+        "DESCRIPTION": "Innate. NL Whenever you apply Strength or Block to an enemy create !M! *Flurry in your hand.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you apply Strength or Block to an enemy create !M! upgraded *Flurry in your hand."
     },
     "mysteryDungeon:MeowthNastyPlot": {
         "NAME": "Nasty Plot",
@@ -817,8 +817,8 @@
     },
     "mysteryDungeon:MeowthPsychUp": {
         "NAME": "Psych Up",
-        "DESCRIPTION": "When you apply Strength to an enemy, gain !M! Strength.",
-        "UPGRADE_DESCRIPTION": "When you apply Strength to an enemy, gain !M! Strength."
+        "DESCRIPTION": "Innate. NL When you apply Strength or Block to an enemy, gain !M! Strength.",
+        "UPGRADE_DESCRIPTION": "Innate. NL When you apply Strength or Block to an enemy, gain !M! Strength."
     },
     "mysteryDungeon:MeowthPunishment": {
         "NAME": "Punishment",
@@ -1303,8 +1303,8 @@
     },
     "mysteryDungeon:TotodileExplorerForm": {
         "NAME": "Explorer Form",
-        "DESCRIPTION": "Ethereal. NL At the start of your turn, add !M! card from your discard pile to your hand. NL Draw one less card per turn.",
-        "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! card from your discard pile to your hand. NL Draw one less card per turn."
+        "DESCRIPTION": "Ethereal. NL At the start of your turn, add !M! random card from your discard pile to your hand. NL Draw two less card per turn.",
+        "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! random card from your discard pile to your hand. NL Draw two less card per turn."
     },
     "mysteryDungeon:TotodileHail": {
         "NAME": "Hail",
