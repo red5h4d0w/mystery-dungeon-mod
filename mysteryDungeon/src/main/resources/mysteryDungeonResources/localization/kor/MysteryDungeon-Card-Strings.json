@@ -794,8 +794,8 @@
     },
     "mysteryDungeon:MeowthLashOut": {
         "NAME": "분풀이",
-        "DESCRIPTION": "적에게 힘을 부여하거나 방어도를 부여한 경우 *난동 을 !M! 장 얻습니다.",
-        "UPGRADE_DESCRIPTION": "적에게 힘을 부여하거나 방어도를 부여한 경우 강화된 *난동 을 !M! 장 얻습니다."
+        "DESCRIPTION": "Innate. NL Whenever you apply Strength or Block to an enemy create !M! *Flurry in your hand.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you apply Strength or Block to an enemy create !M! upgraded *Flurry in your hand."
     },
     "mysteryDungeon:MeowthNastyPlot": {
         "NAME": "나쁜 음모",
@@ -817,8 +817,8 @@
     },
     "mysteryDungeon:MeowthPsychUp": {
         "NAME": "자기암시",
-        "DESCRIPTION": "적에게 힘을 부여할때, 힘을 !M! 얻습니다.",
-        "UPGRADE_DESCRIPTION": "적에게 힘을 부여할때, 힘을 !M! 얻습니다."
+        "DESCRIPTION": "Innate. NL When you apply Strength or Block to an enemy, gain !M! Strength.",
+        "UPGRADE_DESCRIPTION": "Innate. NL When you apply Strength or Block to an enemy, gain !M! Strength."
     },
     "mysteryDungeon:MeowthPunishment": {
         "NAME": "혼내기",
