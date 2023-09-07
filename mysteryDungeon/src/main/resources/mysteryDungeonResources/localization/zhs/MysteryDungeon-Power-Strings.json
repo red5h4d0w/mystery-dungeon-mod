@@ -350,7 +350,7 @@
     "mysteryDungeon:PsychUpPower": {
         "NAME": "自我暗示",
         "DESCRIPTIONS": [
-            "每当你给予一个敌人 #y力量 时，获得 #b%s 点 #y力量 。"
+            "每当你给予 #y力量 或 #y格挡 时， 获得 #b%s 点 #y力量 。"
         ]
     },
     "mysteryDungeon:RainDancePower": {
