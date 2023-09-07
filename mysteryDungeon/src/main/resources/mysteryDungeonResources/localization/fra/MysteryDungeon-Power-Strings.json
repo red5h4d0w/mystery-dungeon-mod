@@ -350,7 +350,7 @@
     "mysteryDungeon:PsychUpPower": {
         "NAME": "Boost",
         "DESCRIPTIONS": [
-            "Lorsque vous appliquez de la #yForce, gagnez #b%s de #yForce."
+            "Whenever you apply #yStrength or #yBlock gain #b%s #yStrength."
         ]
     },
     "mysteryDungeon:RainDancePower": {
