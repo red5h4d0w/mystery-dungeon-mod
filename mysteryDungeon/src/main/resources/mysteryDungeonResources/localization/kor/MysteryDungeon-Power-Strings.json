@@ -350,7 +350,7 @@
     "mysteryDungeon:PsychUpPower": {
         "NAME": "자기암시",
         "DESCRIPTIONS": [
-            "적에게 #y힘 을 부여할때, #y힘 을 #b%s 얻습니다."
+            "Whenever you apply #yStrength or #yBlock gain #b%s #yStrength."
         ]
     },
     "mysteryDungeon:RainDancePower": {
