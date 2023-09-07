@@ -794,8 +794,8 @@
     },
     "mysteryDungeon:MeowthLashOut": {
         "NAME": "Cent Racunes",
-        "DESCRIPTION": "Lorsque vous appliquez de la Force ou de l'Armure à un ennemi, créez !M! *Rafale dans votre main.",
-        "UPGRADE_DESCRIPTION": "Lorsque vous appliquez de la Force ou de l'Armure à un ennemi, créez !M! *Rafale améliorée dans votre main."
+        "DESCRIPTION": "Innate. NL Whenever you apply Strength or Block to an enemy create !M! *Flurry in your hand.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you apply Strength or Block to an enemy create !M! upgraded *Flurry in your hand."
     },
     "mysteryDungeon:MeowthNastyPlot": {
         "NAME": "Machination",
@@ -817,8 +817,8 @@
     },
     "mysteryDungeon:MeowthPsychUp": {
         "NAME": "Boost",
-        "DESCRIPTION": "Lorsque vous appliquez de la Force à un ennemi, gagnez !M! de Force.",
-        "UPGRADE_DESCRIPTION": "Lorsque vous appliquez de la Force à un ennemi, gagnez !M! de Force."
+        "DESCRIPTION": "Innate. NL When you apply Strength or Block to an enemy, gain !M! Strength.",
+        "UPGRADE_DESCRIPTION": "Innate. NL When you apply Strength or Block to an enemy, gain !M! Strength."
     },
     "mysteryDungeon:MeowthPunishment": {
         "NAME": "Punition",
