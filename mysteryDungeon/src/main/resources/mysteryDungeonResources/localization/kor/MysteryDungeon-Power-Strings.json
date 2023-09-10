@@ -250,7 +250,8 @@
     "mysteryDungeon:LockDownPower": {
         "NAME": "봉쇄",
         "DESCRIPTIONS": [
-            "턴 종료 시, 전압 표시기가 중앙으로 돌아오지 않습니다."
+            "At the end of the turn, do not return automatically to the center of the #yCharge #yMeter.",
+            "At the end of the next #b%s turns, do not return automatically to the center of the #yCharge #Meter."
         ]
     },
     "mysteryDungeon:LoseVigorPower": {
