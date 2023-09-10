@@ -794,8 +794,8 @@
     },
     "mysteryDungeon:MeowthLashOut": {
         "NAME": "泄愤",
-        "DESCRIPTION": "Innate. NL Whenever you apply Strength or Block to an enemy create !M! *Flurry in your hand.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you apply Strength or Block to an enemy create !M! upgraded *Flurry in your hand."
+        "DESCRIPTION": "固有 。 NL 每当你给予一个敌人 力量 或 格挡 时， 将 !M! 张 *乱挠 加入手牌。",
+        "UPGRADE_DESCRIPTION": "固有 。 NL 每当你给予一个敌人 力量 或 格挡 时， 将 !M! 张 *乱挠+ 加入手牌。"
     },
     "mysteryDungeon:MeowthNastyPlot": {
         "NAME": "诡计",
@@ -817,8 +817,8 @@
     },
     "mysteryDungeon:MeowthPsychUp": {
         "NAME": "自我暗示",
-        "DESCRIPTION": "Innate. NL When you apply Strength or Block to an enemy, gain !M! Strength.",
-        "UPGRADE_DESCRIPTION": "Innate. NL When you apply Strength or Block to an enemy, gain !M! Strength."
+        "DESCRIPTION": "固有 。 NL 每当你给予一个敌人 力量 或 格挡 时， 获得 !M! 点 力量 。",
+        "UPGRADE_DESCRIPTION": "固有 。 NL 每当你给予一个敌人 力量 或 格挡 时， 获得 !M! 点 力量 。"
     },
     "mysteryDungeon:MeowthPunishment": {
         "NAME": "惩罚",
