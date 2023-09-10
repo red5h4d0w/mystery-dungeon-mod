@@ -44,6 +44,7 @@ public class MeowthPsychUp extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        isInnate = true;
     }
 
     // Actions the card should do.
