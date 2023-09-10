@@ -598,7 +598,7 @@
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "Nitrocharge",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn. NL Add a burn card to your hand."
+        "DESCRIPTION": "Infligez !D! dégâts. NL Appliquez !M! de mysterydungeon:Brûlure. NL Ajoutez une *Brûlure à votre main."
     },
     "mysteryDungeon:CyndaquilFlamethrower": {
         "NAME": "Lance-Flammes",
@@ -625,8 +625,8 @@
     },
     "mysteryDungeon:CyndaquilFrustration": {
         "NAME": "Frustration",
-        "DESCRIPTION": "Apply 20 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Apply 20 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption."
+        "DESCRIPTION": "Appliquez 20 de mysterydungeon:Brûlure. NL Au prochain tour, à la fin de votre tour, déclenchez une mysterydungeon:Éruption.",
+        "UPGRADE_DESCRIPTION": "Retenue. NL Appliquez 20 mysterydungeon:Brûlure. NL Au prochain tour, à la fin de votre tour, déclenchez une mysterydungeon:Éruption."
     },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "Canicule",
@@ -794,8 +794,8 @@
     },
     "mysteryDungeon:MeowthLashOut": {
         "NAME": "Cent Racunes",
-        "DESCRIPTION": "Innate. NL Whenever you apply Strength or Block to an enemy create !M! *Flurry in your hand.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you apply Strength or Block to an enemy create !M! upgraded *Flurry in your hand."
+        "DESCRIPTION": "Inné. NL Lorsque vous appliquez de la Force ou de l'Armure à un ennemi, créez !M! *Rafale dans votre main.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Lorsque vous appliquez de la Force ou de l'Armure à un ennemi, créez !M! *Rafale+ dans votre main."
     },
     "mysteryDungeon:MeowthNastyPlot": {
         "NAME": "Machination",
@@ -817,8 +817,8 @@
     },
     "mysteryDungeon:MeowthPsychUp": {
         "NAME": "Boost",
-        "DESCRIPTION": "Innate. NL When you apply Strength or Block to an enemy, gain !M! Strength.",
-        "UPGRADE_DESCRIPTION": "Innate. NL When you apply Strength or Block to an enemy, gain !M! Strength."
+        "DESCRIPTION": "Inné. NL Lorsque vous appliquez de la Force ou de l'Armure à un ennemi, gagnez !M! de Force.",
+        "UPGRADE_DESCRIPTION": "Inné. NL Lorsque vous appliquez de la Force ou de l'Armure à un ennemi, gagnez !M! de Force."
     },
     "mysteryDungeon:MeowthPunishment": {
         "NAME": "Punition",
@@ -1303,8 +1303,8 @@
     },
     "mysteryDungeon:TotodileExplorerForm": {
         "NAME": "Forme de l'Explorateur",
-        "DESCRIPTION": "Ethereal. NL At the start of your turn, add !M! random card from your discard pile to your hand. NL Draw two less card per turn.",
-        "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! random card from your discard pile to your hand. NL Draw two less card per turn."
+        "DESCRIPTION": "Éthérée. NL Au début de votre tour, ajoutez !M! carte aléatoire de votre défausse à votre main. NL Piochez deux cartes de moins par tour.",
+        "UPGRADE_DESCRIPTION": "Au début de votre tour, ajoutez !M! carte aléatoire de votre défausse à votre main. NL Piochez deux cartes de moins par tour."
     },
     "mysteryDungeon:TotodileHail": {
         "NAME": "Grêle",
