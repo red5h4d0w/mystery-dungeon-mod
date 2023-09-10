@@ -598,7 +598,7 @@
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "니트로차지",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn. NL Add a burn card to your hand."
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn. NL Add a *Burn to your hand."
     },
     "mysteryDungeon:CyndaquilFlamethrower": {
         "NAME": "화염방사",
@@ -794,8 +794,8 @@
     },
     "mysteryDungeon:MeowthLashOut": {
         "NAME": "분풀이",
-        "DESCRIPTION": "적에게 힘을 부여하거나 방어도를 부여한 경우 *난동 을 !M! 장 얻습니다.",
-        "UPGRADE_DESCRIPTION": "적에게 힘을 부여하거나 방어도를 부여한 경우 강화된 *난동 을 !M! 장 얻습니다."
+        "DESCRIPTION": "Innate. NL Whenever you apply Strength or Block to an enemy create !M! *Flurry in your hand.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you apply Strength or Block to an enemy create !M! *Flurry+ in your hand."
     },
     "mysteryDungeon:MeowthNastyPlot": {
         "NAME": "나쁜 음모",
@@ -817,8 +817,8 @@
     },
     "mysteryDungeon:MeowthPsychUp": {
         "NAME": "자기암시",
-        "DESCRIPTION": "적에게 힘을 부여할때, 힘을 !M! 얻습니다.",
-        "UPGRADE_DESCRIPTION": "적에게 힘을 부여할때, 힘을 !M! 얻습니다."
+        "DESCRIPTION": "Innate. NL When you apply Strength or Block to an enemy, gain !M! Strength.",
+        "UPGRADE_DESCRIPTION": "Innate. NL When you apply Strength or Block to an enemy, gain !M! Strength."
     },
     "mysteryDungeon:MeowthPunishment": {
         "NAME": "혼내기",
@@ -1303,8 +1303,8 @@
     },
     "mysteryDungeon:TotodileExplorerForm": {
         "NAME": "탐험가의 자세",
-        "DESCRIPTION": "휘발성. NL 턴 시작시, 버린 카드 더미에 있는 카드를 !M! 장 선택해 손으로 가져옵니다. NL 카드 한장을 덜 뽑습니다.",
-        "UPGRADE_DESCRIPTION": "턴 시작시, 버린 카드 더미에 있는 카드를 !M! 장 선택해 손으로 가져옵니다. NL 카드 한장을 덜 뽑습니다."
+        "DESCRIPTION": "Ethereal. NL At the start of your turn, add !M! random card from your discard pile to your hand. NL Draw two less card per turn.",
+        "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! random card from your discard pile to your hand. NL Draw two less card per turn."
     },
     "mysteryDungeon:TotodileHail": {
         "NAME": "싸라기눈",

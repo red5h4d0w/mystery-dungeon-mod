@@ -250,7 +250,8 @@
     "mysteryDungeon:LockDownPower": {
         "NAME": "定时",
         "DESCRIPTIONS": [
-            "在回合结束时，指针不再复位。"
+            "At the end of the turn, do not return automatically to the center of the #yCharge #yMeter.",
+            "At the end of the next #b%s turns, do not return automatically to the center of the #yCharge #Meter."
         ]
     },
     "mysteryDungeon:LoseVigorPower": {
@@ -350,7 +351,7 @@
     "mysteryDungeon:PsychUpPower": {
         "NAME": "自我暗示",
         "DESCRIPTIONS": [
-            "每当你给予一个敌人 #y力量 时，获得 #b%s 点 #y力量 。"
+            "每当你给予 #y力量 或 #y格挡 时， 获得 #b%s 点 #y力量 。"
         ]
     },
     "mysteryDungeon:RainDancePower": {
@@ -496,7 +497,7 @@
     "mysteryDungeon:UnnervePower": {
         "NAME": "紧张感",
         "DESCRIPTIONS": [
-            "每当你在本场战斗中花费总共25金币，  获得 #b%s 层 #y板甲 。"
+            "每当你在本场战斗中花费总共25金币， 获得 #b%s 层 #y多层护甲 。"
         ]
     },
     "mysteryDungeon:WaterfallPower": {
