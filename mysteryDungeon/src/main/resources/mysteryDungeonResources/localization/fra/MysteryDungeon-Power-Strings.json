@@ -250,7 +250,8 @@
     "mysteryDungeon:LockDownPower": {
         "NAME": "Confinement",
         "DESCRIPTIONS": [
-            "À la fin du tour, ne retournez pas automatiquement au centre de la jauge de charge."
+            "At the end of the turn, do not return automatically to the center of the #yCharge #yMeter.",
+            "At the end of the next #b%s turns, do not return automatically to the center of the #yCharge #Meter."
         ]
     },
     "mysteryDungeon:LoseVigorPower": {
