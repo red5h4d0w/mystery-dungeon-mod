@@ -56,7 +56,9 @@ public class CyndaquilFireBlast extends PokemonCard implements onLoadCardMiscInt
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        // Create an int which equals to your current energy.
+        // Make sure magicNumber has the right value
+        baseMagicNumber = misc;
+        magicNumber = misc;
         addToBot(new SimpleAction(() -> {
             AbstractDungeon.player.masterDeck.group.stream()
                     .filter(c -> c.uuid == uuid)

@@ -57,6 +57,9 @@ public class MeowthHappyHour extends PokemonCard implements onLoadCardMiscInterf
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        // Make sure magicNumber has the right value
+        baseMagicNumber = misc;
+        magicNumber = misc;
         addToBot(new SimpleAction(() -> {
             AbstractDungeon.player.masterDeck.group.stream()
                 .filter(c -> c.uuid == uuid)
