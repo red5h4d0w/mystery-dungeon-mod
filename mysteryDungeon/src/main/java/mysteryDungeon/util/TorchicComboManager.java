@@ -71,6 +71,16 @@ public class TorchicComboManager {
             this.finisher = finisher;
         }
 
+        public Combo(Move[] moveList, AbstractGameAction finisher) {
+            this.moveList = new ArrayList<Move>(Arrays.asList(moveList));
+            this.finisher = finisher;
+        }
+
+        public Combo(AbstractGameAction finisher, Move... moveList) {
+            this.moveList = new ArrayList<Move>(Arrays.asList(moveList));
+            this.finisher = finisher;
+        }
+
         public String toString() {
             return moveList.stream().map(move -> move.name().charAt(0)).collect(Collector.of(
                 StringBuilder::new,
