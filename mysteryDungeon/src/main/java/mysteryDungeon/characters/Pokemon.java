@@ -15,6 +15,7 @@ import mysteryDungeon.saveConstructs.ToSave;
 import mysteryDungeon.stances.NegativeStance;
 import mysteryDungeon.stances.PositiveStance;
 import mysteryDungeon.ui.PikachuMeter;
+import mysteryDungeon.util.TorchicComboManager;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Pixmap;
@@ -169,6 +170,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     public Texture campfirePose;
 
     public static PikachuMeter pikaMeter = new PikachuMeter();
+
+    public static TorchicComboManager comboManager;
 
     public static boolean skipNextEvolution = false;
 
@@ -642,6 +645,20 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         return false;
     }
 
+    public static boolean hasChosenTorchic() {
+        if(AbstractDungeon.player instanceof Pokemon) {
+            if(((Pokemon)AbstractDungeon.player).hasChosenStarters()) {
+                if(((Pokemon)AbstractDungeon.player).adventurer.cardColor == Enums.TORCHIC_RED) {
+                    return true;
+                }
+                if(((Pokemon)AbstractDungeon.player).partner.cardColor == Enums.TORCHIC_RED) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
     // Should return an AttackEffect array of any size greater than 0. These effects
     // will be played in sequence as your character's finishing combo on the heart.
     // Attack effects are the same as used in DamageAction and the like.
@@ -693,6 +710,9 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
                 AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(NeutralStance.STANCE_ID));
             }
         }
+        if(comboManager != null) {
+            comboManager.feed(c);
+        }
     }
 
     public void setPikaMeter(int newState) {
@@ -717,11 +737,18 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         setPikaMeter(0);
     }
 
+    public void resetComboManager() {
+        if(hasChosenTorchic()) {
+            comboManager = new TorchicComboManager();
+        }
+    }
+
     @Override
     public void applyStartOfCombatLogic() {
         super.applyStartOfCombatLogic();
         goldSpentThisCombat = 0;
         resetPikameter();
+        resetComboManager();
     }
 
     public void DefineNature(String natureAsAString) {

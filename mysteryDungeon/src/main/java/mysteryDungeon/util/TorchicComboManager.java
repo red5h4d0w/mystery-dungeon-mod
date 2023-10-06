@@ -1,15 +1,22 @@
 package mysteryDungeon.util;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.stream.Collector;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
+import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+
+import mysteryDungeon.actions.SimpleAction;
 
 public class TorchicComboManager {
     
@@ -102,7 +109,12 @@ public class TorchicComboManager {
     private ComboWithState currentCombo;
 
     public TorchicComboManager() {
-        // TODO: add default combo to comboList
+        logger.info("Weclome to the combo Manager console edition");
+        // TODO: modify default combo to comboList
+        comboList.add(new Combo(new ArrayList<Move>(Arrays.asList(Move.SKILL, Move.ATTACK, Move.ATTACK)), new SimpleAction(() -> {
+            AbstractDungeon.actionManager.addToTop(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(12, true), DamageType.THORNS, AttackEffect.FIRE));
+        })));
+        drawNewCombo();
     }
 
     public void addCombo(Combo combo) {
@@ -116,7 +128,7 @@ public class TorchicComboManager {
         logger.info(String.format("New Combo is (%s)", currentCombo.toString()));
     }
 
-    public void ApplyCardToCombo(AbstractCard card) {
+    public void feed(AbstractCard card) {
         // If it finds a match, it increments the combo
         if(movesFromCard(card).stream().anyMatch(move -> currentCombo.canReceiveMove(move))) {
             currentCombo.state++;
