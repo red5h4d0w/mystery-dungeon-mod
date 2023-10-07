@@ -1243,6 +1243,18 @@
         "DESCRIPTION": "피해를 !D! 줍니다. NL 풀죽음을 얻습니다",
         "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 강화된 풀죽음을 얻습니다."
     },
+    "mysteryDungeon:TorchicDefend": {
+        "NAME": "Defend",
+        "DESCRIPTION": "Gain !B! Block."
+    },
+    "mysteryDungeon:TorchicExamplePower": {
+        "NAME": "Example",
+        "DESCRIPTION": "Do something."
+    },
+    "mysteryDungeon:TorchicScratch": {
+        "NAME": "Scratch",
+        "DESCRIPTION": "Deal !D! damage."
+    },
     "mysteryDungeon:TotodileAquaJet": {
         "NAME": "아쿠아제트",
         "DESCRIPTION": "선천성. NL 피해를 !D! 줍니다. 다음턴에 mysterydungeon:활력을 !M! 얻습니다."
