@@ -1243,6 +1243,18 @@
         "DESCRIPTION": "造成 !D! 点伤害。 NL 将一张 *挠 加入手牌。",
         "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 将一张 *挠 加入手牌。"
     },
+    "mysteryDungeon:TorchicDefend": {
+        "NAME": "Defend",
+        "DESCRIPTION": "Gain !B! Block."
+    },
+    "mysteryDungeon:TorchicExamplePower": {
+        "NAME": "Example",
+        "DESCRIPTION": "Do something."
+    },
+    "mysteryDungeon:TorchicScratch": {
+        "NAME": "Scratch",
+        "DESCRIPTION": "Deal !D! damage."
+    },
     "mysteryDungeon:TotodileAquaJet": {
         "NAME": "水流喷射",
         "DESCRIPTION": "固有 。 NL 造成 !D! 点伤害。 NL 下一回合获得 !M! 层 mysterydungeon:活力 。"
