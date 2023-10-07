@@ -1243,6 +1243,18 @@
         "DESCRIPTION": "Infligez !D! dégâts NL Créez une *Peur et ajoutez-la à votre main.",
         "UPGRADE_DESCRIPTION": "Infligez !D! dégâts NL Créez une *Peur améliorée et ajoutez-la à votre main."
     },
+    "mysteryDungeon:TorchicDefend": {
+        "NAME": "Defend",
+        "DESCRIPTION": "Gain !B! Block."
+    },
+    "mysteryDungeon:TorchicExamplePower": {
+        "NAME": "Example",
+        "DESCRIPTION": "Do something."
+    },
+    "mysteryDungeon:TorchicScratch": {
+        "NAME": "Scratch",
+        "DESCRIPTION": "Deal !D! damage."
+    },
     "mysteryDungeon:TotodileAquaJet": {
         "NAME": "Aqua-Jet",
         "DESCRIPTION": "Inné. NL Infligez !D! dégâts. Au prochain tour, gagnez !M! mysterydungeon:Vigueur."
