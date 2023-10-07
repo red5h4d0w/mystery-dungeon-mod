@@ -1247,6 +1247,10 @@
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! Block."
     },
+    "mysteryDungeon:TorchicExamplePower": {
+        "NAME": "Example",
+        "DESCRIPTION": "Do something."
+    },
     "mysteryDungeon:TorchicScratch": {
         "NAME": "Scratch",
         "DESCRIPTION": "Deal !D! damage."
