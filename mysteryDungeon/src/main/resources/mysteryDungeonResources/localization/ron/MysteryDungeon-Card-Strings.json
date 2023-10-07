@@ -1243,6 +1243,18 @@
         "DESCRIPTION": "Deal !D! damage NL Create a *Flinch and add it to your hand.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage NL Create an upgraded *Flinch and add it to your hand."
     },
+    "mysteryDungeon:TorchicDefend": {
+        "NAME": "Defend",
+        "DESCRIPTION": "Gain !B! Block."
+    },
+    "mysteryDungeon:TorchicExamplePower": {
+        "NAME": "Example",
+        "DESCRIPTION": "Do something."
+    },
+    "mysteryDungeon:TorchicScratch": {
+        "NAME": "Scratch",
+        "DESCRIPTION": "Deal !D! damage."
+    },
     "mysteryDungeon:TotodileAquaJet": {
         "NAME": "Aqua Jet",
         "DESCRIPTION": "Innate. NL Deal !D! damage. Next turn gain !M! mysterydungeon:Vigor."
