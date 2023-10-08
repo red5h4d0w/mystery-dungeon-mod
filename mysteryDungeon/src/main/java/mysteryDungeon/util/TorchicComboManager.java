@@ -133,7 +133,7 @@ public class TorchicComboManager {
     }
 
     public void drawNewCombo() {
-        int choice = AbstractDungeon.cardRng.random(comboList.size());
+        int choice = AbstractDungeon.cardRng.random(comboList.size()-1);
         currentCombo = new ComboWithState(comboList.get(choice));
         logger.info(String.format("New Combo is (%s)", currentCombo.toString()));
     }
