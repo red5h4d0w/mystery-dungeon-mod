@@ -31,7 +31,7 @@ public class TorchicExamplePower extends PokemonCard {
     // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.BASIC;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = Pokemon.Enums.TORCHIC_RED;
 
