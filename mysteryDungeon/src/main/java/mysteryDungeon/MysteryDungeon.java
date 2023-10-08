@@ -272,6 +272,14 @@ public class MysteryDungeon implements
             ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
             ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
             ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
+
+        BaseMod.addColor(Pokemon.Enums.TORCHIC_RED, Color.RED.cpy(), Color.RED.cpy(), Color.RED.cpy(),
+            Color.RED.cpy(), Color.RED.cpy(), Color.RED.cpy(), Color.RED.cpy(),
+            ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
+            ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
+            ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
+
+        
         logger.info("Done creating the colors");
         
         
