@@ -22,9 +22,6 @@ public class OnDrawActionPatch
         @SpirePostfixPatch
         public static void onDraw(DrawCardAction __instance)
         {
-            logger.info("draw Pile has "+ AbstractDungeon.player.drawPile.size());
-            logger.info("drawing "+ __instance.amount);
-            logger.info(drawCardActionToSkip);
             if(drawCardActionToSkip==0)
             {
                 AbstractDungeon.player.powers.stream()
