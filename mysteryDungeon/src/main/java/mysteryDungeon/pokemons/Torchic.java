@@ -4,8 +4,8 @@ import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 
-import mysteryDungeon.cards.Bulbasaur.BulbasaurLeechSeed;
 import mysteryDungeon.cards.Torchic.TorchicDefend;
+import mysteryDungeon.cards.Torchic.TorchicExamplePower;
 import mysteryDungeon.cards.Torchic.TorchicScratch;
 import mysteryDungeon.characters.Pokemon;
 
@@ -15,7 +15,7 @@ public class Torchic extends AbstractPokemon {
     public static int MAX_HP = 35;
     public static int ORB_SLOTS = 1;
     public static AbstractCard[] STARTING_DECK = new AbstractCard[] {
-        new TorchicScratch(), new TorchicScratch(), new TorchicDefend(), new TorchicDefend(), new BulbasaurLeechSeed()
+        new TorchicScratch(), new TorchicScratch(), new TorchicDefend(), new TorchicDefend(), new TorchicExamplePower()
     };
     public static Color COLOR = Color.RED.cpy();
     public static CardColor CARD_COLOR = Pokemon.Enums.TORCHIC_RED;
