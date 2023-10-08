@@ -19,7 +19,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import mysteryDungeon.actions.SimpleAction;
 
 public class TorchicComboManager {
-    
+
     public static Logger logger = LogManager.getFormatterLogger(TorchicComboManager.class);
 
     // TODO: list all possible moves
@@ -38,24 +38,21 @@ public class TorchicComboManager {
         ArrayList<Move> moves = new ArrayList<Move>();
 
         // Based on type
-        if(card.type == CardType.ATTACK) {
+        if (card.type == CardType.ATTACK) {
             moves.add(Move.ATTACK);
-        }
-        else if(card.type == CardType.SKILL) {
+        } else if (card.type == CardType.SKILL) {
             moves.add(Move.SKILL);
-        }
-        else if(card.type == CardType.POWER) {
+        } else if (card.type == CardType.POWER) {
             moves.add(Move.ATTACK);
-        }
-        else if(card.type == CardType.STATUS) {
+        } else if (card.type == CardType.STATUS) {
             moves.add(Move.ATTACK);
         }
 
         // Based on keywords
-        if(card.exhaust) {
+        if (card.exhaust) {
             moves.add(Move.EXHAUST);
         }
-        if(card.selfRetain) {
+        if (card.selfRetain) {
             moves.add(Move.RETAIN);
         }
 
@@ -83,13 +80,12 @@ public class TorchicComboManager {
 
         public String toString() {
             return moveList.stream().map(move -> move.name().charAt(0)).collect(Collector.of(
-                StringBuilder::new,
-                StringBuilder::append,
-                StringBuilder::append,
-                StringBuilder::toString
-            ));
+                    StringBuilder::new,
+                    StringBuilder::append,
+                    StringBuilder::append,
+                    StringBuilder::toString));
         }
-    } 
+    }
 
     public static class ComboWithState extends Combo {
         public int state = 0;
@@ -97,6 +93,7 @@ public class TorchicComboManager {
         public ComboWithState(ArrayList<Move> moveList, AbstractGameAction finisher) {
             super(moveList, finisher);
         }
+
         public ComboWithState(Combo combo) {
             super(combo.moveList, combo.finisher);
         }
@@ -112,8 +109,6 @@ public class TorchicComboManager {
         }
     }
 
-
-    
     private ArrayList<Combo> comboList = new ArrayList<Combo>();
 
     private ComboWithState currentCombo;
@@ -121,9 +116,11 @@ public class TorchicComboManager {
     public TorchicComboManager() {
         logger.info("Weclome to the combo Manager console edition");
         // TODO: modify default combo to comboList
-        comboList.add(new Combo(new ArrayList<Move>(Arrays.asList(Move.SKILL, Move.ATTACK, Move.ATTACK)), new SimpleAction(() -> {
-            AbstractDungeon.actionManager.addToTop(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(12, true), DamageType.THORNS, AttackEffect.FIRE));
-        })));
+        comboList.add(new Combo(new ArrayList<Move>(Arrays.asList(Move.SKILL, Move.ATTACK, Move.ATTACK)),
+                new SimpleAction(() -> {
+                    AbstractDungeon.actionManager.addToTop(new DamageAllEnemiesAction(AbstractDungeon.player,
+                            DamageInfo.createDamageMatrix(12, true), DamageType.THORNS, AttackEffect.FIRE));
+                })));
         drawNewCombo();
     }
 
@@ -133,26 +130,25 @@ public class TorchicComboManager {
     }
 
     public void drawNewCombo() {
-        int choice = AbstractDungeon.cardRng.random(comboList.size()-1);
+        int choice = AbstractDungeon.cardRng.random(comboList.size() - 1);
         currentCombo = new ComboWithState(comboList.get(choice));
+        currentCombo.finisher.isDone = false;
         logger.info(String.format("New Combo is (%s)", currentCombo.toString()));
     }
 
     public void feed(AbstractCard card) {
         // If it finds a match, it increments the combo
-        if(movesFromCard(card).stream().anyMatch(move -> currentCombo.canReceiveMove(move))) {
+        if (movesFromCard(card).stream().anyMatch(move -> currentCombo.canReceiveMove(move))) {
             currentCombo.state++;
             logger.info(String.format("Combo is now %s", currentCombo.toString()));
-            if(currentCombo.state == currentCombo.moveList.size()) {
+            if (currentCombo.state == currentCombo.moveList.size()) {
                 AbstractDungeon.actionManager.addToBottom(currentCombo.finisher);
                 drawNewCombo();
             }
-        }
-        else {
+        } else {
             logger.info("Combo Broken...");
             drawNewCombo();
         }
     }
-
 
 }
