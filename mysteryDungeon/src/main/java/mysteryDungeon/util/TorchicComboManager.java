@@ -143,11 +143,15 @@ public class TorchicComboManager {
             logger.info(String.format("Combo is now %s", currentCombo.toString()));
             if (currentCombo.state == currentCombo.moveList.size()) {
                 AbstractDungeon.actionManager.addToBottom(currentCombo.finisher);
-                drawNewCombo();
+                AbstractDungeon.actionManager.addToBottom(new SimpleAction(() -> {
+                    drawNewCombo();
+                }));
             }
         } else {
             logger.info("Combo Broken...");
-            drawNewCombo();
+            AbstractDungeon.actionManager.addToBottom(new SimpleAction(() -> {
+                drawNewCombo();
+            }));
         }
     }
 
