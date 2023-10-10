@@ -73,7 +73,7 @@
             "Plated_Armor",
             "plated_armor"
         ],
-        "DESCRIPTION": "At the end of your turn, gain Block equal to the number of Plated Armor Stacks. Reduce this amount by one evertime you take damage from an enemies attack."
+        "DESCRIPTION": "At the end of your turn, gain Block equal to the number of Plated Armor Stacks. Reduce this amount by one everytime you take damage from an enemies attack."
     },
     {
         "PROPER_NAME": "Pledge Card",
