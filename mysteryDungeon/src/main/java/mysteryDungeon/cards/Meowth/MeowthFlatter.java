@@ -27,7 +27,6 @@ public class MeowthFlatter extends PokemonCard {
 
     // /TEXT DECLARATION/
 
-
     // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -39,7 +38,6 @@ public class MeowthFlatter extends PokemonCard {
     private static final int BASE_MAGIC_NUMBER = 2;
     private static final int BLOCK = 20;
     private static final int UPGRADE_PLUS_BLOCK = 5;
-
 
     // /STAT DECLARATION/
 
@@ -56,11 +54,10 @@ public class MeowthFlatter extends PokemonCard {
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             for (AbstractMonster monster : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                 if (!monster.isDead && !monster.isDying) {
-                    AbstractDungeon.actionManager.addToBottom(
-                        new ApplyPowerAction(monster, p, new StrengthPower(monster, this.magicNumber), this.magicNumber)
-                    );
-                } 
-            } 
+                    addToBot(new ApplyPowerAction(monster, p, new StrengthPower(monster, this.magicNumber),
+                            this.magicNumber));
+                }
+            }
         }
         addToBot(new GainBlockAction(p, p, block));
     }
