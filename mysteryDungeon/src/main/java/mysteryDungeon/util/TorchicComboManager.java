@@ -109,14 +109,16 @@ public class TorchicComboManager {
         }
     }
 
-    private ArrayList<Combo> comboList = new ArrayList<Combo>();
+    private ArrayList<Combo> comboDeck = new ArrayList<Combo>();
+
+    private ArrayList<Combo> comboDiscard = new ArrayList<Combo>();
 
     private ComboWithState currentCombo;
 
     public TorchicComboManager() {
         logger.info("Weclome to the combo Manager console edition");
-        // TODO: modify default combo to comboList
-        comboList.add(new Combo(new ArrayList<Move>(Arrays.asList(Move.SKILL, Move.ATTACK, Move.ATTACK)),
+        // TODO: modify default combo to comboDeck
+        comboDeck.add(new Combo(new ArrayList<Move>(Arrays.asList(Move.SKILL, Move.ATTACK, Move.ATTACK)),
                 new SimpleAction(() -> {
                     AbstractDungeon.actionManager.addToTop(new DamageAllEnemiesAction(AbstractDungeon.player,
                             DamageInfo.createDamageMatrix(12, true), DamageType.THORNS, AttackEffect.FIRE));
@@ -125,13 +127,23 @@ public class TorchicComboManager {
     }
 
     public void addCombo(Combo combo) {
-        comboList.add(combo);
+        comboDeck.add(combo);
         logger.info(String.format("-> Added new Combo (%s)", combo.toString()));
     }
 
     public void drawNewCombo() {
-        int choice = AbstractDungeon.cardRng.random(comboList.size() - 1);
-        currentCombo = new ComboWithState(comboList.get(choice));
+        // Shuffle deck if necessary
+        if (comboDeck.size() == 0) {
+            for (Combo combo : comboDiscard) {
+                comboDeck.add(combo);
+            }
+            comboDiscard.clear();
+        }
+        // Choose next combo and discard it
+        Combo nextCombo = comboDeck.get(AbstractDungeon.cardRng.random(comboDeck.size() - 1));
+        currentCombo = new ComboWithState(nextCombo);
+        comboDeck.remove(nextCombo);
+        comboDiscard.add(nextCombo);
         currentCombo.finisher.isDone = false;
         logger.info(String.format("New Combo is (%s)", currentCombo.toString()));
     }
