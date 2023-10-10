@@ -124,8 +124,8 @@
     },
     "mysteryDungeon:BulbasaurSecretPower": {
         "NAME": "비밀의 힘",
-        "DESCRIPTION": "선천성. NL 무작위 파워 카드를 1 장 얻습니다. NL 소멸",
-        "UPGRADE_DESCRIPTION": "선천성. NL 강화된 무작위 파워 카드를 1 장 얻습니다. NL 소멸"
+        "DESCRIPTION": "Innate. NL Add random Power in your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Add random upgraded Power in your hand. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurSeedBomb": {
         "NAME": "씨폭탄",
