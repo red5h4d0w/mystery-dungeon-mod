@@ -8,15 +8,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
-import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
-import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.actions.SimpleAction;
+import mysteryDungeon.powers.FireSpinPower;
 
 public class TorchicComboManager {
 
@@ -120,8 +119,13 @@ public class TorchicComboManager {
         // TODO: modify default combo to comboDeck
         comboDeck.add(new Combo(new ArrayList<Move>(Arrays.asList(Move.SKILL, Move.ATTACK, Move.ATTACK)),
                 new SimpleAction(() -> {
-                    AbstractDungeon.actionManager.addToTop(new DamageAllEnemiesAction(AbstractDungeon.player,
-                            DamageInfo.createDamageMatrix(12, true), DamageType.THORNS, AttackEffect.FIRE));
+                    if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+                        for (AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters) {
+                            if (!monster.isDead && !monster.isDying) {
+                                AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(monster, AbstractDungeon.player, new FireSpinPower(monster, 4), 4));
+                } 
+            } 
+        }
                 })));
         drawNewCombo();
     }
