@@ -7,6 +7,7 @@ import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makePowerPath;
 
+
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.OnReceivePowerPower;
@@ -49,10 +50,15 @@ public class FireSpinPower extends PokemonPower implements CloneablePowerInterfa
 
         updateDescription();
     }
-    
+        public void onInitialApplication()
+    {
+        addToBot((AbstractGameAction)new LoseHPAction(this.owner, null, this.amount, AbstractGameAction.AttackEffect.FIRE));
+        
+    }
+
     public boolean onReceivePower(AbstractPower power, AbstractCreature target, AbstractCreature source)
     {
-        if(power.ID == FireSpinPower.POWER_ID)
+         if(power.ID == FireSpinPower.POWER_ID)
          addToBot((AbstractGameAction)new LoseHPAction(this.owner, null, this.amount, AbstractGameAction.AttackEffect.FIRE));
             updateDescription();
         return true;
