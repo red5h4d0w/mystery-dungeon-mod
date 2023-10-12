@@ -23,6 +23,6 @@ public class Torchic extends AbstractPokemon {
     public Torchic(){
         super(MAX_HP, ORB_SLOTS, STARTING_DECK, COLOR, CARD_COLOR);
         evolution = new Combusken();
-        // complexity = 4;
+        complexity = 4;
     }
 }
