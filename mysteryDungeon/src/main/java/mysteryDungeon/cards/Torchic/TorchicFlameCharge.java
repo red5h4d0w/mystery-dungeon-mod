@@ -18,13 +18,13 @@ import mysteryDungeon.powers.BurnPower;
 import mysteryDungeon.util.TorchicComboManager.Combo;
 import mysteryDungeon.util.TorchicComboManager.Move;
 
-public class FlameCharge extends PokemonCard {
+public class TorchicFlameCharge extends PokemonCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = MysteryDungeon.makeID(FlameCharge.class);
+    public static final String ID = MysteryDungeon.makeID(TorchicFlameCharge.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(FlameCharge.class);
+    public static final String IMG = makeCardPath(TorchicFlameCharge.class);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
@@ -41,7 +41,7 @@ public class FlameCharge extends PokemonCard {
 
     // /STAT DECLARATION/
 
-    public FlameCharge() {
+    public TorchicFlameCharge() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
     }
 
