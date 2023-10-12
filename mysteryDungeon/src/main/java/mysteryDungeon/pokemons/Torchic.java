@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 
 import mysteryDungeon.cards.Torchic.TorchicDefend;
-import mysteryDungeon.cards.Torchic.FlameCharge;
+import mysteryDungeon.cards.Torchic.TorchicFlameCharge;
 import mysteryDungeon.cards.Torchic.TorchicScratch;
 import mysteryDungeon.characters.Pokemon;
 
@@ -15,7 +15,7 @@ public class Torchic extends AbstractPokemon {
     public static int MAX_HP = 30;
     public static int ORB_SLOTS = 1;
     public static AbstractCard[] STARTING_DECK = new AbstractCard[] {
-        new TorchicScratch(), new TorchicScratch(), new TorchicDefend(), new TorchicDefend(), new FlameCharge()
+        new TorchicScratch(), new TorchicScratch(), new TorchicDefend(), new TorchicDefend(), new TorchicFlameCharge()
     };
     public static Color COLOR = Color.RED.cpy();
     public static CardColor CARD_COLOR = Pokemon.Enums.TORCHIC_RED;
