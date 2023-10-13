@@ -23,4 +23,8 @@ public class PokemonPower extends AbstractPower {
     public void updateDescription() {
         this.description = DESCRIPTIONS[0];
     }
+
+    public void triggerFireSpin() {
+        
+    }
 }
