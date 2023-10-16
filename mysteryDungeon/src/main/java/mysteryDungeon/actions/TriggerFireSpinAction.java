@@ -9,11 +9,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mysteryDungeon.abstracts.PokemonPower;
 
 public class TriggerFireSpinAction extends AbstractGameAction {
-  AbstractCard card;
   
-  public TriggerFireSpinAction(AbstractCard callingCard) {
-    this.card = callingCard;
-  }
+  public TriggerFireSpinAction() { }
   
   public void update() {
     for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
