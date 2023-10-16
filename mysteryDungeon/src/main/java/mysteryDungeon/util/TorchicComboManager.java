@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.actions.SimpleAction;
+import mysteryDungeon.actions.TriggerFireSpinAction;
 import mysteryDungeon.powers.FireSpinPower;
 
 public class TorchicComboManager {
@@ -123,6 +124,7 @@ public class TorchicComboManager {
                         for (AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters) {
                             if (!monster.isDead && !monster.isDying) {
                                 AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(monster, AbstractDungeon.player, new FireSpinPower(monster, 4), 4));
+                                AbstractDungeon.actionManager.addToTop(new TriggerFireSpinAction());
                 } 
             } 
         }
