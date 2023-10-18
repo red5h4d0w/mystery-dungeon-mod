@@ -123,11 +123,13 @@ public class TorchicComboManager {
                     if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
                         for (AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters) {
                             if (!monster.isDead && !monster.isDying) {
-                                AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(monster, AbstractDungeon.player, new FireSpinPower(monster, 4), 4));
                                 AbstractDungeon.actionManager.addToTop(new TriggerFireSpinAction());
-                } 
-            } 
-        }
+                                AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(monster,
+                                        AbstractDungeon.player, new FireSpinPower(monster, 4), 4));
+
+                            }
+                        }
+                    }
                 })));
         drawNewCombo();
     }

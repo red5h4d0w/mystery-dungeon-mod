@@ -49,8 +49,9 @@ public class FireSpinPower extends PokemonPower implements CloneablePowerInterfa
         updateDescription();
     }
 
+    @Override
     public void triggerFireSpin() {
-        addToBot(new LoseHPAction(this.owner, null, this.amount, AbstractGameAction.AttackEffect.FIRE));
+        addToBot(new LoseHPAction(this.owner, this.owner, this.amount, AbstractGameAction.AttackEffect.FIRE));
     }
 
     @Override
