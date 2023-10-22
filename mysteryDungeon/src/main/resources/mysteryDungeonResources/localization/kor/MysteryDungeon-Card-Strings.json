@@ -634,7 +634,7 @@
     },
     "mysteryDungeon:CyndaquilHowl": {
         "NAME": "멀리짖기",
-        "DESCRIPTION": "Next turn gain [E] [E] [E].",
+        "DESCRIPTION": "다음 턴에 [E] [E] [E]을(를) 얻습니다.",
         "UPGRADE_DESCRIPTION": "Next turn gain [E] [E] [E]. NL Next turn draw 1 more card."
     },
     "mysteryDungeon:CyndaquilIncinerate": {
@@ -1248,7 +1248,7 @@
         "DESCRIPTION": "Gain !B! Block."
     },
     "mysteryDungeon:TorchicFlameCharge": {
-        "NAME": "Flame Charge",
+        "NAME": "니트로차지",
         "DESCRIPTION": "Combo: Skill, Skill, Attack. NL Finisher: Apply 12 burn to ALL enemies"
     },
     "mysteryDungeon:TorchicScratch": {
