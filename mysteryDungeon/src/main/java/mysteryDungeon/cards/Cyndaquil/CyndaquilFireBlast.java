@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.helpers.GetAllInBattleInstances;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import basemod.abstracts.CustomSavable;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.actions.SimpleAction;
@@ -18,7 +17,7 @@ import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.interfaces.onLoadCardMiscInterface;
 import mysteryDungeon.powers.BurnPower;
 
-public class CyndaquilFireBlast extends PokemonCard implements onLoadCardMiscInterface, CustomSavable<Integer> {
+public class CyndaquilFireBlast extends PokemonCard implements onLoadCardMiscInterface {
 
     // TEXT DECLARATION
 
@@ -88,14 +87,11 @@ public class CyndaquilFireBlast extends PokemonCard implements onLoadCardMiscInt
         }
     }
 
-    @Override
-    public Integer onSave() {
-        return this.misc;
-    }
-
-    @Override
-    public void onLoad(Integer misc) {
-        this.misc = misc;
+    public void applyPowers() {
+        this.baseMagicNumber = this.misc;
+        this.magicNumber = this.misc;
+        super.applyPowers();
+        initializeDescription();
     }
 
     @Override
