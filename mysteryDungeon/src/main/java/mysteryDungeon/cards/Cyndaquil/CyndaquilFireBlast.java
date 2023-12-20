@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.helpers.GetAllInBattleInstances;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import basemod.abstracts.CustomSavable;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.actions.SimpleAction;
@@ -17,7 +18,7 @@ import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.interfaces.onLoadCardMiscInterface;
 import mysteryDungeon.powers.BurnPower;
 
-public class CyndaquilFireBlast extends PokemonCard implements onLoadCardMiscInterface {
+public class CyndaquilFireBlast extends PokemonCard implements onLoadCardMiscInterface, CustomSavable<Integer> {
 
     // TEXT DECLARATION
 
@@ -28,7 +29,6 @@ public class CyndaquilFireBlast extends PokemonCard implements onLoadCardMiscInt
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
     // /TEXT DECLARATION/
-
 
     // STAT DECLARATION
 
@@ -41,7 +41,6 @@ public class CyndaquilFireBlast extends PokemonCard implements onLoadCardMiscInt
     private static final int BASE_MAGIC_NUMBER = 5;
     private static final int BASE_SECOND_MAGIC_NUMBER = 5;
     private static final int UPGRADE_SECOND_MAGIC_NUMBER = 1;
-
 
     // /STAT DECLARATION/
 
@@ -61,13 +60,13 @@ public class CyndaquilFireBlast extends PokemonCard implements onLoadCardMiscInt
         // Create an int which equals to your current energy.
         addToBot(new SimpleAction(() -> {
             AbstractDungeon.player.masterDeck.group.stream()
-                .filter(c -> c.uuid == uuid)
-                .forEach(c -> {
-                    c.misc += secondMagicNumber;
-                    c.applyPowers();
-                    c.baseMagicNumber = c.misc;
-                    c.magicNumber = c.misc;
-                });
+                    .filter(c -> c.uuid == uuid)
+                    .forEach(c -> {
+                        c.misc += secondMagicNumber;
+                        c.applyPowers();
+                        c.baseMagicNumber = c.misc;
+                        c.magicNumber = c.misc;
+                    });
             GetAllInBattleInstances.get(uuid).stream().forEach(c -> {
                 c.misc += secondMagicNumber;
                 c.applyPowers();
@@ -76,7 +75,7 @@ public class CyndaquilFireBlast extends PokemonCard implements onLoadCardMiscInt
             });
         }));
         addToBot(new ApplyPowerAction(m, p, new BurnPower(m, magicNumber), magicNumber));
-        
+
     }
 
     // Upgraded stats.
@@ -87,6 +86,16 @@ public class CyndaquilFireBlast extends PokemonCard implements onLoadCardMiscInt
             upgradeSecondMagicNumber(UPGRADE_SECOND_MAGIC_NUMBER);
             initializeDescription();
         }
+    }
+
+    @Override
+    public Integer onSave() {
+        return this.misc;
+    }
+
+    @Override
+    public void onLoad(Integer misc) {
+        this.misc = misc;
     }
 
     @Override
