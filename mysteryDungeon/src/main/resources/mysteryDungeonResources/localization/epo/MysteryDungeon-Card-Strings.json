@@ -1421,8 +1421,8 @@
     },
     "mysteryDungeon:TotodileWaterSport": {
         "NAME": "Water Sport",
-        "DESCRIPTION": "Discard the top card of your draw pile. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor.",
-        "UPGRADE_DESCRIPTION": "Discard the top 2 cards of your draw pile. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor."
+        "DESCRIPTION": "Discard the top !M! cards of your draw pile. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor.",
+        "UPGRADE_DESCRIPTION": "Discard the top !M! cards of your draw pile. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor."
     },
     "mysteryDungeon:TotodileWhirlpool": {
         "NAME": "Whirlpool",
