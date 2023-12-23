@@ -2,13 +2,13 @@
     "mysteryDungeon:NegativeStance": {
         "NAME": "负极态",
         "DESCRIPTION": [
-            "每回合打出的前 #b2 张 #y技能牌 ，各提供 #b1 点 #y专注 。 NL 当 #y退出 该姿态时, #y激发 下 #b1 个 #y充能球 。"
+            "每回合打出的前 #b2 张 #y技能牌 各提供 #b1 点 #y专注 。 NL 当 #y退出 该 #y姿态 时， #y激发 下 #b1 个 #y充能球 。"
         ]
     },
     "mysteryDungeon:PositiveStance": {
         "NAME": "正极态",
         "DESCRIPTION": [
-            "每当打出 #y1 张 #y攻击牌 ，生成 #b1 个 #y闪电充能球 。 NL （如果有空余栏位） NL 当 #y退出 该姿态时,获得 #b4 点格挡。"
+            "每当你打出 #y1 张 #y攻击牌 时，若有空的 #y充能球栏位 ，则 #y生成 #b1 个 #y闪电 充能球。 NL 当 #y退出 该 #y姿态 时，获得 #b4 点 #y格挡 。"
         ]
     }
 }

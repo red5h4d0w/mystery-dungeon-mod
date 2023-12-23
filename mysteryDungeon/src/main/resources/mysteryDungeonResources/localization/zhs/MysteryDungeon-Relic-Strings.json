@@ -1,93 +1,93 @@
 {
     "mysteryDungeon:NatureRelatedRelic": {
         "NAME": "自然宝典",
-        "FLAVOR": "奇妙的力量",
+        "FLAVOR": "这是什么？",
         "DESCRIPTIONS": [
             "根据你的性格获得一个遗物。"
         ]
     },
     "mysteryDungeon:AmuletCoinRelic": {
-        "NAME": "Amulet Coin",
-        "FLAVOR": "It doubles any prize money received as long as the holder joins the battle at least once.",
+        "NAME": "护符金币",
+        "FLAVOR": "只要携带它的宝可梦在战斗时出场一次，就能获得2倍金钱。",
         "DESCRIPTIONS": [
-            "Cards no longer cost you money in combat. At the start of your turn, spend #b20 gold."
+            "战斗中卡牌不再花费金币。在你的回合开始时，花费 #b20 金币。"
         ]
     },
     "mysteryDungeon:BigRootRelic": {
-        "NAME": "Big Root",
-        "FLAVOR": "What is this?",
+        "NAME": "大根茎",
+        "FLAVOR": "这是什么？",
         "DESCRIPTIONS": [
-            "Whenever you are at #b70% or less of your max HP, gain #yRecovery."
+            "当你生命值等于或低于 #b70% 时，获得 #y回复 。"
         ]
     },
     "mysteryDungeon:BlackGlassesRelic": {
-        "NAME": "Black Glasses",
-        "FLAVOR": "It's a pair of shady- looking glasses that boost the power of the holder's Dark-type moves.",
+        "NAME": "黑色眼镜",
+        "FLAVOR": "看上去很奇怪的眼镜。携带后，恶属性的招式威力就会提高。",
         "DESCRIPTIONS": [
-            "At the start of each turn, deal damage to ALL enemies equal to their #yStrength."
+            "在每个回合开始时，对所有敌人造成等同于其 #y力量 的伤害。"
         ]
     },
     "mysteryDungeon:BraveExplorerRelic": {
         "NAME": "勇敢的冒险家",
         "FLAVOR": "这是什么？",
         "DESCRIPTIONS": [
-            "回合结束第一次无格挡时，向所有敌人施加 #b2 层易伤。"
+            "回合结束第一次无格挡时，给予所有敌人 #b2 层易伤。"
         ]
     },
     "mysteryDungeon:CalmExplorerRelic": {
         "NAME": "温和的冒险家",
         "FLAVOR": "这是什么？",
         "DESCRIPTIONS": [
-            "每场战斗开始时。 NL 抽 #b1 张牌。 NL 获得 [E] 。"
+            "每场战斗开始时， 抽 #b1 张牌并获得 [E] 。"
         ]
     },
     "mysteryDungeon:CellBatteryRelic": {
         "NAME": "充电电池",
-        "FLAVOR": "一种消耗性电池。。",
+        "FLAVOR": "一种消耗性电池。",
         "DESCRIPTIONS": [
             "电力表两端将为 #b3 层计数器。每回合结束后，指针将不再复位。"
         ]
     },
     "mysteryDungeon:CharcoalRelic": {
         "NAME": "木炭",
-        "FLAVOR": "这是一种可燃性燃料，可增强火系招式的威力。",
+        "FLAVOR": "焚烧用的燃料。携带后，火属性的招式威力就会提高。",
         "DESCRIPTIONS": [
-            "每当你施加 #b1 次 #y减益效果 ，对所有敌人造成 #b1 点伤害。"
+            "每当你给予 #b1 次 #y负面效果 ，对所有敌人造成 #b1 点伤害。"
         ]
     },
     "mysteryDungeon:DocileExplorerRelic": {
         "NAME": "坦率的冒险家",
         "FLAVOR": "这是什么？",
         "DESCRIPTIONS": [
-            "每当你获得 #b1 次 #y减益效果 ，下回合获得 #b2 点格挡。"
+            "每当你获得 #b1 次 #y负面效果 ，下回合获得 #b2 点格挡。"
         ]
     },
     "mysteryDungeon:FireGemRelic": {
-        "NAME": "Fire Gem",
-        "FLAVOR": "This gem is imbued with the essence of fire and will boost the power of a Fire-type moves, but only once.",
+        "NAME": "火之宝石",
+        "FLAVOR": "火属性的宝石。携带后，火属性的招式威力仅会增强1次。",
         "DESCRIPTIONS": [
-            "At the start of each combat, apply #b10 #yBurn to ALL enemies."
+            "在每场战斗开始时，给予所有敌人 #b10 层 #y灼烧 。"
         ]
     },
     "mysteryDungeon:FlamePlateRelic": {
-        "NAME": "Flame Plate",
-        "FLAVOR": "This stone tablet is imbued with the essence of fire and boosts the power of the holder's Fire-type moves.",
+        "NAME": "火球石板",
+        "FLAVOR": "火属性的石板。携带后，火属性的招式威力就会增强。",
         "DESCRIPTIONS": [
-            "Gain [E] at the start of your turn. NL At the end of your turn, trigger an #yEruption on ALL enemies."
+            "在你的回合开始时，获得 [E] 。 NL 在你的回合结束时， #y引燃 所有敌人。"
         ]
     },
     "mysteryDungeon:GrassySeedRelic": {
-        "NAME": "Grassy Seed",
-        "FLAVOR": "It boosts Defense on Grassy Terrain.",
+        "NAME": "青草种子",
+        "FLAVOR": "让宝可梦携带后，在青草场地上使用，防御就会提高。",
         "DESCRIPTIONS": [
-            "At the start of combat add a random attack to your draw pile. It costs #b0 this combat."
+            "在每场战斗开始时，随机将一张攻击牌放入你的抽牌堆。这张牌本场战斗耗能为 #b0 。"
         ]
     },
     "mysteryDungeon:HardyExplorerRelic": {
         "NAME": "勤奋的冒险家",
         "FLAVOR": "这是什么？",
         "DESCRIPTIONS": [
-            "每回合第一次失去生命后，获得 #b5 点格挡。 NL 如果该伤害来自敌人，将获得 #b1 残影。"
+            "每回合第一次失去生命后，获得 #b5 点格挡。 NL 如果该伤害来自敌人，获得 #b1 层残影。"
         ]
     },
     "mysteryDungeon:ImpishExplorerRelic": {
@@ -106,51 +106,51 @@
     },
     "mysteryDungeon:LeftoversRelic": {
         "NAME": "吃剩的东西",
-        "FLAVOR": "上顿饭留下的东西",
+        "FLAVOR": "上顿饭留下的东西。",
         "DESCRIPTIONS": [
             "战斗结束后，恢复 #b3 点生命值。"
         ]
     },
     "mysteryDungeon:LifeOrbRelic": {
         "NAME": "生命宝珠",
-        "FLAVOR": "它增强了力量，但力量是有代价的。",
+        "FLAVOR": "携带后，虽然每次攻击时HP少量减少，但招式的威力会提高。\t",
         "DESCRIPTIONS": [
-            "每回合开始时，获得 [E] 。 NL 回合结束后，随机消耗手牌中的一张牌。"
+            "在每回合开始时获得 [E] 。 NL 回合结束后，随机消耗手牌中的一张牌。"
         ]
     },
     "mysteryDungeon:MetronomeRelic": {
         "NAME": "节拍器",
         "FLAVOR": "它遵循自己的节奏。",
         "DESCRIPTIONS": [
-            "每回合开始时，向手牌添加一张非团队成员宝可梦的牌，本回合费用为0。"
+            "在每回合开始时向手牌添加一张非团队成员宝可梦的牌，本回合费用为0。"
         ]
     },
     "mysteryDungeon:MeadowPlateRelic": {
-        "NAME": "Meadow Plate",
-        "FLAVOR": "A stone tablet imbued with the essence of plants. When used on a certain Pokémon, it allows that Pokémon to gain the power of the Grass type.",
+        "NAME": "碧绿石板",
+        "FLAVOR": "草属性的石板。对某种宝可梦使用，可使其获得草属性的力量。",
         "DESCRIPTIONS": [
-            "Gain #b20 #ymax #yHP. At the start of combat if you have more than #b65% of your #ymax #yHP lose #yHP until you have #y65% of your #ymax #yHP. If you have less than #b65% of your #ymax #yHP, heal #b10 #yHP."
+            "获得 #b20 点 #y最大生命 。在每场战斗开始时，若你的 #y生命 大于 #b65% ，失去 #y生命 直到 #b65% 。若你的 #y生命 少于 #b65% ，回复 #b10 点 #y生命 。"
         ]
     },
     "mysteryDungeon:MiracleSeedRelic": {
         "NAME": "奇迹种子",
-        "FLAVOR": "蕴含生命力的种子，可以提升草系招式的威力。",
+        "FLAVOR": "孕育生命的种子。携带后，草属性的招式威力就会提高。",
         "DESCRIPTIONS": [
-            "在同一回合中，每当你施加 #b3 层 #y减益效果 ，抽一张牌。"
+            "在同一回合中，每当你给予 #b3 层 #y负面效果 ，抽一张牌。"
         ]
     },
     "mysteryDungeon:MysticWaterRelic": {
         "NAME": "神秘水滴",
-        "FLAVOR": "这颗泪珠状宝石，可以提升水系招式的威力。",
+        "FLAVOR": "水滴形状的宝石。携带后，水属性的招式威力就会提高。\t",
         "DESCRIPTIONS": [
-            "每回合开始时，获得 [E] 。 NL 手牌上限降低2张。"
+            "在每回合开始时获得 [E] 。 NL 手牌上限降低2张。"
         ]
     },
     "mysteryDungeon:NaiveExplorerRelic": {
-        "NAME": "Naive Explorer",
-        "FLAVOR": "What is this?",
+        "NAME": "天真的冒险家",
+        "FLAVOR": "这是什么？",
         "DESCRIPTIONS": [
-            "At the start of your turn, if you have not taken any damage from attacks this combat, your next Attack deals #b3 more damage."
+            "在你的回合开始时，若你还未在本场战斗中受到攻击伤害，你的下个攻击多造成 #b3 点伤害。"
         ]
     },
     "mysteryDungeon:QuirkyExplorerRelic": {
@@ -164,14 +164,14 @@
         "NAME": "悠闲的冒险家",
         "FLAVOR": "这是什么？",
         "DESCRIPTIONS": [
-            "每回合开始时， #y预见 #b1."
+            "在每回合开始时 #y预见 #b1 。"
         ]
     },
     "mysteryDungeon:SplashPlateRelic": {
-        "NAME": "Splash Plate",
-        "FLAVOR": "This stone tablet is imbued with the essence of water and boosts the power of the holder's Water-type moves.",
+        "NAME": "水滴石板",
+        "FLAVOR": "水属性的石板。携带后，水属性的招式威力就会增强。",
         "DESCRIPTIONS": [
-            "The first time you evoke an #yOrb each turn, gain [E] ."
+            "每回合你第一次激发 #y充能球 时，获得 [E] 。"
         ]
     },
     "mysteryDungeon:TimidExplorerRelic": {
@@ -183,23 +183,23 @@
     },
     "mysteryDungeon:LightBallRelic": {
         "NAME": "电气球",
-        "FLAVOR": "奇异的带电球体，蕴含着强大的力量。",
+        "FLAVOR": "让皮卡丘携带后，攻击和特攻的威力就会提高的神奇之球。",
         "DESCRIPTIONS": [
-            "每回合一次。 NL 当你打出能力牌且不在姿态时，获得 #b1 充能球栏。"
+            "每回合一次。 NL 当你打出能力牌且不在姿态时，获得 #b1 充能球栏位。"
         ]
     },
     "mysteryDungeon:WaveIncenseRelic": {
         "NAME": "涟漪薰香",
-        "FLAVOR": "奇异的熏香。",
+        "FLAVOR": "有着神奇香气的薰香。携带后，水属性的招式威力就会提高。",
         "DESCRIPTIONS": [
-            "每场战斗都将施加 #y大师 能力。"
+            "所有在战斗中临时增加的牌将被 升级 。"
         ]
     },
     "mysteryDungeon:WaterGemRelic": {
-        "NAME": "Water Gem",
-        "FLAVOR": "This gem is imbued with the essence of water and will boost the power of a Water-type moves, but only once.",
+        "NAME": "水之宝石",
+        "FLAVOR": "水属性的宝石。携带后，水属性的招式威力仅会增强1次。",
         "DESCRIPTIONS": [
-            "When you deal more than #b20 attack damage in a single hit, deal #b5 damage to ALL enemies."
+            "当你单次攻击造成超过 #b20 点攻击伤害时，对所有敌人造成 #b5 点伤害。"
         ]
     }
 }

@@ -42,7 +42,7 @@ public class FreeSpendingEveryTurnPower extends PokemonPower implements Cloneabl
         this.amount = amount;
 
         type = PowerType.BUFF;
-        isTurnBased = true;
+        isTurnBased = false;
 
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);

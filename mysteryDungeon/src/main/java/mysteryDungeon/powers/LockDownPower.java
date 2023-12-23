@@ -51,7 +51,11 @@ public class LockDownPower extends PokemonPower implements CloneablePowerInterfa
 
     @Override
     public void atEndOfRound() {
-        addToBot(new RemoveSpecificPowerAction(owner, owner, this));
+        amount--;
+        if(amount < 1)
+            addToBot(new RemoveSpecificPowerAction(owner, owner, this));
+        else
+            updateDescription();
     }
 
     @Override

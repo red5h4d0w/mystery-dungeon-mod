@@ -29,7 +29,6 @@ public class CyndaquilFireBlast extends PokemonCard implements onLoadCardMiscInt
 
     // /TEXT DECLARATION/
 
-
     // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.RARE;
@@ -41,7 +40,6 @@ public class CyndaquilFireBlast extends PokemonCard implements onLoadCardMiscInt
     private static final int BASE_MAGIC_NUMBER = 5;
     private static final int BASE_SECOND_MAGIC_NUMBER = 5;
     private static final int UPGRADE_SECOND_MAGIC_NUMBER = 1;
-
 
     // /STAT DECLARATION/
 
@@ -61,13 +59,13 @@ public class CyndaquilFireBlast extends PokemonCard implements onLoadCardMiscInt
         // Create an int which equals to your current energy.
         addToBot(new SimpleAction(() -> {
             AbstractDungeon.player.masterDeck.group.stream()
-                .filter(c -> c.uuid == uuid)
-                .forEach(c -> {
-                    c.misc += secondMagicNumber;
-                    c.applyPowers();
-                    c.baseMagicNumber = c.misc;
-                    c.magicNumber = c.misc;
-                });
+                    .filter(c -> c.uuid == uuid)
+                    .forEach(c -> {
+                        c.misc += secondMagicNumber;
+                        c.applyPowers();
+                        c.baseMagicNumber = c.misc;
+                        c.magicNumber = c.misc;
+                    });
             GetAllInBattleInstances.get(uuid).stream().forEach(c -> {
                 c.misc += secondMagicNumber;
                 c.applyPowers();
@@ -76,7 +74,7 @@ public class CyndaquilFireBlast extends PokemonCard implements onLoadCardMiscInt
             });
         }));
         addToBot(new ApplyPowerAction(m, p, new BurnPower(m, magicNumber), magicNumber));
-        
+
     }
 
     // Upgraded stats.
@@ -87,6 +85,13 @@ public class CyndaquilFireBlast extends PokemonCard implements onLoadCardMiscInt
             upgradeSecondMagicNumber(UPGRADE_SECOND_MAGIC_NUMBER);
             initializeDescription();
         }
+    }
+
+    public void applyPowers() {
+        this.baseMagicNumber = this.misc;
+        this.magicNumber = this.misc;
+        super.applyPowers();
+        initializeDescription();
     }
 
     @Override

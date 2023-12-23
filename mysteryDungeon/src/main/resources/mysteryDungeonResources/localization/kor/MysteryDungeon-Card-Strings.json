@@ -437,7 +437,7 @@
     },
     "mysteryDungeon:ChikoritaLeafGuard": {
         "NAME": "리프가드",
-        "DESCRIPTION": "턴 종료시, 내 부정적인 효과가 모두 제거됩니다. 이 카드로 부정적인 효과가 제거될 경우 체력을 !M! 잃습니다."
+        "DESCRIPTION": "At the start of your turn, remove ALL debuff you possess. For each debuff removed this way lose !M! HP."
     },
     "mysteryDungeon:ChikoritaLeafStorm": {
         "NAME": "리프스톰",
@@ -540,7 +540,8 @@
     },
     "mysteryDungeon:CyndaquilBlastBurn": {
         "NAME": "블라스트번",
-        "DESCRIPTION": "피해를 !D! 줍니다. NL  mysterydungeon:화상 을 !M! 부여합니다. mysterydungeon:분화 를 발동합니다. NL 턴을 종료합니다."
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Trigger an mysterydungeon:Eruption.",
+        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Trigger an mysterydungeon:Eruption. NL Apply !M! mysterydungeon:Burn."
     },
     "mysteryDungeon:CyndaquilBurnUp": {
         "NAME": "불사르기",
@@ -597,7 +598,7 @@
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "니트로차지",
-        "DESCRIPTION": "피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다. NL mysterydungeon:화상 을 !M! 부여합니다."
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn. NL Add a *Burn to your hand."
     },
     "mysteryDungeon:CyndaquilFlamethrower": {
         "NAME": "화염방사",
@@ -624,8 +625,8 @@
     },
     "mysteryDungeon:CyndaquilFrustration": {
         "NAME": "화풀이",
-        "DESCRIPTION": "mysterydungeon:화상 을 12 부여합니다. NL 다음 턴에 턴 종료시 mysterydungeon:분화 를 발동합니다.",
-        "UPGRADE_DESCRIPTION": "보존. NL mysterydungeon:화상 을 12 부여합니다. NL 다음 턴에 턴 종료시 mysterydungeon:분화 를 발동합니다."
+        "DESCRIPTION": "Apply 20 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Apply 20 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption."
     },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "열풍",
@@ -633,7 +634,8 @@
     },
     "mysteryDungeon:CyndaquilHowl": {
         "NAME": "멀리짖기",
-        "DESCRIPTION": "뽑을 카드 더미에 *화상을 !M! 장 넣습니다. NL 다음 턴에 [E] [E] [E] 를 얻습니다."
+        "DESCRIPTION": "Next turn gain [E] [E] [E].",
+        "UPGRADE_DESCRIPTION": "Next turn gain [E] [E] [E]. NL Next turn draw 1 more card."
     },
     "mysteryDungeon:CyndaquilIncinerate": {
         "NAME": "불태우기",
@@ -655,8 +657,8 @@
     },
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "째려보기",
-        "DESCRIPTION": "취약을 !M! 부여합니다.",
-        "UPGRADE_DESCRIPTION": "취약을 !M! 부여합니다. NL 적의 모든 방어도를 없앱니다."
+        "DESCRIPTION": "Remove ALL the target's Block. NL Your next mysterydungeon:Eruption will deal 50% more damage.",
+        "UPGRADE_DESCRIPTION": "Remove all the target's Block. NL Your next !M! mysterydungeon:Eruption will deal 50% more damage."
     },
     "mysteryDungeon:CyndaquilNaturePowerMountain": {
         "NAME": "자연의힘:산",
@@ -669,7 +671,7 @@
     },
     "mysteryDungeon:CyndaquilReversal": {
         "NAME": "기사회생",
-        "DESCRIPTION": "적이 mysterydungeon:화상 상태라면, 방어도를 !B! 얻습니다. NL 적이 mysterydungeon:화상 상태가 아니라면, mysterydungeon:화상 을 !M! 부여합니다."
+        "DESCRIPTION": "Gain !B! Block. NL Apply !M! mysterydungeon:Burn. NL Add a *Burn to your hand."
     },
     "mysteryDungeon:CyndaquilRockSlide": {
         "NAME": "스톤샤워",
@@ -792,8 +794,8 @@
     },
     "mysteryDungeon:MeowthLashOut": {
         "NAME": "분풀이",
-        "DESCRIPTION": "적에게 힘을 부여하거나 방어도를 부여한 경우 *난동 을 !M! 장 얻습니다.",
-        "UPGRADE_DESCRIPTION": "적에게 힘을 부여하거나 방어도를 부여한 경우 강화된 *난동 을 !M! 장 얻습니다."
+        "DESCRIPTION": "Innate. NL Whenever you apply Strength or Block to an enemy create !M! *Flurry in your hand.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you apply Strength or Block to an enemy create !M! *Flurry+ in your hand."
     },
     "mysteryDungeon:MeowthNastyPlot": {
         "NAME": "나쁜 음모",
@@ -815,8 +817,8 @@
     },
     "mysteryDungeon:MeowthPsychUp": {
         "NAME": "자기암시",
-        "DESCRIPTION": "적에게 힘을 부여할때, 힘을 !M! 얻습니다.",
-        "UPGRADE_DESCRIPTION": "적에게 힘을 부여할때, 힘을 !M! 얻습니다."
+        "DESCRIPTION": "Innate. NL When you apply Strength or Block to an enemy, gain !M! Strength.",
+        "UPGRADE_DESCRIPTION": "Innate. NL When you apply Strength or Block to an enemy, gain !M! Strength."
     },
     "mysteryDungeon:MeowthPunishment": {
         "NAME": "혼내기",
@@ -1234,7 +1236,7 @@
     },
     "mysteryDungeon:SquirtleWithdraw": {
         "NAME": "껍질에숨기",
-        "DESCRIPTION": "손에 있는 카드 한장 당 방어도를 !M! 을 얻습니다"
+        "DESCRIPTION": "Shuffle your discard pile into your deck. NL Gain !M! Block per card in hand. NL (Unnafected by Dexterity and the Frail status)."
     },
     "mysteryDungeon:SquirtleZenHeadbutt": {
         "NAME": "사념의박치기",
@@ -1301,8 +1303,8 @@
     },
     "mysteryDungeon:TotodileExplorerForm": {
         "NAME": "탐험가의 자세",
-        "DESCRIPTION": "휘발성. NL 턴 시작시, 버린 카드 더미에 있는 카드를 !M! 장 선택해 손으로 가져옵니다. NL 카드 한장을 덜 뽑습니다.",
-        "UPGRADE_DESCRIPTION": "턴 시작시, 버린 카드 더미에 있는 카드를 !M! 장 선택해 손으로 가져옵니다. NL 카드 한장을 덜 뽑습니다."
+        "DESCRIPTION": "Ethereal. NL At the start of your turn, add !M! random card from your discard pile to your hand. NL Draw two less card per turn.",
+        "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! random card from your discard pile to your hand. NL Draw two less card per turn."
     },
     "mysteryDungeon:TotodileHail": {
         "NAME": "싸라기눈",

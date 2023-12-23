@@ -141,7 +141,7 @@
     "mysteryDungeon:FirePledgePower": {
         "NAME": "불꽃의맹세",
         "DESCRIPTIONS": [
-            "이번 턴에 다른 #y맹세 #y카드를 사용 했다면, 특별한 효과가 발동됩니다. NL 풀: 적 전체에게 #y중독 을 #b9 부여합니다. NL 물: 모든 적에게 취약을 #b2 부여합니다."
+            "When you play another #yPledge #yCard this turn, activate one of the following effects. NL Grass: Apply #b9 #yPoison to ALL enemies. NL Fire: Gain [E]. NL Water: Apply #b2 #yVulnerable to ALL enemies."
         ]
     },
     "mysteryDungeon:FlashFirePower": {
@@ -182,7 +182,7 @@
     "mysteryDungeon:GrassPledgePower": {
         "NAME": "풀의맹세",
         "DESCRIPTIONS": [
-            "이번 턴에 다른 #y맹세 #y카드를 사용 했다면, 특별한 효과가 발동됩니다. NL 불꽃: 적 전체에게 #y중독 을 #b9 부여합니다. NL 물: 적 전체에게 약화를 #b2 부여합니다."
+            "When you play another #yPledge #yCard this turn, activate one of the following effects. NL Grass: Gain #b1 #yThorns. NL Fire: Apply #b9 #yPoison to ALL enemies. NL Water: Apply #b2 #yWeak to ALL enemies."
         ]
     },
     "mysteryDungeon:HailPower": {
@@ -250,7 +250,8 @@
     "mysteryDungeon:LockDownPower": {
         "NAME": "봉쇄",
         "DESCRIPTIONS": [
-            "턴 종료 시, 전압 표시기가 중앙으로 돌아오지 않습니다."
+            "At the end of the turn, do not return automatically to the center of the #yCharge #yMeter.",
+            "At the end of the next #b%s turns, do not return automatically to the center of the #yCharge #Meter."
         ]
     },
     "mysteryDungeon:LoseVigorPower": {
@@ -350,7 +351,7 @@
     "mysteryDungeon:PsychUpPower": {
         "NAME": "자기암시",
         "DESCRIPTIONS": [
-            "적에게 #y힘 을 부여할때, #y힘 을 #b%s 얻습니다."
+            "Whenever you apply #yStrength or #yBlock gain #b%s #yStrength."
         ]
     },
     "mysteryDungeon:RainDancePower": {
@@ -508,7 +509,7 @@
     "mysteryDungeon:WaterPledgePower": {
         "NAME": "물의맹세",
         "DESCRIPTIONS": [
-            "이번 턴에 다른 #y맹세 #y카드를 사용 했다면, 특별한 효과가 발동됩니다. NL 풀: 적 전체에게 #y약화 를 #b2 부여합니다. NL 불꽃: 적 전체에게 #y취약 을 #b2 부여합니다."
+            "When you play another #yPledge card this turn, activate one of the following effects. NL Grass: Apply #b2 #yWeak to ALL enemies. NL Fire: Apply #b2 #yVulnerable to ALL enemies. NL Water: Gain #b3 #yTemporary #Strength."
         ]
     },
     "mysteryDungeon:WhirlpoolPower": {

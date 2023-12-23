@@ -47,7 +47,7 @@ public class LashOutPower extends PokemonPower implements CloneablePowerInterfac
         this.upgraded = upgraded;
 
         type = PowerType.BUFF;
-        isTurnBased = true;
+        isTurnBased = false;
 
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);

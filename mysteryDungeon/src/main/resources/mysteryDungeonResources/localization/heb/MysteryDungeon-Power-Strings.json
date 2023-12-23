@@ -141,7 +141,7 @@
     "mysteryDungeon:FirePledgePower": {
         "NAME": "Fire Pledge",
         "DESCRIPTIONS": [
-            "When you play another #yPledge #yCard this turn, activate one of the following effects. NL Grass: Apply #b9 #yPoison to ALL enemies. NL Water: Apply #b2 #yVulnerable to ALL enemies."
+            "When you play another #yPledge #yCard this turn, activate one of the following effects. NL Grass: Apply #b9 #yPoison to ALL enemies. NL Fire: Gain [E]. NL Water: Apply #b2 #yVulnerable to ALL enemies."
         ]
     },
     "mysteryDungeon:FlashFirePower": {
@@ -182,7 +182,7 @@
     "mysteryDungeon:GrassPledgePower": {
         "NAME": "Grass Pledge",
         "DESCRIPTIONS": [
-            "When you play another #yPledge #yCard this turn, activate one of the following effects. NL Fire: Apply #b9 #yPoison to ALL enemies. NL Water: Apply #b2 #yWeak to ALL enemies."
+            "When you play another #yPledge #yCard this turn, activate one of the following effects. NL Grass: Gain #b1 #yThorns. NL Fire: Apply #b9 #yPoison to ALL enemies. NL Water: Apply #b2 #yWeak to ALL enemies."
         ]
     },
     "mysteryDungeon:HailPower": {
@@ -250,7 +250,8 @@
     "mysteryDungeon:LockDownPower": {
         "NAME": "Lock-Down",
         "DESCRIPTIONS": [
-            "At the end of the turn, do not return automatically to the center of the charge gauge."
+            "At the end of the turn, do not return automatically to the center of the #yCharge #yMeter.",
+            "At the end of the next #b%s turns, do not return automatically to the center of the #yCharge #Meter."
         ]
     },
     "mysteryDungeon:LoseVigorPower": {
@@ -350,7 +351,7 @@
     "mysteryDungeon:PsychUpPower": {
         "NAME": "Psych Up",
         "DESCRIPTIONS": [
-            "Whenever you apply #yStrength gain #b%s #yStrength."
+            "Whenever you apply #yStrength or #yBlock gain #b%s #yStrength."
         ]
     },
     "mysteryDungeon:RainDancePower": {
@@ -508,7 +509,7 @@
     "mysteryDungeon:WaterPledgePower": {
         "NAME": "Water Pledge",
         "DESCRIPTIONS": [
-            "When you play another #yPledge card this turn, activate one of the following effects. NL Grass: Apply #b2 #yWeak to ALL enemies. NL Fire: Apply #b2 #yVulnerable to ALL enemies."
+            "When you play another #yPledge card this turn, activate one of the following effects. NL Grass: Apply #b2 #yWeak to ALL enemies. NL Fire: Apply #b2 #yVulnerable to ALL enemies. NL Water: Gain #b3 #yTemporary #Strength."
         ]
     },
     "mysteryDungeon:WhirlpoolPower": {

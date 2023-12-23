@@ -159,7 +159,7 @@
     },
     "mysteryDungeon:BulbasaurSweetScent": {
         "NAME": "Sweet Scent",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Evasiveness_Drop. NL Apply !M! Vulnerable"
+        "DESCRIPTION": "Apply !M! mysterydungeon:Evasiveness_Drop. NL Apply !M! Vulnerable."
     },
     "mysteryDungeon:BulbasaurSynthesis": {
         "NAME": "Synthesis",
@@ -437,7 +437,7 @@
     },
     "mysteryDungeon:ChikoritaLeafGuard": {
         "NAME": "Leaf Guard",
-        "DESCRIPTION": "At the end of your turn, remove all debuff you possess. For each debuff removed this way lose !M! HP."
+        "DESCRIPTION": "At the start of your turn, remove ALL debuff you possess. For each debuff removed this way lose !M! HP."
     },
     "mysteryDungeon:ChikoritaLeafStorm": {
         "NAME": "Leaf Storm",
@@ -540,7 +540,8 @@
     },
     "mysteryDungeon:CyndaquilBlastBurn": {
         "NAME": "Blast Burn",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn. NL Trigger an mysterydungeon:Eruption. NL End your Turn."
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Trigger an mysterydungeon:Eruption.",
+        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Trigger an mysterydungeon:Eruption. NL Apply !M! mysterydungeon:Burn."
     },
     "mysteryDungeon:CyndaquilBurnUp": {
         "NAME": "Burn Up",
@@ -597,7 +598,7 @@
     },
     "mysteryDungeon:CyndaquilFlameCharge": {
         "NAME": "Flame Charge",
-        "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Apply !M! mysterydungeon:Burn."
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn. NL Add a *Burn to your hand."
     },
     "mysteryDungeon:CyndaquilFlamethrower": {
         "NAME": "Flamethrower",
@@ -624,8 +625,8 @@
     },
     "mysteryDungeon:CyndaquilFrustration": {
         "NAME": "Frustration",
-        "DESCRIPTION": "Apply 12 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Apply 12 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption."
+        "DESCRIPTION": "Apply 20 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Apply 20 mysterydungeon:Burn. NL Next turn, at the end of your turn cause an mysterydungeon:Eruption."
     },
     "mysteryDungeon:CyndaquilHeatWave": {
         "NAME": "Heat Wave",
@@ -633,7 +634,8 @@
     },
     "mysteryDungeon:CyndaquilHowl": {
         "NAME": "Howl",
-        "DESCRIPTION": "Add !M! *Burn to your draw pile. NL Next turn gain [E] [E] [E]."
+        "DESCRIPTION": "Next turn gain [E] [E] [E].",
+        "UPGRADE_DESCRIPTION": "Next turn gain [E] [E] [E]. NL Next turn draw 1 more card."
     },
     "mysteryDungeon:CyndaquilIncinerate": {
         "NAME": "Incinerate",
@@ -655,8 +657,8 @@
     },
     "mysteryDungeon:CyndaquilLeer": {
         "NAME": "Leer",
-        "DESCRIPTION": "Apply !M! Vulnerable.",
-        "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable. NL Remove all the target's Block."
+        "DESCRIPTION": "Remove ALL the target's Block. NL Your next mysterydungeon:Eruption will deal 50% more damage.",
+        "UPGRADE_DESCRIPTION": "Remove all the target's Block. NL Your next !M! mysterydungeon:Eruption will deal 50% more damage."
     },
     "mysteryDungeon:CyndaquilNaturePowerMountain": {
         "NAME": "Nature Power: Mountain",
@@ -669,7 +671,7 @@
     },
     "mysteryDungeon:CyndaquilReversal": {
         "NAME": "Reversal",
-        "DESCRIPTION": "If the enemy has mysterydungeon:Burn, gain !B! Block. NL If the enemy has no mysterydungeon:Burn stacks, apply !M! mysterydungeon:Burn."
+        "DESCRIPTION": "Gain !B! Block. NL Apply !M! mysterydungeon:Burn. NL Add a *Burn to your hand."
     },
     "mysteryDungeon:CyndaquilRockSlide": {
         "NAME": "Rock Slide",
@@ -792,8 +794,8 @@
     },
     "mysteryDungeon:MeowthLashOut": {
         "NAME": "Lash Out",
-        "DESCRIPTION": "Whenever you apply Strength or Block to an enemy create !M! *Flurry in your hand.",
-        "UPGRADE_DESCRIPTION": "Whenever you apply Strength or Block to an enemy create !M! upgraded *Flurry in your hand."
+        "DESCRIPTION": "Innate. NL Whenever you apply Strength or Block to an enemy create !M! *Flurry in your hand.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Whenever you apply Strength or Block to an enemy create !M! *Flurry+ in your hand."
     },
     "mysteryDungeon:MeowthNastyPlot": {
         "NAME": "Nasty Plot",
@@ -815,8 +817,8 @@
     },
     "mysteryDungeon:MeowthPsychUp": {
         "NAME": "Psych Up",
-        "DESCRIPTION": "When you apply Strength to an enemy, gain !M! Strength.",
-        "UPGRADE_DESCRIPTION": "When you apply Strength to an enemy, gain !M! Strength."
+        "DESCRIPTION": "Innate. NL When you apply Strength or Block to an enemy, gain !M! Strength.",
+        "UPGRADE_DESCRIPTION": "Innate. NL When you apply Strength or Block to an enemy, gain !M! Strength."
     },
     "mysteryDungeon:MeowthPunishment": {
         "NAME": "Punishment",
@@ -1234,7 +1236,7 @@
     },
     "mysteryDungeon:SquirtleWithdraw": {
         "NAME": "Withdraw",
-        "DESCRIPTION": "Shuffle your discard pile into your deck. NL Gain !M! Block per card in hand."
+        "DESCRIPTION": "Shuffle your discard pile into your deck. NL Gain !M! Block per card in hand. NL (Unnafected by Dexterity and the Frail status)."
     },
     "mysteryDungeon:SquirtleZenHeadbutt": {
         "NAME": "Zen Headbutt",
@@ -1301,8 +1303,8 @@
     },
     "mysteryDungeon:TotodileExplorerForm": {
         "NAME": "Explorer Form",
-        "DESCRIPTION": "Ethereal. NL At the start of your turn, add !M! card from your discard pile to your hand. NL Draw one less card per turn.",
-        "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! card from your discard pile to your hand. NL Draw one less card per turn."
+        "DESCRIPTION": "Ethereal. NL At the start of your turn, add !M! random card from your discard pile to your hand. NL Draw two less card per turn.",
+        "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! random card from your discard pile to your hand. NL Draw two less card per turn."
     },
     "mysteryDungeon:TotodileHail": {
         "NAME": "Hail",

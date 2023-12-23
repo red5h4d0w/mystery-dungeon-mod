@@ -141,7 +141,7 @@
     "mysteryDungeon:FirePledgePower": {
         "NAME": "Aire de Feu",
         "DESCRIPTIONS": [
-            "Lorsque vous jouez une autre #yCarte #yd'Aire ce tour, activez un des effets suivants. NL Plante : Appliquez #b9 de #yPoison à TOUS les ennemis. NL Eau : Appliquez #b2 de #yVulnérabilité à TOUS les ennemis."
+            "Lorsque vous jouez une autre #yCarte #yd'Aire ce tour, activez un des effets suivants. NL Plante : Appliquez #b9 de #yPoison à TOUS les ennemis. NL Feu : Gagnez [E] NL Eau : Appliquez #b2 de #yVulnérabilité à TOUS les ennemis."
         ]
     },
     "mysteryDungeon:FlashFirePower": {
@@ -182,7 +182,7 @@
     "mysteryDungeon:GrassPledgePower": {
         "NAME": "Aire d'Herbe",
         "DESCRIPTIONS": [
-            "Lorsque vous jouez une autre #yCarte #yd'Aire ce tour, activez un des effets suivants. NL Plante : Appliquez #b9 de #yPoison à TOUS les ennemis. NL Eau : Appliquez #b2 de #yFaiblesse à TOUS les ennemis."
+            "Lorsque vous jouez une autre #yCarte #yd'Aire ce tour, activez un des effets suivants. Plante : Gagnez #b1 #yÉpines. NL Feu : Appliquez #b9 de #yPoison à TOUS les ennemis. NL Eau : Appliquez #b2 de #yFaiblesse à TOUS les ennemis."
         ]
     },
     "mysteryDungeon:HailPower": {
@@ -250,7 +250,8 @@
     "mysteryDungeon:LockDownPower": {
         "NAME": "Confinement",
         "DESCRIPTIONS": [
-            "À la fin du tour, ne retournez pas automatiquement au centre de la jauge de charge."
+            "À la fin du tour, ne retournez pas automatiquement au centre de la #yJauge #yde #yCharge.",
+            "À la fin des #b%s prochains tours, ne retournez pas automatiquement au centre de la #yJauge de #yCharge."
         ]
     },
     "mysteryDungeon:LoseVigorPower": {
@@ -350,7 +351,7 @@
     "mysteryDungeon:PsychUpPower": {
         "NAME": "Boost",
         "DESCRIPTIONS": [
-            "Lorsque vous appliquez de la #yForce, gagnez #b%s de #yForce."
+            "Lorsque vous appliquez de la #yForce ou de #yl'Armure, gagnez #b%s de #yForce."
         ]
     },
     "mysteryDungeon:RainDancePower": {
@@ -508,7 +509,7 @@
     "mysteryDungeon:WaterPledgePower": {
         "NAME": "Aire d'Eau",
         "DESCRIPTIONS": [
-            "Lorsque vous jouez une autre carte #yd'Aire ce tour, activez un des effets suivants. NL Plante : Appliquez #b2 de #yFaiblesse à TOUS les ennemis. NL Feu : Appliquez #b2 de #yVulnérabilité à TOUS les ennemis."
+            "Lorsque vous jouez une autre carte #yd'Aire ce tour, activez un des effets suivants. NL Plante : Appliquez #b2 de #yFaiblesse à TOUS les ennemis. NL Feu : Appliquez #b2 de #yVulnérabilité à TOUS les ennemis. NL Eau : Gagnez #b3 de #yForce #yTemporaire."
         ]
     },
     "mysteryDungeon:WhirlpoolPower": {
