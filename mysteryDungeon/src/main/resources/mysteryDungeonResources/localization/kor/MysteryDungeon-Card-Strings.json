@@ -1421,8 +1421,8 @@
     },
     "mysteryDungeon:TotodileWaterSport": {
         "NAME": "물놀이",
-        "DESCRIPTION": "뽑을 카드 더미 맨 위에 카드를 1장 버립니다. NL mysterydungeon:활력 을 !mysteryDungeon:M2! 얻습니다.",
-        "UPGRADE_DESCRIPTION": "뽑을 카드 더미 맨 위에 카드를 2장 버립니다. NL mysterydungeon:활력 을 !mysteryDungeon:M2! 얻습니다."
+        "DESCRIPTION": "Discard the top !M! cards of your draw pile. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor.",
+        "UPGRADE_DESCRIPTION": "Discard the top !M! cards of your draw pile. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor."
     },
     "mysteryDungeon:TotodileWhirlpool": {
         "NAME": "바다회오리",
