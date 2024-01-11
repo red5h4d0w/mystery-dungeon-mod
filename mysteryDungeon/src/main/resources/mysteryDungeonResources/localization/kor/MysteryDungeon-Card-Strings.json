@@ -1247,6 +1247,10 @@
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! Block."
     },
+    "mysteryDungeon:TorchicDoubleKick": {
+        "NAME": "Double Kick",
+        "DESCRIPTION": "Apply !M! *Pressure *Points twice."
+    },
     "mysteryDungeon:TorchicFlameCharge": {
         "NAME": "니트로차지",
         "DESCRIPTION": "Combo: Skill, Skill, Attack. NL Finisher: Apply 12 burn to ALL enemies"
