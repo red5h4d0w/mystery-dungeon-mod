@@ -1251,6 +1251,10 @@
         "NAME": "Double Kick",
         "DESCRIPTION": "Apply !M! *Pressure *Points twice."
     },
+    "mysteryDungeon:TorchicFacade": {
+        "NAME": "Facade",
+        "DESCRIPTION": "Combo: Skill, Skill. NL Finisher: Gain 7 Block."
+    },
     "mysteryDungeon:TorchicFlameCharge": {
         "NAME": "Flame Charge",
         "DESCRIPTION": "Combo: Skill, Skill, Attack. NL Finisher: Apply 12 burn to ALL enemies"
