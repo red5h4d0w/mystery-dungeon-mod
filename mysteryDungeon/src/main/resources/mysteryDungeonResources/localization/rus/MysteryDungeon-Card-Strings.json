@@ -1243,17 +1243,33 @@
         "DESCRIPTION": "Deal !D! damage NL Create a *Flinch and add it to your hand.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage NL Create an upgraded *Flinch and add it to your hand."
     },
+    "mysteryDungeon:TorchicBulkUp": {
+        "NAME": "Bulk Up",
+        "DESCRIPTION": "Add a random combo to your combo deck."
+    },
     "mysteryDungeon:TorchicDefend": {
         "NAME": "Defend",
         "DESCRIPTION": "Gain !B! Block."
+    },
+    "mysteryDungeon:TorchicDetect": {
+        "NAME": "Detect",
+        "DESCRIPTION": "Gain !B! Block. NL Draw a card."
     },
     "mysteryDungeon:TorchicDoubleKick": {
         "NAME": "Double Kick",
         "DESCRIPTION": "Apply !M! *Pressure *Points twice."
     },
+    "mysteryDungeon:TorchicFacade": {
+        "NAME": "Facade",
+        "DESCRIPTION": "Combo: Skill, Skill. NL Finisher: Gain 7 Block."
+    },
     "mysteryDungeon:TorchicFlameCharge": {
         "NAME": "Flame Charge",
         "DESCRIPTION": "Combo: Skill, Skill, Attack. NL Finisher: Apply 12 burn to ALL enemies"
+    },
+    "mysteryDungeon:TorchicLowSweep": {
+        "NAME": "Low Sweep",
+        "DESCRIPTION": "Deal !D! damage. NL Put a card form your discard pile on top of your draw pile. NL If that card was an attack, deal !D! damage."
     },
     "mysteryDungeon:TorchicScratch": {
         "NAME": "Scratch",
