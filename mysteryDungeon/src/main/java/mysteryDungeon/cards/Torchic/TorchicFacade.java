@@ -50,7 +50,7 @@ public class TorchicFacade extends PokemonCard {
         addToBot(new AddComboAction(new Combo(new SimpleAction(() -> {
             // Stuff to do in the finisher
             // IMPORTANT: addToTop in Finisher, because finisher is itself an action 
-            addToTop(new GainBlockAction(p, 7));
+            addToTop(new GainBlockAction(p, 14));
         }), Move.SKILL, Move.SKILL)));
     }
 

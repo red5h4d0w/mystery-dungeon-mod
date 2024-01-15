@@ -54,7 +54,7 @@ public class TorchicFlameCharge extends PokemonCard {
             if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
                 for (AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters) {
                     if (!monster.isDead && !monster.isDying) {
-                        addToTop(new ApplyPowerAction(monster, p, new BurnPower(monster, 12), 12));
+                        addToTop(new ApplyPowerAction(monster, p, new BurnPower(monster, 20), 20));
                     }
                 }
             }

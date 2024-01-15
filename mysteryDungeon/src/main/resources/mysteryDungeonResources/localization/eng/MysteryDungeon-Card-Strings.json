@@ -1261,11 +1261,11 @@
     },
     "mysteryDungeon:TorchicFacade": {
         "NAME": "Facade",
-        "DESCRIPTION": "Combo: Skill, Skill. NL Finisher: Gain 7 Block."
+        "DESCRIPTION": "Combo: Skill, Skill. NL Finisher: Gain 14 Block."
     },
     "mysteryDungeon:TorchicFlameCharge": {
         "NAME": "Flame Charge",
-        "DESCRIPTION": "Combo: Skill, Skill, Attack. NL Finisher: Apply 12 burn to ALL enemies"
+        "DESCRIPTION": "Combo: Skill, Skill, Attack. NL Finisher: Apply 20 burn to ALL enemies"
     },
     "mysteryDungeon:TorchicLowSweep": {
         "NAME": "Low Sweep",
