@@ -45,7 +45,6 @@ public class TorchicDetect extends PokemonCard {
     public TorchicDetect() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseBlock = BLOCK;
-        this.tags.add(AbstractCard.CardTags.STARTER_DEFEND);
     }
 
     // Actions the card should do.
