@@ -4,17 +4,16 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.watcher.TriggerMarksAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.watcher.MarkPower;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.actions.TriggerFireSpinAction;
 import mysteryDungeon.characters.Pokemon;
 
 public class TorchicDoubleKick extends PokemonCard {
@@ -52,10 +51,10 @@ public class TorchicDoubleKick extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)p, (AbstractPower)new MarkPower((AbstractCreature)m, this.magicNumber), this.magicNumber));
-        addToBot((AbstractGameAction)new TriggerMarksAction(this));
-        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)p, (AbstractPower)new MarkPower((AbstractCreature)m, this.magicNumber), this.magicNumber));
-        addToBot((AbstractGameAction)new TriggerMarksAction(this));
+        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)p, (AbstractPower)new mysteryDungeon.powers.FireSpinPower((AbstractCreature)m, this.magicNumber), this.magicNumber));
+        addToBot((AbstractGameAction)new TriggerFireSpinAction());
+        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)p, (AbstractPower)new mysteryDungeon.powers.FireSpinPower((AbstractCreature)m, this.magicNumber), this.magicNumber));
+        addToBot((AbstractGameAction)new TriggerFireSpinAction());
     }
 
     // Upgraded stats.
