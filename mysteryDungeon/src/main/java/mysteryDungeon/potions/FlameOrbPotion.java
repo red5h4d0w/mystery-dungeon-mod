@@ -14,6 +14,8 @@ import com.megacrit.cardcrawl.potions.AbstractPotion;
 
 import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.pokemons.Charmander;
+import mysteryDungeon.pokemons.Cyndaquil;
+import mysteryDungeon.pokemons.Torchic;
 import mysteryDungeon.powers.BurnPower;
 
 public class FlameOrbPotion extends PokemonPotion {
@@ -40,6 +42,8 @@ public class FlameOrbPotion extends PokemonPotion {
         cardColors = new HashSet<CardColor>() {
             {
                 add(Charmander.CARD_COLOR);
+                add(Cyndaquil.CARD_COLOR);
+                add(Torchic.CARD_COLOR);
             }
         };
 
