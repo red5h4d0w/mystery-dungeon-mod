@@ -1,6 +1,9 @@
 package mysteryDungeon.potions;
 
+import java.util.HashSet;
+
 import com.megacrit.cardcrawl.actions.unique.RetainCardsAction;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.PowerTip;
@@ -10,46 +13,57 @@ import com.megacrit.cardcrawl.potions.AbstractPotion;
 import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.pokemons.Cyndaquil;
 
-
 public class LeppaBerryPotion extends PokemonPotion {
 
     public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(LeppaBerryPotion.class);
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
-    
+
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
 
     public static final String IMG_STRING = "leppa-berry.png";
 
     public LeppaBerryPotion() {
-        // The bottle shape and inside is determined by potion size and color. The actual colors are the main MysteryDungeon.java
+        // The bottle shape and inside is determined by potion size and color. The
+        // actual colors are the main MysteryDungeon.java
         super(NAME, POTION_ID, PotionRarity.RARE, IMG_STRING);
-        
+
         // Potency is the damage/magic number equivalent of potions.
         potency = getPotency();
-        
-       // Do you throw this potion at an enemy or do you just consume it.
+
+        // Do you throw this potion at an enemy or do you just consume it.
         isThrown = false;
 
-        cardColor = Cyndaquil.CARD_COLOR;
+        cardColors = new HashSet<CardColor>() {
+            {
+                add(Cyndaquil.CARD_COLOR);
+            }
+        };
 
         updateDescription();
-        
+
         // Initialize the on-hover name + description
         tips.add(new PowerTip(name, description));
-        
+
     }
-    // See that description? It has DESCRIPTIONS[1] instead of just hard-coding the "text " + potency + " more text" inside.
-    // DO NOT HARDCODE YOUR STRINGS ANYWHERE, it's really bad practice to have "Strings" in your code:
+    // See that description? It has DESCRIPTIONS[1] instead of just hard-coding the
+    // "text " + potency + " more text" inside.
+    // DO NOT HARDCODE YOUR STRINGS ANYWHERE, it's really bad practice to have
+    // "Strings" in your code:
 
     /*
-     * 1. It's bad for if somebody likes your mod enough (or if you decide) to translate it.
-     * Having only the JSON files for translation rather than 15 different instances of "Dexterity" in some random cards is A LOT easier.
+     * 1. It's bad for if somebody likes your mod enough (or if you decide) to
+     * translate it.
+     * Having only the JSON files for translation rather than 15 different instances
+     * of "Dexterity" in some random cards is A LOT easier.
      *
-     * 2. You don't have a centralised file for all strings for easy proof-reading. If you ever want to change a string
-     * you don't have to go through all your files individually/pray that a mass-replace doesn't screw something up.
+     * 2. You don't have a centralised file for all strings for easy proof-reading.
+     * If you ever want to change a string
+     * you don't have to go through all your files individually/pray that a
+     * mass-replace doesn't screw something up.
      *
-     * 3. Without hardcoded strings, editing a string doesn't require a compile, saving you time (unless you clean+package).
+     * 3. Without hardcoded strings, editing a string doesn't require a compile,
+     * saving you time (unless you clean+package).
      *
      */
 
@@ -57,7 +71,7 @@ public class LeppaBerryPotion extends PokemonPotion {
     public void use(AbstractCreature target) {
         addToBot(new RetainCardsAction(target, potency));
     }
-    
+
     @Override
     public AbstractPotion makeCopy() {
         return new LeppaBerryPotion();
@@ -69,16 +83,15 @@ public class LeppaBerryPotion extends PokemonPotion {
         return 2;
     }
 
-    public void upgradePotion()
-    {
+    public void upgradePotion() {
         potency += 2;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }
 
     public void updateDescription() {
-        
-            description = String.format(DESCRIPTIONS[0], potency);
-        
+
+        description = String.format(DESCRIPTIONS[0], potency);
+
     }
 }

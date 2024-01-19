@@ -1,6 +1,9 @@
 package mysteryDungeon.potions;
 
+import java.util.HashSet;
+
 import com.megacrit.cardcrawl.actions.common.GainGoldAction;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -34,7 +37,11 @@ public class NuggetPotion extends PokemonPotion {
         // Do you throw this potion at an enemy or do you just consume it.
         isThrown = false;
 
-        cardColor = Meowth.CARD_COLOR;
+        cardColors = new HashSet<CardColor>() {
+            {
+                add(Meowth.CARD_COLOR);
+            }
+        };
 
         updateDescription();
         // Initialize the on-hover name + description
