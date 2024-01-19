@@ -58,7 +58,7 @@ public class TorchicLowSweep extends PokemonCard {
        if (!AbstractDungeon.actionManager.cardsPlayedThisCombat.isEmpty() && ((AbstractCard)AbstractDungeon.actionManager.cardChosen
           .get(AbstractDungeon.actionManager.cardChosen
             .size() - 1)).type == AbstractCard.CardType.ATTACK)
-            addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
     }
 
     // Upgraded stats.
