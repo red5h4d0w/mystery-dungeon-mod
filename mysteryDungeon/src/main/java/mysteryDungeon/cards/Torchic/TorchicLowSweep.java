@@ -25,7 +25,7 @@ public class TorchicLowSweep extends PokemonCard {
 
     public static final String ID = MysteryDungeon.makeID(TorchicLowSweep.class);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = makeCardPath(TorchicLowSweep.class);
+    public static final String IMG = makeCardPath("TorchiAttack");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
@@ -54,10 +54,7 @@ public class TorchicLowSweep extends PokemonCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
-        addToBot((AbstractGameAction)new DiscardPileToTopOfDeckAction((AbstractCreature)p));
-       if (!AbstractDungeon.actionManager.cardsPlayedThisCombat.isEmpty() && ((AbstractCard)AbstractDungeon.actionManager.cardChosen
-          .get(AbstractDungeon.actionManager.cardChosen
-            .size() - 1)).type == AbstractCard.CardType.ATTACK)
+        
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
     }
 
