@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.cards.tempCards.SquirtleFlinch;
 import mysteryDungeon.pokemons.Squirtle;
+import mysteryDungeon.pokemons.Totodile;
 
 public class XAttackPotion extends PokemonPotion {
 
@@ -39,6 +40,7 @@ public class XAttackPotion extends PokemonPotion {
         cardColors = new HashSet<CardColor>() {
             {
                 add(Squirtle.CARD_COLOR);
+                add(Totodile.CARD_COLOR);
             }
         };
 

@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.powers.PoisonPower;
 
 import mysteryDungeon.abstracts.PokemonPotion;
+import mysteryDungeon.pokemons.Bulbasaur;
 import mysteryDungeon.pokemons.Chikorita;
 
 public class MagoBerryPotion extends PokemonPotion {
@@ -40,6 +41,7 @@ public class MagoBerryPotion extends PokemonPotion {
         cardColors = new HashSet<CardColor>() {
             {
                 add(Chikorita.CARD_COLOR);
+                add(Bulbasaur.CARD_COLOR);
             }
         };
 

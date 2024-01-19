@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.pokemons.Bulbasaur;
+import mysteryDungeon.pokemons.Chikorita;
 
 public class DireHitPotion extends PokemonPotion {
 
@@ -40,6 +41,7 @@ public class DireHitPotion extends PokemonPotion {
         cardColors = new HashSet<CardColor>() {
             {
                 add(Bulbasaur.CARD_COLOR);
+                add(Chikorita.CARD_COLOR);
             }
         };
 
