@@ -8,12 +8,15 @@ import mysteryDungeon.util.TextureLoader;
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
+import java.util.HashSet;
+
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
-public class MysticWaterRelic extends PokemonRelic { 
+public class MysticWaterRelic extends PokemonRelic {
 
     // ID, images, text.
     public static final String ID = MysteryDungeon.makeID(MysticWaterRelic.class);
@@ -26,7 +29,11 @@ public class MysticWaterRelic extends PokemonRelic {
 
     public MysticWaterRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
-        cardColor = Squirtle.CARD_COLOR;
+        cardColors = new HashSet<CardColor>() {
+            {
+                add(Squirtle.CARD_COLOR);
+            }
+        };
     }
 
     @Override
@@ -34,11 +41,12 @@ public class MysticWaterRelic extends PokemonRelic {
         AbstractDungeon.player.energy.energyMaster++;
         basemod.BaseMod.MAX_HAND_SIZE = 8;
     }
-      
+
     public void onUnequip() {
         AbstractDungeon.player.energy.energyMaster--;
         basemod.BaseMod.MAX_HAND_SIZE = 10;
     }
+
     // Description
     @Override
     public String getUpdatedDescription() {

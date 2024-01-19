@@ -61,19 +61,24 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 
 //Wiki-page https://github.com/daviscook477/BaseMod/wiki/Custom-Characters
 //and https://github.com/daviscook477/BaseMod/wiki/Migrating-to-5.0
 //All text (starting description and loadout, anything labeled TEXT[]) can be found in MysteryDungeon-character-Strings.json in the resources
 
-public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
+public class Pokemon extends CustomPlayer implements CustomSavable<ToSave> {
     public static final Logger logger = LogManager.getLogger(Pokemon.class.getName());
 
     // =============== CHARACTER ENUMERATORS =================
-    // These are enums for your Characters color (both general color and for the card library) as well as
-    // an enum for the name of the player class - IRONCLAD, THE_SILENT, DEFECT, YOUR_CLASS ...
-    // These are all necessary for creating a character. If you want to find out where and how exactly they are used
-    // in the basegame (for fun and education) Ctrl+click on the PlayerClass, CardColor and/or LibraryType below and go down the
+    // These are enums for your Characters color (both general color and for the
+    // card library) as well as
+    // an enum for the name of the player class - IRONCLAD, THE_SILENT, DEFECT,
+    // YOUR_CLASS ...
+    // These are all necessary for creating a character. If you want to find out
+    // where and how exactly they are used
+    // in the basegame (for fun and education) Ctrl+click on the PlayerClass,
+    // CardColor and/or LibraryType below and go down the
     // Ctrl+click rabbit hole
 
     public static class Enums {
@@ -81,78 +86,75 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         public static AbstractPlayer.PlayerClass THE_POKEMON;
         @SpireEnum(name = "DEFAULT_GRAY_COLOR") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor COLOR_GRAY;
-        @SpireEnum(name = "DEFAULT_GRAY_COLOR") 
+        @SpireEnum(name = "DEFAULT_GRAY_COLOR")
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_COLOR;
 
         @SpireEnum(name = "BULBASAUR_GREEN") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor BULBASAUR_GREEN;
-        @SpireEnum(name = "BULBASAUR_GREEN") 
+        @SpireEnum(name = "BULBASAUR_GREEN")
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_BULBASAUR_GREEN;
 
         @SpireEnum(name = "CHARMANDER_RED") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor CHARMANDER_RED;
-        @SpireEnum(name = "CHARMANDER_RED") 
+        @SpireEnum(name = "CHARMANDER_RED")
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_CHARMANDER_RED;
 
         @SpireEnum(name = "CHIKORITA_GREEN") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor CHIKORITA_GREEN;
-        @SpireEnum(name = "CHIKORITA_GREEN") 
+        @SpireEnum(name = "CHIKORITA_GREEN")
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_CHIKORITA_GREEN;
 
         @SpireEnum(name = "CYNDAQUIL_RED") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor CYNDAQUIL_RED;
-        @SpireEnum(name = "CYNDAQUIL_RED") 
+        @SpireEnum(name = "CYNDAQUIL_RED")
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_CYNDAQUIL_RED;
 
         @SpireEnum(name = "MEOWTH_LIGHT_GRAY") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor MEOWTH_WHITE;
-        @SpireEnum(name = "MEOWTH_LIGHT_GRAY") 
+        @SpireEnum(name = "MEOWTH_LIGHT_GRAY")
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_MEOWTH_WHITE;
 
         @SpireEnum(name = "PIKACHU_YELLOW") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor PIKACHU_YELLOW;
-        @SpireEnum(name = "PIKACHU_YELLOW") 
+        @SpireEnum(name = "PIKACHU_YELLOW")
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_PIKACHU_YELLOW;
 
         @SpireEnum(name = "SQUIRTLE_BLUE") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor SQUIRTLE_BLUE;
-        @SpireEnum(name = "SQUIRTLE_BLUE") 
+        @SpireEnum(name = "SQUIRTLE_BLUE")
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_SQUIRTLE_BLUE;
 
         @SpireEnum(name = "TOTODILE_BLUE") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor TOTODILE_BLUE;
-        @SpireEnum(name = "TOTODILE_BLUE") 
+        @SpireEnum(name = "TOTODILE_BLUE")
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_TOTODILE_BLUE;
 
         @SpireEnum(name = "TORCHIC_RED") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor TORCHIC_RED;
-        @SpireEnum(name = "TORCHIC_RED") 
+        @SpireEnum(name = "TORCHIC_RED")
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_TORCHIC_RED;
-        
+
         @SpireEnum(name = "NOT_IMPLEMENTED_COLOR") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor NOT_IMPLEMENTED_COLOR;
-        @SpireEnum(name = "NOT_IMPLEMENTED_COLOR") 
+        @SpireEnum(name = "NOT_IMPLEMENTED_COLOR")
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_NOT_IMPLEMENTED_COLOR;
     }
 
-    // =============== CHARACTER ENUMERATORS  =================
-
-
+    // =============== CHARACTER ENUMERATORS =================
 
     // =============== BASE STATS =================
 
-    
     public AbstractPokemon adventurer;
     public AbstractPokemon partner;
     public static ToSave preparedSaveData = new ToSave();
@@ -176,7 +178,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     public static boolean skipNextEvolution = false;
 
     // =============== /BASE STATS/ =================
-
 
     // =============== STRINGS =================
 
@@ -203,7 +204,6 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         Timid
     }
 
-
     // =============== TEXTURES OF BIG ENERGY ORB ===============
 
     public static final String[] orbTextures = {
@@ -217,7 +217,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
             "mysteryDungeonResources/images/char/pokemon/orb/layer2d.png",
             "mysteryDungeonResources/images/char/pokemon/orb/layer3d.png",
             "mysteryDungeonResources/images/char/pokemon/orb/layer4d.png",
-            "mysteryDungeonResources/images/char/pokemon/orb/layer5d.png",};
+            "mysteryDungeonResources/images/char/pokemon/orb/layer5d.png", };
 
     // =============== /TEXTURES OF BIG ENERGY ORB/ ===============
 
@@ -227,10 +227,11 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         super(name, setClass, orbTextures,
                 "mysteryDungeonResources/images/char/pokemon/orb/vfx.png", null, null, null);
 
-        // =============== TEXTURES, ENERGY, LOADOUT =================  
+        // =============== TEXTURES, ENERGY, LOADOUT =================
 
         initializeClass(null, // required call to load textures and setup energy/loadout.
-                // I left these in MysteryDungeon.java (Ctrl+click them to see where they are, Ctrl+hover to see what they read.)
+                // I left these in MysteryDungeon.java (Ctrl+click them to see where they are,
+                // Ctrl+hover to see what they read.)
                 THE_DEFAULT_SHOULDER_2, // campfire pose
                 THE_DEFAULT_SHOULDER_1, // another campfire pose
                 THE_DEFAULT_CORPSE, // dead corpse
@@ -238,13 +239,11 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 
         // =============== /TEXTURES, ENERGY, LOADOUT/ =================
 
-
-        // =============== ANIMATIONS =================  
+        // =============== ANIMATIONS =================
 
         reloadAnimation();
 
         // =============== /ANIMATIONS/ =================
-
 
         // =============== TEXT BUBBLE LOCATION =================
 
@@ -260,22 +259,20 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     // Construct campfire poses
     @Override
     public void renderShoulderImg(SpriteBatch sb) {
-        if(campfirePose!=null) {
+        if (campfirePose != null) {
             sb.draw(campfirePose, 0.0F, 0.0F, 1920.0F * Settings.scale, 1136.0F * Settings.scale);
-        }
-        else {
+        } else {
             setCampfirePose();
         }
     }
 
     public void setCampfirePose() {
         campfirePose = new Texture(1920, 1136, Pixmap.Format.RGBA4444);
-        if(hasChosenStarters()) {
-            campfirePose.draw(partner.backSprite, 0, 1136-500);
-            campfirePose.draw(adventurer.backSprite, partner.backSprite.getWidth(), 1136-500);
+        if (hasChosenStarters()) {
+            campfirePose.draw(partner.backSprite, 0, 1136 - 500);
+            campfirePose.draw(adventurer.backSprite, partner.backSprite.getWidth(), 1136 - 500);
         }
     }
-
 
     // Starting description and loadout
     @Override
@@ -286,33 +283,32 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     @Override
-	public ArrayList<AbstractCard> getCardPool(ArrayList<AbstractCard> tmpPool) {
-        if(!hasChosenStarters()) {
+    public ArrayList<AbstractCard> getCardPool(ArrayList<AbstractCard> tmpPool) {
+        if (!hasChosenStarters()) {
             onLoad(preparedSaveData);
         }
         ArrayList<AbstractCard.CardColor> colors = getUsedSubColors();
-        for(AbstractCard.CardColor color : colors) {
+        for (AbstractCard.CardColor color : colors) {
             for (Map.Entry<String, AbstractCard> c : CardLibrary.cards.entrySet()) {
                 AbstractCard card = c.getValue();
                 if (card.color.equals(color) && card.rarity != AbstractCard.CardRarity.BASIC &&
-                    (!UnlockTracker.isCardLocked(c.getKey()) || Settings.isDailyRun)) {
-                        if(card instanceof PokemonCard) {
-                            if(!((PokemonCard)card).isAdventurerOnly || color.equals(adventurer.cardColor)) {
-                                tmpPool.add(card);
-                            }
-                        }
-                        else {
+                        (!UnlockTracker.isCardLocked(c.getKey()) || Settings.isDailyRun)) {
+                    if (card instanceof PokemonCard) {
+                        if (!((PokemonCard) card).isAdventurerOnly || color.equals(adventurer.cardColor)) {
                             tmpPool.add(card);
                         }
+                    } else {
+                        tmpPool.add(card);
+                    }
                 }
             }
         }
-		
-		return tmpPool;
-	}
+
+        return tmpPool;
+    }
 
     public boolean hasChosenStarters() {
-        if(partner==null||adventurer==null) {
+        if (partner == null || adventurer == null) {
             return false;
         }
         return true;
@@ -320,19 +316,18 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 
     public void reloadAnimation() {
         logger.info("ANIMATION");
-        if(hasChosenStarters()) {
+        if (hasChosenStarters()) {
             loadAnimation(adventurer.atlasUrl, adventurer.skeletonUrl, 0.250f);
             AnimationState.TrackEntry e = state.setAnimation(0, "Sprite", true);
             e.setTime(e.getEndTime() * MathUtils.random());
-        } 
-        else {
+        } else {
             loadAnimation(
-                THE_DEFAULT_SKELETON_ATLAS,
-                THE_DEFAULT_SKELETON_JSON,
-                0.250f);
+                    THE_DEFAULT_SKELETON_ATLAS,
+                    THE_DEFAULT_SKELETON_JSON,
+                    0.250f);
             AnimationState.TrackEntry e = state.setAnimation(0, "Sprite", true);
             e.setTime(e.getEndTime() * MathUtils.random());
-        } 
+        }
         setCampfirePose();
     }
 
@@ -346,79 +341,84 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public void awardMaxHp(AbstractPokemon pokemon) {
-        maxHealth+=pokemon.maxHp-(AbstractDungeon.ascensionLevel>=14?3:0);
+        maxHealth += pokemon.maxHp - (AbstractDungeon.ascensionLevel >= 14 ? 3 : 0);
     }
 
     public void awardHp() {
-        heal((int)((AbstractDungeon.ascensionLevel>=6?0.9f:1)*maxHealth));
+        heal((int) ((AbstractDungeon.ascensionLevel >= 6 ? 0.9f : 1) * maxHealth));
     }
 
     public void awardOrbSlots(AbstractPokemon pokemon) {
-        masterMaxOrbs+=pokemon.orbSlots;
+        masterMaxOrbs += pokemon.orbSlots;
     }
 
     public void awardStartingDecks(AbstractPokemon pokemon) {
-        if(ModHelper.isModEnabled("Draft") || ModHelper.isModEnabled("SealedDeck"))
+        if (ModHelper.isModEnabled("Draft") || ModHelper.isModEnabled("SealedDeck"))
             return;
-        for(AbstractCard card: pokemon.startingDeck) {
+        for (AbstractCard card : pokemon.startingDeck) {
             masterDeck.addToTop(card.makeStatEquivalentCopy());
         }
     }
 
     public void removeImproperRelics() {
-        if(hasChosenStarters()) {
+        if (hasChosenStarters()) {
             ArrayList<String> relicsIDToRemove = new ArrayList<String>();
-            for(String relicId: AbstractDungeon.commonRelicPool) {
+            for (String relicId : AbstractDungeon.commonRelicPool) {
                 AbstractRelic relic = RelicLibrary.getRelic(relicId);
-                if(relic instanceof PokemonRelic) {
-                    CardColor relicColor = ((PokemonRelic)relic).cardColor;
-                    if(relicColor!=null)
-                    if(relicColor!=adventurer.cardColor && relicColor!=partner.cardColor) {
-                        relicsIDToRemove.add(relicId);
-                    }
+                if (relic instanceof PokemonRelic) {
+                    Set<CardColor> relicColors = ((PokemonRelic) relic).cardColors;
+                    if (relicColors != null)
+                        if (!relicColors.contains(adventurer.cardColor)
+                                && !relicColors.contains(adventurer.cardColor)) {
+                            relicsIDToRemove.add(relicId);
+                        }
                 }
             }
-            for(String relicId: AbstractDungeon.uncommonRelicPool) {
+            for (String relicId : AbstractDungeon.uncommonRelicPool) {
                 AbstractRelic relic = RelicLibrary.getRelic(relicId);
-                if(relic instanceof PokemonRelic) {
-                    CardColor relicColor = ((PokemonRelic)relic).cardColor;
-                    if(relicColor!=null)
-                    if(relicColor!=adventurer.cardColor && relicColor!=partner.cardColor) {
-                        relicsIDToRemove.add(relicId);
-                    }
+                if (relic instanceof PokemonRelic) {
+                    Set<CardColor> relicColors = ((PokemonRelic) relic).cardColors;
+                    if (relicColors != null)
+                        if (!relicColors.contains(adventurer.cardColor)
+                                && !relicColors.contains(adventurer.cardColor)) {
+                            relicsIDToRemove.add(relicId);
+                        }
                 }
             }
-            for(String relicId: AbstractDungeon.rareRelicPool) {
+            for (String relicId : AbstractDungeon.rareRelicPool) {
                 AbstractRelic relic = RelicLibrary.getRelic(relicId);
-                if(relic instanceof PokemonRelic) {
-                    CardColor relicColor = ((PokemonRelic)relic).cardColor;
-                    if(relicColor!=null)
-                    if(relicColor!=adventurer.cardColor && relicColor!=partner.cardColor) {
-                        relicsIDToRemove.add(relicId);
-                    }
+                if (relic instanceof PokemonRelic) {
+                    Set<CardColor> relicColors = ((PokemonRelic) relic).cardColors;
+                    if (relicColors != null)
+                        if (!relicColors.contains(adventurer.cardColor)
+                                && !relicColors.contains(adventurer.cardColor)) {
+                            relicsIDToRemove.add(relicId);
+                        }
                 }
             }
-            for(String relicId: AbstractDungeon.shopRelicPool) {
+            for (String relicId : AbstractDungeon.shopRelicPool) {
                 AbstractRelic relic = RelicLibrary.getRelic(relicId);
-                if(relic instanceof PokemonRelic) {
-                    CardColor relicColor = ((PokemonRelic)relic).cardColor;
-                    if(relicColor!=null)
-                    if(relicColor!=adventurer.cardColor && relicColor!=partner.cardColor) {
-                        relicsIDToRemove.add(relicId);
-                    }
+                if (relic instanceof PokemonRelic) {
+                    Set<CardColor> relicColors = ((PokemonRelic) relic).cardColors;
+                    if (relicColors != null)
+                        if (!relicColors.contains(adventurer.cardColor)
+                                && !relicColors.contains(adventurer.cardColor)) {
+                            relicsIDToRemove.add(relicId);
+                        }
                 }
             }
-            for(String relicId: AbstractDungeon.bossRelicPool) {
+            for (String relicId : AbstractDungeon.bossRelicPool) {
                 AbstractRelic relic = RelicLibrary.getRelic(relicId);
-                if(relic instanceof PokemonRelic) {
-                    CardColor relicColor = ((PokemonRelic)relic).cardColor;
-                    if(relicColor!=null)
-                    if(relicColor!=adventurer.cardColor && relicColor!=partner.cardColor) {
-                        relicsIDToRemove.add(relicId);
-                    }
+                if (relic instanceof PokemonRelic) {
+                    Set<CardColor> relicColors = ((PokemonRelic) relic).cardColors;
+                    if (relicColors != null)
+                        if (!relicColors.contains(adventurer.cardColor)
+                                && !relicColors.contains(adventurer.cardColor)) {
+                            relicsIDToRemove.add(relicId);
+                        }
                 }
             }
-            for(String relicId: relicsIDToRemove) {
+            for (String relicId : relicsIDToRemove) {
                 AbstractDungeon.commonRelicPool.remove(relicId);
                 AbstractDungeon.uncommonRelicPool.remove(relicId);
                 AbstractDungeon.rareRelicPool.remove(relicId);
@@ -430,12 +430,15 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 
     public void AwardStartingRelic() {
         loseRelic(NatureRelatedRelic.ID);
-        AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2, natureRelatedRelic());
-        if(hasChosenPikachu()) {
-            AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2, new LightBallRelic());
+        AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2,
+                natureRelatedRelic());
+        if (hasChosenPikachu()) {
+            AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2,
+                    new LightBallRelic());
         }
-        if(hasChosenChikorita()) {
-            AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2, new BigRootRelic());
+        if (hasChosenChikorita()) {
+            AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2, Settings.HEIGHT / 2,
+                    new BigRootRelic());
         }
     }
 
@@ -455,32 +458,32 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public void evolvePokemons() {
-        if(skipNextEvolution) {
+        if (skipNextEvolution) {
             logger.info("SKIPPING EVOLUTION");
             skipNextEvolution = false;
             return;
         }
-        if(hasChosenStarters()) {
+        if (hasChosenStarters()) {
             logger.info("Gonna EVOLVE!!!!!");
-            if(partner.evolve()!=null)
+            if (partner.evolve() != null)
                 setPartner(partner.evolve());
-            if(adventurer.evolve()!=null)
+            if (adventurer.evolve() != null)
                 setAdventurer(adventurer.evolve());
             reloadAnimation();
-        }
-        else {
+        } else {
             logger.info("no STARTERS WTH!");
         }
     }
 
-    // Starting Relics	
+    // Starting Relics
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
 
         retVal.add(NatureRelatedRelic.ID);
 
         // Mark relics as seen - makes it visible in the compendium immediately
-        // If you don't have this it won't be visible in the compendium until you see them in game
+        // If you don't have this it won't be visible in the compendium until you see
+        // them in game
         UnlockTracker.markRelicAsSeen(NatureRelatedRelic.ID);
 
         return retVal;
@@ -494,10 +497,9 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     @Override
     public void applyEndOfTurnTriggers() {
         super.applyEndOfTurnTriggers();
-        if(hasPower(LockDownPower.POWER_ID) || hasRelic(CellBatteryRelic.ID) || !hasChosenPikachu()) {
+        if (hasPower(LockDownPower.POWER_ID) || hasRelic(CellBatteryRelic.ID) || !hasChosenPikachu()) {
             return;
-        }
-        else {
+        } else {
             AbstractDungeon.actionManager.addToBottom(new SetPikaMeterAction(0));
         }
     }
@@ -508,16 +510,18 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 
     public void onLoad(ToSave saveInfo, boolean skipNext) {
         skipNextEvolution = skipNext;
-        if(saveInfo == null) {
+        if (saveInfo == null) {
             return;
         }
-        if(saveInfo.adventurer!=null && saveInfo.partner!=null) {
+        if (saveInfo.adventurer != null && saveInfo.partner != null) {
             try {
-                setAdventurer((AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+(saveInfo.adventurer)).getConstructor().newInstance());
-                setPartner((AbstractPokemon)Class.forName("mysteryDungeon.pokemons."+(saveInfo.partner)).getConstructor().newInstance());
+                setAdventurer((AbstractPokemon) Class.forName("mysteryDungeon.pokemons." + (saveInfo.adventurer))
+                        .getConstructor().newInstance());
+                setPartner((AbstractPokemon) Class.forName("mysteryDungeon.pokemons." + (saveInfo.partner))
+                        .getConstructor().newInstance());
                 adventurer.setShiny(saveInfo.shinyAdventurer);
                 partner.setShiny(saveInfo.shinyPartner);
-                startingMaxHP = adventurer.maxHp+partner.maxHp-(AbstractDungeon.ascensionLevel>=14?6:0);
+                startingMaxHP = adventurer.maxHp + partner.maxHp - (AbstractDungeon.ascensionLevel >= 14 ? 6 : 0);
             } catch (InstantiationException | IllegalAccessException | IllegalArgumentException
                     | InvocationTargetException | NoSuchMethodException | SecurityException
                     | ClassNotFoundException e) {
@@ -525,8 +529,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
                 e.printStackTrace();
             }
             preparedSaveData = saveInfo;
-        } 
-        else {
+        } else {
             logger.info("yikes");
         }
         maxPikachuChargeCounter = saveInfo.maxPikaMeter;
@@ -535,7 +538,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 
     @Override
     public Type savedType() {
-        return new TypeToken<ToSave>(){}.getType();
+        return new TypeToken<ToSave>() {
+        }.getType();
     }
 
     // character Select screen effect
@@ -553,7 +557,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     // Should return how much HP your maximum HP reduces by when starting a run at
-    // Ascension 14 or higher. (ironclad loses 5, defect and silent lose 4 hp respectively)
+    // Ascension 14 or higher. (ironclad loses 5, defect and silent lose 4 hp
+    // respectively)
     @Override
     public int getAscensionMaxHPLoss() {
         return 0;
@@ -584,7 +589,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         return NAMES[0];
     }
 
-    //Which card should be obtainable from the Match and Keep event?
+    // Which card should be obtainable from the Match and Keep event?
     @Override
     public AbstractCard getStartCardForEvent() {
         return new BulbasaurTackle();
@@ -596,7 +601,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         return NAMES[1];
     }
 
-    // Should return a new instance of your character, sending name as its name parameter.
+    // Should return a new instance of your character, sending name as its name
+    // parameter.
     @Override
     public AbstractPlayer newInstance() {
         Pokemon pokemon = new Pokemon(name, chosenClass);
@@ -604,7 +610,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         return pokemon;
     }
 
-    // Should return a Color object to be used to color the miniature card images in run history.
+    // Should return a Color object to be used to color the miniature card images in
+    // run history.
     @Override
     public Color getCardRenderColor() {
         return mysteryDungeon.MysteryDungeon.DEFAULT_GRAY;
@@ -618,12 +625,12 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public static boolean hasChosenPikachu() {
-        if(AbstractDungeon.player instanceof Pokemon) {
-            if(((Pokemon)AbstractDungeon.player).hasChosenStarters()) {
-                if(((Pokemon)AbstractDungeon.player).adventurer.cardColor == Enums.PIKACHU_YELLOW) {
+        if (AbstractDungeon.player instanceof Pokemon) {
+            if (((Pokemon) AbstractDungeon.player).hasChosenStarters()) {
+                if (((Pokemon) AbstractDungeon.player).adventurer.cardColor == Enums.PIKACHU_YELLOW) {
                     return true;
                 }
-                if(((Pokemon)AbstractDungeon.player).partner.cardColor == Enums.PIKACHU_YELLOW) {
+                if (((Pokemon) AbstractDungeon.player).partner.cardColor == Enums.PIKACHU_YELLOW) {
                     return true;
                 }
             }
@@ -632,12 +639,12 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public static boolean hasChosenChikorita() {
-        if(AbstractDungeon.player instanceof Pokemon) {
-            if(((Pokemon)AbstractDungeon.player).hasChosenStarters()) {
-                if(((Pokemon)AbstractDungeon.player).adventurer.cardColor == Enums.CHIKORITA_GREEN) {
+        if (AbstractDungeon.player instanceof Pokemon) {
+            if (((Pokemon) AbstractDungeon.player).hasChosenStarters()) {
+                if (((Pokemon) AbstractDungeon.player).adventurer.cardColor == Enums.CHIKORITA_GREEN) {
                     return true;
                 }
-                if(((Pokemon)AbstractDungeon.player).partner.cardColor == Enums.CHIKORITA_GREEN) {
+                if (((Pokemon) AbstractDungeon.player).partner.cardColor == Enums.CHIKORITA_GREEN) {
                     return true;
                 }
             }
@@ -646,12 +653,12 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public static boolean hasChosenTorchic() {
-        if(AbstractDungeon.player instanceof Pokemon) {
-            if(((Pokemon)AbstractDungeon.player).hasChosenStarters()) {
-                if(((Pokemon)AbstractDungeon.player).adventurer.cardColor == Enums.TORCHIC_RED) {
+        if (AbstractDungeon.player instanceof Pokemon) {
+            if (((Pokemon) AbstractDungeon.player).hasChosenStarters()) {
+                if (((Pokemon) AbstractDungeon.player).adventurer.cardColor == Enums.TORCHIC_RED) {
                     return true;
                 }
-                if(((Pokemon)AbstractDungeon.player).partner.cardColor == Enums.TORCHIC_RED) {
+                if (((Pokemon) AbstractDungeon.player).partner.cardColor == Enums.TORCHIC_RED) {
                     return true;
                 }
             }
@@ -664,10 +671,10 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     // Attack effects are the same as used in DamageAction and the like.
     @Override
     public AbstractGameAction.AttackEffect[] getSpireHeartSlashEffect() {
-        return new AbstractGameAction.AttackEffect[]{
+        return new AbstractGameAction.AttackEffect[] {
                 AbstractGameAction.AttackEffect.BLUNT_HEAVY,
                 AbstractGameAction.AttackEffect.BLUNT_HEAVY,
-                AbstractGameAction.AttackEffect.BLUNT_HEAVY};
+                AbstractGameAction.AttackEffect.BLUNT_HEAVY };
     }
 
     // Should return a string containing what text is shown when your character is
@@ -680,7 +687,8 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 
     // The vampire events refer to the base game characters as "brother", "sister",
     // and "broken one" respectively.This method should return a String containing
-    // the full text that will be displayed as the first screen of the vampires event.
+    // the full text that will be displayed as the first screen of the vampires
+    // event.
     @Override
     public String getVampireText() {
         return TEXT[2];
@@ -689,46 +697,46 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     @Override
     public void useCard(AbstractCard c, AbstractMonster m, int energyOnUse) {
         super.useCard(c, m, energyOnUse);
-        if(hasChosenPikachu()) {
-            if(c instanceof PokemonCard) { 
-                if(((PokemonCard)c).inert) {
+        if (hasChosenPikachu()) {
+            if (c instanceof PokemonCard) {
+                if (((PokemonCard) c).inert) {
                     return;
                 }
             }
-            if(c.type == CardType.ATTACK)
-                pikachuChargeCounter+=(pikachuChargeCounter==maxPikachuChargeCounter?0:1);
-            if(c.type == CardType.SKILL)
-                pikachuChargeCounter-=(pikachuChargeCounter==-maxPikachuChargeCounter?0:1);
+            if (c.type == CardType.ATTACK)
+                pikachuChargeCounter += (pikachuChargeCounter == maxPikachuChargeCounter ? 0 : 1);
+            if (c.type == CardType.SKILL)
+                pikachuChargeCounter -= (pikachuChargeCounter == -maxPikachuChargeCounter ? 0 : 1);
             pikaMeter.setCounterPosition(pikachuChargeCounter);
-            if(pikachuChargeCounter==maxPikachuChargeCounter) {
+            if (pikachuChargeCounter == maxPikachuChargeCounter) {
                 AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(PositiveStance.STANCE_ID));
             }
-            if(pikachuChargeCounter==-maxPikachuChargeCounter) {
+            if (pikachuChargeCounter == -maxPikachuChargeCounter) {
                 AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(NegativeStance.STANCE_ID));
             }
-            if(pikachuChargeCounter==0) {
+            if (pikachuChargeCounter == 0) {
                 AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(NeutralStance.STANCE_ID));
             }
         }
-        if(comboManager != null) {
+        if (comboManager != null) {
             comboManager.feed(c);
         }
     }
 
     public void setPikaMeter(int newState) {
         pikachuChargeCounter = newState;
-        if(pikachuChargeCounter>maxPikachuChargeCounter)
-            pikachuChargeCounter=maxPikachuChargeCounter;
-        if(pikachuChargeCounter<-1*maxPikachuChargeCounter)
-            pikachuChargeCounter=-1*maxPikachuChargeCounter;
+        if (pikachuChargeCounter > maxPikachuChargeCounter)
+            pikachuChargeCounter = maxPikachuChargeCounter;
+        if (pikachuChargeCounter < -1 * maxPikachuChargeCounter)
+            pikachuChargeCounter = -1 * maxPikachuChargeCounter;
         pikaMeter.setCounterPosition(pikachuChargeCounter);
-        if(pikachuChargeCounter==maxPikachuChargeCounter) {
+        if (pikachuChargeCounter == maxPikachuChargeCounter) {
             AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(PositiveStance.STANCE_ID));
         }
-        if(pikachuChargeCounter==-maxPikachuChargeCounter) {
+        if (pikachuChargeCounter == -maxPikachuChargeCounter) {
             AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(NegativeStance.STANCE_ID));
         }
-        if(pikachuChargeCounter==0) {
+        if (pikachuChargeCounter == 0) {
             AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(NeutralStance.STANCE_ID));
         }
     }
@@ -738,7 +746,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public void resetComboManager() {
-        if(hasChosenTorchic()) {
+        if (hasChosenTorchic()) {
             comboManager = new TorchicComboManager();
         }
     }
@@ -755,30 +763,28 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
         nature = Nature.valueOf(natureAsAString);
     }
 
-
     // Adventurer/Partner related switch statements
 
-
     public Color adventurersColor() {
-        if(adventurer != null)
+        if (adventurer != null)
             return adventurer.color;
         return Color.GRAY.cpy();
     }
 
     public Color partnersColor() {
-        if(partner != null)
+        if (partner != null)
             return partner.color;
         return Color.GRAY.cpy();
     }
 
     public Color adventurerOrPartnerColor() {
-        return (new Random().nextInt() % 2 == 0)?partnersColor():adventurersColor();
+        return (new Random().nextInt() % 2 == 0) ? partnersColor() : adventurersColor();
     }
 
     public ArrayList<AbstractCard.CardColor> getUsedSubColors() {
-        //onLoad(preparedSaveData, false);
+        // onLoad(preparedSaveData, false);
         ArrayList<AbstractCard.CardColor> subcolors = new ArrayList<AbstractCard.CardColor>();
-        if(!hasChosenStarters()) {
+        if (!hasChosenStarters()) {
             subcolors.add(CardColor.RED);
             return subcolors;
         }
@@ -794,11 +800,11 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
 
     public void setPartner(AbstractPokemon partner) {
         this.partner = partner;
-        prepareSaveData();     
+        prepareSaveData();
     }
 
     public void prepareSaveData() {
-        if(hasChosenStarters()) {
+        if (hasChosenStarters()) {
             preparedSaveData.adventurer = adventurer.getClass().getSimpleName();
             preparedSaveData.partner = partner.getClass().getSimpleName();
             preparedSaveData.shinyPartner = partner.getShiny();
@@ -811,7 +817,7 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
     }
 
     public AbstractRelic natureRelatedRelic() {
-        switch(nature) {
+        switch (nature) {
             case Brave:
                 return new BraveExplorerRelic();
             case Calm:
@@ -842,7 +848,5 @@ public class Pokemon extends CustomPlayer implements CustomSavable<ToSave>{
                 return new CalmExplorerRelic();
         }
     }
-
-
 
 }

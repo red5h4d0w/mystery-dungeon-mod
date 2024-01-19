@@ -8,9 +8,12 @@ import mysteryDungeon.util.TextureLoader;
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
+import java.util.HashSet;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -18,7 +21,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
-public class WaterGemRelic extends PokemonRelic { 
+public class WaterGemRelic extends PokemonRelic {
 
     // ID, images, text.
     public static final String ID = MysteryDungeon.makeID(WaterGemRelic.class);
@@ -31,19 +34,25 @@ public class WaterGemRelic extends PokemonRelic {
 
     public WaterGemRelic() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
-        cardColor = Totodile.CARD_COLOR;
+        cardColors = new HashSet<CardColor>() {
+            {
+                add(Totodile.CARD_COLOR);
+            }
+        };
     }
 
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         super.onAttack(info, damageAmount, target);
-        if(info.owner != AbstractDungeon.player)  {
+        if (info.owner != AbstractDungeon.player) {
             return;
         }
-        if(damageAmount > 20) {
-            addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(5), DamageType.THORNS, AttackEffect.FIRE));
+        if (damageAmount > 20) {
+            addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(5), DamageType.THORNS,
+                    AttackEffect.FIRE));
         }
     }
+
     @Override
     public String getUpdatedDescription() {
         return DESCRIPTIONS[0];

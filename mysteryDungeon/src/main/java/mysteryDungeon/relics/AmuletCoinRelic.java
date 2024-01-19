@@ -1,6 +1,7 @@
 package mysteryDungeon.relics;
 
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
@@ -14,6 +15,8 @@ import mysteryDungeon.util.TextureLoader;
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
+import java.util.HashSet;
+
 public class AmuletCoinRelic extends PokemonRelic {
     public static final String ID = MysteryDungeon.makeID(AmuletCoinRelic.class);
 
@@ -25,13 +28,17 @@ public class AmuletCoinRelic extends PokemonRelic {
 
     public AmuletCoinRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
-        cardColor = Meowth.CARD_COLOR;
+        cardColors = new HashSet<CardColor>() {
+            {
+                add(Meowth.CARD_COLOR);
+            }
+        };
     }
 
     @Override
     public void atTurnStart() {
         super.atTurnStart();
-        if(AbstractDungeon.player.gold>0)
+        if (AbstractDungeon.player.gold > 0)
             addToBot(new SpendGoldAction(Math.min(AbstractDungeon.player.gold, 20), false));
     }
 

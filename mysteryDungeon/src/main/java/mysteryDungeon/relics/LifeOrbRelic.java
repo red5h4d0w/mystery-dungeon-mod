@@ -8,13 +8,16 @@ import mysteryDungeon.util.TextureLoader;
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
+import java.util.HashSet;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ExhaustAction;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
-public class LifeOrbRelic extends PokemonRelic { 
+public class LifeOrbRelic extends PokemonRelic {
 
     // ID, images, text.
     public static final String ID = MysteryDungeon.makeID(LifeOrbRelic.class);
@@ -27,14 +30,18 @@ public class LifeOrbRelic extends PokemonRelic {
 
     public LifeOrbRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
-        cardColor = Charmander.CARD_COLOR;
+        cardColors = new HashSet<CardColor>() {
+            {
+                add(Charmander.CARD_COLOR);
+            }
+        };
     }
 
     @Override
     public void onEquip() {
         AbstractDungeon.player.energy.energyMaster++;
     }
-    
+
     @Override
     public void onUnequip() {
         AbstractDungeon.player.energy.energyMaster--;

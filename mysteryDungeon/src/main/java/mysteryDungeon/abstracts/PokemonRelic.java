@@ -1,5 +1,7 @@
 package mysteryDungeon.abstracts;
 
+import java.util.Set;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -7,8 +9,8 @@ import com.megacrit.cardcrawl.helpers.PowerTip;
 
 import basemod.abstracts.CustomRelic;
 
-public abstract class PokemonRelic extends CustomRelic { 
-    public CardColor cardColor;
+public abstract class PokemonRelic extends CustomRelic {
+    public Set<CardColor> cardColors;
 
     public PokemonRelic(String ID, Texture IMG, Texture OUTLINE, RelicTier relicTier, LandingSound landingSound) {
         super(ID, IMG, OUTLINE, relicTier, landingSound);

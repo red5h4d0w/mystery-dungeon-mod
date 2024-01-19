@@ -10,9 +10,12 @@ import mysteryDungeon.util.TextureLoader;
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
+import java.util.HashSet;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardTags;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -20,7 +23,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
-public class GrassySeedRelic extends PokemonRelic { 
+public class GrassySeedRelic extends PokemonRelic {
 
     // ID, images, text.
     public static final String ID = MysteryDungeon.makeID(GrassySeedRelic.class);
@@ -34,25 +37,30 @@ public class GrassySeedRelic extends PokemonRelic {
     public GrassySeedRelic() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.CLINK);
 
-        cardColor = Chikorita.CARD_COLOR;
-        
+        cardColors = new HashSet<CardColor>() {
+            {
+                add(Chikorita.CARD_COLOR);
+            }
+        };
+
     }
- 
+
     @Override
     public void atBattleStartPreDraw() {
         AbstractCard[] possibleCards = CardLibrary.cards.values().stream()
                 .filter(c -> c instanceof PokemonCard)
-                .filter(c -> c.color == ((Pokemon)AbstractDungeon.player).partner.cardColor || c.color == ((Pokemon)AbstractDungeon.player).adventurer.cardColor)
+                .filter(c -> c.color == ((Pokemon) AbstractDungeon.player).partner.cardColor
+                        || c.color == ((Pokemon) AbstractDungeon.player).adventurer.cardColor)
                 .filter(c -> c.type == CardType.ATTACK)
                 .filter(c -> !c.tags.contains(CardTags.STARTER_DEFEND))
                 .filter(c -> !c.tags.contains(CardTags.STARTER_STRIKE))
                 .toArray(AbstractCard[]::new);
-            AbstractCard c = possibleCards[(int)AbstractDungeon.cardRng.random(possibleCards.length-1)];
-            if (c.cost > 0) {
-                c.cost = 0;
-                c.costForTurn = 0;
-                c.isCostModified = true;
-              } 
+        AbstractCard c = possibleCards[(int) AbstractDungeon.cardRng.random(possibleCards.length - 1)];
+        if (c.cost > 0) {
+            c.cost = 0;
+            c.costForTurn = 0;
+            c.isCostModified = true;
+        }
         addToBot(new MakeTempCardInDrawPileAction(c, 1, true, false, false));
     }
 

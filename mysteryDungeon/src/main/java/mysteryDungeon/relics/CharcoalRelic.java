@@ -8,11 +8,14 @@ import mysteryDungeon.util.TextureLoader;
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
+import java.util.HashSet;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.relics.OnApplyPowerRelic;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -21,7 +24,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 
-public class CharcoalRelic extends PokemonRelic implements OnApplyPowerRelic { 
+public class CharcoalRelic extends PokemonRelic implements OnApplyPowerRelic {
 
     // ID, images, text.
     public static final String ID = MysteryDungeon.makeID("CharcoalRelic");
@@ -34,18 +37,24 @@ public class CharcoalRelic extends PokemonRelic implements OnApplyPowerRelic {
 
     public CharcoalRelic() {
         super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.CLINK);
-        cardColor = Charmander.CARD_COLOR;
+        cardColors = new HashSet<CardColor>() {
+            {
+                add(Charmander.CARD_COLOR);
+            }
+        };
     }
 
     @Override
     public boolean onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        if(power.type == PowerType.DEBUFF){
-            addToBot((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)AbstractDungeon.player, this));
-            addToBot((AbstractGameAction)new DamageAllEnemiesAction(null, 
-                  DamageInfo.createDamageMatrix(1, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+        if (power.type == PowerType.DEBUFF) {
+            addToBot(
+                    (AbstractGameAction) new RelicAboveCreatureAction((AbstractCreature) AbstractDungeon.player, this));
+            addToBot((AbstractGameAction) new DamageAllEnemiesAction(null,
+                    DamageInfo.createDamageMatrix(1, true), DamageInfo.DamageType.THORNS,
+                    AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         }
         return true;
-      }
+    }
 
     // Description
     @Override

@@ -8,14 +8,17 @@ import mysteryDungeon.util.TextureLoader;
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
+import java.util.HashSet;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.watcher.MasterRealityPower;
 
-public class WaveIncenseRelic extends PokemonRelic { 
+public class WaveIncenseRelic extends PokemonRelic {
 
     // ID, images, text.
     public static final String ID = MysteryDungeon.makeID(WaveIncenseRelic.class);
@@ -28,14 +31,19 @@ public class WaveIncenseRelic extends PokemonRelic {
 
     public WaveIncenseRelic() {
         super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.CLINK);
-        cardColor = Squirtle.CARD_COLOR;
+        cardColors = new HashSet<CardColor>() {
+            {
+                add(Squirtle.CARD_COLOR);
+            }
+        };
     }
 
     @Override
-    public void atPreBattle()
-    {
-        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new MasterRealityPower(AbstractDungeon.player)));
+    public void atPreBattle() {
+        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
+                new MasterRealityPower(AbstractDungeon.player)));
     }
+
     @Override
     public String getUpdatedDescription() {
         return DESCRIPTIONS[0];

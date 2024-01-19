@@ -2,6 +2,7 @@ package mysteryDungeon.relics;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
@@ -13,6 +14,8 @@ import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
+
+import java.util.HashSet;
 
 public class SplashPlateRelic extends PokemonRelic {
     public static final String ID = MysteryDungeon.makeID(SplashPlateRelic.class);
@@ -27,13 +30,17 @@ public class SplashPlateRelic extends PokemonRelic {
 
     public SplashPlateRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
-        cardColor = Totodile.CARD_COLOR;
+        cardColors = new HashSet<CardColor>() {
+            {
+                add(Totodile.CARD_COLOR);
+            }
+        };
     }
 
     @Override
     public void onEvokeOrb(AbstractOrb ammo) {
         super.onEvokeOrb(ammo);
-        if(!used) {
+        if (!used) {
             addToBot(new GainEnergyAction(1));
             used = true;
         }

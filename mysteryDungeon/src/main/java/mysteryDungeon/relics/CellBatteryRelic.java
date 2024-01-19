@@ -9,12 +9,15 @@ import mysteryDungeon.util.TextureLoader;
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
+import java.util.HashSet;
+
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
-public class CellBatteryRelic extends PokemonRelic { 
+public class CellBatteryRelic extends PokemonRelic {
 
     // ID, images, text.
     public static final String ID = MysteryDungeon.makeID(CellBatteryRelic.class);
@@ -27,24 +30,26 @@ public class CellBatteryRelic extends PokemonRelic {
 
     public CellBatteryRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
-        cardColor = Pikachu.CARD_COLOR;
+        cardColors = new HashSet<CardColor>() {
+            {
+                add(Pikachu.CARD_COLOR);
+            }
+        };
     }
 
     @Override
     public void onEquip() {
-        if(AbstractDungeon.player instanceof Pokemon) {
+        if (AbstractDungeon.player instanceof Pokemon) {
             Pokemon.maxPikachuChargeCounter = 3;
         }
     }
 
     @Override
     public void onUnequip() {
-        if(AbstractDungeon.player instanceof Pokemon) {
+        if (AbstractDungeon.player instanceof Pokemon) {
             Pokemon.maxPikachuChargeCounter = 2;
         }
     }
-
-    
 
     // Description
     @Override

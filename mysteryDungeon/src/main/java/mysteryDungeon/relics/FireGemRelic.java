@@ -9,14 +9,17 @@ import mysteryDungeon.util.TextureLoader;
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
+import java.util.HashSet;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class FireGemRelic extends PokemonRelic { 
+public class FireGemRelic extends PokemonRelic {
 
     // ID, images, text.
     public static final String ID = MysteryDungeon.makeID(FireGemRelic.class);
@@ -29,18 +32,22 @@ public class FireGemRelic extends PokemonRelic {
 
     public FireGemRelic() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
-        cardColor = Cyndaquil.CARD_COLOR;
+        cardColors = new HashSet<CardColor>() {
+            {
+                add(Cyndaquil.CARD_COLOR);
+            }
+        };
     }
 
     @Override
-    public void atPreBattle()
-    {
-        for(AbstractMonster m: AbstractDungeon.getMonsters().monsters) {
-            if(!m.isDeadOrEscaped()) {
+    public void atPreBattle() {
+        for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
+            if (!m.isDeadOrEscaped()) {
                 addToBot(new ApplyPowerAction(m, AbstractDungeon.player, new BurnPower(m, 10)));
             }
         }
     }
+
     @Override
     public String getUpdatedDescription() {
         return DESCRIPTIONS[0];

@@ -8,9 +8,12 @@ import mysteryDungeon.util.TextureLoader;
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
 import static mysteryDungeon.MysteryDungeon.makeRelicPath;
 
+import java.util.HashSet;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.relics.OnApplyPowerRelic;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -19,7 +22,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 
-public class MiracleSeedRelic extends PokemonRelic implements OnApplyPowerRelic { 
+public class MiracleSeedRelic extends PokemonRelic implements OnApplyPowerRelic {
 
     // ID, images, text.
     public static final String ID = MysteryDungeon.makeID(MiracleSeedRelic.class);
@@ -33,8 +36,12 @@ public class MiracleSeedRelic extends PokemonRelic implements OnApplyPowerRelic 
     public MiracleSeedRelic() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);
 
-        cardColor = Bulbasaur.CARD_COLOR;
-        
+        cardColors = new HashSet<CardColor>() {
+            {
+                add(Bulbasaur.CARD_COLOR);
+            }
+        };
+
     }
 
     @Override
@@ -42,17 +49,18 @@ public class MiracleSeedRelic extends PokemonRelic implements OnApplyPowerRelic 
         counter = 0;
     }
 
-    public boolean onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source ) {
-        if(power.type == PowerType.DEBUFF && !target.hasPower(ArtifactPower.POWER_ID)){
+    public boolean onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
+        if (power.type == PowerType.DEBUFF && !target.hasPower(ArtifactPower.POWER_ID)) {
             counter++;
             if (counter % 3 == 0) {
                 flash();
                 counter = 0;
                 addToBot(new DrawCardAction(AbstractDungeon.player, 1));
-            } 
+            }
         }
         return true;
     }
+
     // Description
     @Override
     public String getUpdatedDescription() {
