@@ -3,6 +3,7 @@ package mysteryDungeon.relics;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonRelic;
 import mysteryDungeon.pokemons.Charmander;
+import mysteryDungeon.pokemons.Cyndaquil;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
@@ -40,6 +41,7 @@ public class CharcoalRelic extends PokemonRelic implements OnApplyPowerRelic {
         cardColors = new HashSet<CardColor>() {
             {
                 add(Charmander.CARD_COLOR);
+                add(Cyndaquil.CARD_COLOR);
             }
         };
     }

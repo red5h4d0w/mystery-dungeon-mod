@@ -3,6 +3,7 @@ package mysteryDungeon.relics;
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonRelic;
 import mysteryDungeon.pokemons.Bulbasaur;
+import mysteryDungeon.pokemons.Chikorita;
 import mysteryDungeon.util.TextureLoader;
 
 import static mysteryDungeon.MysteryDungeon.makeRelicOutlinePath;
@@ -35,6 +36,7 @@ public class LeftoversRelic extends PokemonRelic {
         cardColors = new HashSet<CardColor>() {
             {
                 add(Bulbasaur.CARD_COLOR);
+                add(Chikorita.CARD_COLOR);
             }
         };
 

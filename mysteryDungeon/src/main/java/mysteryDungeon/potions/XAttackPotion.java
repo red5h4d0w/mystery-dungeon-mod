@@ -15,7 +15,6 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.cards.tempCards.SquirtleFlinch;
 import mysteryDungeon.pokemons.Squirtle;
-import mysteryDungeon.pokemons.Totodile;
 
 public class XAttackPotion extends PokemonPotion {
 
@@ -30,7 +29,7 @@ public class XAttackPotion extends PokemonPotion {
     public XAttackPotion() {
         // The bottle shape and inside is determined by potion size and color. The
         // actual colors are the main MysteryDungeon.java
-        super(NAME, POTION_ID, PotionRarity.UNCOMMON, IMG_STRING);
+        super(NAME, POTION_ID, PotionRarity.RARE, IMG_STRING);
 
         // Potency is the damage/magic number equivalent of potions.
         potency = getPotency();
@@ -40,7 +39,6 @@ public class XAttackPotion extends PokemonPotion {
         cardColors = new HashSet<CardColor>() {
             {
                 add(Squirtle.CARD_COLOR);
-                add(Totodile.CARD_COLOR);
             }
         };
 
@@ -88,11 +86,11 @@ public class XAttackPotion extends PokemonPotion {
     // This is your potency.
     @Override
     public int getPotency(final int potency) {
-        return 3;
+        return 4;
     }
 
     public void upgradePotion() {
-        potency += 3;
+        potency += 4;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }

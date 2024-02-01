@@ -2,7 +2,9 @@ package mysteryDungeon.relics;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonRelic;
+import mysteryDungeon.pokemons.Charmander;
 import mysteryDungeon.pokemons.Cyndaquil;
+import mysteryDungeon.pokemons.Torchic;
 import mysteryDungeon.powers.BurnPower;
 import mysteryDungeon.util.TextureLoader;
 
@@ -35,6 +37,8 @@ public class FireGemRelic extends PokemonRelic {
         cardColors = new HashSet<CardColor>() {
             {
                 add(Cyndaquil.CARD_COLOR);
+                add(Charmander.CARD_COLOR);
+                add(Torchic.CARD_COLOR);
             }
         };
     }
