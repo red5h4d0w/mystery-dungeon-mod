@@ -28,7 +28,7 @@ public class GoldenRazzBerryPotion extends PokemonPotion {
     public GoldenRazzBerryPotion() {
         // The bottle shape and inside is determined by potion size and color. The
         // actual colors are the main MysteryDungeon.java
-        super(NAME, POTION_ID, PotionRarity.UNCOMMON, IMG_STRING);
+        super(NAME, POTION_ID, PotionRarity.RARE, IMG_STRING);
 
         // Potency is the damage/magic number equivalent of potions.
         potency = getPotency();
