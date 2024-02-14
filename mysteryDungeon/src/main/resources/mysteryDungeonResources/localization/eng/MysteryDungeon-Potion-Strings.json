@@ -11,6 +11,13 @@
             "Gain #b%s #yFocus."
         ]
     },
+    "mysteryDungeon:BerryJuicePotion": {
+        "NAME": "Berry Juice",
+        "DESCRIPTIONS": [
+            "Scry #b%s. Next turn draw #b2 more cards.",
+            "Scry #b%s. Next turn draw #b4 more cards."
+        ]
+    },
     "mysteryDungeon:DireHitPotion": {
         "NAME": "Dire Hit",
         "DESCRIPTIONS": [
@@ -36,10 +43,24 @@
             "Your next attack deals #b%s more damage."
         ]
     },
+    "mysteryDungeon:HopoBerryPotion": {
+        "NAME": "Hopo Berry",
+        "DESCRIPTIONS": [
+            "Choose between one random Attack or Skill card. Add it to your hand. It cost 0 this turn.",
+            "Choose between one random Attack or Skill card. Add it to your hand. It cost 0 this turn."
+        ]
+    },
     "mysteryDungeon:LeppaBerryPotion": {
         "NAME": "Leppa Berry",
         "DESCRIPTIONS": [
             "Choose #b%s cards to retain at the end of your turn."
+        ]
+    },
+    "mysteryDungeon:LiechiBerryPotion": {
+        "NAME": "Liechi Berry",
+        "DESCRIPTIONS": [
+            "Draw #b%s cards.",
+            "Draw #b%s cards."
         ]
     },
     "mysteryDungeon:MagoBerryPotion": {
@@ -75,7 +96,8 @@
     "mysteryDungeon:RawstBerryPotion": {
         "NAME": "Rawst Berry",
         "DESCRIPTIONS": [
-            "Apply #b%s #yBurn. Burn stacks don't decrease for #b1 turn on the target."
+            "Apply #b%s #yBurn. Burn stacks don't decrease for #b1 turn on the target.",
+            "Apply #b%s #yBurn. Burn stacks don't decrease for #b2 turn on the target."
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {

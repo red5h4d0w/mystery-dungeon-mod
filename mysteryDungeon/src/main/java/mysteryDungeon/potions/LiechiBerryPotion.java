@@ -2,44 +2,42 @@ package mysteryDungeon.potions;
 
 import java.util.HashSet;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.PotionStrings;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 import mysteryDungeon.abstracts.PokemonPotion;
-import mysteryDungeon.pokemons.Charmander;
-import mysteryDungeon.powers.BurnPower;
+import mysteryDungeon.pokemons.Chikorita;
 
-public class FlameOrbPotion extends PokemonPotion {
+public class LiechiBerryPotion extends PokemonPotion {
 
-    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(FlameOrbPotion.class);
+    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(LiechiBerryPotion.class);
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
 
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
 
-    public static final String IMG_STRING = "flame-orb.png";
+    public static final String IMG_STRING = "x-atk.png";
 
-    public FlameOrbPotion() {
+    public LiechiBerryPotion() {
         // The bottle shape and inside is determined by potion size and color. The
         // actual colors are the main MysteryDungeon.java
-        super(NAME, POTION_ID, PotionRarity.COMMON, IMG_STRING);
+        super(NAME, POTION_ID, PotionRarity.RARE, IMG_STRING);
 
         // Potency is the damage/magic number equivalent of potions.
         potency = getPotency();
 
         // Do you throw this potion at an enemy or do you just consume it.
-        isThrown = true;
-
+        isThrown = false;
         cardColors = new HashSet<CardColor>() {
             {
-                add(Charmander.CARD_COLOR);
+                add(Chikorita.CARD_COLOR);
             }
         };
 
@@ -72,26 +70,24 @@ public class FlameOrbPotion extends PokemonPotion {
 
     @Override
     public void use(AbstractCreature target) {
-        for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
-            if (!mo.isDeadOrEscaped())
-                addToBot(new ApplyPowerAction(mo, (AbstractCreature) AbstractDungeon.player, new BurnPower(mo, potency),
-                        potency));
+        if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT) {
+            addToBot(new DrawCardAction(potency));
         }
     }
 
     @Override
     public AbstractPotion makeCopy() {
-        return new FlameOrbPotion();
+        return new LiechiBerryPotion();
     }
 
     // This is your potency.
     @Override
     public int getPotency(final int potency) {
-        return 20;
+        return 5;
     }
 
     public void upgradePotion() {
-        potency += 20;
+        potency += 5;
         tips.clear();
         tips.add(new PowerTip(name, description));
     }

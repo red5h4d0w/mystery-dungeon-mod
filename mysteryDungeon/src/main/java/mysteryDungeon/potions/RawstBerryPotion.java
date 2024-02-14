@@ -12,7 +12,9 @@ import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 
 import mysteryDungeon.abstracts.PokemonPotion;
+import mysteryDungeon.pokemons.Charmander;
 import mysteryDungeon.pokemons.Cyndaquil;
+import mysteryDungeon.pokemons.Torchic;
 import mysteryDungeon.powers.BurnPower;
 import mysteryDungeon.powers.NaturePowerMountainPower;
 
@@ -29,7 +31,7 @@ public class RawstBerryPotion extends PokemonPotion {
     public RawstBerryPotion() {
         // The bottle shape and inside is determined by potion size and color. The
         // actual colors are the main MysteryDungeon.java
-        super(NAME, POTION_ID, PotionRarity.RARE, IMG_STRING);
+        super(NAME, POTION_ID, PotionRarity.UNCOMMON, IMG_STRING);
 
         // Potency is the damage/magic number equivalent of potions.
         potency = getPotency();
@@ -40,6 +42,8 @@ public class RawstBerryPotion extends PokemonPotion {
         cardColors = new HashSet<CardColor>() {
             {
                 add(Cyndaquil.CARD_COLOR);
+                add(Charmander.CARD_COLOR);
+                add(Torchic.CARD_COLOR);
             }
         };
 
