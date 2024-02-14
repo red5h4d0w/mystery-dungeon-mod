@@ -26,7 +26,7 @@ public class BerryJuicePotion extends PokemonPotion {
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
 
-    public static final String IMG_STRING = "x-atk.png";
+    public static final String IMG_STRING = "berry-juice.png";
 
     public BerryJuicePotion() {
         // The bottle shape and inside is determined by potion size and color. The
@@ -76,8 +76,8 @@ public class BerryJuicePotion extends PokemonPotion {
     public void use(AbstractCreature target) {
         if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT) {
             addToBot(new ScryAction(potency));
-            addToBot(new ApplyPowerAction(target, target, new DrawCardNextTurnPower(target, potency*2/5)));
-            
+            addToBot(new ApplyPowerAction(target, target, new DrawCardNextTurnPower(target, potency * 2 / 5)));
+
         }
     }
 

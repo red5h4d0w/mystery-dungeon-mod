@@ -23,7 +23,7 @@ public class LiechiBerryPotion extends PokemonPotion {
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
 
-    public static final String IMG_STRING = "x-atk.png";
+    public static final String IMG_STRING = "liechi-berry.png";
 
     public LiechiBerryPotion() {
         // The bottle shape and inside is determined by potion size and color. The

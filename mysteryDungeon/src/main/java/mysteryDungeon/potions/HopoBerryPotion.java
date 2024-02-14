@@ -25,7 +25,7 @@ public class HopoBerryPotion extends PokemonPotion {
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
 
-    public static final String IMG_STRING = "pikachu-candy.png";
+    public static final String IMG_STRING = "hopo-berry.png";
 
     public HopoBerryPotion() {
         // The bottle shape and inside is determined by potion size and color. The
@@ -73,10 +73,10 @@ public class HopoBerryPotion extends PokemonPotion {
 
     @Override
     public void use(AbstractCreature target) {
-         ArrayList<AbstractCard> stanceChoices = new ArrayList<>();
-            stanceChoices.add(new ChooseAttack());
-            stanceChoices.add(new ChooseSkill());
-            addToBot(new ChooseOneAction(stanceChoices));  
+        ArrayList<AbstractCard> stanceChoices = new ArrayList<>();
+        stanceChoices.add(new ChooseAttack());
+        stanceChoices.add(new ChooseSkill());
+        addToBot(new ChooseOneAction(stanceChoices));
     }
 
     @Override
