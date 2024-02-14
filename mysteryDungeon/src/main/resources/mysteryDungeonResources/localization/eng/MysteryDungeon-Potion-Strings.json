@@ -37,6 +37,12 @@
             "Apply #b%s #yBurn to ALL enemies."
         ]
     },
+    "mysteryDungeon:GoldenRazzBerryPotion": {
+        "NAME": "Golden Razz Berry Potion",
+        "DESCRIPTIONS": [
+            "Gain #b%s #yBuffer."
+        ]
+    },
     "mysteryDungeon:AuxPowerPotion": {
         "NAME": "Aux Power",
         "DESCRIPTIONS": [
