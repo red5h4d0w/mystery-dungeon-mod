@@ -15,9 +15,9 @@ import com.megacrit.cardcrawl.powers.BufferPower;
 import mysteryDungeon.abstracts.PokemonPotion;
 import mysteryDungeon.pokemons.Meowth;
 
-public class GoldenRazzBerry extends PokemonPotion {
+public class GoldenRazzBerryPotion extends PokemonPotion {
 
-    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(GoldenRazzBerry.class);
+    public static final String POTION_ID = mysteryDungeon.MysteryDungeon.makeID(GoldenRazzBerryPotion.class);
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
 
     public static final String NAME = potionStrings.NAME;
@@ -25,7 +25,7 @@ public class GoldenRazzBerry extends PokemonPotion {
 
     public static final String IMG_STRING = "golden-razz-berry.png";
 
-    public GoldenRazzBerry() {
+    public GoldenRazzBerryPotion() {
         // The bottle shape and inside is determined by potion size and color. The
         // actual colors are the main MysteryDungeon.java
         super(NAME, POTION_ID, PotionRarity.UNCOMMON, IMG_STRING);
@@ -77,7 +77,7 @@ public class GoldenRazzBerry extends PokemonPotion {
 
     @Override
     public AbstractPotion makeCopy() {
-        return new GoldenRazzBerry();
+        return new GoldenRazzBerryPotion();
     }
 
     // This is your potency.
