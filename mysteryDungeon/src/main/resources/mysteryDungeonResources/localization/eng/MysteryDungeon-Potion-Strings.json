@@ -110,7 +110,7 @@
         "NAME": "Rawst Berry",
         "DESCRIPTIONS": [
             "Apply #b%s #yBurn. Burn stacks don't decrease for #b1 turn on the target.",
-            "Apply #b%s #yBurn. Burn stacks don't decrease for #b2 turn on the target."
+            "Apply #b%s #yBurn. Burn stacks don't decrease for #b2 turns on the target."
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {
