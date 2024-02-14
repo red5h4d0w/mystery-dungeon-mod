@@ -87,6 +87,13 @@
             "Enter #yPositive or #yNegative #yStance."
         ]
     },
+    "mysteryDungeon:PinapBerryPotion": {
+        "NAME": "Pinap Berry",
+        "DESCRIPTIONS": [
+            "Channel #b%s Frost orbs.",
+            "Channel #b%s Frost orbs."
+        ]
+    },
     "mysteryDungeon:PoisonBarbPotion": {
         "NAME": "PoisonBarb",
         "DESCRIPTIONS": [
