@@ -11,6 +11,13 @@
             "Gagnez #b%s de #yConcentration."
         ]
     },
+    "mysteryDungeon:BerryJuicePotion": {
+        "NAME": "Berry Juice",
+        "DESCRIPTIONS": [
+            "Scry #b%s. Next turn draw #b2 more cards.",
+            "Scry #b%s. Next turn draw #b4 more cards."
+        ]
+    },
     "mysteryDungeon:DireHitPotion": {
         "NAME": "Muscle +",
         "DESCRIPTIONS": [
@@ -30,16 +37,36 @@
             "Appliquez #b%s de #Brûlure à TOUS les ennemis."
         ]
     },
+    "mysteryDungeon:GoldenRazzBerryPotion": {
+        "NAME": "Golden Razz Berry Potion",
+        "DESCRIPTIONS": [
+            "Gain #b%s #yBuffer."
+        ]
+    },
     "mysteryDungeon:AuxPowerPotion": {
         "NAME": "Offensive Extra",
         "DESCRIPTIONS": [
             "Votre prochaine attaque infligera #b%s dégâts supplémentaires."
         ]
     },
+    "mysteryDungeon:HopoBerryPotion": {
+        "NAME": "Hopo Berry",
+        "DESCRIPTIONS": [
+            "Choose between one random Attack or Skill card. Add it to your hand. It cost 0 this turn.",
+            "Choose between one random Attack or Skill card. Add it to your hand. It cost 0 this turn."
+        ]
+    },
     "mysteryDungeon:LeppaBerryPotion": {
         "NAME": "Baie Mepo",
         "DESCRIPTIONS": [
             "Choisissez #b%s cartes à retenir à la fin de votre tour."
+        ]
+    },
+    "mysteryDungeon:LiechiBerryPotion": {
+        "NAME": "Liechi Berry",
+        "DESCRIPTIONS": [
+            "Draw #b%s cards.",
+            "Draw #b%s cards."
         ]
     },
     "mysteryDungeon:MagoBerryPotion": {
@@ -66,6 +93,13 @@
             "Entrez en #yPositivité ou en #yNégativité."
         ]
     },
+    "mysteryDungeon:PinapBerryPotion": {
+        "NAME": "Pinap Berry",
+        "DESCRIPTIONS": [
+            "Channel #b%s Frost orbs.",
+            "Channel #b%s Frost orbs."
+        ]
+    },
     "mysteryDungeon:PoisonBarbPotion": {
         "NAME": "Pic Venin",
         "DESCRIPTIONS": [
@@ -75,7 +109,8 @@
     "mysteryDungeon:RawstBerryPotion": {
         "NAME": "Baie Fraive",
         "DESCRIPTIONS": [
-            "Appliquez #b%s de #yBrûlure. La #yBrûlure de la cible ne diminuera pas pendant #b1 tour."
+            "Appliquez #b%s de #yBrûlure. La #yBrûlure de la cible ne diminuera pas pendant #b1 tour.",
+            "Apply #b%s #yBurn. Burn stacks don't decrease for #b2 turns on the target."
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {

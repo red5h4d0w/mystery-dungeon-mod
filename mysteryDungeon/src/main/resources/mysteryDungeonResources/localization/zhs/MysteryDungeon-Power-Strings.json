@@ -250,8 +250,8 @@
     "mysteryDungeon:LockDownPower": {
         "NAME": "定时",
         "DESCRIPTIONS": [
-            "At the end of the turn, do not return automatically to the center of the #yCharge #yMeter.",
-            "At the end of the next #b%s turns, do not return automatically to the center of the #yCharge #Meter."
+            "在回合结束时，指针不再复位。",
+            "下 #b%s 个回合结束时，指针不再复位。"
         ]
     },
     "mysteryDungeon:LoseVigorPower": {

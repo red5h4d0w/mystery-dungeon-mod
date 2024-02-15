@@ -11,6 +11,13 @@
             "Gain #b%s #yFocus."
         ]
     },
+    "mysteryDungeon:BerryJuicePotion": {
+        "NAME": "Berry Juice",
+        "DESCRIPTIONS": [
+            "Scry #b%s. Next turn draw #b2 more cards.",
+            "Scry #b%s. Next turn draw #b4 more cards."
+        ]
+    },
     "mysteryDungeon:DireHitPotion": {
         "NAME": "Dire Hit",
         "DESCRIPTIONS": [
@@ -30,16 +37,36 @@
             "Apply #b%s #yBurn to ALL enemies."
         ]
     },
+    "mysteryDungeon:GoldenRazzBerryPotion": {
+        "NAME": "Golden Razz Berry Potion",
+        "DESCRIPTIONS": [
+            "Gain #b%s #yBuffer."
+        ]
+    },
     "mysteryDungeon:AuxPowerPotion": {
         "NAME": "Aux Power",
         "DESCRIPTIONS": [
             "Your next attack deals #b%s more damage."
         ]
     },
+    "mysteryDungeon:HopoBerryPotion": {
+        "NAME": "Hopo Berry",
+        "DESCRIPTIONS": [
+            "Choose between one random Attack or Skill card. Add it to your hand. It cost 0 this turn.",
+            "Choose between one random Attack or Skill card. Add it to your hand. It cost 0 this turn."
+        ]
+    },
     "mysteryDungeon:LeppaBerryPotion": {
         "NAME": "Leppa Berry",
         "DESCRIPTIONS": [
             "Choose #b%s cards to retain at the end of your turn."
+        ]
+    },
+    "mysteryDungeon:LiechiBerryPotion": {
+        "NAME": "Liechi Berry",
+        "DESCRIPTIONS": [
+            "Draw #b%s cards.",
+            "Draw #b%s cards."
         ]
     },
     "mysteryDungeon:MagoBerryPotion": {
@@ -66,6 +93,13 @@
             "Enter #yPositive or #yNegative #yStance."
         ]
     },
+    "mysteryDungeon:PinapBerryPotion": {
+        "NAME": "Pinap Berry",
+        "DESCRIPTIONS": [
+            "Channel #b%s Frost orbs.",
+            "Channel #b%s Frost orbs."
+        ]
+    },
     "mysteryDungeon:PoisonBarbPotion": {
         "NAME": "PoisonBarb",
         "DESCRIPTIONS": [
@@ -75,7 +109,8 @@
     "mysteryDungeon:RawstBerryPotion": {
         "NAME": "Rawst Berry",
         "DESCRIPTIONS": [
-            "Apply #b%s #yBurn. Burn stacks don't decrease for #b1 turn on the target."
+            "Apply #b%s #yBurn. Burn stacks don't decrease for #b1 turn on the target.",
+            "Apply #b%s #yBurn. Burn stacks don't decrease for #b2 turns on the target."
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {

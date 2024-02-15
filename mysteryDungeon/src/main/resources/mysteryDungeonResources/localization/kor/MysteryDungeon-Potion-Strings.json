@@ -11,6 +11,13 @@
             "#y밀집 을 #b%s 얻습니다."
         ]
     },
+    "mysteryDungeon:BerryJuicePotion": {
+        "NAME": "Berry Juice",
+        "DESCRIPTIONS": [
+            "Scry #b%s. Next turn draw #b2 more cards.",
+            "Scry #b%s. Next turn draw #b4 more cards."
+        ]
+    },
     "mysteryDungeon:DireHitPotion": {
         "NAME": "크리티컬커터",
         "DESCRIPTIONS": [
@@ -30,16 +37,36 @@
             "적 전체에게 #y화상 을 #b%s 부여합니다."
         ]
     },
+    "mysteryDungeon:GoldenRazzBerryPotion": {
+        "NAME": "Golden Razz Berry Potion",
+        "DESCRIPTIONS": [
+            "Gain #b%s #yBuffer."
+        ]
+    },
     "mysteryDungeon:AuxPowerPotion": {
         "NAME": "공격의환약",
         "DESCRIPTIONS": [
             "다음에 사용하는 공격 카드의 피해량이 #b%s 증가합니다."
         ]
     },
+    "mysteryDungeon:HopoBerryPotion": {
+        "NAME": "Hopo Berry",
+        "DESCRIPTIONS": [
+            "Choose between one random Attack or Skill card. Add it to your hand. It cost 0 this turn.",
+            "Choose between one random Attack or Skill card. Add it to your hand. It cost 0 this turn."
+        ]
+    },
     "mysteryDungeon:LeppaBerryPotion": {
         "NAME": "과사열매",
         "DESCRIPTIONS": [
             "턴 종료시 카드 #b%s 장에 #y보존 효과를 추가합니다."
+        ]
+    },
+    "mysteryDungeon:LiechiBerryPotion": {
+        "NAME": "Liechi Berry",
+        "DESCRIPTIONS": [
+            "Draw #b%s cards.",
+            "Draw #b%s cards."
         ]
     },
     "mysteryDungeon:MagoBerryPotion": {
@@ -66,6 +93,13 @@
             "#y플러스상태 또는 #y마이너스상태 가 됩니다."
         ]
     },
+    "mysteryDungeon:PinapBerryPotion": {
+        "NAME": "Pinap Berry",
+        "DESCRIPTIONS": [
+            "Channel #b%s Frost orbs.",
+            "Channel #b%s Frost orbs."
+        ]
+    },
     "mysteryDungeon:PoisonBarbPotion": {
         "NAME": "독바늘",
         "DESCRIPTIONS": [
@@ -75,7 +109,8 @@
     "mysteryDungeon:RawstBerryPotion": {
         "NAME": "복분열매",
         "DESCRIPTIONS": [
-            "#y화상 을 #b%s 부여합니다. 턴 종료시 #y화상 이 줄어들지 않습니다."
+            "#y화상 을 #b%s 부여합니다. 턴 종료시 #y화상 이 줄어들지 않습니다.",
+            "Apply #b%s #yBurn. Burn stacks don't decrease for #b2 turns on the target."
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {

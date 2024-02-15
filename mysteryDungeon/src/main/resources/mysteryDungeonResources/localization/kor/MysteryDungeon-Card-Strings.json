@@ -124,8 +124,8 @@
     },
     "mysteryDungeon:BulbasaurSecretPower": {
         "NAME": "비밀의 힘",
-        "DESCRIPTION": "선천성. NL 무작위 파워 카드를 1 장 얻습니다. NL 소멸",
-        "UPGRADE_DESCRIPTION": "선천성. NL 강화된 무작위 파워 카드를 1 장 얻습니다. NL 소멸"
+        "DESCRIPTION": "Innate. NL Add random Power in your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Add random upgraded Power in your hand. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurSeedBomb": {
         "NAME": "씨폭탄",
@@ -634,7 +634,7 @@
     },
     "mysteryDungeon:CyndaquilHowl": {
         "NAME": "멀리짖기",
-        "DESCRIPTION": "Next turn gain [E] [E] [E].",
+        "DESCRIPTION": "다음 턴에 [E] [E] [E]을(를) 얻습니다.",
         "UPGRADE_DESCRIPTION": "Next turn gain [E] [E] [E]. NL Next turn draw 1 more card."
     },
     "mysteryDungeon:CyndaquilIncinerate": {
@@ -1243,6 +1243,38 @@
         "DESCRIPTION": "피해를 !D! 줍니다. NL 풀죽음을 얻습니다",
         "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 강화된 풀죽음을 얻습니다."
     },
+    "mysteryDungeon:TorchicBulkUp": {
+        "NAME": "Bulk Up",
+        "DESCRIPTION": "Add a random combo to your combo deck."
+    },
+    "mysteryDungeon:TorchicDefend": {
+        "NAME": "Defend",
+        "DESCRIPTION": "Gain !B! Block."
+    },
+    "mysteryDungeon:TorchicDetect": {
+        "NAME": "Detect",
+        "DESCRIPTION": "Gain !B! Block. NL Draw a card."
+    },
+    "mysteryDungeon:TorchicDoubleKick": {
+        "NAME": "Double Kick",
+        "DESCRIPTION": "Apply !M! *Fire *Spin twice."
+    },
+    "mysteryDungeon:TorchicFacade": {
+        "NAME": "Facade",
+        "DESCRIPTION": "Combo: Skill, Skill. NL Finisher: Gain 14 Block."
+    },
+    "mysteryDungeon:TorchicFlameCharge": {
+        "NAME": "니트로차지",
+        "DESCRIPTION": "Combo: Skill, Skill, Attack. NL Finisher: Apply 20 burn to ALL enemies"
+    },
+    "mysteryDungeon:TorchicLowSweep": {
+        "NAME": "Low Sweep",
+        "DESCRIPTION": "Deal !D! damage. NL Put a card form your discard pile on top of your draw pile. NL If that card was an attack, deal !D! damage."
+    },
+    "mysteryDungeon:TorchicScratch": {
+        "NAME": "Scratch",
+        "DESCRIPTION": "Deal !D! damage."
+    },
     "mysteryDungeon:TotodileAquaJet": {
         "NAME": "아쿠아제트",
         "DESCRIPTION": "선천성. NL 피해를 !D! 줍니다. 다음턴에 mysterydungeon:활력을 !M! 얻습니다."
@@ -1409,8 +1441,8 @@
     },
     "mysteryDungeon:TotodileWaterSport": {
         "NAME": "물놀이",
-        "DESCRIPTION": "뽑을 카드 더미 맨 위에 카드를 1장 버립니다. NL mysterydungeon:활력 을 !mysteryDungeon:M2! 얻습니다.",
-        "UPGRADE_DESCRIPTION": "뽑을 카드 더미 맨 위에 카드를 2장 버립니다. NL mysterydungeon:활력 을 !mysteryDungeon:M2! 얻습니다."
+        "DESCRIPTION": "Discard the top !M! cards of your draw pile. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor.",
+        "UPGRADE_DESCRIPTION": "Discard the top !M! cards of your draw pile. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor."
     },
     "mysteryDungeon:TotodileWhirlpool": {
         "NAME": "바다회오리",
