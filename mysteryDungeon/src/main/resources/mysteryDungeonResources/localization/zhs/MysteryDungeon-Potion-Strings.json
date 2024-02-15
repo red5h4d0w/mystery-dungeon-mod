@@ -37,6 +37,12 @@
             "给予所有敌人 #b%s 层 #y灼烧 。"
         ]
     },
+    "mysteryDungeon:GoldenRazzBerryPotion": {
+        "NAME": "Golden Razz Berry Potion",
+        "DESCRIPTIONS": [
+            "Gain #b%s #yBuffer."
+        ]
+    },
     "mysteryDungeon:AuxPowerPotion": {
         "NAME": "进攻药丸",
         "DESCRIPTIONS": [
@@ -104,7 +110,7 @@
         "NAME": "莓莓果",
         "DESCRIPTIONS": [
             "给予 #b%s 层 #y灼烧 。 在接下来的 #b1 个回合，目标的灼烧层数不会减少。",
-            "Apply #b%s #yBurn. Burn stacks don't decrease for #b2 turn on the target."
+            "Apply #b%s #yBurn. Burn stacks don't decrease for #b2 turns on the target."
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {
