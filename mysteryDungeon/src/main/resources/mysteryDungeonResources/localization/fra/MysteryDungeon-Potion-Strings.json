@@ -37,6 +37,12 @@
             "Appliquez #b%s de #Brûlure à TOUS les ennemis."
         ]
     },
+    "mysteryDungeon:GoldenRazzBerryPotion": {
+        "NAME": "Golden Razz Berry Potion",
+        "DESCRIPTIONS": [
+            "Gain #b%s #yBuffer."
+        ]
+    },
     "mysteryDungeon:AuxPowerPotion": {
         "NAME": "Offensive Extra",
         "DESCRIPTIONS": [
@@ -104,7 +110,7 @@
         "NAME": "Baie Fraive",
         "DESCRIPTIONS": [
             "Appliquez #b%s de #yBrûlure. La #yBrûlure de la cible ne diminuera pas pendant #b1 tour.",
-            "Apply #b%s #yBurn. Burn stacks don't decrease for #b2 turn on the target."
+            "Apply #b%s #yBurn. Burn stacks don't decrease for #b2 turns on the target."
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {
