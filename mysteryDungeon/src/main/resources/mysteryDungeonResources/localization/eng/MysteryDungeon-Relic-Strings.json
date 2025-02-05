@@ -89,6 +89,12 @@
         "DESCRIPTIONS": [
             "Gain [E] at the start of your turn. NL At the end of your turn, trigger an #yEruption on ALL enemies."
         ]
+    },"mysteryDungeon:GrassGemRelic": {
+        "NAME": "Grass Gem",
+        "FLAVOR": "This gem is imbued with the essence of plants and will boost the power of a Grass-type move—but only once",
+        "DESCRIPTIONS": [
+            "The first attack each combat refunds the energy spent."
+        ]
     },
     "mysteryDungeon:GrassySeedRelic": {
         "NAME": "Grassy Seed",
@@ -186,6 +192,13 @@
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
             "At the start of your turn, #yScry #b1."
+        ]
+    },
+    "mysteryDungeon:RoseIncenseRelic": {
+        "NAME": "Rose incense",
+        "FLAVOR": "This incense has a curious aroma that boosts the power of the holder's Grass-type moves.",
+        "DESCRIPTIONS": [
+            "Whenever you #yHeal, #yHeal #b1 more #yHP."
         ]
     },
     "mysteryDungeon:SplashPlateRelic": {
