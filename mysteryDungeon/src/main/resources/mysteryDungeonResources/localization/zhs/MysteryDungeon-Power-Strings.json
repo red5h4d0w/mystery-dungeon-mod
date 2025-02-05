@@ -394,11 +394,11 @@
             "每回合前 #b%s 次消耗牌时，向手牌加入一张随机牌。"
         ]
     },
-    "mysteryDungeon:CyndaquilSleepTalkPower": {
-        "NAME": "梦话",
+    "mysteryDungeon:SleepTalkCyndaquilPower": {
+        "NAME": "Sleep Talk",
         "DESCRIPTIONS": [
-            "生成一张 状态牌 时，抽一张牌。",
-            "生成一张 状态牌 时，抽 #b%s 张牌。"
+            "When you create a #yStatus Card, draw a card.",
+            "When you create a #yStatus Card, draw #b%s cards."
         ]
     },
     "mysteryDungeon:SolarPowerPower": {
