@@ -397,8 +397,8 @@
     "mysteryDungeon:SleepTalkCyndaquilPower": {
         "NAME": "Sleep Talk",
         "DESCRIPTIONS": [
-            "When you create a #yStatus Card, draw a card.",
-            "When you create a #yStatus Card, draw #b%s cards."
+            "When you create or receive a #yStatus Card, draw a card.",
+            "When you create or receive a #yStatus Card, draw #b%s cards."
         ]
     },
     "mysteryDungeon:SolarPowerPower": {
