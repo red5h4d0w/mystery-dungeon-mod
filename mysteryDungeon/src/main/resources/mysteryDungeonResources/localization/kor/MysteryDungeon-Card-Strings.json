@@ -124,8 +124,8 @@
     },
     "mysteryDungeon:BulbasaurSecretPower": {
         "NAME": "비밀의 힘",
-        "DESCRIPTION": "Innate. NL Add random Power in your hand. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Innate. NL Add random upgraded Power in your hand. NL Exhaust."
+        "DESCRIPTION": "선천성. NL 무작위 파워 카드를 1장 얻습니다. NL 소멸.",
+        "UPGRADE_DESCRIPTION": "선천성. NL 강화된 무작위 파워 카드를 1장 얻습니다. NL 소멸."
     },
     "mysteryDungeon:BulbasaurSeedBomb": {
         "NAME": "씨폭탄",
@@ -166,7 +166,7 @@
         "DESCRIPTION": "체력을 !M! 회복합니다. NL 다음턴에 2장 더 뽑고 [E] [E] 를 얻습니다. NL 소멸."
     },
     "mysteryDungeon:BulbasaurTackle": {
-        "NAME": "타격",
+        "NAME": "몸통박치기",
         "DESCRIPTION": "피해를 !D! 줍니다."
     },
     "mysteryDungeon:BulbasaurToxic": {
@@ -217,9 +217,9 @@
         "DESCRIPTION": "방어도를 !B! 얻습니다."
     },
     "mysteryDungeon:CharmanderDragonBreath": {
-        "NAME": "용의 숨결",
-        "DESCRIPTION": "소멸된 카드 3 장당 [E] 를 얻습니다",
-        "UPGRADE_DESCRIPTION": "소멸된 카드 3 장당 [E] 를 얻습니다. NL [E] 를 얻습니다."
+        "NAME": "용의숨결",
+        "DESCRIPTION": "소멸된 카드 !M!장당 [E]를 얻습니다",
+        "UPGRADE_DESCRIPTION": "소멸된 카드 !M!장당 [E]를 얻습니다. NL [E]를 얻습니다."
     },
     "mysteryDungeon:CharmanderDragonClaw": {
         "NAME": "드래곤클로",
@@ -231,15 +231,15 @@
         "UPGRADE_DESCRIPTION": "카드를 !mysteryDungeon:M2! 장 뽑습니다. NL 카드를 !M! 장 소멸시킵니다."
     },
     "mysteryDungeon:CharmanderDragonPulse": {
-        "NAME": "용의 파동",
-        "DESCRIPTION": "사용불가. NL 이 카드를 뽑을 경우: 소멸한 카드에 있는 무작위 카드를 뽑을 카드 더미 맨 위로 가져옵니다. NL 이 효과가 !M! 번 발생한 경우: 소멸합니다.",
+        "NAME": "용의파동",
+        "DESCRIPTION": "사용 불가. NL 이 카드를 뽑을 경우: 소멸한 카드에 있는 무작위 카드를 뽑을 카드 더미 맨 위로 가져옵니다. NL 이 효과가 !M! 번 발생한 경우 소멸합니다.",
         "EXTENDED_DESCRIPTION": [
             "이 카드는 사용할 수 없습니다.",
             "뽑으면 소멸합니다."
         ]
     },
     "mysteryDungeon:CharmanderDragonRage": {
-        "NAME": "용의 분노",
+        "NAME": "용의분노",
         "DESCRIPTION": "휘발성. NL 적의 체력을 !M! 감소시킵니다. 소멸."
     },
     "mysteryDungeon:CharmanderDragonRush": {
@@ -1244,7 +1244,7 @@
         "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 강화된 풀죽음을 얻습니다."
     },
     "mysteryDungeon:TorchicBulkUp": {
-        "NAME": "Bulk Up",
+        "NAME": "벌크업",
         "DESCRIPTION": "Add a random combo to your combo deck."
     },
     "mysteryDungeon:TorchicDefend": {
@@ -1256,7 +1256,7 @@
         "DESCRIPTION": "Gain !B! Block. NL Draw a card."
     },
     "mysteryDungeon:TorchicDoubleKick": {
-        "NAME": "Double Kick",
+        "NAME": "두번차기",
         "DESCRIPTION": "Apply !M! *Fire *Spin twice."
     },
     "mysteryDungeon:TorchicFacade": {
@@ -1268,7 +1268,7 @@
         "DESCRIPTION": "Combo: Skill, Skill, Attack. NL Finisher: Apply 20 burn to ALL enemies"
     },
     "mysteryDungeon:TorchicLowSweep": {
-        "NAME": "Low Sweep",
+        "NAME": "로킥",
         "DESCRIPTION": "Deal !D! damage. NL Put a card form your discard pile on top of your draw pile. NL If that card was an attack, deal !D! damage."
     },
     "mysteryDungeon:TorchicScratch": {
