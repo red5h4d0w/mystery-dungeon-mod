@@ -330,7 +330,7 @@
     },
     "mysteryDungeon:CharmanderScaryFace": {
         "NAME": "Scary Face",
-        "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak."
+        "DESCRIPTION": "Ethereal. NL Gain !B! Block. NL When this card exhausts, apply !M! Weak to ALL enemies."
     },
     "mysteryDungeon:CharmanderScratch": {
         "NAME": "Scratch",
