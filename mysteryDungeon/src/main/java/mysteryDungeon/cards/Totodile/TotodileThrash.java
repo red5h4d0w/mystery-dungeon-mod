@@ -47,7 +47,6 @@ public class TotodileThrash extends PokemonCard {
         magicNumber = baseMagicNumber;
         baseSecondMagicNumber = BASE_SECOND_MAGIC_NUMBER;
         secondMagicNumber = baseSecondMagicNumber;
-        isEthereal = true;
     }
 
     // Actions the card should do.
