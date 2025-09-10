@@ -4,6 +4,7 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -11,6 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.actions.MoveRandomCardsAction;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.powers.CounterPower;
 
@@ -37,8 +39,9 @@ public class CharmanderCounter extends PokemonCard {
     private static final int COST = 2;
     private static final int BASE_BLOCK = 12;
     private static final int UPGRADE_PLUS_BLOCK = 4;
-    private static final int BASE_MAGIC_NUMBER = 12;
-    private static final int UPGRADE_MAGIC_NUMBER = 4;
+    private static final int BASE_MAGIC_NUMBER = 1;
+    private static final int UPGRADE_MAGIC_NUMBER = 2;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
 
     // /STAT DECLARATION/
@@ -48,13 +51,16 @@ public class CharmanderCounter extends PokemonCard {
         baseBlock = BASE_BLOCK;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        isEthereal = true;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
-        addToBot(new ApplyPowerAction(p, p, new CounterPower(p, magicNumber), magicNumber));
+    }
+    public void triggerOnExhaust(AbstractPlayer p, AbstractMonster m, AbstractCard card){
+        addToBot(new MoveRandomCardsAction(p.drawPile, p.exhaustPile, magicNumber));
     }
 
     // Upgraded stats.
@@ -64,6 +70,7 @@ public class CharmanderCounter extends PokemonCard {
             upgradeName();
             upgradeBlock(UPGRADE_PLUS_BLOCK);
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

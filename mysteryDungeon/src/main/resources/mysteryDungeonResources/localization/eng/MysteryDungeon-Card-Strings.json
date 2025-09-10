@@ -210,7 +210,8 @@
     },
     "mysteryDungeon:CharmanderCounter": {
         "NAME": "Counter",
-        "DESCRIPTION": "Gain !B! Block. NL If you lose all Block and take damage from an attack, deal !M! damage to the attacker."
+        "DESCRIPTION": "Ethereal. NL Gain !B! Block. NL If this card exhausts, #yExhume !M! card.",
+        "UPGRADE_DESCRIPTION": "Ethereal. NL Gain !B! Block. NL If this card exhausts, #yExhume !M! cards."
     },
     "mysteryDungeon:CharmanderDefend": {
         "NAME": "Defend",
@@ -240,7 +241,7 @@
     },
     "mysteryDungeon:CharmanderDragonRage": {
         "NAME": "Dragon Rage",
-        "DESCRIPTION": "Ethereal. NL Enemy loses !M! HP. Exhaust."
+        "DESCRIPTION": "Ethereal. NL Enemy loses !M! HP. NL Exhaust."
     },
     "mysteryDungeon:CharmanderDragonRush": {
         "NAME": "Dragon Rush",
