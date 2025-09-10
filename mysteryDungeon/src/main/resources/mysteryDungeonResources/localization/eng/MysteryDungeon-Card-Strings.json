@@ -318,7 +318,7 @@
     },
     "mysteryDungeon:CharmanderMetalClaw": {
         "NAME": "Metal Claw",
-        "DESCRIPTION": "Deal !D! damage. NL All your mysterydungeon:Claws deal !M! more damage this combat."
+        "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL All your mysterydungeon:Claws deal !M! more damage this combat. Nl When exhausted create 2 copies in your draw pile."
     },
     "mysteryDungeon:CharmanderOutrage": {
         "NAME": "Outrage",

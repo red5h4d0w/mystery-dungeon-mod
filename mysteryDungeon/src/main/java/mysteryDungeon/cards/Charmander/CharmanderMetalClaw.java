@@ -6,6 +6,8 @@ import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -15,6 +17,7 @@ import com.megacrit.cardcrawl.vfx.combat.ClawEffect;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.actions.MoveRandomCardsAction;
 import mysteryDungeon.actions.UpgradeClawAction;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.interfaces.ClawCardInterface;
@@ -52,6 +55,7 @@ public class CharmanderMetalClaw extends PokemonCard implements ClawCardInterfac
         baseDamage = DAMAGE;
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        isEthereal = true;
     }
 
     // Actions the card should do.
@@ -62,7 +66,10 @@ public class CharmanderMetalClaw extends PokemonCard implements ClawCardInterfac
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         addToBot(new UpgradeClawAction(this, magicNumber));
     }
-
+    public void triggerOnExhaust(AbstractPlayer p, AbstractMonster m){
+        addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(makeStatEquivalentCopy(), 2, true, false));
+    }
+ 
     public void clawUpgrade(int amount)
     {
         baseDamage += amount;
