@@ -37,10 +37,7 @@ public class CharmanderHeatWave extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
     private static final int COST = 1;
-    private static final int BASE_MAGIC_NUMBER = 7;
-    private static final int UPGRADE_MAGIC_NUMBER = 2;
-    private static final int BASE_BLOCK = 7;
-    private static final int UPGRADE_BLOCK = 2;
+    private static final int BASE_MAGIC_NUMBER = 30;
 
 
     // /STAT DECLARATION/
@@ -49,14 +46,12 @@ public class CharmanderHeatWave extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
-        baseBlock = BASE_BLOCK;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(m, p, new BurnPower(m, magicNumber), magicNumber));
-        addToBot(new GainBlockAction(p, p, block));
         addToBot(new ExhaustAction(1, !upgraded, false, false));
     }
 
@@ -65,8 +60,6 @@ public class CharmanderHeatWave extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
-            upgradeBlock(UPGRADE_BLOCK);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

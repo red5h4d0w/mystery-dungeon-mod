@@ -309,8 +309,8 @@
     },
     "mysteryDungeon:CharmanderHeatWave": {
         "NAME": "Heat Wave",
-        "DESCRIPTION": "Gain !B! Block. NL Apply !M! mysterydungeon:Burn. NL Exhaust a random card in your hand.",
-        "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Apply !M! mysterydungeon:Burn. NL Exhaust a card in your hand."
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Exhaust a random card in your hand.",
+        "UPGRADE_DESCRIPTION": "Apply !M! mysterydungeon:Burn. NL Exhaust a card in your hand."
     },
     "mysteryDungeon:CharmanderInferno": {
         "NAME": "Inferno",
