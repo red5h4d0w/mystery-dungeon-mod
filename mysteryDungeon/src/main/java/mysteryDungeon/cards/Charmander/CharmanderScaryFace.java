@@ -14,7 +14,6 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
-import mysteryDungeon.actions.MoveRandomCardsAction;
 import mysteryDungeon.characters.Pokemon;
 
 public class CharmanderScaryFace extends PokemonCard {

@@ -270,11 +270,11 @@
     },
     "mysteryDungeon:CharmanderFacade": {
         "NAME": "Facade",
-        "DESCRIPTION": "Gain !M! Dexterity and !mysteryDungeon:M2! Artifact."
+        "DESCRIPTION": "Ethereal. NL Gain !M! Dexterity. When this card exhausts gain !mysteryDungeon:M2! Metallicize. "
     },
     "mysteryDungeon:CharmanderFireBlast": {
         "NAME": "Fire Blast",
-        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn. NL Exhaust."
+        "DESCRIPTION": "Deal !D! damage. NL Apply !M! mysterydungeon:Burn."
     },
     "mysteryDungeon:CharmanderFireFang": {
         "NAME": "Fire Fang",
@@ -314,7 +314,8 @@
     },
     "mysteryDungeon:CharmanderInferno": {
         "NAME": "Inferno",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn to ALL enemies."
+        "DESCRIPTION": "Ethereal. NL Apply !M! mysterydungeon:Burn to ALL enemies. NL When this card exhausts, #yExhume !mysteryDungeon:M2! card.",
+        "UPGRADE_DESCRIPTION": "Ethereal. NL Apply !M! mysterydungeon:Burn to ALL enemies. NL When this card exhausts, #yExhume !mysteryDungeon:M2! cards."
     },
     "mysteryDungeon:CharmanderMetalClaw": {
         "NAME": "Metal Claw",

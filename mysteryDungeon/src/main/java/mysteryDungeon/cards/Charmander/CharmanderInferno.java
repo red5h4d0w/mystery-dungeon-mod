@@ -4,6 +4,7 @@ import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -13,6 +14,7 @@ import com.megacrit.cardcrawl.vfx.FlameAnimationEffect;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
+import mysteryDungeon.actions.MoveRandomCardsAction;
 import mysteryDungeon.characters.Pokemon;
 import mysteryDungeon.powers.BurnPower;
 
@@ -37,8 +39,11 @@ public class CharmanderInferno extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
     private static final int COST = 1;
-    private static final int BASE_MAGIC_NUMBER = 12;
+    private static final int BASE_MAGIC_NUMBER = 15;
     private static final int UPGRADE_MAGIC_NUMBER = 4;
+    private static final int BASE_SECOND_MAGIC_NUMBER = 1;
+    private static final int UPGRADE_SECOND_MAGIC_NUMBER = 1;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
 
     // /STAT DECLARATION/
@@ -47,6 +52,9 @@ public class CharmanderInferno extends PokemonCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = BASE_MAGIC_NUMBER;
         magicNumber = baseMagicNumber;
+        baseSecondMagicNumber = BASE_SECOND_MAGIC_NUMBER;
+        secondMagicNumber = baseSecondMagicNumber;
+        isEthereal = true;
     }
 
     // Actions the card should do.
@@ -62,12 +70,18 @@ public class CharmanderInferno extends PokemonCard {
         }
     }
 
+    public void triggerOnExhaust(AbstractPlayer p, AbstractMonster m, AbstractCard card){
+        addToBot(new MoveRandomCardsAction(p.drawPile, p.exhaustPile, secondMagicNumber));
+    }
+
     // Upgraded stats.
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            upgradeMagicNumber(UPGRADE_SECOND_MAGIC_NUMBER);
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

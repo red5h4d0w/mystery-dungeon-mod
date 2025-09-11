@@ -3,12 +3,13 @@ package mysteryDungeon.cards.Charmander;
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
+import com.megacrit.cardcrawl.powers.MetallicizePower;
 
 import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
@@ -37,7 +38,8 @@ public class CharmanderFacade extends PokemonCard {
     private static final int COST = 1;
     private static final int BASE_MAGIC_NUMBER = 1;
     private static final int UPGRADE_MAGIC_NUMBER = 1;
-    private static final int BASE_SECOND_MAGIC_NUMBER = 1;
+    private static final int BASE_SECOND_MAGIC_NUMBER = 3;
+    private static final int UPGRADE_SECOND_MAGIC_NUMBER = 2;
 
 
     // /STAT DECLARATION/
@@ -48,13 +50,17 @@ public class CharmanderFacade extends PokemonCard {
         magicNumber = baseMagicNumber;
         baseSecondMagicNumber = BASE_SECOND_MAGIC_NUMBER;
         secondMagicNumber = baseSecondMagicNumber;
+        isEthereal = true;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, magicNumber), magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, secondMagicNumber), secondMagicNumber));
+    }
+
+    public void triggerOnExhaust(AbstractPlayer p, AbstractMonster m, AbstractCard card){
+        addToBot(new ApplyPowerAction(p, p, new MetallicizePower(p, secondMagicNumber), secondMagicNumber));
     }
 
     // Upgraded stats.
@@ -63,6 +69,7 @@ public class CharmanderFacade extends PokemonCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(UPGRADE_MAGIC_NUMBER);
+            upgradeMagicNumber(UPGRADE_SECOND_MAGIC_NUMBER);
             initializeDescription();
         }
     }

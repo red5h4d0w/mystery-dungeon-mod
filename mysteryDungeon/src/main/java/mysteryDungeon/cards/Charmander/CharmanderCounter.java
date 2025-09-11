@@ -2,7 +2,7 @@ package mysteryDungeon.cards.Charmander;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -14,7 +14,6 @@ import mysteryDungeon.MysteryDungeon;
 import mysteryDungeon.abstracts.PokemonCard;
 import mysteryDungeon.actions.MoveRandomCardsAction;
 import mysteryDungeon.characters.Pokemon;
-import mysteryDungeon.powers.CounterPower;
 
 public class CharmanderCounter extends PokemonCard {
 
