@@ -228,8 +228,7 @@
     },
     "mysteryDungeon:CharmanderDragonDance": {
         "NAME": "Dragon Dance",
-        "DESCRIPTION": "Exhaust !M! cards. NL Draw !mysteryDungeon:M2! cards. NL (You cannot play this card if you cannot exhaust !M! cards.)",
-        "UPGRADE_DESCRIPTION": "Draw !mysteryDungeon:M2! cards NL Exhaust !M! cards."
+        "DESCRIPTION": "Exhaust !M! cards. NL Draw !mysteryDungeon:M2! cards. NL (You cannot play this card if you cannot exhaust !M! cards.)"
     },
     "mysteryDungeon:CharmanderDragonPulse": {
         "NAME": "Dragon Pulse",
@@ -1133,8 +1132,7 @@
     },
     "mysteryDungeon:SquirtleHaze": {
         "NAME": "Haze",
-        "DESCRIPTION": "Gain [E] [E]. NL Add !M! *Freeze to your discard pile.",
-        "UPGRADE_DESCRIPTION": "Gain [E] [E] [E]. NL Add !M! *Freeze to your discard pile."
+        "DESCRIPTION": "Draw !mysteryDungeon:M2! cards. NL Add !M! *Freeze to your discard pile."
     },
     "mysteryDungeon:SquirtleHydroCannon": {
         "NAME": "Hydro Cannon",
@@ -1184,7 +1182,7 @@
     },
     "mysteryDungeon:SquirtleScald": {
         "NAME": "Scald",
-        "DESCRIPTION": "Discard up to !mysteryDungeon:M2! cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card discarded that way."
+        "DESCRIPTION": "Draw 1. NL Discard up to !mysteryDungeon:M2! cards. Deal !D! damage and apply !M! mysterydungeon:Burn per card discarded that way."
     },
     "mysteryDungeon:SquirtleShellSmash": {
         "NAME": "Shell Smash",

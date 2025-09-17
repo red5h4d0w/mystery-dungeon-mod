@@ -37,7 +37,7 @@ public class CharmanderOverheat extends PokemonCard {
 
     private static final int COST = 2;
     private static final int UPGRADE_COST = 1;
-    private static final int DAMAGE = 5;
+    private static final int DAMAGE = 12;
 
 
     // /STAT DECLARATION/

@@ -2,6 +2,7 @@ package mysteryDungeon.cards.Squirtle;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -35,9 +36,9 @@ public class SquirtleScald extends PokemonCard {
 
     private static final int COST = 1;
     private static final int DAMAGE = 4;
-    private static final int UPGRADE_PLUS_DMG = 2;
-    private static final int BASE_MAGIC_NUMBER = 4;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
+    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int BASE_MAGIC_NUMBER = 5;
+    private static final int UPGRADE_MAGIC_NUMBER = 3;
     private static final int SECOND_MAGIC_NUMBER = 3;
     private static final int UPGRADE_SECONDMAGIC_NUMBER = 1;
 
@@ -57,6 +58,7 @@ public class SquirtleScald extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new DrawCardAction(1));
         addToBot(new ScaldAction(m, new DamageInfo(p, damage, damageTypeForTurn), secondMagicNumber, magicNumber)); 
     }
 

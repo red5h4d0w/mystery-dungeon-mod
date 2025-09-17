@@ -37,8 +37,8 @@ public class CharmanderBlastBurn extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
     private static final int COST = 2;
-    private static final int DAMAGE = 18;
-    private static final int UPGRADE_PLUS_DMG = 4;
+    private static final int DAMAGE = 22;
+    private static final int UPGRADE_PLUS_DMG = 8;
 
 
     // /STAT DECLARATION/

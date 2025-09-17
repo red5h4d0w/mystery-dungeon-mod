@@ -2,7 +2,7 @@ package mysteryDungeon.cards.Squirtle;
 
 import static mysteryDungeon.MysteryDungeon.makeCardPath;
 
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -37,7 +37,8 @@ public class SquirtleHaze extends PokemonCard {
 
     private static final int COST = 0;
     private static final int BASE_MAGIC_NUMBER = 3;
-    private static final int BASE_SECOND_MAGIC_NUMBER = 2;
+    private static final int UPGRADE_BASE_MAGIC_NUMBER = 3;
+    private static final int BASE_SECOND_MAGIC_NUMBER = 3;
     private static final int UPGRADE_SECOND_MAGIC_NUMBER = 1;
 
 
@@ -55,7 +56,7 @@ public class SquirtleHaze extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainEnergyAction(secondMagicNumber));
+        addToBot(new DrawCardAction(secondMagicNumber));
         addToBot(new MakeTempCardInDiscardAction(new StatusFreeze(), magicNumber));
     }
 
@@ -64,8 +65,8 @@ public class SquirtleHaze extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            upgradeMagicNumber(UPGRADE_BASE_MAGIC_NUMBER);
             upgradeSecondMagicNumber(UPGRADE_SECOND_MAGIC_NUMBER);
-            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

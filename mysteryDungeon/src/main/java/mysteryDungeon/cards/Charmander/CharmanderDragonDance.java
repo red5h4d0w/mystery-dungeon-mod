@@ -34,7 +34,8 @@ public class CharmanderDragonDance extends PokemonCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = Pokemon.Enums.CHARMANDER_RED;
 
-    private static final int COST = 0;
+    private static final int COST = 1;
+    private static final int UPGRADE_COST = 0;
     private static final int BASE_MAGIC_NUMBER = 2;
     private static final int BASE_SECOND_MAGIC_NUMBER = 2;
 
@@ -52,22 +53,14 @@ public class CharmanderDragonDance extends PokemonCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(upgraded)
-        {
             addToBot(new DrawCardAction(p, secondMagicNumber));
             addToBot(new ExhaustAction(p, p, magicNumber, false, false));
-        }
-        else
-        {
-            addToBot(new ExhaustAction(p, p, magicNumber, false, false));
-            addToBot(new DrawCardAction(p, secondMagicNumber));
-        }
     }
 
     @Override
     public boolean canPlay(AbstractCard card)
     {
-        if(card == this && !upgraded && AbstractDungeon.player.hand.size()<magicNumber+1)
+        if(card == this && AbstractDungeon.player.hand.size()<magicNumber+1)
             return false;
         return true;
     }
@@ -77,7 +70,7 @@ public class CharmanderDragonDance extends PokemonCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = UPGRADE_DESCRIPTION;
+            upgradeBaseCost(UPGRADE_COST);
             initializeDescription();
         }
     }
