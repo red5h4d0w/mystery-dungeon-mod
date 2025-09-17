@@ -706,8 +706,8 @@
     },
     "mysteryDungeon:CyndaquilWillOWisp": {
         "NAME": "Will-O-Wisp",
-        "DESCRIPTION": "Apply !M! mysterydungeon:Burn X times. NL Exhaust.",
-        "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! mysterydungeon:Burn X times. NL Exhaust."
+        "DESCRIPTION": "Apply !M! mysterydungeon:Burn X times.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! mysterydungeon:Burn X times."
     },
     "mysteryDungeon:MeowthAmnesia": {
         "NAME": "Amnesia",

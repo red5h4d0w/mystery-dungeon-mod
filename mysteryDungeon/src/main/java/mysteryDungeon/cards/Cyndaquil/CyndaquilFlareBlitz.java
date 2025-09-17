@@ -37,8 +37,8 @@ public class CyndaquilFlareBlitz extends PokemonCard {
     public static final CardColor COLOR = Pokemon.Enums.CYNDAQUIL_RED;
 
     private static final int COST = 5;
-    private static final int DAMAGE = 35;
-    private static final int UPGRADE_PLUS_DMG = 8;
+    private static final int DAMAGE = 50;
+    private static final int UPGRADE_PLUS_DMG = 10;
 
 
     // /STAT DECLARATION/
