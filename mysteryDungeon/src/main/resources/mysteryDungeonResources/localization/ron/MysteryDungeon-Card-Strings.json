@@ -124,8 +124,8 @@
     },
     "mysteryDungeon:BulbasaurSecretPower": {
         "NAME": "Secret Power",
-        "DESCRIPTION": "Innate. NL Add random Power in your hand. NL Exhaust",
-        "UPGRADE_DESCRIPTION": "Innate. NL Add random upgraded Power in your hand. NL Exhaust"
+        "DESCRIPTION": "Innate. NL Add random Power in your hand. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Innate. NL Add random upgraded Power in your hand. NL Exhaust."
     },
     "mysteryDungeon:BulbasaurSeedBomb": {
         "NAME": "Seed Bomb",
@@ -1243,6 +1243,38 @@
         "DESCRIPTION": "Deal !D! damage NL Create a *Flinch and add it to your hand.",
         "UPGRADE_DESCRIPTION": "Deal !D! damage NL Create an upgraded *Flinch and add it to your hand."
     },
+    "mysteryDungeon:TorchicBulkUp": {
+        "NAME": "Bulk Up",
+        "DESCRIPTION": "Add a random combo to your combo deck."
+    },
+    "mysteryDungeon:TorchicDefend": {
+        "NAME": "Defend",
+        "DESCRIPTION": "Gain !B! Block."
+    },
+    "mysteryDungeon:TorchicDetect": {
+        "NAME": "Detect",
+        "DESCRIPTION": "Gain !B! Block. NL Draw a card."
+    },
+    "mysteryDungeon:TorchicDoubleKick": {
+        "NAME": "Double Kick",
+        "DESCRIPTION": "Apply !M! *Fire *Spin twice."
+    },
+    "mysteryDungeon:TorchicFacade": {
+        "NAME": "Facade",
+        "DESCRIPTION": "Combo: Skill, Skill. NL Finisher: Gain 14 Block."
+    },
+    "mysteryDungeon:TorchicFlameCharge": {
+        "NAME": "Flame Charge",
+        "DESCRIPTION": "Combo: Skill, Skill, Attack. NL Finisher: Apply 20 burn to ALL enemies"
+    },
+    "mysteryDungeon:TorchicLowSweep": {
+        "NAME": "Low Sweep",
+        "DESCRIPTION": "Deal !D! damage. NL Put a card form your discard pile on top of your draw pile. NL If that card was an attack, deal !D! damage."
+    },
+    "mysteryDungeon:TorchicScratch": {
+        "NAME": "Scratch",
+        "DESCRIPTION": "Deal !D! damage."
+    },
     "mysteryDungeon:TotodileAquaJet": {
         "NAME": "Aqua Jet",
         "DESCRIPTION": "Innate. NL Deal !D! damage. Next turn gain !M! mysterydungeon:Vigor."
@@ -1409,8 +1441,8 @@
     },
     "mysteryDungeon:TotodileWaterSport": {
         "NAME": "Water Sport",
-        "DESCRIPTION": "Discard the top card of your draw pile. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor.",
-        "UPGRADE_DESCRIPTION": "Discard the top 2 cards of your draw pile. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor."
+        "DESCRIPTION": "Discard the top !M! cards of your draw pile. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor.",
+        "UPGRADE_DESCRIPTION": "Discard the top !M! cards of your draw pile. NL Gain !mysteryDungeon:M2! mysterydungeon:Vigor."
     },
     "mysteryDungeon:TotodileWhirlpool": {
         "NAME": "Whirlpool",

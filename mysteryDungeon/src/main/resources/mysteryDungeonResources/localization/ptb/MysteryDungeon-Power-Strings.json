@@ -394,11 +394,11 @@
             "The first #b%s times you exhaust a card each turn, add a random card to your hand."
         ]
     },
-    "mysteryDungeon:CyndaquilSleepTalkPower": {
+    "mysteryDungeon:SleepTalkCyndaquilPower": {
         "NAME": "Sleep Talk",
         "DESCRIPTIONS": [
-            "When you create a Status Card, draw a card.",
-            "When you create a Status Card, draw #b%s cards."
+            "When you create or receive a #yStatus Card, draw a card.",
+            "When you create or receive a #yStatus Card, draw #b%s cards."
         ]
     },
     "mysteryDungeon:SolarPowerPower": {

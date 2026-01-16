@@ -11,6 +11,13 @@
             "获得 #b%s 点 #y集中 。"
         ]
     },
+    "mysteryDungeon:BerryJuicePotion": {
+        "NAME": "Berry Juice",
+        "DESCRIPTIONS": [
+            "Scry #b%s. Next turn draw #b2 more cards.",
+            "Scry #b%s. Next turn draw #b4 more cards."
+        ]
+    },
     "mysteryDungeon:DireHitPotion": {
         "NAME": "要害攻击",
         "DESCRIPTIONS": [
@@ -30,16 +37,36 @@
             "给予所有敌人 #b%s 层 #y灼烧 。"
         ]
     },
+    "mysteryDungeon:GoldenRazzBerryPotion": {
+        "NAME": "Golden Razz Berry Potion",
+        "DESCRIPTIONS": [
+            "Gain #b%s #yBuffer."
+        ]
+    },
     "mysteryDungeon:AuxPowerPotion": {
         "NAME": "进攻药丸",
         "DESCRIPTIONS": [
             "你的下一次攻击额外造成 #b%s 点伤害。"
         ]
     },
+    "mysteryDungeon:HopoBerryPotion": {
+        "NAME": "Hopo Berry",
+        "DESCRIPTIONS": [
+            "Choose between one random Attack or Skill card. Add it to your hand. It cost 0 this turn.",
+            "Choose between one random Attack or Skill card. Add it to your hand. It cost 0 this turn."
+        ]
+    },
     "mysteryDungeon:LeppaBerryPotion": {
         "NAME": "苹野果",
         "DESCRIPTIONS": [
             "在你的回合结束时，保留 #b%s 张牌。"
+        ]
+    },
+    "mysteryDungeon:LiechiBerryPotion": {
+        "NAME": "Liechi Berry",
+        "DESCRIPTIONS": [
+            "Draw #b%s cards.",
+            "Draw #b%s cards."
         ]
     },
     "mysteryDungeon:MagoBerryPotion": {
@@ -66,6 +93,13 @@
             "进入正极态或负极态。"
         ]
     },
+    "mysteryDungeon:PinapBerryPotion": {
+        "NAME": "Pinap Berry",
+        "DESCRIPTIONS": [
+            "Channel #b%s Frost orbs.",
+            "Channel #b%s Frost orbs."
+        ]
+    },
     "mysteryDungeon:PoisonBarbPotion": {
         "NAME": "毒针",
         "DESCRIPTIONS": [
@@ -75,7 +109,8 @@
     "mysteryDungeon:RawstBerryPotion": {
         "NAME": "莓莓果",
         "DESCRIPTIONS": [
-            "给予 #b%s 层 #y灼烧 。 在接下来的 #b1 个回合，目标的灼烧层数不会减少。"
+            "给予 #b%s 层 #y灼烧 。 在接下来的 #b1 个回合，目标的灼烧层数不会减少。",
+            "Apply #b%s #yBurn. Burn stacks don't decrease for #b2 turns on the target."
         ]
     },
     "mysteryDungeon:SitrusBerryPotion": {

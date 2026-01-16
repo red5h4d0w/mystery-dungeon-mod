@@ -27,6 +27,13 @@
             "At the start of each turn, deal damage to ALL enemies equal to their #yStrength."
         ]
     },
+    "mysteryDungeon:BlackSludgeRelic": {
+        "NAME": "Black Sludge",
+        "FLAVOR": "This sludge will heal Poison-type Pokémon, but damage any other.",
+        "DESCRIPTIONS": [
+            "When an enemy with at least #b3 #yDebuffs dies, Apply half of each to a random enemy in the room."
+        ]
+    },
     "mysteryDungeon:BraveExplorerRelic": {
         "NAME": "Brave Explorer",
         "FLAVOR": "A brave Explorer",
@@ -62,6 +69,13 @@
             "When you receive a #yDebuff, gain #b2 Block on the following turn."
         ]
     },
+    "mysteryDungeon:DracoFangRelic": {
+        "NAME": "Dragon Fang",
+        "FLAVOR": " This hard, sharp fang boosts the power of the holder's Dragon-type moves",
+        "DESCRIPTIONS": [
+            "For every #b10 cards exhausted, exhume #b1 card."
+        ]
+    },
     "mysteryDungeon:FireGemRelic": {
         "NAME": "Fire Gem",
         "FLAVOR": "This gem is imbued with the essence of fire and will boost the power of a Fire-type moves, but only once.",
@@ -76,11 +90,25 @@
             "Gain [E] at the start of your turn. NL At the end of your turn, trigger an #yEruption on ALL enemies."
         ]
     },
+    "mysteryDungeon:GrassGemRelic": {
+        "NAME": "Grass Gem",
+        "FLAVOR": "This gem is imbued with the essence of plants and will boost the power of a Grass-type move—but only once",
+        "DESCRIPTIONS": [
+            "The first attack each combat refunds the energy spent."
+        ]
+    },
     "mysteryDungeon:GrassySeedRelic": {
         "NAME": "Grassy Seed",
         "FLAVOR": "It boosts Defense on Grassy Terrain.",
         "DESCRIPTIONS": [
             "At the start of combat add a random attack to your draw pile. It costs #b0 this combat."
+        ]
+    },
+    "mysteryDungeon:GripClawRelic": {
+        "NAME": "Grip Claw",
+        "FLAVOR": " This claw allows a better grip on your enemies",
+        "DESCRIPTIONS": [
+            "If no enemy has #yBurn, at the start of your turn add a #yMetal Claw to your hand."
         ]
     },
     "mysteryDungeon:HardyExplorerRelic": {
@@ -165,6 +193,13 @@
         "FLAVOR": "What is this?",
         "DESCRIPTIONS": [
             "At the start of your turn, #yScry #b1."
+        ]
+    },
+    "mysteryDungeon:RoseIncenseRelic": {
+        "NAME": "Rose incense",
+        "FLAVOR": "This incense has a curious aroma that boosts the power of the holder's Grass-type moves.",
+        "DESCRIPTIONS": [
+            "Whenever you #yHeal, #yHeal #b1 more #yHP."
         ]
     },
     "mysteryDungeon:SplashPlateRelic": {

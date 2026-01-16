@@ -394,11 +394,11 @@
             "매턴 #b%s 회 카드가 소멸될 경우, 무작위 카드를 1 장 얻습니다."
         ]
     },
-    "mysteryDungeon:CyndaquilSleepTalkPower": {
-        "NAME": "잠꼬대",
+    "mysteryDungeon:SleepTalkCyndaquilPower": {
+        "NAME": "Sleep Talk",
         "DESCRIPTIONS": [
-            "상태이상 카드를 생성할 때 마다, 카드를 1장 뽑습니다.",
-            "상태이상 카드를 생성할 때 마다, 카드를 #b%s 장 뽑습니다."
+            "When you create or receive a #yStatus Card, draw a card.",
+            "When you create or receive a #yStatus Card, draw #b%s cards."
         ]
     },
     "mysteryDungeon:SolarPowerPower": {

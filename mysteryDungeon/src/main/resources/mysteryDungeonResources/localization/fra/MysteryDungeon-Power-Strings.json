@@ -394,11 +394,11 @@
             "Chaque tour, les #b%s premières fois que vous #yépuisez une carte, ajoutez une carte aléatoire à votre main."
         ]
     },
-    "mysteryDungeon:CyndaquilSleepTalkPower": {
-        "NAME": "Blabla Dodo",
+    "mysteryDungeon:SleepTalkCyndaquilPower": {
+        "NAME": "Sleep Talk",
         "DESCRIPTIONS": [
-            "Lorsque vous créez une carte de Statut, piochez une carte.",
-            "Lorsque vous créez une carte de Statut, piochez #b%s cartes."
+            "When you create or receive a #yStatus Card, draw a card.",
+            "When you create or receive a #yStatus Card, draw #b%s cards."
         ]
     },
     "mysteryDungeon:SolarPowerPower": {

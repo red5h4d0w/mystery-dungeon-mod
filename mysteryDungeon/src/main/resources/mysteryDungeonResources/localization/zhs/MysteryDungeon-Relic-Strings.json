@@ -27,6 +27,13 @@
             "在每个回合开始时，对所有敌人造成等同于其 #y力量 的伤害。"
         ]
     },
+    "mysteryDungeon:BlackSludgeRelic": {
+        "NAME": "Black Sludge",
+        "FLAVOR": "This sludge will heal Poison-type Pokémon, but damage any other.",
+        "DESCRIPTIONS": [
+            "When an enemy with at least #b3 #yDebuffs dies, Apply half of each to a random enemy in the room."
+        ]
+    },
     "mysteryDungeon:BraveExplorerRelic": {
         "NAME": "勇敢的冒险家",
         "FLAVOR": "这是什么？",
@@ -62,6 +69,13 @@
             "每当你获得 #b1 次 #y负面效果 ，下回合获得 #b2 点格挡。"
         ]
     },
+    "mysteryDungeon:DracoFangRelic": {
+        "NAME": "Dragon Fang",
+        "FLAVOR": " This hard, sharp fang boosts the power of the holder's Dragon-type moves",
+        "DESCRIPTIONS": [
+            "For every #b10 cards exhausted, exhume #b1 card."
+        ]
+    },
     "mysteryDungeon:FireGemRelic": {
         "NAME": "火之宝石",
         "FLAVOR": "火属性的宝石。携带后，火属性的招式威力仅会增强1次。",
@@ -76,11 +90,25 @@
             "在你的回合开始时，获得 [E] 。 NL 在你的回合结束时， #y引燃 所有敌人。"
         ]
     },
+    "mysteryDungeon:GrassGemRelic": {
+        "NAME": "Grass Gem",
+        "FLAVOR": "This gem is imbued with the essence of plants and will boost the power of a Grass-type move—but only once",
+        "DESCRIPTIONS": [
+            "The first attack each combat refunds the energy spent."
+        ]
+    },
     "mysteryDungeon:GrassySeedRelic": {
         "NAME": "青草种子",
         "FLAVOR": "让宝可梦携带后，在青草场地上使用，防御就会提高。",
         "DESCRIPTIONS": [
             "在每场战斗开始时，随机将一张攻击牌放入你的抽牌堆。这张牌本场战斗耗能为 #b0 。"
+        ]
+    },
+    "mysteryDungeon:GripClawRelic": {
+        "NAME": "Grip Claw",
+        "FLAVOR": " This claw allows a better grip on your enemies",
+        "DESCRIPTIONS": [
+            "If no enemy has #yBurn, at the start of your turn add a #yMetal Claw to your hand."
         ]
     },
     "mysteryDungeon:HardyExplorerRelic": {
@@ -165,6 +193,13 @@
         "FLAVOR": "这是什么？",
         "DESCRIPTIONS": [
             "在每回合开始时 #y预见 #b1 。"
+        ]
+    },
+    "mysteryDungeon:RoseIncenseRelic": {
+        "NAME": "Rose incense",
+        "FLAVOR": "This incense has a curious aroma that boosts the power of the holder's Grass-type moves.",
+        "DESCRIPTIONS": [
+            "Whenever you #yHeal, #yHeal #b1 more #yHP."
         ]
     },
     "mysteryDungeon:SplashPlateRelic": {
